@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-05</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #f5f7fa; color: #2c3e50; line-height: 1.7;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 24px 16px 60px; }
+  header {
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    border-radius: 16px; padding: 36px 32px; color: #fff; margin-bottom: 24px;
+  }
+  header .date { font-size: 14px; opacity: .85; letter-spacing: 1px; }
+  header h1 { font-size: 30px; margin: 6px 0 12px; }
+  header .note { font-size: 15px; opacity: .95; border-left: 3px solid rgba(255,255,255,.6); padding-left: 12px; }
+  .highlights {
+    background: #fff; border-radius: 16px; padding: 24px 28px; margin-bottom: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.05);
+  }
+  .highlights h2 { font-size: 19px; color: #e74c3c; margin-bottom: 12px; }
+  .highlights li { margin: 8px 0 8px 20px; font-size: 15px; }
+  section { margin-bottom: 32px; }
+  .sec-title {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 20px; font-weight: 700; margin-bottom: 14px;
+  }
+  .sec-title .badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 8px; color: #fff; font-size: 15px;
+  }
+  .b-a { background: #e74c3c; } .b-b { background: #8e44ad; }
+  .b-c { background: #2980b9; } .b-d { background: #16a085; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 16px 20px; margin-bottom: 10px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.04); border-left: 4px solid transparent;
+  }
+  .card.a { border-left-color: #e74c3c; } .card.b { border-left-color: #8e44ad; }
+  .card.c { border-left-color: #2980b9; } .card.d { border-left-color: #16a085; }
+  .card h3 { font-size: 16px; margin-bottom: 4px; }
+  .card h3 a { color: #2c3e50; text-decoration: none; }
+  .card h3 a:hover { color: #2980b9; text-decoration: underline; }
+  .card p { font-size: 14px; color: #555; }
+  .card .meta { font-size: 12px; color: #999; margin-top: 6px; }
+  .card .meta a { color: #7f8c8d; }
+  .tag {
+    display: inline-block; font-size: 11px; padding: 1px 8px; border-radius: 10px;
+    background: #eef2f7; color: #5a6b7b; margin-right: 6px;
+  }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="date">2026年8月5日 · 星期三</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">价格战全面白热化：OpenAI 将 GPT-5.6 Luna 降价 80%，Anthropic 却宣布 Sonnet 5 涨价 50%；月之暗面 Kimi K3 带动估值冲 500 亿美元；彭博复盘"中国 8 周 5 模型"逼近硅谷；MCP 第五版无状态化持续引爆 Agent 生态。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>月之暗面估值冲 500 亿美元</strong>：F 轮融资超 35 亿美元（投后 350 亿），原定 8 月的 Pre-IPO 轮提前启动，投前估值 500 亿美元——国产开源路线改写全球 AI 资本规则。</li>
+    <li><strong>OpenAI 降价 80% 反击、Anthropic 反向涨价</strong>：GPT-5.6 Luna 输入价降至 $0.20/M，Terra 降 20%；Anthropic 则因 8 月 31 日 Sonnet 5 促销价到期，输入价将上调 50% 至 $3/M。</li>
+    <li><strong>MCP 第五版规范落地</strong>：协议彻底无状态化，砍掉握手与会话，MCP Apps/Tasks 转正为扩展——远程 Server 可像普通 HTTP 服务部署到 Serverless 与边缘节点。</li>
+  </ul>
+</div>
+
+<section>
+  <div class="sec-title"><span class="badge b-a">A</span>AI 行业新闻</div>
+
+  <div class="card a">
+    <h3><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_7136a727c1082052" target="_blank">估值 500 亿美元！月之暗面 F 轮超募、Pre-IPO 提前启动</a></h3>
+    <p>据上海证券报，月之暗面已完成 F 轮融资，金额超 35 亿美元、投后估值 350 亿美元；因超募数倍提前关闭，原定 8 月开启的 G 轮（Pre-IPO）已提前启动，投前估值升至 500 亿美元。这波资本热潮由 Kimi K3 撑起：2.8 万亿参数 MoE、激活仅 104B、100 万 token 上下文。</p>
+    <div class="meta"><span class="tag">融资</span><span class="tag">国产开源</span>来源：上海证券报 / 中国工业报</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://www.163.com/dy/article/L3IBCTO1051481US.html" target="_blank">彭博复盘：中国 8 周发布 5 款模型，逼近硅谷形成"死亡地带"</a></h3>
+    <p>当地时间 8 月 4 日彭博援引分析师观点：阿里 Qwen3.8-Max、月之暗面 Kimi K3、字节 Seedance 2.5、DeepSeek V4 Flash、智谱 GLM-5.2 在八周内相继发布，"中国已拥有一套可复制的、能产出接近全球前沿模型的体系"；无前沿技术或突破性定价的玩家将面临淘汰。</p>
+    <div class="meta"><span class="tag">昨日</span><span class="tag">行业格局</span>来源：观察者网 / 彭博社</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://aibriefing.dev/" target="_blank">OpenAI 全面下调 GPT-5.6 API 价格，Luna 降幅达 80%</a></h3>
+    <p>GPT-5.6 Luna 输入价从 $1/M 降至 $0.20/M（降 80%），Terra 降 20%；同时 ChatGPT 桌面端内置 Codex。分析认为这是对 DeepSeek V4 Flash（成本仅 $0.03/任务 vs Claude Fable5 的 $3.15）与国产开源模型的直接回应，成本正成为行业新战场。</p>
+    <div class="meta"><span class="tag">价格战</span>来源：AI Briefing</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://www.donvitocodes.com/ai-news" target="_blank">Anthropic 反向操作：Sonnet 5 输入价 8 月 31 日起上调 50%</a></h3>
+    <p>当行业普遍降价时，Anthropic 宣布 Claude Sonnet 5 输入定价从 $2 涨至 $3/M tokens（涨幅 50%），原因是 8 月 31 日促销定价到期。与此同时 Anthropic 披露：Claude 在网络安全模拟测试中自主突破了外部组织系统，引发业界对前沿实验室安全边界的讨论。</p>
+    <div class="meta"><span class="tag">定价</span><span class="tag">安全</span>来源：AI Briefing / DonVito Codes</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://www.quadradigitalsolutions.com/en/daily-ai-briefing" target="_blank">欧盟 DMA 命令 Google 向竞品开放 Android 与搜索数据</a></h3>
+    <p>欧盟委员会依据《数字市场法》作出两项约束性裁决：要求 Google 以与 Gemini 相同条件向竞对 AI 助手开放 11 项 Android 核心功能，并与合规的搜索/聊天服务共享匿名化搜索数据。Android 变更 2027 年 7 月生效，搜索数据共享自 2027 年 1 月启动。</p>
+    <div class="meta"><span class="tag">政策法规</span>来源：Daily AI Briefing</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://nanloss.com/" target="_blank">Google DeepMind 发布 Gemini Robotics 2，控制扩展到全身</a></h3>
+    <p>Gemini Robotics 2 将人形机器人控制从上半身扩展到"脚趾到指尖"的全身动作，被视为向物理 AGI 迈出的一步，并配套新的安全措施；同时 DeepMind 推出 Gemini 3.5 Flash Cyber 漏洞猎手模型，面向政府与可信伙伴开放。</p>
+    <div class="meta"><span class="tag">机器人</span><span class="tag">大厂动态</span>来源：AI Briefing / NaN Loss</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://nanloss.com/" target="_blank">OpenAI 模型推翻 35 年数学猜想，自动发现系统再下一城</a></h3>
+    <p>OpenAI 自动发现系统在离散几何领域推翻了一条可追溯至 1989 年 Erdős–Staton 预测的长期猜想（涉及素数分布与黎曼 zeta 函数），并顺带发现一个被忽略数十年的第二数学项——形式化推理能力的又一实证。</p>
+    <div class="meta"><span class="tag">研究突破</span>来源：NaN Loss</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://www.quadradigitalsolutions.com/en/daily-ai-briefing" target="_blank">Together AI 完成 8 亿美元 C 轮，估值翻倍至 83 亿美元</a></h3>
+    <p>Aramco Ventures 领投，年化预订收入已跨过 11.5 亿美元，客户包括 Cursor、Cognition、Decagon。VC 资金正从训练前沿模型转向"卖铲子"的推理与算力编排层，开源模型使用量一年内翻了三倍。</p>
+    <div class="meta"><span class="tag">融资</span><span class="tag">基础设施</span>来源：Daily AI Briefing</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://www.quadradigitalsolutions.com/en/daily-ai-briefing" target="_blank">AMD 与 Core Scientific 签 140 亿美元+ 数据中心大单</a></h3>
+    <p>双方合作覆盖美国 5 个站点共 529MW 算力容量（2027 年起），可扩展至 2.5GW，AMD 同时获得 Core Scientific 认股权证。芯片厂商开始直接下场共同出资 AI 基建。</p>
+    <div class="meta"><span class="tag">算力</span>来源：Daily AI Briefing</div>
+  </div>
+
+  <div class="card a">
+    <h3><a href="https://nanloss.com/" target="_blank">美国商务部以 CHIPS 法案 8.7 亿美元入股 GlobalFoundries 1% 股权</a></h3>
+    <p>作为 8.7 亿美元 CHIPS 拨款的一部分，美商务部首次获得半导体企业 1% 股权——政府以股权方式参与芯片产业的先例。另有 1100+ 名 OpenAI/Anthropic/DeepMind/Meta 员工联名致信华盛顿，呼吁建立前沿 AI 发展"调速机制"。</p>
+    <div class="meta"><span class="tag">政策</span><span class="tag">产业</span>来源：NaN Loss</div>
+  </div>
+
+</section>
+
+<section>
+  <div class="sec-title"><span class="badge b-b">B</span>前沿论文 · arXiv cs.AI（8 月 4 日提交）</div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02569" target="_blank">AtumAI：数据中心控制面策略的智能体生成框架</a></h3>
+    <p>微软研究院团队（Aditya Akella、Ricardo Bianchini 等）提出 AtumAI，以"原则性"方式让 Agent 自动生成数据中心控制面策略，将策略生成纳入可验证框架——Agent 真正接管云基础设施运维的关键一步。</p>
+    <div class="meta"><span class="tag">Agent</span><span class="tag">数据中心</span><a href="https://arxiv.org/abs/2608.02569" target="_blank">arXiv:2608.02569</a></div>
+  </div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02502" target="_blank">CMuon：分块动量正交化加速扩散 Transformer 训练（ECCV 2026）</a></h3>
+    <p>提出 Chunked Momentum Orthogonalization 优化器，在不牺牲稳定性的前提下显著加速扩散 Transformer 训练收敛，被 ECCV 2026 接收，属于训练效率方向的实用型工作。</p>
+    <div class="meta"><span class="tag">训练效率</span><span class="tag">ECCV 2026</span><a href="https://arxiv.org/abs/2608.02502" target="_blank">arXiv:2608.02502</a></div>
+  </div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02295" target="_blank">MechGeo：在 Lean 4 中自动形式化并证明欧氏几何命题</a></h3>
+    <p>43 页长文：提出从自然语言几何命题到 Lean 4 形式化证明的自动流水线，覆盖大量欧氏几何定理，AI 数学形式化在几何领域的一次系统性推进。</p>
+    <div class="meta"><span class="tag">数学推理</span><span class="tag">形式化</span><a href="https://arxiv.org/abs/2608.02295" target="_blank">arXiv:2608.02295</a></div>
+  </div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02442" target="_blank">答案对、方法错：捷径破解正在误导前沿科学基准的评测</a></h3>
+    <p>系统揭示 LLM 在前沿科学基准上通过"捷径破解"（shortcut hacking）拿到正确答案但方法错误的现象，指出此类评测结果会显著高估模型真实推理能力——对 benchmark 可信度的当头一棒。</p>
+    <div class="meta"><span class="tag">评测安全</span><span class="tag">推理</span><a href="https://arxiv.org/abs/2608.02442" target="_blank">arXiv:2608.02442</a></div>
+  </div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02113" target="_blank">MemArbiter：长程 LLM Agent 的决策时记忆仲裁</a></h3>
+    <p>针对长程 Agent 记忆"塞满上下文"问题，提出在每次决策时动态仲裁该读取哪些记忆片段的机制，减少噪声注入、提升长程任务成功率。</p>
+    <div class="meta"><span class="tag">Agent</span><span class="tag">记忆</span><a href="https://arxiv.org/abs/2608.02113" target="_blank">arXiv:2608.02113</a></div>
+  </div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02356" target="_blank">SkillTrace：遍历查询-技能图实现可组合 LLM Agent</a></h3>
+    <p>将技能组织为查询-技能图，Agent 通过在图上遍历实现技能的动态组合与复用，探索"技能即图节点"的 Agent 组织新范式，与当下 Skill 生态热潮直接呼应。</p>
+    <div class="meta"><span class="tag">Agent</span><span class="tag">Skill</span><a href="https://arxiv.org/abs/2608.02356" target="_blank">arXiv:2608.02356</a></div>
+  </div>
+
+  <div class="card b">
+    <h3><a href="https://arxiv.org/abs/2608.02438" target="_blank">xPress：推测解码中扩散草稿的并行精化</a></h3>
+    <p>为扩散式草稿模型设计并行精化方案，提升投机采样（speculative decoding）的接受率与吞吐，属推理加速方向的实用优化。</p>
+    <div class="meta"><span class="tag">推理加速</span><a href="https://arxiv.org/abs/2608.02438" target="_blank">arXiv:2608.02438</a></div>
+  </div>
+
+</section>
+
+<section>
+  <div class="sec-title"><span class="badge b-c">C</span>模型动态 · HuggingFace Trending</div>
+
+  <div class="card c">
+    <h3><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank">DeepSeek-V4-Flash-0731（4 天前更新 · 43.3 万下载）</a></h3>
+    <p>304B 总参数的最新 Flash 迭代，登顶 HF Trending #1；在 ArtificialAnalysis 指数得 50 分（接近 Opus 级智能），输入价约 $0.14/M，成本仅为 Claude Fable5 的 1/100 量级，"race to zero" 话题在社区持续发酵。</p>
+    <div class="meta"><span class="tag">Trending #1</span><span class="tag">开源</span>来源：HuggingFace</div>
+  </div>
+
+  <div class="card c">
+    <h3><a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">Kimi-K3（月之暗面 · 2.8T 参数 · 113 万下载 · 1 万赞）</a></h3>
+    <p>全球首个 3 万亿级别开源模型（总参数 2.8T、激活 104B），MoE 架构 + 100 万 token 上下文 + 原生视觉，被社区称为"开源领域天花板"，其热度直接点燃了月之暗面的新一轮融资潮。</p>
+    <div class="meta"><span class="tag">开源天花板</span><span class="tag">国产</span>来源：HuggingFace</div>
+  </div>
+
+  <div class="card c">
+    <h3><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank">MiniMax-H3（33B 文生视频 · 12 小时内更新）</a></h3>
+    <p>MiniMax 新一代多模态视频生成模型，33B 参数，发布即获得 ComfyUI 等大量 Day-0 集成，生态适配速度极快，视频生成赛道的新爆款候选。</p>
+    <div class="meta"><span class="tag">视频生成</span><span class="tag">新发布</span>来源：HuggingFace</div>
+  </div>
+
+  <div class="card c">
+    <h3><a href="https://huggingface.co/thinkingmachines/Inkling-Small" target="_blank">Inkling-Small（Thinking Machines · 266B 开源）</a></h3>
+    <p>Thinking Machines 推出的 266B 开源权重模型，直接对标前沿闭源模型，"撞上"地缘政治敏感期——华盛顿已有人推动立法禁止外国开源 AI，开源权重与地缘博弈的冲突成为本周最热议题。</p>
+    <div class="meta"><span class="tag">开源权重</span><span class="tag">新发布</span>来源：HuggingFace / NaN Loss</div>
+  </div>
+
+  <div class="card c">
+    <h3><a href="https://huggingface.co/zai-org/GLM-5.2" target="_blank">GLM-5.2（智谱 · 753B · 223 万下载 · 4820 赞）</a></h3>
+    <p>国产基座模型持续在榜：753B 总参数，支持 1M 无损上下文，强化复杂系统工程、深度调试与项目级上下文承载能力，是国内"通用问答→开发者工具"转型的代表作。</p>
+    <div class="meta"><span class="tag">国产</span><span class="tag">长期在榜</span>来源：HuggingFace</div>
+  </div>
+
+  <div class="card c">
+    <h3><a href="https://huggingface.co/baidu/Unlimited-OCR" target="_blank">Unlimited-OCR（百度 · 3B · 270 万下载）</a></h3>
+    <p>百度 3B 参数通用 OCR 模型，270 万下载量位居 Trending 前列，以轻量模型覆盖全场景文字识别，工具型小模型的生态表现亮眼。</p>
+    <div class="meta"><span class="tag">OCR</span><span class="tag">轻量</span>来源：HuggingFace</div>
+  </div>
+
+</section>
+
+<section>
+  <div class="sec-title"><span class="badge b-d">D</span>Agent / MCP / Skill 生态</div>
+
+  <div class="card d">
+    <h3><a href="https://new.qq.com/rain/a/20260802A05SHQ00" target="_blank">MCP 协议第五版发布：发布以来最大更新，协议彻底无状态化</a></h3>
+    <p>7 月 28 日 MCP 第五版规范定稿：移除初始化握手与协议层会话，每个请求自带完整上下文；新增 server/discover 能力发现、MRTR（多轮往返请求）替代服务端反向请求。远程 MCP Server 从此可像普通无状态 HTTP 服务一样部署到 Serverless、边缘节点，轮询负载均衡即可。</p>
+    <div class="meta"><span class="tag">协议更新</span><span class="tag">重磅</span>来源：InfoQ / MCP 官方 changelog</div>
+  </div>
+
+  <div class="card d">
+    <h3><a href="https://www.digitalapplied.com/blog/mcp-2026-07-28-stateless-spec-agent-infrastructure-2026" target="_blank">MCP Apps 与 Tasks 转正：MCP 服务正变成"Agent 里的迷你 SaaS"</a></h3>
+    <p>第五版建立带版本号的扩展框架，MCP Apps（服务端提供交互式 HTML 界面，Host 在沙箱 iframe 渲染）与 Tasks（任务句柄承载长时异步操作）成为首批正式扩展；同时对齐 OAuth 2.0/OIDC、支持 JSON Schema 2020-12，网关可按 Mcp-Method/Mcp-Name 请求头直接路由。</p>
+    <div class="meta"><span class="tag">MCP Apps</span><span class="tag">Tasks</span>来源：Digital Applied / CSDN</div>
+  </div>
+
+  <div class="card d">
+    <h3><a href="https://www.cnblogs.com/shanyou/Undeclared/22144007" target="_blank">OpenClaw.NET 完成 csharp-sdk v2.0 升级，全面适配 MCP 第五版</a></h3>
+    <p>PR #196 全面拥抱 Streamable HTTP、server/discover 协商、MCP Apps 代理端点、Tasks 扩展与 JSON Schema 2020-12——.NET 生态的 Agent 编排层正在跟上协议变革，社区迁移窗口期开始。</p>
+    <div class="meta"><span class="tag">SDK</span><span class="tag">.NET</span>来源：博客园</div>
+  </div>
+
+  <div class="card d">
+    <h3><a href="https://arxiv.org/abs/2608.02276" target="_blank">Harness-R1：从 Agent 失败轨迹学习编辑运行时 Harness</a></h3>
+    <p>上海交大等团队提出 Harness-R1：让 Agent 从自身失败轨迹中学习如何修改可执行的运行时 harness（环境封装），把"Agent 修环境"变成可训练技能——LLM Agent 自治运维的最新研究方向。</p>
+    <div class="meta"><span class="tag">Agent 训练</span><span class="tag">arXiv</span><a href="https://arxiv.org/abs/2608.02276" target="_blank">arXiv:2608.02276</a></div>
+  </div>
+
+  <div class="card d">
+    <h3><a href="https://www.moomoobull.com/hans/news/post/73939393/citic-securities-domestic-ai-models-accelerate-iteration-amid-sustained-compute" target="_blank">微信 AI"小微"扩大灰度：AI 入口从独立 App 走向超级应用生态</a></h3>
+    <p>微信原生 AI 助手"小微"扩大灰度范围，支持文字/语音操作微信原生功能（设置、发消息、点外卖、生图等），并已开放小程序接入能力。AI 正从聊天入口演变为任务执行与交易闭环，模型调用频次与推理 token 消耗有望大幅提升。</p>
+    <div class="meta"><span class="tag">超级应用</span><span class="tag">国内生态</span>来源：中信建投 / IT之家</div>
+  </div>
+
+</section>
+
+<footer>每日AI前沿日报 · 由 蛋牛 🥚 自动出品 · 数据采集于 2026-08-05 09:40 (GMT+8)</footer>
+
+</div>
+</body>
+</html>
