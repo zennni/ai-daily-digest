@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-06</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #f5f7fa; color: #2c3e50; line-height: 1.75;
+  }
+  .container { max-width: 780px; margin: 0 auto; padding: 40px 16px 60px; }
+  header {
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    border-radius: 16px; padding: 40px 32px; color: #fff; margin-bottom: 28px;
+  }
+  header .date { font-size: 14px; opacity: .85; letter-spacing: 1px; }
+  header h1 { font-size: 30px; margin: 6px 0 12px; }
+  header .note { font-size: 15px; opacity: .95; background: rgba(255,255,255,.12); border-radius: 10px; padding: 12px 16px; }
+  .home-link { display:inline-block; margin-bottom: 16px; color:#1a6fc4; text-decoration:none; font-size:14px; }
+  .home-link:hover { text-decoration: underline; }
+  .highlights {
+    background: #fff; border-radius: 14px; padding: 20px 24px; margin-bottom: 28px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06); border-left: 5px solid #e74c3c;
+  }
+  .highlights h2 { font-size: 18px; margin-bottom: 10px; color: #e74c3c; }
+  .highlights li { margin-left: 20px; font-size: 15px; margin-bottom: 6px; }
+  section { margin-bottom: 32px; }
+  section > h2 {
+    font-size: 20px; margin-bottom: 14px; padding-left: 12px;
+    border-left: 5px solid #26d0ce; line-height: 1.3;
+  }
+  section > h2 .count { font-size: 13px; color: #999; font-weight: normal; margin-left: 8px; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin-bottom: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.05); transition: box-shadow .15s ease;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.09); }
+  .card h3 { font-size: 16px; margin-bottom: 6px; }
+  .card h3 .tag {
+    display: inline-block; font-size: 11px; font-weight: normal; padding: 1px 8px;
+    border-radius: 10px; margin-left: 6px; vertical-align: middle; color: #fff;
+  }
+  .tag-hot { background: #e74c3c; }
+  .tag-new { background: #f39c12; }
+  .tag-oss { background: #27ae60; }
+  .tag-fund { background: #8e44ad; }
+  .card p { font-size: 14px; color: #555; }
+  .card .meta { font-size: 12.5px; color: #999; margin-top: 8px; }
+  .card .meta a { color: #1a6fc4; text-decoration: none; }
+  .card .meta a:hover { text-decoration: underline; }
+  .paper-authors { font-size: 12.5px; color: #888; margin-top: 2px; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回日报列表</a>
+
+<header>
+  <div class="date">2026年8月6日 · 星期四</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：变局。Jeff Dean 携三位谷歌元老出走创业震动硅谷；字节 SeedRealtime 把全双工音视频交互带进豆包；Anthropic 下场自研芯片、Meta 用 0.2 美元/M token 打编程智能体价格战——模型竞赛正加速演变为人才、算力与生态的全面战争。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>谷歌地震</strong>：首席科学家 Jeff Dean 结束 27 年生涯，与 Vinyals、Quoc Le、Ghemawat 创办自动化科研公司 Discovery Loop，谷歌股价盘中跌 5%。</li>
+    <li><strong>字节 SeedRealtime</strong>：业界首个规模化落地的原生音视频全双工大模型，豆包 App 全量上线，"边看边听边说"。</li>
+    <li><strong>Anthropic 自研芯片</strong>：首次公开组建内部硅芯片团队为 Claude 设计定制芯片，同时签下 100 亿美元挪威算力长协。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>📰 AI 行业新闻<span class="count">10 条</span></h2>
+
+  <div class="card">
+    <h3>Jeff Dean 携三位谷歌科学家离职创办 Discovery Loop<span class="tag tag-hot">重磅</span></h3>
+    <p>谷歌首席科学家 Jeff Dean 结束 27 年任职，与 Oriol Vinyals、Quoc Le、Sanjay Ghemawat 共同创办专注自动化科研流程的 AI 初创 Discovery Loop。Demis Hassabis 转任 Alphabet 首席科学家，Koray Kavukcuoglu 接棒 Gemini 4 研发。消息致谷歌股价盘中跌 5%，凸显硅谷顶尖 AI 人才争夺战白热化。</p>
+    <div class="meta">8月6日 · <a href="https://view.inews.qq.com/a/20260806A01PIO00" target="_blank">华尔街见闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>字节跳动发布 SeedRealtime：原生音视频全双工大模型上线豆包<span class="tag tag-new">新产品</span></h3>
+    <p>SeedRealtime 用统一端到端架构原生融合音频、视频与文本，可在连续多模态信息流上实时交互，对话节奏问题较级联系统减少约一半，已在豆包 App 全量上线——业界首个规模化落地的全双工音视频模型案例。</p>
+    <div class="meta">8月5日 · <a href="https://view.inews.qq.com/a/20260805A0DOAP00" target="_blank">全天候科技</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 首次确认组建内部芯片团队，为 Claude 设计定制芯片</h3>
+    <p>Anthropic 公开确认组建内部硅芯片团队，采取"多芯片"策略并继续与 AWS、英伟达合作；芯片工程师年薪 32 万–48.5 万美元。同期 Anthropic 与云基建初创 Volta Infra 签署六年 100 亿美元算力协议，在挪威部署 133 兆瓦数据中心承载 Claude 训练推理。</p>
+    <div class="meta">8月5日 · <a href="https://view.inews.qq.com/a/20260805A0EXT000" target="_blank">观点新媒体</a> · <a href="https://new.qq.com/rain/a/20260806A0228H00" target="_blank">腾讯新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Meta 推出首款 AI 编程智能体 Muse Code，定价大幅低于竞品<span class="tag tag-new">新产品</span></h3>
+    <p>Muse Code 基于 Muse Spark 1.2，可承担软件工程完整任务；贡献者档每百万输出 token 仅 0.20 美元，并承诺零数据留存，以低价策略切入编程智能体市场。</p>
+    <div class="meta">8月5日 · <a href="http://view.inews.qq.com/a/20260806A01WU600" target="_blank">华尔街见闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>微软披露 AI 营收约七成来自 OpenAI</h3>
+    <p>监管文件显示，截至 2026 年 6 月财年微软从 OpenAI 获得营收 241 亿美元，约占其 AI 业务总营收的 70%。披露时机或与 OpenAI 筹备 IPO 相关，引发对其 AI 收入单一来源依赖的关注。</p>
+    <div class="meta">8月6日 · <a href="http://view.inews.qq.com/a/20260806A01WYR00" target="_blank">全天候科技</a></div>
+  </div>
+
+  <div class="card">
+    <h3>国产大模型融资与技术双爆发：DeepSeek 拟募 500 亿、Kimi 估值 500 亿美元<span class="tag tag-fund">融资</span></h3>
+    <p>DeepSeek 重启二轮融资，拟募 500 亿元、投前估值约 5000 亿元；月之暗面 Kimi 启动 G 轮 Pre-IPO，估值 500 亿美元。一个月内 Kimi K3、MiniMax H3、Seedance 2.5、DeepSeek-V4-Flash、阿里 Qwen3.8 密集落地，国产模型成本较 Claude 便宜超 100 倍。</p>
+    <div class="meta">8月5日 · <a href="https://view.inews.qq.com/a/20260805A0CTVB00" target="_blank">南方都市报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>京东开源实时流式视频编辑模型 JoyAI-Video-Edit<span class="tag tag-oss">开源</span></h3>
+    <p>用户可一边观看视频一边修改人物与场景，视频创作从"先有素材再修改"变为实时互动编辑。该模型还可将人手操作视频转化为机械臂训练素材，是京东"物理世界模型矩阵"的又一拼图。</p>
+    <div class="meta">8月5日 · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_5326a73c21757752" target="_blank">每日经济新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>上海 DoGNAVY 智能体登伯克利 CyberGym 安全榜全球第三、开源第一</h3>
+    <p>加州大学伯克利分校 CyberGym 榜单显示，上海团队 DoGNAVY 智能体以 90.8% 通过率排名全球第三、开源第一，仅次于微软与谷歌，领先 OpenAI、Anthropic。</p>
+    <div class="meta">8月5日 · <a href="http://view.inews.qq.com/a/20260806A01UZD00" target="_blank">上观新闻</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 平台活跃用户达 10 亿，ARR 约 426 亿美元</h3>
+    <p>OpenAI 平台活跃用户达到 10 亿、服务超 200 万家企业；据 TickerTrends 测算，截至 7 月 29 日其 ARR 约 426 亿美元，7 月单月 ARR 超过整个第二季度，企业级 Agent 竞争转向入口与规模之争。</p>
+    <div class="meta">本周 · <a href="https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/industry/rptid/838994915131/index.phtml" target="_blank">计算机行业周报（新浪财经）</a></div>
+  </div>
+
+  <div class="card">
+    <h3>美高官警告防范 AI 驱动网络攻击；宇树科技 8 月 7 日启动 IPO 路演</h3>
+    <p>美国政府最高级别信息安全官员警告各地需加强防御以应对 AI 驱动型网络攻击，特朗普政府已完成前沿模型自愿安全测试框架。国内方面，浙江印发《人工智能赋能制造业数字化转型实施方案（2026-2030 年）》；宇树科技 8 月 7 日启动 IPO 路演。</p>
+    <div class="meta">8月6日 · <a href="https://new.qq.com/rain/a/20260806A02B6600" target="_blank">腾讯科技 AI 洞察</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>📄 前沿论文<span class="count">7 篇 · 来自 arXiv cs.CL 最新列表</span></h2>
+
+  <div class="card">
+    <h3>TurnSight：面向工具集成推理的轮次级事后自蒸馏</h3>
+    <p class="paper-authors">Changle Qu, Sunhao Dai, Hengyi Cai 等</p>
+    <p>在 Agent 的每一轮工具调用后引入事后（hindsight）信号进行自我蒸馏，让模型从自己的推理轨迹中持续学习，切中工具集成推理（TIR）训练的核心痛点。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.04007" target="_blank">arXiv:2608.04007</a></div>
+  </div>
+
+  <div class="card">
+    <h3>PAST-Bench：个人智能体递归自我改进能力基准</h3>
+    <p class="paper-authors">Shuhan Xue, Zixin Ding, Yichen Shen 等</p>
+    <p>首个聚焦"递归自我改进"的个人 Agent 基准，衡量智能体能否在与用户的长期交互中不断优化自身策略，代码已开源。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.04003" target="_blank">arXiv:2608.04003</a> · GitHub: Gen-Verse/PAST-Bench</div>
+  </div>
+
+  <div class="card">
+    <h3>WorldCup Arena：在真实进行中的赛事上对前沿 LLM 做无泄漏评测</h3>
+    <p class="paper-authors">Zhenran Wang, Zhonghan Bian 等</p>
+    <p>针对基准污染问题，利用正在进行的大型赛事构建前瞻性、零数据泄漏的动态评测，为"静态基准刷分"时代提供新解法。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.04008" target="_blank">arXiv:2608.04008</a></div>
+  </div>
+
+  <div class="card">
+    <h3>SFT Conflicts, RL Coexists：LLM 多任务学习的理论与实证分析</h3>
+    <p class="paper-authors">Kejian Zhu, Zhuoran Jin, Shangqing Tu 等（清华等）</p>
+    <p>从理论和实验两端证明：多任务场景下 SFT 存在梯度冲突而 RL 可以共存，为后训练阶段的任务混合策略提供直接指导，代码已开源。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.03573" target="_blank">arXiv:2608.03573</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Hi-TTRL：用提示调控共识的测试时强化学习</h3>
+    <p class="paper-authors">Kunbin Xu, Xingzuo Li, Xuefeng Bai 等</p>
+    <p>在测试时 RL（Test-Time RL）框架中引入"提示调控共识"机制，缓解多采样投票中的错误放大，属于推理时扩展（inference-time scaling）的最新进展。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.03545" target="_blank">arXiv:2608.03545</a></div>
+  </div>
+
+  <div class="card">
+    <h3>测试时对齐大型视觉-语言模型：轨迹引导结构化采样</h3>
+    <p class="paper-authors">Tianbao Jiang, Weicong Ni, Gerard de Melo 等</p>
+    <p>无需重新训练，在推理阶段通过轨迹引导的结构化采样对齐 VLM 输出与人类偏好，为多模态模型的低成本对齐提供新路径。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.03204" target="_blank">arXiv:2608.03204</a></div>
+  </div>
+
+  <div class="card">
+    <h3>关系先验作为 LLM 多智能体系统的收敛压力</h3>
+    <p class="paper-authors">Ming Shen, Chao Shang, Sadat Shahriar 等</p>
+    <p>从理论上刻画多 Agent 系统中智能体间关系先验如何影响共识收敛速度，为多智能体辩论/协作机制设计提供理论基础。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.03239" target="_blank">arXiv:2608.03239</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>🤖 模型动态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>MiniMax-H3 开放权重上线，登顶 HuggingFace Trending<span class="tag tag-oss">开源</span></h3>
+    <p>MiniMax 全模态生成模型 H3（33B）开放权重，可统一理解并生成文本、图像、视频和声音；上线 9 小时即登 HuggingFace 趋势榜第一，ComfyUI 官方同步放出适配仓库。</p>
+    <div class="meta"><a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank">huggingface.co/MiniMaxAI/MiniMax-H3</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek-V4-Flash 正式版权重静默更新：Terminal-Bench 暴涨 25.8 分</h3>
+    <p>DeepSeek 在不改模型 ID 的情况下更新了 V4-Flash 权重（0731 版），Terminal-Bench 达 82.7、Cybergym 76.7。已有调用方零成本自动受益，unsloth 已发布 GGUF 量化版（43.3 万下载）。</p>
+    <div class="meta"><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank">huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Kimi K3：2.8T 稀疏 MoE 开放权重，累计下载破 113 万</h3>
+    <p>月之暗面 K3 为 2.8 万亿参数稀疏 MoE（2% 激活率）、1M 上下文、MXFP4 量化，居 Artificial Analysis 智能指数第 3；上线 9 天下载量 113 万、点赞 1.01 万，稳居趋势榜前列。</p>
+    <div class="meta"><a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">huggingface.co/moonshotai/Kimi-K3</a></div>
+  </div>
+
+  <div class="card">
+    <h3>阿里 Qwen3.8-Max 接入 Vercel AI Gateway</h3>
+    <p>2.4T 参数多模态模型、1M 上下文，现可通过 Vercel AI Gateway 一行 model ID 切换调用（'alibaba/qwen3.8-max'），视觉+文本单次调用简化 Agent 架构，网关按成本价透传无平台加价。</p>
+    <div class="meta"><a href="https://dev.to/devsignal/open-models-surge-qwen-deepseek-moonshot-updates-792" target="_blank">dev.to 开发者周报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Mistral 发布 Shieldstral：3B 开放权重内容审查模型<span class="tag tag-oss">开源</span></h3>
+    <p>将内容审核从"违规词库匹配"变为"策略自适应问答"——开发者在推理时直接输入自然语言规则，模型据此对文本/图像实时判定评分。3B 规模在多模态安全评估上超过 7 倍体积的对手。</p>
+    <div class="meta"><a href="https://huggingface.co/mistralai/Shieldstral-1.0-3B" target="_blank">huggingface.co/mistralai/Shieldstral-1.0-3B</a></div>
+  </div>
+
+  <div class="card">
+    <h3>趋势榜其他值得注意：百度 Unlimited-OCR、LiquidAI LFM2.5、蚂蚁 Ling-3.0-flash</h3>
+    <p>百度 3B 的 Unlimited-OCR 下载量已达 270 万；LiquidAI 发布边缘端 LFM2.5-2.6B；蚂蚁 inclusionAI 上线 127B 的 Ling-3.0-flash；微软 5B 多模态 Mage-VL 亦在榜。</p>
+    <div class="meta"><a href="https://huggingface.co/models?sort=trending" target="_blank">HuggingFace Trending</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>🧩 Agent / MCP / 工具生态<span class="count">5 条</span></h2>
+
+  <div class="card">
+    <h3>MCP 2026-07-28 规范持续发酵：无状态核心成企业级部署分水岭<span class="tag tag-hot">必读</span></h3>
+    <p>新规范废除协议层握手与会话 ID，每个请求自描述、可落在负载均衡后的任意实例；MRTR 取代 elicitation/sampling，list 响应支持 TTL 缓存，并写入 12 个月弃用政策。TS/Python/Go/C# SDK 已同日支持，MCP SDK 月下载量近 5 亿次。</p>
+    <div class="meta">本周 · <a href="https://blog.yeyupiaoling.cn/article/1785513906544?lang=zh-tw" target="_blank">MCP 规范解读</a></div>
+  </div>
+
+  <div class="card">
+    <h3>微软 MCP C# SDK v2.0 发布，Agent Framework 支持运行时技能发现</h3>
+    <p>C# SDK v2.0 对齐 2026-07-28 规范（无状态 HTTP + MRTR）；Agent Framework 新增 Microsoft.Agents.AI.Mcp 包与 UseMcpSkills API，Agent 可按需从 MCP 服务器发现并加载 Skill，无需预先打包全部工具定义。</p>
+    <div class="meta">8月3日 · <a href="https://tech.hub.ms/dotnet/roundups/weekly-dotnet-roundup-2026-08-03" target="_blank">.NET Weekly Roundup</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Y Combinator 开源内部多智能体 Harness「QM」<span class="tag tag-oss">开源</span></h3>
+    <p>YC 把自家运营公司（财务、法务、活动、工程）的多 Agent 系统 QM 以 MIT 协议开源：Slack 原生、云端优先，支持 cron/webhook 触发、共享记忆与多人协作项目，定位"公司操作系统"而非编程工具。</p>
+    <div class="meta">7月31日 · <a href="https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-july-25-july-31-2026" target="_blank">everydev.ai</a> · GitHub: yc-software/qm</div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 推出 MCP tunnels（研究预览）：内网 MCP 服务器免公网接入 Claude</h3>
+    <p>无需公网端点、无需入站防火墙规则，即可让 Claude 连接私有网络内的 MCP 服务器；Claude 连接器目录已收录超 950 个 MCP Server。</p>
+    <div class="meta">本周 · <a href="https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-july-25-july-31-2026" target="_blank">everydev.ai 周报</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Cloudflare / FastMCP 同日跟进无状态规范；编码 Agent 成本差达 3.7 倍</h3>
+    <p>Cloudflare Agents SDK v0.20 在规范发布前一天即支持无状态 MCP；FastMCP 4 基于 Python SDK v2 重构，多数 FastMCP 3 服务可无损升级。另据 Composio 测算，同一模型套不同 Agent 框架的编码任务成本差距高达 3.7 倍——Harness 选型开始成为真金白银的问题。</p>
+    <div class="meta">本周 · <a href="https://www.everydev.ai/p/news-weekly-ai-dev-news-digest-july-25-july-31-2026" target="_blank">everydev.ai 周报</a></div>
+  </div>
+</section>
+
+<footer>每日AI前沿日报 · 由 蛋牛 🥚 自动出品 · 数据来源：公开新闻 / arXiv / HuggingFace，已人工筛选去重</footer>
+
+</div>
+</body>
+</html>
