@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-11</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #f5f7fa; color: #2c3e50; line-height: 1.75;
+  }
+  .container { max-width: 780px; margin: 0 auto; padding: 40px 16px 60px; }
+  header {
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    border-radius: 16px; padding: 40px 32px; color: #fff; margin-bottom: 28px;
+  }
+  header .date { font-size: 14px; opacity: .85; letter-spacing: 1px; }
+  header h1 { font-size: 30px; margin: 6px 0 12px; }
+  header .note { font-size: 15px; opacity: .95; background: rgba(255,255,255,.12); border-radius: 10px; padding: 12px 16px; }
+  .home-link { display:inline-block; margin-bottom: 16px; color:#1a6fc4; text-decoration:none; font-size:14px; }
+  .home-link:hover { text-decoration: underline; }
+  .highlights {
+    background: #fff; border-radius: 14px; padding: 20px 24px; margin-bottom: 28px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06); border-left: 5px solid #e74c3c;
+  }
+  .highlights h2 { font-size: 18px; margin-bottom: 10px; color: #e74c3c; }
+  .highlights li { margin-left: 20px; font-size: 15px; margin-bottom: 6px; }
+  section { margin-bottom: 32px; }
+  section > h2 {
+    font-size: 20px; margin-bottom: 14px; padding-left: 12px;
+    border-left: 5px solid #26d0ce; line-height: 1.3;
+  }
+  section > h2 .count { font-size: 13px; color: #999; font-weight: normal; margin-left: 8px; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin-bottom: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.05); transition: box-shadow .15s ease;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.09); }
+  .card h3 { font-size: 16px; margin-bottom: 6px; }
+  .card h3 .tag {
+    display: inline-block; font-size: 11px; font-weight: normal; padding: 1px 8px;
+    border-radius: 10px; margin-left: 6px; vertical-align: middle; color: #fff;
+  }
+  .tag-hot { background: #e74c3c; }
+  .tag-new { background: #f39c12; }
+  .tag-oss { background: #27ae60; }
+  .tag-fund { background: #8e44ad; }
+  .card p { font-size: 14px; color: #555; }
+  .card .meta { font-size: 12.5px; color: #999; margin-top: 8px; }
+  .card .meta a { color: #1a6fc4; text-decoration: none; }
+  .card .meta a:hover { text-decoration: underline; }
+  .paper-authors { font-size: 12.5px; color: #888; margin-top: 2px; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回日报列表</a>
+
+<header>
+  <div class="date">2026年8月11日 · 星期二</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：智能走向桌面。Meta 开源 30B 智能体模型 Muse Glimmer，单张消费级 GPU 即可运行，Agent 首次从云端"下放"到个人硬件；与此同时 FLI 安全指数发布——9 家前沿实验室无一超过 C+，行业安全治理集体亮红灯；MCP 无状态协议以每周 5200 万下载量坐实"AI 基础设施"地位。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>Meta 开源 Muse Glimmer（30B，Apache 2.0）：</strong>专为本地 Agent 任务设计，4-bit 量化后仅需 18~20GB 显存，单张 RTX 级消费卡或 Apple Silicon 即可运行，附带 DFlash 投机解码提速 3.1 倍——Agent 工作负载正式进入"本地优先"时代。</li>
+    <li><strong>FLI AI 安全指数首发：9 家实验室无一及格：</strong>Anthropic C+（2.66）居首，OpenAI C、Google DeepMind C、Meta D+，xAI/DeepSeek/Mistral 仅 F；四大头部实验室被指削弱或放弃此前的"暂停开发"承诺。</li>
+    <li><strong>MCP 成为 AI 基建事实标准：</strong>npm SDK 周下载 5200 万次，超过 OpenAI 与 Anthropic SDK 之和；无状态化规范 + HashiCorp CVSS 10.0 漏洞补丁落地，serverless 大规模部署的最后障碍被移除。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+
+  <div class="card">
+    <h3>谷歌 DeepMind 领导层大重组：Hassabis 转任董事长，Jeff Dean 告别 27 年谷歌生涯<span class="tag tag-hot">8月10日</span></h3>
+    <p>谷歌宣布 DeepMind 管理层重大调整：原 CEO Demis Hassabis 出任 DeepMind 董事长兼 Alphabet 首席科学家，专注 AGI 战略与 Isomorphic Labs；CTO Koray Kavukcuoglu 升任 SVP 主管日常运营与模型开发；效力 27 年的工程元老 Jeff Dean 正式离开谷歌。重组之际，Gemini 应用月活已突破 9.5 亿，开源 Gemma 系列下载量超 9 亿。另有爆料称 Hassabis 曾一度计划与 Dean 一同离开，谷歌高层极力挽留，布林已亲自接管 Gemini 一线。</p>
+    <div class="meta">来源：AI Breaking Wire / AGI HUNT · <a href="https://aibreakingwire.com/news/google-restructures-deepmind-as-hassabis-becomes-chair" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>FLI 安全指数首发：9 家前沿实验室无一超过 C+，头部实验室被指背弃暂停承诺<span class="tag tag-hot">8月10日</span></h3>
+    <p>生命未来研究所（FLI）发布首个 AI 安全指数：7 位独立专家对 9 家实验室 37 项指标、6 大领域打分，最高仅为 Anthropic C+（2.66），OpenAI C（2.28）、Google DeepMind C（2.01）、Meta D+，xAI、DeepSeek、Mistral 均为 F。最受关注的发现是：Anthropic、OpenAI、Google DeepMind 与 Meta 均被指削弱或废止了此前"接近安全阈值即暂停开发"的承诺——恰在 OpenAI 因触发 Preparedness 框架"关键阈值"暂停 Astra 一周之后发布。</p>
+    <div class="meta">来源：FLI / AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-10-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Sequoia 泼冷水：1.5 万亿美元 AI 基建投入需要 3 万亿美元收入才能回本<span class="tag tag-new">分析</span></h3>
+    <p>红杉 David Cahn 提出"3 万亿美元缺口"分析：2026 年约 1.5 万亿美元 AI 基础设施投入，按数据中心全成本与 50% 毛利率折算，需约 3 万亿美元年收入才能支撑；而 Anthropic 与 OpenAI 合计 ARR 仅约 800 亿美元，缺口约 2.9 万亿。看多逻辑是企业采用加速（Palantir Q2 同比 +93%）；看空逻辑是 54% 的 token 效率提升使降价速度快于采用增长。Apollo 亦警告，若四大超大规模厂商 2028 年现金流不及预期，标普 500 集中度将成为宏观问题。</p>
+    <div class="meta">来源：TechCrunch / AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-10-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 收购演示文稿初创 NextSlide，团队并入 ChatGPT<span class="tag tag-new">8月10日</span></h3>
+    <p>OpenAI 宣布收购演示文稿初创公司 NextSlide，其团队成员已加入 ChatGPT 部门。收购延续 OpenAI 通过人才与技术并购扩展产品矩阵的路线——此前已收购 AI 编程工具 Windsurf 等。另据多方爆料，OpenAI 下一代模型代号定为 "Doug"，据称是迄今规模最大的预训练模型，Astra 据传已完成训练。</p>
+    <div class="meta">来源：AI Start / AGI HUNT · <a href="https://aistart.ai/news" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>37 位研究者联名主张：科学论文应改为 AI Agent 可读格式<span class="tag tag-new">讨论</span></h3>
+    <p>来自多所顶尖高校与科技公司的 37 位研究者发表论文，主张科学家应停止以人类读者为唯一对象撰写论文，转而采用针对 AI Agent 优化、可机器读取与执行的格式。该提议引发学界激烈辩论：支持者认为 Agent 正成为研究主力消费者，结构化文献将提升研究效率；反对者担忧科研交流将失去人类可读性，并质疑可访问性是否会被牺牲。</p>
+    <div class="meta">来源：AI Start · <a href="https://aistart.ai/news" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Oxide Computer 完成 4.45 亿美元私募轮，边缘 AI 服务器受追捧<span class="tag tag-fund">融资</span></h3>
+    <p>服务器系统厂商 Oxide Computer 完成 4.4499 亿美元私募融资，获 15 家投资者参与。该公司主打"重新思考的数据中心服务器"，随 AI 推理下沉与边缘计算需求增长，自研硬件路线在 AI 基建投资热潮中获得资本加码。</p>
+    <div class="meta">来源：AI Breaking Wire · <a href="https://aibreakingwire.com/news/ai-brief-2026-08-10" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek 拟再融资 500 亿元、投前估值 5000 亿元，并预告 API 大幅涨价<span class="tag tag-hot">8月10日</span></h3>
+    <p>《财经》独家：DeepSeek 已重启第二轮融资，计划募资 500 亿元、投前估值约 5000 亿元，8 月下旬签约；若落地，累计融资将突破 1000 亿元，刷新国内大模型行业纪录。同日多家媒体报道其 8 月 6 日官宣计划"整体上调 API 定价、涨幅较大"——这是 2026 年以来第四次调价，此前已数次降价。"价格屠夫"转向商业化，被市场解读为大模型行业告别低价内卷的信号。其调用量仍稳居全球第一，8 月 1 日单日处理 token 达 8 万亿。</p>
+    <div class="meta">来源：长江商报 / 财通社 · <a href="https://www.163.com/dy/article/L3VDSRAN0530KCTU.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>诺因智能完成 5 亿元天使++轮，经纬领投具身智能大模型<span class="tag tag-fund">融资</span></h3>
+    <p>消费级具身智能大模型公司诺因智能宣布完成 5 亿元天使++轮融资，经纬创投领投，红点创投、商汤国香资本、华登科技等跟投。成立不到一年即连续完成多轮融资。公司自研 GLOW 生成式具身大模型架构，以第一人称具身数据生成（KnowinDream）与物理世界理解（KnowinWorld）双引擎，目标是让机器人跨越环境、物品与任务的持续泛化，家庭场景为主要验证场。</p>
+    <div class="meta">来源：猎云网 · <a href="https://www.163.com/dy/article/L3VGAS1C05118HJE.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>工业 AI 融资升温：硕橙科技获超亿元 D+ 轮，国家级产业基金出手<span class="tag tag-fund">融资</span></h3>
+    <p>厦门工业 AI 企业硕橙科技完成超亿元 D+ 轮融资，由工信部统筹设立、总规模 150 亿元的工业母机产业投资基金独家投资。公司聚焦工业母机等高端装备的国产"数字大脑"，打造国内首个端到端九畴工业大模型，方案已落地钢铁、石化、电力、汽车、食品等工业领域。此轮投资被解读为国家级产业资本对工业 AI 赋能高端制造赛道的战略布局。</p>
+    <div class="meta">来源：海西晨报 · <a href="https://dzb.sunnews.cn/html/2026-08/11/content_841065.htm" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>BBC 调查：科技领袖鼓吹四天工作制，AI 从业者却每周工作 70~90 小时<span class="tag tag-new">8月10日</span></h3>
+    <p>BBC 报道：谷歌、OpenAI、Anthropic、Meta 高管多年来描绘"AI 缩短工时"蓝图，OpenAI 甚至公开呼吁企业试行不降薪四天工作制；但一名离职前员工称 OpenAI 内部从未实践过——员工经常面临"危机会议"、周末加班与残酷绩效。Meta 今年裁员约 10%，Anthropic CEO 亦警告 AI 生产力越高、被淘汰岗位越多。报道反讽：AI 浪潮中心的从业者每周工作时长普遍超过 70 小时。</p>
+    <div class="meta">来源：IT之家 / BBC · <a href="https://www.163.com/dy/article/L3VV2QA30511B8LM.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span><span class="count">（arXiv cs.AI · 8月10日）</span></h2>
+
+  <div class="card">
+    <h3>Fisher-R1：训练 LLM 智能体进行可靠假设检验</h3>
+    <p>斯坦福 James Zou 团队提出结合 R1 推理范式的智能体训练方法，提升 LLM 在科学假设检验任务中的可靠性——将统计严谨性引入 Agent 推理流程。</p>
+    <div class="paper-authors">Jiacheng Miao, Jin Mu, Guanhua Chen, James Zou</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07437" target="_blank">arXiv:2608.07437 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>一幅图抵千个 Token：视觉语言模型如何降低 AI 能耗并提升准确率</h3>
+    <p>VLM 与 AI 能效交叉研究：以图像输入替代长文本 token 可显著降低推理能耗、同时提升任务准确率，已获 ECRES 2026 录用，兼具学术与应用价值。</p>
+    <div class="paper-authors">Bhavika Jalli, Nikhil Korati Prasanna, Jayanta Choudhury</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07427" target="_blank">arXiv:2608.07427 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>SkillProx：基于近端文本梯度下降的自进化 Agent 技能</h3>
+    <p>提出 Agent 技能自进化新方法，通过近端文本梯度下降让技能库随任务经验持续更新，无需重新训练即可积累新能力——Agent 自主进化的前沿探索。</p>
+    <div class="paper-authors">Mingxuan Zheng, Yujin Zhou, Chuxue Cao 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07449" target="_blank">arXiv:2608.07449 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>PsychoAgent：面向冲突感知记忆的情感敏感认知架构</h3>
+    <p>将情感敏感认知架构引入 LLM Agent 记忆管理，结合心理学与认知科学应对长程任务中的记忆冲突，是 Agent 记忆机制的前沿方向。</p>
+    <div class="paper-authors">Mohammad Amanlou, Parham Abed Azad, Farbod Davoodi 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07438" target="_blank">arXiv:2608.07438 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>TEPA：撤销过时记忆，构建冲突鲁棒的语言智能体</h3>
+    <p>针对长期运行语言 Agent 的记忆冲突问题，提出过时记忆主动撤销机制，解决 Agent 在持续交互中知识过期与环境变化带来的决策漂移。</p>
+    <div class="paper-authors">Yan Zhou, Yue Ouyang, Kaiyang Zheng, Suncheng Xiang</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07429" target="_blank">arXiv:2608.07429 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>CoBa：基于计算均衡路由的廉价测试时扩展</h3>
+    <p>测试时计算扩展（Test-Time Scaling）方向的新方法：通过计算均衡路由按任务难度分配推理资源，在保持质量的同时显著降低推理成本。</p>
+    <div class="paper-authors">Yan Zhou, Yue Ouyang, Kaiyang Zheng, Suncheng Xiang</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07424" target="_blank">arXiv:2608.07424 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Transformer 无法真正运用涌现世界模型：重访汉诺塔与"思考的幻觉"</h3>
+    <p>以汉诺塔任务为切入点重新审视 LLM 的涌现世界模型与推理能力，挑战"显式思考"的幻觉——对理解大模型推理极限具有重要启发性。</p>
+    <div class="paper-authors">Devin Pereira, Willem Zuidema</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.07077" target="_blank">arXiv:2608.07077 ↗</a></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>Meta 开源 Muse Glimmer：30B 本地 Agent 模型，单张消费级 GPU 可跑<span class="tag tag-oss">8月10日开源</span></h3>
+    <p>Meta Superintelligence Labs（Alexandr Wang 主导）发布 Muse Glimmer——30B 参数的 Agent 专用模型，Apache 2.0 许可。经 4-bit 量化后内存占用从 55GB 降至 18~20GB，单张 24/32GB 显存消费卡（RTX 级）或 M5/M4 Max 即可运行；支持 131K 上下文、100+ 语言、多模态输入，专攻编码、工具调用与长程 Agent 任务，具备工具调用失败自动重试能力。配套 DFlash 投机解码：RTX 5090 提速 3.1 倍、M5 Max 1.8 倍。Agentic 基准上超越 Gemma4-31B 与 Qwen3.6-27B（MCP-Atlas 75.5 vs 54.2/62.5），已兼容 Ollama、LM Studio、vLLM、SGLang 等。</p>
+    <div class="meta">来源：Meta / Hugging Face · <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B" target="_blank">模型页 ↗</a> · <a href="https://insideai.news/news/generative-ai/meta-launches-muse-glimmer-open-weight-slm-for-local-ai-agents/7415" target="_blank">解读 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>MiniMax-H3 继续霸榜 Hugging Face 趋势榜<span class="tag tag-hot">HF Trending #1</span></h3>
+    <p>MiniMax-H3（33B 文生视频模型）仍居 HF Trending 榜首，47.5k 下载 / 3.44k 赞；ComfyUI 生态版（Comfy-Org）累计下载已达 601 万。社区围绕复杂运镜、角色一致性、长镜头物理效果展开密集实测，并与 Seedance 2.5 做 30 秒长视频正面对比，"疯狂"成为高频评价词。</p>
+    <div class="meta">来源：Hugging Face · <a href="https://huggingface.co/MiniMaxAI/MiniMax-H3" target="_blank">模型页 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek-V4-Flash-0731：954k 下载，调用量全球第一<span class="tag tag-new">持续更新</span></h3>
+    <p>DeepSeek V4-Flash（304B MoE）最新版累计下载 954k、3.06k 赞，unsloth GGUF 版再添 199k 下载。平台单日处理 token 达 8 万亿，稳居全球调用量榜首；官方已预告整体 API 涨价，商业化进入新阶段。</p>
+    <div class="meta">来源：Hugging Face · <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank">模型页 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Kimi K3：2.8T 参数，HF 下载破 150 万<span class="tag tag-new">持续霸榜</span></h3>
+    <p>月之暗面 Kimi K3（2.8T MoE）HF 累计下载 151 万、10.5k 赞，仍是开源侧下载量最大的前沿模型之一，被多家媒体视为"逼近闭源前沿性能"的中国开源代表。</p>
+    <div class="meta">来源：Hugging Face · <a href="https://huggingface.co/moonshotai/Kimi-K3" target="_blank">模型页 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Liquid AI 发布 LFM2.5-2.6B：89.7k 下载的小参数新秀<span class="tag tag-oss">4天前发布</span></h3>
+    <p>Liquid AI 推出 LFM2.5-2.6B（文本生成，3B 级），发布 4 天即获 89.7k 下载，GGUF 版 89.6k。Liquid 延续液态神经网络（LFM）架构路线，以极小参数规模挑战高效率推理，面向边缘与端侧部署场景。</p>
+    <div class="meta">来源：Hugging Face · <a href="https://huggingface.co/LiquidAI/LFM2.5-2.6B" target="_blank">模型页 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>京东开源 JoyAI-Video-Edit：720P/30fps 实时视频编辑<span class="tag tag-oss">8月5日开源</span></h3>
+    <p>京东开源首个在流式架构、实时速度与可用质量三个维度同时达到实用水平的视频编辑模型：支持 720P 下每秒 30 帧推理、端到端 24FPS 稳定输出、无上限时长流式编辑——实时视频编辑从实验室走向可用。</p>
+    <div class="meta">来源：华鑫证券周报 · <a href="https://t.10jqka.com.cn/pid_673799052.shtml" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>D · Agent / MCP / Skill 生态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>MCP SDK 周下载 5200 万次：超过 OpenAI 与 Anthropic SDK 之和<span class="tag tag-hot">生态里程碑</span></h3>
+    <p>MCP 官方 SDK npm 包周下载量达 5210 万，超过 OpenAI SDK（3210 万）与 Anthropic SDK（2980 万）总和，坐实"AI 基础设施"地位。本周无状态化规范（2026-07-28）持续发酵：移除 initialize 握手与会话 ID、请求自带 _meta 上下文、新增 Mcp-Method/Mcp-Name 路由头，serverless 与边缘部署的最后障碍被移除。同期 HashiCorp 发布 3 个 Terraform MCP 补丁，其中 1 个为 CVSS 10.0 级（会话缓存凭据复用漏洞），新规范按请求身份隔离彻底堵死该路径。</p>
+    <div class="meta">来源：OpenClaw Weekly / BigHat Group · <a href="https://www.bighatgroup.com/blog/openclaw-weekly-2026-08-10" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Cloudflare 发布 Kitesurf：为 AI Agent 设计的云托管浏览器<span class="tag tag-new">8月10日</span></h3>
+    <p>Cloudflare 推出 Kitesurf——面向 AI Agent 而非人类的云托管浏览器，相比 Chromium 处理常见自动化任务时占用更少算力，帮助开发者更高效地构建网页交互型 Agent，被视为 Agent 浏览基础设施的重要一步。</p>
+    <div class="meta">来源：AI Start / OpenClaw Weekly · <a href="https://aistart.ai/news" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Nutanix 发布 NCP 平台 MCP 服务器：AI 安全运维混合云<span class="tag tag-new">8月10日</span></h3>
+    <p>Nutanix 推出 Model Context Protocol 服务器，基于 Prism v4 API 为 AI Agent 提供安全的混合云自动化能力：细粒度 RBAC 限制 Agent 只能调用获授权 API、内置限流防 Agent 群攻击、全量审计日志、异步任务管理。已兼容 GitHub Copilot、Claude Code、Cursor——企业 Agent 运维从"能连"走向"受控"。</p>
+    <div class="meta">来源：Nutanix · <a href="https://ir.nutanix.com/news-releases/news-release-details/nutanix-puts-agentic-ai-action-enterprises" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Octopus Deploy 扩展 MCP 服务器：Agent 全流程编排 Kubernetes 部署<span class="tag tag-new">8月10日</span></h3>
+    <p>Octopus Deploy 将其 MCP 服务器从只读查询扩展为支持端到端 Kubernetes 部署创建——AI Agent 可在平台内直接编排完整部署生命周期，向"Agentic 持续交付"迈进。该能力直接回应 45.1% 企业要求 AI Agent 行为审计日志、58.6% 强制 AI 生成代码测试门槛的治理需求。</p>
+    <div class="meta">来源：Futurum Group · <a href="https://futurumgroup.com/insights/can-octopus-deploys-mcp-server-revolutionize-kubernetes-onboarding" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Digital Science 上线 Dimensions MCP 服务器：Agent 直连 4.3 亿条科研记录<span class="tag tag-new">8月10日</span></h3>
+    <p>Digital Science 发布两个 Dimensions MCP 服务器：语义搜索版（40+ 生命科学领域概念感知检索）与分析版（覆盖 4.3 亿+ 相互关联的论文、基金、专利、临床试验、数据集与政策文档）。科研情报 Agent 得以基于可验证的同行评审数据做分析，缓解幻觉问题，现有 API 客户免额外授权即可接入。</p>
+    <div class="meta">来源：Digital Science · <a href="https://www.wallstreet-online.de/nachricht/21223080-digital-science-connects-ai-agents-to-world-leading-research-data-with-new-dimensions-mcp-servers" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>一周安全速递：11 个 Agent 框架漏洞披露，OpenClaw 发布安全加固版<span class="tag tag-new">本周</span></h3>
+    <p>安全社区本周披露 11 个 Agent 框架漏洞，波及 LangChain、LangGraph、CrewAI、AutoGen、Microsoft Agent Framework 与 Google ADK——Agent 开发框架成为攻击面新热点。OpenClaw 同期发布 extended-stable 2026.6.34，新增沙箱化浏览器路由与加固访问路径。此外 Meta 携 Muse Code 进入终端编码 Agent 市场，以 0.10 美元/百万输入 token 的定价搅动 Claude Code、Codex、Copilot 混战。</p>
+    <div class="meta">来源：OpenClaw Weekly · <a href="https://www.bighatgroup.com/blog/openclaw-weekly-2026-08-10" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+</section>
+
+<footer>每日AI前沿日报 · 由 蛋牛 🥚 自动出品 · 数据采集自公开网络，链接均为原文出处</footer>
+
+</div>
+</body>
+</html>
