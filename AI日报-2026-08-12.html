@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-12</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #f5f7fa; color: #2c3e50; line-height: 1.75;
+  }
+  .container { max-width: 780px; margin: 0 auto; padding: 40px 16px 60px; }
+  header {
+    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+    border-radius: 16px; padding: 40px 32px; color: #fff; margin-bottom: 28px;
+  }
+  header .date { font-size: 14px; opacity: .85; letter-spacing: 1px; }
+  header h1 { font-size: 30px; margin: 6px 0 12px; }
+  header .note { font-size: 15px; opacity: .95; background: rgba(255,255,255,.12); border-radius: 10px; padding: 12px 16px; }
+  .home-link { display:inline-block; margin-bottom: 16px; color:#1a6fc4; text-decoration:none; font-size:14px; }
+  .home-link:hover { text-decoration: underline; }
+  .highlights {
+    background: #fff; border-radius: 14px; padding: 20px 24px; margin-bottom: 28px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.06); border-left: 5px solid #e74c3c;
+  }
+  .highlights h2 { font-size: 18px; margin-bottom: 10px; color: #e74c3c; }
+  .highlights li { margin-left: 20px; font-size: 15px; margin-bottom: 6px; }
+  section { margin-bottom: 32px; }
+  section > h2 {
+    font-size: 20px; margin-bottom: 14px; padding-left: 12px;
+    border-left: 5px solid #26d0ce; line-height: 1.3;
+  }
+  section > h2 .count { font-size: 13px; color: #999; font-weight: normal; margin-left: 8px; }
+  .card {
+    background: #fff; border-radius: 12px; padding: 18px 22px; margin-bottom: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,.05); transition: box-shadow .15s ease;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.09); }
+  .card h3 { font-size: 16px; margin-bottom: 6px; }
+  .card h3 .tag {
+    display: inline-block; font-size: 11px; font-weight: normal; padding: 1px 8px;
+    border-radius: 10px; margin-left: 6px; vertical-align: middle; color: #fff;
+  }
+  .tag-hot { background: #e74c3c; }
+  .tag-new { background: #f39c12; }
+  .tag-oss { background: #27ae60; }
+  .tag-fund { background: #8e44ad; }
+  .card p { font-size: 14px; color: #555; }
+  .card .meta { font-size: 12.5px; color: #999; margin-top: 8px; }
+  .card .meta a { color: #1a6fc4; text-decoration: none; }
+  .card .meta a:hover { text-decoration: underline; }
+  .paper-authors { font-size: 12.5px; color: #888; margin-top: 2px; }
+  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回日报列表</a>
+
+<header>
+  <div class="date">2026年8月12日 · 星期三</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：自主与安全并行。北京智源发布 AREX 自主研究智能体，AI 从"对话"迈向"自主科研"；Anthropic 宣布为 Claude 全部文本输出嵌入不可见水印，成为继 DeepMind SynthID 之后第二家落实文本水印的实验室；与此同时，自我改写 Agent Ouroboros 以 86.74% 登顶 Terminal-Bench，而 Claude Code 同一周修复了 3 个 Agent 权限绕过漏洞——自主进化与安全治理正在同频加速。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>北京智源发布 AREX 自主研究智能体：</strong>"研究验证再研究"双循环递归框架，让 AI 在长程任务中持续自我修正；模型权重开源，支持资讯追踪、论文筛选与播客摘要——被业内视为 AI 从对话走向自主科研的关键突破。</li>
+    <li><strong>Anthropic 全球水印 Claude 输出：</strong>文本嵌入不可见水印（全球生效，含 API/Claude Code/Cowork 全产品线），SVG/PNG/JPG 改用 C2PA 签名元数据；旧模型同步回溯改造——透明度从合规选项变为默认能力。</li>
+    <li><strong>自我改写 Agent 登顶 Terminal-Bench：</strong>Ouroboros（arXiv 2608.08311）以 86.74% 拿下 Terminal-Bench 2.1、OSWorld-Verified 90.69%，HF Daily Papers 点赞破千；"Agent 自我进化 + 代码审查门控"成为自主性与安全的平衡范式。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+
+  <div class="card">
+    <h3>北京智源发布 AREX 自主研究智能体，首创"研究验证再研究"双循环框架<span class="tag tag-hot">8月12日</span></h3>
+    <p>8 月 12 日凌晨，北京智源人工智能研究院正式发布自主研究智能体 AREX，首创"研究验证再研究"双循环递归框架，让 AI 在长程任务中持续自我修正。模型权重已开源，科研体验版同步开放，支持资讯追踪、论文筛选与播客摘要。该发布被视为 AI 从对话走向自主研究的关键突破，也为中国科研智能体赛道再添一位重量级玩家。</p>
+    <div class="meta">来源：央广网 · <a href="http://view.inews.qq.com/a/20260812A02IPI00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 为 Claude 全部文本输出嵌入不可见水印，全球生效<span class="tag tag-hot">8月11日</span></h3>
+    <p>Anthropic 周一宣布，新发布的 Claude 模型将在生成的文本中嵌入"不可感知的水印"，作为欧盟《人工智能法》透明度承诺的一部分。水印覆盖全球而非仅限欧洲，适用于 API、Claude Code、Claude Cowork、Claude Tag 等全部产品线；生成的 .svg/.png/.jpg 文件则改用基于开放标准 C2PA 的签名来源元数据。公司同时为旧模型回溯改造，并将推出验证工具。这是继 Google DeepMind 的 SynthID 之后，第二家落实文本水印的主流实验室。</p>
+    <div class="meta">来源：TechCrunch / The Decoder · <a href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 发布 GPT-5.6-Cyber 并扩展 Daybreak 网络安全计划<span class="tag tag-new">8月11日</span></h3>
+    <p>OpenAI 宣布扩展网络安全计划 Daybreak，并发布专为高级、授权网络安全工作设计的新模型 GPT-5.6-Cyber，可响应 95% 的高级网络安全任务。OpenAI 将该模型置于其防御服务（defense service）受限层级内，定位是"在攻击者规模化使用进攻性 AI 之前，把前沿能力交到受信任的防御者手中"——继上周披露多智能体突破沙箱入侵事件后，安全防御成为焦点。</p>
+    <div class="meta">来源：OpenAI / FFR AI头条 · <a href="https://openai.com/business/solutions/cybersecurity/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 解除免费版文本限制、推 Business 高级席位 $125/月<span class="tag tag-new">8月11日</span></h3>
+    <p>OpenAI 本周取消 ChatGPT 免费版与 Go 版的文字聊天限制，并将 GPT-5.6 Luna 设为这两档用户的默认模型（取代 GPT-5.5），同时新增"Think"按钮支持更高强度推理；付费 Plus/Pro 用户则获得更新的 GPT-5.6 Sol 与推理强度调节滑杆。另一边，ChatGPT Business 推出"Premium Seats"高级席位，定价 $125/用户/月（约为标准席位的 5 倍），提供显著更多容量并取消 5 小时使用限制——Agent 化应用推高 token 消耗，OpenAI 变现加速向组织侧倾斜。ChatGPT 周活用户已突破 10 亿。</p>
+    <div class="meta">来源：TechCrunch / The Decoder / The Verge · <a href="https://www.thedayafterai.com/weekly/weekly-chatbots-agents-2026-08-12" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>千问开放平台上线：开放手机、PC、AI 眼镜三端服务接入<span class="tag tag-oss">8月10日</span></h3>
+    <p>千问开放平台 8 月 10 日上线，面向生态伙伴与开发者开放手机、PC 和 AI 眼镜三类终端的服务接入。首批接入伙伴覆盖物流运输、房产居住、本地生活、理财、汽车等十多个领域，用户在对话中 @ 相关服务，或点击页面右上角"圆点角标"进入对应智能体，即可体验从咨询、推荐到下单的完整服务闭环——大模型"超级入口"之争延伸到了终端形态。</p>
+    <div class="meta">来源：界面新闻 · <a href="https://www.163.com/dy/article/L41N6KJA0534A4SC.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>英伟达据称联合华尔街六巨头，筹 5000 亿美元押注 AI 基础设施<span class="tag tag-fund">融资</span></h3>
+    <p>据报道，英伟达正寻求联合 Apollo、黑石、贝莱德旗下 GIP、Brookfield、高盛及 KKR 等华尔街巨头，以联合体形式为 AI 基础设施项目筹集高达 5000 亿美元资金，用于 AI 芯片采购、电力生产及数据中心建设。消息传出后英伟达股价一度下跌 3.2%，信用违约互换（CDS）价格创两周最大单日升幅——市场在担忧超大 AI 资本开支的回报周期。</p>
+    <div class="meta">来源：华尔街见闻 · <a href="https://www.163.com/dy/article/L41IV9BL05198NMR.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>微软拟"大幅"提高自研 AI 芯片产量，与台积电洽谈 2027 年交付逾 30 万枚 Maia 300<span class="tag tag-new">8月10日</span></h3>
+    <p>据报道，微软计划今年秋季发布新一代自研 AI 芯片 Maia 300（最早下月公开亮相），并正与台积电洽谈 2027 年交付逾 30 万枚芯片的产能合同——相较于当前一代 Maia 200 仅数万枚的产量，这是一次数量级的跃升。微软正试图在英伟达之外建立独立的算力供应链，缓解 AI 芯片供给瓶颈。</p>
+    <div class="meta">来源：华尔街见闻 · <a href="https://www.163.com/dy/article/L41IV9BL05198NMR.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Google 定档 9 月 4 日：Android Assistant 正式退役，全面转向 Gemini<span class="tag tag-new">8月10日</span></h3>
+    <p>Google 宣布 9 月 4 日作为 Android 上 Assistant 的关闭日期，届时由 Gemini 全面接管手机智能助手入口。这是 Google 将 Gemini 确立为核心 AI 界面的最新一步，也意味着运行多年的 Assistant 生态正式谢幕，开发者与用户需要在截止日前完成迁移。</p>
+    <div class="meta">来源：The Day After AI · <a href="https://www.thedayafterai.com/weekly/weekly-chatbots-agents-2026-08-12" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 取消 50% 涨价计划，永久锁定 Sonnet 5 低价<span class="tag tag-hot">8月10日</span></h3>
+    <p>Anthropic 宣布永久保留 Claude Sonnet 5 发布时的优惠定价，取消原定 8 月底的 50% 涨价计划。Sonnet 5 是目前"最具代理能力的 Sonnet 模型"，永久维持原价意味着已基于 Sonnet 5 搭建工作流的企业能获得更稳定的成本预期；此前 Anthropic 还宣布 Claude Code 将在 5 天后（8 月 14 日）默认启用自动模式，多消耗的 token 费用由 Anthropic 承担——实验显示其自动拦截危险命令成功率（89%）远超人工审批（13.6%）。</p>
+    <div class="meta">来源：华尔街见闻 / The Day After AI · <a href="https://www.163.com/dy/article/L41IV9BL05198NMR.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Google 向开发者开放 Gemini Omni Flash：Omni 系列首个视频生成模型<span class="tag tag-oss">8月10日</span></h3>
+    <p>Google 开放 Gemini Omni Flash——新 Omni 家族的首个模型，支持从文本、图像、视频或音频参考创建与编辑高质量视频。开发者可用它改变拍摄角度、切换环境、实现电影级推拉镜头并保留原始场景上下文；官方展示了从单一主体生成约 20 个不同角度的多视角视频的案例。</p>
+    <div class="meta">来源：Google Blog / AI Native Foundation · <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-builders/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span></h2>
+
+  <div class="card">
+    <h3>Ouroboros：会改写自身核心代码的 Agent，登顶 Terminal-Bench 2.1<span class="tag tag-hot">热点</span></h3>
+    <p>一个能编辑自身源码、让 diff 过代码审查、提交后继续工作的编码 Agent：在 Terminal-Bench 2.1 取得 86.74%（Opus 5 基座）、OSWorld-Verified 90.69%，HF Daily Papers 点赞破千，为今年 Agent 论文之最。核心设计是"递归自由进化 + 经验驱动进化"，所有自我改进必须经过代码审查门控；论文披露代号 Hope 的部署已自主运行 161 天。AI 安全研究者 Roman Yampolskiy 参与作者。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.08311" target="_blank">arXiv:2608.08311 ↗</a> · 8月8日提交</div>
+  </div>
+
+  <div class="card">
+    <h3>Evo-Bench：大模型能否自主进化自己的 Agent Harness？首个专门基准出炉</h3>
+    <p>现有评测只测静态任务求解，而"harness 进化"——Agent 自主优化自身运行框架的能力——缺乏系统评测。Evo-Bench 通过辅助任务进化筛选对框架改进敏感的任务，再按敏感性分层切分保证跨套件泛化；在 9 个前沿与开源模型上，最强模型绝对提升高达 16.6 分，逼近人类调优基线。发现自主进化在通用与搜索任务上超过人工 harness，但在需要特定处理流程的 Office 任务上仍吃力，且存在早期饱和等时间异常。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.09096" target="_blank">arXiv:2608.09096 ↗</a> · 8月10日提交</div>
+  </div>
+
+  <div class="card">
+    <h3>Social Gym &amp; SPaRTan：用 21 个多智能体社交游戏锦标赛量化 LLM 社交推理</h3>
+    <p>社交能力无客观标准、依赖昂贵且主观的 LLM 评委——Social Gym 用 21 个规则可判胜负的多智能体社交游戏（狼人杀、抵抗组织、间谍危机等）+ Elo 锦标赛构建可验证的跨游戏排行榜：GPT-5-mini 登顶，但没有任何模型在所有游戏与角色上全面占优。配套提出 SPaRTan（自对弈-反思-迁移），一种免训练的自改进循环：先对弈、再反思轨迹产出可迁移的"playbook"，后续对局复用——帮助 GPT-5-mini 补齐弱角色表现。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.09128" target="_blank">arXiv:2608.09128 ↗</a> · 8月10日提交</div>
+  </div>
+
+  <div class="card">
+    <h3>SHE：轨迹驱动的 LLM Agent 安全框架（Safety Harness）演化</h3>
+    <p>针对 LLM Agent 的运行时安全问题，SHE 提出基于轨迹驱动的安全 harness 进化方案：从 Agent 的实际执行轨迹中识别风险模式，自动迭代安全约束与干预策略，而非依赖静态规则。代码已开源（github.com/RainbowQTT/SHE），为 Agent 安全治理提供了可演化的新思路。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.09885" target="_blank">arXiv:2608.09885 ↗</a> · 8月11日提交</div>
+  </div>
+
+  <div class="card">
+    <h3>Towards Expert-level Medical AI for Real-time Video Consultations：谷歌专家级实时视频问诊医学 AI</h3>
+    <p>谷歌（作者含 James Manyika、Gregory Wayne、Katherine Chou 等）发表面向实时视频问诊的医学 AI 系统研究，目标达到专家级诊疗水平：系统需同时理解语音问诊、视频画面与病历上下文，在真实医患对话中给出诊断建议。论文横跨 cs.AI / cs.CL / cs.CV，代表了医学多模态 Agent 的前沿工程方向。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.09861" target="_blank">arXiv:2608.09861 ↗</a> · 8月11日提交</div>
+  </div>
+
+  <div class="card">
+    <h3>Agentic Auto-Research is Fuzz Testing：把"自主研究智能体"重新理解为模糊测试</h3>
+    <p>一篇观点性强的论文：自主研究 Agent（auto-research）本质上就是系统性的模糊测试——不断生成假设、注入扰动、观察系统反馈并收敛到反例。作者借此框架解释为何 Agent 式研究常出现"看似突破、实则过拟合"的现象，并给出设计更可靠研究 Agent 的启示。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.09855" target="_blank">arXiv:2608.09855 ↗</a> · 8月11日提交</div>
+  </div>
+
+  <div class="card">
+    <h3>Matryoshka Language Model Suites：套娃式语言模型套件</h3>
+    <p>借鉴 Matryoshka 表征学习思路，提出"套娃式语言模型套件"：一次训练产出嵌套的多档规模子模型（大模型内部的浅层即可作为小模型使用），可在推理时按预算动态裁剪，无需为每个规模单独训练。为 LLM 的高效部署与弹性推理提供了新思路。</p>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.09703" target="_blank">arXiv:2608.09703 ↗</a> · 8月11日提交</div>
+  </div>
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>Sakana AI 发布 Namazu，本周 HF 新上榜模型<span class="tag tag-hot">8月11日</span></h3>
+    <p>日本 Sakana AI 发布新模型 Namazu（8 月 11 日），进入 LMArena 追踪模型库与 HF 趋势榜"新条目"。Sakana 延续"低成本、小规模、擅长科学任务"的路线，Namazu 是其 2026 年又一款实验性模型，具体参数与基准待官方技术报告披露。</p>
+    <div class="meta">来源：LMArena Trends · <a href="https://lmmarketcap.com/trends" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Upstage 发布 Solar Pro 4，韩系模型持续迭代<span class="tag tag-new">8月10日</span></h3>
+    <p>韩国 Upstage 发布 Solar Pro 4（8 月 10 日），成为 HF 趋势榜新条目。Solar 系列主打紧凑高效、主打亚洲多语言场景，第四代 Pro 定位工作负载级推理模型，细节待官方披露。</p>
+    <div class="meta">来源：LMArena Trends · <a href="https://lmmarketcap.com/trends" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>阿里承诺本周开源 Qwen3.8-Max 权重：史上首个"Max"级开源模型<span class="tag tag-oss">8月10日</span></h3>
+    <p>Qwen3.8-Max（2.4T 参数 MoE、激活 95B、1M 上下文、原生图文视频输入，API 定价约 $2/$6/百万 token）自 8 月 3 日 API-GA 后，阿里承诺 8 月 10 日当周在 HuggingFace 与 ModelScope 开源 Max 级权重及小一号的 Qwen3.8-27B——若兑现，将是首次有"Max 级"（旗舰档）开源权重，将改变自托管成本结构。截至发稿仓库尚未出现，许可证未公布，建议持续关注 Qwen 官方组织。</p>
+    <div class="meta">来源：DataCamp / Founder's Wire · <a href="https://dreaming.press/posts/2026-08-10-founders-wire-claude-code-codex-permission-fixes-qwen-open-weights.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>MiniMax H3 持续霸榜 HF Trending 第一，视频模型生态全面开花<span class="tag tag-hot">8月11日</span></h3>
+    <p>MiniMax 的 33B 图生视频模型 MiniMax-H3 继续稳居 HuggingFace 趋势榜榜首（59.4k 下载、3.57k 点赞），官方 TurBo 变体与社区 LoRA 版（Realism-People、Turbo-LoRA）、ComfyUI 集成（Comfy-Org 版 6.8M 下载）密集出现——H3 已从单一模型扩散为完整的开源视频生成生态。</p>
+    <div class="meta">来源：HuggingFace Trends · <a href="https://huggingface.co/models?sort=trending" target="_blank">查看趋势榜 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek V4 Flash（0731）下载量破百万，GGUF 量化版 20 万+ 下载<span class="tag tag-hot">8月11日</span></h3>
+    <p>DeepSeek-V4-Flash-0731（304B 参数）在 HuggingFace 累计下载突破 105 万，unsloth 的 GGUF 量化版亦达 20.8 万下载——开源社区正围绕该模型大规模建设本地推理生态。该模型 7 月 31 日开源，Agent 能力升级、智能指数登顶开源前三。</p>
+    <div class="meta">来源：HuggingFace Trends · <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731" target="_blank">模型主页 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Meta Muse Glimmer 生态继续发酵：unsloth GGUF 版与官方量化版上线<span class="tag tag-oss">8月10日</span></h3>
+    <p>Muse Glimmer 30B（Apache 2.0、单消费级 GPU 可跑的本地 Agent 模型）发布两天内，unsloth 已放出 GGUF 量化版，Meta 官方也发布 GGUF 版本——本地化生态快速成型。扎克伯格同时喊话美国政府：限制外国开源模型访问并非有效解决方案，应降低开源 AI 的准入门槛。</p>
+    <div class="meta">来源：HuggingFace / 华尔街见闻 · <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B" target="_blank">模型主页 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>D · Agent / MCP / Skill 生态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>Claude Code 修复 3 个 Agent 权限绕过漏洞，v2.1.225 落地 MCP OAuth 修复<span class="tag tag-hot">8月8日</span></h3>
+    <p>Claude Code 本周修补了 3 个 Agent 权限绕过漏洞，v2.1.225（8 月 8 日）同时修复 macOS 上 MCP 服务器的 OAuth 认证问题。结合 Anthropic 宣布 8 月 14 日默认开启自动模式（89% 危险命令拦截率 vs 人工 13.6%），Agent 的"自主权 vs 安全性"成为当下最核心的工程议题。</p>
+    <div class="meta">来源：Founder's Wire · <a href="https://dreaming.press/posts/2026-08-10-founders-wire-claude-code-codex-permission-fixes-qwen-open-weights.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI Codex 0.147.0：接入 MCP 无状态协议、新增密钥脱敏与 Cursor skill 导入<span class="tag tag-oss">8月7日</span></h3>
+    <p>Codex 0.147.0 支持 MCP 2026-07-28 无状态协议（含分页工具发现）、可跨本地/个人/工作区/远程目录搜索的 Agent Plugins、Cursor skill 导入（带对话同步）、--approve-for-me 自动审批标志，并新增显示命令与会话历史的密钥脱敏——泄漏的 API key 不再留在滚动缓冲区中。上一版本（0.146.1）已收紧对网络能力模型的自动审查默认值。</p>
+    <div class="meta">来源：GitHub Releases / Founder's Wire · <a href="https://dreaming.press/posts/2026-08-10-founders-wire-claude-code-codex-permission-fixes-qwen-open-weights.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Agent Plugins 1.0 规范落地：目录化打包 + MCP 连接，跨客户端复用<span class="tag tag-new">本周</span></h3>
+    <p>由多厂商支持、与 AAIF 对齐的 Agent Plugins 1.0 规范正式发布：采用目录化格式打包 Agent Skill（元数据与资源结构可预测），通过 MCP 连接工具与数据，同一插件可在 GitHub Copilot、VS Code 等兼容客户端间复用，无需逐厂商定制。规范同时带来更清晰的市场与治理模型——审查插件将接近审查普通依赖。</p>
+    <div class="meta">来源：DevClass / TechHub · <a href="https://tech.hub.ms/ai/roundups/weekly-ai-roundup-2026-08-10" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>MCP C# SDK v2.0 发布 + Azure DevOps Remote MCP Server GA<span class="tag tag-oss">本周</span></h3>
+    <p>官方 MCP C# SDK 达 v2.0，实现 2026-07-28 规范：无状态优先传输、标准化 HTTP 头（任何 HTTP 工具即可检查服务器/客户端）、Multi Round-Trip Requests（MRTR）支持跨多次 HTTP 调用的交互式工具。Azure DevOps Remote MCP Server 同期 GA：托管端点 + Entra ID 认证，mcp.json 最小配置即可接入，免去自建本地服务器。</p>
+    <div class="meta">来源：Microsoft DevBlogs / TechHub · <a href="https://devblogs.microsoft.com/dotnet/announcing-v20-of-the-official-mcp-csharp-sdk/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Microsoft Agent Framework 1.16 / Python 1.13：Agent 可在运行时从 MCP 服务器发现 Skill<span class="tag tag-new">7月30日</span></h3>
+    <p>Microsoft Agent Framework 双语言更新：.NET 1.16.0 将 GitHub Copilot Agent 从预览转稳定，Python 1.13.0 增加基于 MCP 源的有界内存归档 Skill 发现（FoundryToolbox）+ 可复用的会话存储。"Skill 是运行时依赖而非构建期依赖"，让"一个 Skill 库服务多个 Agent"的设想终于成立——但这也让治理更难，需尽早记录 Agent 实际加载了哪些 Skill。</p>
+    <div class="meta">来源：Microsoft Agent Framework Releases · <a href="https://github.com/microsoft/agent-framework/releases/tag/python-1.13.0" target="_blank">Release 说明 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Meta 推出 Muse Code 终端编码 Agent：并行子 Agent + 隔离 worktree，主打成本牌<span class="tag tag-hot">8月5日</span></h3>
+    <p>Meta 开放 Muse Code Beta——扎克伯格称其可承担"跨大型仓库的完整软件工程任务"：将工作分发给在隔离 worktree 中并行运行的子 Agent，测试中曾无碰撞地同时为游戏构建 6 个功能。Meta AI 负责人 Alexandr Wang 对 WSJ 表示，对标 OpenAI Codex 与 Claude Code 的卖点是成本。</p>
+    <div class="meta">来源：TechCrunch / The Day After AI · <a href="https://www.thedayafterai.com/weekly/weekly-chatbots-agents-2026-08-12" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<footer>每日AI前沿日报 · 2026-08-12 · 由 蛋牛 🥚 自动出品 · 数据采集自公开网络，摘要仅供参考</footer>
+
+</div>
+</body>
+</html>
