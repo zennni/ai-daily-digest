@@ -211,7 +211,7 @@ td.mname:hover{color:var(--primary)}
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>Mistral Medium 3.5</b></td><td>128B 稠密</td><td>INT4</td><td>≈70GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>稠密长文连贯好。</td></tr>
       <tr><td class="rk">②</td><td><b>Nemotron 3 Super 120B-A12B</b></td><td>120B/12B</td><td>INT4</td><td>≈68GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>—</td><td>1M 上下文 Agent 工作流。</td></tr>
-      <tr><td class="rk">③</td><td><b>gpt-oss-120b</b></td><td>120B/5.1B</td><td>FP8</td><td>≈132GB 超档</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>128GB 更舒适。</td></tr>
+      <tr><td class="rk">③</td><td><b>gpt-oss-120b</b></td><td>120B/5.1B</td><td>FP8</td><td>≈132GB 超档</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>FP8 ≈132GB 超 96GB 档。</td></tr>
     </tbody></table></div>
   <h3 class="sub">128GB 档（个人工作站极限：Q3/内存卸载）</h3>
   <div class="card" style="overflow-x:auto"><table>
@@ -220,6 +220,26 @@ td.mname:hover{color:var(--primary)}
       <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B/13B</td><td>Q3/INT4</td><td>Q3≈120GB / INT4≈156GB 超档</td><td>1M</td><td>MIT</td><td>52</td><td>INT4 超 128GB 档，Q3 或内存卸载可跑。</td></tr>
       <tr><td class="rk">②</td><td><b>MiMo-V2.5</b></td><td>待核实</td><td>待核实</td><td>待核实</td><td>1M</td><td>MIT</td><td>38</td><td>参数与显存待核实，以官方模型卡为准。</td></tr>
       <tr><td class="rk">③</td><td><b>gpt-oss-120b</b></td><td>120B/5.1B</td><td>FP8</td><td>≈132GB 超档</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>FP8 超 128GB 档，请用 INT4。</td></tr>
+    </tbody></table></div>
+  <h3 class="sub">192GB 档（Mac Studio 顶配 / 2×80GB，INT4/FP8）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B/13B</td><td>INT4</td><td>≈156GB</td><td>1M</td><td>MIT</td><td>52</td><td>INT4 全量舒适区，2×80GB 或 192GB 可跑。</td></tr>
+      <tr><td class="rk">②</td><td><b>Mistral Medium 3.5</b></td><td>128B 稠密</td><td>FP8</td><td>≈141GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>FP8 高精度稠密。</td></tr>
+      <tr><td class="rk">③</td><td><b>gpt-oss-120b</b></td><td>120B/5.1B</td><td>FP8</td><td>≈132GB</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>FP8 舒适区（128GB 档超档，本档合适）。</td></tr>
+      <tr><td class="rk">④</td><td><b>Nemotron 3 Super 120B-A12B</b></td><td>120B/12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>—</td><td>1M 上下文 FP8 Agent 工作流。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>MiMo-V2.5</b></td><td>待核实</td><td>待核实</td><td>待核实</td><td>1M</td><td>MIT</td><td>38</td><td>参数待核实，以官方模型卡为准。</td></tr>
+    </tbody></table></div>
+  <h3 class="sub">512GB 档（个人旗舰工作站/准数据中心，FP8/1-bit）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B/13B</td><td>FP8</td><td>≈312GB</td><td>1M</td><td>MIT</td><td>52</td><td>FP8 全精度，512GB 或 4×80GB。</td></tr>
+      <tr><td class="rk">②</td><td><b>Qwen3.8-2.4T-A95B</b></td><td>2.4T/95B</td><td>1-bit</td><td>≈397GB</td><td>262K→1M</td><td>Qwen3.8-Max License</td><td>58(API)</td><td>官方 1-bit 397GB 可本地跑。</td></tr>
+      <tr><td class="rk">③</td><td><b>Inkling</b></td><td>975B/41B</td><td>1-bit GGUF</td><td>≈280GB</td><td>1M</td><td>Apache 2.0</td><td>42</td><td>美国开源最强，本档轻量配置。</td></tr>
+      <tr><td class="rk">④</td><td><b>Mistral Medium 3.5</b></td><td>128B 稠密</td><td>BF16</td><td>≈256GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>BF16 全精度稠密。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>gpt-oss-120b</b></td><td>120B/5.1B</td><td>BF16</td><td>≈240GB</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>BF16 全精度。</td></tr>
     </tbody></table></div>
   <h3 class="sub">数据中心级（多卡/企业集群）</h3>
   <div class="card" style="overflow-x:auto"><table>
