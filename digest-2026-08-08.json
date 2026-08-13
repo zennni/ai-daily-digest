@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "date": "2026-08-08",
+  "week": "星期六",
+  "note": "OpenAI 因网络安全风险暂停部分 Astra 开发 · 六巨头发布 Agent Plugins 统一插件标准 · Stripe 拟 100 亿美元收购 OpenRouter · Meta Muse 2 开放权重发布"
+ },
+ "highlights": [
+  {
+   "title": "OpenAI 因网络安全风险暂停部分 Astra 开发",
+   "summary": ""
+  },
+  {
+   "title": "六巨头发布 Agent Plugins 统一插件标准",
+   "summary": ""
+  },
+  {
+   "title": "Stripe 拟 100 亿美元收购 OpenRouter",
+   "summary": ""
+  },
+  {
+   "title": "Meta Muse 2 开放权重发布",
+   "summary": ""
+  }
+ ],
+ "news": [],
+ "papers": [],
+ "models": [],
+ "ecosystem": []
+}
