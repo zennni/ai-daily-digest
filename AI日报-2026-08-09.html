@@ -5,59 +5,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>每日AI前沿日报 · 2026-08-09</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
-    background: #f5f7fa; color: #2c3e50; line-height: 1.75;
-  }
-  .container { max-width: 780px; margin: 0 auto; padding: 40px 16px 60px; }
-  header {
-    background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
-    border-radius: 16px; padding: 40px 32px; color: #fff; margin-bottom: 28px;
-  }
-  header .date { font-size: 14px; opacity: .85; letter-spacing: 1px; }
-  header h1 { font-size: 30px; margin: 6px 0 12px; }
-  header .note { font-size: 15px; opacity: .95; background: rgba(255,255,255,.12); border-radius: 10px; padding: 12px 16px; }
-  .home-link { display:inline-block; margin-bottom: 16px; color:#1a6fc4; text-decoration:none; font-size:14px; }
-  .home-link:hover { text-decoration: underline; }
-  .highlights {
-    background: #fff; border-radius: 14px; padding: 20px 24px; margin-bottom: 28px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.06); border-left: 5px solid #e74c3c;
-  }
-  .highlights h2 { font-size: 18px; margin-bottom: 10px; color: #e74c3c; }
-  .highlights li { margin-left: 20px; font-size: 15px; margin-bottom: 6px; }
-  section { margin-bottom: 32px; }
-  section > h2 {
-    font-size: 20px; margin-bottom: 14px; padding-left: 12px;
-    border-left: 5px solid #26d0ce; line-height: 1.3;
-  }
-  section > h2 .count { font-size: 13px; color: #999; font-weight: normal; margin-left: 8px; }
-  .card {
-    background: #fff; border-radius: 12px; padding: 18px 22px; margin-bottom: 12px;
-    box-shadow: 0 1px 6px rgba(0,0,0,.05); transition: box-shadow .15s ease;
-  }
-  .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.09); }
-  .card h3 { font-size: 16px; margin-bottom: 6px; }
-  .card h3 .tag {
-    display: inline-block; font-size: 11px; font-weight: normal; padding: 1px 8px;
-    border-radius: 10px; margin-left: 6px; vertical-align: middle; color: #fff;
-  }
-  .tag-hot { background: #e74c3c; }
-  .tag-new { background: #f39c12; }
-  .tag-oss { background: #27ae60; }
-  .tag-fund { background: #8e44ad; }
-  .card p { font-size: 14px; color: #555; }
-  .card .meta { font-size: 12.5px; color: #999; margin-top: 8px; }
-  .card .meta a { color: #1a6fc4; text-decoration: none; }
-  .card .meta a:hover { text-decoration: underline; }
-  .paper-authors { font-size: 12.5px; color: #888; margin-top: 2px; }
-  footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 40px; }
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 </style>
 </head>
 <body>
 <div class="container">
 
-<a class="home-link" href="index.html">← 返回日报列表</a>
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
 
 <header>
   <div class="date">2026年8月9日 · 星期日</div>
