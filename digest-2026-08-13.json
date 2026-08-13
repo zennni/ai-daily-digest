@@ -1,0 +1,39 @@
+{
+  "meta": {"date": "2026-08-13", "week": "星期四", "note": "阿里开源 Max 级 Qwen、DeepSeek V4 Pro 转正、Grok 4.6 发布——国产开放权重与 Agent 双线冲刺。"},
+  "highlights": [
+    {"title": "阿里首次开源 Max 级旗舰 Qwen3.8-2.4T-A95B", "summary": "2.4T 总参 / 95B 激活，PaperBench 93.0 超 GPT-5.6 Sol 与 Fable 5，OSWorld-Verified 86.1 登顶。"},
+    {"title": "DeepSeek V4 Pro 正式版转正（V4-Pro-0813）", "summary": "1M 上下文 / 384K 输出，Agent 基准大幅跃升：Terminal-Bench 2.1 69.8→87.9、DeepSWE 12.8→62.7。"},
+    {"title": "马斯克发布 Grok 4.6 主打长程 Agent", "summary": "已接入 Cursor 与 Grok Build，定价 $2/$6 每百万 Token。"}
+  ],
+  "news": [
+    {"title": "阿里首次开源 Max 级旗舰：Qwen3.8-2.4T-A95B 权重全面开放", "summary": "2.4T 总参 / 95B 激活，PaperBench 93.0 超 GPT-5.6 Sol 与 Fable 5，OSWorld-Verified 86.1 登顶，Unsloth 1-bit 量化 397GB 可本地运行。", "date": "8月13日", "source": "36氪/智东西", "link": "https://eu.36kr.com/en/p/3937078710631810"},
+    {"title": "DeepSeek V4 Pro 正式版转正：Agent 基准全面跃升", "summary": "模型版本更新为 DeepSeek-V4-Pro-0813；Terminal-Bench 2.1 69.8→87.9、DeepSWE 12.8→62.7，多项接近或超越 Opus 4.8；定价仍为输入 3 元/输出 6 元。", "date": "8月13日", "source": "钛媒体/新浪科技", "link": "https://www.tmtpost.com/nictation/8101550.html"},
+    {"title": "马斯克发布 Grok 4.6：主打长程 Agent，已接入 Cursor 与 Grok Build", "summary": "针对长时间运行智能体训练，定价 $2/百万输入、$6/百万输出，高速版两倍；首发首周赠 2 倍额度。", "date": "8月12日", "source": "猎云网/CLS", "link": "https://new.qq.com/rain/a/20260813A049G100"},
+    {"title": "微信原生 AI 助手“小微”灰度上线，底座 WeLM 升级 800B 稀疏 MoE", "summary": "WeLM-80B 总参 800 亿、激活仅 3B，并出现 617B 版本；微信月活 14.39 亿，被视为国内 Agent 落地最重要变量。", "date": "8月13日", "source": "AI先锋官", "link": "https://view.inews.qq.com/a/20260813A00JNS00"},
+    {"title": "谷歌 AI 领导层大地震：布林督战 Gemini，哈萨比斯转任董事长", "summary": "Jeff Dean 与 Oriol Vinyals 双双离职创业；Gemini 新旗舰发布推迟两个月，编程等关键领域仍落后对手。", "date": "8月13日", "source": "路透社/凤凰网科技", "link": "https://stock.10jqka.com.cn/20260813/c678913046.shtml"},
+    {"title": "ChatGPT 与 Gemini 同日宣布月活双双突破 10 亿", "summary": "生成式 AI 应用正式进入“十亿级用户”时代，入口级应用平台效应显现。", "date": "8月11日", "source": "腾讯网/新浪财经", "link": "https://new.qq.com/rain/a/20260813A038QI00"},
+    {"title": "SpaceXAI 推出 Grok Bot：120 美元/月的“全天候 AI 数字同事”", "summary": "可跨应用跨平台自主执行任务，支持多机器人协同与独立云端电脑，对标 ChatGPT Work / Claude Cowork。", "date": "8月12日", "source": "VentureBeat", "link": "https://tianqi.csdn.net/6a7c818e10ee7a33f29a0659.html"},
+    {"title": "小米 MiMo-V2.5 登顶 OpenRouter 周调用榜：单周 10.5 万亿 Token", "summary": "较两月前翻六倍多，周榜月榜双第一；同期 MiMo-V2.5 系列 API 永久降价、最高降幅 99%。", "date": "8月12日", "source": "AI行业日报", "link": "https://new.qq.com/rain/a/20260813A03DRF00"},
+    {"title": "Meta 开源 30B 本地 Agent 模型 Muse Glimmer", "summary": "30B 密集多模态，蒸馏自 Muse Spark 1.2；4-bit 量化 20GB 内可跑（RTX 4090 / 32GB Mac），Apache 2.0。", "date": "8月10日", "source": "Meta", "link": "https://huggingface.co/meta-models/Muse-Glimmer-30B"},
+    {"title": "MCP 无状态规范正式落地到终端：Codex 与 Claude Code 同周跟进", "summary": "移除 protocol-level session；Cloudflare Agents SDK v0.20.0、AWS AgentCore 跟进，Serverless 部署解锁。", "date": "8月7-8日", "source": "byteiota", "link": "https://byteiota.com/mcp-2026-07-28-stateless-spec"},
+    {"title": "DeepSeek 逆势宣布涨价、拟 5000 亿估值再融资", "summary": "计划整体上调 API 价格并引入峰谷定价（9-12 点、14-18 点 2 倍）；V4 Flash 单日处理 8 万亿 Tokens 致容量吃紧。", "date": "8月6-9日", "source": "中国经济网", "link": "https://www.toutiao.com/article/7670828778481910281/"}
+  ],
+  "papers": [
+    {"title": "CLAUDE.md 为何不断膨胀：Agent 编码中的灾难性记忆", "titleEn": "Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding", "summary": "研究编码 Agent 记忆文件无限膨胀导致的上下文污染，提出记忆治理框架。", "authors": "Kushal Chakrabarti", "link": "https://arxiv.org/abs/2608.11095"},
+    {"title": "SkillZip：自进化 Agent 的免评估技能压缩", "titleEn": "SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents", "summary": "发现可复用结构，将冗长技能库压缩为紧凑表示。", "authors": "Xiaofan Bai et al.", "link": "https://arxiv.org/abs/2608.11079"}
+  ],
+  "models": [
+    {"name": "Qwen/Qwen3.8-2.4T-A95B", "vendor": "阿里", "highlight": "首个 Max 级开源旗舰，HF 978 下载", "link": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"},
+    {"name": "MiniMaxAI/MiniMax-H3", "vendor": "MiniMax", "highlight": "33B 文生视频，HF 趋势榜第一", "link": "https://huggingface.co/MiniMaxAI/MiniMax-H3"},
+    {"name": "deepseek-ai/DeepSeek-V4-Flash-0731", "vendor": "DeepSeek", "highlight": "304B 开源，累计 105 万下载", "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"},
+    {"name": "meta-models/Muse-Glimmer-30B", "vendor": "Meta", "highlight": "30B 本地 Agent，Apache 2.0", "link": "https://huggingface.co/meta-models/Muse-Glimmer-30B"},
+    {"name": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B", "vendor": "NVIDIA", "highlight": "新增 NVFP4/BF16 官方版本", "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4"},
+    {"name": "moonshotai/Kimi-K3", "vendor": "月之暗面", "highlight": "2.8T 开源旗舰，累计 157 万下载", "link": "https://huggingface.co/moonshotai/Kimi-K3"}
+  ],
+  "ecosystem": [
+    {"title": "MCP 无状态规范正式落地到终端", "summary": "Codex 0.147.0 与 Claude Code v2.1.225 同周支持新协议。", "source": "byteiota", "link": "https://byteiota.com/mcp-2026-07-28-stateless-spec"},
+    {"title": "Codex 0.147.0：密钥脱敏 + Cursor Skill 导入", "summary": "显示命令与对话历史中的 API Key 即时擦除。", "source": "The Founder's Wire", "link": "https://dreaming.press/posts/2026-08-10-founders-wire-claude-code-codex-permission-fixes-qwen-open-weights.html"},
+    {"title": "Trigger.dev MCP Server 2.1", "summary": "Agent Chat、Prompt 版本管理与健康报告。", "source": "Trigger.dev", "link": "https://trigger.dev/changelog/mcp-server-2-1"},
+    {"title": "Perplexity MCP Server 开源", "summary": "多 Token 池、隐身模式与自动降级。", "source": "GitHub", "link": "https://github.com/escapeWu/perplexity-ai"}
+  ]
+}
