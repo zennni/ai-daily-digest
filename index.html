@@ -19,7 +19,8 @@ body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;backgroun
 .watchbar .wchip{display:inline-block;background:#fff;border:1px solid #93c5fd;border-radius:999px;padding:1px 10px;margin:2px 4px;cursor:pointer}
 .watchbar .wchip:hover{background:var(--primary);color:#fff}
 .tabs{display:flex;gap:6px;background:#fff;border-bottom:1px solid var(--line);padding:10px 20px;flex-wrap:wrap;position:sticky;top:100px;z-index:40}
-.tab{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;cursor:pointer;font-size:13.5px;font-weight:500;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none}
+/* 移动端交互规范（受保护，勿删五件套）：iOS 缺省点击罩蓝 / 长按文本选择会把按钮染蓝（2026-08-14 用户反馈修复，8/14 二次加强：穿透 user-select 时再加 -webkit-user-select + touch-action） */
+.tab{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;cursor:pointer;font-size:13.5px;font-weight:500;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-webkit-user-drag:none;user-select:none;touch-action:manipulation}
 .tab.on{background:var(--primary);color:#fff;border-color:var(--primary)}
 .tab:hover{border-color:var(--primary2);color:var(--primary)}
 .wrap{max-width:1320px;margin:0 auto;padding:18px 16px}
@@ -294,7 +295,9 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
 
 /* ---------- 视图切换 ---------- */
 var cur = "news";
+// iOS 长按文本选择/链接预览会在 .tab 上罩蓝，touchstart 阻止默认行为（仅 tab，不影响其他链接）
 document.querySelectorAll(".tab").forEach(function(t){
+  t.addEventListener("touchstart", function(e){ e.preventDefault(); }, {passive:false});
   t.onclick = function(){
     document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});
     t.classList.add("on");
