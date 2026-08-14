@@ -18,8 +18,8 @@ body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;backgroun
 .watchbar{background:#eff6ff;border-bottom:1px solid #bfdbfe;padding:7px 20px;font-size:12.5px;color:#1e3a8a}
 .watchbar .wchip{display:inline-block;background:#fff;border:1px solid #93c5fd;border-radius:999px;padding:1px 10px;margin:2px 4px;cursor:pointer}
 .tabs{display:flex;gap:6px;background:#fff;border-bottom:1px solid var(--line);padding:10px 20px;flex-wrap:wrap;position:sticky;top:100px;z-index:40}
-/* 移动端交互规范（受保护，勿删）：① 五件套 -webkit-tap-highlight-color:transparent / -webkit-touch-callout:none / -webkit-user-select:none / -webkit-user-drag:none / user-select:none + touch-action:manipulation；② 所有 :hover 必须包在 @media (hover:hover) 内——iOS touch 后 :hover 会粘住，未限定设备时选中 tab 会显示成纯蓝色块（2026-08-14 用户反馈修复） */
-.tab{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;cursor:pointer;font-size:13.5px;font-weight:500;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-webkit-user-drag:none;user-select:none;touch-action:manipulation}
+/* 移动端规范（受保护，勿删）：所有 :hover 必须包在 @media (hover:hover) 内——iOS touch 后 :hover 会粘住（系统判定鼠标一直悬停），未限定设备时选中 tab 会显示成纯蓝色块（2026-08-14 用户反馈修复；此前误判引入的 tap-highlight/user-select 等属性已撤回） */
+.tab{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;cursor:pointer;font-size:13.5px;font-weight:500}
 .tab.on{background:var(--primary);color:#fff;border-color:var(--primary)}
 @media (hover:hover){
   .watchbar .wchip:hover{background:var(--primary);color:#fff}
@@ -297,9 +297,7 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
 
 /* ---------- 视图切换 ---------- */
 var cur = "news";
-// iOS 长按文本选择/链接预览会在 .tab 上罩蓝，touchstart 阻止默认行为（仅 tab，不影响其他链接）
 document.querySelectorAll(".tab").forEach(function(t){
-  t.addEventListener("touchstart", function(e){ e.preventDefault(); }, {passive:false});
   t.onclick = function(){
     document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});
     t.classList.add("on");
