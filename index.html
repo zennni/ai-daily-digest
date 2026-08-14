@@ -17,12 +17,19 @@ body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;backgroun
 #q::placeholder{color:rgba(255,255,255,.7)}
 .watchbar{background:#eff6ff;border-bottom:1px solid #bfdbfe;padding:7px 20px;font-size:12.5px;color:#1e3a8a}
 .watchbar .wchip{display:inline-block;background:#fff;border:1px solid #93c5fd;border-radius:999px;padding:1px 10px;margin:2px 4px;cursor:pointer}
-.watchbar .wchip:hover{background:var(--primary);color:#fff}
 .tabs{display:flex;gap:6px;background:#fff;border-bottom:1px solid var(--line);padding:10px 20px;flex-wrap:wrap;position:sticky;top:100px;z-index:40}
-/* 移动端交互规范（受保护，勿删五件套）：iOS 缺省点击罩蓝 / 长按文本选择会把按钮染蓝（2026-08-14 用户反馈修复，8/14 二次加强：穿透 user-select 时再加 -webkit-user-select + touch-action） */
+/* 移动端交互规范（受保护，勿删）：① 五件套 -webkit-tap-highlight-color:transparent / -webkit-touch-callout:none / -webkit-user-select:none / -webkit-user-drag:none / user-select:none + touch-action:manipulation；② 所有 :hover 必须包在 @media (hover:hover) 内——iOS touch 后 :hover 会粘住，未限定设备时选中 tab 会显示成纯蓝色块（2026-08-14 用户反馈修复） */
 .tab{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;cursor:pointer;font-size:13.5px;font-weight:500;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-user-select:none;-webkit-user-drag:none;user-select:none;touch-action:manipulation}
 .tab.on{background:var(--primary);color:#fff;border-color:var(--primary)}
-.tab:hover{border-color:var(--primary2);color:var(--primary)}
+@media (hover:hover){
+  .watchbar .wchip:hover{background:var(--primary);color:#fff}
+  .tab:hover{border-color:var(--primary2);color:var(--primary)}
+  tr:hover td{background:#f8faff}
+  td.mname:hover{color:var(--primary)}
+  .chip:hover{background:var(--primary);color:#fff}
+  .chip.news:hover{background:#0F6E56;color:#fff}
+  .mtag:hover{background:#0F6E56;color:#fff}
+}
 .wrap{max-width:1320px;margin:0 auto;padding:18px 16px}
 .view{display:none}
 .view.on{display:block}
@@ -36,17 +43,12 @@ h2.sec::before{content:"";width:5px;height:19px;background:var(--primary);border
 table{width:100%;border-collapse:collapse;font-size:12.5px}
 th{background:#eff6ff;color:#1e3a8a;font-weight:600;text-align:left;padding:7px 8px;border-bottom:2px solid #bfdbfe;cursor:pointer;white-space:nowrap;user-select:none}
 td{padding:6px 8px;border-bottom:1px solid #eef2f7;vertical-align:top}
-tr:hover td{background:#f8faff}
 td.rk{font-weight:700;color:var(--primary);text-align:center}
 td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
-td.mname:hover{color:var(--primary)}
 .badge{display:inline-block;color:#fff;border-radius:999px;padding:1px 9px;font-size:11px;font-weight:700}
 .chip{display:inline-block;background:var(--plight);color:#1e40af;border-radius:6px;padding:1px 9px;font-size:11.5px;margin:2px 3px 2px 0;cursor:pointer;border:1px solid #bfdbfe}
-.chip:hover{background:var(--primary);color:#fff}
 .chip.news{background:#e1f5ee;color:#085041;border-color:#5DCAA5}
-.chip.news:hover{background:#0F6E56;color:#fff}
 .mtag{display:inline-block;background:#e1f5ee;color:#085041;border:1px solid #5DCAA5;border-radius:999px;padding:1px 9px;font-size:11px;margin:2px 3px 0 0;cursor:pointer}
-.mtag:hover{background:#0F6E56;color:#fff}
 .filters{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
 .filters select,.filters input[type=number]{padding:6px 10px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;background:#fff}
 .filters label{font-size:12.5px;color:var(--muted)}
