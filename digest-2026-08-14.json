@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "date": "2026-08-14",
+    "week": "星期五",
+    "note": "今日主题词：定价权博弈与资本冲刺。DeepSeek V4 Pro 正式版上线并官宣峰谷定价、谷歌发布 Gemini 3.7 Flash、Anthropic 传 10 月 2 万亿美元估值 IPO、DeepMind 掌门交接——模型与资本双线加速。"
+  },
+  "highlights": [
+    {"title": "Anthropic 传 10 月 IPO,估值或达 2 万亿美元", "summary": "据 FT 与央视财经,Anthropic 预计 10 月上市,估值或超 SpaceX 成史上最大 IPO;预计 2026 年底年化营收达 1000-1200 亿美元。"},
+    {"title": "DeepSeek V4 Pro 正式版上线,8/17 起峰谷定价", "summary": "1M 上下文/384K 输出,DeepSWE 62.7 超 Claude Opus 4.8;空闲时段价格为高峰一半,中国开源模型下载占比 41% 首超美国。"},
+    {"title": "谷歌发布 Gemini 3.7 Flash + DeepMind 换帅", "summary": "8/13 发布主打编程与 Agent 工作流的 Gemini 3.7 Flash 并大幅降价;Koray Kavukcuoglu 接替 Hassabis 执掌 DeepMind。"}
+  ],
+  "news": [
+    {
+      "title": "Anthropic 传 10 月 IPO,估值或达 2 万亿美元",
+      "summary": "多位 Anthropic 投资者透露,公司预计 10 月以 2 万亿美元甚至更高估值上市,若成真将超越 SpaceX 成为史上最大 IPO;市场预期其 2026 年底年化营收达 1000-1200 亿美元,今年全年营收超 10 倍增长。Anthropic 已于 6 月向 SEC 秘密提交 IPO 文件,进入静默期。",
+      "date": "8月14日",
+      "source": "央视财经 / 金融时报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2146a7e5fcb31852",
+      "models": []
+    },
+    {
+      "title": "Databricks 完成 50 亿美元融资,估值升至 1900 亿美元",
+      "summary": "AI 数据分析与数据平台公司 Databricks 宣布完成 50 亿美元融资,投后估值达 1900 亿美元,距上次融资约六个月,反映 AI 数据基础设施赛道的资本热度持续攀升。",
+      "date": "8月14日",
+      "source": "财联社",
+      "link": "https://view.inews.qq.com/a/20260814A00SUA00?no-redirect=1",
+      "models": []
+    },
+    {
+      "title": "谷歌 DeepMind 换帅:新掌门接手 Gemini 3.5 Pro 延迟难题",
+      "summary": "Koray Kavukcuoglu 接替 DeepMind 联合创始人 Hassabis 出任高级副总裁,直接向 Pichai 汇报;旗舰模型 Gemini 3.5 Pro 因编程能力未达内部标准已推迟两个月,人才持续流失,谷歌 AI 竞争压力陡增。",
+      "date": "8月14日",
+      "source": "华尔街见闻",
+      "link": "https://www.163.com/dy/article/L48JBQ2G05198NMR.html",
+      "models": []
+    },
+    {
+      "title": "Claude 隐形水印全球强制启用,AI 内容溯源时代到来",
+      "summary": "Anthropic 为 Claude 全产品全球强制启用隐形 AI 水印,复制粘贴或简单改词也难以洗掉标记,以遵守欧盟《AI 法案》对 AI 生成内容溯源的要求,被业内视为 AI 内容'身份证'落地。",
+      "date": "8月14日",
+      "source": "AI的风向标",
+      "link": "https://view.inews.qq.com/a/20260813V0BPVM00?no-redirect=1",
+      "models": []
+    },
+    {
+      "title": "IBM 与 OpenAI 达成战略合作,设立专门 OpenAI 业务部门",
+      "summary": "IBM 将 GPT-5.6 等 OpenAI 前沿模型整合进 IBM Consulting Advantage 咨询 AI 平台,并建立联合市场推广伙伴关系;新设的 OpenAI 业务部门将配备数千名通过 OpenAI 高级认证的顾问与工程师,覆盖企业核心运营与网络安全场景。",
+      "date": "8月13日",
+      "source": "腾讯新闻AI早报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2146a7e5fcb31852",
+      "models": []
+    },
+    {
+      "title": "腾讯 Q2 资本开支 527.8 亿同比 +176%,WorkBuddy 落地 50+ 行业",
+      "summary": "腾讯 Q2 营收 2047.9 亿元(+11%),AI 成为贯穿全季主线;办公智能体 WorkBuddy 已落地 50 多个行业,6 月 PC 端月访问量 2097 万;微信内 AI 智能体'小微'由定制化 WeLM 驱动,正小范围灰度测试。",
+      "date": "8月13日",
+      "source": "东方财富 / 腾讯财报",
+      "link": "https://emwap.eastmoney.com/a/202608133839688589.html",
+      "models": ["WeLM"]
+    },
+    {
+      "title": "苹果拟向出版商支付最高数亿美元,授权新闻内容改进 AI 版 Siri",
+      "summary": "苹果正与多家出版商洽谈多年期内容授权协议,预算或达数亿美元,并考虑按内容实际使用情况付费,为 AI 版 Siri 提供最新新闻与信息能力。",
+      "date": "8月12日",
+      "source": "腾讯新闻AI早报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2146a7e5fcb31852",
+      "models": []
+    },
+    {
+      "title": "思科 Q4 营收 173 亿美元同比 +18%,AI 基础设施订单强劲",
+      "summary": "思科 2026 财年 Q4 营收 173 亿美元(+18%),AI 基础设施订单当季 40 亿美元、全年累计 93 亿美元;公司预计 2027 财年 AI 基础设施营收将达 75 亿美元。",
+      "date": "8月12日",
+      "source": "腾讯新闻AI早报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2146a7e5fcb31852",
+      "models": []
+    },
+    {
+      "title": "'大空头'艾斯曼警告:AI 回报命门在 OpenAI 与 Anthropic",
+      "summary": "曾做空次贷的史蒂夫·艾斯曼在 CNBC 表示,OpenAI 与 Anthropic 两家公司贡献了微软、亚马逊、谷歌、甲骨文约 70% 的 AI 相关收入;中国低成本开源模型崛起或引发全球价格战,动摇万亿美元 AI 基建投资逻辑。",
+      "date": "8月14日",
+      "source": "FX168财经网",
+      "link": "http://view.inews.qq.com/a/20260814A01L7E00",
+      "models": []
+    },
+    {
+      "title": "智谱纳入 MSCI 中国指数",
+      "summary": "MSCI 公布 2026 年 8 月指数审议结果,新纳入智谱等 33 只股票,调整将于 8 月 31 日收盘后生效,AI 公司进入国际指数资产池的信号意义明显。",
+      "date": "8月12日",
+      "source": "中证报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2146a7e5fcb31852",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "RippleMem:让 Agent 长期记忆从'孤立检索'升级为'联想回忆'",
+      "titleEn": "RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory",
+      "summary": "提出联想式回忆框架,使 Agent 记忆从逐条孤立检索升级为跨事件关联的联想召回,直击长程 Agent 记忆碎片化难题。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.13334"
+    },
+    {
+      "title": "LycheeMemory V2:基于语义分段整合的高效 LLM Agent 长期记忆",
+      "titleEn": "LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation",
+      "summary": "通过语义分段级整合(segment-level consolidation)压缩并沉淀长期记忆,兼顾检索效率与记忆保真度。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.12990"
+    },
+    {
+      "title": "AQuA:递归自改进的量化交易研究 Agent",
+      "titleEn": "AQuA: Recursively Self-Improving Quantitative Trading Research Agents",
+      "summary": "让交易研究 Agent 基于自身产出递归迭代改进策略与检索流程,展示 Agent 在金融场景的自主进化能力。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.12841"
+    },
+    {
+      "title": "GEM:桥接推理与检索的生成式嵌入模型",
+      "titleEn": "GEM: A Generative Embedding Model Bridging Reasoning and Retrieval",
+      "summary": "用生成式目标统一嵌入模型,在保留检索能力的同时注入推理能力,缓解传统嵌入与推理脱节的问题。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.13200"
+    },
+    {
+      "title": "科学图表上的 VLM:看不见或被误导时会如何表现",
+      "titleEn": "How Do VLMs Behave When Blind or Misled? Behavioral Evaluation of VLMs on Scientific Figures",
+      "summary": "系统评测视觉语言模型在科学图表任务上的行为,揭示'看不见'或被误导时的失败模式与鲁棒性边界。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.13267"
+    },
+    {
+      "title": "当 Agent 打开聊天软件:直接搜索原始聊天记录匹敌结构化记忆",
+      "titleEn": "When Your Agent Opens the Chat App: Agent-Controlled Search over Raw Chat Logs Rivals Structured Memory",
+      "summary": "让 Agent 直接对原始聊天记录做受控搜索,性能可与精心构建的结构化记忆方案相媲美,为个人数据 Agent 提供更轻的路径。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.12888"
+    },
+    {
+      "title": "LLM 不擅长策略,但记忆增强的 Agent 显著提升推理",
+      "titleEn": "LLMs Are Not Good Strategists, Yet Memory-Enhanced Agency Boosts Reasoning",
+      "summary": "发现 LLM 在策略类任务上表现欠佳,而引入记忆增强的 Agent 化执行能显著提升推理成绩,支持'能力在交互中涌现'的判断。",
+      "authors": "",
+      "link": "https://arxiv.org/abs/2608.12626"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 3.7 Flash",
+      "vendor": "Google",
+      "highlight": "8/13 发布,主打编程、智能体与复杂工作流,号称'最智能的工作型模型',代码调试与生产级生成能力较前代提升且价格大幅下调。",
+      "link": "https://view.inews.qq.com/a/20260814A01RSO00?no-redirect=1"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "vendor": "DeepSeek",
+      "highlight": "正式版 8/13 上线,1M 上下文/384K 输出,Agent 与终端操作能力大幅跃升(DeepSWE 62.7 超 Claude Opus 4.8),8/17 起执行峰谷定价,空闲时段为高峰一半。",
+      "link": "https://huggingface.co/deepseek-ai"
+    },
+    {
+      "name": "Nemotron 3.5 Lightning",
+      "vendor": "NVIDIA",
+      "highlight": "8/11 发布 30B 开源 MoE(每 token 激活 3B),Mamba-2 混合架构,NVFP4 量化,单卡可跑、支持 1M 上下文,面向长循环 Agent 工作负载的'工作马'。",
+      "link": "https://huggingface.co/nvidia"
+    },
+    {
+      "name": "Qwen3.8-2.4T-A95B",
+      "vendor": "阿里巴巴",
+      "highlight": "首次开源 Max 级旗舰权重(2.4T 总参/95B 激活),商用亮相仅 10 天后开放;PaperBench 93.0,Unsloth 已压缩至 397GB 可本地部署。",
+      "link": "https://huggingface.co/Qwen"
+    },
+    {
+      "name": "Grok 4.6",
+      "vendor": "xAI",
+      "highlight": "Artificial Analysis 智能指数 61 分重回前沿梯队,重点转向长流程 AI 智能体;与 Cursor 联合推出多智能体工作平台 Grok Bot,向 SuperGrok Heavy 等订阅用户公测。",
+      "link": "https://huggingface.co/x-ai"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "DeepSeek Harness 开发者预览版开源:'一切皆插件'的 Agent 执行框架",
+      "summary": "8/14 凌晨公测并以 MIT 协议开源,采取'一切皆插件'设计思路,团队负责人崔添翼称其为预览版、欢迎开发者反馈;标志着 DeepSeek 从模型厂商走向全栈智能体工具链。",
+      "source": "智东西",
+      "link": "https://view.inews.qq.com/a/20260814A00THC00?no-redirect=1",
+      "models": []
+    },
+    {
+      "title": "Claude Code v2.1.232:Subagent forking 默认开启、@-mention 跨会话通信、完整 GitLab 支持",
+      "summary": "8/13 发布本周最大更新:subagent 默认以 fork 方式继承父会话上下文与缓存;输入 @ 即可直接 @ 到另一个会话收发消息;GitLab 支持追平 GitHub(密钥脱敏、插件市场克隆、凭据保护)。",
+      "source": "Claude News Today",
+      "link": "https://claude-news.today/en/briefings/briefing-2026-08-14",
+      "models": []
+    },
+    {
+      "title": "Claude Code Auto 模式 8/14 起对 Pro/Max/Team 默认开启",
+      "summary": "Anthropic 将 Claude Code 的 Auto 模式设为 Pro、Max、Team 用户默认行为:AI 可自主执行终端命令与文件编辑而无需逐条审批,向全栈自主编程迈进。",
+      "source": "AI Daily Roundup",
+      "link": "https://dev.to/trillioniar_s_14a3c313e14/ai-daily-roundup-gpt-56-sols-14x-speed-claude-code-auto-mode-and-deepminds-shakeup-16jc",
+      "models": []
+    },
+    {
+      "title": "MongoDB Atlas Managed MCP Server 上线:让编码 Agent 直连实时运营数据",
+      "summary": "8/13 发布完全托管的 MCP Server,Claude Code、Codex、Grok Build、Devin 数分钟内即可接入 Atlas,复用现有凭据、无需自建基础设施;MongoDB MCP server 目前每周 3 万+ 安装。",
+      "source": "MongoDB 官方",
+      "link": "https://investors.mongodb.com/news-releases/news-release-details/mongodb-brings-live-operational-data-agentic-coding-stack",
+      "models": []
+    },
+    {
+      "title": "MCP 2.0 深度解读:从工具调用协议走向'Agent 互联网'基础设施",
+      "summary": "MCP 2.0 六大新特性——分层架构、Streamable HTTP 远程支持、官方 Registry、Extensions 扩展、Skills+Notifications 新原语、全生态客户端支持,定位从'调用工具'升级为'连接整个世界'。",
+      "source": "博客园 itech",
+      "link": "https://www.cnblogs.com/itech/p/22433542",
+      "models": []
+    },
+    {
+      "title": "SnapLogic 8 月发布:MCP 从功能变成基础设施",
+      "summary": "新增 MCP Metrics 页面,跟踪每个部署 server 的流量、错误率、工具调用与 P99 延迟;流水线可直接暴露为工具,平台 MCP Server 新增 8 个发现/导出工具,支持 RFC 8693 token 交换做最小权限下发。",
+      "source": "SnapLogic Blog",
+      "link": "https://www.snaplogic.com/blog/august-2026-product-release",
+      "models": []
+    }
+  ]
+}
