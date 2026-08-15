@@ -1318,6 +1318,14 @@
    "s": "8/14 开源，27B 稠密多模态、262K 上下文（YaRN 1M）；SWE-bench Pro 61.7、CoWorkBench 70.7 超 Opus 4.6 Max；量化后消费级显卡可跑"
   },
   {
+   "d": "08-15",
+   "t": "小红书 dots3-note preview 开源",
+   "m": [
+    "dots3-note preview"
+   ],
+   "s": "8/14 开源，280B/16B active MoE、512K 上下文、Apache 2.0 多模态；首款聚焦长程 Agent 任务开放模型，同系列 IMO 满分；无 AA 分"
+  },
+  {
    "d": "08-14",
    "t": "GPT-5.6 Sol Ultrafast 模式预览",
    "m": [
