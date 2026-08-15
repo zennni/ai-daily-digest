@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "date": "2026-08-15",
+    "week": "星期六",
+    "note": "今日主题词：开源爆发 × 算力金融化。阿里开源 Qwen3.8-27B、智谱发布 GLM-5.3，中国开源阵营再下一城；英伟达联手华尔街筹建 5000 亿美元算力融资平台，AI 资本链条风险同步显影（Jane Street 单月巨亏 150 亿美元）。"
+  },
+  "highlights": [
+    {"title": "阿里开源 Qwen3.8-27B：Apache 2.0，消费级显卡可跑", "summary": "270 亿参数原生多模态稠密模型，262K 上下文（YaRN 外推 1M），reasoning_effort 动态思考；Agent 任务对标闭源旗舰，4-bit 量化约 16GB 可本地运行。"},
+    {"title": "智谱发布 GLM-5.3：编程逼近 Claude Fable 5 的最强开源模型", "summary": "7430 亿参数，靠后训练 Scaling 提升智能上界，公开基准取得开源第一；完整权重两周后开源、API 即将上线。"},
+    {"title": "英伟达联手六大华尔街机构筹建 5000 亿美元 AI 算力融资平台", "summary": "为 OpenAI、Anthropic 等客户采购芯片输血；同日 Jane Street 因 AI 对冲基金爆仓单月巨亏 150 亿美元，AI 资本链条风险显影。"}
+  ],
+  "news": [
+    {
+      "title": "英伟达联手高盛、黑石等六大华尔街机构筹建 5000 亿美元 AI 算力融资平台",
+      "summary": "英伟达联合高盛、黑石、阿波罗、贝莱德、KKR 等机构筹建规模高达 5000 亿美元的 AI 算力融资平台，为 OpenAI、Anthropic 等客户采购芯片输血。黄仁勋澄清英伟达兜底上限为单笔交易的 25%，意在将 GPU 变为可投资资产、降低自身资产负债表压力。",
+      "date": "8月15日",
+      "source": "智通财经网",
+      "link": "http://view.inews.qq.com/a/20260815A03KXO00",
+      "models": []
+    },
+    {
+      "title": "阿里千问正式开源 Qwen3.8-27B：Apache 2.0，消费级显卡可跑",
+      "summary": "8 月 14 日晚间开源，270 亿参数原生多模态稠密模型，支持 262K 原生上下文（YaRN 可外推至 1M），新增 reasoning_effort 按任务难度动态调节思考深度。基准测试中 Agentic terminal coding 73.0（前代 63.4）、SWE-bench Pro 61.7、JobBench 33.4（前代 21.8）；4-bit 量化约 16GB，32GB MacBook 即可运行。此前旗舰 Qwen3.8-Max 权重也已开放。",
+      "date": "8月15日",
+      "source": "量子位 / IT之家",
+      "link": "https://new.qq.com/rain/a/20260815A03QQ300?refer=cp_1009",
+      "models": ["Qwen3.8-27B", "Qwen3.8 Max"]
+    },
+    {
+      "title": "智谱发布 GLM-5.3：编程逼近 Claude Fable 5 的最强开源模型",
+      "summary": "8 月 14 日发布新一代基座模型 GLM-5.3，总参数 7430 亿。基座未变，靠后训练 Scaling 提升智能上界：内部自建评测较 GLM-5.2 提升 50%，Terminal Bench 3.0、Agents' Last Exam (CLI) 等公开基准取得开源第一。已上线 ZCode、AutoClaw 等工具，API 即将上线，完整权重两周后开源。",
+      "date": "8月15日",
+      "source": "IT之家 / 界面新闻",
+      "link": "https://www.ithome.com/0/989/979.htm",
+      "models": ["GLM-5.3", "Claude Fable 5"]
+    },
+    {
+      "title": "谷歌 Gemini 3.7 Flash 半价铺开：DeepSWE 65.3%，三周闪电迭代",
+      "summary": "距 3.6 Flash 仅三周的迭代版，入门价仅为 3.6 的一半（$0.75/$3.75 每百万 tokens，至年底）。DeepSWE 从 49.0% 升至 65.3%、FrontierCode 43.6% 超 Claude Sonnet 5、AutomationBench 30.4%。当日同步进入 Gemini API、AI Studio、GitHub Copilot、Cursor、Cline、Devin 等全线工具链。",
+      "date": "8月15日",
+      "source": "Digital Colliers / Techmeme",
+      "link": "https://www.digitalcolliers.com/news/2026-08-14",
+      "models": ["Gemini 3.7 Flash", "Claude Sonnet 5"]
+    },
+    {
+      "title": "OpenAI 开放 GPT-5.6 Sol 超高速模式：最高 14 倍速、每秒 750 tokens",
+      "summary": "Ultrafast 模式由 Cerebras 晶圆级芯片驱动，输出速度约为 Standard 的 14 倍（最高 750 tokens/秒），面向实时对话、自动化智能体等高并发场景，先对部分客户有限预览。Cerebras 称 Humanity's Last Exam 全部 2500 题仅用 11 小时 11 分钟（Claude Fable 5 需 78 小时）。",
+      "date": "8月15日",
+      "source": "OpenAI Blog / TechCrunch",
+      "link": "https://openai.com/blog/",
+      "models": ["GPT-5.6 Sol", "Claude Fable 5"]
+    },
+    {
+      "title": "OpenAI 上市前年化营收有望突破 400 亿美元",
+      "summary": "据知情人士，OpenAI 年化营收有望超 400 亿美元，较 2025 年末近乎翻番，为登陆华尔街提供支撑。增长来自 AI 代码软件业务、订阅扩张与起步中的广告业务。另据财联社，其首席营收官 Denise Dresser 上任不到一年即离职，公司同期任命 Dali Rajic 接任，正为潜在 IPO 铺路。",
+      "date": "8月15日",
+      "source": "界面新闻 / 财联社",
+      "link": "https://www.163.com/dy/article/L4C47JGB0534A4SC.html",
+      "models": []
+    },
+    {
+      "title": "Jane Street 因 AI 对冲基金爆仓单月巨亏 150 亿美元",
+      "summary": "华尔街自营交易巨头 Jane Street 今年 7 月遭遇约 150 亿美元损失，为十年来首次单月亏损，主因投资的 AI 对冲基金 Situational Awareness 爆仓及科技股剧烈震荡。公司正推进约 146 亿美元债务重组，并主动关闭 7 月造成亏损的风险敞口。",
+      "date": "8月15日",
+      "source": "华尔街见闻",
+      "link": "http://view.inews.qq.com/a/20260815A03LTN00",
+      "models": []
+    },
+    {
+      "title": "世界银行报告：AI 有望成发展中国家'追赶加速器'",
+      "summary": "世行 2026 年世界发展报告指出，AI 普及速度远超蒸汽机、电力与互联网，有望助发展中国家 10 年内取得原本需上百年的跨越。专家认为开源框架与'技术即服务'模式降低后发国家门槛，但电力、网络、算力与人才鸿沟可能催生新的'智能鸿沟'。",
+      "date": "8月15日",
+      "source": "人民网",
+      "link": "http://view.inews.qq.com/a/20260815A036O300",
+      "models": []
+    },
+    {
+      "title": "腾讯 Q2 资本开支 527.8 亿同比 +176%，混元 Hy4 计划近期上线",
+      "summary": "腾讯 2026 年 Q2 资本开支 527.8 亿元，同比增 176%，AI 新业务拖累经营利润约 105 亿元。总裁刘炽平称投入集中在今明两年、风险可控；混元 Hy4 计划近期上线，WorkBuddy 国内办公智能体访问量居首。",
+      "date": "8月15日",
+      "source": "中国经营报",
+      "link": "http://view.inews.qq.com/a/20260815A02BP100",
+      "models": ["Hy3"]
+    },
+    {
+      "title": "前 OpenAI 算法专家姜旭新项目亮源新创获数亿元 Pre-A 融资",
+      "summary": "具身智能基础模型企业亮源新创完成数亿元 Pre-A 轮融资，国科投资领投，招商局创投、襄禾资本参与。创始人姜旭曾任 OpenAI 算法专家，参与 InstructGPT 到 GPT-4 全程研发，公司提出'规模化预训练-对齐-部署'三段范式。",
+      "date": "8月15日",
+      "source": "腾讯证券",
+      "link": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026081410162294d6fb2e",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "OmniScientist：全模态、全学科的 AI 科学家",
+      "titleEn": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+      "summary": "多模态 + Agent 前沿交叉工作，构建能跨模态、跨学科自主完成科研闭环的 AI 科学家智能体。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13558"
+    },
+    {
+      "title": "AlayaWorld：交互式长时程世界建模完整技术报告",
+      "titleEn": "AlayaWorld: Interactive Long-Horizon World Modeling - Full Technical Report (v1.1)",
+      "summary": "17 人团队的大型技术报告，覆盖多模态理解、世界模型、长时程决策等热点方向。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13492"
+    },
+    {
+      "title": "StateBridge：LLM 多智能体系统的免训练隐状态对齐",
+      "titleEn": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
+      "summary": "为 LLM 多智能体潜空间通信提出免训练对齐方案，已获 COLM 2026 接收，是 Agent 通信机制的重要创新。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13317"
+    },
+    {
+      "title": "Beyond Final Scores：长时程 AI 研发 Agent 的系统性评测",
+      "titleEn": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+      "summary": "直击当前 Agent 评测只看最终分数、忽视过程问题的痛点，对长时程 AI 研发场景下的 Agent 进行系统性评估。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13417"
+    },
+    {
+      "title": "Practice Makes Unsafe：自我改进 LLM Agent 的技能错误演化",
+      "titleEn": "Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents",
+      "summary": "揭示自我改进 Agent'越练越不安全'的隐患：技能在迭代中可能错误演化，是 AI 安全与 Agent 交叉方向的热点研究。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.12851"
+    },
+    {
+      "title": "FlashDrive：面向自动驾驶的视觉-语言-动作快速推理",
+      "titleEn": "FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving",
+      "summary": "多模态 + 具身智能 + 实际应用：面向自动驾驶的 VLA 模型快速推理方案，工程价值高。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.12932"
+    },
+    {
+      "title": "重新思考 LLM 归一化层位置：课程式深度增长下的 Post-Norm",
+      "titleEn": "Rethinking Normalization Placement for LLMs: Post-Norm under Curriculum Depth Growing",
+      "summary": "结合课程式深度增长训练重新审视归一化层位置，对大模型训练效率与稳定性有直接参考价值。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13156"
+    }
+  ],
+  "models": [
+    {
+      "name": "Qwen3.8-27B",
+      "vendor": "阿里巴巴",
+      "highlight": "8/14 晚开源，270 亿参数原生多模态稠密模型，262K 上下文（YaRN 外推 1M），reasoning_effort 动态思考；Agent 任务对标闭源旗舰（CoWorkBench 70.7 vs Opus 4.6 Max 68.2），4-bit 量化约 16.1GB，32GB MacBook 可跑，Apache 2.0 商用无忧。",
+      "link": "https://huggingface.co/collections/Qwen/qwen38"
+    },
+    {
+      "name": "GLM-5.3",
+      "vendor": "智谱",
+      "highlight": "8/14 发布，7430 亿参数，靠后训练 Scaling 大幅提升智能上界；编程与智能体能力逼近 Claude Fable 5，为当前排名最高开源模型；完整权重两周后开源、API 即将上线。",
+      "link": "https://www.ithome.com/0/989/979.htm"
+    },
+    {
+      "name": "Gemini 3.7 Flash",
+      "vendor": "Google",
+      "highlight": "8/13 发布、距 3.6 仅三周：DeepSWE 65.3%（+33% 相对提升）、FrontierCode 43.6%，入门价减半至 $0.75/$3.75 每百万 tokens（至年底）；Artificial Analysis 智能指数 High 档 56 分（+4），1M 上下文。",
+      "link": "https://www.digitalcolliers.com/news/2026-08-14"
+    },
+    {
+      "name": "GPT-5.6 Sol",
+      "vendor": "OpenAI",
+      "highlight": "《GPT-5.6 构建者指南》披露：Sol 在 ARC-AGI-3 上从 13.3% 飙至 38.3% 且输出 token 降 6 倍；Ultrafast 模式由 Cerebras 驱动最高 750 tokens/秒、14 倍速，有限预览开放。",
+      "link": "https://openai.com/blog/"
+    },
+    {
+      "name": "Nemotron 3.5 Lightning",
+      "vendor": "NVIDIA",
+      "highlight": "30B MoE 开源模型，专注快速代理执行；与 Meta Muse-Glimmer-30B、Liquid AI LFM2.5 等同期发布，单张 RTX 5090 或 DGX Spark 即可高效运行桌面级本地 AI。",
+      "link": "https://huggingface.co/nvidia"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "MCP SDK 总下载量突破 10 亿，无状态协议规范落地",
+      "summary": "MCP 生态里程碑：TypeScript 与 Python SDK 均跨过 10 亿总下载量，月下载近 5 亿；2026-07-28 规范将核心从有状态常连改为无状态请求/响应，远程服务器可置于普通轮询负载均衡之后。AWS 贡献的 Tasks 扩展覆盖长时运行 Agent。",
+      "source": "MCP Blog",
+      "link": "https://www.cadb.info/reports/claude-ai-daily-2026-08-14.html",
+      "models": []
+    },
+    {
+      "title": "Anthropic 研究：多代理协作的引导与目标一致性",
+      "summary": "Anthropic 发布博客分析 swarm 与 orchestrated 代理的局限，强调引导与目标一致性在多代理协作中的重要性；同期 Enterprise 版 Claude Code / Cowork 增加合规 API 覆盖与 Skill 安全扫描。",
+      "source": "Anthropic Blog",
+      "link": "https://www.cadb.info/reports/claude-ai-daily-2026-08-14.html",
+      "models": []
+    },
+    {
+      "title": "OpenAI Computer History：把真实操作变成持久记忆",
+      "summary": "OpenAI 推出 macOS 新功能 Computer History，将用户在 Mac 上的真实活动转化为 ChatGPT 与 Codex 的持久记忆，Agent 记忆成为开发者生产力竞赛的新前沿。",
+      "source": "Jason Robert News",
+      "link": "https://jasonrobert.dev/news",
+      "models": []
+    },
+    {
+      "title": "Mattermost v11.10：插件注册 MCP Server、动态工具调用",
+      "summary": "协作平台 Agent 能力升级：插件可注册为 MCP Server 直接向 Agent 暴露工具；动态工具调用按需加载相关工具；文件按需分页读取；支持主模型故障时的模型回退。",
+      "source": "Mattermost Blog",
+      "link": "https://mattermost.com/blog/mattermost-v11-10-is-now-available",
+      "models": []
+    },
+    {
+      "title": "Xnurta 发布零售媒体 MCP Server：广告投放接入 AI 助手",
+      "summary": "广告平台 Xnurta 发布 MCP Server 通用版，把零售媒体数据接入 ChatGPT、Claude 等 AI 助手；首批写能力（受控执行）同步进入闭测，后续将推出批量操作与投放建议引擎。",
+      "source": "Business Wire",
+      "link": "https://www.morningstar.com/news/business-wire/20260813360711/xnurta-launches-mcp-for-retail-media-with-ai-powered-campaign-management-entering-beta-the-same-day",
+      "models": []
+    }
+  ]
+}
