@@ -1,5 +1,5 @@
 {
- "date": "2026-08-15",
+ "date": "2026-08-16",
  "models": [
   {
    "name": "Claude Opus 5",
@@ -1302,28 +1302,51 @@
  ],
  "changes": [
   {
-   "d": "08-15",
-   "t": "GLM-5.3 发布：编程/Agent 媲美 Claude Fable 5",
+   "d": "08-16",
+   "t": "GLM-5.3 API 定价公布（$1.40/$4.40）",
    "m": [
     "GLM-5.3"
    ],
-   "s": "8/14 发布，743B 后训练 Scaling；DeepSWE 66.9、Terminal-Bench 3.0 28.3、CyberGym 84.5%；AA GDPval-AA v2 1769 超 Fable 5；无 AA 指数分，暂列第七节"
+   "s": "8/14 发布后 API 已上线，定价与 GLM-5.2 相同（$1.40 输入/$4.40 输出/缓存 $0.26）；思考强制三档 effort；权重约 8/28 开源；仍无 AA 同口径分"
   },
   {
-   "d": "08-15",
-   "t": "Qwen3.8-27B 开源（Apache 2.0）",
+   "d": "08-16",
+   "t": "DeepSeek 峰谷价明日（8/17 0:00）生效",
    "m": [
-    "Qwen3.8-27B"
+    "DeepSeek V4 Flash",
+    "DeepSeek V4 Pro"
    ],
-   "s": "8/14 开源，27B 稠密多模态、262K 上下文（YaRN 1M）；SWE-bench Pro 61.7、CoWorkBench 70.7 超 Opus 4.6 Max；量化后消费级显卡可跑"
+   "s": "本期主表按现行价（Flash ¥1/¥2、Pro ¥3/¥6）为最后一期；8/17 起高峰（9:00-12:00/14:00-18:00）全计费项 2 倍：Flash ¥3/¥9、Pro ¥9/¥27，闲时减半"
+  },
+  {
+   "d": "08-16",
+   "t": "阿里千问全球下载突破 30 亿",
+   "m": [
+    "Qwen3.8 Max"
+   ],
+   "s": "HF《开放模型现状》报告：千问家族六个月累计下载 20.45 亿次登顶全球开源第一（超谷歌 4.18 亿、Meta 2.27 亿），衍生模型超 30 万"
   },
   {
    "d": "08-15",
-   "t": "小红书 dots3-note preview 开源",
+   "t": "dots3-note preview API 接入 OpenRouter",
    "m": [
     "dots3-note preview"
    ],
-   "s": "8/14 开源，280B/16B active MoE、512K 上下文、Apache 2.0 多模态；首款聚焦长程 Agent 任务开放模型，同系列 IMO 满分；无 AA 分"
+   "s": "Terminal-Bench 2.1 75.1 为开放模型最佳；官方 API（dots.ai/platform）与 OpenRouter 双通道；正式版近期开源，无 AA 分"
+  },
+  {
+   "d": "08-15",
+   "t": "Qwen3.8-27B 权重正式上线",
+   "m": [
+    "Qwen3.8-27B"
+   ],
+   "s": "8/14 晚 23 时 Hugging Face/ModelScope 开放，Apache 2.0，27B 稠密多模态、262K 上下文（YaRN 1M）；AA 8/15 检查暂无评分页（404）"
+  },
+  {
+   "d": "08-15",
+   "t": "DeepSeek Harness 开源（Agent 框架，非模型）",
+   "m": [],
+   "s": "基于 Cordis 插件体系的 Agent harness，MIT；发布 45 小时 GitHub 星标 10.5 万；不影响模型榜单"
   },
   {
    "d": "08-14",
@@ -1334,7 +1357,7 @@
    "s": "Cerebras 晶圆级芯片驱动，最高 750 tokens/秒、约 14 倍速；面向高并发 Agent 场景有限预览"
   },
   {
-   "d": "08-14",
+   "d": "08-13",
    "t": "Gemini 3.7 Flash 发布即入榜",
    "m": [
     "Gemini 3.7 Flash"
@@ -1348,7 +1371,15 @@
     "DeepSeek V4 Flash",
     "DeepSeek V4 Pro"
    ],
-   "s": "高峰 9:00-12:00/14:00-18:00 全计费项 2 倍；Flash 高峰 ¥3/¥9、Pro ¥9/¥27"
+   "s": "高峰 9:00-12:00/14:00-18:00 全计费项 2 倍；Flash 高峰 ¥3/¥9、Pro ¥9/¥27；缓存命中涨幅最高 500%"
+  },
+  {
+   "d": "08-12",
+   "t": "Grok 4.6 发布即入榜",
+   "m": [
+    "Grok 4.6"
+   ],
+   "s": "AA 61（60.9）与 GPT-5.6 Sol 并列第一闭源梯队；$2/$6 定价约为 Fable 5 的 1/10；500K 上下文、多模态"
   },
   {
    "d": "08-12",
@@ -1356,15 +1387,7 @@
    "m": [
     "Solar Pro 4"
    ],
-   "s": "Upstage 旗舰，$0.30/$1.20；促销 90% off 至 9/10"
-  },
-  {
-   "d": "08-12",
-   "t": "MAI-Thinking-1 公测",
-   "m": [
-    "MAI-Thinking-1"
-   ],
-   "s": "微软首款自研推理模型，Foundry 公测，无 AA 同口径分"
+   "s": "Upstage 旗舰，$0.30/$1.20；促销 90% off（$0.03/$0.12）至 9/10"
   },
   {
    "d": "08-12",
@@ -1384,26 +1407,10 @@
    "s": "30B-A3B MoE，AA 24，OpenMDW-1.1，OpenRouter $0.05/$0.20"
   },
   {
-   "d": "08-11",
-   "t": "Claude Sonnet 5 促销转永久",
-   "m": [
-    "Claude Sonnet 5"
-   ],
-   "s": "$2/$10 取消 9/1 涨价，成为标准价"
-  },
-  {
-   "d": "08-10",
-   "t": "Muse Glimmer 开源",
-   "m": [
-    "Muse Glimmer"
-   ],
-   "s": "Meta 首个 Apache 2.0 模型，30B，AA 35，单卡 24GB 可部署"
-  },
-  {
    "d": "持续",
-   "t": "AA 指数升级 v4.1.1",
+   "t": "AA 指数维持 v4.1.1（8/13 快照仍最新）",
    "m": [],
-   "s": "8/13 数据；评分器升级 GPT-5.6 Luna medium；Nemotron 3 Super 新获 26 分"
+   "s": "8/15-16 无新快照，评分器 GPT-5.6 Luna medium；主榜分数与上期一致，排名结构延续"
   }
  ]
 }
