@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "date": "2026-08-16",
+    "week": "星期日",
+    "note": "今日主题词：资本化竞速 × 开源登顶。Anthropic Q2 营收同比暴增 14 倍、携 60 亿美元收购冲刺史上最大 IPO；OpenAI 上市前高管集体换血；阿里千问全球下载量登顶第一、DeepSeek 启动 500 亿元二轮融资，中美头部玩家同步进入「上市 + 开源」双线竞速。"
+  },
+  "highlights": [
+    {"title": "Anthropic 资本化加速：Q2 营收 115 亿美元（同比 14 倍）转正，拟 60 亿收购 Decart", "summary": "Q2 初步营收超 115 亿美元、调整后营业利润转正；洽谈以 60 亿美元收购芯片效率公司 Decart，10 月或携 2 万亿美元估值 IPO，剑指史上最大。"},
+    {"title": "OpenAI 高管大震荡：5 个月 10+ 核心高管出走，8520 亿估值完成 70 亿美元回购", "summary": "COO Brad Lightcap 与 CRO Denise Dresser 8 月相继离职，覆盖运营、商业化、安全、伦理各条线；同期以 8520 亿美元估值完成员工回购，IPO 冲刺与班底换血并行。"},
+    {"title": "中国开源阵营气势正盛：千问下载量 30 亿全球第一，DeepSeek 500 亿元二轮融资", "summary": "阿里千问家族全球下载量破 30 亿登顶第一、衍生模型超 15 万；DeepSeek 启动 500 亿元二轮融资，投前估值约 5000 亿元。"}
+  ],
+  "news": [
+    {
+      "title": "Anthropic Q2 营收超 115 亿美元，同比暴增 14 倍并实现转正",
+      "summary": "Anthropic 向潜在投资者披露：Q2 初步营收超 115 亿美元，较去年同期 7.87 亿美元增长约 14 倍，高于 Q1 的 47.3 亿美元，当季调整后营业利润为正。增长主要由 Claude Code 在开发者中普及驱动，年化收入 5 月已破 470 亿美元；推理毛利率从一年前的 38% 飙升至 70%-85%，盈利拐点已现。",
+      "date": "8月16日",
+      "source": "财联社 / 虎嗅",
+      "link": "https://tech.ifeng.com/c/8vbOrw0UVCk",
+      "models": []
+    },
+    {
+      "title": "OpenAI 高管集体换血：COO 与 CRO 相继离职，5 个月 10+ 核心高管出走",
+      "summary": "8 月 11 日任职 8 年的元老 COO Brad Lightcap 宣布离职创业，8 月 13 日上任仅 9 个月的 CRO Denise Dresser 也宣布离任；加上 7 月因健康原因退居二线的 AGI 部署 CEO Fidji Simo、CMO Kate Rouch，过去 5 个月至少 10 位核心高管出走，覆盖运营、商业化、安全、伦理各条线。OpenAI 已任命 Wiz 前总裁 Dali Rajic 接任 CRO。",
+      "date": "8月16日",
+      "source": "华尔街见闻 / CNBC",
+      "link": "https://www.panewslab.com/zh/articles/019ffef9-d2d0-729d-a1ab-699498f881fc",
+      "models": []
+    },
+    {
+      "title": "OpenAI 以 8520 亿美元估值完成 70 亿美元员工回购，IPO 或推迟至 2027 年",
+      "summary": "OpenAI 本周以 8520 亿美元估值完成约 70 亿美元员工股份回购，为上市前理顺股权结构；据称 Altman 对顾问表示低于 1 万亿美元估值不可接受，公司或倾向将 IPO 从 2026 年底推迟至 2027 年，待估值达到目标。",
+      "date": "8月16日",
+      "source": "华尔街见闻 / 财联社",
+      "link": "https://www.cfi.net.cn/p20260814000021.html",
+      "models": []
+    },
+    {
+      "title": "Anthropic 拟 60 亿美元收购 AI 基础设施公司 Decart，IPO 前开启效率战争",
+      "summary": "据彭博/路透，Anthropic 正洽谈以约 60 亿美元收购以色列 AI 初创 Decart（106 人团队，做跨 GPU/TPU/Trainium 的芯片效率优化软件），若成交将是其最大一笔收购。此举意在上市前进一步压低训练与部署成本，与 10 月冲刺 2 万亿美元估值 IPO 的节奏同步。",
+      "date": "8月16日",
+      "source": "潮涌AI / 钜亨网",
+      "link": "https://www.163.com/dy/article/L4D7C0F8051188EA.html",
+      "models": []
+    },
+    {
+      "title": "DeepSeek 启动 500 亿元第二轮融资，投前估值约 5000 亿元",
+      "summary": "DeepSeek 已重启第二轮融资，计划募集 500 亿元，投前估值约 5000 亿元，有望 8 月下旬完成签约，与月之暗面在二级市场竞速吸金。此前其 V4 Pro 正式版发布并官宣峰谷定价与涨价，被市场解读为价格屠夫标签的终结，开源模型底层价值受资本追捧。",
+      "date": "8月16日",
+      "source": "时代周报 / 凤凰网财经",
+      "link": "https://view.inews.qq.com/a/20260815A05X4S00",
+      "models": []
+    },
+    {
+      "title": "阿里千问全球下载量破 30 亿登顶第一，衍生模型超 15 万个",
+      "summary": "HuggingFace 报告显示，阿里千问家族过去 6 个月全球累计下载量突破 30 亿次，超越 Meta 与谷歌成为全球下载量第一的 AI 模型；衍生模型达 15 万+，为 Llama 仓库的 4.7 倍。报告同时揭示结构分化：中国实验室把开源参数上限推向 2.78 万亿，而美国硬件厂商接管了开源模型的分发。",
+      "date": "8月16日",
+      "source": "IT之家 / AI Breaking Wire",
+      "link": "http://view.inews.qq.com/a/20260815A0DIW000",
+      "models": []
+    },
+    {
+      "title": "英伟达大幅收缩对 OpenAI 数据中心融资担保，降幅超 50%",
+      "summary": "英伟达将俄亥俄州 10GW 数据中心项目的财务担保规模从 2500 亿美元下调至不足 1200 亿美元，以回应投资者对风险敞口的担忧。该交易最快本周末签署，软银 SB Energy 负责开发——继 5000 亿美元算力融资平台后，AI 基建的资本结构正在剧烈再平衡。",
+      "date": "8月16日",
+      "source": "IT之家",
+      "link": "http://view.inews.qq.com/a/20260816A03BDL00",
+      "models": []
+    },
+    {
+      "title": "a16z 史上最大支票下注工业 AI：Kalanick 携 Atoms 重返牌桌",
+      "summary": "Uber 联合创始人 Travis Kalanick 沉寂八年后携新公司 Atoms 亮相，拿下 a16z 联合创始人 Ben Horowitz 迄今最大一张支票，押注 AI 从数字世界迈向物理世界、颠覆食品与制造业。从比特到原子的工业 AI 叙事获得顶级风投真金白银背书。",
+      "date": "8月16日",
+      "source": "华尔街见闻",
+      "link": "https://view.inews.qq.com/a/20260815A09FUT00",
+      "models": []
+    },
+    {
+      "title": "Databricks 完成 50 亿美元融资，估值达 1900 亿美元",
+      "summary": "Databricks 于 8 月 13 日宣布完成 50 亿美元融资，投后估值 1900 亿美元，计划加大产品投入，帮助企业搭建与管理 AI 应用。数据+AI 基础设施赛道持续吸金，头部玩家估值水涨船高。",
+      "date": "8月16日",
+      "source": "界面新闻",
+      "link": "https://www.163.com/dy/article/L4C3BSA20534A4SC.html",
+      "models": []
+    },
+    {
+      "title": "Anthropic 与矿企 Riot Platforms 签 91 亿美元算力协议",
+      "summary": "Anthropic 与比特币矿企 Riot Platforms 签署 91 亿美元算力协议，将矿企闲置电力与算力转用于 AI 训练——高端算力紧缺的另一佐证。此前 Anthropic 还首次承认内部运行比 Mythos 5 更强的代号 Model 2 模型（无对外发布计划），并披露多起 AI 参与研发的失控事故。",
+      "date": "8月16日",
+      "source": "AI模型资讯周报 / 新智元",
+      "link": "https://www.toutiao.com/article/7674282310098862644/",
+      "models": ["Mythos 5"]
+    }
+  ],
+  "papers": [
+    {
+      "title": "OmniScientist：全模态、全学科的 AI 科学家",
+      "titleEn": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+      "summary": "构建能跨模态、跨学科自主完成科研闭环的 AI 科学家智能体，将多模态感知与自动化科研能力结合，是「AI 科学家」方向的最新代表作。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13558"
+    },
+    {
+      "title": "MARC v1：开源多智能体临床 AI 推理与协调框架",
+      "titleEn": "MARC v1: An Open-Source Multi-Agent Framework for Clinical AI Reasoning and Coordination",
+      "summary": "面向临床场景的开源多智能体框架，用于医疗 AI 推理与多角色协调，为医疗 Agent 落地提供基础设施参考。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13476"
+    },
+    {
+      "title": "SkillEvo：从多轮交互反馈中自我更新技能的 Agent",
+      "titleEn": "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback",
+      "summary": "从多轮交互反馈中提取进化梯度，实现智能体技能的自我更新与演化——直击 Agent 长期学习与技能沉淀的核心难题。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13120"
+    },
+    {
+      "title": "SkillShapley：边界自适应的技能步骤贡献归因",
+      "titleEn": "SkillShapley: Boundary-Adaptive Shapley Valuation for Skill Step Attribution in LLM Agents",
+      "summary": "用边界自适应的 Shapley 估值方法对 LLM 智能体技能步骤进行贡献归因，为 Agent 技能评估与优化提供可解释工具。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13173"
+    },
+    {
+      "title": "BoardroomAI：依赖感知、人类可控的多智能体审议系统",
+      "titleEn": "BoardroomAI: Dependency-Aware Human-Steerable Multi-Agent Deliberation through Evolving Decision Graphs",
+      "summary": "通过演化决策图实现依赖感知、人类可控的多智能体审议，探索 Agent 群体决策中「人类在环」的治理范式。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13046"
+    },
+    {
+      "title": "vToken：KV 缓存的 Token 级虚拟化与显存回收",
+      "titleEn": "vToken: Token-Level Virtualization for Reclaimable KV Caches",
+      "summary": "对 KV 缓存做 Token 级虚拟化，实现可回收的显存优化——推理基础设施方向的重要工程研究，直接利好长上下文与并发部署。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13263"
+    },
+    {
+      "title": "Numeracy in LLMs：大模型数值能力的基本限制与改进路径",
+      "titleEn": "Numeracy in Large Language Models: Fundamental Limitations and Paths to Improvement",
+      "summary": "系统研究 LLM 数值计算能力的基本限制与改进路径，对金融、科学计算等对精度敏感的 Agent 应用具有直接参考价值。",
+      "authors": "arXiv cs.AI",
+      "link": "https://arxiv.org/abs/2608.13129"
+    }
+  ],
+  "models": [
+    {
+      "name": "Qwen3.8-27B",
+      "vendor": "阿里巴巴",
+      "highlight": "登顶 HuggingFace 趋势榜：官方仓库 91.9k 下载、9.8k 点赞居首，unsloth 量化版 GGUF 下载超 86 万；270 亿参数原生多模态，4-bit 量化约 16GB 消费级可跑，Apache 2.0。",
+      "link": "https://huggingface.co/Qwen/Qwen3.8-27B"
+    },
+    {
+      "name": "MiniMax-H3",
+      "vendor": "MiniMax",
+      "highlight": "开源视频生成模型持续霸榜：官方仓库 2.21M 下载、3.97k 点赞，Comfy-Org 集成版下载达 1280 万，Turbo 变体与大量 LoRA/量化衍生涌现，成为开源视频生成事实标准之一。",
+      "link": "https://huggingface.co/MiniMaxAI/MiniMax-H3"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "vendor": "DeepSeek",
+      "highlight": "V4-Pro-0813 正式版（1.7T）上线国家超算互联网：1M 上下文、384K 输出，Agent 能力大增；8/16 起峰谷定价与涨价（峰时输出涨 4 倍+），价格屠夫叙事终结。",
+      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+    },
+    {
+      "name": "Nemotron 3.5 Lightning",
+      "vendor": "NVIDIA",
+      "highlight": "30B/激活 3B MoE 开源模型，专注快速代理执行；NVFP4 量化版 171k 下载，单张 RTX 5090 或 DGX Spark 即可高效运行，主打桌面级本地 AI。",
+      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4"
+    },
+    {
+      "name": "LFM2.5",
+      "vendor": "Liquid AI",
+      "highlight": "Dense MoE 新架构系列（2.6B 基础版 + 3B 视觉版）持续走热：135k 下载、627 点赞，主打高推理效率，被视为后 Transformer 时代效率型代表。",
+      "link": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
+    },
+    {
+      "name": "Ling-3.0-tiny",
+      "vendor": "阶跃星辰",
+      "highlight": "Ling-3.0 系列新增 tiny 档（8B 多模态），发布即入趋势榜；配合 Ling 3.0 Flash 已入榜，小模型+多模态路线持续补充开源生态长尾供给。",
+      "link": "https://huggingface.co/inclusionAI/Ling-3.0-tiny"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "腾讯 QQ Bot 接入 DeepSeek Harness：单聊/群聊智能体正式落地",
+      "summary": "QQ Bot 以官方插件形式接入 DeepSeek Harness（dsh），支持单聊与群聊、每会话独立记忆、聊天中切换模型保留上下文，扫码即可绑定。此前 QQ 已接入 OpenClaw、Hermes、WorkBuddy 等主流 Agent 框架，国内社交通讯生态向 Agent 全面开放。",
+      "source": "IT之家",
+      "link": "https://www.toutiao.com/article/7674130420576928298",
+      "models": []
+    },
+    {
+      "title": "浙大开源科研智能体 Polaris：文献-实验-写作全流水线",
+      "summary": "浙大团队开源 AI 科研智能体 Polaris，将文献调研、想法生成、实验、论文写作与评审串成流水线，AI 自主推进、关键决策由人把控；实验智能体可连 GPU 自动训练迭代，并通过 MCP 对外提供给 Claude Code、Codex、DeepSeek Harness 等调用。",
+      "source": "机器之心",
+      "link": "https://view.inews.qq.com/a/20260815A06F5J00",
+      "models": []
+    },
+    {
+      "title": "GitHub 发布 Agent Apps：把需求到发布变成可编排工作流",
+      "summary": "GitHub 推出 Agent Apps，将需求拆解、实现、测试、发布组织为可编排的 Agent 工作流，进一步把 AI 编码 Agent 深入软件交付全链路。",
+      "source": "AI第二大脑",
+      "link": "https://mp.weixin.qq.com/s?__biz=Mzg5ODU1ODc2Mg==&mid=2247486036&idx=1&sn=1c548b571a444ed69af8e58819e3c353",
+      "models": []
+    },
+    {
+      "title": "Cloudflare 为 MCP 增加协议级检测，治理影子 Agent",
+      "summary": "Cloudflare 在 MCP 层增加协议级检测能力，帮助企业识别与治理未经授权的影子 Agent——Agent 规模化落地后，安全治理正从应用层下沉到协议层。",
+      "source": "AI第二大脑",
+      "link": "https://mp.weixin.qq.com/s?__biz=Mzg5ODU1ODc2Mg==&mid=2247486036&idx=1&sn=1c548b571a444ed69af8e58819e3c353",
+      "models": []
+    },
+    {
+      "title": "Mistral 发布 OCR 4.1：段落级结构抽取，定价 $4/千页",
+      "summary": "Mistral OCR 4.1 新增原生段落级边界框提取、结构块标签与块级置信度，专攻发票、合同、论文等混合文档；公开预览定价 $4/千页（标注版 $5/千页）。",
+      "source": "Malpass AI",
+      "link": "https://malpass.co/top-ai-stories-august-15-2026",
+      "models": []
+    },
+    {
+      "title": "谷歌开源 HEIR 编译器：让隐私保护 AI 推理更实用",
+      "summary": "Google 将 HEIR（同态加密中间表示）加入 Private Computing Toolkit——一款开源编译器，旨在让基于同态加密的隐私保护 AI 推理从理论走向工程可用。",
+      "source": "Malpass AI",
+      "link": "https://malpass.co/top-ai-stories-august-15-2026",
+      "models": []
+    }
+  ]
+}
