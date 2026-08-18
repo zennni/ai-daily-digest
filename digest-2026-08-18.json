@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "date": "2026-08-18",
+    "week": "星期二",
+    "note": "今日主题词：营收狂奔与开源围剿。Anthropic 年化营收半年翻 7 倍至 650 亿美元、最快 9-10 月 IPO；OpenAI 联手英伟达锁定俄亥俄 8GW 数据中心（1050 亿美元信用支持上限细节流出）；Qwen 全家桶刷屏——27B 开源两天百万下载登顶 HF、Max 权重开放、语音三榜第一；Claude 三项核心服务大规模宕机后恢复。"
+  },
+  "highlights": [
+    {"title": "Anthropic 冲刺超级 IPO", "summary": "年化营收 7 月底破 650 亿美元、Q2 利润转正，最快 9 月/10 月初登陆美股。"},
+    {"title": "算力军备细节流出", "summary": "OpenAI 俄亥俄 8GW 数据中心敲定，英伟达投 15 亿美元给 SB Energy，'1050 亿美元'实为全周期信用支持上限而非已投资金。"},
+    {"title": "Qwen 开源攻势", "summary": "Qwen3.8-27B 登顶 HF 趋势榜（两天破百万下载），Max 权重开放，Qwen-Audio-3.0 三榜第一。"}
+  ],
+  "news": [
+    {"title": "Anthropic 年化营收半年翻 7 倍突破 650 亿美元，最快 9 月/10 月初 IPO", "summary": "据财联社援引知情人士，Anthropic 营收运行率 7 月底已达 650 亿美元——去年底 90 亿、今年 5 月 470 亿；二季度实际营收超 115 亿美元（去年同期 7.87 亿），经调整营业利润转正。公司预计 2028 年营收达 1900-2000 亿美元，最快 9 月或 10 月初启动美股 IPO。", "date": "8月18日", "source": "财联社", "link": "https://www.163.com/dy/article/L4JC6N1K05198CJN.html", "models": []},
+    {"title": "OpenAI 锁定俄亥俄 8GW 数据中心：英伟达投 15 亿美元，'1050 亿'实为信用支持上限", "summary": "OpenAI 与 SB Energy、英伟达及美国能源部合作，在俄亥俄 PORTS-Pike 园区锁定约 8GW IT 容量（初始 4.25GW，2028 年起分阶段上线），OpenAI 签 20 年租约，英伟达向 SB Energy 投资 15 亿美元。黄仁勋披露 OpenAI 现有及计划中的英伟达部署承诺合计约 12GW，2030 年对应约 6000 亿美元业务机会。'1050 亿美元'是整个协议生命周期的潜在信用支持上限，并非已投入资金。", "date": "8月18日", "source": "雪球/IT之家", "link": "https://xueqiu.com/4857802044/405407141", "models": []},
+    {"title": "AI 芯片初创 Groq 融资 3.5 亿美元，估值较峰值腰斩、转型 Neocloud", "summary": "Groq 完成 3.5 亿美元融资，由 Disruptive 领投、英伟达计划参与，投后估值 35 亿美元，较去年 9 月 69 亿美元高点近乎腰斩。此前英伟达以约 200 亿美元授权协议挖走其创始人 Jonathan Ross 及核心团队，Groq 已从自研 LPU 芯片转向 Neocloud（AI 云服务）模式。", "date": "8月17日", "source": "TechCrunch", "link": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud", "models": []},
+    {"title": "AI 视频平台 Higgsfield 完成 4 亿美元融资，估值达 54 亿美元", "summary": "据英国《金融时报》，AI 视频生成平台 Higgsfield 完成 4 亿美元融资，由高盛、英特尔、DST Global 及 Liberty Global 领投，投后估值 54 亿美元（距上轮 8 个月从 13 亿升至 54 亿）。公司年化收入从一年前约 2000 万美元飙升至 7 亿美元，全球用户超 3000 万。", "date": "8月17日", "source": "IT之家", "link": "https://www.ithome.com", "models": []},
+    {"title": "Claude 三项核心服务大规模宕机，API 与控制台保持正常", "summary": "8 月 17 日 Claude.ai、Claude Code、Claude Cowork 出现大规模服务故障，用户无法登录、页面加载失败，官方状态页一度标记为 Major Outage，影响超 1.15 万名美国用户；面向开发者的 API 与 Console 未受影响，Anthropic 随后宣布恢复但未公布根因。同日联合创始人 Dario Amodei 公开回应 AI'信任危机'论，称重建信任的关键是拿出实际成果。", "date": "8月17日", "source": "IT之家", "link": "https://www.ithome.com", "models": []},
+    {"title": "华为/vivo/荣耀手机 AI 助手接入支付宝'阿宝'，AHA 跨端互联协议打通终端", "summary": "8 月 17 日，华为小艺、vivo 蓝心小V、荣耀 YOYO 推进接入支付宝 AI 助手'阿宝'并开始测试，用户可通过系统级 AI 助手以自然语言调用支付宝上万项生活服务。此前 OPPO 小布已率先落地。本次互联互通依托支付宝同日发布的国内首个 AHA 多智能体跨端互联协议体系。", "date": "8月18日", "source": "网易", "link": "https://www.163.com/dy/article/L4JMA6GA05562DGT.html", "models": []},
+    {"title": "宇树科技即将登陆科创板：发行市值约 610 亿，A 股'人形机器人第一股'", "summary": "宇树科技公告股票将在上交所科创板上市，发行价每股 150.80 元，对应市值约 609.93 亿元，拟募资约 60.99 亿元（发行市盈率 219 倍），资金重点投向智能机器人模型研发（20.22 亿元）。公司营收从 2023 年的 1.59 亿元增长至 2025 年的 16.99 亿元。", "date": "8月18日", "source": "IT之家", "link": "https://www.ithome.com", "models": []},
+    {"title": "字节与美国电影协会签署 AI 版权保护协议，覆盖 Seedance 与 Seedream", "summary": "字节跳动与美国电影协会（MPA）达成合作，加强 AI 视频与图像生成模型的版权保护措施，覆盖 Seedance 视频模型和 Seedream 图像模型（已通过 TikTok、CapCut、Dreamina 等提供）。字节表示新版 Seedance/Seedream 已加入更强的知识产权保护机制，但未披露具体执行细节。", "date": "8月18日", "source": "IT之家", "link": "https://www.ithome.com", "models": []},
+    {"title": "谷歌 1000 万美元收购 Spirit 航空业务数据，AI 数据采购转向'定制化'", "summary": "据路透社，谷歌以 1000 万美元从破产重组中的 Spirit Airlines 购入其完整运营数据集，含票价动态定价模型、航班调度算法、路线盈利分析、乘客预订模式等，用于补充 Gemini 模型训练。这是大厂首次完整收购一家航司的运营数据集，标志 AI 数据获取从公开爬取转向定制化采购；乘客数据未经明示同意的隐私问题引发关注。", "date": "8月17日", "source": "Reuters", "link": "https://smartotics.com/2026/08/2026-08-18-ai-daily-2026-08-18.html", "models": []},
+    {"title": "OpenRouter 数据：中国开源大模型海外 Token 消耗半年飙升至 50%+", "summary": "据 OpenRouter 数据，中国开源大模型在海外市场的 Token 消耗占比大幅攀升：2025 年上半年美国企业调用占比仅 4.5%，2026 年 2 月后稳定超 30%、峰值达 46%，如今已超 50%。DeepSeek、通义千问等凭借性价比快速抢占市场——DeepSeek V3 每百万输入 Token 约 0.14 美元，仅为 OpenAI GPT-4o（2.50 美元）的约 6%。", "date": "8月18日", "source": "网易", "link": "https://www.163.com/dy/article/L4JMA6GA05562DGT.html", "models": []}
+  ],
+  "papers": [
+    {"title": "SheetCompass：面向智能体电子表格推理的层次化关系图", "titleEn": "SheetCompass: Hierarchical Relation Graphs for Agentic Spreadsheet Reasoning", "summary": "提出用层次化关系图建模表格结构（跨行跨列的关系、层级依赖），让 Agent 在电子表格任务中具备结构化理解与操作能力。", "authors": "arXiv 2608.14452", "link": "https://arxiv.org/abs/2608.14452"},
+    {"title": "Wyvern：生成基于实据多模态报告的智能体框架", "titleEn": "Wyvern: An Agentic Framework for Generating Grounded Multimodal Reports", "summary": "Agentic 框架，支持从多源信息整合证据、生成可溯源（grounded）的多模态报告，为'检索-证据-成稿'全流程提供编排范式。", "authors": "arXiv 2608.14446", "link": "https://arxiv.org/abs/2608.14446"},
+    {"title": "Envs-FORGE：为智能体强化学习合成'前沿优化 + 奖励驱动'训练环境", "titleEn": "Envs-FORGE: Frontier-Optimized Reward-Grounded Environment Synthesis for Agent RL", "summary": "面向 Agent RL 的环境合成方法：按当前策略的前沿分布自动生成高价值训练环境，并用奖励信号校准，解决环境多样性不足与分布偏移问题。", "authors": "arXiv 2608.14312", "link": "https://arxiv.org/abs/2608.14312"},
+    {"title": "GRPO Beyond English：GRPO 在非英语与多语言场景的大规模研究", "titleEn": "GRPO Beyond English: A Large-Scale Study of GRPO in Non-English and Multilingual Settings", "summary": "首个大规模系统研究 GRPO（分组相对策略优化）在非英语与多语言设定下的表现，刻画该 RL 训练范式跨语言泛化的能力边界与失败模式。", "authors": "arXiv 2608.13698", "link": "https://arxiv.org/abs/2608.13698"},
+    {"title": "Think in Latent, Explain in Language：潜在空间思考 + 语言自解释的推理框架", "titleEn": "Think in Latent, Explain in Language: Self-Explainable Latent Reasoning", "summary": "提出'在潜在表示中思考、用语言解释'的双通道推理框架：模型既能利用隐空间完成深层推理，又能生成自我解释，兼顾推理能力与可解释性。", "authors": "arXiv 2608.13570", "link": "https://arxiv.org/abs/2608.13570"},
+    {"title": "The Dynamics of Intelligence Explosions：智能爆炸的动态学理论建模", "titleEn": "The Dynamics of Intelligence Explosions", "summary": "哲学家 Toby Ord（《The Precipice》作者）对'智能爆炸'过程做动态建模，系统分析递归自我改进下智能增长的速度、路径与失控风险，为 AGI 安全讨论提供理论基础。", "authors": "Toby Ord", "link": "https://arxiv.org/abs/2608.14426"},
+    {"title": "Knowing When to Stop：LLM 评估的贝叶斯最优停止方法", "titleEn": "Knowing When to Stop: Bayesian Optimal Stopping for LLM Evaluations", "summary": "用贝叶斯最优停止理论决定 LLM 评测何时终止，在保证评估可靠性的前提下显著节省评测 token 与算力资源。", "authors": "arXiv 2608.14425", "link": "https://arxiv.org/abs/2608.14425"}
+  ],
+  "models": [
+    {"name": "Qwen3.8-27B", "vendor": "阿里巴巴", "highlight": "登顶 HuggingFace 趋势榜，开源两天下载破 100 万；27B 稠密多模态（Apache 2.0，262K 原生上下文），被海外开发者称为'可跑在家用电脑上的本地 Opus 4.6'，量化后单张消费级显卡可跑。", "link": "https://huggingface.co/Qwen/Qwen3.8-27B"},
+    {"name": "Qwen3.8 Max", "vendor": "阿里巴巴", "highlight": "8 月 17 日按承诺开放旗舰权重（2.4T 总参数、每 token 激活 950 亿），Max 级旗舰首次交出参数；但权重页暂缺正式许可证与官方参数说明，商业部署需先确认授权条款。", "link": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"},
+    {"name": "Qwen-Audio-3.0", "vendor": "阿里巴巴", "highlight": "语音识别、语音合成、实时语音交互三款模型上线，Artificial Analysis 语音榜三赛道全部第一；实时模型可边听边说、接受打断并调用工具。", "link": "https://www.ithome.com"},
+    {"name": "HappyShrimp 1.0", "vendor": "阿里巴巴", "highlight": "端到端 AI 音乐模型（'快乐虾米'），输入情绪/故事/场景即可完成作词、作曲、编曲与人声演唱全流程，首日与太合音乐集团达成战略合作。", "link": "https://www.ithome.com"},
+    {"name": "Solar Pro 4", "vendor": "Upstage", "highlight": "韩国闭源商用大模型，512K token 上下文、最高 128K 输出，面向 Agentic 与文档密集型企业场景，韩国首个登上 OpenRouter 与 Hermes Agent 的模型。", "link": "https://www.upstage.ai"}
+  ],
+  "ecosystem": [
+    {"title": "千问办公开源 MyContext：为办公 Agent 打造'个人工作上下文基础设施'", "summary": "本地优先运行，自动抓取钉钉、飞书等 IM 中的聊天、文档、会议与协作记录，整理成可持续更新的结构化个人工作档案，每条可回溯原始出处。8 月 3 日上线一周多 GitHub 星标破千。", "source": "网易", "link": "https://www.163.com/dy/article/L4JMA6GA05562DGT.html", "models": []},
+    {"title": "Claude Code 之父把自家 APP 日常维护全丢给 Claude：几周自动提交 388 个 PR", "summary": "Claude Code 创始人 Boris Cherny 通过 Slack 频道让 Claude 自动执行崩溃测试、清理死代码等例行维护，覆盖六个平台，几周内自动提交 388 个 PR、其中 180 个被合入代码库。", "source": "新智元", "link": "https://new.qq.com/rain/a/20260818A02I1P00", "models": []},
+    {"title": "Codex 中 GPT-5.6 Sol 百万 Token 上下文向 ChatGPT 订阅用户开放", "summary": "OpenAI 工程师 Tibo 宣布 Codex 中 GPT-5.6 Sol 的 100 万 Token 上下文窗口不再仅限 API 密钥，Plus/Pro 订阅用户可手动启用约 105 万 Token 完整窗口；默认窗口仍经性能与成本优化，开启后会显著加快订阅额度消耗。", "source": "DoNews", "link": "http://view.inews.qq.com/a/20260818A0299F00", "models": ["GPT-5.6 Sol"]},
+    {"title": "腾讯 Marvis 上线企查查 MCP，办公智能体补齐企业数据能力", "summary": "腾讯文档智能助手 Marvis 上线企查查 MCP 服务，用户可在对话中直接查询企业工商、股权、司法风险等数据，企业征信类数据正批量以 MCP 形式接入办公 Agent 生态。", "source": "极新", "link": "https://www.163.com/dy/article/L4JMA6GA05562DGT.html", "models": []},
+    {"title": "MongoDB Atlas App Connections 正式 GA：AI 编程工具 OAuth 免凭据接入", "summary": "Claude、ChatGPT、Cursor 等 AI 编程工具可通过 OAuth 2.1 单次授权访问 Atlas 资源（经 Atlas Managed MCP Server 执行），取代共享长期凭据，组织管理员可随时查看、限制或撤销连接；同日 Atlas 入驻 Vercel v0 市场。", "source": "MongoDB", "link": "https://www.mongodb.com/products/updates/now-ga-atlas-app-connections-for-ai-coding-tools", "models": []},
+    {"title": "蚂蚁 CEO 预判：智能体商业将在未来 6-12 个月进入爆发期", "summary": "蚂蚁集团 CEO 韩歆毅在支付宝 AI 生态合作伙伴大会上表示，智能体商业将在一半年内爆发：智能体能力成熟、企业提效需求迫切、能力提升进入可持续价值闭环三条件同时满足。", "source": "IT之家", "link": "https://www.ithome.com", "models": []}
+  ]
+}
