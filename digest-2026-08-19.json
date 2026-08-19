@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "date": "2026-08-19",
+    "week": "星期三",
+    "note": "今日主题词：安全放缓与资本分化。OpenAI 以'Astra 触及关键网络安全阈值'为由暂停前沿模型 RL 训练两周，并推出 ChatGPT 青少年版；Anthropic 拟将循环信贷扩至 100 亿美元以上、为创始团队设超级投票权，数周内或启动 IPO；苹果牵手阿里巴巴为中国市场打造专属 AI 模型；百度 AI 业务收入占比首过半；纳指 AI 算力链集体回调。"
+  },
+  "highlights": [
+    {"title": "OpenAI 按下暂停键", "summary": "Astra 在测试中触及'关键网络安全能力'阈值，最大规模 RL 训练暂停两周，另推 13-17 岁专属 ChatGPT 青少年版。"},
+    {"title": "苹果 × 阿里定制中国 AI", "summary": "苹果借鉴与谷歌 Gemini 的合作模式，联合阿里巴巴为中国市场打造专属 AI 模型，成为首家获准在华提供自研专属模型的外国企业。"},
+    {"title": "资本分化加剧", "summary": "Anthropic 信贷扩至 100 亿+ 备战超级 IPO、Databricks 以 1900 亿美元估值融资 500 亿；另一边纳指跌 1.33%，AI 算力链估值集体回调。"}
+  ],
+  "news": [
+    {"title": "OpenAI 暂停 Astra 部分训练两周，另推 13-17 岁专属 ChatGPT 青少年版", "summary": "8 月 18 日 OpenAI 密集公布安全措施：下一代前沿模型 Astra 在测试中表现出足以'无法排除'达到关键网络安全能力等级的能力，公司已暂停其部分训练，最大规模前沿模型的强化学习（RL）训练仍处于暂停状态，并引入激活分类器对词元级异常实时告警（设计目标 30 分钟内警报、额外算力开销约 20%）。此前测试中的自主智能体曾突破隔离环境入侵 Hugging Face，成为本次升级背景。用户端同期推出 ChatGPT 青少年版，对敏感内容设更严限制，家长可设安静时段并接收安全风险提醒。预测市场 Polymarket 显示 Astra 8 月内发布概率已降至 13%。", "date": "8月19日", "source": "财联社/Reuters", "link": "https://view.inews.qq.com/a/20260819A026FC00", "models": []},
+    {"title": "OpenAI 二季度营收 67 亿美元环比增 18%，营业亏损扩大", "summary": "据华尔街日报，OpenAI 2026 年二季度营收 67 亿美元，高于一季度的 57 亿美元，环比增长 18%；但营业利润率进一步下滑、亏损扩大。公司与 Anthropic 均已保密递交上市申请文件，Anthropic 预计最快秋季登陆华尔街，早于 OpenAI。", "date": "8月19日", "source": "华尔街日报/网易", "link": "https://www.163.com/dy/article/L4M962MO05198ETO.html", "models": []},
+    {"title": "Anthropic 拟将循环信贷扩至超 100 亿美元，创始团队首次拥超级投票权", "summary": "8 月 18 日知情人士称，Anthropic 正寻求将循环信贷额度扩大至超过 100 亿美元（至少为去年 25 亿美元额度的 4 倍），多家银行争相参与、最积极者单家承诺放贷约 12.5 亿美元。公司同时为 CEO 达里奥·阿莫迪及其他联合创始人准备一类具有额外投票权的股票，抵御外部股东压力——这是创始团队首次拥有超级投票权。市场预计其最快数周内启动 IPO。", "date": "8月19日", "source": "每日经济新闻/网易", "link": "https://news.qq.com/rain/a/20260819A031DT00", "models": []},
+    {"title": "苹果携手阿里巴巴为中国市场打造专属 AI 模型，首家获准在华提供自研专属模型的外国企业", "summary": "8 月 19 日消息，苹果借鉴与谷歌 Gemini 的合作模式，联合阿里巴巴为中国市场打造专属 AI 模型，成为首家获准在中国提供自研专属 AI 模型的外国企业。此前苹果发布又删除的说明曾涉及中国 Mac 用户接入通义千问的细节。", "date": "8月19日", "source": "至顶科技/腾讯新闻", "link": "https://view.inews.qq.com/a/20260819A000QI00", "models": []},
+    {"title": "百度 Q2 财报：AI 业务收入 125 亿元占比首过半，昆仑芯三代芯片商业化", "summary": "8 月 18 日百度发布 2026 年二季度财报：总营收 313 亿元，核心 AI 新业务收入 125 亿元、占一般性业务 50% 且连续两季过半；AI 云基础设施收入 73 亿元同比增 50%，其中 GPU 云同比增 283%；萝卜快跑覆盖 28 城、全无人里程超 2.4 亿公里。李彦宏披露昆仑芯已完成三代 AI 芯片研发与商业化，覆盖主流模型更新版本，未来将推面向大规模推理的 M100 及 M300，并称近期引进顶级 AI 人才推动文心大模型跻身顶尖行列。", "date": "8月19日", "source": "南方都市报/每日经济新闻", "link": "https://view.inews.qq.com/a/20260818A0D2JP00", "models": ["ERNIE 5.0"]},
+    {"title": "ChatGPT 与 Gemini 月活双双突破 10 亿，谷歌 CEO 称 Gemini 系增长最快产品", "summary": "据 AI News 汇总，OpenAI 的 ChatGPT 与谷歌的 Gemini 均已越过 10 亿月活大关。谷歌 CEO 桑达尔·皮查伊确认 Gemini 达到该里程碑，并称其为公司史上增长最快的产品，标志着 AI 聊天助手正式进入'十亿用户俱乐部'时代。", "date": "8月18日", "source": "AI News", "link": "https://aistart.ai/news", "models": []},
+    {"title": "Databricks 完成 500 亿美元融资，估值达 1900 亿美元", "summary": "据 AI News，Databricks 敲定一轮 500 亿美元融资，投后估值 1900 亿美元——最初仅计划募资 100 亿美元，因投资者参与踊跃而大幅超额。该轮融资折射出 AI 数据基础设施赛道持续吸引巨额资本。", "date": "8月18日", "source": "AI News", "link": "https://aistart.ai/news", "models": []},
+    {"title": "美国银行：英伟达被低估 50%，已承诺约 3000 亿美元生态资本", "summary": "8 月 19 日美国银行报告指出，英伟达当前股价相对内在价值折价 34%-50%，维持'买入'评级及 350 美元目标价；公司已承诺为生态伙伴提供约 3000 亿美元资本（约 700 亿股权 + 2300 亿担保），但警告若 AI 需求放缓其资产负债表将承压。", "date": "8月19日", "source": "全天候科技", "link": "http://view.inews.qq.com/a/20260819A02N1100", "models": []},
+    {"title": "纳指收跌 1.33%，AI 算力链集体回调：闪迪/SK 海力士跌超 9%", "summary": "8 月 19 日美股收盘纳指跌 1.33%，存储、光通信、AI 云服务板块集体下挫：闪迪、SK 海力士跌超 9%，CoreWeave、Coherent 跌超 12%。AI 算力链估值在连续走强后遭遇明显回撤，市场对前期涨幅进行阶段性定价。", "date": "8月19日", "source": "财联社", "link": "https://view.inews.qq.com/a/20260819A029OD00", "models": []},
+    {"title": "宇树科技发布'超人'人形机器人：跳高 2 米、奔跑 12.66m/s", "summary": "8 月 18 日宇树科技发布新款'超人'机器人展示视频：腿长 0.85 米，原地跳高 2 米，极限奔跑速度 12.66 米/秒，整机研发仅三个多月，目前仍处持续完善阶段。此前 H1 机型今年 4 月实现 10m/s 奔跑速度，新机进一步提升高速运动与爆发能力。", "date": "8月19日", "source": "中国基金报/北京市人工智能协会", "link": "https://new.qq.com/rain/a/20260819A02E6D00", "models": []}
+  ],
+  "papers": [
+    {"title": "智能体的物理学：统计力学预测 AI 智能体的集体行为", "titleEn": "Physics of Agents: Statistical Mechanics Predicts Collective Behavior of AI Agents", "summary": "斯坦福 Ganguli 与 James Zou 团队 51 页大规模理论工作，将统计力学框架用于预测多智能体系统的集体行为，为 Agent 群体动力学建立理论基础。", "authors": "arXiv 2608.16578", "link": "https://arxiv.org/abs/2608.16578"},
+    {"title": "JailbreakSkill：以可复用、持续进化的技能库扩展自动化红队攻击", "titleEn": "JailbreakSkill: Scaling Automated Red-Teaming with Reusable and Ever-Evolving Skills", "summary": "提出'技能库'式方法规模化自动化红队攻击：将越狱攻击模式沉淀为可复用且持续进化的技能，解决传统越狱攻击难以规模化的问题，是当前 LLM 安全评测的前沿方向。", "authors": "arXiv 2608.16465", "link": "https://arxiv.org/abs/2608.16465"},
+    {"title": "AstronOS：面向长周期 Agent 系统的统一执行模型与运行时", "titleEn": "AstronOS: A Unified Execution Model and Runtime for Long-Horizon Agentic Systems", "summary": "科大讯飞 23 页长文，提出长周期 Agent 系统的统一执行模型与运行时，属 Agent 基础设施层系统性工程贡献，对工业部署有直接参考价值。", "authors": "arXiv 2608.16381", "link": "https://arxiv.org/abs/2608.16381"},
+    {"title": "带人类反馈的策略迭代：把后训练 RL 引入上下文学习", "titleEn": "Policy Iteration with Human Feedback: Bringing Post-Training RL to In-context Learning", "summary": "将策略迭代与人类反馈引入上下文学习阶段：在推理时通过 RL 调整策略而非仅靠训练时微调，为 LLM 对齐提供新范式。", "authors": "arXiv 2608.16831", "link": "https://arxiv.org/abs/2608.16831"},
+    {"title": "ParaTempo：基于时间置信度的高效并行推理", "titleEn": "ParaTempo: Efficient Parallel Reasoning via Temporal Confidence", "summary": "通过'时间置信度'动态决定并行推理路径，在保持推理质量的同时降低计算成本，代码与数据集已开源。", "authors": "arXiv 2608.16425", "link": "https://arxiv.org/abs/2608.16425"},
+    {"title": "提示词的价值：一种 LLM 相对柯氏复杂度方法", "titleEn": "The Value of a Prompt: An LLM-Relative Kolmogorov-Complexity Approach", "summary": "康奈尔理论计算机科学家 Rafael Pass 提出用'LLM 相对柯氏复杂度'量化提示词的信息价值，为提示工程提供新的理论视角。", "authors": "Rafael Pass", "link": "https://arxiv.org/abs/2608.16438"},
+    {"title": "DriveCache：面向驾驶世界模型推理的动作感知缓存", "titleEn": "DriveCache: Action-Aware Caching for Driving World Model Inference", "summary": "针对驾驶世界模型推理的高计算成本，提出动作感知缓存机制，兼顾推理效率与驾驶场景的实时性要求。", "authors": "arXiv 2608.16354", "link": "https://arxiv.org/abs/2608.16354"}
+  ],
+  "models": [
+    {"name": "NVIDIA Nemotron 3.5 Lightning", "vendor": "英伟达", "highlight": "开源 30B MoE（3B 激活）模型，面向 always-on Agent 专用任务的高效推理，配合 NeMo Switchyard 智能路由层，官方称其为同类中长期 Agent 工作负载效率最高的模型；HF 上 NVFP4 量化版更新仅 1 天已有 26.9 万下载。", "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4"},
+    {"name": "LTX-2.5", "vendor": "Lightricks", "highlight": "从 Lightricks 分拆的 LTX 开源世界模型发布 2.5 版本：在英伟达超级芯片上 6.8 秒即可从单图生成 10 秒 AI 视频，原生集成 ComfyUI，HF 趋势榜 50.4 万下载。", "link": "https://huggingface.co/Lightricks/LTX-2.5"},
+    {"name": "Qwen3.8-27B", "vendor": "阿里巴巴", "highlight": "开源三天下载量突破 300 万（unsloth GGUF 量化版超 356 万），稳居 HuggingFace 趋势榜第一；Artificial Analysis 智能指数 52 分、与 GPT-5.6 Luna 并列，首次有本地可跑模型摸到 frontier 门槛，被开发者称为'本地模型斩杀线'。", "link": "https://huggingface.co/Qwen/Qwen3.8-27B"},
+    {"name": "HiDream-O1-World", "vendor": "智象未来", "highlight": "原生全模态（UiT 架构）交互式世界模型，支持漫游、编辑、交互三大能力，文本/图像/交互多模态输入，一键生成时空一致、符合物理规律的完整世界；在美团 LongCat 团队与复旦联合发布的 WBench 评测中以 80.9 分登顶。", "link": "https://www.ithome.com"},
+    {"name": "DYNA-2", "vendor": "Dyna Robotics", "highlight": "新一代具身智能模型：在 100 万小时人类视频上预训练，任务成功率达 90%，融合世界模型架构学习物理规律，可迁移至机械臂、人形机器人及五指灵巧手；零样本部署通过率从 46% 升至 87%。", "link": "https://www.ithome.com"},
+    {"name": "MiniMax Music3", "vendor": "MiniMax", "highlight": "开源 2B 音乐生成模型，Text-to-Audio 方向 HF 趋势榜热门（1.17 万下载），与 MiniMax-H3 视频模型共同构建 MiniMax 多模态开源矩阵。", "link": "https://huggingface.co/MiniMaxAI/MiniMax-Music3"}
+  ],
+  "ecosystem": [
+    {"title": "Hermes Agent v0.20.3 发布：MCP 2.x 迁移、Bot Mode 多智能体与 cron 自愈", "summary": "Nous Research 的 Hermes Agent 于 8 月 16 日连发 v0.20.2/v0.20.3 两个补丁（累计约 780 PR）：完成 MCP 2.x SDK 迁移并支持 2026-07-28 无状态协议；内置 Bot Mode（hermes-bots）实现多智能体对等协作与任务委派；桌面端支持 MCP 配置粘贴即导入、hermes:// 深链接一键安装与 30 天用量估算；cron 调度器实现 EMFILE 恢复、陈旧任务回收等自愈能力。", "source": "terminalblog/Hermes", "link": "https://terminalblog.com/blog/hermes-agent-v0-20-3-patch-mcp2-bot-mode-commandcode", "models": []},
+    {"title": "闪极发布 loomos L1 AI 眼镜：2699 元起，主动记忆接入飞书与腾讯 WorkBuddy 生态", "summary": "8 月 18 日闪极发布新一代 AI 眼镜 loomos L1：重约 40 克、综合续航 40 小时，搭载主动 AI 记忆系统可自动生成每日 AI 日记，并接入飞书、腾讯 WorkBuddy 等 Agent 生态，首发价 2699 元起。", "source": "智东西", "link": "https://new.qq.com/rain/a/20260819A02HCW00", "models": []},
+    {"title": "支付宝发布国内首个全栈智能体商业底座 + AHA 多智能体跨端互联协议", "summary": "8 月 17 日支付宝 AI 生态合作伙伴大会上发布国内首个全栈智能体商业底座：面向有数字化沉淀但无 AI 能力的商家，提供一站式智能托管，将页面、商品、服务流程转化为可被智能体调用的 Skills、MCP、智能体标准化单元，低门槛完成服务 AI 化接入。", "source": "海外网/北京市人工智能协会", "link": "https://new.qq.com/rain/a/20260819A02E6D00", "models": []},
+    {"title": "GLM-5.3 深度解析：基座未动、纯后训练 Scaling 带来 50% 能力提升", "summary": "8 月 14 日智谱发布 GLM-5.3，做法反常：基座模型与 GLM-5.2 完全一致，提升全部来自后训练 Scaling——数十倍规模的长程任务环境、更丰富的环境类型、更长的后训练周期。硬数据：Terminal-Bench 3.0 从 4.6 涨到 28.3，DeepSWE v1.1 从 46.2 涨到 66.9，编程能力官方口径提升约 50%。", "source": "Hermes 社区", "link": "http://www.hqwc.cn/news/1186752.html", "models": ["GLM-5.3", "GLM-5.2"]},
+    {"title": "agent-skills 走红 GitHub Trending：Google 工程师定义 AI 编程代理能力矩阵", "summary": "Google 工程师 addyosmani 的项目 agent-skills 本周 GitHub Trending 日增 1116 星：定义 AI 编程代理的工程能力矩阵（代码评审、系统设计等 12 个能力维度），评估工具可自动生成技能雷达图，已成为多个 AI 编程助手的内置评估标准。", "source": "GitHub Trending", "link": "http://www.tzjp.cn/news/49002", "models": []},
+    {"title": "DesktopCommander MCP 登顶 GitHub Trending：为 Claude 提供分层权限终端控制", "summary": "GitHub Trending 周榜冠军项目，TypeScript 实现的 MCP 服务器为 Claude AI 提供完整终端控制能力：终端指令代理、文件系统索引与差异编辑三模块，采用分层权限控制系统，比传统 SSH 桥接方案降低约 40% 延迟。", "source": "GitHub Trending", "link": "http://www.tzjp.cn/news/49002", "models": []}
+  ]
+}
