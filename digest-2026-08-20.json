@@ -1,0 +1,42 @@
+{
+  "meta": {"date": "2026-08-20", "week": "星期四", "note": "AI 双雄业绩易位：Anthropic 单季营收首超 OpenAI，IPO 竞速白热化；白宫测试框架细则不明，OpenAI 推零数据留存'私人安全处理'预览版。"},
+  "highlights": [
+    {"title": "AI 双雄业绩易位", "summary": "Anthropic Q2 营收 115 亿美元+、环比增逾 140%、实现小幅营业利润，首次单季超越 OpenAI（67 亿美元、环比 +18%）；OpenAI 营业亏损从 93 亿扩大至 123 亿美元，CFO 表态 2027 年或更早上市。"},
+    {"title": "Anthropic IPO 提速", "summary": "已向 SEC 秘密递交招股书，市场预期最快 9-10 月上市、估值或挑战 2 万亿美元；拟将循环信贷额度扩大至超 100 亿美元。"},
+    {"title": "监管细则悬而未决", "summary": "白宫大模型测试框架推出两周细则不明、开源豁免规则书面口头矛盾；OpenAI 同日推出'私人安全处理'零数据留存预览版。"}
+  ],
+  "news": [
+    {"title": "OpenAI Q2 业绩\"暴雷\"：营收仅增 18%，被 Anthropic 单季反超", "summary": "OpenAI 二季度营收 67 亿美元，环比仅增 18%，营业亏损从 93 亿扩大至 123 亿美元；CFO Sarah Friar 紧急全员会称 2027 年上市或更早，Q3 至今 ARR 增 35%、企业端增 50%、Codex 周活破 2000 万。高管动荡持续，首席营收官任职不足一年离职。", "date": "8月20日", "source": "华尔街日报 / 财联社", "link": "https://news.qq.com/rain/a/20260820A02L3M00", "models": []},
+    {"title": "Anthropic 单季营收首超 OpenAI：Q2 超 115 亿美元、环比 +140% 并转盈", "summary": "Anthropic 截至 7 月底年化营收运行率约 650 亿美元（同比增 7 倍），Q2 初步营收 115-116 亿美元、同比增 14 倍以上并小幅盈利。已秘密递交 SEC 招股书，市场预期最快 9-10 月 IPO、估值或挑战 2 万亿美元；拟将循环信贷扩大至超 100 亿美元。", "date": "8月20日", "source": "腾讯新闻 / InsiderFinance", "link": "https://news.qq.com/rain/a/20260819A04L9H00", "models": []},
+    {"title": "白宫大模型测试框架推出两周：细则仍不明，开源豁免规则\"书面口头矛盾\"", "summary": "白宫 8 月初召集 OpenAI、Anthropic、谷歌等介绍 AI 监管测试框架，鼓励前沿模型发布前自愿送测。两周过去细则仍不明：框架文本未公开，书面称开源模型不受限、口头却称仅适用闭源模型，卡托研究所批评\"黑箱\"。", "date": "8月20日", "source": "新浪财经 / 环球市场播报", "link": "https://weibo.com/7905315703/5333906661313700", "models": []},
+    {"title": "OpenAI 推出\"私人安全处理\"预览版：零数据留存架构兼顾安全与隐私", "summary": "OpenAI 发布 Private Safety Processing 预览功能，以零数据留存架构监控复杂 AI 交互风险，不留存提示词与回复，内部人员无权查看；企业数据不用于训练除非明确许可。", "date": "8月20日", "source": "OpenAI / 金融界", "link": "https://www.brightcoast.ai/blog/daily-ai-intel-brief-2026-08-20", "models": []},
+    {"title": "AI 芯片初创 Fractile 传以 65 亿美元估值融资，Anthropic 拟采购 2.5 亿美元芯片", "summary": "AI 推理芯片初创 Fractile 正以 65 亿美元估值洽谈融资；Anthropic 已与其达成约 2.5 亿美元芯片采购协议，IPO 前夕加速锁定推理算力供应。", "date": "8月19日", "source": "陆家嘴财经早餐", "link": "https://www.sohu.com/a/1065127578_99992453", "models": []},
+    {"title": "迈威尔科技与谷歌签署定制半导体协议，发行认股权证绑定合作", "summary": "迈威尔 7/29 与谷歌签订约束性协议合作开发定制半导体，8/18 向谷歌发行认股权证（每股 206.58 美元、至多 5897 万股）。消息后迈威尔盘初涨超 10%。", "date": "8月19日", "source": "陆家嘴财经早餐", "link": "https://www.sohu.com/a/1065133831_130887", "models": []},
+    {"title": "GitHub 8 小时宕机复盘：自动扩容失败叠加 VS Code 重试风暴", "summary": "GitHub 公布宕机复盘：自动扩缩容失败叠加 VS Code 客户端重试风暴，监控盲区致流量螺旋上升、负载均衡崩溃。为两周内第二次重大宕机，或加速编码工具厂商自建 Git 托管。", "date": "8月19日", "source": "The Register", "link": "https://www.brightcoast.ai/blog/daily-ai-intel-brief-2026-08-20", "models": []},
+    {"title": "Cerebras 发布 CS-4 机架系统：单芯片 AI 性能翻倍、机架密度三倍", "summary": "Cerebras 推出下一代 CS-4 机架系统，单芯片 AI 性能翻倍、单机架芯片数提升至三倍，瞄准高密度 AI 推理与训练市场，与英伟达机架级方案正面竞争。", "date": "8月19日", "source": "The Register", "link": "https://www.brightcoast.ai/blog/daily-ai-intel-brief-2026-08-20", "models": []},
+    {"title": "OpenAI 撤销安全研究员\"网络可信访问\"权限，安全加固带来最高 20% 开销", "summary": "多名安全研究员称 OpenAI 突然撤销其 Trusted Access for Cyber 项目权限，事件紧接 Hugging Face 入侵新安全措施公布之后。另据 The Register，入侵后引入的多阶段思维链监控为部分工作负载带来最高 20% 额外开销。", "date": "8月19日", "source": "TechCrunch / The Register", "link": "https://www.brightcoast.ai/blog/daily-ai-intel-brief-2026-08-20", "models": []},
+    {"title": "Mojo 编程语言全面开源：Modular 以 Apache 2.0 发布编译器与工具链", "summary": "Modular 以 Apache 2.0 开源 Mojo 编译器与工具链（一周前刚发 1.0），兑现 2023 年开源承诺，开发者可直接检视与贡献这一高性能 AI 编程语言栈。", "date": "8月19日", "source": "BrightCoast / Modular", "link": "https://www.brightcoast.ai/blog/daily-ai-intel-brief-2026-08-20", "models": []}
+  ],
+  "papers": [
+    {"title": "MoE 专家混合块内藏强幻觉检测信号", "titleEn": "Mixture-of-Expert Blocks Contain Strong Hallucination Detection Signals", "summary": "直接利用 MoE 模型内部块的信号检测幻觉，比额外分类器加外部提示更轻量，为 LLM 部署可信度提供低成本检测路径。", "authors": "Joao Fonseca, Rodrigo Rodrigues, Paolo Romano", "link": "https://arxiv.org/abs/2608.17687"},
+    {"title": "LLM 偏好评判并不自洽：对 LLM-as-a-Judge 评估体系的直接挑战", "titleEn": "LLM-Derived Preference Judgments Are Not Self-Consistent", "summary": "研究发现 LLM 作为偏好评判者时存在系统性不一致，对当前依赖 LLM-as-a-Judge 的对齐评估方法提出重要质疑。", "authors": "Matthew T. Ford, Francis Bahk, Jingjing Wang, Adam S. Jovine, Tinghan Ye, David B. Shmoys, Peter I. Frazier", "link": "https://arxiv.org/abs/2608.17644"},
+    {"title": "MoNe：模块化神经记忆，让长上下文推理更高效", "titleEn": "MoNe: Modular Neural Memory for Efficient Long Context Inference", "summary": "用模块化神经记忆解决长上下文 LLM 推理代价过高的问题，是'让长上下文真正可用'的实用化方向。", "authors": "Wonguk Cho, Kyubyung Chae, Tribhuvanesh Orekondy 等（LG AI Research）", "link": "https://arxiv.org/abs/2608.17616"},
+    {"title": "自我改进智能体的脆弱性：方差、任务顺序与规格不足的系统分析", "titleEn": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification", "summary": "Salesforce 研究院系统分析自我改进型智能体的脆弱性并开源代码与数据，对 agent 安全与稳定训练有直接指导意义。", "authors": "Qinyuan Ye, Yu Li, Yada Pruksachatkun, Jiaxin Zhang, Chien-Sheng Wu（Salesforce Research）", "link": "https://arxiv.org/abs/2608.18066"},
+    {"title": "Agent Lightning v1.0：走向'受约束'的 Agentic 强化学习", "titleEn": "Agent Lightning v1.0: Towards Harnessed Agentic RL", "summary": "提出 harnessed agentic RL 框架，让智能体通过强化学习自主进化而不失控，回应 agent 自主性研究的安全边界问题。", "authors": "Zhiyuan He, Siwei Zhang, Zhiwen Zhou 等", "link": "https://arxiv.org/abs/2608.17528"},
+    {"title": "StartupBench：用市场验证的端到端工作流评测通用 Agent", "titleEn": "StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows", "summary": "用经过市场验证的创业级端到端工作流评测通用 agent，比传统合成任务更接近真实商业场景。", "authors": "Liya Zhu, Xin Ma, Tao Liu 等 38 人", "link": "https://arxiv.org/abs/2608.17800"}
+  ],
+  "models": [
+    {"name": "Qwen3.8-27B", "vendor": "阿里", "highlight": "登顶 HF 全球第一一周，下载超 100 万、社区量化版 500+；4bit 量化 17.1GB 单卡可跑，SWE-bench Pro 61.7 超 Opus 4.6 Max（53.4），被称'本地 Opus'", "link": "https://huggingface.co/Qwen/Qwen3.8-27B"},
+    {"name": "GPT-5.6 Luna", "vendor": "OpenAI × Replit", "highlight": "Replit Free Mode 驱动模型，任何人无需 token 成本即可把想法变成可运行软件", "link": "https://huggingface.co/models"},
+    {"name": "LFM2.5", "vendor": "Liquid AI", "highlight": "发布量化感知蒸馏 Q4_0 检查点，缩小模型尺寸适配边缘部署同时保持精度", "link": "https://huggingface.co/LiquidAI"},
+    {"name": "MiniMax Music3", "vendor": "MiniMax", "highlight": "2B Text-to-Audio 音乐模型稳居 HF 音频类热门，ComfyUI 适配版下载 32.5 万+", "link": "https://huggingface.co/MiniMaxAI/MiniMax-Music3"},
+    {"name": "LTX-2.5", "vendor": "Lightricks", "highlight": "图生视频模型 HF 热门榜攀升，下载 55.6 万、点赞 1300+", "link": "https://huggingface.co/Lightricks/LTX-2.5"}
+  ],
+  "ecosystem": [
+    {"title": "Claude Code v2.1.235：权限对话框措辞与实际授权一致化", "summary": "权限对话框措辞现在始终与实际批准的授权范围一致，'不再询问'选项在内容无法完整展示时不再提供；延续凭证脱敏加固。另 8/18 下午发生约 2 小时 12 分钟多模型性能降级（已恢复）。", "source": "Claude News", "link": "https://claude-news.today/en/briefings/briefing-2026-08-19", "models": []},
+    {"title": "AGENTS.md 跨 Agent 互通成标准：一套规则跑遍 Claude Code / Codex / Amp / Cursor", "summary": "Claude Code 现已读取 AGENTS.md，团队规则可跨四客户端保持可移植，CLAUDE.md 回归 Claude 专属；社区趋势是模型信任拆分，把低风险任务路由到更便宜的模型。", "source": "DEV Community", "link": "https://dev.to/gentic_news/claude-code-digest-aug-16-aug-19-2i52", "models": []},
+    {"title": "Cursor 推出自建代码托管 Origin：GitHub 替代之争再添变数", "summary": "Cursor 向所有付费计划开放代码托管 Origin（早期 beta），可创建仓库并引导 clone/push。在 GitHub 两周两次宕机背景下，编码 agent 厂商开始自建 Git 托管。", "source": "Claude News", "link": "https://claude-news.today/en/briefings/briefing-2026-08-19", "models": []},
+    {"title": "MCP 7/28 大更新落地：渐进式工具发现 + Server 自带'操作手册'", "summary": "MCP 引入渐进式发现机制（先搜到工具再按需加载定义），并鼓励 Server 自带 Skill 文档；Anthropic 已放入 Claude Code 与 API 的 Tool Search。41% 软件组织已在生产环境使用 MCP。", "source": "尧图网络", "link": "http://www.rwkt.cn/news/58813", "models": []},
+    {"title": "Light Cloud 发布 MCP Server：Claude Code 里一句 deploy 闭环全栈发布", "summary": "开发者可直接在 Claude Code 会话内创建、发布、监控全栈应用，构建-修复-再部署循环不离开开发窗口；配套 VS Code 扩展把同一工作流带给 GitHub Copilot Chat。", "source": "CIO Influence", "link": "https://cioinfluence.com/machine-learning/light-cloud-lets-developers-ship-apps-without-leaving-claude-code", "models": []}
+  ]
+}
