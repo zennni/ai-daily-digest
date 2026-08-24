@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-24</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+
+<header>
+  <div class="date">2026年8月24日 · 星期一</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：AI 资本军备竞赛。阿里巴巴 800 亿港元配售 100% 投入全栈 AI、Anthropic 冲刺 2 万亿美元史上最大 IPO、英伟达 60 亿美元收编 Poolside 亲自下场做开源模型——三家巨头同周亮出巨额融资与整合动作；OpenAI 开源 Codex Harness 并收购记忆层公司 Instant，全面平台化；GPT-5.6 Sol 降价、Gemini 3.7 Flash 半价、DeepSeek 周末低谷价，模型价格战同步开打。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>AI 融资竞赛白热化：</strong>阿里 800 亿港元配售获超购、100% 投 AI 基建；Anthropic 拟募资超 1000 亿美元、估值最高 2 万亿美元，有望超 SpaceX 成史上最大 IPO；英伟达 60 亿美元拿 Poolside 技术授权、约 109 名工程师并入开源 Nemotron 项目。</li>
+    <li><strong>OpenAI 全面平台化：</strong>Apache-2.0 开源 Codex 底层执行框架 Harness（两项优化使 GPT-5.6 Sol 在 ARC-AGI-3 从 13.3% 跃升至 38.3%），并收购 Agent 记忆层公司 Instant，补齐跨会话持久记忆拼图。</li>
+    <li><strong>模型价格战再起：</strong>GPT-5.6 Sol API 基准价下调逾 20%；Gemini 3.7 Flash 定价约为上代一半；DeepSeek 8/23 起周末全天统一按低谷价计费，V4 Pro Terminal-Bench 87.9 逼近 Fable 5。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">11 条</span></h2>
+  <div class="card">
+    <h3>阿里巴巴拟配售 800 亿港元新股，100% 投入全栈 AI 能力建设<span class="tag tag-fund">8月23日</span></h3>
+    <p>阿里 8/23 公告拟向美国境外非美国人士配售 7.1 亿股，募资约 800 亿港元（约 102 亿美元），为港股上市以来首次新股配售，已获主权财富基金等长线资金超额认购。所得款项净额 100% 用于 AI 芯片、基础设施及模型研发部署；公司单季资本开支已达 677 亿元、同比增 75%，此前三年 3800 亿元 AI 基建计划已执行约 1900 亿元。</p>
+    <div class="meta">来源：阿里巴巴公告 / 证券时报 · <a href="https://weibo.com/7905315703/5335359758275831" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 冲刺 2 万亿美元 IPO：拟募资超 1000 亿美元，或超 SpaceX 成史上最大<span class="tag tag-fund">8月23日</span></h3>
+    <p>据 NYT/彭博，Anthropic 承销团（摩根士丹利、高盛、摩根大通、花旗）正与潜在投资者商谈募资超 1000 亿美元、估值最高 2 万亿美元——将超越 SpaceX 6 月 IPO 的 1.77 万亿美元估值与 857 亿美元募资纪录。年化营收 7 月底已破 650 亿美元，Q2 营收 115 亿+（同比增逾 13 倍）且调整后营业利润转正；预计 8 月底提交公开招股书、最快 10 月挂牌，并考虑超级投票权与控制权安排。</p>
+    <div class="meta">来源：纽约时报 / 彭博 / DoNews · <a href="https://www.donews.com/news/detail/4/6681686.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>英伟达 60 亿美元收编 Poolside 技术授权，亲自下场打造万亿级开源 Nemotron<span class="tag tag-hot">8月23日</span></h3>
+    <p>据 WSJ，英伟达向 AI 编程初创 Poolside 支付 60 亿美元获取其 Model Factory 技术非独家许可（创始人称"不是收购"），追加 10 亿美元股权投资（投前估值 120 亿美元），约 109 名工程师将并入 Nemotron 开源权重项目，传闻新模型参数达万亿级、目标一年内对标 DeepSeek 与 Kimi K3。黄仁勋上月发文《开放权重与美国AI领导力》为此铺路，标志英伟达从"卖铲子"转向"挖金矿"，直接挑战 OpenAI、Anthropic 等闭源厂商。</p>
+    <div class="meta">来源：华尔街日报 / 财闻海外资讯 · <a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_1986a8b8ebf57552" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 全面开源 Codex Harness：Agent 底层执行框架 Apache-2.0 开放<span class="tag tag-oss">8月20-24日</span></h3>
+    <p>OpenAI 将驱动 Codex 智能体的底层执行框架 Harness 以 Apache-2.0 全面开源，含 CLI、官方 TS/Python SDK 与基于 JSON-RPC 的 App Server 三大组件，核心以 Rust 编写，管理对话状态、工具调用、沙箱隔离与审批策略。官方称"保留推理状态+上下文压缩"两项优化使 GPT-5.6 Sol 在 ARC-AGI-3 上从 13.3% 跃升至 38.3%，被解读为"免费送管道、收费卖水"的平台打法。</p>
+    <div class="meta">来源：OpenAI / 机器之心 · <a href="https://weibo.com/7905315703/5335002687736051" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 收购 Agent 记忆层公司 Instant，补齐跨会话持久记忆拼图<span class="tag tag-fund">8月23日</span></h3>
+    <p>YC S22 明星创业公司 Instant（被称为"AI 时代的 Firebase"，为智能体提供数据库、权限验证与实时同步后端，GitHub 星标破 1 万）整个团队加入 OpenAI。此次收购为 OpenAI Agent 补上"记忆层"能力，与开源 Codex Harness 形成互补。</p>
+    <div class="meta">来源：OpenAI / YC · <a href="https://aitoolsrecap.com/Blog/ai-news-august-23-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 挖走谷歌 TPU 创始人 Amir Salek，正式组建自研芯片团队<span class="tag tag-hot">8月23日</span></h3>
+    <p>Anthropic 将谷歌 TPU 项目创始人兼前负责人 Amir Salek 招入计算团队，目标让模型与芯片协同设计，自研芯片路线正式浮出水面。同期 OpenAI 宣布 GPT-5.6 Sol API 降价超 20%、DeepSeek 周末统一按低谷价计费——价格战与芯片自研同步推进，头部厂商"模型+芯片"垂直整合加速。</p>
+    <div class="meta">来源：至顶科技 / 腾讯新闻 · <a href="https://new.qq.com/rain/a/20260824A02PQV00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>英伟达 AI 服务器涨价超 15%：HBM 成本飙升，Vera Rubin 与 Grace Blackwell 受影响<span class="tag tag-hot">8月23日</span></h3>
+    <p>据彭博，受三星、SK 海力士与美光高带宽内存（HBM）成本飙升影响，英伟达已告知微软、谷歌、甲骨文等最大客户：搭载 Vera Rubin 与 Grace Blackwell 芯片的 AI 服务器价格多数将上涨 15% 以上，2027 年初出货生效。内存瓶颈正成为 AI 基础设施扩张的硬约束，涨价将沿产业链向云厂商与终端传导；英伟达将于 8/26 公布二季度业绩。</p>
+    <div class="meta">来源：彭博 / 鞭牛士 · <a href="https://new.qq.com/rain/a/20260824A02PAB00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeepSeek 周末统一按低谷价计费（8/23 起），V4 Pro Agent 能力大幅增强<span class="tag tag-new">8月22日</span></h3>
+    <p>DeepSeek API 自 8/23 00:00 起优化峰谷计费：周末全天不再区分峰谷、统一按低谷价计费。同期 DeepSeek V4 Pro 正式版更新至 API，大幅增强 Agent 能力并支持 Responses API 与 Codex 接入，Terminal-Bench 得分 87.9、逼近 Fable 5 的 88.0，在 CyberGym 与 AutomationBench 上甚至反超。</p>
+    <div class="meta">来源：科创板日报 / AIGC 日报 · <a href="https://weibo.com/7905315703/5335002687736051" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>模型降价潮：GPT-5.6 Sol API 下调逾 20%，Gemini 3.7 Flash 定价约为上代一半<span class="tag tag-new">8月21-23日</span></h3>
+    <p>OpenAI 8/21 起将面向开发者的 GPT-5.6 Sol 基准价下调逾 20%（优惠价三个月有效），上月已下调中端模型 20%、低成本模型 80%；谷歌发布 Gemini 3.7 Flash 并同步降价约一半。美媒分析认为中国大模型的开源与定价策略正倒逼美国厂商降价。</p>
+    <div class="meta">来源：央视新闻 / 凤凰网 · <a href="https://weibo.com/7905315703/5335002687736051" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>天工 Ultra 以 38.15 秒跑完 400 米，打破人类男子世界纪录<span class="tag tag-hot">8月23日</span></h3>
+    <p>8/23 第二届世界人形机器人运动会 400 米决赛中，北京人形机器人创新中心的天工 Ultra 以 38.15 秒夺冠，超越人类男子 400 米世界纪录（43.03 秒），较首届冠军成绩压缩近半；此前一天还以 9.39 秒破百米纪录。研发方称关节转矩、电机功率升级与"慧思开物"平台算法优化是核心。</p>
+    <div class="meta">来源：央视 / 深网 · <a href="https://new.qq.com/rain/a/20260824A02PAB00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>欧盟 AI 法案进入全面执法期，中国《AI 生成合成内容标识办法》9/1 施行<span class="tag tag-new">8月23日</span></h3>
+    <p>欧盟 AI Office 自 8/2 起全面执法《人工智能法案》：聊天机器人须声明 AI 身份、深度伪造须标注、AI 生成内容须带机器可读标记，违规最高罚 1500 万欧元或全球年营业额 3%；欧盟同日发布 Article 50 透明度指南并公布首批 180+ 签署方。中国网信办等四部门《人工智能生成合成内容标识办法》将于 9/1 施行，明确显式+隐式双轨标识。监管正从"纸面"走向"落地"。</p>
+    <div class="meta">来源：欧盟委员会 / 国家网信办 · <a href="https://new.qq.com/rain/a/20260824A02D2B00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span></h2>
+  <div class="card">
+    <h3>AI4AI-Bench：算法设计中递归自我改进的评测基准<span class="tag tag-new">arXiv</span></h3>
+    <p>提出专门评估 LLM 代理在算法设计中进行递归自我改进能力的基准框架，为"AI 设计 AI"方向提供标准化评测工具。</p>
+    <div class="paper-authors">Yizhe Chi, Wenyi Li, Deyao Hong 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20318" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Pandora 魔盒：价值评估昂贵约束下的 AI 模型路由分配<span class="tag tag-new">arXiv</span></h3>
+    <p>研究在"先评估模型价值再路由需付出成本"的现实约束下，如何在多个模型间做高效分配，兼顾响应质量与推理成本——模型路由经济学的新理论框架。</p>
+    <div class="paper-authors">Adam Fisch, Shubhendu Trivedi, Fantine Huot 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20316" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>MidTool：面向 Agent 工具使用的中期训练数据合成<span class="tag tag-new">arXiv</span></h3>
+    <p>提出面向智能体工具调用场景的中期训练数据合成方法，系统性增强 LLM 调用外部工具的能力，是对"工具使用"训练管线的重要补强。</p>
+    <div class="paper-authors">Fengqing Jiang, Yite Wang, Boyi Liu 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20314" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>幻影增益：用测量零假设审计自我改进的真实性<span class="tag tag-new">arXiv</span></h3>
+    <p>开发审计方法论，将 LLM 自我改进表现与"测量零假设"对照，揭示并量化自我改进中可能出现的虚假增益（phantom gains）——给火热的自改进赛道泼了一盆清醒水。</p>
+    <div class="paper-authors">Cheng Xu, Nan Yan, Liming Chen 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20290" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>拆解与传递：LLM Agent 的跨任务技能迁移<span class="tag tag-new">arXiv</span></h3>
+    <p>提出让 LLM 代理在任务分解后把原子技能跨任务迁移与传播的机制，显著提升代理在新任务上的泛化表现。</p>
+    <div class="paper-authors">Yiyang Feng, Biddut Sarker Bijoy, Niranjan Balasubramanian 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20274" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>学会何时思考：测试时计算分配的自适应推理<span class="tag tag-new">arXiv</span></h3>
+    <p>提出自适应推理策略，让模型在测试阶段动态决定何时投入更多计算深度思考，在推理质量与计算开销之间取得最优平衡。</p>
+    <div class="paper-authors">Gijs Kassenaar, Zhao Yang, Vincent François-Lavet 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20256" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>流式偏好优化中的流形漂移：奖励黑客的根本原因<span class="tag tag-new">arXiv</span></h3>
+    <p>识别并分析流式偏好优化（FPO）过程中的流形漂移现象，将其确立为奖励黑客问题的根本原因之一，为对齐方法的稳健性提供新视角。</p>
+    <div class="paper-authors">Yansen Han, Shengyi Liao, Yuanxing Zhang 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.20011" target="_blank">arXiv ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+  <div class="card">
+    <h3>Gemini 3.7 Flash 正式发布：定价约为上代一半，编码能力大幅跃升<span class="tag tag-new">谷歌</span></h3>
+    <p>谷歌推出 Gemini 3.7 Flash，定价维持并附年内折扣（输入 0.75、输出 3.75 美元/百万 Token，明年恢复 1.50/7.50 美元）；DeepSWE 编码基准从 49.0% 提升至 65.3%、FrontierCode 1.1 从 34.4% 升至 43.6%，复杂文档处理 GDP.pdf 得分从 22.0% 升至 34.0%。已即时上线 Gemini Spark 个人智能体。</p>
+    <div class="meta">来源：Google / Unrot AI News</div>
+  </div>
+  <div class="card">
+    <h3>小红书开源大模型 dots3-note：280B 参数 16B 激活，华为昇腾 0 日适配<span class="tag tag-oss">小红书</span></h3>
+    <p>小红书开源 dots3-note 大模型（280B 参数、16B 激活的 MoE），华为昇腾实现 0 日适配，主打国产算力生态，是中文大模型在开源+国产硬件适配路线上的又一落子。</p>
+    <div class="meta">来源：AIGC 日报</div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 两款 EAP 模型 marshmallow / melon 曝光<span class="tag tag-new">Anthropic</span></h3>
+    <p>开发者在 Anthropic API 中发现未公开模型代号 claude-marshmallow-eap 与 claude-melon-eap（eap 即早期访问计划），社区推测将作为 Opus 或 Sonnet 产品线更新发布，其中 Marshmallow 对话体验据称已超越当前 Opus 5。内部命名从"动物"转向"食物"主题，正式发布或于下月到来。</p>
+    <div class="meta">来源：机器之心 / 新浪科技</div>
+  </div>
+  <div class="card">
+    <h3>英伟达 Nemotron 万亿参数开放权重计划：Poolside 团队并入<span class="tag tag-hot">英伟达</span></h3>
+    <p>伴随 60 亿美元 Poolside 交易，约 109 名工程师将并入 Nemotron 开源权重项目，传闻新模型参数达万亿级、目标一年内推出可对标 DeepSeek 与 Kimi K3 的开放权重模型。英伟达今年 3 月已联合 Mistral、Perplexity 等成立 Nemotron 联盟，从 GPU 供应商向模型层扩张。</p>
+    <div class="meta">来源：华尔街日报 / 火星财经</div>
+  </div>
+  <div class="card">
+    <h3>Qwen3.8-27B 持续霸榜 HF Trending：前 15 席占 9 席<span class="tag tag-hot">阿里</span></h3>
+    <p>Qwen3.8-27B 稳居 HuggingFace 趋势榜第一：官方版下载 236 万、点赞 1.23 万，unsloth GGUF 量化版下载 667 万；榜单前 15 个模型中有 9 个与 Qwen3.8-27B 相关（量化、去审查、MLX 变体层出不穷），多模态开源生态热度不减。</p>
+    <div class="meta">来源：HuggingFace · <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank">模型页 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>小米 MiMo-V2.5-Pro 登顶 Artificial Analysis 开源榜并列第一<span class="tag tag-oss">小米</span></h3>
+    <p>8/23 小米自研大模型 MiMo-V2.5-Pro 在 Artificial Analysis 全球大模型综合智能排行榜位列开源模型并列第一，MiMo-V2.5 综合排名第三、为最高国产自研大模型；在 OpenRouter 全球开发者调用平台上周调用量曾达 10.5 万亿 Token 登顶榜首。小米走"不卷跑分卷生态"路线，绑定"人车家"10 亿台设备智能底座。</p>
+    <div class="meta">来源：机器之心 / Artificial Analysis</div>
+  </div>
+</section>
+
+<section>
+  <h2>D · Agent / 生态<span class="count">6 条</span></h2>
+  <div class="card">
+    <h3>Anthropic 全面开放 Claude 平台 API：Computer Use / Skills / Files 三件套 GA<span class="tag tag-new">Anthropic</span></h3>
+    <p>Computer Use 支持截屏操作、单次调用执行多动作；Skills API 支持技能包上传与版本管理；Files API 提供文件 ID 复用与组织级 1TB 存储。医疗与保险理赔测试中任务时长从 32 分钟降至 13 分钟、成本降约 30%，标志 Claude 从"对话助手"迈向"数字员工"。</p>
+    <div class="meta">来源：机器之心 / Anthropic</div>
+  </div>
+  <div class="card">
+    <h3>GitHub Copilot 进入 Slack & Teams：@GitHub 即可开启团队 Agent 会话<span class="tag tag-new">GitHub</span></h3>
+    <p>8/21 GitHub 将 Copilot 的 Agent 能力带入团队协作工具：在 Slack/Teams 频道 @GitHub 即可启动 Agent 会话，回答代码问题、分类缺陷、沙箱排查并直接开 PR；管理员可要求 Agent 提交的 PR 额外审批。两者均为公开预览，需 Copilot Business/Enterprise 计划。</p>
+    <div class="meta">来源：GitHub / Oday Bakkour</div>
+  </div>
+  <div class="card">
+    <h3>OpenAI Codex CLI v0.149：终端内新增 agents dashboard，管理后台 Agent<span class="tag tag-new">OpenAI</span></h3>
+    <p>Codex CLI 发布 rust-v0.149.0：新增交互式 agents dashboard，可搜索、启动、打开、重命名与停止后台任务而不离开终端；/cd、/pwd、/cwd 支持会话中切换工作目录；codex queue 可向运行中的本地/远程会话发消息；codex doctor 新增端点保护与网络/代理故障诊断，插件隔离与网络访问策略同步加固。</p>
+    <div class="meta">来源：Oday Bakkour / OpenAI</div>
+  </div>
+  <div class="card">
+    <h3>Cloudflare 发布 Kitesurf 无头浏览器 + x402 协议，为 Agent 建"专属上网与付费"通道<span class="tag tag-new">Cloudflare</span></h3>
+    <p>Kitesurf 是专为 AI 智能体构建的无状态浏览器：完全运行于 Workers 的 V8 隔离环境、无 Chromium，CPU 与内存占用仅为 Chromium 的 1/3 至 1/7，通过 CDP over WebSocket 兼容 Playwright/Puppeteer；配套 Monetization Gateway 采用 x402 开放协议，让网站与 API 以稳定币按请求向 Agent 收费，已有 20 余家公司参与。</p>
+    <div class="meta">来源：AIToolsRecap / Cloudflare</div>
+  </div>
+  <div class="card">
+    <h3>微软发布 TokenOps：面向 AI Agent 的 Token 成本控制与预算管理<span class="tag tag-new">微软</span></h3>
+    <p>TokenOps 直指企业 Agent 规模化后的费用失控问题，提供 Token 成本控制与预算管理能力，是企业落地 Agent 的"成本阀门"基础设施。</p>
+    <div class="meta">来源：StartupHub.ai</div>
+  </div>
+  <div class="card">
+    <h3>Claude Code v2.1.239-241 连更：成本估算含 1.1x 溢价、/claude-api 迁移命令<span class="tag tag-new">Anthropic</span></h3>
+    <p>v2.1.239 起 /cost、状态栏与 --max-budget-usd 纳入美国数据驻留工作区 1.1 倍推理溢价；新增 /claude-api upgrade 自动把 Python 项目从 anthropic 0.x SDK 迁移到 1.x；云会话插件以 name@synced 标签同步。v2.1.240/241 为稳定与修复版。</p>
+    <div class="meta">来源：Claude News / Toolsbase</div>
+  </div>
+</section>
+
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
+
+</div>
+</body>
+</html>
