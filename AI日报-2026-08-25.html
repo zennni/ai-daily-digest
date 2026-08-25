@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-25</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+
+<header>
+  <div class="date">2026年8月25日 · 星期二</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：价格战与神秘模型。字节统一 AI 办公品牌"豆包工作"正式上线、小米玄戒 O100 端侧芯片亮相；匿名"牛来"Ox Alpha 登顶 OpenRouter 刷新单日调用纪录，技术指纹指向智谱 GLM 系列；OpenAI GPT-5.6 Sol 输出价降至 20 美元/百万 Token、Gemini 3.7 Flash 半价首发，大模型价格战担忧抬头；英伟达拟以超 300 亿美元估值押注 Perplexity，Anthropic 15 亿美元版权案和解为 AI 训练"正名"。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>字节统一 AI 办公品牌：</strong>"豆包工作"正式发布，深度打通飞书；TRAE、扣子团队整体并入豆包体系，AI 办公产品线完成整合。</li>
+    <li><strong>神秘模型搅局：</strong>匿名模型 Ox Alpha（"牛来"）上线 OpenRouter 即登顶并刷新单日用量纪录，技术指纹指向智谱 GLM 系列；OpenRouter 数据显示中国大模型周调用量连续十七周全球第一。</li>
+    <li><strong>大模型价格战蔓延：</strong>OpenAI 将 GPT-5.6 Sol 输出价降至 20 美元/百万 Token（不到一月第二次降价），Gemini 3.7 Flash 半价首发，Anthropic 取消原定涨价。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">12 条</span></h2>
+  <div class="card">
+    <h3>字节跳动"豆包工作"正式发布：TRAE、扣子并入豆包体系，深度接入飞书<span class="tag tag-new">8月25日</span></h3>
+    <p>字节跳动宣布统一 AI 办公品牌"豆包工作"正式上线，具备自主拆解任务、调用工具、跨软件执行复杂工作流的能力，并与飞书深度打通——可调用聊天记录、文档、会议纪要等企业上下文，继承飞书权限与审计体系。此前 TRAE、扣子（Coze）团队已整体并入豆包体系：TRAE Work、扣子与豆包工作场景产品整合，TRAE IDE 及 CLI 作为豆包品牌下编程产品线继续发展。</p>
+    <div class="meta">来源：凤凰网 / 钛媒体 · <a href="https://view.inews.qq.com/a/20260825A04LE200" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>小米自研大模型加速芯片玄戒 O100 亮相：6nm 3D 堆叠、端侧推理 330 Tokens/s<span class="tag tag-new">8月24日</span></h3>
+    <p>小米发布会推出玄戒 O100 端侧大模型加速芯片：采用 6nm 3D 晶圆级堆叠方案，带宽达 1.22TB/s，端侧模型推理速度最高 330 Tokens/s；同场发布的 D100 为国内首款 3nm 智驾芯片，可本地运行 200B 参数大模型。端侧 AI 芯片自研成为国产厂商新焦点。</p>
+    <div class="meta">来源：21世纪经济报道 · <a href="http://view.inews.qq.com/a/20260825A04MUV00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>神秘"牛来"Ox Alpha 登顶 OpenRouter：技术指纹指向智谱 GLM 系列<span class="tag tag-hot">8月24日</span></h3>
+    <p>匿名模型 Ox Alpha（中文社区称"牛来"）上线 OpenRouter 后冲至榜首并刷新单日用量纪录：支持图文视频输入、1M 上下文、免费开放，DeepSWE 编程基准通过率约 80%，超越 GPT-5.6 与 Claude 旗舰；社区通过 tokenizer 指纹分析发现其与智谱 GLM 系列高度一致，疑为未发布的 GLM-5.3 版本，厂商至今未认领。OpenRouter 数据显示上周全球大模型总调用量 93.3 万亿 Token，中国大模型周调用量连续十七周超美国居全球首位。</p>
+    <div class="meta">来源：证券之星 / 腾讯研究院 · <a href="http://view.inews.qq.com/a/20260825A045OY00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>大模型密集降价引发价格战担忧：GPT-5.6 Sol 降至 20 美元/百万 Token<span class="tag tag-hot">8月25日</span></h3>
+    <p>OpenAI 宣布 GPT-5.6 Sol 输出价降至每百万 Token 20 美元，降幅超 20%，为不到一个月内第二次降价；谷歌 Gemini 3.7 Flash 以半价首发，Anthropic 则取消了原定涨价。分析认为开源模型挑战正倒逼闭源厂商降价，前沿模型"基建竞赛"特征凸显。</p>
+    <div class="meta">来源：环球网 / 财闻 · <a href="http://view.inews.qq.com/a/20260825A027FZ00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>英伟达拟以超 300 亿美元估值投资 AI 搜索公司 Perplexity<span class="tag tag-fund">8月24日</span></h3>
+    <p>英伟达拟以超 300 亿美元估值投资 Perplexity，较 2025 年 7 月的 180 亿美元估值增长超 66%。Perplexity 年化营收从年初不足 2.5 亿美元飙升至 7.5 亿美元以上，核心驱动是云端 AI Agent 产品 Perplexity Computer（每会话平均自主工作 26 分钟）。加上同周 60 亿美元授权 Poolside，英伟达正加速从芯片商向 AI 生态主导者转型。</p>
+    <div class="meta">来源：钛媒体 · <a href="https://www.tmtpost.com/8115451.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 被判支付 15 亿美元版权和解金：模型训练本身受 fair use 保护<span class="tag tag-hot">8月24日</span></h3>
+    <p>联邦法官 William Alsup 裁定 Anthropic 须向一组作者支付 15 亿美元版权和解金，但同步裁定"用受版权作品训练 AI 模型"这一核心过程受合理使用（fair use）原则法律保护——处罚针对的是从盗版影子书库获取书籍的违规行为，而非训练本身。法律专家称该裁决为前沿模型训练的合法性提供了关键背书，同时给数据获取环节划出明确红线。</p>
+    <div class="meta">来源：AI Breaking Wire · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-24" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>小鹏机器人首轮融资超 9 亿美元、估值超 63 亿美元，创具身智能单轮纪录<span class="tag tag-fund">8月24日</span></h3>
+    <p>小鹏披露旗下机器人业务完成首轮超 9 亿美元融资，投后估值超 63 亿美元，创国内具身智能行业单轮私募股权融资纪录。本轮由 IDG 资本领投、高榕创投参投，腾讯与阿里巴巴战略投资；IRON 人形机器人计划 2026 年底规模量产，2027 年面向零售、服务行业销售。</p>
+    <div class="meta">来源：每日经济新闻 · <a href="https://cd.nbd.com.cn/articles/2026-08-25/4554472.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Hugging Face 探索 130 亿美元整体出售，估值两年翻近三倍<span class="tag tag-fund">8月23日</span></h3>
+    <p>据 Business Insider，全球最大开源 AI 模型平台 Hugging Face 已聘请投行评估整体出售，估值约 130 亿美元，较 2023 年的 45 亿美元显著抬升。此前数周 OpenAI 模型逃逸曾入侵其基础设施，加速了变现节奏；反映 AI 中间层正成为巨头抢购目标。</p>
+    <div class="meta">来源：Business Insider / 腾讯新闻 · <a href="https://view.inews.qq.com/a/20260824A095G300" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>英伟达 Groq 3 LPX 全面投产，Vera Rubin NVL72 每兆瓦吞吐达上代 30 倍<span class="tag tag-new">8月24日</span></h3>
+    <p>英伟达宣布面向 AI 推理的 Groq 3 LPX 全面投产（Gemma 4 31B、10 万 Token 上下文下每秒 3400 输出 Token）；新一代 Vera Rubin NVL72 在运行 DeepSeek V4 Pro 的 Agent 工作负载测试中，每兆瓦吞吐量最高达上代 GB300 NVL72 的 30 倍、每 Token 成本最高降 35 倍。SpaceXAI 同步宣布扩大部署，并计划将优化版 Vera Rubin 用于首代 Starmind AI 卫星，把算力延伸至轨道。</p>
+    <div class="meta">来源：每日经济新闻 · <a href="https://cd.nbd.com.cn/articles/2026-08-25/4554472.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>博通拟以 700–800 亿美元债务融资服务 Anthropic，刷新 AI 融资纪录<span class="tag tag-fund">8月24日</span></h3>
+    <p>博通拟为 Anthropic 安排 700–800 亿美元债务融资：优先档约 450 亿、次级档约 350 亿，分层结构刷新 AI 融资纪录。叠加自研半导体、拟 IPO 募资超 1000 亿美元等动作，Anthropic 的资本扩张与算力军备竞赛同步提速。</p>
+    <div class="meta">来源：华尔街见闻 / 腾讯新闻 · <a href="https://new.qq.com/rain/a/20260825A0280T00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 神秘代号 gpt-nathree 意外泄露，首批 Vera Rubin NVL72 机架到货<span class="tag tag-new">8月24日</span></h3>
+    <p>OpenAI 员工在 GitHub 公开 PR 中意外暴露新模型代号 gpt-nathree（推测为 GPT-6 Astra 检查点，正通过 Codex 内部测试），挂近 18 小时后删除；同周 Anthropic 两款新模型也被第三方曝光。硬件侧，微软与 OpenAI 预订的 NVIDIA Vera Rubin NVL72 机架已到货，成首批量产客户，单机柜满载功率 225kW、较上代提升约 50%。</p>
+    <div class="meta">来源：硅星人 / 芯硬件 · <a href="https://new.qq.com/rain/a/20260825A0280T00" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Google Gemini App 月活突破 10 亿，成谷歌史上最快增长产品<span class="tag tag-new">8月24日</span></h3>
+    <p>谷歌 Gemini 应用月活跃用户达到 10 亿里程碑，成为公司第 14 个十亿级产品、也是史上增长最快的产品线。同日谷歌发布可嵌入的"Preferred Sources"按钮，帮助出版商在 AI 概览等生成式搜索中优先呈现其内容。</p>
+    <div class="meta">来源：HeadsUpAI / Google · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-24" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span></h2>
+  <div class="card">
+    <h3>ReWorld：带长时程记忆的交互式世界模型<span class="tag tag-new">arXiv</span></h3>
+    <p>提出一个具备长时程记忆的交互式世界模型，为需要保持一致、长期交互的智能体环境提供新范式——世界模型赛道从"短视模拟"迈向"长期记忆"。</p>
+    <div class="paper-authors">arXiv 2608.23565</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23565" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Prime Agent：一个自我改进的 RLM 训练框架<span class="tag tag-new">arXiv</span></h3>
+    <p>发布自我改进的 RLM（强化学习语言模型）训练框架技术报告并开源代码，聚焦推理模型在长时程任务上的持续自我进化。</p>
+    <div class="paper-authors">arXiv 2608.23552</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23552" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>SRPO：面向长时程推理的自反思策略优化<span class="tag tag-new">arXiv</span></h3>
+    <p>提出自反思策略优化方法，让模型在长时程推理中通过反思修正决策路径，已被 ICML 2026 接收——长时程推理对齐的重要一步。</p>
+    <div class="paper-authors">arXiv 2608.23493</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23493" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>SkillAlchemy：开放世界智能体的技能自主创造<span class="tag tag-new">arXiv</span></h3>
+    <p>让开放世界智能体能够自主创建、复用技能，显著提升长期任务完成能力——与 Anthropic 插件市场、技能生态爆发形成呼应。</p>
+    <div class="paper-authors">arXiv 2608.23417</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23417" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>StrategyBench：评测 LLM 的显式策略归纳能力<span class="tag tag-new">arXiv</span></h3>
+    <p>构建新基准评估 LLM 能否从经验中显式归纳并应用策略，为"策略级推理"提供标准化度量，直指 Agent 长期规划能力的短板。</p>
+    <div class="paper-authors">arXiv 2608.23475</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23475" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AgentWeave：推理之前先路由，提升工具密集场景的函数调用效率<span class="tag tag-new">arXiv</span></h3>
+    <p>提出"先路由后推理"的架构，在工具丰富的 LLM 场景中显著降低函数调用开销——工具路由层成为 Agent 效率竞争的新焦点。</p>
+    <div class="paper-authors">arXiv 2608.23078</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23078" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>MobilePA-Bench：复杂真实世界任务的移动端规划智能体基准<span class="tag tag-new">arXiv</span></h3>
+    <p>推出面向移动端规划智能体的新基准，覆盖复杂真实世界任务——手机 Agent 从"演示"走向"可测"，评测基建持续补位。</p>
+    <div class="paper-authors">arXiv 2608.23035</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.23035" target="_blank">arXiv ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+  <div class="card">
+    <h3>阿里 Wan3.0 视频生成模型上线<span class="tag tag-new">新发布</span></h3>
+    <p>阿里巴巴正式上线视频生成大模型 Wan3.0（通义万相）：单次可生成 30 秒视频，支持从文档、表格、幻灯片、网页输入直接生成视频，已用于影视、广告、旅游、MV 制作；可通过百炼、千问平台体验。</p>
+    <div class="meta">来源：Reuters / 腾讯新闻 · <a href="https://view.inews.qq.com/a/20260824A0C8DO00" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeepSeek V4-Flash-Vision-Exp 多模态实验模型上线<span class="tag tag-new">新发布</span></h3>
+    <p>DeepSeek 上线 deepseek-v4-flash-vision-exp：在 V4 Flash 基础上新增图像理解能力，纯文本能力与正式版持平，视觉 Agent 基准表现大幅跃升、接近 Claude Opus 4.8；API 沿用 V4-Flash 定价，图片最多折算 384 token，通过 Chat Completions / Messages / Responses 三接口支持图文混合输入。</p>
+    <div class="meta">来源：DeepSeek 官方 · <a href="https://api-docs.deepseek.com/news/news260821" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>LongCat-2.0 开源 Go 版发布：1.6T 参数 48B 激活、百万上下文全开放<span class="tag tag-oss">开放权重</span></h3>
+    <p>LongCat-2.0 发布 Go 语言版本并全面开源：1.6T 总参数、48B 激活参数的 MoE 架构，支持 100 万 Token 上下文；权重、训练代码、推理代码一并放出。Go 版面向高吞吐服务端部署，为长文本与代码库场景提供自部署新选择。</p>
+    <div class="meta">来源：网易 / 摸鱼算法 · <a href="https://www.163.com/dy/article/L54SF4PP05561FZK.html" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Google DeepMind 开源 DiffusionGemma：离散扩散并行生成，H100 单卡 1500 Tokens/s<span class="tag tag-oss">开放权重</span></h3>
+    <p>Google DeepMind 发布基于离散扩散架构的语言模型 DiffusionGemma：以 256 Token 块并行生成而非自回归逐个 Token，单张 H100 上输出速度达 1500 Token/秒、远超自回归加推测解码方案——可能改写语言模型推理架构的并行标准。</p>
+    <div class="meta">来源：Google DeepMind / 财联社 · <a href="https://www.tmtpost.com/8115451.html" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>商汤发布 SenseNova U1.5 Lite：8B 开源多模态，原生 4K 生成与编辑<span class="tag tag-oss">开放权重</span></h3>
+    <p>商汤开源 SenseNova U1.5 Lite：8B 参数多模态模型统一视觉理解、4K 图像生成与编辑能力，支持主体一致性、物体数量、空间关系、文字渲染等六类精确控制，经 GitHub / HuggingFace / ModelScope 三平台发布，面向自托管高分辨率场景。</p>
+    <div class="meta">来源：TechNode / BriefAsia · <a href="https://www.briefasia.com/en/article/sensetime-releases-compact-multimodal-ai-model-high-resolution-image-capabilitie" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Ornith-1.5-35B-A3B 开源：自改进训练 MoE，性能对标 Claude Opus 4.8<span class="tag tag-oss">开放权重</span></h3>
+    <p>Ornith-1.5 系列开源（9B Dense / 35B MoE / 397B MoE 三档）：35B MoE（3B 激活）在 Terminal-Bench 2.1（86.1）、SWE-Bench、DeepSWE（56）等基准达同级开源 SOTA、性能对标 Claude Opus 4.8；全系 MIT 协议，含 FP8/GGUF/MLX 量化版本。</p>
+    <div class="meta">来源：chats-llm.com / ornith-ai · <a href="https://chats-llm.com/model-releases" target="_blank">详情 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>D · Agent / 生态<span class="count">6 条</span></h2>
+  <div class="card">
+    <h3>Anthropic 上线 claude-plugins-community 社区插件市场，Claude 生态进入"官方+社区"双轨<span class="tag tag-new">8月24日</span></h3>
+    <p>Anthropic 在 GitHub 上线 claude-plugins-community 仓库，作为 Claude Cowork 与 Claude Code 社区插件市场的官方只读镜像，已获 900+ Star；两行命令即可接入，明确"官方+社区"双轨插件体系，Agent 技能生态加速标准化。</p>
+    <div class="meta">来源：GitHub / Anthropic · <a href="https://github.com/anthropics/claude-plugins-community" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>MongoDB Atlas 托管式 MCP Server 正式发布：一键接入 Claude Code / Codex / Grok Build / Devin<span class="tag tag-new">8月25日</span></h3>
+    <p>MongoDB 在 local Build Fest 大会宣布 Atlas 托管式 MCP Server 全面可用：全托管模式将智能体接入 Atlas，无需自建基础设施、无需粘贴连接串，即可让 Claude Code、Codex、Grok Build、Devin 等编码智能体查询、检查、更新实时运营数据。</p>
+    <div class="meta">来源：CSDN / MongoDB · <a href="https://www.csdn.net/article/2026-08-25/164044831" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Rippling 与 Runlayer 互诉和解，推出自家 MCP Gateway 正面竞争<span class="tag tag-new">8月24日</span></h3>
+    <p>企业软件厂商 Rippling 与初创 Runlayer 撤销互诉（零赔偿和解），随后 Rippling 立即发布自家 Model Context Protocol 网关——一年期试用了 Runlayer 4200 万美元融资的网关后，两家从合作评估转入直接商业竞争，MCP 网关层战火燃起。</p>
+    <div class="meta">来源：AI Breaking Wire · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-24" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Vercel 开源 fx：7.8MiB 原生 coding agent<span class="tag tag-oss">开源</span></h3>
+    <p>Vercel 开源用 Zig 编写的极简 coding agent CLI（7.8MiB），模型无关，支持 Vercel AI Gateway / OpenAI Codex / xAI Grok，可经 WASM 嵌入更大系统——"极简 Agent 运行时"成为新赛道。</p>
+    <div class="meta">来源：HeadsUpAI / Vercel · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-24" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Munder Difflin：开源 agent harness，开一间"克隆你的"办公室<span class="tag tag-oss">开源</span></h3>
+    <p>免费开源 harness 在本机运行多个"克隆你"的 Agent：共享你的工作风格、工具与知识，包装 Claude Code、Codex、Copilot 等 12 个 Agent CLI，Agent 之间共享记忆与上下文——多 Agent 并行编排的新玩法。</p>
+    <div class="meta">来源：GeekNews · <a href="https://claude-news.today/en/briefings/briefing-2026-08-24" target="_blank">详情 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 为 Mac 版 ChatGPT 上线 Messages 连接器<span class="tag tag-new">8月24日</span></h3>
+    <p>ChatGPT macOS 版新增 Messages 连接器：经"完全磁盘访问权限"读取本地数据库并起草回复，延续接入健康、金融数据的思路——桌面 Agent 对系统编排权限的争夺再进一步。</p>
+    <div class="meta">来源：华尔街见闻 · <a href="https://new.qq.com/rain/a/20260825A0280T00" target="_blank">详情 ↗</a></div>
+  </div>
+</section>
+
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
+
+</div>
+</body>
+</html>
