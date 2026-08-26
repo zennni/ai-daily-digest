@@ -1589,11 +1589,41 @@
  "changes": [
   {
    "d": "08-26",
+   "t": "同日复检确认：AA 快照 8/24 维持，8/25-26 无新条目",
+   "m": [],
+   "s": "11:30 复检：AA Changelog 最新条目仍为 8/24（V4 Flash Vision 首评 51.47 + Qwen3.8-27B Non-reasoning 档评测，后者分数未在公开页面显示，待核实）；8/25-26 无新增评测/分数变动；主榜 72 配置与第十一期一致，排名无变化"
+  },
+  {
+   "d": "08-26",
    "t": "AA 数据库快照 8/23→8/24：新增 V4 Flash Vision 首评，其余零变化",
    "m": [
     "DeepSeek V4 Flash Vision"
    ],
-   "s": "AA 于 8/24 首次独立评测 DeepSeek V4 Flash Vision（Intelligence Index v4.1.1 = 51.47，低于文本版 V4 Flash 0731 的 51.77）；其余模型与 8/23 快照逐条对比零变化（无分数变动）；榜首 Claude Opus 5（63.1）连续 12 期不变；主榜维持 72 配置"
+   "s": "AA 于 8/24 首次独立评测 DeepSeek V4 Flash Vision（Intelligence Index v4.1.1 = 51.47，低于文本版 V4 Flash 0731 的 51.77）；同日新增 Qwen3.8-27B Non-reasoning 档评测（分数待核实）；其余模型与 8/23 快照逐条对比零变化；榜首 Claude Opus 5（63.1）连续 12 期不变；主榜维持 72 配置"
+  },
+  {
+   "d": "08-25",
+   "t": "IBM 开源 Granite 4.2 推理模型家族（3B/8B/30B，Apache 2.0）",
+   "m": [
+    "IBM Granite 4.2"
+   ],
+   "s": "8/25 发布 IBM 首个原生思考链系列：30B 旗舰含 agentic RL（SWE/Terminal/Search 沙箱训练）、三档思考模式（Full/Non-thinking/Low-effort）、512K 上下文、原生工具调用；Ollama/HF 同步上架；AA 暂无分，列第七节值得关注"
+  },
+  {
+   "d": "08-26",
+   "t": "阿里预告 Qwen3.8-Flash-Next 今晚 23:00 开源（Qwen4 架构多模态 MoE）",
+   "m": [
+    "Qwen3.8-Flash-Next"
+   ],
+   "s": "魔搭社区（ModelScope）将于 8/26 23:00 开源 Qwen3.8-Flash-Next 及 FP8 版，基于下一代 Qwen4 架构，为完整 Qwen4 家族预热；性能参数未披露；开源后按 AA 评分进度纳入评估"
+  },
+  {
+   "d": "08-25~26",
+   "t": "Qwen3.8-27B 生态进展：AMD Day 0 支持、实测热议、下载破百万",
+   "m": [
+    "Qwen3.8-27B"
+   ],
+   "s": "AMD 宣布 Day 0 支持（24GB+ 显存 PC 可本地运行）；实测生成约 27 tok/s、借助 DFlash2 草稿模型可提速 50%+；发布两天下载破百万、登 HF 全球趋势榜"
   },
   {
    "d": "08-25",
