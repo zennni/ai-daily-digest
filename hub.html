@@ -159,11 +159,13 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>Qwen3.5-9B</b></td><td>9B</td><td>INT4</td><td>≈5GB</td><td>128K</td><td>Apache 2.0</td><td>—</td><td>8GB 档能力上限，综合均衡。</td></tr>
-      <tr><td class="rk">②</td><td><b>Gemma 4 12B</b></td><td>12B</td><td>INT4</td><td>≈7GB</td><td>131K</td><td>Apache 2.0</td><td>—</td><td>谷歌系小模型，原生多模态。</td></tr>
-      <tr><td class="rk">③</td><td><b>MiniCPM 5-1B</b></td><td>1B</td><td>INT4</td><td>≈0.6GB</td><td>—</td><td>自定义（可商用）</td><td>—</td><td>端侧智能密度之王，手机/IoT 首选。</td></tr>
-      <tr><td class="rk">④</td><td><b>Llama 3.2 3B</b></td><td>3B</td><td>INT4</td><td>≈2.5GB</td><td>128K</td><td>Llama License</td><td>—</td><td>生态与微调资源最丰富。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Qwen3.5-0.8B</b></td><td>0.8B</td><td>INT4</td><td>≈0.5GB</td><td>32K</td><td>Apache 2.0</td><td>—</td><td>入门对话，Qwen 生态兼容性最好。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>Granite 4.2 8B</b></td><td>8B</td><td>INT4</td><td>≈4.4GB</td><td>128K→512K</td><td>Apache 2.0</td><td>20</td><td>IBM 8/25 开源，AA 20（8/26 首评）为 8GB 档首个有分模型（主榜 #75）；三档思考模式（Full/Low-effort/Non-thinking）、原生工具调用 + agentic RL；IBM 自测 SWE-bench 47.67；文本 only（无多模态），编码/Agent 场景优选，综合对话与多模态需求选 Qwen3.5-9B。</td></tr>
+      <tr><td class="rk">②</td><td><b>Qwen3.5-9B</b></td><td>9B</td><td>INT4</td><td>≈5GB</td><td>128K</td><td>Apache 2.0</td><td>—</td><td>8GB 档综合能力上限（无同口径分），均衡 + 多模态，生态成熟。</td></tr>
+      <tr><td class="rk">③</td><td><b>Gemma 4 12B</b></td><td>12B</td><td>INT4</td><td>≈7GB</td><td>131K</td><td>Apache 2.0</td><td>—</td><td>谷歌系小模型，原生多模态。</td></tr>
+      <tr><td class="rk">④</td><td><b>Granite 4.2 3B</b></td><td>3B</td><td>INT4</td><td>≈1.65GB</td><td>128K→512K</td><td>Apache 2.0</td><td>14</td><td>AA 14（8/26 首评）；支持工具调用（能力有限），显存占用极低，适合端侧 Agent 试水；与 8B 同日开源。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>MiniCPM 5-1B</b></td><td>1B</td><td>INT4</td><td>≈0.6GB</td><td>—</td><td>自定义（可商用）</td><td>—</td><td>端侧智能密度之王，手机/IoT 首选。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>Llama 3.2 3B</b></td><td>3B</td><td>INT4</td><td>≈2.5GB</td><td>128K</td><td>Llama License</td><td>—</td><td>生态与微调资源最丰富。</td></tr>
+      <tr><td class="rk">⑦</td><td><b>Qwen3.5-0.8B</b></td><td>0.8B</td><td>INT4</td><td>≈0.5GB</td><td>32K</td><td>Apache 2.0</td><td>—</td><td>入门对话，Qwen 生态兼容性最好。</td></tr>
     </tbody></table></div>
   <h3 class="sub">16GB 档（主流游戏卡 / 16GB Mac，INT4）</h3>
   <div class="card" style="overflow-x:auto"><table>
@@ -173,18 +175,20 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
       <tr><td class="rk">②</td><td><b>Qwen3.6-27B</b></td><td>27B</td><td>INT4</td><td>≈15GB（临界）</td><td>262K</td><td>Apache 2.0</td><td>38</td><td>上代 27B，社区验证充分、稳定。</td></tr>
       <tr><td class="rk">③</td><td><b>gpt-oss-20b</b></td><td>20B / 3.6B</td><td>INT4</td><td>≈10–12GB</td><td>128K</td><td>Apache 2.0</td><td>—</td><td>OpenAI 官方声明 16GB 可跑；推理/数学强。</td></tr>
       <tr><td class="rk">④</td><td><b>Nemotron 3.5 Lightning</b></td><td>30B / 3B</td><td>INT4</td><td>≈17GB（临界）</td><td>256K–1M</td><td>OpenMDW-1.1</td><td>24</td><td>8/11 发布，AA 24；Agent 执行层，速度 ~670 tok/s，24GB 档更舒适。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>InternLM3-20B</b></td><td>20B</td><td>INT4</td><td>≈11GB</td><td>—</td><td>Apache 2.0</td><td>—</td><td>上海AI实验室，学术认可度高。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Granite 4.2 30B</b></td><td>30B</td><td>INT4</td><td>≈16.5GB（临界）</td><td>128K→512K</td><td>Apache 2.0</td><td>—</td><td>IBM 8/25 开源旗舰推理（稠密 30B，agentic RL + 三档思考）；IBM 自测 SWE-bench 57.00 / AIME25 89.17（待独立复现，30B 暂无 AA 分）；文本 only；临界显存，24GB 档更稳。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>InternLM3-20B</b></td><td>20B</td><td>INT4</td><td>≈11GB</td><td>—</td><td>Apache 2.0</td><td>—</td><td>上海AI实验室，学术认可度高。</td></tr>
     </tbody></table></div>
   <h3 class="sub">24GB 档（RTX 4090 等消费级旗舰，INT4）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>Muse Glimmer 30B</b></td><td>30B</td><td>INT4</td><td>≈18GB</td><td>131K</td><td>Apache 2.0</td><td>35</td><td>Meta 8/10 开源（Apache 2.0 首例），AA 35 为 24GB 档最高；本地 Agent 定位，INT4 单卡 4090 可跑。</td></tr>
-      <tr><td class="rk">②</td><td><b>G9v3-39A5B</b></td><td>39B / 5B</td><td>INT4</td><td>≈22GB</td><td>131K</td><td>Apache 2.0</td><td>34</td><td>AI9Stars 8/3 开源 MoE（Think/No-Think 双模式），AA 8/22 快照 34 为 24GB 档第 2；双模式单权重切换，本地 Agent/工具调用友好。</td></tr>
-      <tr><td class="rk">③</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>INT4</td><td>≈20GB</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>"本地英雄"：MoE 快、能力接近 30B+ 稠密。</td></tr>
-      <tr><td class="rk">④</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>INT4</td><td>≈18GB</td><td>262K</td><td>Apache 2.0</td><td>30</td><td>谷歌开源主力（AA 8/22 快照 29→30），多模态。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Nemotron 3.5 Lightning</b></td><td>30B / 3B</td><td>INT4</td><td>≈17GB</td><td>256K–1M</td><td>OpenMDW-1.1</td><td>24</td><td>16GB 临界、24GB 舒适；Agent 高频调用最划算。</td></tr>
-      <tr><td class="rk">⑥</td><td><b>Nemotron 3 Nano Omni 30B-A3B</b></td><td>30B / 3B</td><td>INT4</td><td>≈18GB</td><td>128K</td><td>NVIDIA Open Model License</td><td>—</td><td>文/图/音/视/文档多模态 MoE。</td></tr>
+      <tr><td class="rk">②</td><td><b>G9v3-39A5B</b></td><td>39B / 5B</td><td>INT4</td><td>≈22GB</td><td>131K</td><td>Apache 2.0</td><td>34</td><td>AI9Stars 8/3 开源 MoE（Think/No-Think 双模式），AA 34 为 24GB 档第 2；双模式单权重切换，本地 Agent/工具调用友好。</td></tr>
+      <tr><td class="rk">③</td><td><b>Granite 4.2 30B</b></td><td>30B</td><td>INT4</td><td>≈16.5GB</td><td>128K→512K</td><td>Apache 2.0</td><td>—</td><td>16GB 档临界、本档舒适；IBM 自测 SWE-bench 57 为 30B 级顶级（待独立复现）；三档思考模式可按任务控制推理开销；文本 only。</td></tr>
+      <tr><td class="rk">④</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>INT4</td><td>≈20GB</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>"本地英雄"：MoE 快、能力接近 30B+ 稠密。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>INT4</td><td>≈18GB</td><td>262K</td><td>Apache 2.0</td><td>30</td><td>谷歌开源主力（AA 8/22 快照 29→30），多模态。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>Nemotron 3.5 Lightning</b></td><td>30B / 3B</td><td>INT4</td><td>≈17GB</td><td>256K–1M</td><td>OpenMDW-1.1</td><td>24</td><td>16GB 临界、24GB 舒适；Agent 高频调用最划算。</td></tr>
+      <tr><td class="rk">⑦</td><td><b>Nemotron 3 Nano Omni 30B-A3B</b></td><td>30B / 3B</td><td>INT4</td><td>≈18GB</td><td>128K</td><td>NVIDIA Open Model License</td><td>—</td><td>文/图/音/视/文档多模态 MoE。</td></tr>
     </tbody></table></div>
   <h3 class="sub">32GB 档（FP8 全精度 / 长上下文）</h3>
   <div class="card" style="overflow-x:auto"><table>
@@ -194,7 +198,8 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
       <tr><td class="rk">②</td><td><b>Qwen3.6-27B</b></td><td>27B</td><td>FP8</td><td>≈30GB</td><td>262K</td><td>Apache 2.0</td><td>38</td><td>上代 27B 全精度，长文档舒适。</td></tr>
       <tr><td class="rk">③</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>INT4 长上下文</td><td>20GB + 余量</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>24GB 的升级：更大 batch 与更长上下文。</td></tr>
       <tr><td class="rk">④</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>FP8</td><td>≈33GB（临界）</td><td>262K</td><td>Apache 2.0</td><td>30</td><td>高精度 31B，显存偏紧。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Llama 3.3 70B</b></td><td>70B</td><td>INT4</td><td>≈40GB（超档）</td><td>128K</td><td>Llama License</td><td>—</td><td>70B 级 INT4 建议上 48GB 档。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Granite 4.2 30B</b></td><td>30B</td><td>FP8</td><td>≈33GB（临界）</td><td>128K→512K</td><td>Apache 2.0</td><td>—</td><td>FP8 高精度临界档（48GB 舒适）；官方提供 FP8/NVFP4/GGUF 多量化。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>Llama 3.3 70B</b></td><td>70B</td><td>INT4</td><td>≈40GB（超档）</td><td>128K</td><td>Llama License</td><td>—</td><td>70B 级 INT4 建议上 48GB 档。</td></tr>
     </tbody></table></div>
   <h3 class="sub">48GB 档（A6000 等专业卡，INT4 / FP8）</h3>
   <div class="card" style="overflow-x:auto"><table>
@@ -202,22 +207,23 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>Llama 3.3 70B</b></td><td>70B</td><td>INT4</td><td>≈40GB</td><td>128K</td><td>Llama License</td><td>—</td><td>70B 级通用能力标杆，生态成熟。</td></tr>
       <tr><td class="rk">②</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>FP8</td><td>≈36GB</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>MoE 高精度档，速度依然快。</td></tr>
-      <tr><td class="rk">③</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>INT4</td><td>≈60GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>120B 级请上 64GB 档。</td></tr>
-      <tr><td class="rk">④</td><td><b>Nemotron 3 Super 120B-A12B</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB（超档）</td><td>1M</td><td>NVIDIA Open Model License</td><td>—</td><td>1M 上下文，建议 96GB 档。</td></tr>
+      <tr><td class="rk">③</td><td><b>Granite 4.2 30B</b></td><td>30B</td><td>FP8</td><td>≈33GB</td><td>128K→512K</td><td>Apache 2.0</td><td>—</td><td>FP8 全精度舒适区；IBM 旗舰推理 30B，高精度 + 512K 扩展上下文的企业工作流。</td></tr>
+      <tr><td class="rk">④</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB（超档）</td><td>1M</td><td>NVIDIA Open Model License</td><td>26</td><td>1M 上下文，建议 96GB 档。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>INT4</td><td>≈66GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>120B 级请上 64GB 档。</td></tr>
     </tbody></table></div>
   <h3 class="sub">64GB 档（INT4 的 120B 级门槛）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>INT4</td><td>≈66GB（临界）</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>官方称单张 80GB 可跑；INT4 ≈66GB 超 64GB 档，偏紧（临界）。</td></tr>
-      <tr><td class="rk">②</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB（临界）</td><td>1M</td><td>NVIDIA Open Model License</td><td>26</td><td>本周 AA 新获 26 分；1M 上下文企业工作负载。</td></tr>
-      <tr><td class="rk">③</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>INT4</td><td>≈70GB（临界）</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>稠密 128B，长文连贯好；建议 96GB 更稳。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>INT4</td><td>≈66GB（临界；官方 MXFP4 ≈61GB 可入本档）</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>官方称单张 80GB 可跑；INT4 ≈66GB 超 64GB 档偏紧，改用官方 MXFP4 量化（≈61GB）可真正入档。</td></tr>
+      <tr><td class="rk">②</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB（临界）</td><td>1M</td><td>NVIDIA Open Model License</td><td>26</td><td>AA 26 分；1M 上下文企业工作负载。</td></tr>
+      <tr><td class="rk">③</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>INT4</td><td>≈70GB（临界）</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>本档有分最高（30.4），稠密 128B，长文连贯好；建议 96GB 更稳。</td></tr>
     </tbody></table></div>
   <h3 class="sub">96GB 档（工作站 / A100 80G 级）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>Ling-3.0-flash</b></td><td>124B / 5.1B</td><td>INT4</td><td>≈68GB</td><td>262K</td><td>MIT</td><td>38</td><td>蚂蚁百灵 8/5 开源（纯净 MIT），AA 38 为 96GB 档最高；MoE 仅 5.1B 激活，KV 余量充足，SGLang 高吞吐；官方另有 MXFP4/INT4 单机 128GB 统一内存部署方案。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>Ling-3.0-flash</b></td><td>124B / 5.1B</td><td>INT4</td><td>≈68GB</td><td>262K</td><td>MIT</td><td>38</td><td>蚂蚁百灵 8/5 开源（纯净 MIT），AA 38 为 96GB 档有分最高；MoE 仅 5.1B 激活，KV 余量充足，SGLang 高吞吐；官方另有 MXFP4/INT4 单机 128GB 统一内存部署方案。</td></tr>
       <tr><td class="rk">②</td><td><b>Qwen3.8-Flash-Next</b></td><td>125B + 51B Emb / 6B</td><td>INT4</td><td>主模型 ≈69GB（51B embedding 可卸载内存）</td><td>262K→1M</td><td>Qwen Community 1.0</td><td>—</td><td>8/26 晚开源（Qwen4 架构先导）：多模态 MoE、每 token 仅激活 6B；官方称 51B N-gram embedding 可 offload 到 host memory，GPU 仅需主模型；AA 暂无分（厂商自测超 DeepSeek V4 Flash，待复现）；SGLang/vLLM 首日支持。</td></tr>
       <tr><td class="rk">③</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>INT4</td><td>≈70GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>稠密模型，跨大仓编辑更连贯。</td></tr>
       <tr><td class="rk">④</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>26</td><td>1M 上下文的 Agent 与检索工作流。</td></tr>
@@ -227,31 +233,33 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>Q3 / INT4</td><td>Q3 ≈120GB（可入本档）<br>INT4 ≈156GB（超档，需 2×80GB 或 192GB+）</td><td>1M</td><td>MIT</td><td>52</td><td>INT4 ≈156GB 超 128GB 档（原表标注有误）；本档以 Q3 量化或系统内存卸载运行，仍为能力天花板。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>Q3 / INT4</td><td>Q3 ≈120GB（可入本档）<br>INT4 ≈156GB（超档，需 2×80GB 或 192GB+）</td><td>1M</td><td>MIT</td><td>52</td><td>INT4 ≈156GB 超 128GB 档；本档以 Q3 量化或系统内存卸载运行，仍为能力天花板。</td></tr>
       <tr><td class="rk">②</td><td><b>Ling-3.0-flash</b></td><td>124B / 5.1B</td><td>FP8</td><td>官方 FP8 ≈128GB</td><td>262K</td><td>MIT</td><td>38</td><td>官方 BF16≈255GB / FP8≈128GB 两版；FP8 版体积减半、单机 128GB 统一内存或 2×80GB 可跑（官方 DGX Spark 方案），SGLang/vLLM 均可部署。</td></tr>
       <tr><td class="rk">③</td><td><b>MiMo-V2.5</b></td><td>待核实</td><td>待核实</td><td>待核实</td><td>1M</td><td>MIT</td><td>38</td><td>参数规模与显存均待核实（INT4 全量大概率超 128GB），以官方模型卡为准。</td></tr>
       <tr><td class="rk">④</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>FP8 ≈132GB 超 128GB 档；本档请用 INT4（≈66GB）或上 160GB 档。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Qwen3.8-Flash-Next</b></td><td>125B + 51B Emb / 6B</td><td>FP8</td><td>主模型 ≈138GB（超档，51B embedding 需卸载内存）</td><td>262K→1M</td><td>Qwen Community 1.0</td><td>—</td><td>官方 FP8 版（8/26 同步开源）；主模型 FP8 超 128GB 档，建议 192GB 档或大内存工作站；与 96GB 档 INT4 方案同模型。</td></tr>
     </tbody></table></div>
   <h3 class="sub">192GB 档（Mac Studio 顶配 / 2×80GB 专业卡，INT4 / FP8）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>GLM-5.3-Flash</b></td><td>320B / 18B</td><td>INT4</td><td>≈176GB</td><td>1M</td><td>MIT</td><td>57</td><td><b>8/26 发布即开源（= Ox Alpha「牛来」）</b>：AA 57 分为 192GB 档最高（超过 DeepSeek V4 Flash 的 52）；原生多模态 + 1M 上下文；45 层混合注意力（3 线性:1 稀疏），KV 缓存为 GLM-5.3 的 1/4.4；国产芯片集群已验证规模化服务；INT4 全量需 192GB 统一内存或 2×96GB 专业卡。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>GLM-5.3-Flash</b></td><td>320B / 18B</td><td>INT4</td><td>≈176GB</td><td>1M</td><td>MIT</td><td>57</td><td><b>8/26 发布即开源（= Ox Alpha「牛来」）</b>：AA 57 分为 192GB 档最高（超过 DeepSeek V4 Flash 的 52）；原生多模态 + 1M 上下文；45 层混合注意力（3 线性:1 稀疏），KV 缓存为 GLM-5.3 的 1/4.44；国产芯片集群已验证规模化服务；INT4 全量需 192GB 统一内存或 2×96GB 专业卡。</td></tr>
       <tr><td class="rk">②</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>INT4</td><td>≈156GB</td><td>1M</td><td>MIT</td><td>52</td><td>INT4 全量舒适区：2×80GB（160GB）或 192GB 统一内存直接跑，无需 Q3。</td></tr>
       <tr><td class="rk">③</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>FP8</td><td>≈141GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>FP8 高精度稠密，长文连贯好。</td></tr>
-      <tr><td class="rk">④</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>FP8 全精度舒适区（128GB 档超档，本档正合适）。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>26</td><td>1M 上下文的 FP8 全精度 Agent 工作流。</td></tr>
+      <tr><td class="rk">④</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>26</td><td>1M 上下文的 FP8 全精度 Agent 工作流。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>FP8 全精度舒适区（128GB 档超档，本档正合适）。</td></tr>
       <tr><td class="rk">⑥</td><td><b>MiMo-V2.5</b></td><td>待核实</td><td>待核实</td><td>待核实</td><td>1M</td><td>MIT</td><td>38</td><td>参数规模待核实，能否入本档取决于实际参数，以官方模型卡为准。</td></tr>
     </tbody></table></div>
   <h3 class="sub">512GB 档（个人旗舰工作站 / 准数据中心，FP8 / 1-bit）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>FP8</td><td>≈312GB</td><td>1M</td><td>MIT</td><td>52</td><td>FP8 全精度：512GB 统一内存或 4×80GB 服务器。</td></tr>
-      <tr><td class="rk">②</td><td><b>Qwen3.8-2.4T-A95B</b></td><td>2.4T / 95B</td><td>1-bit</td><td>≈397GB</td><td>262K→1M</td><td>Apache 2.0（8/14 晚正式开源）</td><td>58（API 版口径）</td><td>Unsloth 1-bit 397GB 官方量化，512GB 内存可本地跑；权重版未单独评分。</td></tr>
-      <tr><td class="rk">③</td><td><b>Inkling</b></td><td>975B / 41B</td><td>1-bit GGUF</td><td>≈280GB</td><td>1M</td><td>Apache 2.0</td><td>42</td><td>美国开源最强，多模态微调基座；本档属轻量配置。</td></tr>
-      <tr><td class="rk">④</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>BF16</td><td>≈256GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>BF16 全精度稠密。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>BF16</td><td>≈240GB</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>BF16 全精度。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>GLM-5.3-Flash</b></td><td>320B / 18B</td><td>FP8</td><td>≈352GB</td><td>1M</td><td>MIT</td><td>57</td><td>FP8 全精度：512GB 统一内存或 4×80GB 服务器；与 192GB 档 INT4 方案同模型；线性+稀疏混合注意力使 KV 缓存仅为 GLM-5.3 的 1/4.44，长上下文成本优势明显。</td></tr>
+      <tr><td class="rk">②</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>FP8</td><td>≈312GB</td><td>1M</td><td>MIT</td><td>52</td><td>FP8 全精度：512GB 统一内存或 4×80GB 服务器。</td></tr>
+      <tr><td class="rk">③</td><td><b>Qwen3.8-2.4T-A95B</b></td><td>2.4T / 95B</td><td>1-bit</td><td>≈397GB</td><td>262K→1M</td><td>Apache 2.0（8/14 晚正式开源）</td><td>58（API 版口径）</td><td>Unsloth 1-bit 397GB 官方量化，512GB 内存可本地跑；权重版未单独评分（1-bit 量化有损）。</td></tr>
+      <tr><td class="rk">④</td><td><b>Inkling</b></td><td>975B / 41B</td><td>1-bit GGUF</td><td>≈280GB</td><td>1M</td><td>Apache 2.0</td><td>42</td><td>美国开源最强，多模态微调基座；本档属轻量配置。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>BF16</td><td>≈256GB</td><td>256K</td><td>Modified MIT</td><td>30.4</td><td>BF16 全精度稠密。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>BF16</td><td>≈240GB</td><td>128K</td><td>Apache 2.0</td><td>24.1</td><td>BF16 全精度。</td></tr>
     </tbody></table></div>
   <h3 class="sub">数据中心级（多卡 / 企业集群，个人电脑不适用）</h3>
   <div class="card" style="overflow-x:auto"><table>
@@ -259,12 +267,11 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>Kimi K3</b></td><td>2.8T / 104B</td><td>MXFP4</td><td>≈1.5TB</td><td>1M</td><td>Kimi K3 License</td><td>60</td><td>全球最大开放权重，建议 64+ 加速器。</td></tr>
       <tr><td class="rk">②</td><td><b>Qwen3.8-2.4T-A95B</b></td><td>2.4T / 95B</td><td>1-bit / FP8</td><td>≈397GB（1-bit）~ 1.2TB</td><td>262K→1M</td><td>Apache 2.0（8/14 晚正式开源）</td><td>58（API 版，权重未单独评分）</td><td>Unsloth 1-bit 量化 397GB 即本地可跑。</td></tr>
-      <tr><td class="rk">③</td><td><b>GLM-5.2</b></td><td>753B / 40B</td><td>FP8</td><td>≈828GB（约 8×H200）</td><td>1M</td><td>MIT</td><td>53</td><td>宽松许可旗舰，企业私有部署首选之一。</td></tr>
-      <tr><td class="rk">④</td><td><b>K-EXAONE 2.0</b></td><td>750B / 37B</td><td>FP8 / INT4</td><td>≈825GB / ≈412GB</td><td>262K</td><td>Apache 2.0</td><td>31</td><td>LG 主权模型（8 月起评），Apache 2.0 可商用。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>A.X-K2</b></td><td>688B / 33B</td><td>FP8（原生）</td><td>≈757GB</td><td>—</td><td>Apache 2.0</td><td>35</td><td>SK Telecom 主权模型，FP8 全程训练免量化。</td></tr>
-      <tr><td class="rk">⑥</td><td><b>MiMo-V2.5-Pro</b></td><td>1.02T / 42B</td><td>INT4</td><td>≈560GB</td><td>1M</td><td>MIT</td><td>43</td><td>小米旗舰，Agent 能力突出。</td></tr>
-      <tr><td class="rk">⑦</td><td><b>Inkling</b></td><td>975B / 41B</td><td>1-bit GGUF</td><td>≈280GB 起</td><td>1M</td><td>Apache 2.0</td><td>42</td><td>美国开源最强，多模态微调基座。</td></tr>
-      <tr><td class="rk">⑧</td><td><b>LongCat-2.0</b></td><td>1.6T / 48B</td><td>FP8 / BF16</td><td>五万卡国产集群</td><td>1M</td><td>MIT</td><td>34</td><td>首个国产芯片全流程万亿模型（AA 8/22 快照 34）；权重+国产卡推理代码已开源（MIT）。</td></tr>
+      <tr><td class="rk">③</td><td><b>GLM-5.2</b></td><td>753B / 40B</td><td>FP8</td><td>≈828GB（约 8×H200）</td><td>1M</td><td>MIT</td><td>53</td><td>宽松许可旗舰，企业私有部署首选之一；GLM-5.3（AA 60）权重 8/28 开源后接棒。</td></tr>
+      <tr><td class="rk">④</td><td><b>MiMo-V2.5-Pro</b></td><td>1.02T / 42B</td><td>INT4</td><td>≈560GB</td><td>1M</td><td>MIT</td><td>43</td><td>小米旗舰，Agent 能力突出。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Inkling</b></td><td>975B / 41B</td><td>1-bit GGUF</td><td>≈280GB 起</td><td>1M</td><td>Apache 2.0</td><td>42</td><td>美国开源最强，多模态微调基座。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>A.X-K2</b></td><td>688B / 33B</td><td>FP8（原生）</td><td>≈757GB</td><td>—</td><td>Apache 2.0</td><td>35</td><td>SK Telecom 主权模型，FP8 全程训练免量化。</td></tr>
+      <tr><td class="rk">⑦</td><td><b>K-EXAONE 2.0</b></td><td>750B / 37B</td><td>FP8 / INT4</td><td>≈825GB / ≈412GB</td><td>262K</td><td>Apache 2.0</td><td>31</td><td>LG 主权模型（8 月起评），Apache 2.0 可商用。</td></tr>
     </tbody></table></div>
   <p class="lead" style="margin-top:8px">注：自部署模型无统一 token 价格，成本取决于硬件与利用率，不与 API token 价格混入同一性价比评分。显存估算按 INT4≈0.55GB/十亿参数、FP8≈1.1GB/十亿参数、BF16≈2.0GB/十亿参数、Q3≈0.42GB/十亿参数粗算（128GB 档按 Q3 口径；1-bit 量化以官方量化包为准），实际请以 vLLM/llama.cpp 实测为准。</p>
 </div>
