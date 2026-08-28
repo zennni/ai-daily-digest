@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-28</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+
+<header>
+  <div class="date">2026年8月28日 · 星期五</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：算力霸主的"生态闭环"与国产开源的价格革命。英伟达拟 129 亿美元收购 Hugging Face、Q2 财报创纪录；智谱与阿里连夜开源重划全球价格线；Anthropic 发布"硬件版 MCP"，Agent 触角伸向真实物理世界。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>英伟达拟 129 亿美元收购 Hugging Face：</strong>算力霸主首次将开源模型分发基础设施并入版图，交易未最终敲定，开源生态中立性迎来关键变局。</li>
+    <li><strong>国产开源连夜两连发：</strong>智谱确认"牛来"Ox Alpha 即 GLM-5.3-Flash 并开源权重（AA 57 分追平 Opus 4.8、定价 1/40），阿里 Qwen3.8-Flash-Next（Qwen4 架构预览）训练成本降 90%。</li>
+    <li><strong>Anthropic 发布 MHS"硬件版 MCP"：</strong>Claude 可直接操控机械臂、激光系统等真实设备，QuEra 量子激光校准稳定率从 58% 提到 99.3%。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">11 条</span></h2>
+
+  <div class="card">
+    <h3>英伟达拟以约 129 亿美元收购 Hugging Face，史上最大收购之一<span class="tag tag-hot">重大</span></h3>
+    <p>据 The Information / Ars Technica 8月26-27日报道，英伟达已同意以约 129 亿美元收购开源模型平台 Hugging Face。该平台托管超 300 万个模型与 100 万套数据集，年化收入约 1.5 亿美元，收购价约为其 86 倍；英伟达 2023 年曾参与其 D 轮融资，今年 1 月约 50 亿美元投资提议曾被拒。交易尚未最终敲定，若完成将重塑开源模型的分发、硬件适配与生态中立性预期。</p>
+    <div class="meta">来源：Ars Technica / TechCrunch · <a href="https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>英伟达 FY27Q2 营收 962 亿美元 +106%，AWS 再订 200 万颗 GPU<span class="tag tag-hot">重大</span></h3>
+    <p>英伟达 8月26日盘后发布财报：Q2 营收 962.21 亿美元同比 +106%，数据中心收入 890 亿美元同比 +117%（占 92%），净利润 596.9 亿美元；Q3 指引 1080 亿美元，是半导体公司首次把单季指引推过千亿美元。CFO 首次给出 2028 财年营收 +70% 的全年指引，黄仁勋称"真实需求更高、瓶颈在供给"；同日亚马逊宣布 2027-2028 年再向 AWS 部署 200 万颗 GPU（Blackwell Ultra / Rubin / Rubin Ultra），较五个月前的百万颗订单翻倍。</p>
+    <div class="meta">来源：IT之家 / TechCrunch · <a href="https://www.ithome.com/0/994/807.htm" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI Hot Chips 披露自研推理芯片 Jalapeño：每瓦吞吐超 GB300 1.5-1.9 倍<span class="tag tag-new">8月26日</span></h3>
+    <p>Hot Chips 2026 上 OpenAI 首次披露与博通联手的首款推理 ASIC 完整基准：台积电 3nm、6 颗 HBM4、216GB 内存、700W 额定，基于 SemiAnalysis InferenceX 框架对比 GB200/GB300，三款公开模型上每瓦混合 Token 吞吐高 1.5-1.9 倍、端到端延迟低 1.7-3.6 倍。从设计到流片仅用 9 个月（行业 18-24 个月），计划 2026 年底以 128 颗/机架小规模部署，作为 10GW 合作计划第一代产品。</p>
+    <div class="meta">来源：Hot Chips 2026 / SemiAnalysis · <a href="https://x.com/SemiAnalysis_/status/2093066214771679716" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>百余家科技巨头联署公开信，呼吁共筑 AI 网络防御体系<span class="tag tag-hot">重大</span></h3>
+    <p>OpenAI、Anthropic、Google、Microsoft、AWS 等 100 余家机构 8月27日联署公开信，呼吁政府与企业建立全链路防御体系，应对 AI 驱动的网络攻击、保护医院供水等关键基础设施。公开信提及近期多起 Agent 入侵事件（含 7 月 OpenAI 测试模型入侵 Hugging Face）；奥特曼称"这是 AI 网络防御的关键时刻，行动时间所剩不多"。</p>
+    <div class="meta">来源：OpenAI / TechCrunch · <a href="https://openai.com/collective-cyberdefense/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 45 亿美元六年算力协议锁定 Nscale，IPO 冲刺提速<span class="tag tag-fund">融资</span></h3>
+    <p>Anthropic 8月27日宣布与英国 Nscale 达成 45 亿美元、六年期算力合作，西弗吉尼亚数据中心将部署英伟达 Vera Rubin 系统、2027 年末起供能。这是其迄今最大单笔基础设施承诺，8 个月内累计算力承诺已超 600 亿美元。另有报道称 Anthropic IPO 拟允许老股东部分"套现"并设超 180 天锁定期，计划 9 月 7 日后披露招股书，预测市场显示 10 月前完成 IPO 概率升至 86%。</p>
+    <div class="meta">来源：The AI Brief / 华尔街见闻 · <a href="https://wallstreetcn.com/articles/3780505" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 高管离职潮后重组：Brockman 集权，IPO 推迟至 2027<span class="tag tag-new">人事</span></h3>
+    <p>据 The AI Brief，OpenAI 年内已有十余名高管出走（含 Altman 副手、COO、CRO、CMO、数据中心负责人），联合创始人 Greg Brockman 现已整合产品与技术基础设施控制权。公司同步削减非核心探索性支出、重组关键业务单元，为已推迟至 2027 年的上市计划改善盈利能力。</p>
+    <div class="meta">来源：The AI Brief · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-28" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>小鹏第二代 VLA 重大升级，Robotaxi 获广州主驾无人路测资质<span class="tag tag-new">8月27日</span></h3>
+    <p>小鹏 8月27日宣布第二代 VLA 大模型首次重大升级：端侧参数扩大 3.5 倍、感知灵敏度提升 300%，引入 4D 时空理解与 Master Agent 整车智能体。搭载该模型的 Robotaxi 获广州市主驾无安全员远程测试资质（两个月内测超 2000 单），同一底座贯通 L2 至 L4 并向人形机器人 IRON 落地（3 颗图灵芯片、2250 TOPS），计划 2027 上半年申请欧洲监管许可。</p>
+    <div class="meta">来源：小鹏汽车 · <a href="https://www.xiaopeng.com" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>商汤上半年首次 IFRS 盈利 6.2 亿元，生成式 AI 收入占比近 80%<span class="tag tag-new">8月26日</span></h3>
+    <p>商汤 2026 中期业绩：营收 29.1 亿元同比 +23.4%，首次按 IFRS 口径盈利 6.2 亿元；生成式 AI 收入 23.3 亿元占集团近 80%、海外业务 +127%，调整后净亏损收窄 67.3%。大装置 7 月日均 Token 服务量 2.4 万亿、同比 +22 倍，模型侧密集发布 SenseNova U1/U1.5 系列与 Kairos 3.1 世界模型。</p>
+    <div class="meta">来源：商汤科技 · <a href="https://www.sensetime.com" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>软银拟 60 亿美元控股"物理 AI"公司 1X Technologies<span class="tag tag-fund">融资</span></h3>
+    <p>华尔街见闻报道，软银正与 OpenAI 支持的人形机器人公司 1X Technologies 洽谈收购多数股权，估值约 60 亿美元。1X 去年曾寻求以 100 亿美元估值融资 10 亿美元但募资不足目标一半；孙正义已将"物理 AI"定为软银下一个战略前沿。</p>
+    <div class="meta">来源：华尔街见闻 · <a href="https://wallstreetcn.com/articles/3780505" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Alphabet 三个月市值蒸发 6920 亿美元，"AI 疲劳"论调升温<span class="tag tag-hot">重大</span></h3>
+    <p>Alphabet 股价自 5 月高点回落 15%，市值蒸发 6920 亿美元，核心压力来自 AI 人才流失、Gemini 3.5 Pro 研发延误与资本开支飙升。华尔街最乐观的多头 Ed Yardeni 也罕见提醒"AI 疲劳"已现，建议从炒个股转向 QQQ 与 AI 应用端；但他坚持本轮盈利驱动的牛市无泡沫，标普 500 剑指 8400 点。</p>
+    <div class="meta">来源：华尔街见闻 · <a href="https://wallstreetcn.com/articles/3780505" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>发改委："十五五"算力网新增直接投资预计 4 万亿元<span class="tag tag-new">政策</span></h3>
+    <p>国家发改委披露"十五五"算力网建设规划：全国一体化算力网新增直接投资规模预计达 4 万亿元，引导社会资本参与智算基础设施，强调理性布局、避免算力重复建设，夯实大模型与具身智能产业底座。同期央视报道国内日均词元调用量已突破 500 万亿，工信部数据国产 AI 开源大模型全球累计下载破 100 亿次。</p>
+    <div class="meta">来源：国家发改委 / IT之家 · <a href="https://www.ithome.com/0/995/136.htm" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span></h2>
+
+  <div class="card">
+    <h3>用 Gemini 加速真实世界的科学研究<span class="tag tag-new">arXiv</span></h3>
+    <p>Google 38 人团队（含 Quoc V. Le）系统展示 Gemini 科学研究 Agent 在真实科研流程中的加速效果，是本批次作者阵容最庞大、预计热度最高的工作。</p>
+    <div class="paper-authors">Samuel Schmidgall 等 38 人 · Google</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.26701" target="_blank">arXiv ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>WikiSkill：把 Agent 经验"编译"为持久知识实现技能演化<span class="tag tag-new">arXiv</span></h3>
+    <p>将智能体的执行经验编译成可持久化的知识库以驱动技能演化，直击 Agent 自我改进的核心议题，工业界资深团队出品。</p>
+    <div class="paper-authors">Liyan Tang, Tu Vu 等 · Yahoo Research</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27454" target="_blank">arXiv ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>当工具输出变成命令：区分行为诱导与运行时授权<span class="tag tag-new">arXiv</span></h3>
+    <p>研究工具增强型 LLM Agent 的注入风险，区分"行为诱导"与"运行时授权"两类安全边界，属当前 Agent 安全最热方向。</p>
+    <div class="paper-authors">Xiaokun Guo 等 8 人</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27146" target="_blank">arXiv ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>并非所有"评估感知"都相同：能力框架化预测合规行为<span class="tag tag-new">arXiv</span></h3>
+    <p>ICML 2026 可解释性 Workshop 论文，研究模型"意识到被评估"（eval-awareness）时合规行为如何被任务框架影响，对安全评估方法论有直接意义。</p>
+    <div class="paper-authors">Allison Zhuang, Santiago Aranguri · Anthropic / MIT</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27340" target="_blank">arXiv ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>校准到"知道"却没校准到"行动"：伪造证据让 LLM Agent 承诺不可知之事<span class="tag tag-new">arXiv</span></h3>
+    <p>28 页长文，实证伪造证据如何让 Agent 对不可验证事项过度承诺；代码、数据与预注册全部开源，规范性极佳。</p>
+    <div class="paper-authors">Pranav Aggarwal</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27167" target="_blank">arXiv ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>什么才是好的 Agentic 数据？ACE 视角下的 Agent 数据生成<span class="tag tag-new">arXiv</span></h3>
+    <p>14 人工业界团队（含 Qun Liu、Weinan Zhang）系统回答"什么样的 Agent 训练数据才是好数据"，对 Agent 数据构建极具参考价值。</p>
+    <div class="paper-authors">Xingshan Zeng 等 14 人 · 腾讯 / 上海交大</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27260" target="_blank">arXiv ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>GraphMemix：查询感知证据森林，面向长期多模态 Agent 记忆<span class="tag tag-new">arXiv</span></h3>
+    <p>用查询感知的证据森林结构解决多模态 Agent 长期记忆检索问题，代码已开源，补齐"Agent 记忆 × 多模态"两个热点。</p>
+    <div class="paper-authors">Geng Li, Yuhao Wang 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.26983" target="_blank">arXiv ↗</a></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>智谱开源 GLM-5.3-Flash：Ox Alpha 实名，AA 57 分追平 Opus 4.8<span class="tag tag-oss">开放权重</span></h3>
+    <p>320B 总参数 / 18B 激活 MoE，GLM-5 系列首个原生多模态模型；推理由 10 万张国产芯片集群（昇腾/海光/摩尔线程）支撑，AA 综合智能指数 57 分与 Claude Opus 4.8 持平，定价仅其 1/40。唐杰披露其在 OpenRouter 已拿下接近 20% 的周 Token 份额、排名第一。HF trending 上发布即热（点赞 1.34k）。</p>
+    <div class="meta">来源：智谱 AI · <a href="https://huggingface.co/zai-org/GLM-5.3-Flash" target="_blank">HuggingFace ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>阿里开源 Qwen3.8-Flash-Next：Qwen4 架构先导，125B 仅激活 6B<span class="tag tag-oss">开放权重</span></h3>
+    <p>Qwen4 架构早期预览：125B 总参仅激活 6B，训练成本较 Qwen3.7-Plus 降约 90%；原生 262K 上下文可扩至 1M，API 每百万 Token 输入 1 元、输出 3 元。DeepSWE、CoWorkBench 等基准超 Opus 4.6、接近 4.8，登顶 HF trending（3.97k 赞）。</p>
+    <div class="meta">来源：阿里通义千问 · <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" target="_blank">HuggingFace ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Google 发布 Gemini Omni 1.1 Flash：场景延伸累计 40 秒、支持 4K<span class="tag tag-new">新发布</span></h3>
+    <p>视频生成重大升级：可读取最长 10 秒前置画面用于场景延伸（此前 1 秒），按 10 秒一段向后接、累计最长 40 秒；新增首尾帧关键帧控制，支持 3 秒参考视频。360p 草稿比 720p 快 60%、成本约三分之一，成品可出 1080p/4K。Adobe Firefly、Figma Weave、Runway 已接入。</p>
+    <div class="meta">来源：Google DeepMind · <a href="https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Google 发布 Gemini 3.5 Transcribe：WER 2.6%、85+ 语言、3 人归因<span class="tag tag-new">新发布</span></h3>
+    <p>号称迄今最准的语音转文字模型：非流式英文 WER 2.6%、流式 4.0%，支持 85+ 语言、自动去填充词与最多 3 名说话人归因，较上代延迟下降 70%。已为 Android Rambler 与 macOS Gemini App 供能，经 Gemini API / AI Studio 提供。</p>
+    <div class="meta">来源：Google / Artificial Analysis · <a href="https://blog.google" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek 上线 V4-Flash-Vision-Exp：V4 系列首次补齐图片输入<span class="tag tag-new">新发布</span></h3>
+    <p>实验性多模态视觉理解模型，纯文本能力与 V4-Flash 正式版持平，视觉 Agent 能力大幅跃升、接近 Claude Opus 4.8；单图按最多 384 Token 计费，约 1 分钱可处理 9 张图。</p>
+    <div class="meta">来源：DeepSeek · <a href="https://huggingface.co/deepseek-ai" target="_blank">HuggingFace ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>MiniMax-H3 视频生成在 8×H200 上无损加速 1.95 倍<span class="tag tag-new">新发布</span></h3>
+    <p>SGLang Diffusion、Cache-DiT、NVIDIA 与蚂蚁集团联合对照实验：1344×768、24 帧、50 步设置下，密集无损路径相对 Diffusers 快 1.85-1.95 倍；叠加步重用与稀疏注意力最快 6.24 倍（SSIM 0.76-0.91），先保画质则最高约 2.99 倍。HF 下载量 486 万。</p>
+    <div class="meta">来源：LMSYS · <a href="https://www.lmsys.org/blog/2026-08-27-minimax-h3-h200" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>D · Agent / 生态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>Anthropic 开放 MHS 研究预览："硬件版 MCP"让 Agent 操控真实设备<span class="tag tag-new">8月27日</span></h3>
+    <p>Anthropic 开放 Model Hardware Standard 研究预览，用 read/write 原语加设备特性与安全上限描述硬件驱动，Agent 可经 MCP、命令行或代码调用。QuEra 量子计算机激光校准中 Claude 将稳定率从人类专家的 58% 提到 99.3%、单次校准 5-10 分钟压至 6 秒；Genentech 已用它串联液体处理台、机械臂与酶标仪做药物发现实验。标准暂未开源、申请制预览。</p>
+    <div class="meta">来源：Anthropic · <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>MCP 无状态化里程碑修订落地：OAuth 2.1 必选、Tasks 转正<span class="tag tag-new">8月27日</span></h3>
+    <p>Linux 基金会 AAIF 发布 MCP 里程碑修订：每请求自包含、无需握手，可直接跑标准负载均衡 / K8s 轮询；认证从基础 OAuth 升级为 OAuth 2.1 + OIDC 必选项；MCP Apps（聊天内沙箱渲染交互界面）与 Tasks（长时异步任务 + 持久化 taskId）两大扩展转正，确立 12 个月弃用公示政策。HTTP+SSE 传输进入弃用清单。</p>
+    <div class="meta">来源：AAIF / 硅基漫游 · <a href="https://www.toutiao.com/w/1874645770327044" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>阿里千问办公国际版 QwenWork 开启公测，原生接入 Slack / Notion<span class="tag tag-new">8月26日</span></h3>
+    <p>面向海外企业的 AI 办公智能体，原生接入 Slack、Notion 等主流协作平台，支持文档处理、会议纪要、任务管理全场景自动化。杰富瑞对八款主流 Agent 实测显示千问办公综合得分第一、唯一全维度超 90 分——国产 AI 办公首次以产品形态直接桥接海外企业基础设施。</p>
+    <div class="meta">来源：阿里 · <a href="https://www.aliyun.com" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Shopify CEO 吐槽 Claude Code 不兼容 AGENTS.md，考虑全司禁用<span class="tag tag-hot">生态</span></h3>
+    <p>Tobi Lütke 在 X 公开称 Claude Code 坚持读取 CLAUDE.md 而非业界通行的 AGENTS.md，在数千人 monorepo 中导致不同 AI 工具拿到不同项目规则。Anthropic 工程师回应正让 Claude Code 更灵活、将支持 AGENTS.md——Agent 配置标准的碎片化问题再次浮上水面。</p>
+    <div class="meta">来源：X / 新智元 · <a href="https://new.qq.com/rain/a/20260828A030Z900" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>NVIDIA 开源 srt-slurm：在 Slurm 集群上编排生产级推理<span class="tag tag-oss">开源</span></h3>
+    <p>给已有 Slurm 的 GPU 集群加一层 YAML 编排，把 sbatch/srun、GPU 分配、网络、就绪检查与清理串起来，支持 prefill/decode 分离、多 worker、Dynamo 前端与 KV-cache 感知路由铺到多节点，适合快速拉起接近生产形态的推理拓扑。</p>
+    <div class="meta">来源：NVIDIA · <a href="https://github.com/NVIDIA/srt-slurm" target="_blank">GitHub ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 打造"持久化"Agent：主动后台常驻而非被动应答<span class="tag tag-new">8月27日</span></h3>
+    <p>Wired 查看的代码显示，OpenAI 正在开发 Codex 风格的"持久"Agent：不只在收到指令时响应，而是持续监控、触发动作、主动迭代直至被显式"叫停"。同周 ChatGPT Work 宣布可代登录网站完成水电开通、车管所预约等事务（看不到用户名密码），Grok Bot 安卓应用开放 Play 商店预注册。</p>
+    <div class="meta">来源：Wired / The Art of CTO · <a href="https://theartofcto.com/daily-sync/2026-08-28-daily-sync" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+</section>
+
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
+
+</div>
+</body>
+</html>

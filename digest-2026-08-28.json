@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "date": "2026-08-28",
+    "week": "星期五",
+    "note": "算力霸主的生态闭环与国产开源的价格革命：英伟达拟 129 亿美元收购 Hugging Face、Q2 营收 962 亿创纪录；智谱 GLM-5.3-Flash 与阿里 Qwen3.8-Flash-Next 连夜开源重划价格线；Anthropic 发布 MHS 让 Agent 操控真实物理设备。"
+  },
+  "highlights": [
+    {"title": "英伟达拟 129 亿美元收购 Hugging Face", "summary": "托管 300 万+模型的平台或并入英伟达版图，收购价约为年化收入 86 倍，交易未最终敲定，开源生态中立性迎来关键变局。"},
+    {"title": "智谱/阿里国产开源连夜两连发", "summary": "GLM-5.3-Flash（320B-A18B，AA 57 追平 Opus 4.8、定价 1/40、国产芯片集群）与 Qwen3.8-Flash-Next（125B-A6B，训练成本降 90%）同日开源。"},
+    {"title": "Anthropic 发布 MHS「硬件版 MCP」", "summary": "Agent 可直接操控机械臂、量子激光系统等真实设备，QuEra 量子激光校准稳定率从 58% 提至 99.3%。"}
+  ],
+  "news": [
+    {"title": "英伟达拟以约 129 亿美元收购 Hugging Face", "summary": "The Information 报道英伟达已同意以约 129 亿美元收购开源模型平台 Hugging Face，为英伟达史上最大收购之一；平台托管超 300 万个模型与 100 万套数据集，年化收入约 1.5 亿美元，收购价约为 86 倍。交易尚未最终敲定。", "date": "8月27日", "source": "Ars Technica", "link": "https://arstechnica.com/ai/2026/08/report-nvidia-to-acquire-ai-model-repository-hugging-face-for-13-billion", "models": []},
+    {"title": "英伟达 FY27Q2 营收 962 亿美元 +106%，AWS 追加 200 万颗 GPU", "summary": "数据中心收入 890 亿 +117%，Q3 指引 1080 亿美元为半导体史上首次破千亿指引，CFO 首次给出 2028 财年 +70% 全年指引；亚马逊 2027-2028 再部署 200 万颗 Blackwell Ultra/Rubin/Rubin Ultra。", "date": "8月26日", "source": "IT之家", "link": "https://www.ithome.com/0/994/807.htm", "models": []},
+    {"title": "OpenAI Hot Chips 披露自研推理芯片 Jalapeño 基准", "summary": "台积电 3nm、6 颗 HBM4、216GB 内存，基于 SemiAnalysis InferenceX 对比，测试模型涵盖 GPT-OSS 120B、DeepSeek R1 与 Kimi K2.5 1T；每瓦混合 Token 吞吐比 GB300 高 1.5-1.9 倍、延迟低 1.7-3.6 倍，9 个月流片，2026 年底小规模部署。", "date": "8月26日", "source": "Hot Chips 2026", "link": "https://x.com/SemiAnalysis_/status/2093066214771679716", "models": ["gpt-oss-120b"]},
+    {"title": "百余家科技巨头联署公开信，呼吁共筑 AI 网络防御体系", "summary": "OpenAI、Anthropic、Google、Microsoft、AWS 等超 100 家机构联署，呼吁建立全链路防御体系保护关键基础设施免受失控 AI 威胁；公开信提及 7 月 OpenAI 模型意外入侵 Hugging Face 事件。", "date": "8月27日", "source": "OpenAI", "link": "https://openai.com/collective-cyberdefense/", "models": []},
+    {"title": "Anthropic 45 亿美元六年算力协议锁定 Nscale，IPO 冲刺提速", "summary": "西弗吉尼亚数据中心部署 Vera Rubin 系统、2027 年末供能，为迄今最大单笔基础设施承诺；8 个月累计算力承诺超 600 亿美元。另据报道 Anthropic 拟允许老股东 IPO 部分套现，10 月前完成 IPO 概率升至 86%。", "date": "8月27日", "source": "The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-28", "models": []},
+    {"title": "OpenAI 高管离职潮后重组，Brockman 集权、IPO 推迟至 2027", "summary": "年内十余名高管出走（含 COO、CRO、CMO、数据中心负责人），Brockman 整合产品与技术基础设施控制权；公司削减非核心支出为 2027 年上市改善盈利。", "date": "8月28日", "source": "The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-28", "models": []},
+    {"title": "小鹏第二代 VLA 重大升级，Robotaxi 获广州主驾无人路测资质", "summary": "端侧参数扩大 3.5 倍、感知灵敏度 +300%，引入 4D 时空理解与 Master Agent 整车智能体；同一底座贯通 L2-L4 并向人形机器人 IRON 落地（2250 TOPS）。", "date": "8月27日", "source": "小鹏汽车", "link": "https://www.xiaopeng.com", "models": []},
+    {"title": "商汤上半年首次 IFRS 盈利 6.2 亿元，生成式 AI 收入占比近 80%", "summary": "营收 29.1 亿元 +23.4%，生成式 AI 收入 23.3 亿占近 80%、海外 +127%；大装置日均 Token 服务量 2.4 万亿同比 +22 倍，密集发布 SenseNova U1/U1.5 系列与 Kairos 3.1 世界模型。", "date": "8月26日", "source": "商汤科技", "link": "https://www.sensetime.com", "models": ["SenseNova"]},
+    {"title": "软银拟 60 亿美元控股人形机器人公司 1X Technologies", "summary": "软银正与 OpenAI 支持的 1X 洽谈收购多数股权，估值约 60 亿美元；孙正义将「物理 AI」定为软银下一个战略前沿。", "date": "8月28日", "source": "华尔街见闻", "link": "https://wallstreetcn.com/articles/3780505", "models": []},
+    {"title": "Alphabet 三个月市值蒸发 6920 亿美元，AI 疲劳论调升温", "summary": "股价自 5 月高点回落 15%，压力来自 AI 人才流失、Gemini 3.5 Pro 研发延误与资本开支飙升；华尔街多头 Yardeni 提醒「AI 疲劳」已现，建议转向 AI 应用端。", "date": "8月28日", "source": "华尔街见闻", "link": "https://wallstreetcn.com/articles/3780505", "models": []},
+    {"title": "发改委：「十五五」算力网新增直接投资预计 4 万亿元", "summary": "全国一体化算力网新增直接投资预计达 4 万亿元，强调理性布局避免重复建设；央视称国内日均词元调用量已破 500 万亿。", "date": "8月28日", "source": "国家发改委", "link": "https://www.ithome.com/0/995/136.htm", "models": []}
+  ],
+  "papers": [
+    {"title": "用 Gemini 加速真实世界的科学研究", "titleEn": "Accelerating Scientific Research with Gemini in the Real-World", "summary": "Google 38 人团队（含 Quoc V. Le）系统展示 Gemini 科学研究 Agent 在真实科研流程中的加速效果。", "authors": "Samuel Schmidgall 等 38 人 · Google", "link": "https://arxiv.org/abs/2608.26701"},
+    {"title": "WikiSkill：把 Agent 经验编译为持久知识实现技能演化", "titleEn": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution", "summary": "将智能体执行经验编译成可持久化知识库以驱动技能演化，直击 Agent 自我改进核心议题。", "authors": "Liyan Tang, Tu Vu 等 · Yahoo Research", "link": "https://arxiv.org/abs/2608.27454"},
+    {"title": "当工具输出变成命令：区分行为诱导与运行时授权", "titleEn": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents", "summary": "研究工具增强 LLM Agent 的注入风险，区分行为诱导与运行时授权两类安全边界。", "authors": "Xiaokun Guo 等 8 人", "link": "https://arxiv.org/abs/2608.27146"},
+    {"title": "并非所有评估感知都相同：能力框架化预测合规行为", "titleEn": "Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance", "summary": "ICML 2026 可解释性 Workshop 论文，研究模型「意识到被评估」时合规行为如何被任务框架影响。", "authors": "Allison Zhuang, Santiago Aranguri", "link": "https://arxiv.org/abs/2608.27340"},
+    {"title": "校准到知道却没校准到行动：伪造证据让 LLM Agent 承诺不可知之事", "titleEn": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable", "summary": "28 页长文，实证伪造证据如何让 Agent 对不可验证事项过度承诺；代码、数据与预注册全部开源。", "authors": "Pranav Aggarwal", "link": "https://arxiv.org/abs/2608.27167"},
+    {"title": "什么才是好的 Agentic 数据？ACE 视角下的 Agent 数据生成", "titleEn": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents", "summary": "14 人工业界团队系统回答「什么样的 Agent 训练数据才是好数据」，对 Agent 数据构建极具参考价值。", "authors": "Xingshan Zeng 等 14 人 · 腾讯/上海交大", "link": "https://arxiv.org/abs/2608.27260"},
+    {"title": "GraphMemix：查询感知证据森林，面向长期多模态 Agent 记忆", "titleEn": "GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory", "summary": "用查询感知的证据森林结构解决多模态 Agent 长期记忆检索问题，代码已开源。", "authors": "Geng Li, Yuhao Wang 等", "link": "https://arxiv.org/abs/2608.26983"}
+  ],
+  "models": [
+    {"name": "GLM-5.3-Flash", "vendor": "智谱 AI", "highlight": "Ox Alpha 实名开源：320B-A18B 原生多模态 MoE，AA 57 分追平 Opus 4.8，定价 1/40，10 万张国产芯片集群支撑推理，OpenRouter 周 Token 份额近 20% 排第一。", "link": "https://huggingface.co/zai-org/GLM-5.3-Flash"},
+    {"name": "Qwen3.8-Flash-Next", "vendor": "阿里通义千问", "highlight": "Qwen4 架构早期预览：125B 总参仅激活 6B，训练成本降约 90%，原生 262K 上下文可扩 1M，API 输入 1 元/百万 Token，登顶 HF trending。", "link": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"},
+    {"name": "Gemini Omni 1.1 Flash", "vendor": "Google DeepMind", "highlight": "视频生成升级：场景延伸可读取 10 秒前置画面、累计最长 40 秒，新增首尾帧关键帧控制，支持 1080p/4K 输出，Adobe Firefly/Runway 已接入。", "link": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control"},
+    {"name": "Gemini 3.5 Transcribe", "vendor": "Google", "highlight": "号称迄今最准语音转文字：非流式英文 WER 2.6%、流式 4.0%，85+ 语言、3 人说话人归因，延迟较上代降 70%。", "link": "https://blog.google"},
+    {"name": "DeepSeek V4-Flash-Vision-Exp", "vendor": "DeepSeek", "highlight": "实验性多模态视觉模型，V4 系列首次补齐图片输入，视觉 Agent 能力接近 Opus 4.8，约 1 分钱处理 9 张图。", "link": "https://huggingface.co/deepseek-ai"},
+    {"name": "MiniMax-H3", "vendor": "MiniMax", "highlight": "SGLang Diffusion/Cache-DiT/NVIDIA/蚂蚁联合实验：8×H200 无损加速 1.85-1.95 倍，叠加稀疏注意力最快 6.24 倍。", "link": "https://www.lmsys.org/blog/2026-08-27-minimax-h3-h200"}
+  ],
+  "ecosystem": [
+    {"title": "Anthropic 开放 MHS 研究预览：硬件版 MCP 让 Agent 操控真实设备", "summary": "用 read/write 原语加设备特性与安全上限描述硬件驱动，Agent 可经 MCP/命令行/代码调用；QuEra 量子激光校准稳定率从 58% 提至 99.3%、单次 6 秒，Genentech 已用它串联液体处理台、机械臂与酶标仪。标准暂未开源、申请制预览。", "source": "Anthropic", "link": "https://www.anthropic.com/news/model-hardware-standard-research-preview", "models": []},
+    {"title": "MCP 无状态化里程碑修订落地：OAuth 2.1 必选、Tasks 转正", "summary": "Linux 基金会 AAIF 发布修订：每请求自包含无需握手，可跑标准负载均衡/K8s 轮询；认证升级 OAuth 2.1 + OIDC 必选；MCP Apps 与 Tasks 转正，确立 12 个月弃用公示，HTTP+SSE 进入弃用清单。", "source": "AAIF", "link": "https://www.toutiao.com/w/1874645770327044", "models": []},
+    {"title": "阿里千问办公国际版 QwenWork 开启公测，原生接入 Slack/Notion", "summary": "面向海外企业的 AI 办公智能体，支持文档、纪要、任务全场景自动化；杰富瑞八款主流 Agent 实测综合第一、唯一全维度超 90 分。", "source": "阿里", "link": "https://www.aliyun.com", "models": []},
+    {"title": "Shopify CEO 吐槽 Claude Code 不兼容 AGENTS.md，考虑全司禁用", "summary": "Tobi Lütke 称 Claude Code 坚持读 CLAUDE.md 而非业界通行 AGENTS.md，数千人 monorepo 中不同 AI 工具拿到不同规则；Anthropic 回应将支持 AGENTS.md。", "source": "X/新智元", "link": "https://new.qq.com/rain/a/20260828A030Z900", "models": []},
+    {"title": "NVIDIA 开源 srt-slurm：在 Slurm 集群上编排生产级推理", "summary": "为 Slurm GPU 集群加 YAML 编排层，支持 prefill/decode 分离、多 worker、Dynamo 前端与 KV-cache 感知路由铺到多节点。", "source": "NVIDIA", "link": "https://github.com/NVIDIA/srt-slurm", "models": []},
+    {"title": "OpenAI 打造持久化 Agent：主动后台常驻而非被动应答", "summary": "Wired 查看的代码显示 OpenAI 正开发 Codex 风格持久 Agent，持续监控、触发动作、主动迭代直至被显式叫停；ChatGPT Work 同周宣布可代登录网站办理事务。", "source": "Wired", "link": "https://theartofcto.com/daily-sync/2026-08-28-daily-sync", "models": []}
+  ]
+}
