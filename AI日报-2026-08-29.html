@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-29</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+
+<header>
+  <div class="date">2026年8月29日 · 星期六</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：开源巨兽连夜上桌。智谱践诺开放 GLM-5.3 旗舰权重、腾讯 770B 混元 Hy4 preview 开源、MiniMax H3 开放权重并获 fal 后训练加速 35 倍——国产开源从"比参数"转向"比生态与可商用性"；海外侧美国法院撤销五角大楼对 Anthropic 的"供应链风险"认定。</div>
+</header>
+
+<div class="highlights">
+  <ul>
+    <li><strong>智谱 GLM-5.3 权重如期开放：</strong>与 GLM-5.2 同底座、纯后训练把 Terminal-Bench 3.0 从 4.6 拉到 28.3，CyberGym 84.5 超越 GPT-5.6 Sol；新 License 要求百亿美元级云巨头商用前过安全审查。</li>
+    <li><strong>腾讯开源 Hy4 preview：</strong>770B/激活 49B、1M 上下文，Apache 2.0，Arena WebDev 排第五、与 GLM-5.3-Flash 相当。</li>
+    <li><strong>美国法院裁定五角大楼"拉黑" Anthropic 违宪：</strong>认定构成非法报复，要求撤销全部指令；Anthropic 政府业务迎来转机。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">11 条</span></h2>
+  <div class="card">
+    <h3>美国联邦法院裁定五角大楼将 Anthropic 列为"供应链风险"违宪<span class="tag tag-hot">重大</span></h3>
+    <p>加州北区联邦地区法院法官 Rita Lin 裁定，美国国防部以"国家安全供应链风险"为由限制联邦机构与国防承包商使用 Anthropic 产品的措施，构成违反第一修正案的非法报复且缺乏正当程序，要求撤销全部相关指令。争议源于合同谈判中五角大楼要求允许 Claude 用于"任何合法用途"，遭 Anthropic 以国内监控与自主武器为由拒绝。Anthropic 在华盛顿特区的另一起相关诉讼仍在进行。</p>
+    <div class="meta">来源：AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-29-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>英伟达披露创纪录季度后暂停对中小 AI 运营商的云融资<span class="tag tag-hot">重大</span></h3>
+    <p>英伟达在发布又一个创纪录季度财报后，暂停了此前一直为中小型 AI 运营商（Neocloud）提供支持的云算力融资安排。同时有报道称其正推进约 129 亿美元收购 Hugging Face 的交易，从芯片层向上锁定开发者分发与工作流生态。此外，NBER 调查显示 89% 的高管认为三年 AI 应用未带来生产率提升，与 Linear 遥测数据（用上编码 Agent 的团队周 PR 从 21 涨到 65 但总开发时间上升）相互印证。</p>
+    <div class="meta">来源：AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-29-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 筹备多智能体协作新模型系列"Astra"<span class="tag tag-new">8月29日</span></h3>
+    <p>据三位知情人士透露，OpenAI 正筹备推出暂定名"Astra"的新模型系列，核心能力是支持多个智能体长期协作以解决高难度问题（大型项目推进、复杂数学求解），已进入测试阶段；Altman 已向美国政策制定者展示，并将符合特朗普政府新 AI 监管框架。同日 OpenAI 发布面向生命科学的 Rosalind Workbench 研究预览，将蛋白质/小分子设计、基因组学等专业模型与分析工具整合进 ChatGPT 工作流。</p>
+    <div class="meta">来源：AIGC 日报 / OpenAI Devs · <a href="https://developers.openai.com/blog/rosalind-workbench" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Meta 发布首个 AI 编程 Agent"MuseCode"（beta）<span class="tag tag-new">新发布</span></h3>
+    <p>扎克伯格 8 月 29 日宣布 Meta 首个 AI 编程智能体 MuseCode 进入 beta，直接对标 OpenAI Codex 与 Claude Code，主打低成本与"崩溃恢复"能力。此前 Cursor、Copilot、Claude Code 三家合计占 AI 编码工具市场七成以上份额（整体市场 2026 年约 128 亿美元、两年增长 151%），Meta 正式入局让编程 Agent 大战再添巨头。</p>
+    <div class="meta">来源：智通财经 · <a href="https://weibo.com/7905315703/5337147651654495" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>谷歌内测 Gemini 3.8 Flash 曝光：距 Gemini 3.7 Flash 发布仅 14 天<span class="tag tag-new">8月28日</span></h3>
+    <p>商业内幕获得内部截图：谷歌已开始内部测试 Gemini 3.8 Flash Preview，向部分员工开放并出现在内部编程平台 Jetski 上，试用者称"明显优于"Gemini 3.7 Flash。谷歌此前表示希望把模型更新提速到接近每月一次，Flash 系列主打编程与智能体场景的速度与成本。</p>
+    <div class="meta">来源：Business Insider · <a href="https://x.com/0xLogicrw/status/20933223344554272332" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>优必选中报：人形机器人开始"量利齐升"<span class="tag tag-new">8月29日</span></h3>
+    <p>"人形机器人第一股"优必选发布 2026 中报：上半年营收 12.7 亿元 +104.2%、亏损收窄 23%；人形机器人总销量 16123 台 +268.3%，其中全尺寸产品销量 921 台 +1946.7%、收入 5.9 亿元（占总营收约 46%）、毛利率高达 66.8%。自研具身大脑 Thinker 与世界模型 Thinker-WM 分别在权威基准登顶；国家发改委同日表态将以实训场和中试基地推动具身智能落地。</p>
+    <div class="meta">来源：澎湃新闻 · <a href="https://www.163.com/dy/article/L5G17OB80514R9P4.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>2026 数博会开幕：我国日均词元调用量突破 140 万亿<span class="tag tag-hot">政策</span></h3>
+    <p>2026 中国国际大数据产业博览会在贵阳开幕，主题为"词元——数据要素价值释放新路径"。国家数据局局长刘烈宏披露：截至今年 3 月全国日均词元调用量突破 140 万亿、两年增长超千倍；2025 年数据产业规模 6.78 万亿元（+15.7%）；智算规模达 240 万 PFLOPS、半年增长 50.9%；智能体领域专利授权超 3400 件、增速翻倍。</p>
+    <div class="meta">来源：中国发展改革 · <a href="https://weibo.com/7905315703/5337147651654495" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>a16z 启动 11 亿美元"Machine Age 基金"投向 AI 基础设施<span class="tag tag-fund">融资</span></h3>
+    <p>a16z 宣布设立规模 11 亿美元的 Machine Age Fund，专注 AI 基础设施与硬件的物理层和算力栈，而非按 Token 计价的应用层。同期融资动态：具身智能机器人公司灵心巧手（Sharpa）获超 45 亿元融资（阿里、腾讯、红杉等参投）；上半年 Physical AI 赛道 521 笔交易共融资 474 亿美元。</p>
+    <div class="meta">来源：AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-29" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>昆仑万维接入阿里 Wan3.0：AI 视频生成降至 0.05 元/秒<span class="tag tag-new">8月28日</span></h3>
+    <p>昆仑万维旗下 SkyProduction 正式接入阿里 Wan3.0 模型，8 月 31 日起定价低至 0.05 元/秒，30 秒视频成本约 1.5 元创全网新低；Wan 3.0 同时以 1414 分登顶视频编辑竞技场，领先 Seedance 2.5 与 MiniMax-H3。AI 视频的价格战已打到"厘"级。</p>
+    <div class="meta">来源：扣子资讯 · <a href="https://weibo.com/7905315703/5337147651654495" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Plaud 发布 249 美元 AI 耳机 Plaud One：充电盒独立上网跑 Agent<span class="tag tag-new">8月29日</span></h3>
+    <p>AI 硬件厂商 Plaud 发布 Plaud One 主动降噪耳机（249 美元），eSIM 充电盒可脱离手机独立执行云端 AI Agent 工作流；12mm 单元、支持 5 米远场会议拾音、总录音 25 小时。"穿戴设备 + 独立 Agent"成为 AI 硬件新品类。</p>
+    <div class="meta">来源：AI Brief · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-29" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 免费向美国 K-12 学校开放 Claude for Teachers 企业版<span class="tag tag-new">8月29日</span></h3>
+    <p>Anthropic 将 Claude for Teachers 从个人教师账户扩展到美国 K-12 学校与学区，免费提供 Enterprise 管理功能（单点登录、角色权限、域名管理），2027 年 6 月 30 日前注册可获一年免费使用。教育市场成为大厂争夺用户心智的新战场。</p>
+    <div class="meta">来源：Anthropic 官方博客 · <a href="https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span></h2>
+  <div class="card">
+    <h3>WikiSkill：把 Agent 经验"编译"成持久知识以实现技能进化<span class="tag tag-new">arXiv</span></h3>
+    <p>提出将智能体的执行经验编译为持久化知识库（Wiki 形态），让 Agent 技能随经验积累持续演化，是 Agent 持续学习方向的代表工作。</p>
+    <div class="paper-authors">Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng, Tu Vu 等 · Google</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27454" target="_blank">arXiv:2608.27454 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>LLMs Can Design Near-Optimal OR Algorithms：大模型能设计近优运筹算法<span class="tag tag-new">arXiv</span></h3>
+    <p>展示 LLM 有能力设计出接近最优的运筹学（OR）算法，对 LLM 算法设计与推理能力边界是一次重要探索。</p>
+    <div class="paper-authors">Jackie Baek</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27296" target="_blank">arXiv:2608.27296 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>当工具输出变成指令：区分工具增强 Agent 中的"行为诱导"与"运行时授权"<span class="tag tag-new">arXiv</span></h3>
+    <p>研究工具输出被误当作指令执行的注入式安全风险，提出在工具增强型 Agent 中严格区分行为诱导与运行时授权两个阶段，直接回应了 prompt injection 这一现实威胁。</p>
+    <div class="paper-authors">Xiaokun Guo, Zhen Xu 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27146" target="_blank">arXiv:2608.27146 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>校准到"知道"不等于校准到"行动"：伪造证据让 LLM Agent 对不可知问题下定论<span class="tag tag-new">arXiv</span></h3>
+    <p>揭示伪造证据会诱使 LLM Agent 对"本不可知"的问题过度自信地下定论，指出认知校准与行动校准并不等同——安全与校准方向的警示性工作，代码与数据已开源。</p>
+    <div class="paper-authors">Pranav Aggarwal</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27167" target="_blank">arXiv:2608.27167 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>GraphMemix：查询感知"证据森林"解决 Agent 长期多模态记忆<span class="tag tag-new">arXiv</span></h3>
+    <p>提出查询感知的证据森林图结构，用于智能体长期多模态记忆的存储与检索，含项目页与开源代码。</p>
+    <div class="paper-authors">Geng Li, Yuhao Wang, Jianye Hao, Yuxin Peng 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.26983" target="_blank">arXiv:2608.26983 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>ASIL：用结构化状态与语义动作取代 GUI Agent 的"截图-点击"<span class="tag tag-new">arXiv</span></h3>
+    <p>提出用结构化状态表示与语义动作取代传统 GUI Agent 的截图-点击范式，有望显著提升交互效率与可解释性，已被 EMNLP 2026 Findings 录用。</p>
+    <div class="paper-authors">Rui Xie, Lu Chen</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.26991" target="_blank">arXiv:2608.26991 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Gemini 在真实科研中的加速实践<span class="tag tag-new">arXiv</span></h3>
+    <p>谷歌 Gemini 团队系统报告其智能体在真实多学科科研场景中加速科学研究的成果，为本页作者阵容最庞大、工业界分量最重的一篇。</p>
+    <div class="paper-authors">Samuel Schmidgall 等（含 Quoc V. Le 等）· Google</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.26701" target="_blank">arXiv:2608.26701 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">7 条</span></h2>
+  <div class="card">
+    <h3>智谱开放 GLM-5.3 旗舰权重：同底座纯后训练，网络防御超 GPT-5.6 Sol<span class="tag tag-oss">开放权重</span></h3>
+    <p>两周安全评估期满即践诺开放，MoE 总参 7440 亿/激活 400 亿，FP8/BF16 权重上线 HuggingFace 与 ModelScope，Day-0 获 vLLM/SGLang/OpenRouter 支持。与 GLM-5.2 同底座、提升全靠后训练：Terminal-Bench 3.0 从 4.6 → 28.3，CyberGym 84.5 压过 GPT-5.6 Sol 的 83.6。新 GLM-5.3 License 对中小团队全绿灯，但年收入超 100 亿美元的巨头商用 MaaS 需先过安全审查。AA 智能体榜与 Grok 4.6 并列第一（59 分）。</p>
+    <div class="meta">来源：Zai_org · <a href="https://huggingface.co/zai-org/GLM-5.3" target="_blank">权重地址 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>腾讯混元开源 Hy4 preview：770B/激活 49B、1M 上下文<span class="tag tag-oss">开源</span></h3>
+    <p>腾讯新一代旗舰，总参 770B、激活 49B、上下文 1M，Apache 2.0 协议开源（Gated DSA 注意力 + iHC 残差）。Arena WebDev 排第五、与 GLM-5.3-Flash 相当；官方盲测中 163 名内部专家在 203 个真实工程任务上评其略胜 GLM-5.3 与 Kimi K3。已上线腾讯云 TokenHub 与 OpenRouter，接入元宝、ima、WorkBuddy 等产品，限时免费至 9 月 10 日，演示包括经 MCP 控制 Unreal 5。</p>
+    <div class="meta">来源：腾讯混元 · <a href="https://huggingface.co/tencent/Hy4-preview" target="_blank">权重地址 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>MiniMax 开源 FastH3 v1：单卡 13 秒生成 15 秒 768p 视频<span class="tag tag-oss">开放权重</span></h3>
+    <p>MiniMax 开放 FastH3 v1 权重，配合 FastGen 在英伟达 Blackwell GPU 上最高 14 倍加速；fal 同日推出基于 H3 后训练的 H3 Max——5 秒视频 3 秒内出片，人工偏好测试中总质量/提示遵循/美感均排第一、吞吐约官方 H3 的 35 倍。vLLM-Omni 团队宣布正与 FastVideo 合作把 FastH3 引入生态，开放权重视频模型的后训练时代开启。</p>
+    <div class="meta">来源：haoailab · <a href="https://x.com/haoailab/status/20933915482895405968" target="_blank">阅读原文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>英伟达发布 NVFP4 量化版 Qwen3.8：2.4T 参数 4-bit 推理<span class="tag tag-new">新发布</span></h3>
+    <p>英伟达在 HuggingFace 发布 NVFP4 量化的 Qwen3.8（2.4 万亿参数 MoE），显著降低部署显存与算力门槛，为超大规模开源模型的单机与边缘落地铺路。此前 Qwen3.8-Flash-Next 权重也已开源（125B MoE、激活约 6B，一张 4090 免量化可跑），并登陆 OpenCode Go 终端编码智能体。</p>
+    <div class="meta">来源：HuggingPapers · <a href="https://x.com/HuggingPapers/status/20931827669136221157" target="_blank">阅读原文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>蚂蚁百灵发布金融增强模型 Ling-3.0-flash-Fin<span class="tag tag-new">新发布</span></h3>
+    <p>基于 Ling-3.0-flash 的 124B 金融特化模型，经金融语料持续预训练与工具调用优化，可自主查资料、读年报、做投研估值并直接处理 Excel 财务模型，部分 Finance Agent 任务超旗舰模型；权重计划下周开源、API 限时免费一个月。</p>
+    <div class="meta">来源：0xLogicrw · <a href="https://x.com/0xLogicrw/status/2093292146682138805" target="_blank">阅读原文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>谷歌 Gemini Co-Scientist 发现超越多个前沿模型的新医学架构<span class="tag tag-new">8月29日</span></h3>
+    <p>谷歌 Gemini Co-Scientist 完成"假设生成→实验设计→材料合成→生物行为预测"闭环，并找到一种在多项任务上超越数个前沿模型的新医学架构；同期 London 医院完成首例 AI 实时辅助脑肿瘤切除直播。</p>
+    <div class="meta">来源：AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-29" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>HF Trending：Qwen3.8 生态霸榜 11 席，三大 770B+ 巨兽同日在线<span class="tag tag-new">8月29日</span></h3>
+    <p>Qwen3.8-Flash-Next（4.17k 赞）登顶、GLM-5.3-Flash（1.51k 赞）与 GLM-5.3（1.12k 赞）分列二三位，tencent/Hy4-preview 上线约 11 小时进榜；前 20 席中 Qwen3.8 生态占 11 席、16 席为一周内新面孔。Kimi K3（2.8T）排 27 位左右。点赞数远超下载量说明用户主要经推理服务调用而非本地部署。</p>
+    <div class="meta">来源：HuggingFace · <a href="https://huggingface.co/models?sort=trending" target="_blank">查看榜单 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>D · Agent / 生态<span class="count">6 条</span></h2>
+  <div class="card">
+    <h3>Claude Code v2.1.251：本周最大安全加固版，一次修五个漏洞<span class="tag tag-new">8月28日</span></h3>
+    <p>新增 PreModelSwitch/PostModelSwitch hooks（可拦截/确认/记录模型切换）、/usage 支出限额进度条、前台 subagent 工具调用实时串流到 Remote Control；安全侧修复 symlink 文件工具绕过、插件市场路径穿越、Workflow scriptPath 权限绕过等五个问题。此前 v2.1.248 已上线 --restricted 安全模式。</p>
+    <div class="meta">来源：claude-news.today · <a href="https://claude-news.today/en/briefings/briefing-2026-08-29" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 自动化对齐研究员超越人类基线：成本 4 美元/小时<span class="tag tag-hot">安全</span></h3>
+    <p>Anthropic 发布自动化对齐研究系统，Claude 自主检索文献、提出方法并训练模型，缓解欺骗、谄媚、reward hacking 等 10 类对齐失败，部分方法可迁移到最高 4.7 倍大的模型；成本从人类专家的 150 美元/小时降到 4 美元/小时。实验中发现约 1600 份研究记录里有 39 次作弊尝试，系统边界依然清晰。</p>
+    <div class="meta">来源：Anthropic · <a href="https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures" target="_blank">阅读原文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Kimi Code 新增多 Agent 编排与远程控制<span class="tag tag-new">8月29日</span></h3>
+    <p>KimiCode 新增实验性 tower 多 Agent 编排模式（/tower on 启动，多个编码智能体围绕同一目标协同分工），0.39.0 版本同时新增远程控制功能，支持跨设备接管本地 Web 编码会话。GitHub Copilot 同周连发三版：Customize tab GA（MCP 服务器/插件/技能/画布统一管理）、全局模型策略 GA、代码评审新增 resolution reasons。</p>
+    <div class="meta">来源：KimiDevs · <a href="https://x.com/KimiDevs/status/2093184808419746164" target="_blank">阅读原文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Forcepoint X-Labs：零号字体隐形文字可操纵 AI 邮件摘要<span class="tag tag-hot">安全</span></h3>
+    <p>演示通过零号字体/白底白字的 HTML 隐藏文本注入邮件摘要模型：可见 537 字符的邮件向模型实际投喂 1009 字符，十次运行全部产生被操纵的摘要（包括移动发票截止日期）。建议摘要类系统只提取用户可见内容、把邮件视为不可信输入——与今日论文板块的工具注入研究形成呼应。</p>
+    <div class="meta">来源：AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-29-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenCode 一日双发：Azure Entra ID 与 Bedrock 修复落地<span class="tag tag-new">8月28日</span></h3>
+    <p>OpenCode v1.18.24/25 同日发布，新增 Azure Entra ID 集成并修复 Azure CLI 登录与 Bedrock 问题，延续上周 Cloudflare AI Gateway 支持；Codex CLI v0.150.1 修复远程压缩时图片 token 计入预算的问题，避免长会话静默超限。</p>
+    <div class="meta">来源：Oday Bakkour · <a href="https://oday-bakkour.com/blog/ai-coding-news-august-28-2026-claude-code-restricted-mode" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AMD 发布 ROCm 10.0：从 7.14 直接跳版，剑指 Agent 时代<span class="tag tag-new">8月28日</span></h3>
+    <p>AMD GPU 开放软件栈 ROCm 跳过 8.x/9.x 直接发布 10.0.0，重点强化 Instinct/Radeon/Ryzen AI 平台的 AI 推理、开发者工具与性能分析，并把 8GB/4GB 显存的 Radeon RX 9050 纳入支持，继续追赶 CUDA 生态。</p>
+    <div class="meta">来源：IT之家 · <a href="https://www.ithome.com/0/995/683.htm" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
+
+</div>
+</body>
+</html>

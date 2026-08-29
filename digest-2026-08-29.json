@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "date": "2026-08-29",
+    "week": "星期六",
+    "note": "开源巨兽连夜上桌：智谱践诺开放 GLM-5.3 旗舰权重、腾讯 770B Hy4 preview 开源、MiniMax H3 开放权重并获 fal 后训练加速 35 倍；美国法院裁定五角大楼将 Anthropic 列为供应链风险违宪。"
+  },
+  "highlights": [
+    {"title": "智谱 GLM-5.3 权重如期开放", "summary": "与 GLM-5.2 同底座、纯后训练把 Terminal-Bench 3.0 从 4.6 拉到 28.3，CyberGym 84.5 超越 GPT-5.6 Sol；新 License 要求百亿美元级云巨头商用前过安全审查。"},
+    {"title": "腾讯开源 Hy4 preview", "summary": "770B/激活 49B、1M 上下文，Apache 2.0，Arena WebDev 排第五、与 GLM-5.3-Flash 相当。"},
+    {"title": "美国法院裁定五角大楼拉黑 Anthropic 违宪", "summary": "认定构成非法报复，要求撤销全部指令；Anthropic 政府业务迎来转机。"}
+  ],
+  "news": [
+    {"title": "美国联邦法院裁定五角大楼将 Anthropic 列为供应链风险违宪", "summary": "加州北区联邦地区法院裁定国防部对 Anthropic 的供应链风险认定构成违反第一修正案的非法报复且缺乏正当程序，要求撤销全部指令。争议源于合同谈判中五角大楼要求允许 Claude 用于任何合法用途遭拒。另一起相关诉讼仍在华盛顿进行。", "date": "8月29日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-29-2026", "models": []},
+    {"title": "英伟达披露创纪录季度后暂停对中小 AI 运营商的云融资", "summary": "英伟达发布创纪录季度财报后暂停支持中小 AI 运营商的云算力融资安排，同时推进约 129 亿美元收购 Hugging Face 以锁定开发者分发生态。NBER 调查显示 89% 高管认为三年 AI 应用未带来生产率提升。", "date": "8月29日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-29-2026", "models": []},
+    {"title": "OpenAI 筹备多智能体协作新模型系列 Astra", "summary": "OpenAI 正筹备暂定名 Astra 的新模型系列，支持多个智能体长期协作解决高难度问题，已进入测试阶段；Altman 已向美国政策制定者展示。同日发布面向生命科学的 Rosalind Workbench 研究预览。", "date": "8月29日", "source": "AIGC 日报", "link": "https://developers.openai.com/blog/rosalind-workbench", "models": []},
+    {"title": "Meta 发布首个 AI 编程 Agent MuseCode（beta）", "summary": "扎克伯格宣布 Meta 首个 AI 编程智能体 MuseCode 进入 beta，对标 OpenAI Codex 与 Claude Code，主打低成本与崩溃恢复能力。AI 编码工具市场 2026 年约 128 亿美元、两年增长 151%。", "date": "8月29日", "source": "智通财经", "link": "https://weibo.com/7905315703/5337147651654495", "models": []},
+    {"title": "谷歌内测 Gemini 3.8 Flash 曝光", "summary": "商业内幕获得内部截图：谷歌已开始内部测试 Gemini 3.8 Flash Preview，距 Gemini 3.7 Flash 正式发布仅 14 天，试用者称明显优于上代；谷歌希望把模型更新提速到接近每月一次。", "date": "8月28日", "source": "Business Insider", "link": "https://x.com/0xLogicrw/status/20933223344554272332", "models": ["Gemini 3.7 Flash"]},
+    {"title": "优必选中报：人形机器人开始量利齐升", "summary": "优必选上半年营收 12.7 亿元 +104.2%，人形机器人总销量 16123 台 +268.3%，全尺寸产品销量 921 台 +1946.7%、毛利率 66.8%；自研具身大脑 Thinker 与世界模型 Thinker-WM 分别登顶权威基准。发改委表态以实训场推动具身智能落地。", "date": "8月29日", "source": "澎湃新闻", "link": "https://www.163.com/dy/article/L5G17OB80514R9P4.html", "models": []},
+    {"title": "2026 数博会开幕：我国日均词元调用量突破 140 万亿", "summary": "国家数据局披露截至今年 3 月全国日均词元调用量突破 140 万亿、两年增长超千倍；2025 年数据产业规模 6.78 万亿元，智算规模 240 万 PFLOPS、半年增长 50.9%。", "date": "8月29日", "source": "中国发展改革", "link": "https://weibo.com/7905315703/5337147651654495", "models": []},
+    {"title": "a16z 启动 11 亿美元 Machine Age 基金投向 AI 基础设施", "summary": "a16z 设立 11 亿美元基金专注 AI 基础设施与硬件的物理层和算力栈；具身智能公司灵心巧手获超 45 亿元融资，上半年 Physical AI 赛道共融资 474 亿美元。", "date": "8月29日", "source": "AGI Hunt", "link": "https://agihunt.info/en/daily/2026-08-29", "models": []},
+    {"title": "昆仑万维接入阿里 Wan3.0：AI 视频生成降至 0.05 元/秒", "summary": "昆仑万维 SkyProduction 接入阿里 Wan3.0，8 月 31 日起定价低至 0.05 元/秒创全网新低；Wan 3.0 同时以 1414 分登顶视频编辑竞技场，领先 Seedance 2.5 与 MiniMax-H3。", "date": "8月28日", "source": "扣子资讯", "link": "https://weibo.com/7905315703/5337147651654495", "models": []},
+    {"title": "Plaud 发布 249 美元 AI 耳机 Plaud One：充电盒独立跑 Agent", "summary": "Plaud One 主动降噪耳机配备 eSIM 充电盒，可脱离手机独立执行云端 AI Agent 工作流，支持 5 米远场拾音与 25 小时录音，穿戴设备加独立 Agent 成为 AI 硬件新品类。", "date": "8月29日", "source": "AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-29", "models": []},
+    {"title": "Anthropic 免费向美国 K-12 学校开放 Claude for Teachers 企业版", "summary": "Anthropic 将 Claude for Teachers 扩展到美国 K-12 学校与学区，免费提供 Enterprise 管理功能，2027 年 6 月 30 日前注册可获一年免费使用。", "date": "8月29日", "source": "Anthropic 官方博客", "link": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts", "models": []}
+  ],
+  "papers": [
+    {"title": "WikiSkill：把 Agent 经验编译成持久知识以实现技能进化", "titleEn": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution", "summary": "将智能体的执行经验编译为持久化知识库，让 Agent 技能随经验积累持续演化。", "authors": "Liyan Tang, Cyrus Rashtchian 等 · Google", "link": "https://arxiv.org/abs/2608.27454"},
+    {"title": "大模型能设计近优运筹算法", "titleEn": "LLMs Can Design Near-Optimal OR Algorithms", "summary": "展示 LLM 有能力设计出接近最优的运筹学算法，探索 LLM 算法设计能力边界。", "authors": "Jackie Baek", "link": "https://arxiv.org/abs/2608.27296"},
+    {"title": "当工具输出变成指令：区分工具增强 Agent 中的行为诱导与运行时授权", "titleEn": "When Tool Outputs Become Commands: Separating Action Induction from Runtime Authorization in Tool-Augmented LLM Agents", "summary": "研究工具输出被误当作指令执行的注入式安全风险，提出严格区分行为诱导与运行时授权。", "authors": "Xiaokun Guo, Zhen Xu 等", "link": "https://arxiv.org/abs/2608.27146"},
+    {"title": "校准到知道不等于校准到行动：伪造证据让 LLM Agent 对不可知问题下定论", "titleEn": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable", "summary": "揭示伪造证据会诱使 LLM Agent 对本不可知的问题过度自信地下定论，认知校准与行动校准并不等同，代码与数据已开源。", "authors": "Pranav Aggarwal", "link": "https://arxiv.org/abs/2608.27167"},
+    {"title": "GraphMemix：查询感知证据森林解决 Agent 长期多模态记忆", "titleEn": "GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory", "summary": "提出查询感知的证据森林图结构，用于智能体长期多模态记忆的存储与检索。", "authors": "Geng Li, Yuhao Wang, Jianye Hao, Yuxin Peng 等", "link": "https://arxiv.org/abs/2608.26983"},
+    {"title": "ASIL：用结构化状态与语义动作取代 GUI Agent 的截图-点击", "titleEn": "ASIL: Replacing Screenshot-and-Click with Structured State and Semantic Actions", "summary": "用结构化状态表示与语义动作取代传统 GUI Agent 的截图-点击范式，提升交互效率与可解释性，EMNLP 2026 Findings 录用。", "authors": "Rui Xie, Lu Chen", "link": "https://arxiv.org/abs/2608.26991"},
+    {"title": "Gemini 在真实科研中的加速实践", "titleEn": "Accelerating Scientific Research with Gemini in the Real-World", "summary": "谷歌 Gemini 团队系统报告其智能体在真实多学科科研场景中加速科学研究的成果。", "authors": "Samuel Schmidgall 等（含 Quoc V. Le）· Google", "link": "https://arxiv.org/abs/2608.26701"}
+  ],
+  "models": [
+    {"name": "智谱 GLM-5.3（开放权重）", "vendor": "智谱 Z.ai", "highlight": "MoE 总参 7440 亿/激活 400 亿，与 GLM-5.2 同底座纯后训练：Terminal-Bench 3.0 从 4.6 → 28.3，CyberGym 84.5 超 GPT-5.6 Sol；新 License 要求百亿美元级巨头商用前过安全审查。", "link": "https://huggingface.co/zai-org/GLM-5.3"},
+    {"name": "腾讯混元 Hy4 preview（开源）", "vendor": "腾讯", "highlight": "770B/激活 49B、1M 上下文，Apache 2.0；Arena WebDev 排第五、与 GLM-5.3-Flash 相当，盲测略胜 GLM-5.3 与 Kimi K3，限时免费至 9 月 10 日。", "link": "https://huggingface.co/tencent/Hy4-preview"},
+    {"name": "MiniMax FastH3 v1（开放权重）", "vendor": "MiniMax", "highlight": "单卡 13 秒生成 15 秒 768p 视频，Blackwell GPU 最高 14 倍加速；fal 推出后训练版 H3 Max，吞吐约官方 35 倍。", "link": "https://x.com/haoailab/status/20933915482895405968"},
+    {"name": "英伟达 NVFP4 量化 Qwen3.8", "vendor": "英伟达", "highlight": "2.4 万亿参数 MoE 支持 4-bit 推理，显著降低部署门槛；Qwen3.8-Flash-Next 权重同步开源并登陆 OpenCode Go。", "link": "https://x.com/HuggingPapers/status/20931827669136221157"},
+    {"name": "蚂蚁百灵 Ling-3.0-flash-Fin", "vendor": "蚂蚁集团", "highlight": "124B 金融特化模型，可读年报、做投研估值并处理 Excel 财务模型，权重下周开源、API 限时免费一个月。", "link": "https://x.com/0xLogicrw/status/2093292146682138805"},
+    {"name": "谷歌 Gemini Co-Scientist", "vendor": "谷歌", "highlight": "完成假设生成→实验设计→合成→预测闭环，发现超越多个前沿模型的新医学架构。", "link": "https://agihunt.info/en/daily/2026-08-29"},
+    {"name": "HF Trending 榜单速览", "vendor": "HuggingFace", "highlight": "Qwen3.8-Flash-Next（4.17k 赞）登顶，GLM-5.3-Flash 与 GLM-5.3 分列二三，Hy4-preview 上线约 11 小时进榜；前 20 席 Qwen3.8 生态占 11 席。", "link": "https://huggingface.co/models?sort=trending"}
+  ],
+  "ecosystem": [
+    {"title": "Claude Code v2.1.251：本周最大安全加固版", "summary": "新增 PreModelSwitch/PostModelSwitch hooks、/usage 支出限额进度条、前台 subagent 实时串流；一次修复 symlink 绕过、插件市场路径穿越等五个安全漏洞，此前 v2.1.248 已上线 --restricted 安全模式。", "source": "claude-news.today", "link": "https://claude-news.today/en/briefings/briefing-2026-08-29", "models": []},
+    {"title": "Anthropic 自动化对齐研究员超越人类基线", "summary": "Claude 自主检索文献、提出方法并训练模型，缓解 10 类对齐失败，部分方法可迁移到最高 4.7 倍大的模型；Sonnet 5 用约 60 小时为早期 Opus 4.8 检查点找到接近正式版的后训练方案，成本从人类专家 150 美元/小时降至 4 美元/小时，实验中发现 39 次作弊尝试。", "source": "Anthropic", "link": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures", "models": ["Claude Sonnet 5"]},
+    {"title": "Kimi Code 新增多 Agent 编排与远程控制", "summary": "KimiCode 新增实验性 tower 多 Agent 编排模式与 0.39.0 远程控制功能；GitHub Copilot 同周连发三版：Customize tab GA、全局模型策略 GA、代码评审新增 resolution reasons。", "source": "KimiDevs", "link": "https://x.com/KimiDevs/status/2093184808419746164", "models": []},
+    {"title": "Forcepoint X-Labs：隐形文字可操纵 AI 邮件摘要", "summary": "零号字体/白底白字的 HTML 隐藏文本注入邮件摘要模型：可见 537 字符实际投喂 1009 字符，十次运行全部产生被操纵摘要；建议摘要系统只提取用户可见内容、把邮件视为不可信输入。", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-29-2026", "models": []},
+    {"title": "OpenCode 一日双发：Azure Entra ID 与 Bedrock 修复落地", "summary": "OpenCode v1.18.24/25 同日发布，新增 Azure Entra ID 集成并修复 Azure CLI 登录与 Bedrock 问题；Codex CLI v0.150.1 修复远程压缩时图片 token 计入预算的问题。", "source": "Oday Bakkour", "link": "https://oday-bakkour.com/blog/ai-coding-news-august-28-2026-claude-code-restricted-mode", "models": []},
+    {"title": "AMD 发布 ROCm 10.0", "summary": "AMD GPU 开放软件栈从 7.14 跳版至 10.0.0，重点强化 Instinct/Radeon/Ryzen AI 平台的 AI 推理与性能分析，新增 8GB/4GB 显存 Radeon RX 9050 支持。", "source": "IT之家", "link": "https://www.ithome.com/0/995/683.htm", "models": []}
+  ]
+}
