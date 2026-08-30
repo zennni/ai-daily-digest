@@ -1,0 +1,46 @@
+{
+  "meta": {"date": "2026-08-30", "week": "星期日", "note": "字节发布 200 万 token 豆包 4.5 Ultra，OpenAI 终止向 Cursor 供应模型，索尼华纳起诉 Anthropic——供应链、版权与安全边界成为新战场。"},
+  "highlights": [
+    {"title": "字节发布豆包 4.5 Ultra", "summary": "200 万 token 超长上下文 + 复杂推理提升 28%，企业内测调用申请破 12 万。"},
+    {"title": "OpenAI 终止向 Cursor 供应模型", "summary": "11 月 12 日生效，Cursor 称 OpenAI 模型仅占约 5% 流量，Anthropic 补位加算力。"},
+    {"title": "索尼音乐 + 华纳查普尔起诉 Anthropic", "summary": "指控大规模抓取版权歌词训练 Claude，单件最高索赔 15 万美元，总额或达数十亿美元。"}
+  ],
+  "news": [
+    {"title": "字节跳动发布豆包 4.5 Ultra：200 万 token 上下文，复杂推理提升 28%", "summary": "火山引擎发布旗舰模型豆包 4.5 Ultra，上下文拉到 200 万 token，复杂推理较上代提升 28%，支持深度 Agent 调用与端到端代码生成；灰度开放企业 API，内测企业调用申请量破 12 万。", "date": "8月30日", "source": "腾讯新闻", "link": "https://new.qq.com/rain/a/20260830A08GBL00", "models": ["Seed 2.1"]},
+    {"title": "OpenAI 宣布终止向 Cursor 供应模型，Anthropic 补位", "summary": "OpenAI 将于 11 月 12 日终止与被 SpaceX 收购的 Cursor 的模型合作；Cursor CEO 称 OpenAI 模型仅占约 5% 用户流量，Anthropic 表示将继续增加算力支持 Cursor，编程入口之争从模型转向流量入口与多模型路由。", "date": "8月29日", "source": "IT之家", "link": "https://view.inews.qq.com/a/20260829A08EWX00", "models": []},
+    {"title": "索尼音乐与华纳查普尔联合起诉 Anthropic 歌词侵权", "summary": "索尼音乐出版与华纳查普尔起诉 Anthropic 抓取数万首版权歌词训练 Claude，每件作品最高索赔 15 万美元、总额或达数十亿美元，训练数据合法性成为核心争议。", "date": "8月28日", "source": "AIbars News", "link": "https://aibars.net/en/library/ai-news/list", "models": []},
+    {"title": "Claude Code 标准周限额\u201c明升暗降\u201d", "summary": "Anthropic 宣布 9 月 14 日起 Claude Code 标准周限额永久上调 25%，但 50% 临时加量 9 月 13 日结束，实际可用量相较现状下降约 17%，影响 Pro/Max/Team 及企业版高频开发者。", "date": "8月30日", "source": "IT之家", "link": "http://view.inews.qq.com/a/20260830A05FFK00", "models": []},
+    {"title": "OpenAI 为 Codex 用户重置额度并修复\u201c烧 Token\u201dBug", "summary": "Codex 负责人宣布为付费用户重置额度，修复上下文压缩、后台任务、子代理、MCP 等 8 类异常消耗问题，修复后同等额度可多支撑 10%–50% 用量。", "date": "8月30日", "source": "机器之心", "link": "https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2651053490&idx=1&sn=54fce5331d59d19f32be30fec1424dee", "models": []},
+    {"title": "Lambda 获 10 亿美元私人债务，买英伟达 GPU 租给微软", "summary": "Lambda 获摩根大通安排的约 10 亿美元短期私人债务购买英伟达 GPU 直租微软，系四个月内第三笔重大债务融资，同时推进约 30 亿美元 Pre-IPO 股权融资。", "date": "8月30日", "source": "AI Breaking Wire", "link": "https://aibreakingwire.com/news/ai-brief-2026-08-30", "models": []},
+    {"title": "华为联合瑞金医院发布瑞智病理大模型 RuiPath 2.0", "summary": "RuiPath 2.0 常见癌种及罕见亚型识别能力显著提升，探索病理多模态生成式基础模型在淋巴瘤诊断应用，已落地全国 90 余家医院。", "date": "8月30日", "source": "证券时报 e 公司", "link": "https://new.qq.com/rain/a/20260830A08GBL00", "models": []},
+    {"title": "a16z 完成 11 亿美元\u201c机器时代\u201d基金，押注 AI 物理基础设施", "summary": "a16z 募集独立运作的 11 亿美元基金，覆盖芯片、内存、网络、数据中心与机器人全栈；硬件投资已占其近期交易流量 20% 以上。", "date": "8月28日", "source": "TechCrunch", "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_8236a93e1c962765", "models": []},
+    {"title": "谷歌测试搜索默认展开 AI 回答，传统蓝链进一步下移", "summary": "谷歌测试将 AI 概览默认展开为更长 AI 回答并下移传统蓝色链接，AI Mode 已上线酒店预订与航班积分查询，从给信息走向完成交易。", "date": "8月30日", "source": "IT时代网", "link": "https://new.qq.com/rain/a/20260830A08HKY00", "models": []},
+    {"title": "DALL·E GPT 今日退役，Sonnet 5 涨价与 Kimi K2.5 下线明日生效", "summary": "OpenAI 今日下架官方 DALL·E GPT（图像生成由 ChatGPT Images 继续）；8 月 31 日起 Claude Sonnet 5 涨至 $3/$15 且 tokenizer 变更、GPT-5.4 退出 Codex 登录通道、kimi-k2.5 与 moonshot-v1 下线需迁移 kimi-k3。", "date": "8月30日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-30-2026", "models": ["Claude Sonnet 5", "Kimi K3"]},
+    {"title": "人形机器人中报分化：宇树市值腰斩，智元出货登顶全球第一", "summary": "2026 上半年全球人形机器人出货 1.91 万台同比增 272%，中国厂商占超 97%：智元 8400 台 44% 份额首超宇树登顶，宇树 5900 台居次、上市后市值一度腰斩，特斯拉 Optimus 首条产线进入验收尾段。", "date": "8月30日", "source": "今日头条", "link": "https://www.toutiao.com/a7679633105728193064", "models": []}
+  ],
+  "papers": [
+    {"title": "WikiSkill：把智能体经验编译为持久知识，实现技能演化", "titleEn": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution", "summary": "Google 团队提出把 Agent 运行经验编译为持久化知识库的技能演化框架，让智能体在使用中持续沉淀可复用技能。", "authors": "Liyan Tang, Cyrus Rashtchian, Tu Vu 等（Google）", "link": "https://arxiv.org/abs/2608.27454"},
+    {"title": "什么才是好的智能体数据？用 ACE 视角审视 LLM Agent 数据生成", "titleEn": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents", "summary": "华为团队系统研究 LLM Agent 训练数据生成质量问题，覆盖生成、筛选与评估全链路的数据工程方法论。", "authors": "Xingshan Zeng, Zishan Xu 等（华为）", "link": "https://arxiv.org/abs/2608.27260"},
+    {"title": "Gemini 在真实世界的科研加速实践", "titleEn": "Accelerating Scientific Research with Gemini in the Real-World", "summary": "Google DeepMind 近 40 人团队报告 Gemini 智能体在材料合成、医疗 AI 等三个学科的真实科研落地，交付经实验验证的结果。", "authors": "Samuel Schmidgall, Quoc V. Le, Tao Tu 等（Google DeepMind）", "link": "https://arxiv.org/abs/2608.26701"},
+    {"title": "从原子到智能体：LLM 智能体数学能力的可解释分层评估", "titleEn": "From Atomic to Agentic: Towards Interpretable Evaluation of LLMs' Agentic Mathematical Capabilities", "summary": "EMNLP 2026 接收，对 LLM 智能体数学能力提出可解释的分层评估框架，把\u201c会算\u201d与\u201c会规划着算\u201d拆开衡量。", "authors": "Jiayi Kuang, Yinghui Li 等 15 人", "link": "https://arxiv.org/abs/2608.26950"},
+    {"title": "解耦规划与控制：可指令智能体架构", "titleEn": "Decoupling Planning and Control for Instructable Agents", "summary": "COLM 2026 会议论文，提出把规划与控制解耦的可指令智能体架构，提升长程任务的可控性。", "authors": "Zineng Tang, Kelsey R. Allen, Alane Suhr 等", "link": "https://arxiv.org/abs/2608.26763"},
+    {"title": "GraphMemix：面向长期多模态智能体记忆的查询感知证据森林", "titleEn": "GraphMemix: Query-Aware Evidence Forests for Long-Term Multimodal Agent Memory", "summary": "提出查询感知证据森林结构解决多模态 Agent 长期记忆检索问题，代码已开源。", "authors": "Geng Li, Yuhao Wang, Jianye Hao, Yuxin Peng 等", "link": "https://arxiv.org/abs/2608.26983"},
+    {"title": "CritICL：推理时从小模型失败模式实现弱到强泛化", "titleEn": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes", "summary": "在推理阶段利用小模型失败模式做弱到强泛化，无需重训即可提升大模型表现，附开源代码。", "authors": "Yufan Wu, Yinghui He 等", "link": "https://arxiv.org/abs/2608.27455"}
+  ],
+  "models": [
+    {"name": "Qwen3.8-Flash-Next", "vendor": "阿里", "highlight": "登顶 HF Trending（4.33k 赞、122k 下载），Qwen3.8 生态占榜过半；Qwen3.8-27B 累计 451 万下载、社区在 16GB 显卡跑出 100k 上下文 50 tok/s。", "link": "https://huggingface.co/models?sort=trending"},
+    {"name": "GLM-5.3", "vendor": "智谱", "highlight": "Terminal Bench 4.0 上与 Fable 5 同档；HF 趋势榜第 3（50.1k 下载）。", "link": "https://huggingface.co/zai-org/GLM-5.3"},
+    {"name": "GLM-5.3-Flash", "vendor": "智谱", "highlight": "HF 趋势榜第 2（347k 下载、1.66k 赞）；独立评测称文档工作流从 GPT 5.6 Luna 迁移后质量无明显下降、账单更低。", "link": "https://huggingface.co/zai-org/GLM-5.3-Flash"},
+    {"name": "Hy4-preview", "vendor": "腾讯", "highlight": "社区压缩至约 200GB GGUF（保留约 98% 表现），HF 趋势榜第 8。", "link": "https://huggingface.co/tencent"},
+    {"name": "MiniMax-H3", "vendor": "MiniMax", "highlight": "H3 Max 被用于快于播放速度的实时生成直播流；H3 系列 526 万下载、4.64k 赞稳居趋势榜前列。", "link": "https://huggingface.co/MiniMaxAI"},
+    {"name": "LTX-2.5", "vendor": "Lightricks", "highlight": "HF 趋势榜第 7（114 万下载、2.19k 赞），开源视频生成阵营本周热度集中。", "link": "https://huggingface.co/Lightricks"}
+  ],
+  "ecosystem": [
+    {"title": "Microsoft Agent Framework .NET 1.19.0 / Python 1.15.0：生产级治理补课", "summary": "更新聚焦状态持久化、长时托管 Agent 恢复、A2A 流式修复，长时 MCP 支持迁移到 Tasks 模型（破坏性变更）；middleware 可在运行时阻断工具调用、强制审批与支出上限。", "source": "Cloud Pro", "link": "https://cloudproinc.azurewebsites.net/index.php/2026/08/28/microsoft-agent-framework-production-guide-for-a2a-mcp-governance", "models": []},
+    {"title": "Agent Skills 生态爆发：科学技能包单日涨 1587 星", "summary": "GitHub 趋势榜 Agent Skills 项目集中霸榜：scientific-agent-skills（165 个科研技能 + 100 多个科学数据库，今日 +1587 星）、archify（架构图生成，今日 +3902 星）、last30days-skill（累计 60k 星）。", "source": "GitHub Trending", "link": "https://github.com/trending", "models": []},
+    {"title": "清华开源 OpenMAIC 多智能体交互课堂", "summary": "THU-MAIC 团队开源 OpenMAIC，一键搭建沉浸式多 Agent 学习/交互环境，今日新增 907 星、累计 22,814 星。", "source": "GitHub", "link": "https://github.com/THU-MAIC/OpenMAIC", "models": []},
+    {"title": "Meta 推出 XR Operator：让 AI Agent 替开发者测试 VR 应用", "summary": "集成于 Meta XR SDK v205 的实验性工具：AI 智能体自主启动 VR 应用、截画面、改代码、复验，形成构建—测试—验证闭环，支持自然语言下达测试场景。", "source": "IT之家", "link": "https://www.ithome.com/", "models": []},
+    {"title": "Arga Labs 获 1000 万美元种子轮，给企业 Agent 造数字孪生沙箱", "summary": "General Catalyst 领投，为 Salesforce、Workday 等企业软件构建可克隆、可重置状态的模拟环境，让 Agent 在不碰生产数据的前提下完成强化学习试错。", "source": "AI Breaking Wire", "link": "https://aibreakingwire.com/news/ai-brief-2026-08-30", "models": []},
+    {"title": "QueryStory 出 stealth：用网安取证方法消灭数据库幻觉", "summary": "前 Google sysops 工程师创立，携 600 万美元种子轮（估值 6000 万）出 stealth，把取证调查方法用于企业数据库查询，提供可验证、可审计的事实答案。", "source": "AI Breaking Wire", "link": "https://aibreakingwire.com/news/ai-brief-2026-08-30", "models": []}
+  ]
+}
