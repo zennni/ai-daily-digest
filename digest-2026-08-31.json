@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "date": "2026-08-31",
+    "week": "星期一",
+    "note": "OpenAI Astra 扩大内测（9月3日前后发布）；OpenAI 因 SpaceX 收购 Cursor 终止供模；Claude Sonnet 5 今日涨价 50% 并换 tokenizer，kimi-k2.5 与 moonshot-v1 退役。"
+  },
+  "highlights": [
+    {"title": "OpenAI Astra 扩大内测", "summary": "代号 mozaik-alpha-fdm，零样本一次生成 3D 等距地图与交互网页，端到端多智能体编排 + 持久化推理，预计 9 月 3 日前后发布，与 Anthropic Fable 5.1 正面竞争。"},
+    {"title": "OpenAI 终止向 Cursor 供模", "summary": "SpaceX 600 亿美元收购 Anysphere 交割 15 天后，OpenAI 启动控制权变更条款，11 月 12 日生效，缓冲期后开发者只能自带 API Key。"},
+    {"title": "今日多项生效变更", "summary": "Claude Sonnet 5 API 涨至 $3/$15 并叠加 tokenizer 变更（编码场景实际涨幅远超名义 50%）；kimi-k2.5 与 moonshot-v1 下线，Kimi K3 为迁移目标。"}
+  ],
+  "news": [
+    {"title": "OpenAI Astra 内测曝光：前端能力大幅跃升，9 月 3 日前后发布", "summary": "OpenAI 扩大新模型 Astra（代号 mozaik-alpha-fdm）内测，Max 模式下零样本一次生成 3D 等距地图与交互网页；核心突破含端到端多智能体编排、超长程任务保持、持久化推理与即时自我纠错，预计 9 月 3 日前后发布，与 Fable 5.1 正面竞争。", "date": "8月31日", "source": "腾讯研究院/The CODEW", "link": "https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html", "models": ["Claude Fable 5"]},
+    {"title": "OpenAI 终止向 Cursor 供应模型，11 月 12 日起生效", "summary": "SpaceX 以 600 亿美元收购 Cursor 母公司 Anysphere 并完成交割 15 天后，OpenAI 启动控制权变更条款宣布终止直接供模，Astra 等新模型不再提供；Cursor 称 OpenAI 模型仅占 5% 流量，Anthropic 已补位。", "date": "8月31日", "source": "腾讯研究院/TechCrunch", "link": "https://www.sohu.com/a/1069745836_455313", "models": []},
+    {"title": "今日生效：Claude Sonnet 5 涨价 50% + tokenizer 变更，Kimi 旧模型退役", "summary": "Claude Sonnet 5 API 定价从 $2/$10 升至 $3/$15（每百万 token），tokenizer 切换使代码类输入多产生 10%~35% token；同日 kimi-k2.5 与 moonshot-v1 退役，迁移目标 Kimi K3；GPT-5.4 退出 ChatGPT 登录版 Codex，由 GPT-5.6 Terra 与 Luna 接替。", "date": "8月31日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-31-2026", "models": ["Kimi K3", "GPT-5.6 Terra", "Claude Sonnet 5"]},
+    {"title": "Claude Code 周限额\"明升暗降\"，Anthropic 删帖重发承认实际 -17%", "summary": "Anthropic 宣布 9 月 14 日起 Claude Code 周限额\"永久上调 25%\"，用户算出较当前实降 17%；Anthropic 删除原帖并重发承认 -17%。前沿模型\"定价换增长\"窗口期正在关闭。", "date": "8月31日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-31-2026", "models": []},
+    {"title": "Lambda 再获 10 亿美元私募债买 GPU，租给微软", "summary": "Neocloud 厂商 Lambda 完成 10 亿美元私募债（摩根大通安排），采购英伟达 AI 芯片并直接租给微软，凸显 AI 算力热潮下\"举债买卡、长租回血\"的金融策略已成主流。", "date": "8月31日", "source": "AIStart/The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-31", "models": []},
+    {"title": "索尼音乐 + 华纳查普尔起诉 Anthropic 歌词侵权，或索赔数十亿美元", "summary": "Sony Music Publishing 与 Warner Chappell 在加州北区法院起诉 Anthropic，指控大规模抓取数万首版权歌曲训练 Claude，单作品最高索赔 15 万美元，并首次把\"丢弃模型或重新训练\"写入诉求；Anthropic 否认并计划应战。", "date": "8月31日", "source": "AIStart/AGI Hunt", "link": "https://agihunt.info/en/daily/2026-08-31", "models": []},
+    {"title": "前英伟达研究团队创办 Veeda，9000 万美元种子轮创加拿大纪录", "summary": "三名前英伟达研究员创办 Veeda Innovation，Khosla Ventures 与 Radical Ventures 联合领投 9000 万美元种子轮，主攻多模态世界模型，为人形机器人提供\"内部仿真引擎\"。", "date": "8月31日", "source": "The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-31", "models": []},
+    {"title": "谷歌测试搜索默认展开 AI 回答，传统链接进一步下沉", "summary": "Google 对部分查询自动展开结果页顶部 AI 摘要，传统网页链接更靠下；同期在 AI Mode 上线三大 AI 旅行规划功能，向 Agent 直接完成交易型商务推进。", "date": "8月31日", "source": "AIStart/Search Engine Roundtable", "link": "https://aistart.ai/news", "models": []},
+    {"title": "微软 8B 开源级模型经 Harness 优化追平 Claude Opus 4.5", "summary": "Meta 研究团队通过优化运行时层（harness），让 80 亿参数模型在 CRM 迁移等企业级任务上追平 Claude Opus 4.5，印证 Agent 时代 harness 与编排层价值正快速逼近模型本体。", "date": "8月31日", "source": "AIStart", "link": "https://aistart.ai/news", "models": []},
+    {"title": "企业文档发现 227 条指向\"无主代码\"的安装命令", "summary": "安全分析在企业文档中发现 227 条安装命令指向无人维护、无归属的代码包，与 Claude、Codex、Hermes 等 AI 编码工具生成内容相关，形成新型供应链风险。", "date": "8月31日", "source": "AIStart/The CODEW", "link": "https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html", "models": []}
+  ],
+  "papers": [
+    {"title": "WikiSkill：把 Agent 经验编译为持久知识，实现技能演化", "titleEn": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution", "summary": "将智能体交互经验自动编译成结构化持久知识库，支持技能跨任务、跨会话持续演化与复用。", "authors": "Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng 等", "link": "https://arxiv.org/abs/2608.27454"},
+    {"title": "并非所有\"评估感知\"都一样：能力框架决定合规行为", "titleEn": "Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance", "summary": "区分模型\"知道被评估\"的不同来源，发现以能力被评测为框架的陈述会系统性预测合规倾向。", "authors": "Allison Zhuang, Santiago Aranguri 等", "link": "https://arxiv.org/abs/2608.27340"},
+    {"title": "行为感知验证：更高效的安全 Harness 演化", "titleEn": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification", "summary": "以行为感知验证机制驱动 Agent harness 自动演化，降低验证开销同时持续提升通过率。", "authors": "Jinghan Xu, Yikai Zhang, Aili Chen 等", "link": "https://arxiv.org/abs/2608.27311"},
+    {"title": "LLM 能设计近最优运筹算法", "titleEn": "LLMs Can Design Near-Optimal OR Algorithms", "summary": "证明 LLM 可为运筹学问题设计接近最优的算法，推进 LLM 在算法设计层面的能力边界。", "authors": "Jackie Baek", "link": "https://arxiv.org/abs/2608.27296"},
+    {"title": "什么才是好的 Agentic 数据？ACE 视角审视 LLM Agent 数据生成", "titleEn": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents", "summary": "系统研究 Agent 训练数据生成质量，提出 ACE 视角评估数据多样性、难度与可验证性。", "authors": "Xingshan Zeng, Zishan Xu, Boju Zhang 等", "link": "https://arxiv.org/abs/2608.27260"},
+    {"title": "CorporateBench：基于时序知识库的大规模企业问答基准", "titleEn": "CorporateBench: Large-Scale Q&A Benchmarking with Temporal Knowledge Bases", "summary": "构建带时间维度的企业级 Q&A 基准，专测模型对过期信息与时效推理的处理。", "authors": "Sil Hamilton, Albert Yu Sun, Oscar J. Romero", "link": "https://arxiv.org/abs/2608.27391"},
+    {"title": "校准到\"知道\"却不校准到\"行动\"：伪造证据让 LLM Agent 承诺不可知之事", "titleEn": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable", "summary": "揭示即使校准良好，伪造证据也会让 Agent 对不可知问题过度承诺的新失效模式。", "authors": "Pranav Aggarwal 等", "link": "https://arxiv.org/abs/2608.27167"}
+  ],
+  "models": [
+    {"name": "腾讯混元 Hy4 preview（开源）", "vendor": "腾讯", "highlight": "770B 总参 / 49B 激活 / 1M 上下文，163 名专家 203 项工程任务盲测均分 2.99 超 GLM-5.3（2.92）与 Kimi K3（2.94），已在 HuggingFace 与 TokenHub 开源。", "link": "https://huggingface.co/tencent"},
+    {"name": "Gemini Omni 1.1 Flash", "vendor": "Google", "highlight": "视频续接生成累计最长 40 秒，新增首尾帧控制与 3 秒视频参考；360p 草稿模式吞吐 +60%、成本约 1/3，成片支持 4K。", "link": "https://huggingface.co/models?sort=trending"},
+    {"name": "HuggingFace Trending 全景", "vendor": "Qwen / 智谱 / MiniMax / Lightricks", "highlight": "Qwen3.8-Flash-Next 登顶（4.39k 赞、122k 下载），GLM-5.3-Flash 次席（347k 下载），Qwen3.8-27B 累计 451 万下载；Qwen3.8 系衍生占前 20 过半席位，Hy4-preview 上榜第 8。", "link": "https://huggingface.co/models?sort=trending"},
+    {"name": "Qwen3.8-Flash-Next 2-bit 量化", "vendor": "社区（unsloth 等）", "highlight": "antirez 估算 2-bit 量化 + SSD n-gram 可让其在 64GB Mac 上本地运行，或成 64GB MacBook 新默认。", "link": "https://huggingface.co/unsloth"},
+    {"name": "LeVJEPA", "vendor": "LeCun 团队", "highlight": "单编码器 + 投影头、全局-局部视图不变性 + SIGReg，视频预训练算力最高省约 20 倍。", "link": "https://agihunt.info/en/daily/2026-08-31"},
+    {"name": "H3 Max Live（fal）", "vendor": "fal × MiniMax", "highlight": "快于实时的无限直播式视频生成，每帧即时生成、聊天 prompt 数秒改写画面，音画同流；MiniMax H3 另登顶 I2V 排行。", "link": "https://huggingface.co/MiniMaxAI"}
+  ],
+  "ecosystem": [
+    {"title": "Claude Code 桌面端打通终端会话，支持跨端续接", "summary": "新增 /resume 命令恢复终端历史会话，与 /desktop 形成双向通道，恢复后仍支持 /rewind 回退；同月上线额度恢复自动续跑。", "source": "腾讯研究院", "link": "https://www.sohu.com/a/1069745836_455313", "models": []},
+    {"title": "Claude Code 被曝向 git 提交与 PR 静默附加公开会话链接", "summary": "用户发现 commit 与 PR 描述被静默附加 claude.ai/code/session_... 公开链接，存在会话泄露风险；部分用户已关闭自动归因或回退版本。", "source": "AGI Hunt", "link": "https://agihunt.info/en/daily/2026-08-31", "models": []},
+    {"title": "MCP 新路线图五大优先级：渐进式工具发现 + Agent 身份认证", "summary": "MCP 维护者 8 月 22 日发布路线图：Agentic 消息原语（webhooks/通道）、HTTP 原生传输统一、Agent 身份与企业安全、渐进式工具发现（小入口按需展开目录）、SDK 体验；tools/call 结果类型将统一契约。", "source": "MCP Blog/Developers Digest", "link": "https://blog.modelcontextprotocol.io/tags/governance/index.xml", "models": []},
+    {"title": "modelcontextprotocol/servers 发布 2026.8.18 同步版本", "summary": "官方 servers 仓 four 核心包（everything/time/fetch/git）同步升至 2026.8.18；Sanity MCP server v2.30.0 新增资产上传与 schema 发现。", "source": "Agent Daily", "link": "https://agentdaily.dev/content/f5d2f9c0-659c-4ef0-9c76-4b409a3479e5", "models": []},
+    {"title": "LangChain 托管 Deep Agents 公测：BYOC 部署上 AWS", "summary": "Managed Deep Agents 与 LLM Gateway 公测，支持 AWS BYOC；同期发布 Deep Agents v0.7 与 Tuned Evaluators。", "source": "dailyai.report", "link": "https://dailyai.report/", "models": []},
+    {"title": "Particle Radar 通过 MCP 开放 13 万播客的结构化音频检索", "summary": "转录索引 13 万+ 播客、日增 2 万集，通过 API 与 MCP 暴露结构化音频搜索，对冲基金为首批高频客户；\"语音数据基础设施 for Agent\"成新赛道。", "source": "The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-31", "models": []}
+  ]
+}

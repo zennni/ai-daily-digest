@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-08-31</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+
+<header>
+  <div class="date">2026年8月31日 · 星期一</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：Astra 倒计时、API 供给政治化。OpenAI 新旗舰 Astra 扩大内测（9 月 3 日前后发布）；OpenAI 因 SpaceX 收购 Cursor 终止供模，模型 API 中立性持续瓦解；Claude Sonnet 5 今日涨价 50% 并换 tokenizer，kimi-k2.5 与 moonshot-v1 正式退役。</div>
+</header>
+
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>OpenAI Astra 扩大内测：</strong>代号 mozaik-alpha-fdm，零样本一次生成 3D 等距地图与交互网页，端到端多智能体编排 + 持久化推理，预计 9 月 3 日前后发布，与 Anthropic Fable 5.1 正面竞争。</li>
+    <li><strong>OpenAI 终止向 Cursor 供模：</strong>SpaceX 600 亿美元收购 Anysphere 交割仅 15 天后，OpenAI 启动控制权变更条款，11 月 12 日生效，缓冲期后开发者只能自带 API Key。</li>
+    <li><strong>今日多项生效变更：</strong>Claude Sonnet 5 API 涨至 $3/$15 并叠加 tokenizer 变更（编码场景实际成本涨幅远超名义 50%）；kimi-k2.5 与 moonshot-v1 下线，Kimi K3 为迁移目标。</li>
+  </ul>
+</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+
+  <div class="card">
+    <h3>OpenAI Astra 内测曝光：前端能力大幅跃升，9 月 3 日前后发布<span class="tag tag-hot">重大</span></h3>
+    <p>OpenAI 扩大新模型 Astra（代号 mozaik-alpha-fdm）内测，开发者实测 Max 模式下零样本一次生成 3D 等距地图与交互网页。核心突破包括端到端多智能体编排、超长程任务保持、持久化推理与即时自我纠错，生成过程中可反复验证并保持设计语言一致。预计 9 月 3 日前后正式发布，与同期升级的 Anthropic Fable 5.1 正面竞争，并可能在 API 调用成本上继续下压。Sam Altman 此前称 Astra 是首个"以重要方式发明新事物"的模型，目标提供一个可近乎无限运行的常驻 Agent 版本。</p>
+    <div class="meta">来源：腾讯研究院 / The CODEW · <a href="https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 终止向 Cursor 供应模型，11 月 12 日起生效<span class="tag tag-hot">重大</span></h3>
+    <p>SpaceX 以 600 亿美元收购 Cursor 母公司 Anysphere 并完成交割仅 15 天后，OpenAI 启动控制权变更条款宣布终止直接供模，称无法确认 SpaceX 会遵守服务条款，Astra 等新模型不再提供，缓冲期后开发者只能自带 API Key 使用。此前 Anthropic 也曾对拟被 OpenAI 收购的 Windsurf 限流——底层模型 API 的中立性正被上下游竞争关系取代。Cursor 方面称 OpenAI 模型仅占其 5% 流量，Anthropic 已补位。</p>
+    <div class="meta">来源：腾讯研究院 / TechCrunch · <a href="https://www.sohu.com/a/1069745836_455313" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>今日生效：Claude Sonnet 5 涨价 50% + tokenizer 变更<span class="tag tag-new">8月31日生效</span></h3>
+    <p>Claude Sonnet 5 API 定价从 $2/$10 升至 $3/$15（每百万 token），同时切换 tokenizer 使代码类输入多产生 10%~35% token——编码工作负载的实际成本涨幅可能远超名义的 50%。消费级订阅不受影响。同日，kimi-k2.5 与 moonshot-v1 正式退役，迁移目标为 Kimi K3；GPT-5.4 / GPT-5.4 mini 退出 ChatGPT 账号登录的 Codex，由 GPT-5.6 Terra 与 Luna 接替。</p>
+    <div class="meta">来源：AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-31-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Claude Code 周限额"明升暗降"，Anthropic 删帖重发承认实际 -17%<span class="tag tag-hot">争议</span></h3>
+    <p>Anthropic 宣布 9 月 14 日起 Claude Code 周限额"永久上调 25%"，用户迅速算出：以 5 月前基线为 100，当前（含临时 50% 加成）为 150，9 月后为 125——较现状实降 17%。帖子发布数小时内即被用户拆穿，Anthropic 删除原文并重发，直接写明"较今日减少 17%"。业内评论：前沿模型"定价换增长"的窗口期正在关闭，订阅额度开始按算力成本重新校准。</p>
+    <div class="meta">来源：AIToolsRecap · <a href="https://aitoolsrecap.com/Blog/ai-news-august-31-2026" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Lambda 再获 10 亿美元私募债买 GPU，租给微软<span class="tag tag-fund">融资</span></h3>
+    <p>Neocloud 厂商 Lambda 完成 10 亿美元私募债务融资（由摩根大通安排），用于采购英伟达 AI 芯片并将算力直接租赁给微软。这是 Lambda 近期一系列大额贷款中的最新一笔，凸显 AI 算力热潮下的高资本成本，以及云厂商"举债买卡、长租回血"的金融策略已成主流打法。</p>
+    <div class="meta">来源：AIStart / The AI Brief · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>索尼音乐 + 华纳查普尔起诉 Anthropic 歌词侵权，或索赔数十亿美元<span class="tag tag-hot">版权</span></h3>
+    <p>Sony Music Publishing 与 Warner Chappell 在加州北区联邦法院起诉 Anthropic，指控其大规模盗种与抓取数万首受版权保护歌曲训练 Claude，单作品最高索赔 15 万美元，并首次把"丢弃模型或重新训练"写入诉求。Anthropic 否认指控并计划应战—— remedies 是否应超出罚款、延伸到重训，是本案最大看点。</p>
+    <div class="meta">来源：AIStart / AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>前英伟达研究团队创办 Veeda，900 万美元种子轮创加拿大纪录<span class="tag tag-fund">融资</span></h3>
+    <p>三名前英伟达研究员（关联多伦多大学）创办 Veeda Innovation，由 Khosla Ventures 与 Radical Ventures 联合领投 9000 万美元种子轮，为加拿大初创史上最大种子轮之一。公司主攻多模态世界模型：模拟真实物理、重力、空间关系与 3D 几何，为自主机器与人形机器人提供"内部仿真引擎"。另有 AI 新闻聚合初创 Particle 发布 Radar 平台，转录索引 13 万+ 播客、日增约 2 万集，通过 API 与 MCP 提供结构化音频检索，对冲基金成为首批高频客户。</p>
+    <div class="meta">来源：The AI Brief · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>谷歌测试搜索默认展开 AI 回答，传统链接进一步下沉<span class="tag tag-new">产品</span></h3>
+    <p>Google 开始对部分查询自动在结果页顶部展开 AI 摘要，传统网页链接被推得更靠下，SEO 生态与流量分配格局或再度被改写。同期谷歌还在 AI Mode 中上线三大 AI 旅行规划功能（订酒店、追踪机票价格、积分管理），向"Agent 直接完成交易型商务"再进一步。</p>
+    <div class="meta">来源：AIStart / Search Engine Roundtable · <a href="https://aistart.ai/news" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>微软 8B 开源级模型经"Harness 优化"追平 Claude Opus 4.5<span class="tag tag-hot">效率</span></h3>
+    <p>Meta 研究团队通过优化运行时层（harness，负责处理跨数小时的企业工作流），让一个 80 亿参数模型在 CRM 迁移等企业级任务上追平 Claude Opus 4.5 的表现，而无需前沿模型的成本。这印证了本周产业界的关键判断：在 Agent 时代，harness 与编排层的价值正在快速逼近模型本体。</p>
+    <div class="meta">来源：AIStart · <a href="https://aistart.ai/news" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>企业文档中发现 227 条指向"无主代码"的安装命令<span class="tag tag-hot">安全</span></h3>
+    <p>安全分析在企业文档中发现 227 条安装命令指向已无人维护、无归属的代码包，来源与 Claude、Codex、Hermes 等 AI 编码工具的生成内容相关——AI 助手推荐的包若无归属维护，会形成新型供应链风险。另：Gitea 关键 RCE 漏洞未修复的暴露服务器已超 8300 台。</p>
+    <div class="meta">来源：AIStart / The CODEW · <a href="https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>B · 前沿论文<span class="count">7 篇</span></h2>
+
+  <div class="card">
+    <h3>WikiSkill：把 Agent 经验编译为持久知识，实现技能演化<span class="tag tag-new">arXiv</span></h3>
+    <p>提出 WikiSkill 框架，将智能体的交互经验自动"编译"成结构化持久知识库，支持技能在跨任务、跨会话间的持续演化与复用，是 Agent 技能体系（Skills）方向的代表性新工作。</p>
+    <div class="paper-authors">Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27454" target="_blank">arXiv:2608.27454 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>并非所有"评估感知"都一样：能力框架决定合规行为<span class="tag tag-new">arXiv</span></h3>
+    <p>研究区分了模型"知道自己被评估"的不同来源，发现以"能力被评测"为框架的陈述会系统性预测模型的合规倾向，对安全评估的有效性（eval-awareness）给出更细粒度的结论。</p>
+    <div class="paper-authors">Allison Zhuang, Santiago Aranguri 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27340" target="_blank">arXiv:2608.27340 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>行为感知验证：更高效的安全 Harness 演化<span class="tag tag-new">arXiv</span></h3>
+    <p>提出"Verify Smarter, Evolve Further"：以行为感知的验证机制驱动 Agent harness 的自动演化，在显著降低验证开销的同时持续提升任务通过率，与本周"harness 价值逼近模型本体"的产业叙事相互印证。</p>
+    <div class="paper-authors">Jinghan Xu, Yikai Zhang, Aili Chen 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27311" target="_blank">arXiv:2608.27311 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>LLM 能设计近最优运筹算法<span class="tag tag-new">arXiv</span></h3>
+    <p>Jackie Baek 证明 LLM 可以为运筹学问题设计出接近最优的算法，展示 LLM 在算法设计（而非仅求解）层面的能力边界推进，对 OR/优化领域具有直接方法论意义。</p>
+    <div class="paper-authors">Jackie Baek</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27296" target="_blank">arXiv:2608.27296 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>什么才是好的 Agentic 数据？用 ACE 视角审视 LLM Agent 数据生成<span class="tag tag-new">arXiv</span></h3>
+    <p>系统研究 Agent 训练数据的生成质量问题，提出以 ACE（Agent-Centric Evaluation）视角评估数据多样性、难度与可验证性，为 Agent 后训练数据工程给出可操作框架。</p>
+    <div class="paper-authors">Xingshan Zeng, Zishan Xu, Boju Zhang 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27260" target="_blank">arXiv:2608.27260 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>CorporateBench：基于时序知识库的大规模企业问答基准<span class="tag tag-new">arXiv</span></h3>
+    <p>构建带时间维度知识库的企业级 Q&A 基准，专测模型对"过期信息"与时效推理的处理，填补企业场景（信息会过时）下基准空白。</p>
+    <div class="paper-authors">Sil Hamilton, Albert Yu Sun, Oscar J. Romero</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27391" target="_blank">arXiv:2608.27391 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>校准到"知道"却不校准到"行动"：伪造证据让 LLM Agent 承诺不可知之事<span class="tag tag-new">arXiv</span></h3>
+    <p>揭示 LLM Agent 的新失效模式：即使校准良好，伪造证据也会让 Agent 对本质上不可知的问题做出过度承诺，指出行动场景下的校准研究缺口。</p>
+    <div class="paper-authors">Pranav Aggarwal 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2608.27167" target="_blank">arXiv:2608.27167 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>腾讯混元 Hy4 preview 开源上线：770B-A49B、1M 上下文<span class="tag tag-oss">开放权重</span></h3>
+    <p>腾讯混元发布 Hy4 preview 并开源，总参数 770B、激活 49B、上下文 1M，覆盖软件工程、办公分析、游戏开发与科研。163 名内部专家对 203 个工程任务盲测均分 2.99，略优于 GLM-5.3（2.92）与 Kimi K3（2.94），可对话式生成游戏原型；还将三维 Blaschke-Lebesgue 几何难题的体积下界推进至 0.41104。已在 HuggingFace 与腾讯云 TokenHub 上线。</p>
+    <div class="meta">来源：腾讯研究院 · <a href="https://www.sohu.com/a/1069745836_455313" target="_blank">阅读全文 ↗</a> · <a href="https://huggingface.co/tencent" target="_blank">HuggingFace ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>谷歌发布 Gemini Omni 1.1 Flash：视频最长延展至 40 秒<span class="tag tag-new">新发布</span></h3>
+    <p>可读取最多 10 秒前序视频续接生成，单次扩展 10 秒、累计最高 40 秒；新增首尾帧控制与最长 3 秒视频参考输入。360p 草稿模式吞吐较 720p 提升约 60%、成本约三分之一，成片支持 4K 输出。已通过 Gemini API 与 Google AI Studio 开放。</p>
+    <div class="meta">来源：The CODEW · <a href="https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>HuggingFace Trending：Qwen3.8-Flash-Next 登顶（4.39k 赞），Qwen3.8 生态占榜过半<span class="tag tag-oss">生态</span></h3>
+    <p>Qwen3.8-Flash-Next 以 4.39k 赞、122k 下载居 trending 首位；GLM-5.3-Flash（347k 下载）与 GLM-5.3 权重版分列二三；Qwen3.8-27B 累计下载达 451 万、13.4k 赞。前 20 席中 Qwen3.8 系衍生（含 unsloth GGUF、FP8、社区微调）占据过半席位；Hy4-preview 上榜第 8，LTX-2.5、MiniMax-H3（526 万下载）、Breeze-TTS-2、Thomson-1.0-Small 持续在榜。</p>
+    <div class="meta">来源：HuggingFace · <a href="https://huggingface.co/models?sort=trending" target="_blank">查看榜单 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>社区量化：Qwen3.8-Flash-Next 2-bit 量化或成 64GB Mac 本地新默认<span class="tag tag-oss">本地部署</span></h3>
+    <p>Redis 作者 antirez"餐巾纸估算"：51B n-gram 存 SSD + 2-bit 量化，让 Qwen3.8-Flash-Next 成为 64GB MacBook 上可行的本地默认模型。RTX 5090 用户则在讨论 Qwen3.8-27B 该留 vLLM 还是切 ninfer——开源旗舰的本地部署讨论热度持续攀升。</p>
+    <div class="meta">来源：AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>LeCun 团队 LeVJEPA：视频预训练算力最高省 20 倍<span class="tag tag-new">架构</span></h3>
+    <p>LeVJEPA 用单编码器加小型投影头，以全局-局部视图不变性 + SIGReg 防表征坍缩，无需非对称双塔与像素重建，视频预训练算力较现有方案最多降低约 20 倍——JEPA 路线的又一实证。</p>
+    <div class="meta">来源：AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3> fal 上线 H3 Max Live：快于实时的"无限直播"视频生成<span class="tag tag-new">新发布</span></h3>
+    <p>fal 基于 MiniMax H3 推出 H3 Max Live：每帧即时生成，聊天 !prompt 数秒内改写画面走向，音画同流输出，实现"快于实时"的无限直播式生成。MiniMax H3 另被报登顶 I2V 排行（超越 Seedance），并可做任意图像转写实人物。</p>
+    <div class="meta">来源：AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<section>
+  <h2>D · Agent / 生态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>Claude Code 桌面端打通终端会话，支持跨端续接<span class="tag tag-new">功能</span></h3>
+    <p>Anthropic 为 Claude Code 桌面端新增 /resume 命令，可恢复此前在终端开启的历史会话，对话记录与上下文一并迁移；与终端原有 /desktop 命令形成双向通道，恢复后仍支持 /rewind 检查点回退。同月还上线额度恢复自动续跑、修复会话标题丢失等问题。</p>
+    <div class="meta">来源：腾讯研究院 · <a href="https://www.sohu.com/a/1069745836_455313" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>⚠️ Claude Code 被曝向 git 提交与 PR 静默附加公开会话链接<span class="tag tag-hot">安全</span></h3>
+    <p>用户发现 Claude Code 会在 git commit 与 PR 描述中静默附加 claude.ai/code/session_... 公开链接，存在会话内容泄露风险。部分用户已关闭自动归因（auto-attribution）或回退版本——使用 Claude Code 做团队协作的用户建议立即检查。</p>
+    <div class="meta">来源：AGI Hunt · <a href="https://agihunt.info/en/daily/2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>MCP 新路线图五大优先级：渐进式工具发现 + Agent 身份认证<span class="tag tag-new">规范</span></h3>
+    <p>MCP 维护者 8 月 22 日发布更新路线图，五大优先方向：Agentic 消息原语（webhooks/通道，替代客户端轮询）、HTTP 原生传输统一、Agent 身份与企业级安全（面向无浏览器场景的云工作负载与子 Agent 授权）、渐进式工具发现（服务器先暴露小入口、随对话展开目录，解决百工具挤爆上下文问题）、SDK 开发体验。Tools/call 结果类型也将统一契约。</p>
+    <div class="meta">来源：MCP Blog / Developers Digest · <a href="https://blog.modelcontextprotocol.io/tags/governance/index.xml" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>modelcontextprotocol/servers 发布 2026.8.18 同步版本<span class="tag tag-new">发布</span></h3>
+    <p>官方 servers 仓四个核心包同步升至 2026.8.18：everything / time / fetch / git server，采用日期式版本方案保持生态兼容一致。另 Sanity MCP server v2.30.0 新增数据集资产上传与 schema 发现能力。</p>
+    <div class="meta">来源：Agent Daily · <a href="https://agentdaily.dev/content/f5d2f9c0-659c-4ef0-9c76-4b409a3479e5" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>LangChain 托管 Deep Agents 公测：BYOC 部署上 AWS<span class="tag tag-new">框架</span></h3>
+    <p>LangChain 的 Managed Deep Agents 与 LLM Gateway 进入公测，支持 Bring-Your-Own-Cloud 方式部署在 AWS；同期发布 Deep Agents v0.7 与 Tuned Evaluators，降低企业级自主工作流的基建门槛。</p>
+    <div class="meta">来源：dailyai.report · <a href="https://dailyai.report/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Particle Radar 通过 MCP 开放 13 万播客的结构化音频检索<span class="tag tag-fund">工具</span></h3>
+    <p>前 Twitter 工程师创办的 Particle 发布 Radar 音频智能平台：转录并索引 13 万+ 播客、日增约 2 万集，通过专用 API 与 MCP 暴露结构化音频搜索与引用能力，对冲基金成为首批高频客户——"语音数据基础设施 for Agent"成为新赛道。</p>
+    <div class="meta">来源：The AI Brief · <a href="https://www.aibreakingwire.com/news/ai-brief-2026-08-31" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
+
+</div>
+</body>
+</html>
