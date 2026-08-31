@@ -1,214 +1,49 @@
 {
   "meta": {
-    "date": "2026-08-15",
-    "week": "星期六",
-    "note": "今日主题词：开源爆发 × 算力金融化。阿里开源 Qwen3.8-27B、智谱发布 GLM-5.3，中国开源阵营再下一城；英伟达联手华尔街筹建 5000 亿美元算力融资平台，AI 资本链条风险同步显影（Jane Street 单月巨亏 150 亿美元）。"
+    "date": "2026-08-31",
+    "week": "星期一",
+    "note": "OpenAI Astra 扩大内测（9月3日前后发布）；OpenAI 因 SpaceX 收购 Cursor 终止供模；Claude Sonnet 5 今日涨价 50% 并换 tokenizer，kimi-k2.5 与 moonshot-v1 退役。"
   },
   "highlights": [
-    {"title": "阿里开源 Qwen3.8-27B：Apache 2.0，消费级显卡可跑", "summary": "270 亿参数原生多模态稠密模型，262K 上下文（YaRN 外推 1M），reasoning_effort 动态思考；Agent 任务对标闭源旗舰，4-bit 量化约 16GB 可本地运行。"},
-    {"title": "智谱发布 GLM-5.3：编程逼近 Claude Fable 5 的最强开源模型", "summary": "7430 亿参数，靠后训练 Scaling 提升智能上界，公开基准取得开源第一；完整权重两周后开源、API 即将上线。"},
-    {"title": "英伟达联手六大华尔街机构筹建 5000 亿美元 AI 算力融资平台", "summary": "为 OpenAI、Anthropic 等客户采购芯片输血；同日 Jane Street 因 AI 对冲基金爆仓单月巨亏 150 亿美元，AI 资本链条风险显影。"}
+    {"title": "OpenAI Astra 扩大内测", "summary": "代号 mozaik-alpha-fdm，零样本一次生成 3D 等距地图与交互网页，端到端多智能体编排 + 持久化推理，预计 9 月 3 日前后发布，与 Anthropic Fable 5.1 正面竞争。"},
+    {"title": "OpenAI 终止向 Cursor 供模", "summary": "SpaceX 600 亿美元收购 Anysphere 交割 15 天后，OpenAI 启动控制权变更条款，11 月 12 日生效，缓冲期后开发者只能自带 API Key。"},
+    {"title": "今日多项生效变更", "summary": "Claude Sonnet 5 API 涨至 $3/$15 并叠加 tokenizer 变更（编码场景实际涨幅远超名义 50%）；kimi-k2.5 与 moonshot-v1 下线，Kimi K3 为迁移目标。"}
   ],
   "news": [
-    {
-      "title": "英伟达联手高盛、黑石等六大华尔街机构筹建 5000 亿美元 AI 算力融资平台",
-      "summary": "英伟达联合高盛、黑石、阿波罗、贝莱德、KKR 等机构筹建规模高达 5000 亿美元的 AI 算力融资平台，为 OpenAI、Anthropic 等客户采购芯片输血。黄仁勋澄清英伟达兜底上限为单笔交易的 25%，意在将 GPU 变为可投资资产、降低自身资产负债表压力。",
-      "date": "8月15日",
-      "source": "智通财经网",
-      "link": "http://view.inews.qq.com/a/20260815A03KXO00",
-      "models": []
-    },
-    {
-      "title": "阿里千问正式开源 Qwen3.8-27B：Apache 2.0，消费级显卡可跑",
-      "summary": "8 月 14 日晚间开源，270 亿参数原生多模态稠密模型，支持 262K 原生上下文（YaRN 可外推至 1M），新增 reasoning_effort 按任务难度动态调节思考深度。基准测试中 Agentic terminal coding 73.0（前代 63.4）、SWE-bench Pro 61.7、JobBench 33.4（前代 21.8）；4-bit 量化约 16GB，32GB MacBook 即可运行。此前旗舰 Qwen3.8-Max 权重也已开放。",
-      "date": "8月15日",
-      "source": "量子位 / IT之家",
-      "link": "https://new.qq.com/rain/a/20260815A03QQ300?refer=cp_1009",
-      "models": ["Qwen3.8-27B", "Qwen3.8 Max"]
-    },
-    {
-      "title": "智谱发布 GLM-5.3：编程逼近 Claude Fable 5 的最强开源模型",
-      "summary": "8 月 14 日发布新一代基座模型 GLM-5.3，总参数 7430 亿。基座未变，靠后训练 Scaling 提升智能上界：内部自建评测较 GLM-5.2 提升 50%，Terminal Bench 3.0、Agents' Last Exam (CLI) 等公开基准取得开源第一。已上线 ZCode、AutoClaw 等工具，API 即将上线，完整权重两周后开源。",
-      "date": "8月15日",
-      "source": "IT之家 / 界面新闻",
-      "link": "https://www.ithome.com/0/989/979.htm",
-      "models": ["GLM-5.3", "Claude Fable 5"]
-    },
-    {
-      "title": "谷歌 Gemini 3.7 Flash 半价铺开：DeepSWE 65.3%，三周闪电迭代",
-      "summary": "距 3.6 Flash 仅三周的迭代版，入门价仅为 3.6 的一半（$0.75/$3.75 每百万 tokens，至年底）。DeepSWE 从 49.0% 升至 65.3%、FrontierCode 43.6% 超 Claude Sonnet 5、AutomationBench 30.4%。当日同步进入 Gemini API、AI Studio、GitHub Copilot、Cursor、Cline、Devin 等全线工具链。",
-      "date": "8月15日",
-      "source": "Digital Colliers / Techmeme",
-      "link": "https://www.digitalcolliers.com/news/2026-08-14",
-      "models": ["Gemini 3.7 Flash", "Claude Sonnet 5"]
-    },
-    {
-      "title": "OpenAI 开放 GPT-5.6 Sol 超高速模式：最高 14 倍速、每秒 750 tokens",
-      "summary": "Ultrafast 模式由 Cerebras 晶圆级芯片驱动，输出速度约为 Standard 的 14 倍（最高 750 tokens/秒），面向实时对话、自动化智能体等高并发场景，先对部分客户有限预览。Cerebras 称 Humanity's Last Exam 全部 2500 题仅用 11 小时 11 分钟（Claude Fable 5 需 78 小时）。",
-      "date": "8月15日",
-      "source": "OpenAI Blog / TechCrunch",
-      "link": "https://openai.com/blog/",
-      "models": ["GPT-5.6 Sol", "Claude Fable 5"]
-    },
-    {
-      "title": "OpenAI 上市前年化营收有望突破 400 亿美元",
-      "summary": "据知情人士，OpenAI 年化营收有望超 400 亿美元，较 2025 年末近乎翻番，为登陆华尔街提供支撑。增长来自 AI 代码软件业务、订阅扩张与起步中的广告业务。另据财联社，其首席营收官 Denise Dresser 上任不到一年即离职，公司同期任命 Dali Rajic 接任，正为潜在 IPO 铺路。",
-      "date": "8月15日",
-      "source": "界面新闻 / 财联社",
-      "link": "https://www.163.com/dy/article/L4C47JGB0534A4SC.html",
-      "models": []
-    },
-    {
-      "title": "Jane Street 因 AI 对冲基金爆仓单月巨亏 150 亿美元",
-      "summary": "华尔街自营交易巨头 Jane Street 今年 7 月遭遇约 150 亿美元损失，为十年来首次单月亏损，主因投资的 AI 对冲基金 Situational Awareness 爆仓及科技股剧烈震荡。公司正推进约 146 亿美元债务重组，并主动关闭 7 月造成亏损的风险敞口。",
-      "date": "8月15日",
-      "source": "华尔街见闻",
-      "link": "http://view.inews.qq.com/a/20260815A03LTN00",
-      "models": []
-    },
-    {
-      "title": "世界银行报告：AI 有望成发展中国家'追赶加速器'",
-      "summary": "世行 2026 年世界发展报告指出，AI 普及速度远超蒸汽机、电力与互联网，有望助发展中国家 10 年内取得原本需上百年的跨越。专家认为开源框架与'技术即服务'模式降低后发国家门槛，但电力、网络、算力与人才鸿沟可能催生新的'智能鸿沟'。",
-      "date": "8月15日",
-      "source": "人民网",
-      "link": "http://view.inews.qq.com/a/20260815A036O300",
-      "models": []
-    },
-    {
-      "title": "腾讯 Q2 资本开支 527.8 亿同比 +176%，混元 Hy4 计划近期上线",
-      "summary": "腾讯 2026 年 Q2 资本开支 527.8 亿元，同比增 176%，AI 新业务拖累经营利润约 105 亿元。总裁刘炽平称投入集中在今明两年、风险可控；混元 Hy4 计划近期上线，WorkBuddy 国内办公智能体访问量居首。",
-      "date": "8月15日",
-      "source": "中国经营报",
-      "link": "http://view.inews.qq.com/a/20260815A02BP100",
-      "models": []
-    },
-    {
-      "title": "前 OpenAI 算法专家姜旭新项目亮源新创获数亿元 Pre-A 融资",
-      "summary": "具身智能基础模型企业亮源新创完成数亿元 Pre-A 轮融资，国科投资领投，招商局创投、襄禾资本参与。创始人姜旭曾任 OpenAI 算法专家，参与 InstructGPT 到 GPT-4 全程研发，公司提出'规模化预训练-对齐-部署'三段范式。",
-      "date": "8月15日",
-      "source": "腾讯证券",
-      "link": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?t=1#/index?_tentrees_trans=0&id=SN2026081410162294d6fb2e",
-      "models": []
-    }
+    {"title": "OpenAI Astra 内测曝光：前端能力大幅跃升，9 月 3 日前后发布", "summary": "OpenAI 扩大新模型 Astra（代号 mozaik-alpha-fdm）内测，Max 模式下零样本一次生成 3D 等距地图与交互网页；核心突破含端到端多智能体编排、超长程任务保持、持久化推理与即时自我纠错，预计 9 月 3 日前后发布，与 Fable 5.1 正面竞争。", "date": "8月31日", "source": "腾讯研究院/The CODEW", "link": "https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html", "models": ["Claude Fable 5"]},
+    {"title": "OpenAI 终止向 Cursor 供应模型，11 月 12 日起生效", "summary": "SpaceX 以 600 亿美元收购 Cursor 母公司 Anysphere 并完成交割 15 天后，OpenAI 启动控制权变更条款宣布终止直接供模，Astra 等新模型不再提供；Cursor 称 OpenAI 模型仅占 5% 流量，Anthropic 已补位。", "date": "8月31日", "source": "腾讯研究院/TechCrunch", "link": "https://www.sohu.com/a/1069745836_455313", "models": []},
+    {"title": "今日生效：Claude Sonnet 5 涨价 50% + tokenizer 变更，Kimi 旧模型退役", "summary": "Claude Sonnet 5 API 定价从 $2/$10 升至 $3/$15（每百万 token），tokenizer 切换使代码类输入多产生 10%~35% token；同日 kimi-k2.5 与 moonshot-v1 退役，迁移目标 Kimi K3；GPT-5.4 退出 ChatGPT 登录版 Codex，由 GPT-5.6 Terra 与 Luna 接替。", "date": "8月31日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-31-2026", "models": ["Kimi K3", "GPT-5.6 Terra", "Claude Sonnet 5"]},
+    {"title": "Claude Code 周限额\"明升暗降\"，Anthropic 删帖重发承认实际 -17%", "summary": "Anthropic 宣布 9 月 14 日起 Claude Code 周限额\"永久上调 25%\"，用户算出较当前实降 17%；Anthropic 删除原帖并重发承认 -17%。前沿模型\"定价换增长\"窗口期正在关闭。", "date": "8月31日", "source": "AIToolsRecap", "link": "https://aitoolsrecap.com/Blog/ai-news-august-31-2026", "models": []},
+    {"title": "Lambda 再获 10 亿美元私募债买 GPU，租给微软", "summary": "Neocloud 厂商 Lambda 完成 10 亿美元私募债（摩根大通安排），采购英伟达 AI 芯片并直接租给微软，凸显 AI 算力热潮下\"举债买卡、长租回血\"的金融策略已成主流。", "date": "8月31日", "source": "AIStart/The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-31", "models": []},
+    {"title": "索尼音乐 + 华纳查普尔起诉 Anthropic 歌词侵权，或索赔数十亿美元", "summary": "Sony Music Publishing 与 Warner Chappell 在加州北区法院起诉 Anthropic，指控大规模抓取数万首版权歌曲训练 Claude，单作品最高索赔 15 万美元，并首次把\"丢弃模型或重新训练\"写入诉求；Anthropic 否认并计划应战。", "date": "8月31日", "source": "AIStart/AGI Hunt", "link": "https://agihunt.info/en/daily/2026-08-31", "models": []},
+    {"title": "前英伟达研究团队创办 Veeda，9000 万美元种子轮创加拿大纪录", "summary": "三名前英伟达研究员创办 Veeda Innovation，Khosla Ventures 与 Radical Ventures 联合领投 9000 万美元种子轮，主攻多模态世界模型，为人形机器人提供\"内部仿真引擎\"。", "date": "8月31日", "source": "The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-31", "models": []},
+    {"title": "谷歌测试搜索默认展开 AI 回答，传统链接进一步下沉", "summary": "Google 对部分查询自动展开结果页顶部 AI 摘要，传统网页链接更靠下；同期在 AI Mode 上线三大 AI 旅行规划功能，向 Agent 直接完成交易型商务推进。", "date": "8月31日", "source": "AIStart/Search Engine Roundtable", "link": "https://aistart.ai/news", "models": []},
+    {"title": "微软 8B 开源级模型经 Harness 优化追平 Claude Opus 4.5", "summary": "Meta 研究团队通过优化运行时层（harness），让 80 亿参数模型在 CRM 迁移等企业级任务上追平 Claude Opus 4.5，印证 Agent 时代 harness 与编排层价值正快速逼近模型本体。", "date": "8月31日", "source": "AIStart", "link": "https://aistart.ai/news", "models": []},
+    {"title": "企业文档发现 227 条指向\"无主代码\"的安装命令", "summary": "安全分析在企业文档中发现 227 条安装命令指向无人维护、无归属的代码包，与 Claude、Codex、Hermes 等 AI 编码工具生成内容相关，形成新型供应链风险。", "date": "8月31日", "source": "AIStart/The CODEW", "link": "https://www.thecodew.com/2026/08/openai-expands-astra-testing-anthropic-launches-MHS.html", "models": []}
   ],
   "papers": [
-    {
-      "title": "OmniScientist：全模态、全学科的 AI 科学家",
-      "titleEn": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
-      "summary": "多模态 + Agent 前沿交叉工作，构建能跨模态、跨学科自主完成科研闭环的 AI 科学家智能体。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.13558"
-    },
-    {
-      "title": "AlayaWorld：交互式长时程世界建模完整技术报告",
-      "titleEn": "AlayaWorld: Interactive Long-Horizon World Modeling - Full Technical Report (v1.1)",
-      "summary": "17 人团队的大型技术报告，覆盖多模态理解、世界模型、长时程决策等热点方向。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.13492"
-    },
-    {
-      "title": "StateBridge：LLM 多智能体系统的免训练隐状态对齐",
-      "titleEn": "StateBridge: Training-free Hidden-state Alignment for Latent Communication in LLM Multi-Agent Systems",
-      "summary": "为 LLM 多智能体潜空间通信提出免训练对齐方案，已获 COLM 2026 接收，是 Agent 通信机制的重要创新。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.13317"
-    },
-    {
-      "title": "Beyond Final Scores：长时程 AI 研发 Agent 的系统性评测",
-      "titleEn": "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
-      "summary": "直击当前 Agent 评测只看最终分数、忽视过程问题的痛点，对长时程 AI 研发场景下的 Agent 进行系统性评估。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.13417"
-    },
-    {
-      "title": "Practice Makes Unsafe：自我改进 LLM Agent 的技能错误演化",
-      "titleEn": "Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents",
-      "summary": "揭示自我改进 Agent'越练越不安全'的隐患：技能在迭代中可能错误演化，是 AI 安全与 Agent 交叉方向的热点研究。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.12851"
-    },
-    {
-      "title": "FlashDrive：面向自动驾驶的视觉-语言-动作快速推理",
-      "titleEn": "FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving",
-      "summary": "多模态 + 具身智能 + 实际应用：面向自动驾驶的 VLA 模型快速推理方案，工程价值高。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.12932"
-    },
-    {
-      "title": "重新思考 LLM 归一化层位置：课程式深度增长下的 Post-Norm",
-      "titleEn": "Rethinking Normalization Placement for LLMs: Post-Norm under Curriculum Depth Growing",
-      "summary": "结合课程式深度增长训练重新审视归一化层位置，对大模型训练效率与稳定性有直接参考价值。",
-      "authors": "arXiv cs.AI",
-      "link": "https://arxiv.org/abs/2608.13156"
-    }
+    {"title": "WikiSkill：把 Agent 经验编译为持久知识，实现技能演化", "titleEn": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution", "summary": "将智能体交互经验自动编译成结构化持久知识库，支持技能跨任务、跨会话持续演化与复用。", "authors": "Liyan Tang, Cyrus Rashtchian, Chun-Sung Ferng 等", "link": "https://arxiv.org/abs/2608.27454"},
+    {"title": "并非所有\"评估感知\"都一样：能力框架决定合规行为", "titleEn": "Not All Eval-Awareness Is Equal: Capabilities Framing Predicts Compliance", "summary": "区分模型\"知道被评估\"的不同来源，发现以能力被评测为框架的陈述会系统性预测合规倾向。", "authors": "Allison Zhuang, Santiago Aranguri 等", "link": "https://arxiv.org/abs/2608.27340"},
+    {"title": "行为感知验证：更高效的安全 Harness 演化", "titleEn": "Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification", "summary": "以行为感知验证机制驱动 Agent harness 自动演化，降低验证开销同时持续提升通过率。", "authors": "Jinghan Xu, Yikai Zhang, Aili Chen 等", "link": "https://arxiv.org/abs/2608.27311"},
+    {"title": "LLM 能设计近最优运筹算法", "titleEn": "LLMs Can Design Near-Optimal OR Algorithms", "summary": "证明 LLM 可为运筹学问题设计接近最优的算法，推进 LLM 在算法设计层面的能力边界。", "authors": "Jackie Baek", "link": "https://arxiv.org/abs/2608.27296"},
+    {"title": "什么才是好的 Agentic 数据？ACE 视角审视 LLM Agent 数据生成", "titleEn": "What Makes Good Agentic Data? An ACE Lens on Data Generation for LLM Agents", "summary": "系统研究 Agent 训练数据生成质量，提出 ACE 视角评估数据多样性、难度与可验证性。", "authors": "Xingshan Zeng, Zishan Xu, Boju Zhang 等", "link": "https://arxiv.org/abs/2608.27260"},
+    {"title": "CorporateBench：基于时序知识库的大规模企业问答基准", "titleEn": "CorporateBench: Large-Scale Q&A Benchmarking with Temporal Knowledge Bases", "summary": "构建带时间维度的企业级 Q&A 基准，专测模型对过期信息与时效推理的处理。", "authors": "Sil Hamilton, Albert Yu Sun, Oscar J. Romero", "link": "https://arxiv.org/abs/2608.27391"},
+    {"title": "校准到\"知道\"却不校准到\"行动\"：伪造证据让 LLM Agent 承诺不可知之事", "titleEn": "Calibrated Enough to Know, Not Calibrated to Act: Fabricated Evidence Makes LLM Agents Commit to the Unknowable", "summary": "揭示即使校准良好，伪造证据也会让 Agent 对不可知问题过度承诺的新失效模式。", "authors": "Pranav Aggarwal 等", "link": "https://arxiv.org/abs/2608.27167"}
   ],
   "models": [
-    {
-      "name": "Qwen3.8-27B",
-      "vendor": "阿里巴巴",
-      "highlight": "8/14 晚开源，270 亿参数原生多模态稠密模型，262K 上下文（YaRN 外推 1M），reasoning_effort 动态思考；Agent 任务对标闭源旗舰（CoWorkBench 70.7 vs Opus 4.6 Max 68.2），4-bit 量化约 16.1GB，32GB MacBook 可跑，Apache 2.0 商用无忧。",
-      "link": "https://huggingface.co/collections/Qwen/qwen38"
-    },
-    {
-      "name": "GLM-5.3",
-      "vendor": "智谱",
-      "highlight": "8/14 发布，7430 亿参数，靠后训练 Scaling 大幅提升智能上界；编程与智能体能力逼近 Claude Fable 5，为当前排名最高开源模型；完整权重两周后开源、API 即将上线。",
-      "link": "https://www.ithome.com/0/989/979.htm"
-    },
-    {
-      "name": "Gemini 3.7 Flash",
-      "vendor": "Google",
-      "highlight": "8/13 发布、距 3.6 仅三周：DeepSWE 65.3%（+33% 相对提升）、FrontierCode 43.6%，入门价减半至 $0.75/$3.75 每百万 tokens（至年底）；Artificial Analysis 智能指数 High 档 56 分（+4），1M 上下文。",
-      "link": "https://www.digitalcolliers.com/news/2026-08-14"
-    },
-    {
-      "name": "GPT-5.6 Sol",
-      "vendor": "OpenAI",
-      "highlight": "《GPT-5.6 构建者指南》披露：Sol 在 ARC-AGI-3 上从 13.3% 飙至 38.3% 且输出 token 降 6 倍；Ultrafast 模式由 Cerebras 驱动最高 750 tokens/秒、14 倍速，有限预览开放。",
-      "link": "https://openai.com/blog/"
-    },
-    {
-      "name": "Nemotron 3.5 Lightning",
-      "vendor": "NVIDIA",
-      "highlight": "30B MoE 开源模型，专注快速代理执行；与 Meta Muse-Glimmer-30B、Liquid AI LFM2.5 等同期发布，单张 RTX 5090 或 DGX Spark 即可高效运行桌面级本地 AI。",
-      "link": "https://huggingface.co/nvidia"
-    }
+    {"name": "腾讯混元 Hy4 preview（开源）", "vendor": "腾讯", "highlight": "770B 总参 / 49B 激活 / 1M 上下文，163 名专家 203 项工程任务盲测均分 2.99 超 GLM-5.3（2.92）与 Kimi K3（2.94），已在 HuggingFace 与 TokenHub 开源。", "link": "https://huggingface.co/tencent"},
+    {"name": "Gemini Omni 1.1 Flash", "vendor": "Google", "highlight": "视频续接生成累计最长 40 秒，新增首尾帧控制与 3 秒视频参考；360p 草稿模式吞吐 +60%、成本约 1/3，成片支持 4K。", "link": "https://huggingface.co/models?sort=trending"},
+    {"name": "HuggingFace Trending 全景", "vendor": "Qwen / 智谱 / MiniMax / Lightricks", "highlight": "Qwen3.8-Flash-Next 登顶（4.39k 赞、122k 下载），GLM-5.3-Flash 次席（347k 下载），Qwen3.8-27B 累计 451 万下载；Qwen3.8 系衍生占前 20 过半席位，Hy4-preview 上榜第 8。", "link": "https://huggingface.co/models?sort=trending"},
+    {"name": "Qwen3.8-Flash-Next 2-bit 量化", "vendor": "社区（unsloth 等）", "highlight": "antirez 估算 2-bit 量化 + SSD n-gram 可让其在 64GB Mac 上本地运行，或成 64GB MacBook 新默认。", "link": "https://huggingface.co/unsloth"},
+    {"name": "LeVJEPA", "vendor": "LeCun 团队", "highlight": "单编码器 + 投影头、全局-局部视图不变性 + SIGReg，视频预训练算力最高省约 20 倍。", "link": "https://agihunt.info/en/daily/2026-08-31"},
+    {"name": "H3 Max Live（fal）", "vendor": "fal × MiniMax", "highlight": "快于实时的无限直播式视频生成，每帧即时生成、聊天 prompt 数秒改写画面，音画同流；MiniMax H3 另登顶 I2V 排行。", "link": "https://huggingface.co/MiniMaxAI"}
   ],
   "ecosystem": [
-    {
-      "title": "MCP SDK 总下载量突破 10 亿，无状态协议规范落地",
-      "summary": "MCP 生态里程碑：TypeScript 与 Python SDK 均跨过 10 亿总下载量，月下载近 5 亿；2026-07-28 规范将核心从有状态常连改为无状态请求/响应，远程服务器可置于普通轮询负载均衡之后。AWS 贡献的 Tasks 扩展覆盖长时运行 Agent。",
-      "source": "MCP Blog",
-      "link": "https://www.cadb.info/reports/claude-ai-daily-2026-08-14.html",
-      "models": []
-    },
-    {
-      "title": "Anthropic 研究：多代理协作的引导与目标一致性",
-      "summary": "Anthropic 发布博客分析 swarm 与 orchestrated 代理的局限，强调引导与目标一致性在多代理协作中的重要性；同期 Enterprise 版 Claude Code / Cowork 增加合规 API 覆盖与 Skill 安全扫描。",
-      "source": "Anthropic Blog",
-      "link": "https://www.cadb.info/reports/claude-ai-daily-2026-08-14.html",
-      "models": []
-    },
-    {
-      "title": "OpenAI Computer History：把真实操作变成持久记忆",
-      "summary": "OpenAI 推出 macOS 新功能 Computer History，将用户在 Mac 上的真实活动转化为 ChatGPT 与 Codex 的持久记忆，Agent 记忆成为开发者生产力竞赛的新前沿。",
-      "source": "Jason Robert News",
-      "link": "https://jasonrobert.dev/news",
-      "models": []
-    },
-    {
-      "title": "Mattermost v11.10：插件注册 MCP Server、动态工具调用",
-      "summary": "协作平台 Agent 能力升级：插件可注册为 MCP Server 直接向 Agent 暴露工具；动态工具调用按需加载相关工具；文件按需分页读取；支持主模型故障时的模型回退。",
-      "source": "Mattermost Blog",
-      "link": "https://mattermost.com/blog/mattermost-v11-10-is-now-available",
-      "models": []
-    },
-    {
-      "title": "Xnurta 发布零售媒体 MCP Server：广告投放接入 AI 助手",
-      "summary": "广告平台 Xnurta 发布 MCP Server 通用版，把零售媒体数据接入 ChatGPT、Claude 等 AI 助手；首批写能力（受控执行）同步进入闭测，后续将推出批量操作与投放建议引擎。",
-      "source": "Business Wire",
-      "link": "https://www.morningstar.com/news/business-wire/20260813360711/xnurta-launches-mcp-for-retail-media-with-ai-powered-campaign-management-entering-beta-the-same-day",
-      "models": []
-    }
+    {"title": "Claude Code 桌面端打通终端会话，支持跨端续接", "summary": "新增 /resume 命令恢复终端历史会话，与 /desktop 形成双向通道，恢复后仍支持 /rewind 回退；同月上线额度恢复自动续跑。", "source": "腾讯研究院", "link": "https://www.sohu.com/a/1069745836_455313", "models": []},
+    {"title": "Claude Code 被曝向 git 提交与 PR 静默附加公开会话链接", "summary": "用户发现 commit 与 PR 描述被静默附加 claude.ai/code/session_... 公开链接，存在会话泄露风险；部分用户已关闭自动归因或回退版本。", "source": "AGI Hunt", "link": "https://agihunt.info/en/daily/2026-08-31", "models": []},
+    {"title": "MCP 新路线图五大优先级：渐进式工具发现 + Agent 身份认证", "summary": "MCP 维护者 8 月 22 日发布路线图：Agentic 消息原语（webhooks/通道）、HTTP 原生传输统一、Agent 身份与企业安全、渐进式工具发现（小入口按需展开目录）、SDK 体验；tools/call 结果类型将统一契约。", "source": "MCP Blog/Developers Digest", "link": "https://blog.modelcontextprotocol.io/tags/governance/index.xml", "models": []},
+    {"title": "modelcontextprotocol/servers 发布 2026.8.18 同步版本", "summary": "官方 servers 仓 four 核心包（everything/time/fetch/git）同步升至 2026.8.18；Sanity MCP server v2.30.0 新增资产上传与 schema 发现。", "source": "Agent Daily", "link": "https://agentdaily.dev/content/f5d2f9c0-659c-4ef0-9c76-4b409a3479e5", "models": []},
+    {"title": "LangChain 托管 Deep Agents 公测：BYOC 部署上 AWS", "summary": "Managed Deep Agents 与 LLM Gateway 公测，支持 AWS BYOC；同期发布 Deep Agents v0.7 与 Tuned Evaluators。", "source": "dailyai.report", "link": "https://dailyai.report/", "models": []},
+    {"title": "Particle Radar 通过 MCP 开放 13 万播客的结构化音频检索", "summary": "转录索引 13 万+ 播客、日增 2 万集，通过 API 与 MCP 暴露结构化音频搜索，对冲基金为首批高频客户；\"语音数据基础设施 for Agent\"成新赛道。", "source": "The AI Brief", "link": "https://www.aibreakingwire.com/news/ai-brief-2026-08-31", "models": []}
   ]
 }
