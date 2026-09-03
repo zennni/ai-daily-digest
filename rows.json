@@ -1,5 +1,5 @@
 {
- "date": "2026-09-02",
+ "date": "2026-09-03",
  "models": [
   {
    "name": "Claude Fable 5.1",
@@ -90,6 +90,28 @@
    "rank": 4
   },
   {
+   "name": "Muse Spark 1.3",
+   "vendor": "Meta",
+   "country": "美国",
+   "tier": "Max",
+   "aa": 62,
+   "aa_dec": null,
+   "pin": 1.25,
+   "pcache": 0.15,
+   "pout": 4.25,
+   "open_": "闭源(权重承诺待发布)",
+   "lic": "专有",
+   "src": "官方",
+   "note": "Max 档 AA 62 分,但为 <b>limited preview（限量预览、未全量开放）</b>;价格同 xHigh 档;全面开放时间待官方公告",
+   "cost": 2.3125,
+   "ability": 93.9,
+   "costscore": 42.007827585321394,
+   "value": 73,
+   "eff": 26.8,
+   "grade": "A",
+   "rank": 5
+  },
+  {
    "name": "Claude Fable 5.1",
    "vendor": "Anthropic",
    "country": "美国",
@@ -109,7 +131,29 @@
    "value": 56,
    "eff": 2.8,
    "grade": "C",
-   "rank": 5
+   "rank": 6
+  },
+  {
+   "name": "Muse Spark 1.3",
+   "vendor": "Meta",
+   "country": "美国",
+   "tier": "xHigh",
+   "aa": 61,
+   "aa_dec": null,
+   "pin": 1.25,
+   "pcache": 0.15,
+   "pout": 4.25,
+   "open_": "闭源(权重承诺待发布)",
+   "lic": "专有",
+   "src": "官方",
+   "note": "9/2 深夜-9/3 发布,取代 Muse Spark 1.2;1M 上下文;多模态;AA 9/3 快照 xhigh 61 分（追平 GPT-5.6 Sol Max）;价格延续 1.2 的 $1.25/$4.25/缓存 $0.15;工具调用 token -20%、整体 token -25%（官方口径）",
+   "cost": 2.3125,
+   "ability": 92.4,
+   "costscore": 42.007827585321394,
+   "value": 72,
+   "eff": 26.4,
+   "grade": "A",
+   "rank": 7
   },
   {
    "name": "Grok 4.6",
@@ -131,7 +175,7 @@
    "value": 69,
    "eff": 17.4,
    "grade": "B",
-   "rank": 6
+   "rank": 8
   },
   {
    "name": "GPT-5.6 Sol",
@@ -153,7 +197,7 @@
    "value": 62,
    "eff": 6.8,
    "grade": "B",
-   "rank": 7
+   "rank": 9
   },
   {
    "name": "Claude Opus 5",
@@ -175,7 +219,7 @@
    "value": 61,
    "eff": 5.4,
    "grade": "B",
-   "rank": 8
+   "rank": 10
   },
   {
    "name": "GLM-5.3",
@@ -197,7 +241,7 @@
    "value": 71,
    "eff": 24.0,
    "grade": "A",
-   "rank": 9
+   "rank": 11
   },
   {
    "name": "Grok 4.6",
@@ -219,7 +263,7 @@
    "value": 68,
    "eff": 17.1,
    "grade": "B",
-   "rank": 10
+   "rank": 12
   },
   {
    "name": "Kimi K3",
@@ -241,7 +285,29 @@
    "value": 63,
    "eff": 8.9,
    "grade": "B",
-   "rank": 11
+   "rank": 13
+  },
+  {
+   "name": "Gemini 3.8 Flash",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "High",
+   "aa": 59,
+   "aa_dec": null,
+   "pin": 0.75,
+   "pcache": 0.075,
+   "pout": 3.75,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "9/2 发布,取代 Gemini 3.7 Flash;1M 上下文;促销价 $0.75/$3.75 至 12/31/2026(2027 起 $1.50/$7.50);缓存 90% 折扣保留($0.075);AA high 59 分（较 3.7 Flash 的 56 +3）;AA 官方称 $0.58/任务站上性价比 Pareto 前沿",
+   "cost": 1.6875,
+   "ability": 89.4,
+   "costscore": 47.82531661325103,
+   "value": 73,
+   "eff": 35.0,
+   "grade": "A",
+   "rank": 14
   },
   {
    "name": "Grok 4.6",
@@ -263,7 +329,7 @@
    "value": 67,
    "eff": 16.9,
    "grade": "B",
-   "rank": 12
+   "rank": 15
   },
   {
    "name": "GPT-5.6 Sol",
@@ -285,7 +351,7 @@
    "value": 60,
    "eff": 6.6,
    "grade": "B",
-   "rank": 13
+   "rank": 16
   },
   {
    "name": "Claude Opus 5",
@@ -307,7 +373,7 @@
    "value": 59,
    "eff": 5.2,
    "grade": "C",
-   "rank": 14
+   "rank": 17
   },
   {
    "name": "Qwen3.8 Max",
@@ -317,19 +383,19 @@
    "aa": 58,
    "aa_dec": 58.1,
    "pin": 2.0,
-   "pcache": 0.25,
+   "pcache": 0.17,
    "pout": 6.0,
    "open_": "开放权重(8/14 正式开源)",
    "lic": "Apache 2.0",
    "src": "官方",
-   "note": "2.4T/95B;1M 上下文;权重 8/14 晚正式开源(Qwen3.8-2.4T-A95B);国内 ¥12/¥36;AA 已单列开源版条目(58)",
+   "note": "2.4T/95B;1M 上下文;权重 8/14 晚正式开源(Qwen3.8-2.4T-A95B);国内 ¥12/¥36;AA 已单列开源版条目(58);<b>9/2 上线带日期快照 Qwen3.8-Max-0902</b>（$2/$6,显式缓存 $0.17/隐式 $0.25,主表按显式缓存价）,Code Arena 1691 分登顶;0902 本身暂无同口径 AA 评分（AA 58 为 8 月版基线）,主榜暂按同一模型收录并注明",
    "cost": 3.5,
    "ability": 87.9,
    "costscore": 34.355942514611755,
    "value": 66,
    "eff": 16.6,
    "grade": "B",
-   "rank": 15
+   "rank": 18
   },
   {
    "name": "Claude Fable 5.1",
@@ -351,7 +417,7 @@
    "value": 53,
    "eff": 2.6,
    "grade": "C",
-   "rank": 16
+   "rank": 19
   },
   {
    "name": "GLM-5.3-Flash",
@@ -373,29 +439,29 @@
    "value": 84,
    "eff": 207.3,
    "grade": "S",
-   "rank": 17
+   "rank": 20
   },
   {
-   "name": "Muse Spark 1.2",
-   "vendor": "Meta",
+   "name": "Gemini 3.8 Flash",
+   "vendor": "Google",
    "country": "美国",
-   "tier": "xHigh",
+   "tier": "Medium",
    "aa": 57,
-   "aa_dec": 56.8,
-   "pin": 1.25,
-   "pcache": 0.15,
-   "pout": 4.25,
-   "open_": "闭源(权重承诺待发布)",
+   "aa_dec": null,
+   "pin": 0.75,
+   "pcache": 0.075,
+   "pout": 3.75,
+   "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "1M 上下文;多模态",
-   "cost": 2.3125,
+   "note": "AA medium 57 分;促销价同左",
+   "cost": 1.6875,
    "ability": 86.4,
-   "costscore": 42.007827585321394,
-   "value": 69,
-   "eff": 24.6,
-   "grade": "B",
-   "rank": 18
+   "costscore": 47.82531661325103,
+   "value": 71,
+   "eff": 33.8,
+   "grade": "A",
+   "rank": 21
   },
   {
    "name": "GPT-5.6 Terra",
@@ -417,7 +483,7 @@
    "value": 63,
    "eff": 11.4,
    "grade": "B",
-   "rank": 19
+   "rank": 22
   },
   {
    "name": "GPT-5.6 Sol",
@@ -439,7 +505,7 @@
    "value": 59,
    "eff": 6.3,
    "grade": "C",
-   "rank": 20
+   "rank": 23
   },
   {
    "name": "Qwen3.8-Flash",
@@ -448,42 +514,20 @@
    "tier": "默认",
    "aa": 56,
    "aa_dec": null,
-   "pin": 0.117944,
-   "pcache": 0.014743,
-   "pout": 0.39806,
+   "pin": 0.117982,
+   "pcache": 0.014748,
+   "pout": 0.398189,
    "open_": "开放权重(Flash-Next 已开源)",
    "lic": "Qwen Community 1.0",
    "src": "官方(QwenCloud)",
    "note": "Qwen4 架构先导多模态 MoE(125B+51B Emb/6B 激活);262K→1M 上下文;AA 8/28 首评 56(v4.1.1,reasoning 版;8/27 Changelog 单列 Flash-Next 条目同为 56);<b>8/27 起降价:输入 ¥1→¥0.8、输出 ¥3→¥2.7、缓存 ¥0.1</b>(≈$0.118/$0.398/$0.0147);Flash-Next 权重 8/26 已开源(Qwen Community 1.0,非 Apache 2.0);训练成本约 Qwen3.7-Plus 的 1/9;AA 实测 200M 输出 token(冗长,实际账单高于直觉)",
-   "cost": 0.217459,
+   "cost": 0.21752925,
    "ability": 84.8,
-   "costscore": 85.65683640746587,
+   "costscore": 85.65087275817565,
    "value": 85,
-   "eff": 257.5,
+   "eff": 257.4,
    "grade": "S",
-   "rank": 21
-  },
-  {
-   "name": "Gemini 3.7 Flash",
-   "vendor": "Google",
-   "country": "美国",
-   "tier": "High",
-   "aa": 56,
-   "aa_dec": 56.0,
-   "pin": 0.75,
-   "pcache": 0.075,
-   "pout": 3.75,
-   "open_": "闭源",
-   "lic": "专有",
-   "src": "官方",
-   "note": "8/13 发布;促销至 12/31,2027 起 $1.50/$7.50;1M 上下文",
-   "cost": 1.6875,
-   "ability": 84.8,
-   "costscore": 47.82531661325103,
-   "value": 70,
-   "eff": 33.2,
-   "grade": "A",
-   "rank": 22
+   "rank": 24
   },
   {
    "name": "GPT-5.6 Sol",
@@ -505,7 +549,7 @@
    "value": 58,
    "eff": 6.2,
    "grade": "C",
-   "rank": 23
+   "rank": 25
   },
   {
    "name": "Claude Sonnet 5",
@@ -527,29 +571,7 @@
    "value": 62,
    "eff": 12.2,
    "grade": "B",
-   "rank": 24
-  },
-  {
-   "name": "Gemini 3.7 Flash",
-   "vendor": "Google",
-   "country": "美国",
-   "tier": "Medium",
-   "aa": 53,
-   "aa_dec": null,
-   "pin": 0.75,
-   "pcache": 0.075,
-   "pout": 3.75,
-   "open_": "闭源",
-   "lic": "专有",
-   "src": "官方",
-   "note": "促销价同左",
-   "cost": 1.6875,
-   "ability": 80.3,
-   "costscore": 47.82531661325103,
-   "value": 67,
-   "eff": 31.4,
-   "grade": "B",
-   "rank": 25
+   "rank": 26
   },
   {
    "name": "DeepSeek V4 Pro",
@@ -558,20 +580,20 @@
    "tier": "Max",
    "aa": 53,
    "aa_dec": 53.2,
-   "pin": 1.326866,
-   "pcache": 0.044229,
-   "pout": 3.980598,
+   "pin": 1.327297,
+   "pcache": 0.044243,
+   "pout": 3.98189,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "正式版 0813;高峰 ¥9/¥27/缓存¥0.30,闲时 ¥4.5/¥13.5/¥0.15;8/17 峰谷价生效(8/25 官方确认落地),8/23 起周末全天低谷价;8/22 正式版更新至 API(Agent 增强,Terminal-Bench 87.9);1M 上下文",
-   "cost": 2.3220155,
+   "cost": 2.3227694999999997,
    "ability": 80.3,
-   "costscore": 41.93200978609381,
+   "costscore": 41.92601534050075,
    "value": 65,
    "eff": 22.8,
    "grade": "B",
-   "rank": 26
+   "rank": 27
   },
   {
    "name": "GLM-5.2",
@@ -593,7 +615,7 @@
    "value": 64,
    "eff": 21.2,
    "grade": "B",
-   "rank": 27
+   "rank": 28
   },
   {
    "name": "GPT-5.6 Terra",
@@ -615,7 +637,7 @@
    "value": 59,
    "eff": 10.6,
    "grade": "C",
-   "rank": 28
+   "rank": 29
   },
   {
    "name": "GPT-5.6 Luna",
@@ -637,7 +659,7 @@
    "value": 75,
    "eff": 104.0,
    "grade": "A",
-   "rank": 29
+   "rank": 30
   },
   {
    "name": "DeepSeek V4 Flash",
@@ -646,20 +668,20 @@
    "tier": "Max",
    "aa": 52,
    "aa_dec": 51.8,
-   "pin": 0.442289,
-   "pcache": 0.014743,
-   "pout": 1.326866,
+   "pin": 0.442432,
+   "pcache": 0.014748,
+   "pout": 1.327297,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "高峰 ¥3/¥9/缓存¥0.10,闲时 ¥1.5/¥4.5/¥0.05;8/23 起周末全天低谷价;1M 上下文",
-   "cost": 0.7740055,
+   "cost": 0.77425625,
    "ability": 78.8,
-   "costscore": 62.21619538872236,
+   "costscore": 62.21021485628935,
    "value": 72,
    "eff": 67.2,
    "grade": "A",
-   "rank": 30
+   "rank": 31
   },
   {
    "name": "Qwen3.8-27B",
@@ -668,20 +690,42 @@
    "tier": "xHigh",
    "aa": 52,
    "aa_dec": 52.0,
-   "pin": 0.537528,
-   "pcache": 0.107476,
-   "pout": 3.225022,
+   "pin": 0.537703,
+   "pcache": 0.107511,
+   "pout": 3.226068,
    "open_": "开放权重",
    "lic": "Apache 2.0",
    "src": "官方(阿里云百炼)",
    "note": "27B 稠密多模态;262K 上下文(YaRN 1M);AA 8/22 新增 medium/low 档;默认思考过度致 token 消耗大;官方 API 已上线(国内 ¥3/¥12/缓存¥0.6,国际 ¥3.646/¥21.875≈$0.54/$3.22);OpenRouter 第三方 $0.45/$3.20 备查",
-   "cost": 1.3437835,
+   "cost": 1.34422,
    "ability": 78.8,
-   "costscore": 52.03053778781062,
+   "costscore": 52.02454128956345,
    "value": 68,
    "eff": 38.7,
    "grade": "B",
-   "rank": 31
+   "rank": 32
+  },
+  {
+   "name": "Gemini 3.8 Flash",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "Low",
+   "aa": 52,
+   "aa_dec": null,
+   "pin": 0.75,
+   "pcache": 0.075,
+   "pout": 3.75,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "AA low 52 分;促销价同左",
+   "cost": 1.6875,
+   "ability": 78.8,
+   "costscore": 47.82531661325103,
+   "value": 66,
+   "eff": 30.8,
+   "grade": "B",
+   "rank": 33
   },
   {
    "name": "Grok 4.6",
@@ -703,7 +747,7 @@
    "value": 61,
    "eff": 14.9,
    "grade": "B",
-   "rank": 32
+   "rank": 34
   },
   {
    "name": "Claude Opus 5",
@@ -725,29 +769,7 @@
    "value": 52,
    "eff": 4.6,
    "grade": "C",
-   "rank": 33
-  },
-  {
-   "name": "Gemini 3.7 Flash",
-   "vendor": "Google",
-   "country": "美国",
-   "tier": "Low",
-   "aa": 51,
-   "aa_dec": null,
-   "pin": 0.75,
-   "pcache": 0.075,
-   "pout": 3.75,
-   "open_": "闭源",
-   "lic": "专有",
-   "src": "官方",
-   "note": "促销价同左",
-   "cost": 1.6875,
-   "ability": 77.3,
-   "costscore": 47.82531661325103,
-   "value": 66,
-   "eff": 30.2,
-   "grade": "B",
-   "rank": 34
+   "rank": 35
   },
   {
    "name": "GPT-5.6 Sol",
@@ -769,7 +791,7 @@
    "value": 53,
    "eff": 5.7,
    "grade": "C",
-   "rank": 35
+   "rank": 36
   },
   {
    "name": "GPT-5.6 Luna",
@@ -791,7 +813,7 @@
    "value": 74,
    "eff": 100.0,
    "grade": "A",
-   "rank": 36
+   "rank": 37
   },
   {
    "name": "GPT-5.6 Terra",
@@ -813,7 +835,7 @@
    "value": 57,
    "eff": 10.0,
    "grade": "C",
-   "rank": 37
+   "rank": 38
   },
   {
    "name": "Agnes 2.5 Pro Beta",
@@ -835,7 +857,7 @@
    "value": 80,
    "eff": 280.0,
    "grade": "S",
-   "rank": 38
+   "rank": 39
   },
   {
    "name": "Gemini 3.1 Pro Preview",
@@ -857,7 +879,7 @@
    "value": 55,
    "eff": 9.6,
    "grade": "C",
-   "rank": 39
+   "rank": 40
   },
   {
    "name": "Kimi K3",
@@ -879,7 +901,7 @@
    "value": 53,
    "eff": 7.1,
    "grade": "C",
-   "rank": 40
+   "rank": 41
   },
   {
    "name": "GPT-5.6 Luna",
@@ -901,7 +923,7 @@
    "value": 71,
    "eff": 94.0,
    "grade": "A",
-   "rank": 41
+   "rank": 42
   },
   {
    "name": "GPT-5.6 Terra",
@@ -923,7 +945,7 @@
    "value": 54,
    "eff": 9.4,
    "grade": "C",
-   "rank": 42
+   "rank": 43
   },
   {
    "name": "Motif 3",
@@ -945,7 +967,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 43
+   "rank": 44
   },
   {
    "name": "MiniMax M3",
@@ -967,7 +989,7 @@
    "value": 68,
    "eff": 75.0,
    "grade": "B",
-   "rank": 44
+   "rank": 45
   },
   {
    "name": "Apodex 1.1",
@@ -989,7 +1011,7 @@
    "value": 63,
    "eff": 41.9,
    "grade": "B",
-   "rank": 45
+   "rank": 46
   },
   {
    "name": "Qwen3.8-27B",
@@ -998,20 +1020,20 @@
    "tier": "Medium",
    "aa": 44,
    "aa_dec": null,
-   "pin": 0.537528,
-   "pcache": 0.107476,
-   "pout": 3.225022,
+   "pin": 0.537703,
+   "pcache": 0.107511,
+   "pout": 3.226068,
    "open_": "开放权重",
    "lic": "Apache 2.0",
    "src": "官方(阿里云百炼)",
    "note": "AA 8/22 新增档;价格同左",
-   "cost": 1.3437835,
+   "cost": 1.34422,
    "ability": 66.7,
-   "costscore": 52.03053778781062,
+   "costscore": 52.02454128956345,
    "value": 61,
    "eff": 32.7,
    "grade": "B",
-   "rank": 46
+   "rank": 47
   },
   {
    "name": "MiMo-V2.5-Pro",
@@ -1020,20 +1042,20 @@
    "tier": "默认",
    "aa": 43,
    "aa_dec": null,
-   "pin": 0.442289,
+   "pin": 0.442432,
    "pcache": 0.0036,
-   "pout": 0.884577,
+   "pout": 0.884864,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "1.02T/42B;国内 ¥3/¥6;AA 8/23 快照维持 43（媒体称'开源第一'未获同口径支持，见数据质量）",
-   "cost": 0.66343325,
+   "cost": 0.663648,
    "ability": 65.2,
-   "costscore": 65.0623526275549,
+   "costscore": 65.0563770628667,
    "value": 65,
    "eff": 64.8,
    "grade": "B",
-   "rank": 47
+   "rank": 48
   },
   {
    "name": "Qwen3.8-27B",
@@ -1042,20 +1064,20 @@
    "tier": "Low",
    "aa": 43,
    "aa_dec": null,
-   "pin": 0.537528,
-   "pcache": 0.107476,
-   "pout": 3.225022,
+   "pin": 0.537703,
+   "pcache": 0.107511,
+   "pout": 3.226068,
    "open_": "开放权重",
    "lic": "Apache 2.0",
    "src": "官方(阿里云百炼)",
    "note": "AA 8/22 新增档;价格同左",
-   "cost": 1.3437835,
+   "cost": 1.34422,
    "ability": 65.2,
-   "costscore": 52.03053778781062,
+   "costscore": 52.02454128956345,
    "value": 60,
    "eff": 32.0,
    "grade": "B",
-   "rank": 48
+   "rank": 49
   },
   {
    "name": "Claude Sonnet 5",
@@ -1077,7 +1099,7 @@
    "value": 51,
    "eff": 9.6,
    "grade": "C",
-   "rank": 49
+   "rank": 50
   },
   {
    "name": "Hy3",
@@ -1099,7 +1121,7 @@
    "value": 71,
    "eff": 160.2,
    "grade": "A",
-   "rank": 50
+   "rank": 51
   },
   {
    "name": "Solar Pro 4",
@@ -1121,7 +1143,7 @@
    "value": 65,
    "eff": 70.0,
    "grade": "B",
-   "rank": 51
+   "rank": 52
   },
   {
    "name": "Inkling",
@@ -1143,7 +1165,7 @@
    "value": 53,
    "eff": 13.8,
    "grade": "C",
-   "rank": 52
+   "rank": 53
   },
   {
    "name": "GPT-5.6 Sol",
@@ -1165,7 +1187,7 @@
    "value": 45,
    "eff": 4.7,
    "grade": "D",
-   "rank": 53
+   "rank": 54
   },
   {
    "name": "Nex-N2-Pro",
@@ -1187,7 +1209,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 54
+   "rank": 55
   },
   {
    "name": "GPT-5.6 Terra",
@@ -1209,7 +1231,7 @@
    "value": 48,
    "eff": 8.2,
    "grade": "D",
-   "rank": 55
+   "rank": 56
   },
   {
    "name": "Inkling Small",
@@ -1231,7 +1253,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 56
+   "rank": 57
   },
   {
    "name": "JT-4.1 Flash 236B",
@@ -1253,7 +1275,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 57
+   "rank": 58
   },
   {
    "name": "GPT-5.6 Luna",
@@ -1275,7 +1297,7 @@
    "value": 64,
    "eff": 78.0,
    "grade": "B",
-   "rank": 58
+   "rank": 59
   },
   {
    "name": "Qwen3.7-Plus",
@@ -1297,7 +1319,7 @@
    "value": 61,
    "eff": 56.5,
    "grade": "B",
-   "rank": 59
+   "rank": 60
   },
   {
    "name": "Ling-3.0-flash",
@@ -1319,7 +1341,7 @@
    "value": 74,
    "eff": 361.9,
    "grade": "A",
-   "rank": 60
+   "rank": 61
   },
   {
    "name": "MiMo-V2.5",
@@ -1328,20 +1350,20 @@
    "tier": "默认",
    "aa": 38,
    "aa_dec": null,
-   "pin": 0.14743,
+   "pin": 0.147477,
    "pcache": 0.0028,
-   "pout": 0.294859,
+   "pout": 0.294955,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "国内 ¥1/¥2",
-   "cost": 0.22114475,
+   "cost": 0.22121575,
    "ability": 57.6,
-   "costscore": 85.34651835150368,
+   "costscore": 85.3405914828721,
    "value": 69,
    "eff": 171.8,
    "grade": "B",
-   "rank": 61
+   "rank": 62
   },
   {
    "name": "Nemotron 3 Ultra",
@@ -1363,7 +1385,7 @@
    "value": 55,
    "eff": 25.3,
    "grade": "C",
-   "rank": 62
+   "rank": 63
   },
   {
    "name": "Nova 2 Omni (Preview)",
@@ -1385,7 +1407,7 @@
    "value": 57,
    "eff": 40.0,
    "grade": "C",
-   "rank": 63
+   "rank": 64
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -1407,7 +1429,7 @@
    "value": 57,
    "eff": 40.0,
    "grade": "C",
-   "rank": 64
+   "rank": 65
   },
   {
    "name": "Solar Open2 250B",
@@ -1429,7 +1451,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 65
+   "rank": 66
   },
   {
    "name": "Qwen3.8-27B",
@@ -1438,20 +1460,20 @@
    "tier": "Non-reasoning",
    "aa": 35,
    "aa_dec": null,
-   "pin": 0.537528,
-   "pcache": 0.107476,
-   "pout": 3.225022,
+   "pin": 0.537703,
+   "pcache": 0.107511,
+   "pout": 3.226068,
    "open_": "开放权重",
    "lic": "Apache 2.0",
    "src": "官方(阿里云百炼)",
    "note": "AA 8/24 确认 Non-reasoning 档 35 分(上期待核实,现已确认);价格同左",
-   "cost": 1.3437835,
+   "cost": 1.34422,
    "ability": 53.0,
-   "costscore": 52.03053778781062,
+   "costscore": 52.02454128956345,
    "value": 53,
    "eff": 26.0,
    "grade": "C",
-   "rank": 66
+   "rank": 67
   },
   {
    "name": "GLM-5.2",
@@ -1473,7 +1495,7 @@
    "value": 48,
    "eff": 14.0,
    "grade": "D",
-   "rank": 67
+   "rank": 68
   },
   {
    "name": "GPT-5.6 Terra",
@@ -1495,7 +1517,7 @@
    "value": 43,
    "eff": 7.0,
    "grade": "D",
-   "rank": 68
+   "rank": 69
   },
   {
    "name": "A.X-K2",
@@ -1517,7 +1539,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 69
+   "rank": 70
   },
   {
    "name": "Muse Glimmer",
@@ -1539,7 +1561,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 70
+   "rank": 71
   },
   {
    "name": "GPT-5.6 Luna",
@@ -1561,7 +1583,7 @@
    "value": 59,
    "eff": 68.0,
    "grade": "C",
-   "rank": 71
+   "rank": 72
   },
   {
    "name": "LongCat 2.0",
@@ -1583,7 +1605,7 @@
    "value": 58,
    "eff": 56.7,
    "grade": "C",
-   "rank": 72
+   "rank": 73
   },
   {
    "name": "G9v3-39A5B",
@@ -1605,7 +1627,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 73
+   "rank": 74
   },
   {
    "name": "Step 3.7 Flash",
@@ -1627,7 +1649,7 @@
    "value": 57,
    "eff": 63.6,
    "grade": "C",
-   "rank": 74
+   "rank": 75
   },
   {
    "name": "K-EXAONE 2.0",
@@ -1649,7 +1671,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 75
+   "rank": 76
   },
   {
    "name": "Gemma 4 31B",
@@ -1671,7 +1693,7 @@
    "value": 63,
    "eff": 171.4,
    "grade": "B",
-   "rank": 76
+   "rank": 77
   },
   {
    "name": "Claude 4.5 Haiku",
@@ -1693,7 +1715,7 @@
    "value": 44,
    "eff": 13.3,
    "grade": "D",
-   "rank": 77
+   "rank": 78
   },
   {
    "name": "Mistral Medium 3.5",
@@ -1715,7 +1737,7 @@
    "value": 41,
    "eff": 8.9,
    "grade": "D",
-   "rank": 78
+   "rank": 79
   },
   {
    "name": "Nemotron 3 Super",
@@ -1737,7 +1759,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 79
+   "rank": 80
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -1759,7 +1781,7 @@
    "value": 62,
    "eff": 240.0,
    "grade": "B",
-   "rank": 80
+   "rank": 81
   },
   {
    "name": "gpt-oss-120b",
@@ -1781,7 +1803,7 @@
    "value": 57,
    "eff": 118.5,
    "grade": "C",
-   "rank": 81
+   "rank": 82
   },
   {
    "name": "Granite 4.2 30B",
@@ -1803,7 +1825,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 82
+   "rank": 83
   },
   {
    "name": "Granite 4.2 8B",
@@ -1825,58 +1847,53 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 83
+   "rank": 84
   }
  ],
  "changes": [
   {
-   "d": "09-02",
-   "t": "Claude Fable 5.1 发布即登顶 AA 66 分，终结 Opus 5 连续 18 期榜首",
+   "d": "09-03",
+   "t": "Meta Muse Spark 1.3 发布：xhigh 档 61 分追平 GPT-5.6 Sol Max，取代 1.2",
    "m": [
-    "Claude Fable 5.1",
-    "Claude Opus 5"
+    "Muse Spark 1.3",
+    "Muse Spark 1.2"
    ],
-   "s": "Anthropic 9/1 发布 Fable 5.1（与 Mythos 5.1 同底座），AA 官网 9/2 快照（v4.1.1，数据库 621→624 模型）首评 66 分登顶、xhigh 65 分包揽前二，Opus 5（63）退居第三；基础价 $10/$50 不变、缓存读取 $1→$0.25（-75%）；AA 实测输出 token 约为 Fable 5 的 1.7 倍，max 档单任务 $3.76 反而比 Fable 5 贵 20%（缓存降价省约 $1.40/任务）；五档 effort 输出 token 跨 11 倍、AA 分 58–66；Fable 5 随官方转 legacy 退出主榜（主榜 80→83 配置）"
+   "s": "Meta 9/2 深夜-9/3 发布 Muse Spark 1.3（1.2 同日被取代退出主榜）：1M 上下文、多模态；AA 9/3 快照（v4.1.1）xhigh 档 61 分（追平 GPT-5.6 Sol Max，较 1.2 的 57 +4）；Max 档 62 分为 limited preview（限量预览未全量开放，主榜如实标注）；价格延续 $1.25/$4.25/缓存 $0.15；官方称注意力效率提升——工具调用 token -20%、整体 token -25%（厂商自测口径，实际账单以第三方复现为准）"
   },
   {
-   "d": "09-02",
-   "t": "人民币中间价 6.7829（调贬 20 基点）",
-   "m": [],
-   "s": "9/2 中间价 1 美元 = 6.7829 元，较上期（9/1 的 6.7809）调贬 20 基点（中国外汇交易中心/中新网/金十数据/金融界多源确认）；DeepSeek/MiMo/Qwen3.8-27B/Qwen3.8-Flash 人民币定价美元换算按新汇率更新（影响 <0.3%，排名与等级不变）"
-  },
-  {
-   "d": "09-01",
-   "t": "DeepSeek V4-Flash-Vision-Exp 权重开源（MIT，305B）",
+   "d": "09-03",
+   "t": "Google Gemini 3.8 Flash 发布：AA High 59 分，取代 3.7 Flash",
    "m": [
-    "DeepSeek V4 Flash Vision Exp"
+    "Gemini 3.8 Flash",
+    "Gemini 3.7 Flash"
    ],
-   "s": "9/1 深夜 HF 上线权重（MIT，305B，基于 V4-Flash-0731 底座+视觉编码器+Aligner；8/21 先上 API 只调权不开放，十天后开源）；官方定位 Agent 视觉（读截图/界面/图表后调工具）；自测 Terminal-Bench 2.1 83.9、DeepSWE 59.3 反超 Opus 4.8；AA 51.47 低于文本版 51.77，仍按规则不入主榜（第七节登记），权重开源后为 512GB 档本地部署候选"
+   "s": "Google 9/2 发布 Gemini 3.8 Flash（3.7 Flash 同日被取代退出主榜）：1M 上下文；AA 9/3 快照三档独立分 High 59 / Medium 57 / Low 52（较 3.7 Flash 的 56/53/51 各 +1~4）；价格延续促销 $0.75/$3.75 至 12/31/2026（2027 起 $1.50/$7.50），缓存 90% 折扣保留（$0.075）；AA 官方称其 $0.58/任务站上性价比 Pareto 前沿；主榜 +3 配置"
   },
   {
-   "d": "09-01",
-   "t": "腾讯混元 Hy4 preview 轻量版发布：权重 1.5TB 压缩至约 214GB",
+   "d": "09-03",
+   "t": "阿里 Qwen3.8-Max-0902 带日期快照上线（$2/$6，缓存显式 $0.17）",
    "m": [
-    "腾讯混元 Hy4 Preview"
+    "Qwen3.8 Max"
    ],
-   "s": "9/1 腾讯混元推出 Hy4 preview 轻量版（权重从 1.5TB 压缩到约 214GB）：长文理解几乎与原版持平、多轮长上下文检索基本同水平、数学小幅回落；覆盖编码辅助/工具调用/长文档/常规问答；Hy4 preview（770B/49B，Apache 2.0）主榜等待 AA 评分中（第八节持续观察）"
+   "s": "阿里 9/2 上线 Qwen3.8-Max-0902（带日期快照版）：$2/$6、显式缓存 $0.17/隐式缓存 $0.25（主表缓存价按显式 $0.17 更新，较此前口径 $0.25 降 32%）；Code Arena 1691 分登顶；0902 本身暂无同口径 AA 评分（AA 58 为 8 月版基线），主榜暂按同一模型收录并注明；权重版（Apache 2.0，8/14 开源）维持不变"
   },
   {
-   "d": "09-01",
-   "t": "产业动态：Altman 预告下一款产品、OpenAI ChatGPT 广告年化破 10 亿美元",
+   "d": "09-03",
+   "t": "人民币中间价 6.7807（调升 22 基点）",
    "m": [],
-   "s": "Fable 5.1 发布数小时后 Altman 发长文预告 OpenAI 下一款产品（称夏季专注安全优先事项）；ChatGPT Ads 上线不足 200 天年化收入破 10 亿美元（2026 预计 24 亿）；索尼率 35 家出版商起诉 Anthropic（索赔或达数十亿）；METR 独立调查：约 1200 个 AI 智能体在 HF 事件中集体越狱协作攻击（比 OpenAI 自述更严重）；Anthropic 与 Lambda 签 350 亿美元云协议（英伟达锁定 Hut 8 得州数据中心）；智谱半年报：下一代大模型坚持大基座路线、GLM-6.0 瞄准自进化、10 万级国产芯片规模化推理（单位 Token 推理成本较年初降 80%）"
-  },
-  {
-   "d": "09-02",
-   "t": "促销到期提醒更新：GLM-5.3-Flash（9/9）、Solar Pro 4（9/10）、Sol（11/21）",
-   "m": [],
-   "s": "GLM-5.3-Flash 官方 5 折 9/9 到期后恢复 $0.15/$0.50（主表已按标准价计）；Solar Pro 4 促销 90% off 9/10 到期（主表按标准价）；GPT-5.6 Sol 促销 $4/$20 至 11/21；Gemini 3.7 Flash 促销至 12/31；<b>Apodex 1.1 官方 API 全免促销无截止日（主表按挂牌价 $0.30/$3.00 计），恢复收费前每日复验</b>"
+   "s": "9/3 中间价 1 美元 = 6.7807 元，较上期（9/2 的 6.7829）调升 22 基点（中国外汇交易中心/中国经济网/中新网/证券时报多源确认）；DeepSeek/MiMo/Qwen3.8-27B/Qwen3.8-Flash 人民币定价美元换算按新汇率更新（影响 <0.3%，排名与等级不变）"
   },
   {
    "d": "09-02",
-   "t": "阿里云 Qwen3-VL-Rerank 降价（专项模型不入主榜）",
+   "t": "产业动态：英伟达收购 Hugging Face 传闻、讯飞星火 X2.5 端侧开源、文心 4.5-Turbo 全量商用",
    "m": [],
-   "s": "9/1 公告：百炼北京地域 Qwen3-VL-Rerank 自 8/31 起降价——文本输入 ¥0.7→¥0.5/M tokens、多模态输入 ¥1.8→¥0.5/M tokens；Reranker 为单项专用模型，按规则不入主榜（仅作产业动态记录）"
+   "s": "英伟达据 The Information 报道拟以 129 亿美元收购 Hugging Face（谈判中，双方未确认）；讯飞 9/1 开源星火 X2.5 端侧系列（4B/1.7B，全国产算力训练，端侧首个 100 万 token 上下文，约 20T tokens 预训练，AA 暂无同口径分，列第七节）；百度文心 4.5-Turbo 多模态 API 全量商用（专项记录）；LongCat-2.0 上线 Cline；腾讯 WorkBuddy 开放平台上线；智谱入驻天猫"
+  },
+  {
+   "d": "09-03",
+   "t": "促销到期提醒更新：GLM-5.3-Flash（9/9）、Solar Pro 4（9/10）、Sol（11/21）、Gemini 3.8 Flash（12/31）",
+   "m": [],
+   "s": "GLM-5.3-Flash 官方 5 折 9/9 到期后恢复 $0.15/$0.50（主表已按标准价计）；Solar Pro 4 促销 90% off 9/10 到期（主表按标准价）；GPT-5.6 Sol 促销 $4/$20 至 11/21；Gemini 3.8 Flash 促销价 $0.75/$3.75 至 12/31/2026；<b>Apodex 1.1 官方 API 全免促销无截止日（主表按挂牌价 $0.30/$3.00 计），恢复收费前每日复验</b>"
   }
  ]
 }
