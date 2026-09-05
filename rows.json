@@ -1,5 +1,5 @@
 {
- "date": "2026-09-04",
+ "date": "2026-09-05",
  "models": [
   {
    "name": "Claude Fable 5.1",
@@ -102,7 +102,7 @@
    "open_": "闭源(权重承诺待发布)",
    "lic": "专有",
    "src": "官方",
-   "note": "Max 档 AA 62 分,但为 <b>limited preview（限量预览、未全量开放）</b>;价格同 xHigh 档;全面开放时间待官方公告",
+   "note": "Max 档 AA 62 分,<b>9/4 起结束 limited preview 全量开放</b>(Muse Code + Meta Model API);价格同 xHigh 档",
    "cost": 2.3125,
    "ability": 93.9,
    "costscore": 42.007827585321394,
@@ -1896,42 +1896,44 @@
  ],
  "changes": [
   {
-   "d": "09-04",
-   "t": "OpenAI GPT-6 Astra 发布：AA 61.2 与 Sol Max 持平，价格 2.5 倍",
+   "d": "09-05",
+   "t": "AA 发布 Intelligence Index v4.2，本期仍以 v4.1.1 为评分基准",
+   "m": [],
+   "s": "Artificial Analysis 9/5 发布 Intelligence Index <b>v4.2</b>：新增 AA-Briefcase（私有 agentic 知识工作评测，模拟真实企业文档环境）与 GDP.pdf（Surge AI 4592 页 PDF 超长文档推理），移除已近饱和的 GPQA Diamond，私测集权重 20%→40%。但分模型详细分数尚未全量可得（第三方镜像仍为 9/2 的 v4.1.1 快照，278 条分数与上期完全一致），按「不得混合不同版本 Intelligence Index 排名」与「严禁猜测新版本分数」规则，本期 86 条配置全部沿用 v4.1.1（9/2 快照）评分，v4.2 详分将随官方页补全于下期整合——届时排名可能出现结构性变化"
+  },
+  {
+   "d": "09-05",
+   "t": "OpenAI GPT-6 Astra 全量开放：API + ChatGPT 各级订阅 + Azure/Foundry",
    "m": [
-    "GPT-6 Astra",
-    "GPT-5.6 Sol"
+    "GPT-6 Astra"
    ],
-   "s": "OpenAI 9/3 正式发布 GPT-6 Astra（Trusted Access 先行，数日内扩展 API 与 ChatGPT 各级订阅）：105 万上下文/12.8 万输出、五档推理；AA Intelligence Index 61.2（≈61，与 GPT-5.6 Sol Max 持平，低于 Fable 5.1 的 66/Muse Spark 1.3 的 62）；价格 $10/$50（Sol 促销价 2.5 倍）、缓存读 $1/写 $12.5；AA 实测输出 token -10% 但单任务成本 +75%；Coding Agent Index 67（成本不到 Fable 5 一半，站上代码成本效率前沿）；Critical 网络安全级（OpenAI 首个达该级并外部部署，Trusted Access 受控发布）；OSWorld 2.0 72.6%、ARC-AGI-3 特设框架 99.9%、幻觉率 92%→51%；主榜新增 Max 档（61 #7）"
+   "s": "9/3 发布时为 Trusted Access 受限发布，<b>9/5 起扩展为全量开放</b>：API、ChatGPT Pro/Enterprise/Business Premium、Azure AI Foundry 同步可用。AA 61.2 与价格 $10/$1/$50 均不变（属可用性变化而非能力变化，主榜排名不变）；缓存写入 $12.5（+25% 溢价）与 >272K 输入 2x 价同步生效；单任务成本仍比 Sol 高约 75%"
   },
   {
-   "d": "09-04",
-   "t": "MBZUAI IFM K2 Horizon 六模型全开源（0.9B→375B，Apache 2.0）",
+   "d": "09-05",
+   "t": "Meta Muse Spark 1.3 Max 档结束限量预览，全量开放",
    "m": [
-    "K2 Horizon 375B-A23B"
+    "Muse Spark 1.3"
    ],
-   "s": "阿布扎比 MBZUAI 旗下 IFM 9/3 发布 K2 Horizon 六模型舰队（0.9B/3.7B/7B/32B/36B-A4B/375B-A23B）：旗舰 375B-A23B MoE（23B 激活）、512K 上下文，AA 47（较 K2 Think V2 +30）；<b>史上最大全开源发布</b>——权重+训练代码+数据配方+中间 checkpoint+日志+评测全开放（Apache 2.0）；agentic 强（GDPval-AA Elo 1430 超 MiniMax M3、tau3-Banking 34.2%、Terminal-Bench 2.1 70.2%）、知识弱（GPQA 87.3%/HLE 32.0% 低于 M3）、幻觉率 26%（60% 弃答策略）；API 经 Cerebras/AWS/Nebius/Compass 托管（价格待公布）；小尺寸成员入第七节与本地部署候选；主榜新增默认档（47）"
+   "s": "Muse Spark 1.3 Max 档（AA 62，超越 GPT-5.6 Sol Max 的 61）发布时为 limited preview 限量预览，<b>9/4 起全量开放</b>：Muse Code 与 Meta Model API 同步可用，价格维持 $1.25/$4.25/缓存 $0.15。至此 1.3 系列 xHigh（61）/Max（62）两档均可自助调用；Meta 权重承诺（1.2 时代的开放权重计划）仍未兑现，openness 维持「闭源(权重承诺待发布)」"
   },
   {
-   "d": "09-04",
-   "t": "英伟达 129.303 亿美元收购 Hugging Face（传闻落地官宣）",
+   "d": "09-05",
+   "t": "K2 Horizon API 定价仍未公布；Grok 4.7 定档 9/12",
+   "m": [
+    "K2 Horizon 375B-A23B",
+    "Grok 4.6"
+   ],
+   "s": "K2 Horizon 375B-A23B（AA 47）API 经 Cerebras/AWS/Nebius/Compass 托管，发布两日后官方定价仍未公布，主榜维持 N/A（无成本分，不入性价比榜）；xAI 宣布 Grok 4.7（传闻 2.1T）定档 9/12 发布，届时预览版 AA 评分与定价并入下一期；腾讯 Hy4 仍为 8/28 preview 状态，继续第七节登记"
+  },
+  {
+   "d": "09-05",
+   "t": "人民币中间价 6.7787 持平（周六无新报价）",
    "m": [],
-   "s": "英伟达 9/3 官宣（9/2 签署最终协议，SEC 文件披露）：以 129.303 亿美元收购 Hugging Face 全部股权（约 119 亿美元股权对价 + 最高 10 亿美元员工留任激励），为英伟达史上第二大收购（仅次于 2025 年底约 200 亿美元收购 Groq 资产）；上期 8/26 报道的 The Information 传闻正式落地；黄仁勋承诺 HF 保持开放平台定位、不强制绑定英伟达算力、继续支持多芯片生态；交易待监管批准，预计 2027 上半年完成；HF 1800 万开发者/300 万模型/50 万数据集/100 万应用，对全球开源模型分发格局影响深远"
+   "s": "9/5 为周六，中国外汇交易中心无新中间价报价，沿用 9/4 的 1 美元 = 6.7787 元；DeepSeek/MiMo/Qwen 系人民币定价美元换算口径不变，排名与等级无影响"
   },
   {
-   "d": "09-04",
-   "t": "人民币中间价 6.7787（调升 20 基点）",
-   "m": [],
-   "s": "9/4 中间价 1 美元 = 6.7787 元，较上期（9/3 的 6.7807）调升 20 基点（中国外汇交易中心/证券时报/财联社/央视财经/21 财经多源确认）；DeepSeek/MiMo/Qwen3.8-27B/Qwen3.8-Flash 人民币定价美元换算按新汇率更新（影响 <0.3%，排名与等级不变）"
-  },
-  {
-   "d": "09-03",
-   "t": "产业动态：Meta Muse Spark Contributor 数据换价格、Qwen 3.8 27B 登陆 Cerebras",
-   "m": [],
-   "s": "TechCrunch 9/3 报道：Meta 推出 Muse Spark Contributor 价格体系——允许 Meta 使用 Prompt 与输出改进后续模型，API 价格从 $1.25/$4.25 降至 $0.10/$0.20（约 95% 折让），训练数据被显式定价（主榜按标准价计）；Qwen 3.8 27B 上线 Cerebras 推理平台达 1500 tokens/s（约为常规 GPU 数十倍）；NVIDIA IFA 2026 发布 PAIR（Personal AI Router，局域网多 PC 推理资源池，免费开源 Beta）；OpenAI 投入 10 亿美元 Daybreak 计划补贴关键基础设施与网络防御机构；Palo Alto Networks 约 5 亿美元收购 AI IT 服务商 Console（TechCrunch 援引知情人士）"
-  },
-  {
-   "d": "09-04",
+   "d": "09-05",
    "t": "促销到期提醒更新：GLM-5.3-Flash（9/9）、Solar Pro 4（9/10）、Sol（11/21）、Gemini 3.8 Flash（12/31）",
    "m": [],
    "s": "GLM-5.3-Flash 官方 5 折 9/9 到期后恢复 $0.15/$0.50（主表已按标准价计）；Solar Pro 4 促销 90% off 9/10 到期（主表按标准价）；GPT-5.6 Sol 促销 $4/$20 至 11/21；Gemini 3.8 Flash 促销价 $0.75/$3.75 至 12/31/2026；<b>Apodex 1.1 官方 API 全免促销无截止日（主表按挂牌价 $0.30/$3.00 计），恢复收费前每日复验</b>"
