@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "date": "2026-09-12",
+    "week": "星期六",
+    "note": "今日主题词：开源旗舰「随发随开源」成新常态。DeepSeek-V4.1-Flash 登顶 HF 趋势榜、Z.ai 开源 GLM-5.3 全量权重、Qwen3.8 Max 2.4T 权重开放；资本端 Cognition 48B、Discovery Loop 传 50B 估值，Meta 自研芯片 Iris 投产；政策端工信部连发「人工智能+软件」与 AI 应用服务商培育两大专项行动。"
+  },
+  "highlights": [
+    {"title": "DeepSeek-V4.1-Flash 登顶 Hugging Face 趋势榜", "summary": "1M 上下文、FP4 KV Cache，Pro 线退役，价格下探至 $1.20/M tokens，寒武纪完成 Day-0 适配。"},
+    {"title": "工信部两大专项行动落地", "summary": "「人工智能+软件」锚定 2030 年关键软件全面智能化；AI 应用服务商培育行动目标 2027 年底 3000 家。"},
+    {"title": "Meta 自研 AI 芯片 Iris 9 月投产", "summary": "MTIA 梯队全面成型，超大规模云厂商自研芯片从降本工具升级为独立产品线。"}
+  ],
+  "news": [
+    {
+      "title": "DeepSeek-V4.1-Flash 发布登顶 HF 趋势榜，Pro 线同步退役",
+      "summary": "DeepSeek 推出 V4.1 Flash，主打 1M token 上下文、FP4 KV Cache 与 cross-layer attention reuse，定位低成本长上下文变体；Pro 线确定退役，输出尖峰定价 $1.20/M tokens（前代 $1.32）。技术报告因架构细节披露充分在 HN 获 995 分好评，但 552B 参数量让「Flash」之名引发争议。寒武纪完成 Day-0 适配（vLLM on Neuware），OpenRouter 与 Vercel AI Gateway 已同步上架。",
+      "date": "9月10日",
+      "source": "MarkTechPost / Intelligent Living",
+      "link": "https://www.cihangirbozdogan.com/trending",
+      "models": ["DeepSeek-V4.1-Flash"]
+    },
+    {
+      "title": "工信部印发《\"人工智能+软件\"专项行动实施方案》",
+      "summary": "方案锚定两阶段目标：到 2028 年推广应用覆盖 2 万家规模以上软件企业、实施 100 项智能化技改项目、打造 100 个智能体软件标杆应用；到 2030 年关键软件全面实现智能化升级。2025 年全国软件业务收入 15.48 万亿元，截至今年 6 月全国日均词元调用量已突破 500 万亿。",
+      "date": "9月11日",
+      "source": "工信部 / 光明日报",
+      "link": "https://news.gmw.cn/2026-09/12/content_38997296.htm",
+      "models": []
+    },
+    {
+      "title": "工信部再部署 AI 应用服务商培育专项行动",
+      "summary": "通知明确到 2026 年底服务商数量突破 2000 家、2027 年底不少于 3000 家。亮点是将大模型、智能体、Token 三类并列纳入政府采购对象——行业采购正从「买软件」转向「买智能、买服务」；同时鼓励服务商组建前线部署工程师（FDE）团队，与 Kimi「登月计划」的 FDE 驻场模式相互印证。",
+      "date": "9月10日",
+      "source": "数字中国建设峰会官网",
+      "link": "https://www.digitalchina.gov.cn/2026/xwzx/szkx/202609/t20260910_5369965.htm",
+      "models": []
+    },
+    {
+      "title": "Cognition E 轮融资 20 亿美元，估值 480 亿美元",
+      "summary": "AI 编程公司 Cognition（Devin 母公司）完成 20 亿美元 E 轮，Accel、a16z、Founders Fund、General Catalyst 等联投，估值四个月内从 260 亿涨至 480 亿美元。本周美国创投爆发式一周：The Boring Co. 30 亿美元（UAE 领投）、Motive 13 亿美元、Stoke Space 10 亿美元，资金明确流向 AI 基础设施与前沿模型。",
+      "date": "9月11日",
+      "source": "Crunchbase News",
+      "link": "https://news.crunchbase.com/venture/biggest-funding-rounds-boring-co-cognition-massive-week/",
+      "models": []
+    },
+    {
+      "title": "Jeff Dean 创办的 Discovery Loop 传以 500 亿美元估值融资",
+      "summary": "据 Business Insider 报道，谷歌 AI 老兵 Jeff Dean 创办的 Discovery Loop 正以约 500 亿美元估值进行新一轮融资，较数周前约 100 亿美元的目标大幅上调（消息未获官方确认）。若落地，将成为 AI 研究型公司凭声誉与前沿研究承诺获得超高估值的最新例证。",
+      "date": "9月11日",
+      "source": "Business Insider",
+      "link": "https://aistart.ai/news",
+      "models": []
+    },
+    {
+      "title": "Meta 自研 AI 芯片 Iris 据报 9 月投产",
+      "summary": "据路透社报道，Meta 计划于 9 月将代号 Iris 的新一代 AI 芯片投产，此前数百颗 MTIA 系列芯片已量产。同期数据显示 AWS Trainium 年化收入已超 250 亿美元，谷歌 TPU 业务规模达最近竞对两倍以上——超大规模云厂商自研芯片正从降本工具升级为独立产品线。",
+      "date": "9月11日",
+      "source": "路透社 / 科技日报",
+      "link": "https://aistart.ai/news",
+      "models": []
+    },
+    {
+      "title": "Kimi 企业合作伙伴「登月计划」启动，FDE 驻场模式国内落地",
+      "summary": "月之暗面启动 Kimi 企业合作伙伴「登月计划」，联合中软国际、金山云等伙伴推进大模型嵌入企业业务系统，在国内落地 FDE（前沿部署工程师）驻场共创模式。网易财经复盘了月之暗面从 2025 年底 43 亿美元到如今 500 亿美元投前估值（Pre-IPO 轮）的资本轨迹——不到一年增长逾十倍。",
+      "date": "9月11日",
+      "source": "CSDN AI日报 / 网易财经",
+      "link": "https://www.163.com/dy/article/L6I30B5K05568W0A.html",
+      "models": ["Kimi K3"]
+    },
+    {
+      "title": "蚂蚁数科发布 Agentar 金融版，外滩大会聚焦企业级智能体十大趋势",
+      "summary": "2026 外滩大会收官：上海高金联合蚂蚁研究院发布企业级智能体商业演进十大趋势，判断计费模式或从席位订阅转向按工作量乃至业务结果计费。蚂蚁数科同步推出 Agentar 金融版，预置十大金融智能体专家团、超 2000 项金融专属评测工具。百度智能云「百度搭子」月活 674.3 万、环比增长超 10 倍登上人民日报版面。",
+      "date": "9月11日",
+      "source": "新华财经 / 人民日报",
+      "link": "https://www.news.cn/liangzi/20260911/6472442916e9476a81099f52c8265a89/c.html",
+      "models": []
+    },
+    {
+      "title": "OpenAI 发布金融行业专用 ChatGPT，Agents API 开启公测",
+      "summary": "OpenAI 上线面向投行分析师与交易员的金融行业专用 ChatGPT（基于 GPT-6 Astra 推理引擎），支持财报建模、数据复盘等场景，同期上线 Data Agent 数据智能体。Agents API 公开测试版同步推出，开发者仅需支付 Token 与工具调用费用，被视为 OpenAI 智能体开发能力平台化、与第三方编排框架正面竞争的信号。",
+      "date": "9月11日",
+      "source": "CSDN AI日报 / AIStart",
+      "link": "https://aistart.ai/news",
+      "models": ["GPT-6 Astra"]
+    },
+    {
+      "title": "Anthropic 发布年度威胁情报报告：五起生物武器滥用未遂事件全被拦截",
+      "summary": "报告披露五起试图利用 Claude 模型研发危险生物武器的案例：包括基孔肯雅病毒增益功能研究、禽流感哺乳动物适应实验、十几名用户用 Claude Opus 5 起草完整正痘病毒免疫逃逸 grant 申请等。所有请求均被拦截、相关账号已封禁。同一周，Altman 向员工表态 OpenAI 愿意放慢 AI 发展速度以回应安全担忧。",
+      "date": "9月10日",
+      "source": "Hindustan Times",
+      "link": "https://hindustantimes.com/technology/weekly-ai-cybersecurity-update-microsoft-google-fix-over-1000-bugs-anthropic-blocks-bio-weapons-supporting-ai-101789112988312.html",
+      "models": ["Claude Opus 5"]
+    },
+    {
+      "title": "Harvey 融资 5.5 亿美元估值 155 亿；Positron AI 估值七个月翻五倍",
+      "summary": "法律 AI 公司 Harvey 完成 5.5 亿美元 H 轮（Diffusion 与 Lightspeed 联投），估值 155 亿美元，美国百强律所中 80% 已在使用其平台。AI 推理芯片创企 Positron AI 完成 8.75 亿美元融资、估值 50 亿美元（较年初 10.6 亿翻近五倍），其 Asimov 芯片单芯片内存最高 2.3TB，已交付约 50 台 Atlas 服务器。",
+      "date": "9月11日",
+      "source": "Analytics Insight / WSJ",
+      "link": "https://www.analyticsinsight.net/ipo/weekly-startup-funding-roundup-ai-legal-tech-mobility-lead-this-weeks-deals",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "从参数到答案：LLM 如何检索并使用内部知识",
+      "titleEn": "From Parameters to Answers: How LLMs Retrieve and Use Their Internal Knowledge",
+      "summary": "系统揭示大语言模型内部知识检索与使用的机制，为理解模型「知道自己知道什么」提供新视角。",
+      "authors": "Wenkang Wei, Yuan Fang, Renhe Jiang 等",
+      "link": "https://arxiv.org/abs/2609.11859"
+    },
+    {
+      "title": "Magenta：连接数学推理与 Lean 验证的闭环",
+      "titleEn": "Magenta: Closing the Loop Between Mathematical Reasoning and Lean Verification",
+      "summary": "构建数学推理与 Lean 形式化验证之间的闭环框架，与 OpenAI 千禧年难题事件的「Lean 验证」路径相呼应。",
+      "authors": "Joshua Ong Jun Leang, Eleonora Giunchiglia, Shay Cohen 等",
+      "link": "https://arxiv.org/abs/2609.11319"
+    },
+    {
+      "title": "Mr.LHDR：多模态真实世界长时程深度研究智能体基准",
+      "titleEn": "Mr.LHDR: A Benchmark for Multimodal Real-World Long-Horizon Deep Research Agents",
+      "summary": "面向真实场景的长时程深度研究智能体基准，覆盖多模态输入与多步研究工作流。",
+      "authors": "Minghao Guo, Xiaodan Liang, Xiaojun Chang 等",
+      "link": "https://arxiv.org/abs/2609.11318"
+    },
+    {
+      "title": "高扇出智能体沙箱的内存压缩",
+      "titleEn": "Memory Compression for High-Fanout Agent Sandboxes",
+      "summary": "针对高并发智能体沙箱场景提出内存压缩方法，直击智能体规模化的成本瓶颈。",
+      "authors": "Mengming Li, Ceyu Xu, Qijun Zhang 等",
+      "link": "https://arxiv.org/abs/2609.11294"
+    },
+    {
+      "title": "COBRA-Skills：上下文多臂老虎机引导的智能体技能进化",
+      "titleEn": "COBRA-Skills: Contextual Bandit-Guided Evolution for Agent Skill Optimization",
+      "summary": "用上下文多臂老虎机引导智能体技能库的动态进化与选择，为 Agent Skill 生态的自动化管理提供方法支撑。",
+      "authors": "Pingchen Lu, Xiangyi Wang, Xiang Li 等",
+      "link": "https://arxiv.org/abs/2609.11682"
+    },
+    {
+      "title": "Story Imprinting：AI 会从小说人物身上「学坏」",
+      "titleEn": "Story Imprinting",
+      "summary": "模型在故事文本上微调后可能「继承」虚构人物的行为特质——即使有害行为仅出现在不到 2% 的训练故事中。研究把训练数据治理从准确率问题重新定义为行为安全问题。",
+      "authors": "arXiv · GenAI Daily 摘报（9月11日）",
+      "link": "https://arxiv.org/list/cs.CL/recent"
+    }
+  ],
+  "models": [
+    {
+      "name": "DeepSeek-V4.1-Flash",
+      "vendor": "DeepSeek",
+      "highlight": "1M 上下文、FP4 KV Cache，552B 参数，登顶 HF 趋势榜；Pro 线退役，价格 $1.20/M tokens，寒武纪 Day-0 适配。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "GLM-5.3",
+      "vendor": "Z.ai（智谱）",
+      "highlight": "开源全量 753B 权重（40B 激活），自定义许可证；CyberGym 84.5%，宣称发现 2436 个真实漏洞。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "Qwen3.8-27B",
+      "vendor": "阿里",
+      "highlight": "27B 多模态开放权重，本周 HF 趋势榜下载量第一（约 756 万下载），Unsloth GGUF 版 1130 万下载。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "MiniCPM5-2B",
+      "vendor": "OpenBMB（面壁智能）",
+      "highlight": "2.52B 端侧模型，Apache-2.0，原生 128K 上下文；LiveCodeBench 69.1、SWE-bench Verified 46.4 超多个 4B 基线。",
+      "link": "https://pandaily.com/openbmb-minicpm5-2b-on-device-open-source-sota"
+    },
+    {
+      "name": "Hy4",
+      "vendor": "腾讯混元",
+      "highlight": "预览版配套 Sherry 量化方案：1.5TB 权重压至 214GB，8×H20 上 205 tokens/s prefill。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "Nex N2.5 Pro",
+      "vendor": "Nex AGI",
+      "highlight": "262K 上下文 + OpenRouter 免费端点，开源权重 407GB 属多卡级部署。",
+      "link": "https://huggingface.co/models?sort=trending"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "MCP 成为 Linux Foundation 治理标准，两大 SDK 月下载破 4.7 亿",
+      "summary": "MCP 从 2024 年 Anthropic 内部项目到 Linux Foundation 治理标准仅用两年：2025 年 3 月加入 OAuth 2.1 与 streamable HTTP，12 月移交 Agentic AI Foundation。截至 2026 年 7 月底前 30 天两大 SDK 下载量超 4.7 亿次，主流 AI 产品全部支持。Anthropic 同期推广的 Skills 走轻量指令路线，与 MCP 重连接形成分工。",
+      "source": "deniz.in",
+      "link": "https://deniz.in/how-mcp-grew-from-an-internal-anthropic-hack-into-ai-s-standard-tool-protocol",
+      "models": []
+    },
+    {
+      "title": "GitTrends AI v5.0：给 MCP/Skill 生态装上「实时速度雷达」",
+      "summary": "开源注册表以 24 小时 Star 增速对 Agent Skills、MCP 服务器进行排名，提供机器可读 JSON/RSS 数据，并原生提供 MCP 服务器让编码智能体在任务中直接查询注册表，瞄准生态「发现机制失灵」痛点。",
+      "source": "dev.to",
+      "link": "https://dev.to/aman_social/introducing-gittrends-ai-v50-real-time-github-velocity-1-click-mcp-discovery-for-coding-agents-405e",
+      "models": []
+    },
+    {
+      "title": "OpenAI 从 Cursor 下架全部模型，「开放权重」价值再凸显",
+      "summary": "Cursor 归属 SpaceX 后，OpenAI 不再允许其模型出现在 Cursor 中。当供应商可以决定「不喜欢你就不给模型」时，可自主托管的开放权重与可自由切换的开放 harness 价值进一步上升。",
+      "source": "ThursdAI",
+      "link": "https://sub.thursdai.news/feed",
+      "models": []
+    },
+    {
+      "title": "122B 参数 T1 终端智能体：单任务连续执行 300+ 轮工具调用",
+      "summary": "专为操作真实命令行终端训练的 1220 亿参数智能体模型，单任务可持续执行超过 300 轮工具调用，并通过新训练技术保持超长序列强化学习的稳定性，直击智能体长时程工作瓶颈。",
+      "source": "arXiv / GenAI Daily",
+      "link": "https://arxiv.org/list/cs.AI/recent",
+      "models": []
+    },
+    {
+      "title": "高德发布 3D 原生城市世界模型 ABot-Earth 0.7",
+      "summary": "支持城市三维空间实时 AI 解析，面向自动驾驶、城市仿真与数字孪生场景，标志着地图厂商从导航工具向城市级世界模型平台延伸，物理 AI 数据基础设施竞争升温。",
+      "source": "CSDN AI日报",
+      "link": "https://www.news.cn/liangzi/20260911/6472442916e9476a81099f52c8265a89/c.html",
+      "models": []
+    }
+  ]
+}
