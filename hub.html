@@ -280,6 +280,51 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
       <tr><td class="rk">⑧</td><td><b>K2 Horizon 375B-A23B</b></td><td>375B / 23B</td><td>FP8</td><td>≈410GB</td><td>512K</td><td>Apache 2.0</td><td>34</td><td>9/3 全开源（IFM/MBZUAI）：企业多卡推理新选择（23B 激活推理成本低于稠密同级）；官方 API 经 Cerebras/AWS/Nebius/Compass；Terminal-Bench 2.1 70.2%、SWE-bench Pro 42.6%；<b>A.X-K2（SK Telecom）v4.3 缺分移出本档（见第七节）</b>。</td></tr>
     </tbody></table></div>
   <p class="lead" style="margin-top:8px">注：自部署模型无统一 token 价格，成本取决于硬件与利用率，不与 API token 价格混入同一性价比评分。显存估算按 INT4≈0.55GB/十亿参数、FP8≈1.1GB/十亿参数、BF16≈2.0GB/十亿参数、Q3≈0.42GB/十亿参数粗算（128GB 档按 Q3 口径；1-bit 量化以官方量化包为准），实际请以 vLLM/llama.cpp 实测为准。</p>
+  <h2 class="sec" style="margin-top:22px">本地部署生图榜（文生图逐档位，5A 同步）</h2>
+  <p class="lead" style="color:#64748b;font-size:13px">文生图模型与 LLM 分榜：无同口径 AA 分，按画质/提示词遵循/许可/速度综合推荐。显存 = 权重（推荐量化）+ 采样余量，≈ 为估算值，以 ComfyUI/SD.Next 实测为准。许可红线同主榜：权重可下载 ≠ 宽松开源（FLUX dev 系禁商用；腾讯混元社区许可月活 &gt;1 亿需授权、欧盟/英国/韩国地域除外）。</p>
+  <h3 class="sub2">8GB 档（入门卡 / 核显 hybrid / 8GB Mac，量化 GGUF / NF4）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>Z-Image Turbo</b></td><td>6B</td><td>DiT（单流）</td><td>GGUF Q4 / FP8</td><td>≈6GB</td><td>8</td><td>Apache 2.0</td><td>✓</td><td>阿里 8 步蒸馏快速出图，2.5–6 秒/张（4090 约 1 秒级）；提示词遵循与文字渲染超同档预期；Apache 2.0 可商用，8GB 档综合首选。</td></tr>
+      <tr><td class="rk">②</td><td><b>SDXL 1.0</b></td><td>3.5B（U-Net）</td><td>U-Net + 双文本编码器</td><td>FP16 / GGUF Q8</td><td>≈6–8GB</td><td>25–30</td><td>OpenRAIL++-M</td><td>✓（限条款）</td><td>生态之王：Civitai 5000+ LoRA/Checkpoint、ControlNet 全家桶、几乎兼容所有插件工作流；原生 1024 分辨率；老卡兼容性最好，纯生态与可控性需求仍是第一选择。</td></tr>
+      <tr><td class="rk">③</td><td><b>FLUX.1 schnell</b></td><td>12B</td><td>DiT/MM-DiT 双流</td><td>GGUF Q4</td><td>≈8–10GB（临界）</td><td>4</td><td>Apache 2.0</td><td>✓</td><td>Apache 2.0 蒸馏版，4 步出图速度极快；质量低于 FLUX.1 dev（提示词遵循与细节弱一档），Q4 量化 8GB 卡临界可跑，作速度型备选。</td></tr>
+      <tr><td class="rk">④</td><td><b>FLUX.1 dev</b></td><td>12B</td><td>DiT/MM-DiT 双流</td><td>GGUF Q4</td><td>≈8–12GB（临界）</td><td>20–28</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>质量基准模型：Q4 量化 8GB 卡临界可跑（更稳选 12GB 档）；社区公认开源生图质量基准，纹理/光影/手部细节最好；禁商用，商用请选 schnell 或 Qwen-Image。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Sana 1.5 / 0.6B–1.6B</b></td><td>0.6–1.6B</td><td>深度压缩 AE + 线性注意力 DiT</td><td>FP16</td><td>≈4–8GB</td><td>20–40</td><td>Apache 2.0</td><td>✓</td><td>NVIDIA 系，线性注意力 + 极小 AE 使 1024 图仅 4–8GB；速度极快（笔记本可跑）；质量中上、生态较新。</td></tr>
+    </tbody></table></div>
+  <h3 class="sub2">16GB 档（主流游戏卡 / 16GB Mac，生图甜点档）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>Qwen-Image</b></td><td>20B（MMDiT）</td><td>MMDiT 双流 + VAE</td><td>GGUF Q4</td><td>≈12–13GB</td><td>30–50</td><td>Apache 2.0</td><td>✓</td><td>阿里 20B MMDiT：开源阵营<b>图内文字渲染最强</b>（中英双语海报/标注/Logo），语义理解深；GGUF Q4 16GB 卡舒适入档（FP8 ≈10GB 更省）；Apache 2.0 可商用——质量/文字/许可三者的本档最优解。</td></tr>
+      <tr><td class="rk">②</td><td><b>FLUX.1 dev</b></td><td>12B</td><td>DiT/MM-DiT 双流</td><td>FP8 / GGUF Q5–Q6</td><td>≈10–13GB</td><td>20–28</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>FP8/Q5 量化后本档舒适；社区 LoRA 生态庞大（Civitai 数千）；综合质量仍为 12B 级基准；禁商用。</td></tr>
+      <tr><td class="rk">③</td><td><b>FLUX.2 klein</b></td><td>4B</td><td>DiT（FLUX.2 系）</td><td>FP16 / FP8</td><td>≈8–13GB</td><td>亚秒级/步</td><td>Apache 2.0</td><td>✓</td><td>FLUX.2 家族开源小杯：质量逼近 FLUX.1 dev 一档，速度极快；Apache 2.0 可商用；FLUX 生态原生兼容，商用 FLUX 需求本档首选。</td></tr>
+      <tr><td class="rk">④</td><td><b>SD 3.5 Medium</b></td><td>2.5B</td><td>MMDiT</td><td>FP16 / FP8</td><td>≈6–10GB</td><td>28–40</td><td>Stability Community</td><td>✓（营收 &lt;$100 万免许可）</td><td>轻量新架构，速度与质量均衡；Stability 社区许可年营收低于 $100 万免费商用，企业商用需购买许可。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>SD 3.5 Large</b></td><td>8.1B</td><td>MMDiT</td><td>FP8</td><td>≈7–12GB</td><td>28–40</td><td>Stability Community</td><td>✓（营收 &lt;$100 万免许可）</td><td>FP8 后本档可跑；提示词遵循与排版强于 SDXL；许可同 Medium 条款。</td></tr>
+    </tbody></table></div>
+  <h3 class="sub2">24GB 档（RTX 4090 等消费级旗舰，画质优先）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>FLUX.2 dev</b></td><td>32B</td><td>DiT（FLUX.2 系）</td><td>FP8 / GGUF Q4–Q6</td><td>≈18–24GB</td><td>25–50</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>提示词遵循与画质<b>开源阵营天花板</b>：多参考图（多图角色一致性）、10M 分辨率、复杂光照/文字排版显著强于 FLUX.1；量化后 4090 单卡可跑；个人创作首选，但 Non-Commercial 禁商用。</td></tr>
+      <tr><td class="rk">②</td><td><b>Qwen-Image</b></td><td>20B（MMDiT）</td><td>MMDiT 双流 + VAE</td><td>FP16</td><td>≈14–16GB</td><td>30–50</td><td>Apache 2.0</td><td>✓</td><td>FP16 全精度 + KV 余量本档舒适；文字渲染最强 + 可商用不变；Qwen-Image-Edit 衍生版支持指令式图像编辑。</td></tr>
+    </tbody></table></div>
+  <h3 class="sub2">48GB+ 档（专业卡 / 大内存工作站，全精度舒适区）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>Qwen-Image</b></td><td>20B（MMDiT）</td><td>MMDiT 双流 + VAE</td><td>BF16</td><td>≈40GB</td><td>30–50</td><td>Apache 2.0</td><td>✓</td><td>BF16 全精度最舒适区：文字渲染细节无损失，批量出图可开更大 batch；Apache 2.0 无任何条款负担。</td></tr>
+      <tr><td class="rk">②</td><td><b>HunyuanImage 3.0</b></td><td>80B / 13B 激活</td><td>MoE（64 专家）+ Transfusion 自回归</td><td>FP8 / 层卸载</td><td>≈40–80GB（层卸载可 24GB 卡慢速跑）</td><td>30–50</td><td>腾讯混元社区许可</td><td>✓（月活 &gt;1 亿需授权）</td><td>80B/13B 激活为开放权重生图参数之王：世界知识推理 + 千字级长提示词遵循最强，图内多语言文字渲染优秀；层卸载后 24GB 卡可慢速跑，全量需 48–80GB；月活 &gt;1 亿需向腾讯申请。</td></tr>
+      <tr><td class="rk">③</td><td><b>FLUX.2 dev</b></td><td>32B</td><td>DiT（FLUX.2 系）</td><td>FP16</td><td>≈64GB（超档）</td><td>25–50</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>FP16 全精度 64GB 属本档超档偏上；质量优先的工作室可选（仍禁商用）；一般用 FP8/Q6 量化即可覆盖。</td></tr>
+    </tbody></table></div>
+  <h3 class="sub2">数据中心级（多卡 / 企业集群，个人电脑不适用）</h3>
+  <div class="card" style="overflow-x:auto"><table>
+    <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
+    <tbody>
+      <tr class="top"><td class="rk">①</td><td><b>HunyuanImage 3.0</b></td><td>80B / 13B 激活</td><td>MoE（64 专家）+ Transfusion 自回归</td><td>BF16</td><td>≈160GB（官方推荐 ≥3×80GB）</td><td>30–50</td><td>腾讯混元社区许可</td><td>✓（月活 &gt;1 亿需授权）</td><td>开放权重生图<b>质量天花板</b>：长复杂提示词遵循、世界知识推理（九宫格教程/算法流程图/物理原理图解）、海报标题/信息图标注级文字渲染；MoE 13B 激活推理成本可控；另有 Instruct-Distil 8 步蒸馏版提速；个人/企业可商用，月活 &gt;1 亿需向腾讯申请、欧盟/英国/韩国地域除外、禁止用输出训练其他模型。</td></tr>
+      <tr><td class="rk">②</td><td><b>FLUX.2 dev FP16</b></td><td>32B</td><td>DiT（FLUX.2 系）</td><td>BF16</td><td>≈64GB</td><td>25–50</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>单卡 80GB 即全精度；商用需 BFL 企业授权，多卡批量出图仅为吞吐场景。</td></tr>
+    </tbody></table></div>
+  <p class="lead" style="margin-top:8px">注：生图榜为静态调研榜（首期 2026-09-12）；步数列为默认推荐采样步数；商用标记：✓ = 宽松许可可商用，✓（限条款）= 可商用但附加条款，✗ = Non-Commercial 禁商用。</p>
 </div>
 
 <!-- 本周变化 -->
