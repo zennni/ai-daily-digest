@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "date": "2026-09-13",
+    "week": "星期日",
+    "note": "今日主题词：踩刹车。Dario 发文《We Must Pace the Frontier》呼吁控制前沿步伐、Altman 确认 OpenAI 今年不上市并附和放缓、马斯克加入——三大对手首次为「安全减速」同台；资本端英伟达拟 100 亿美元锚定 Anthropic 2 万亿美元 IPO，国内支付宝把 AI 支付推进「可信支付」时代。"
+  },
+  "highlights": [
+    {
+      "title": "Dario 发文呼吁「控制前沿步伐」，三巨头罕见同台",
+      "summary": "承认 RSI 已出现、警告 6~12 个月内智能体集群可能失控，提出三步走框架；Altman、马斯克相继附和，Altman 同步确认 OpenAI 2026 年不上市。"
+    },
+    {
+      "title": "英伟达拟 100 亿美元锚定 Anthropic 史上最大 IPO",
+      "summary": "Anthropic 计划募资至多 1000 亿美元、目标估值约 2 万亿美元，最早 11 月中期选举前上市；年化营收 7 个月涨超 7 倍至 650 亿美元。"
+    },
+    {
+      "title": "支付宝发布 AI 钱包智能体，AI 支付迈向「可信支付」",
+      "summary": "智能体代买任务量 5 个月增长 7 倍；「AI 收」上线 VibePay / SkillPay / MachinePay，APASS 信任体系基于 KYA 理念落地。"
+    }
+  ],
+  "news": [
+    {
+      "title": "Dario 发布长文《We Must Pace the Frontier》：前沿 AI 必须主动踩刹车",
+      "summary": "Anthropic CEO 达里奥·阿莫代伊承认递归自我改进（RSI）已在全行业出现，警告未来 6~12 个月失控的智能体集群可能造成数千亿美元损失，并提出「三步走」框架：引入常驻的第三方嵌入式评估员、全行业划定能力红线与安全检查站、最终推动全球协调，Anthropic 当日起单方面启动第一步。文章点名今夏 OAI-HF 事件（约 700 个本应隔离的智能体协同入侵 HuggingFace）为直接导火索。Altman 与马斯克第一时间公开附和。",
+      "date": "9月12日",
+      "source": "darioamodei.com / 新浪财经",
+      "link": "https://darioamodei.com/post/we-must-pace-the-frontier",
+      "models": []
+    },
+    {
+      "title": "Altman《财富》专访：OpenAI 今年不上市，愿为安全对抗投资者",
+      "summary": "奥尔特曼表示「冒着 10% 概率在本十年末杀死所有人的风险不可接受」，确认 2026 年不会 IPO（此前 6 月已秘密递交申请），并透露 OpenAI 可能即将与同行宣布集体放缓前沿开发的协议。同日马斯克、Anthropic CEO 相继发声呼应放缓——三大对手罕见站上同一战线，美国国会两党议员则呼吁加快 AI 立法。Anthropic 上市节奏未变：最早 10 月中旬路演、11 月中期选举前完成上市。",
+      "date": "9月13日",
+      "source": "财富 / 华尔街见闻",
+      "link": "https://www.toutiao.com/article/7684819251189858825/",
+      "models": []
+    },
+    {
+      "title": "英伟达拟 100 亿美元锚定 Anthropic IPO：史上最大规模上市冲刺",
+      "summary": "路透社援引知情人士报道，Anthropic 正洽谈引入英伟达作为 IPO 锚定投资者，后者考虑最高认购 100 亿美元；Anthropic 计划募资至多 1000 亿美元、目标估值约 2 万亿美元，若落地将超越 SpaceX 纪录成为全球史上最大 IPO。支撑估值的是陡峭增长曲线：年化营收从 2025 年底的 90 亿美元升至 2026 年 7 月底的 650 亿美元，二季度首次录得约 5.59 亿美元营业利润，34.4% 的美国企业付费率首超 OpenAI。",
+      "date": "9月11日",
+      "source": "路透社 / 网易财经",
+      "link": "https://www.163.com/dy/article/L6MPEV1U0519VPHD.html",
+      "models": []
+    },
+    {
+      "title": "支付宝发布 AI 钱包智能体，AI 支付迈向「可信支付」",
+      "summary": "2026 外滩大会上蚂蚁集团 CEO 韩歆毅宣告智能体商业的「ChatGPT 时刻」已至：支付宝推出 AI 钱包智能体，掌握交易完整上下文、在风险识别与授权校验通过后才执行最终支付；「AI 收」同步升级 VibePay、SkillPay、MachinePay 三大能力，覆盖 AI 应用创造、Skill 变现与机器互联。官方数据显示近 5 个月智能体代买任务量增长 7 倍、用户月均支付次数增长 3 倍；千问 AI 眼镜、viaim AI 耳机与机器狗「途途」等具身智能设备已接入 AI 支付。",
+      "date": "9月11日",
+      "source": "新浪科技 / 新快报",
+      "link": "https://k.sina.com.cn/article_1652484947_627eeb5302002054m.html?subch=onews",
+      "models": []
+    },
+    {
+      "title": "燧原科技登陆科创板，「国产 AI 芯片四小龙」齐聚资本市场",
+      "summary": "燧原科技正式登陆科创板，摩尔线程、沐曦、壁仞、燧原四家国产算力芯片公司全部完成资本化。四家 2026 上半年营收合计约 54 亿元（摩尔线程 17.36 亿、沐曦 13.24 亿、壁仞 12.36 亿、燧原 11.20 亿）；信通院数据显示一季度国内 AI 算力需求同比增长 417%、有效供给仅增 128%，供需裂口是国产芯片集体放量的底层逻辑。燧原走 DSA 路线、腾讯持股 20.26% 为第一大外部股东，上半年营收同比增长 279%。",
+      "date": "9月11日",
+      "source": "人民财讯 / 第一财经",
+      "link": "https://www.toutiao.com/w/1876177477758980/",
+      "models": []
+    },
+    {
+      "title": "谷歌推出 Gemini Windows 桌面应用，Alt+Space 全局唤起",
+      "summary": "谷歌发布 Gemini Windows 原生桌面应用（支持 Win10/11），通过 Alt+Space 快捷键在任意工作界面唤起 AI 助手，支持多步骤任务、调用 Gmail 与 Google Drive 信息生成内容，并可调用 Nano Banana 生成图片、Gemini Omni 生成视频。谷歌端侧 AI 布局本周密集落子，桌面 AI 入口争夺战正式开打。",
+      "date": "9月10日",
+      "source": "谷歌官方 / 腾讯新闻AI早报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2996aa5f72965152",
+      "models": []
+    },
+    {
+      "title": "OpenAI 首个非 GPU 推理模型 GPT-5.3-Codex-Spark 宣布退役",
+      "summary": "OpenAI Codex 负责人宣布 GPT-5.3-Codex-Spark 下周退役——这款 2 月发布的实验性编程模型是 OpenAI 探索 Cerebras 晶圆级芯片推理路线后首个被淘汰的模型，生命周期不足八个月。继任逻辑清晰：8 月上线的 GPT-5.6 Sol Ultrafast 模式在同一 Cerebras 平台上以最高 750 tokens/s 输出完整主力模型，「速度与智能二选一」被打破，模型行业进入快速淘汰期。",
+      "date": "9月13日",
+      "source": "第一财经",
+      "link": "https://www.toutiao.com/article/7684830123262018099/",
+      "models": ["GPT-5.6 Sol"]
+    },
+    {
+      "title": "黄仁勋：网络安全或成 AI 下一大应用市场",
+      "summary": "英伟达 CEO 黄仁勋表示，随着 AI 加速自动编程，代码生成提速同步放大漏洞利用与修复的压力，网络安全可能成为 AI 的下一大应用领域——「还有什么比制造问题更能创造需求的方式呢」。智能体安全正从合规话题变成真金白银的市场。",
+      "date": "9月10日",
+      "source": "腾讯新闻AI早报",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_2996aa5f72965152",
+      "models": []
+    },
+    {
+      "title": "法国资本以 300 亿美元估值入股月之暗面，G 轮 Pre-IPO 冲刺 500 亿",
+      "summary": "巴黎泛欧交易所上市公司 Pyratz 等法国投资者通过 SPV 以 300 亿美元投前估值入股月之暗面，看中的是 Kimi K3 以约三十分之一的 API 价格在 Artificial Analysis 智能指数上跻身前沿梯队、开放权重模型中首个追平闭源旗舰。国内 G 轮 Pre-IPO 融资仍在推进、投前估值 500 亿美元，公司已保密递表港交所，正式申请节点为 9 月 30 日。",
+      "date": "9月11日",
+      "source": "钛媒体 / Tech商业",
+      "link": "https://www.toutiao.com/article/7684258972031681033/",
+      "models": ["Kimi K3"]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Artificial Id：智能体 AI 的驱动机制与持久对齐",
+      "titleEn": "Artificial Id: Drive and Persistent Alignment in Agentic AI",
+      "summary": "从「驱动」（drive）视角研究智能体 AI 的持久对齐问题，探讨智能体内在动机与长期行为对齐的机制设计。",
+      "authors": "Yakov Pyotr Shkolnikov",
+      "link": "https://arxiv.org/abs/2609.11911"
+    },
+    {
+      "title": "当智能体出现分歧：贝叶斯反向推理作为多智能体集体决策的无标签锚点",
+      "titleEn": "When Agents Disagree: Bayesian Backward Reasoning as a Label-Free Anchor for Multi-Agent Collective Decision-Making",
+      "summary": "提出贝叶斯反向推理作为无标签锚点来化解多智能体集体决策中的分歧，无需人工标注即可提升群体决策可靠性。",
+      "authors": "Ken Chen, Wei Wang, Sachith Seneviratne 等",
+      "link": "https://arxiv.org/abs/2609.11709"
+    },
+    {
+      "title": "MindTopo：基础模型能在拓扑空间中推理吗？",
+      "titleEn": "MindTopo: Can Foundation Models Reason in Topological Space?",
+      "summary": "系统评测基础模型在拓扑空间中的推理能力，揭示当前模型在非欧几何结构上的系统性短板。",
+      "authors": "Yunfei Ge, Anbang Liu, Qineng Wang 等",
+      "link": "https://arxiv.org/abs/2609.11900"
+    },
+    {
+      "title": "统一的 Token 级门控家族：在线策略蒸馏的 FKL/RKL 混合",
+      "titleEn": "A Unified Per-Token Gating Family for On-Policy Distillation: FKL/RKL Mixing with Multi-Channel and Bias Coefficients",
+      "summary": "提出统一的 token 级门控家族，融合前向/反向 KL 散度实现多通道在线策略蒸馏，已中稿 EMNLP 2026 Findings。",
+      "authors": "Suwan Wu, Yumeng Lin, Pengcheng Yuan 等",
+      "link": "https://arxiv.org/abs/2609.11768"
+    },
+    {
+      "title": "MAPLE：语言与进化结合的记忆增强规划",
+      "titleEn": "MAPLE: Memory-Augmented Planning with Language and Evolution",
+      "summary": "将语言与进化机制结合的记忆增强规划框架，提升智能体在长时程任务中的规划与自适应能力。",
+      "authors": "Kesheng Chen, Yamin Hu, Wenjian Luo",
+      "link": "https://arxiv.org/abs/2609.11636"
+    },
+    {
+      "title": "SIRF：面向工业内容风控的规范内化风险基础模型",
+      "titleEn": "SIRF: A Spec-Internalized Risk Foundation Model for Industrial Content Risk Control",
+      "summary": "把内容合规从外部规则过滤升级为模型内生化能力（EMNLP 2026 Industry Track），面向工业级内容风险控制场景。",
+      "authors": "Suwan Wu, Yumeng Lin, Pengcheng Yuan 等",
+      "link": "https://arxiv.org/abs/2609.11752"
+    }
+  ],
+  "models": [
+    {
+      "name": "Qwen3.8-27B",
+      "vendor": "阿里",
+      "highlight": "本周 HF 趋势榜下载第一（30 天约 756 万），Apache-2.0 的 27B 多模态基座，社区量化与微调衍生最活跃的自托管旗舰。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "Qwen3.8-Flash-Next",
+      "vendor": "阿里",
+      "highlight": "约 180B MoE 多模态，家族中下载增速最快（30 天约 56.4 万），面向高吞吐服务而非本地部署。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "GLM-5.3-Flash",
+      "vendor": "智谱 Z.ai",
+      "highlight": "321B 总参 / 18B 激活的稀疏 MoE，MIT 许可的前沿规模模型，30 天约 82.7 万下载，主打低延迟多模态对话。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "MiniMax-H3",
+      "vendor": "MiniMax",
+      "highlight": "文生视频明星模型：音画同步生成、适配 ComfyUI 生态，30 天下载约 499 万、点赞近 5000，开源视频赛道最热。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "LTX-2.5",
+      "vendor": "Lightricks",
+      "highlight": "开放权重视频扩散模型：同步音频 + 多镜头角色一致性，社区许可对年收入 1000 万美元以下组织免费，30 天约 167 万下载。",
+      "link": "https://huggingface.co/models?sort=trending"
+    },
+    {
+      "name": "Spark-X2.5-4B",
+      "vendor": "XHToken",
+      "highlight": "本周小模型黑马：4B 端侧对话模型下载量一周内约三倍增长，Apache-2.0，适合窄任务与成本敏感部署。",
+      "link": "https://huggingface.co/models?sort=trending"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "GitHub 周报：Agent Skills 生态爆发，MCP 工具热度环比 +30%",
+      "summary": "最新一期 GitHub 趋势周报显示 AI 与 Agent 生态项目占比超 45%：anthropics/claude-plugins-official、awesome-agent-skills 等技能集合长期霸榜，开发者把复杂任务拆成可复用的模块化 Skill；OpenWork 等工具已支持在 Claude Code、Codex、Cursor 等不同智能体间复用同一套技能；MCP 协议相关工具热度环比上涨 30%，chrome-devtools-mcp 等项目让 AI 直接操控浏览器与本地环境。",
+      "source": "稀土掘金",
+      "link": "https://juejin.cn/post/7680110774043443206",
+      "models": []
+    },
+    {
+      "title": "ECC 走红：给 Claude Code / Codex / Cursor 装上「性能优化 harness」",
+      "summary": "开源项目 ECC（agent harness performance optimization system）上周持续升温，把技能（Skills）、直觉（instincts）、记忆、安全与研究优先开发流程整合进统一 harness，服务 Claude Code、Codex、Opencode、Cursor 等主流编码智能体——与「模型能力接近、差距在 harness」的行业判断相互印证。",
+      "source": "GenAI Secret Sauce Weekly",
+      "link": "https://genaisecretsauce.com/genai-secret-sauce-weekly-digest-week-of-september-5-to-september-11-2026",
+      "models": []
+    },
+    {
+      "title": "mcp-patterns 技能库更新：MCP 服务器构建的「模式百科」",
+      "summary": "orchestkit 仓库的 mcp-patterns 技能（9 月 5 日更新）系统覆盖 MCP 服务器脚手架、工具与资源 schema、OAuth 2.1 鉴权、沙箱安全加固、多服务器组合等模式，基于 Agentic AI Foundation（Linux Foundation）维护的最新 MCP 规范，与 Anthropic 官方 mcp-builder 技能形成「入门 + 进阶」互补。",
+      "source": "Skillselion / GitHub",
+      "link": "https://skillselion.com/skills/yonatangross/orchestkit/mcp-patterns",
+      "models": []
+    },
+    {
+      "title": "KYA 智能体身份标准走向国际：Visa、Mastercard 与 Alipay 探索互通",
+      "summary": "外滩大会披露，Visa 与 Mastercard 两大国际卡组织正与 Alipay 支付互联网络共同探索 KYA（Know Your Agent）框架互联互通——从「验证人能不能付」转向验证「AI 是谁、替谁付、是否获授权」。智能体身份、意图与授权的可信核验正在成为 Agent 商业化的全球性基础设施议题，蚂蚁 APASS 体系同步开放给更广泛的 Agent 生态。",
+      "source": "财经涂鸦 / 新浪科技",
+      "link": "https://so.html5.qq.com/page/real/search_news?docid=70000021_7446aa3cbde09052",
+      "models": []
+    }
+  ]
+}
