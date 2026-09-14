@@ -35,7 +35,7 @@
     {"name": "Kimi K2.8 Preview", "vendor": "月之暗面 Kimi", "highlight": "Kimi Code 与 Kimi Work 全量上线，支持三档思考强度与图片/视频输入，1M 上下文向所有会员开放；8 月 ARR 突破 10 亿美元、年底目标 20 亿美元。", "link": "https://www.kimi.com/"},
     {"name": "SWE-2", "vendor": "Cognition", "highlight": "基于 2.8 万亿参数开源基座做深度强化学习后训练的编程模型：FrontierCode 1.1 Main 拿下 50.0%、与顶级专有模型差距不到 1 分，端到端推理成本大降 64%。", "link": "https://cognition.ai/"},
     {"name": "AuK 1.5B", "vendor": "腾讯混元", "highlight": "开源语音基座：零样本 TTS、指令式 TTS、半音级声学编辑、副语言控制与音源分离统一进自然语言指令接口；4 步扩散即可实时生成。", "link": "https://huggingface.co/tencent"},
-    {"name": "DeepSeek V4 Pro", "vendor": "DeepSeek", "highlight": "官方宣布 9 月 14 日之后继续提供 V4 Pro API 调用服务、计费方式不变，原定下线计划取消。", "link": "https://api-docs.deepseek.com/"},
+    {"name": "DeepSeek V4 Pro", "vendor": "DeepSeek", "highlight": "API 正式下线：原定 9 月 14 日 12:00 停服，一度宣布继续服务，最终停止调用并从榜单移出（96→94），用户需迁移至 V4.1-Flash 等在役模型。", "link": "https://api-docs.deepseek.com/"},
     {"name": "Nari 语音引擎", "vendor": "Nari Labs", "highlight": "开源语音引擎：首音频延迟仅 50 毫秒，价格约为 ElevenLabs 的十分之一。", "link": "https://huggingface.co/Nari-Labs"},
     {"name": "Rubin Ultra", "vendor": "NVIDIA（预测）", "highlight": "SemiAnalysis 预测下一代 Rubin Ultra 每 GPU 的 HBM 容量将从 288GB 降至 192GB，4-hi 堆叠将成推理最优配置。", "link": "https://semianalysis.com/"}
   ],
