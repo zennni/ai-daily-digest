@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "date": "2026-09-17",
+    "week": "星期四",
+    "note": "OpenAI 发布周箭在弦上（GPT-6 Sol 疑似灰度、GPT-5.5 宣布退役），「限速派」与「加速派」隔空交锋，而算力竞赛的下一站是电网。"
+  },
+  "highlights": [
+    {"title": "OpenAI 发布周临近", "summary": "GPT-6 Sol 疑似开启灰度测试（已有用户被自动路由），GPT-5.5 宣布 10 月 14 日起从 ChatGPT 与 Codex 下线，竞争重心从「模型更聪明」转向「完成复杂任务」。"},
+    {"title": "安全路线之争公开化", "summary": "诺和诺德牵手 Anthropic 用 Claude Science 加速新药研发；扎克伯格则发文反对「AI 减速论」，主张独立评估嵌入日常开发而非全行业放缓。"},
+    {"title": "算力的下一战是电力", "summary": "英伟达、谷歌与 Emerald AI 成立 AI 能源管理联盟（AEMA），拟从现有电网释放最高 100GW 容量，并为每吉瓦新建数据中心省约 7.33 亿美元。"}
+  ],
+  "news": [
+    {"title": "OpenAI 发布周临近：新一代旗舰疑似开启灰度测试，上代模型宣布退役", "summary": "官方称本周发布数量将达 DevDay 级别，新一代模型或于周四上线，已有用户反馈被自动路由至更快的新模型；GPT-5.5 将于 10 月 14 日起从 ChatGPT 与 Codex 下线，API 存量开发者不受影响。近期已密集推出 Images 2.5、Agents API、GPT-Live-1 等产品。", "date": "9月17日", "source": "腾讯研究院AI速递", "link": "https://www.sohu.com/a/1077012256_455313", "models": []},
+    {"title": "诺和诺德携手 Anthropic：用 Claude Science 平台加速新药研发", "summary": "诺和诺德宣布使用 Anthropic 面向科研的 Claude Science 平台加快药物发现与开发，并测试 AI 解决科研问题与提升软件研发能力；合作将纳入数据治理与人工监督机制。Dario Amodei 表示 AI 有可能把原本需要一个世纪的生物医学突破压缩至 10 年。", "date": "9月16日", "source": "每日经济新闻", "link": "https://www.toutiao.com/article/7686285271251354152/", "models": []},
+    {"title": "扎克伯格发文反对「AI 减速论」：主张独立评估嵌入日常开发", "summary": "Meta CEO 公开回应前沿 AI 安全争议，反对全行业放缓，主张引入独立评估机构与外部顾问、把安全审查嵌入日常开发流程；以 Meta 曾因安全主动推迟 Muse 发布为例。此前黄仁勋也在 Dreamforce 表达类似立场，与阿莫迪「前沿限速」提议形成公开分歧。", "date": "9月17日", "source": "每日经济新闻", "link": "https://news.qq.com/rain/a/20260917A02IUR00", "models": []},
+    {"title": "英伟达、谷歌、Emerald AI 成立 AI 能源管理联盟：拟释放最高 100GW 电网容量", "summary": "三方成立 AEMA 联盟，推动 AI 数据中心根据电网实时状况动态调整用电、探索更快并网路径；联盟估计可从现有电力系统释放最高 100GW 容量，并为每吉瓦新建数据中心节省约 7.33 亿美元电力系统成本。", "date": "9月16日", "source": "每日经济新闻", "link": "https://www.toutiao.com/article/7686285271251354152/", "models": []},
+    {"title": "Meta 无摄像头 AI 眼镜 Luna 曝光：六麦克风、Connect 大会发布", "summary": "Meta 计划今秋推出无摄像头智能眼镜「Luna」，配备 6 个内置麦克风，支持与 Meta AI 及新发布的 Muse 智能体免提交互，预计下周 Connect 开发者大会发布、10 月出货；无摄像头设计面向注重隐私的用户。", "date": "9月16日", "source": "界面新闻", "link": "https://www.jiemian.com/article/15104300.html", "models": []},
+    {"title": "OpenAI「Lily 计划」曝光：数百名外包人员人工审读 ChatGPT 对话", "summary": "数百名外包人员阅读真实用户对话并评分，用于训练模型避免拟人化与讨好型人格；对话虽经脱敏但敏感信息仍可能遗漏，用户多不知情，关闭「为所有人改进模型」选项（默认开启）可退出。", "date": "9月17日", "source": "华尔街见闻", "link": "https://www.sohu.com/a/1077105516_130887", "models": []},
+    {"title": "OpenAI 广告业务提速：Ads Manager 上线、赞助代理开测", "summary": "推出面向广告主的 Ads Manager，支持自然语言创建与优化广告，并在 ChatGPT 内测试「赞助代理」让用户与品牌方 AI 代理互动；同期接入 HubSpot CRM 与 Shopify 电商场景。", "date": "9月17日", "source": "华尔街见闻", "link": "https://www.sohu.com/a/1077105516_130887", "models": []},
+    {"title": "智谱上调全年 ARR 指引 25% 至 30 亿美元：算力瓶颈显著缓解", "summary": "智谱高管确认算力瓶颈显著缓解，将全年 ARR 指引上调至 30 亿美元，国产 AI 企业算力成本与商业化路径同步改善。", "date": "9月17日", "source": "通信世界", "link": "https://www.toutiao.com/article/7506116525205632086/", "models": []},
+    {"title": "字节旗下 Anew Labs 完成 2.9 亿美元融资：红杉中国、高瓴等参投", "summary": "字节跳动旗下 Anew Labs 完成 2.9 亿美元融资，红杉中国、高瓴、IDG、五源、高榕等参与，AI 应用层一级市场吸金能力持续。", "date": "9月17日", "source": "界面新闻", "link": "https://www.jiemian.com/article/15104300.html", "models": []},
+    {"title": "Meta 第三代自研芯片 MTIA 450 明年上半年投产：12 个月自研部署承诺超 1GW", "summary": "MTIA 450 将于明年上半年进入数据中心，第四代 MTIA 500 设计约一个月内完成、2027 年底投产；Meta 未来 12 个月自研芯片部署承诺已超 1 吉瓦用电当量，推理降本主路径转向自研 ASIC。", "date": "9月17日", "source": "腾讯研究院AI速递", "link": "https://www.sohu.com/a/1077012256_455313", "models": []},
+    {"title": "两部门锚定电子信息制造业 30 万亿营收：国产 AI 芯片上半年营收近翻倍", "summary": "「十五五」规划锚定行业 30 万亿元营收目标；上半年七家主力 AI 芯片企业合计营收约 214.6 亿元近乎翻倍，寒武纪、摩尔线程、天数智芯、燧原、壁仞均翻倍以上，部分产品交付排到一年后。", "date": "9月17日", "source": "腾讯研究院AI速递", "link": "https://www.sohu.com/a/1077012256_455313", "models": []},
+    {"title": "软银五年期 CDS 升至 2023 年以来最高：OpenAI 年内上市无望波及信用市场", "summary": "OpenAI 确认年内不上市后，软银持仓变现周期拉长、对 OpenAI 敞口扩大，五年期 CDS 升至 2023 年以来最高，融资成本与债务压力上升。", "date": "9月17日", "source": "每日经济新闻", "link": "https://www.toutiao.com/article/7686285271251354152/", "models": []}
+  ],
+  "papers": [
+    {"title": "永不停止思考：连续时间语言智能体", "titleEn": "Never Stop Thinking: Continuous-Time Language Agents", "summary": "让智能体决策摆脱离散推理步约束，在连续时间轴上规划与行动，为长程任务提供新范式。", "authors": "arXiv cs.AI", "link": "https://arxiv.org/abs/2609.17416"},
+    {"title": "JustFit：24GiB 笔记本上的 20 万 token 上下文 LLM 服务", "titleEn": "JustFit: 200K-Token LLM Serving on a 24 GiB Laptop with Just-in-Time State Management", "summary": "靠即时状态管理按需换入换出 KV 状态，在 24GiB 显存笔记本上跑起 20 万 token 上下文，长上下文平民化工程代表作。", "authors": "arXiv cs.AI", "link": "https://arxiv.org/abs/2609.17475"},
+    {"title": "世界模型科学：长程 LLM 智能体中的自组织临界性与亚稳态信念动力学", "titleEn": "World Model Science: Self-Organized Criticality, Weak Chaos, and Metastable Belief Dynamics in Long-Horizon LLM Agents", "summary": "借用自组织临界性、弱混沌等复杂系统理论，刻画长程 LLM 智能体的信念动力学与失稳机制。", "authors": "arXiv cs.AI", "link": "https://arxiv.org/abs/2609.17419"},
+    {"title": "面向 LLM 助手的可验证社会推理", "titleEn": "Verifiable Social Reasoning for LLM Assistants", "summary": "研究 LLM 在社会性推理任务上的可验证性，让涉及人际、群体与规范的结论可核查、可追溯。", "authors": "arXiv cs.AI", "link": "https://arxiv.org/abs/2609.17496"},
+    {"title": "SKIP：自知识引导的分步偏好学习框架", "titleEn": "SKIP: a Self-knowledge-guided Step-wise Preference Learning Framework for Concise Reasoning", "summary": "让模型「知道自己哪里会错」，在保持准确率的同时显著压缩冗余思考链。", "authors": "arXiv cs.AI", "link": "https://arxiv.org/abs/2609.17012"},
+    {"title": "大模型有价值观吗？对 LLM 价值观的定量分析与对齐框架", "titleEn": "Do LLMs Have Values? A Quantitative Analysis and Alignment Framework for Values in Large Language Models", "summary": "对大模型内部价值取向做定量测量并提出对齐框架，恰逢巨头争论安全标准之际。", "authors": "arXiv cs.AI", "link": "https://arxiv.org/abs/2609.16589"}
+  ],
+  "models": [
+    {"name": "豆包 2.1 Pro（0915 版）", "vendor": "字节跳动 / 火山引擎", "highlight": "多模态编程大升级：录屏+草图直接转代码；38.7 万行仓库 1000 个真实 Issue 近 36 小时修复 83%；图像/视频推理 token 消耗降 30%+；API 全量上线火山方舟。", "link": "https://www.volcengine.com"},
+    {"name": "Spark-Audio-1.0-Preview", "vendor": "科大讯飞", "highlight": "全国产化算力训练的语音基座大模型，Fleurs 中文测试集 SOTA，多语言识别超越国际旗舰，高噪声小音量场景优势明显且通用能力不降智。", "link": "https://www.iflytek.com"},
+    {"name": "StepAudio 3 系列（五款）", "vendor": "阶跃星辰", "highlight": "Realtime/ASR/TTS/Gen/Music 五款模型覆盖实时语音到音乐创作全链路，Gen 版统一框架支持零样本 TTS、歌声、音效与多轨混合生成。", "link": "https://platform.stepfun.com"},
+    {"name": "vivo BlueCode 预览版 + 蓝心 30B MoE", "vendor": "vivo", "highlight": "口袋编程智能体 BlueCode 预览版发布，同步预研 30B MoE 端侧大模型，OriginOS 7 与蓝河操作系统 4 一并登场。", "link": "https://www.vivo.com"},
+    {"name": "HF 趋势榜：开源模型动态", "vendor": "Hugging Face", "highlight": "DeepSeek-V4.1-Flash 以 36.6 万下载居首（MIT、图文多模态）；Qwen3.8-27B 累计 767 万下载仍是本地编程首选；MiniCPM5-2B、LTX-2.5、MiniMax-H3 活跃。", "link": "https://huggingface.co/models?sort=trending"}
+  ],
+  "ecosystem": [
+    {"title": "蚂蚁集团开源 SingProbe Infra：大模型安全内生护栏", "summary": "已适配 29 个主流开源模型的安全护栏基础设施，为企业私有化部署提供开箱即用的安全层。", "source": "极新", "link": "https://www.163.com/dy/article/L70VG9H105562DGT.html", "models": []},
+    {"title": "Anthropic 推出 Salesforce in Claude 插件测试版：37 项销售技能默认写前审批", "summary": "覆盖客户研究、会前准备、管线复盘与 CRM 更新等 37 项技能，连接 Salesforce 与 Slack 并沿用既有权限，写入操作默认先经批准；GitLab、Siemens 已部署，Salesforce 内部 7000 名销售使用。", "source": "AI 每日资讯", "link": "", "models": []},
+    {"title": "豆包手机助手公示 SAEP 协议：第三方应用可声明自动操作边界", "summary": "屏幕自动化操作声明协议公示 30 天，第三方应用可分别允许/拒绝截图、模拟输入、内容修改；端侧 GUI 智能体合规样本：应用白名单+操作类型白名单+高敏动作人工确认。", "source": "新京报", "link": "", "models": ["Seed 2.1"]},
+    {"title": "AWS 将 CloudTrail 接入 Amazon Q：自然语言查审计日志", "summary": "管理控制台可通过 Amazon Q 查询 CloudTrail 记录，检查日志覆盖、追查权限错误、识别资源变更者；只读访问、沿用现有权限。", "source": "AI 每日资讯", "link": "", "models": []},
+    {"title": "国家超算互联网上线智能体超 500 个：算力「一张网」格局基本形成", "summary": "31 个省级算力平台全部对接入网，核心节点依托国产十万卡集群 1 小时完成全球 5 公里分辨率未来 10 天气象预报；算力服务从「申请卡时」走向「调用智能体」。", "source": "AI 每日资讯", "link": "", "models": []},
+    {"title": "Cloudflare 开源 security-audit-skill：给编码 Agent 的多阶段安全审计技能", "summary": "四阶段（侦察/静态/LLM/验证）审计流水线，产出经核验、机器可读（SARIF）的发现，可接入 CI/CD；同期还有阿里开源混合智能体代码审查工具与纯 C 零依赖本地 MoE 推理引擎 Colibri。", "source": "Smartotics AI Daily", "link": "https://smartotics.com/2026/09/2026-09-17-ai-daily-2026-09-17.html", "models": []}
+  ]
+}
