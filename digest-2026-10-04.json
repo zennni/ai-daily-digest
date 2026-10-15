@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "date": "2026-10-04",
+    "week": "星期日",
+    "backfill": true,
+    "note": "今日主题词：估值、表外负债与被挤压的存储。AMD 市值突破 1 万亿美元，但多数涨幅来自估值扩张而非盈利；Needham 指出 Meta 表外负债高达约 6000 亿美元，计入后企业价值倍数要上调 35%。另一边，AI 数据中心正在挤压消费级存储供应，2026 年 PC 均价预计上涨 20%、DRAM 一年涨至 5 倍，被迫「减量提价」的是手机与 PC 厂商。生态侧 Claude Mods 发布架构深潜，社区同日交出防篡改的提示注入防火墙。"
+  },
+  "highlights": [
+    {
+      "title": "AMD 市值突破 1 万亿美元",
+      "summary": "AMD 今年涨近 200%，市值首次突破 1 万亿美元；但英伟达仍以 5.5 万亿美元领先，且增长更快、估值更低。分析普遍认为 AMD 这一轮上涨更多来自估值扩张，而非盈利增速的同步跟上。"
+    },
+    {
+      "title": "Meta 表外负债被算进估值",
+      "summary": "Needham 分析师 Laura Martin 指出 Meta 表内债务与租赁约 1000 亿美元，而表外负债高达约 6000 亿美元；若计入，其企业价值倍数需上调 35%。仅 7 月单月，Meta 就新增约 680 亿美元数据中心租约。"
+    },
+    {
+      "title": "AI 数据中心挤压存储，消费电子被迫减量提价",
+      "summary": "2026 年二季度全球 PC 出货 6820 万台、同比降 4.9%，2026 年 PC 均价预计上涨 20%；DRAM 一年内涨至 5 倍，超过 40% 的手机型号涨价，游戏机最高涨 150 美元，缓解可能要等到 2028 年之后。"
+    },
+    {
+      "title": "Claude Mods 架构深潜：无沙箱、全机器权限",
+      "summary": "Anthropic 说明 Mods 是注入 Claude Code 内部事件的 TypeScript 小函数，可在提示词到达模型前改写、拦截或重试工具调用、审批权限、脱敏输出并替换 UI；它们随插件分发并以完整机器权限、非沙箱方式运行，公司自己的 diff 面板、AGENTS.md 加载器与遥测都已改成 mod。"
+    }
+  ],
+  "news": [
+    {
+      "title": "AMD 市值突破 1 万亿美元，但英伟达仍以 5.5 万亿领先",
+      "summary": "AMD 今年股价上涨近 200%，市值首次突破 1 万亿美元。但英伟达仍以 5.5 万亿美元市值领先，且营收增速更快、估值倍数更低。文章指出 AMD 这一轮的上涨更多来自估值扩张而非盈利同步改善，两家公司的估值差距因此并未实质缩小。",
+      "date": "10月4日",
+      "source": "The Motley Fool",
+      "link": "https://www.readaitime.com/news/2026-10-04/2it7j472",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Meta Muse 下载超 560 万次，法巴银行下调其长期变现预期",
+      "summary": "Muse 自 9 月上线以来累计下载超过 560 万次，一度登顶苹果应用商店，在美国上线初期的表现超过 ChatGPT 与 Sora。不过其打开率仍低于成熟应用，法巴维持「跑赢大盘」评级与 885 美元目标价，同时下调了对该产品的长期变现预期。下载量领先与留存、变现之间的差距，是消费级 AI 助手共同的待解问题。",
+      "date": "10月4日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-04/1uvmsxi7",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Needham：Meta 表外负债 6280 亿美元，估值倍数或上调 35%",
+      "summary": "Needham 分析师 Laura Martin 指出，Meta 表内债务与租赁约 1000 亿美元，而表外负债高达约 6000 亿美元；若把表外部分计入，其企业价值倍数需要上调 35%。她还提到 Meta 在 7 月单月就新增约 680 亿美元的数据中心租约。当算力租赁规模大到需要单独核算时，「轻资产」的叙事就很难再维持。",
+      "date": "10月4日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-04/9xlhya9a",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Arm 自售数据中心 CPU：护城河加深还是客户关系生变",
+      "summary": "Arm 从纯授权模式转向自行销售数据中心 CPU。其 2027 财年第一季度营收 12.9 亿美元（其中版税 7.15 亿美元），数据中心版税翻倍以上；AGI CPU 已交付首批客户，锁定 2027 与 2028 年合计 10 亿美元的收入机会，公司称需求超过 20 亿美元。从授权方变成直接竞争者，这条路径的收益与客户关系代价正在被同时定价。",
+      "date": "10月4日",
+      "source": "Yahoo Finance — NVDA 头条",
+      "link": "https://www.readaitime.com/news/2026-10-04/4cas7gci",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "AI 数据中心挤压存储供应，PC 与手机厂商转向「少出货、卖更贵」",
+      "summary": "AI 数据中心的扩张导致存储供应紧张，消费电子被迫转向减量提价：2026 年二季度全球 PC 出货 6820 万台、同比下降 4.9%，2026 年 PC 均价预计上涨 20%。DRAM 价格一年内涨至 5 倍，超过 40% 的手机型号已经涨价，游戏机最高涨 150 美元。报告认为供应紧张可能要等到 2028 年之后才缓解。",
+      "date": "10月4日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-04/1fdoeoa8",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "美银：AI 叙事成美债市场最后防线，需警惕叙事失效风险",
+      "summary": "美银衍生品团队警告，AI 增长叙事正在充当宏观风险的缓冲垫（所谓「AI 看跌期权」），推动资金逢跌买入。但 5 年期美债标售收益率达到 5.033%，为 2007 年以来首次突破 5%，MOVE 指数也突破 100。报告认为真正的尾部风险是 AI 叙事受挫后引发增长预期下修。",
+      "date": "10月4日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-04/5acjjyoz",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Jim Cramer 称英特尔转型有望成功，看好 CPU 需求回暖",
+      "summary": "Cramer 把英特尔列为近期推荐股之一，理由是新产品周期、CPU 需求旺盛，以及新任 CEO 陈立武在资本配置上的自律。他也指出公司遗留的资产负债表受损，转型成败依赖 CPU 需求回升。英特尔当季营收 161 亿美元、同比增长 25%，但 GAAP 净亏损仍达 110 亿美元。",
+      "date": "10月4日",
+      "source": "Yahoo Finance — AMD 头条",
+      "link": "https://www.readaitime.com/news/2026-10-04/1warhchs",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "谷歌发布 DiarizationLM-Gemma-4-E4B-v1：8B 语音说话人日志模型",
+      "summary": "谷歌发布 DiarizationLM-Gemma-4-E4B-v1，一个 8B 规模的语音说话人日志（说话人分离 + 日志）模型。它以 Gemma 系列为底，把「谁在什么时候说了什么」的结构化输出交给一个可直接部署的中等尺寸模型。在会议转写、访谈整理这类需要区分说话人的场景里，专用小模型比通用大模型更实用。",
+      "date": "10月4日",
+      "source": "Google Gemma 模型发布(HF)",
+      "link": "https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1",
+      "models": [
+        "Gemma 4 31B"
+      ],
+      "tag": "oss"
+    },
+    {
+      "title": "英伟达联手鸿海，用机器人组装 GB300 挑战 99.5% 成功率",
+      "summary": "英伟达与鸿海合作，把机器人引入 GB300 的组装环节，目标是挑战 99.5% 的成功率。对 AI 服务器这类高价值、结构复杂的整机而言，组装良率直接决定交付节奏。让机器人承担精密组装而不是只做搬运，是制造业自动化难度最高的一档。",
+      "date": "10月4日",
+      "source": "TechNews 科技新报",
+      "link": "https://finance.technews.tw/2026/10/04/nvidia-foxconn-robot",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "谷歌提出 RRSI 方法，抑制自我改进智能体在测试中「背题」",
+      "summary": "谷歌研究人员提出 RRSI 方法，用于防止自我改进型智能体在评测中把测试内容直接记住，从而在未见过的基准上取得提升 4.7 分的效果。自我改进系统与评测集长期共存时，过拟合评测信号几乎是必然结果。这一方法针对的正是「分数涨了但能力没涨」的典型失效模式。",
+      "date": "10月4日",
+      "source": "The Decoder",
+      "link": "https://the-decoder.com/google-researchers-find-a-way-to-keep-self-improving-ai-agents-from-memorizing-their-tests",
+      "models": [],
+      "tag": "hot"
+    }
+  ],
+  "papers": [
+    {
+      "title": "UndoBench：把工具智能体的任务能力与故障恢复能力分开测",
+      "titleEn": "UndoBench: Separating Task Competence from Recovery Capability in Tool-Using AI Agents",
+      "summary": "工具型 AI 智能体正被广泛部署进企业软件系统，但主流基准大多只评测「任务是否完成」，把基础规划能力与运行期故障恢复能力混在一起。UndoBench 覆盖 8 个企业域的 36 条基础工作流与 36 个故障场景，通过同种子下的反事实配对试验、加上线路级效果历史与环境状态 oracle，把两种能力分开度量。评测对象包括两个开放权重模型、两套框架与三种恢复范式。",
+      "authors": "Dolly Sah, Tanmay Sah, Harshul Jain, Tanya Sah 等",
+      "link": "http://arxiv.org/abs/2610.05622v1"
+    },
+    {
+      "title": "DelegationBench：度量智能体何时该先问再做",
+      "titleEn": "DelegationBench: Measuring When AI Agents Should Ask Before Acting",
+      "summary": "会发邮件、改文件、下单的 AI 智能体必须判断什么时候自行执行、什么时候先和用户确认。这一决策通常的评测方式是：给模型看一个拟定动作，问它该不该继续，然后与人类标注比对。论文提出的 DelegationBench 正是要检验这类分数是否可信——它包含 156 个场景与四种可选回应（执行、请求许可、索要缺失信息、拒绝），且多数场景成对出现、只改变一个特征，比如该动作是否被请求过、代价多大、是否可撤销。",
+      "authors": "Shiva Pochampally",
+      "link": "http://arxiv.org/abs/2610.05532v1"
+    },
+    {
+      "title": "面向语言模型智能体的稳定时间抽象分层强化学习",
+      "titleEn": "Hierarchical Reinforcement Learning with Stable Temporal Abstraction for Language Model Agents",
+      "summary": "分层强化学习通过把原始动作组织在持久子目标周围、并在多个时间尺度上分配信用，改善长程控制；近期面向语言的分层智能体也通过显式分离子目标规划与动作执行获得这些好处。论文观察到一个被忽视的问题：显式分层本身并不能决定所得时间抽象是否稳定——学到的边界策略可能几乎每回合就替换子目标，使其实际变成瞬时的；也可能在子目标已不再合适后仍然保留。论文围绕这一不稳定现象改进语言模型智能体的分层强化学习。",
+      "authors": "Shayan Mohajer Hamidi, Yize Cheng, Yuanda Xu, Zhengze Zhou 等",
+      "link": "http://arxiv.org/abs/2610.05473v1"
+    },
+    {
+      "title": "扩展 LLM 推理：多出的算力该从链条的哪一步开始续写",
+      "titleEn": "Expanding LLM Reasoning",
+      "summary": "额外的推理算力通常被用来多采样几条推理链。这篇论文换了个问题：在一条已有的推理链内部，额外续写应该从哪一步开始？作者定义了「扩展效用」——在某个已存步骤处重启链条所带来的正确率变化——并在 9 个模型、6 个基准共 41 个模型×基准单元上对每一个符合条件的步骤做了测量。结果显示重启位置确实重要：在一组续写上选出的步骤，在另一组不相交续写上评分时仍优于均匀放置，并在 5、16、38 个单元的留出审计中得到验证。",
+      "authors": "Rian Atri, Evan Luo",
+      "link": "http://arxiv.org/abs/2610.05584v1"
+    },
+    {
+      "title": "辩论式 AI 安全被认知偏差削弱",
+      "titleEn": "AI Safety via Debate is Compromised by Cognitive Biases",
+      "summary": "RLHF 在让大模型遵从人类指令上起了核心作用，但人类评估者往往偏爱谄媚或有说服力的回答而非真实的回答，这会给模型制造「讨好评估者而牺牲准确性」的激励。辩论式 AI 安全被提出来改进监督：让两个智能体就对立立场辩论、互相挑错，从而把谬误暴露给裁判。这篇论文检验了该范式的中心前提——真实论证的一方更能说服裁判——并发现认知偏差会削弱辩论式监督的有效性。",
+      "authors": "Gefei Liu, Sonya Rashkovan, Sophia Lloyd George, Isaac Sheidlower 等",
+      "link": "http://arxiv.org/abs/2610.05461v1"
+    }
+  ],
+  "models": [
+    {
+      "name": "DiarizationLM-Gemma-4-E4B-v1",
+      "vendor": "谷歌",
+      "highlight": "8B 规模的语音说话人日志模型，把说话人分离与日志输出统一在一个中等尺寸模型里，可直接本地部署。在会议转写、访谈整理这类必须区分说话人的场景中，专用小模型在成本与延迟上通常优于调用通用大模型。",
+      "link": "https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1",
+      "date": "10月4日",
+      "tag": "oss"
+    },
+    {
+      "name": "StartLux 决策模型",
+      "vendor": "StartLux",
+      "highlight": "开源决策模型，在 38 项基准中有 31 项超过 Jev。此前 Jev 以「返回类型化、已校准的决策而非散文式回答」为卖点切入自动化系统场景，StartLux 直接把对照做成了基准对比，说明这条「决策模型」细分赛道已经出现竞争。",
+      "link": "https://www.tmtpost.com/8158976.html",
+      "date": "10月4日",
+      "tag": "oss"
+    },
+    {
+      "name": "Gemini Flash-Lite",
+      "vendor": "谷歌",
+      "highlight": "谷歌 2026 年 10 月起调整 Gemini 分层，把免费用户限制到最弱档的 Flash-Lite，并把已订阅 5 个月的用户排除在 Pro 之外。这是一次明确的「用模型档位做付费墙」的产品动作，也意味着免费层的模型能力上限被主动下调。",
+      "link": "https://the-decoder.com/googles-new-gemini-tiers-cut-free-users-to-its-weakest-model-and-lock-5-month-subscribers-out-of-pro",
+      "date": "10月4日",
+      "tag": "hot"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude Code v2.1.289：修复嵌套复合 shell 命令的权限绕过",
+      "summary": "该版本修掉一处权限绕过缺陷——deny/ask 权限规则此前不会作用到嵌套的复合 shell 命令；同时修复了由大量 script 标签代码块触发的终端冻结、Read 拒绝规则无法穿透符号链接、VSCode 登出回归（已回退）以及过期的插件市场列表。此外，$.agent.list() 现在会暴露空闲与等待中的智能体状态，供 agent.spawn 使用。",
+      "date": "10月3日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.289",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Anthropic 发布 Claude Mods 架构深潜：非沙箱、完整机器权限",
+      "summary": "Anthropic 公布 Mods 的架构说明：Mods 是注入 Claude Code 内部事件的小型 TypeScript 函数，可以在提示词送到模型前改写它、拦截或重试工具调用、审批或拒绝权限、从输出中脱敏密钥，以及替换 UI 元素。它们随插件分发，并以非沙箱方式、完整机器权限运行——与任何本地程序处于同一信任级别。公告同时说明，Anthropic 已在发布时把自家的 diff 面板、AGENTS.md 加载器与遥测都改写成 mod。",
+      "date": "10月3日",
+      "source": "Anthropic / Claude Blog",
+      "link": "https://claude.com/blog/claude-code-mods",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "agent-blackbox v0.3：防篡改的「黑匣子」与提示注入防火墙",
+      "summary": "社区项目 agent-blackbox 发布 v0.3，为 Claude Code 提供可防篡改的飞行记录器与提示注入防火墙：把每一次提示词、工具调用与返回结果都写入只追加、经 Ed25519 签名的哈希链中，并检测「致命三要素」——私有数据、不受信内容与对外调用同时出现——从而在执行之前阻断数据外泄。在代理被授予更宽权限的同时，可审计与可追责正在成为配套需求。",
+      "date": "10月3日",
+      "source": "GitHub",
+      "link": "https://github.com/developerfred/agent-blackbox",
+      "models": [],
+      "tag": "oss"
+    },
+    {
+      "title": "Gobstopper v0.8.5：本地上下文压缩代理，宣称节省 29% 输入 token",
+      "summary": "Gobstopper 发布 v0.8.5，一个面向 Claude Code 与 Codex 的上下文压缩代理：它把系统提示词、首个任务与最新的几轮对话原样保留，对更早的轮次在本地做规则化摘要，不额外调用模型。作者在 Terminal-Bench 2.1 上宣称相比不使用代理可减少 29% 的输入 token。在上下文窗口仍是最贵资源的前提下，这类「不花额外推理成本换上下文」的做法很有针对性。",
+      "date": "10月3日",
+      "source": "Show HN / Gobstopper",
+      "link": "https://gobstopper.sh",
+      "models": [],
+      "tag": "oss"
+    }
+  ]
+}

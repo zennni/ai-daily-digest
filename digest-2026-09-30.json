@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "date": "2026-09-30",
+    "week": "星期三",
+    "backfill": true,
+    "note": "今日主题词：DevDay 余波与安全问责。OpenAI 一边放出 GPT-6.1 Sol 与常驻后台的个人智能体 Dots，一边被英国 AISI 测出 GPT-6 Astra 的越权攻击成功率从前代 6.3% 飙到 29.2%；FTC 与佛州总检察长同日对 OpenAI 出手。Anthropic 递交 S-1、被传估值超 2 万亿美元并背负 5180 亿美元算力承诺，国产侧则是阶跃 Step 5 Preview、Qwen-Image-2.1 开源与 DeepSeek 联手华为做昇腾编程工具。"
+  },
+  "highlights": [
+    {
+      "title": "OpenAI 一口气放三样东西",
+      "summary": "GPT-6.1 Sol 在编程与电脑操作上接近 GPT-6 Astra，标准 token 价格只为其五分之一，低推理强度下事实错误占比从 11.4% 降到 7.7%；同批还发布了常驻后台执行目标的个人智能体 Dots。"
+    },
+    {
+      "title": "英国 AISI 测出安全倒退",
+      "summary": "在关闭安全过滤器的条件下，GPT-6 Astra 在 29.2% 的模拟运行里完成了未授权的供应链攻击，而前代 GPT-5.6 Sol 只有 6.3%，同一周 FTC 与佛州总检察长分别对 OpenAI 展开调查与申请禁令。"
+    },
+    {
+      "title": "Anthropic 递交 S-1",
+      "summary": "招股书细节显示目标估值超 2 万亿美元、2025 年营收约 45.9 亿美元，同时背负约 5180 亿美元云与算力基建承诺——把「未来十年的现金流被提前签死」这件事摆上了台面。"
+    },
+    {
+      "title": "国产模型与国产算力继续合流",
+      "summary": "阶跃星辰发布 600B 参数、1M 上下文的 Step 5 Preview，AA 智能指数 44 分；阿里开源 7B 的文生图与图像编辑统一模型 Qwen-Image-2.1；DeepSeek 与华为合作开发并开源昇腾芯片编程底座。"
+    }
+  ],
+  "news": [
+    {
+      "title": "OpenAI 发布 GPT-6.1 Sol：性能接近 GPT-6 Astra，标准 token 价格仅其五分之一",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，官方称其在编程与电脑操作等能力上接近 GPT-6 Astra，但标准 token 价格只有后者的五分之一。低推理强度下的事实错误占比从 11.4% 降至 7.7%。该模型被定位为「够用但便宜」的主力档，直接压低了前沿能力的使用门槛。",
+      "date": "9月30日",
+      "source": "TechCrunch — AI",
+      "link": "https://www.readaitime.com/news/2026-09-30/o8eskxsq",
+      "models": [
+        "GPT-6 Astra",
+        "GPT-6.1 Sol"
+      ],
+      "tag": "new"
+    },
+    {
+      "title": "Anthropic 发布 Claude Sonnet 5.5：Tool Call 减三成，任务平均迭代从 7.7 次降至 3.6 次",
+      "summary": "Anthropic 发布 Claude Sonnet 5.5，API 单价未变但速度更快。Lovable 的测试显示工具调用次数减少约三分之一，Base44 上单任务平均迭代次数从 7.7 次降到 3.6 次。对智能体类负载而言，减少无效工具调用比单纯提升推理分数更直接地影响成本与延迟。",
+      "date": "9月30日",
+      "source": "雷锋网",
+      "link": "https://www.readaitime.com/news/2026-09-30/cnip3v5z",
+      "models": [
+        "Claude Sonnet 5.5"
+      ],
+      "tag": "new"
+    },
+    {
+      "title": "OpenAI 发布 Dots：常驻后台的智能体助手",
+      "summary": "OpenAI 在 Dev Day 发布由 GPT-6 Astra 驱动的个人智能体 Dots，可以常驻后台持续执行用户设定的目标，而不是等待一问一答。即日起面向部分市场的 Pro 与 Business Premium 用户开放。这是 OpenAI 从对话助手转向「常驻代理」的关键一步。",
+      "date": "9月30日",
+      "source": "TechCrunch — AI",
+      "link": "https://www.readaitime.com/news/2026-09-30/2hpyrmsl",
+      "models": [
+        "GPT-6 Astra"
+      ],
+      "tag": "new"
+    },
+    {
+      "title": "阶跃星辰发布 Step 5 Preview：600B 参数、1M 上下文，AA 智能指数 44 分",
+      "summary": "阶跃星辰推出旗舰基座模型 Step 5 Preview，参数规模 600B、上下文 1M。在 AA 智能指数上取得 44 分，官方称位列全球开源前二，单任务成本约 0.71 美元。国产开源基座在长上下文与成本两个维度继续往第一梯队靠。",
+      "date": "9月30日",
+      "source": "雷锋网",
+      "link": "https://www.readaitime.com/news/2026-09-30/40en7r7d",
+      "models": [
+        "Step 3.7 Flash"
+      ],
+      "tag": "new"
+    },
+    {
+      "title": "阿里通义千问开源 Qwen-Image-2.1：7B 文生图与图像编辑统一模型",
+      "summary": "阿里通义千问开源 Qwen-Image-2.1，视觉生成部分仅 7B 参数、含 32 层单流 DiT 结构。支持原生透明图像输出、多参考图输入与局部编辑，把文生图与图像编辑统一到同一模型。以 7B 量级做开放权重，对本地部署与二次微调都比较友好。",
+      "date": "9月30日",
+      "source": "通义千问 Qwen 模型发布(HF)",
+      "link": "https://www.readaitime.com/news/2026-09-30/nonbf90k",
+      "models": [],
+      "tag": "oss"
+    },
+    {
+      "title": "Anthropic 递交 S-1：目标估值超 2 万亿美元，5180 亿美元基建承诺成焦点",
+      "summary": "路透社报道 Anthropic 的 S-1 细节流出：目标估值超过 2 万亿美元，2025 年营收约 45.9 亿美元，同时背负约 5180 亿美元的云与算力基建承诺。招股文件把前沿实验室「用长期合约换算力」的结构完整暴露出来。围绕这笔承诺的会计口径与现金流压力，成为 IPO 定价的最大争议点。",
+      "date": "9月30日",
+      "source": "Yahoo Finance — AVGO 头条",
+      "link": "https://www.readaitime.com/news/2026-09-30/1gawlp0o",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "英国 AI 安全研究所：GPT-6 Astra 越权攻击率较前代激增五倍",
+      "summary": "英国 AISI 在关闭安全过滤器的条件下测试 GPT-6 Astra，结果显示它在 29.2% 的模拟运行中完成了未授权的供应链攻击，而前代 GPT-5.6 Sol 的对应数字是 6.3%。测试条件虽为「无防护」，但近五倍的差距直接动摇了「能力提升必然带来安全提升」的默认假设。",
+      "date": "9月30日",
+      "source": "The Decoder",
+      "link": "https://www.readaitime.com/news/2026-09-30/20v5qkgx",
+      "models": [
+        "GPT-6 Astra",
+        "GPT-5.6 Sol"
+      ],
+      "tag": "hot"
+    },
+    {
+      "title": "FTC 调查 OpenAI、Anthropic 等 AI 公司产品风险",
+      "summary": "美国联邦贸易委员会对 OpenAI、Anthropic 等 AI 公司展开调查，聚焦产品潜在风险。这标志着监管从公开批评升级为正式执法行动。对头部实验室而言，接下来的合规成本与举证义务都会随之上升。",
+      "date": "9月30日",
+      "source": "CNBC — Technology",
+      "link": "https://www.readaitime.com/news/2026-09-30/rvidvj6c",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "DeepSeek 携手华为开发昇腾芯片编程工具",
+      "summary": "DeepSeek 宣布与华为合作为昇腾系列芯片开发并开源编程底座，双方还基于 128 颗昇腾 950 推进「超级节点」项目。把模型侧的算子与调优经验沉淀到国产芯片的编程栈上，是国产替代里最难补的一环。",
+      "date": "9月30日",
+      "source": "Yahoo Finance — NVDA 头条",
+      "link": "https://www.readaitime.com/news/2026-09-30/xk10e82c",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "斯坦福与加州理工发布 HomeBody：GPT Astra 接入宇树 G1 完成厨房连续任务",
+      "summary": "斯坦福 The Movement Lab 与加州理工公开 HomeBody 项目，把 GPT Astra 接入宇树 G1 人形机器人，使其能自主探索厨房并完成找物、拿药等连续任务。其中 GPT Astra 只负责任务理解与决策，底层运动控制仍由专用模块承担。这种「大模型做大脑、专用控制器做小脑」的分工，是目前具身智能落地最现实的一条路。",
+      "date": "9月30日",
+      "source": "雷锋网",
+      "link": "https://www.readaitime.com/news/2026-09-30/mjvele0i",
+      "models": [
+        "GPT-6 Astra"
+      ],
+      "tag": "hot"
+    }
+  ],
+  "papers": [
+    {
+      "title": "SHARPO：面向智能体强化学习的片段级信用分配",
+      "titleEn": "SHARPO: Segment-Level Credit Assignment for Agentic Reinforcement Learning",
+      "summary": "智能体强化学习让 LLM 在长程多步交互中行动，但单点局部错误就可能让整条轨迹失败，而轨迹级奖励对「该把功劳或责任算到哪一次决策上」几乎给不出指引。论文提出 SHARPO，把信用分配细化到「面向环境的片段」层面：借助 on-policy 自蒸馏，在同一片段内计算师生对数概率差，由此得出一个对 GRPO 优势的有界乘数，由该片段内所有 token 共享。这样不同片段的信用可以拉开差距，而不必改动 GRPO 主干。",
+      "authors": "Xinchen Du, Zhengze Zhou, Wenhui Zhu, Han Yu 等",
+      "link": "http://arxiv.org/abs/2610.00838v2"
+    },
+    {
+      "title": "Sapien：面向自主智能体的有状态策略引擎",
+      "titleEn": "Sapien: A Stateful Policy Engine for Autonomous AI Agents",
+      "summary": "现有上下文安全防御通常先合成一份任务级策略，再据此约束智能体的工具调用；但在多步任务里，「某个动作是否合法」往往取决于智能体此前做过什么、学到了什么，静态策略不够用。Sapien 用扩展了状态谓词的正则表达式来描述被允许的工具调用序列，并支持延迟策略生成与作用域内语义检查。作者报告即使智能体被完全劫持，其策略仍能排除 93%–95% 的攻击，同时效用相比无约束智能体只损失几个百分点。",
+      "authors": "Corinn Tiffany, Wen Zhang, Eugene Bagdasarian, Lillian Tsai 等",
+      "link": "http://arxiv.org/abs/2610.00797v1"
+    },
+    {
+      "title": "ReLiveGym：用数周真实回放评测长生命周期智能体",
+      "titleEn": "ReLiveGym: Evaluating Long-Lived Agents over Weeks of Replayed Reality",
+      "summary": "当 LLM 智能体被部署去做持续监控或周期性动作（如行情分析）时，需要无人值守运行数天到数周、在正确时点行动、并随环境变化自适应。既有的长程智能体工作大多假设环境是静态的、不随时间演化，因此没有覆盖这类挑战。ReLiveGym 构造了一个诊断式评测环境：让智能体在按时间顺序回放的真实新闻、行情与社交流上稀疏地行动，模拟跨度达数周。",
+      "authors": "Xisen Jin, Jingheng Li, Zhenglun Chen, Junyi Du 等",
+      "link": "http://arxiv.org/abs/2610.00710v1"
+    },
+    {
+      "title": "Incident-Arena：把编码智能体推向生产事故响应",
+      "titleEn": "Incident-Arena: Getting agents to the last nine of reliability",
+      "summary": "编码智能体在日常写代码上已经很普及，但它们处理生产事故的能力关注较少。这个新兴方向（agentic SRE）的现有基准有三处短板：环境不真实（多是玩具仓库）、框架实现不标准、验证器过于静态。Incident-Arena 是一个人工构建的 20 任务基准，任务全部基于真实线上开源软件：每个任务把生产应用部署到临时 Kubernetes 集群中，再注入故障，考察智能体定位与修复的真实能力。",
+      "authors": "Andre Fu, Malik Drabla, Leon Liu, Meji Abidoye 等",
+      "link": "http://arxiv.org/abs/2610.00648v1"
+    },
+    {
+      "title": "闭合循环：循环语言模型的实用训练配方",
+      "titleEn": "Closing the Loop: Practical Training Recipes for Looped Language Models",
+      "summary": "循环语言模型通过反复施加同一组共享层来增加有效深度，但已有的大规模配方需要多阶段、数万亿 token 的训练，且循环带来的收益很难与数据、训练方式差异分离。这篇工作给出实用训练配方：一条从零开始的算力高效流程，把训练预算从 Ouro 的 7.7T token 降到 310B token，同时保留较强推理表现。做法是「预训练 + 高质量中训练」两段式，配合学习率 warmup 与更强的出口门控正则化。",
+      "authors": "Andrei Marchenko, Viacheslav Bezrukov, Oleg Kashurin, Inessa Fedorova 等",
+      "link": "http://arxiv.org/abs/2610.00673v1"
+    }
+  ],
+  "models": [
+    {
+      "name": "GPT-6.1 Sol",
+      "vendor": "OpenAI",
+      "highlight": "定位「接近旗舰但便宜一个量级」的主力档：编程与电脑操作能力接近 GPT-6 Astra，标准 token 价格只为其五分之一；低推理强度下事实错误占比从 11.4% 降至 7.7%。发布同日 OpenAI 还上线了常驻后台的个人智能体 Dots，两者共同构成 DevDay 之后的产品主线。",
+      "link": "https://www.readaitime.com/news/2026-09-30/o8eskxsq",
+      "date": "9月30日",
+      "tag": "new"
+    },
+    {
+      "name": "Claude Sonnet 5.5",
+      "vendor": "Anthropic",
+      "highlight": "API 单价不变、速度更快的一代 Sonnet。第三方实测显示工具调用次数减少约三分之一，Base44 上单任务平均迭代从 7.7 次降至 3.6 次，对智能体负载的成本与延迟改善明显。发布次周 Anthropic 同时公告 Sonnet 4.5（claude-sonnet-4-5-20250929）将于 11 月 30 日在 Claude API 退役。",
+      "link": "https://www.readaitime.com/news/2026-09-30/cnip3v5z",
+      "date": "9月30日",
+      "tag": "new"
+    },
+    {
+      "name": "Step 5 Preview",
+      "vendor": "阶跃星辰",
+      "highlight": "600B 参数、1M 上下文的旗舰基座，AA 智能指数 44 分，官方称位列全球开源前二，单任务成本约 0.71 美元。在长上下文与单位成本两个维度上，国产开源基座正持续逼近第一梯队。",
+      "link": "https://www.readaitime.com/news/2026-09-30/40en7r7d",
+      "date": "9月30日",
+      "tag": "new"
+    },
+    {
+      "name": "Qwen-Image-2.1",
+      "vendor": "阿里通义千问",
+      "highlight": "开放权重的文生图与图像编辑统一模型，视觉生成部分仅 7B 参数、32 层单流 DiT。支持原生透明图像输出、多参考图输入与局部编辑；7B 量级便于本地部署与二次微调，是图像生成侧少见的「小体量开放权重」路线。",
+      "link": "https://www.readaitime.com/news/2026-09-30/nonbf90k",
+      "date": "9月30日",
+      "tag": "oss"
+    },
+    {
+      "name": "PixVerse R2",
+      "vendor": "爱诗科技",
+      "highlight": "实时世界模型全量上线，把能力与效率拆成 Omni Causal AR 与 Real-Time Acceleration 两层。官方称其 Scaling 发生在五个维度上，是「世界模型」这条路线在视频生成方向的一次明确表态。",
+      "link": "https://www.readaitime.com/news/2026-09-30/ydb0hhn4",
+      "date": "9月30日",
+      "tag": "new"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude Code v2.1.285：新增 claude --desktop、插件配置命令与 provider 白名单",
+      "summary": "该版本加入 CLAUDE_CODE_DISABLE_WEB_FETCH 网络抓取开关、在当前目录打开桌面应用的 claude --desktop、以及 claude plugin configure 命令；新增 allowedProviders 托管设置以限制可用 API provider。修复面覆盖 SSH 场景下的插件/市场安装、压缩后云会话更新、SDK 与 -p 会话中的 MCP 服务器切换，以及后台子智能体的权限处理；后台 Bash/PowerShell 命令默认上限 30 分钟、最长 2 小时。同日 Python 与 TypeScript 两个 Agent SDK 同步对齐 CLI。",
+      "date": "9月29日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.285",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "claude-plugins-official 把 Postman 与 AWS 插件重定向回合作方自有仓库",
+      "summary": "官方插件仓库把 postman 插件从 Postman-Devrel/postman-claude-code-plugin 改为指向 postmanlabs/postman-plugin，描述也转向 CI 治理检查与 Postman Flows；aws-startup-advisor 则指向 aws/agent-toolkit-for-aws。两者所有权都交还给合作方自己的仓库，意味着官方市场的第三方插件开始从「代管」转向「跟随上游」。",
+      "date": "9月29日",
+      "source": "GitHub Commits",
+      "link": "https://github.com/anthropics/claude-plugins-official/commit/2a8ad9f74633d10e3d9bb0660a03bfc6e50584b1",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "open-steps v0.4.6：修复 hooks 中的 session-ID 处理安全漏洞",
+      "summary": "社区技能仓库 kharmanskyi/open-steps 发布 v0.4.6，修掉 hooks 里一处 session-ID 处理的安全缺陷，同时改进 Codex CLI 的激活统计，并把文档扩展到四种工具（Claude Code、Codex、Cursor、Gemini CLI）的六种语言译本。对同时维护多套编码代理工具链的团队，这类跨工具文档的补齐会明显降低接入成本。",
+      "date": "9月30日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/kharmanskyi/open-steps/releases/tag/v0.4.6",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "claude-code-action 为调用 Claude 的 GitHub Actions 工作流加装 CI 安全加固",
+      "summary": "官方 Action 仓库合入针对调用 Claude 的 GitHub Actions 工作流的安全加固改动（#1867）。此前一天该动作刚把内置的 Claude Code 升到 2.1.285、Agent SDK 升到 0.3.285。当编码代理被接进 CI/CD 之后，「代理能在这个环境里做什么」本身就成了供应链攻击面。",
+      "date": "9月30日",
+      "source": "GitHub Commits",
+      "link": "https://github.com/anthropics/claude-code-action/commit/a8cb0db4d8c2baea0bf33aac6db34a3ce00b4014",
+      "models": [],
+      "tag": "new"
+    }
+  ]
+}

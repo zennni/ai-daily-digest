@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "date": "2026-10-03",
+    "week": "星期六",
+    "backfill": true,
+    "note": "今日主题词：训练基础设施与机器人的价格底线。DeepSeek 公开弹性计算团队与 DSec 沙盒基础设施细节——单个扩展分片约 160 台服务器、3 万 CPU 核心，每天服务约 300 万个沙盒；Anthropic 两位技术负责人则强调蒸馏只能复制当前前沿、无法推动下一代突破，同时招股书披露已签至少 5180 亿美元算力承诺。具身侧，松延动力把双足人形拉进万元以内，长江存储科创板 IPO 获受理、拟募资 330 亿元创科创板纪录。"
+  },
+  "highlights": [
+    {
+      "title": "DeepSeek 公开 DSec 沙盒基础设施",
+      "summary": "DeepSeek 弹性计算团队大量招聘，并发布《DeepSeek 弹性计算（DSec）：面向大规模 Agent 训练的沙盒基础设施》。DSec 支撑 DeepSeek-V4 全部训练、评测与数据预处理，单个扩展分片约 160 台服务器、3 万 CPU 核心、250TB 内存，每天服务约 300 万个沙盒。"
+    },
+    {
+      "title": "长江存储科创板 IPO 获受理，拟募资 330 亿元创纪录",
+      "summary": "总部位于武汉光谷的 NAND 闪存厂商长江存储科创板 IPO 获受理，拟募资 330 亿元，超过长鑫科技的 295 亿元，创科创板拟募资规模之最；按 2026 年二季度出货量计位列全球第三。"
+    },
+    {
+      "title": "人形机器人价格战：万元门槛被击穿",
+      "summary": "松延动力「小布米」2026 年官方售价 9998 元，首次把双足人形机器人拉进万元以内；宇树 R1 同年从 3.99 万元降至 2.99 万元。宇树招股书显示其人形机器人单价两年缩水约 72%，而工业机器人厂商逆势提价 5% 至 15%。"
+    },
+    {
+      "title": "Anthropic 投 1 亿美元培养企业 AI 工程师",
+      "summary": "Claude Frontier Academy 承诺投入 1 亿美元，到 2027 年底培养 1 万名「前沿部署工程师」；模式参照医学住院医：多日线下培训、一次模拟企业部署，随后在本单位进行 12 周带 Anthropic 导师的实战驻场。"
+    }
+  ],
+  "news": [
+    {
+      "title": "DeepSeek 弹性计算团队扩招，披露 DSec 沙盒基础设施细节",
+      "summary": "DeepSeek 弹性计算团队大量招聘，并发布技术分享《DeepSeek 弹性计算（DSec）：面向大规模 Agent 训练的沙盒基础设施》。DSec 支撑 DeepSeek-V4 的全部训练、评测与数据预处理。单个扩展分片约 160 台服务器、3 万 CPU 核心、250TB 内存，每天服务约 300 万个沙盒。把「智能体训练需要什么样的沙盒底座」公开到这种颗粒度，对自建训练栈的团队参考价值很高。",
+      "date": "10月3日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-03/2ocb871q",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Anthropic 技术负责人谈蒸馏与中美 AI 竞赛，IPO 文件披露 5180 亿美元算力承诺",
+      "summary": "Anthropic 两位技术负责人表示，蒸馏只能复制当前前沿、无法推动下一代突破，并称美国单方面放缓 AI 竞赛不可接受。同期 IPO 申报文件披露：2025 年营收近 46 亿美元、同比增长约 12 倍，经营亏损超 80 亿美元，已签至少 5180 亿美元云与算力长期承诺。把「蒸馏能不能替代自研」与「长期算力承诺有多重」放在一起看，正是这轮竞赛的两条主线。",
+      "date": "10月3日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-03/tg2z0ex9",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "长江存储科创板 IPO 获受理，拟募资 330 亿元创科创板纪录",
+      "summary": "长江存储科创板 IPO 已获受理，拟募资 330 亿元，超过长鑫科技的 295 亿元，创下科创板拟募资规模之最。公司总部位于武汉光谷，按 2026 年二季度出货量计位列全球 NAND 闪存厂商第三。招股书显示 2026 年一季度单季净利润 334 亿元、毛利率 78.7%，募资主要投向三期工厂扩产。存储涨价周期下，国产存储的融资窗口被彻底打开。",
+      "date": "10月3日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-03/th8ny1fg",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "慧与获 Vultr 12 亿美元 Helios AI 服务器首单",
+      "summary": "慧与（HPE）从 Vultr 获得 12 亿美元订单，采购其新推出的 AMD Helios AI 服务器。这是 HPE Helios 机架的首个商业部署，把 AMD 芯片与 HPE 网络硬件整合在一起。对 HPE 而言，这是其集成式 AI 数据中心平台从产品发布走向客户落地的早期收入里程碑。",
+      "date": "10月3日",
+      "source": "Yahoo Finance — AMD 头条",
+      "link": "https://www.readaitime.com/news/2026-10-03/k0nohtoa",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "云深处科创板 IPO 更新招股书：2026 上半年转亏，人形机器人收入占比仅 1.08%",
+      "summary": "杭州云深处科技更新科创板 IPO 招股书：2025 年刚扭亏（归母净利 2868.40 万元），2026 上半年再度转亏约 880.63 万元，主因研发费用同比增长超过 140%，投入方向是人形机器人与具身大脑。公司四足机器人行业应用收入居全球第一，但人形机器人上半年收入仅 278.93 万元、占比 1.08%。「四足赚钱、人形烧钱」是目前机器人公司报表的普遍结构。",
+      "date": "10月3日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-03/tb083vuj",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "人形机器人价格战：万元门槛被击穿，降本空间收窄",
+      "summary": "松延动力「小布米」2026 年官方售价 9998 元，首次把双足人形机器人拉至万元以内；宇树 R1 同年从 3.99 万元降至 2.99 万元。高盛预测全球人形机器人整机均价将从 2025 年的 4.18 万美元降至 2035 年的 2.13 万美元。宇树招股书显示其人形机器人单价两年缩水约 72%，同期工业机器人厂商却逆势提价 5% 至 15%——两条产品线的定价逻辑正在分化。",
+      "date": "10月3日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-03/1kq6cgnw",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "美国数据中心反对声浪蔓延欧亚，约 420 亿美元欧洲项目受阻",
+      "summary": "数据中心的公众反对正从美国向欧洲、亚洲扩散。据 STL Partners 研究，欧洲已有约 420 亿美元的数据中心投资受到影响，美国约为 770 亿美元。欧洲 1 至 4 月有超过 70 个项目被否决或受限，苏格兰暂停新建超大规模数据中心审批，丹麦、西班牙与韩国首尔各有新的限制或抗议。落地阻力正在从电价、土地转向社区与政治层面。",
+      "date": "10月3日",
+      "source": "CNBC — Technology",
+      "link": "https://www.readaitime.com/news/2026-10-03/1go3cmy7",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "9 月全球 AI 债券发行降至约 230 亿美元，大摩预计四季度回升",
+      "summary": "9 月全球 AI 相关债券发行约 230 亿美元，为今年次低月份，美国投资级市场上的 AI 发行零新增。摩根士丹利把这一现象定性为「暂停而非退潮」，预计四季度会回升但不会重现上半年的爆发。截至 9 月底，今年全球 AI 相关债券发行已达 4660 亿美元，超过 2025 年全年 2160 亿美元的两倍。",
+      "date": "10月3日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-03/2c65wbxm",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Instinct 两月估值翻四倍至 100 亿美元，产品仍未公开上线",
+      "summary": "由 23 岁创始人 Noah Shinn 推出的 AI 助手 Instinct，邀请制内测用户突破 10 万后，8 月完成 2.5 亿美元 B 轮（投后估值 25 亿美元），不到两个月又完成 C 轮，估值升至 100 亿美元，由红杉资本、Benchmark、Coatue 领投。产品尚未公开上线、未披露收入，且因索取宽泛权限引发隐私争议。估值曲线与产品开放程度之间的反差，是这轮个人 Agent 热潮里最受质疑的一点。",
+      "date": "10月3日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-03/1093wem4",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "摩根大通：特斯拉交付超预期但盈利承压，EPS 拐点或 2028 年出现",
+      "summary": "特斯拉三季度交付 48.65 万辆，超出共识约 5%，摩根大通维持中性评级与 415 美元目标价。对 2026、2027 年调整后 EPS 的预测分别为 1.43 和 1.45 美元，低于彭博共识，EPS 拐点要等到 2028 年，届时或开启 50% 以上的年复合增长。交付量超预期与盈利弹性缺失之间的落差，短期内仍是估值的主要约束。",
+      "date": "10月3日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-03/2jjw9ccd",
+      "models": [],
+      "tag": "hot"
+    }
+  ],
+  "papers": [
+    {
+      "title": "了解这个记忆库：智能体能读取之前，后端必须先写下什么",
+      "titleEn": "Knowing the Store: What a Memory Backend Must Write Down Before an Agent Can Read It",
+      "summary": "带长期记忆的智能体可能会依据一条本不该再使用的记录作答，比如用户后来已取消的计划。论文追问：记忆存储必须暴露什么信息，智能体才能在检索之前就知道这一点，并把这种判断单独评分，称为「元记忆监控」。读者只能看到一个不含取值的摘要——按生命周期状态分类的记录计数和一份属性名列表。148 个问题各自针对同一存储的三个版本提问，每个版本只改一个属性，从而排除措辞泄露答案的可能。",
+      "authors": "Ansuman Mullick, Eray Tüzün",
+      "link": "http://arxiv.org/abs/2610.04794v1"
+    },
+    {
+      "title": "自我演化 LLM 系统何时该停下？",
+      "titleEn": "When Is Enough Enough in Self-Evolving LLM Systems?",
+      "summary": "自我演化的 LLM 系统会反复提出、评估并采纳针对提示词、技能等持久产物的更新。尽管效果越来越好，这类系统通常在预设的迭代次数或算力预算下运行，缺少一个有原则的判据来判断「继续演化已不再值得」。这会带来两个不良后果：性能饱和之后仍在做无谓计算，以及后期更新过拟合甚至利用评估信号。论文由此提出并研究两个基本问题，试图为自演化过程建立停止准则。",
+      "authors": "Enoch Yin, Bin Liu, Zhengling Qi",
+      "link": "http://arxiv.org/abs/2610.04756v1"
+    },
+    {
+      "title": "每个 key 值更多价值：面向更快 LLM 解码的非对称稀疏注意力",
+      "titleEn": "More Value per Key: Asymmetric Sparse Attention for Faster LLM Decoding",
+      "summary": "自回归生成的瓶颈在于注意力的显存与计算开销。稀疏注意力通过只选取注意力矩阵中高概率的条目来缓解，论文观察到一个可利用的结构：在这类方法中，probability-value 相乘的代价变得可以忽略，瓶颈转移到 query-key 一步。因此可以削减 key 头来加速推理，同时保留更多 value 头以维持模型容量，而额外解码开销有限。基于此提出稀疏非对称分组查询注意力 SAGA。",
+      "authors": "Noam Elata, Itay Lamprecht, Mikey Shechter, Daniel Ohayon 等",
+      "link": "http://arxiv.org/abs/2610.04753v2"
+    },
+    {
+      "title": "APEX：把 LLM 智能体的防护收敛到执行边界",
+      "titleEn": "APEX: Active Protection at Execution Boundaries for LLM Agents",
+      "summary": "间接提示注入把对抗性指令藏在 LLM 智能体运行时读取的内容里。随着智能体开始组合工具、MCP 服务器与 Skill 等异构能力单元，注入的载体成倍增加，而按攻击模式逐条识别的防御总是落后一步。论文把防御从「覆盖攻击模式」转移到唯一稳定的点上：执行边界——无论载体是什么、注入如何传播，危害都只在智能体把内部状态转化为外部动作或对外输出的那一刻才成为现实。安全判定因此落在这一时刻的检查之上。",
+      "authors": "Xinran Zheng, Xin Fan Guo, Zhiqiang Hao, Fan Yang 等",
+      "link": "http://arxiv.org/abs/2610.06966v2"
+    },
+    {
+      "title": "MASBench：在部分可观测条件下评测基于 LLM 的多智能体协作",
+      "titleEn": "MASBench: Benchmarking LLM-based Multi-Agent Collaboration under Partial Observability",
+      "summary": "基于 LLM 的多智能体系统把多个智能体组织成协同团队，去完成单个智能体无法胜任的复杂任务；这种系统的成效不只取决于智能体本身，也取决于协作机制如何设计与组织。论文指出真实世界中的协作通常是部分可观测的——受物理或隐私约束，每个智能体只能访问环境的部分信息。MASBench 正是针对这一条件构建的评测基准，用来检验协作机制在信息不完整时是否仍然有效。",
+      "authors": "Qizhi Chu, Zekai Yu, Sijie Wen, Yang Liu 等",
+      "link": "http://arxiv.org/abs/2610.04672v1"
+    }
+  ],
+  "models": [
+    {
+      "name": "FrogNano-4B-2609",
+      "vendor": "微软",
+      "highlight": "面向代码智能体场景的小尺寸开放权重模型，4B 量级便于本地或边缘部署，延续了「小模型专职化」的思路——把编码代理这一高频任务交给足够小、可自托管的模型，而不是每次都调用旗舰模型。",
+      "link": "https://huggingface.co/microsoft/FrogNano-4B-2609",
+      "date": "10月3日",
+      "tag": "oss"
+    },
+    {
+      "name": "Clef",
+      "vendor": "Cloudflare",
+      "highlight": "Cloudflare 发布的新模型，主张让 AI 代理做决策时不再需要人类处在回路中。把「人类审批」这一步从代理工作流里拿掉，是能力提升与风险承担同时上一个台阶的选择，也解释了为什么该公司同一时期在安全侧持续加固。",
+      "link": "https://the-decoder.com/cloudflare-says-its-new-clef-model-means-humans-no-longer-need-to-be-in-the-loop-for-ai-agents",
+      "date": "10月3日",
+      "tag": "new"
+    },
+    {
+      "name": "Claude Mythos",
+      "vendor": "Anthropic",
+      "highlight": "Anthropic 的漏洞猎手模型，据报数学能力突出；最新的漏洞在被攻击验证中显示其能力定位。围绕它的讨论集中在「专攻安全与数学的窄域强化」能否比通用能力扩张更有效地提升防护与发现能力。",
+      "link": "https://www.theregister.com/security/2026/10/03/anthropics-super-bug-hunting-model-mythos-is-hardcore-good-at-math-as-latest-vuln-under-attack-shows/5300933",
+      "date": "10月3日",
+      "tag": "hot"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude Code v2.1.288：内置 gh api、mod 文本选择 API 与多项会话恢复修复",
+      "summary": "该版本加入 $.ui.selection()，让 mod 能在全屏模式下读取用户选中的文本；为没有安装 GitHub CLI 的云会话内置 gh api；支持用 Ctrl+C 清空的提示词恢复；当 MCP 服务器请求额外 OAuth 作用域时弹出重新认证提示；为 /code-review 增加 --max-findings 参数，并在 agents 视图中支持 Ctrl+F 与 Alt+↑↓ 导航。修复项包括中途 API 超时（会话现在可从部分响应处恢复）、长对话报「Prompt is too long」、--resume 丢失文件与上下文、网关后会话标题/记忆召回/提示词钩子失效，以及危险 rm 命令在输出被重定向时失去保护。",
+      "date": "10月2日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.288",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Anthropic 启动 Claude Frontier Academy：1 亿美元培养 1 万名企业 AI 工程师",
+      "summary": "Anthropic 承诺投入 1 亿美元，到 2027 年底培养 1 万名「前沿部署工程师」。模式参照医学住院医制度：先进行多日线下培训，再做一次模拟企业部署，随后回到工程师所在组织完成 12 周的实战驻场并接受 Anthropic 导师指导。首批学员来自 9 家机构，包括 Accenture、Deloitte 与 McKinsey，分别在旧金山、纽约和伦敦开班。把「部署能力」当成稀缺资源来规模化培养，等于承认当前企业落地的瓶颈不在模型而在人。",
+      "date": "10月2日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/claude-frontier-academy",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "巴克莱银行全行铺开 Claude：目标年底 50% 开发者用上 Claude Code",
+      "summary": "巴克莱扩大 Claude 在全行的部署，目标是到 2026 年底有 50% 的开发者采用 Claude Code，2027 年覆盖多数工程师。其 Colleague Knowledge Assistant 已有 1.6 万多名员工用户、累计处理超过 100 万次检索；Claude 模型每天在 Global Markets 处理 12 万封邮件。这类大型金融机构的规模数据，是目前 Claude Code 在企业侧最直接的采用证据。",
+      "date": "10月1日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/barclays-scales-claude",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "awesome-claude-code-mods：把 1017 个 Claude Mods 纳入每日扫描目录",
+      "summary": "karanb192/awesome-claude-code-mods 上线一个每晚扫描 GitHub 的 Claude Mods 目录，截至其 10 月 3 日的扫描已索引 1017 个 mod。每个 mod 都会过一遍 Claude 的插件校验器，并标注它可以读取、写入、执行什么，以及能访问哪些网络资源。这实际上是在给一个刚开放一天的扩展面补上第三方安全清单。",
+      "date": "10月3日",
+      "source": "GitHub",
+      "link": "https://github.com/karanb192/awesome-claude-code-mods",
+      "models": [],
+      "tag": "oss"
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "meta": {
+    "date": "2026-10-07",
+    "week": "星期三",
+    "backfill": true,
+    "note": "今日主题词：AI 攻入数学，与超级 IPO 前夜。Anthropic 的 Claude 用 Lean 形式化证明攻克悬置近 70 年的渗流理论连续相变猜想，OpenAI 则一次性公开未发布模型产出的 722 篇论文。资本与算力两侧同样拥挤：Anthropic 被曝最早 11 月启动 IPO 路演、拟以近 2 万亿美元估值募资至多 1000 亿美元；Meta 计划今年投入 1450 亿美元建设 14GW 算力，谷歌与 Constellation 签下 3.6GW 电力协议。"
+  },
+  "highlights": [
+    {
+      "title": "Claude 用 Lean 证明渗流理论猜想",
+      "summary": "Claude 生成、并经 Lean 形式化验证的完整证明，攻克了悬置近 70 年的渗流理论连续相变猜想。若经同行核验成立，这会成为「AI 具备可信知识生产」叙事中分量最重的一次具体案例——关键在于证明是被机器逐行校验过的，而非又一段自然语言推导。"
+    },
+    {
+      "title": "OpenAI 一次性公开 722 篇论文",
+      "summary": "OpenAI 公开了由未发布前沿模型产出的 722 篇论文、372 个结果族，称其中包含对数百个此前未解问题的解答。把内部模型的数学产出批量交付给学术共同体，既是一次能力展示，也是一次关于「如何署名与核验 AI 成果」的公开实验。"
+    },
+    {
+      "title": "Anthropic 冲击史上最大 IPO",
+      "summary": "据报道 Anthropic 最早于 11 月 9 日当周启动 IPO 路演，拟以近 2 万亿美元估值募资至多 1000 亿美元，其算力承诺规模已达 5180 亿美元。这只可能是史上最大 IPO，其增长能否撑起这一估值，将直接检验市场对前沿模型商业模式的定价。"
+    },
+    {
+      "title": "Meta 拟投 1450 亿美元建 14GW 算力",
+      "summary": "Meta 今年预计投入 1450 亿美元建设 14GW 算力，而黑石放弃了历时 22 个月的 Digital Gateway 数据中心项目。一边是巨头加码、一边是资本挑拣项目，算力建设的分层正在同一周内被同时放大。"
+    }
+  ],
+  "news": [
+    {
+      "title": "Anthropic 的 Claude 用 Lean 形式化证明渗流理论连续相变猜想",
+      "summary": "Claude 生成并经 Lean 验证的完整证明，攻克了悬置近 70 年的渗流理论连续相变猜想。由于整个证明由证明助手逐行校验，其可信度不再依赖「看起来说得通」，而落在可机检的推导链上。若该结果经学界核验成立，将成为 AI 参与基础数学知识生产的标志性案例。",
+      "date": "10月7日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-07/17rr5zjw",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "OpenAI 公开未发布模型产出的 722 篇论文与 372 个结果族",
+      "summary": "OpenAI 发布 722 篇由未发布前沿模型生成的论文、共 372 个结果族，称其中包含对数百个未解问题的解答。与逐篇发布不同，这是一次批量的成果交付，把「模型能做出什么原创数学」直接摊开给外界检验。伴随而来的还有一系列未决问题：署名、核验与错误率。",
+      "date": "10月7日",
+      "source": "The Verge — AI",
+      "link": "https://www.readaitime.com/news/2026-10-07/5jy0fca8",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Anthropic 或抢先 OpenAI 登陆华尔街：近 2 万亿美元估值、募资至多 1000 亿美元",
+      "summary": "据报道 Anthropic 最早将于 11 月 9 日当周启动 IPO 路演，拟以近 2 万亿美元估值募资至多 1000 亿美元，其算力承诺规模达 5180 亿美元。若成行，这将远超此前任何科技公司上市规模，也意味着前沿实验室的估值开始接受公开市场的直接检验，而不再只由一级市场定价。",
+      "date": "10月7日",
+      "source": "The Motley Fool",
+      "link": "https://www.readaitime.com/news/2026-10-07/125uywag",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "字节飞书整合后首秀：豆包工作伙伴亮相，办公 AI 四巨头开战",
+      "summary": "字节在飞书年度大会上发布团队级智能体「豆包工作伙伴」，这是飞书与豆包整合后的首次公开亮相，直接对标腾讯、百度、阿里的办公 AI 入口。办公场景的优势在于数据与流程都在企业内部，谁先嵌入日常工作流，谁就更可能锁定企业客户的模型调用。",
+      "date": "10月7日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-07/10f3ko2s",
+      "models": [
+        "Seed 2.1"
+      ],
+      "tag": "new"
+    },
+    {
+      "title": "Meta 拟投 1450 亿美元建 14GW 算力，黑石放弃 22 个月数据中心项目",
+      "summary": "Meta 今年预计投入 1450 亿美元建设 14GW 算力，同时黑石放弃了推进 22 个月的 Digital Gateway 数据中心项目。同一个星期里，巨头继续加码自有算力、而金融资本开始挑拣项目：有稳定承购方的受青睐，依赖远期合同的融资遇阻，算力建设资金正在明显分层。",
+      "date": "10月7日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-07/1k47y961",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "谷歌与 Constellation 签 3.6GW 电力协议，覆盖 PJM 数据中心核心区",
+      "summary": "谷歌与 Constellation 签署 3.6GW 电力协议，其中 890MW 为核电、以 20 年期购电协议形式锁定，用于支持 11 座核电机组升级。继亚马逊之后，又一家超大规模厂商把长期电力合约当作算力扩张的前置条件——在数据中心排队与电网审批日益紧张的当下，电比芯片更难临时解决。",
+      "date": "10月7日",
+      "source": "Data Center Dynamics",
+      "link": "https://www.readaitime.com/news/2026-10-07/1pegvykh",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "盖洛普民调：71% 美国人反对在本地建 AI 数据中心",
+      "summary": "蒙特利公园市以 88.34% 的赞成率否决数据中心项目，盖洛普民调显示 71% 的美国人反对在本地建设 AI 数据中心，反对比例甚至超过核电站。当项目审批越来越依赖地方投票时，数据中心扩张的主要约束正从电力与芯片转向社区接受度。",
+      "date": "10月7日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-07/qnu845x8",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "谷歌 AI 基建负责人：电力是根本瓶颈，第八代 TPU 首次拆分推理与训练",
+      "summary": "谷歌 AI 基建负责人表示公司今年资本开支超过 2000 亿美元，电力是根本约束，并透露第八代 TPU 首次拆分为推理版 8i 与训练版 8t。把训练与推理芯片分线，是对两类负载在内存、互联与能效上差异越来越大的直接回应，也是自研芯片路线成熟后的自然分工。",
+      "date": "10月7日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-07/ulcjdm0s",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "华为余承东：芯片基本摆脱对美依赖，但内存涨价迫使未来提价",
+      "summary": "华为余承东称公司已基本摆脱对美技术依赖，但内存涨价使每部手机成本增加超过 200 美元，未来不得不提价。这与美国方面关于中国累计采购 343 台浸润式 DUV 的智库报告形成对照：芯片自主化的叙事在推进，而存储涨价这一轮由 AI 驱动的成本冲击，同样落在终端厂商身上。",
+      "date": "10月7日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-07/17s1ucpq",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "英伟达支持的 Lambda 拟 IPO 前融资 40 亿美元，估值 145 亿美元",
+      "summary": "英伟达支持的 AI 云服务商 Lambda 正洽谈至多 40 亿美元的 IPO 前融资，融资前估值约 145 亿美元，其订单储备已从 150 亿美元增至 500 亿美元。订单储备与估值同步快速抬升，是这一轮 AI 云公司融资的共同特征，也让「合同能否兑现」成为最关键的观察变量。",
+      "date": "10月7日",
+      "source": "Stocktwits",
+      "link": "https://www.readaitime.com/news/2026-10-07/110nv7fp",
+      "models": [],
+      "tag": "fund"
+    }
+  ],
+  "papers": [
+    {
+      "title": "让 AI 拥有真正的长期记忆：5 千万 token 窗口，比重新计算更快更省",
+      "titleEn": "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute",
+      "summary": "语言模型只能用得下塞进上下文窗口的文本，而且每次发送提示都要重算 KV 状态。作者测试了一个记忆层（公开包 galahad-kv），把每约 16000 个 token 的分块 KV 状态加密存到本地 NVMe 盘，之后按字节精确加载而无需重算。在单张 H100、Gemma 4 12B/31B 上跑 5 千万 token 真实文本，100/100 的探测分块都从加密存储无重算载入；载入比重算快 2.8–4.3 倍、GPU 能耗低 8.8–12.3 倍，显存占用在整个 5 千万 token 流中保持平稳，12B 模型对上千万 token 之前植入的事实问答正确率达 82%。",
+      "authors": "Sietse Schelpe",
+      "link": "http://arxiv.org/abs/2610.10845v1"
+    },
+    {
+      "title": "CoTrace：以「harness-模型协同进化」训练终端智能体的数据配方",
+      "titleEn": "CoTrace: Data Recipes for Training Terminal Agents with Harness-Model Co-Evolution",
+      "summary": "终端智能体的能力同时取决于模型权重与运行期 harness（负责格式化提示、绑定工具、处理错误恢复）。已有协同进化方法会同时改进两者，但常把 harness 搜索过程中产生的轨迹当成不加区分的回放缓冲，忽略了「一条轨迹的价值取决于它是在哪个 harness 下产生的」。论文建立交替式协同进化框架，用组件级晋升决策解耦 harness 搜索与策略训练，并提出 harness 感知的数据配方 CoTrace，显式管理轨迹路由、来源匹配与课程刷新——反复出现的执行失败驱动 harness 合成，策略训练则严格以匹配条件为前提。",
+      "authors": "Jixuan Chen, Jiaxin Zhang, Qinyuan Ye, Yada Pruksachatkun 等",
+      "link": "http://arxiv.org/abs/2610.10426v1"
+    },
+    {
+      "title": "STI-OPD：面向多轮智能体的随机教师干预式在线策略蒸馏",
+      "titleEn": "Stochastic Teacher Intervention for Agentic On-Policy Distillation",
+      "summary": "在线策略蒸馏（OPD）通过在学生自生成的 rollout 上施加密集 token 级监督，把强教师的能力高效迁移给学生，在数学推理等任务上已有成效。但在多轮智能体任务中，学生的决策会塑造后续观测，早期错误会跨轮累积，轨迹逐渐偏离教师的 rollout 分布，使教师的 token 级监督不再可靠、甚至有害。STI-OPD 以师生策略差异为信号，在交互中随机用教师生成的动作用替换学生提出的动作，从而最大化有效监督的获取，缓解多轮场景下的分布漂移。",
+      "authors": "Junnan Liu, Linhao Luo, Zhijun Chen, Qianren Mao, Thuy-Trang Vu 等",
+      "link": "http://arxiv.org/abs/2610.10878v1"
+    },
+    {
+      "title": "把探索与优化解耦：RLVR 中的 Exploration-Distillation",
+      "titleEn": "Decoupling Exploration from Optimization in RLVR",
+      "summary": "带可验证奖励的强化学习（RLVR）通常施加在已训练好的检查点上，其核心承诺是发现新的推理策略。理论上模型能采样出训练数据中不存在的新想法，但实践里给 RLVR 加上强新颖性激励效果有限，还会损害模型质量——因为可验证奖励只监督了模型知识与行为的一小片，退化后很难恢复。论文提出 Exploration-Distillation（ExpDis），把探索与优化拆开：先训练带新颖性奖励的「探索者」策略，筛选其轨迹的正确性与质量，再蒸馏到一个不带新颖性奖励的学生策略中，并反复迭代。",
+      "authors": "Saif Punjwani, Micah Goldblum",
+      "link": "http://arxiv.org/abs/2610.10536v1"
+    },
+    {
+      "title": "超越猫头鹰：阈下学习可迁移复杂能力，也可迁移后门",
+      "titleEn": "Beyond Owls: Subliminal Learning Can Transfer Learned Capabilities and Backdoors",
+      "summary": "阈下学习（SL）指教师模型通过与某特质语义无关的数据蒸馏，把该特质传给学生。此前只在有限特质上得到展示（如偏好猫头鹰、恶意人格），且这些特质也能被简单提示或转向向量诱导。论文测试 SL 能否迁移更复杂的能力与后门：把「预测随机初始化 MLP 输出」这一新能力作为目标，在无关文本上蒸馏后，学生在该任务上取得了可观表现（略逊于教师）；研究还发现直接优化的转向向量与 SL 在分布上吻合，意味着蒸馏可能在不被察觉的情况下传递奖励寻求、密谋等细微失配。",
+      "authors": "Jan Dubiński, Anna Sztyber-Betley, Jan Betley, Owain Evans",
+      "link": "http://arxiv.org/abs/2610.10657v1"
+    }
+  ],
+  "models": [
+    {
+      "name": "Nano Banana 2.1",
+      "vendor": "谷歌",
+      "highlight": "谷歌更新的图像生成模型，主打用更低成本生成更好的图像。图像模型的价格战正在向「同等质量更便宜」而非「更高画质」倾斜，这对批量生成内容的产品侧影响最直接。",
+      "link": "https://the-decoder.com/googles-new-image-model-nano-banana-2-1-generates-better-images-for-less-money",
+      "date": "10月7日",
+      "tag": "new"
+    },
+    {
+      "name": "MiniCPM-V-4.7-35B-A3B",
+      "vendor": "面壁智能",
+      "highlight": "面壁智能发布的多模态模型，35B 总参数、每 token 仅激活约 3B 的稀疏 MoE 结构。以较小激活量承载多模态能力，延续了国产端侧友好模型的既有路线，适合本地与低成本部署场景。",
+      "link": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "date": "10月7日",
+      "tag": "oss"
+    },
+    {
+      "name": "Nemotron（IOI / IMO 竞赛微调版）",
+      "vendor": "NVIDIA",
+      "highlight": "英伟达微调 Nemotron 模型，在国际信息学奥赛（IOI）与国际数学奥赛（IMO）两项竞赛中均取得金牌级成绩。把竞赛级成绩作为模型卖点，说明「可验证的硬推理能力」依然是厂商最愿意公开的指标。",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026",
+      "date": "10月7日",
+      "tag": "new"
+    },
+    {
+      "name": "Cohere Transcribe",
+      "vendor": "Cohere",
+      "highlight": "Cohere 开源的 2B 参数语音识别模型，支持 14 种语言。把转录能力压到 2B 并开放权重，方便企业自托管语音管线，也让「语音入口」这一环节不再必须依赖云端大模型。",
+      "link": "https://huggingface.co/CohereLabs/cohere-transcribe-03-2026",
+      "date": "10月7日",
+      "tag": "oss"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude for Google Workspace 公测：Claude 进驻 Docs、Sheets 与 Slides",
+      "summary": "Claude 以侧边栏形式进入 Google Docs、Sheets 与 Slides，覆盖所有付费方案，通过 Google Workspace Marketplace 安装，提供「编辑前询问」与「接受全部编辑」两种模式。它能在 Sheets 里写公式、建透视表与图表，在 Slides 里匹配既有版式，并配套面向 Team 与 Enterprise 的 Google Docs/Sheets/Slides 测试版连接器。办公套件内的侧边栏正在成为各家模型争夺的默认入口。",
+      "date": "10月6日",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Claude Cowork 默认改用云沙箱：每会话独立、无跨会话状态",
+      "summary": "Claude Cowork 把 Pro/Max 用户的新任务默认改为按会话创建云沙箱，本地文件通过桌面应用代理进出，并移除了设置里的「仅在本机运行」开关。沙箱在会话开始时创建、结束时销毁，不跨会话或组织共享状态，除非管理员加入白名单否则无外部网络访问。把执行环境从本地默认切到隔离云沙箱，是「给智能体更大权限」与「限制其爆炸半径」之间的一次明确取舍。",
+      "date": "10月6日",
+      "source": "Anthropic",
+      "link": "https://claude.com/docs/cowork/changelog",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Claude Code v2.1.292：一步装插件，子智能体可调「投入度」",
+      "summary": "该版本为 claude plugin install 增加 --marketplace 参数，可在安装插件的同时加入插件市场；并为 Agent 工具加入 effort 参数，让 Claude 能调高或调低子智能体的投入度。mod 侧新增 prompt.autocomplete 钩子、$.model.complete 的提示缓存（可缓存至标记文本块）以及 agent.spawn 对工作流智能体派生的可见性，另含 70 多项修复，覆盖沙箱自动放行加固、超 128 字符的 MCP 工具名、定时任务持久化与会话/计划模式恢复。",
+      "date": "10月6日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.292",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Anthropic 扩展 Cyber Verification Program：三级权限、按风险分级降低防护",
+      "summary": "Anthropic 把此前的单一层级扩展为三级：Defense Access（防御性工作，数日审核）、Red Team Access（组织授权的渗透测试，数周审核）与 Specialized Access（关键基础设施测试，与美国政府共同审核）。三级均可访问 Claude Opus 5.5、Sonnet 5.5 与 Mythos 5.1，并按层级降低安全防护强度。前身项目 Project Glasswing 在 2026 年 4 至 7 月间发现 12.9 万余个经验证的漏洞（其中 3.3 万余个为严重/高危），说明「受控开放越狱能力给防御方」正在变成一条成型的制度设计。",
+      "date": "10月6日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/cyber-verification-program",
+      "models": [
+        "Mythos 5.1",
+        "Claude Opus 5.5",
+        "Claude Sonnet 5.5"
+      ],
+      "tag": "new"
+    }
+  ]
+}

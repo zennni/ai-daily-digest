@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "date": "2026-10-01",
+    "week": "星期四",
+    "backfill": true,
+    "note": "今日主题词：模型分流与上游结盟。企业侧出现了明确的「用脚投票」——AT&T 每天约 450 亿 Token 中已有约 40% 跑在开放模型上，Vercel AI Gateway 的开放权重占比也从去年 12 月的 7% 升到 8 月的 56%；同时新思科技与 OpenAI 签下多年协议共研芯片设计模型 GPT-Synopsys。谷歌用 Gemini 4 Argon 把输出上限拉到 100 万 token 并优先向防御方开放，而 FTC 的消费者保护调查把枪口对准了头部实验室。"
+  },
+  "highlights": [
+    {
+      "title": "Gemini 4 Argon 把输出上限拉到 100 万 token",
+      "summary": "输出 token 上限从 64K 提升至 100 万，面向软件工程、法律金融等企业知识工作与网络安全防御场景，先通过 Fairwind 计划向受信任的防御方开放；定价每百万输入 2 美元、每百万输出 10 美元，缓存输入享 95% 折扣。"
+    },
+    {
+      "title": "OpenAI 指控月之暗面协同提取推理",
+      "summary": "OpenAI 称识别并阻断了一起针对其模型的协同推理提取行动，并把其中一批核心活动与月之暗面（Kimi 开发者）关联。活动始于 7 月初，曾在两天内激增至 4000 多名用户的 1.6 万次请求，7 月 28 日前已全面阻断。"
+    },
+    {
+      "title": "企业开始把负载迁出闭源前沿模型",
+      "summary": "AT&T 每天处理约 450 亿 Token，其中约 40% 已跑在开放模型上并计划一年内升到 70%；Vercel AI Gateway 上开放权重模型的 Token 占比从去年 12 月的 7% 升至今年 8 月的 56%。"
+    },
+    {
+      "title": "芯片设计与模型公司开始联合造模型",
+      "summary": "新思科技与 OpenAI 签署多年期协议，联合开发半导体设计专用模型 GPT-Synopsys，把前沿模型与 Synopsys EDA 工具结合，产品推出后按芯片设计改进成效分享收入；消息公布后新思股价收涨 4.78%。"
+    }
+  ],
+  "news": [
+    {
+      "title": "谷歌发布 Gemini 4 Argon：输出上限提至 100 万 token，率先向网络安全防御方开放",
+      "summary": "谷歌 DeepMind 发布 Gemini 4 Argon，把输出 token 上限从 64K 提升到业界领先的 100 万，面向软件工程、法律金融等企业知识工作与网络安全防御场景。模型已通过 Fairwind 计划向受信任的防御方开放。定价为每百万输入 token 2 美元、每百万输出 token 10 美元，缓存输入享 95% 折扣。超长输出上限对企业级「一次生成完整交付物」的用法是实质性解锁。",
+      "date": "10月1日",
+      "source": "Google DeepMind — Blog",
+      "link": "https://www.readaitime.com/news/2026-10-01/1ydgvare",
+      "models": [
+        "Gemini 4 Argon"
+      ],
+      "tag": "new"
+    },
+    {
+      "title": "新思科技与 OpenAI 签多年协议，共研芯片设计模型 GPT-Synopsys",
+      "summary": "新思科技与 OpenAI 签署多年期协议，联合开发面向半导体设计的专用 AI 模型 GPT-Synopsys，将前沿模型与 Synopsys EDA 工具结合，产品推出后按芯片设计改进成效分享收入。消息公布后新思科技股价收涨 4.78%，公司把 2027 财年营收增速指引上调至 15%。把前沿模型嵌进 EDA 这种高门槛工业软件，是模型公司切入垂直工程领域的标志性一步。",
+      "date": "10月1日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-01/1f67v8vu",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "OpenAI 称挫败模型推理提取行动，指向月之暗面",
+      "summary": "OpenAI 称识别并阻断了一起针对其模型的协同推理提取行动，并把其中一批核心活动与月之暗面（Moonshot AI，Kimi 开发者）关联。该活动始于 7 月初，曾在两天内激增至 4000 多名用户的 16000 次请求，7 月 28 日前已被全面阻断。围绕「蒸馏的边界在哪」的争议，正从技术讨论演变成公司间的公开指控。",
+      "date": "10月1日",
+      "source": "CNBC — Technology",
+      "link": "https://www.readaitime.com/news/2026-10-01/16sswbh2",
+      "models": [
+        "Kimi K3"
+      ],
+      "tag": "hot"
+    },
+    {
+      "title": "美国企业转向开放模型：AT&T 四成 AI 负载已迁出闭源",
+      "summary": "企业 AI 进入模型分流阶段，闭源前沿模型被越来越多美国客户嫌贵。AT&T 每天处理约 450 亿 Token，约 40% 的 AI 工作负载已跑在开放模型上，并计划一年内提升到 70%。Vercel AI Gateway 上的数据也印证同一趋势：开放权重模型的 Token 占比从去年 12 月的 7% 升至今年的 56%。",
+      "date": "10月1日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-01/1vjo7o8o",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "Instinct 完成 10 亿美元 C 轮融资，估值达 100 亿美元",
+      "summary": "个人 Agent 公司 Instinct 于 9 月 28 日宣布完成 10 亿美元 C 轮融资，估值达 100 亿美元，一个月内估值增长三倍，投资方包括红杉、Benchmark 与 Coatue。公司成立约一年、仍需邀请码，用户规模近期以每天 10%–11% 的速度增长，平台年化 GMV 已超 10 亿美元，其中约一半来自旅行交易。",
+      "date": "10月1日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-01/1h91xd36",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "Anthropic IPO 估值分歧：硅谷喊 2 万亿，华尔街只认 1.5 万亿",
+      "summary": "据 The Information 报道，Anthropic 的 IPO 估值出现明显分歧：风投与部分投行讨论的区间约 2 万亿美元，而两家大型公开市场机构认为合理估值接近 1.5 万亿美元。公司已承诺采购至少 14.8 吉瓦算力容量，相关协议十年成本或超 5000 亿美元。估值分歧的核心，其实是对这批长期算力承诺应按什么口径计价。",
+      "date": "10月1日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-01/11eh2y6r",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "FTC 对 OpenAI、Anthropic 等 AI 实验室展开消费者保护调查",
+      "summary": "美国联邦贸易委员会正对 OpenAI、Anthropic 等头部 AI 实验室展开消费者保护调查。主席 Andrew Ferguson 计划在数周内发出具有法律约束力的「民事调查令」，强制企业提交文件并接受高管问询。AI 安全评估机构 METR 也在被审查之列，说明监管关注的范围已经延伸到第三方评估方。",
+      "date": "10月1日",
+      "source": "The Decoder",
+      "link": "https://www.readaitime.com/news/2026-10-01/ks050ik0",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "华为轮值董事长徐直军称昇腾中国市场份额已超英伟达",
+      "summary": "华为轮值董事长徐直军在问答材料中称，基于公司收集的数据，昇腾系列 NPU 在中国市场的份额已超过英伟达。他表示昇腾在先进性上虽不及对手，但供应有保障、不会随时被禁；同时坦言华为产能尚不足以满足中国需求，因此暂不打算全面拓展国际市场。这段表态把「份额领先」与「产能受限」两个事实同时摆了出来。",
+      "date": "10月1日",
+      "source": "The Register",
+      "link": "https://www.readaitime.com/news/2026-10-01/2h6p9zaz",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "美光第四财季营收 542.3 亿美元超预期，盘后跌 0.7%",
+      "summary": "美光公布 2026 财年第四季度业绩，调整后营收 542.3 亿美元，高于分析师预期的 514.9 亿美元；预计第一财季调整后营收 600 亿至 630 亿美元，同样高于预期。财报公布后盘后股价一度上涨后回落，最终收跌 0.7%。营收与指引双双超预期却未能带动股价，表明市场关注的焦点已经不在当期数字上。",
+      "date": "10月1日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-01/quoaa9cz",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "AI 基建卡在电力接入：全美 8200 个项目排队并网，中位等待超 5 年",
+      "summary": "AI 资本开支冲上历史高位，但瓶颈已从算力转向电力接入权。劳伦斯伯克利国家实验室数据显示，截至 2025 年底全美约 8200 个项目在并网队列中、涉及 1312 吉瓦容量，2025 年并网项目从申请到商运的中位等待时间超过 5 年。PJM 容量拍卖连续三次顶格出清，说明这种瓶颈暂时没有价格手段可以化解。",
+      "date": "10月1日",
+      "source": "钛媒体",
+      "link": "https://www.readaitime.com/news/2026-10-01/2r2j41q0",
+      "models": [],
+      "tag": "hot"
+    }
+  ],
+  "papers": [
+    {
+      "title": "MIRA：长程研究智能体的元推理——下一步该调查什么",
+      "titleEn": "Learning What to Investigate Next: Meta-Reasoning for Long-Horizon Research Agents",
+      "summary": "长程研究智能体必须在证据不断累积的过程中同时决定「怎么调查」和「下一步调查什么」，而这两类决策在长执行轨迹中极为稀疏，其后果往往要到好几轮调查之后才显现，因而很难学。论文提出 MIRA，一种把研究分配与执行分离的分层架构：外循环的元推理器从持久研究记录中组织上下文，然后为下一次调查写好工单或直接结束回合；内循环执行器每次全新执行一张工单。这样执行本身就成了元推理动作之间的状态转移。",
+      "authors": "Ankur Samanta, Yonathan Efroni, Paul Sajda, Kaveh Hassani 等",
+      "link": "http://arxiv.org/abs/2610.02525v1"
+    },
+    {
+      "title": "APDMem：由智能体控制的渐进披露式长期记忆",
+      "titleEn": "APDMem: Agent-Controlled Progressive Disclosure for Query-Adaptive Long-Term Memory",
+      "summary": "个性化助手需要在长短不一、复杂度各异的查询中，从很长的对话历史里捞回稀疏证据。APDMem 不用扁平记忆库，也不用固定检索粒度，而是把对话历史组织成四层逐级细化的结构：主题摘要、个性化关键事实、轮级证据笔记、原始消息。推理时由一个控制器执行「渐进披露」——先读高层摘要，再按需逐层下钻，从而让检索深度随查询复杂度自适应。",
+      "authors": "Chin-Lun Fu, Anagha Kulkarni, Hong Ni, Behrouz Madahian 等",
+      "link": "http://arxiv.org/abs/2610.02472v1"
+    },
+    {
+      "title": "复合 AI 系统的可靠性：来自 150 起生产事故的失效分类与韧性模式",
+      "titleEn": "Compound AI System Reliability: A Failure Taxonomy and Resilience Pattern Catalog from 150 Production Incidents",
+      "summary": "要可靠、安全地部署复合 AI 系统，必须理解在组件边界而非单个模型内部涌现出来的失效模式：级联错误跨边界传播、静默的质量退化躲过常规监控、各自都正确的部件协调失败后产生错误的集体行为。论文分析了来自开源复合 AI 项目与匿名企业部署的 150 份生产事故报告，归纳出五大类共 23 种失效模式——检索、生成、工具、编排、集成。这是目前少见的、基于真实事故而非合成测试的系统可靠性研究。",
+      "authors": "Rudrendu Kumar Paul, Sourav Nandy",
+      "link": "http://arxiv.org/abs/2610.02503v1"
+    },
+    {
+      "title": "一个 token 到底要花多少算力：用多智能体测量「足够」的每 token 计算量",
+      "titleEn": "What Does a Token Cost? A Mixture-of-Agents Measurement of Sufficient Per-Token Compute",
+      "summary": "大模型对每个 token 都花同样的算力，无论该 token 有多难生成。推测解码与模型路由都建立在「其中大量算力其实多余」的前提上，但单个 token 真正需要多少算力此前没有被测量过。论文用 Mixture-of-Agents 的视角来测：让来自三个模型家族、能力递增的 15 个模型，在给定正确前文的前提下逐 token 复现参考序列，并把「能成功产出该 token 的最小智能体」的推理成本定义为该 token 的成本。",
+      "authors": "Zhixu Du, Weijia Han, Hai Helen Li, Yiran Chen 等",
+      "link": "http://arxiv.org/abs/2610.02491v1"
+    },
+    {
+      "title": "SideKernel：macOS 上给编码智能体用的 microVM 沙箱",
+      "titleEn": "SideKernel: A Usable microVM Sandbox for AI Coding Agents on macOS",
+      "summary": "编码智能体本身是不可信的系统组件，却需要在开发者机器上获得自主性，这是一组内在矛盾。沙箱能提供隔离环境，但在本地 macOS 开发场景下，开源可选的方案既少又难用。作者先做了一轮在线用户调研，发现不到 40% 的编码智能体使用者会把智能体跑在沙箱里，并归纳出阻碍采用的主要可用性障碍；随后据此设计了 SideKernel——一个开源、本地、基于 microVM 的 macOS 沙箱。",
+      "authors": "Dimitrios Prasakis",
+      "link": "http://arxiv.org/abs/2610.02456v1"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 4 Argon",
+      "vendor": "谷歌 DeepMind",
+      "highlight": "输出 token 上限从 64K 提升至 100 万，面向软件工程、法律金融等企业知识工作与网络安全防御场景；已通过 Fairwind 计划向受信任的防御方优先开放。定价每百万输入 2 美元、每百万输出 10 美元，缓存输入 95% 折扣。把超长输出与安全防御场景绑定，是这次发布区别于常规参数升级的地方。",
+      "link": "https://www.readaitime.com/news/2026-10-01/1ydgvare",
+      "date": "10月1日",
+      "tag": "new"
+    },
+    {
+      "name": "GPT-Synopsys",
+      "vendor": "新思科技 × OpenAI",
+      "highlight": "由新思科技与 OpenAI 多年期协议共建的半导体设计专用模型，把前沿模型能力与 Synopsys EDA 工具链结合，产品推出后按芯片设计改进成效分享收入。商业模式上采取了「按效果分成」而非单纯授权，对工业软件与模型公司的合作方式是一个新样本。",
+      "link": "https://www.readaitime.com/news/2026-10-01/1f67v8vu",
+      "date": "10月1日",
+      "tag": "new"
+    },
+    {
+      "name": "Olmo-core 3",
+      "vendor": "Allen AI",
+      "highlight": "面向大规模 MoE 的开源训练基础设施，配套开源模型与训练栈一同放出。在「开放模型能力上来了，但开放训练基础设施仍然稀缺」的当下，这类工作直接决定了学术界与中小团队能否复现前沿规模的训练。",
+      "link": "https://huggingface.co/blog/allenai/olmocore3",
+      "date": "10月1日",
+      "tag": "oss"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude Code v2.1.286：权限提示计数、列表鼠标导航与一批 MCP 修复",
+      "summary": "该版本在权限请求堆叠时加入「2 of 5」式计数器，为全屏模式下的「N more」行加入鼠标支持，并新增 VS Code 书签。修复项包括多个 CLI 进程导致的重复登录浏览器、并行工具调用后 --resume/--continue 丢失轮次、工具或 hook 返回格式错误引发的 API 400、历史过长的云会话无法唤醒，以及 Claude apps 网关上的用量计费问题；同时统一了 /artifacts、/mcp、/skills、/hooks 的列表界面。",
+      "date": "9月30日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.286",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Anthropic 基础 SDK v1.10.0：新增 Admin API 企业管控与 MCP tunnels beta",
+      "summary": "anthropic-sdk-python/typescript 在 9 月 28 日至 30 日连发 v1.9.0–v1.11.0：v1.9.0 加入 between_tools 思考类型与正式版缓存诊断；v1.10.0 带来 Admin API 的企业分析、支出限额、RBAC、Plugins/Marketplaces 管理能力，以及 MCP tunnels beta；v1.11.0 新增 list-spend-limits 端点并支持 Sonnet 4.5 退役。TypeScript SDK 与 Vertex/Bedrock/Google Cloud/Foundry 各变体同步发布。",
+      "date": "9月30日",
+      "source": "GitHub Releases",
+      "link": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v1.10.0",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "claude-plugins-official 新增数学证明插件：solo 与「围攻」两种技能",
+      "summary": "官方插件仓库加入一个 math-proof 插件，提供 solo 与 siege（多智能体）两种技能模式用于攻克困难数学问题。同一天 context7 插件修掉 OAuth 回退问题，iMessage 插件升到 v0.2.0，改为呈现每一条收到图片而非只显示第一条。把数学证明拆成单人与多智能体两种模式，是「多智能体协作」在具体任务上的一次明确落地。",
+      "date": "9月30日",
+      "source": "GitHub Commits",
+      "link": "https://github.com/anthropics/claude-plugins-official/commit/aa5654b7",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "社区同日出两个 Agent 层工具：context-mode 与 OpenRig",
+      "summary": "context-mode 把工具输出隔离到子进程里执行以获得最高约 98% 的体积压缩（示例 315KB→5.4KB），并用 SQLite + FTS5 混合检索持久化会话状态使其能跨上下文压缩存活，还通过 hooks 在 17 个智能体平台上强制路由。OpenRig v0.6.0 则是一个基于 tmux 的本地守护进程/CLI/TUI/MCP 服务器，用 YAML 定义的 RigSpec（pod、边、连续性策略）描述多智能体拓扑，让 Claude Code 与 Codex 智能体之间可以互相发送与广播消息，并整份快照整队配置。",
+      "date": "10月1日",
+      "source": "GitHub / Show HN",
+      "link": "https://github.com/mksglu/context-mode",
+      "models": [],
+      "tag": "oss"
+    }
+  ]
+}

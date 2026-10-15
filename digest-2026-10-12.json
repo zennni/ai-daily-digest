@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "date": "2026-10-12",
+    "week": "星期一",
+    "backfill": true,
+    "note": "今日主题词：国产基座与开放机架。智谱 GLM-5.3 与 DeepSeek V4.1-Flash 同日上线，前者 753B 参数、编码能力较上代提升 50%，后者把全局 KV 缓存压到前代约四分之一；DeepMind 的 AlphaProof Nexus 解出多个开放数学难题并登上《Science》。基础设施侧，微软发布第三代自研推理芯片 Maia 300，并与英伟达、AMD 一道在 OCP 峰会把机架级设计开放出去。"
+  },
+  "highlights": [
+    {
+      "title": "智谱发布 GLM-5.3：同基座靠后训练把编码提升 50%",
+      "summary": "753B 参数，与 GLM-5.2 共用基座，性能提升全部来自后训练；在 Z.ai Code Bench 上编码能力较上代提升 50%，并在多个公开基准取得开源 SOTA，网络攻防能力也随训练规模增强。"
+    },
+    {
+      "title": "DeepSeek 发布 V4.1-Flash：KV 缓存压到前代四分之一",
+      "summary": "552B 骨干的多模态 MoE，支持 100 万 token 上下文；预填充每 token 仅激活 8B、解码激活 16B，全局 KV 缓存降至每 token 890 字节。长上下文的成本结构再次被改写。"
+    },
+    {
+      "title": "DeepMind AlphaProof Nexus 登上《Science》",
+      "summary": "系统独立解出数十个开放数学问题，包括 353 个 Erdős 问题中的 9 个（其中两个悬置 56 年），并证明了 OEIS 中的 44 个猜想，成果经同行评审后发表。"
+    },
+    {
+      "title": "微软把推理芯片与开放机架同时推出去",
+      "summary": "Maia 300 定位为产品与服务的主要 AI 推理系统、每兆瓦 token 产出较主流 GPU 高 40%；同时在 OCP 峰会上，英伟达、AMD 与谷歌、Meta 一起把整机架设计开放为标准。"
+    }
+  ],
+  "news": [
+    {
+      "title": "智谱上线 GLM-5.3：753B 参数，编码能力较上代提升 50%",
+      "summary": "智谱在 Hugging Face 上线 GLM-5.3，参数规模 753B，与 GLM-5.2 共用同一基座，性能提升全部来自后训练。官方称 Z.ai Code Bench 上的编码能力较上代提升 50%，并在多个公开基准取得开源 SOTA。值得注意的一点是，随着训练规模上升，模型的网络攻防能力也同步增强——能力提升与安全边界正在同一批训练里同时发生。",
+      "date": "10月12日",
+      "source": "智谱 GLM 模型发布（Hugging Face）",
+      "link": "https://www.readaitime.com/news/2026-10-12/qk33mw8w",
+      "models": [
+        "GLM-5.3",
+        "GLM-5.2"
+      ],
+      "tag": "oss"
+    },
+    {
+      "title": "DeepSeek 发布 V4.1-Flash：552B MoE 多模态模型，KV 缓存降至前代四分之一",
+      "summary": "DeepSeek 发布多模态 MoE 模型 V4.1-Flash，骨干 552B、支持 100 万 token 上下文。预填充阶段每 token 仅激活 8B 参数，解码阶段激活 16B；全局 KV 缓存降至每 token 890 字节，约为前代产品的四分之一。在长上下文推理成本成为核心约束的当下，这组数字比参数规模本身更值得关注。",
+      "date": "10月12日",
+      "source": "DeepSeek 模型发布（Hugging Face）",
+      "link": "https://www.readaitime.com/news/2026-10-12/zxpnocmk",
+      "models": [],
+      "tag": "oss"
+    },
+    {
+      "title": "DeepMind AlphaProof Nexus 解出多个开放数学难题，成果登《Science》",
+      "summary": "该系统独立解出数十个开放数学问题，其中包括 353 个 Erdős 问题里的 9 个，其中两个已悬置 56 年；同时证明了 OEIS 中的 44 个猜想。成果已在《Science》发表并通过同行评审。与以往「AI 给出候选结果、人类难以验证」的情形不同，这批工作走了完整的学术发表流程。",
+      "date": "10月12日",
+      "source": "The Decoder",
+      "link": "https://www.readaitime.com/news/2026-10-12/s1zg7dly",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "微软基于阿里 Qwen 推出决策模型 Microsoft-Decision-1",
+      "summary": "微软推出 Microsoft-Decision-1，基于阿里的 Qwen3.5-9B 后训练而来，在结构化决策任务的时延与准确性上超过主流决策模型。纳德拉称正在事件响应、质量控制、科学发现等领域测试其应用。一个侧面数据是，HuggingFace 上 129 个开源决策模型项目中已有 84 个基于 Qwen——决策模型这条新品类的底座，正被一个开源基座高度集中化。",
+      "date": "10月12日",
+      "source": "雷锋网",
+      "link": "https://www.readaitime.com/news/2026-10-12/xj2hns3l",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "月之暗面冲刺港股 IPO，创始团队与老股东 7 亿美元和解谈判曝光",
+      "summary": "路透社报道，正在冲刺港股 IPO 的月之暗面，其创始团队与老股东正在就权益补偿进行保密和解谈判，对方索赔金额可能超过 7 亿美元。报道称公司 ARR 达 10 亿美元，目标 2027 年一季度上市。股权历史遗留问题在上市窗口前集中暴露，是这一波 AI 公司 IPO 的共同课题。",
+      "date": "10月12日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-12/10l4qkpi",
+      "models": [
+        "Kimi K3"
+      ],
+      "tag": "fund"
+    },
+    {
+      "title": "马斯克：SpaceX 以约 600 亿美元收购 Cursor，创创业公司收购史最高价",
+      "summary": "马斯克称全球真正攒够编程训练数据的只有 OpenAI、Anthropic 与 Cursor 三家，谷歌勉强算半个；为此 SpaceX 行使选择权，以约 600 亿美元整体收购 Cursor。这一价格创下创业公司收购史上的最高纪录。交易逻辑指向一个判断：编程数据而非算力或人才，正在成为训练编码代理最稀缺的资产。",
+      "date": "10月12日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-12/zn55teqi",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "宁德时代领投 DeepSeek 新一轮近千亿元融资",
+      "summary": "继 6 月以 50 亿元成为 DeepSeek 第二大外部投资人之后，宁德时代被曝再次领投其新一轮近千亿元融资。2026 年以来宁德时代的跨界投入已超百亿元，覆盖大模型、数据中心、HVDC 供电与储能，并延伸至核聚变。能源企业把资本投向算力与模型，反映的是电力与算力在产业逻辑上的合流。",
+      "date": "10月12日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-12/1ngsfn3z",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "无问芯穹完成 23 亿元 C 轮融资，累计 43 亿元筹备 IPO",
+      "summary": "AI 原生基础设施企业无问芯穹完成 23 亿元 C 轮融资，累计融资达 43 亿元，单轮与累计均创国内 AI Infra 行业新高。公司脱胎于清华电子工程系，主打异构算力协同与 Token 服务，目前正在筹备 IPO。在国产芯片型号高度分散的现实下，「把不同算力抹平成一种可调度资源」的中间层价值正在被资本确认。",
+      "date": "10月12日",
+      "source": "智东西",
+      "link": "https://www.readaitime.com/news/2026-10-12/98ebdfyr",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "微软发布第三代自研 AI 芯片 Maia 300：每兆瓦 token 数高 40%",
+      "summary": "微软宣布 Maia 300 将于明年部署，专为推理设计，每兆瓦可处理的 token 数预计比主流 GPU 高 40%，计划以吉瓦级规模部署以降低对英伟达的依赖。每机架可容纳 96 颗芯片，为 Maia 200 的两倍。云厂商自研推理芯片从「补充产能」走向「主要推理系统」，会直接改变推理侧的成本曲线与供应链格局。",
+      "date": "10月12日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-12/7wcsd7od",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "摩根士丹利测算 Muse 每用户月成本最高 130 美元，用户增速骤降 62%",
+      "summary": "Meta 的 AI 智能体 Muse 日均净新增用户从 9 月高峰的约 19.8 万降至约 7.4 万，降幅 62.4%。摩根士丹利测算其每用户每月服务成本在 3 至 130 美元之间，基准情形约 37 美元，认为真正变现可能要等到 2027 年底至 2028 年。用户增长曲线与单位服务成本的组合，正在给个人智能体类产品的商业模式打出一个问号。",
+      "date": "10月12日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-12/1s2q654l",
+      "models": [],
+      "tag": "hot"
+    }
+  ],
+  "papers": [
+    {
+      "title": "释放内在的 Jev：一份开源决策模型的简易配方",
+      "titleEn": "Releasing the Inner Jev: A Simple Recipe for Open Decision Models",
+      "summary": "以 Jev 为代表的 System One 决策模型，会在给定类型化输入状态、问题与选项集合后，于单次前向过程中直接返回每个选项的概率，不生成任何文字。论文发现，现有开源指令微调模型不需要额外训练就能达到相近水平：在最后一个 token 位置从输出 logits 中读取「A、B、C……」等字母的分数即可。作者进一步给出一个简单监督微调配方——对 Gemma 4 31B/12B、Qwen3.6-27B、Qwen3.5-4B 用 LoRA 加上从语言模型 head 切片初始化的决策头——并把相关数据整理成 OpenDecisions。",
+      "authors": "Jonathan Geuter, Andrew Cheng, David Alvarez-Melis",
+      "link": "https://arxiv.org/abs/2610.17205"
+    },
+    {
+      "title": "用编码智能体团队扩展推理期算力：把团队设计当作算力分配问题",
+      "titleEn": "Scaling Inference-Time Compute with Teams of Coding Agents",
+      "summary": "多智能体系统提供了扩展推理期算力的新维度：不再让单个智能体想得更久或采样更多次，而是把任务拆给多个并行的智能体协同完成；但实践中，代理越多越容易出现重复劳动、协调失败与成本膨胀。论文把团队设计形式化为算力分配问题——从一个单代理起点出发，额外的推理算力应该投到哪里，才能抵达奖励-成本的帕累托前沿。作者自建最小多智能体 harness，逐一改变主导代理委派的阶段（规划、实现、验证）、团队成员所用模型与工人数量来勾勒前沿：在 ProgramBench 上团队优于单代理，但成本是后者的 3 到 7 倍；而在算力分配得当的情况下，异构团队的性价比明显更好。",
+      "authors": "Keenan Samway, Daniel D'souza, Omar Darwiche Domingues, …, Tan Yi-Chern, Nouha Dziri",
+      "link": "https://arxiv.org/abs/2610.17471"
+    },
+    {
+      "title": "智能体工作流为什么会失败：一份来自文献与实证数据的分类体系",
+      "titleEn": "Why Agentic Workflows Fail: A Taxonomy Derived from Literature and Empirical Data",
+      "summary": "智能体工作流把大模型与规划、记忆、工具、执行环境和迭代反馈拼在一起，失败因此极难诊断：同一个用户可见的症状，可能来自模型行为、工作流编排、外部工具、基础设施，或它们之间的相互作用。论文提出一套「来源感知」的失败分类体系，把来源归因与三个实证维度（具体失败类型词典、工作流阶段定位、智能体能力定位）结合起来，其核心是一个双轴定位矩阵——横轴是工作流阶段，纵轴是智能体能力。作者将其应用于学术文献与 GitHub 上的实证证据，试图把中间过程的失败而非最终表现作为定位对象。",
+      "authors": "Xin Li, Rami Bahsoon, Tao Chen",
+      "link": "https://arxiv.org/abs/2610.17418"
+    },
+    {
+      "title": "沿生成路径做 RL 后训练：扩散语言模型的轨迹盲区修复",
+      "titleEn": "RL Post-Training Diffusion Language Models Along Their Own Generation Paths",
+      "summary": "扩散语言模型是自回归模型之外更高效的一条路径，但多数 RL 后训练方法难以适配：模型通过大量中间状态生成答案，每一步都在决定揭开哪些掩码位置、填入哪些 token。现有方法要么近似难以计算的序列似然，要么给每个去噪步套上同一个优势值，并不区分这些中间状态如何影响期望奖励。论文把这一现象称为「轨迹盲区」，并提出 PACT：基于奖励倾斜的参考分布，联合学习策略与一个为每个中间状态打分的标量势函数，并施加锚定约束。",
+      "authors": "Vaibhav Singh, Eugene Belilovsky",
+      "link": "https://arxiv.org/abs/2610.17266"
+    },
+    {
+      "title": "World-T3：把测试时训练当作实时视频世界模型的持久记忆",
+      "titleEn": "World-T3: Test-Time Training as Persistent Memory for Real-Time Video World Models",
+      "summary": "视频世界模型已能生成可交互的场景，但长时程生成对视觉记忆提出了根本性要求：随着生成继续，此前观察到的世界必须保持一致。现有自回归方法往往依赖生成模型自身来保留这些信息，结果是在活跃上下文之外出现空间记忆衰减。论文提出 World-T3，一个相机可控的视频世界模型，用测试时训练把过去的观测固化进专门的模型参数：以递归最小二乘规则在线更新，按相机位姿建立键控记忆；读取时按位姿从快速权重状态中取回曾观察到的场景特征，从而在常数存储下保持一致生成。",
+      "authors": "Junyi Wu, Zekun Li, Chenhongyi Yang, …, Xinyi Zhang, Hongbing Hu",
+      "link": "https://arxiv.org/abs/2610.17434"
+    }
+  ],
+  "models": [
+    {
+      "name": "GLM-5.3",
+      "vendor": "智谱",
+      "highlight": "753B 参数（10/12），与 GLM-5.2 共用同一基座，性能提升全部来自后训练：Z.ai Code Bench 编码能力较上代提升 50%，多个公开基准取得开源 SOTA。官方同时提示网络攻防能力随训练规模增强，把「能力提升即安全边界移动」写进了发布说明。",
+      "link": "https://www.readaitime.com/news/2026-10-12/qk33mw8w",
+      "date": "10月12日",
+      "tag": "new"
+    },
+    {
+      "name": "DeepSeek V4.1-Flash",
+      "vendor": "DeepSeek",
+      "highlight": "552B 骨干的多模态 MoE（10/12），支持 100 万 token 上下文；预填充每 token 激活 8B、解码激活 16B，全局 KV 缓存降至每 token 890 字节、约为前代四分之一。对长上下文与多模态同时成立的效率优化，比单纯扩大参数更能压低推理账单。",
+      "link": "https://www.readaitime.com/news/2026-10-12/zxpnocmk",
+      "date": "10月12日",
+      "tag": "oss"
+    },
+    {
+      "name": "Microsoft-Decision-1",
+      "vendor": "微软",
+      "highlight": "基于阿里 Qwen3.5-9B 后训练得到的决策模型（10/12），在结构化决策任务的时延与准确性上超过主流决策模型，纳德拉称正用于事件响应、质量控制与科学发现等场景测试。它同时说明 System One 类决策模型已进入云厂商的产品序列，而不只是创业公司的赌注。",
+      "link": "https://www.readaitime.com/news/2026-10-12/xj2hns3l",
+      "date": "10月12日",
+      "tag": "new"
+    },
+    {
+      "name": "AlphaProof Nexus",
+      "vendor": "谷歌 DeepMind",
+      "highlight": "数学发现系统（10/12）：独立解出数十个开放问题，含 353 个 Erdős 问题中的 9 个（两个悬置 56 年），并证明 OEIS 中 44 个猜想；成果发表于《Science》并通过同行评审。它把「AI 做数学」从竞赛题推到了开放问题与学术发表的流程里。",
+      "link": "https://www.readaitime.com/news/2026-10-12/s1zg7dly",
+      "date": "10月12日",
+      "tag": "new"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Dynamic Workflows 进入公开 beta：编排程序由服务端执行",
+      "summary": "Claude 的托管代理新增多智能体编排原语：不再是 Claude 逐轮决定要拉起谁，而是由主导代理编写一段 JavaScript 程序（agent()、pipeline()、parallel()、phase()），由运行时在后台执行，主会话保持空闲。单次运行最多 1000 个代理、并发数可在 16 至 256 间配置，并自带 /deep-research 工作流；所有付费计划、API（managed-agents-2026-04-01 beta header）、Amazon Bedrock、Google Cloud 与 Microsoft Foundry 均可用，也可以通过 ultracode 关键词触发。",
+      "date": "10月9日",
+      "source": "Anthropic（Claude Code 文档）",
+      "link": "https://code.claude.com/docs/en/workflows",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "anthropics/skills 把 claude-api 技能与动态工作流、受限网络规则同步",
+      "summary": "官方技能仓库完成第二次同日更新：claude-api 技能加入托管代理动态工作流指引与四个 quickstart 模板，并补上网络受限场景下网页工具的规则说明。技能与平台特性同日对齐，意味着用技能包就能把新原语固化成可复用的操作流程，而不必每次重读文档。",
+      "date": "10月9日",
+      "source": "GitHub（anthropics/skills commit dbd4588）",
+      "link": "https://github.com/anthropics/skills/commit/dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "codebase-memory-mcp 合并 CBM Lens Beta：把代码库记忆变成可探索的图谱工作区",
+      "summary": "该 MCP 服务器把 CBM Lens Beta 合并进主分支：提供源码浏览、聚焦式图追踪、3D 架构视图、仓库地图、可编辑的项目 ADR，以及一个可选的浏览器本地代理来解释当前选中内容；Lens 设置与影响历史可以在 Windows 与 macOS 之间迁移。对需要在大型仓库里反复定位「这段改动会影响什么」的编码代理而言，这类记忆+图谱工具正在补上检索之外的结构化理解层。",
+      "date": "10月12日",
+      "source": "GitHub（DeusData/codebase-memory-mcp PR #2068）",
+      "link": "https://github.com/DeusData/codebase-memory-mcp/pull/2068",
+      "models": [],
+      "tag": "oss"
+    },
+    {
+      "title": "英伟达在 OCP 峰会开放 Vera Rubin 机架与计算托盘设计",
+      "summary": "英伟达通过 MGX 开放架构向 OCP 贡献 Vera Rubin 的机架与计算托盘设计，MGX 1.2 支持最高 250kW 机架与 5000A 液冷母线，并推出 DSX AI Factory 的开源软件组件。同期英伟达还与 AMD、谷歌、Meta 一起发布「开放数据中心规范 v0.7」，并联合谷歌、Meta、微软制定 OCP 电网韧性规范，统一数据中心应对电力中断与快速恢复满负荷的标准。把整机架设计与供电标准交出去，是 AI 工厂从各家私有方案走向可互换体系的一步。",
+      "date": "10月12日",
+      "source": "NVIDIA Blog",
+      "link": "https://www.readaitime.com/news/2026-10-12/1pl014pm",
+      "models": [],
+      "tag": "oss"
+    }
+  ]
+}

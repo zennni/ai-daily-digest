@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-09-20</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年9月20日 · 星期日</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">【回溯补档】本页为缺档日期的事后补录，内容取自当日公开报道归档，非实时发布。今日主题词：静默上线与开源提速。Opus 5.2 与 Gemini 4 Pro 未经官宣直接出现在生产接口与盲测平台上，前沿模型的发布流程被压成一次接口变更；同一时间通义开源统一文生图与图像编辑的 Qwen-Image-2.1，阶跃星辰 Step 5 Preview 把开源阵营推到 AA 指数前三。Anthropic 首次公布内部研发节奏指标，称 Claude 已主导其 26% 的 AI 研发工作。</div>
+</header>
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>前沿模型「静默上线」成新常态：</strong>Anthropic 的 Opus 5.2 与谷歌的 Gemini 4 Pro 在没有任何官方发布、没有模型卡、没有定价页的情况下，直接出现在生产接口与第三方盲测平台上。发布流程被压缩成一次接口变更，用户与开发者只能靠评测平台与调用行为反推新模型是否存在。</li>
+    <li><strong>通义开源 Qwen-Image-2.1：</strong>阿里通义开源统一文生图与图像编辑模型 Qwen-Image-2.1，视觉生成部分仅 7B 参数、32 层单流 DiT；同步放出配套提示词改写模型 Qwen-Image-2.1-PE-I2I，基于 Qwen3.5-VL 9B 微调，把「改图」与「改写指令」两条链路一起交付。</li>
+    <li><strong>开源阵营把差距压到前三：</strong>阶跃星辰发布旗舰模型 Step 5 Preview，AA 指数直接跻身全球开源前三；叠加 Qwen-Image-2.1 开源与国产全栈模型在消费级显卡上跑办公场景，开源模型在同一天里从图像、文本到端侧同时推进。</li>
+    <li><strong>具身智能一二级市场冰火两重天：</strong>宇树科技上市不足一月市值蒸发约 2500 亿元，而同期具身智能一级市场发生 322 起融资、金额 935 亿元，本周全行业 107 起融资里机器人赛道 10 起最密集。同一赛道在二级市场被重估、在一级市场被抢筹。</li>
+  </ul>
+</div>
+<section>
+  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+  <div class="card">
+    <h3>阿里通义开源 Qwen-Image-2.1 及配套提示词改写模型<span class="tag tag-oss">9月20日</span></h3>
+    <p>通义发布并开源 Qwen-Image-2.1，把文生图与图像编辑统一进同一套模型：视觉生成侧仅 7B 参数、32 层单流 DiT 结构，主打以更小体量换取可编辑性。同步开源配套的提示词改写模型 Qwen-Image-2.1-PE-I2I，基于 Qwen3.5-VL 9B 微调，用于把用户口语化指令翻译成图像编辑可执行的结构化提示。对需要自建图像工作流的团队，这次是模型与前置链路的成套开源。</p>
+    <div class="meta">来源：通义千问 Qwen 模型发布（Hugging Face） ·  <a href="https://www.readaitime.com/news/2026-09-20/pff03f6a" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Opus 5.2 与 Gemini 4 Pro 未经官宣悄然上线，前沿模型发布流程被压缩<span class="tag tag-new">9月20日</span></h3>
+    <p>Anthropic 与谷歌的新一代模型在未做任何官方发布的情况下，经生产接口与第三方盲测平台悄然上线，两家均未同步发布模型卡与定价信息。行业观察认为这延续了今年以来的趋势：模型迭代越来越像后端服务的滚动更新，而不是一场发布会。对依赖版本号做兼容性判断的企业用户而言，可预期的发布节奏正在消失。</p>
+    <div class="meta">来源：钛媒体 ·  <a href="https://www.readaitime.com/news/2026-09-20/21q5605c" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 公布内部研发节奏指标：Claude 已主导其 26% 的 AI 研发工作<span class="tag tag-hot">9月17日</span></h3>
+    <p>Anthropic 发布三项透明度指标，披露 Claude 在其 AI 研发中「主导」的份额已从 2 月的不足 1% 升至约 26%，超过 90% 的任务达到「AI 协作」及以上水平；同时有约 3 万个研究智能体并发运行，线上监控仅拦截了 0.002% 的智能体决策；约 6% 的研发算力投向安全工作，在 AI 驱动 AI 研发的部分这一比例为 12%。这是实验室首次用可量化口径公开「AI 参与造 AI」的程度。</p>
+    <div class="meta">来源：Anthropic ·  <a href="https://www.anthropic.com/institute/measuring-pace-of-ai-development" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 洽谈新一轮私募融资，估值或超 1.2 万亿美元<span class="tag tag-fund">9月20日</span></h3>
+    <p>OpenAI 正与投资者就新一轮私募融资进行早期谈判，估值可能达到 1.2 万亿美元。CEO 奥尔特曼此前已公开表示今年不会推进 IPO，本轮融资因此被解读为在上市前继续补充弹药。同期有报道称 Anthropic 的 IPO 时间被推迟至 11 月，而 OpenAI 预计将出现大规模负现金流。</p>
+    <div class="meta">来源：华尔街见闻 / Yahoo Finance ·  <a href="https://www.readaitime.com/news/2026-09-20/2rrf6uoi" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 称用 AI 破解纳维-斯托克斯难题，数学家质疑其「抢功」<span class="tag tag-hot">9月20日</span></h3>
+    <p>OpenAI 宣称用 AI 解决了流体力学领域的难题，并用 Lean 对形式化证明做了验证；随后数学家质疑其在听闻他人既有工作后抢先宣布，并怀疑模型在训练中已暗中学到相关思路。25 名菲尔兹奖得主联名发表声明，批评 AI 巨头把数学难题当作模型基准，认为这种用法既误导公众也无助于数学本身。围绕「AI 到底证明了什么」的争论，正在变成学术共同体与实验室之间的一次正面冲突。</p>
+    <div class="meta">来源：虎嗅 ·  <a href="https://www.readaitime.com/news/2026-09-20/2atiglw8" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>字节、腾讯、阿里三方竞逐 AI 办公智能体，Qwen Office 首月注册超 3000 万<span class="tag tag-hot">9月20日</span></h3>
+    <p>国内大厂在 AI 办公赛道正面开打：字节推出豆包 Work，腾讯开放 WorkBuddy 平台，阿里通义办公首月迭代 120 个版本、注册用户超过 3000 万。同期字节把豆包、飞书与火山引擎做整合，腾讯侧则有启元 Q1、T1 机器人接入 WorkBuddy，可调用上万种 Skill。办公入口正在成为智能体能力落地的主要通道。</p>
+    <div class="meta">来源：钛媒体 / 虎嗅 / 36氪 ·  <a href="https://www.readaitime.com/news/2026-09-20/2739q9zy" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>宇树市值一月蒸发 2500 亿，具身智能一级市场却融资 935 亿<span class="tag tag-fund">9月20日</span></h3>
+    <p>宇树科技上市不足一个月市值蒸发约 2500 亿元，而同期具身智能一级市场共发生 322 起融资、披露金额 935 亿元，本周 107 起一级市场融资中机器人赛道以 10 起最为密集。二级市场对估值与商业化节奏的怀疑，与一级市场对赛道位置的争抢形成了鲜明反差。产业侧同样活跃：因克斯关节模组进入 Physical Intelligence 与 Amazon 供应链，帕西尼获三星战投。</p>
+    <div class="meta">来源：虎嗅 ·  <a href="https://www.readaitime.com/news/2026-09-20/1wz1qx3h" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>博通 AI 半导体营收达 167 亿美元，同比增长 221%<span class="tag tag-hot">9月20日</span></h3>
+    <p>博通披露 2026 财年第三季度 AI 半导体营收 167 亿美元，同比增长 221%，并预计第四季度达到 217 亿美元。这一增速把定制加速芯片（ASIC）路线的需求弹性直接摆上台面，与英伟达形成互补而非替代的关系被反复讨论。同期市场也在关注存储涨价见顶、数据中心电力审批放缓等可能打断算力投资的信号。</p>
+    <div class="meta">来源：SemiWiki ·  <a href="https://www.readaitime.com/news/2026-09-20/19yid5m7" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>谷歌两年向芬兰投入 130 亿欧元建 AI 基建，并签下 22 年核电采购协议<span class="tag tag-hot">9月20日</span></h3>
+    <p>谷歌宣布两年内在芬兰投入 130 亿欧元建设 AI 基础设施，同时买下当地核电站约一半的电力并签署为期 22 年的采购协议。这是「算力扩张受制于电力」这一约束条件下最新的一笔长周期绑定，也说明超大规模厂商的能源策略正在从现货采购转向长期锁定基荷电源。</p>
+    <div class="meta">来源：虎嗅 ·  <a href="https://www.readaitime.com/news/2026-09-20/2406eiye" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>华为详解灵衢互联与 Peerium 计算架构，昇腾 960 超节点算力卡从 1024 升至 4096<span class="tag tag-new">9月20日</span></h3>
+    <p>华为轮值董事长徐直军系统阐述灵衢（UnifiedBus）互联技术与 Peerium 计算架构，并发布采用 NPO 近封装光学技术的昇腾 960 超节点，单节点算力卡规模由 1024 提升至 4096。同日另一份论文披露麒麟 2026 晶体管密度提升至 2.38 亿颗/平方毫米、增幅 55%，以量产实测数据回应了三维堆叠发热的质疑。华为在这一天同时补上了 scale-up 互联与制造工艺两条叙事。</p>
+    <div class="meta">来源：钛媒体 / 36氪 / 华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-09-20/1hjfscqv" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section>
+  <h2>B · 前沿论文<span class="count">5 篇</span></h2>
+  <div class="card">
+    <h3>this-that-model-1.0：30 毫秒出结果的类型化决策模型（this-that-model-1.0: A typed decision model that decides in 30 ms, for a millionth of a cent）<span class="tag tag-new">arXiv 2609.23886</span></h3>
+    <p>软件把越来越多的分支交给模型判断：工单进哪个队列、命令是否安全、理赔能否自动结案；程序需要的不是一段散文，而是 n 个预设选项中的一个加上一个可比较阈值的数。本文提出一个 2B 参数的类型化决策模型，答案直接从一个指定位置的隐状态读出并限制在调用方声明的选项集合内，因此不生成任何 token、不存在格式错误的可能，一次前向即可回答请求中的所有问题。在单张笔记本 GPU 上决策耗时 30.9 毫秒，而调用前沿 API 平均需 8758 毫秒。</p>
+    <div class="paper-authors">Zehua Cheng, Wei Dai, Jiahao Sun</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2609.23886" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>PrimeSeeker：面向深度搜索智能体的能力导向监督（PrimeSeeker: Capability-Oriented Supervision for Deep Search Agents）<span class="tag tag-new">arXiv 2609.35816</span></h3>
+    <p>以往训练搜索智能体的合成问题，靠更大的证据图、更多跳数和更长轨迹来加大难度，但这些全局属性只是检索能力的间接代理。论文提出「潜在锚点推理」这一基础检索单元：先从描述性规格中定位一个未被命名的检索锚点，再把该锚点转移到后续的信息需求上，从而把深度搜索拆成相互耦合的操作链，并围绕锚点解析与关系迁移来构造问题，而不预设唯一搜索路径。基于该形式化提出 PrimeSeeker 框架，联合推导问题与答案，使监督信号直接对齐所需能力。</p>
+    <div class="paper-authors">Linzhi Peng, Hanting Chen, Heng Chang, Ke Cheng, Bowen Du, Weifeng Lv</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2609.35816" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>大推理模型的效率与安全两难（On the Efficiency-Safety Dilemma in Large Reasoning Models）<span class="tag tag-new">arXiv 2609.23587</span></h3>
+    <p>量化与剪枝被广泛用于压低大推理模型的推理成本，但它们对对抗鲁棒性的影响此前几乎没被系统检验。论文首次全面分析效率、越狱脆弱性与推理能力三者的相互作用，发现效率手段表面上降低了越狱成功率，但这种「改善」大多是假的——原因是推理能力退化导致恶意回答「尝试了但没做成」，而非对齐真的变强。对表示漂移的机制分析证实，推理能力损失与模型维持恶意语义轨迹的能力下降是严格耦合的；此外作者识别出量化与剪枝在特定组合下的额外风险。</p>
+    <div class="paper-authors">Yifei Yang, Zouying Cao, Xingrui Wang, Xiao Zhou, Yuexian Li, Dongjie Yang, Hai Zhao</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2609.23587" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>用分块感知的 KV 缓存管理把 LLM 服务接上 CXL-SSD（Bridging LLM Serving and CXL-SSDs with Chunk-Aware KV Cache Management）<span class="tag tag-new">arXiv 2609.26828</span></h3>
+    <p>NAND 存储能提供扩展前缀缓存所需的容量，但块 I/O 路径除 NAND 延迟外还带来 CPU 缓存争用与主机 DRAM 暂存开销；实验刻画显示即便以 DRAM 为介质这些接口成本依然存在，这也是引入可字节寻址的 CXL-SSD 的动机。但测试发现市售 CXL-SSD 仍比本地 DRAM 慢约 3 倍、与 NVMe SSD 相比也没有更快，通用预取几乎无收益。论文提出面向 LLM 前缀缓存的专用设计 LM-CXD：让 KV 分块成为设备可见的 I/O 单元，向服务引擎暴露 NAND 到 DRAM 的搬运进度，并把设备 DRAM 当作 GPU 可访问的缓冲区，从而把「引擎知道哪些 KV 将被消费」与「设备控制其放置与搬运」这两个语义层打通。</p>
+    <div class="paper-authors">Hyunsun Chung, Taewan Noh, Minji Kim, Joo-Young Hwang, Hong-Yeon Kim, Youngjae Kim</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2609.26828" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>VibeMemBench：在真实仓库编码任务上评测编码智能体的记忆系统（VibeMemBench: Evaluating Memory Systems for Coding Agents on Real Repository Coding Tasks）<span class="tag tag-new">arXiv 2609.23570</span></h3>
+    <p>编码智能体的持久记忆系统承诺跨任务复用经验，但既有评测无法回答这些系统是否真的提升了可执行的仓库级工作：仓库基准只测代码改动、无法隔离记忆的作用，记忆基准只给召回打分、不测下游编码结果。论文提出 VibeMemBench，覆盖来自 90 个 SWE-rebench V2 仓库的 111 个编码目标与 3634 条历史轨迹，任务类型包括缺陷修复、功能请求、接口变更与配置修改；智能体在明确声明的记忆条件下编辑代码库，最终由可执行测试判分，且只有注入历史经验能真实改善执行结果的目标才会被保留。</p>
+    <div class="paper-authors">Liyang Fan, Yingcheng Shi, Yongbin Li, Chenghao Sun, Xin Chen, Xander Xu, Hu Wei, Shiwen Ni</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2609.23570" target="_blank">arXiv ↗</a></div>
+  </div>
+</section>
+<section>
+  <h2>C · 模型动态<span class="count">5 条</span></h2>
+  <div class="card">
+    <h3>Qwen-Image-2.1（阿里（通义千问））<span class="tag tag-oss">9月20日</span></h3>
+    <p>统一文生图与图像编辑的开源模型（9/20）：视觉生成部分仅 7B 参数、32 层单流 DiT，配套开源基于 Qwen3.5-VL 9B 微调的提示词改写模型 Qwen-Image-2.1-PE-I2I，把「自然语言指令 → 可执行编辑提示」这一步也纳入开源范围。对自建图像生产链路的团队，是模型与前置改写器成套交付。</p>
+    <div class="meta">来源：阿里（通义千问） ·  <a href="https://www.readaitime.com/news/2026-09-20/pff03f6a" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Step 5 Preview（阶跃星辰）<span class="tag tag-new">9月20日</span></h3>
+    <p>阶跃星辰旗舰模型预览版（9/20），发布即进入 AA 指数全球开源前三。在国内开源模型密集迭代的窗口里，阶跃以旗舰级参数规模直接对位头部开源阵营，是当日开源榜位次变动最明显的一次发布。</p>
+    <div class="meta">来源：阶跃星辰 ·  <a href="https://www.36kr.com/newsflashes/3991137681308675" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Opus 5.2（Anthropic）<span class="tag tag-new">9月20日</span></h3>
+    <p>未经官宣直接出现在生产接口与第三方盲测平台上的新一代模型（9/20），Anthropic 未同步发布模型卡与定价页。发布方式本身成为行业讨论焦点：前沿迭代正在从「发布会」变成「接口滚动更新」，企业用户失去了按版本号规划兼容性的时间窗口。</p>
+    <div class="meta">来源：Anthropic ·  <a href="https://www.readaitime.com/news/2026-09-20/21q5605c" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Gemini 4 Pro（谷歌）<span class="tag tag-new">9月20日</span></h3>
+    <p>与 Opus 5.2 同期悄然上线的新一代 Gemini 模型（9/20），同样没有官方发布、模型卡或公开定价，只能从生产接口行为与盲测平台榜单反推其存在与档位。两大前沿实验室在同一天采用同一种静默上线策略，说明这已是被验证有效的默认做法。</p>
+    <div class="meta">来源：谷歌 ·  <a href="https://www.readaitime.com/news/2026-09-20/21q5605c" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>GWM-1（Runway）<span class="tag tag-new">9月20日</span></h3>
+    <p>Runway 用于实时 AI 视频流的逐帧生成模型（9/20）：支撑把视频生成从「提交任务等结果」改造成可实时操控的直播式画面流。相比一次性生成整段视频，逐帧推理对延迟与连贯性的要求是另一套工程约束，也把视频模型推进到交互式场景。</p>
+    <div class="meta">来源：Runway ·  <a href="https://the-decoder.com/runway-wants-to-turn-ai-video-generation-into-a-live-stream-you-control-in-real-time" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section>
+  <h2>D · Agent / 生态<span class="count">4 条</span></h2>
+  <div class="card">
+    <h3>Claude Code Projects 重构：从「文件夹 + 会话」变成一段持续对话<span class="tag tag-new">9月17日</span></h3>
+    <p>Anthropic 重新设计 Claude Code 的 Projects：不再以文件夹加独立对话的组织方式，而是围绕一段持续存在的会话展开。Claude 先界定目标，再把工作委派到并行的云会话线程（每条线程拥有自己的分支与仓库副本），随后审阅各线程产出并汇总结果，底座是共享记忆与一个存放文件、产物的项目库。Beta 先向部分 Pro/Max 用户的云会话开放，且要求没有既存项目，之后一周逐步放量。</p>
+    <div class="meta">来源：Anthropic ·  <a href="https://claude.com/blog/projects-redesigned" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Claude Agent SDK（TypeScript）v0.3.275–v0.3.278 与 CLI 三日内连发四版同步<span class="tag tag-new">9月19日</span></h3>
+    <p>Claude Code CLI 在三天内连发 v2.1.275 至 v2.1.278：加入 ctrl+enter 立即发送并打断当前回合、把 claude.ai 账号下的 skills 与 plugins 同步进终端会话（可用 syncClaudeAiSkills / syncClaudeAiPlugins 关闭）、支持 /plugin install --marketplace，并在没有 CLAUDE.md 时回退读取 AGENTS.md，同时把子智能体输出框定，使其无法伪装成顶层指令。TypeScript SDK 同步跟进，修复了 deferred 工具调用结果键名、getSessionMessages()/forkSession() 丢弃消息与会话成本统计等问题，并新增 remote-session 延迟字段与 userSettings 更新源。Python SDK 落后约一到两个版本。</p>
+    <div class="meta">来源：Anthropic / GitHub Releases ·  <a href="https://github.com/anthropics/claude-agent-sdk-typescript/releases/tag/v0.3.278" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>codebase-memory-mcp 修掉两处数据竞争，CodeQL 升至 v4.38.0<span class="tag tag-oss">9月20日</span></h3>
+    <p>面向代码库记忆的 MCP 服务 DeusData/codebase-memory-mcp 在工作线程暴露的内存与溢出（spill）处理路径上修复了两处数据竞争，并修正 TypeScript 中 await 泛型调用的边跟踪问题与一处 Cypher 未绑定变量计数缺陷，新增 memwaste-sanitizer 能力，同时把 CodeQL 升级到 v4.38.0。同一窗口里 ChromeDevTools 的 chrome-devtools-mcp 为大体积录制加入分块 trace 缓冲解析器，并让 CLI 的 upload_file 支持多路径。</p>
+    <div class="meta">来源：GitHub ·  <a href="https://github.com/DeusData/codebase-memory-mcp/commits/main" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>addyosmani/agent-skills 硬化技能编写与评分工具链<span class="tag tag-oss">9月18日</span></h3>
+    <p>Addy Osmani 的 agent-skills 仓库这周集中加固技能编写与评分流程：新增编写规则以禁止针对特定模型的取巧写法，把评分器结果按 ID 绑定到声明的预期，修复 Stop 钩子的文件展开问题以避免数据丢失，并把引用链接检查改为可移植实现以适配 Windows。随着 Skill 从个人技巧变成团队资产，「评分结果是否可追溯到预期」正在成为工具链必须解决的问题。</p>
+    <div class="meta">来源：GitHub ·  <a href="https://github.com/addyosmani/agent-skills/commits/main" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 回溯补档：内容取自当日公开报道归档 · 数据截至当日 24:00</footer>
+</div>
+</body>
+</html>

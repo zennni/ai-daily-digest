@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-10-06</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+</style>
+</head>
+<body>
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年10月6日 · 星期二</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">【回溯补档】本页为缺档日期的事后补录，内容取自当日公开报道归档，非实时发布。今日主题词：开源模型竞赛与超级融资。Mistral 放出 1 万亿参数的 Mistral Large 4 公开预览，谷歌 DeepMind 开源全模态嵌入模型 EmbeddingGemma 2，英伟达投资的 Reflection 交出首款开放权重模型 Beam。资本侧，DeepSeek 融资规模据报翻倍至最高约 149 亿美元，OpenAI 洽谈 300 亿美元新一轮，Anthropic 则由三大行牵头组建 600 亿美元债务银团，用于租用谷歌芯片算力。</div>
+</header>
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>Mistral Large 4 预览：1 万亿参数、欧洲自建算力训练：</strong>Mistral AI 推出 Mistral Large 4 公开预览，总参数 1 万亿、激活参数 490 亿、原生多模态，在欧洲自有数据中心由 3800 块英伟达 Grace Blackwell GPU 训练，权重将于本月底发布。这是欧洲厂商在「自建算力 + 开放权重」路线上最激进的一次表态。</li>
+    <li><strong>Reflection 发布开放权重模型 Beam：</strong>获英伟达投资的 Reflection AI 发布首个开放权重模型 Beam：5010 亿参数、激活 230 亿的文本 MoE，上下文窗口 100 万 token，官方称其推理算力消耗远低于竞争对手。首款产品直接以「单位推理成本」为卖点，说明开放权重赛道的竞争焦点正从参数规模转向效率。</li>
+    <li><strong>DeepSeek 融资规模据报翻倍至最高 149 亿美元：</strong>据 CNBC 与彭博报道，DeepSeek 考虑将本轮融资扩大至最高约 1000 亿元人民币（约 149 亿美元），较此前 500 亿元目标翻倍，宁德时代与腾讯领投，国资与产业资本深度介入，为 2027 年初 IPO 铺垫资本基础。</li>
+    <li><strong>华为徐直军：昇腾中国市场份额已超英伟达：</strong>华为轮值董事长徐直军称昇腾在中国市场的份额已超过英伟达，950DT 超节点预计年底或明年初规模供货，并发布 Peerium 计算架构与灵衢总线。在出口受限背景下，国产算力从「替代」转向「抢份额」的叙事正在被厂商公开确认。</li>
+  </ul>
+</div>
+<section>
+  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+  <div class="card">
+    <h3>Mistral 发布 Mistral Large 4 公开预览：1 万亿参数、490 亿激活、原生多模态<span class="tag tag-new">10月6日</span></h3>
+    <p>Mistral AI 推出 Mistral Large 4 公开预览，总参数 1 万亿、激活参数 490 亿，原生支持多模态，在欧洲自有数据中心由 3800 块英伟达 Grace Blackwell GPU 训练，模型权重计划于本月底发布。它把「欧洲主权算力」与「开放权重」两条主线合到同一个旗舰模型上，是本日最受关注的模型发布。</p>
+    <div class="meta">来源：Mistral AI — News ·  <a href="https://www.readaitime.com/news/2026-10-06/17agrixb" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>谷歌 DeepMind 开源 EmbeddingGemma 2：7.4 亿参数统一多模态嵌入<span class="tag tag-oss">10月6日</span></h3>
+    <p>谷歌 DeepMind 发布开源多模态嵌入模型 EmbeddingGemma 2，总参数 7.4 亿，把文本、图像、视频、音频映射到统一的 768 维向量空间，支持 100 多种语言，并面向消费级设备本地运行。把多模态检索能力压到一个能在终端跑的小模型里，对端侧 RAG 与跨模态搜索意义直接。</p>
+    <div class="meta">来源：Google Gemma 模型发布 (HF) ·  <a href="https://www.readaitime.com/news/2026-10-06/uiu63yi7" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Reflection AI 发布开放权重模型 Beam：5010 亿参数，主打推理省算力<span class="tag tag-oss">10月6日</span></h3>
+    <p>英伟达投资的 Reflection AI 发布其首个开放权重模型 Beam，一个 5010 亿总参数、230 亿激活的文本 MoE 模型，上下文窗口 100 万 token。官方称其推理算力消耗仅为竞争对手的三到四分之一，把开放权重的竞争焦点从「能力追平」推向「单位推理成本」。</p>
+    <div class="meta">来源：TechCrunch — AI ·  <a href="https://www.readaitime.com/news/2026-10-06/17qo5k3j" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 与 Synopsys 合作开发 GPT-Synopsys 芯片设计模型<span class="tag tag-new">10月6日</span></h3>
+    <p>OpenAI 与 Synopsys 签署多年协议，联合开发面向半导体设计的专用模型：它可操作 EDA 工具完成功耗、性能、面积优化以及验证收敛，运行在 OpenAI 托管的基础设施上。这是前沿模型向芯片设计这一高门槛垂直工作流渗透的又一步，也延续了此前把 EDA 工具接入前沿模型的路径。</p>
+    <div class="meta">来源：Tom's Hardware ·  <a href="https://www.readaitime.com/news/2026-10-06/1c9kn1g5" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeepSeek 融资规模被曝翻倍至最高约 149 亿美元，腾讯宁德时代领投<span class="tag tag-fund">10月6日</span></h3>
+    <p>据 CNBC 与彭博报道，DeepSeek 正考虑把本轮融资规模扩大到最高约 1000 亿元人民币（约 149 亿美元），较此前 500 亿元目标翻倍，宁德时代与腾讯领投、国资与产业资本深度介入。知情人士称融资接近锁定至少 800 亿元，最终规模或接近 1000 亿元，为其 2027 年初 IPO 奠定资本基础。</p>
+    <div class="meta">来源：CNBC / 华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-10-06/vjjx6qmq" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 洽谈 300 亿美元融资，阿联酋基金与贝莱德拟参与<span class="tag tag-fund">10月6日</span></h3>
+    <p>据彭博报道，OpenAI 正与阿布扎比 MGX 等阿联酋基金谈判，拟组建银团锚定至少 300 亿美元融资，阿联酋基金或投入高达 100 亿美元，贝莱德亦在洽谈参与，融资前估值约 1.4 万亿美元。主权财富基金与资产管理巨头同时入局，显示这轮 AI 融资的规模正在向国家级资本集中。</p>
+    <div class="meta">来源：华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-10-06/r1vyl4v7" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>华为徐直军：昇腾在中国市场份额已超英伟达，950DT 年底规模供货<span class="tag tag-hot">10月6日</span></h3>
+    <p>华为轮值董事长徐直军表示昇腾在中国市场的份额已超过英伟达，昇腾 950DT 超节点预计在年底或明年初规模供货，并同期发布 Peerium 计算架构与灵衢总线。在高端芯片出口受限的背景下，国产算力厂商开始公开宣称在国内市场的份额领先，叙事从「可用」转向「领先」。</p>
+    <div class="meta">来源：华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-10-06/m77mnnm2" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>四大科技巨头年砸 7300 亿美元建 AI，直接收入仅约 250 亿美元<span class="tag tag-hot">10月6日</span></h3>
+    <p>微软、谷歌、亚马逊、Meta 的 2026 年资本开支指引合计约 7300 亿美元、同比增约 77%，而 AI 服务的直接年收入仅约 250 亿美元，约为开支的 4%。投入与收入之间的巨大缺口，是当前「AI 资本开支是否可持续」争论中最常被引用的一组数字。</p>
+    <div class="meta">来源：钛媒体 ·  <a href="https://www.readaitime.com/news/2026-10-06/24vdx6j4" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>三大行启动 600 亿美元债务银团，为 Anthropic 租用谷歌芯片融资<span class="tag tag-fund">10月6日</span></h3>
+    <p>美银、花旗与摩根士丹利启动创纪录的 600 亿美元债务银团，支持 Anthropic 租用谷歌半导体算力，其中 420 亿美元为博通 A- 评级背书的优先担保贷款，黑石承诺约 90 亿美元。把算力租赁做成超大规模结构化融资，意味着前沿实验室的算力扩张正在越来越依赖债券市场而非自有现金。</p>
+    <div class="meta">来源：Yahoo Finance — AVGO 头条 ·  <a href="https://www.readaitime.com/news/2026-10-06/md0pzit2" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Meta 与微软大幅削减 Claude 内部使用，Anthropic 从伙伴变对手<span class="tag tag-hot">10月6日</span></h3>
+    <p>据报道，Meta 与微软正大幅削减 Claude 的内部使用：微软云部门员工月度预算从 10 万美元降至约 1 万美元，Meta 的 Claude Code 用户从约 6 万减半至 3 万，两家转而推广自研工具。平台巨头既是模型厂商的最大客户、又是其直接竞争者，这种角色冲突正在把它们的采购策略变成自研替代。</p>
+    <div class="meta">来源：The Decoder ·  <a href="https://www.readaitime.com/news/2026-10-06/1djgz76k" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section>
+  <h2>B · 前沿论文<span class="count">5 篇</span></h2>
+  <div class="card">
+    <h3>RLDISCOVER：让 LLM 驱动强化学习算法的协同进化（RLDISCOVER: LLM-driven co-evolution of reinforcement learning algorithms）<span class="tag tag-new">arXiv 2610.09218v1</span></h3>
+    <p>LLM 引导的程序进化已在数学与计算优化上带来发现，但要让 RL 算法自我演化仍有两道坎：耦合组件难以联合搜索——同时改动容易破坏学习，孤立改动又忽略组件间依赖；同时候选算法评估需要昂贵训练，适应度还受随机种子影响而不确定。RLDiscover 用「渐进式协同进化」从单组件定向编辑过渡到联合进化，并用「渐进式概率评估」以分阶段训练与重复评估平衡搜索广度与评估保真度，在 SAC、PPO、DQN 等算法上做了验证。</p>
+    <div class="paper-authors">Haoran Li, Zengle Ge, Xiaomin Yuan, Yui Lo, Songlin Zhou 等</div>
+    <div class="meta"> <a href="http://arxiv.org/abs/2610.09218v1" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AGAR：把程序进化重写成强化学习问题（AGAR: a reinforcement learning substrate for LLM program evolution）<span class="tag tag-new">arXiv 2610.09215v1</span></h3>
+    <p>给定任务与评估器，语言模型重写候选程序、搜索循环决定哪些改写存活，是一条可行的算法发现路径，但该循环此前由五个手工设定的常量支配：选哪个父代、变异强度多大、如何保持多样性、记住什么，以及一个从不说明「程序哪一部分得分」的标量分数。AGAR 把程序进化形式化为马尔可夫决策过程，把动作定义为模型所条件化的模块化前缀、而非它产出的程序，从而让信用分配、价值估计、自适应探索与经验记忆各自挂载到不同组件上，并允许替换任意估计器。</p>
+    <div class="paper-authors">Haoran Li, Zengle Ge, Xiaomin Yuan, Yui Lo, Haoxin Li 等</div>
+    <div class="meta"> <a href="http://arxiv.org/abs/2610.09215v1" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>ToolRACER：面向稳健智能体的对抗式对话训练资源（ToolRACER: A Robust Agentic Conversation Emulation Resource for Agent Training and Evaluation）<span class="tag tag-new">arXiv 2610.09163v1</span></h3>
+    <p>面向任务的对话智能体在真实场景中依然脆弱，因为对话很少按可预测脚本进行，尤其当用户不合作时；而现有函数调用基准多聚焦成功、合作的交互，缺少对抗性对话轨迹，限制了训练稳健智能体的资源。ToolRACER 用用户、助手与工具三类模拟模型协同生成并验证多轮交互，据此构建覆盖六个领域、55 种人格的 ToolRACERBench，包含 5.6K 条经验证的对话轨迹，其中约 66% 含易失败场景。</p>
+    <div class="paper-authors">Arkajyoti Chakraborty, Aryan Tayal, Ishika Agarwal, Tanner Sorensen 等</div>
+    <div class="meta"> <a href="http://arxiv.org/abs/2610.09163v1" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>SquidAgent：并行多智能体为何常常比串行更慢（SquidAgent: Parallelize Wisely, Coordinate Efficiently）<span class="tag tag-new">arXiv 2610.08647v1</span></h3>
+    <p>LLM 智能体执行多步任务时顺序执行延迟高，理论上并行到多个智能体应接近线性加速，但现有并行多智能体系统往往比单智能体基线更慢。作者把差距归因于并行引入的两项隐藏成本：并行 worker 重建编排器已持有上下文的「重探索成本」，以及调和独立生成结果不一致的「对齐成本」。据此提出决策准则——只有当某层的关键路径成本加上重探索与对齐开销后仍优于串行时，才值得并行化。</p>
+    <div class="paper-authors">Yexiong Lin, Shanshan Ye, Yu Yao, Zhen Fang, Bo Han 等</div>
+    <div class="meta"> <a href="http://arxiv.org/abs/2610.08647v1" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>CARE：为视觉-语言-动作模型推理加速提供可认证的判据（CARE: Certifying Acceleration for Vision-Language-Action Inference）<span class="tag tag-new">arXiv 2610.08917v1</span></h3>
+    <p>VLA 模型若在每个控制步都运行，代价高昂；既有加速手段（动作分块、视觉 token 剪枝）多以延迟与平均任务成功率评估，但加速可能丢弃信息、破坏原本策略能完成的任务，而这些失败被平均指标掩盖。由于动作偏差在闭环轨迹上会累积，失败只能在整个 episode 上观察。CARE 用相同初始条件下的配对 rollout 定义「加速导致的失败」——参考策略成功而加速策略失败的时刻——并在标定集上做配对实验，为加速器选择提供认证依据。</p>
+    <div class="paper-authors">Rui Liu, Tong Zheng, Jindong Gu, Zhipeng Wang</div>
+    <div class="meta"> <a href="http://arxiv.org/abs/2610.08917v1" target="_blank">arXiv ↗</a></div>
+  </div>
+</section>
+<section>
+  <h2>C · 模型动态<span class="count">5 条</span></h2>
+  <div class="card">
+    <h3>Mistral Large 4（公开预览）（Mistral AI）<span class="tag tag-new">10月6日</span></h3>
+    <p>总参数 1 万亿、激活参数 490 亿、原生多模态，在欧洲自有数据中心由 3800 块英伟达 Grace Blackwell GPU 训练，权重计划本月底发布。它把「欧洲主权算力」与「旗舰开放权重」两条叙事合到一个模型上，是欧洲厂商目前规格最高的旗舰。</p>
+    <div class="meta">来源：Mistral AI ·  <a href="https://www.readaitime.com/news/2026-10-06/17agrixb" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>EmbeddingGemma 2（谷歌 DeepMind）<span class="tag tag-oss">10月6日</span></h3>
+    <p>7.4 亿参数的开源多模态嵌入模型，把文本、图像、视频、音频映射到统一 768 维向量空间，支持 100 多种语言并面向消费级设备本地运行。以极小体积覆盖全模态检索，是端侧 RAG 与跨模态搜索的基础件。</p>
+    <div class="meta">来源：谷歌 DeepMind ·  <a href="https://www.readaitime.com/news/2026-10-06/uiu63yi7" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Beam（Reflection AI）<span class="tag tag-oss">10月6日</span></h3>
+    <p>5010 亿总参数、230 亿激活的文本 MoE 开放权重模型，上下文窗口 100 万 token，官方称推理算力消耗仅为竞争对手的三到四分之一。作为获英伟达投资的公司交出的首款模型，它把卖点直接放在单位推理成本上，而非单纯的基准分数。</p>
+    <div class="meta">来源：Reflection AI ·  <a href="https://www.readaitime.com/news/2026-10-06/17qo5k3j" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Rho-1（Reka AI）<span class="tag tag-new">10月6日</span></h3>
+    <p>190 亿参数的全模态模型，可处理文本、图像、视频以及机器人控制，把感知与动作放进同一个模型。轻量又覆盖「看-想-动」链路，使它适合作为具身智能与实体 AI 的通用底座。</p>
+    <div class="meta">来源：Reka AI ·  <a href="https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Falcon-Emirati（TII）<span class="tag tag-new">10月6日</span></h3>
+    <p>TII 发布的大语言模型，专攻阿联酋方言与文化语境，面向阿拉伯语区的本地化场景。在各国相继把「语言与文化主权」写进 AI 战略的背景下，区域专属模型正在成为国家层面的一项基础设施。</p>
+    <div class="meta">来源：TII ·  <a href="https://huggingface.co/blog/tiiuae/falcon-emirati" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section>
+  <h2>D · Agent / 生态<span class="count">4 条</span></h2>
+  <div class="card">
+    <h3>Claude Code v2.1.289 → v2.1.291：四天三个版本，含两次当日回归修复<span class="tag tag-new">10月6日</span></h3>
+    <p>v2.1.290 是本次最大更新：新增 /claude-api managed-agents-onboard 命令以脚手架化 Managed Agents 模式，修复 WebFetch 静默截断 10 万字符以上页面（现在会报告未读长度并支持 offset）、修复恢复的 subagent 丢失思考与提示缓存、修复 /loop 定时任务在会话压缩后不再恢复，并带来 100 多项跨云会话、VS Code、Slack Claude Tag 与应用网关的修复。v2.1.291 为当日两处 bug 的热修复：云会话会丢弃权限提示的回答，以及 v2.1.288 起的回归可能在退出时丢失会话的最后几条消息。</p>
+    <div class="meta">来源：GitHub Releases ·  <a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.291" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>anthropics/skills：随 CLI 同步发布 9 个 Managed Agents 快速上手模板<span class="tag tag-new">10月5日</span></h3>
+    <p>官方 skills 仓库在 claude-api skill 中新增 9 个 Managed Agents 快速上手模板（deep-researcher、incident-commander、support-agent 等），与当天 Claude Code 2.1.290 推出的 managed-agents-onboard 命令配套。CLI 能力与示例模板同日交付，说明 Anthropic 正把「智能体脚手架」作为官方最佳实践来推。</p>
+    <div class="meta">来源：Anthropic / GitHub ·  <a href="https://github.com/anthropics/skills/commit/683bc88e56f3e09ba94f7055977f3d3aa499f202" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>pi-subagents v0.76.1：修复子智能体唤醒空闲父会话时丢失工具<span class="tag tag-new">10月6日</span></h3>
+    <p>pi-subagents 发布 v0.76.1，修掉一个可靠性问题：子智能体的结果唤醒空闲父会话时，会丢弃父会话的完整提示（子智能体列表、MCP 服务器与其他扩展），父会话现在能在会话中途保住自己的工具而不致丢失。对采用「父-子智能体」编排的用户，这类唤醒路径的状态丢失往往最难排查。</p>
+    <div class="meta">来源：GitHub Releases ·  <a href="https://github.com/nicobailon/pi-subagents/releases/tag/v0.76.1" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>claude-agent-sdk-typescript 与 Claude Code 逐版本对齐<span class="tag tag-new">10月5日</span></h3>
+    <p>TypeScript 版 Agent SDK 与 Claude Code 保持逐版本对齐，并叠加自己的修复：v0.3.290 为 WebFetch 工具输入增加 offset 字段以支持长文分页读取，修复 Claude-in-Chrome 工具调用丢弃结果 _meta 的问题，并修复通配符模式下 deny/ask 规则漏掉 toolAliases 的缺陷。SDK 与 CLI 同步迭代，正在降低「先做原型、再上生产」之间的落差。</p>
+    <div class="meta">来源：GitHub Releases ·  <a href="https://github.com/anthropics/claude-agent-sdk-typescript/releases" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 回溯补档：内容取自当日公开报道归档 · 数据截至当日 24:00</footer>
+</div>
+</body>
+</html>

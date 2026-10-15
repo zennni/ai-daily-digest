@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "date": "2026-10-05",
+    "week": "星期一",
+    "backfill": true,
+    "note": "今日主题词：并购、算力租赁与数据中心融资收紧。AMD 以 82 亿美元全股票收购李飞飞领导的 World Labs，并请其出任执行副总裁兼首席科学家；英伟达一天内既上线开放智能体安全平台，又追加 1500 亿美元回购授权。另一边，腾讯以约 70 亿美元租下甲骨文东南亚算力，而数据中心债券开始折价发行、美国参议院否决了数据中心电费分摊法案。"
+  },
+  "highlights": [
+    {
+      "title": "AMD 82 亿美元收购 World Labs，李飞飞加盟",
+      "summary": "AMD 以 82 亿美元全股票交易收购李飞飞领导的 AI 模型与研究实验室 World Labs，预计 2026 年底前完成，李飞飞将出任 AMD 执行副总裁兼首席科学家。芯片厂商收编基础模型团队，是这一轮算力竞争向「软硬一体」延伸的又一步。"
+    },
+    {
+      "title": "英伟达一天两个动作：开放智能体安全平台 + 1500 亿回购",
+      "summary": "英伟达把开放智能体安全平台纳入 AI 基础设施栈，结合 OpenShell 与运行在 BlueField DPU 上的 Nvidia Sentry，对智能体从测试到部署进行监控与隔离，已有超 100 家机构参与；同期宣布将回购授权增加 1500 亿美元，使剩余可回购额度达 2350 亿美元，为有记录以来最大规模增额。"
+    },
+    {
+      "title": "美参议院否决《电费纳税人保护法》",
+      "summary": "参议院以 57-43 否决该法案，法案原要求数据中心等用电大户承担电网增量成本。法案夭折后，AI 数据中心对电网成本的冲击暂无新的联邦分摊机制，电费归属继续由各州与公用事业自行博弈。"
+    },
+    {
+      "title": "腾讯 70 亿美元租甲骨文东南亚算力",
+      "summary": "腾讯与甲骨文签订五年约 70 亿美元算力租赁协议，租用其东南亚多数据中心约十万颗先进 AI 芯片，主要用于混元大模型的训练与推理。在高端芯片出口受限背景下，把训练负载放到境外算力池是一种现实解法。"
+    }
+  ],
+  "news": [
+    {
+      "title": "AMD 以 82 亿美元全股票收购 World Labs，李飞飞出任首席科学家",
+      "summary": "AMD 于 9 月 29 日宣布以 82 亿美元全股票交易收购李飞飞领导的 AI 模型与研究实验室 World Labs，预计 2026 年底前完成交割，李飞飞将出任 AMD 执行副总裁兼首席科学家。交易把一家基础模型研究团队直接并入芯片厂商，指向软硬协同的长期布局；对 AMD 而言，这也是在硬件之外补齐模型与研究能力的一步。",
+      "date": "10月5日",
+      "source": "Yahoo Finance — AMD 头条",
+      "link": "https://www.readaitime.com/news/2026-10-05/pjo92cvu",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "英伟达推出开放智能体安全平台，把监控与隔离纳入基础设施栈",
+      "summary": "英伟达将开放智能体安全平台纳入其 AI 基础设施栈，结合 OpenShell 软件与运行在 BlueField DPU 上的 Nvidia Sentry，可对 AI 智能体从测试到部署进行监控、控制与隔离，已有超过 100 家机构参与。随着代理式系统获得更宽的执行权限，把安全能力下沉到基础设施层正在成为厂商竞争的新焦点。",
+      "date": "10月5日",
+      "source": "Yahoo Finance — NVDA 头条",
+      "link": "https://www.readaitime.com/news/2026-10-05/2kaa39l0",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "英伟达追加 1500 亿美元回购授权，规模创纪录",
+      "summary": "英伟达 9 月 28 日宣布将回购授权增加 1500 亿美元，使剩余可回购额度达到 2350 亿美元，为其有记录以来最大规模的增额。在资本开支高企、客户支出是否可持续仍存争议的时点，巨额回购既是信心表态，也是对现金流的直接分配。",
+      "date": "10月5日",
+      "source": "24/7 Wall St.",
+      "link": "https://www.readaitime.com/news/2026-10-05/jrllucfx",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "美参议院否决《电费纳税人保护法》，数据中心电费分摊落空",
+      "summary": "美国参议院 9 月 30 日以 57-43 否决《电费纳税人保护法》，该法案原本要求数据中心等用电大户承担电网增量成本。法案被否后，缺少新的联邦层面保护措施，AI 数据中心扩张对居民电价的挤压将由各州与公用事业公司自行处理，围绕电价的政治压力预计继续上升。",
+      "date": "10月5日",
+      "source": "Tom's Hardware",
+      "link": "https://www.readaitime.com/news/2026-10-05/1i62vnr4",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "腾讯 70 亿美元租甲骨文东南亚算力，五年约十万颗 AI 芯片",
+      "summary": "腾讯与甲骨文签订五年约 70 亿美元的算力租赁协议，租用甲骨文东南亚多个数据中心的约十万颗先进 AI 芯片，主要用于混元大模型的训练与推理。在高端算力受限的背景下，租赁境外数据中心成为获取先进芯片资源的现实路径，也把算力采购的重心进一步推向东南亚。",
+      "date": "10月5日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-05/11g1ds02",
+      "models": [
+        "Hy3"
+      ],
+      "tag": "hot"
+    },
+    {
+      "title": "亚马逊拟以 80 亿美元 SPV 交易腾挪英伟达 Blackwell 芯片",
+      "summary": "亚马逊计划把约 80 亿美元的英伟达 Grace Blackwell 芯片转入特殊目的实体（SPV），由外部投资者发债融资再回租，或出让最多 10% 股权。把芯片资产表外化以放大采购能力，是超大规模厂商在算力军备竞赛中一种典型的结构化融资打法，同时也让资产风险的归属变得复杂。",
+      "date": "10月5日",
+      "source": "TIKR.com",
+      "link": "https://www.readaitime.com/news/2026-10-05/2qcj4yta",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "SK 海力士旗下 Solidigm 拟明年 IPO，目标估值 1500 亿美元",
+      "summary": "SK 海力士旗下存储公司 Solidigm 正考虑最早于明年启动 IPO，目标估值或达 1500 亿美元，有望刷新半导体史上最大 IPO 纪录；其 2026 年上半年净利率高达 47.7%。AI 对高容量存储的强劲需求，正把原本低调的企业级 SSD 业务推到资本市场聚光灯下。",
+      "date": "10月5日",
+      "source": "虎嗅",
+      "link": "https://www.readaitime.com/news/2026-10-05/17iq9cst",
+      "models": [],
+      "tag": "fund"
+    },
+    {
+      "title": "AI 数据中心融资收紧：CleanSpark 债券折价发行，多家银行审慎放贷",
+      "summary": "CleanSpark 以 98.5 美分折价发行 23 亿美元债券、票息 7.875%；自 7 月以来四笔高收益数据中心债券全部折价出售，甲骨文新墨西哥州项目更发出不可抗力通知。此前几乎无门槛的数据中心债务开始被要求更高的风险补偿，重资产扩张的融资成本正在回升。",
+      "date": "10月5日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-05/2bj4i1rl",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "博通 AI 芯片单季营收 167 亿美元，同比增 221%",
+      "summary": "博通 2026 财年第三季度 AI 芯片营收达 167 亿美元、同比增长 221%，并指引第四季度达到 217 亿美元；但前五大客户营收占比升至约 55%，预期市盈率 30.46 倍高于五年与行业均值。定制 ASIC 的放量印证了超大规模厂商「去通用化」的采购趋势，也让收入集中度成为新的隐忧。",
+      "date": "10月5日",
+      "source": "Yahoo Finance — AVGO 头条",
+      "link": "https://www.readaitime.com/news/2026-10-05/1iys2ivb",
+      "models": [],
+      "tag": "hot"
+    },
+    {
+      "title": "亚马逊终止数据中心保密协议，承诺五年向社区投资逾 10 亿美元",
+      "summary": "亚马逊不再要求数据中心项目的政府机构签署保密协议，并推出五年内面向所在社区投资逾 10 亿美元的计划，同时承诺每年披露能耗、水耗及无碳电力占比。在反数据中心情绪升温、多地出台限制的背景下，透明化与社区让利正在成为超大规模厂商争取项目落地的新筹码。",
+      "date": "10月5日",
+      "source": "Tom's Hardware",
+      "link": "https://www.readaitime.com/news/2026-10-05/1pmt0x52",
+      "models": [],
+      "tag": "hot"
+    }
+  ],
+  "papers": [
+    {
+      "title": "MemCo：以记忆为中心的协作，让 LLM 智能体泛化到未知环境",
+      "titleEn": "MemCo: Memory-Centric Collaboration for Generalizing LLM Agents to Unseen Environments",
+      "summary": "现有 LLM 智能体的记忆多为孤立设计，单独为每个任务收集足够轨迹代价高昂；而共享记忆方案又受制于检索粒度——拿到的经验要么过于具体、难以贴合当前情境，要么过于粗糙、支撑不了下一步动作。MemCo 同时维护本地与全局两套互补记忆空间，在本地保留环境特有细节、在全局聚合可迁移经验，从而帮助智能体泛化到未见过的交互环境。",
+      "authors": "Xinting Liao, Siyan Liu, Rabab K. Ward, Holger R. Roth, Xiaoxiao Li",
+      "link": "http://arxiv.org/abs/2610.07376v1"
+    },
+    {
+      "title": "在开发者心流中修复：谷歌规模的低延迟智能体程序修复",
+      "titleEn": "Catching Developers in the Flow: Low-Latency Agentic Program Repair at Google Scale",
+      "summary": "Google 内部部署了 FlowAgent，面向持续集成中的 pre-submit（提交前）阶段，在开发者切换上下文之前实时自动修复测试失败。它采用 ReAct 风格的「生成-验证」循环，并加入严格的执行前/执行后弃权过滤器以抑制误改。此前自动程序修复多集中在 post-submit 的离线场景，缺少实时协助所要求的低延迟约束。",
+      "authors": "Celal Ziftci, Spencer Greene, Ray Liu, Livio Dalloro, Lorenzo Dini",
+      "link": "http://arxiv.org/abs/2610.07289v1"
+    },
+    {
+      "title": "RGPO：用自适应理由脚手架引导策略优化来学推理",
+      "titleEn": "Rationale-Guided Policy Optimization: Learning to Reason with Adaptive Rationale Scaffolding",
+      "summary": "在线策略强化学习是提升 LLM 推理能力的主流范式，但在难题上奖励过于稀疏，模型发现不了正确轨迹时优化会停滞。已有做法依赖离策略示范或更强模型拒绝采样，并要求辅助数据与 RL 任务格式对齐。RGPO 按模型当前能力自适应地引入标准答案中的理由信息，同时保留其探索自由，从而在不额外采样强模型的前提下缓解奖励稀疏。",
+      "authors": "Hoang Phan, Minh Pham, Chau Pham, Chinmay Hegde, Trung Le, Qi Lei",
+      "link": "http://arxiv.org/abs/2610.07342v1"
+    },
+    {
+      "title": "LoGRA：用低秩梯度草图扩展 LLM 强化学习",
+      "titleEn": "LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches",
+      "summary": "LLM 的强化学习后训练内存开销大，限制了更广泛的使用。LoGRA 用低秩梯度草图保留有用的学习信号，这种紧凑表示既能支撑参数更新，也支持高效的策略同步；为避免过大的更新破坏训练，它配合「预测 KL」步长控制，在应用更新前估计策略变化并相应调整幅度。综合后平均训练内存最多降低 45.7%，并使 27B 模型能在单台 8 卡节点上稳定训练逾 1100 步（稠密 Adam 在此会内存溢出）。",
+      "authors": "Shaokun Zhang, Yifan Zhang, Jian Hu, Yueying Li, Hao Zhang 等",
+      "link": "http://arxiv.org/abs/2610.06647v2"
+    },
+    {
+      "title": "Cascadia：在 11 台 AI PC 上常驻运行 975B MoE 推理",
+      "titleEn": "Cascadia: Resident 975B MoE Inference on Eleven AI PCs",
+      "summary": "MoE 让近万亿参数的容量以稀疏计算变得可用，前提是服务系统能把权重分散并协调执行。Cascadia 在 11 台 Intel Core Ultra X7 358H AI PC（各配 64GB 内存、Arc B390 核显与千兆以太网）上常驻运行 975B 总参/41B 激活的 Inkling 模型。其自研常驻 MoE 引擎保留原模型路由规则、为 OpenVINO 融合 iGPU 原语构建压缩图，并协调 FP16 专家计算与 FP32 输出还原，把实测稠密层调用时间从约 8.1ms 降到 4.5ms。",
+      "authors": "Tate Berenbaum, Matias Parij, Muthaiah Venkatachalam",
+      "link": "http://arxiv.org/abs/2610.07219v1"
+    }
+  ],
+  "models": [
+    {
+      "name": "Reflection 首款开放权重模型（预告）",
+      "vendor": "Reflection",
+      "highlight": "获英伟达 8 亿美元投资的 Reflection 正准备发布其首款开放权重模型，官方尚未公布发布时间与性能数据；初期能力预计落后美国最顶尖前沿模型，但有望与中国领先开放权重模型直接竞争。对开放权重赛道而言，这将是又一家资金充裕的新玩家入场。",
+      "link": "https://www.readaitime.com/news/2026-10-05/1z365qdp",
+      "date": "10月5日",
+      "tag": "oss"
+    },
+    {
+      "name": "Kolibri",
+      "vendor": "Aleph Alpha",
+      "highlight": "Aleph Alpha 发布 780 亿参数的开源权重模型 Kolibri，主打「欧洲 AI 主权」叙事——用可自托管、可控的开放模型降低对美中闭源前沿模型的依赖。参数规模已进入主流开源区间，其差异化卖点更多在于主权、合规与本地部署定位，而非绝对性能。",
+      "link": "https://the-decoder.com/aleph-alpha-releases-kolibri-an-open-weight-model-that-makes-the-case-for-european-ai-sovereignty",
+      "date": "10月5日",
+      "tag": "oss"
+    },
+    {
+      "name": "GPT-Rosalind",
+      "vendor": "OpenAI",
+      "highlight": "据 Altimeter 合伙人文章，OpenAI 面向 AI 制药推出 GPT-Rosalind。它与 Anthropic 建湿实验室、字节旗下 Anew Labs 独立运营、Isomorphic Labs 推动 AI 药物进临床等动作一起，构成本轮「AI 制药瓶颈交易」中的模型侧供给，显示前沿实验室正把制药当作继编码之后又一个高价值垂直场景。",
+      "link": "https://www.readaitime.com/news/2026-10-05/2nqv10lx",
+      "date": "10月5日",
+      "tag": "new"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Anthropic sandbox-runtime：修复目录名含通配符时的路径匹配",
+      "summary": "sandbox-runtime 合并一组三 PR 修复（#622、#621、#620），解决目录名本身含通配符字符时的路径匹配问题：路径现在同时按字面文件系统路径与 glob 模式两种方式读取，拒绝规则接受任一匹配，而允许规则要求路径真实存在且不是符号链接。修复覆盖 Linux wrapper、macOS profile builder 与 Windows 的 expandWindowsFsPaths，两个配置读取器也会对每个模式条目做 lstat。",
+      "date": "10月4日",
+      "source": "Anthropic / GitHub",
+      "link": "https://github.com/anthropics/sandbox-runtime/commit/e025055",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "Anthropic 投入 1 亿美元培训一万名工程师",
+      "summary": "Anthropic 宣布投入 1 亿美元培训一万名工程师，目标缩小企业级 AI 部署与人才之间的缺口。这是一项项目与业务层面的公告而非产品变更，但反映了当前企业落地的主要瓶颈正从模型能力转向「谁能把它接进现有系统」。",
+      "date": "10月2日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news",
+      "models": [],
+      "tag": "new"
+    },
+    {
+      "title": "answer-me-with-html：强制把答案输出成单页 HTML 的爆红 Skill",
+      "summary": "社区 Skill answer-me-with-html 把复杂问题的回答强制打包成一个自包含、可阅读的单页 HTML，而不是纯文本，三天内冲到 1261 颗星。它走红说明市场对「结构化输出型 Skill」的需求，正在超过零散的提示词技巧——与其反复调提示，不如把输出格式固化成可复用的 Skill。",
+      "date": "10月2日",
+      "source": "GitHub",
+      "link": "https://github.com/QingYunA/answer-me-with-html",
+      "models": [],
+      "tag": "oss"
+    },
+    {
+      "title": "mcp-transparency-log：37 天抓取发现近 19% 的 MCP 服务器偷偷改写工具描述",
+      "summary": "该项目用带 Merkle 树日志的工具连续 37 天每夜爬取公开 MCP registry，发现 13,870 台服务器中有两家运营方控制约 30%，且约 19.2% 的服务器会在 24 小时内悄悄改写工具描述、同时保持工具名不变。这是签名机制本身难以捕捉的供应链脆弱性——工具「名字没变、行为变了」，对依赖工具契约的智能体是直接风险。",
+      "date": "10月5日",
+      "source": "GitHub",
+      "link": "https://github.com/yassinht/mcp-transparency-log",
+      "models": [],
+      "tag": "oss"
+    }
+  ]
+}
