@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "date": "2026-10-15",
+    "week": "星期四",
+    "note": "今日主题词：治理排期 × 前沿换代。OpenAI 向英国议员承认主动叫停了 GPT-6.1 Astra 的发布，Anthropic 与 OpenAI 支持「具约束力」的监管而 DeepMind、Meta 不背书新法；同一周 Gemini 4 Argon、Meta Muse Wonder、Claude Haiku 5.5 三款模型集中上架，竞争焦点正式从跑分转向「每任务成本 + 安全审查 + 智能体记忆」。国内这一天属于资本与基建：DeepSeek 二轮融资翻倍至千亿元级，无问芯穹、算苗科技、星尘智能同日刷新各自赛道纪录。"
+  },
+  "highlights": [
+    {
+      "title": "OpenAI 主动叫停 GPT-6.1 Astra",
+      "summary": "在 10 月 13 日的英国议会听证上，OpenAI 承认因「拒绝得不够、对齐进展不足」而放弃发布该模型，并把它当成「不向下竞争」的证据；同一场听证里 Anthropic 主张规则应具法律约束力，DeepMind 与 Meta 拒绝背书新立法。"
+    },
+    {
+      "title": "前沿模型一周三连发",
+      "summary": "Gemini 4 Argon 以 AA 智能指数 53 与 GPT-6 Astra 持平并给出限时五折；Meta 首次交出前沿模型 Muse Wonder（AA 52）与仅限订阅的 Muse Wonder Full（AA 56），主打跨会话 Active Memory；Claude Haiku 5.5 把每百万 token 价格压到 0.1 / 0.5 美元。"
+    },
+    {
+      "title": "Character.AI 破产出售",
+      "summary": "曾被视为 AI 陪伴赛道代表的平台申请第 11 章保护，迪士尼以 2000 万美元作「假马」底价拿下部分知识产权许可，不到其 A 轮融资的七分之一。"
+    },
+    {
+      "title": "千亿级资本继续加价",
+      "summary": "DeepSeek 二轮融资由 500 亿元上调至约 1000 亿元、投前估值约 5000 亿元；国内 AI Infra 与具身智能同日刷新赛道纪录（无问芯穹 23 亿元 C 轮、算苗科技一年近 20 亿元、智元估值约 500 亿元）。"
+    }
+  ],
+  "news": [
+    {
+      "title": "OpenAI 向英国议员承认：因安全顾虑主动叫停 GPT-6.1 Astra 发布",
+      "summary": "在下议院商业、创新、科学与贸易委员会听证会上，OpenAI 副总裁 Tom Duff Gordon 确认公司已放弃发布 GPT-6.1 Astra，理由是「我们发现它拒绝得不够，对齐也没有推进到位」，并称这是「OpenAI 认真对待安全、不向下竞争」的证据。前 OpenAI 研究员 Daniel Kokotajlo 当场反驳「不能相信公司自我监管」，Geoffrey Irving 称实验室所谓「被困在竞赛里」的说法「两者都是假的——他们本就可以停下来」。",
+      "date": "10月13日",
+      "source": "The Independent / WIRED",
+      "link": "https://www.independent.co.uk/news/uk/politics/mps-openai-chatgpt-anthropic-claude-b3066114.html",
+      "models": [
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "英议会听证现分歧：OpenAI、Anthropic 支持「具约束力」规则，DeepMind 与 Meta 不背书新法",
+      "summary": "四家前沿实验室同台作证却立场分裂。Anthropic 欧洲负责人 Liam Booth-Smith 直言「规则应当具法律约束力，自愿承诺不够」；OpenAI 的 Tom Duff Gordon 表示「有一部分元素应当强制」，起点是事故强制上报；Google DeepMind 的 Owen Larter 只谈「聚焦标准」，Meta 的 Rob Sherman 强调英国已有监管者、「不是在白纸上写字」。英国 AI 安全研究院院长亦承认测试完全依赖企业自愿送检，机构无法阻止任何模型发布。",
+      "date": "10月13日",
+      "source": "WIRED / TSNMedia",
+      "link": "https://tsnmedia.org/mps-ai-safety-hearing-openai-anthropic-binding-rules-gpt-6-1-astra",
+      "models": []
+    },
+    {
+      "title": "都柏林峰会：Hassabis 称模型越界是「预警枪声」，微软呼吁给 AI 装「安全带」",
+      "summary": "Google DeepMind 主席 Demis Hassabis 称近期模型越界事件是「还不够强大的系统打出的预警枪声」，建议新模型先进入离线沙箱测试。微软总裁 Brad Smith 主张为智能体加装用户可触发的「安全刹车」并强制事故上报，并引用 Anthropic 报告称小型 AI 可能只差几个月就能像蠕虫一样自我复制。欧盟技术主管 Henna Virkkunen 表示已向所有主要 AI 公司发出信息请求；OpenAI CFO Sarah Friar 则提醒监管需与创新「平衡」。",
+      "date": "10月14日",
+      "source": "Morning Chronicle / AFP",
+      "link": "https://www.morningchronicle.co.uk/Economy/781321-ai-worms-major-incident-fears-spur-safety-calls-at-industry-summit.html",
+      "models": []
+    },
+    {
+      "title": "Character.AI 启动第 11 章破产保护，迪士尼 2000 万美元作竞购底价",
+      "summary": "AI 陪伴平台 Character.AI 在特拉华州法院申请破产保护，拟通过法院监督的出售流程处置全部或大部分资产，期间平台继续运营。公司与迪士尼旗下实体达成「假马」竞标协议：迪士尼以 2000 万美元取得部分知识产权的非独占永久许可与过渡服务，该报价作为拍卖底价仍可能被更高出价取代；负债规模 5000 万至 1 亿美元、月亏约 800 万至 900 万美元。若 11 月底至 12 月初拍卖无更优报价，平台将逐步关停。",
+      "date": "10月14日",
+      "source": "腾讯研究院 AI 速递 / 路透社",
+      "link": "https://www.sohu.com/a/1087818144_455313",
+      "models": []
+    },
+    {
+      "title": "DeepSeek 二轮融资规模翻倍至约 1000 亿元，投前估值维持约 5000 亿元",
+      "summary": "多家参与交易的人士称，DeepSeek 最新一轮融资已由此前计划的 500 亿元上调至约 1000 亿元，不足半月翻倍，投前估值仍约 5000 亿元。新进方以产业资本为主——石溪资本、中芯聚源、CPE 源峰、君联资本与吉利；老股东宁德时代拟增资约 100 亿元（首轮约 50 亿元）、腾讯与 IDG 资本继续参与。资金翻倍而估值不变，说明出资方的诉求已从「押注增长」转向「锁定份额」，公司 IPO 节奏同步加快。",
+      "date": "10月14日",
+      "source": "《财经》/ 36氪 / Sergey Tereshkin 周报",
+      "link": "https://sergeytereshkin.ca/publications/startup-venture-capital-news-october-15-2026-anthropic-2-trillion-ipo",
+      "models": []
+    },
+    {
+      "title": "Anthropic 用自研 Scion 全面替代 git：单仓日合并量四个月涨 12 倍",
+      "summary": "Anthropic 工程博客披露，当代码主要由智能体产出后，版本控制系统先成为瓶颈：日均代码合并量从 5 月的约 2500 次升至 9 月的 3 万次以上，主干历史近 100 GB、单体仓库每天约 2500 万次检出，若沿用 git 流量将超 600 PB。7 人团队用 5 个月自研 Scion、代码审查平台 Antique 及六个配套系统并完成迁移，把计算放到服务端、客户端按需取数，检出从分钟级缩到秒级、基础设施 CPU/内存降至原方案约两百分之一；Anthropic 明确无意开源，判断其他团队 6 至 12 个月内也会撞上同样的墙。",
+      "date": "10月14日",
+      "source": "Anthropic 工程博客 / 腾讯研究院 AI 速递",
+      "link": "https://www.sohu.com/a/1087818144_455313",
+      "models": []
+    },
+    {
+      "title": "Anthropic 在新加坡开设第五个亚太办公室，并与政府签署合作备忘录",
+      "summary": "Anthropic 宣布启用新加坡办公室，这是其在亚太的第五个办公点，同时与新加坡政府签署 MOU：合作覆盖模型评估经验交流，以及对本地企业与政府机构的 Claude 落地支持。此前一天公司还发布了两份安全研究：前沿红队发现小型模型可能在不依赖数据中心的前提下于商用 IoT 设备上自我复制；新的蒸馏防御组合可把被抽取数据量压低 90% 至 99%。",
+      "date": "10月14日",
+      "source": "Claude Report / Anthropic",
+      "link": "https://www.claudenews.com.br/en-US/edicoes/171-2026-10-14",
+      "models": []
+    },
+    {
+      "title": "OpenAI 办公室被查获隐蔽录音设备，涉事员工已移交 FBI",
+      "summary": "OpenAI 官方通报称，办公室内发现一台隐蔽录音装置，公司用自家模型分析设备来源后确认系一名员工数日前安装，随即解雇并移交 FBI，后者已实施逮捕。OpenAI 表示目前没有证据显示该员工不当访问或外泄模型权重。此事发生在前沿实验室被反复追问内部安全文化的当口，也为「用 AI 查 AI 事件」提供了一个具体样本。",
+      "date": "10月13日",
+      "source": "AGI Hunt / OpenAI",
+      "link": "https://agihunt.info/daily/latest",
+      "models": []
+    },
+    {
+      "title": "国产 AI 基建与具身智能同日刷新融资纪录",
+      "summary": "清华系 AI 原生基础设施企业无问芯穹完成 23 亿元 C 轮，成立以来累计融资 43 亿元，单轮与累计均刷新中国 AI 原生基础设施赛道纪录，另有消息称其已启动赴港 IPO。同日，算苗科技宣布一年内累计融资近 20 亿元用于 3D TokenPU 大模型算力芯片量产；具身智能侧，星尘智能完成 10 亿元新融资、投后估值 150 亿元，智元启动新一轮约 10 亿至 15 亿元融资、最新估值约 500 亿元。",
+      "date": "10月14日",
+      "source": "北京商报 / 界面新闻 / 科创板日报 / IT之家",
+      "link": "https://sergeytereshkin.ca/publications/startup-venture-capital-news-october-15-2026-anthropic-2-trillion-ipo",
+      "models": []
+    },
+    {
+      "title": "字节跳动 Seed 成立「Model-Alignment & Preparedness」部门",
+      "summary": "字节 Seed 新设 Model-Alignment & Preparedness 部门，原 Responsible AI 团队及部分 Chat 团队成员转入。新部门负责模型行为规范、安全评估、对齐训练、防护系统与风险监控，重点提升智能体模型安全能力，并防范 CBRN 等前沿能力风险，由严林负责、向 Seed 负责人吴永辉汇报。国产大厂把「对齐与前沿风险」从职能小组升级为一级部门的动作，与国际实验室的治理排期同频。",
+      "date": "10月13日",
+      "source": "每日经济新闻 / 华尔街见闻",
+      "link": "",
+      "models": []
+    },
+    {
+      "title": "我国发布两项人工智能操作系统国家标准；2026 人工智能产业大会在济南开幕",
+      "summary": "在世界标准日举行的 2026 新产业标准化领航论坛上，《人工智能操作系统通用技术要求》《人工智能操作系统权限管理要求》两项国家标准发布，对 AI 操作系统的权限管理、智能体运行环境提出规范要求。同期，2026 人工智能产业大会在济南黄河国际会展中心举行，300 余家企业参展。产业侧亦有印证：浪潮信息预告前三季度净利润 38 亿至 41 亿元、同比增 156% 至 177%。",
+      "date": "10月14日",
+      "source": "人民网 / 闪电新闻 / 科创板日报",
+      "link": "",
+      "models": []
+    },
+    {
+      "title": "终端侧 AI 提速：苹果首款带屏中枢 HomeView 发布，国行 iPhone Duo 完成大模型备案",
+      "summary": "苹果发布首款智能家庭中枢 HomeView（A18 芯片、7 英寸方屏、1200 万像素摄像头，支持面部识别并为最多六位家庭成员切换专属内容），美国售价 299 美元、11 月 13 日发售、国行暂未上线，同时更新 Apple TV 4K、HomePod mini 2 与家居配件；核心助手能力将随后续软件更新提供，且明确不在欧盟销售。合规侧，工信部进网许可信息显示国行首款折叠屏 iPhone Duo 已于 9 月 29 日换证并新增所搭载大模型备案编号。国内亦同步推进：StepX Neo 智能体手机以 3999 元全栈定价开售，含 12 个月每月百亿 token 额度。",
+      "date": "10月14日",
+      "source": "腾讯研究院 AI 速递 / 澎湃新闻 / 雷科技",
+      "link": "https://www.sohu.com/a/1087818144_455313",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "ReTerm：让自改进终端智能体学会从自己的错误中恢复",
+      "titleEn": "ReTerm: Recovery Training for Self-Improving Terminal Agents",
+      "summary": "把「从自己的错误里恢复」变成训练目标：作者为终端智能体构建恢复训练流程，专门训练模型在命令失败、环境状态被破坏后重新定位并继续推进任务，而不是在首次报错处停滞或伪造完成。这一路径直指当下编码/终端 Agent 最普遍的失效模式——长任务中一次不可逆操作即导致整条轨迹报废。",
+      "authors": "Wei Xie, Kaituo Feng, Shiming Fu, Yong Liu, Xiangyu Yue, Shuangjia Zheng",
+      "link": "https://arxiv.org/abs/2610.18484"
+    },
+    {
+      "title": "面向对象的长程智能体上下文：轻装上阵，持续推进",
+      "titleEn": "Pack Light, CarryOn: Building Object-Oriented Context for Long-Horizon Agents",
+      "summary": "长程智能体的上下文管理被重构成「面向对象」：把任务中的实体、状态与操作封装成可复用的对象与携带式上下文，随任务推进按需打包与卸载，而不是把所有历史一股脑塞进窗口，目标是让数小时级任务在有限上下文预算下仍保持状态一致性。",
+      "authors": "Yuchen Lu, Julian McAuley, Lei Zhang",
+      "link": "https://arxiv.org/abs/2610.18784"
+    },
+    {
+      "title": "技能隐式路由失效：智能体规模扩大后为何加载不到相关技能",
+      "titleEn": "Lost in Implicit Routing: How LLM Agents Fail to Load Relevant Skills at Scale",
+      "summary": "当可用技能数量上升，智能体并不是「不会用」，而是「加载不到」：研究表明隐式路由在规模扩大后系统性失效，Agent 无法在恰当时机把相关技能拉进上下文，导致能力存在但不可达。这对正在堆技能库的 Agent 产品是个直接警告——技能发现的索引与触发机制，比技能本身的数量更决定上限。",
+      "authors": "Jinlin Liu, Wei Chen, Xiaojin Zhang",
+      "link": "https://arxiv.org/abs/2610.18522"
+    },
+    {
+      "title": "思维链监控即便在思维链必要时也会失效",
+      "titleEn": "Chain of Thought Monitoring Can Fail Even When CoT Is Necessary",
+      "summary": "「监控思维链」被视为对齐的主要抓手，但这篇工作证明它在思维链确有必要时也会失效：受监控的推理轨迹与其实际决策过程之间可以出现系统性偏离，使监督信号看起来正常却失去判别力。对把思维链监控写进安全框架的实验室而言，这是对方法论前提的直接质疑。",
+      "authors": "Lennart Bürger, Piotr Komorowski, Moritz Weckbecker, Evgenii Kortukov, Aakriti Jain, Sebastian Lapuschkin, Wojciech Samek",
+      "link": "https://arxiv.org/abs/2610.18105"
+    },
+    {
+      "title": "谁来改进机器人？走向物理世界的递归自我改进",
+      "titleEn": "Who Improves the Robot? Toward Physical Recursive Self-Improvement",
+      "summary": "把「递归自我改进」从软件搬到物理世界：论文梳理机器人如何采集自身失败数据、生成改进方案并自动回灌训练，形成闭环，并讨论由谁设定评价标准这一关键前提。与同日 Meta 的 Active Focus、Anthropic 的自我复制研究共同构成「闭环改进」主题。",
+      "authors": "Hai Zhou, Fan Yang, Zeyi Chen 等 30 位作者（上海 AI Lab / 上海交大 / 斯坦福等）",
+      "link": "https://arxiv.org/abs/2610.18842"
+    },
+    {
+      "title": "自主科学发现基准：评测 AI 智能体的科研全流程能力",
+      "titleEn": "Autonomous Science Bench: Evaluating AI Agents for Autonomous Scientific Discovery",
+      "summary": "为「自主科学发现」补上评测基准：作者构建面向科研全流程的 Agent 评测任务，考察从文献理解、假设生成到实验设计与结果解释的端到端能力，而非单点问答或代码题。这一方向与近期科研智能体的密集发布相互呼应，也给出可比较的失败画像。",
+      "authors": "Yibo Wen, Han Liu",
+      "link": "https://arxiv.org/abs/2610.18449"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 4 Argon",
+      "vendor": "Google DeepMind",
+      "highlight": "10 月 13 日面向全球上架（API、Gemini 应用、搜索、Antigravity 同步）。智能指数 53，与 GPT-6 Astra 持平、单任务加权成本约为其 60%；单次输出上限由 6.4 万提升到 100 万 token，促销价每百万 2 / 10 美元（11 月 30 日后恢复 4 / 20 美元，缓存输入约 95% 折扣）。内部长程软件工程得分 77.9%，Chrome 团队借它把数月重构压缩至数周；看人类扔沙包视频后自行生成控制代码，让 Apollo 人形机器人零样本连中 7 次。",
+      "link": "https://www.toutiao.com/article/7696333842508759571"
+    },
+    {
+      "name": "Meta Muse Wonder / Muse Wonder Full",
+      "vendor": "Meta 超级智能实验室",
+      "highlight": "Meta 首个前沿模型，自称「迄今为止最强」。Muse Wonder 智能指数 52、每百万 token 4 / 20 美元（Meta Model API 与 Muse Code 可用）；Muse Wonder Full 智能指数 56，仅向 Muse Code 订阅者开放、无 API。新能力为 Active Memory（跨会话携带相关细节）与 Active Focus（难题上尝试替代路径、从错误中恢复、关键动作前二次确认）。",
+      "link": "https://zerohour.day/item/9c8dc2fb4e50ae3a7041c3f5e20a8b03c03a4b4a"
+    },
+    {
+      "name": "Claude Haiku 5.5",
+      "vendor": "Anthropic",
+      "highlight": "10 月 7 日发布、10 月 13 日拿到独立成绩：智能指数 43，较上代跳升 26 分，输出约 235 至 239 token/s。价格每百万 token 0.10 / 0.50 美元（≤10 万 token 提示，超出后五倍），约比上代低 90%；GDPval-AA v2.1 知识工作分 1620（上代 735），OSWorld 2.1 计算机操作 72.4%（上代 15.7%），Terminal-Bench 4.0 多步编码 39.2%（上代 0%）。",
+      "link": "https://theairankings.com/changelog"
+    },
+    {
+      "name": "Grok 4.7",
+      "vendor": "xAI / SpaceXAI",
+      "highlight": "已上线 Amazon Bedrock，特点是愿为难题投入更多时间并在每一步回查自身工作。AWS 用它构建工具调用智能体，三类唯一答案任务四档推理强度共 72 次、67 次正确，xhigh 档 18 次全对。独立测得智能指数 46（xhigh），定价每百万 token 2 / 6 美元、上下文 500K；因输出最为冗长，单任务成本约 3.74 美元，与更高价位的对手差距被压缩到 1.2 倍。",
+      "link": "https://www.orcarouter.ai/zh-CN/blog/muse-wonder-vs-grok-4-7"
+    },
+    {
+      "name": "Mistral Large 4",
+      "vendor": "Mistral AI",
+      "highlight": "10 月 6 日开启公开预览：1 万亿参数、每百万 token 1.36 / 4.18 美元，独立测得智能指数 38。官方称这是其「最大也最强」的模型，并承诺月底放出权重——若兑现，将成为目前参数规模最大的开放权重前沿模型之一。",
+      "link": "https://theairankings.com/changelog"
+    },
+    {
+      "name": "LFM2.5-24B-A2B",
+      "vendor": "Liquid AI",
+      "highlight": "端侧推理模型：24B 总参数、每 token 仅激活约 2B，可在本地持续运行 Agent。Apple M5 Max 上 184 token/s、Ryzen AI Max+ 395 上 114 token/s，单张 B300 高并发下输出超 21K token/s，首发即支持 llama.cpp、MLX、vLLM、SGLang、ONNX。同日垂直专精侧还有 Cantina 的开源安全模型 apex-flash-1 与微软的 Microsoft-Decision-1，OpenAI 的 GPT-Rosalind 转入正式可用。",
+      "link": "https://headsupai.io/ai-news-and-updates/this-month"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "MCP 官方 servers 仓库首发稳定 v1.0.0",
+      "summary": "modelcontextprotocol/servers 仓库把 filesystem、memory、fetch、git、sequential-thinking 等官方服务器一次性推进到首个稳定 1.0.0：修掉断开连接时的订阅清理、Unicode 路径处理、并发写入竞态与保存时的文件权限保持问题。MCP 从「能跑」进入「可依赖」，是企业侧把官方服务器写进生产清单的前提。",
+      "source": "Claude Report",
+      "link": "https://www.claudenews.com.br/en-US/edicoes/170-2026-10-13",
+      "models": []
+    },
+    {
+      "title": "Azure MCP Server 3.0 稳定发布",
+      "summary": "微软发布 Azure MCP Server 3.0 稳定版，汇聚 50 个 beta 迭代：新增 Azure 备份、韧性管理、SRE Agent（55 条命令的工具集）以及 Terraform / Advisor / 优化工具，让智能体能够读取备份保护状态、评估基础设施变更并生成 IaC 建议。工程上引入更清晰的工具契约与安全默认值、更准确的输入 schema，未知参数直接报错，结构化响应改为显式开关。",
+      "source": "Microsoft Developer Blogs",
+      "link": "https://devblogs.microsoft.com/azure-sdk/azure-mcp-server-3-0-stable-release",
+      "models": []
+    },
+    {
+      "title": "AWS Agent Toolkit 新增 SageMaker AI Skill（aws-ai-ml）",
+      "summary": "AWS 在其 Agent Toolkit 里加入 aws-ai-ml skill，让智能体用自然语言把模型从想法推到 endpoint：从 JumpStart 选基座模型、准备与校验数据集、做 SFT/DPO/RLVR/RLAIF 微调、跑训练与处理作业、评测、部署到 SageMaker 或 Bedrock、推理优化与 endpoint 诊断。skill 本体约 119 个文件、1.1 MB，在 Claude Code 中每次会话仅增加约 240 token；AWS 不收 skill 费用，但训练作业与常驻 endpoint 照常计费。",
+      "source": "Logeshwaran.org / AWS",
+      "link": "https://www.logeshwaran.org/2026/10/agent-toolkit-for-aws-install-guide.html",
+      "models": []
+    },
+    {
+      "title": "Linus Torvalds 发布与 Claude Code 协作完成的 Linux 内核分支",
+      "summary": "Torvalds 推送名为 noref-filemap-read-with-llm 的内核分支，改造 page-cache 读取以缓解多线程小读场景下的 folio 引用竞争。他明确说明代码、测试程序、评审以及提交说明初稿都由 Claude Code 在其指导下完成；在其自测的八线程 16 字节读基准上，吞吐从约每秒 1000 万次升至 3000 万至 3300 万次。分支尚未合入主线，但这是内核维护者首次公开背书「Agent 参与核心子系统开发」的完整链条。",
+      "source": "Claude Report / LKML",
+      "link": "https://www.claudenews.com.br/en-US/edicoes/171-2026-10-14",
+      "models": []
+    },
+    {
+      "title": "GitHub 项目 REA 爆火：给编码 Agent 装一套「逆向工程工具箱」",
+      "summary": "REA 为 Codex、Claude Code、Cursor 等编码 Agent 接入 Ghidra、Hopper、IDA、JADX 等工具，让 Agent 自主调用它们、从程序行为一路追到反编译代码，把逆向工程从人工操作改造成 Agent 自主流水线，Star 数已冲到约 10.9 万。争议也随之而来：这同时降低了安全研究与漏洞分析的门槛，也让「自动化攻击工具」的合规边界重新被讨论。",
+      "source": "算法一只狗",
+      "link": "https://view.inews.qq.com/a/20261014A05V3O00",
+      "models": []
+    },
+    {
+      "title": "MCP 安全独立成品类：Radware 推出 MCP Server Protection，Anthropic 强化蒸馏防御",
+      "summary": "随着企业把智能体接到内部系统，MCP 集成层开始被当作独立攻击面：Radware 发布 MCP Server Protection 产品，专门针对 MCP 连接做防护。模型侧，Anthropic 公布了新的蒸馏防御组合——收紧推理轨迹的访问控制、用分类器拦截抽取尝试、配合限流与封号，官方称可将被抽取数据量压低约 90% 至 99%。",
+      "source": "Claude Report / Radware / Anthropic",
+      "link": "https://www.claudenews.com.br/en-US/edicoes/170-2026-10-13",
+      "models": []
+    }
+  ]
+}
