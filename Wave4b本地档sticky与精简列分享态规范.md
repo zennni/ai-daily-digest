@@ -3,7 +3,7 @@
 ## 范围（设计）
 7. 本地长榜：`h3.sub` / `h3.sub2` sticky 当前档 + `.local-toc` 芯片高亮（IntersectionObserver）
 8. 桌面主榜默认精简列（☑ / 排名 / 名+★ / AA / 任务成本$），「展开全列」看其余；≤760 仍走卡片
-10. 分享态：`?tab=&q=&cmp=`（保留既有 hash 锚点与 `?v=` 缓存戳）
+10. 分享态：`?tab=&q=&cmp=&mode=`（`mode=full|top`；保留既有 hash 锚点与 `?v=` 缓存戳）
 
 不含：HUB/rows 单源、CI、懒挂载、生图卡、暗色手调（运营）。
 

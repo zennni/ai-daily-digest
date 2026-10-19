@@ -64,3 +64,9 @@ npm run preflight
 - **④ Tab 懒挂载**：本地 LLM + 生图大表在 `#localHeavySrc`（`type=text/plain`），首包不进 live DOM；首次进入「本地部署」Tab（或深链 `#local-*`）由 `ensureLocalMounted()` 注入 `#localMount`，之后保留。
 - **⑨ 生图窄屏卡**：挂载后 `enhanceLocalImgCards` 为各 `local-img-*` 表生成卡片（名 / 显存 / 商用）；≤760 藏表、桌面仍表。
 - **⑪ 暗色手调**：顶栏 `◐/☀/☾` 循环 跟随系统 → 浅色 → 深色；`localStorage.hub_theme`；`data-theme` 覆盖系统偏好。
+
+## 主榜二级视图（mode）
+
+- URL：`?mode=full|top`（默认 `full`，可与 `tab`/`q`/`cmp` 并存）
+- **同系最高档**：按 `models[].n`（同名）去重，保留 **AA 最高**；AA 同分再比档位 `Max > xHigh > High > Medium > Low > Non-reasoning`；展示排名在该子集内重算 `1…n`
+- 实现：`filteredModels` 管道内 `pickBestByName`，不另建第二张表；关注/对比勾选按模型名保留

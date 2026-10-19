@@ -128,7 +128,11 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .filters-toggle[aria-expanded="true"]{background:var(--plight);border-color:#93c5fd;color:#1e40af}
 .filters-bar .filters{flex:1 1 100%;margin-bottom:0}
 .filters-bar .filters.is-collapsed{display:none}
-@media (hover:hover){.filters-toggle:hover{border-color:var(--primary2);color:var(--primary)}}
+.board-mode{display:inline-flex;flex-wrap:wrap;align-items:stretch;margin:0;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface);flex:0 0 auto}
+.board-mode-btn{padding:6px 14px;border:none;border-right:1px solid var(--line);background:transparent;color:#334155;cursor:pointer;font-size:12.5px;font-weight:600;font-family:inherit;line-height:1.2}
+.board-mode-btn:last-child{border-right:none}
+.board-mode-btn.on,.board-mode-btn[aria-pressed="true"]{background:var(--plight);color:#1e40af}
+@media (hover:hover){.filters-toggle:hover{border-color:var(--primary2);color:var(--primary)}.board-mode-btn:hover{color:var(--primary)}}
 .hub-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px}
 .hub-toc .ht-label{font-size:11px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
 .hub-toc a{display:inline-block;font-size:12px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap;cursor:pointer}
@@ -219,7 +223,8 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 .tab:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
 .tabs,.hub-toc{background:var(--surface);border-bottom-color:var(--line)}
 .tab{background:var(--surface);color:var(--ink-soft);border-color:var(--line)}
-.filters-toggle,.filters select,.filters input[type=number]{background:var(--surface);color:var(--text);border-color:var(--line)}
+.filters-toggle,.filters select,.filters input[type=number],.board-mode{background:var(--surface);color:var(--text);border-color:var(--line)}
+.board-mode-btn{color:var(--text);border-color:var(--line)}
 .bc-item{background:var(--card)}
 .bc-pill{background:var(--pill-bg);color:var(--ink-soft)}
 th{background:var(--th-bg);color:var(--th-text)}
@@ -335,9 +340,13 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 <!-- 模型主榜 -->
 <div class="view" id="v-board" role="tabpanel" aria-labelledby="tab-board" hidden>
   <h2 class="sec" id="boardHead">模型主榜</h2>
-  <p class="lead" style="color:#64748b;font-size:12.5px">主榜无并列：同分按「标准任务成本低 → 输出价低 → 推理档位强 → 模型名」依次打破，名次唯一。</p>
+  <p class="lead" id="boardLead" style="color:#64748b;font-size:12.5px">主榜无并列：同分按「标准任务成本低 → 输出价低 → 推理档位强 → 模型名」依次打破，名次唯一。可用「全量 / 同系最高档」切换视图。</p>
   <div class="card">
     <div class="filters-bar">
+      <div class="board-mode" role="group" aria-label="主榜档位视图">
+        <button type="button" class="board-mode-btn on" data-mode="full" aria-pressed="true" title="列出全部推理档">全量</button>
+        <button type="button" class="board-mode-btn" data-mode="top" aria-pressed="false" title="同名只留 AA 最高档">同系最高档</button>
+      </div>
       <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardFilters">筛选 ▾</button>
       <button type="button" id="colsToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardTbl" title="桌面精简列 / 全列">展开全列 ▾</button>
       <div class="filters is-collapsed" id="boardFilters">
@@ -833,6 +842,52 @@ function renderDaily(){
 
 /* ---------- 主榜 ---------- */
 var sortK = "rk", sortDesc = false;
+/* mode=full|top：同系最高档按 name 去重，AA 最高优先，同分比档位 Max>xHigh>High>Medium>Low>Non-reasoning */
+var boardMode = "full";
+var TIER_STRENGTH = {"Max":6,"xHigh":5,"High":4,"Medium":3,"Low":2,"Non-reasoning":1,"NR":1};
+function tierStrength(t){ return TIER_STRENGTH[t] || 0; }
+function pickBestByName(list){
+  var best = {};
+  list.forEach(function(r){
+    var cur = best[r.n];
+    if(!cur){ best[r.n] = r; return; }
+    if(r.aa > cur.aa){ best[r.n] = r; return; }
+    if(r.aa === cur.aa && tierStrength(r.t) > tierStrength(cur.t)) best[r.n] = r;
+  });
+  var out = Object.keys(best).map(function(k){ return best[k]; });
+  out.sort(function(a,b){
+    var ra = a.rk==null ? 9999 : a.rk, rb = b.rk==null ? 9999 : b.rk;
+    if(ra !== rb) return ra - rb;
+    if(b.aa !== a.aa) return b.aa - a.aa;
+    var td = tierStrength(b.t) - tierStrength(a.t);
+    if(td) return td;
+    return String(a.n).localeCompare(String(b.n));
+  });
+  return out.map(function(r, i){
+    var c = {};
+    for(var k in r) if(Object.prototype.hasOwnProperty.call(r,k)) c[k]=r[k];
+    c.rk = i + 1;
+    c._origRk = r.rk;
+    return c;
+  });
+}
+function setBoardMode(mode, opts){
+  opts = opts || {};
+  boardMode = (mode === "top") ? "top" : "full";
+  document.querySelectorAll(".board-mode-btn").forEach(function(b){
+    var on = b.getAttribute("data-mode") === boardMode;
+    b.classList.toggle("on", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  var lead = document.getElementById("boardLead");
+  if(lead){
+    lead.textContent = boardMode === "top"
+      ? "同系最高档：每个模型名只留 AA 最高的一档（同分比 Max>xHigh>High>Medium>Low），排名按本子集重算 1…n。"
+      : "主榜无并列：同分按「标准任务成本低 → 输出价低 → 推理档位强 → 模型名」依次打破，名次唯一。可用「全量 / 同系最高档」切换视图。";
+  }
+  applyFilters();
+  if(!opts.skipShare && typeof updateShareUrl === "function") updateShareUrl();
+}
 function renderBoard(list){
   var tb = document.querySelector("#boardTbl tbody");
   var cards = document.getElementById("boardCards");
@@ -899,6 +954,7 @@ function filteredModels(kw){
     }
     return true;
   });
+  if(boardMode === "top") list = pickBestByName(list);
   list.sort(function(a,b){
     var va=a[sortK], vb=b[sortK];
     if(va==null)va=-1; if(vb==null)vb=-1;
@@ -1376,7 +1432,7 @@ _localSpyApi = (function initLocalTierSpy(){
   return { rebind: rebind };
 })();
 
-/* ---------- Wave4b⑩：分享态 URL（?tab=&q=&cmp=，保留既有 hash / ?v= 缓存戳） ---------- */
+/* ---------- Wave4b⑩：分享态 URL（?tab=&q=&cmp=&mode=，保留既有 hash / ?v= 缓存戳） ---------- */
 function updateShareUrl(opts){
   opts = opts || {};
   try{
@@ -1391,6 +1447,9 @@ function updateShareUrl(opts){
     var sel = (opts.cmp != null) ? opts.cmp : (typeof SELECTED !== "undefined" ? SELECTED : []);
     if(sel && sel.length) url.searchParams.set("cmp", sel.join(","));
     else url.searchParams.delete("cmp");
+    var mode = (opts.mode != null) ? opts.mode : (typeof boardMode !== "undefined" ? boardMode : "full");
+    if(mode && mode !== "full") url.searchParams.set("mode", mode);
+    else url.searchParams.delete("mode");
     if(opts.hash != null){
       var h = opts.hash;
       if(h && h.charAt(0) !== "#") h = "#" + h;
@@ -1406,6 +1465,7 @@ function restoreShareUrl(){
     var tab = url.searchParams.get("tab");
     var q = url.searchParams.get("q") || "";
     var cmp = url.searchParams.get("cmp") || "";
+    var mode = url.searchParams.get("mode") || "full";
     var hash = (location.hash || "").replace(/^#/, "");
 
     // hash 优先：#v-board / #local-img / #local-llm-8gb 等
@@ -1421,6 +1481,9 @@ function restoreShareUrl(){
     }
     if(cmp){
       SELECTED = cmp.split(",").map(function(s){ return s.trim(); }).filter(Boolean).slice(0, 4);
+    }
+    if(mode === "top" || mode === "full"){
+      setBoardMode(mode, {skipShare:true});
     }
     if(tab){
       var t = document.querySelector('.tab[data-v="'+tab+'"]');
@@ -1500,6 +1563,11 @@ function init(){
   };
   document.querySelectorAll("#fVendor,#fLic,#fOpen,#fAA,#fCost,#fValued").forEach(function(el){
     el.onchange = function(){ applyFilters(); };
+  });
+  document.querySelectorAll(".board-mode-btn").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      setBoardMode(btn.getAttribute("data-mode") || "full");
+    });
   });
   renderDaily(); applyFilters(); renderWatch();
   /* Wave3 首包：开放权重/本周变化进 Tab 再渲；本地表静态不重渲 */
