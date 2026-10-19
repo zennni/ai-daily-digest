@@ -134,6 +134,7 @@ tr.top td.rk::after{content:"首选";display:block;font-size:9px;font-weight:700
    受保护：:hover 仍须包在 @media (hover:hover) 内（见上方「移动端规范」注释）。
    窄屏策略：顶栏改 relative 随页滚走，只留 Tabs 单 sticky；Tabs 强制 nowrap + 横滑，禁止换行撑高。 */
 html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
+#v-board,#v-value,#v-open,#v-local,#v-news,#v-changes{scroll-margin-top:calc(var(--tabs-top) + var(--tabs-h) + 8px)}
 @media(max-width:760px){
   :root{--tabs-top:0px;--tabs-h:40px}
   html{scroll-padding-top:calc(var(--tabs-h) + 8px)}
@@ -165,7 +166,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   <div class="tab" data-v="local">本地部署</div>
   <div class="tab" data-v="changes">本周变化</div>
 </div>
-<nav class="hub-toc" aria-label="Hub 分区导航"><span class="ht-label">跳转</span><a href="#hub-board" data-hub="board">主榜</a><a href="#hub-value" data-hub="value">API</a><a href="#hub-open" data-hub="open">开源</a><a href="#hub-local" data-hub="local">本地</a><a class="ht-img" href="#local-img" data-hub="local-img">生图</a></nav>
+<nav class="hub-toc" aria-label="Hub 分区导航"><span class="ht-label">跳转</span><a href="#v-board" data-hub="board">主榜</a><a href="#v-value" data-hub="value">API</a><a href="#v-open" data-hub="open">开源</a><a href="#v-local" data-hub="local">本地</a><a class="ht-img" href="#local-img" data-hub="local-img">生图</a></nav>
 
 <div class="wrap">
 
@@ -554,7 +555,7 @@ document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
     } else {
       go(hub);
       window.scrollTo({top:0, behavior:"smooth"});
-      if(history.replaceState) history.replaceState(null, "", "#hub-"+hub);
+      if(history.replaceState) history.replaceState(null, "", "#v-"+hub);
     }
   });
 });
