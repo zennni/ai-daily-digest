@@ -1,0 +1,11 @@
+{
+  "name": "ai-daily-digest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:hub": "node scripts/build-hub.mjs",
+    "check:hub": "node scripts/build-hub.mjs --check",
+    "preflight": "node scripts/preflight-check.mjs",
+    "sync:index": "bash scripts/sync-hub-index.sh"
+  }
+}

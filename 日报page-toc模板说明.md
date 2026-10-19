@@ -28,3 +28,13 @@
 CSS 复用既有 `.page-toc` / `.pt-label`（sticky 顶栏芯片）。分区目标建议带 `scroll-margin-top`，避免被 sticky 目录挡住。
 
 参考：`AI日报-2026-10-19.html`。
+
+## 推送前
+
+发布 / 改 list「最新」/ 改榜后，跑：
+
+```bash
+node scripts/preflight-check.mjs
+```
+
+详见 `架构-HUB单源与推前自检.md`。
