@@ -181,8 +181,8 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   .topbar h1 .title-short{display:inline}
   .topbar .sub{display:none}
   .theme-toggle{margin-left:0;width:30px;height:30px;flex:0 0 auto}
-  .topbar .searchwrap{display:block;flex:1 1 auto;min-width:0;margin:0;margin-left:0}
-  #q{width:100%;min-width:0;box-sizing:border-box;padding:5px 10px;font-size:16px}
+  .topbar .searchwrap{display:block;flex:1 1 0;max-width:46%;min-width:0;margin:0;margin-left:0}
+  #q{width:100%;min-width:0;box-sizing:border-box;padding:4px 8px;font-size:16px}
   .tabs{top:0;padding:6px 12px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:5px}
   .tabs::-webkit-scrollbar{height:0;display:none}
   .tab{flex:0 0 auto;white-space:nowrap;padding:6px 12px;font-size:13px}
@@ -325,7 +325,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 .topbar .searchwrap{margin-left:auto}
 @media(max-width:760px){
   .topbar{flex-wrap:nowrap;gap:6px 8px}
-  .topbar .searchwrap{margin-left:0;flex:1 1 auto;min-width:0}
+  .topbar .searchwrap{margin-left:0;flex:1 1 0;max-width:46%;min-width:0}
 }
 
 /* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡统一 bc 壳（主榜/性价比/开放 + 本地 LLM/生图） */
@@ -386,7 +386,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 </head>
 <body>
 <div class="topbar">
-  <h1 title="AI 前沿情报台" aria-label="AI 前沿情报台"><span class="title-full">AI 前沿情报台</span><span class="title-short">情报台</span></h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
+  <h1 title="AI 前沿情报台" aria-label="AI 前沿情报台"><span class="title-full">AI 前沿情报台</span><span class="title-short">AI情报台</span></h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
   <button type="button" id="themeToggle" class="theme-toggle" title="外观：跟随系统" aria-label="切换外观（亮 / 暗 / 跟随系统）">◐</button>
   <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-desktop="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-mobile="搜索…"></span>
 </div>
