@@ -235,7 +235,7 @@ th{background:var(--th-bg);color:var(--th-text)}
 .watch-tip{background:#1e3a8a;color:#e2e8f0;box-shadow:0 4px 16px rgba(0,0,0,.45)}
 @media (hover:hover){tr:hover td{background:var(--row-hover)}}
 @media (prefers-color-scheme: dark){
-  :root{
+  html:not([data-theme="light"]){
     color-scheme:dark;
     --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
     --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
@@ -244,23 +244,70 @@ th{background:var(--th-bg);color:var(--th-text)}
     --th-bg:#1e293b;--th-text:#93c5fd;--detail-bg:#0f172a;--row-hover:#1e293b;
     --pill-bg:#1e293b;--sticky-bg:rgba(17,24,39,.96);--cmp-bg:#111827;--focus-ring:#3b82f6;
   }
-  .topbar{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
-  .notice{background:#0f172a;border-color:#1e3a5f;color:#93c5fd}
-  .badge-S{background:#2563eb}.badge-A{background:#059669}.badge-B{background:#d97706}.badge-C{background:#b45309}.badge-D{background:#64748b}
-  .chip{background:var(--plight);color:#93c5fd;border-color:#1e40af}
-  .chip.news,.mtag{background:#064e3b;color:#6ee7b7;border-color:#047857}
-  .bc-rk{background:var(--plight);color:var(--primary)}
-  td{border-bottom-color:#1f2937}
-  #q{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
-  .foot{color:#64748b}
-  .cmp-scrim{background:rgba(0,0,0,.55)}
-  .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
+  html:not([data-theme="light"]) .topbar{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  html:not([data-theme="light"]) .notice{background:#0f172a;border-color:#1e3a5f;color:#93c5fd}
+  html:not([data-theme="light"]) .badge-S{background:#2563eb}html:not([data-theme="light"]) .badge-A{background:#059669}html:not([data-theme="light"]) .badge-B{background:#d97706}html:not([data-theme="light"]) .badge-C{background:#b45309}html:not([data-theme="light"]) .badge-D{background:#64748b}
+  html:not([data-theme="light"]) .chip{background:var(--plight);color:#93c5fd;border-color:#1e40af}
+  html:not([data-theme="light"]) .chip.news,html:not([data-theme="light"]) .mtag{background:#064e3b;color:#6ee7b7;border-color:#047857}
+  html:not([data-theme="light"]) .bc-rk{background:var(--plight);color:var(--primary)}
+  html:not([data-theme="light"]) td{border-bottom-color:#1f2937}
+  html:not([data-theme="light"]) #q{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
+  html:not([data-theme="light"]) .foot{color:#64748b}
+  html:not([data-theme="light"]) .cmp-scrim{background:rgba(0,0,0,.55)}
+  html:not([data-theme="light"]) .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 }
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+  --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  --accent:#fbbf24;--accent-dk:#f59e0b;--accent-bg:#292524;
+  --surface:#111827;--surface-2:#1e293b;--ink-soft:#cbd5e1;
+  --th-bg:#1e293b;--th-text:#93c5fd;--detail-bg:#0f172a;--row-hover:#1e293b;
+  --pill-bg:#1e293b;--sticky-bg:rgba(17,24,39,.96);--cmp-bg:#111827;--focus-ring:#3b82f6;
+}
+html[data-theme="dark"] .topbar{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+html[data-theme="dark"] .notice{background:#0f172a;border-color:#1e3a5f;color:#93c5fd}
+html[data-theme="dark"] .badge-S{background:#2563eb}
+html[data-theme="dark"] .badge-A{background:#059669}
+html[data-theme="dark"] .badge-B{background:#d97706}
+html[data-theme="dark"] .badge-C{background:#b45309}
+html[data-theme="dark"] .badge-D{background:#64748b}
+html[data-theme="dark"] .chip{background:var(--plight);color:#93c5fd;border-color:#1e40af}
+html[data-theme="dark"] .chip.news,html[data-theme="dark"] .mtag{background:#064e3b;color:#6ee7b7;border-color:#047857}
+html[data-theme="dark"] .bc-rk{background:var(--plight);color:var(--primary)}
+html[data-theme="dark"] td{border-bottom-color:#1f2937}
+html[data-theme="dark"] #q{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
+html[data-theme="dark"] .foot{color:#64748b}
+html[data-theme="dark"] .cmp-scrim{background:rgba(0,0,0,.55)}
+html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
+
+
+/* WaveB⑨：生图榜窄屏卡片（桌面仍走表） */
+.img-tbl-wrap{overflow-x:auto}
+.img-cards{display:none}
+.img-cards .bc-item{margin-bottom:10px}
+.img-cards .bc-pill.ok{background:#ecfdf5;color:#047857;font-weight:600}
+.img-cards .bc-pill.no{background:#fef2f2;color:#b91c1c;font-weight:600}
+.img-cards .bc-pill.warn{background:#fffbeb;color:#b45309;font-weight:600}
+@media(max-width:760px){
+  #v-local .img-tbl-wrap{display:none}
+  #v-local .img-cards{display:block}
+}
+.local-mount-ph{padding:24px 12px}
+.theme-toggle{margin-left:10px;flex:0 0 auto;width:34px;height:34px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;cursor:pointer;font-size:16px;line-height:1;display:inline-flex;align-items:center;justify-content:center;padding:0;font-family:inherit}
+@media (hover:hover){.theme-toggle:hover{background:rgba(255,255,255,.22)}}
+.topbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.topbar h1{margin:0}
+.topbar .sub{flex:1 1 auto;min-width:0}
+.topbar .searchwrap{margin-left:auto}
+
 </style>
+<script>(function(){try{var t=localStorage.getItem("hub_theme")||"system";if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.removeAttribute("data-theme");}catch(e){}})();</script>
 </head>
 <body>
 <div class="topbar">
   <h1>AI 前沿情报台</h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
+  <button type="button" id="themeToggle" class="theme-toggle" title="外观：跟随系统" aria-label="切换外观（亮 / 暗 / 跟随系统）">◐</button>
   <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…"></span>
 </div>
 <div class="watchbar" id="watchbar" hidden>我的关注：<span id="watchlist"></span></div>
@@ -336,7 +383,13 @@ th{background:var(--th-bg);color:var(--th-text)}
   <h2 class="sec" id="local-llm">本地部署价值榜（逐档位显存榜单）</h2>
   <p class="lead" style="color:#64748b;font-size:13px">按单机统一内存/显存分档。显存 = 权重（推荐量化）+ KV 余量；≈ 为估算值。数据中心级不推荐个人电脑。每档首列 <b>#</b> 为档内综合推荐排名（有 AA 分者按分优先，无分模型按官方定位/第三方评测综合评估；标注“超档/临界”的配置自动降位），第一名高亮即“本档首选”。</p>
   <nav class="local-toc" aria-label="本地部署档位导航"><div class="lt-group"><span class="lt-label">本地 LLM</span><a href="#local-llm-8gb">8GB</a><a href="#local-llm-16gb">16GB</a><a href="#local-llm-24gb">24GB</a><a href="#local-llm-32gb">32GB</a><a href="#local-llm-48gb">48GB</a><a href="#local-llm-64gb">64GB</a><a href="#local-llm-96gb">96GB</a><a href="#local-llm-128gb">128GB</a><a href="#local-llm-192gb">192GB</a><a href="#local-llm-512gb">512GB</a><a href="#local-llm-datacenter">数据中心</a></div><div class="lt-group"><span class="lt-label">生图</span><a class="lt-img" href="#local-img">生图榜</a><a class="lt-img" href="#local-img-8gb">8GB</a><a class="lt-img" href="#local-img-16gb">16GB</a><a class="lt-img" href="#local-img-24gb">24GB</a><a class="lt-img" href="#local-img-48gb">48GB</a><a class="lt-img" href="#local-img-datacenter">数据中心</a></div></nav>
-  <h3 class="sub" id="local-llm-8gb">8GB 档（端侧 / 入门桌面，INT4 / GGUF Q4）</h3>
+
+  <div id="localMount" class="local-mount" data-mounted="0">
+    <p class="empty local-mount-ph">切换到本 Tab 后加载档位表与生图榜…</p>
+  </div>
+</div>
+
+<script type="text/plain" id="localHeavySrc"><h3 class="sub" id="local-llm-8gb">8GB 档（端侧 / 入门桌面，INT4 / GGUF Q4）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -530,8 +583,7 @@ th{background:var(--th-bg);color:var(--th-text)}
       <tr><td class="rk">②</td><td><b>FLUX.2 dev FP16</b></td><td>32B</td><td>DiT（FLUX.2 系）</td><td>BF16</td><td>≈64GB</td><td>25–50</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>单卡 80GB 即全精度；商用需 BFL 企业授权，多卡批量出图仅为吞吐场景。</td></tr>
       <tr><td class="rk">③</td><td><b>Qwen-Image-2512</b></td><td>20B（MMDiT）</td><td>MMDiT 双流 + VAE</td><td>BF16</td><td>≈40GB</td><td>30–50</td><td>Apache 2.0</td><td>✓</td><td>本档许可最宽松的数据中心级选项：多卡批量出图吞吐场景，Apache 2.0 无条款负担、可商用可微调。</td></tr>
     </tbody></table></div>
-  <p class="lead" style="margin-top:8px">注：生图榜为静态调研榜（首期 2026-09-12）；步数列为默认推荐采样步数；商用标记：✓ = 宽松许可可商用，✓（限条款）= 可商用但附加条款，✗ = Non-Commercial 禁商用。</p>
-</div>
+  <p class="lead" style="margin-top:8px">注：生图榜为静态调研榜（首期 2026-09-12）；步数列为默认推荐采样步数；商用标记：✓ = 宽松许可可商用，✓（限条款）= 可商用但附加条款，✗ = Non-Commercial 禁商用。</p></script>
 
 <!-- 本周变化 -->
 <div class="view" id="v-changes" role="tabpanel" aria-labelledby="tab-changes" hidden>
@@ -625,10 +677,11 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
   document.addEventListener("click", function(e){
     var a = e.target.closest && e.target.closest(".local-toc a[href^='#']");
     if(!a) return;
+    e.preventDefault();
+    if(typeof ensureLocalMounted === "function") ensureLocalMounted();
     var id = a.getAttribute("href").slice(1);
     var el = document.getElementById(id);
     if(!el) return;
-    e.preventDefault();
     measureSticky();
     el.scrollIntoView({behavior:"smooth", block:"start"});
     if(typeof updateShareUrl==="function") updateShareUrl({tab:"local", hash:"#"+id}); else if(history.replaceState) history.replaceState(null, "", "#" + id);
@@ -679,6 +732,7 @@ function activateTab(t, opts){
   if(cur==="value") renderValue();
   if(cur==="open") renderOpen();
   if(cur==="changes") renderChanges();
+  if(cur==="local") ensureLocalMounted();
   syncHubToc(cur, false);
   if(opts.focus) try{ t.focus(); }catch(err){}
   if(!opts.skipShare && typeof updateShareUrl === "function") updateShareUrl({tab: cur});
@@ -713,6 +767,7 @@ document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
     var hub = a.getAttribute("data-hub");
     if(hub==="local-img"){
       go("local");
+      ensureLocalMounted();
       syncHubToc("local", true);
       setTimeout(function(){
         var el = document.getElementById("local-img");
@@ -1114,9 +1169,11 @@ function removeCmp(n){
   });
 })();
 
-/* ---------- 本地/生图点评：默认一行，点「展开」看全文 ---------- */
-(function initLocalComments(){
-  var root = document.getElementById("v-local");
+/* ---------- WaveB④：本地/生图 Tab 懒挂载（首包不解析大表 DOM） ---------- */
+var _localMounted = false;
+var _localCommentBound = false;
+var _localSpyApi = null;
+function enhanceLocalComments(root){
   if(!root) return;
   root.querySelectorAll("table tbody tr").forEach(function(tr){
     var td = tr.cells[tr.cells.length - 1];
@@ -1125,23 +1182,108 @@ function removeCmp(n){
     td.className = (td.className ? td.className + " " : "") + "cm-td";
     td.innerHTML = '<div class="cm-body is-clamp">'+html+'</div><button type="button" class="cm-toggle" aria-expanded="false">展开</button>';
   });
-  root.addEventListener("click", function(e){
-    var btn = e.target.closest && e.target.closest(".cm-toggle");
-    if(!btn || !root.contains(btn)) return;
-    var body = btn.previousElementSibling;
-    if(!body || !body.classList.contains("cm-body")) return;
-    var open = body.classList.contains("is-clamp");
-    if(open){
-      body.classList.remove("is-clamp");
-      btn.textContent = "收起";
-      btn.setAttribute("aria-expanded", "true");
+  if(!_localCommentBound){
+    _localCommentBound = true;
+    root.addEventListener("click", function(e){
+      var btn = e.target.closest && e.target.closest(".cm-toggle");
+      if(!btn || !root.contains(btn)) return;
+      var body = btn.previousElementSibling;
+      if(!body || !body.classList.contains("cm-body")) return;
+      var open = body.classList.contains("is-clamp");
+      if(open){
+        body.classList.remove("is-clamp");
+        btn.textContent = "收起";
+        btn.setAttribute("aria-expanded", "true");
+      } else {
+        body.classList.add("is-clamp");
+        btn.textContent = "展开";
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+}
+/* WaveB⑨：生图表 → 窄屏卡片（名 / 显存 / 商用·许可；桌面仍看表） */
+function enhanceLocalImgCards(root){
+  if(!root) return;
+  var section = root.querySelector("#local-img");
+  // wrap each img table card
+  root.querySelectorAll("h3.sub2").forEach(function(h){
+    if(!h.id || h.id.indexOf("local-img-") !== 0) return;
+    var wrap = h.nextElementSibling;
+    if(!wrap || !wrap.querySelector) return;
+    var tbl = wrap.tagName === "TABLE" ? wrap : wrap.querySelector("table");
+    if(!tbl) return;
+    if(wrap.classList.contains("img-block")) return;
+    // normalize wrap
+    if(wrap.classList.contains("card")){
+      wrap.classList.add("img-tbl-wrap");
     } else {
-      body.classList.add("is-clamp");
-      btn.textContent = "展开";
-      btn.setAttribute("aria-expanded", "false");
+      var outer = document.createElement("div");
+      outer.className = "card img-tbl-wrap";
+      wrap.parentNode.insertBefore(outer, wrap);
+      outer.appendChild(wrap);
+      wrap = outer;
     }
+    var block = document.createElement("div");
+    block.className = "img-block";
+    wrap.parentNode.insertBefore(block, wrap);
+    block.appendChild(wrap);
+    var cards = document.createElement("div");
+    cards.className = "img-cards board-cards";
+    cards.setAttribute("aria-label", (h.textContent || "生图档") + " 卡片");
+    block.appendChild(cards);
+    var rows = tbl.querySelectorAll("tbody tr");
+    rows.forEach(function(tr){
+      var cells = tr.cells;
+      if(!cells || cells.length < 6) return;
+      var rk = (cells[0].textContent || "").trim();
+      var name = (cells[1].textContent || "").trim();
+      var params = (cells[2].textContent || "").trim();
+      var quant = (cells[4] ? cells[4].textContent : "").trim();
+      var vram = (cells[5] ? cells[5].textContent : "").trim();
+      var steps = (cells[6] ? cells[6].textContent : "").trim();
+      var lic = (cells[7] ? cells[7].textContent : "").trim();
+      var biz = (cells[8] ? cells[8].textContent : "").trim();
+      var note = (cells[9] ? cells[9].innerHTML : "");
+      var bizClass = "warn";
+      if(/^✓/.test(biz) && biz.indexOf("✗") < 0 && biz.indexOf("非商用") < 0 && biz.indexOf("禁") < 0) bizClass = "ok";
+      if(/^✗/.test(biz) || biz.indexOf("非商用") >= 0) bizClass = "no";
+      var div = document.createElement("div");
+      div.className = "bc-item" + (tr.classList.contains("top") ? " top3" : "");
+      div.innerHTML =
+        '<div class="bc-top">'+
+          '<div class="bc-rk">'+rk+'</div>'+
+          '<div class="bc-main">'+
+            '<div class="bc-name">'+name+'</div>'+
+            '<div class="bc-meta">'+params+(quant ? " · "+quant : "")+'</div>'+
+            '<div class="bc-stats">'+
+              '<span class="bc-pill aa">显存 '+vram+'</span>'+
+              (steps ? '<span class="bc-pill">步数 '+steps+'</span>' : '')+
+              '<span class="bc-pill '+bizClass+'">商用 '+biz+'</span>'+
+            '</div>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<div class="bc-more">许可：'+lic+'<br>'+note+'</div>'+
+          '</div>'+
+        '</div>';
+      cards.appendChild(div);
+    });
   });
-})();
+}
+function ensureLocalMounted(){
+  if(_localMounted) return true;
+  var mount = document.getElementById("localMount");
+  var src = document.getElementById("localHeavySrc");
+  var root = document.getElementById("v-local");
+  if(!mount || !src || !root) return false;
+  mount.innerHTML = src.textContent;
+  mount.setAttribute("data-mounted", "1");
+  _localMounted = true;
+  enhanceLocalComments(root);
+  enhanceLocalImgCards(root);
+  if(_localSpyApi && typeof _localSpyApi.rebind === "function") _localSpyApi.rebind();
+  if(typeof window.measureSticky === "function") measureSticky();
+  return true;
+}
 
 /* ---------- 全局搜索 ---------- */
 var qTimer;
@@ -1183,17 +1325,17 @@ document.getElementById("q").oninput = function(){
   btn.onclick = function(){ setCompact(tbl.classList.contains("board-compact") ? false : true); };
 })();
 
-/* ---------- Wave4b⑦：本地档 IntersectionObserver → TOC 高亮 ---------- */
-(function initLocalTierSpy(){
+/* ---------- Wave4b⑦：本地档 IntersectionObserver → TOC 高亮（懒挂载后 rebind） ---------- */
+_localSpyApi = (function initLocalTierSpy(){
   var toc = document.querySelector("#v-local .local-toc");
-  if(!toc || !window.IntersectionObserver) return;
+  if(!toc || !window.IntersectionObserver) return { rebind: function(){} };
   var links = Array.prototype.slice.call(toc.querySelectorAll("a[href^='#']"));
-  if(!links.length) return;
+  if(!links.length) return { rebind: function(){} };
   var byId = {};
   links.forEach(function(a){ byId[a.getAttribute("href").slice(1)] = a; });
-  var heads = Object.keys(byId).map(function(id){ return document.getElementById(id); }).filter(Boolean);
-  if(!heads.length) return;
   var visible = {};
+  var io = null;
+  var heads = [];
   function setOn(id){
     links.forEach(function(a){
       var on = a.getAttribute("href") === ("#" + id);
@@ -1215,9 +1357,11 @@ document.getElementById("q").oninput = function(){
     var lh = parseFloat(cs.getPropertyValue("--local-toc-h")) || 56;
     return Math.round(th + lh + 4);
   }
-  var io = null;
-  function bind(){
+  function rebind(){
+    heads = Object.keys(byId).map(function(id){ return document.getElementById(id); }).filter(Boolean);
     if(io) io.disconnect();
+    visible = {};
+    if(!heads.length) return;
     var mt = marginTop();
     io = new IntersectionObserver(function(entries){
       entries.forEach(function(en){
@@ -1227,12 +1371,9 @@ document.getElementById("q").oninput = function(){
     }, { root:null, rootMargin: "-" + mt + "px 0px -55% 0px", threshold:[0, 0.1, 1] });
     heads.forEach(function(h){ io.observe(h); });
   }
-  bind();
-  window.addEventListener("resize", function(){ bind(); });
-  // 切到本地 Tab 时重测
-  document.querySelectorAll(".tab[data-v='local']").forEach(function(t){
-    t.addEventListener("click", function(){ setTimeout(function(){ if(window.measureSticky) measureSticky(); bind(); }, 50); });
-  });
+  rebind();
+  window.addEventListener("resize", function(){ rebind(); });
+  return { rebind: rebind };
 })();
 
 /* ---------- Wave4b⑩：分享态 URL（?tab=&q=&cmp=，保留既有 hash / ?v= 缓存戳） ---------- */
@@ -1293,6 +1434,7 @@ function restoreShareUrl(){
       renderCmp();
     }
     if(hash && hash.indexOf("local-") === 0){
+      if(typeof ensureLocalMounted === "function") ensureLocalMounted();
       setTimeout(function(){
         var el = document.getElementById(hash);
         if(el){
@@ -1304,6 +1446,36 @@ function restoreShareUrl(){
     updateShareUrl({tab: cur, hash: hash ? "#"+hash : (location.hash || "")});
   }catch(err){}
 }
+
+
+/* ---------- WaveB⑪：暗色手调（亮 / 暗 / 跟随系统，localStorage） ---------- */
+(function bindThemeToggle(){
+  var btn = document.getElementById("themeToggle");
+  var order = ["system", "light", "dark"];
+  var icons = { system: "◐", light: "☀", dark: "☾" };
+  var labels = { system: "跟随系统", light: "浅色", dark: "深色" };
+  function read(){
+    try{ return localStorage.getItem("hub_theme") || "system"; }catch(e){ return "system"; }
+  }
+  function apply(mode){
+    if(mode === "light" || mode === "dark") document.documentElement.setAttribute("data-theme", mode);
+    else document.documentElement.removeAttribute("data-theme");
+    try{ localStorage.setItem("hub_theme", mode); }catch(e){}
+    if(btn){
+      btn.textContent = icons[mode] || "◐";
+      btn.title = "外观：" + (labels[mode] || mode) + "（点击切换）";
+      btn.setAttribute("aria-label", "外观：" + (labels[mode] || mode));
+    }
+  }
+  apply(read());
+  if(!btn) return;
+  btn.addEventListener("click", function(){
+    var cur = read();
+    var i = order.indexOf(cur);
+    if(i < 0) i = 0;
+    apply(order[(i + 1) % order.length]);
+  });
+})();
 
 /* ---------- 初始化 ---------- */
 function init(){

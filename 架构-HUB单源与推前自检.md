@@ -58,3 +58,9 @@ npm run preflight
 
 - **运营**：本文件、`build-hub` / `preflight`、源 JSON、HUB 注入
 - **设计**：`hub≡index` 同步脚本、窄屏 toc / 关注条等 CSS（勿与 HUB 注入抢同一语义块）
+
+## Wave B 运营余量（4 / 9 / 11）
+
+- **④ Tab 懒挂载**：本地 LLM + 生图大表在 `#localHeavySrc`（`type=text/plain`），首包不进 live DOM；首次进入「本地部署」Tab（或深链 `#local-*`）由 `ensureLocalMounted()` 注入 `#localMount`，之后保留。
+- **⑨ 生图窄屏卡**：挂载后 `enhanceLocalImgCards` 为各 `local-img-*` 表生成卡片（名 / 显存 / 商用）；≤760 藏表、桌面仍表。
+- **⑪ 暗色手调**：顶栏 `◐/☀/☾` 循环 跟随系统 → 浅色 → 深色；`localStorage.hub_theme`；`data-theme` 覆盖系统偏好。
