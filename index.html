@@ -406,12 +406,12 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 <!-- 模型主榜 -->
 <div class="view" id="v-board" role="tabpanel" aria-labelledby="tab-board" hidden>
   <h2 class="sec" id="boardHead">模型主榜</h2>
-  <p class="lead" id="boardLead" style="color:var(--muted);font-size:12.5px">主榜无并列：同分按「标准任务成本低 → 输出价低 → 推理档位强 → 模型名」依次打破，名次唯一。可用「全量 / 同系最高档」切换视图。</p>
+  <p class="lead" id="boardLead" style="color:var(--muted);font-size:12.5px">同系最高档：每个模型名只留 AA 最高的一档（同分比 Max>xHigh>High>Medium>Low），排名按本子集重算 1…n。</p>
   <div class="card">
     <div class="filters-bar">
       <div class="board-mode" role="group" aria-label="主榜档位视图">
-        <button type="button" class="board-mode-btn on" data-mode="full" aria-pressed="true" title="列出全部推理档">全量</button>
-        <button type="button" class="board-mode-btn" data-mode="top" aria-pressed="false" title="同名只留 AA 最高档">同系最高档</button>
+        <button type="button" class="board-mode-btn" data-mode="full" aria-pressed="false" title="列出全部推理档">全量</button>
+        <button type="button" class="board-mode-btn on" data-mode="top" aria-pressed="true" title="同名只留 AA 最高档">同系最高档</button>
       </div>
       <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardFilters">筛选 ▾</button>
       <button type="button" id="colsToggle" class="filters-toggle" aria-expanded="true" aria-controls="boardTbl" title="桌面精简列 / 全列">精简列 ▴</button>
@@ -917,7 +917,7 @@ function renderDaily(){
 /* ---------- 主榜 ---------- */
 var sortK = "rk", sortDesc = false;
 /* mode=full|top：同系最高档按 name 去重，AA 最高优先，同分比档位 Max>xHigh>High>Medium>Low>Non-reasoning */
-var boardMode = "full";
+var boardMode = "top";
 var TIER_STRENGTH = {"Max":6,"xHigh":5,"High":4,"Medium":3,"Low":2,"Non-reasoning":1,"NR":1};
 function tierStrength(t){ return TIER_STRENGTH[t] || 0; }
 function pickBestByName(list){
@@ -1549,8 +1549,8 @@ function updateShareUrl(opts){
     var sel = (opts.cmp != null) ? opts.cmp : (typeof SELECTED !== "undefined" ? SELECTED : []);
     if(sel && sel.length) url.searchParams.set("cmp", sel.join(","));
     else url.searchParams.delete("cmp");
-    var mode = (opts.mode != null) ? opts.mode : (typeof boardMode !== "undefined" ? boardMode : "full");
-    if(mode && mode !== "full") url.searchParams.set("mode", mode);
+    var mode = (opts.mode != null) ? opts.mode : (typeof boardMode !== "undefined" ? boardMode : "top");
+    if(mode && mode !== "top") url.searchParams.set("mode", mode);
     else url.searchParams.delete("mode");
     if(opts.hash != null){
       var h = opts.hash;
@@ -1567,7 +1567,7 @@ function restoreShareUrl(){
     var tab = url.searchParams.get("tab");
     var q = url.searchParams.get("q") || "";
     var cmp = url.searchParams.get("cmp") || "";
-    var mode = url.searchParams.get("mode") || "full";
+    var mode = url.searchParams.get("mode") || "top";
     var hash = (location.hash || "").replace(/^#/, "");
 
     // hash 优先：#v-board / #local-img / #local-llm-8gb 等

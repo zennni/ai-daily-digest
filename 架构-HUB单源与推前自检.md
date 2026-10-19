@@ -67,6 +67,6 @@ npm run preflight
 
 ## 主榜二级视图（mode）
 
-- URL：`?mode=full|top`（默认 `full`，可与 `tab`/`q`/`cmp` 并存）
+- URL：`?mode=full|top`（默认 `top`，可与 `tab`/`q`/`cmp` 并存；`top` 时省略 `mode`，选全量时写 `mode=full`）
 - **同系最高档**：按 `models[].n`（同名）去重，保留 **AA 最高**；AA 同分再比档位 `Max > xHigh > High > Medium > Low > Non-reasoning`；展示排名在该子集内重算 `1…n`
 - 实现：`filteredModels` 管道内 `pickBestByName`，不另建第二张表；关注/对比勾选按模型名保留
