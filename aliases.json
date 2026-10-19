@@ -132,6 +132,10 @@
     "pattern": "glm[ -]5\\.2"
   },
   {
+    "name": "MiniMax M3.1 Flash",
+    "pattern": "minimax[ -]m3\\.1[ -]?flash"
+  },
+  {
     "name": "MiniMax M3",
     "pattern": "minimax[ -]m3"
   },
