@@ -175,14 +175,14 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 @media(max-width:760px){
   :root{--tabs-top:0px;--tabs-h:40px}
   html{scroll-padding-top:calc(var(--tabs-h) + 8px)}
-  .topbar{padding:8px 12px;flex-wrap:nowrap;gap:6px 8px;align-items:center}
-  .topbar h1{font-size:15px;flex:0 0 auto;white-space:nowrap;margin:0}
+  .topbar{padding:10px 12px;flex-wrap:wrap;gap:8px;align-items:center}
+  .topbar h1{font-size:15px;font-weight:700;flex:1 1 auto;white-space:nowrap;margin:0}
   .topbar h1 .title-full{display:none}
   .topbar h1 .title-short{display:inline}
   .topbar .sub{display:none}
-  .theme-toggle{margin-left:0;width:30px;height:30px;flex:0 0 auto}
-  .topbar .searchwrap{display:block;flex:1 1 0;max-width:46%;min-width:0;margin:0;margin-left:0}
-  #q{width:100%;min-width:0;box-sizing:border-box;padding:4px 8px;font-size:16px}
+  .theme-toggle{margin-left:0;width:28px;height:28px;flex:0 0 auto}
+  .topbar .searchwrap{display:block;flex:1 1 100%;width:100%;max-width:none;min-width:0;margin:0;margin-left:0}
+  #q{width:100%;min-width:0;box-sizing:border-box;height:34px;padding:0 12px;font-size:16px;background:rgba(255,255,255,.18)}
   .tabs{top:0;padding:6px 12px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:5px}
   .tabs::-webkit-scrollbar{height:0;display:none}
   .tab{flex:0 0 auto;white-space:nowrap;padding:6px 12px;font-size:13px}
@@ -324,8 +324,8 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 .topbar .sub{flex:1 1 auto;min-width:0}
 .topbar .searchwrap{margin-left:auto}
 @media(max-width:760px){
-  .topbar{flex-wrap:nowrap;gap:6px 8px}
-  .topbar .searchwrap{margin-left:0;flex:1 1 0;max-width:46%;min-width:0}
+  .topbar{flex-wrap:wrap;gap:8px}
+  .topbar .searchwrap{margin-left:0;flex:1 1 100%;width:100%;max-width:none;min-width:0}
 }
 
 /* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡统一 bc 壳（主榜/性价比/开放 + 本地 LLM/生图） */
@@ -388,7 +388,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 <div class="topbar">
   <h1 title="AI 前沿情报台" aria-label="AI 前沿情报台"><span class="title-full">AI 前沿情报台</span><span class="title-short">AI情报台</span></h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
   <button type="button" id="themeToggle" class="theme-toggle" title="外观：跟随系统" aria-label="切换外观（亮 / 暗 / 跟随系统）">◐</button>
-  <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-desktop="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-mobile="搜索…"></span>
+  <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-desktop="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-mobile="搜索模型 / 新闻…"></span>
 </div>
 <div class="watchbar" id="watchbar" hidden>我的关注：<span id="watchlist"></span></div>
 <div class="watch-tip" id="watchTip" role="status" aria-live="polite"></div>
@@ -1694,7 +1694,7 @@ function restoreShareUrl(){
   var q = document.getElementById("q");
   if(!q) return;
   var desk = q.getAttribute("data-ph-desktop") || q.placeholder;
-  var mob = q.getAttribute("data-ph-mobile") || "搜索…";
+  var mob = q.getAttribute("data-ph-mobile") || "搜索模型 / 新闻…";
   function syncPh(){
     q.placeholder = (window.matchMedia && window.matchMedia("(max-width:760px)").matches) ? mob : desk;
   }
