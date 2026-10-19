@@ -306,16 +306,15 @@ html[data-theme="dark"] .detail-scrim{background:rgba(0,0,0,.55)}
 html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 
 
-/* WaveB⑨：生图榜窄屏卡片（桌面仍走表） */
-.img-tbl-wrap{overflow-x:auto}
-.img-cards{display:none}
-.img-cards .bc-item{margin-bottom:10px}
-.img-cards .bc-pill.ok{background:#ecfdf5;color:#047857;font-weight:600}
-.img-cards .bc-pill.no{background:#fef2f2;color:#b91c1c;font-weight:600}
-.img-cards .bc-pill.warn{background:#fffbeb;color:#b45309;font-weight:600}
+/* WaveB⑨：生图 / 本地 LLM 窄屏卡片（桌面仍走表；卡密度跟主榜 bc 壳） */
+.img-tbl-wrap,.llm-tbl-wrap{overflow-x:auto}
+.img-cards,.llm-cards{display:none}
+.img-cards .bc-pill.ok,.llm-cards .bc-pill.ok{background:#ecfdf5;color:#047857;font-weight:600}
+.img-cards .bc-pill.no,.llm-cards .bc-pill.no{background:#fef2f2;color:#b91c1c;font-weight:600}
+.img-cards .bc-pill.warn,.llm-cards .bc-pill.warn{background:#fffbeb;color:#b45309;font-weight:600}
 @media(max-width:760px){
-  #v-local .img-tbl-wrap{display:none}
-  #v-local .img-cards{display:block}
+  #v-local .img-tbl-wrap,#v-local .llm-tbl-wrap{display:none}
+  #v-local .img-cards,#v-local .llm-cards{display:block}
 }
 .local-mount-ph{padding:24px 12px}
 .theme-toggle{margin-left:10px;flex:0 0 auto;width:34px;height:34px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;cursor:pointer;font-size:16px;line-height:1;display:inline-flex;align-items:center;justify-content:center;padding:0;font-family:inherit}
@@ -329,7 +328,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
   .topbar .searchwrap{margin-left:0;flex:1 1 auto;min-width:0}
 }
 
-/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡跟主榜/性价比（含开放权重卡） */
+/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡统一 bc 壳（主榜/性价比/开放 + 本地 LLM/生图） */
 :root{
   --bc-pad:6px 8px;--bc-name-fs:13px;--bc-gap:5px;--bc-meta-fs:11.5px;
 }
@@ -337,24 +336,24 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 #v-board h2.sec,#v-value h2.sec{font-size:15px;margin:2px 0 6px}
 #v-board h2.sec::before,#v-value h2.sec::before{height:15px}
 #v-board .lead,#v-value .lead{font-size:12px;line-height:1.4;margin:3px 0 6px}
-#boardCards .bc-item,#valueCards .bc-item,#openCards .bc-item{padding:var(--bc-pad);margin-bottom:var(--bc-gap);border-radius:8px}
-#boardCards .bc-top,#valueCards .bc-top,#openCards .bc-top{gap:6px}
-#boardCards .bc-rk,#valueCards .bc-rk,#openCards .bc-rk{flex:0 0 22px;width:22px;height:22px;border-radius:5px;font-size:11.5px}
-#boardCards .bc-name,#valueCards .bc-name,#openCards .bc-name{
+#boardCards .bc-item,#valueCards .bc-item,#openCards .bc-item,#v-local .board-cards .bc-item{padding:var(--bc-pad);margin-bottom:var(--bc-gap);border-radius:8px}
+#boardCards .bc-top,#valueCards .bc-top,#openCards .bc-top,#v-local .board-cards .bc-top{gap:6px}
+#boardCards .bc-rk,#valueCards .bc-rk,#openCards .bc-rk,#v-local .board-cards .bc-rk{flex:0 0 22px;width:22px;height:22px;border-radius:5px;font-size:11.5px}
+#boardCards .bc-name,#valueCards .bc-name,#openCards .bc-name,#v-local .board-cards .bc-name{
   font-size:var(--bc-name-fs);line-height:1.2;
   display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;word-break:break-word
 }
-#boardCards .bc-meta,#valueCards .bc-meta,#openCards .bc-meta{
+#boardCards .bc-meta,#valueCards .bc-meta,#openCards .bc-meta,#v-local .board-cards .bc-meta{
   font-size:var(--bc-meta-fs);margin-top:0;line-height:1.2;
   display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;word-break:break-word
 }
-#boardCards .bc-stats,#valueCards .bc-stats,#openCards .bc-stats{margin-top:4px;gap:4px}
-#boardCards .bc-pill,#valueCards .bc-pill,#openCards .bc-pill{font-size:11px;padding:1px 6px;line-height:1.25}
-#boardCards .bc-toggle,#valueCards .bc-toggle,#openCards .bc-toggle{margin-top:2px;font-size:10.5px}
-#boardCards .bc-more,#valueCards .bc-more,#openCards .bc-more{margin-top:4px;padding-top:4px;font-size:10.5px;line-height:1.3}
-#boardCards .bc-actions,#valueCards .bc-actions,#openCards .bc-actions{gap:2px;padding-top:0}
+#boardCards .bc-stats,#valueCards .bc-stats,#openCards .bc-stats,#v-local .board-cards .bc-stats{margin-top:4px;gap:4px}
+#boardCards .bc-pill,#valueCards .bc-pill,#openCards .bc-pill,#v-local .board-cards .bc-pill{font-size:11px;padding:1px 6px;line-height:1.25}
+#boardCards .bc-toggle,#valueCards .bc-toggle,#openCards .bc-toggle,#v-local .board-cards .bc-toggle{margin-top:2px;font-size:10.5px}
+#boardCards .bc-more,#valueCards .bc-more,#openCards .bc-more,#v-local .board-cards .bc-more{margin-top:4px;padding-top:4px;font-size:10.5px;line-height:1.3}
+#boardCards .bc-actions,#valueCards .bc-actions,#openCards .bc-actions,#v-local .board-cards .bc-actions{gap:2px;padding-top:0}
 
-/* P1：窄屏同系最高档 lead 默认折叠；卡密度不再压 */
+/* P1：窄屏同系最高档 lead 默认折叠；卡密度不再压；日报卡垫/圆角并进 bc */
 @media(max-width:760px){
   #boardLead{
     display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;
@@ -366,10 +365,20 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
     display:block;-webkit-line-clamp:unset;overflow:visible;padding-right:0;
   }
   #boardLead.is-open::after{content:"▴"}
-  #boardCards .bc-toggle,#valueCards .bc-toggle,#openCards .bc-toggle{
+  #boardCards .bc-toggle,#valueCards .bc-toggle,#openCards .bc-toggle,#v-local .board-cards .bc-toggle{
     position:absolute;right:6px;bottom:4px;margin:0;font-size:12px;line-height:1;padding:2px 4px;color:var(--muted)
   }
-  #boardCards .bc-main,#valueCards .bc-main,#openCards .bc-main{position:relative;padding-bottom:2px}
+  #boardCards .bc-main,#valueCards .bc-main,#openCards .bc-main,#v-local .board-cards .bc-main{position:relative;padding-bottom:2px}
+  /* 日报/本周变化：同垫同圆角，字段可少，不另起松卡 */
+  .newsitem{padding:var(--bc-pad);border-radius:8px;margin-bottom:var(--bc-gap)}
+  .newsitem h4{font-size:var(--bc-name-fs);line-height:1.25;margin-bottom:2px}
+  .newsitem p{font-size:var(--bc-meta-fs);line-height:1.35;margin-bottom:4px}
+  .newsitem .meta{font-size:11px}
+  .dcard{gap:8px;padding:var(--bc-pad) 2px}
+  .ddate{border-radius:8px;padding:6px 5px;min-width:72px}
+  .ddate .dd{font-size:var(--bc-name-fs)}
+  .dpts{font-size:var(--bc-meta-fs)}
+  .dpts li{margin:2px 0 2px 16px}
 }
 
 </style>
@@ -1357,6 +1366,70 @@ function enhanceLocalComments(root){
     });
   }
 }
+/* WaveB⑨b：本地 LLM 表 → 窄屏卡片（名次｜名｜meta｜AA+显存｜▾；桌面仍看表） */
+function enhanceLocalLlmCards(root){
+  if(!root) return;
+  root.querySelectorAll("h3.sub").forEach(function(h){
+    if(!h.id || h.id.indexOf("local-llm-") !== 0) return;
+    var wrap = h.nextElementSibling;
+    if(!wrap || !wrap.querySelector) return;
+    var tbl = wrap.tagName === "TABLE" ? wrap : wrap.querySelector("table");
+    if(!tbl) return;
+    if(wrap.classList.contains("llm-block") || (wrap.parentNode && wrap.parentNode.classList && wrap.parentNode.classList.contains("llm-block"))) return;
+    if(wrap.classList.contains("card")){
+      wrap.classList.add("llm-tbl-wrap");
+    } else {
+      var outer = document.createElement("div");
+      outer.className = "card llm-tbl-wrap";
+      wrap.parentNode.insertBefore(outer, wrap);
+      outer.appendChild(wrap);
+      wrap = outer;
+    }
+    var block = document.createElement("div");
+    block.className = "llm-block";
+    wrap.parentNode.insertBefore(block, wrap);
+    block.appendChild(wrap);
+    var cards = document.createElement("div");
+    cards.className = "llm-cards board-cards";
+    cards.setAttribute("aria-label", (h.textContent || "本地 LLM 档") + " 卡片");
+    block.appendChild(cards);
+    var rows = tbl.querySelectorAll("tbody tr");
+    rows.forEach(function(tr){
+      var cells = tr.cells && tr.cells.length ? tr.cells : tr.querySelectorAll("td");
+      if(!cells || cells.length < 8) return;
+      var rk = (cells[0].textContent || "").trim();
+      var name = (cells[1].textContent || "").trim();
+      var params = (cells[2].textContent || "").trim();
+      var quant = (cells[3].textContent || "").trim();
+      var vram = (cells[4].textContent || "").trim();
+      var ctx = (cells[5].textContent || "").trim();
+      var lic = (cells[6].textContent || "").trim();
+      var aa = (cells[7].textContent || "").trim();
+      var note = (cells[8] ? cells[8].innerHTML : "");
+      var metaBits = [];
+      if(params) metaBits.push(params);
+      if(quant) metaBits.push(quant);
+      if(ctx && ctx !== "—") metaBits.push(ctx);
+      var div = document.createElement("div");
+      div.className = "bc-item" + (tr.classList.contains("top") ? " top3" : "");
+      div.innerHTML =
+        '<div class="bc-top">'+
+          '<div class="bc-rk">'+rk+'</div>'+
+          '<div class="bc-main">'+
+            '<div class="bc-name">'+name+'</div>'+
+            '<div class="bc-meta">'+metaBits.join(" · ")+'</div>'+
+            '<div class="bc-stats">'+
+              '<span class="bc-pill aa">AA '+aa+'</span>'+
+              (vram ? '<span class="bc-pill">显存 '+vram+'</span>' : '')+
+            '</div>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'▴\':\'▾\'">▾</button>'+
+            '<div class="bc-more">许可：'+lic+(note ? '<br>'+note : '')+'</div>'+
+          '</div>'+
+        '</div>';
+      cards.appendChild(div);
+    });
+  });
+}
 /* WaveB⑨：生图表 → 窄屏卡片（名 / 显存 / 商用·许可；桌面仍看表） */
 function enhanceLocalImgCards(root){
   if(!root) return;
@@ -1389,7 +1462,7 @@ function enhanceLocalImgCards(root){
     block.appendChild(cards);
     var rows = tbl.querySelectorAll("tbody tr");
     rows.forEach(function(tr){
-      var cells = tr.cells;
+      var cells = tr.cells && tr.cells.length ? tr.cells : tr.querySelectorAll("td");
       if(!cells || cells.length < 6) return;
       var rk = (cells[0].textContent || "").trim();
       var name = (cells[1].textContent || "").trim();
@@ -1434,6 +1507,7 @@ function ensureLocalMounted(){
   mount.setAttribute("data-mounted", "1");
   _localMounted = true;
   enhanceLocalComments(root);
+  enhanceLocalLlmCards(root);
   enhanceLocalImgCards(root);
   if(_localSpyApi && typeof _localSpyApi.rebind === "function") _localSpyApi.rebind();
   if(typeof window.measureSticky === "function") measureSticky();
