@@ -83,7 +83,24 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .foot{text-align:center;color:#94a3b8;font-size:12px;margin-top:26px}
 .empty{color:var(--muted);font-size:13px;padding:16px;text-align:center}
 .badge-S{background:#1d4ed8}.badge-A{background:#0e9f6e}.badge-B{background:#b45309}.badge-C{background:#9a3412}.badge-D{background:#64748b}.badge-N\/A{background:#94a3b8}
-@media(max-width:760px){.searchwrap{display:block;margin:8px 0 0}.tabs{top:0}.ddate{min-width:80px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}}
+
+/* 主榜窄屏卡片（②）：≤760px 隐藏宽表横滑，改竖向精简卡 */
+.board-cards{display:none}
+.bc-item{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;background:#fff}
+.bc-top{display:flex;align-items:flex-start;gap:10px}
+.bc-rk{flex:0 0 28px;width:28px;height:28px;border-radius:8px;background:#eff6ff;color:var(--primary);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.bc-item.top3 .bc-rk{background:#2563eb;color:#fff}
+.bc-main{flex:1;min-width:0}
+.bc-name{font-weight:700;font-size:16px;cursor:pointer;line-height:1.35;word-break:break-word}
+.bc-meta{font-size:12.5px;color:var(--muted);margin-top:3px}
+.bc-stats{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.bc-pill{font-size:11.5px;background:#f1f5f9;border-radius:6px;padding:2px 8px;color:#334155}
+.bc-pill.aa{background:var(--plight);color:#1e40af;font-weight:700}
+.bc-more{display:none;margin-top:10px;padding-top:10px;border-top:1px solid #eef2f7;font-size:12.5px;color:#334155;line-height:1.55}
+.bc-item.open .bc-more{display:block}
+.bc-toggle{display:inline-block;margin-top:8px;font-size:12px;color:var(--primary);cursor:pointer;user-select:none;background:none;border:none;padding:0;font-family:inherit}
+.bc-actions{display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:2px}
+@media(max-width:760px){.searchwrap{display:block;margin:8px 0 0}.tabs{top:0}.ddate{min-width:80px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0}}
 </style>
 </head>
 <body>
@@ -127,12 +144,13 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
       <label><input type="checkbox" id="fValued"> 仅有性价比</label>
       <button id="fReset" style="margin-left:auto;padding:6px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;font-size:12.5px">重置</button>
     </div>
-    <div style="overflow-x:auto">
+    <div id="boardTblWrap" style="overflow-x:auto">
     <table id="boardTbl">
       <thead><tr><th>☑</th><th data-k="rk">排名</th><th data-k="n">模型</th><th data-k="v">厂商</th><th>档位</th><th data-k="aa">AA</th><th>开放</th><th>许可</th><th data-k="pin">输入$</th><th data-k="pout">输出$</th><th data-k="cost">任务成本$</th><th data-k="val">性价比</th><th>提及</th><th>★</th></tr></thead>
       <tbody></tbody>
     </table>
     </div>
+    <div id="boardCards" class="board-cards" aria-label="模型主榜卡片（窄屏）"></div>
     <div class="empty" id="boardEmpty" style="display:none">无匹配模型，请调整筛选条件</div>
   </div>
   <div class="detail" id="detail"></div>
@@ -461,7 +479,9 @@ function renderDaily(){
 var sortK = "rk", sortDesc = false;
 function renderBoard(list){
   var tb = document.querySelector("#boardTbl tbody");
+  var cards = document.getElementById("boardCards");
   tb.innerHTML = "";
+  if(cards) cards.innerHTML = "";
   list.forEach(function(r){
     var star = (WATCH.indexOf(r.n)>=0)?'<span class="star on" onclick="toggleWatch(event,\''+r.n+'\')">★</span>':'<span class="star" onclick="toggleWatch(event,\''+r.n+'\')">☆</span>';
     var val = (r.val==null)?'<span style="color:#94a3b8">N/A</span>':'<span class="badge badge-'+r.g+'">'+r.val+' '+r.g+'</span>';
@@ -473,6 +493,34 @@ function renderBoard(list){
       '<td>'+(r.pin==null?"N/A":"$"+r.pin.toFixed(2))+'</td><td>'+(r.pout==null?"N/A":"$"+r.pout.toFixed(2))+'</td><td>'+(r.cost==null?"N/A":"$"+r.cost.toFixed(2))+'</td><td>'+val+'</td>'+
       '<td>'+(mt?'<span class="chip" onclick="goNewsModel(\''+r.n+'\')">'+mt+' 篇</span>':"0")+'</td><td>'+star+'</td>';
     tb.appendChild(tr);
+    if(cards){
+      var costTxt = (r.cost==null)?"成本 N/A":("任务$"+r.cost.toFixed(2));
+      var valTxt = (r.val==null)?"性价比 N/A":("性价比 "+r.val+" "+r.g);
+      var pin = (r.pin==null)?"N/A":("$"+r.pin.toFixed(2));
+      var pout = (r.pout==null)?"N/A":("$"+r.pout.toFixed(2));
+      var ment = mt?('<span class="chip" onclick="goNewsModel(\''+r.n+'\')">'+mt+' 篇</span>'):"提及 0";
+      var div = document.createElement("div");
+      div.className = "bc-item"+(r.rk<=3?" top3":"");
+      div.dataset.n = r.n;
+      div.innerHTML =
+        '<div class="bc-top">'+
+          '<label class="bc-actions"><input type="checkbox" class="sel" data-n="'+r.n+'"'+(SELECTED.indexOf(r.n)>=0?" checked":"")+' aria-label="对比 '+r.n+'"></label>'+
+          '<div class="bc-rk">'+r.rk+'</div>'+
+          '<div class="bc-main">'+
+            '<div class="bc-name" onclick="showDetail(\''+r.n+'\')">'+r.n+'</div>'+
+            '<div class="bc-meta">'+r.v+' · '+r.t+'档 · '+r.open+'</div>'+
+            '<div class="bc-stats">'+
+              '<span class="bc-pill aa">AA '+r.aa+'</span>'+
+              '<span class="bc-pill">'+costTxt+'</span>'+
+              '<span class="bc-pill">'+valTxt+'</span>'+
+            '</div>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<div class="bc-more">许可：'+r.lic+'<br>输入 '+pin+' · 输出 '+pout+'<br>'+ment+'</div>'+
+          '</div>'+
+          '<div class="bc-actions">'+star+'</div>'+
+        '</div>';
+      cards.appendChild(div);
+    }
   });
   document.getElementById("boardEmpty").style.display = list.length?"none":"block";
 }
