@@ -75,6 +75,9 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .flash{animation:fl 1.6s ease 2}
 @keyframes fl{0%{background:var(--plight)}60%{background:var(--plight)}100%{background:transparent}}
 .dcard{display:flex;gap:14px;padding:12px 4px;border-bottom:1px solid var(--line)}
+.dcard[data-href]{cursor:pointer}
+.dcard[data-href]:hover{background:var(--plight)}
+.dcard[data-href]:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px;border-radius:8px}
 .dcard:last-child{border-bottom:none}
 .ddate{min-width:104px;text-align:center;background:var(--surface-2);border-radius:10px;padding:8px 6px;align-self:flex-start}
 .ddate .dd{font-size:16px;font-weight:700;color:var(--primary)}
@@ -905,16 +908,39 @@ function goModel(name, filterOnly){
   });
 }
 
+/* ---------- 日报时间线：整卡进当天 ---------- */
+function bindDailyCardNav(){
+  var root = document.getElementById("dailyList");
+  if(!root) return;
+  root.querySelectorAll(".dcard[data-href]").forEach(function(el){
+    if(el.dataset.boundNav) return;
+    el.dataset.boundNav = "1";
+    el.addEventListener("click", function(e){
+      if(e.target.closest("a,.mtag,button,input,textarea,select")) return;
+      var href = el.getAttribute("data-href");
+      if(href) window.open(href, "_blank");
+    });
+    el.addEventListener("keydown", function(e){
+      if(e.key!=="Enter" && e.key!==" ") return;
+      if(e.target!==el) return;
+      e.preventDefault();
+      var href = el.getAttribute("data-href");
+      if(href) window.open(href, "_blank");
+    });
+  });
+}
+
 /* ---------- 日报时间线 ---------- */
 function renderDaily(){
   var h="";
   DAILY.forEach(function(dd){
-    h+='<div class="dcard"><div class="ddate"><div class="dd">'+dd.d.slice(5)+'</div><div class="dw">'+dd.w+(dd.d===window.HUB.today?" · 今日":"")+'</div>'+(dd.bf?'<div class="dbf">补档</div>':"")+'</div><div><ul class="dpts">';
+    h+='<div class="dcard" data-href="'+dd.link+'" role="link" tabindex="0" aria-label="查看 '+dd.d+' 完整日报"><div class="ddate"><div class="dd">'+dd.d.slice(5)+'</div><div class="dw">'+dd.w+(dd.d===window.HUB.today?" · 今日":"")+'</div>'+(dd.bf?'<div class="dbf">补档</div>':"")+'</div><div><ul class="dpts">';
     dd.pts.forEach(function(p){ h+="<li>"+p+"</li>"; });
-    h+='</ul><div style="margin-top:5px">'+(dd.m.length?'<span style="font-size:11.5px;color:var(--muted)">关联模型：</span>':"")+dd.m.map(function(m){ return '<span class="mtag" onclick="goModel(\''+m+'\')">'+m+'</span>'; }).join("")+
+    h+='</ul><div style="margin-top:5px">'+(dd.m.length?'<span style="font-size:11.5px;color:var(--muted)">关联模型：</span>':"")+dd.m.map(function(m){ return '<span class="mtag" onclick="event.stopPropagation();goModel(\''+m+'\')">'+m+'</span>'; }).join("")+
        ' <a style="font-size:11.5px;color:var(--primary);text-decoration:none;float:right" href="'+dd.link+'" target="_blank">查看完整日报 ↗</a></div></div></div>';
   });
   document.getElementById("dailyList").innerHTML = h;
+  bindDailyCardNav();
   h="";
   NEWS.forEach(function(n){
     h+='<div class="newsitem"><h4>'+n.t+'</h4><p>'+n.s+'</p><div class="meta">'+n.d+' · '+n.src+
