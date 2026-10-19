@@ -49,9 +49,9 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 }
 header .note{
   display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
-  overflow:hidden;line-height:1.65;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
 }
-header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
 .note-toggle{
   display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
   border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
