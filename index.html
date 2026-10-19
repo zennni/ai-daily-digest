@@ -15,7 +15,10 @@ body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;backgroun
 #q{width:260px;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);color:#fff;font-size:13px;outline:none}
 #q::placeholder{color:rgba(255,255,255,.7)}
 .watchbar{background:#eff6ff;border-bottom:1px solid #bfdbfe;padding:7px 20px;font-size:12.5px;color:#1e3a8a}
+.watchbar[hidden]{display:none!important}
 .watchbar .wchip{display:inline-block;background:#fff;border:1px solid #93c5fd;border-radius:999px;padding:1px 10px;margin:2px 4px;cursor:pointer}
+.watch-tip{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:90;background:#1e3a8a;color:#fff;font-size:12.5px;padding:8px 14px;border-radius:999px;box-shadow:0 4px 16px rgba(15,23,42,.25);opacity:0;pointer-events:none;transition:opacity .25s}
+.watch-tip.on{opacity:1}
 .tabs{display:flex;gap:6px;background:#fff;border-bottom:1px solid var(--line);padding:10px 20px;flex-wrap:wrap;position:sticky;top:var(--tabs-top);z-index:40}
 /* 移动端规范（受保护，勿删）：所有 :hover 必须包在 @media (hover:hover) 内——iOS touch 后 :hover 会粘住（系统判定鼠标一直悬停），未限定设备时选中 tab 会显示成纯蓝色块（2026-08-14 用户反馈修复；此前误判引入的 tap-highlight/user-select 等属性已撤回） */
 .tab{padding:7px 16px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;cursor:pointer;font-size:13.5px;font-weight:500}
@@ -185,6 +188,7 @@ th{background:var(--th-bg);color:var(--th-text)}
 .newsitem{background:var(--card);border-color:var(--line)}
 .watchbar{background:var(--surface-2);border-bottom-color:var(--line);color:var(--th-text)}
 .watchbar .wchip{background:var(--card);border-color:var(--line);color:var(--th-text)}
+.watch-tip{background:#1e3a8a;color:#e2e8f0;box-shadow:0 4px 16px rgba(0,0,0,.45)}
 @media (hover:hover){tr:hover td{background:var(--row-hover)}}
 @media (prefers-color-scheme: dark){
   :root{
@@ -215,7 +219,8 @@ th{background:var(--th-bg);color:var(--th-text)}
   <h1>AI 前沿情报台</h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
   <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…"></span>
 </div>
-<div class="watchbar">我的关注：<span id="watchlist"></span><span style="color:#94a3b8;font-size:11.5px">（点击模型行 ★ 收藏，点击关注标签快速定位）</span></div>
+<div class="watchbar" id="watchbar" hidden>我的关注：<span id="watchlist"></span></div>
+<div class="watch-tip" id="watchTip" role="status" aria-live="polite"></div>
 <div class="tabs" role="tablist" aria-label="Hub 分区">
   <div class="tab on" role="tab" id="tab-news" data-v="news" aria-selected="true" aria-controls="v-news" tabindex="0">日报时间线</div>
   <div class="tab" role="tab" id="tab-board" data-v="board" aria-selected="false" aria-controls="v-board" tabindex="-1">模型主榜</div>
@@ -552,19 +557,23 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
   var root = document.documentElement;
   var topbar = document.querySelector(".topbar");
   var tabs = document.querySelector(".tabs");
+  var watchbar = document.getElementById("watchbar") || document.querySelector(".watchbar");
   function isNarrow(){ return window.matchMedia && window.matchMedia("(max-width:760px)").matches; }
   function measureSticky(){
     var h = 0;
-    // 窄屏顶栏 relative 随页滚走，Tabs 贴 top:0；桌面 Tabs 叠在 sticky topbar 下（不含 watchbar，避免滚走后留白）
+    // 窄屏顶栏 relative 随页滚走，Tabs 贴 top:0；桌面 Tabs 叠在 sticky topbar 下
+    // watchbar 非 sticky、空态 hidden：不计入 --tabs-top（避免滚走/收起后留白）；仍 observe 以便显隐后重测 tabs
     if(!isNarrow() && topbar) h = topbar.getBoundingClientRect().height;
     root.style.setProperty("--tabs-top", Math.round(h) + "px");
     if(tabs) root.style.setProperty("--tabs-h", Math.round(tabs.getBoundingClientRect().height) + "px");
   }
+  window.measureSticky = measureSticky;
   measureSticky();
   if(window.ResizeObserver){
     var ro = new ResizeObserver(measureSticky);
     if(topbar) ro.observe(topbar);
     if(tabs) ro.observe(tabs);
+    if(watchbar) ro.observe(watchbar);
   }
   window.addEventListener("resize", measureSticky);
   // ① 档位锚点：平滑滚动，尊重 scroll-margin-top / sticky 占位
@@ -728,7 +737,7 @@ function renderBoard(list){
   tb.innerHTML = "";
   if(cards) cards.innerHTML = "";
   list.forEach(function(r){
-    var star = (WATCH.indexOf(r.n)>=0)?'<span class="star on" onclick="toggleWatch(event,\''+r.n+'\')">★</span>':'<span class="star" onclick="toggleWatch(event,\''+r.n+'\')">☆</span>';
+    var star = (WATCH.indexOf(r.n)>=0)?'<span class="star on" title="取消关注" aria-label="取消关注 '+r.n+'" onclick="toggleWatch(event,\''+r.n+'\')">★</span>':'<span class="star" title="加入我的关注" aria-label="加入关注 '+r.n+'" onclick="toggleWatch(event,\''+r.n+'\')">☆</span>';
     var val = (r.val==null)?'<span style="color:#94a3b8">N/A</span>':'<span class="badge badge-'+r.g+'">'+r.val+' '+r.g+'</span>';
     var mt = mentions[r.n]||0;
     var tr = document.createElement("tr");
@@ -929,17 +938,42 @@ function renderChanges(){
 /* ---------- 关注清单 ---------- */
 var WATCH = JSON.parse(localStorage.getItem("hub_watch")||"[]");
 var SELECTED = [];
+function showWatchTip(msg){
+  var tip = document.getElementById("watchTip");
+  if(!tip) return;
+  tip.textContent = msg;
+  tip.classList.add("on");
+  clearTimeout(showWatchTip._t);
+  showWatchTip._t = setTimeout(function(){ tip.classList.remove("on"); }, 2200);
+}
 function toggleWatch(ev, name){
   ev.stopPropagation();
   var i = WATCH.indexOf(name);
+  var adding = i < 0;
   if(i>=0) WATCH.splice(i,1); else WATCH.push(name);
   localStorage.setItem("hub_watch", JSON.stringify(WATCH));
   renderWatch(); applyFilters();
+  if(adding && !localStorage.getItem("hub_watch_tip")){
+    localStorage.setItem("hub_watch_tip", "1");
+    showWatchTip("已加入「我的关注」· 点顶栏芯片可快速定位");
+  }
 }
 function renderWatch(){
-  document.getElementById("watchlist").innerHTML = WATCH.length ?
-    WATCH.map(function(n){return '<span class="wchip" onclick="goModel(\''+n+'\')">'+n+' ×</span>';}).join("")
-    : '<span style="color:#94a3b8">暂无（在主榜点 ★）</span>';
+  var bar = document.getElementById("watchbar") || document.querySelector(".watchbar");
+  var list = document.getElementById("watchlist");
+  if(!list) return;
+  if(!WATCH.length){
+    list.innerHTML = "";
+    if(bar) bar.hidden = true;
+  } else {
+    if(bar) bar.hidden = false;
+    list.innerHTML = WATCH.map(function(n){
+      return '<span class="wchip" onclick="goModel(\''+n+'\')" title="定位到 '+n+'">'+n+'</span>';
+    }).join("");
+  }
+  // 空态收起后重测 sticky（watchbar 不计入 --tabs-top，但需确认 tabs 未错位）
+  if(typeof window.measureSticky === "function") window.measureSticky();
+  else window.dispatchEvent(new Event("resize"));
 }
 
 /* ---------- 对比模式（Wave3：FAB + 抽屉，默认不占底栏） ---------- */
