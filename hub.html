@@ -101,7 +101,22 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .bc-item.open .bc-more{display:block}
 .bc-toggle{display:inline-block;margin-top:8px;font-size:12px;color:var(--primary);cursor:pointer;user-select:none;background:none;border:none;padding:0;font-family:inherit}
 .bc-actions{display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:2px}
-@media(max-width:760px){.searchwrap{display:block;margin:8px 0 0}.ddate{min-width:80px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0}}
+@media(max-width:760px){.searchwrap{display:block;margin:8px 0 0}.ddate{min-width:80px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap,#valueTblWrap,#openTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0}}
+
+/* Wave2：主榜筛选默认折叠 + Hub 顶栏锚点 */
+.filters-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
+.filters-toggle{padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#334155;cursor:pointer;font-size:12.5px;font-weight:600;font-family:inherit}
+.filters-toggle[aria-expanded="true"]{background:var(--plight);border-color:#93c5fd;color:#1e40af}
+.filters-bar .filters{flex:1 1 100%;margin-bottom:0}
+.filters-bar .filters.is-collapsed{display:none}
+@media (hover:hover){.filters-toggle:hover{border-color:var(--primary2);color:var(--primary)}}
+.hub-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px}
+.hub-toc .ht-label{font-size:11px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.hub-toc a{display:inline-block;font-size:12px;padding:4px 11px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap;cursor:pointer}
+.hub-toc a.on{background:var(--primary);color:#fff;border-color:var(--primary)}
+.hub-toc a.ht-img{border-color:#fed7aa;background:var(--accent-bg);color:#9a3412}
+.hub-toc a.ht-img.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media (hover:hover){.hub-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}.hub-toc a.on:hover{background:var(--primary);color:#fff}.hub-toc a.ht-img:hover{border-color:var(--accent);color:var(--accent-dk);background:#ffedd5}.hub-toc a.ht-img.on:hover{background:var(--accent);color:#fff}}
 
 /* ① 本地 Tab 档位/生图锚点 + 本档首选强化（2026-10-19） */
 .local-toc{position:sticky;top:calc(var(--tabs-top) + var(--tabs-h));z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:0 0 14px;box-shadow:0 1px 4px rgba(15,23,42,.04)}
@@ -131,6 +146,8 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   .local-toc{top:var(--tabs-h);padding:6px 8px}
   #v-local h2.sec,#v-local h3.sub,#v-local h3.sub2{scroll-margin-top:calc(var(--tabs-h) + 52px)}
   .wrap{padding-top:12px}
+  .hub-toc{padding:6px 12px;gap:5px}
+  .hub-toc a{padding:3px 10px;font-size:11.5px}
 }
 </style>
 </head>
@@ -148,6 +165,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   <div class="tab" data-v="local">本地部署</div>
   <div class="tab" data-v="changes">本周变化</div>
 </div>
+<nav class="hub-toc" aria-label="Hub 分区导航"><span class="ht-label">跳转</span><a href="#hub-board" data-hub="board">主榜</a><a href="#hub-value" data-hub="value">API</a><a href="#hub-open" data-hub="open">开源</a><a href="#hub-local" data-hub="local">本地</a><a class="ht-img" href="#local-img" data-hub="local-img">生图</a></nav>
 
 <div class="wrap">
 
@@ -164,7 +182,9 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   <h2 class="sec" id="boardHead">模型主榜</h2>
   <p class="lead" style="color:#64748b;font-size:12.5px">主榜无并列：同分按「标准任务成本低 → 输出价低 → 推理档位强 → 模型名」依次打破，名次唯一。</p>
   <div class="card">
-    <div class="filters">
+    <div class="filters-bar">
+      <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardFilters">筛选 ▾</button>
+      <div class="filters is-collapsed" id="boardFilters">
       <select id="fVendor"><option value="">全部厂商</option></select>
       <select id="fLic"><option value="">全部许可</option></select>
       <select id="fOpen"><option value="">全部开放状态</option><option>闭源</option><option>开放权重</option><option>开源</option></select>
@@ -174,6 +194,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
       <input type="number" id="fCost" style="width:90px" value="99" step="0.1">
       <label><input type="checkbox" id="fValued"> 仅有性价比</label>
       <button id="fReset" style="margin-left:auto;padding:6px 14px;border:1px solid var(--line);border-radius:8px;background:#fff;cursor:pointer;font-size:12.5px">重置</button>
+      </div>
     </div>
     <div id="boardTblWrap" style="overflow-x:auto">
     <table id="boardTbl">
@@ -191,14 +212,14 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 <div class="view" id="v-value">
   <h2 class="sec">API 性价比 Top 15</h2>
   <div class="card"><div class="chartbox sm" id="chartV"></div></div>
-  <div class="card"><div style="overflow-x:auto"><table id="valueTbl"><thead><tr><th>#</th><th>模型</th><th>档位</th><th>AA</th><th>任务成本$</th><th>原始效率</th><th>综合分</th></tr></thead><tbody></tbody></table></div></div>
+  <div class="card"><div id="valueTblWrap" style="overflow-x:auto"><table id="valueTbl"><thead><tr><th>#</th><th>模型</th><th>档位</th><th>AA</th><th>任务成本$</th><th>原始效率</th><th>综合分</th></tr></thead><tbody></tbody></table></div><div id="valueCards" class="board-cards" aria-label="性价比卡片（窄屏）"></div></div>
 </div>
 
 <!-- 开放权重 -->
 <div class="view" id="v-open">
   <h2 class="sec">开放权重模型能力榜</h2>
   <div class="notice">MIT / Apache 2.0 为可商用宽松许可；Kimi K3 License、MiniMax Community License、Motif 3 Research License、Solar Open2 License、OpenMDW-1.1 为自定义许可（含门槛），不等于完全开源；Qwen3.8 Max 权重已改为 Apache 2.0（8/14 晚正式开源）。</div>
-  <div class="card"><div style="overflow-x:auto"><table id="openTbl"><thead><tr><th>#</th><th>模型</th><th>厂商</th><th>AA</th><th>开放状态</th><th>许可证</th><th>性价比</th></tr></thead><tbody></tbody></table></div></div>
+  <div class="card"><div id="openTblWrap" style="overflow-x:auto"><table id="openTbl"><thead><tr><th>#</th><th>模型</th><th>厂商</th><th>AA</th><th>开放状态</th><th>许可证</th><th>性价比</th></tr></thead><tbody></tbody></table></div><div id="openCards" class="board-cards" aria-label="开放权重卡片（窄屏）"></div></div>
 </div>
 
 <!-- 本地部署 -->
@@ -497,6 +518,13 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
 
 /* ---------- 视图切换 ---------- */
 var cur = "news";
+function syncHubToc(v, img){
+  document.querySelectorAll(".hub-toc a").forEach(function(a){
+    var hub = a.getAttribute("data-hub");
+    var on = img ? (hub==="local-img") : (hub===v);
+    a.classList.toggle("on", !!on);
+  });
+}
 document.querySelectorAll(".tab").forEach(function(t){
   t.onclick = function(){
     document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});
@@ -505,9 +533,47 @@ document.querySelectorAll(".tab").forEach(function(t){
     document.getElementById("v-"+t.dataset.v).classList.add("on");
     cur = t.dataset.v;
     if(cur==="value") renderValue();
+    if(cur==="open") renderOpen();
+    syncHubToc(cur, false);
   };
 });
 function go(v){ document.querySelector('.tab[data-v="'+v+'"]').click(); }
+/* Wave2 Hub 顶栏锚点：切 Tab；生图 → 本地 Tab 再滚到 #local-img */
+document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
+  a.addEventListener("click", function(e){
+    e.preventDefault();
+    var hub = a.getAttribute("data-hub");
+    if(hub==="local-img"){
+      go("local");
+      syncHubToc("local", true);
+      setTimeout(function(){
+        var el = document.getElementById("local-img");
+        if(el) el.scrollIntoView({behavior:"smooth", block:"start"});
+        if(history.replaceState) history.replaceState(null, "", "#local-img");
+      }, 40);
+    } else {
+      go(hub);
+      window.scrollTo({top:0, behavior:"smooth"});
+      if(history.replaceState) history.replaceState(null, "", "#hub-"+hub);
+    }
+  });
+});
+/* Wave2 主榜筛选默认折叠（sessionStorage 记忆） */
+(function(){
+  var btn = document.getElementById("filtersToggle");
+  var box = document.getElementById("boardFilters");
+  if(!btn || !box) return;
+  function setOpen(open){
+    box.classList.toggle("is-collapsed", !open);
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+    btn.textContent = open ? "收起筛选 ▴" : "筛选 ▾";
+    try{ sessionStorage.setItem("hub_filters_open", open ? "1" : "0"); }catch(e){}
+  }
+  var saved = null;
+  try{ saved = sessionStorage.getItem("hub_filters_open"); }catch(e){}
+  setOpen(saved==="1");
+  btn.onclick = function(){ setOpen(box.classList.contains("is-collapsed")); };
+})();
 
 /* ---------- 模型定位：跳主榜 + 高亮 ---------- */
 function goModel(name, filterOnly){
@@ -663,8 +729,31 @@ document.querySelectorAll("#boardTbl th[data-k]").forEach(function(th){
 function renderValue(){
   var priced = MODELS.filter(function(r){return r.val!=null}).sort(function(a,b){return b.val-a.val}).slice(0,15);
   var h="";
+  var cards = document.getElementById("valueCards");
+  if(cards) cards.innerHTML = "";
   priced.forEach(function(r,i){
-    h+='<tr><td class="rk">'+(i+1)+'</td><td class="mname" onclick="goModel(\''+r.n+'\')">'+r.n+'</td><td>'+r.t+'</td><td>'+r.aa+'</td><td>$'+r.cost.toFixed(3)+'</td><td>'+r.eff+'</td><td><span class="badge badge-'+r.g+'">'+r.val+' '+r.g+'</span></td></tr>';
+    var rk = i+1;
+    h+='<tr><td class="rk">'+rk+'</td><td class="mname" onclick="goModel(\''+r.n+'\')">'+r.n+'</td><td>'+r.t+'</td><td>'+r.aa+'</td><td>$'+r.cost.toFixed(3)+'</td><td>'+r.eff+'</td><td><span class="badge badge-'+r.g+'">'+r.val+' '+r.g+'</span></td></tr>';
+    if(cards){
+      var div = document.createElement("div");
+      div.className = "bc-item"+(rk<=3?" top3":"");
+      div.innerHTML =
+        '<div class="bc-top">'+
+          '<div class="bc-rk">'+rk+'</div>'+
+          '<div class="bc-main">'+
+            '<div class="bc-name" onclick="goModel(\''+r.n+'\')">'+r.n+'</div>'+
+            '<div class="bc-meta">'+r.v+' · '+r.t+'档</div>'+
+            '<div class="bc-stats">'+
+              '<span class="bc-pill aa">AA '+r.aa+'</span>'+
+              '<span class="bc-pill">任务$'+r.cost.toFixed(3)+'</span>'+
+              '<span class="bc-pill">综合 '+r.val+' '+r.g+'</span>'+
+            '</div>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<div class="bc-more">原始效率：'+r.eff+'<br>开放：'+r.open+' · 许可：'+r.lic+'</div>'+
+          '</div>'+
+        '</div>';
+      cards.appendChild(div);
+    }
   });
   document.getElementById("valueTbl").querySelector("tbody").innerHTML = h;
   if(typeof echarts!=='undefined'){
@@ -684,8 +773,32 @@ function renderValue(){
 function renderOpen(){
   var list = MODELS.filter(function(r){return r.open.indexOf("开放")>=0 || r.open.indexOf("开源")>=0}).sort(function(a,b){return b.aa-a.aa});
   var h="";
+  var cards = document.getElementById("openCards");
+  if(cards) cards.innerHTML = "";
   list.forEach(function(r,i){
-    h+='<tr><td class="rk">'+(i+1)+'</td><td class="mname" onclick="goModel(\''+r.n+'\')">'+r.n+'</td><td>'+r.v+'</td><td style="font-weight:700">'+r.aa+'</td><td>'+r.open+'</td><td>'+r.lic+'</td><td>'+(r.val==null?"N/A":"<span class='badge badge-"+r.g+"'>"+r.val+" "+r.g+"</span>")+'</td></tr>';
+    var rk = i+1;
+    var valCell = (r.val==null)?"N/A":"<span class='badge badge-"+r.g+"'>"+r.val+" "+r.g+"</span>";
+    h+='<tr><td class="rk">'+rk+'</td><td class="mname" onclick="goModel(\''+r.n+'\')">'+r.n+'</td><td>'+r.v+'</td><td style="font-weight:700">'+r.aa+'</td><td>'+r.open+'</td><td>'+r.lic+'</td><td>'+valCell+'</td></tr>';
+    if(cards){
+      var valTxt = (r.val==null)?"性价比 N/A":("性价比 "+r.val+" "+r.g);
+      var div = document.createElement("div");
+      div.className = "bc-item"+(rk<=3?" top3":"");
+      div.innerHTML =
+        '<div class="bc-top">'+
+          '<div class="bc-rk">'+rk+'</div>'+
+          '<div class="bc-main">'+
+            '<div class="bc-name" onclick="goModel(\''+r.n+'\')">'+r.n+'</div>'+
+            '<div class="bc-meta">'+r.v+' · '+r.open+'</div>'+
+            '<div class="bc-stats">'+
+              '<span class="bc-pill aa">AA '+r.aa+'</span>'+
+              '<span class="bc-pill">'+valTxt+'</span>'+
+            '</div>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<div class="bc-more">许可：'+r.lic+(r.t?('<br>档位：'+r.t):"")+'</div>'+
+          '</div>'+
+        '</div>';
+      cards.appendChild(div);
+    }
   });
   document.getElementById("openTbl").querySelector("tbody").innerHTML = h;
 }
