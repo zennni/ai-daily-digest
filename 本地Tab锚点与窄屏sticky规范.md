@@ -31,4 +31,4 @@
 1. 桌面打开「本地部署」：TOC 可见；点 8GB/512GB/生图榜/生图8GB 能跳到对应标题且不被顶栏+Tabs 挡住
 2. 各档 `tr.top`：左橙条 + 「首选」pill 一眼可辨，列宽不崩
 3. 手机（≤760）：Tabs 单行横滑不换行；滚动后顶栏离开、仅 Tabs 吸顶；正文不被双 sticky 挡住
-4. `hub.html` 与 `index.html` 保持同步
+4. `hub.html` 与 `index.html` 保持同步（改 hub 后跑 `./scripts/sync-hub-index.sh`）
