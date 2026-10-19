@@ -6,8 +6,8 @@
   },
   "highlights": [
     {
-      "title": "DeepSeek-V4.1-Flash-1017 上线：DeepSWE 77.0，并开放 Search / Fetch API",
-      "summary": "DeepSeek 官方称相对九月版 V4.1-Flash 是「Pareto 改进」：11 项公开基准全面提高 2.0–11.1 分，任务完成更快、输出更短；厂商自评 DeepSWE v1.1 Pass@1 达 77.0（高于其列表中的 Claude Opus 5 的 74.0），权重以 MIT 协议放上 Hugging Face / ModelScope，API 模型名仍用 deepseek-flash。同步开放自建搜索引擎的 Search 与 Fetch 两个 REST 端点：成功且非空调用各 0.75 美元／千次，失败、空结果与超时不计费；经 DeepSeek Harness、Claude Code、Codex 服务端工具调用的 Search/Fetch 至 2026-10-31 16:00 UTC 前免费。本站榜单以 AA v4.3.2 口径记 45 分、输入／输出 0.30／1.20 美元每百万 token。"
+      "title": "DeepSeek-V4.1-Flash-1017 上线：自评 DeepSWE 77.0",
+      "summary": "DeepSeek 官方称相对九月版 V4.1-Flash 是「Pareto 改进」：11 项公开基准全面提高 2.0–11.1 分，任务完成更快、输出更短；厂商自评 DeepSWE v1.1 Pass@1 达 77.0（高于其列表中的 Claude Opus 5 的 74.0），权重以 MIT 协议放上 Hugging Face / ModelScope，API 模型名仍用 deepseek-flash。本站榜单以 AA v4.3.2 口径记 45 分、输入／输出 0.30／1.20 美元每百万 token。\n\n另，同步开放自建搜索引擎的 Search 与 Fetch 两个 REST 端点：成功且非空调用各 0.75 美元／千次，失败、空结果与超时不计费；经 DeepSeek Harness、Claude Code、Codex 服务端工具调用的 Search/Fetch 至 2026-10-31 16:00 UTC 前免费。"
     },
     {
       "title": "Anthropic 承诺 5% 股份给 Public Benefit Fund，估值每涨 50% 可再加 2%",
