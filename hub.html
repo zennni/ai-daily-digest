@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 前沿情报台 · 日报 × 榜单综合 Hub</title>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 <style>
 :root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b;--accent:#f59e0b;--accent-dk:#ea580c;--accent-bg:#fff7ed;--tabs-top:100px;--tabs-h:44px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -167,6 +166,48 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   .hub-toc{padding:6px 12px;gap:5px}
   .hub-toc a{padding:3px 10px;font-size:11.5px}
 }
+
+/* Wave3 运营：暗色 prefers-color-scheme + Tab 焦点环（对比/点评/首选归设计，勿改） */
+:root{--surface:#fff;--surface-2:#eff6ff;--ink-soft:#334155;--th-bg:#eff6ff;--th-text:#1e3a8a;--detail-bg:#f8faff;--row-hover:#f8faff;--pill-bg:#f1f5f9;--sticky-bg:rgba(255,255,255,.96);--cmp-bg:#fff;--focus-ring:#93c5fd}
+.tab:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
+.tabs,.hub-toc{background:var(--surface);border-bottom-color:var(--line)}
+.tab{background:var(--surface);color:var(--ink-soft);border-color:var(--line)}
+.filters-toggle,.filters select,.filters input[type=number]{background:var(--surface);color:var(--text);border-color:var(--line)}
+.bc-item{background:var(--card)}
+.bc-pill{background:var(--pill-bg);color:var(--ink-soft)}
+th{background:var(--th-bg);color:var(--th-text)}
+.detail{background:var(--detail-bg)}
+.cmppanel{background:var(--cmp-bg)}
+.local-toc{background:var(--sticky-bg)}
+.local-toc a,.hub-toc a{background:var(--surface);color:var(--ink-soft);border-color:var(--line)}
+.ddate{background:var(--surface-2)}
+.dpts,.newsitem p,.bc-more{color:var(--ink-soft)}
+.newsitem{background:var(--card);border-color:var(--line)}
+.watchbar{background:var(--surface-2);border-bottom-color:var(--line);color:var(--th-text)}
+.watchbar .wchip{background:var(--card);border-color:var(--line);color:var(--th-text)}
+@media (hover:hover){tr:hover td{background:var(--row-hover)}}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+    --accent:#fbbf24;--accent-dk:#f59e0b;--accent-bg:#292524;
+    --surface:#111827;--surface-2:#1e293b;--ink-soft:#cbd5e1;
+    --th-bg:#1e293b;--th-text:#93c5fd;--detail-bg:#0f172a;--row-hover:#1e293b;
+    --pill-bg:#1e293b;--sticky-bg:rgba(17,24,39,.96);--cmp-bg:#111827;--focus-ring:#3b82f6;
+  }
+  .topbar{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .notice{background:#0f172a;border-color:#1e3a5f;color:#93c5fd}
+  .badge-S{background:#2563eb}.badge-A{background:#059669}.badge-B{background:#d97706}.badge-C{background:#b45309}.badge-D{background:#64748b}
+  .chip{background:var(--plight);color:#93c5fd;border-color:#1e40af}
+  .chip.news,.mtag{background:#064e3b;color:#6ee7b7;border-color:#047857}
+  .bc-rk{background:var(--plight);color:var(--primary)}
+  td{border-bottom-color:#1f2937}
+  #q{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
+  .foot{color:#64748b}
+  .cmp-scrim{background:rgba(0,0,0,.55)}
+  .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
+}
 </style>
 </head>
 <body>
@@ -175,20 +216,20 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…"></span>
 </div>
 <div class="watchbar">我的关注：<span id="watchlist"></span><span style="color:#94a3b8;font-size:11.5px">（点击模型行 ★ 收藏，点击关注标签快速定位）</span></div>
-<div class="tabs">
-  <div class="tab on" data-v="news">日报时间线</div>
-  <div class="tab" data-v="board">模型主榜</div>
-  <div class="tab" data-v="value">性价比 Top15</div>
-  <div class="tab" data-v="open">开放权重</div>
-  <div class="tab" data-v="local">本地部署</div>
-  <div class="tab" data-v="changes">本周变化</div>
+<div class="tabs" role="tablist" aria-label="Hub 分区">
+  <div class="tab on" role="tab" id="tab-news" data-v="news" aria-selected="true" aria-controls="v-news" tabindex="0">日报时间线</div>
+  <div class="tab" role="tab" id="tab-board" data-v="board" aria-selected="false" aria-controls="v-board" tabindex="-1">模型主榜</div>
+  <div class="tab" role="tab" id="tab-value" data-v="value" aria-selected="false" aria-controls="v-value" tabindex="-1">性价比 Top15</div>
+  <div class="tab" role="tab" id="tab-open" data-v="open" aria-selected="false" aria-controls="v-open" tabindex="-1">开放权重</div>
+  <div class="tab" role="tab" id="tab-local" data-v="local" aria-selected="false" aria-controls="v-local" tabindex="-1">本地部署</div>
+  <div class="tab" role="tab" id="tab-changes" data-v="changes" aria-selected="false" aria-controls="v-changes" tabindex="-1">本周变化</div>
 </div>
 <nav class="hub-toc" aria-label="Hub 分区导航"><span class="ht-label">跳转</span><a href="#v-board" data-hub="board">主榜</a><a href="#v-value" data-hub="value">API</a><a href="#v-open" data-hub="open">开源</a><a href="#v-local" data-hub="local">本地</a><a class="ht-img" href="#local-img" data-hub="local-img">生图</a></nav>
 
 <div class="wrap">
 
 <!-- 日报时间线 -->
-<div class="view on" id="v-news">
+<div class="view on" id="v-news" role="tabpanel" aria-labelledby="tab-news">
   <h2 class="sec" id="dailyHead">日报时间线 · 全部（点击关联模型跳转主榜高亮）</h2>
   <div id="dailyList" class="card"></div>
   <h2 class="sec" id="pickHead">今日精选（关联模型自动打标）</h2>
@@ -196,7 +237,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 </div>
 
 <!-- 模型主榜 -->
-<div class="view" id="v-board">
+<div class="view" id="v-board" role="tabpanel" aria-labelledby="tab-board" hidden>
   <h2 class="sec" id="boardHead">模型主榜</h2>
   <p class="lead" style="color:#64748b;font-size:12.5px">主榜无并列：同分按「标准任务成本低 → 输出价低 → 推理档位强 → 模型名」依次打破，名次唯一。</p>
   <div class="card">
@@ -227,21 +268,21 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 </div>
 
 <!-- 性价比 -->
-<div class="view" id="v-value">
+<div class="view" id="v-value" role="tabpanel" aria-labelledby="tab-value" hidden>
   <h2 class="sec">API 性价比 Top 15</h2>
   <div class="card"><div class="chartbox sm" id="chartV"></div></div>
   <div class="card"><div id="valueTblWrap" style="overflow-x:auto"><table id="valueTbl"><thead><tr><th>#</th><th>模型</th><th>档位</th><th>AA</th><th>任务成本$</th><th>原始效率</th><th>综合分</th></tr></thead><tbody></tbody></table></div><div id="valueCards" class="board-cards" aria-label="性价比卡片（窄屏）"></div></div>
 </div>
 
 <!-- 开放权重 -->
-<div class="view" id="v-open">
+<div class="view" id="v-open" role="tabpanel" aria-labelledby="tab-open" hidden>
   <h2 class="sec">开放权重模型能力榜</h2>
   <div class="notice">MIT / Apache 2.0 为可商用宽松许可；Kimi K3 License、MiniMax Community License、Motif 3 Research License、Solar Open2 License、OpenMDW-1.1 为自定义许可（含门槛），不等于完全开源；Qwen3.8 Max 权重已改为 Apache 2.0（8/14 晚正式开源）。</div>
   <div class="card"><div id="openTblWrap" style="overflow-x:auto"><table id="openTbl"><thead><tr><th>#</th><th>模型</th><th>厂商</th><th>AA</th><th>开放状态</th><th>许可证</th><th>性价比</th></tr></thead><tbody></tbody></table></div><div id="openCards" class="board-cards" aria-label="开放权重卡片（窄屏）"></div></div>
 </div>
 
 <!-- 本地部署 -->
-<div class="view" id="v-local">
+<div class="view" id="v-local" role="tabpanel" aria-labelledby="tab-local" hidden>
   <h2 class="sec" id="local-llm">本地部署价值榜（逐档位显存榜单）</h2>
   <p class="lead" style="color:#64748b;font-size:13px">按单机统一内存/显存分档。显存 = 权重（推荐量化）+ KV 余量；≈ 为估算值。数据中心级不推荐个人电脑。每档首列 <b>#</b> 为档内综合推荐排名（有 AA 分者按分优先，无分模型按官方定位/第三方评测综合评估；标注“超档/临界”的配置自动降位），第一名高亮即“本档首选”。</p>
   <nav class="local-toc" aria-label="本地部署档位导航"><div class="lt-group"><span class="lt-label">本地 LLM</span><a href="#local-llm-8gb">8GB</a><a href="#local-llm-16gb">16GB</a><a href="#local-llm-24gb">24GB</a><a href="#local-llm-32gb">32GB</a><a href="#local-llm-48gb">48GB</a><a href="#local-llm-64gb">64GB</a><a href="#local-llm-96gb">96GB</a><a href="#local-llm-128gb">128GB</a><a href="#local-llm-192gb">192GB</a><a href="#local-llm-512gb">512GB</a><a href="#local-llm-datacenter">数据中心</a></div><div class="lt-group"><span class="lt-label">生图</span><a class="lt-img" href="#local-img">生图榜</a><a class="lt-img" href="#local-img-8gb">8GB</a><a class="lt-img" href="#local-img-16gb">16GB</a><a class="lt-img" href="#local-img-24gb">24GB</a><a class="lt-img" href="#local-img-48gb">48GB</a><a class="lt-img" href="#local-img-datacenter">数据中心</a></div></nav>
@@ -443,7 +484,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 </div>
 
 <!-- 本周变化 -->
-<div class="view" id="v-changes">
+<div class="view" id="v-changes" role="tabpanel" aria-labelledby="tab-changes" hidden>
   <h2 class="sec">本周变化时间线（与日报交叉链接）</h2>
   <div id="changeList" class="card"></div>
 </div>
@@ -540,7 +581,23 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
   });
 })();
 
-/* ---------- 视图切换 ---------- */
+/* ---------- ECharts 懒加载（Wave3 首包：性价比/对比再用时拉取） ---------- */
+var _echartsLoading = null;
+function loadEcharts(cb){
+  if(typeof echarts !== "undefined"){ if(cb) cb(); return; }
+  if(_echartsLoading){ _echartsLoading.then(function(){ if(cb) cb(); }); return; }
+  _echartsLoading = new Promise(function(resolve, reject){
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js";
+    s.async = true;
+    s.onload = function(){ resolve(); };
+    s.onerror = function(){ _echartsLoading = null; reject(new Error("echarts load failed")); };
+    document.head.appendChild(s);
+  });
+  _echartsLoading.then(function(){ if(cb) cb(); }).catch(function(){});
+}
+
+/* ---------- 视图切换（Wave3 Tab 无障碍：role/aria/键盘左右） ---------- */
 var cur = "news";
 function syncHubToc(v, img){
   document.querySelectorAll(".hub-toc a").forEach(function(a){
@@ -549,19 +606,50 @@ function syncHubToc(v, img){
     a.classList.toggle("on", !!on);
   });
 }
-document.querySelectorAll(".tab").forEach(function(t){
-  t.onclick = function(){
-    document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});
-    t.classList.add("on");
-    document.querySelectorAll(".view").forEach(function(x){x.classList.remove("on")});
-    document.getElementById("v-"+t.dataset.v).classList.add("on");
-    cur = t.dataset.v;
-    if(cur==="value") renderValue();
-    if(cur==="open") renderOpen();
-    syncHubToc(cur, false);
-  };
+function activateTab(t, opts){
+  if(!t) return;
+  opts = opts || {};
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab[role='tab']"));
+  tabs.forEach(function(x){
+    var on = x === t;
+    x.classList.toggle("on", on);
+    x.setAttribute("aria-selected", on ? "true" : "false");
+    x.setAttribute("tabindex", on ? "0" : "-1");
+  });
+  document.querySelectorAll(".view[role='tabpanel']").forEach(function(x){
+    var on = x.id === ("v-" + t.dataset.v);
+    x.classList.toggle("on", on);
+    if(on) x.removeAttribute("hidden"); else x.setAttribute("hidden", "");
+  });
+  cur = t.dataset.v;
+  if(cur==="value") renderValue();
+  if(cur==="open") renderOpen();
+  if(cur==="changes") renderChanges();
+  syncHubToc(cur, false);
+  if(opts.focus) try{ t.focus(); }catch(err){}
+}
+document.querySelectorAll(".tab[role='tab']").forEach(function(t){
+  t.addEventListener("click", function(){ activateTab(t); });
 });
-function go(v){ document.querySelector('.tab[data-v="'+v+'"]').click(); }
+(function(){
+  var list = document.querySelector(".tabs[role='tablist']");
+  if(!list) return;
+  list.addEventListener("keydown", function(e){
+    var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab[role='tab']"));
+    var i = tabs.indexOf(document.activeElement);
+    if(i < 0) i = tabs.findIndex(function(x){ return x.classList.contains("on"); });
+    if(i < 0) return;
+    var next = -1;
+    if(e.key === "ArrowRight") next = (i + 1) % tabs.length;
+    else if(e.key === "ArrowLeft") next = (i - 1 + tabs.length) % tabs.length;
+    else if(e.key === "Home") next = 0;
+    else if(e.key === "End") next = tabs.length - 1;
+    if(next < 0) return;
+    e.preventDefault();
+    activateTab(tabs[next], {focus:true});
+  });
+})();
+function go(v){ activateTab(document.querySelector('.tab[data-v="'+v+'"]')); }
 /* Wave2 Hub 顶栏锚点：切 Tab；生图 → 本地 Tab 再滚到 #local-img */
 document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
   a.addEventListener("click", function(e){
@@ -780,8 +868,10 @@ function renderValue(){
     }
   });
   document.getElementById("valueTbl").querySelector("tbody").innerHTML = h;
-  if(typeof echarts!=='undefined'){
-    var c = echarts.init(document.getElementById("chartV"));
+  loadEcharts(function(){
+    var el = document.getElementById("chartV");
+    if(!el || typeof echarts==="undefined") return;
+    var c = echarts.init(el);
     c.setOption({
       tooltip:{trigger:"axis"},grid:{left:160,right:50,top:20,bottom:30},
       xAxis:{type:"value",max:100},
@@ -790,7 +880,7 @@ function renderValue(){
         itemStyle:{color:new echarts.graphic.LinearGradient(0,0,1,0,[{offset:0,color:"#a5f3fc"},{offset:1,color:"#0284c7"}]),borderRadius:[0,4,4,0]},
         label:{show:true,position:"right",fontSize:10}}]
     });
-  }
+  });
 }
 
 /* ---------- 开放权重 ---------- */
@@ -904,20 +994,23 @@ function renderCmp(){
   if(document.getElementById("cmp").classList.contains("on")) renderCmpChart();
 }
 function renderCmpChart(){
-  if(SELECTED.length < 2 || typeof echarts === "undefined") return;
-  var el = document.getElementById("cmpChart");
-  if(!el) return;
-  if(!cmpChartInst) cmpChartInst = echarts.init(el);
-  var sel = MODELS.filter(function(r){ return SELECTED.indexOf(r.n)>=0; });
-  var series = sel.map(function(r){
-    var cs = r.cost!=null ? Math.min(100, 100*(Math.log(22.5)-Math.log(Math.max(r.cost,0.13)))/(Math.log(22.5)-Math.log(0.13))) : 0;
-    return {name:r.n, type:"radar", symbolSize:4, lineStyle:{width:2},
-      data:[{value:[r.aa, Math.round(r.aa/63*100), Math.round(cs), r.val||0, r.eff?Math.min(100,Math.round(r.eff/235*100)):0]}]};
+  if(SELECTED.length < 2) return;
+  loadEcharts(function(){
+    if(typeof echarts === "undefined") return;
+    var el = document.getElementById("cmpChart");
+    if(!el) return;
+    if(!cmpChartInst) cmpChartInst = echarts.init(el);
+    var sel = MODELS.filter(function(r){ return SELECTED.indexOf(r.n)>=0; });
+    var series = sel.map(function(r){
+      var cs = r.cost!=null ? Math.min(100, 100*(Math.log(22.5)-Math.log(Math.max(r.cost,0.13)))/(Math.log(22.5)-Math.log(0.13))) : 0;
+      return {name:r.n, type:"radar", symbolSize:4, lineStyle:{width:2},
+        data:[{value:[r.aa, Math.round(r.aa/63*100), Math.round(cs), r.val||0, r.eff?Math.min(100,Math.round(r.eff/235*100)):0]}]};
+    });
+    cmpChartInst.setOption({tooltip:{},legend:{data:SELECTED.map(function(n){return n}),bottom:0,textStyle:{fontSize:10}},
+      radar:{indicator:[{name:"AA",max:70},{name:"能力分",max:100},{name:"成本分",max:100},{name:"性价比",max:100},{name:"效率",max:100}]},
+      series:series}, true);
+    setTimeout(function(){ try{ cmpChartInst.resize(); }catch(err){} }, 40);
   });
-  cmpChartInst.setOption({tooltip:{},legend:{data:SELECTED.map(function(n){return n}),bottom:0,textStyle:{fontSize:10}},
-    radar:{indicator:[{name:"AA",max:70},{name:"能力分",max:100},{name:"成本分",max:100},{name:"性价比",max:100},{name:"效率",max:100}]},
-    series:series}, true);
-  setTimeout(function(){ try{ cmpChartInst.resize(); }catch(err){} }, 40);
 }
 function removeCmp(n){
   var i=SELECTED.indexOf(n); if(i>=0) SELECTED.splice(i,1);
@@ -1011,7 +1104,8 @@ function init(){
   document.querySelectorAll("#fVendor,#fLic,#fOpen,#fAA,#fCost,#fValued").forEach(function(el){
     el.onchange = function(){ applyFilters(); };
   });
-  renderDaily(); applyFilters(); renderOpen(); renderChanges(); renderWatch();
+  renderDaily(); applyFilters(); renderWatch();
+  /* Wave3 首包：开放权重/本周变化进 Tab 再渲；本地表静态不重渲 */
 }
 init();
 </script>
