@@ -306,10 +306,10 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 .topbar .sub{flex:1 1 auto;min-width:0}
 .topbar .searchwrap{margin-left:auto}
 
-/* 密度再压一档：主榜 + 性价比（夹在 896abf1 与本地表观感之间；不动本地表） */
+/* 密度：桌面表维持 90324b3；窄屏卡再压（默认 stats 只留 AA+价） */
 :root{
   --row-pad-y:2px;--row-pad-x:5px;--row-fs:11.5px;--th-pad-y:4px;
-  --bc-pad:6px 8px;--bc-name-fs:13px;--bc-gap:5px;--bc-meta-fs:11px;
+  --bc-pad:4px 6px;--bc-name-fs:12px;--bc-gap:3px;--bc-meta-fs:10.5px;
 }
 #boardTbl,#valueTbl{font-size:var(--row-fs)}
 #boardTbl th,#valueTbl th{padding:var(--th-pad-y) var(--row-pad-x);font-size:var(--row-fs);line-height:1.2}
@@ -325,19 +325,22 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 #v-board h2.sec::before,#v-value h2.sec::before{height:15px}
 #v-board .lead,#v-value .lead{font-size:12px;line-height:1.4;margin:3px 0 6px}
 #v-board .detail{padding:8px 10px;margin-bottom:6px}
-#boardCards .bc-item,#valueCards .bc-item{padding:var(--bc-pad);margin-bottom:var(--bc-gap);border-radius:8px}
-#boardCards .bc-top,#valueCards .bc-top{gap:6px}
-#boardCards .bc-rk,#valueCards .bc-rk{flex:0 0 22px;width:22px;height:22px;border-radius:6px;font-size:11px}
-#boardCards .bc-name,#valueCards .bc-name{font-size:var(--bc-name-fs);line-height:1.2}
-#boardCards .bc-meta,#valueCards .bc-meta{
-  font-size:var(--bc-meta-fs);margin-top:1px;line-height:1.25;
+#boardCards .bc-item,#valueCards .bc-item{padding:var(--bc-pad);margin-bottom:var(--bc-gap);border-radius:7px}
+#boardCards .bc-top,#valueCards .bc-top{gap:5px}
+#boardCards .bc-rk,#valueCards .bc-rk{flex:0 0 20px;width:20px;height:20px;border-radius:5px;font-size:10.5px}
+#boardCards .bc-name,#valueCards .bc-name{
+  font-size:var(--bc-name-fs);line-height:1.2;
   display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;word-break:break-word
 }
-#boardCards .bc-stats,#valueCards .bc-stats{margin-top:4px;gap:3px}
-#boardCards .bc-pill,#valueCards .bc-pill{font-size:10.5px;padding:1px 5px;line-height:1.3}
-#boardCards .bc-toggle,#valueCards .bc-toggle{margin-top:3px;font-size:11px}
-#boardCards .bc-more,#valueCards .bc-more{margin-top:5px;padding-top:5px;font-size:11px;line-height:1.35}
-#boardCards .bc-actions,#valueCards .bc-actions{gap:3px;padding-top:0}
+#boardCards .bc-meta,#valueCards .bc-meta{
+  font-size:var(--bc-meta-fs);margin-top:0;line-height:1.2;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;overflow:hidden;word-break:break-word
+}
+#boardCards .bc-stats,#valueCards .bc-stats{margin-top:2px;gap:3px}
+#boardCards .bc-pill,#valueCards .bc-pill{font-size:10px;padding:0 4px;line-height:1.25}
+#boardCards .bc-toggle,#valueCards .bc-toggle{margin-top:2px;font-size:10.5px}
+#boardCards .bc-more,#valueCards .bc-more{margin-top:4px;padding-top:4px;font-size:10.5px;line-height:1.3}
+#boardCards .bc-actions,#valueCards .bc-actions{gap:2px;padding-top:0}
 
 </style>
 <script>(function(){try{var t=localStorage.getItem("hub_theme")||"system";if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.removeAttribute("data-theme");}catch(e){}})();</script>
@@ -956,10 +959,9 @@ function renderBoard(list){
             '<div class="bc-stats">'+
               '<span class="bc-pill aa">AA '+r.aa+'</span>'+
               '<span class="bc-pill">'+costTxt+'</span>'+
-              '<span class="bc-pill">'+valTxt+'</span>'+
             '</div>'+
             '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
-            '<div class="bc-more">许可：'+r.lic+'<br>输入 '+pin+' · 输出 '+pout+'<br>'+ment+'</div>'+
+            '<div class="bc-more">'+valTxt+'<br>许可：'+r.lic+'<br>输入 '+pin+' · 输出 '+pout+'<br>'+ment+'</div>'+
           '</div>'+
           '<div class="bc-actions">'+star+'</div>'+
         '</div>';
@@ -1058,10 +1060,9 @@ function renderValue(){
             '<div class="bc-stats">'+
               '<span class="bc-pill aa">AA '+r.aa+'</span>'+
               '<span class="bc-pill">任务$'+r.cost.toFixed(3)+'</span>'+
-              '<span class="bc-pill">综合 '+r.val+' '+r.g+'</span>'+
             '</div>'+
             '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
-            '<div class="bc-more">原始效率：'+r.eff+'<br>开放：'+r.open+' · 许可：'+r.lic+'</div>'+
+            '<div class="bc-more">综合 '+r.val+' '+r.g+'<br>原始效率：'+r.eff+'<br>开放：'+r.open+' · 许可：'+r.lic+'</div>'+
           '</div>'+
         '</div>';
       cards.appendChild(div);
