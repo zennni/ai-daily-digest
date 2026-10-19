@@ -39,7 +39,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 .page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
 .page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
 @media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
-.highlights,.section-anchor{scroll-margin-top:56px}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
 section>h2{scroll-margin-top:56px}
 
 </style>
@@ -53,6 +53,14 @@ section>h2{scroll-margin-top:56px}
   <h1>🥚 每日AI前沿日报</h1>
   <div class="note">今日主题词：Harness × 边界账单。一边是工具链继续下沉——DeepSeek 放出 V4.1-Flash-1017（自评 DeepSWE 77.0，AA 口径 45）并把自用搜索引擎以每千次成功调用 0.75 美元开放成 Search / Fetch API；Google Research 的 Harness² 则把「不改权重、只改提示词／工具／记忆／守卫」做成可递归优化的开源框架。另一边，账单也在变厚：Anthropic 把公司约 5% 股份承诺给 Public Benefit Fund（加上创始人／员工承诺合计约 20%），同时自家就业报告写明交互式智能体工时已达员工 6:1、初级技术岗招聘占比从 27% 降到 9%；Vals AI 的「过期火车票退款」实验里，六款助手无一拿到退款，却有人把私人病情外泄、有人向议员连发数十封邮件。网站侧也在关门：Cloudflare 一类基础设施开始整批拦 agent 浏览器。本周叙事从「模型更强」切到「围绕冻结模型的 harness，以及它在现实世界里能走多远」。</div>
 </header>
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">看点</a>
+  <a href="#sec-news">新闻</a>
+  <a href="#sec-papers">论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+</nav>
 <div class="highlights" id="sec-highlights">
   <h2>🔥 今日看点</h2>
   <ul>
