@@ -461,20 +461,16 @@ DAILY.forEach(function(dd){ dd.m = tagText(dd.pts.join(" ")); dd.m.forEach(funct
 CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||0)+1; }); });
 
 
-/* Wave1 ④：动态测量 topbar(+watchbar) → --tabs-top；tabs 高度 → --tabs-h */
+/* ④ sticky 高度：动态测量 topbar → --tabs-top；tabs → --tabs-h（与 CSS 变量联动） */
 (function(){
   var root = document.documentElement;
   var topbar = document.querySelector(".topbar");
-  var watchbar = document.querySelector(".watchbar");
   var tabs = document.querySelector(".tabs");
   function isNarrow(){ return window.matchMedia && window.matchMedia("(max-width:760px)").matches; }
   function measureSticky(){
     var h = 0;
-    // 窄屏顶栏改为 relative 随页滚走，Tabs 贴 top:0；桌面仍叠在 topbar+watchbar 下
-    if(!isNarrow()){
-      if(topbar) h += topbar.getBoundingClientRect().height;
-      if(watchbar) h += watchbar.getBoundingClientRect().height;
-    }
+    // 窄屏顶栏 relative 随页滚走，Tabs 贴 top:0；桌面 Tabs 叠在 sticky topbar 下（不含 watchbar，避免滚走后留白）
+    if(!isNarrow() && topbar) h = topbar.getBoundingClientRect().height;
     root.style.setProperty("--tabs-top", Math.round(h) + "px");
     if(tabs) root.style.setProperty("--tabs-h", Math.round(tabs.getBoundingClientRect().height) + "px");
   }
@@ -482,10 +478,10 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
   if(window.ResizeObserver){
     var ro = new ResizeObserver(measureSticky);
     if(topbar) ro.observe(topbar);
-    if(watchbar) ro.observe(watchbar);
     if(tabs) ro.observe(tabs);
   }
   window.addEventListener("resize", measureSticky);
+  // ① 档位锚点：平滑滚动，尊重 scroll-margin-top / sticky 占位
   document.addEventListener("click", function(e){
     var a = e.target.closest && e.target.closest(".local-toc a[href^='#']");
     if(!a) return;
@@ -493,6 +489,7 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
     var el = document.getElementById(id);
     if(!el) return;
     e.preventDefault();
+    measureSticky();
     el.scrollIntoView({behavior:"smooth", block:"start"});
     if(history.replaceState) history.replaceState(null, "", "#" + id);
   });
