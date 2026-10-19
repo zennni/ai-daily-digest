@@ -414,7 +414,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
         <button type="button" class="board-mode-btn" data-mode="top" aria-pressed="false" title="同名只留 AA 最高档">同系最高档</button>
       </div>
       <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardFilters">筛选 ▾</button>
-      <button type="button" id="colsToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardTbl" title="桌面精简列 / 全列">展开全列 ▾</button>
+      <button type="button" id="colsToggle" class="filters-toggle" aria-expanded="true" aria-controls="boardTbl" title="桌面精简列 / 全列">精简列 ▴</button>
       <div class="filters is-collapsed" id="boardFilters">
       <select id="fVendor"><option value="">全部厂商</option></select>
       <select id="fLic"><option value="">全部许可</option></select>
@@ -428,7 +428,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       </div>
     </div>
     <div id="boardTblWrap" style="overflow-x:auto">
-    <table id="boardTbl" class="board-compact">
+    <table id="boardTbl">
       <thead><tr><th>☑</th><th data-k="rk">排名</th><th data-k="n">模型</th><th data-k="v">厂商</th><th>档位</th><th data-k="aa">AA</th><th>开放</th><th>许可</th><th data-k="pin">输入$</th><th data-k="pout">输出$</th><th data-k="cost">任务成本$</th><th data-k="val">性价比</th><th>提及</th><th>★</th></tr></thead>
       <tbody></tbody>
     </table>
@@ -1471,12 +1471,15 @@ document.getElementById("q").oninput = function(){
     tbl.classList.toggle("board-compact", !!compact);
     btn.setAttribute("aria-expanded", compact ? "false" : "true");
     btn.textContent = compact ? "展开全列 ▾" : "精简列 ▴";
-    try{ sessionStorage.setItem("hub_board_compact", compact ? "1" : "0"); }catch(e){}
+    try{ sessionStorage.setItem("hub_board_compact_v2", compact ? "1" : "0"); }catch(e){}
   }
   var saved = null;
-  try{ saved = sessionStorage.getItem("hub_board_compact"); }catch(e){}
-  // 默认精简；仅当明确存了 0 才展开
-  setCompact(saved !== "0");
+  try{
+    sessionStorage.removeItem("hub_board_compact"); // 清旧默认精简遗留
+    saved = sessionStorage.getItem("hub_board_compact_v2");
+  }catch(e){}
+  // 默认全列；仅当明确存了 1 才精简
+  setCompact(saved === "1");
   btn.onclick = function(){ setCompact(tbl.classList.contains("board-compact") ? false : true); };
 })();
 
