@@ -58,8 +58,18 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .filters select,.filters input[type=number]{padding:6px 10px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;background:#fff}
 .filters label{font-size:12.5px;color:var(--muted)}
 .filters input[type=range]{width:130px}
-.detail{display:none;background:#f8faff;border:1px solid #bfdbfe;border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.detail-scrim{position:fixed;inset:0;background:rgba(15,23,42,.38);z-index:65;display:none;border:none;padding:0;cursor:pointer}
+.detail-scrim.on{display:block}
+.detail{display:none;position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:66;width:min(420px,92vw);max-height:70vh;overflow:auto;-webkit-overflow-scrolling:touch;background:#f8faff;border:1px solid #bfdbfe;border-radius:12px;padding:14px 16px;box-shadow:0 16px 40px rgba(15,23,42,.22);box-sizing:border-box}
 .detail.on{display:block}
+.detail-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px;position:sticky;top:0;background:inherit;z-index:1;padding-bottom:2px}
+.detail-title{font-size:15px;font-weight:700;color:#1e3a8a;line-height:1.3;min-width:0;flex:1}
+.detail-close{flex:0 0 auto;width:28px;height:28px;border:1px solid var(--line);border-radius:8px;background:#fff;color:#334155;cursor:pointer;font-size:16px;line-height:1;font-family:inherit;padding:0}
+@media (hover:hover){.detail-close:hover{border-color:var(--primary2);color:var(--primary)}}
+@media (max-width:760px){
+  .detail{width:min(420px,92vw);max-height:70vh;padding:14px 14px;border-radius:12px}
+  .detail-title{font-size:16px}
+}
 .star{cursor:pointer;color:#cbd5e1;font-size:15px;user-select:none}
 .star.on{color:#eab308}
 .flash{animation:fl 1.6s ease 2}
@@ -266,6 +276,7 @@ th{background:var(--th-bg);color:var(--th-text)}
   html:not([data-theme="light"]) #q{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
   html:not([data-theme="light"]) .foot{color:#64748b}
   html:not([data-theme="light"]) .cmp-scrim{background:rgba(0,0,0,.55)}
+  html:not([data-theme="light"]) .detail-scrim{background:rgba(0,0,0,.55)}
   html:not([data-theme="light"]) .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 }
 html[data-theme="dark"]{
@@ -291,6 +302,7 @@ html[data-theme="dark"] td{border-bottom-color:#1f2937}
 html[data-theme="dark"] #q{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25)}
 html[data-theme="dark"] .foot{color:#64748b}
 html[data-theme="dark"] .cmp-scrim{background:rgba(0,0,0,.55)}
+html[data-theme="dark"] .detail-scrim{background:rgba(0,0,0,.55)}
 html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 
 
@@ -335,7 +347,6 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 #v-board h2.sec,#v-value h2.sec{font-size:15px;margin:2px 0 6px}
 #v-board h2.sec::before,#v-value h2.sec::before{height:15px}
 #v-board .lead,#v-value .lead{font-size:12px;line-height:1.4;margin:3px 0 6px}
-#v-board .detail{padding:8px 10px;margin-bottom:6px}
 #boardCards .bc-item,#valueCards .bc-item{padding:var(--bc-pad);margin-bottom:var(--bc-gap);border-radius:8px}
 #boardCards .bc-top,#valueCards .bc-top{gap:6px}
 #boardCards .bc-rk,#valueCards .bc-rk{flex:0 0 22px;width:22px;height:22px;border-radius:5px;font-size:11.5px}
@@ -435,7 +446,6 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
     <div id="boardCards" class="board-cards" aria-label="模型主榜卡片（窄屏）"></div>
     <div class="empty" id="boardEmpty" style="display:none">无匹配模型，请调整筛选条件</div>
   </div>
-  <div class="detail" id="detail"></div>
 </div>
 
 <!-- 性价比 -->
@@ -665,6 +675,15 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
   <div id="changeList" class="card"></div>
 </div>
 
+</div>
+
+<button type="button" class="detail-scrim" id="detailScrim" aria-label="关闭模型详情" hidden></button>
+<div class="detail" id="detail" role="dialog" aria-modal="true" aria-labelledby="detailTitle" hidden>
+  <div class="detail-head">
+    <div class="detail-title" id="detailTitle"></div>
+    <button type="button" class="detail-close" id="detailClose" aria-label="关闭">✕</button>
+  </div>
+  <div class="detail-body" id="detailBody"></div>
 </div>
 
 <button type="button" class="cmp-fab" id="cmpFab" aria-expanded="false" aria-controls="cmp" hidden>对比 <span class="cmp-fab-n" id="cmpFabN">0</span></button>
@@ -1032,19 +1051,42 @@ function applyFilters(kw){
   document.getElementById("aaVal").textContent = document.getElementById("fAA").value;
   renderBoard(filteredModels(kw||document.getElementById("q").value));
 }
+function closeDetail(){
+  var d = document.getElementById("detail");
+  var scrim = document.getElementById("detailScrim");
+  if(d){ d.classList.remove("on"); d.hidden = true; }
+  if(scrim){ scrim.classList.remove("on"); scrim.hidden = true; }
+}
 function showDetail(name){
   var r = MODELS.filter(function(x){return x.n===name})[0];
   if(!r) return;
+  if(typeof closeCmpDrawer === "function") closeCmpDrawer();
   var rel = NEWS.filter(function(n){return n.m.indexOf(name)>=0});
   var d = document.getElementById("detail");
-  d.classList.add("on");
-  d.innerHTML = '<b style="color:#1e3a8a;font-size:15px">'+r.n+'</b> <span style="font-size:12px;color:#64748b">'+r.v+' · '+r.c+' · '+r.t+'档 · 排名#'+r.rk+'</span><div style="margin:8px 0">'+
+  var body = document.getElementById("detailBody");
+  var title = document.getElementById("detailTitle");
+  var scrim = document.getElementById("detailScrim");
+  if(!d || !body) return;
+  if(title) title.textContent = r.n;
+  body.innerHTML = '<span style="font-size:12px;color:#64748b">'+r.v+' · '+r.c+' · '+r.t+'档 · 排名#'+r.rk+'</span><div style="margin:8px 0">'+
     'AA 指数 <b>'+r.aa+(r.aa_d?"（"+r.aa_d+"）":"")+'</b> · 输入 $'+(r.pin==null?"N/A":r.pin)+' · 输出 $'+(r.pout==null?"N/A":r.pout)+' · 标准任务成本 $'+(r.cost==null?"N/A":r.cost.toFixed(2))+
     (r.eff!=null?' · 原始价格效率 '+r.eff:"")+' · 开放状态：'+r.open+' · 许可：'+r.lic+'<br><span style="font-size:11.5px;color:#94a3b8">价格来源：'+r.src+'</span></div>'+
     (rel.length?'<div style="font-size:12.5px;color:#334155"><b>相关报道（'+rel.length+' 条）：</b>'+
       rel.map(function(n){return '<div style="margin:4px 0">· '+n.t+' <span style="color:#94a3b8">('+n.d+')</span></div>';}).join("")+'</div>':'');
-  d.scrollIntoView({block:"nearest"});
+  d.classList.add("on"); d.hidden = false;
+  if(scrim){ scrim.classList.add("on"); scrim.hidden = false; }
 }
+(function bindDetailUi(){
+  var closeBtn = document.getElementById("detailClose");
+  var scrim = document.getElementById("detailScrim");
+  if(closeBtn) closeBtn.addEventListener("click", closeDetail);
+  if(scrim) scrim.addEventListener("click", closeDetail);
+  document.addEventListener("keydown", function(e){
+    if(e.key !== "Escape") return;
+    var d = document.getElementById("detail");
+    if(d && d.classList.contains("on")){ closeDetail(); e.preventDefault(); }
+  });
+})();
 function goNewsModel(name){
   go("news");
   document.getElementById("q").value = name;
@@ -1215,6 +1257,7 @@ function setCmpOpen(open){
 function closeCmpDrawer(){ setCmpOpen(false); }
 function openCmpDrawer(){
   if(SELECTED.length < 1) return;
+  if(typeof closeDetail === "function") closeDetail();
   setCmpOpen(true);
   renderCmpChart();
 }
@@ -1284,7 +1327,10 @@ function removeCmp(n){
   if(closeBtn) closeBtn.addEventListener("click", closeCmpDrawer);
   if(scrim) scrim.addEventListener("click", closeCmpDrawer);
   document.addEventListener("keydown", function(e){
-    if(e.key === "Escape" && document.getElementById("cmp").classList.contains("on")) closeCmpDrawer();
+    if(e.key !== "Escape") return;
+    var det = document.getElementById("detail");
+    if(det && det.classList.contains("on")){ closeDetail(); return; }
+    if(document.getElementById("cmp").classList.contains("on")) closeCmpDrawer();
   });
 })();
 
