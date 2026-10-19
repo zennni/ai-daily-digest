@@ -11,6 +11,8 @@ body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;backgroun
 /* Wave4：顶栏+关注条均非 sticky，随页滚走；仅 .tabs sticky */
 .topbar{position:relative;z-index:50;background:linear-gradient(135deg,#1e3a8a,#2563eb);color:#fff;padding:12px 20px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
 .topbar h1{font-size:19px;font-weight:700;display:inline-block}
+.topbar h1 .title-short{display:none}
+.topbar h1 .title-full{display:inline}
 .topbar .sub{font-size:11.5px;opacity:.85;margin-left:10px}
 .searchwrap{display:inline-block;margin-left:16px}
 #q{width:260px;padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);color:#fff;font-size:13px;outline:none}
@@ -120,7 +122,7 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .bc-item.open .bc-more{display:block}
 .bc-toggle{display:inline-block;margin-top:8px;font-size:12px;color:var(--primary);cursor:pointer;user-select:none;background:none;border:none;padding:0;font-family:inherit}
 .bc-actions{display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:2px}
-@media(max-width:760px){.searchwrap{display:block;margin:8px 0 0}.ddate{min-width:80px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap,#valueTblWrap,#openTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0}}
+@media(max-width:760px){.ddate{min-width:80px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap,#valueTblWrap,#openTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0}}
 
 /* Wave2：主榜筛选默认折叠 + Hub 顶栏锚点 */
 .filters-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
@@ -163,9 +165,14 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 @media(max-width:760px){
   :root{--tabs-top:0px;--tabs-h:40px}
   html{scroll-padding-top:calc(var(--tabs-h) + 8px)}
-  .topbar{padding:8px 14px}
-  .topbar h1{font-size:17px}
+  .topbar{padding:8px 12px;flex-wrap:nowrap;gap:6px 8px;align-items:center}
+  .topbar h1{font-size:15px;flex:0 0 auto;white-space:nowrap;margin:0}
+  .topbar h1 .title-full{display:none}
+  .topbar h1 .title-short{display:inline}
   .topbar .sub{display:none}
+  .theme-toggle{margin-left:0;width:30px;height:30px;flex:0 0 auto}
+  .topbar .searchwrap{display:block;flex:1 1 auto;min-width:0;margin:0;margin-left:0}
+  #q{width:100%;min-width:0;box-sizing:border-box;padding:6px 10px;font-size:13px}
   .tabs{top:0;padding:6px 12px;flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:5px}
   .tabs::-webkit-scrollbar{height:0;display:none}
   .tab{flex:0 0 auto;white-space:nowrap;padding:6px 12px;font-size:13px}
@@ -305,6 +312,10 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 .topbar h1{margin:0}
 .topbar .sub{flex:1 1 auto;min-width:0}
 .topbar .searchwrap{margin-left:auto}
+@media(max-width:760px){
+  .topbar{flex-wrap:nowrap;gap:6px 8px}
+  .topbar .searchwrap{margin-left:0;flex:1 1 auto;min-width:0}
+}
 
 /* 密度：桌面表维持 90324b3；窄屏卡再压（默认 stats 只留 AA+价） */
 :root{
@@ -342,14 +353,32 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 #boardCards .bc-more,#valueCards .bc-more{margin-top:4px;padding-top:4px;font-size:10.5px;line-height:1.3}
 #boardCards .bc-actions,#valueCards .bc-actions{gap:2px;padding-top:0}
 
+/* P1：窄屏同系最高档 lead 默认折叠；卡密度不再压 */
+@media(max-width:760px){
+  #boardLead{
+    display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:1;
+    overflow:hidden;cursor:pointer;position:relative;
+    padding-right:1.2em;
+  }
+  #boardLead::after{content:"▾";position:absolute;right:0;top:0;color:#64748b;font-size:11px}
+  #boardLead.is-open{
+    display:block;-webkit-line-clamp:unset;overflow:visible;padding-right:0;
+  }
+  #boardLead.is-open::after{content:"▴"}
+  #boardCards .bc-toggle,#valueCards .bc-toggle{
+    position:absolute;right:6px;bottom:4px;margin:0;font-size:12px;line-height:1;padding:2px 4px;color:#64748b
+  }
+  #boardCards .bc-main,#valueCards .bc-main{position:relative;padding-bottom:2px}
+}
+
 </style>
 <script>(function(){try{var t=localStorage.getItem("hub_theme")||"system";if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t);else document.documentElement.removeAttribute("data-theme");}catch(e){}})();</script>
 </head>
 <body>
 <div class="topbar">
-  <h1>AI 前沿情报台</h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
+  <h1 title="AI 前沿情报台" aria-label="AI 前沿情报台"><span class="title-full">AI 前沿情报台</span><span class="title-short">情报台</span></h1><span class="sub" id="hubSub">每日日报 × 模型榜单 综合 Hub</span>
   <button type="button" id="themeToggle" class="theme-toggle" title="外观：跟随系统" aria-label="切换外观（亮 / 暗 / 跟随系统）">◐</button>
-  <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…"></span>
+  <span class="searchwrap"><input id="q" type="text" placeholder="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-desktop="全局搜索：模型 / 厂商 / 新闻关键词…" data-ph-mobile="搜索…"></span>
 </div>
 <div class="watchbar" id="watchbar" hidden>我的关注：<span id="watchlist"></span></div>
 <div class="watch-tip" id="watchTip" role="status" aria-live="polite"></div>
@@ -960,7 +989,7 @@ function renderBoard(list){
               '<span class="bc-pill aa">AA '+r.aa+'</span>'+
               '<span class="bc-pill">'+costTxt+'</span>'+
             '</div>'+
-            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'▴\':\'▾\'">▾</button>'+
             '<div class="bc-more">'+valTxt+'<br>许可：'+r.lic+'<br>输入 '+pin+' · 输出 '+pout+'<br>'+ment+'</div>'+
           '</div>'+
           '<div class="bc-actions">'+star+'</div>'+
@@ -1061,7 +1090,7 @@ function renderValue(){
               '<span class="bc-pill aa">AA '+r.aa+'</span>'+
               '<span class="bc-pill">任务$'+r.cost.toFixed(3)+'</span>'+
             '</div>'+
-            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'▴\':\'▾\'">▾</button>'+
             '<div class="bc-more">综合 '+r.val+' '+r.g+'<br>原始效率：'+r.eff+'<br>开放：'+r.open+' · 许可：'+r.lic+'</div>'+
           '</div>'+
         '</div>';
@@ -1108,7 +1137,7 @@ function renderOpen(){
               '<span class="bc-pill aa">AA '+r.aa+'</span>'+
               '<span class="bc-pill">'+valTxt+'</span>'+
             '</div>'+
-            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'▴\':\'▾\'">▾</button>'+
             '<div class="bc-more">许可：'+r.lic+(r.t?('<br>档位：'+r.t):"")+'</div>'+
           '</div>'+
         '</div>';
@@ -1351,7 +1380,7 @@ function enhanceLocalImgCards(root){
               (steps ? '<span class="bc-pill">步数 '+steps+'</span>' : '')+
               '<span class="bc-pill '+bizClass+'">商用 '+biz+'</span>'+
             '</div>'+
-            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'收起详情 ▴\':\'展开详情 ▾\'">展开详情 ▾</button>'+
+            '<button type="button" class="bc-toggle" onclick="this.parentNode.parentNode.parentNode.classList.toggle(\'open\');this.textContent=this.parentNode.parentNode.parentNode.classList.contains(\'open\')?\'▴\':\'▾\'">▾</button>'+
             '<div class="bc-more">许可：'+lic+'<br>'+note+'</div>'+
           '</div>'+
         '</div>';
@@ -1547,7 +1576,31 @@ function restoreShareUrl(){
 
 /* ---------- WaveB⑪：暗色手调（亮 / 暗 / 跟随系统，localStorage） ---------- */
 (function bindThemeToggle(){
-  var btn = document.getElementById("themeToggle");
+  
+(function(){
+  var q = document.getElementById("q");
+  if(!q) return;
+  var desk = q.getAttribute("data-ph-desktop") || q.placeholder;
+  var mob = q.getAttribute("data-ph-mobile") || "搜索…";
+  function syncPh(){
+    q.placeholder = (window.matchMedia && window.matchMedia("(max-width:760px)").matches) ? mob : desk;
+  }
+  syncPh();
+  if(window.matchMedia){
+    try{ window.matchMedia("(max-width:760px)").addEventListener("change", syncPh); }
+    catch(e){ window.addEventListener("resize", syncPh); }
+  }
+  var lead = document.getElementById("boardLead");
+  if(lead){
+    lead.title = "点击展开/收起说明";
+    lead.addEventListener("click", function(){
+      if(!(window.matchMedia && window.matchMedia("(max-width:760px)").matches)) return;
+      lead.classList.toggle("is-open");
+    });
+  }
+})();
+
+var btn = document.getElementById("themeToggle");
   var order = ["system", "light", "dark"];
   var icons = { system: "◐", light: "☀", dark: "☾" };
   var labels = { system: "跟随系统", light: "浅色", dark: "深色" };
