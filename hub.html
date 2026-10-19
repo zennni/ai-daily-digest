@@ -156,13 +156,20 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .hub-toc a.ht-img.on{background:var(--accent);color:#fff;border-color:var(--accent)}
 @media (hover:hover){.hub-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}.hub-toc a.on:hover{background:var(--primary);color:#fff}.hub-toc a.ht-img:hover{border-color:var(--accent);color:var(--accent-dk);background:#ffedd5}.hub-toc a.ht-img.on:hover{background:var(--accent);color:#fff}}
 
-/* ① 本地 Tab 档位/生图锚点 + 本档首选强化（2026-10-19） */
+/* ① 本地 Tab：二级对话/生图分段 + 三级单域 TOC（2026-10-19） */
+.local-mode{display:inline-flex;flex-wrap:wrap;align-items:stretch;margin:0 0 10px;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface);flex:0 0 auto}
+.local-mode-btn{padding:6px 14px;border:none;border-right:1px solid var(--line);background:transparent;color:var(--ink-soft);cursor:pointer;font-size:12.5px;font-weight:600;font-family:inherit;line-height:1.2}
+.local-mode-btn:last-child{border-right:none}
+.local-mode-btn.on,.local-mode-btn[aria-pressed="true"]{background:var(--plight);color:var(--th-text)}
+.local-mode-btn.local-mode-img.on,.local-mode-btn.local-mode-img[aria-pressed="true"]{background:var(--accent);color:#fff}
+@media (hover:hover){.local-mode-btn:hover{color:var(--primary)}.local-mode-btn.local-mode-img:hover{color:var(--accent-dk)}.local-mode-btn.on:hover{color:var(--th-text)}.local-mode-btn.local-mode-img.on:hover{background:var(--accent);color:#fff}}
 .local-toc{position:sticky;top:calc(var(--tabs-top) + var(--tabs-h));z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:0 0 14px;box-shadow:0 1px 4px rgba(15,23,42,.04)}
-.local-toc .lt-group{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:2px 0}
-.local-toc .lt-label{font-size:11px;color:var(--muted);font-weight:600;margin-right:4px;white-space:nowrap}
+.local-toc[hidden]{display:none !important}
+.local-toc .lt-group{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin:0}
 .local-toc a{display:inline-block;font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink-soft);text-decoration:none;white-space:nowrap}
 .local-toc a.lt-img{border-color:#fed7aa;background:var(--accent-bg);color:#9a3412}
 @media (hover:hover){.local-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}.local-toc a.lt-img:hover{border-color:var(--accent);color:var(--accent-dk);background:#ffedd5}}
+.local-pane[hidden]{display:none !important}
 /* scroll-margin → Wave4b⑦ */
 /* Wave3：本档首选再跳一点（4px 左边条 + 更强行底 + ① 橙环） */
 tr.top td{background:#ffedd5}
@@ -243,8 +250,8 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
 .tab:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px}
 .tabs,.hub-toc{background:var(--surface);border-bottom-color:var(--line)}
 .tab{background:var(--surface);color:var(--ink-soft);border-color:var(--line)}
-.filters-toggle,.filters select,.filters input[type=number],.board-mode{background:var(--surface);color:var(--text);border-color:var(--line)}
-.board-mode-btn{color:var(--text);border-color:var(--line)}
+.filters-toggle,.filters select,.filters input[type=number],.board-mode,.local-mode{background:var(--surface);color:var(--text);border-color:var(--line)}
+.board-mode-btn,.local-mode-btn{color:var(--text);border-color:var(--line)}
 .bc-item{background:var(--card)}
 .bc-pill{background:var(--pill-bg);color:var(--ink-soft)}
 th{background:var(--th-bg);color:var(--th-text)}
@@ -468,7 +475,12 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 <div class="view" id="v-local" role="tabpanel" aria-labelledby="tab-local" hidden>
   <h2 class="sec" id="local-llm">本地部署价值榜（逐档位显存榜单）</h2>
   <p class="lead" style="color:var(--muted);font-size:13px">按单机统一内存/显存分档。显存 = 权重（推荐量化）+ KV 余量；≈ 为估算值。数据中心级不推荐个人电脑。每档首列 <b>#</b> 为档内综合推荐排名（有 AA 分者按分优先，无分模型按官方定位/第三方评测综合评估；标注“超档/临界”的配置自动降位），第一名高亮即“本档首选”。</p>
-  <nav class="local-toc" aria-label="本地部署档位导航"><div class="lt-group"><span class="lt-label">本地 LLM</span><a href="#local-llm-8gb">8GB</a><a href="#local-llm-16gb">16GB</a><a href="#local-llm-24gb">24GB</a><a href="#local-llm-32gb">32GB</a><a href="#local-llm-48gb">48GB</a><a href="#local-llm-64gb">64GB</a><a href="#local-llm-96gb">96GB</a><a href="#local-llm-128gb">128GB</a><a href="#local-llm-192gb">192GB</a><a href="#local-llm-512gb">512GB</a><a href="#local-llm-datacenter">数据中心</a></div><div class="lt-group"><span class="lt-label">生图</span><a class="lt-img" href="#local-img">生图榜</a><a class="lt-img" href="#local-img-8gb">8GB</a><a class="lt-img" href="#local-img-16gb">16GB</a><a class="lt-img" href="#local-img-24gb">24GB</a><a class="lt-img" href="#local-img-48gb">48GB</a><a class="lt-img" href="#local-img-datacenter">数据中心</a></div></nav>
+  <div class="local-mode" role="group" aria-label="本地部署子界面">
+    <button type="button" class="local-mode-btn on" data-local="llm" aria-pressed="true">对话 / 本地 LLM</button>
+    <button type="button" class="local-mode-btn local-mode-img" data-local="img" aria-pressed="false">生图</button>
+  </div>
+  <nav class="local-toc" id="localTocLlm" aria-label="本地 LLM 档位导航"><div class="lt-group"><a href="#local-llm-8gb">8GB</a><a href="#local-llm-16gb">16GB</a><a href="#local-llm-24gb">24GB</a><a href="#local-llm-32gb">32GB</a><a href="#local-llm-48gb">48GB</a><a href="#local-llm-64gb">64GB</a><a href="#local-llm-96gb">96GB</a><a href="#local-llm-128gb">128GB</a><a href="#local-llm-192gb">192GB</a><a href="#local-llm-512gb">512GB</a><a href="#local-llm-datacenter">数据中心</a></div></nav>
+  <nav class="local-toc" id="localTocImg" aria-label="生图档位导航" hidden><div class="lt-group"><a class="lt-img" href="#local-img-8gb">8GB</a><a class="lt-img" href="#local-img-16gb">16GB</a><a class="lt-img" href="#local-img-24gb">24GB</a><a class="lt-img" href="#local-img-48gb">48GB</a><a class="lt-img" href="#local-img-datacenter">数据中心</a></div></nav>
 
   <div id="localMount" class="local-mount" data-mounted="0">
     <p class="empty local-mount-ph">切换到本 Tab 后加载档位表与生图榜…</p>
@@ -754,7 +766,7 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
     // 顶栏+关注条均非 sticky（随页滚走）；空态 watchbar[hidden] 亦不占位
     root.style.setProperty("--tabs-top", "0px");
     if(tabs) root.style.setProperty("--tabs-h", Math.round(tabs.getBoundingClientRect().height) + "px");
-    var ltoc = document.querySelector("#v-local .local-toc");
+    var ltoc = document.querySelector("#v-local .local-toc:not([hidden])");
     if(ltoc && ltoc.offsetParent !== null){
       root.style.setProperty("--local-toc-h", Math.round(ltoc.getBoundingClientRect().height) + "px");
     }
@@ -775,6 +787,10 @@ CHANGES.forEach(function(c){ c.m.forEach(function(x){ mentions[x]=(mentions[x]||
     e.preventDefault();
     if(typeof ensureLocalMounted === "function") ensureLocalMounted();
     var id = a.getAttribute("href").slice(1);
+    if(typeof setLocalPane === "function"){
+      if(id.indexOf("local-img") === 0) setLocalPane("img", {skipShare:true});
+      else if(id.indexOf("local-llm") === 0) setLocalPane("llm", {skipShare:true});
+    }
     var el = document.getElementById(id);
     if(!el) return;
     measureSticky();
@@ -863,11 +879,12 @@ document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
     if(hub==="local-img"){
       go("local");
       ensureLocalMounted();
-      syncHubToc("local", true);
+      if(typeof setLocalPane === "function") setLocalPane("img", {skipShare:true});
+      else syncHubToc("local", true);
       setTimeout(function(){
         var el = document.getElementById("local-img");
         if(el) el.scrollIntoView({behavior:"smooth", block:"start"});
-        if(typeof updateShareUrl==="function") updateShareUrl({tab:"local", hash:"#local-img"}); else if(history.replaceState) history.replaceState(null, "", "#local-img");
+        if(typeof updateShareUrl==="function") updateShareUrl({tab:"local", local:"img", hash:"#local-img"}); else if(history.replaceState) history.replaceState(null, "", "#local-img");
       }, 40);
     } else {
       go(hub);
@@ -1523,6 +1540,34 @@ function enhanceLocalImgCards(root){
     });
   });
 }
+function wrapLocalPanes(mount){
+  if(!mount || mount.querySelector("#localPaneLlm")) return;
+  var imgH2 = mount.querySelector("#local-img");
+  var paneLlm = document.createElement("div");
+  paneLlm.id = "localPaneLlm";
+  paneLlm.className = "local-pane";
+  paneLlm.setAttribute("data-local", "llm");
+  var paneImg = document.createElement("div");
+  paneImg.id = "localPaneImg";
+  paneImg.className = "local-pane";
+  paneImg.setAttribute("data-local", "img");
+  var nodes = Array.prototype.slice.call(mount.childNodes);
+  var hitImg = false;
+  nodes.forEach(function(n){
+    if(!hitImg && n.nodeType === 1 && n.id === "local-img") hitImg = true;
+    if(!hitImg) paneLlm.appendChild(n);
+    else paneImg.appendChild(n);
+  });
+  // if #local-img missing, keep all in llm
+  if(!imgH2){
+    mount.appendChild(paneLlm);
+    paneImg.hidden = true;
+    mount.appendChild(paneImg);
+    return;
+  }
+  mount.appendChild(paneLlm);
+  mount.appendChild(paneImg);
+}
 function ensureLocalMounted(){
   if(_localMounted) return true;
   var mount = document.getElementById("localMount");
@@ -1530,11 +1575,13 @@ function ensureLocalMounted(){
   var root = document.getElementById("v-local");
   if(!mount || !src || !root) return false;
   mount.innerHTML = src.textContent;
+  wrapLocalPanes(mount);
   mount.setAttribute("data-mounted", "1");
   _localMounted = true;
   enhanceLocalComments(root);
   enhanceLocalLlmCards(root);
   enhanceLocalImgCards(root);
+  if(typeof setLocalPane === "function") setLocalPane(typeof localPane !== "undefined" ? localPane : "llm", {skipShare:true});
   if(_localSpyApi && typeof _localSpyApi.rebind === "function") _localSpyApi.rebind();
   if(typeof window.measureSticky === "function") measureSticky();
   return true;
@@ -1585,12 +1632,9 @@ document.getElementById("q").oninput = function(){
 
 /* ---------- Wave4b⑦：本地档 IntersectionObserver → TOC 高亮（懒挂载后 rebind） ---------- */
 _localSpyApi = (function initLocalTierSpy(){
-  var toc = document.querySelector("#v-local .local-toc");
-  if(!toc || !window.IntersectionObserver) return { rebind: function(){} };
-  var links = Array.prototype.slice.call(toc.querySelectorAll("a[href^='#']"));
-  if(!links.length) return { rebind: function(){} };
+  if(!window.IntersectionObserver) return { rebind: function(){} };
+  var links = [];
   var byId = {};
-  links.forEach(function(a){ byId[a.getAttribute("href").slice(1)] = a; });
   var visible = {};
   var io = null;
   var heads = [];
@@ -1616,6 +1660,10 @@ _localSpyApi = (function initLocalTierSpy(){
     return Math.round(th + lh + 4);
   }
   function rebind(){
+    var toc = document.querySelector("#v-local .local-toc:not([hidden])");
+    links = toc ? Array.prototype.slice.call(toc.querySelectorAll("a[href^='#']")) : [];
+    byId = {};
+    links.forEach(function(a){ byId[a.getAttribute("href").slice(1)] = a; });
     heads = Object.keys(byId).map(function(id){ return document.getElementById(id); }).filter(Boolean);
     if(io) io.disconnect();
     visible = {};
@@ -1634,7 +1682,56 @@ _localSpyApi = (function initLocalTierSpy(){
   return { rebind: rebind };
 })();
 
-/* ---------- Wave4b⑩：分享态 URL（?tab=&q=&cmp=&mode=，保留既有 hash / ?v= 缓存戳） ---------- */
+
+/* ---------- 本地 Tab 二级：对话 LLM / 生图 子界面 ---------- */
+var localPane = "llm";
+function setLocalPane(mode, opts){
+  opts = opts || {};
+  localPane = (mode === "img") ? "img" : "llm";
+  document.querySelectorAll(".local-mode-btn").forEach(function(b){
+    var on = b.getAttribute("data-local") === localPane;
+    b.classList.toggle("on", on);
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+  });
+  var tocLlm = document.getElementById("localTocLlm");
+  var tocImg = document.getElementById("localTocImg");
+  if(tocLlm){ if(localPane === "llm") tocLlm.removeAttribute("hidden"); else tocLlm.setAttribute("hidden", ""); }
+  if(tocImg){ if(localPane === "img") tocImg.removeAttribute("hidden"); else tocImg.setAttribute("hidden", ""); }
+  var paneLlm = document.getElementById("localPaneLlm");
+  var paneImg = document.getElementById("localPaneImg");
+  if(paneLlm){ if(localPane === "llm") paneLlm.removeAttribute("hidden"); else paneLlm.setAttribute("hidden", ""); }
+  if(paneImg){ if(localPane === "img") paneImg.removeAttribute("hidden"); else paneImg.setAttribute("hidden", ""); }
+  if(typeof syncHubToc === "function") syncHubToc("local", localPane === "img");
+  if(_localSpyApi && typeof _localSpyApi.rebind === "function") _localSpyApi.rebind();
+  if(typeof window.measureSticky === "function") measureSticky();
+  if(opts.scrollTo){
+    var el = document.getElementById(opts.scrollTo);
+    if(el){
+      if(typeof window.measureSticky === "function") measureSticky();
+      el.scrollIntoView({behavior: opts.smooth === false ? "auto" : "smooth", block:"start"});
+    }
+  }
+  if(!opts.skipShare && typeof updateShareUrl === "function"){
+    var hashOpt = opts.hash != null ? opts.hash : ("#" + (localPane === "img" ? "local-img" : "local-llm"));
+    updateShareUrl({tab:"local", local: localPane, hash: hashOpt});
+  }
+}
+document.querySelectorAll(".local-mode-btn").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    if(typeof ensureLocalMounted === "function") ensureLocalMounted();
+    var mode = btn.getAttribute("data-local") || "llm";
+    setLocalPane(mode);
+    var topId = mode === "img" ? "local-img" : "local-llm";
+    var el = document.getElementById(topId) || document.getElementById(mode === "img" ? "localPaneImg" : "localPaneLlm");
+    if(el && typeof window.measureSticky === "function"){
+      measureSticky();
+      // scroll pane start into view lightly
+      try{ el.scrollIntoView({behavior:"smooth", block:"start"}); }catch(err){}
+    }
+  });
+});
+
+/* ---------- Wave4b⑩：分享态 URL（?tab=&q=&cmp=&mode=&local=，保留既有 hash / ?v= 缓存戳） ---------- */
 function updateShareUrl(opts){
   opts = opts || {};
   try{
@@ -1652,6 +1749,9 @@ function updateShareUrl(opts){
     var mode = (opts.mode != null) ? opts.mode : (typeof boardMode !== "undefined" ? boardMode : "top");
     if(mode && mode !== "top") url.searchParams.set("mode", mode);
     else url.searchParams.delete("mode");
+    var local = (opts.local != null) ? opts.local : (typeof localPane !== "undefined" ? localPane : "llm");
+    if(tab === "local" && local && local !== "llm") url.searchParams.set("local", local);
+    else url.searchParams.delete("local");
     if(opts.hash != null){
       var h = opts.hash;
       if(h && h.charAt(0) !== "#") h = "#" + h;
@@ -1668,6 +1768,7 @@ function restoreShareUrl(){
     var q = url.searchParams.get("q") || "";
     var cmp = url.searchParams.get("cmp") || "";
     var mode = url.searchParams.get("mode") || "top";
+    var local = url.searchParams.get("local") || "llm";
     var hash = (location.hash || "").replace(/^#/, "");
 
     // hash 优先：#v-board / #local-img / #local-llm-8gb 等
@@ -1675,6 +1776,8 @@ function restoreShareUrl(){
       tab = hash.slice(2);
     } else if(hash.indexOf("local-") === 0){
       tab = "local";
+      if(hash.indexOf("local-img") === 0) local = "img";
+      else if(hash.indexOf("local-llm") === 0) local = "llm";
     }
 
     if(q){
@@ -1687,9 +1790,16 @@ function restoreShareUrl(){
     if(mode === "top" || mode === "full"){
       setBoardMode(mode, {skipShare:true});
     }
+    if(local === "img" || local === "llm"){
+      localPane = local;
+    }
     if(tab){
       var t = document.querySelector('.tab[data-v="'+tab+'"]');
       if(t) activateTab(t, {skipShare:true});
+    }
+    if(tab === "local" || (hash && hash.indexOf("local-") === 0)){
+      if(typeof ensureLocalMounted === "function") ensureLocalMounted();
+      if(typeof setLocalPane === "function") setLocalPane(localPane, {skipShare:true});
     }
     if(q && (tab === "board" || cur === "board")) applyFilters(q);
     if(SELECTED.length){
@@ -1700,6 +1810,10 @@ function restoreShareUrl(){
     }
     if(hash && hash.indexOf("local-") === 0){
       if(typeof ensureLocalMounted === "function") ensureLocalMounted();
+      if(typeof setLocalPane === "function"){
+        if(hash.indexOf("local-img") === 0) setLocalPane("img", {skipShare:true});
+        else setLocalPane("llm", {skipShare:true});
+      }
       setTimeout(function(){
         var el = document.getElementById(hash);
         if(el){
@@ -1708,7 +1822,7 @@ function restoreShareUrl(){
         }
       }, 80);
     }
-    updateShareUrl({tab: cur, hash: hash ? "#"+hash : (location.hash || "")});
+    updateShareUrl({tab: cur, local: (cur==="local" ? localPane : "llm"), hash: hash ? "#"+hash : (location.hash || "")});
   }catch(err){}
 }
 
