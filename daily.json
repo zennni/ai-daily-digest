@@ -1,5 +1,21 @@
 [
   {
+    "d": "2026-10-20",
+    "w": "星期二",
+    "pts": [
+      "MiniMax M3.1 Flash 正式发布：Agent／编程／电脑操作／安全代际跃升，价约 0.15／0.60",
+      "Inception Mercury 3：扩散 LLM 扩到 1M 上下文，约 1,068 TPS，对标 Luna／Haiku",
+      "OpenAI 加速约 300 亿美元融资，估值望超 1.4 万亿，抢在 Anthropic IPO 前",
+      "Cloudflare Clairic：System One「抽取模型」上 Workers AI，只收输入、不出 token"
+    ],
+    "link": "AI日报-2026-10-20.html",
+    "m": [
+      "MiniMax M3.1 Flash",
+      "Mercury 3"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-19",
     "w": "星期一",
     "pts": [

@@ -1,5 +1,61 @@
 [
   {
+    "t": "MiniMax 发布 M3.1 Flash：推理近 3×、成本约 −70%，权重稍后开放",
+    "s": "官方博文与路透确认：M3.1 Flash 面向 Agent／编程／电脑操作／网络安全，多模态 1M 上下文；挂牌 0.15／0.60／缓存 0.015。厂商给出 DeepSWE 73.7%、CyberGym 82% 等自评；本站 AA 42、性价比 A。API、M Plan、MiniMax Code 当日可用。",
+    "d": "10月19日",
+    "src": "MiniMax / Reuters",
+    "link": "https://www.minimax.io/blog/minimax-m31f",
+    "m": [
+      "MiniMax M3.1 Flash"
+    ]
+  },
+  {
+    "t": "Inception 推出 Mercury 3：扩散 LLM 达约 1068 TPS、1M 上下文",
+    "s": "厂商称质量对标 GPT-6 Luna／Claude Haiku 5.5，速度快 4–8×；首发价半价 0.10／0.35。已接入 OpenRouter、Baseten、Vercel；早期用于浏览器智能体、教育与客服。把「扩散能否规模化」变成可切换的生产端点。",
+    "d": "10月19日",
+    "src": "Inception Labs",
+    "link": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "m": [
+      "Mercury 3"
+    ]
+  },
+  {
+    "t": "路透：OpenAI 拟加速完成约 300 亿美元融资，抢在 Anthropic IPO 前",
+    "s": "知情人士称估值目标逾 1.4 万亿，节奏快于同规模常规轮次；SoftBank、MGX 等在谈。OpenAI 展示 Astra 后年化约 500→700 亿口径；Anthropic Q3 168 亿但增速放缓，上市估值预期承压。两家争抢重叠的长钱与主权买家。",
+    "d": "10月19–20日",
+    "src": "Reuters",
+    "link": "https://www.moneycontrol.com/artificial-intelligence/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-report-article-14055784.html",
+    "m": [
+      "GPT-6 Astra"
+    ]
+  },
+  {
+    "t": "Cloudflare 预览 Clairic：System One 抽取模型，单次前向只收输入价",
+    "s": "相对 LLM 结构化抽取，Clairic 返回类型化值、span 偏移、置信度与空值概率；可与 Clef 决策模型、LLM 写回复级联。Workers AI 预览端点 @cf/cloudflare/clairic，权重计划随后开源。",
+    "d": "10月19日",
+    "src": "Cloudflare Blog",
+    "link": "https://blog.cloudflare.com/clairic-extraction-model/",
+    "m": [
+      "Clairic"
+    ]
+  },
+  {
+    "t": "英国 FCA 发布金融服务 AI「好做法／待改进」示例，强调现有规则仍适用",
+    "s": "10 月 19 日 FCA 公布消费结果、治理问责、业务韧性等维度的正反示例：夸大能力、测试不足、人工监督流于形式被点名。文件定位为例示而非新法规清单——银行／保险用 AI 时责任不随算法转移。",
+    "d": "10月19日",
+    "src": "UK FCA",
+    "link": "https://www.fca.org.uk/publications/good-poor-practice/ai-financial-services",
+    "m": []
+  },
+  {
+    "t": "Stripe：约 200 个 AI 智能体在用 Link 代客下单，9 月代理成交量级跳升",
+    "s": "相对 9 月统计时约 70 个代理，Link 上代理数量增至约 200；媒体转述 9 月代理购次约增 38 倍、支付额约增 20 倍，但 Stripe 未公布绝对金额。零售占比高，单笔均值约百美元量级——代理商务从演示进入可观测流水。",
+    "d": "10月19日",
+    "src": "Stripe / 媒体转述",
+    "link": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+    "m": []
+  },
+  {
     "t": "DeepSeek 开放 Search / Fetch API：自建搜索引擎按次计费，0.75 美元／千次成功调用",
     "s": "DeepSeek 把支撑自家聊天应用、日服务数亿次请求的搜索引擎开放为两个 REST 端点：Search 返回结构化网页结果（query 最长 128 字符、每次 1–50 条，支持 site:／lang:／after: 等），Fetch 把单个 URL 转成 Markdown。计费按成功且非空的 HTTP 200 计，每个端点 0.75 美元／千次，失败、空结果、超时不计费；账户级各 5 QPS。服务端经 DeepSeek Harness、Claude Code、Codex 发起的工具调用在 10 月 31 日 16:00 UTC 前免费。对做 RAG／智能体的团队，这等于多了一张可对标自建爬虫的价目表。",
     "d": "10月17日",
