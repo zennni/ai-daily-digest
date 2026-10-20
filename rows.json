@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "models": [
     {
       "name": "Claude Opus 5.5",
@@ -882,6 +882,28 @@
       "rank": 40
     },
     {
+      "name": "MiniMax M3.1 Flash",
+      "vendor": "MiniMax",
+      "country": "中国",
+      "tier": "默认",
+      "aa": 43,
+      "aa_dec": null,
+      "pin": 0.15,
+      "pcache": 0.015,
+      "pout": 0.6,
+      "open_": "闭源",
+      "lic": "专有",
+      "src": "官方",
+      "note": "<b>10/19 正式发布 MiniMax M3.1 Flash（早期匿名代号 Space Bunny）</b>：Artificial Analysis Changelog / 模型页给出 Intelligence Index <b>43</b>（与 Claude Haiku 5.5 Max 同分；10/19 晚间榜曾记 42，10/20 对照 AA 官方页勘误为 43）；官方定位下一代 Flash，强化 Agent / Coding / Computer Use / 网络安全，官方称线上推理约 3 倍速、用量成本约降 70%；多模态（文+图入、文出）、1M 上下文；<b>权重尚未开放、计划后续放出</b>，主表记闭源/专有；<b>官方美元挂牌 $0.15/$0.60、缓存读 $0.015</b>（platform.minimax.io 定价页；OpenRouter 目前仅有 :free 限速端点，不按永久免费计）；标准任务成本 $0.30、综合性价比 76（A）。一手来源：AA 模型页 / Changelog、minimax.io 发布博文、官方定价页。",
+      "cost": 0.3,
+      "ability": 74.1,
+      "costscore": 77.79773997906088,
+      "value": 76,
+      "eff": 143.3,
+      "grade": "A",
+      "rank": 41
+    },
+    {
       "name": "Grok 4.6",
       "vendor": "xAI",
       "country": "美国",
@@ -901,7 +923,7 @@
       "value": 58,
       "eff": 12.3,
       "grade": "C",
-      "rank": 41
+      "rank": 42
     },
     {
       "name": "GLM-5.3-Flash",
@@ -922,28 +944,6 @@
       "costscore": 79.365616555498,
       "value": 75,
       "eff": 152.7,
-      "grade": "A",
-      "rank": 42
-    },
-    {
-      "name": "MiniMax M3.1 Flash",
-      "vendor": "MiniMax",
-      "country": "中国",
-      "tier": "默认",
-      "aa": 42,
-      "aa_dec": null,
-      "pin": 0.15,
-      "pcache": 0.015,
-      "pout": 0.6,
-      "open_": "闭源",
-      "lic": "专有",
-      "src": "官方",
-      "note": "<b>10/19 正式发布 MiniMax M3.1 Flash（早期匿名代号 Space Bunny）</b>：Artificial Analysis Changelog 同日给出 Intelligence Index <b>42</b>（与 GLM-5.3-Flash 同分、高于 Claude Opus 5.5 Low 等同档成本更低者按规则排前）；官方定位下一代 Flash，强化 Agent / Coding / Computer Use / 网络安全，官方称线上推理约 3 倍速、用量成本约降 70%；多模态（文+图入、文出）、1M 上下文；<b>权重尚未开放、计划后续放出</b>，主表记闭源/专有；<b>官方美元挂牌 $0.15/$0.60、缓存读 $0.015</b>（platform.minimax.io 定价页；OpenRouter 目前仅有 :free 限速端点，不按永久免费计）；标准任务成本 $0.30、综合性价比 75（A）。一手来源：AA 模型页 / Changelog、minimax.io 发布博文、官方定价页。",
-      "cost": 0.3,
-      "ability": 72.4,
-      "costscore": 77.79773997906089,
-      "value": 75,
-      "eff": 140.0,
       "grade": "A",
       "rank": 43
     },
@@ -2511,6 +2511,16 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-20",
+      "t": "勘误：MiniMax M3.1 Flash AA Intelligence Index 42→43（对照 AA 官方模型页 / Changelog）；性价比 75→76（A），主榜位次上移",
+      "m": [
+        "MiniMax M3.1 Flash",
+        "Claude Haiku 5.5",
+        "GLM-5.3-Flash"
+      ],
+      "s": "<b>对照 Artificial Analysis 官方 LLM Leaderboard / MiniMax-M3.1-Flash 模型页</b>：Intelligence Index 现报 <b>43</b>（Changelog 10/19 条目亦为 43；10/19 21:00 榜单曾按早期快照记 42）。价格未变（官方 $0.15/$0.60、缓存 $0.015）；权重仍未开放。重算后综合性价比 76（A），主榜紧随 Claude Haiku 5.5 Max。今日（10/20）SAFE 中间价表尚未见新行，汇率仍沿用 10/19 的 6.7208，不改挂价。Mercury 3（Inception 10/19）尚无 AA 分，不上榜。"
+    },
     {
       "d": "10-19",
       "t": "新增 MiniMax M3.1 Flash：AA Intelligence Index 42，官方 $0.15/$0.60（缓存 $0.015）；权重未开、性价比 A（75）",
