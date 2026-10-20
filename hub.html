@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 前沿情报台 · 日报 × 榜单综合 Hub</title>
+<script>(function(){try{var v=localStorage.getItem("hub-board-mobile");if(v==="table")v="compact";if(v!=="full"&&v!=="compact"&&v!=="cards")v="compact";document.documentElement.setAttribute("data-hub-board-mobile",v);}catch(e){document.documentElement.setAttribute("data-hub-board-mobile","compact");}})();</script>
 <style>
 :root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b;--accent:#f59e0b;--accent-dk:#ea580c;--accent-bg:#fff7ed;--tabs-top:0px;--tabs-h:44px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -120,7 +121,7 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .badge-S{background:#1d4ed8}.badge-A{background:#0e9f6e}.badge-B{background:#b45309}.badge-C{background:#9a3412}.badge-D{background:#64748b}.badge-N\/A{background:#94a3b8}
 
 
-/* 主榜窄屏卡片（②）：≤760px 隐藏宽表横滑，改竖向精简卡 */
+/* 榜窄屏三态：默认精简表；本地 LLM/生图仍用 .board-cards */
 .board-cards{display:none}
 .bc-item{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;background:var(--card)}
 .bc-top{display:flex;align-items:flex-start;gap:10px}
@@ -136,7 +137,52 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .bc-item.open .bc-more{display:block}
 .bc-toggle{display:inline-block;margin-top:8px;font-size:12px;color:var(--primary);cursor:pointer;user-select:none;background:none;border:none;padding:0;font-family:inherit}
 .bc-actions{display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:2px}
-@media(max-width:760px){.ddate{min-width:64px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap,#valueTblWrap,#openTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0;font-size:16px}}
+.mobile-board-mode{display:none;margin-left:auto}
+@media(max-width:760px){
+  .ddate{min-width:64px}
+  .cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}
+  .mobile-board-mode{display:inline-flex}
+  /* 默认精简 + 详细：三表横滑；格子才出 Cards */
+  #boardTblWrap,#valueTblWrap,#openTblWrap{
+    display:block;overflow-x:auto;-webkit-overflow-scrolling:touch
+  }
+  #boardCards,#valueCards,#openCards{display:none!important}
+  .board-cards{display:block} /* 仅抬本地 .llm-cards/.img-cards */
+  #boardTbl,#valueTbl,#openTbl{font-size:12px}
+  #boardTbl th,#boardTbl td,
+  #valueTbl th,#valueTbl td,
+  #openTbl th,#openTbl td{padding:6px 7px}
+  /* 精简列（默认 / compact）：同桌面 board-compact 口径 */
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(4),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(4),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(5),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(5),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(7),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(7),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(8),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(8),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(9),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(9),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(10),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(10),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(12),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(12),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(13),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(13),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(14),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(14){display:none}
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td.mname .star-inline{display:inline;margin-left:6px;vertical-align:middle}
+  html[data-hub-board-mobile="full"] #boardTbl td.mname .star-inline{display:none}
+  /* 格子：藏三表、露三处 Cards */
+  html[data-hub-board-mobile="cards"] #boardTblWrap,
+  html[data-hub-board-mobile="cards"] #valueTblWrap,
+  html[data-hub-board-mobile="cards"] #openTblWrap{display:none}
+  html[data-hub-board-mobile="cards"] #boardCards,
+  html[data-hub-board-mobile="cards"] #valueCards,
+  html[data-hub-board-mobile="cards"] #openCards{display:block!important}
+  .filters{gap:8px}
+  .filters select,.filters input[type=number]{flex:1 1 140px;min-width:0;font-size:16px}
+}
 
 /* Wave2：主榜筛选默认折叠 + Hub 顶栏锚点 */
 .filters-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
@@ -229,7 +275,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   #v-local h2.sec,#v-local h3.sub,#v-local h3.sub2{scroll-margin-top:calc(var(--tabs-h) + var(--local-toc-h) + 8px)}
 }
 
-/* Wave4b⑧：桌面主榜默认精简列（☑/排名/名+★/AA/任务成本）；展开全列。≤760 仍走卡片 */
+/* Wave4b⑧：桌面主榜精简列（☑/排名/名+★/AA/任务成本）；展开全列。≤760 走三态详细|精简|格子 */
 #colsToggle{display:none}
 @media(min-width:761px){
   #colsToggle{display:inline-flex;align-items:center}
@@ -339,7 +385,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
   .topbar .searchwrap{margin-left:0;flex:1 1 100%;width:100%;max-width:none;min-width:0}
 }
 
-/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡统一 bc 壳（主榜/性价比/开放 + 本地 LLM/生图） */
+/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏三态详细|精简|格子；本地 LLM/生图仍 bc 卡；新闻日卡仍 --bc-* */
 :root{
   --bc-pad:6px 8px;--bc-name-fs:13px;--bc-gap:5px;--bc-meta-fs:11.5px;
 }
@@ -435,6 +481,11 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       </div>
       <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardFilters">筛选 ▾</button>
       <button type="button" id="colsToggle" class="filters-toggle" aria-expanded="true" aria-controls="boardTbl" title="桌面精简列 / 全列">精简列 ▴</button>
+      <div class="board-mode mobile-board-mode" id="mobileBoardMode" role="group" aria-label="窄屏主榜视图">
+        <button type="button" class="board-mode-btn" data-mobile-mode="full" aria-pressed="false" title="窄屏完整列横滑表">详细</button>
+        <button type="button" class="board-mode-btn on" data-mobile-mode="compact" aria-pressed="true" title="窄屏精简列横滑表">精简</button>
+        <button type="button" class="board-mode-btn" data-mobile-mode="cards" aria-pressed="false" title="一卡一模型">格子</button>
+      </div>
       <div class="filters is-collapsed" id="boardFilters">
       <select id="fVendor"><option value="">全部厂商</option></select>
       <select id="fLic"><option value="">全部许可</option></select>
@@ -1630,6 +1681,38 @@ document.getElementById("q").oninput = function(){
   // 默认全列；仅当明确存了 1 才精简
   setCompact(saved === "1");
   btn.onclick = function(){ setCompact(tbl.classList.contains("board-compact") ? false : true); };
+})();
+
+/* ---------- 窄屏主榜三态：详细 | 精简 | 格子（三榜同切） ---------- */
+(function bindMobileBoardMode(){
+  var KEY = "hub-board-mobile";
+  var root = document.documentElement;
+  var group = document.getElementById("mobileBoardMode");
+  if(!group) return;
+  var btns = group.querySelectorAll("[data-mobile-mode]");
+  function normalize(v){
+    if(v === "table") return "compact"; // 旧双模
+    if(v === "full" || v === "compact" || v === "cards") return v;
+    return "compact";
+  }
+  function apply(mode){
+    mode = normalize(mode);
+    root.setAttribute("data-hub-board-mobile", mode);
+    btns.forEach(function(b){
+      var on = b.getAttribute("data-mobile-mode") === mode;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    try{ localStorage.setItem(KEY, mode); }catch(e){}
+  }
+  var saved = null;
+  try{ saved = localStorage.getItem(KEY); }catch(e){}
+  apply(saved || "compact");
+  group.addEventListener("click", function(e){
+    var b = e.target.closest("[data-mobile-mode]");
+    if(!b || !group.contains(b)) return;
+    apply(b.getAttribute("data-mobile-mode"));
+  });
 })();
 
 /* ---------- Wave4b⑦：本地档 IntersectionObserver → TOC 高亮（懒挂载后 rebind） ---------- */
