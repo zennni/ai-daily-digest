@@ -1075,7 +1075,8 @@ function pickBestByName(list){
 function setBoardMode(mode, opts){
   opts = opts || {};
   boardMode = (mode === "top") ? "top" : "full";
-  document.querySelectorAll(".board-mode-btn").forEach(function(b){
+  /* 只动全量/同系（data-mode）；勿扫窄屏三态 data-mobile-mode */
+  document.querySelectorAll(".board-mode-btn[data-mode]").forEach(function(b){
     var on = b.getAttribute("data-mode") === boardMode;
     b.classList.toggle("on", on);
     b.setAttribute("aria-pressed", on ? "true" : "false");
@@ -2017,7 +2018,8 @@ function init(){
   document.querySelectorAll("#fVendor,#fLic,#fOpen,#fAA,#fCost,#fValued").forEach(function(el){
     el.onchange = function(){ applyFilters(); };
   });
-  document.querySelectorAll(".board-mode-btn").forEach(function(btn){
+  /* 全量/同系：只绑 [data-mode]；窄屏三态由 #mobileBoardMode 独立 handler */
+  document.querySelectorAll(".board-mode-btn[data-mode]").forEach(function(btn){
     btn.addEventListener("click", function(){
       setBoardMode(btn.getAttribute("data-mode") || "full");
     });
