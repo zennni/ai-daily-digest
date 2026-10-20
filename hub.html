@@ -120,7 +120,7 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .badge-S{background:#1d4ed8}.badge-A{background:#0e9f6e}.badge-B{background:#b45309}.badge-C{background:#9a3412}.badge-D{background:#64748b}.badge-N\/A{background:#94a3b8}
 
 
-/* 榜窄屏：本地 LLM/生图仍用 .board-cards；主榜三表见下方 ≤760 紧表 */
+/* 主榜窄屏卡片（②）：≤760px 隐藏宽表横滑，改竖向精简卡 */
 .board-cards{display:none}
 .bc-item{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;background:var(--card)}
 .bc-top{display:flex;align-items:flex-start;gap:10px}
@@ -136,22 +136,7 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .bc-item.open .bc-more{display:block}
 .bc-toggle{display:inline-block;margin-top:8px;font-size:12px;color:var(--primary);cursor:pointer;user-select:none;background:none;border:none;padding:0;font-family:inherit}
 .bc-actions{display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:2px}
-@media(max-width:760px){
-  .ddate{min-width:64px}
-  .cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}
-  /* 主榜/性价比/开放：紧表横滑，藏一卡一模型 */
-  #boardTblWrap,#valueTblWrap,#openTblWrap{
-    display:block;overflow-x:auto;-webkit-overflow-scrolling:touch
-  }
-  #boardCards,#valueCards,#openCards{display:none!important}
-  .board-cards{display:block} /* 仅抬本地 .llm-cards/.img-cards */
-  #boardTbl,#valueTbl,#openTbl{font-size:12px}
-  #boardTbl th,#boardTbl td,
-  #valueTbl th,#valueTbl td,
-  #openTbl th,#openTbl td{padding:6px 7px}
-  .filters{gap:8px}
-  .filters select,.filters input[type=number]{flex:1 1 140px;min-width:0;font-size:16px}
-}
+@media(max-width:760px){.ddate{min-width:64px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap,#valueTblWrap,#openTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0;font-size:16px}}
 
 /* Wave2：主榜筛选默认折叠 + Hub 顶栏锚点 */
 .filters-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
@@ -354,7 +339,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
   .topbar .searchwrap{margin-left:0;flex:1 1 100%;width:100%;max-width:none;min-width:0}
 }
 
-/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏：主榜三表紧表；本地 LLM/生图仍 bc 卡；新闻日卡仍 --bc-* */
+/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡统一 bc 壳（主榜/性价比/开放 + 本地 LLM/生图） */
 :root{
   --bc-pad:6px 8px;--bc-name-fs:13px;--bc-gap:5px;--bc-meta-fs:11.5px;
 }
