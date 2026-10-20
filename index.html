@@ -67,6 +67,9 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .detail-title{font-size:15px;font-weight:700;color:var(--th-text);line-height:1.3;min-width:0;flex:1}
 .detail-close{flex:0 0 auto;width:28px;height:28px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink-soft);cursor:pointer;font-size:16px;line-height:1;font-family:inherit;padding:0}
 @media (hover:hover){.detail-close:hover{border-color:var(--primary2);color:var(--primary)}}
+.detail-foot{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);display:flex;justify-content:stretch}
+.detail-board-btn{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink-soft);cursor:pointer;font-size:12.5px;font-weight:600;font-family:inherit}
+@media (hover:hover){.detail-board-btn:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
 @media (max-width:760px){
   .detail{width:min(420px,92vw);max-height:70vh;padding:14px 14px;border-radius:12px}
   .detail-title{font-size:16px}
@@ -750,6 +753,9 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
     <button type="button" class="detail-close" id="detailClose" aria-label="关闭">✕</button>
   </div>
   <div class="detail-body" id="detailBody"></div>
+  <div class="detail-foot">
+    <button type="button" class="detail-board-btn" id="detailBoardBtn">在主榜查看</button>
+  </div>
 </div>
 
 <button type="button" class="cmp-fab" id="cmpFab" aria-expanded="false" aria-controls="cmp" hidden>对比 <span class="cmp-fab-n" id="cmpFabN">0</span></button>
@@ -963,8 +969,17 @@ document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
 })();
 
 /* ---------- 模型定位：跳主榜 + 高亮 ---------- */
-function goModel(name, filterOnly){
-  document.getElementById("q").value = name;
+var _detailModel = null;
+/* 非主榜 / 主榜点模型：只开详情弹窗，不跳主榜、不灌搜索 */
+function goModel(name){
+  showDetail(name);
+}
+/* 弹窗「在主榜查看」：关弹窗后切主榜 + 填搜索 + 定位闪行 */
+function goModelOnBoard(name){
+  if(!name) return;
+  closeDetail();
+  var q = document.getElementById("q");
+  if(q) q.value = name;
   go("board");
   applyFilters(name);
   var rows = document.querySelectorAll("#boardTbl tbody tr");
@@ -972,7 +987,13 @@ function goModel(name, filterOnly){
     if(r.dataset.n === name){
       r.scrollIntoView({block:"center"});
       r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
-      showDetail(name);
+    }
+  });
+  /* 窄屏格子卡：有 data-n 的同步闪一下 */
+  document.querySelectorAll(".bc-item").forEach(function(c){
+    if(c.dataset.n === name){
+      c.scrollIntoView({block:"center"});
+      c.classList.remove("flash"); void c.offsetWidth; c.classList.add("flash");
     }
   });
 }
@@ -1151,10 +1172,12 @@ function closeDetail(){
   var scrim = document.getElementById("detailScrim");
   if(d){ d.classList.remove("on"); d.hidden = true; }
   if(scrim){ scrim.classList.remove("on"); scrim.hidden = true; }
+  _detailModel = null;
 }
 function showDetail(name){
   var r = MODELS.filter(function(x){return x.n===name})[0];
   if(!r) return;
+  _detailModel = name;
   if(typeof closeCmpDrawer === "function") closeCmpDrawer();
   var rel = NEWS.filter(function(n){return n.m.indexOf(name)>=0});
   var d = document.getElementById("detail");
@@ -1174,8 +1197,12 @@ function showDetail(name){
 (function bindDetailUi(){
   var closeBtn = document.getElementById("detailClose");
   var scrim = document.getElementById("detailScrim");
+  var boardBtn = document.getElementById("detailBoardBtn");
   if(closeBtn) closeBtn.addEventListener("click", closeDetail);
   if(scrim) scrim.addEventListener("click", closeDetail);
+  if(boardBtn) boardBtn.addEventListener("click", function(){
+    if(_detailModel) goModelOnBoard(_detailModel);
+  });
   document.addEventListener("keydown", function(e){
     if(e.key !== "Escape") return;
     var d = document.getElementById("detail");
