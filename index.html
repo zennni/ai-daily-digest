@@ -978,10 +978,11 @@ function goModel(name){
 function goModelOnBoard(name){
   if(!name) return;
   closeDetail();
+  /* 只切主榜定位闪行/卡；不写 #q、不因搜索过滤成一条 */
   var q = document.getElementById("q");
-  if(q) q.value = name;
+  if(q && q.value) q.value = "";
   go("board");
-  applyFilters(name);
+  applyFilters(""); /* 全表渲染，邻居都留着 */
   var rows = document.querySelectorAll("#boardTbl tbody tr");
   rows.forEach(function(r){
     if(r.dataset.n === name){
