@@ -1,5 +1,22 @@
 [
   {
+    "d": "2026-10-21",
+    "w": "星期三",
+    "pts": [
+      "DeepSeek 开源 DeepInfer：自家生产推理引擎，默认 V4.1-Flash，双芯同列",
+      "Mistral Voxtral 3：转写＋TTS＋Voice Agent SDK，语音代理成完整零件目录",
+      "Google 双线同发：TorchTPU 开源 + Gemini for Government 预览",
+      "Anthropic 草案财报：H1 净亏逾 800 亿（多非现金）；Claude 蛋白结合剂过实验室"
+    ],
+    "link": "AI日报-2026-10-21.html",
+    "m": [
+      "DeepSeek-V4.1-Flash-1017",
+      "Mistral Large 4",
+      "Gemini 4 Argon"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-20",
     "w": "星期二",
     "pts": [

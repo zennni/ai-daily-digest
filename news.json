@@ -1,5 +1,85 @@
 [
   {
+    "t": "DeepSeek 开源 DeepInfer：生产推理栈公开，V4.1-Flash 默认可跑",
+    "s": "Apache 2.0 发布；内核库＋并行＋DSpark 投机解码＋结构化输出；NVIDIA SM100／昇腾 950；离线推理为主，KV 与拆分调度不在此次包内。HN 日榜第一。",
+    "d": "10月20日",
+    "src": "DeepSeek / Bloomberg",
+    "link": "https://github.com/deepseek-ai/DeepInfer",
+    "m": [
+      "DeepSeek-V4.1-Flash-1017"
+    ]
+  },
+  {
+    "t": "Mistral 发布 Voxtral 3：语音转写／TTS／实时智能体一条龙",
+    "s": "转写 50+ 语、实时 <500ms、TTS 35+ 语；批转写 0.0035–0.004 美元／分钟，TTS 13 美元／百万字符；Voice Agent SDK＋SIP。厂商称 FLEURS 等上压过 Whisper／Scribe／Gemini 转写。",
+    "d": "10月20日",
+    "src": "Mistral AI",
+    "link": "https://mistral.ai/news/voxtral-3/",
+    "m": [
+      "Mistral Large 4"
+    ]
+  },
+  {
+    "t": "Google 开源 TorchTPU：原生 PyTorch 后端直连 TPU",
+    "s": "torch_tpu 0.2.0，Apache 2.0；ATen／XLA 缓存／torch.compile／并行；示例含 Llama、Qwen。与 Amazon TorchNeuron 同日对照，云厂商争 PyTorch 训练负载。",
+    "d": "10月20日",
+    "src": "Google / HN",
+    "link": "https://github.com/pytorch/xla",
+    "m": []
+  },
+  {
+    "t": "Gemini for Government 预览：政务智能体套件上 Public Sector Summit",
+    "s": "面向美联邦／州／地方政府：政务技能、系统连接器、合作伙伴智能体与集中治理；HHS、密苏里州等先行。卡在 OneGov 约 11／15 到期窗口。",
+    "d": "10月20日",
+    "src": "Google Cloud",
+    "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-government-services",
+    "m": [
+      "Gemini 4 Argon"
+    ]
+  },
+  {
+    "t": "WSJ：Anthropic 草案 H1 净亏逾 800 亿美元，多属非现金重估",
+    "s": "约 720 亿为可转债等重估；报道称调整后经营利润 Q2／Q3 转正；远期算力承诺约 5180 亿。11 月 IPO 叙事继续高压。",
+    "d": "10月20日",
+    "src": "WSJ / The Context",
+    "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+    "m": [
+      "Claude Opus 5.5"
+    ]
+  },
+  {
+    "t": "Meta 披露 Prometheus：Ohio 约百万 GPU 超算，主训 Muse 系",
+    "s": "New Albany 园区，GB200／GB300 NVL72 在役、Vera Rubin 在路线图；预训练 goodput >85%、RL >90%；BAG 网络跨百公里。明确非 Llama 主训集群。",
+    "d": "10月20日",
+    "src": "Meta Engineering",
+    "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+    "m": [
+      "Muse Spark Open",
+      "Muse Wonder"
+    ]
+  },
+  {
+    "t": "DHS DeepSeek 禁令登联邦公报：民用机构须清退相关产品",
+    "s": "DHS 2026-0628 基于供应链安全法；含第三方嵌入实现；机构约 60 天申请例外。海军／NASA／商务部等此前已禁。",
+    "d": "10月20日",
+    "src": "Reuters / Federal Register",
+    "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+    "m": [
+      "DeepSeek-V4.1-Flash-1017",
+      "DeepSeek V4 Flash"
+    ]
+  },
+  {
+    "t": "OpenAI 公开低资源／遗留语言评测：COBOL 迁移等大涨",
+    "s": "MultiLangBench 开源；报道称 GPT-6.1 Sol 在 COBOL 迁移评测高推理档约 97.9%（对照旧档大幅提升）。银行／政务遗留现代化账单被重新计价。",
+    "d": "10月20日",
+    "src": "OpenAI / AI Weekly",
+    "link": "https://aiweekly.co/ai-news-today",
+    "m": [
+      "GPT-6.1 Sol"
+    ]
+  },
+  {
     "t": "MiniMax 发布 M3.1 Flash：推理近 3×、成本约 −70%，权重稍后开放",
     "s": "官方博文与路透确认：M3.1 Flash 面向 Agent／编程／电脑操作／网络安全，多模态 1M 上下文；挂牌 0.15／0.60／缓存 0.015。厂商给出 DeepSWE 73.7%、CyberGym 82% 等自评；本站 AA 42、性价比 A。API、M Plan、MiniMax Code 当日可用。",
     "d": "10月19日",
@@ -92,72 +172,5 @@
       "Claude Opus 5.5",
       "Grok 4.7"
     ]
-  },
-  {
-    "t": "网站开始在基础设施层整批拦截 AI 智能体浏览器",
-    "s": "The Verge 报道：即便持有合法访问凭证，由智能体驱动的浏览器也越来越多在 Cloudflare 等基础设施层被整批拦截。对冲路径是签约合作——购物智能体 Muse 已与 Walmart、Gap、Sephora、Best Buy 等达成协议，Shopify 也向智能体开放店面网络。内容站与购物站被迫在「拦死」与「分成合作」之间选边。",
-    "d": "10月18日",
-    "src": "The Verge / The Context",
-    "link": "https://thecontext.dev/en/briefing/2026-10-19/",
-    "m": []
-  },
-  {
-    "t": "OpenCode：Console 安全事件影响约 1.4% 连接了外部模型密钥的用户",
-    "s": "OpenCode 就上周 Console 事件给出影响范围：约 1.4% 的 Console 用户受影响，且限于已连接外部 AI 提供商密钥的账户；事件被描述为与模型蒸馏攻击相关。公司称已通知受影响用户，并与 Anthropic、OpenAI、Google 协作调查。实务建议仍是：在各提供商控制台轮换密钥并复查近期用量。",
-    "d": "10月18日",
-    "src": "OpenCode / The Neuron",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-19-2026/",
-    "m": []
-  },
-  {
-    "t": "微软退出 Nscale 埃塞克斯 AI 数据中心项目，英方仍称会续建",
-    "s": "英国 AI 基础设施商 Nscale 对媒体表示，微软已退出计划中的埃塞克斯（Loughton）数据中心合作；该项目曾被定位为英国最大 AI 算力项目之一。Nscale 称仍打算推进建设并另寻客户路径。微软抽身叠加新云厂商高度依赖头部超大规模客户的订单结构，把「积压合同」与「实际并网」之间的落差再次摆上台面。",
-    "d": "10月18日",
-    "src": "BBC / The Telegraph / Atlasnote",
-    "link": "https://atlasnote.ai/en/brief/2026-10-19-daily",
-    "m": []
-  },
-  {
-    "t": "媒体披露 Anthropic 向美议员递交的 AI 安全法案草案：触发阈值极高",
-    "s": "Politico／Tom's Hardware 等报道一份据称由 Anthropic 向议员推介的 AI 安全法案草案：框架接近 FRONTIER Act，但州法优先适用更强、透明度规则更硬、执法更弱；触发条件被报道为「50 人死亡或 10 亿美元损失」，且实质上主要由商务部一家机构决定是否叫停模型。草案尚未立法，但它很可能成为后续博弈的锚点。",
-    "d": "10月18日",
-    "src": "Politico / Tom's Hardware / AIBriefs",
-    "link": "https://aibriefs.news/briefing/2026-10-19",
-    "m": []
-  },
-  {
-    "t": "Accenture 内部：公司统一补贴员工 Claude 用量约 29 美元／人／月",
-    "s": "围绕 Accenture 内部政策的讨论显示：公司将按约 29 美元／员工／月统一覆盖 Claude 用量；此前有员工月开销被传至 500–1000 美元。29 美元更宜理解为集中预算而非硬上限——超额可转到项目／团队预算。效果是把 token 消耗从「公司隐形福利」变成需要项目负责人解释的成本项。",
-    "d": "10月18日",
-    "src": "The Neuron",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-19-2026/",
-    "m": []
-  },
-  {
-    "t": "本站榜单勘误上线：DeepSeek-V4.1-Flash-1017 AA 45，对照官方修订 18 处分数",
-    "s": "情报台 10 月 19 日榜单更新对照 Artificial Analysis 官方 LLM Leaderboard（Intelligence Index v4.3.2）勘误 18 处整数分并重排；DeepSeek-V4.1-Flash-1017 以 AA 45、输入／输出 0.30／1.20 美元每百万 token 入榜。同期 Claude Opus 5.5 Max 仍以 58 领跑。汇率按中国外汇交易中心中间价 6.7208。",
-    "d": "10月19日",
-    "src": "AI 前沿情报台 / Artificial Analysis",
-    "link": "https://zennni.github.io/ai-daily-digest/",
-    "m": [
-      "DeepSeek-V4.1-Flash-1017",
-      "Claude Opus 5.5"
-    ]
-  },
-  {
-    "t": "美芯片股八连跌蒸发约 2 万亿美元，费半创 2008 年来最长跌势",
-    "s": "费城半导体指数本周累跌 11.4%，连续八个交易日下跌，创 2008 年金融危机以来最长连跌纪录，八日蒸发市值约 2 万亿美元；纳指本周跌超 4%，为 2025 年 4 月以来最差单周。CoreWeave 本周暴跌超 25%，债券价格跌至通常预示财务困境的水平。黄仁勋在柏林接受彭博电视采访时称「一切终将过去」，认为 AI 的变革收益会盖过投资者担忧、波动只是短期信息；美银 Hartnett 则警告市场将转向避险。",
-    "d": "10月17日",
-    "src": "华尔街见闻",
-    "link": "https://www.readaitime.com/news/2026-10-17/h26elp15",
-    "m": []
-  },
-  {
-    "t": "AI 融资担忧升温：CoreWeave 无担保票据收益率触及 15%，Nebius 同跌逾两成",
-    "s": "CoreWeave（CRWV）与 Nebius（NBIS）自 10 月 8 日以来累计跌超 20%，CNN 恐惧与贪婪指数逼近「极度恐惧」；CoreWeave 无担保票据收益率触及 15%，Chamath Palihapitiya 公开警告 AI 私募信贷泡沫，马斯克回应「Yikes」。分歧同样鲜明：CoreWeave 手上仍有 1040 亿美元营收积压订单，黄仁勋为其辩护，ARK Invest 与 Cantor Fitzgerald 把回调视为机会。市场正在给「以高息债务支撑算力扩张」这一模式重新定级。",
-    "d": "10月17日",
-    "src": "24/7 Wall St. / CNN",
-    "link": "https://www.readaitime.com/news/2026-10-17/2n4qpq5x",
-    "m": []
   }
 ]

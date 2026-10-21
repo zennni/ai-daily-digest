@@ -1,210 +1,214 @@
 {
   "meta": {
-    "date": "2026-10-20",
-    "week": "星期二",
-    "note": "今日主题词：速度 × 成本边疆。10 月 19 日两家把「更快更便宜」做成产品叙事：MiniMax 正式发布 M3.1 Flash（早期匿名代号 Space Bunny），官方称线上推理近 3 倍速、用量成本约降 70%，定价 0.15／0.60 美元每百万输入／输出 token、缓存读 0.015；本站按 AA v4.3.2 记 42 分、主榜约第 43、性价比 75（A）。同日 Inception Labs 放出扩散式 LLM Mercury 3：厂商称在 NVIDIA GPU 上约 1,068 token／秒、1M 上下文，对标 GPT-6 Luna／Claude Haiku 5.5，首发五折 0.10／0.35。Cloudflare 则另开一条「System One」线——Clairic 抽取模型在 Workers AI 预览上线，单次前向、只收输入价。资本侧同样在抢时钟：路透称 OpenAI 拟加速完成约 300 亿美元融资、估值望超 1.4 万亿，赶在 Anthropic 约 11 月中旬 IPO 披露前锁定同一批长钱。叙事从「再堆几个智能分」切到「谁能把延迟和账单压到可规模化」——与社区里「智力饱和、流量更跟成本／速度走」的讨论同向。"
+    "date": "2026-10-21",
+    "week": "星期三",
+    "note": "今日主题词：开源基建 × 语音代理 × 公部门落地。过去约 24 小时三条主线并行：DeepSeek 把自家生产推理栈 DeepInfer 以 Apache 2.0 开源（默认对接 DeepSeek-V4.1-Flash-1017，NVIDIA SM100 与华为昇腾 950 同列；离线推理为主，KV／拆分调度仍需自建），HN 热度破两千；Mistral 发布 Voxtral 3 语音全家桶与 Voice Agent SDK（转写 50+ 语、实时 <500ms、TTS 35+ 语，批价低至 0.0035 美元／分钟）；Google 同日放出 TorchTPU（原生 PyTorch→TPU）与「Gemini for Government」预览（美国联邦／州／地方政府智能体套件）。资本与合规侧：WSJ 披露 Anthropic 草案 S-1 上半年净亏逾 800 亿美元（约 720 亿为可转债重估等非现金项），DHS 禁令正式登上联邦公报；Meta 则详述 Ohio 百万 GPU 超算 Prometheus，主要服务 Muse 系而非 Llama。叙事继续从「堆分」切到「谁能把推理、语音与合规部署做成可复制基建」。"
   },
   "highlights": [
     {
-      "title": "MiniMax M3.1 Flash 正式发布：Agent／编程／电脑操作／安全代际跃升，价约 0.15／0.60",
-      "summary": "MiniMax 10 月 19 日宣布 M3.1 Flash 上线；早期匿名跑过超 200 万亿 token 的 Space Bunny 即其前身。官方称相对前代 Flash，Agent 协同、编程、Computer Use 与网络安全「代际」提升，线上推理近 3 倍速、用量成本约降 70%；日常输出可达 200+ TPS、P50 约 170+ TPS。厂商自评：DeepSWE v1.1 73.7%、BankerToolBench 76.2、OSWorld V2 61.7、ALE 29.6（称中国模型这两项第一）、CyberGym 82%。挂牌价每百万 token：输入 0.15、输出 0.60、缓存读 0.015 美元；API／M Plan／MiniMax Code 可用，权重「稍后放出」。本站榜单以 AA Intelligence Index v4.3.2 记 42 分、任务成本约 0.30、性价比 75（A）、主榜约第 43。"
+      "title": "DeepSeek 开源 DeepInfer：自家生产推理引擎，默认 V4.1-Flash，双芯同列",
+      "summary": "10 月 20 日 DeepSeek 开源 DeepInfer（Apache 2.0），称其为支撑线上服务的高性能推理框架：集成 FlashMLA／DeepGEMM／DeepEP 等自研内核，支持 Attention DP／CP、MoE EP、DSpark 投机解码、异步调度、批不变推理、确定性采样与结构化输出；硬件写明 NVIDIA SM100 与华为 Ascend 950。默认权重 DeepSeek-V4.1-Flash-1017。文档强调当前以离线推理为主，完整在线服务还需自备 KV cache、prefill／decode 拆分与副本负载均衡。Bloomberg／The New Stack／HN（约 2000+ 赞）同日跟进——开源权重之后，Serving 栈本身也成了社区抓手。"
     },
     {
-      "title": "Inception Mercury 3：扩散 LLM 扩到 1M 上下文，约 1,068 TPS，对标 Luna／Haiku",
-      "summary": "Inception Labs 同日发布 Mercury 3，称其为迄今最强商用扩散式语言模型：参数规模相对 Mercury 1 扩大 40 倍以上，智能约 3 倍提升，却仍保持千级 token／秒；厂商写明 NVIDIA GPU 上约 1,068 TPS，上下文从 Mercury 2.5 的 260K 扩到 1M。质量上自称持平或优于速度优化档的 GPT-6 Luna 与 Claude Haiku 5.5。正式价 0.20／0.70，首发五折 0.10／0.35，缓存输入再九折。已上 Inception API、OpenRouter、Baseten、Vercel AI Gateway，OpenAI 兼容。早期案例覆盖浏览器智能体、实时辅导、搜索与客服——把「扩散能不能规模化」从论文问题推进到可替换的生产路由。"
+      "title": "Mistral Voxtral 3：转写＋TTS＋Voice Agent SDK，语音代理成完整零件目录",
+      "summary": "Mistral 10 月 20 日发布 Voxtral 3 家族：Small／Mini Transcribe 3（50+ 语、说话人分离、上下文偏置）、Mini Transcribe Realtime 3（面向智能体、延迟宣称 <500ms）、Voxtral Speech／TTS 3（35+ 语、50+ 方言、情感／语速可控）。官方称 Small Transcribe 在 FLEURS 等上优于 Whisper large-v3、Scribe v2、Gemini 3.5 Transcribe。批转写低至 0.0035 美元／分钟；语音智能体 API 配 Mistral Small 4 约 0.04 美元／分钟。SDK 基于 LiveKit，支持工具调用与 SIP 电话。EU 托管 API 或自部署可选。"
     },
     {
-      "title": "OpenAI 加速约 300 亿美元融资，估值望超 1.4 万亿，抢在 Anthropic IPO 前",
-      "summary": "路透 10 月 19／20 日援引知情人士：OpenAI 正以异常快节奏推进约 300 亿美元融资，估值目标逾 1.4 万亿美元，并希望赶在 Anthropic 约 11 月中旬上市披露更完整财务前锁定承诺。SoftBank、阿布扎比 MGX 等老股东据称在谈跟投；公司向投资者展示 GPT-6 Astra 后年化收入约 500 亿、年底望 700 亿的口径。Anthropic 此前年化收入约 650 亿（至 7 月）、Q3 收入 168 亿，但环比增速放缓已令部分投资人把上市估值预期从约 2 万亿下调到约 1.5 万亿量级。两家抢同一批长钱与主权基金，把「万亿估值竞赛」压成以周计的时间表。"
+      "title": "Google 双线同发：TorchTPU 开源 + Gemini for Government 预览",
+      "summary": "Google 放出 TorchTPU（pip torch_tpu 0.2.0，Apache 2.0）：原生 PyTorch 后端对接 TPU，含自定义 ATen、XLA 编译缓存、torch.compile、数据／张量并行，附 Llama／Qwen／ResNet 示例；与 Amazon 同日 TorchNeuron（Trainium）形成云厂商抢 PyTorch 负载的对照。同日 Public Sector Summit 上，Gemini for Government Services 进入预览：面向美联邦／州／地方政府的智能体方案，含政务技能、系统连接器与治理控件；HHS、密苏里州等已试用，落地窗口卡在 GSA OneGov 现有协议约 11 月 15 日到期前后。"
     },
     {
-      "title": "Cloudflare Clairic：System One「抽取模型」上 Workers AI，只收输入、不出 token",
-      "summary": "Cloudflare 10 月 19 日预览 Clairic（@cf/cloudflare/clairic）：在 TypeSafe Jev／自家 Clef 等「决策模型」之外，新开一类 System One 抽取模型——单次前向、不生成 token，按 schema 返回带置信度与 p_null 的文本 span／数字／日期／列表／估计／预测。支持文本 + 最多 4 张图；示例管道（Clairic→Clef→GLM-5.3）相对全程 LLM 端到端约快 3.2 倍、成本约降一半。定价按输入计（约 0.10 美元／百万输入 token、无输出价），权重称将开源。它把「发票总额／送达日／维修估价」从 LLM JSON 抽取的脆弱环节，改写成可审计的类型化回归接口。"
+      "title": "Anthropic 草案财报：H1 净亏逾 800 亿（多非现金）；Claude 蛋白结合剂过实验室",
+      "summary": "WSJ 等援引 Anthropic 拟 IPO 草案：2026 上半年净亏逾 800 亿美元（同比约 130 亿），其中约 720 亿来自可转债等融资工具重估的非现金费用；报道称经调整经营利润在 Q2／Q3 转正，同时约 5180 亿美元远期算力／云承诺。科学侧，Anthropic 与 Adaptyv／Twist 合作：Claude 自主设计蝎毒神经毒素迷你结合蛋白，约 64 小时／约 1 万 GPU 小时生成逾 31 万设计，实验室测 211 个中 17 个达标，最优达个位数 nM 结合；团队明确未宣称中和，数据上 Hugging Face。"
     }
   ],
   "news": [
     {
-      "title": "MiniMax 发布 M3.1 Flash：推理近 3×、成本约 −70%，权重稍后开放",
-      "summary": "官方博文与路透确认：M3.1 Flash 面向 Agent／编程／电脑操作／网络安全，多模态 1M 上下文；挂牌 0.15／0.60／缓存 0.015。厂商给出 DeepSWE 73.7%、CyberGym 82% 等自评；本站 AA 42、性价比 A。API、M Plan、MiniMax Code 当日可用。",
-      "date": "10月19日",
-      "source": "MiniMax / Reuters",
-      "link": "https://www.minimax.io/blog/minimax-m31f",
+      "title": "DeepSeek 开源 DeepInfer：生产推理栈公开，V4.1-Flash 默认可跑",
+      "summary": "Apache 2.0 发布；内核库＋并行＋DSpark 投机解码＋结构化输出；NVIDIA SM100／昇腾 950；离线推理为主，KV 与拆分调度不在此次包内。HN 日榜第一。",
+      "date": "10月20日",
+      "source": "DeepSeek / Bloomberg",
+      "link": "https://github.com/deepseek-ai/DeepInfer",
       "models": [
-        "MiniMax M3.1 Flash"
+        "DeepSeek-V4.1-Flash-1017"
       ]
     },
     {
-      "title": "Inception 推出 Mercury 3：扩散 LLM 达约 1068 TPS、1M 上下文",
-      "summary": "厂商称质量对标 GPT-6 Luna／Claude Haiku 5.5，速度快 4–8×；首发价半价 0.10／0.35。已接入 OpenRouter、Baseten、Vercel；早期用于浏览器智能体、教育与客服。把「扩散能否规模化」变成可切换的生产端点。",
-      "date": "10月19日",
-      "source": "Inception Labs",
-      "link": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+      "title": "Mistral 发布 Voxtral 3：语音转写／TTS／实时智能体一条龙",
+      "summary": "转写 50+ 语、实时 <500ms、TTS 35+ 语；批转写 0.0035–0.004 美元／分钟，TTS 13 美元／百万字符；Voice Agent SDK＋SIP。厂商称 FLEURS 等上压过 Whisper／Scribe／Gemini 转写。",
+      "date": "10月20日",
+      "source": "Mistral AI",
+      "link": "https://mistral.ai/news/voxtral-3/",
       "models": [
-        "Mercury 3"
+        "Mistral Large 4"
       ]
     },
     {
-      "title": "路透：OpenAI 拟加速完成约 300 亿美元融资，抢在 Anthropic IPO 前",
-      "summary": "知情人士称估值目标逾 1.4 万亿，节奏快于同规模常规轮次；SoftBank、MGX 等在谈。OpenAI 展示 Astra 后年化约 500→700 亿口径；Anthropic Q3 168 亿但增速放缓，上市估值预期承压。两家争抢重叠的长钱与主权买家。",
-      "date": "10月19–20日",
-      "source": "Reuters",
-      "link": "https://www.moneycontrol.com/artificial-intelligence/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-report-article-14055784.html",
-      "models": [
-        "GPT-6 Astra"
-      ]
-    },
-    {
-      "title": "Cloudflare 预览 Clairic：System One 抽取模型，单次前向只收输入价",
-      "summary": "相对 LLM 结构化抽取，Clairic 返回类型化值、span 偏移、置信度与空值概率；可与 Clef 决策模型、LLM 写回复级联。Workers AI 预览端点 @cf/cloudflare/clairic，权重计划随后开源。",
-      "date": "10月19日",
-      "source": "Cloudflare Blog",
-      "link": "https://blog.cloudflare.com/clairic-extraction-model/",
-      "models": [
-        "Clairic"
-      ]
-    },
-    {
-      "title": "英国 FCA 发布金融服务 AI「好做法／待改进」示例，强调现有规则仍适用",
-      "summary": "10 月 19 日 FCA 公布消费结果、治理问责、业务韧性等维度的正反示例：夸大能力、测试不足、人工监督流于形式被点名。文件定位为例示而非新法规清单——银行／保险用 AI 时责任不随算法转移。",
-      "date": "10月19日",
-      "source": "UK FCA",
-      "link": "https://www.fca.org.uk/publications/good-poor-practice/ai-financial-services",
+      "title": "Google 开源 TorchTPU：原生 PyTorch 后端直连 TPU",
+      "summary": "torch_tpu 0.2.0，Apache 2.0；ATen／XLA 缓存／torch.compile／并行；示例含 Llama、Qwen。与 Amazon TorchNeuron 同日对照，云厂商争 PyTorch 训练负载。",
+      "date": "10月20日",
+      "source": "Google / HN",
+      "link": "https://github.com/pytorch/xla",
       "models": []
     },
     {
-      "title": "Stripe：约 200 个 AI 智能体在用 Link 代客下单，9 月代理成交量级跳升",
-      "summary": "相对 9 月统计时约 70 个代理，Link 上代理数量增至约 200；媒体转述 9 月代理购次约增 38 倍、支付额约增 20 倍，但 Stripe 未公布绝对金额。零售占比高，单笔均值约百美元量级——代理商务从演示进入可观测流水。",
-      "date": "10月19日",
-      "source": "Stripe / 媒体转述",
-      "link": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
-      "models": []
-    },
-    {
-      "title": "本站榜单：MiniMax M3.1 Flash 以 AA 42 入主榜约第 43，性价比 75／A",
-      "summary": "10 月 19 日 21:00 榜单更新已写入 M3.1 Flash（与 GLM-5.3-Flash 同分时按任务成本规则排序）。官方价 0.15／0.60／缓存 0.015；OpenRouter 仅见限速 :free 端点，不按永久免费计。权重未放，主表记闭源。",
-      "date": "10月19日",
-      "source": "AI 前沿情报台 / Artificial Analysis",
-      "link": "https://zennni.github.io/ai-daily-digest/",
+      "title": "Gemini for Government 预览：政务智能体套件上 Public Sector Summit",
+      "summary": "面向美联邦／州／地方政府：政务技能、系统连接器、合作伙伴智能体与集中治理；HHS、密苏里州等先行。卡在 OneGov 约 11／15 到期窗口。",
+      "date": "10月20日",
+      "source": "Google Cloud",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-government-services",
       "models": [
-        "MiniMax M3.1 Flash"
+        "Gemini 4 Argon"
       ]
     },
     {
-      "title": "社区讨论：「智力饱和」——10 分智能提升带来的开发者流量弹性大幅下降",
-      "summary": "围绕 Artificial Analysis 与产品用量的讨论指出：相较 2025 年末，同等智能分提升撬动的开发者流量弹性明显走弱；许多编码／办公任务已进入「够用」区间，竞争更落在延迟、价格与工具链完整度——与当日 Flash／扩散发布同向。",
-      "date": "10月19日",
-      "source": "X / 行业讨论",
-      "link": "https://x.com/i/trending/2112287617815306316",
-      "models": []
+      "title": "WSJ：Anthropic 草案 H1 净亏逾 800 亿美元，多属非现金重估",
+      "summary": "约 720 亿为可转债等重估；报道称调整后经营利润 Q2／Q3 转正；远期算力承诺约 5180 亿。11 月 IPO 叙事继续高压。",
+      "date": "10月20日",
+      "source": "WSJ / The Context",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+      "models": [
+        "Claude Opus 5.5"
+      ]
+    },
+    {
+      "title": "Meta 披露 Prometheus：Ohio 约百万 GPU 超算，主训 Muse 系",
+      "summary": "New Albany 园区，GB200／GB300 NVL72 在役、Vera Rubin 在路线图；预训练 goodput >85%、RL >90%；BAG 网络跨百公里。明确非 Llama 主训集群。",
+      "date": "10月20日",
+      "source": "Meta Engineering",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+      "models": [
+        "Muse Spark Open",
+        "Muse Wonder"
+      ]
+    },
+    {
+      "title": "DHS DeepSeek 禁令登联邦公报：民用机构须清退相关产品",
+      "summary": "DHS 2026-0628 基于供应链安全法；含第三方嵌入实现；机构约 60 天申请例外。海军／NASA／商务部等此前已禁。",
+      "date": "10月20日",
+      "source": "Reuters / Federal Register",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+      "models": [
+        "DeepSeek-V4.1-Flash-1017",
+        "DeepSeek V4 Flash"
+      ]
+    },
+    {
+      "title": "OpenAI 公开低资源／遗留语言评测：COBOL 迁移等大涨",
+      "summary": "MultiLangBench 开源；报道称 GPT-6.1 Sol 在 COBOL 迁移评测高推理档约 97.9%（对照旧档大幅提升）。银行／政务遗留现代化账单被重新计价。",
+      "date": "10月20日",
+      "source": "OpenAI / AI Weekly",
+      "link": "https://aiweekly.co/ai-news-today",
+      "models": [
+        "GPT-6.1 Sol"
+      ]
     }
   ],
   "papers": [
     {
-      "title": "Self-HPO：交替优化 harness 与策略的自演化编码智能体",
-      "titleEn": "Self-Evolving Coding Agents via Harness-Policy Optimization",
-      "summary": "微软亚研等提出 Self-HPO：编码智能体在 H-step 用当前策略分析失败并提出 harness 候选，P-step 在选定 harness 下做 RL，再把从未解开的难题当作下一轮搜索集。Qwen3.5-35B-A3B 平均 resolve 从 57.8% 提到 64.8%（SWE-Verified 61.0→69.5）；外部用 Opus 4.8 提 harness 还可到 71.6%。消融显示「evolve 搜索集」与「联合优化」增益可叠加。代码：MSR-Orchard/Self-HPO。",
-      "authors": "Zhepei Wei, Wenlin Yao, Baolin Peng, Danqing Wang, Qianhui Wu, Hao Cheng, Yu Meng, Jianfeng Gao 等",
-      "link": "https://arxiv.org/abs/2610.22791"
+      "title": "OpenVLHarness：带多模态记忆的真实世界视觉智能体工具框架",
+      "titleEn": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+      "summary": "UCLA／Apple 等提出能力层＋持久多模态记忆的视觉工具 harness：异构后端统一接口与证据渲染，图像／结构化数据／网页引用可跨步复用，编码智能体可对存档数据编程。22 基准、8 骨干上相对无工具基线平均 +9.7～12.6 分；GPT-6 Luna medium 仍低于最大推理档成本的 37% 即可超过 Codex／Visual Sketchpad。代码：uclanlp/OpenVLHarness。",
+      "authors": "Yu Zhou, Cheng-Fu Yang, Rui Sun, Di Wu 等",
+      "link": "https://arxiv.org/abs/2610.26860"
     },
     {
-      "title": "Harness Policy Distillation：把运行时语义写进策略蒸馏",
-      "titleEn": "Harness Policy Distillation: Aligning Agent Policies with Runtime Semantics",
-      "summary": "南大团队提出 HPD：在回放边界把 harness 控制状态编译成 privileged control document，经 harness 校验后与动作联合监督（T/I/R 三视图）。Qwen3-8B 在 TRAJECT-Bench／Pi 上自主任务成功率 3.09%→22.98%，运行时合规 19.90%→49.23%，优于 OPD 等基线；跨 BFCL 零样本仍保持优势。部署时仍走原生 harness，无需外挂控制文档。",
-      "authors": "Junze Zhu, Weihao Chen, Zhiyang Zhou, Zhen Wu, Xinyu Dai",
-      "link": "https://arxiv.org/abs/2610.20261"
+      "title": "LatComm：大模型间可复用的隐空间上下文压缩通信",
+      "titleEn": "LatComm: Reusable Context Compression for Latent Communication between Large Language Models",
+      "summary": "提出面向多模型协作的隐空间上下文压缩与复用协议，减少跨模型传递长上下文的 token 开销，并保持下游任务可用。适合 Agent 流水线中「规划模型 → 执行模型」带宽受限场景。",
+      "authors": "Huawei Lin, Jinting Liu, Tan Yu, Weijie Zhao",
+      "link": "https://arxiv.org/abs/2610.26840"
     },
     {
-      "title": "Harness² 续：开放世界里的递归 harness 优化（本周对照）",
-      "titleEn": "Harness2: Recursive Agent Harnessing for an Open World",
-      "summary": "Google Research 的 Harness² 仍是本周 harness 讨论的工程参照：冻结权重，用 Propose–Probe–Compose 改提示／守卫／记忆／工具。与 Self-HPO「改 harness + 训策略」形成对照——一边只动外围，一边让策略自己当 proposer。",
-      "authors": "Ruiyao Xu, Yanfei Chen, Zhongying CuiZhu 等",
-      "link": "https://arxiv.org/abs/2610.14224"
+      "title": "MemT-1.0：面向记忆原生演化的长文技术报告",
+      "titleEn": "MemT-1.0: Towards Memory-Native Evolution",
+      "summary": "大型合作技术报告，系统讨论把记忆当作一等公民的智能体演化：写入／检索／遗忘策略与评测协议，覆盖长程任务中的记忆污染与复利增益。66 页，适合做 Agent 记忆栈选型参考。",
+      "authors": "Zhiyu Li, Zeyu Zhang, Linyun Liu 等",
+      "link": "https://arxiv.org/abs/2610.26826"
     },
     {
-      "title": "LAGO：带可复用增长选项的语言智能体",
-      "titleEn": "LAGO: Language Agents with Reusable Growing Options",
-      "summary": "面向长程任务的选项（option）学习框架，强调跨任务可复用的子策略增长，减轻每步重规划的开销。与「速度／成本」产品叙事互补：模型侧降延迟之外，智能体侧也在压缩决策层级。",
-      "authors": "见 arXiv 2610.19843",
-      "link": "https://arxiv.org/abs/2610.19843"
+      "title": "KEEP-Bench：评测上下文压缩中的证据保留",
+      "titleEn": "KEEP-Bench: Evaluating Evidence Preservation in Context Compression",
+      "summary": "面向长上下文压缩场景，系统衡量「压缩后关键证据是否仍可检索／回答」。对 RAG 与 Agent 记忆压缩管线给出可复现基准，避免只看压缩率、不看事实保留。",
+      "authors": "Ziqing Man, Di Wu, Jia-Chen Gu, Junyi Zhang, Kai-Wei Chang, Nanyun Peng",
+      "link": "https://arxiv.org/abs/2610.26827"
     }
   ],
   "models": [
     {
-      "name": "MiniMax M3.1 Flash",
-      "vendor": "MiniMax",
-      "highlight": "10 月 19 日正式发布；AA 42、官方 0.15／0.60／缓存 0.015，本站性价比 75（A）、主榜约 #43。厂商强调 Agent／DeepSWE 73.7／CyberGym 82 与近 3× 推理、−70% 成本；权重未放。早期 Space Bunny 匿名流量成为发布脚注。",
-      "link": "https://www.minimax.io/blog/minimax-m31f"
+      "name": "Voxtral 3（Small／Mini Transcribe · Speech／TTS）",
+      "vendor": "Mistral AI",
+      "highlight": "10 月 20 日语音栈全家桶：转写 50+ 语、实时档 <500ms、TTS 35+ 语；批转写低至 0.0035 美元／分钟。配套 Voice Agent SDK（LiveKit）可直接做电话／WebRTC 智能体。",
+      "link": "https://mistral.ai/news/voxtral-3/"
     },
     {
-      "name": "Mercury 3",
-      "vendor": "Inception Labs",
-      "highlight": "扩散式 LLM；约 1068 TPS、1M 上下文，自称优于／持平 GPT-6 Luna 与 Claude Haiku 5.5。首发 0.10／0.35（正式 0.20／0.70）。已上 OpenRouter／Vercel／Baseten，OpenAI 兼容——速度敏感智能体的新路由选项。",
-      "link": "https://www.inceptionlabs.ai/blog/introducing-mercury-3"
-    },
-    {
-      "name": "Clairic",
-      "vendor": "Cloudflare",
-      "highlight": "System One 抽取模型预览：单次前向、类型化输出、只收输入 token。与 Clef（决策）和 LLM（生成）组成「快慢结合」管道；权重大概率随后开源。",
-      "link": "https://blog.cloudflare.com/clairic-extraction-model/"
-    },
-    {
-      "name": "DeepSeek-V4.1-Flash-1017",
+      "name": "DeepSeek-V4.1-Flash-1017（经 DeepInfer）",
       "vendor": "DeepSeek",
-      "highlight": "上周末发布后继续发酵：社区称其在部分 WebDev／编码竞技场开源侧靠前，价约 0.30／1.20（本站 AA 45）。与 M3.1 Flash 同属「Flash 性价比」赛道，本周注意力部分被 MiniMax／Mercury 分流。",
-      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      "highlight": "DeepInfer 默认检查点；推理框架开源后，自托管路径从「只有权重」补齐到「厂商同款引擎（离线）」。AA 与本站榜仍以既有 V4.1-Flash-1017 条目为准。",
+      "link": "https://github.com/deepseek-ai/DeepInfer"
     },
     {
-      "name": "Claude Opus 5.5",
-      "vendor": "Anthropic",
-      "highlight": "AA 仍约 58 领跑主榜；今日叙事更多在 IPO／融资时钟与竞品抢钱，而非新 checkpoint。Public Benefit Fund 与就业报告余波仍在。",
-      "link": "https://www.anthropic.com/"
+      "name": "Gemini for Government（预览）",
+      "vendor": "Google",
+      "highlight": "政务垂直智能体方案，非新基座型号；挂在 Gemini 平台之上，带连接器与治理。关注 OneGov 协议到期与机构上线节奏。",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-government-services"
     },
     {
-      "name": "GPT-6 Astra",
+      "name": "Muse 系（Prometheus 超算语境）",
+      "vendor": "Meta",
+      "highlight": "Meta 明确百万 GPU Prometheus 主训 Muse 家族而非 Llama；基建披露重于新权重日。",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/"
+    },
+    {
+      "name": "GPT-6.1 Sol（遗留语言评测）",
       "vendor": "OpenAI",
-      "highlight": "路透稿中作为 OpenAI 向投资人展示收入加速的锚点模型之一；融资叙事与产品档位绑定，使「旗舰发布」同时变成估值路演素材。",
-      "link": "https://www.moneycontrol.com/artificial-intelligence/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-report-article-14055784.html"
+      "highlight": "MultiLangBench／COBOL 等低资源语言工程任务被官方放大；迁移市场报价可能跟着重估。非新模型发布日。",
+      "link": "https://aiweekly.co/ai-news-today"
     }
   ],
   "ecosystem": [
     {
-      "title": "Vercel AI Gateway 上线 Mercury 3：扩散模型进入前端默认工具链",
-      "summary": "Vercel changelog 宣布 Mercury 3 以首发半价接入 AI Gateway，面向浏览器智能体、实时搜索与互动教育等延迟敏感负载。对 Next.js／AI SDK 用户，切换路由即可试跑千级 TPS 的扩散后端。",
-      "source": "Vercel",
-      "link": "https://vercel.com/changelog/mercury-3-now-available-on-ai-gateway",
+      "title": "DeepInfer：开源推理引擎，缺的是在线 Serving 外围",
+      "summary": "内核与调度能力到位，但 README 写明 KV、拆分与多副本均衡需自建；另附 deepseek-recipe（协议／分词对齐官方 API）。自托管 DeepSeek 的人第一次拿到「厂方图纸」。",
+      "source": "DeepSeek GitHub",
+      "link": "https://github.com/deepseek-ai/DeepInfer",
       "models": [
-        "Mercury 3"
+        "DeepSeek-V4.1-Flash-1017"
       ]
     },
     {
-      "title": "MiniMax Code 桌面端同步推：把 Flash 模型绑进本地编码智能体",
-      "summary": "发布同日提供 agent.minimax.io/download 桌面客户端与 platform.minimax.io API。产品策略是「模型 + 编码 agent 壳」一起推，对标 Claude Code／Cursor 类工作流，用低价 Flash 撑起长程工具调用账单。",
-      "source": "MiniMax",
-      "link": "https://www.minimax.io/blog/minimax-m31f",
+      "title": "Voxtral Voice Agent SDK：听－想－说实时流水线",
+      "summary": "基于 LiveKit；转写实时模型侦测话轮结束，通用 LLM 推理＋工具，TTS 回流。可换推理模型与音色而不重写智能体。",
+      "source": "Mistral",
+      "link": "https://mistral.ai/news/voxtral-3/",
       "models": [
-        "MiniMax M3.1 Flash"
+        "Mistral Large 4"
       ]
     },
     {
-      "title": "Self-HPO 开源：让编码智能体自己改 harness 再 RL",
-      "summary": "MSR-Orchard/Self-HPO 给出交替 H／P 优化的实现与权重线索。相对只改提示词的 harness 搜索，它把「策略当 proposer」跑通，并证明联合增益大于分项之和——工程上可直接接到 mini-SWE-agent 一类壳。",
-      "source": "Microsoft Research",
-      "link": "https://github.com/MSR-Orchard/Self-HPO",
+      "title": "TorchTPU vs TorchNeuron：云厂商抢 PyTorch 训练入口",
+      "summary": "Google 与 Amazon 同日开源／加推各自加速器后端，目标都是让现有 PyTorch 脚本少改代码上自研芯。选型建议跑同一 workload 压测。",
+      "source": "The Context",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/",
       "models": []
     },
     {
-      "title": "Stripe Link × 个人智能体：代客下单从演示到可统计流水",
-      "summary": "约 200 个代理接入 Link；Stripe 强调更智能／可靠的购物辅助，但拒披露 GMV。对商家意味着要准备「非人类下单」的授权、风控与客服话术——代理商务的基础设施层正在变厚。",
-      "source": "Stripe",
-      "link": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
+      "title": "tsrs：Cloudflare 等把 TypeScript 编译器迁到 Rust，宣称最高约 8×",
+      "summary": "与 Owner.com／VoidZero 合作，孵化于 Oxc；同检查工人数下最高约 8×、内存约 −70%；部分优化已回馈 TS 7.1。大仓库 CI 可试装。",
+      "source": "Cloudflare / HN",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/",
       "models": []
     },
     {
-      "title": "FCA AI 实践示例：金融业把「能解释、能人工接管」写成检查清单",
-      "summary": "英国金融行为监管局用正反案例固化期望：测试覆盖脆弱客户、监控线上结果、供应商依赖与回退方案。虽非新法，但给合规与采购提供了可引用的对照表。",
-      "source": "UK FCA",
-      "link": "https://www.fca.org.uk/publications/good-poor-practice/ai-financial-services",
-      "models": []
+      "title": "SlopCodeBench 十月更新：XHigh 常更贵却不一定更高分",
+      "summary": "HumanLayer：同模型三档对比里，XHigh 成本 2.1–4.2×，仅部分模型涨分；选智能体推理档别默认拉满。",
+      "source": "HumanLayer",
+      "link": "https://thecontext.dev/en/briefing/2026-10-21/",
+      "models": [
+        "GPT-6 Astra",
+        "Claude Opus 5.5",
+        "GPT-6.1 Sol"
+      ]
     }
   ]
 }
