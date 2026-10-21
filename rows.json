@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "models": [
     {
       "name": "Claude Opus 5.5",
@@ -2511,6 +2511,19 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-22",
+      "t": "全日量核验：AA v4.3.2 主榜整数分与官价无实质变化；汇率沿用 6.7192（10/21 中间价，10/22 早间尚未见新行）；未见运营每小时差异摘要",
+      "m": [
+        "Claude Opus 5.5",
+        "Qwen3.8-Flash",
+        "Step 5 Preview",
+        "Gemini 4 Argon",
+        "MiniMax M3.1 Flash",
+        "DeepSeek-V4.1-Flash-1017"
+      ],
+      "s": "<b>2026-10-22 总策划 ≈06:30 全日量核对</b>：对照 Artificial Analysis LLM Leaderboard / Intelligence Index <b>v4.3.2</b>（一手 artificialanalysis.ai/leaderboards/models；BenchLeader 同报 Opus 5.5 max ≈57.6）及 Changelog：10/21 仅有 DeepSeek V4.1 Flash 1017 的 Makora 性能补测，<b>无新 Intelligence Index 上分</b>；MiniMax M3.1 Flash 维持 43。官价抽核：Anthropic Opus/Sonnet/Haiku 5.5（$4/$20、$2/$10、$0.10/$0.50）、OpenAI Astra/6.1 Sol/Luna/5.6 Sol（促销 $4/$20 至少至 11/21）、Google Gemini 4 Argon 介绍期 $2/$10 至 11/30、Gemini 3.8 Flash $0.75/$3.75 至 12/31、DeepSeek 官方美元峰时 Flash $0.30/$1.20·Pro $1.32/$3.96、MiniMax M3.1 Flash $0.15/$0.60——均与主表一致，主分仍用折后有效价。<b>汇率</b>：中国外汇交易中心/PBOC 中间价沿用最近交易日 <b>2026-10-21 的 1 USD = 6.7192</b>（本轮 ≈06:30 时 10/22 中间价公告尚未见；周末/盘前沿用最近交易日）。仍经 FX 换算的 Qwen3.8-Flash（¥0.8/¥2.7/缓存 ¥0.1）与 Step 5 Preview 缓存（¥0.70）挂价与上期一致，无需微调。箱内/笔记未见运营每小时差异摘要。Top 仍由 Claude Opus 5.5 Max（58）领跑。未改日报产物。"
+    },
     {
       "d": "10-21",
       "t": "全日量核验：AA v4.3.2 主榜整数分与官价无实质变化；汇率调至 6.7192；未见运营每小时差异摘要",
