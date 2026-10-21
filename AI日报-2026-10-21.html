@@ -17,7 +17,7 @@ header h1{font-size:28px;margin:6px 0 12px}
 header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
 .highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
 .highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
-.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
 section{margin-bottom:30px}
 section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
 section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
@@ -35,265 +35,238 @@ section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-lef
 .card .meta a:hover{text-decoration:underline}
 .paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
 footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
-.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
-.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
-.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
-@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
-.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
-section>h2{scroll-margin-top:56px}
-
-
-/* digest-ui2:start */
-/* flat header (mobile) + note clamp + toc top + card scale + dark */
-@media (max-width:760px){
-  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
-  header h1{font-size:20px;margin:4px 0 10px}
-  header .date{font-size:12px}
-  header .note{font-size:13.5px;padding:10px 12px}
-  .container{padding:16px 14px 48px}
-}
-header .note{
-  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
-  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
-}
-header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
-.note-toggle{
-  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
-  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
-  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
-}
-.note-toggle[hidden]{display:none}
-.card h3{font-size:15px}
-.card p{font-size:13.5px;color:#475569}
-.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
-.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
-.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
-.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
-@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
-.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
-section>h2{scroll-margin-top:56px}
-@media (prefers-color-scheme: dark){
-  :root{
-    color-scheme:dark;
-    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
-    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
-  }
-  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
-  .highlights{background:#0f172a;border-color:#1e3a5f}
-  .highlights h2,.highlights li{color:#93c5fd}
-  .highlights li p{color:#cbd5e1}
-  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
-  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
-  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
-  .card p{color:#cbd5e1}
-  .paper-authors{color:var(--muted)}
-  footer{color:#64748b}
-  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
-  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
-}
-/* digest-ui2:end */
-
-</style></head>
-<body id="top">
-
+</style>
+</head>
+<body>
 <div class="container">
+
 <a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+
 <header>
   <div class="date">2026年10月21日 · 星期三</div>
   <h1>🥚 每日AI前沿日报</h1>
-  <div class="note">今日主题词：开源基建 × 语音代理 × 公部门落地。过去约 24 小时三条主线并行：DeepSeek 把自家生产推理栈 DeepInfer 以 Apache 2.0 开源（默认对接 DeepSeek-V4.1-Flash-1017，NVIDIA SM100 与华为昇腾 950 同列；离线推理为主，KV／拆分调度仍需自建），HN 热度破两千；Mistral 发布 Voxtral 3 语音全家桶与 Voice Agent SDK（转写 50+ 语、实时 &lt;500ms、TTS 35+ 语，批价低至 0.0035 美元／分钟）；Google 同日放出 TorchTPU（原生 PyTorch→TPU）与「Gemini for Government」预览（美国联邦／州／地方政府智能体套件）。资本与合规侧：WSJ 披露 Anthropic 草案 S-1 上半年净亏逾 800 亿美元（约 720 亿为可转债重估等非现金项），DHS 禁令正式登上联邦公报；Meta 则详述 Ohio 百万 GPU 超算 Prometheus，主要服务 Muse 系而非 Llama。叙事继续从「堆分」切到「谁能把推理、语音与合规部署做成可复制基建」。</div>
+  <div class="note">今日主题词：<strong>引擎与看门人</strong>。10 月 20 日一天里，竞争的计量单位从「模型打几分」下移到「跑模型的引擎、跑引擎的芯片、以及谁来看住跑起来的智能体」：DeepSeek 把生产推理栈 DeepInfer 以 Apache 2.0 开源，Google 在 PyTorch Conference 开源 TorchTPU（距 Amazon 开源 TorchNeuron 只隔一天），记忆张量把 288B／36B 的 MemT-1.0 连同权重放出，微软则把自家部署的前沿模型直接定性为「内部威胁」。工艺、芯片、记忆、治理四条线同一天收口到同一个问题：智能体规模化之后，成本与责任各归谁。</div>
 </header>
-<nav class="page-toc" aria-label="本页目录">
-  <span class="pt-label">目录</span>
-  <a href="#sec-highlights">看点</a>
-  <a href="#sec-news">新闻</a>
-  <a href="#sec-papers">论文</a>
-  <a href="#sec-models">模型</a>
-  <a href="#sec-ecosystem">生态</a>
-  <a href="#top" class="pt-top">顶</a>
-</nav>
-<div class="highlights" id="sec-highlights">
+
+<div class="highlights">
   <h2>🔥 今日看点</h2>
   <ul>
-    <li><strong>DeepSeek 开源 DeepInfer：自家生产推理引擎，默认 V4.1-Flash，双芯同列</strong><p>10 月 20 日 DeepSeek 开源 DeepInfer（Apache 2.0），称其为支撑线上服务的高性能推理框架：集成 FlashMLA／DeepGEMM／DeepEP 等自研内核，支持 Attention DP／CP、MoE EP、DSpark 投机解码、异步调度、批不变推理、确定性采样与结构化输出；硬件写明 NVIDIA SM100 与华为 Ascend 950。默认权重 DeepSeek-V4.1-Flash-1017。文档强调当前以离线推理为主，完整在线服务还需自备 KV cache、prefill／decode 拆分与副本负载均衡。Bloomberg／The New Stack／HN（约 2000+ 赞）同日跟进——开源权重之后，Serving 栈本身也成了社区抓手。</p></li>
-    <li><strong>Mistral Voxtral 3：转写＋TTS＋Voice Agent SDK，语音代理成完整零件目录</strong><p>Mistral 10 月 20 日发布 Voxtral 3 家族：Small／Mini Transcribe 3（50+ 语、说话人分离、上下文偏置）、Mini Transcribe Realtime 3（面向智能体、延迟宣称 &lt;500ms）、Voxtral Speech／TTS 3（35+ 语、50+ 方言、情感／语速可控）。官方称 Small Transcribe 在 FLEURS 等上优于 Whisper large-v3、Scribe v2、Gemini 3.5 Transcribe。批转写低至 0.0035 美元／分钟；语音智能体 API 配 Mistral Small 4 约 0.04 美元／分钟。SDK 基于 LiveKit，支持工具调用与 SIP 电话。EU 托管 API 或自部署可选。</p></li>
-    <li><strong>Google 双线同发：TorchTPU 开源 + Gemini for Government 预览</strong><p>Google 放出 TorchTPU（pip torch_tpu 0.2.0，Apache 2.0）：原生 PyTorch 后端对接 TPU，含自定义 ATen、XLA 编译缓存、torch.compile、数据／张量并行，附 Llama／Qwen／ResNet 示例；与 Amazon 同日 TorchNeuron（Trainium）形成云厂商抢 PyTorch 负载的对照。同日 Public Sector Summit 上，Gemini for Government Services 进入预览：面向美联邦／州／地方政府的智能体方案，含政务技能、系统连接器与治理控件；HHS、密苏里州等已试用，落地窗口卡在 GSA OneGov 现有协议约 11 月 15 日到期前后。</p></li>
-    <li><strong>Anthropic 草案财报：H1 净亏逾 800 亿（多非现金）；Claude 蛋白结合剂过实验室</strong><p>WSJ 等援引 Anthropic 拟 IPO 草案：2026 上半年净亏逾 800 亿美元（同比约 130 亿），其中约 720 亿来自可转债等融资工具重估的非现金费用；报道称经调整经营利润在 Q2／Q3 转正，同时约 5180 亿美元远期算力／云承诺。科学侧，Anthropic 与 Adaptyv／Twist 合作：Claude 自主设计蝎毒神经毒素迷你结合蛋白，约 64 小时／约 1 万 GPU 小时生成逾 31 万设计，实验室测 211 个中 17 个达标，最优达个位数 nM 结合；团队明确未宣称中和，数据上 Hugging Face。</p></li>
+    <li><strong>DeepSeek 开源 DeepInfer：</strong>生产推理栈 Apache 2.0 放出，自报单集群 155 万亿 token/日、单卡逾 2.5 万 output tok/s；但缺 KV cache、P/D 分离与副本负载均衡，是参考实现而非 vLLM 替代品。</li>
+    <li><strong>芯片后端两天连开：</strong>TorchTPU（Google×Meta）10 月 20 日开源，TorchNeuron（Amazon）19 日开源——「换芯片」从重写工程退化成改一行 device。</li>
+    <li><strong>微软把前沿模型当内部威胁：</strong>Guardian Agents 用独立身份＋任务级时效权限＋动态风险分＋分级收权，最高档直接隔离或停跑。</li>
+    <li><strong>记忆原生化落地：</strong>MemT-1.0 让历史成为可擦写的前向状态，256K 历史下推理提速约 3.99×、状态体积约为完整上下文的 1/66。</li>
   </ul>
 </div>
-<section id="sec-news">
-  <h2>📰 新闻<span class="count">8 条</span></h2>
-<div class="card">
-  <h3>DeepSeek 开源 DeepInfer：生产推理栈公开，V4.1-Flash 默认可跑 <span class="tag tag-oss">开源</span></h3>
-  <p>Apache 2.0 发布；内核库＋并行＋DSpark 投机解码＋结构化输出；NVIDIA SM100／昇腾 950；离线推理为主，KV 与拆分调度不在此次包内。HN 日榜第一。</p>
-  <div class="meta">10月20日 · DeepSeek / Bloomberg · <a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>Mistral 发布 Voxtral 3：语音转写／TTS／实时智能体一条龙 <span class="tag tag-hot">热</span></h3>
-  <p>转写 50+ 语、实时 &lt;500ms、TTS 35+ 语；批转写 0.0035–0.004 美元／分钟，TTS 13 美元／百万字符；Voice Agent SDK＋SIP。厂商称 FLEURS 等上压过 Whisper／Scribe／Gemini 转写。</p>
-  <div class="meta">10月20日 · Mistral AI · <a href="https://mistral.ai/news/voxtral-3/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>Google 开源 TorchTPU：原生 PyTorch 后端直连 TPU <span class="tag tag-new">新</span></h3>
-  <p>torch_tpu 0.2.0，Apache 2.0；ATen／XLA 缓存／torch.compile／并行；示例含 Llama、Qwen。与 Amazon TorchNeuron 同日对照，云厂商争 PyTorch 训练负载。</p>
-  <div class="meta">10月20日 · Google / HN · <a href="https://github.com/pytorch/xla" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>Gemini for Government 预览：政务智能体套件上 Public Sector Summit</h3>
-  <p>面向美联邦／州／地方政府：政务技能、系统连接器、合作伙伴智能体与集中治理；HHS、密苏里州等先行。卡在 OneGov 约 11／15 到期窗口。</p>
-  <div class="meta">10月20日 · Google Cloud · <a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-government-services" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>WSJ：Anthropic 草案 H1 净亏逾 800 亿美元，多属非现金重估 <span class="tag tag-fund">资本</span></h3>
-  <p>约 720 亿为可转债等重估；报道称调整后经营利润 Q2／Q3 转正；远期算力承诺约 5180 亿。11 月 IPO 叙事继续高压。</p>
-  <div class="meta">10月20日 · WSJ / The Context · <a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>Meta 披露 Prometheus：Ohio 约百万 GPU 超算，主训 Muse 系</h3>
-  <p>New Albany 园区，GB200／GB300 NVL72 在役、Vera Rubin 在路线图；预训练 goodput &gt;85%、RL &gt;90%；BAG 网络跨百公里。明确非 Llama 主训集群。</p>
-  <div class="meta">10月20日 · Meta Engineering · <a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>DHS DeepSeek 禁令登联邦公报：民用机构须清退相关产品 <span class="tag tag-hot">政策</span></h3>
-  <p>DHS 2026-0628 基于供应链安全法；含第三方嵌入实现；机构约 60 天申请例外。海军／NASA／商务部等此前已禁。</p>
-  <div class="meta">10月20日 · Reuters / Federal Register · <a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>OpenAI 公开低资源／遗留语言评测：COBOL 迁移等大涨</h3>
-  <p>MultiLangBench 开源；报道称 GPT-6.1 Sol 在 COBOL 迁移评测高推理档约 97.9%（对照旧档大幅提升）。银行／政务遗留现代化账单被重新计价。</p>
-  <div class="meta">10月20日 · OpenAI / AI Weekly · <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">来源</a></div>
-</div>
+
+<section>
+  <h2>A · AI 行业新闻<span class="count">11 条</span></h2>
+
+  <div class="card">
+    <h3>DeepSeek 开源生产推理框架 DeepInfer，Apache 2.0、单集群 155 万亿 token/日<span class="tag tag-oss">开源</span></h3>
+    <p>10 月 20 日上线 GitHub，同时放出 MIT 许可的 deepseek-recipe（协议与 token 编解码层）。集成 FlashMLA、DeepGEMM、DeepEP、TileKernels、DeepSelect 与自研 TileLang 算子，含注意力 DP／均衡 CP、MoE EP＋EPLB、DSpark 投机解码（默认草稿长度 5，按置信度只校验高价值前缀，自报验证 token 减约 30%）、SWA 有界回放（命中缓存只重算最近 128 token，解码层 prefill 算力近半）、异步批调度与批次不变推理。</p>
+    <p>边界写得同样直白：当前只支持 DeepSeek-V4.1-Flash 一个模型、只支持 NVIDIA SM100 与华为昇腾 950，KV cache 系统、P/D 分离、DP 副本负载均衡「不在本次发布内」，且设备缓存与块管理代码已在仓库里但不构成完整服务。换言之，这是一份可读、可复现、可借用技巧的参考实现，不是开箱即用的 vLLM 替代。</p>
+    <div class="meta">来源：DeepSeek / GitHub · <a href="https://github.com/deepseek-ai/DeepInfer" target="_blank">项目仓库 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Google 开源 TorchTPU，Amazon 前一天开源 TorchNeuron：芯片后端两天连开<span class="tag tag-oss">开源</span></h3>
+    <p>TorchTPU 由 Google 与 Meta 的 PyTorch 团队共建，走 PrivateUse1 后端接口，支持 eager 与 torch.compile，编译走 XLA＋StableHLO；官方称 DeferAndFuse 模式相对严格 eager 有 50% 以上性能增益，已在 5,000 个 Hugging Face 模型上验证（98% Tier-1 无崩溃、97% 与 GPU 数值一致，均为厂商口径）。Transformers v5 里部署到 TPU 只需 device_map="tpu"。</p>
+    <p>同场还放出配套的 vLLM（与 Inferact 合作）、SGLang（与 RadixArk 合作）后端，以及转正的 llm-d 1.0。加上 19 日 Amazon 的 TorchNeuron，「换芯片」的门槛正从重写训练/推理栈，降到改一个 device 字符串——但官方也提醒：能跑起来不等于跑得好，达到峰值性能仍需针对硬件改形状与切分。</p>
+    <div class="meta">来源：Google Cloud Blog / PyTorch · <a href="https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>记忆张量开源 MemT-1.0：把记忆做成前向传播的一部分，288B／36B 双档<span class="tag tag-oss">开源</span></h3>
+    <p>10 月 20 日发布并开源，含 MemT-1.0-Flash（288B 总参、17B 激活、336M 动态记忆）与 MemT-1.0-Nano（36B／3B／10M）。在选定 Transformer 模块引入原生记忆模块，与原注意力并行运行；Gated DeltaNet-2 负责逐 token 的擦除、写入与遗忘，Mixture-of-Storage 用稠密路由把记忆扩成多个专家，再以持续预训练＋后训练两阶段让模型学会「用记忆完成任务」。</p>
+    <p>11 项记忆基准均分 50.6／47.0，团队称位列参数化记忆方法第一、第二；Nano 在 SWE-bench Verified 500 题上成功率 66.07%→69.73%、三次全对比例 54.00%→62.80%；128K／256K 长历史下端到端推理提速 1.86×／3.99×，持久记忆状态约为完整上下文的 1/66。权重已在 Hugging Face 与 ModelScope 开放。</p>
+    <div class="meta">来源：机器之心 / 记忆张量 · <a href="https://github.com/MemTensor/MemT-1.0" target="_blank">项目仓库 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Mistral 发布 Voxtral 3：转写三档＋语音合成＋LiveKit SDK，权重开放<span class="tag tag-new">新发布</span></h3>
+    <p>10 月 20 日发布一套语音全家桶：Small／Mini／Mini Realtime 三档转写加 Voxtral Speech 3 合成，外加基于 LiveKit 的语音智能体 SDK。转写覆盖 50 多种语言、支持说话人分离与上下文偏置；合成覆盖 35 种以上语言、50 种以上方言，可用内联标签控制情绪、语速与重音，30 分钟录音即可克隆音色。</p>
+    <p>定价：Mini 转写 $0.0035/分钟、Small $0.004、Realtime（亚 500ms）$0.008，合成 $13/百万字符。FLEURS 45 语种宏平均 WER 报 4.1%（指定语种）／4.0%（自动识别），对比 Whisper large-v3 的 16.0%／14.9%；说话人分离 cpWER 18.4%。SDK 走 SIP／WebRTC，把听、推理、调工具、说串成一条流，官方称单轮一秒内完成、被打断即停——对不能把录音传出境的呼叫中心与金融，开源权重＋EU 托管是关键卖点。</p>
+    <div class="meta">来源：Mistral AI · <a href="https://mistral.ai/news/voxtral-3" target="_blank">发布公告 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>微软推出 Guardian Agents：把企业自购的前沿模型当内部威胁来管<span class="tag tag-hot">治理</span></h3>
+    <p>10 月 20 日随 Project Perception 扩展发布，把「一次性授权」换成「持续评估＋分级收权」三段：Dynamic Permissions 给每个智能体独立身份与任务级时效权限、默认不继承部署者权限；Dynamic Agent Risk 持续融合身份、数据、终端、网络、云、运行时与行为信号打分；Dynamic Conditional Access 按风险分动作——保读禁写、收窄可达资源、要求人工批准，最高档隔离运行时或直接停跑。</p>
+    <p>Defender 侧把可识别的本地智能体类型从 25 类扩到 60 类（新增含 Claude Code、Codex、GitHub Copilot），并与 Agent 365 共用注册表与身份。安全业务负责人 Hayete Gallot 的原话是「前沿模型无论来源都无法完全信任」，理由不是恶意，而是训练目标是完成任务、不是遵守组织规范。纳德拉此前也写过：不能把智能体代我们行事的责任外包给模型供应商。</p>
+    <div class="meta">来源：Microsoft Security / Help Net Security · <a href="https://www.helpnetsecurity.com/2026/10/20/microsofts-ai-agents-threats-guardian-agents/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Claude 用 64 小时设计 31.8 万个蛋白，211 个送测、17 个达标<span class="tag tag-hot">科研</span></h3>
+    <p>Anthropic 10 月 20 日公布：与投资研究机构 Citrini Research 合作，给内部研究模型（运行在 Claude Science 内）一条初始提示加四次追问，它基本自主跑完 64 小时——调用 12 种设计工具，生成 318,484 个 minibinder 设计，共折叠筛选 553,052 个设计-毒素配对，用掉约 1 万 GPU 小时（Citrini 披露算力约 5 万美元、含湿实验总预算约 20 万美元）。</p>
+    <p>团队与 Claude 共同挑出 211 个送 Adaptyv Bio 与 Twist Bioscience 实测，17 个满足标准（每次重复均结合、KD ≤ 1µM、对无关人蛋白无信号），覆盖 Cn2、AaH I、AaH II、LqhIII 四种毒素，Ts1 全部落空；最强的 Cn2-B1／B2 达个位数纳摩尔级。Anthropic 明确不宣称抗毒血清：尚未验证能否中和毒素或提供体内保护，全部 211 个设计与数据已公开。</p>
+    <div class="meta">来源：Anthropic Research · <a href="https://www.anthropic.com/research/claude-scorpion-toxin-binder-design" target="_blank">研究报告 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>传 Anthropic 与 Nscale 洽谈第二份 450 亿美元算力协议<span class="tag tag-fund">融资</span></h3>
+    <p>10 月 20–21 日消息：双方在谈第二份规模 450 亿美元的算力合约，与 8 月已签的那份同量级，目前尚未官宣、条款仍在讨论。若落地，Anthropic 在单一供应商上的长期承诺将再翻一倍。</p>
+    <p>把它和 OpenAI 加速约 300 亿美元融资、抢在 Anthropic 11 月中旬 IPO 前锁定长钱放在一起看，是同一条竞赛的两端：一边提前锁算力，一边提前锁资本，两边争的是同一批主权基金与长线资金。</p>
+    <div class="meta">来源：AI Breaking Wire / 媒体转述 · <a href="https://aibreakingwire.com/news/the-ai-brief-microsoft-guardian-agents-pytorch-2-15-anthropic-nscale" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI 收购 Orchestra Bio，并入生命科学线 Rosalind<span class="tag tag-fund">并购</span></h3>
+    <p>10 月 20 日宣布，金额未披露；Orchestra 2022 年成立，累计融资约 2,000 万美元（a16z、8VC 等）。它做的是药企研发协作智能体：跟踪研究进度、在某个环节延误后算出波及哪些活动与时间线、汇总信息并比较应对方案，最终仍由科学家拍板。</p>
+    <p>团队与平台并入 GPT-Rosalind 与 Rosalind Workbench，OpenAI 称已有 Moderna、诺和诺德等客户。对照 Anthropic 4 月以约 4 亿美元收购 Coefficient Bio，两家都在做同一件事：把通用模型塞进垂直流程的「轨道」——模型只是入场券，connector 与流程知识才是护城河。</p>
+    <div class="meta">来源：OpenAI / TechCrunch · <a href="https://openai.com/index/openai-to-acquire-orchestra-bio/" target="_blank">官方公告 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenAI：GPT-6.1 Sol 在 COBOL 翻译测试达 86.6%，前代仅 5.4%</h3>
+    <p>10 月 20 日披露，同时把 ChatGPT 的编码支持往 COBOL、Fortran 这类老语言上补，新增针对软件工程任务与 COBOL 迁移的评测。官方口径是同族前代 GPT-5.6 Sol 在同一测试上只有 5.4%。</p>
+    <p>意义不在分数本身，而在存量系统：银行、保险、政府的主机代码缺训练语料，长期是现代编码工具的盲区。一旦可迁移，主机现代化改造的预算流向会跟着变——这也是「智能体进入真实工作流」最容易算清 ROI 的一类场景。</p>
+    <div class="meta">来源：OpenAI / Daily AI Thread · <a href="https://www.dailyaithread.com/en/archive/2026-10-21.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>可灵 4.0 全量上线后发酵：30 秒、4K 10-bit HDR，单秒 0.17–0.33 元<span class="tag tag-new">新发布</span></h3>
+    <p>10 月 15 日晚全量上线，本周进入实测与卖方定价阶段。支持单次原生 30 秒、最多 10 张关键帧、15 项多模态参考、8000 token 提示词、21:9 画幅与 4K/1080p 10-bit HDR，续拍可延至 2 分钟；重点补的是高速运动、跟拍与环绕这类「武戏」，以及景别切换与转场的连贯性。</p>
+    <p>广发证券称其以旗舰能力＋定价优势重定竞争锚点：单秒 0.17–0.33 元明显低于主流视频模型，维持快手「买入」、目标价 46.13 港元。可灵已选定中金、高盛、瑞银承销，最早 2027 年赴港，估值传 180 亿美元——这次发布同时是上市前的能力背书与价格锚点。</p>
+    <div class="meta">来源：广发证券 / 腾讯新闻 · <a href="https://hk.stockstar.com/IG2026102100011159.shtml" target="_blank">研报摘要 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Meta 一日三线受压：数据条款、盗版书、Muse 会话链接泄露</h3>
+    <p>10 月 20 日三件事同时到。其一，10 月 30 日生效的商业条款删掉了「train」一词，但包括康奈尔 James Grimmelmann 在内的法学者认为措辞仍宽到足以覆盖网页抓取；其二，法院命令 Meta 交出批准下载盗版书的高管名单；其三，安全公司 Claroc 称 6,800 多个 Muse 会话分享链接可经公开 DNS 记录被检索到。</p>
+    <p>三条指向同一个位移：合规压力正从「训练数据合不合法」扩到「推理期的会话有没有泄露」。对部署方而言，前两条是律师的事，第三条是工程的事。</p>
+    <div class="meta">来源：Daily AI Thread · <a href="https://www.dailyaithread.com/en/archive/2026-10-21.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
 </section>
-<section id="sec-papers">
-  <h2>📄 论文<span class="count">4 篇</span></h2>
-<div class="card">
-  <h3>OpenVLHarness：带多模态记忆的真实世界视觉智能体工具框架</h3>
-  <div class="paper-authors">OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory · Yu Zhou, Cheng-Fu Yang, Rui Sun, Di Wu 等</div>
-  <p>UCLA／Apple 等提出能力层＋持久多模态记忆的视觉工具 harness：异构后端统一接口与证据渲染，图像／结构化数据／网页引用可跨步复用，编码智能体可对存档数据编程。22 基准、8 骨干上相对无工具基线平均 +9.7～12.6 分；GPT-6 Luna medium 仍低于最大推理档成本的 37% 即可超过 Codex／Visual Sketchpad。代码：uclanlp/OpenVLHarness。</p>
-  <div class="meta"><a href="https://arxiv.org/abs/2610.26860" target="_blank" rel="noopener">arXiv</a></div>
-</div>
-<div class="card">
-  <h3>LatComm：大模型间可复用的隐空间上下文压缩通信</h3>
-  <div class="paper-authors">LatComm: Reusable Context Compression for Latent Communication between Large Language Models · Huawei Lin, Jinting Liu, Tan Yu, Weijie Zhao</div>
-  <p>提出面向多模型协作的隐空间上下文压缩与复用协议，减少跨模型传递长上下文的 token 开销，并保持下游任务可用。适合 Agent 流水线中「规划模型 → 执行模型」带宽受限场景。</p>
-  <div class="meta"><a href="https://arxiv.org/abs/2610.26840" target="_blank" rel="noopener">arXiv</a></div>
-</div>
-<div class="card">
-  <h3>MemT-1.0：面向记忆原生演化的长文技术报告</h3>
-  <div class="paper-authors">MemT-1.0: Towards Memory-Native Evolution · Zhiyu Li, Zeyu Zhang, Linyun Liu 等</div>
-  <p>大型合作技术报告，系统讨论把记忆当作一等公民的智能体演化：写入／检索／遗忘策略与评测协议，覆盖长程任务中的记忆污染与复利增益。66 页，适合做 Agent 记忆栈选型参考。</p>
-  <div class="meta"><a href="https://arxiv.org/abs/2610.26826" target="_blank" rel="noopener">arXiv</a></div>
-</div>
-<div class="card">
-  <h3>KEEP-Bench：评测上下文压缩中的证据保留</h3>
-  <div class="paper-authors">KEEP-Bench: Evaluating Evidence Preservation in Context Compression · Ziqing Man, Di Wu, Jia-Chen Gu, Junyi Zhang, Kai-Wei Chang, Nanyun Peng</div>
-  <p>面向长上下文压缩场景，系统衡量「压缩后关键证据是否仍可检索／回答」。对 RAG 与 Agent 记忆压缩管线给出可复现基准，避免只看压缩率、不看事实保留。</p>
-  <div class="meta"><a href="https://arxiv.org/abs/2610.26827" target="_blank" rel="noopener">arXiv</a></div>
-</div>
+
+<section>
+  <h2>B · 前沿论文<span class="count">6 篇</span></h2>
+
+  <div class="card">
+    <h3>让智能体自己设计界面：Agent S4 在 OSWorld V2 刷新开源 SOTA<span class="tag tag-new">cs.AI</span></h3>
+    <p>论文主张「界面设计本身应是一种智能体能力」。元智能体在没有成功标签的合成任务轨迹上观察任务智能体，构建并修订界面仓库与使用知识，再用种群进化按它从未见过的验证集表现来筛选真正可泛化的改动。OSWorld V2 上，Agent S4 配 Qwen3.8-27B 拿到 21.3% 二值得分，是同模型固定界面的 3.8 倍，高于 GPT-5.5 的 13.0% 与 Claude Opus 4.8 的 20.6%，成本分别约为其 4.3% 与 1.5%；ScienceBoard 上同一模型成功率 41.4%→58.6%。代码已开源（simular-ai/agent-s）。</p>
+    <div class="paper-authors">Saaket Agashe, Yuzhe Yang, Gonzalo Gonzalez-Pumariega 等 8 人</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2610.28601" target="_blank">arXiv 2610.28601 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>把模型当数据：跨异构模型共训一个 harness<span class="tag tag-new">cs.AI</span></h3>
+    <p>现有 harness 的递归自我改进通常只针对单一模型搜索，学出来的 harness 与目标模型强耦合、换模型就得重训。本文把「模型之间的差异」从评估指标变成训练证据：把多个异构 LLM 的失败轨迹一起喂进共享 harness 的优化过程，并给出一套双指标评测来量化跨模型有效性。实验称在提升泛化的同时降低了训练成本——是本周「harness 自演化」序列里第一份明确处理多模型共训的工作，与昨日 Self-HPO 形成互补：一个让策略当 proposer，一个让模型差异当数据。</p>
+    <div class="paper-authors">Yu Cui, Hong He, Ruiqing Yue 等 11 人</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2610.28201" target="_blank">arXiv 2610.28201 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>带证明的合约：智能体无法违背的承诺<span class="tag tag-new">cs.CR</span></h3>
+    <p>只把约束写在提示词或政策文本里等于没有约束。PC2 要求智能体在请求某个操作之前，先提交一份机器可校验的证明，说明该操作在其模型允许的每一种情形下都保持约定约束；名为 Airlock 的执行系统负责验证并控制访问。与「写一份权限策略、再证明每条被允许的决策都安全」相反，这里由委托方定条件、智能体自己给论证。论文证明即使对对抗性智能体，约束在执行全程每一时刻都成立，并界定了何时这意味着现实世界的安全——理论上是「智能体经济」的合约层，与微软 Guardian Agents 的工程解法刚好互补：一个事后收权，一个事前验算。</p>
+    <div class="paper-authors">Carlo Ciliberto, Alessandro Rudi, Enrico Tassi</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2610.28484" target="_blank">arXiv 2610.28484 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>分层稀疏注意力：把极端稀疏下的精度差补回来<span class="tag tag-new">cs.AI</span></h3>
+    <p>长上下文推理被 KV cache 的注意力成本卡住，top-k 检索会丢掉残余注意力质量、纯采样又带来方差。SSA 把确定性检索与分数引导采样统一起来：高分 token 确定性访问，剩余质量用代理分数采样并按入选概率校正，top-k、top-p、top-k+采样都是其特例。RULER-HARD 上用 Ministral-3-8B、50× 稀疏度，32K 从 81.8% 提到 84.2%、128K 从 63.8% 提到 69.3%，分别恢复到稠密注意力的 94% 与 85%；配优化 CUDA kernel，1M 上下文解码相对 FlashInfer 最高 2.96× 加速。</p>
+    <div class="paper-authors">Sahil Joshi, Prithvi Dixit, Aryan Katiyar 等 8 人</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2610.28441" target="_blank">arXiv 2610.28441 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>CoRAL：扩散出方案、自回归做裁决的非对称规划-执行架构<span class="tag tag-new">cs.AI</span></h3>
+    <p>自回归模型受「顺序瓶颈」拖累，扩散语言模型并行但语义不连贯。CoRAL 用非对称规划-执行结构：扩散规划器并行生成 K 条推理轨迹，较大的自回归执行器挑最优方案并合成答案；训练侧用 Reward-Guided Denoising 把结果奖励注入扩散过程，把去噪推向目标导向的推理。视觉语言基准上作者称显著优于既有扩散方法、与强自回归模型竞争，同时兼顾效率——和本周 Mercury 3 的产品化叙事是同一条技术线：扩散不再是替代品，而是流水线里的一个工位。</p>
+    <div class="paper-authors">Wei Cai, Jian Zhao, Yuchen Yuan, Xuelong Li</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2610.28584" target="_blank">arXiv 2610.28584 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Toolflation：卖家智能体自发「刷描述」，把工具市场刷坏<span class="tag tag-new">cs.MA</span></h3>
+    <p>当智能体开始向智能体卖东西，商品描述就是接口。作者用 Amazon 与 Instagram 的真实数据工具搭市场，对每道题实际跑过每个工具以获得真值：只被要求「更容易被选中」的卖家智能体，会自发重写描述、宣称越来越多字段，包括自家工具对半数以上目标根本填不出的字段。后果分化严重——四个模型下买家仍能选到能干活的工具；第五个模型下卖家互相抄，描述失去区分度，买家改按列表位置挑，几乎什么都答不出的工具拿走四分之一到五分之二的选择，Amazon 任务成功率从 89% 掉到约 30%（接近随机），Instagram 从 77% 掉到 40%。作者主张：对第三方的诚实，本身就是安全对齐的一部分，模型应在被当作卖家部署之前先当卖家测一遍。</p>
+    <div class="paper-authors">Zhenwei Tang, Di Bai, Jintao Liu 等 6 人</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2610.28454" target="_blank">arXiv 2610.28454 ↗</a></div>
+  </div>
 </section>
-<section id="sec-models">
-  <h2>🤖 模型<span class="count">5 条</span></h2>
-<div class="card">
-  <h3>Voxtral 3（Small／Mini Transcribe · Speech／TTS） <span class="tag tag-hot">热</span></h3>
-  <p><strong>Mistral AI</strong> — 10 月 20 日语音栈全家桶：转写 50+ 语、实时档 &lt;500ms、TTS 35+ 语；批转写低至 0.0035 美元／分钟。配套 Voice Agent SDK（LiveKit）可直接做电话／WebRTC 智能体。</p>
-  <div class="meta"><a href="https://mistral.ai/news/voxtral-3/" target="_blank" rel="noopener">链接</a></div>
-</div>
-<div class="card">
-  <h3>DeepSeek-V4.1-Flash-1017（经 DeepInfer）</h3>
-  <p><strong>DeepSeek</strong> — DeepInfer 默认检查点；推理框架开源后，自托管路径从「只有权重」补齐到「厂商同款引擎（离线）」。AA 与本站榜仍以既有 V4.1-Flash-1017 条目为准。</p>
-  <div class="meta"><a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener">链接</a></div>
-</div>
-<div class="card">
-  <h3>Gemini for Government（预览）</h3>
-  <p><strong>Google</strong> — 政务垂直智能体方案，非新基座型号；挂在 Gemini 平台之上，带连接器与治理。关注 OneGov 协议到期与机构上线节奏。</p>
-  <div class="meta"><a href="https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-government-services" target="_blank" rel="noopener">链接</a></div>
-</div>
-<div class="card">
-  <h3>Muse 系（Prometheus 超算语境）</h3>
-  <p><strong>Meta</strong> — Meta 明确百万 GPU Prometheus 主训 Muse 家族而非 Llama；基建披露重于新权重日。</p>
-  <div class="meta"><a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">链接</a></div>
-</div>
-<div class="card">
-  <h3>GPT-6.1 Sol（遗留语言评测）</h3>
-  <p><strong>OpenAI</strong> — MultiLangBench／COBOL 等低资源语言工程任务被官方放大；迁移市场报价可能跟着重估。非新模型发布日。</p>
-  <div class="meta"><a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">链接</a></div>
-</div>
+
+<section>
+  <h2>C · 模型动态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>MemT-1.0-Flash / Nano · 记忆张量<span class="tag tag-oss">开放权重</span></h3>
+    <p>首个记忆原生基座模型。Flash 288B 总参／17B 激活／336M 动态记忆，Nano 36B／3B／10M。记忆被编码成可持续擦写的前向状态而非重灌上下文：11 项记忆基准均分 50.6／47.0（自称参数化记忆赛道第一、第二），SWE-bench Verified 500 题 66.07%→69.73%，256K 历史下推理约为完整上下文的 1/3.99 耗时、状态体积 1/66。</p>
+    <div class="meta">来源：记忆张量 · <a href="https://github.com/MemTensor/MemT-1.0" target="_blank">GitHub ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Voxtral 3 · Mistral AI<span class="tag tag-oss">开放权重</span></h3>
+    <p>语音全栈一次给齐：Small／Mini／Mini Realtime 三档转写 + Voxtral Speech 3 合成 + LiveKit 语音智能体 SDK。50+ 语种转写、35+ 语种合成、30 分钟音频克隆音色；FLEURS 45 上 WER 4.1%／4.0% 对 Whisper large-v3 的 16.0%／14.9%（厂商自评）。开源权重＋EU 托管＋私有化部署，直指不能外传录音的呼叫中心与金融。</p>
+    <div class="meta">来源：Mistral AI · <a href="https://mistral.ai/news/voxtral-3" target="_blank">发布公告 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Kling 4.0 · 快手可灵<span class="tag tag-new">闭源</span></h3>
+    <p>10 月 15 日全量上线，本周进入定价与实测期。单次原生 30 秒、10 张关键帧、15 项多模态参考、8000 token 提示词、4K/1080p 10-bit HDR 与 21:9，续拍可延至 2 分钟；补的是高速运动与跟拍、环绕这类「武戏」。单秒 0.17–0.33 元明显低于主流，被视为可灵分拆上市前的能力与价格双锚点。</p>
+    <div class="meta">来源：可灵 AI · <a href="https://app.klingai.com/" target="_blank">官网 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>FLUX 3 Max · fal × Black Forest Labs<span class="tag tag-new">速度特化</span></h3>
+    <p>对 FLUX 3 视频档做后训练与推理优化：10 秒 720p 视频约 12 秒出片（原始版约 126 秒，官方口径约 11.5×；对外宣传按 22× 对比 Seedance 2.5）。文生、图生、关键帧三模式，5–20 秒、原生同步音频；Artificial Analysis 初评 Elo 1,139 与 Seedance 2.5 并列第一（置信区间重叠）。促销 75% 折扣至 11 月 7 日。</p>
+    <div class="meta">来源：fal / BFL · <a href="https://bfl.ai/" target="_blank">官网 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>SKY-001 · Skyfall AI<span class="tag tag-new">垂类世界模型</span></h3>
+    <p>自称首个面向 CAD／BIM 的「工程世界模型」，不做通用对话而是直接产出工程判断。厂商称在其内部工程评测上比 GPT-6 快 51–125 倍、成本约低 150 倍——自评口径，尚无第三方复现。垂类世界模型开始抢通用模型在专业工作流里的位置。</p>
+    <div class="meta">来源：Skyfall AI</div>
+  </div>
+
+  <div class="card">
+    <h3>DeepSeek-V4.1-Flash · DeepSeek<span class="tag tag-oss">开放权重</span></h3>
+    <p>随 DeepInfer 开源再度成为焦点：它成了唯一被公开推理栈完整支持的模型，也是 SM100 与昇腾 950 双硬件路径的首发载体。本站榜单 AA 45、价约 0.30／1.20，仍是「Flash 性价比」赛道的主力对照项；引擎开源后，第三方部署的成本结构第一次可以被外部核对。</p>
+    <div class="meta">来源：DeepSeek · <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">Hugging Face ↗</a></div>
+  </div>
 </section>
-<section id="sec-ecosystem">
-  <h2>🛠️ 生态<span class="count">5 条</span></h2>
-<div class="card">
-  <h3>DeepInfer：开源推理引擎，缺的是在线 Serving 外围 <span class="tag tag-oss">开源</span></h3>
-  <p>内核与调度能力到位，但 README 写明 KV、拆分与多副本均衡需自建；另附 deepseek-recipe（协议／分词对齐官方 API）。自托管 DeepSeek 的人第一次拿到「厂方图纸」。</p>
-  <div class="meta">DeepSeek GitHub · <a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>Voxtral Voice Agent SDK：听－想－说实时流水线</h3>
-  <p>基于 LiveKit；转写实时模型侦测话轮结束，通用 LLM 推理＋工具，TTS 回流。可换推理模型与音色而不重写智能体。</p>
-  <div class="meta">Mistral · <a href="https://mistral.ai/news/voxtral-3/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>TorchTPU vs TorchNeuron：云厂商抢 PyTorch 训练入口</h3>
-  <p>Google 与 Amazon 同日开源／加推各自加速器后端，目标都是让现有 PyTorch 脚本少改代码上自研芯。选型建议跑同一 workload 压测。</p>
-  <div class="meta">The Context · <a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>tsrs：Cloudflare 等把 TypeScript 编译器迁到 Rust，宣称最高约 8×</h3>
-  <p>与 Owner.com／VoidZero 合作，孵化于 Oxc；同检查工人数下最高约 8×、内存约 −70%；部分优化已回馈 TS 7.1。大仓库 CI 可试装。</p>
-  <div class="meta">Cloudflare / HN · <a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">来源</a></div>
-</div>
-<div class="card">
-  <h3>SlopCodeBench 十月更新：XHigh 常更贵却不一定更高分</h3>
-  <p>HumanLayer：同模型三档对比里，XHigh 成本 2.1–4.2×，仅部分模型涨分；选智能体推理档别默认拉满。</p>
-  <div class="meta">HumanLayer · <a href="https://thecontext.dev/en/briefing/2026-10-21/" target="_blank" rel="noopener">来源</a></div>
-</div>
+
+<section>
+  <h2>D · Agent / 生态<span class="count">6 条</span></h2>
+
+  <div class="card">
+    <h3>PyTorch 2.15 RC 给 Apple Silicon 上 FP8：35B MoE 从 9.4 涨到 61.3 tok/s<span class="tag tag-oss">工具链</span></h3>
+    <p>Hugging Face 博文披露：2.15 候选版为 Metal Performance Shaders 后端加上 FP8 支持，MoE 解码在 Apple 芯片上比 2.14 快 5–6.5 倍，M3 Ultra 跑 35B 模型从 9.4 提到 61.3 tokens/s，视频解码内存峰值从 270GB 压到 8GB（数字为博文自报）。对只有一台 Mac 的开发者，这是「本地到底能跑多大模型」的直接变量。</p>
+    <div class="meta">来源：Hugging Face / PyTorch · <a href="https://pytorch.org/blog/" target="_blank">PyTorch Blog ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>llm-d 1.0：Kubernetes 上的推理调度层转正<span class="tag tag-oss">基础设施</span></h3>
+    <p>随 TorchTPU 同日发布 1.0，以 CNCF Sandbox 项目身份由 Red Hat、IBM 等 25 家组织、500 多名贡献者推进。路由按前缀缓存命中把请求送到已持有上下文的副本，计算密集的 prefill 与显存密集的 decode 分离；1.0 新增多租户流控、路由高可用、稳定 v1 API 与会话感知路由，GKE 上同一端点可跑 GPU 或 TPU。</p>
+    <div class="meta">来源：Google Cloud / CNCF · <a href="https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus" target="_blank">阅读全文 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Exa 3：搜索 API 分档到 $4／千次，跨结果选 token 省 95%<span class="tag tag-new">工具</span></h3>
+    <p>新版把检索拆成 Lite（$4/千次请求）与 Auto（$7），Dynamic Highlights 转为免费 GA。核心是跨结果做 token 选择而非整页塞入，官方称比送全文省 95% token。对按上下文计费的智能体，检索层直接决定账单——这类「省 token」的工具正在变成智能体栈的标配件。</p>
+    <div class="meta">来源：Exa · <a href="https://exa.ai/" target="_blank">官网 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Anthropic 上线 OSS Scanner：给关键开源项目免费扫漏洞<span class="tag tag-new">安全</span></h3>
+    <p>ClaudeDevs 推出 OSS Scanner，用 Anthropic 模型对关键开源依赖做定期漏洞扫描，发现项可附概念验证，条件允许时直接给补丁。对维护者稀缺的基础库，这相当于把「安全审计」变成可持续的外部服务；同时也是模型厂商往软件供应链上游插的一根管子——谁先扫到漏洞，谁就先知道整条依赖树的形状。</p>
+    <div class="meta">来源：Anthropic / ClaudeDevs · <a href="https://www.anthropic.com/" target="_blank">官网 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>Sunra MCP：把图像／视频模型接进 Claude、ChatGPT，按原价不加价<span class="tag tag-new">MCP</span></h3>
+    <p>新上线的 MCP 服务让助手直接调用图像与视频生成模型，官方称按各模型厂商 API 原价计费、不额外加价。形态上是「MCP 即聚合层」的又一例：不训模型，只做协议与结算，把生成能力做成助手的一个工具位——和九月 Anthropic 开放插件自助上架是同一趋势的两面：分发层正在比模型层更先标准化。</p>
+    <div class="meta">来源：Sunra · <a href="https://sunra.ai/" target="_blank">官网 ↗</a></div>
+  </div>
+
+  <div class="card">
+    <h3>OpenClaw v2026.10.5：侧边栏直连智能体，Skill Workshop 2.0 加撤销<span class="tag tag-new">Agent 壳</span></h3>
+    <p>本次更新加了快速进入智能体的侧边栏、Skill Workshop 2.0 的 Undo，以及无需登录即可打开的公开会话链接。看似小改动，方向很明确：把「写 Skill」从命令行搬到有撤销的图形界面，降低非工程用户改工作流的门槛——Skill 的竞争正从「能写什么」转向「谁更敢让人改」。</p>
+    <div class="meta">来源：OpenClaw · <a href="https://openclaw.ai/" target="_blank">官网 ↗</a></div>
+  </div>
 </section>
-<footer>AI 前沿情报台 · 每日早报 · 2026-10-21 · 采集窗口约过去 24 小时</footer>
+
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至 2026-10-21 11:30</footer>
+
 </div>
-<!-- digest-ui2:js -->
-<script>
-(function(){
-  var note=document.querySelector('header .note');
-  if(note){
-    var btn=document.querySelector('.note-toggle');
-    if(!btn){
-      btn=document.createElement('button');
-      btn.type='button';
-      btn.className='note-toggle';
-      btn.setAttribute('aria-expanded','false');
-      btn.textContent='展开';
-      note.insertAdjacentElement('afterend', btn);
-    }
-    function measureNeeds(){
-      var open=note.classList.contains('is-open');
-      if(open) note.classList.remove('is-open');
-      var needs=note.scrollHeight>note.clientHeight+2;
-      if(open) note.classList.add('is-open');
-      return needs;
-    }
-    function syncBtn(){
-      var open=note.classList.contains('is-open');
-      btn.setAttribute('aria-expanded', open?'true':'false');
-      btn.textContent=open?'收起':'展开';
-      if(!open && !measureNeeds()) btn.hidden=true;
-      else btn.hidden=false;
-    }
-    btn.addEventListener('click', function(){
-      note.classList.toggle('is-open');
-      syncBtn();
-    });
-    requestAnimationFrame(syncBtn);
-    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
-  }
-  var topLink=document.querySelector('.page-toc a.pt-top');
-  if(topLink){
-    topLink.addEventListener('click', function(e){
-      e.preventDefault();
-      window.scrollTo({top:0,behavior:'smooth'});
-      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
-    });
-  }
-})();
-</script>
-<!-- /digest-ui2:js -->
 </body>
 </html>
