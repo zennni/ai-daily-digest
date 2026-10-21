@@ -1,5 +1,43 @@
 [
   {
+    "t": "OpenAI 模型进 Google Cloud Model Garden：Astra／Sol／Luna 私有预览",
+    "s": "Marketplace 计费可抵 GCP 承诺；Codex 可接 Gemini 平台；微软仍是主云。",
+    "d": "10月21日",
+    "src": "OpenAI / Google Cloud",
+    "link": "https://openai.com/index/openai-models-google-cloud",
+    "m": [
+      "GPT-6 Astra",
+      "GPT-6.1 Sol",
+      "GPT-6 Luna"
+    ]
+  },
+  {
+    "t": "数千 GPT-Rosalind 智能体 32 分钟啃完全脑 CRISPR 图谱",
+    "s": "OpenAI×PerturbAI×Scripps 分布式生物推理；盲评专家 75% 偏好分布式报告。",
+    "d": "10月21日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+    "m": [
+      "GPT-Rosalind"
+    ]
+  },
+  {
+    "t": "Legora 5.5 亿美元 E 轮、估值 88 亿美元",
+    "s": "Atreides 领投；ARR 逾 2 亿；扩 aOS 与北美／欧亚。",
+    "d": "10月21日",
+    "src": "Legora",
+    "link": "https://legora.com/newsroom/legora-raises-550-million-series-e-at-8.8-billion-valuation-to-accelerate-growth",
+    "m": []
+  },
+  {
+    "t": "ElevenLabs Eleven Realtime：端到端语音智能体 Mini／Max",
+    "s": "首音约 0.57–0.62s；OpenAI Realtime 协议兼容；约 0.08 美元／分钟起。",
+    "d": "10月20–21日",
+    "src": "ElevenLabs",
+    "link": "https://elevenlabs.io/blog/realtime",
+    "m": []
+  },
+  {
     "t": "DeepSeek 开源 DeepInfer：生产推理栈公开，V4.1-Flash 默认可跑",
     "s": "Apache 2.0 发布；内核库＋并行＋DSpark 投机解码＋结构化输出；NVIDIA SM100／昇腾 950；离线推理为主，KV 与拆分调度不在此次包内。HN 日榜第一。",
     "d": "10月20日",

@@ -1,0 +1,239 @@
+{
+  "meta": {
+    "date": "2026-10-22",
+    "week": "星期四",
+    "note": "今日主题词：云上选型 × 分布式科研 × 垂直代理融资。过去约 24 小时三条主线并行：OpenAI 与 Google Cloud 把 GPT-6 Astra／GPT-6.1 Sol／GPT-6 Luna 送进 Model Garden 私有预览（Marketplace 计费可抵 GCP 承诺消费，微软仍是主云）；同日 OpenAI×PerturbAI×Scripps 用数千个 GPT-Rosalind 智能体对全脑 CRISPR 图谱做分布式推理，32 分钟扫完「人类要数月到一年」的文献串联，盲评专家更偏分布式报告。资本侧：瑞典法律 AI Legora 拿下 5.5 亿美元 E 轮、投后估值 88 亿美元（ARR 已逾 2 亿）。产品与开源侧：Eleven Realtime 语音端到端、Ornith-1.5-122B 开源、Beacon／EAGLE-4 补齐编码记忆与投机解码。叙事从「谁的分更高」切到「模型出现在哪朵云、科研能不能并行、垂直代理值多少钱」。"
+  },
+  "highlights": [
+    {
+      "title": "OpenAI 模型进 Google Cloud Model Garden：Astra／Sol／Luna 私有预览",
+      "summary": "10 月 21 日，OpenAI 与 Google Cloud 同步官宣：GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna 进入 Model Garden 私有预览；企业可通过 Marketplace 采购并抵扣既有 GCP 承诺消费，本地 Codex CLI／Desktop 也可接到 Gemini 平台做推理。Google Cloud 自称成「唯一同时提供三家头部闭源 LLM」的超大规模云；OpenAI 明确微软仍是主云合作伙伴。对监管行业，官方强调数据边界、专属基础设施与统一审计——云上「选模型」第一次变成账单与合规同一套控制面。"
+    },
+    {
+      "title": "数千 GPT-Rosalind 智能体 32 分钟啃完全脑 CRISPR 图谱",
+      "summary": "OpenAI、PerturbAI 与 Scripps Research 10 月 21 日披露：用数千个 GPT-Rosalind 智能体并行分析小鼠全脑 CRISPR 扰动图谱（数百万脑细胞），把基因扰动效应与文献钩连，产出「推理图谱」；团队估计同等人类串行分析要数月到一年，智能体 32 分钟跑完。对照实验显示单智能体在最大负载下只引用约 11 篇文献，分布式引用逾 700 篇；盲评专家 75% 更偏好分布式报告。线索含 Tsc1／Tsc2 在小脑的差异、DCTN1 与胆固醇代谢的假说——仍是「帮科学家找下一刀实验」，不是临床结论。"
+    },
+    {
+      "title": "Legora 5.5 亿美元 E 轮、估值 88 亿：法律智能体操作系统继续加码",
+      "summary": "瑞典法律 AI Legora 10 月 21 日宣布 5.5 亿美元 E 轮、投后估值 88 亿美元，Atreides 领投，Baron／Capital Group／Fidelity／JPMorgan 等新进，Accel、Benchmark、Bessemer、GC、ICONIQ 等老股东跟投。公司称 ARR 已逾 2 亿美元（从 100 万到 1 亿不到 18 个月，下一亿不到 6 个月）；美国已是第一大收入市场，AmLaw 50 超半数为客户。钱投向北美／欧亚扩张与 Legora aOS（agentic intake、horizon scanning、法律研究）。法律赛道两个月内再现 5.5 亿级大单，资本继续押「律师工作流自动化」。"
+    }
+  ],
+  "news": [
+    {
+      "title": "OpenAI × Google Cloud：GPT-6 Astra／Sol／Luna 进 Model Garden 私有预览",
+      "summary": "10 月 21 日双边官宣。Astra 面向编码／电脑操作／专业与科研重活，Sol 近 Astra 智能更低成本，Luna 偏日常高吞吐；后续还将进入 Gemini for business 与 Google Antigravity。计费走 Marketplace，可抵 GCP 承诺；OpenAI 强调微软仍是主云。",
+      "date": "10月21日",
+      "source": "OpenAI / Google Cloud Blog",
+      "link": "https://openai.com/index/openai-models-google-cloud",
+      "models": [
+        "GPT-6 Astra",
+        "GPT-6.1 Sol",
+        "GPT-6 Luna"
+      ]
+    },
+    {
+      "title": "OpenAI×PerturbAI×Scripps：数千 Rosalind 智能体做分布式生物推理",
+      "summary": "对全脑 CRISPR atlas 按基因扰动拆给智能体：读细胞响应、搜文献、写机制假说，汇总成可浏览的 reasoning atlas；32 分钟 vs 人类估计数月到一年。发现含小脑内 Tsc1／Tsc2 差异、DCTN1 扰动与胆固醇合成基因上调等可跟进线索；专家盲评 75% 偏好分布式报告。",
+      "date": "10月21日",
+      "source": "OpenAI Research",
+      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
+      "models": [
+        "GPT-Rosalind"
+      ]
+    },
+    {
+      "title": "Legora 完成 5.5 亿美元 E 轮，投后估值 88 亿美元",
+      "summary": "Atreides 领投；ARR >2 亿美元，员工逾 1000、18 城、超 14 万法律专业用户、2400+ 律所／法务团队、80+ 市场。本轮较上一轮 56 亿估值上修；资金扩北美办公室网络并加深 aOS 产品线。",
+      "date": "10月21日",
+      "source": "Legora / TechCrunch",
+      "link": "https://legora.com/newsroom/legora-raises-550-million-series-e-at-8.8-billion-valuation-to-accelerate-growth",
+      "models": []
+    },
+    {
+      "title": "ElevenLabs 发布 Eleven Realtime：端到端语音智能体 Mini／Max",
+      "summary": "Speech-to-Speech 一体模型，省去 ASR＋VAD＋LLM＋TTS 拼装。Mini 偏自然对话（首音约 620ms、Full-Duplex-Bench 95.8%），Max 偏客服与多步工具（Big Bench Audio 98.8%、工具任务 87.1%、首音约 570ms）；90+ 语、1.7 万+ 音色；ElevenAgents 与 OpenAI Realtime 兼容 WebSocket，价约 0.08 美元／分钟＋LLM token。",
+      "date": "10月20–21日",
+      "source": "ElevenLabs",
+      "link": "https://elevenlabs.io/blog/realtime",
+      "models": []
+    },
+    {
+      "title": "OpenAI API 支持最长 12 小时提示缓存；ChatGPT 上线锁定对话",
+      "summary": "Responses API 可为 GPT-5.6 及更新模型设 prompt_cache_options.ttl=12h（默认 30m），长生命周期智能体可跨小时复用指令与工具上下文、按缓存输入价计费。ChatGPT「锁定聊天」用 PIN／生物识别保护单会话，移出常规列表与搜索，但不提供端到端加密。",
+      "date": "10月20–21日",
+      "source": "OpenAI Developers / Help Center",
+      "link": "https://developers.openai.com/api/docs/guides/prompt-caching",
+      "models": [
+        "GPT-6.1 Sol"
+      ]
+    },
+    {
+      "title": "传 Anthropic 推动联邦安全法案：可申请叫停「重大伤亡／十亿损失」风险模型",
+      "summary": "媒体援引草案口径：若模型在特定情景下有逾 50 人死亡或逾 10 亿美元损失的「迫在眉睫」风险，商务部可向联邦法官申请阻止发布。与 Anthropic IPO 窗口、算力承诺披露同一新闻周期——把「安全阈值」写成可诉讼门槛，而非只靠内部政策。",
+      "date": "10月21日",
+      "source": "The Neuron / 媒体转述",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/",
+      "models": []
+    },
+    {
+      "title": "Perplexity Computer 可在 Apple Silicon Mac 本地跑；Gemini 车载开个人智能",
+      "summary": "Perplexity 称其模型与智能体可在 Mac 上处理本地文件与原生 App，本地任务可不出机、云端需授权。Google 则向 Android Auto 上的 Gemini 推 Personal Intelligence：授权后可调 Gmail／Photos 等回答行程与个人信息类问题——端侧代理与座舱助手同步加「本地／个人上下文」。",
+      "date": "10月21日",
+      "source": "The Neuron / Google",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/",
+      "models": []
+    },
+    {
+      "title": "Daytona 以约 10 亿美元估值完成 6000 万美元 B 轮",
+      "summary": "定位「给智能体的计算机／沙箱云」，让编码与操作类智能体有隔离运行时。与 OpenAI 抢跑约 300 亿美元融资、Legora 法律大单同一周：钱继续涌向「能把智能体放进真实工作流」的基础设施，而不只是基座模型本身。",
+      "date": "10月21日",
+      "source": "AI创投观察 / 融资日报",
+      "link": "https://aifundingwatch.com/daily",
+      "models": []
+    },
+    {
+      "title": "奇瑞发布 CheryMind：车企垂域基座，接 6 万员工与 400+ 系统",
+      "summary": "2026 全球创新大会上定位「为物理 AI 而生」，覆盖 200+ 业务场景，打通工程与海量车企数据。工业大模型叙事从演示转向「进 ERP／PLM／产线系统」——与 Rosalind 进药研、Legora 进律所是同一类「占住垂直流程」押注。",
+      "date": "10月21日",
+      "source": "青云TOP / 奇瑞",
+      "link": "https://qingyuntop.ai/article/qing-yuntop-airi-bao-2026nian10yue21ri-wan-bao",
+      "models": []
+    },
+    {
+      "title": "Meta Muse 上线约 40 天美国下载破千万",
+      "summary": "媒体统计美国下载约 1020 万、全球约 1090 万，消费级 AI 代理应用增速罕见。对照此前会话分享链接可被 DNS 检索的曝光，增长与合规压力并行——分发快不等于会话与数据边界已收紧。",
+      "date": "10月21日",
+      "source": "青云TOP",
+      "link": "https://qingyuntop.ai/article/qing-yuntop-airi-bao-2026nian10yue21ri-wan-bao",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Sage-A1.5：把编排与自校验写进 35B 智能体策略",
+      "titleEn": "Sage-A1.5: From Long-Horizon Execution to Scientific Exploration with Capability Composition",
+      "summary": "在 Agents-A1 上扩展 Agentic Orchestration（并行子智能体委派与整合）与 Agentic Verification（无外部监督器的证据自检）。35B MoE 在 FrontierScience-Olympiad、CMT、PinchBench、IFBench 等上自称超过更大的 Kimi-K3／GLM-5.3／GPT-5.6-sol；BrowseComp 开编排 81.7→82.8，DeepResearch Bench II 43.7→47.5。案例覆盖 50 频道调研图谱、量子光学自纠错、晶体精修等——长程科研从「单线程工具循环」转向「可编排＋可自证」。",
+      "authors": "Wenjie Lou, Tianshuo Peng, Shiyang Feng, Shengji Tang, Runmin Ma, et al. (large consortium)",
+      "link": "https://arxiv.org/abs/2610.28578"
+    },
+    {
+      "title": "FALCA：用证伪智能体打断深度搜索的确认偏误",
+      "titleEn": "FALCA: Falsification-Aware Reinforcement Learning with Hierarchical Credit Assignment for Long-Horizon Deep Search Agents",
+      "summary": "把深度搜索写成 propose–falsify：Searcher 提议，独立 Falsifier 找反证与未满足约束并回写研究状态；训练含证伪轨迹 SFT＋并行 rollout 的分层信用分配。FALCA-4B 五基准均分约 64.7，高于同 harness 未训的 Qwen3.5-4B（55.5）与 9B（57.9）；去 Falsifier 掉到 52.8。结论：搜得更深不够，还得会改研究状态。",
+      "authors": "Zijun Dou, Kun Luo, Chaofan Li, Shuqi Lu, Zheng Liu",
+      "link": "https://arxiv.org/abs/2610.28361"
+    },
+    {
+      "title": "AMTP：训练免费的自适应多 token 预测视界控制",
+      "titleEn": "Adaptive Multi-Token Prediction: How far should we go?",
+      "summary": "MTP 必须在起草前选定视界。AMTP 用验证反馈在线学 acceptance survival／rejection hazard，按预期 tokens/s 选视界，不改验证器、不重训草稿模型。五组 draft–target、AIME 2025／GSM8K 上最高约 4.1× 于标准解码，10 组里 8 组持平或优于固定窗口，吞吐增益最高约 10%。把「草稿多长」从超参变成在线控制。",
+      "authors": "Emile Anand, Mohammed Rehan Parwani, Xinyuan Cao",
+      "link": "https://arxiv.org/abs/2610.28619"
+    },
+    {
+      "title": "OptScientist：从数据自动发现「优化定律」",
+      "titleEn": "OptScientist: Automated Discovery of Optimization Laws",
+      "summary": "不止拟合 y=f(x)，而是恢复生成观测的符号优化问题（目标＋约束）。OptFeynman 99 题上离散／连续精确序恢复约 88／78 题；风险决策与央行货币政策上发现紧凑符号律，token 远少于纯 LLM 发现基线。把「科学发现」扩到逆优化与显示性偏好那一类定律。",
+      "authors": "Ma ZhenYao, Yue Liang, Jian-Qiao Zhu",
+      "link": "https://arxiv.org/abs/2610.28562"
+    },
+    {
+      "title": "DecisionPivot：给 LLM 系统里的决策模型做诊断基准",
+      "titleEn": "DecisionPivot: A Diagnostic Benchmark for Decision Models in LLM Systems",
+      "summary": "针对「抽取／决策／生成」级联里决策模型这一环，提供可诊断的评测轴，便于对照 Clairic／Clef 一类 System One 决策件与纯 LLM JSON 抽取的差异——和本周产品侧「把决策从生成里拆出来」同向。",
+      "authors": "Xialie Zhuang, Mingcong Lei, Zunhai Su, Ri Liu, Jianjin Li, Peixian Ma, Jia Pan, Ngai Wong, Guanhua Chen, Chuan-Wei Kuo",
+      "link": "https://arxiv.org/abs/2610.28522"
+    },
+    {
+      "title": "ChartEvo：长尾图表推理的自演化 harness",
+      "titleEn": "ChartEvo: Self-Evolving Agent Harnesses for Long-Tail Chart Reasoning",
+      "summary": "针对长尾图表理解，让 harness 在任务上自演化而非只调模型权重。与昨日 MaD-RSI「多模型共训 harness」同属 harness 自改进线，把评测压力从榜分数迁到「接口仓库能不能跟着数据分布长」。",
+      "authors": "Qi Wang, Peijie Wang, Jun Cao, Haoyang Tong, Xiao-Hui Li, Fei Yin, Cheng-Lin Liu",
+      "link": "https://arxiv.org/abs/2610.28282"
+    }
+  ],
+  "models": [
+    {
+      "name": "GPT-6 Astra / GPT-6.1 Sol / GPT-6 Luna",
+      "vendor": "OpenAI（经 Google Cloud）",
+      "highlight": "10 月 21 日起在 Google Cloud Model Garden 私有预览：Astra 重活、Sol 近前沿更省、Luna 高吞吐日常；Marketplace 计费可抵 GCP 承诺，Codex 工作流可接 Gemini 平台。云上「三家闭源＋两百开源／一三方」选项面被写进同一治理平面。",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
+    },
+    {
+      "name": "GPT-Rosalind（分布式生物推理）",
+      "vendor": "OpenAI",
+      "highlight": "数千智能体并行读 CRISPR atlas＋文献，32 分钟产出 reasoning atlas；相对单智能体文献覆盖与专家偏好显著更好。与前一日收购 Orchestra Bio 同一生命科学线：从分子／流程协作再扩到「大规模组学线索发现」。",
+      "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    },
+    {
+      "name": "Eleven Realtime v1 Mini / Max",
+      "vendor": "ElevenLabs",
+      "highlight": "端到端 Speech-to-Speech：Mini 自然对话、Max 推理＋工具；首音约 0.57–0.62s，90+ 语；OpenAI Realtime 协议兼容，约 0.08 美元／分钟起。与 Mistral Voxtral 3 同一周把「语音代理」从拼装件推进到一体模型。",
+      "link": "https://elevenlabs.io/blog/realtime"
+    },
+    {
+      "name": "Ornith-1.5-122B",
+      "vendor": "Ornith AI",
+      "highlight": "122B MoE 开源权重（MIT），偏编码与智能体，宣称可在单 80GB GPU 服务、262K 上下文、工具调用；HF 提供 FP8／MLX 等变体。厂商自报基准，第三方复现仍待看——开源编码模型又一档「单卡可伺」叙事。",
+      "link": "https://huggingface.co/ornith-ai/Ornith-1.5-122B"
+    },
+    {
+      "name": "Sage-A1.5",
+      "vendor": "开源科研智能体（论文发布）",
+      "highlight": "35B MoE，编排＋自校验写入策略；科学奥赛／凝聚态／PinchBench 等多项自称超更大闭源。权重与 token-plan 在论文注释给出链接——小参数长程科研智能体的新对照点。",
+      "link": "https://arxiv.org/abs/2610.28578"
+    },
+    {
+      "name": "EAGLE-4（投机解码）",
+      "vendor": "EAGLE / 社区披露",
+      "highlight": "厂商称四卡 B300 上对 Qwen3.8-27B 达约 961.6 tok/s。与 AMTP 论文同一周强化「推理加速」主线：草稿头／视界控制／置信度调度继续压墙钟。",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Beacon：跨 Claude Code／Cursor 的编码会话记忆，种子轮 550 万美元",
+      "summary": "Justin D'Souza 开源方案把历史编码会话炼成可复用上下文，减少换工具就失忆；背后公司同步宣布 550 万美元种子轮。编码智能体的「长期记忆」从提示词技巧变成独立产品层。",
+      "source": "The Neuron / 社区",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/",
+      "models": []
+    },
+    {
+      "title": "Composio：1000+ 集成的智能体工具管道（鉴权与权限）",
+      "summary": "面向「要动手改外部服务」的智能体，管 OAuth、权限与一千以上连接器，避免每个 harness 重写胶水。工具市场膨胀的另一面：谁来做可靠的鉴权与审计中间层。",
+      "source": "The Neuron / Composio",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-october-21-2026/",
+      "models": []
+    },
+    {
+      "title": "MCP 生态快照（至 10-21）：索引服务器破十万级，握手成功率仍低",
+      "summary": "Unyly 报约 11.4 万服务器、近 7 日新增约 2500；Glimind 口径可发现服务器约 15.7 万、工具 140 万＋。MCP Toplist 10 月报告：探测端点完成握手仅约 27%。数量爆炸与「真能连上」之间的缺口，是生态下一阶段主矛盾。",
+      "source": "Unyly / Glimind / MCP Toplist",
+      "link": "https://unyly.org/stats",
+      "models": []
+    },
+    {
+      "title": "FALCA 开源思路：Searcher–Falsifier 双环＋分层 RL",
+      "summary": "论文主页与代码指向把证伪写成一等公民工具（refute）与研究状态更新。对做深度研究 harness 的团队，是可复用的「防确认偏误」模板，而不只是又一个 BrowseComp 刷分技巧。",
+      "source": "arXiv / BAAI",
+      "link": "https://arxiv.org/abs/2610.28361",
+      "models": []
+    },
+    {
+      "title": "OpenAI 提示缓存扩到 12h：长活智能体的账单旋钮",
+      "summary": "显式 TTL 让跨小时的 agent 循环能继续吃缓存折扣；写缓存贵、读缓存便宜的不对称定价，会倒逼开发者把稳定前缀（人设、工具 schema、政策）与易变用户轮次拆开。",
+      "source": "OpenAI Developers",
+      "link": "https://developers.openai.com/api/docs/guides/prompt-caching",
+      "models": [
+        "GPT-6.1 Sol"
+      ]
+    },
+    {
+      "title": "腾讯元宝搜索开放 Skill／MCP／API（延续跟踪）",
+      "summary": "千亿级索引、日均数亿次调用，三种接入各有每月 2000 次免费额度；检索链路报 8ms／排序 30ms 量级。中文 Agent 联网零件目录又多一块可计价 MCP——与 Composio、Sunra 同属「协议＋结算」层。",
+      "source": "腾讯云 / 中文科技媒体",
+      "link": "https://sflood.com/zh/daily/ai-2026-10-21",
+      "models": []
+    }
+  ]
+}

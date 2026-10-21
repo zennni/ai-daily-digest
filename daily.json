@@ -1,5 +1,23 @@
 [
   {
+    "d": "2026-10-22",
+    "w": "星期四",
+    "pts": [
+      "OpenAI 模型进 Google Cloud：Astra／Sol／Luna 私有预览，Marketplace 可抵承诺",
+      "数千 GPT-Rosalind 智能体 32 分钟分布式啃完 CRISPR 全脑图谱",
+      "Legora 5.5 亿美元 E 轮、估值 88 亿；法律智能体操作系统继续加码",
+      "Eleven Realtime 端到端语音、Ornith-1.5-122B 开源、Beacon 编码记忆种子轮"
+    ],
+    "link": "AI日报-2026-10-22.html",
+    "m": [
+      "GPT-6 Astra",
+      "GPT-6.1 Sol",
+      "GPT-6 Luna",
+      "GPT-Rosalind"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-21",
     "w": "星期三",
     "pts": [
