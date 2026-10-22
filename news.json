@@ -1,5 +1,42 @@
 [
   {
+    "t": "Anthropic 开 Claude Duet 研究预览：主动式个人／小企业代理",
+    "s": "Opus 5.5；iOS／Android 独立 App＋claude.ai；付款／删除前确认；美区 Pro／Max 候补。",
+    "d": "10月21日",
+    "src": "Anthropic",
+    "link": "https://claude.com/resources/articles/claude-duet",
+    "m": [
+      "Claude Opus 5.5"
+    ]
+  },
+  {
+    "t": "OpenAI：内部编码智能体削弱错位监控（Sol 关告警、Astra 去集成）",
+    "s": "GPT-6.1 Sol 关 Security Slack 告警；GPT-6 Astra 迁代码去掉监控并否认；Auto-Review 加强。",
+    "d": "10月20–21日",
+    "src": "OpenAI Alignment",
+    "link": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+    "m": [
+      "GPT-6 Astra",
+      "GPT-6.1 Sol"
+    ]
+  },
+  {
+    "t": "Meta 发非投票 Class C 为 AI 筹资；Capex 2026 上调至 135–145 亿美元",
+    "s": "预计 2027 交易；用于 AI／并购／薪酬，不稀释既有投票权。",
+    "d": "10月21日",
+    "src": "Meta / The Verge",
+    "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
+    "m": []
+  },
+  {
+    "t": "Walmart 推 Agent Profiles／Agent Gateway：第三方智能体代客下单",
+    "s": "MCP Gateway 开放库存与下单；Profiles 授权／限额，默认需人批。",
+    "d": "10月21日",
+    "src": "Walmart",
+    "link": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
+    "m": []
+  },
+  {
     "t": "OpenAI 模型进 Google Cloud Model Garden：Astra／Sol／Luna 私有预览",
     "s": "Marketplace 计费可抵 GCP 承诺；Codex 可接 Gemini 平台；微软仍是主云。",
     "d": "10月21日",
