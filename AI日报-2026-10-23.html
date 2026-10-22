@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-10-23</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+</style></head>
+<body id="top">
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年10月23日 · 星期五</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：沙箱上云，账单对账。10 月 22 日这一天，智能体从「能不能跑」被推到「在什么机器上跑、谁来付账」。谷歌在 AGNTCon＋MCPCon 放出 Agent Compute Engine：每个 Gemini 智能体独占一台 Titanium 硬件隔离的微虚拟机，空闲可亚秒级挂起／恢复，配套开源 Kubernetes 运行时 Agent Substrate 宣称单机密度最高约 10 倍、20 万智能体测试里暂停恢复低于 500 毫秒——把英伟达 OpenShell「规矩写在模型外」的同一课，写进了云厂商的标准算力商品。同日另一端是账单：CNBC 称 OpenAI 接近完成至多 300 亿美元融资、估值约 1.25 万亿美元，阿联酋投资者与 Coatue 领投，定位为 2027 潜在 IPO 前的过桥；科技巨头财报却让市场质疑 AI 资本开支可持续性，AI 概念股集中抛售、10 年期美债收益率跌破 5%。安全侧同样加速：Calif／Wiz 借助 GPT-5.6 Sol 等模型挖出 PHP 两项 CVSS 9.2 远程代码执行漏洞，紧急补丁尚未到位时部分政府与媒体站点临时下线，OpenAI 顺势提出 AI 发现漏洞的「防御者窗口」协调框架。国产链上，讯飞 1024 开发者节把星火 X2.6（云端 293B-A30B／端侧开源 4B、百万上下文）与 SparkAudio 1.0 一并落地；彭博则称 DeepSeek 完成约 150 亿美元融资。论文与生态也在补同一课：HGM-Dual 给 harness 进化写血缘与证伪路径，Vercel durable-harness 让编码智能体崩溃可续跑。沙箱从配置项变成云 SKU，估值从故事变成债市与招股书里的数字——两边同时对账。</div>
+</header>
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">看点</a>
+  <a href="#sec-news">新闻</a>
+  <a href="#sec-papers">论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a href="#top" class="pt-top">顶</a>
+</nav>
+<div class="highlights" id="sec-highlights">
+  <h2>🔥 今日看点</h2>
+  <ul><li><strong>谷歌 Agent Compute Engine：每个智能体一台硬件隔离微虚拟机</strong><p>10 月 22 日于 AGNTCon＋MCPCon 发布。Agent Compute Engine 已为 Gemini 工作任务型智能体供能，未来数月预览：Titanium IPU 提供硅根隔离，Cloud Hypervisor 微虚拟机自带 guest 内核；空闲可检查点挂起、写时复制共享内存以提高密度；每机配 Hyperdisk 持久工作区，凭据在出口侧注入。配套开源 Agent Substrate（GKE）：宣称相对传统算力最高约 10× 密度，20 万智能体测试中暂停／恢复 &lt;500ms，兼容 Claude Code／OpenClaw／Hermes 等 harness。治理侧扩展 Agent Gateway／Registry／SPIFFE 身份与跨云／端侧管控。</p></li><li><strong>OpenAI 接近 300 亿美元融资、估值约 1.25 万亿：阿联酋与 Coatue 领投</strong><p>CNBC 援引知情人士：OpenAI 接近就至多约 300 亿美元融资达成协议，估值约 1.25 万亿美元，由阿联酋投资者与 Coatue 领投；公司向投资人口径是希望下周末前签字，定位为 2027 潜在 IPO 前的机会性过桥，并已保密递交上市申请。同日科技财报引发对 AI 资本开支可持续性的质疑，AI 概念股抛售、美债收益率大幅回落。资本弹药与市场定价在同一新闻周期对撞。</p></li><li><strong>AI 挖出 PHP 双高危漏洞：CVSS 9.2，全球紧急打补丁</strong><p>CVE-2026-109618／109619 可未授权远程代码执行；PHP 称凡对外提供 Web 服务的安装均可能受影响，已发支持版本补丁。OpenAI 称 Calif 用 GPT-5.6 Sol 发现关键缺陷，Wiz 独立验证两项漏洞；披露泄漏迫使提前发补丁，部分站点在补丁到位前遭利用。芬兰政府网站、爱丁堡市政与 BBC 等临时下线部分服务。OpenAI 提出「防御者窗口」协调框架：AI 发现到公开披露之间留给维护者准备时间。</p></li><li><strong>讯飞星火 X2.6＋SparkAudio 1.0：全国产端云一体落地 1024</strong><p>10 月 22 日合肥／北京双会场。云端 X2.6 为 293B-A30B MoE、宣称百万 token 上下文，强化编程与智能体；端侧开源 X2.6-4B。官方公布限时推理价（输入约 0.9 元／百万 tokens 等，口径以厂商为准）。同步发布语音基座 SparkAudio 1.0，整合识别、同传、情绪与环境理解；飞星平台联合华为昇腾支撑万卡训练叙事。国产竞争点继续从单点分数挪到端云分工与数据边界。</p></li></ul>
+</div>
+<section id="sec-news">
+  <h2>📰 新闻<span class="count">12 条</span></h2><div class="card">
+  <h3>谷歌发布 Agent Compute Engine：硬件隔离微虚拟机跑 Gemini 智能体 <span class="tag tag-hot">热</span></h3>
+  <p>AGNTCon＋MCPCon 官宣。Titanium 硅根隔离＋Cloud Hypervisor；空闲挂起／恢复、写时复制提密度；Hyperdisk 持久工作区。开源 Agent Substrate 宣称最高约 10× 密度、&lt;500ms 恢复。治理扩展至 Cloud Run／GKE／端侧编码代理。把「沙箱」做成标准云商品。</p>
+  <div class="meta">10月22日 · Google Cloud Blog · <a href="https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI 接近至多 300 亿美元融资、估值约 1.25 万亿，阿联酋与 Coatue 领投 <span class="tag tag-fund">资本</span></h3>
+  <p>CNBC：接近协议、希望下周末前签字；定位 2027 IPO 前过桥，已保密递交上市申请。同窗另洽阿联酋算力合作。数字未最终敲定，按媒体口径报道。</p>
+  <div class="meta">10月22日 · CNBC · <a href="https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>PHP 两项 CVSS 9.2 RCE：AI 辅助发现，全球紧急补丁 <span class="tag tag-hot">热</span></h3>
+  <p>CVE-2026-109618／109619；Calif 用 GPT-5.6 Sol、Wiz 独立发现。披露泄漏致提前发版；芬兰政府、爱丁堡市政、BBC 等临时下线部分服务。OpenAI 提出「防御者窗口」协调披露框架，并发布 PHP 自查工具。</p>
+  <div class="meta">10月21–22日 · The Neuron / OpenAI / PHP · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>AI 资本开支遭质疑：概念股抛售，10 年期美债收益率跌破 5% <span class="tag tag-fund">资本</span></h3>
+  <p>科技巨头财报后市场质疑 AI Capex 可持续性；2–10 年期美债单日降幅超 15bp。高盛分析师称超大规模云发债规模已可比国债，Capex 收缩近似减少债券供给。模型层融资与债市定价同框。</p>
+  <div class="meta">10月22–23日 · 华尔街见闻 / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-23" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>科大讯飞 1024：星火 X2.6 端云一体＋SparkAudio 1.0 语音基座 <span class="tag tag-new">新</span></h3>
+  <p>云端 293B-A30B MoE、百万上下文；端侧开源 X2.6-4B；全国产算力训练叙事。SparkAudio 1.0 融合识别／同传／情绪。飞星＋昇腾万卡平台同步亮相。</p>
+  <div class="meta">10月22日 · AiBase / 合肥高新区 · <a href="https://news.aibase.com/zh/news/31807" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>彭博：DeepSeek 据报完成约 150 亿美元融资 <span class="tag tag-fund">资本</span></h3>
+  <p>称本轮约 150 亿美元、为中国最大私募之一；潜在投资方包括宁德时代与腾讯。距美方要求联邦民事机构移除其技术仅两天。数字待多方交叉核实。</p>
+  <div class="meta">10月22日 · Bloomberg / TechCrunch 转述 · <a href="https://www.readaitime.com/digests/2026-10-22" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>微软：AI 诊断工具测试准确率最高达人类医生约四倍 <span class="tag tag-new">新</span></h3>
+  <p>Mustafa Suleyman 向 The Verge 介绍；相关研究周四发表于《Science》，基于病例报告与急诊场景自建基准。公司口径，同行评议与外部复现仍待观察。</p>
+  <div class="meta">10月22–23日 · The Verge / Science · <a href="https://www.readaitime.com/digests/2026-10-23" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>DeepMind 员工因军方 AI 合作辞职；谷歌称公共部门合同经原则审查 <span class="tag tag-hot">政策</span></h3>
+  <p>BBC 报道研究工程师 Sofia Liguori 本周离职，Andreas Kirsch 月初已离。员工质疑谷歌对五角大楼如何使用其 AI 的可见度与控制力。公司称合同经 AI 原则与可接受使用政策审查。</p>
+  <div class="meta">10月22日 · BBC / The Neuron · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>Dario Amodei 回应「安全让位于竞赛」批评：列举 Mythos 推迟四月等代价 <span class="tag tag-new">新</span></h3>
+  <p>Encode AI 的 Nathan Calvin 长文批评后，Amodei 公开答辩，称多项商业上吃亏的安全决策（含 Mythos 推迟约四个月），同时承认部分近期问题处理不当。与 Anthropic S-1／联邦安全法案同窗。</p>
+  <div class="meta">10月22日 · The Neuron · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>Mistral × 英伟达：工业工程 AI 工作流与 CAE／芯片设计智能体基准 <span class="tag tag-new">新</span></h3>
+  <p>计划把 Mistral 模型接到英伟达仿真与计算工具；同步准备公开数据集与基准，测试智能体能否准确完成计算机辅助工程与芯片设计任务。</p>
+  <div class="meta">10月22日 · The Neuron / NVIDIA · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>Cadence 慕尼黑主权 AI 数据中心上线：欧盟境内做芯片与 AI 工厂设计 <span class="tag tag-new">新</span></h3>
+  <p>整合 Cadence OnCloud、英伟达 Vera／Grace、Reality 数字孪生与 Blackwell Millennium M2000。自称欧洲首家覆盖半导体／系统／AI 工厂设计的完整主权 EDA＋AI 平台，满足数据驻留。</p>
+  <div class="meta">10月22日 · HPCwire · <a href="https://www.readaitime.com/digests/2026-10-23" target="_blank" rel="noopener">原文 ↗</a></div>
+</div><div class="card">
+  <h3>Anthropic S-1 窗口进入本周五：估值讨论约 1.5 万亿，Polymarket 破产概率约 17% <span class="tag tag-fund">资本</span></h3>
+  <p>延续昨日线索：公开递交窗口临近；上半年净亏 807 亿（多非现金）、算力承诺高企。预测市场给 2028 年底前破产约 17%。与 OpenAI 融资新闻同框对照。</p>
+  <div class="meta">10月22–23日 · WSJ / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-22" target="_blank" rel="noopener">原文 ↗</a></div>
+</div></section>
+<section id="sec-papers">
+  <h2>📄 论文<span class="count">8 篇</span></h2><div class="card">
+  <h3>HGM-Dual：给规划智能体 harness 进化写血缘与证伪路径</h3>
+  <div class="paper-authors">HGM-Dual: Lineage-Aware Guided Agent Harness Optimization for Long-Horizon Planning</div>
+  <p>在 Huxley–Gödel Machine 上增加两类机制：血缘感知的编辑—结果上下文（避免重复无效改动），以及错误条件双路径子代（通用探索＋针对最高频约束失败的特化修复）。旅行／购物长程规划上相对最强基线 case accuracy 相对提升最高约 14.45%，并以 2×–4× 更少评估预算逼近 HGM 变体终局表现。</p>
+  <div class="paper-authors">Sudipta Paul, Pengrui Quan, Aounon Kumar, Nicholas Tzou, Vivek Kulkarni, Srinivas Chappidi (Samsung Research America)</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.30042" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>UserSWE：用动态用户评测多轮对话里的编码智能体</h3>
+  <div class="paper-authors">UserSWE: Evaluating Coding Agents in Multi-Turn Conversations with Dynamic Users</div>
+  <p>把编码智能体评测从静态单轮任务扩展到多轮、用户偏好会变的对话设定，暴露「一次改对」基准掩盖的澄清、反悔与需求漂移问题。</p>
+  <div class="paper-authors">Zhan-Yu Wu, Ji Luo, Alyssa Wu, Junjielong Xu, Richeng Xuan, Zhichao Hu, Chongming Gao, Xinting Hu</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.29822" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>PerMIT：为 LLM 智能体的持久记忆做机器检查完整性与社区信任</h3>
+  <div class="paper-authors">PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust</div>
+  <p>常驻智能体依赖可复用记忆与配置文件；PerMIT 用形式化完整性定理与可扩展社区信任，给持久记忆层加可验证防护——与本周 AutoRedClaw「驻留投毒」叙事同向。</p>
+  <div class="paper-authors">Tanqiu Jiang, Min Bai, Sadat Shahriar, Wanyu Du, Sandesh Swamy</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.28987" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>AgentPolicyForge：从可执行环境到策略基准与自适应护栏</h3>
+  <div class="paper-authors">AgentPolicyForge: From Executable Environments to Policy Benchmarks and Adaptive Guards</div>
+  <p>把策略生成、评测与自适应护栏收进同一流水线，让「智能体允许做什么」从文档变成可跑的基准与可更新守卫。</p>
+  <div class="paper-authors">Chao Shang, Wanyu Du, Yi Zhang, Sandesh Swamy</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.28989" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>DeLoop：把重复动作当自监督信号，训长程智能体</h3>
+  <div class="paper-authors">DeLoop: Repeated Actions as Self-Supervision for Long-Horizon Agents</div>
+  <p>长程任务里智能体常陷入重复无效动作；DeLoop 把这类循环转成自监督信号，改善长程执行稳定性（HF Papers 10-22 热榜可见）。</p>
+  <div class="paper-authors">见 arXiv／HF Papers 条目</div>
+  <div class="meta"><a href="https://huggingface.co/papers" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>SpatialBrain：空间智能从经验中生长</h3>
+  <div class="paper-authors">SpatialBrain: Spatial Intelligence Growing from Experience</div>
+  <p>探讨具身／空间智能如何通过经验积累而非单次提示涌现，衔接 VLM 规划到机器人操作的 harness 自演化线索。</p>
+  <div class="paper-authors">Yifan Zhou, Ziyang Gong, Xiaojun Ye, Yifei Liu, Donggang Li, et al.</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.29317" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>TraceForge：用自己的思考做蒸馏</h3>
+  <div class="paper-authors">TraceForge: Distilling with Your Own Thinking</div>
+  <p>提出以模型自身推理轨迹为蒸馏信号的框架，减少对外部教师轨迹的依赖，服务智能体后训练与自改进闭环。</p>
+  <div class="paper-authors">Yan Wang</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.29680" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div><div class="card">
+  <h3>D-Skill：通过 Agent Skills 蒸馏教师知识</h3>
+  <div class="paper-authors">D-Skill: Distilling Teacher Knowledge through Agent Skills</div>
+  <p>把可复用 skill 当作蒸馏载体，让学生智能体继承教师在工具使用与流程上的能力，而不是只模仿最终答案。</p>
+  <div class="paper-authors">Shuo Yuan, Dacheng Li, Joseph E. Gonzalez</div>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.28914" target="_blank" rel="noopener">arXiv / 原文 ↗</a></div>
+</div></section>
+<section id="sec-models">
+  <h2>🤖 模型<span class="count">6 条</span></h2><div class="card">
+  <h3>讯飞星火 X2.6（云端 293B-A30B／端侧 4B） <span class="tag tag-new">新</span></h3>
+  <p><strong>科大讯飞</strong> — 1024 开发者节发布端云一体：云端 MoE 宣称百万上下文与编程／智能体升级；端侧 X2.6-4B 开源。厂商自报限时推理价与全国产算力训练——第三方复现与独立基准仍待看。</p>
+  <div class="meta"><a href="https://news.aibase.com/zh/news/31807" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>SparkAudio 1.0 <span class="tag tag-new">新</span></h3>
+  <p><strong>科大讯飞</strong> — 语音基座大模型，融合识别、翻译、语义与情绪／环境理解；已接入讯飞输入法、听见等产品。与同周 Eleven Realtime、Mistral Voxtral 3 形成语音代理零件竞赛。</p>
+  <div class="meta"><a href="https://news.aibase.com/zh/news/31807" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Flint（Recursive）· vLLM Day-0 <span class="tag tag-oss">开源</span></h3>
+  <p><strong>Recursive Superintelligence</strong> — 昨日已报 39.8B／2.5B 激活 MoE 编码模型；今日跟进 vLLM Day-0 镜像与合并 PR，单卡 BF16／NVFP4，GB200 上单请求约 500 tok/s（厂商口径）。本地编码智能体栈继续补齐推理后端。</p>
+  <div class="meta"><a href="https://vllm.ai/blog/2026-10-21-flint" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Muse Glimmer 30B <span class="tag tag-oss">开源</span></h3>
+  <p><strong>Meta Superintelligence Labs</strong> — 开源约 30B 端侧智能体模型（Apache 2.0），含感知编码器，面向消费级单卡；论文称在工具使用／多步规划上对标同尺寸 Gemma／Qwen。与 Muse Spark Open 同属 Muse 系。</p>
+  <div class="meta"><a href="https://arxiv.org/html/2610.24628" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>IBM Granite Speech 5.0 2B <span class="tag tag-oss">开源</span></h3>
+  <p><strong>IBM</strong> — 开源 2B 语音语言模型（Apache 2.0），支持约 6 语转写与翻译，补齐 Granite 系语音侧小模型。</p>
+  <div class="meta"><a href="https://aihot.space/days/20261022/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>蚂蚁数科 LingDT Decision 1.0 <span class="tag tag-new">新</span></h3>
+  <p><strong>蚂蚁数科</strong> — 面向企业决策的 4B／27B 模型，宣称原生多选与按序决策，客服／风控等场景 Token 消耗最高降逾 90%（厂商自测）。决策头从生成链路拆出的又一例。</p>
+  <div class="meta"><a href="https://news.aibase.com/zh/news/31807" target="_blank" rel="noopener">来源 ↗</a></div>
+</div></section>
+<section id="sec-ecosystem">
+  <h2>🧩 Agent / 生态<span class="count">6 条</span></h2><div class="card">
+  <h3>谷歌 Agent Compute Engine ＋ 开源 Agent Substrate <span class="tag tag-hot">热</span></h3>
+  <p>硬件隔离微虚拟机商品化；Agent Substrate 在 GKE 上提供可移植运行时，兼容多家 harness。智能体沙箱从「各写一套」走向云标准件。</p>
+  <div class="meta">Google Cloud Blog · <a href="https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Vercel durable-harness：让任意编码 harness 崩溃可续跑 <span class="tag tag-new">新</span></h3>
+  <p>开源方案把 Claude Code、Codex、Pi 等 harness 接到 Vercel 持久执行层，长任务在进程崩溃后可恢复，而不是从头再跑。</p>
+  <div class="meta">Vercel Blog · <a href="https://vercel.com/blog/making-every-harness-durable" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Claude Code v2.1.308：可靠性修复与自托管 runner 状态 <span class="tag tag-new">新</span></h3>
+  <p>10 月 22 日发布：修一批评测与可靠性问题；自托管／按需 runner 状态展示改进（失败重试计数等）。承接前一日 safety_event 可观测性。</p>
+  <div class="meta">Claude Code Changelog · <a href="https://code.claude.com/docs/en/changelog" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Claude API 版本 2026-10-21：三年来首次正式版号 <span class="tag tag-new">新</span></h3>
+  <p>Anthropic 称将更频繁发版以便开发者消化破坏性变更；2023-06-10 仍可用。新版 SDK／CLI 默认新 API，提供迁移指南。</p>
+  <div class="meta">TLDR AI / Anthropic · <a href="https://ai.tldr.tech/p/2026-10-22-tldr-ai" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Needle：把外联销售塞进已有编码智能体（MCP＋REST） <span class="tag tag-new">新</span></h3>
+  <p>在 Claude Code／Codex／Cursor 等里找线索并经 LinkedIn／Instagram／邮件触达；按连接发送账号计费而非按线索。工具层继续垂直化。</p>
+  <div class="meta">The Neuron · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI PHP 漏洞自查与 AI 发现漏洞协调框架 <span class="tag tag-hot">热</span></h3>
+  <p>伴随 PHP2Shell 披露，OpenAI 发布检查器并提出「防御者窗口」协调响应——GPT-5.6 Sol 等模型辅助挖洞把披露时钟从月压到周。</p>
+  <div class="meta">OpenAI / TLDR AI · <a href="https://ai.tldr.tech/p/2026-10-22-tldr-ai" target="_blank" rel="noopener">来源 ↗</a></div>
+</div></section>
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+
+</div>
+
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+<!-- /digest-ui2:js -->
+
+</body>
+</html>

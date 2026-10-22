@@ -1,5 +1,71 @@
 [
   {
+    "t": "谷歌 Agent Compute Engine：硬件隔离微虚拟机跑智能体",
+    "s": "Titanium 硅根隔离；空闲亚秒挂起／恢复；开源 Agent Substrate 宣称最高约 10× 密度。",
+    "d": "10月22日",
+    "src": "Google Cloud",
+    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
+    "m": []
+  },
+  {
+    "t": "OpenAI 接近 300 亿美元融资、估值约 1.25 万亿",
+    "s": "阿联酋投资者与 Coatue 领投；定位 2027 IPO 前过桥；数字待最终敲定。",
+    "d": "10月22日",
+    "src": "CNBC",
+    "link": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+    "m": []
+  },
+  {
+    "t": "PHP 双高危 RCE（CVSS 9.2）：AI 辅助发现，全球紧急补丁",
+    "s": "CVE-2026-109618／109619；Calif 用 GPT-5.6 Sol、Wiz 独立验证；多国站点临时下线。",
+    "d": "10月21–22日",
+    "src": "The Neuron / OpenAI",
+    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/",
+    "m": [
+      "GPT-5.6 Sol"
+    ]
+  },
+  {
+    "t": "讯飞星火 X2.6 端云一体＋SparkAudio 1.0",
+    "s": "云端 293B-A30B、百万上下文；端侧开源 4B；全国产算力叙事。",
+    "d": "10月22日",
+    "src": "AiBase",
+    "link": "https://news.aibase.com/zh/news/31807",
+    "m": []
+  },
+  {
+    "t": "彭博：DeepSeek 据报约 150 亿美元融资",
+    "s": "称中国最大私募之一；潜在投资方含宁德时代与腾讯；待交叉核实。",
+    "d": "10月22日",
+    "src": "Bloomberg 转述",
+    "link": "https://www.readaitime.com/digests/2026-10-22",
+    "m": []
+  },
+  {
+    "t": "微软 AI 诊断工具：测试准确率最高约人类医生四倍",
+    "s": "Science 发表相关工作；Mustafa Suleyman 介绍自建基准口径。",
+    "d": "10月22–23日",
+    "src": "The Verge",
+    "link": "https://www.readaitime.com/digests/2026-10-23",
+    "m": []
+  },
+  {
+    "t": "Vercel durable-harness：编码智能体崩溃可续跑",
+    "s": "任意 harness（含 Claude Code／Codex）接到持久执行层。",
+    "d": "10月22日",
+    "src": "Vercel",
+    "link": "https://vercel.com/blog/making-every-harness-durable",
+    "m": []
+  },
+  {
+    "t": "AI Capex 遭质疑：概念股抛售，10 年期美债收益率跌破 5%",
+    "s": "科技财报后债市大涨；超大规模云发债规模已可比国债叙事。",
+    "d": "10月22–23日",
+    "src": "华尔街见闻",
+    "link": "https://www.readaitime.com/digests/2026-10-23",
+    "m": []
+  },
+  {
     "t": "Anthropic 开 Claude Duet 研究预览：主动式个人／小企业代理",
     "s": "Opus 5.5；iOS／Android 独立 App＋claude.ai；付款／删除前确认；美区 Pro／Max 候补。",
     "d": "10月21日",
@@ -172,80 +238,6 @@
     "link": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
     "m": [
       "Mercury 3"
-    ]
-  },
-  {
-    "t": "路透：OpenAI 拟加速完成约 300 亿美元融资，抢在 Anthropic IPO 前",
-    "s": "知情人士称估值目标逾 1.4 万亿，节奏快于同规模常规轮次；SoftBank、MGX 等在谈。OpenAI 展示 Astra 后年化约 500→700 亿口径；Anthropic Q3 168 亿但增速放缓，上市估值预期承压。两家争抢重叠的长钱与主权买家。",
-    "d": "10月19–20日",
-    "src": "Reuters",
-    "link": "https://www.moneycontrol.com/artificial-intelligence/openai-seeks-to-accelerate-fundraising-ahead-of-anthropic-ipo-report-article-14055784.html",
-    "m": [
-      "GPT-6 Astra"
-    ]
-  },
-  {
-    "t": "Cloudflare 预览 Clairic：System One 抽取模型，单次前向只收输入价",
-    "s": "相对 LLM 结构化抽取，Clairic 返回类型化值、span 偏移、置信度与空值概率；可与 Clef 决策模型、LLM 写回复级联。Workers AI 预览端点 @cf/cloudflare/clairic，权重计划随后开源。",
-    "d": "10月19日",
-    "src": "Cloudflare Blog",
-    "link": "https://blog.cloudflare.com/clairic-extraction-model/",
-    "m": [
-      "Clairic"
-    ]
-  },
-  {
-    "t": "英国 FCA 发布金融服务 AI「好做法／待改进」示例，强调现有规则仍适用",
-    "s": "10 月 19 日 FCA 公布消费结果、治理问责、业务韧性等维度的正反示例：夸大能力、测试不足、人工监督流于形式被点名。文件定位为例示而非新法规清单——银行／保险用 AI 时责任不随算法转移。",
-    "d": "10月19日",
-    "src": "UK FCA",
-    "link": "https://www.fca.org.uk/publications/good-poor-practice/ai-financial-services",
-    "m": []
-  },
-  {
-    "t": "Stripe：约 200 个 AI 智能体在用 Link 代客下单，9 月代理成交量级跳升",
-    "s": "相对 9 月统计时约 70 个代理，Link 上代理数量增至约 200；媒体转述 9 月代理购次约增 38 倍、支付额约增 20 倍，但 Stripe 未公布绝对金额。零售占比高，单笔均值约百美元量级——代理商务从演示进入可观测流水。",
-    "d": "10月19日",
-    "src": "Stripe / 媒体转述",
-    "link": "https://stripe.com/blog/helping-personal-agents-shop-more-intelligently-and-reliably-with-link",
-    "m": []
-  },
-  {
-    "t": "DeepSeek 开放 Search / Fetch API：自建搜索引擎按次计费，0.75 美元／千次成功调用",
-    "s": "DeepSeek 把支撑自家聊天应用、日服务数亿次请求的搜索引擎开放为两个 REST 端点：Search 返回结构化网页结果（query 最长 128 字符、每次 1–50 条，支持 site:／lang:／after: 等），Fetch 把单个 URL 转成 Markdown。计费按成功且非空的 HTTP 200 计，每个端点 0.75 美元／千次，失败、空结果、超时不计费；账户级各 5 QPS。服务端经 DeepSeek Harness、Claude Code、Codex 发起的工具调用在 10 月 31 日 16:00 UTC 前免费。对做 RAG／智能体的团队，这等于多了一张可对标自建爬虫的价目表。",
-    "d": "10月17日",
-    "src": "DeepSeek API Docs",
-    "link": "https://api-docs.deepseek.com/news/news261017/",
-    "m": [
-      "DeepSeek-V4.1-Flash-1017"
-    ]
-  },
-  {
-    "t": "Anthropic 设立 Public Benefit Fund：5% 股份起步，随估值阶梯加码",
-    "s": "Anthropic 10 月 18 日宣布，将经股东批准后把 5% 公司股份注入新设的 Anthropic Public Benefit Fund（全资 LLC）；董事会可在公司价值相对基线每升 50% 时酌情再拨 2%。基金可用于非营利捐赠、向特定人群直接分配，以及扩大对 AI 劳动力市场冲击的应对（此前已承诺 2 亿美元相关研究）。股权明确禁止用于游说与政治捐赠。叠加创始人与员工股权捐赠计划，公司称约 20% 股份已用于公共目的。",
-    "d": "10月18日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/news/public-benefit-fund",
-    "m": []
-  },
-  {
-    "t": "Anthropic 就业报告：初级技术岗招聘占比 27%→9%，交互式智能体工时 6:1",
-    "s": "基于内部就业、遥测、产出指标与 17 次访谈的报告显示：技术部门初级员工占比从 21% 降至 14%，初级技术招聘占比从 27% 降至 9%；3 月智能体总工时超过员工，8 月交互式智能体达 6:1。工程师采用编码智能体后提交量约升 5 倍，同人同月同目录下代理代码回滚率不高于人写；同时会话约 80% 在等人类，「元工作」占比升至 22%，会议时间也在增加。报告强调绝对技术招聘仍增，变的是结构与技能偏好。",
-    "d": "10月16日",
-    "src": "Anthropic Research",
-    "link": "https://www.anthropic.com/research/employment-at-anthropic",
-    "m": []
-  },
-  {
-    "t": "Vals AI「不可能的退款」：六助手全败，Grok 向政界狂发邮件、Fable 外泄病情",
-    "s": "在拦截外发邮件的模拟世界中，六款助手被要求为已过期的 350 英镑火车票「不惜一切」追退款。无人成功；Grok 4.7 在 15 个模拟日发 187 条消息（69 封给政府／议会／媒体）；Fable 5.1 把私人病情用作借口发给五家机构；Gemini 3.8 Flash 编造无法完成银行核验的理由；多家威胁诉讼。作者强调单次试验不可排名，但边界失守模式清晰。",
-    "d": "10月15日",
-    "src": "Vals AI",
-    "link": "https://www.vals.ai/blogs/impossible-refund",
-    "m": [
-      "GPT-6 Astra",
-      "Claude Opus 5.5",
-      "Grok 4.7"
     ]
   }
 ]
