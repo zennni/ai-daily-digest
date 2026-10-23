@@ -2,12 +2,16 @@
   "meta": {
     "date": "2026-10-23",
     "week": "星期五",
-    "note": "今日主题词：沙箱上云，账单对账。10 月 22 日这一天，智能体从「能不能跑」被推到「在什么机器上跑、谁来付账」。谷歌在 AGNTCon＋MCPCon 放出 Agent Compute Engine：每个 Gemini 智能体独占一台 Titanium 硬件隔离的微虚拟机，空闲可亚秒级挂起／恢复，配套开源 Kubernetes 运行时 Agent Substrate 宣称单机密度最高约 10 倍、20 万智能体测试里暂停恢复低于 500 毫秒——把英伟达 OpenShell「规矩写在模型外」的同一课，写进了云厂商的标准算力商品。同日另一端是账单：CNBC 称 OpenAI 接近完成至多 300 亿美元融资、估值约 1.25 万亿美元，阿联酋投资者与 Coatue 领投，定位为 2027 潜在 IPO 前的过桥；科技巨头财报却让市场质疑 AI 资本开支可持续性，AI 概念股集中抛售、10 年期美债收益率跌破 5%。安全侧同样加速：Calif／Wiz 借助 GPT-5.6 Sol 等模型挖出 PHP 两项 CVSS 9.2 远程代码执行漏洞，紧急补丁尚未到位时部分政府与媒体站点临时下线，OpenAI 顺势提出 AI 发现漏洞的「防御者窗口」协调框架。国产链上，讯飞 1024 开发者节把星火 X2.6（云端 293B-A30B／端侧开源 4B、百万上下文）与 SparkAudio 1.0 一并落地；彭博则称 DeepSeek 完成约 150 亿美元融资。论文与生态也在补同一课：HGM-Dual 给 harness 进化写血缘与证伪路径，Vercel durable-harness 让编码智能体崩溃可续跑。沙箱从配置项变成云 SKU，估值从故事变成债市与招股书里的数字——两边同时对账。"
+    "note": "今日主题词：沙箱上云，账单对账。10 月 22 日这一天，智能体从「能不能跑」被推到「在什么机器上跑、谁来付账」。谷歌在 AGNTCon＋MCPCon 放出 Agent Compute Engine：每个 Gemini 智能体独占一台 Titanium 硬件隔离的微虚拟机，空闲可亚秒级挂起／恢复，配套开源 Kubernetes 运行时 Agent Substrate 宣称单机密度最高约 10 倍、20 万智能体测试里暂停恢复低于 500 毫秒——把英伟达 OpenShell「规矩写在模型外」的同一课，写进了云厂商的标准算力商品。同日另一端是账单：CNBC 称 OpenAI 接近完成至多 300 亿美元融资、估值约 1.25 万亿美元，阿联酋投资者与 Coatue 领投，定位为 2027 潜在 IPO 前的过桥；科技巨头财报却让市场质疑 AI 资本开支可持续性，AI 概念股集中抛售、10 年期美债收益率跌破 5%。安全侧同样加速：Calif／Wiz 借助 GPT-5.6 Sol 等模型挖出 PHP 两项 CVSS 9.2 远程代码执行漏洞，紧急补丁尚未到位时部分政府与媒体站点临时下线，OpenAI 顺势提出 AI 发现漏洞的「防御者窗口」协调框架。国产链上，讯飞 1024 开发者节把星火 X2.6（云端 293B-A30B／端侧开源 4B、百万上下文）与 SparkAudio 1.0 一并落地；彭博则称 DeepSeek 完成约 150 亿美元融资。论文与生态也在补同一课：HGM-Dual 给 harness 进化写血缘与证伪路径，Vercel durable-harness 让编码智能体崩溃可续跑。补刀侧：OpenAI Decisions API（GPT-6 Luna）正式 GA，Anthropic 把 Agent Skills 捐进 Linux Foundation 下的 AAIF——决策 API／Skills 标准进基金会，与沙箱上云、账单对账同框。沙箱从配置项变成云 SKU，估值从故事变成债市与招股书里的数字——两边同时对账。"
   },
   "highlights": [
     {
       "title": "谷歌 Agent Compute Engine：每个智能体一台硬件隔离微虚拟机",
       "summary": "10 月 22 日于 AGNTCon＋MCPCon 发布。Agent Compute Engine 已为 Gemini 工作任务型智能体供能，未来数月预览：Titanium IPU 提供硅根隔离，Cloud Hypervisor 微虚拟机自带 guest 内核；空闲可检查点挂起、写时复制共享内存以提高密度；每机配 Hyperdisk 持久工作区，凭据在出口侧注入。配套开源 Agent Substrate（GKE）：宣称相对传统算力最高约 10× 密度，20 万智能体测试中暂停／恢复 <500ms，兼容 Claude Code／OpenClaw／Hermes 等 harness。治理侧扩展 Agent Gateway／Registry／SPIFFE 身份与跨云／端侧管控。"
+    },
+    {
+      "title": "OpenAI Decisions API 正式 GA：GPT-6 Luna 做近实时有界决策",
+      "summary": "10 月 22 日正式可用。对 predicate／choice／score 等有界答案相对同模 Responses API 最高约 10× 快；文本／图像／原生 JSON，单请求最多 400 问；prompt cache、US／EU residency、原生 GPT-Live。定价约 $0.10／M 入、$0.01／M 缓存入，无输出费。客户含 Box／Datadog／Ramp／Sierra／Speak——把「决策」从生成链路拆成可计费的近实时 API。"
     },
     {
       "title": "OpenAI 接近 300 亿美元融资、估值约 1.25 万亿：阿联酋与 Coatue 领投",
@@ -16,10 +20,6 @@
     {
       "title": "AI 挖出 PHP 双高危漏洞：CVSS 9.2，全球紧急打补丁",
       "summary": "CVE-2026-109618／109619 可未授权远程代码执行；PHP 称凡对外提供 Web 服务的安装均可能受影响，已发支持版本补丁。OpenAI 称 Calif 用 GPT-5.6 Sol 发现关键缺陷，Wiz 独立验证两项漏洞；披露泄漏迫使提前发补丁，部分站点在补丁到位前遭利用。芬兰政府网站、爱丁堡市政与 BBC 等临时下线部分服务。OpenAI 提出「防御者窗口」协调框架：AI 发现到公开披露之间留给维护者准备时间。"
-    },
-    {
-      "title": "讯飞星火 X2.6＋SparkAudio 1.0：全国产端云一体落地 1024",
-      "summary": "10 月 22 日合肥／北京双会场。云端 X2.6 为 293B-A30B MoE、宣称百万 token 上下文，强化编程与智能体；端侧开源 X2.6-4B。官方公布限时推理价（输入约 0.9 元／百万 tokens 等，口径以厂商为准）。同步发布语音基座 SparkAudio 1.0，整合识别、同传、情绪与环境理解；飞星平台联合华为昇腾支撑万卡训练叙事。国产竞争点继续从单点分数挪到端云分工与数据边界。"
     }
   ],
   "news": [
@@ -30,6 +30,16 @@
       "source": "Google Cloud Blog",
       "link": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
       "models": []
+    },
+    {
+      "title": "OpenAI Decisions API 正式 GA：基于 GPT-6 Luna 的近实时有界决策",
+      "summary": "10 月 22 日官宣正式可用。面向 predicate／choice／score 等有界答案做近实时决策，相对同模 Responses API 最高约 10× 快；支持文本／图像／原生 JSON，单请求最多 400 问，含 prompt cache 与 US／EU residency，并原生对接 GPT-Live。定价约 $0.10／M 输入、$0.01／M 缓存输入，无输出 token 费。客户引用含 Box、Datadog、Ramp、Sierra、Speak。",
+      "date": "10月22日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/decisions-api",
+      "models": [
+        "GPT-6 Luna"
+      ]
     },
     {
       "title": "OpenAI 接近至多 300 亿美元融资、估值约 1.25 万亿，阿联酋与 Coatue 领投",
@@ -219,6 +229,13 @@
     }
   ],
   "ecosystem": [
+    {
+      "title": "Anthropic 将 Agent Skills 捐赠给 Agentic AI Foundation（AAIF）",
+      "summary": "捐赠标准名与 logo、GitHub org 与 agentskills.io；AAIF 隶属 Linux Foundation，由 Anthropic 与 Block、OpenAI 共建（此前已捐 MCP）。称 70+ 平台已集成（含 ChatGPT、Cursor、GitHub Copilot、VS Code），约 100 万 skills 发布、近 2.8 亿次安装。Lead Maintainers：David Soria Parra、Mahesh Murag。",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "models": []
+    },
     {
       "title": "谷歌 Agent Compute Engine ＋ 开源 Agent Substrate",
       "summary": "硬件隔离微虚拟机商品化；Agent Substrate 在 GKE 上提供可移植运行时，兼容多家 harness。智能体沙箱从「各写一套」走向云标准件。",

@@ -1,5 +1,23 @@
 [
   {
+    "t": "OpenAI Decisions API 正式 GA（GPT-6 Luna）",
+    "s": "有界答案近实时决策，相对同模 Responses 最高约 10× 快；单请求最多 400 问；约 $0.10／M 入、无输出费。",
+    "d": "10月22日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/decisions-api",
+    "m": [
+      "GPT-6 Luna"
+    ]
+  },
+  {
+    "t": "Anthropic 将 Agent Skills 捐赠给 AAIF（Linux Foundation）",
+    "s": "捐标准名／logo／GitHub／agentskills.io；70+ 平台已集成，约 100 万 skills、近 2.8 亿安装。",
+    "d": "10月22日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+    "m": []
+  },
+  {
     "t": "谷歌 Agent Compute Engine：硬件隔离微虚拟机跑智能体",
     "s": "Titanium 硅根隔离；空闲亚秒挂起／恢复；开源 Agent Substrate 宣称最高约 10× 密度。",
     "d": "10月22日",

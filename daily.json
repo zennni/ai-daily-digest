@@ -4,12 +4,13 @@
     "w": "星期五",
     "pts": [
       "谷歌 Agent Compute Engine：硬件隔离微虚拟机跑 Gemini 智能体，开源 Agent Substrate",
-      "OpenAI 接近至多 300 亿美元融资、估值约 1.25 万亿（阿联酋＋Coatue）",
-      "PHP 双高危 RCE（CVSS 9.2）：GPT-5.6 Sol／Wiz 发现，全球紧急补丁",
-      "讯飞星火 X2.6＋SparkAudio 1.0 落地 1024；DeepSeek 据报约 150 亿美元融资"
+      "OpenAI Decisions API 正式 GA（GPT-6 Luna）：有界答案近实时，同模最高约 10× 快",
+      "Anthropic 将 Agent Skills 捐赠给 AAIF；OpenAI 接近至多 300 亿美元融资",
+      "PHP 双高危 RCE（CVSS 9.2）：GPT-5.6 Sol／Wiz 发现；讯飞星火 X2.6 落地 1024"
     ],
     "link": "AI日报-2026-10-23.html",
     "m": [
+      "GPT-6 Luna",
       "GPT-5.6 Sol",
       "Muse Glimmer"
     ],
