@@ -913,10 +913,10 @@
       "pin": 0.15,
       "pcache": 0.015,
       "pout": 0.6,
-      "open_": "闭源",
-      "lic": "专有",
+      "open_": "开放权重(10/23 权重开源)",
+      "lic": "MiniMax Community License",
       "src": "官方",
-      "note": "<b>10/19 正式发布 MiniMax M3.1 Flash（早期匿名代号 Space Bunny）</b>：Artificial Analysis Changelog / 模型页给出 Intelligence Index <b>43</b>（与 Claude Haiku 5.5 Max 同分；10/19 晚间榜曾记 42，10/20 对照 AA 官方页勘误为 43）；官方定位下一代 Flash，强化 Agent / Coding / Computer Use / 网络安全，官方称线上推理约 3 倍速、用量成本约降 70%；多模态（文+图入、文出）、1M 上下文；<b>权重尚未开放、计划后续放出</b>，主表记闭源/专有；<b>官方美元挂牌 $0.15/$0.60、缓存读 $0.015</b>（platform.minimax.io 定价页；OpenRouter 目前仅有 :free 限速端点，不按永久免费计）；标准任务成本 $0.30、综合性价比 76（A）。一手来源：AA 模型页 / Changelog、minimax.io 发布博文、官方定价页。",
+      "note": "<b>10/19 正式发布；10/23 起 HF 放开权重（MiniMaxAI/MiniMax-M3.1-Flash）</b>：Artificial Analysis Intelligence Index <b>43</b>（与 Claude Haiku 5.5 Max 同分）；原生多模态 MoE，约 <b>428B 总参 / 23B 激活</b>、1M 上下文；稀疏注意力 + 量化感知训练 + DSpark 投机解码。主表 API 价仍取官方美元挂牌 <b>$0.15/$0.60、缓存读 $0.015</b>（platform.minimax.io；标准任务成本 $0.30、性价比 76/A）。<b>许可为 MiniMax Community License</b>（与 MiniMax M3 同系：可下载权重；商用须标注 Built with…，年营收超约 $2000 万需事先书面授权——非 MIT/Apache）。自部署框架：vLLM / SGLang / TokenSpeed / FlagOS。一手：HF 模型卡（license_name=minimax-community，lastModified 2026-10-23）、minimax.io/blog/minimax-m31f、官方定价页。",
       "cost": 0.3,
       "ability": 74.1,
       "costscore": 77.79773997906088,
@@ -2533,6 +2533,19 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-23",
+      "t": "半点核验：MiniMax M3.1 Flash 权重开源（闭源→开放权重，Community License）；AA/官价/汇率无变",
+      "m": [
+        "MiniMax M3.1 Flash",
+        "MiniMax M3",
+        "Claude Haiku 5.5",
+        "Step 5 Preview",
+        "DeepSeek-V4.1-Flash-1017",
+        "Claude Opus 5.5"
+      ],
+      "s": "<b>2026-10-23 总策划 ≈15:30 半点核对</b>：对照 Artificial Analysis LLM Leaderboard / Intelligence Index <b>v4.3.2</b>（一手 artificialanalysis.ai/leaderboards/models 与 Changelog）：Changelog <b>最新仍为 10/22</b>（Ling 3.1 Flash 1019，Index 44），<b>10/23 尚无新条目</b>；既有主榜整数分无变；Top 仍 Claude Opus 5.5 Max（58）。官价抽核：Anthropic Opus/Sonnet/Haiku 5.5（$4/$20、$2/$10、≤100K 时 $0.10/$0.50）、OpenAI Astra $10/$50·6.1 Sol $2/$10·Luna $0.10/$0.50·5.6 Sol 促销 $4/$20 至少至 11/21、Google Gemini 4 Argon 介绍期 $2/$10 至 11/30、Gemini 3.8 Flash $0.75/$3.75 至 12/31、DeepSeek 官方美元峰时 Flash $0.30/$1.20·Pro $1.32/$3.96、MiniMax M3.1 Flash API $0.15/$0.60/缓存 $0.015——均与主表一致，促销未到期，主分仍用折后有效价。<b>汇率</b>：中国外汇交易中心/PBOC 中间价仍为 <b>2026-10-23 1 USD = 6.7180</b>（中新网/SAFE；与 ≈09:30 半点一致），Qwen3.8-Flash / Step 5 Preview 缓存 FX 挂价无需微调。<b>实质变化</b>：MiniMax 于 <b>10/23</b> 放开 M3.1 Flash 权重（HF MiniMaxAI/MiniMax-M3.1-Flash，约 428B-A23B；cardData license_name=minimax-community；lastModified 2026-10-23T03:37Z）。主表将该行由「闭源/专有」改为 <b>开放权重(10/23 权重开源) / MiniMax Community License</b>，API 价与 AA 43 不变；开放权重榜将随 HUB 嵌入自动纳入。本地 512GB 档静态表半点不手改 hub.html（禁手改壳），留待全日量补入。生图档无新证据。未改日报产物。"
+    },
     {
       "d": "10-23",
       "t": "半点核验：AA/官价无变；汇率调至 6.7180（较 6.7195 调升 15 基点）；微调 Qwen3.8-Flash / Step 5 Preview 缓存挂价",
