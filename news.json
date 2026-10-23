@@ -1,5 +1,89 @@
 [
   {
+    "t": "月之暗面正式推出 Kimi K3.1 Pro 与 Highspeed",
+    "s": "3 万亿级 MoE 旗舰叙事、百万上下文；强化代码／3D／金融／长程 Agent。Highspeed 同等智能、输出约 2–3×。产品与 API 即日上线，完整权重计划 11 月 4 日前开放。厂商自报基准，第三方复现仍待看。",
+    "d": "10月24日",
+    "src": "Kimi",
+    "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "m": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "t": "OpenAI：前沿训练改「离线世界」，断网后仍见缓存侧信道",
+    "s": "官博确认前沿 RL 不再任意联网；Indexed／缓存网页练浏览。红队含 GPT-6 Astra Cyber 与内部前沿模型；挖出 CPU 缓存时序跨隔离边界通信、共享存储／CPU 竞争等信道。10 月 1 日恢复最强模型 RL／内部推理。",
+    "d": "10月23日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "m": [
+      "GPT-6 Astra"
+    ]
+  },
+  {
+    "t": "METR／Redwood 进驻审计：OpenAI 内部智能体监控存覆盖缺口",
+    "s": "约三周现场评估：RL 起步未监控、交还用户才检查、客户端可关监控等。OpenAI 称生产侧已知问题已修；完整报告删减后仅公开摘要。",
+    "d": "10月23日",
+    "src": "The Neuron",
+    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
+    "m": []
+  },
+  {
+    "t": "美银／摩根士丹利等竞相遏制第三方 AI 智能体进客户账户",
+    "s": "Axios：归因与授权是核心——读余额与动账／改设置风险量级不同。消费级个人智能体自治度上升，把权限设计直接写成金融风控题。",
+    "d": "10月23日",
+    "src": "Axios",
+    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
+    "m": []
+  },
+  {
+    "t": "微软：Storm-0940 用 ARTEX 智能体渗透测试系统加速供应链攻击",
+    "s": "称中国关联组织在 ConnectWise 相关入侵中用智能体自动化攻击并滥用应用凭据横移 Microsoft 365。自主工具把进攻节奏压缩到新量级。",
+    "d": "10月23日",
+    "src": "Microsoft",
+    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
+    "m": []
+  },
+  {
+    "t": "Anthropic：Claude 大规模形式化验证 123 库／239 fuzz 入口",
+    "s": "RISC-V 汇编＋Rocq；约 1.8 亿行证明；顺带挖出多年漏检缺陷。Theorem 开放子集证明与 Claude skill。官方列清假设与「验证≠无 bug」。",
+    "d": "10月22–23日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/research/formal-verification",
+    "m": []
+  },
+  {
+    "t": "微软 MAI-DxO 论文登《Science》：困难病例序贯诊断报 83%",
+    "s": "对照医生 36%；成本口径约一半至三分之一检验。媒体提醒对照非专科团队、模拟设定、增益多来自底层模型。",
+    "d": "10月22–23日",
+    "src": "Science",
+    "link": "https://www.theneuron.ai/newsletter/microsoft-ai-scored-83-where-doctors-got-36/",
+    "m": []
+  },
+  {
+    "t": "芯片抵押融资叙事升温：从 CoreWeave 到 Anthropic／英伟达贷款框架",
+    "s": "读懂AI时代等汇总：以芯片为抵押的结构性融资或向万亿级扩张；博通磋商为 Anthropic 安排约 600 亿美元芯片融资、SpaceX 据报寻 400 亿购芯融资、英伟达与六大机构约 5000 亿合作框架等——多为媒体转述，数字待交叉核实",
+    "d": "10月23–24日",
+    "src": "读懂AI时代",
+    "link": "https://www.readaitime.com/digests/2026-10-24",
+    "m": []
+  },
+  {
+    "t": "Canva 推出自研图像模型 Craft：2K 与超宽画幅",
+    "s": "两阶段「规划—生成」架构，面向设计版式中文字与元素布局；宣称支持最高 2K 与超 30 宽高比。全量用户可用，定位平台内低成本可定制生成。",
+    "d": "10月23日",
+    "src": "AiBase",
+    "link": "https://news.aibase.com/zh/daily/31845",
+    "m": []
+  },
+  {
+    "t": "火山引擎 Seedance 2.5 4K：样片验证后再出 4K 正片",
+    "s": "以 480P 样片打磨分镜、确认后再生成 4K；10-bit 与细节增强面向影视流程。目前仅部分企业客户试用。",
+    "d": "10月23日",
+    "src": "AiBase",
+    "link": "https://news.aibase.com/zh/daily/31845",
+    "m": []
+  },
+  {
     "t": "OpenAI Decisions API 正式 GA（GPT-6 Luna）",
     "s": "有界答案近实时决策，相对同模 Responses 最高约 10× 快；单请求最多 400 问；约 $0.10／M 入、无输出费。",
     "d": "10月22日",
@@ -157,105 +241,5 @@
     "src": "ElevenLabs",
     "link": "https://elevenlabs.io/blog/realtime",
     "m": []
-  },
-  {
-    "t": "DeepSeek 开源 DeepInfer：生产推理栈公开，V4.1-Flash 默认可跑",
-    "s": "Apache 2.0 发布；内核库＋并行＋DSpark 投机解码＋结构化输出；NVIDIA SM100／昇腾 950；离线推理为主，KV 与拆分调度不在此次包内。HN 日榜第一。",
-    "d": "10月20日",
-    "src": "DeepSeek / Bloomberg",
-    "link": "https://github.com/deepseek-ai/DeepInfer",
-    "m": [
-      "DeepSeek-V4.1-Flash-1017"
-    ]
-  },
-  {
-    "t": "Mistral 发布 Voxtral 3：语音转写／TTS／实时智能体一条龙",
-    "s": "转写 50+ 语、实时 <500ms、TTS 35+ 语；批转写 0.0035–0.004 美元／分钟，TTS 13 美元／百万字符；Voice Agent SDK＋SIP。厂商称 FLEURS 等上压过 Whisper／Scribe／Gemini 转写。",
-    "d": "10月20日",
-    "src": "Mistral AI",
-    "link": "https://mistral.ai/news/voxtral-3/",
-    "m": [
-      "Mistral Large 4"
-    ]
-  },
-  {
-    "t": "Google 开源 TorchTPU：原生 PyTorch 后端直连 TPU",
-    "s": "torch_tpu 0.2.0，Apache 2.0；ATen／XLA 缓存／torch.compile／并行；示例含 Llama、Qwen。与 Amazon TorchNeuron 同日对照，云厂商争 PyTorch 训练负载。",
-    "d": "10月20日",
-    "src": "Google / HN",
-    "link": "https://github.com/pytorch/xla",
-    "m": []
-  },
-  {
-    "t": "Gemini for Government 预览：政务智能体套件上 Public Sector Summit",
-    "s": "面向美联邦／州／地方政府：政务技能、系统连接器、合作伙伴智能体与集中治理；HHS、密苏里州等先行。卡在 OneGov 约 11／15 到期窗口。",
-    "d": "10月20日",
-    "src": "Google Cloud",
-    "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-government-services",
-    "m": [
-      "Gemini 4 Argon"
-    ]
-  },
-  {
-    "t": "WSJ：Anthropic 草案 H1 净亏逾 800 亿美元，多属非现金重估",
-    "s": "约 720 亿为可转债等重估；报道称调整后经营利润 Q2／Q3 转正；远期算力承诺约 5180 亿。11 月 IPO 叙事继续高压。",
-    "d": "10月20日",
-    "src": "WSJ / The Context",
-    "link": "https://thecontext.dev/en/briefing/2026-10-21/",
-    "m": [
-      "Claude Opus 5.5"
-    ]
-  },
-  {
-    "t": "Meta 披露 Prometheus：Ohio 约百万 GPU 超算，主训 Muse 系",
-    "s": "New Albany 园区，GB200／GB300 NVL72 在役、Vera Rubin 在路线图；预训练 goodput >85%、RL >90%；BAG 网络跨百公里。明确非 Llama 主训集群。",
-    "d": "10月20日",
-    "src": "Meta Engineering",
-    "link": "https://thecontext.dev/en/briefing/2026-10-21/",
-    "m": [
-      "Muse Spark Open",
-      "Muse Wonder"
-    ]
-  },
-  {
-    "t": "DHS DeepSeek 禁令登联邦公报：民用机构须清退相关产品",
-    "s": "DHS 2026-0628 基于供应链安全法；含第三方嵌入实现；机构约 60 天申请例外。海军／NASA／商务部等此前已禁。",
-    "d": "10月20日",
-    "src": "Reuters / Federal Register",
-    "link": "https://thecontext.dev/en/briefing/2026-10-21/",
-    "m": [
-      "DeepSeek-V4.1-Flash-1017",
-      "DeepSeek V4 Flash"
-    ]
-  },
-  {
-    "t": "OpenAI 公开低资源／遗留语言评测：COBOL 迁移等大涨",
-    "s": "MultiLangBench 开源；报道称 GPT-6.1 Sol 在 COBOL 迁移评测高推理档约 97.9%（对照旧档大幅提升）。银行／政务遗留现代化账单被重新计价。",
-    "d": "10月20日",
-    "src": "OpenAI / AI Weekly",
-    "link": "https://aiweekly.co/ai-news-today",
-    "m": [
-      "GPT-6.1 Sol"
-    ]
-  },
-  {
-    "t": "MiniMax 发布 M3.1 Flash：推理近 3×、成本约 −70%，权重稍后开放",
-    "s": "官方博文与路透确认：M3.1 Flash 面向 Agent／编程／电脑操作／网络安全，多模态 1M 上下文；挂牌 0.15／0.60／缓存 0.015。厂商给出 DeepSWE 73.7%、CyberGym 82% 等自评；本站 AA 42、性价比 A。API、M Plan、MiniMax Code 当日可用。",
-    "d": "10月19日",
-    "src": "MiniMax / Reuters",
-    "link": "https://www.minimax.io/blog/minimax-m31f",
-    "m": [
-      "MiniMax M3.1 Flash"
-    ]
-  },
-  {
-    "t": "Inception 推出 Mercury 3：扩散 LLM 达约 1068 TPS、1M 上下文",
-    "s": "厂商称质量对标 GPT-6 Luna／Claude Haiku 5.5，速度快 4–8×；首发价半价 0.10／0.35。已接入 OpenRouter、Baseten、Vercel；早期用于浏览器智能体、教育与客服。把「扩散能否规模化」变成可切换的生产端点。",
-    "d": "10月19日",
-    "src": "Inception Labs",
-    "link": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
-    "m": [
-      "Mercury 3"
-    ]
   }
 ]

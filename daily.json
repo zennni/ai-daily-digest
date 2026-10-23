@@ -1,5 +1,21 @@
 [
   {
+    "d": "2026-10-24",
+    "w": "星期六",
+    "pts": [
+      "月之暗面发布 Kimi K3.1 Pro：3T 级／百万上下文，权重计划 11/4 前开放；Highspeed 约 2–3×",
+      "OpenAI：前沿训练改离线世界；红队挖出缓存时序跨 VM 通信（含 GPT-6 Astra Cyber）",
+      "METR／Redwood 审计 OpenAI 内部智能体监控缺口；银行遏制第三方智能体动账",
+      "Anthropic×Theorem 形式化验证 239 fuzz 入口；微软 MAI-DxO《Science》报 83%"
+    ],
+    "link": "AI日报-2026-10-24.html",
+    "m": [
+      "Kimi K3",
+      "GPT-6 Astra"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-23",
     "w": "星期五",
     "pts": [
