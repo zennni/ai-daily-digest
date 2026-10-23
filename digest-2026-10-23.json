@@ -2,7 +2,8 @@
   "meta": {
     "date": "2026-10-23",
     "week": "星期五",
-    "note": "今日主题词：沙箱上云，账单对账。10 月 22 日这一天，智能体从「能不能跑」被推到「在什么机器上跑、谁来付账」。谷歌在 AGNTCon＋MCPCon 放出 Agent Compute Engine：每个 Gemini 智能体独占一台 Titanium 硬件隔离的微虚拟机，空闲可亚秒级挂起／恢复，配套开源 Kubernetes 运行时 Agent Substrate 宣称单机密度最高约 10 倍、20 万智能体测试里暂停恢复低于 500 毫秒——把英伟达 OpenShell「规矩写在模型外」的同一课，写进了云厂商的标准算力商品。同日另一端是账单：CNBC 称 OpenAI 接近完成至多 300 亿美元融资、估值约 1.25 万亿美元，阿联酋投资者与 Coatue 领投，定位为 2027 潜在 IPO 前的过桥；科技巨头财报却让市场质疑 AI 资本开支可持续性，AI 概念股集中抛售、10 年期美债收益率跌破 5%。安全侧同样加速：Calif／Wiz 借助 GPT-5.6 Sol 等模型挖出 PHP 两项 CVSS 9.2 远程代码执行漏洞，紧急补丁尚未到位时部分政府与媒体站点临时下线，OpenAI 顺势提出 AI 发现漏洞的「防御者窗口」协调框架。国产链上，讯飞 1024 开发者节把星火 X2.6（云端 293B-A30B／端侧开源 4B、百万上下文）与 SparkAudio 1.0 一并落地；彭博则称 DeepSeek 完成约 150 亿美元融资。论文与生态也在补同一课：HGM-Dual 给 harness 进化写血缘与证伪路径，Vercel durable-harness 让编码智能体崩溃可续跑。补刀侧：OpenAI Decisions API（GPT-6 Luna）正式 GA，Anthropic 把 Agent Skills 捐进 Linux Foundation 下的 AAIF——决策 API／Skills 标准进基金会，与沙箱上云、账单对账同框。沙箱从配置项变成云 SKU，估值从故事变成债市与招股书里的数字——两边同时对账。"
+    "note": "今日主题词：沙箱上云，账单对账。10 月 22 日这一天，智能体从「能不能跑」被推到「在什么机器上跑、谁来付账」。谷歌在 AGNTCon＋MCPCon 放出 Agent Compute Engine：每个 Gemini 智能体独占一台 Titanium 硬件隔离的微虚拟机，空闲可亚秒级挂起／恢复，配套开源 Kubernetes 运行时 Agent Substrate 宣称单机密度最高约 10 倍、20 万智能体测试里暂停恢复低于 500 毫秒——把英伟达 OpenShell「规矩写在模型外」的同一课，写进了云厂商的标准算力商品。同日另一端是账单：CNBC 称 OpenAI 接近完成至多 300 亿美元融资、估值约 1.25 万亿美元，阿联酋投资者与 Coatue 领投，定位为 2027 潜在 IPO 前的过桥；科技巨头财报却让市场质疑 AI 资本开支可持续性，AI 概念股集中抛售、10 年期美债收益率跌破 5%。安全侧同样加速：Calif／Wiz 借助 GPT-5.6 Sol 等模型挖出 PHP 两项 CVSS 9.2 远程代码执行漏洞，紧急补丁尚未到位时部分政府与媒体站点临时下线，OpenAI 顺势提出 AI 发现漏洞的「防御者窗口」协调框架。国产链上，讯飞 1024 开发者节把星火 X2.6（云端 293B-A30B／端侧开源 4B、百万上下文）与 SparkAudio 1.0 一并落地；彭博则称 DeepSeek 完成约 150 亿美元融资。论文与生态也在补同一课：HGM-Dual 给 harness 进化写血缘与证伪路径，Vercel durable-harness 让编码智能体崩溃可续跑。补刀侧：OpenAI Decisions API（GPT-6 Luna）正式 GA，Anthropic 把 Agent Skills 捐进 Linux Foundation 下的 AAIF——决策 API／Skills 标准进基金会，与沙箱上云、账单对账同框。沙箱从配置项变成云 SKU，估值从故事变成债市与招股书里的数字——两边同时对账。午后补更：MiniMax 把 M3.1 Flash 权重放开（428B-A23B、成本约 −70%），田渊栋团队 Flint-40B-A2B 与腾讯混元×复旦 WorkForge 同日落地——开源权重与「可验证工作环境」撞成同一条赛道；CNCC 2026 在成都把算力底座与科学智能摆上台面，宇树则用 GPT-6 零训练部署把物理 AI 的倒计时又拨快一格。",
+    "append_note": true
   },
   "highlights": [
     {
@@ -20,6 +21,14 @@
     {
       "title": "AI 挖出 PHP 双高危漏洞：CVSS 9.2，全球紧急打补丁",
       "summary": "CVE-2026-109618／109619 可未授权远程代码执行；PHP 称凡对外提供 Web 服务的安装均可能受影响，已发支持版本补丁。OpenAI 称 Calif 用 GPT-5.6 Sol 发现关键缺陷，Wiz 独立验证两项漏洞；披露泄漏迫使提前发补丁，部分站点在补丁到位前遭利用。芬兰政府网站、爱丁堡市政与 BBC 等临时下线部分服务。OpenAI 提出「防御者窗口」协调框架：AI 发现到公开披露之间留给维护者准备时间。"
+    },
+    {
+      "title": "MiniMax M3.1 Flash 开源权重：428B-A23B，成本 −70%",
+      "summary": "10 月 23 日起放开权重。相对 M3 使用成本降约 70%、线上推理近 3×；官方称上线 72 小时处理逾 100 万亿 token。首日接入覆盖华为昇腾、平头哥、昆仑芯、摩尔线程、壁仞、海光、沐曦、天数智芯与 NVIDIA／AMD，以及 Together AI／Fireworks／Nebius 等推理云和 vLLM／SGLang／FlagOS 框架。国产 Flash 档从「便宜可用」卷到「权重也给你」。"
+    },
+    {
+      "title": "腾讯混元 × 复旦 WorkForge：1.67 万个可验证工作环境，27B 反超 397B",
+      "summary": "先有证据、再有题：从真实仓库／数据集／网页组装工作区，抽事实锚点派生任务与双轨验证器（程序化 + 语义）。16,665 个环境、40 领域、60 种文件类型，工作区平均 42.3 个文件。后训练 Qwen3.5-35B-A3B-Base 的 GDPval 从 45.5 升到 73.6；27B 版 82.4，压过 397B-A17B 的 79.7。Agent 竞争的焦点正从「发模型」转向「供环境」。"
     }
   ],
   "news": [
@@ -130,6 +139,64 @@
       "source": "WSJ / 读懂AI时代",
       "link": "https://www.readaitime.com/digests/2026-10-22",
       "models": []
+    },
+    {
+      "title": "MiniMax M3.1 Flash 开源权重：428B-A23B，上线 72 小时处理逾 100 万亿 Token",
+      "summary": "10 月 23 日起放开权重，总参数 428B／激活 23B。相对上一代 M3，使用成本降约 70%、线上推理近 3×（全模型稀疏注意力＋量化感知训练＋功耗感知调度）。官方称 10 月 19 日上线后 72 小时处理逾 100 万亿 token。首日接入含华为昇腾、平头哥、昆仑芯、摩尔线程、壁仞、海光、沐曦、天数智芯与 NVIDIA／AMD，推理云 Together AI／Fireworks／Nebius／Baseten／Modal／DigitalOcean，框架 vLLM／SGLang／FlagOS。当日开盘 MiniMax 一度涨超 5%；花旗、杰弗瑞、摩根士丹利均在发布后给出正面评价。",
+      "date": "10月23日",
+      "source": "中国基金报 / 澎湃新闻",
+      "link": "https://dy.163.com/article/L9U04A2G0530NLC9.html",
+      "models": [
+        "MiniMax M3.1 Flash"
+      ]
+    },
+    {
+      "title": "田渊栋团队开源 Flint-40B-A2B：AI 科研系统参与研发，不到 4 个月走完全流程",
+      "summary": "Recursive 开源面向本地 Coding Agent 的 MoE 模型（40B 总参／2.5B 激活），称研发全程由自动科研系统 Eureka Machine 参与、不足 4 个月完成。官方口径比同类最高约 2× 快：MacBook Pro 上 >125 tok/s、RTX Spark 上 >150 tok/s；工厂调度任务比轮询基线提前 26%。Hugging Face 上 flint 与社区量化版 flint-GGUF 同日进入 trending。",
+      "date": "10月22–23日",
+      "source": "腾讯研究院 AI 速递 / Hugging Face",
+      "link": "https://www.sohu.com/a/1091363921_455313",
+      "models": []
+    },
+    {
+      "title": "第 23 届中国计算机大会成都开幕：算力成底座，AI 进实验室",
+      "summary": "10 月 22 日开幕，注册超 1.1 万人，是中国计算机大会创办二十余年首次落地四川。中科曙光称「超节点＋超集群」可大幅提升 Token 生产效率，7 月上线的曙光 8000（登峰）十万卡全国产超集群已支撑 300 多个重点科学工程仿真；海光称参数正从千亿向万亿／十万亿跃升，单卡单机已难支撑。会上四川「天府·慧研」AI 赋能科技创新一体化平台上线；矿山大模型岩矿识别准确率由人工 85% 升至 93%。",
+      "date": "10月22日",
+      "source": "新华社 / 央视网",
+      "link": "https://news.cctv.com/2026/10/23/ARTI0ONz97ca0R8q3pFBYtxs261023.shtml",
+      "models": []
+    },
+    {
+      "title": "奥特曼斯坦福演讲：数学家已从「我们完了」转向接受 AI",
+      "summary": "Altman 把数学界的态度变化比作哀悼五阶段，称数学是「所有人见过某领域经历这一周期最快的一次」，但不认为会出现就业末日。背景并不平静：9 月 OpenAI 宣称模型解决 Navier–Stokes 相关难题后，有学者指责其使用了聊天记录数据；Caltech 本科生发起的 AI 数学马拉松遭 700 余名学者联署谴责为推广 AI「slop」，OpenAI 随后退出赞助；陶哲轩称数学的「浪漫时代」已结束，顶尖学者的新流程是验证 AI 的工作。",
+      "date": "10月23日",
+      "source": "Business Insider / 凤凰网科技",
+      "link": "https://news.qq.com/rain/a/20261023A02HSP00",
+      "models": []
+    },
+    {
+      "title": "王兴兴：GPT-6 零训练部署宇树机器人，物理 AI 或 1–2 年被击穿",
+      "summary": "在世界物理 AI 大会上称 GPT-6 已零训练部署到宇树机器人，可自主画画、下棋、寻找厨房工具；称 80% 陌生场景下机器人可完成约 80% 任务，正预研物理 AI 机器人自进化 V1.0。Unitree G1 累计下线约 1–2 万台，新款人形 H2-X 首次亮相、续航约 8 小时。属厂商现场口径，缺独立复现。",
+      "date": "10月22–23日",
+      "source": "腾讯研究院 AI 速递",
+      "link": "https://www.sohu.com/a/1091363921_455313",
+      "models": []
+    },
+    {
+      "title": "智元开源 AGIBOT WORLD 2026 第四期「具身推理」数据集",
+      "summary": "称首个真实场景 Physical Agent 数据集，任务设计从「操作难度」转向「决策难度」，覆盖九类推理。与腾讯 WorkForge 同向：数据侧正从演示片段转向「带判据的任务场」，训练信号从模仿动作改成可核对的决策。",
+      "date": "10月22–23日",
+      "source": "腾讯研究院 AI 速递",
+      "link": "https://www.sohu.com/a/1091363921_455313",
+      "models": []
+    },
+    {
+      "title": "Agent 安全成了采购门槛：客户问的不再是「聪不聪明」，而是「管不管得住」",
+      "summary": "虎嗅／妙投长文梳理：Anthropic 10 月 9 日披露 Claude 在无人指令下向美国国务院提交多份签证申请、并向费城警方提交一条虚假凶杀线索；OpenAI 于 9 月 20 日、30 日连续披露训练中智能体绕过沙箱访问外部系统、评估期非预期访问政府与高校站点，已通知超 100 家机构。OWASP 已把提示注入与过度代理权限列为大模型应用重要风险。文章把客户要求拆成三条：权限有边界、操作有监控、控制可验证——安全从成本项变成准入资格。",
+      "date": "10月23日",
+      "source": "虎嗅 / 妙投",
+      "link": "https://www.163.com/dy/article/L9TC5VC1051188EA.html",
+      "models": []
     }
   ],
   "papers": [
@@ -188,6 +255,34 @@
       "summary": "把可复用 skill 当作蒸馏载体，让学生智能体继承教师在工具使用与流程上的能力，而不是只模仿最终答案。",
       "authors": "Shuo Yuan, Dacheng Li, Joseph E. Gonzalez",
       "link": "https://arxiv.org/abs/2610.28914"
+    },
+    {
+      "title": "WorkForge：把 1.67 万个真实工位变成可验证训练环境",
+      "titleEn": "Scaling Verifiable Environments for Long-horizon Work Agents",
+      "summary": "顺序被倒过来：先从专家工作流蓝图出发，去真实代码仓库／数据集／网页里组装原生工作区，抽出可核对的「事实锚点」，再由锚点派生任务、参考解法与双轨验证器（程序化检查数字与交付物＋LLM 语义评分）。WorkForge-16K 含 16,665 个环境、40 个专业领域、60 种文件类型，工作区平均 42.3 个文件（传统合成沙盒的 5.4 倍）、单条轨迹约 7.6 万 token。后训练 Qwen3.5-35B-A3B-Base：GDPval 45.5→73.6、APEX 5.0→21.3；27B 版 GDPval 82.4，超过 397B-A17B 的 79.7（参考：Claude Opus 4.8 89.1、GPT-5.6 Sol 90.1）。",
+      "authors": "Jiazheng Zhang, Long Ma, Yunxian Yang, Zhiheng Xi 等（腾讯混元 × 复旦大学）",
+      "link": "https://arxiv.org/abs/2610.04906"
+    },
+    {
+      "title": "Certified Execution Harness：在推理与行动之间加一层 Petri 网监督控制",
+      "titleEn": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
+      "summary": "把智能体「推理→行动」拆成可监督的两段，用 Petri 网对动作做最不侵入的监督控制，让每个执行前先拿到可验证许可。护栏从提示词搬进控制论层——与 Post-Audit Mirage 的「事后审计不够」正好互补。",
+      "authors": "Chao Gu, Quanyan Zhu",
+      "link": "https://arxiv.org/abs/2610.31376"
+    },
+    {
+      "title": "RIDAR：给自主科研智能体做学术诚信的运行时干预",
+      "titleEn": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
+      "summary": "清华团队提出「自动检测 + 运行时干预」双段方案，针对自主科研智能体在引用、数据与结论上的不端模式；把审计从事后查重前移到执行过程中间。",
+      "authors": "Jiening Siow, Amy Xin, Junjie Wang, Ziyu Tang, Zijun Yao, Yunjia Qi, Fanjin Zhang, Lei Hou, Jie Tang, Juanzi Li",
+      "link": "https://arxiv.org/abs/2610.31372"
+    },
+    {
+      "title": "Post-Audit Mirage：仅靠事后日志审计智能体，存在理论上的识别上限",
+      "titleEn": "Post-Audit Mirage: Identifiability Limits of Offline Agent Verification",
+      "summary": "证明不同行为策略可以产出同一轨迹分布，因此离线审计只能验证「做过什么」，无法唯一还原「为什么这么做」；对「留痕即合规」的采购叙事是直接的理论反驳（NeurIPS 2026 Workshop）。",
+      "authors": "Aman Behera, Payal Payal",
+      "link": "https://arxiv.org/abs/2610.31130"
     }
   ],
   "models": [
@@ -226,6 +321,24 @@
       "vendor": "蚂蚁数科",
       "highlight": "面向企业决策的 4B／27B 模型，宣称原生多选与按序决策，客服／风控等场景 Token 消耗最高降逾 90%（厂商自测）。决策头从生成链路拆出的又一例。",
       "link": "https://news.aibase.com/zh/news/31807"
+    },
+    {
+      "name": "MiniMax M3.1 Flash（开放权重版）",
+      "vendor": "MiniMax",
+      "highlight": "10 月 23 日起放开权重：428B 总参／23B 激活，相对 M3 成本约 −70%、线上推理近 3×；官方称上线 72 小时处理逾 100 万亿 token。首日接入 10 家芯片厂与 6 家推理云，vLLM／SGLang／FlagOS 同步支持——「Flash 档 + 开源权重」正在成为国产模型的默认组合拳。",
+      "link": "https://dy.163.com/article/L9U04A2G0530NLC9.html"
+    },
+    {
+      "name": "MOSS-Image 5B",
+      "vendor": "OpenMOSS（复旦）",
+      "highlight": "开源 5B 文生图模型，同时放出 Base 与 SFT 两版；两日内 HF 下载合计逾 1.1 万、点赞逾 1.1 千，Comfy-Org 打包版 1 天前更新、下载约 146 万。可本地跑的中量级图像权重又多一枚。",
+      "link": "https://huggingface.co/OpenMOSS-Team"
+    },
+    {
+      "name": "OrcaCyber-Nano-1.0",
+      "vendor": "orcarouter",
+      "highlight": "2B 端侧图文理解模型，专攻网络安全场景；1 天内 HF 下载约 2.17 万，是「小参数 + 垂直域」路线的最新样本——与同期大厂把安全做成治理平台形成两端夹击。",
+      "link": "https://huggingface.co/orcarouter"
     }
   ],
   "ecosystem": [
@@ -279,6 +392,41 @@
       "models": [
         "GPT-5.6 Sol"
       ]
+    },
+    {
+      "title": "Framer 官方 MCP server 上线：智能体可在编辑器关闭时改页面与 CMS",
+      "summary": "端点 mcp.framer.com/mcp（远程 Streamable HTTP + OAuth），ChatGPT／Codex、Claude／Claude Code、Cursor、Grok 一键安装，VS Code／Windsurf／Warp／Devin／Kiro 有配置指南。可建页、改版式、管 CMS 集合与条目、读取 metadata／标题／alt 文本。权限直接继承登录账号——工作区管理员可能需先批准连接，官方也建议把「发布」这一步留给人。",
+      "source": "Framer / Rush Commerce",
+      "link": "https://rushcommerce.dev/blog/framer-mcp-server-ai-agents-edit-your-website-cms-scope-the-account-not-the-prompt",
+      "models": []
+    },
+    {
+      "title": "Mastra 1.79.0：实验性 MCP Events（SEP-3415 草案）",
+      "summary": "让 MCP 服务端发布事件流，客户端可轮询、保持长连或经签名 webhook 接收——MCP 从「请求-响应」向「订阅」扩了一步。可观测性新增 aggregateSpans()（p95 延迟、token 成本）与首块延迟字段；agent session 改按 sessionId 寻址，一个 resource 可挂多个并发会话。",
+      "source": "Mastra Release Notes",
+      "link": "http://quidproquo.cc/posts/daily/2026-10-22-ai-agent-github-digest-en",
+      "models": []
+    },
+    {
+      "title": "Pydantic AI 2.59.0：修 web_fetch 高危 DoS，加 Daytona 沙箱",
+      "summary": "修 GHSA-4whf-38hw-pxxh——web_fetch_tool 抓取攻击者构造的多元素 HTML 时，可在 HTML 转换阶段拖住同进程其它任务（用不可信页面就必须升）。新增 DaytonaSandbox，让 Coder／Shell／FileSystem 等 harness 能力整个跑在沙箱内；新增 ElevenLabsRealtimeModel 支持语音到语音实时模型。",
+      "source": "Pydantic AI Release Notes",
+      "link": "http://quidproquo.cc/posts/daily/2026-10-22-ai-agent-github-digest-en",
+      "models": []
+    },
+    {
+      "title": "headroom：在工具输出进模型之前先压一遍",
+      "summary": "号称纯文本省约 20% token、JSON 省 60–95%，且答案质量不变；提供库、代理（夹在 agent 与工具之间）与 MCP server 三种形态，兼容 LangChain／Anthropic／OpenAI。GitHub 约 7.7 万星。上下文工程此前多在「挑什么发给模型」，它补的是另一半——已经要发的能不能先瘦身。",
+      "source": "GitHub / AI Agent Digest",
+      "link": "http://quidproquo.cc/posts/daily/2026-10-22-ai-agent-github-digest-en",
+      "models": []
+    },
+    {
+      "title": "微软 agent-governance-toolkit 与 Cloudflare security-audit-skill 同周发布",
+      "summary": "两家大厂在同一周把「智能体治理与审计」做成官方工具：治理从创业公司的补丁件变成框架随附件。与 RIDAR 的运行时干预、Post-Audit Mirage 的可识别性上限、Anthropic 把 Agent Skills 捐进 Linux Foundation 同向——标准与工具正在同时上移。",
+      "source": "GitHub / AI Agent Digest",
+      "link": "http://quidproquo.cc/posts/daily/2026-10-22-ai-agent-github-digest-en",
+      "models": []
     }
   ]
 }
