@@ -779,7 +779,7 @@
       "aa": 44,
       "aa_dec": 43.7,
       "pin": 1,
-      "pcache": 0.104174,
+      "pcache": 0.104198,
       "pout": 2.7,
       "open_": "开放权重(10/15 正式开源)",
       "lic": "Apache 2.0",
@@ -1130,16 +1130,16 @@
       "tier": "默认",
       "aa": 40,
       "aa_dec": 39.9,
-      "pin": 0.119056,
-      "pcache": 0.014882,
-      "pout": 0.401816,
+      "pin": 0.119083,
+      "pcache": 0.014885,
+      "pout": 0.401905,
       "open_": "开放权重(Flash-Next 已开源)",
       "lic": "Qwen Community 1.0",
       "src": "官方(QwenCloud)",
       "note": "Qwen4 架构先导多模态 MoE(125B+51B Emb/6B 激活);262K→1M 上下文;AA v4.3.2 39.9;国内 ¥0.8/¥2.7/缓存 ¥0.1;Flash-Next 权重已开源(Qwen Community 1.0);AA 实测 200M 输出 token(冗长,实际账单高于直觉)",
-      "cost": 0.21951,
-      "ability": 69,
-      "costscore": 83.42666630500611,
+      "cost": 0.21956,
+      "ability": 69.0,
+      "costscore": 83.4225623549413,
       "value": 75,
       "eff": 182.2,
       "grade": "A",
@@ -2533,6 +2533,19 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-23",
+      "t": "半点核验：AA/官价无变；汇率调至 6.7180（较 6.7195 调升 15 基点）；微调 Qwen3.8-Flash / Step 5 Preview 缓存挂价",
+      "m": [
+        "Qwen3.8-Flash",
+        "Step 5 Preview",
+        "Claude Opus 5.5",
+        "Gemini 4 Argon",
+        "MiniMax M3.1 Flash",
+        "DeepSeek-V4.1-Flash-1017"
+      ],
+      "s": "<b>2026-10-23 总策划 ≈09:30 半点核对</b>：对照 Artificial Analysis LLM Leaderboard / Intelligence Index <b>v4.3.2</b>（一手 artificialanalysis.ai/leaderboards/models 与 Changelog）：10/22 已上分 Ling 3.1 Flash 1019（Index 44）昨夜已入榜；10/23 Changelog <b>尚无新条目</b>，既有主榜整数分无变；Top 仍 Claude Opus 5.5 Max（58）。官价抽核：Anthropic Opus/Sonnet/Haiku 5.5（$4/$20、$2/$10、≤100K 时 $0.10/$0.50）、OpenAI Astra $10/$50·6.1 Sol $2/$10·Luna $0.10/$0.50·5.6 Sol 促销 $4/$20 至少至 11/21、Google Gemini 4 Argon 介绍期 $2/$10 至 11/30、Gemini 3.8 Flash $0.75/$3.75 至 12/31、DeepSeek 官方美元峰时 Flash $0.30/$1.20·Pro $1.32/$3.96、MiniMax M3.1 Flash $0.15/$0.60——均与主表一致，主分仍用折后有效价。<b>汇率</b>：中国外汇交易中心/PBOC 中间价 <b>2026-10-23 1 USD = 6.7180</b>（汇通财经/FXStreet：较 10/22 的 6.7195 调升 15 基点）。仍经 FX 换算的 Qwen3.8-Flash（¥0.8/¥2.7/缓存 ¥0.1）与 Step 5 Preview 缓存（¥0.70）已按 6.7180 微调美分级挂价；Qwen 标准任务成本约 $0.21956、综合性价比等级与位次不变（仍 A/75）；Step 美元刊例价与任务成本不变。本地/生图无公开证据变化，未改模板。未改日报产物。"
+    },
     {
       "d": "10-23",
       "t": "全日量核验：AA v4.3.2 主榜整数分与官价无实质变化；汇率沿用 6.7195（10/22 中间价，10/23 早间尚未见新行）；未见运营每小时差异摘要",
