@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-10-24",
     "week": "星期六",
-    "note": "今日主题词：旗舰开源，训练断网。10 月 23 日夜间到 24 日清晨，模型层与安全层几乎同时交卷。月之暗面正式推出 Kimi K3.1 Pro：宣称 3 万亿级参数、百万上下文，API／产品线即日可用，完整权重计划 11 月 4 日前开放；同步放出 Highspeed，官方称同等智能下输出约 2–3× 快——国产开源旗舰把规模门槛又抬了一档。另一端，OpenAI 发文确认前沿模型训练改走「离线世界」：在 Indexed／缓存网页里练浏览与工具，不再给前沿 RL 任意联网；红队还挖出智能体可借 CPU 缓存时序跨 VM 传密——断网也不等于断信道。同窗还有外部审计：METR／Redwood 进驻审查 OpenAI 内部智能体监控，发现 RL 起步未覆盖、交还用户才检查、客户端可关监控等缺口；银行侧则在争第三方差旅式智能体能不能动客户账户。防御叙事也在加速：Anthropic×Theorem 用 Claude 在 RISC-V 汇编层为 123 个库的 239 个 fuzz 入口写出 Rocq 无崩溃证明；微软 MAI-DxO 在《Science》复杂病例序贯诊断上报 83% 对医生 36%。资本链上，芯片抵押融资从 CoreWeave 延伸到 Anthropic／SpaceX 叙事，信用利差走阔——训练环境断网、开源旗舰放权、债务市场对账，在同一周末同框。",
+    "note": "今日主题词：旗舰开源，训练断网。10 月 23 日夜间到 24 日清晨，模型层与安全层几乎同时交卷。月之暗面正式推出 Kimi K3.1 Pro：宣称 3 万亿级参数、百万上下文，API／产品线即日可用，完整权重计划 11 月 4 日前开放；同步放出 Highspeed，官方称同等智能下输出约 2–3× 快——国产开源旗舰把规模门槛又抬了一档。另一端，OpenAI 发文确认前沿模型训练改走「离线世界」：在 Indexed／缓存网页里练浏览与工具，不再给前沿 RL 任意联网；红队还挖出智能体可借 CPU 缓存时序跨 VM 传密——断网也不等于断信道。同窗还有外部审计：METR／Redwood 进驻审查 OpenAI 内部智能体监控，发现 RL 起步未覆盖、交还用户才检查、客户端可关监控等缺口；银行侧则在争第三方差旅式智能体能不能动客户账户。防御叙事也在加速：Anthropic×Theorem 用 Claude 在 RISC-V 汇编层为 123 个库的 239 个 fuzz 入口写出 Rocq 无崩溃证明；微软 MAI-DxO 在《Science》复杂病例序贯诊断上报 83% 对医生 36%。资本链上，芯片抵押融资从 CoreWeave 延伸到 Anthropic／SpaceX 叙事，信用利差走阔——训练环境断网、开源旗舰放权、债务市场对账，在同一周末同框。　午后补更：白天的增量不在模型层，而在「资本、治理与入口」三处。资本侧，Anthropic 11 月 IPO 路演收官，承销团给出的定价区间对应估值约 2.3 万亿美元、认购超 12 倍——比上周「约 1.5 万亿讨论」的锚抬了一档；S-1 同步露出上半年 163 亿美元收入（去年同期 11 亿）与约 4500 亿美元多为不可撤销的云承诺，收入曲线和采购义务曲线一起陡。治理侧，OpenAI 在永久关停消费端 Operator 一周后开源「安全熔断」工具包（可插拔操作边界、实时权限回收、异常熔断接口），欧盟 AI Office 则发出高风险系统 90 天自评清单，把原则条款变成可填的表格。入口侧，Gemini 4 Argon-V 下放 Pixel 11 全系与 Wear OS，荣耀 Magic9 把系统级 Agent Harness 做进手机。生态继续给智能体装闸门——Traefik 只读 MCP 把网关配置与遥测一起递给 agent，Box 给写操作加策略护栏，GitLab 19.4 上目标驱动智能体。另有一条单源消息称 Meta 把 Muse Spark 扩到 1.6T MoE、Apple MLX 3.0 宣称万亿参数实时推理，与我站 10-16 记录的 816B 总参／42B 激活口径不一致，这里只保留为待核实传闻。",
     "append_note": true
   },
   "highlights": [
@@ -29,6 +29,18 @@
     {
       "title": "微软 MAI-DxO：《Science》序贯诊断 83% 对医生 36%",
       "summary": "多智能体诊断编排在 NEJM 困难病例序贯基准 SDBench 上报 83%，对照全科／内科医生约 36%（有教材与联网）／22%（无）。TechCrunch 等指出：对照非专科团队、属模拟、增益大量来自底层模型（如 GPT-5 单独约 78.9%）。真实患者落地仍待观察。"
+    },
+    {
+      "title": "Anthropic IPO 路演收官：定价区间对应约 2.3 万亿美元，认购超 12 倍",
+      "summary": "11 月 IPO 进入最后路演周，主承销团向机构投资人披露定价区间，对应估值约 2.3 万亿美元，认购倍数超 12 倍——比 10 月中旬「约 1.5 万亿讨论」的锚抬了一档，市场把它当作「AI 第一股」的定价基准。S-1 口径：上半年收入 163 亿美元（去年同期 11 亿）、Q3 年化运行率约 168 亿，公司称调整后已盈利；同时背着约 4500 亿美元多为不可撤销的云承诺（Google Cloud 1110 亿、AWS 1100 亿、微软 310 亿，另有最高 860 亿美元英伟达芯片租赁）。收入陡增与长期采购义务同框，是这个估值最需要回答的问题。"
+    },
+    {
+      "title": "治理双件：OpenAI 开源「安全熔断」工具包，欧盟发高风险系统自评清单",
+      "summary": "OpenAI 在永久关停消费端自主智能体 Operator 一周后，开源一套「安全熔断（Safety Circuit Breaker）」工具包：可插拔的操作边界、实时权限回收与异常熔断接口，第三方智能体开发者可直接复用其治理经验——把「出事就拔电源」从内部运维手册变成可调用的公共件。同日欧盟 AI Office 在第二例执法（900 万欧元罚单）后给出统一的高风险系统自评清单，要求 90 天内完成合规自测，覆盖训练数据溯源、人类监督与可追溯性三维度。一边是可复用的代码闸门，一边是可填写的合规表格，治理从口号落到工程件。"
+    },
+    {
+      "title": "端侧抢入口：Gemini 4 Argon-V 下放 Pixel 11／Wear OS，荣耀把 Agent Harness 做进系统",
+      "summary": "Google 在 Android XR 落地之后，把 Gemini 4 Argon-V 的实时多模态理解下放到 Pixel 11 全系手机与 Wear OS 手表，端云协同做「看一眼即懂」的离线视觉问答。另一侧荣耀 Magic9 在 10 月 23 日 CEIC 亮相，称是行业首个搭载系统级 Agent Harness 商用架构的 AI 智能体手机，依托 YOYO 智能体跨应用多步操作、主动服务覆盖超千个场景。两家都在答同一个问题：智能体的入口归 App，还是归操作系统——把工具调度、权限与回滚做进系统层，才是手机厂商的答案。"
     }
   ],
   "news": [
@@ -115,6 +127,64 @@
       "source": "AiBase",
       "link": "https://news.aibase.com/zh/daily/31845",
       "models": []
+    },
+    {
+      "title": "OpenAI 开源「安全熔断」工具包，回应 Operator 永久关停",
+      "summary": "在永久关停消费端自主智能体 Operator 一周后，OpenAI 开源「安全熔断（Safety Circuit Breaker）」工具包：可插拔的操作边界、实时权限回收与异常熔断接口，第三方智能体开发者可直接复用。与前沿训练断网（昨日主报）同属一套「先设边界、再给能力」的思路——区别是这次交付的是代码而不是政策。",
+      "date": "10月24日",
+      "source": "OpenAI 官方博客 / 壹语前研",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
+      "models": []
+    },
+    {
+      "title": "Anthropic IPO 定价区间对应约 2.3 万亿美元，认购超 12 倍",
+      "summary": "11 月 IPO 路演进入收官，主承销团向机构披露定价区间；S-1 显示上半年收入 163 亿美元（去年同期 11 亿）、Q3 年化 168 亿，称调整后盈利，同时负担约 4500 亿美元云承诺（Google 1110 亿／AWS 1100 亿／微软 310 亿，另有最高 860 亿英伟达芯片租赁）。相较 10 月中旬「1.5 万亿」的讨论口径，定价锚明显上移。",
+      "date": "10月24日",
+      "source": "Reuters / ai.jp.net",
+      "link": "https://www.ai.jp.net/article/anthropic-opens-its-books-16-3b-revenue-and-a-massive-cloud-bet-while-openai-s-d-391b61",
+      "models": []
+    },
+    {
+      "title": "Google 把 Gemini 4 Argon-V 下放 Pixel 11 全系与 Wear OS",
+      "summary": "在 Android XR 落地之后，实时多模态理解向手机与手表铺开：端云协同做「看一眼即懂」的离线视觉问答。这是继 10 月 14 日发布之后的第一次大规模设备下放——模型竞争开始按「装进多少台设备」计分。",
+      "date": "10月24日",
+      "source": "Google 官方公告 / 壹语前研",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
+      "models": [
+        "Gemini 4 Argon"
+      ]
+    },
+    {
+      "title": "NVIDIA 确认 Rubin 2027 Q1 量产出货，单卡算力约 Blackwell 3 倍",
+      "summary": "供应链沟通会口径：Rubin 架构 GPU 明年一季度启动量产出货，单卡算力约 Blackwell 三倍；此前已锁定约 400 亿美元预付订单，云厂商抢首批产能。注意与 10 月 21 日 GTC 柏林「Vera Rubin 已全面量产」的表述并存——两者指的是机架级平台与芯片出货两个节点，媒体常混用，看数字时要分开读。",
+      "date": "10月24日",
+      "source": "NVIDIA 供应链会议 / 壹语前研",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
+      "models": []
+    },
+    {
+      "title": "欧盟 AI Office 发布「高风险系统」标准化自评清单",
+      "summary": "继第二例执法（900 万欧元罚单）后，欧盟 AI Office 给出统一自评清单，要求企业 90 天内完成合规自测，覆盖训练数据溯源、人类监督与可追溯性三大维度。合规从原则条款落到可填表格——对跨境部署的模型公司，这是排期问题而不是态度问题。",
+      "date": "10月24日",
+      "source": "EU AI Office / 壹语前研",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
+      "models": []
+    },
+    {
+      "title": "「人工智能+」行动纲要首批 12 个示范城市落地",
+      "summary": "国家发改委公布首批名单，聚焦智能制造、智慧医疗与城市治理三大场景，配套专项算力券与数据开放试点，地方配套资金规模超千亿元。算力券＋数据开放同时开闸，等于把「能不能训」和「拿什么训」两件事一起解决。",
+      "date": "10月24日",
+      "source": "国家发改委 / 壹语前研",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
+      "models": []
+    },
+    {
+      "title": "本周全球 AI 融资超 80 亿美元，具身智能与工业机器人占近半",
+      "summary": "CB Insights 口径：本周一级市场融资总额突破 80 亿美元，叠加约 120 亿美元并购，资金正从模型层向应用与硬件底座迁移。与 Anthropic 的二级市场定价互为印证——钱在往「能交付的东西」上靠。",
+      "date": "10月24日",
+      "source": "CB Insights / 壹语前研",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
+      "models": []
     }
   ],
   "papers": [
@@ -159,6 +229,41 @@
       "summary": "受控专家池＋有无额外训练的融合方法统一评测：无训练融合常保住推理却大伤工具使用；MOPD 更均衡但需额外数据与训练。联合保住推理／指令／工具且低成本仍是开放题。",
       "authors": "Shuo Cai, Yanggan Gu, Yuhang Liu, et al.",
       "link": "https://github.com/Baicaihaochi/FusionEval_Benchmark"
+    },
+    {
+      "title": "PointerBench：细粒度 GUI 定位的诊断基准",
+      "titleEn": "PointerBench: A Diagnostic Benchmark for Fine-Grained GUI Grounding",
+      "summary": "把「看懂界面并指到正确像素」拆成可诊断的子能力来测，而不是只看端到端点选成功率；NeurIPS 2026 Workshop 接收。对做电脑操作类智能体的团队，这类细粒度归因比总分更有用——它告诉你错在识别、错在定位，还是错在坐标映射。",
+      "authors": "Valentino Sacco, Saurabh Pandey, Alexander Florian Jercher, Maximilian Schilling",
+      "link": "https://arxiv.org/abs/2610.31274"
+    },
+    {
+      "title": "ColaBench：个人智能体的「记忆引导式」知识获取评测",
+      "titleEn": "ColaBench: Evaluating Memory-Guided Knowledge Acquisition in Personal Agents",
+      "summary": "个人智能体的关键不是记住，而是靠长期记忆主动补知识：知道自己缺什么、去哪儿问、怎么并进已有记忆。基准把这套链路拆开测，与今日同批《The Value of Memory in Language Agents》互补——记忆研究正从「存什么」转向「怎么用」。",
+      "authors": "Wenjie Zhang, Zhichao Shi, Xuhui Jiang, Xiaojun Wu, Cehao Yang, Chengjin Xu, Xiaoning Song",
+      "link": "https://arxiv.org/abs/2610.30989"
+    },
+    {
+      "title": "Muffin：给异步多智能体用的共享内存缓冲",
+      "titleEn": "Muffin - A Shared Memory Buffer for Asynchronous AI Agents",
+      "summary": "异步协作的多智能体不缺通信协议，缺的是「谁在什么时候看到了哪一版状态」。Muffin 把共享内存缓冲做成基础设施层，处理并发写入与可见性顺序。工程味很重，却是多智能体从 demo 走向长跑的必需品。",
+      "authors": "Ping-Lin Kuo, Suman Navaratnarajah, Christian Frey, Gresa Shala, Josif Grabocka",
+      "link": "https://arxiv.org/abs/2610.31355"
+    },
+    {
+      "title": "ReflectPO：反思引导的策略优化，面向长程智能体",
+      "titleEn": "ReflectPO: Reflection-Guided Policy Optimization for Long-Horizon LLM Agents",
+      "summary": "把「反思」从推理期提示搬进策略优化：用反思信号引导策略更新，而不是让模型在每一步自言自语。与今日 RIPPLE（过程级信用分配）同题不同路——长程 Agent 的训练正从「加长上下文」转向「改信用分配」。",
+      "authors": "Rumei Li, Xunliang Cai",
+      "link": "https://arxiv.org/abs/2610.30933"
+    },
+    {
+      "title": "语言模型的低位 N-gram 嵌入",
+      "titleEn": "Low-Bit N-Gram Embeddings for Language Models",
+      "summary": "把 n-gram 嵌入压到低位宽，在几乎不掉点的前提下换显存与带宽。Stephen Chung 与 Wenyu Du 这条线一直盯着「推理侧每 token 的真实成本」；对本地部署与端侧小模型，嵌入层优化往往比换更小的底座更划算。",
+      "authors": "Stephen Chung, Wenyu Du",
+      "link": "https://arxiv.org/abs/2610.31646"
     }
   ],
   "models": [
@@ -191,6 +296,30 @@
       "vendor": "字节跳动／火山引擎",
       "highlight": "样片（约 480P）验证分镜后再出 4K 正片；10-bit 与细节增强面向影视流程。目前企业试用。",
       "link": "https://news.aibase.com/zh/daily/31845"
+    },
+    {
+      "name": "DeepSeek-V4.1-Flash-1017 登顶 Code Arena WebDev 开源第一",
+      "vendor": "深度求索（DeepSeek）",
+      "highlight": "Arena 的 Code Arena: WebDev 榜拿到 1670 分，超过 Kimi K3(Max)、MiMo-V2.6 Flash 等主流开源模型居首，仅小幅落后 GPT-6 Sol(Max) 12 分；DeepSWE v1.1 报 77.0，高于 Claude Opus 5。单任务成本较上版降约六成。HF trending 仍居第一（763B，57.7k 下载／2.6k 赞）。华为云、腾讯云、百度智能云与昇腾／海光已完成适配——这是 10-19 上线后的榜单侧确认，不是又一次发布。",
+      "link": "https://news.t0001.com/newsflash/202610/1456369.html"
+    },
+    {
+      "name": "中电信 Xing4.0-29B-Intent（意图理解专用变体，开源）",
+      "vendor": "中电信人工智能／星辰通用人工智能实验室",
+      "highlight": "在 10-17 的 29B-A4B 通用版之外，新增 Intent 专用变体：官方称既能「做选择题」（分类判别）也能「做填空题」（生成补全）。运营商系继续走专用小模型路线——不拼总参，把一件事做到极致再嵌进自有管道。",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzkyOTE4NTI5Ng==&mid=2247484325&idx=1&sn=d9d3306003a54137d145584364154995"
+    },
+    {
+      "name": "讯飞星火医疗 V3.7 / 端到端交互模型",
+      "vendor": "科大讯飞",
+      "highlight": "新一代端到端交互模型，语音大模型调用量涨 20 倍，端侧已承载约 70% 云端能力。星火医疗 V3.7 基于全国产算力底座，首次把语音理解、医学影像与语义处理并入同一多模态架构，在上海 AI Lab MedBench 5.0 智能体评估榜以 99.6 分居首，病历生成合理率 85%。国产算力＋垂直多模态开始出榜单成绩（此前 10-22／23 报的是星火 X2.6 通用版与 SparkAudio，本次是医疗垂类）。",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzkyOTE4NTI5Ng==&mid=2247484325&idx=1&sn=d9d3306003a54137d145584364154995"
+    },
+    {
+      "name": "Spark-X2.6-4B（HF trending 新面孔）",
+      "vendor": "XHToken",
+      "highlight": "4B 级文本生成模型，发布 3 天进入 HF trending 前六（1.06k 下载／420 赞）。与同期的 Kromoss 5B、embeddinggemma-2（0.7B）一起说明榜单在向小模型倾斜——「能在本地跑」正在变成默认需求。",
+      "link": "https://huggingface.co/models?sort=trending"
     }
   ],
   "ecosystem": [
@@ -227,6 +356,55 @@
       "summary": "Ideogram 首个向量模型可出可编辑 SVG（含字体与渐变）；HeyGen Video 1 在 Artificial Analysis 盲测文生视频中排名靠前（媒体口径）。创作工具链周末继续补零件。",
       "source": "The Neuron",
       "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
+      "models": []
+    },
+    {
+      "title": "Traefik MCP Server：把网关「配置＋遥测」一起递给智能体",
+      "summary": "10 月 22 日发布，只读 MCP 服务：一边给当前 Traefik 版本的 schema（什么合法），一边给运行中的真实配置（什么在跑），再对上 Datadog／Grafana／Dash0 的 trace、指标与日志（发生了什么）。智能体写的配置先在 schema 里校验再交付，是否 applied 仍走 GitOps／CI／人。只读是它能被放进入口层的前提——平台团队终于敢让 agent 靠近 ingress。",
+      "source": "Traefik Labs",
+      "link": "https://traefik.io/press/traefik-labs-introduces-the-traefik-mcp-server-grounding-ai-agents-in-the-gateway-from-day-0-to-day-2",
+      "models": []
+    },
+    {
+      "title": "Box MCP Guardrails：企业级「写操作」策略闸门",
+      "summary": "管理员在 Admin Console 按工具配策略，覆盖 upload／copy／move／create_shared_link／create_collaboration 等写动作，由 Box Action Platform 每请求强制校验；拦截时回结构化错误，变更写入事件流供 SIEM 消费；读操作另归 Shield。默认关闭、仅 Enterprise Advanced。MCP 的治理重心正从「能连什么」转到「能改什么」。",
+      "source": "Box 支持中心",
+      "link": "https://support.box.com/hc/en-us/articles/56701418458387-New-MCP-Guardrails-for-the-Box-MCP-Server-Oct-2026",
+      "models": []
+    },
+    {
+      "title": "GitLab 19.4 目标驱动智能体 / Xcode 27.2 智能体友好工程配置",
+      "summary": "GitLab 19.4 加入目标驱动型智能体并强化成本控制与可观测；Xcode 27.2 推出对智能体友好、可显著减少合并冲突的 JSON 工程配置。改造方向很明确：不是让 AI 写更多代码，而是让工程结构本身「可被 agent 安全改动」。同期 Spotify 披露 AI 赋能后月代码变更量翻倍，评审压力同步上升。",
+      "source": "GitLab / Apple 开发者 / 今日AI大模型速览",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzkyOTE4NTI5Ng==&mid=2247484325&idx=1&sn=d9d3306003a54137d145584364154995",
+      "models": []
+    },
+    {
+      "title": "智源 FlagOS 2.2：让前沿模型与多元算力协同",
+      "summary": "延续多芯片适配软件栈定位，2.2 版主打前沿模型在异构算力间的迁移与协同成本下降。国产算力需求越旺，这类「脏活」越关键——它决定一个模型能不能在三种芯片上跑出同一份精度。",
+      "source": "智源研究院",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzkyOTE4NTI5Ng==&mid=2247484325&idx=1&sn=d9d3306003a54137d145584364154995",
+      "models": []
+    },
+    {
+      "title": "荣耀 Magic9：行业首个系统级 Agent Harness 商用架构",
+      "summary": "10 月 23 日 CEIC 展出，依托 YOYO 智能体做意图识别与跨应用多步操作，主动服务覆盖超千个生活场景。把 harness（工具调度、权限、回滚）做进操作系统层而不是塞进单个 App——手机厂商对「谁持有智能体入口」的回答，与同日 Gemini 下放 Pixel 同题。",
+      "source": "CEIC / 今日AI大模型速览",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzkyOTE4NTI5Ng==&mid=2247484325&idx=1&sn=d9d3306003a54137d145584364154995",
+      "models": []
+    },
+    {
+      "title": "MCP 生态规模更新：11.4 万服务器，7 日新增 3061",
+      "summary": "第三方索引统计（2026-10-24）：服务器总数 114,669（10-21 快照约十万级），其中远程可 URL 直连 34,951，安全扫描覆盖 113,948；语言分布 TypeScript/JS 91,263、Python 22,520、Rust 766；品类以开发 54,205 与 AI 34,194 居前。协议层的「应用商店效应」已成型——发现、扫描与评分会比再写一个 server 更值钱。",
+      "source": "Unyly MCP 索引",
+      "link": "https://unyly.org/stats",
+      "models": []
+    },
+    {
+      "title": "待核实：Meta 传扩 Muse Spark 至 1.6T MoE，Apple MLX 3.0 称万亿参数实时推理",
+      "summary": "单一聚合源称：Meta 在联邦微调版后进一步开源 Muse Spark 1.6T MoE（推理激活约 120B，两日下载破两千万）；Apple 发布 MLX 3.0，称顶配 Mac Studio 首次跑通万亿参数实时推理并与 Final Cut 打通。两处口径与我站 10-16 记录冲突（当时为 816B 总参／42B 激活、4-bit 约 493GB，且 MLX 已是合作优化路径），且「万亿参数」多半指 MoE 总参而非激活参。先记录不背书，等官方仓库与实测。",
+      "source": "壹语前研（单源）",
+      "link": "http://mp.weixin.qq.com/s?__biz=MzA4ODczMzYxOA==&mid=2448364593&idx=1&sn=38a5ca4ac1fa5b20baa121b8017d9daf",
       "models": []
     }
   ]
