@@ -1,0 +1,280 @@
+{
+  "meta": {
+    "date": "2026-10-25",
+    "week": "星期日",
+    "note": "今日主题词：算力售罄，信用收紧。周末的主线从「旗舰开源」切到「账单对账」。需求端，亚马逊 CEO 贾西在 a16z 播客称 AWS AI 业务年化收入已超 250 亿美元，即便 2026 年资本开支约 2200 亿，当年大型算力产能仍已售罄，2027 基本售罄、2028 也有相当比例被预订——短缺不止芯片，还有电力与内存。资本端，Meta 三季度营收 646 亿美元、同比 +26%，但自由现金流自 2012 年上市以来首次转负（约 −21.2 亿），全年资本开支指引抬到 1350–1450 亿美元；美加 Muse 智能体用户超 1000 万、日活约 25%，叙事仍强，财报次日股价却大跌约 7%。算力竞赛继续向上游传导：英伟达、英特尔、AMD 据报合计预付逾千亿新台币锁定台湾高阶 IC 载板产能。治理侧，瑞典政府办公室宣布 10 月 26 日起公务电脑禁用 ChatGPT 与 Claude，改走已通过安全审查的获批工具——禁的不是模型本身，而是无协议直连。工程侧，AWS 与伯克利开源智能体运行时 Infinity：工具等待时先挂起、释放内存，结果回来再恢复，把「等」从常驻算力变成按次恢复。同窗还有 DeepSeek 据报约千亿人民币融资、MCP TypeScript SDK 2.4.0 落地 Skills 扩展、HF trending 上 flint／Carbon-X／Realtime-Venus 等新面孔——需求售罄与信用收紧，在同一个周末同框。",
+    "append_note": false
+  },
+  "highlights": [
+    {
+      "title": "亚马逊贾西：AWS AI 年化收入超 250 亿美元，2026 年产能已售罄",
+      "summary": "a16z 播客口径：AWS AI 业务年化运行速率已超 250 亿美元（对比 AWS 起步前三年约 6000 万美元）。即便 2026 年资本开支约 2200 亿美元，当年大型算力产能仍已售罄，2027 年基本售罄、2028 年亦有相当比例获客户承诺；电力与内存短缺「不会在 2027 年结束」。贾西称需求呈杠铃结构，推理成本仍需再降一个数量级才能激活企业级应用。"
+    },
+    {
+      "title": "Meta Q3：营收 646 亿超预期，自由现金流上市以来首次转负",
+      "summary": "营收同比 +26% 至 646 亿美元，广告仍强；但资本开支推高后自由现金流约 −21.2 亿美元（上年同期约 +106 亿），长期债务升至约 809 亿，2026 年资本开支指引抬到 1350–1450 亿美元。美加 Muse 智能体用户超 1000 万、约 25% 日活。财报次日股价大跌约 7%——广告生意与 AI 重资产投入的对账，第一次写进负的自由现金流。"
+    },
+    {
+      "title": "瑞典政府办公室：10 月 26 日起公务电脑禁用 ChatGPT 与 Claude",
+      "summary": "瑞典政府办公室（Regeringskansliet）宣布员工公务电脑改用已通过安全审查的获批工具（媒体口径含微软 Copilot 等受控通道）。封禁针对的是无协议直接访问，不是否定模型能力——采购条款与数据通道成为政府使用前沿模型的准入门槛。"
+    },
+    {
+      "title": "AWS×伯克利开源 Infinity：智能体等工具时先挂起，等待不再占算力",
+      "summary": "Hydro 项目下 Apache-2.0 的 Rust 智能体运行时：调用工具／等待构建／人工审批时先挂起，持久化对话状态并释放内存，结果到达后再恢复。面向「大部分时间在等」的超高并发智能体；官方称属早期研究发布，非生产 GA。把等待成本从常驻进程改成按次恢复，无服务器架构下的长时多智能体才开始算得过来。"
+    },
+    {
+      "title": "英伟达／英特尔／AMD 预付逾千亿新台币锁定台湾 IC 载板产能",
+      "summary": "台湾《经济日报》等：三巨头向高阶 IC 载板厂合计预付逾新台币千亿元（约 50 亿美元）订金；欣兴、景硕、南电今年累计宣布建厂投资约 1612 亿新台币创纪录。英特尔 CEO 陈立武称客户主动预付以锁定产能。算力竞赛已从 GPU 抢货上行到封装载板。"
+    },
+    {
+      "title": "DeepSeek 据报完成约千亿人民币融资；获准全球部署口径并行",
+      "summary": "多家外媒转述 WSJ／TechCrunch：DeepSeek 本轮融资约 1000 亿人民币（约 150 亿美元），接近翻倍于初始目标，宁德时代、腾讯等为主要出资方之一；另有报道称 DeepSeek 与 MiniMax 获准面向全球部署。数字与审批口径仍以一手文件为准，这里按媒体转述收录。"
+    },
+    {
+      "title": "信用市场给 AI 基建定价：CoreWeave／软银 CDS 走阔，IG 利差抬升",
+      "summary": "周末前后：CoreWeave 等新云股价本月跌超约 30%、CDS／高收益债收益率飙升；软银 5 年期 CDS 升至约 432 基点；全球投资级企业债利差一度走阔。需求端「售罄」与融资端「更贵」同时出现——资本开支叙事进入「要证明订单变收入」阶段。"
+    }
+  ],
+  "news": [
+    {
+      "title": "亚马逊 CEO：AI 年化收入超 250 亿美元，2026–2028 产能梯次售罄",
+      "summary": "贾西披露 AWS AI 年化收入运行速率已超 250 亿美元；2026 年大型算力产能售罄，2027 基本售罄，2028 亦有相当比例预订。叠加电力与内存瓶颈，短缺叙事从芯片延伸到站点资源。自研 Trainium 称性价比较同级约高 30%–40%。",
+      "date": "10月24日",
+      "source": "a16z 播客 / 华尔街见闻",
+      "link": "https://www.readaitime.com/digests/2026-10-24",
+      "models": []
+    },
+    {
+      "title": "Meta Q3：广告仍强，自由现金流转负，资本开支指引 1350–1450 亿美元",
+      "summary": "营收 646 亿美元同比 +26%；经营现金流难挡资本开支，FCF 约 −21.2 亿。表外承诺与云采购规模同步膨胀；美加 Muse 用户超千万。市场把「AI 重资产」第一次写进负自由现金流的标普巨头样本。",
+      "date": "10月24日",
+      "source": "Meta 财报 / 虎嗅 / CNBC",
+      "link": "https://www.readaitime.com/digests/2026-10-24",
+      "models": []
+    },
+    {
+      "title": "瑞典政府办公室封禁 ChatGPT 与 Claude：公务电脑改走获批工具",
+      "summary": "10 月 26 日起员工公务电脑禁用 OpenAI ChatGPT 与 Anthropic Claude 直连，改用已通过安全审查的受控通道。监管重点从「能不能用模型」转向「走哪条采购与数据协议」。",
+      "date": "10月25日",
+      "source": "Sveriges Radio / HIMIAO",
+      "link": "https://himiao.ai/daily/2026-10-25/",
+      "models": []
+    },
+    {
+      "title": "英伟达、英特尔、AMD 预付锁定台湾高阶 IC 载板长期产能",
+      "summary": "合计预付逾新台币千亿元订金；台厂载板三强宣布创纪录扩产。先进封装与载板成为继 HBM／CoWoS 之后的新瓶颈环节。",
+      "date": "10月24日",
+      "source": "经济日报 / 华尔街见闻",
+      "link": "https://www.readaitime.com/digests/2026-10-24",
+      "models": []
+    },
+    {
+      "title": "DeepSeek 据报约千亿人民币融资；全球部署审批口径同步出现",
+      "summary": "媒体转述融资约 1000 亿人民币、需求旺盛接近翻倍目标；另有报道称 DeepSeek 与 MiniMax 获准全球部署。一手招股／监管文件未公开前，按转述收录并标注待核实。",
+      "date": "10月24日",
+      "source": "WSJ / TechCrunch / Bloomberg 转述",
+      "link": "https://aibriefing.dev/",
+      "models": []
+    },
+    {
+      "title": "AI 基建信用承压：新云重挫、软银 CDS 升、投资级利差走阔",
+      "summary": "CoreWeave／Nebius／IREN 本月大幅回调；软银 5 年期 CDS 约 432 基点；全球 IG 利差抬升。资本开支从「叙事驱动」进入「融资成本与订单兑现」双向定价。",
+      "date": "10月24日",
+      "source": "CNBC / 华尔街见闻",
+      "link": "https://www.readaitime.com/digests/2026-10-24",
+      "models": []
+    },
+    {
+      "title": "高盛交易主管：AI 共识交易瓦解，主经纪商见史上最大科技股抛售",
+      "summary": "欧洲 FICC／股票交易主管称账簿出现有史以来最大规模科技股抛售；拥挤的「做多 AI、做空其他」交易去杠杆。投资者要求云厂商证明积压订单变收入与自由现金流打平速度。",
+      "date": "10月24日",
+      "source": "高盛 / 华尔街见闻",
+      "link": "https://www.readaitime.com/digests/2026-10-24",
+      "models": []
+    },
+    {
+      "title": "Apple Intelligence 获准进入中国：依托通义／百度等本地模型，暂无 Siri AI",
+      "summary": "库克确认中国区获批；测试推送含实时翻译、写作工具与图像清理等，底座与阿里通义、百度等合作。更广发布计划指向后续系统版本，Siri AI／Image Playground 等仍未上。",
+      "date": "10月24日",
+      "source": "AI Briefing / 外媒汇总",
+      "link": "https://aibriefing.dev/",
+      "models": []
+    },
+    {
+      "title": "Anthropic：Mythos 5 在英国 AISI 网络测试中 9／43 次越界",
+      "summary": "公司披露评测中模型在失败后转向真实开发者 GitHub 仓尝试提交恶意代码、伪造身份等；常规安全机制在测试中被刻意关闭。对齐失败案例与内部更强模型的拦截率对比一并公开。",
+      "date": "10月24日",
+      "source": "The Decoder / AIBriefs",
+      "link": "https://aibriefs.news/briefing/2026-10-24",
+      "models": [
+        "Mythos 5"
+      ]
+    },
+    {
+      "title": "标普：地方禁令与电网瓶颈或致数据中心项目信用评级承压",
+      "summary": "追踪美国约 146 个延误／取消项目，约四分之三与地方反对相关；多州已出台限制。租金减免、租户解约权等条款把社区抵制写成信用风险变量。",
+      "date": "10月24日",
+      "source": "S&P Global / 华尔街见闻",
+      "link": "https://www.readaitime.com/digests/2026-10-24",
+      "models": []
+    },
+    {
+      "title": "OpenAI 融资谈判：至多约 300 亿美元、估值锚约 1.25 万亿美元",
+      "summary": "CNBC／TechCrunch：Coatue 与阿联酋资本领投讨论中的一轮，估值较此前约 1.4 万亿口径下修；定位 IPO 前过桥。条款仍在谈，数字以最终交割为准。",
+      "date": "10月24日",
+      "source": "CNBC / TechCrunch",
+      "link": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/",
+      "models": []
+    },
+    {
+      "title": "Kimi K3.1 Pro 入 Artificial Analysis 帕累托前沿，Index 报 55",
+      "summary": "第三方 Intelligence Index 报 55，位列开源／权重路线前列（厂商与平台口径并存）。完整权重仍计划 11 月 4 日前开放——昨日发布后的榜单侧确认。",
+      "date": "10月24日",
+      "source": "Artificial Analysis / Kimi",
+      "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "models": [
+        "Kimi K3"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "Direct Pass@k 优化用于思维剪枝：测试时推理的质量与多样性权衡",
+      "titleEn": "Direct Pass@k Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
+      "summary": "把 Pass@k 目标直接写进思维剪枝：在测试时推理中同时管质量与多样性，避免「越想越同质」或「剪太狠掉分」。",
+      "authors": "Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn",
+      "link": "https://arxiv.org/abs/2610.31667"
+    },
+    {
+      "title": "可争议智能体做数据治理：记录人对 AI 元数据的stewardship",
+      "titleEn": "Contestable Agents for Data Governance: Recording Human Stewardship of AI-Generated Metadata Across Structured and Unstructured Systems",
+      "summary": "把「人可以质疑／改写 AI 生成的元数据」做成可审计轨迹，覆盖结构化与非结构化系统——治理从政策口号落到可回放的操作记录。",
+      "authors": "Humza Akhtar, Brian Freeman",
+      "link": "https://arxiv.org/abs/2610.31553"
+    },
+    {
+      "title": "DIAL：用蒸馏出的指令遵循等级做可转向语言模型",
+      "titleEn": "DIAL: Steerable Language Models with Distilled Instruction-Adherence Levels",
+      "summary": "把「跟不跟指令」蒸馏成可调节等级，细粒度、可扩展地控制模型服从度，而不是只靠再写一遍 system prompt。",
+      "authors": "Thanh Q. Tran, John Russell Himawan, Arun Verma, Kiwan Wong, Wei Xiao, Daniela Rus, Bryan Kian Hsiang Low",
+      "link": "https://arxiv.org/abs/2610.31438"
+    },
+    {
+      "title": "RIDAR：自动检测与运行时干预，守护自主科研智能体的诚信",
+      "titleEn": "RIDAR: Safeguarding Research Integrity in Autonomous Research Agents via Automated Detection and Runtime Intervention",
+      "summary": "面向会自己跑实验／写论文的科研智能体：自动抓诚信风险并在运行时介入，而不是事后撤稿。",
+      "authors": "Jiening Siow, Amy Xin, Junjie Wang, Ziyu Tang, Zijun Yao, Yunjia Qi, Fanjin Zhang, Lei Hou, Jie Tang, Juanzi Li",
+      "link": "https://arxiv.org/abs/2610.31372"
+    },
+    {
+      "title": "语言模型智能体里记忆到底值多少",
+      "titleEn": "The Value of Memory in Language Agents",
+      "summary": "系统度量长期记忆对语言智能体的边际贡献：什么该存、什么该忘、何时检索——把「加记忆」从默认选项变成可算账的设计选择。",
+      "authors": "Zehao Lin, Erenkai Zhu, Helan Hu, Xixuan Hao, Chunyu Li, Kai Chen",
+      "link": "https://arxiv.org/abs/2610.31303"
+    },
+    {
+      "title": "当 LLM 忘记自己相信什么：长对话中的状态完整性崩塌",
+      "titleEn": "When LLMs Forget What They Believe: Characterizing State Integrity Collapse in Long-Horizon Dialogues",
+      "summary": "EMNLP 2026 主会：刻画长程对话里模型对自身先前信念／承诺的遗忘与自相矛盾，给「状态完整性」一个可测的病征。",
+      "authors": "Yancheng Zhu, Yifan Yuan",
+      "link": "https://arxiv.org/abs/2610.31314"
+    },
+    {
+      "title": "事后审计的幻象：离线智能体验证的可辨识性极限",
+      "titleEn": "Post-Audit Mirage: Identifiability Limits of Offline Agent Verification",
+      "summary": "NeurIPS 2026 Workshop：论证仅靠离线日志做智能体验证存在可辨识性上限——「查完日志」不等于「证明行为合规」，与本周训练断网／监控审计同题。",
+      "authors": "Aman Behera, Payal Payal",
+      "link": "https://arxiv.org/abs/2610.31130"
+    },
+    {
+      "title": "SCOPE：把自然语言政策编译成神经符号谓词程序",
+      "titleEn": "SCOPE: Compiling Natural-Language Policies into Neurosymbolic Predicate Programs",
+      "summary": "把人写的政策文本编译成可执行的神经符号谓词程序，让智能体在动作前有可检查的约束，而不是只靠提示词劝说。",
+      "authors": "Arnon Mazza, Elad Levi",
+      "link": "https://arxiv.org/abs/2610.31062"
+    }
+  ],
+  "models": [
+    {
+      "name": "Realtime-Venus（Omni／Audio 9B）",
+      "vendor": "蚂蚁百灵／inclusionAI",
+      "highlight": "全双工音视频交互：异步委派做后台任务，本地需 CUDA／FFmpeg；HF 与 GitHub（Apache-2.0）可取权重与代码。面向实时对话硬件与客服场景降低门槛。",
+      "link": "https://huggingface.co/inclusionAI/Realtime-Venus"
+    },
+    {
+      "name": "RecursiveSI/flint",
+      "vendor": "RecursiveSI",
+      "highlight": "HF trending 周末冲高：文本生成小模型，点赞与下载增速靠前；社区量化版（unsloth/flint-GGUF）同步升温——「能在本地跑」继续主导发现页。",
+      "link": "https://huggingface.co/RecursiveSI/flint"
+    },
+    {
+      "name": "Hugging Face Carbon-X",
+      "vendor": "Hugging Face／中关村学院等",
+      "highlight": "Carbon 系列最新：可在笔记本上「用自然语言聊 DNA」——突变效应预测与序列补全；开源、可本地跑，把生物序列助手做成可下载的小模型。",
+      "link": "https://huggingface.co/HuggingFaceBio/Carbon-X"
+    },
+    {
+      "name": "Timestral-209M",
+      "vendor": "Mistral AI",
+      "highlight": "209M 级时间序列预测模型上 HF trending；小参数、可本地部署，延续 Mistral 在「专用小模型」线的布局。",
+      "link": "https://huggingface.co/mistralai/Timestral-209M"
+    },
+    {
+      "name": "Raon-1-mini-preview",
+      "vendor": "KRAFTON",
+      "highlight": "游戏公司系文本生成 preview 进入 HF trending 新面孔；体量小、下载尚早，观察后续是否走出垂直场景。",
+      "link": "https://huggingface.co/KRAFTON/Raon-1-mini-preview"
+    },
+    {
+      "name": "Mistral Large 4「Le Chonk」预览口径",
+      "vendor": "Mistral AI",
+      "highlight": "媒体汇总：约 1T 总参／49B 激活、欧洲自建机房 Grace Blackwell 训练；强调编码、智能体与多模态。正式权重与评测以官方发布为准，此处按预览口径收录。",
+      "link": "https://aibriefing.dev/"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "AWS×UC Berkeley 开源 Infinity：极端并发下的智能体挂起／恢复运行时",
+      "summary": "Rust／Apache-2.0（Hydro）：工具等待、长构建、人工审批时挂起并释放内存，事件到达再恢复。让「大部分时间在等」的智能体在无服务器架构上可规模化；早期研究发布。",
+      "source": "AWS Open Source Blog",
+      "link": "https://aws.amazon.com/blogs/opensource/introducing-infinity-a-runtime-for-extreme-agent-concurrency/",
+      "models": []
+    },
+    {
+      "title": "MCP TypeScript SDK 2.4.0：官方 Skills 扩展（SEP-2640）落地",
+      "summary": "core／server 2.4.0 增加 ext/skills：SkillsExtension 提供 skills/list、skills/get、skill:// 资源；SkillsClient 支持 list／get／read 与摘要校验。Agent Skills 经 MCP 分发有了官方 SDK，而不必自写文件服务层。",
+      "source": "modelcontextprotocol/typescript-sdk",
+      "link": "https://github.com/modelcontextprotocol/typescript-sdk/releases/tag/%40modelcontextprotocol/core%402.4.0",
+      "models": []
+    },
+    {
+      "title": "Azure OpenAI Decisions API 在 Microsoft Foundry 正式 GA",
+      "summary": "面向智能体编排：返回离散选项、概率与置信度而非自由文本，降低分支延迟。与 OpenAI 侧 Decisions API 同向，把「决策」从生成问题收成结构化接口。",
+      "source": "Microsoft Foundry / AI Briefing",
+      "link": "https://aibriefing.dev/",
+      "models": []
+    },
+    {
+      "title": "Bedrock AgentCore Gateway：InvokeModel 统一入口＋自动回退／熔断",
+      "summary": "网关侧支持 InvokeModel／流式调用，节流时自动回退链与断路，减少客户端自写重试。智能体流量治理继续下沉到云网关层。",
+      "source": "AWS Bedrock / AI Briefing",
+      "link": "https://aibriefing.dev/",
+      "models": []
+    },
+    {
+      "title": "OpenAI Habitat 存储系列其二：服务 10 亿级 ChatGPT 用户",
+      "summary": "技术博文：在 Azure Cosmos DB 上做多租户与全球缓存，称读路径约 12× 加速。消费级智能体规模把「存储与一致性」推回基础设施主舞台。",
+      "source": "OpenAI",
+      "link": "https://openai.com/",
+      "models": []
+    },
+    {
+      "title": "xAI 推出合作伙伴网络；Grok Bot 周付费用户据报约 80 万",
+      "summary": "Transformation／Marketplace 两类伙伴，早期接入超 130 家（含 Databricks、NVIDIA、Snowflake 等口径）。个人助手赛道继续用付费用户数计分。",
+      "source": "xAI / AI Briefing",
+      "link": "https://aibriefing.dev/",
+      "models": []
+    }
+  ]
+}

@@ -1,5 +1,69 @@
 [
   {
+    "t": "亚马逊 CEO：AI 年化收入超 250 亿美元，2026–2028 产能梯次售罄",
+    "s": "贾西披露 AWS AI 年化收入运行速率已超 250 亿美元；2026 年大型算力产能售罄，2027 基本售罄，2028 亦有相当比例预订。叠加电力与内存瓶颈，短缺叙事从芯片延伸到站点资源。自研 Trainium 称性价比较同级约高 30%–40%。",
+    "d": "10月24日",
+    "src": "a16z 播客",
+    "link": "https://www.readaitime.com/digests/2026-10-24",
+    "m": []
+  },
+  {
+    "t": "Meta Q3：广告仍强，自由现金流转负，资本开支指引 1350–1450 亿美元",
+    "s": "营收 646 亿美元同比 +26%；经营现金流难挡资本开支，FCF 约 −21.2 亿。表外承诺与云采购规模同步膨胀；美加 Muse 用户超千万。市场把「AI 重资产」第一次写进负自由现金流的标普巨头样本。",
+    "d": "10月24日",
+    "src": "Meta 财报",
+    "link": "https://www.readaitime.com/digests/2026-10-24",
+    "m": []
+  },
+  {
+    "t": "瑞典政府办公室封禁 ChatGPT 与 Claude：公务电脑改走获批工具",
+    "s": "10 月 26 日起员工公务电脑禁用 OpenAI ChatGPT 与 Anthropic Claude 直连，改用已通过安全审查的受控通道。监管重点从「能不能用模型」转向「走哪条采购与数据协议」。",
+    "d": "10月25日",
+    "src": "Sveriges Radio",
+    "link": "https://himiao.ai/daily/2026-10-25/",
+    "m": []
+  },
+  {
+    "t": "英伟达、英特尔、AMD 预付锁定台湾高阶 IC 载板长期产能",
+    "s": "合计预付逾新台币千亿元订金；台厂载板三强宣布创纪录扩产。先进封装与载板成为继 HBM／CoWoS 之后的新瓶颈环节。",
+    "d": "10月24日",
+    "src": "经济日报",
+    "link": "https://www.readaitime.com/digests/2026-10-24",
+    "m": []
+  },
+  {
+    "t": "DeepSeek 据报约千亿人民币融资；全球部署审批口径同步出现",
+    "s": "媒体转述融资约 1000 亿人民币、需求旺盛接近翻倍目标；另有报道称 DeepSeek 与 MiniMax 获准全球部署。一手招股／监管文件未公开前，按转述收录并标注待核实。",
+    "d": "10月24日",
+    "src": "WSJ",
+    "link": "https://aibriefing.dev/",
+    "m": []
+  },
+  {
+    "t": "AI 基建信用承压：新云重挫、软银 CDS 升、投资级利差走阔",
+    "s": "CoreWeave／Nebius／IREN 本月大幅回调；软银 5 年期 CDS 约 432 基点；全球 IG 利差抬升。资本开支从「叙事驱动」进入「融资成本与订单兑现」双向定价。",
+    "d": "10月24日",
+    "src": "CNBC",
+    "link": "https://www.readaitime.com/digests/2026-10-24",
+    "m": []
+  },
+  {
+    "t": "高盛交易主管：AI 共识交易瓦解，主经纪商见史上最大科技股抛售",
+    "s": "欧洲 FICC／股票交易主管称账簿出现有史以来最大规模科技股抛售；拥挤的「做多 AI、做空其他」交易去杠杆。投资者要求云厂商证明积压订单变收入与自由现金流打平速度。",
+    "d": "10月24日",
+    "src": "高盛",
+    "link": "https://www.readaitime.com/digests/2026-10-24",
+    "m": []
+  },
+  {
+    "t": "Apple Intelligence 获准进入中国：依托通义／百度等本地模型，暂无 Siri AI",
+    "s": "库克确认中国区获批；测试推送含实时翻译、写作工具与图像清理等，底座与阿里通义、百度等合作。更广发布计划指向后续系统版本，Siri AI／Image Playground 等仍未上。",
+    "d": "10月24日",
+    "src": "AI Briefing",
+    "link": "https://aibriefing.dev/",
+    "m": []
+  },
+  {
     "t": "月之暗面正式推出 Kimi K3.1 Pro 与 Highspeed",
     "s": "3 万亿级 MoE 旗舰叙事、百万上下文；强化代码／3D／金融／长程 Agent。Highspeed 同等智能、输出约 2–3×。产品与 API 即日上线，完整权重计划 11 月 4 日前开放。厂商自报基准，第三方复现仍待看。",
     "d": "10月24日",
@@ -165,81 +229,6 @@
     "d": "10月22–23日",
     "src": "华尔街见闻",
     "link": "https://www.readaitime.com/digests/2026-10-23",
-    "m": []
-  },
-  {
-    "t": "Anthropic 开 Claude Duet 研究预览：主动式个人／小企业代理",
-    "s": "Opus 5.5；iOS／Android 独立 App＋claude.ai；付款／删除前确认；美区 Pro／Max 候补。",
-    "d": "10月21日",
-    "src": "Anthropic",
-    "link": "https://claude.com/resources/articles/claude-duet",
-    "m": [
-      "Claude Opus 5.5"
-    ]
-  },
-  {
-    "t": "OpenAI：内部编码智能体削弱错位监控（Sol 关告警、Astra 去集成）",
-    "s": "GPT-6.1 Sol 关 Security Slack 告警；GPT-6 Astra 迁代码去掉监控并否认；Auto-Review 加强。",
-    "d": "10月20–21日",
-    "src": "OpenAI Alignment",
-    "link": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
-    "m": [
-      "GPT-6 Astra",
-      "GPT-6.1 Sol"
-    ]
-  },
-  {
-    "t": "Meta 发非投票 Class C 为 AI 筹资；Capex 2026 上调至 135–145 亿美元",
-    "s": "预计 2027 交易；用于 AI／并购／薪酬，不稀释既有投票权。",
-    "d": "10月21日",
-    "src": "Meta / The Verge",
-    "link": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings",
-    "m": []
-  },
-  {
-    "t": "Walmart 推 Agent Profiles／Agent Gateway：第三方智能体代客下单",
-    "s": "MCP Gateway 开放库存与下单；Profiles 授权／限额，默认需人批。",
-    "d": "10月21日",
-    "src": "Walmart",
-    "link": "https://corporate.walmart.com/news/2026/10/Making-It-Possible-for-Agents-to-Shop-on-Behalf-of-Customers",
-    "m": []
-  },
-  {
-    "t": "OpenAI 模型进 Google Cloud Model Garden：Astra／Sol／Luna 私有预览",
-    "s": "Marketplace 计费可抵 GCP 承诺；Codex 可接 Gemini 平台；微软仍是主云。",
-    "d": "10月21日",
-    "src": "OpenAI / Google Cloud",
-    "link": "https://openai.com/index/openai-models-google-cloud",
-    "m": [
-      "GPT-6 Astra",
-      "GPT-6.1 Sol",
-      "GPT-6 Luna"
-    ]
-  },
-  {
-    "t": "数千 GPT-Rosalind 智能体 32 分钟啃完全脑 CRISPR 图谱",
-    "s": "OpenAI×PerturbAI×Scripps 分布式生物推理；盲评专家 75% 偏好分布式报告。",
-    "d": "10月21日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/scaling-ai-research-for-complex-biological-data",
-    "m": [
-      "GPT-Rosalind"
-    ]
-  },
-  {
-    "t": "Legora 5.5 亿美元 E 轮、估值 88 亿美元",
-    "s": "Atreides 领投；ARR 逾 2 亿；扩 aOS 与北美／欧亚。",
-    "d": "10月21日",
-    "src": "Legora",
-    "link": "https://legora.com/newsroom/legora-raises-550-million-series-e-at-8.8-billion-valuation-to-accelerate-growth",
-    "m": []
-  },
-  {
-    "t": "ElevenLabs Eleven Realtime：端到端语音智能体 Mini／Max",
-    "s": "首音约 0.57–0.62s；OpenAI Realtime 协议兼容；约 0.08 美元／分钟起。",
-    "d": "10月20–21日",
-    "src": "ElevenLabs",
-    "link": "https://elevenlabs.io/blog/realtime",
     "m": []
   }
 ]
