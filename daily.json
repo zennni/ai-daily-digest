@@ -1,5 +1,22 @@
 [
   {
+    "d": "2026-10-26",
+    "w": "星期一",
+    "pts": [
+      "瑞典政府办公室：公务电脑禁用 ChatGPT／Claude 正式生效，改走获批工具",
+      "OpenAI 折扣战：Replit 等年约逾亿美元级客户自 Anthropic 转向",
+      "MCP 官方服务器 v2.1.0 安全补丁（八漏洞）；得州起诉 OpenAI、Elvis 诉 Anthropic",
+      "蚂蚁 Ling-3.1-flash（560B／25B）上线；Amkor×英伟达 13 亿封装新约"
+    ],
+    "link": "AI日报-2026-10-26.html",
+    "m": [
+      "Ling 3.1 Flash",
+      "Kimi K3",
+      "GPT-6 Astra"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-25",
     "w": "星期日",
     "pts": [

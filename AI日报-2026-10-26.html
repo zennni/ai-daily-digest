@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-10-26</title>
+<style>
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+</style>
+</head>
+<body id="top">
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年10月26日 · 星期一</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：问责落地，价格开战。周一早晨，周末预告的瑞典政府办公室公务电脑禁用 ChatGPT／Claude 正式生效，改走安全审查后的获批工具——监管从「能不能用」落到「走哪条协议」。问责侧同窗加码：得州总检察长起诉 OpenAI／Altman，请求法院禁止未成年人使用 ChatGPT；Elvis 权利方就 274 首歌起诉 Anthropic，索赔口径约 4100 万美元。商业侧，The Information／外媒称 OpenAI 以逾三成折扣拿下 Replit 等年约逾亿美元级客户，Rippling 编程任务份额亦从 Anthropic 大幅转向——价格战从中国开源蔓延到美系头部。工程与开源：MCP 官方服务器套件发布 v2.1.0 安全更新，修补路径穿越、CORS／Origin 与 IDNA 等八个漏洞，日期版本用户须显式钉版本升级；蚂蚁百灵上线 Ling-3.1-flash（560B／25B 激活、百万上下文）；Cerebras 用 Kimi K3 算出约 59 片 WSE-3T 晶圆的万亿参部署账。同窗还有 Amkor 获英伟达 13 亿美元韩国先进封装新约、CoreWeave 创始人合计套现约 33 亿美元与债市承压、Anthropic IPO 估值讨论从约 2 万亿下调至约 1.5 万亿口径——治理生效、折扣开战与补丁升级，在同一个周一同框。</div>
+</header>
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">看点</a>
+  <a href="#sec-news">新闻</a>
+  <a href="#sec-papers">论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a href="#top" class="pt-top">顶</a>
+</nav>
+<div class="highlights" id="sec-highlights">
+  <h2>🔥 今日看点</h2>
+  <ul><li><strong>瑞典政府办公室：公务电脑禁用 ChatGPT／Claude 今日生效</strong><p>据 SVT／瑞典电台 Ekot：Regeringskansliet 员工公务电脑自 10 月 26 日起不可直连 ChatGPT 与 Claude，改用已通过安全审查的获批工具（媒体口径含微软 Copilot 等受控通道）。税务局等机构此前已有同类封禁。禁的是无协议直连，不是否定模型能力。</p></li><li><strong>OpenAI 折扣战：Replit 等年约逾亿美元级客户自 Anthropic 转向</strong><p>The Information／The Decoder：OpenAI 以逾约 30%（部分场景更高）折扣争夺编程／企业客户；Replit 年约口径逾 1 亿美元，多数 AI 支出转向 OpenAI；Rippling 编程任务份额据报从 Anthropic 约 57% 降至约 18%、OpenAI 升至约 52%。价格而非基准分数改写默认模型归属。</p></li><li><strong>MCP 官方服务器 v2.1.0：八个安全漏洞补丁，日期版本须显式升级</strong><p>modelcontextprotocol/servers：filesystem／everything 升至 2.0.1，mcp-server-fetch 升至 2026.10.24。覆盖路径穿越（symlink／TOCTOU）、HTTP／SSE Origin 校验、IDNA 主机名混淆与 NAT64 等。包管理器不会把 2.0.1 排在 2026.x 日期版本之上——须 npm install …@2.0.1。</p></li><li><strong>得州起诉 OpenAI；Elvis 权利方起诉 Anthropic</strong><p>得州总检察长 Ken Paxton 在 Collin 县起诉 OpenAI 与 Altman，请求禁止未成年人使用 ChatGPT 并由法院指定评估人批准新模型（主张尚未经法院认定）。另据 Billboard：Elvis 目录相关权利方就 274 首歌起诉 Anthropic，法定最高索赔口径合计约 4100 万美元。问责从评测室走进法庭。</p></li><li><strong>蚂蚁百灵 Ling-3.1-flash：560B／25B 激活、百万上下文上线 HF</strong><p>inclusionAI：Hybrid-linear MoE，在通用智能体、搜索、办公与软件工程等真实任务上相对 Ling-3.0-flash 提升；公开 Terminal-Bench／SWE-bench Pro 等自评。Day-0 SGLang 镜像与 vLLM 配方同步放出。</p></li><li><strong>Amkor×英伟达 13 亿美元韩国先进封装新约；Cerebras 算万亿参晶圆账</strong><p>Amkor 宣布与英伟达新签约 13 亿美元扩充韩国先进封装产能，亚利桑那＋韩国多年期合计约 30 亿美元且含预付款。Cerebras 技术文以 Kimi K3（约 3T）为例：4-bit 下约需 59 片 WSE-3T——算力瓶颈继续写到封装与晶圆布局。</p></li></ul>
+</div>
+<section id="sec-news">
+  <h2>📰 新闻<span class="count">12 条</span></h2>
+<div class="card">
+  <h3>瑞典政府办公室公务电脑禁用 ChatGPT／Claude：10 月 26 日生效 <span class="tag tag-hot">热</span></h3>
+  <p>员工改用已通过安全审查的获批工具；税务局等机构此前已封禁同类直连。监管重点从能力转向采购与数据通道。</p>
+  <div class="meta">10月26日 · SVT / Sveriges Radio / HIMIAO · <a href="https://himiao.ai/daily/2026-10-25/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>OpenAI 以大幅折扣争夺 Anthropic 大客户：Replit 年约逾亿美元 <span class="tag tag-hot">热</span></h3>
+  <p>据 The Information：OpenAI 给出逾约 30% 折扣；Replit 多数 AI 支出转向 OpenAI。另有报道 Rippling／DataCamp 等份额同步迁移，部分成本降幅更高。一手合同未公开，按媒体转述收录。</p>
+  <div class="meta">10月25日 · The Information / The Decoder · <a href="https://ai-news-online.com/briefing/2026-10-25/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>得州总检察长起诉 OpenAI 与 Altman：请求禁止未成年人使用 ChatGPT <span class="tag tag-hot">热</span></h3>
+  <p>Collin 县诉讼主张平台对脆弱用户与未成年人保护不足，并寻求法院指定评估人批准新模型。主张未经法院认定；OpenAI 当时未立即回应。</p>
+  <div class="meta">10月23日 · CNBC / KBTX / AI News Online · <a href="https://ai-news-online.com/briefing/2026-10-25/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Elvis 权利方就 274 首歌起诉 Anthropic，索赔口径约 4100 万美元 <span class="tag tag-hot">热</span></h3>
+  <p>Authentic Brands Group 相关单位等指控 Claude 训练未经许可使用 Elvis 曲目并可复现歌词；按每作法定最高约 15 万美元计约 4100 万。一周内第二起音乐版权诉讼。Anthropic 见报时尚未置评。</p>
+  <div class="meta">10月23日 · Billboard / Rolling Stone · <a href="https://ai-news-online.com/briefing/2026-10-25/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>MCP 官方服务器 v2.1.0：修补路径穿越、CORS／Origin 与 IDNA 等八漏洞 <span class="tag tag-new">新</span></h3>
+  <p>filesystem／everything→2.0.1，mcp-server-fetch→2026.10.24。日期版本用户须显式安装语义化版本，包管理器不会自动提议升级。</p>
+  <div class="meta">10月25日 · modelcontextprotocol/servers · <a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Amkor 获英伟达 13 亿美元韩国先进封装新协议 <span class="tag tag-hot">热</span></h3>
+  <p>扩充韩国产能为英伟达服务；与亚利桑那协议合计约 30 亿美元多年期，含预付款锁定产能。先进封装继续充当算力扩张瓶颈。</p>
+  <div class="meta">10月25日 · Amkor / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-25" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>蚂蚁百灵发布 Ling-3.1-flash：560B 总参／25B 激活、1M 上下文 <span class="tag tag-new">新</span></h3>
+  <p>Hybrid-linear MoE 原生混合推理；在智能体、搜索、办公与软件工程等真实任务上相对 3.0-flash 提升，并公布 Terminal-Bench 等自评。权重与推理配方见 HF／SGLang。</p>
+  <div class="meta">10月25日 · inclusionAI / Hugging Face · <a href="https://huggingface.co/inclusionAI/Ling-3.1-flash" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Anthropic IPO 估值讨论：媒体称参会投资者下修至约 1.5 万亿美元 <span class="tag tag-fund">资</span></h3>
+  <p>路透等转述：投资者日披露后，估值讨论从约 2 万亿口径下修；三季度营收环比增速放缓等被引用。场外与讨论数字并存，以最终定价为准。</p>
+  <div class="meta">10月25日 · 路透 / 虎嗅 / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-25" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>CoreWeave 创始人合计套现约 33 亿美元；股债双杀叙事延续 <span class="tag tag-fund">资</span></h3>
+  <p>IPO 以来创始人套现口径约 33 亿（其中约 24 亿在 2026 年）；股价较峰值大幅回撤，无担保债与 CDS 定价显示压力。新云高杠杆模式继续被信用市场重新定价。</p>
+  <div class="meta">10月25日 · 虎嗅 / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-25" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Cerebras：以 Kimi K3 为例演示约 59 片晶圆部署万亿参模型 <span class="tag tag-new">新</span></h3>
+  <p>官方技术文假设 4-bit 权重：线性注意力层与密集层分片到 WSE-3T，约 59 片；KV 缓存占并发上限。属厂商部署账，非第三方实测吞吐。</p>
+  <div class="meta">10月22日 · Cerebras / HIMIAO · <a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>英伟达开源 Flora：机器人视频标注成本据报约为 GPT-6 Astra 的 1/125 <span class="tag tag-new">新</span></h3>
+  <p>三只微调 Qwen 系模型覆盖分段／描述／奖励；官方估算约 0.72 美元／小时 vs Astra 约 88.5 美元，并称用于 GR00T 训练。数字为厂商口径。</p>
+  <div class="meta">10月25日 · The Decoder / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-25" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+  <h3>AI 相关债务发行约 4660 亿美元；CDS 对冲交易额激增 <span class="tag tag-fund">资</span></h3>
+  <p>摩根士丹利等口径：2026 年迄今 AI 相关债务远高于上年同期；与甲骨文／超大规模云等挂钩的 CDS 周均成交大幅抬升。资本开支叙事进入信用市场定价阶段。</p>
+  <div class="meta">10月25日 · 摩根士丹利 / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-25" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-papers">
+  <h2>📄 论文<span class="count">8 篇</span></h2>
+<div class="card">
+  <h3>EpiSEM-Bench：缺失证据下评测 LLM 智能体的安全与证据恢复</h3>
+  <div class="paper-authors">EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence</div>
+  <p>在证据缺失场景测智能体是否乱编、能否恢复可验证证据链——把「不知道」做成可打分的安全维度。</p>
+  <div class="meta">Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu, Zhongxiang Dai, Shuang Qiu · <a href="https://arxiv.org/abs/2610.31650" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>谁对谁谄媚？自信 LLM、人类服从与信任校准崩塌</h3>
+  <div class="paper-authors">Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration</div>
+  <p>长文研究谄媚双向结构：模型过度附和与人类过度 defer 如何一起毁掉校准，而不只是「模型太会拍马」。</p>
+  <div class="meta">Deepthika S, Pawni Yadav, B. Sankar · <a href="https://arxiv.org/abs/2610.31579" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>编码智能体的自适应技能粒度：运行时路由与宏到微恢复</h3>
+  <div class="paper-authors">Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery</div>
+  <p>技能太大难复用、太碎难编排——提出运行时路由与失败时从宏技能下钻到微步骤的恢复机制。</p>
+  <div class="meta">Dingxuan Zhang, Yanhui Jiang, Jun Wang, Hefeng Zhou · <a href="https://arxiv.org/abs/2610.31461" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>智能体认证执行Harness：推理与动作之间的 Petri 网监督控制</h3>
+  <div class="paper-authors">Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action</div>
+  <p>在推理与动作之间插入可认证、少侵入的监督控制，让「想做」与「获准做」分离——对接本周安全评测断网同题。</p>
+  <div class="meta">Chao Gu, Quanyan Zhu · <a href="https://arxiv.org/abs/2610.31376" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>Muffin：异步 AI 智能体的共享内存缓冲</h3>
+  <div class="paper-authors">Muffin - A Shared Memory Buffer for Asynchronous AI Agents</div>
+  <p>给异步多智能体一块可共享的内存缓冲，降低靠消息队列传来传去的协调税。</p>
+  <div class="meta">Ping-Lin Kuo, Suman Navaratnarajah, Christian Frey, Gresa Shala, Josif Grabocka · <a href="https://arxiv.org/abs/2610.31355" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>RIPPLE：过程级策略学习与效果感知信用，服务长程智能体编码</h3>
+  <div class="paper-authors">RIPPLE: Recovery Internalization through Process-Level Policy Learning and Effect-Aware Credit for Long-Horizon Agentic Coding</div>
+  <p>把恢复能力内化进过程级策略，并用效果感知信用分配，针对「跑很久、工具很多」的编码智能体。</p>
+  <div class="meta">Jingxuan Xu, Zihang Xu, Yuechen Luo, Ziqi Miao, Wenqiang Zhu, Weihao Li, Junhao Fan, Xinshun Feng, Zhiyi Lai, Yanan Wu, Haoyang Huang, Ken Deng · <a href="https://arxiv.org/abs/2610.31276" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>ColaBench：评测个人智能体的记忆引导知识获取</h3>
+  <div class="paper-authors">ColaBench: Evaluating Memory-Guided Knowledge Acquisition in Personal Agents</div>
+  <p>测个人助手能不能靠记忆持续学到用户侧知识，而不是每次会话从零开始——记忆从功能清单变成可基准。</p>
+  <div class="meta">Wenjie Zhang, Zhichao Shi, Xuhui Jiang, Xiaojun Wu, Cehao Yang, Chengjin Xu, Xiaoning Song · <a href="https://arxiv.org/abs/2610.30989" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+  <h3>Direct Pass@k 优化用于思维剪枝（周末提交，周一仍具分量）</h3>
+  <div class="paper-authors">Direct Pass@k Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning</div>
+  <p>把 Pass@k 直接写进测试时思维剪枝目标，权衡质量与多样性；周末 arXiv 批次中仍属高相关推理侧工作。</p>
+  <div class="meta">Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn · <a href="https://arxiv.org/abs/2610.31667" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+</section>
+<section id="sec-models">
+  <h2>🤖 模型<span class="count">6 条</span></h2>
+<div class="card">
+  <h3>Ling-3.1-flash <span class="tag tag-new">模型</span></h3>
+  <p><strong>蚂蚁百灵／inclusionAI</strong> — 560B 总参／25B 激活、百万上下文 Hybrid-linear MoE；真实任务与 Terminal-Bench／SWE 等自评相对 3.0-flash 提升。HF 权重＋SGLang day-0／vLLM 配方。</p>
+  <div class="meta"><a href="https://huggingface.co/inclusionAI/Ling-3.1-flash" target="_blank" rel="noopener">链接 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Ming-3.0 语音模型组 <span class="tag tag-new">模型</span></h3>
+  <p><strong>蚂蚁百灵／inclusionAI</strong> — MIT 开源多款语音模型（TTS／ASR／音频理解等口径）；零样本声音复制与多语／方言控制，可商用、需自建推理。周一情报源重点收录。</p>
+  <div class="meta"><a href="https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B" target="_blank" rel="noopener">链接 ↗</a></div>
+</div>
+<div class="card">
+  <h3>NVIDIA Nemotron 3.5 Lightning 30B-A3B <span class="tag tag-new">模型</span></h3>
+  <p><strong>NVIDIA</strong> — 30B／3B 激活，Mamba-2＋MoE＋Attention 混合；标称最高约 1M 上下文，单卡 H100／DGX Spark 可部署叙事。面向长程智能体执行层；OpenMDW。</p>
+  <div class="meta"><a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4" target="_blank" rel="noopener">链接 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Nanbeige4.3-33B <span class="tag tag-new">模型</span></h3>
+  <p><strong>Nanbeige</strong> — HF trending 新面孔：约 33B 文本生成，更新约 11 小时内进入发现页；下载尚早，观察后续量化与社区复现。</p>
+  <div class="meta"><a href="https://huggingface.co/Nanbeige/Nanbeige4.3-33B" target="_blank" rel="noopener">链接 ↗</a></div>
+</div>
+<div class="card">
+  <h3>lodestones/Kromoss <span class="tag tag-new">模型</span></h3>
+  <p><strong>lodestones</strong> — 文生图约 5B，一日内进入 trending；社区下载与点赞增速靠前，延续「可本地跑的生成模型」发现页主线。</p>
+  <div class="meta"><a href="https://huggingface.co/lodestones/Kromoss" target="_blank" rel="noopener">链接 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Block Dessa（语音，受邀评测） <span class="tag tag-new">模型</span></h3>
+  <p><strong>Block（Jack Dorsey）</strong> — 全双工语音到语音：可同时听说／插话；据称仅用真人对话录音、无文本预训练，单机架 GB200 训练、可在 MacBook Pro M4 Max 本地跑。未公开权重与基准，仅安全研究者受邀。</p>
+  <div class="meta"><a href="https://ai-news-online.com/briefing/2026-10-25/" target="_blank" rel="noopener">链接 ↗</a></div>
+</div>
+</section>
+<section id="sec-ecosystem">
+  <h2>🛠️ 生态<span class="count">6 条</span></h2>
+<div class="card">
+  <h3>MCP 官方服务器 v2.1.0 安全发布：三套件八漏洞 <span class="tag tag-new">生态</span></h3>
+  <p>filesystem／everything 2.0.1 加固路径与 Origin；fetch 2026.10.24 修 IDNA／NAT64／robots 重定向。日期版本钉死升级提醒写进 release notes。</p>
+  <div class="meta">modelcontextprotocol/servers · <a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+<div class="card">
+  <h3>月之暗面 Kimi Code：多 Agent 默认改回单一模式 <span class="tag tag-new">生态</span></h3>
+  <p>CLI 2.3.2／Desktop 1.1.3：swarm／并行委派需显式授权或配置，抑制意外 token 暴走与难复现失败。对正在调 Agent swarm 的团队是产品侧刹车信号。</p>
+  <div class="meta">AIDaily / Moonshot · <a href="https://aidaily.chiba.tw/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Cognition 开源 Devin 漏洞修复技能：三类高危一次覆盖 <span class="tag tag-new">生态</span></h3>
+  <p>MIT 智能体技能插件：盘点→批准→修改→测试→每仓一 PR，目标缩短补丁到仓库落地间隔；对应近期 PHP2Shell 等事件后的修复编排。</p>
+  <div class="meta">Cognition / HIMIAO · <a href="https://himiao.ai/daily/2026-10-25/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+<div class="card">
+  <h3>JetBrains ThinkRail：以 pi coding agent 为核心的 Agent IDE <span class="tag tag-new">生态</span></h3>
+  <p>隔离工作区、规格文件、可复用 Skills 与并行 session；面向「AI 写代码但要可审可提交」的工作流，而不是聊天窗里贴 diff。</p>
+  <div class="meta">AIDaily / JetBrains · <a href="https://aidaily.chiba.tw/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+<div class="card">
+  <h3>英伟达开源 Flora 机器人视频数据引擎 <span class="tag tag-new">生态</span></h3>
+  <p>低成本标注管线＋三模型分工；声称相对用前沿闭源模型标注大幅降本，服务 GR00T 等具身训练。数据引擎开源继续绑在芯片生态上。</p>
+  <div class="meta">The Decoder / 读懂AI时代 · <a href="https://www.readaitime.com/digests/2026-10-25" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+<div class="card">
+  <h3>DuckDB 2.0 LTS：Quack 协议与异步 I/O（分析栈侧） <span class="tag tag-new">生态</span></h3>
+  <p>客户端／服务器、VARIANT、异步 S3 等；LTS 支持至约 2027。非模型发布，但对本地／湖仓分析与 Agent 取数栈仍相关，按周一工程热点收录。</p>
+  <div class="meta">Publickey / AIDaily · <a href="https://aidaily.chiba.tw/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+<!-- /digest-ui2:js -->
+
+</body>
+</html>

@@ -1,5 +1,71 @@
 [
   {
+    "t": "瑞典政府办公室公务电脑禁用 ChatGPT／Claude：10 月 26 日生效",
+    "s": "员工改用已通过安全审查的获批工具；税务局等机构此前已封禁同类直连。监管重点从能力转向采购与数据通道。",
+    "d": "10月26日",
+    "src": "SVT",
+    "link": "https://himiao.ai/daily/2026-10-25/",
+    "m": []
+  },
+  {
+    "t": "OpenAI 以大幅折扣争夺 Anthropic 大客户：Replit 年约逾亿美元",
+    "s": "据 The Information：OpenAI 给出逾约 30% 折扣；Replit 多数 AI 支出转向 OpenAI。另有报道 Rippling／DataCamp 等份额同步迁移，部分成本降幅更高。一手合同未公开，按媒体转述收录。",
+    "d": "10月25日",
+    "src": "The Information",
+    "link": "https://ai-news-online.com/briefing/2026-10-25/",
+    "m": []
+  },
+  {
+    "t": "得州总检察长起诉 OpenAI 与 Altman：请求禁止未成年人使用 ChatGPT",
+    "s": "Collin 县诉讼主张平台对脆弱用户与未成年人保护不足，并寻求法院指定评估人批准新模型。主张未经法院认定；OpenAI 当时未立即回应。",
+    "d": "10月23日",
+    "src": "CNBC",
+    "link": "https://ai-news-online.com/briefing/2026-10-25/",
+    "m": []
+  },
+  {
+    "t": "Elvis 权利方就 274 首歌起诉 Anthropic，索赔口径约 4100 万美元",
+    "s": "Authentic Brands Group 相关单位等指控 Claude 训练未经许可使用 Elvis 曲目并可复现歌词；按每作法定最高约 15 万美元计约 4100 万。一周内第二起音乐版权诉讼。Anthropic 见报时尚未置评。",
+    "d": "10月23日",
+    "src": "Billboard",
+    "link": "https://ai-news-online.com/briefing/2026-10-25/",
+    "m": []
+  },
+  {
+    "t": "MCP 官方服务器 v2.1.0：修补路径穿越、CORS／Origin 与 IDNA 等八漏洞",
+    "s": "filesystem／everything→2.0.1，mcp-server-fetch→2026.10.24。日期版本用户须显式安装语义化版本，包管理器不会自动提议升级。",
+    "d": "10月25日",
+    "src": "modelcontextprotocol",
+    "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0",
+    "m": []
+  },
+  {
+    "t": "Amkor 获英伟达 13 亿美元韩国先进封装新协议",
+    "s": "扩充韩国产能为英伟达服务；与亚利桑那协议合计约 30 亿美元多年期，含预付款锁定产能。先进封装继续充当算力扩张瓶颈。",
+    "d": "10月25日",
+    "src": "Amkor",
+    "link": "https://www.readaitime.com/digests/2026-10-25",
+    "m": []
+  },
+  {
+    "t": "蚂蚁百灵发布 Ling-3.1-flash：560B 总参／25B 激活、1M 上下文",
+    "s": "Hybrid-linear MoE 原生混合推理；在智能体、搜索、办公与软件工程等真实任务上相对 3.0-flash 提升，并公布 Terminal-Bench 等自评。权重与推理配方见 HF／SGLang。",
+    "d": "10月25日",
+    "src": "inclusionAI",
+    "link": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
+    "m": [
+      "Ling 3.1 Flash"
+    ]
+  },
+  {
+    "t": "Anthropic IPO 估值讨论：媒体称参会投资者下修至约 1.5 万亿美元",
+    "s": "路透等转述：投资者日披露后，估值讨论从约 2 万亿口径下修；三季度营收环比增速放缓等被引用。场外与讨论数字并存，以最终定价为准。",
+    "d": "10月25日",
+    "src": "路透",
+    "link": "https://www.readaitime.com/digests/2026-10-25",
+    "m": []
+  },
+  {
     "t": "亚马逊 CEO：AI 年化收入超 250 亿美元，2026–2028 产能梯次售罄",
     "s": "贾西披露 AWS AI 年化收入运行速率已超 250 亿美元；2026 年大型算力产能售罄，2027 基本售罄，2028 亦有相当比例预订。叠加电力与内存瓶颈，短缺叙事从芯片延伸到站点资源。自研 Trainium 称性价比较同级约高 30%–40%。",
     "d": "10月24日",
