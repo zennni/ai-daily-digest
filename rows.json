@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "models": [
     {
       "name": "Claude Opus 5.5",
@@ -2555,6 +2555,19 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-26",
+      "t": "全日量核验：AA v4.3.2 榜首与 Top 无变、Changelog 无 10/24–10/26 新具名 LLM；官价/促销抽核一致；周一早间人行/CFETS 尚未公布 10/26 中间价，汇率继续沿用 10/23 CFETS 6.7180",
+      "m": [
+        "Claude Opus 5.5",
+        "Claude Sonnet 5.5",
+        "Muse Wonder Full",
+        "Kimi K3.1 Pro",
+        "GPT-6 Astra",
+        "Gemini 4 Argon"
+      ],
+      "s": "<b>06:30 全日量定稿</b>：联网复核 Artificial Analysis Intelligence Index 仍为 <b>v4.3.2</b>，Top 仍 Opus 5.5 Max（58）/ Sonnet 5.5 Max（56）/ Opus 5.5 xHigh（56）/ Muse Wonder Full Max（56）/ Kimi K3.1 Pro（55）；Changelog 最新具名 LLM 入榜仍为 <b>10/23 Kimi K3.1 Pro</b>，10/24–10/26 无新具名 Intelligence Index 条目。官价抽核：Anthropic Opus/Sonnet/Fable 标价未变；OpenAI Astra / 6.1 Sol / Luna 标价未变，GPT-5.6 Sol 促销价至少至 <b>11/21</b>；Gemini 4 Argon 介绍期 $2/$10 至 <b>11/30</b>、3.8 Flash 促销至 <b>12/31</b>，与主表一致。10/26 为周一，截至早间核验时刻人行/CFETS 尚未公布当日中间价（官网最新仍为 10/23），汇率继续沿用 <b>10/23 的 6.7180</b>。本地/生图：K3.1 Pro 权重仍未放出（承诺 11/4 前）；FLUX.3 Klein 无新证据需改模板。本期不改正文 models 分数与标价，仅翻日并记核验结论。"
+    },
     {
       "d": "10-25",
       "t": "全日量核验：AA v4.3.2 榜首与 Top 无变、Changelog 无 10/24–10/25 新具名 LLM；官价/促销抽核一致；汇率周日沿用 10/23 CFETS 6.7180",
