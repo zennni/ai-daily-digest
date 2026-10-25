@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI 前沿情报台 · 日报 × 榜单综合 Hub</title>
+<script>(function(){try{var v=localStorage.getItem("hub-board-mobile");if(v==="table")v="compact";if(v!=="full"&&v!=="compact"&&v!=="cards")v="compact";document.documentElement.setAttribute("data-hub-board-mobile",v);}catch(e){document.documentElement.setAttribute("data-hub-board-mobile","compact");}})();</script>
 <style>
 :root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b;--accent:#f59e0b;--accent-dk:#ea580c;--accent-bg:#fff7ed;--tabs-top:0px;--tabs-h:44px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -66,6 +67,9 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .detail-title{font-size:15px;font-weight:700;color:var(--th-text);line-height:1.3;min-width:0;flex:1}
 .detail-close{flex:0 0 auto;width:28px;height:28px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink-soft);cursor:pointer;font-size:16px;line-height:1;font-family:inherit;padding:0}
 @media (hover:hover){.detail-close:hover{border-color:var(--primary2);color:var(--primary)}}
+.detail-foot{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);display:flex;justify-content:stretch}
+.detail-board-btn{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink-soft);cursor:pointer;font-size:12.5px;font-weight:600;font-family:inherit}
+@media (hover:hover){.detail-board-btn:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
 @media (max-width:760px){
   .detail{width:min(420px,92vw);max-height:70vh;padding:14px 14px;border-radius:12px}
   .detail-title{font-size:16px}
@@ -120,7 +124,7 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .badge-S{background:#1d4ed8}.badge-A{background:#0e9f6e}.badge-B{background:#b45309}.badge-C{background:#9a3412}.badge-D{background:#64748b}.badge-N\/A{background:#94a3b8}
 
 
-/* 主榜窄屏卡片（②）：≤760px 隐藏宽表横滑，改竖向精简卡 */
+/* 榜窄屏三态：默认精简表；本地 LLM/生图仍用 .board-cards */
 .board-cards{display:none}
 .bc-item{border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;background:var(--card)}
 .bc-top{display:flex;align-items:flex-start;gap:10px}
@@ -136,7 +140,52 @@ td.mname{font-weight:600;white-space:nowrap;cursor:pointer}
 .bc-item.open .bc-more{display:block}
 .bc-toggle{display:inline-block;margin-top:8px;font-size:12px;color:var(--primary);cursor:pointer;user-select:none;background:none;border:none;padding:0;font-family:inherit}
 .bc-actions{display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:2px}
-@media(max-width:760px){.ddate{min-width:64px}.cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}#boardTblWrap,#valueTblWrap,#openTblWrap{display:none}.board-cards{display:block}.filters{gap:8px}.filters select,.filters input[type=number]{flex:1 1 140px;min-width:0;font-size:16px}}
+.mobile-board-mode{display:none;margin-left:auto}
+@media(max-width:760px){
+  .ddate{min-width:64px}
+  .cmp-tags,.cmp-inner{flex-direction:column;align-items:flex-start}
+  .mobile-board-mode{display:inline-flex}
+  /* 默认精简 + 详细：三表横滑；格子才出 Cards */
+  #boardTblWrap,#valueTblWrap,#openTblWrap{
+    display:block;overflow-x:auto;-webkit-overflow-scrolling:touch
+  }
+  #boardCards,#valueCards,#openCards{display:none!important}
+  .board-cards{display:block} /* 仅抬本地 .llm-cards/.img-cards */
+  #boardTbl,#valueTbl,#openTbl{font-size:12px}
+  #boardTbl th,#boardTbl td,
+  #valueTbl th,#valueTbl td,
+  #openTbl th,#openTbl td{padding:6px 7px}
+  /* 精简列（默认 / compact）：同桌面 board-compact 口径 */
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(4),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(4),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(5),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(5),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(7),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(7),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(8),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(8),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(9),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(9),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(10),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(10),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(12),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(12),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(13),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(13),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl th:nth-child(14),
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td:nth-child(14){display:none}
+  html:not([data-hub-board-mobile="full"]):not([data-hub-board-mobile="cards"]) #boardTbl td.mname .star-inline{display:inline;margin-left:6px;vertical-align:middle}
+  html[data-hub-board-mobile="full"] #boardTbl td.mname .star-inline{display:none}
+  /* 格子：藏三表、露三处 Cards */
+  html[data-hub-board-mobile="cards"] #boardTblWrap,
+  html[data-hub-board-mobile="cards"] #valueTblWrap,
+  html[data-hub-board-mobile="cards"] #openTblWrap{display:none}
+  html[data-hub-board-mobile="cards"] #boardCards,
+  html[data-hub-board-mobile="cards"] #valueCards,
+  html[data-hub-board-mobile="cards"] #openCards{display:block!important}
+  .filters{gap:8px}
+  .filters select,.filters input[type=number]{flex:1 1 140px;min-width:0;font-size:16px}
+}
 
 /* Wave2：主榜筛选默认折叠 + Hub 顶栏锚点 */
 .filters-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px}
@@ -229,7 +278,7 @@ html{scroll-padding-top:calc(var(--tabs-top) + var(--tabs-h))}
   #v-local h2.sec,#v-local h3.sub,#v-local h3.sub2{scroll-margin-top:calc(var(--tabs-h) + var(--local-toc-h) + 8px)}
 }
 
-/* Wave4b⑧：桌面主榜默认精简列（☑/排名/名+★/AA/任务成本）；展开全列。≤760 仍走卡片 */
+/* Wave4b⑧：桌面主榜精简列（☑/排名/名+★/AA/任务成本）；展开全列。≤760 走三态详细|精简|格子 */
 #colsToggle{display:none}
 @media(min-width:761px){
   #colsToggle{display:inline-flex;align-items:center}
@@ -339,7 +388,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
   .topbar .searchwrap{margin-left:0;flex:1 1 100%;width:100%;max-width:none;min-width:0}
 }
 
-/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏卡统一 bc 壳（主榜/性价比/开放 + 本地 LLM/生图） */
+/* 密度：桌面表跟开放权重（基础 table 12.5/垫 6–7）；窄屏三态详细|精简|格子；本地 LLM/生图仍 bc 卡；新闻日卡仍 --bc-* */
 :root{
   --bc-pad:6px 8px;--bc-name-fs:13px;--bc-gap:5px;--bc-meta-fs:11.5px;
 }
@@ -435,6 +484,11 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       </div>
       <button type="button" id="filtersToggle" class="filters-toggle" aria-expanded="false" aria-controls="boardFilters">筛选 ▾</button>
       <button type="button" id="colsToggle" class="filters-toggle" aria-expanded="true" aria-controls="boardTbl" title="桌面精简列 / 全列">精简列 ▴</button>
+      <div class="board-mode mobile-board-mode" id="mobileBoardMode" role="group" aria-label="窄屏主榜视图">
+        <button type="button" class="board-mode-btn" data-mobile-mode="full" aria-pressed="false" title="窄屏完整列横滑表">详细</button>
+        <button type="button" class="board-mode-btn on" data-mobile-mode="compact" aria-pressed="true" title="窄屏精简列横滑表">精简</button>
+        <button type="button" class="board-mode-btn" data-mobile-mode="cards" aria-pressed="false" title="一卡一模型">格子</button>
+      </div>
       <div class="filters is-collapsed" id="boardFilters">
       <select id="fVendor"><option value="">全部厂商</option></select>
       <select id="fLic"><option value="">全部许可</option></select>
@@ -473,14 +527,26 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
 </div>
 
 <!-- 本地部署 -->
-<div class="view" id="v-local">
-  <h2 class="sec">本地部署价值榜（逐档位显存榜单）</h2>
-  <p class="lead" style="color:#64748b;font-size:13px">按单机统一内存/显存分档。显存 = 权重（推荐量化）+ KV 余量；≈ 为估算值。数据中心级不推荐个人电脑。每档首列 <b>#</b> 为档内综合推荐排名（有 AA 分者按分优先，无分模型按官方定位/第三方评测综合评估；标注“超档/临界”的配置自动降位），第一名高亮即“本档首选”。</p>
-  <h3 class="sub">8GB 档（端侧 / 入门桌面，INT4 / GGUF Q4）</h3>
+<div class="view" id="v-local" role="tabpanel" aria-labelledby="tab-local" hidden>
+  <h2 class="sec" id="local-llm">本地部署价值榜（逐档位显存榜单）</h2>
+  <p class="lead" style="color:var(--muted);font-size:13px">按单机统一内存/显存分档。显存 = 权重（推荐量化）+ KV 余量；≈ 为估算值。数据中心级不推荐个人电脑。每档首列 <b>#</b> 为档内综合推荐排名（有 AA 分者按分优先，无分模型按官方定位/第三方评测综合评估；标注“超档/临界”的配置自动降位），第一名高亮即“本档首选”。</p>
+  <div class="local-mode" role="group" aria-label="本地部署子界面">
+    <button type="button" class="local-mode-btn on" data-local="llm" aria-pressed="true">对话 / 本地 LLM</button>
+    <button type="button" class="local-mode-btn local-mode-img" data-local="img" aria-pressed="false">生图</button>
+  </div>
+  <nav class="local-toc" id="localTocLlm" aria-label="本地 LLM 档位导航"><div class="lt-group"><a href="#local-llm-8gb">8GB</a><a href="#local-llm-16gb">16GB</a><a href="#local-llm-24gb">24GB</a><a href="#local-llm-32gb">32GB</a><a href="#local-llm-48gb">48GB</a><a href="#local-llm-64gb">64GB</a><a href="#local-llm-96gb">96GB</a><a href="#local-llm-128gb">128GB</a><a href="#local-llm-192gb">192GB</a><a href="#local-llm-512gb">512GB</a><a href="#local-llm-datacenter">数据中心</a></div></nav>
+  <nav class="local-toc" id="localTocImg" aria-label="生图档位导航" hidden><div class="lt-group"><a class="lt-img" href="#local-img-8gb">8GB</a><a class="lt-img" href="#local-img-16gb">16GB</a><a class="lt-img" href="#local-img-24gb">24GB</a><a class="lt-img" href="#local-img-48gb">48GB</a><a class="lt-img" href="#local-img-datacenter">数据中心</a></div></nav>
+
+  <div id="localMount" class="local-mount" data-mounted="0">
+    <p class="empty local-mount-ph">切换到本 Tab 后加载档位表与生图榜…</p>
+  </div>
+</div>
+
+<script type="text/plain" id="localHeavySrc"><h3 class="sub" id="local-llm-8gb">8GB 档（端侧 / 入门桌面，INT4 / GGUF Q4）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>Granite 4.2 8B</b></td><td>8B</td><td>INT4</td><td>≈4.4GB</td><td>128K→512K</td><td>Apache 2.0</td><td>11</td><td>IBM 8/25 开源，AA 12 分为 8GB 档首个有分模型；三档思考模式（Full/Low-effort/Non-thinking）、原生工具调用 + agentic RL；IBM 自测 SWE-bench 47.67；文本 only（无多模态），编码/Agent 场景优选，综合对话与多模态需求选 Qwen3.5-9B。</td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>Granite 4.2 8B</b></td><td>8B</td><td>INT4</td><td>≈4.4GB</td><td>128K→512K</td><td>Apache 2.0</td><td>11</td><td>IBM 8/25 开源，AA 11 分为 8GB 档首个有分模型；三档思考模式（Full/Low-effort/Non-thinking）、原生工具调用 + agentic RL；IBM 自测 SWE-bench 47.67；文本 only（无多模态），编码/Agent 场景优选，综合对话与多模态需求选 Qwen3.5-9B。</td></tr>
       <tr><td class="rk">②</td><td><b>Qwen3.5-9B</b></td><td>9B</td><td>INT4</td><td>≈5GB</td><td>128K</td><td>Apache 2.0</td><td>—</td><td>8GB 档综合能力上限（无同口径分），均衡 + 多模态，生态成熟。</td></tr>
       <tr><td class="rk">③</td><td><b>Gemma 4 12B</b></td><td>12B</td><td>INT4</td><td>≈7GB</td><td>131K</td><td>Apache 2.0</td><td>—</td><td>谷歌系小模型，原生多模态。</td></tr>
       <tr><td class="rk">④</td><td><b>Granite 4.2 3B</b></td><td>3B</td><td>INT4</td><td>≈1.65GB</td><td>128K→512K</td><td>Apache 2.0</td><td>—</td><td>支持工具调用（能力有限），显存占用极低，适合端侧 Agent 试水；与 8B 同日开源，v4.3.2 分数待复核。</td></tr>
@@ -488,9 +554,8 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑥</td><td><b>Llama 3.2 3B</b></td><td>3B</td><td>INT4</td><td>≈2.5GB</td><td>128K</td><td>Llama License</td><td>—</td><td>生态与微调资源最丰富。</td></tr>
       <tr><td class="rk">⑦</td><td><b>Qwen3.5-0.8B</b></td><td>0.8B</td><td>INT4</td><td>≈0.5GB</td><td>32K</td><td>Apache 2.0</td><td>—</td><td>入门对话，Qwen 生态兼容性最好。</td></tr>
       <tr><td class="rk">⑧</td><td><b>K2 Horizon 7B</b></td><td>7B</td><td>INT4</td><td>≈4GB</td><td>512K</td><td>Apache 2.0</td><td>—</td><td>9/3 全开源舰队成员（IFM/MBZUAI），手机/端侧定位；训练代码/数据配方/checkpoint 全开放；AA 待评，暂列候选。</td></tr>
-      <tr><td class="rk">⑨</td><td><b>Nemotron 3.5 Bolt E4B</b></td><td>≈8B / 4B</td><td>Q4_K_M</td><td>≈4GB</td><td>64K</td><td>OpenMDW-1.1</td><td>—</td><td>10/23 HF 发布，基于 Gemma 4 E4B-it 后训练的端侧模型（总参约 8B、有效约 4B）；Q4_K_M 约 4GB 内存即可运行，面向本地语音助手、游戏角色与机器人；对话模式 + 可设思考预算；厂商自测 Brevity Benchmark 82.52（优于 Gemma 4 E4B-it 的 79.99、Qwen3.5 4B 的 75.35）；<b>无 AA Intelligence Index 分，按候选列位、不入档内分排序</b></td></tr>
     </tbody></table></div>
-  <h3 class="sub">16GB 档（主流游戏卡 / 16GB Mac，INT4）</h3>
+  <h3 class="sub" id="local-llm-16gb">16GB 档（主流游戏卡 / 16GB Mac，INT4）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -501,7 +566,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑤</td><td><b>Nemotron 3.5 Lightning</b></td><td>30B / 3B</td><td>INT4</td><td>≈17GB（临界）</td><td>256K–1M</td><td>OpenMDW-1.1</td><td>13</td><td>8/11 发布，Agent 执行层，速度 ~670 tok/s，24GB 档更舒适。</td></tr>
       <tr><td class="rk">⑥</td><td><b>InternLM3-20B</b></td><td>20B</td><td>INT4</td><td>≈11GB</td><td>—</td><td>Apache 2.0</td><td>—</td><td>上海AI实验室，学术认可度高。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">24GB 档（RTX 4090 等消费级旗舰，INT4）</h3>
+  <h3 class="sub" id="local-llm-24gb">24GB 档（RTX 4090 等消费级旗舰，INT4）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -509,25 +574,25 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">②</td><td><b>Nemotron 3.5 Bolt 74B-A9B</b></td><td>74B / 9B</td><td>2-bit QAT</td><td>≈24GB（临界；长上下文需 KV 卸载）</td><td>256K</td><td>OpenMDW-1.1</td><td>21</td><td><b>10/15 权重开源、AA 已评：本期由「AA 待评」转为正式入主榜</b>——NVIDIA 新 Bolt 家族首款，原生 2-bit 量化感知训练把 74B/9B MoE 压进 24GB 单卡；<b>AA v4.3.2 21.4（&lt;100B 参数模型第 4、美国同尺寸第一）</b>，较 Nemotron 3 Super（12.8）高 8.6 分而总参数少 39%；256K 上下文；权重/数据/配方全开放，llama.cpp／vLLM／Ollama／LM Studio 及 Hermes/OpenClaw 生态首日支持；<b>许可为 OpenMDW-1.1（本期修正：此前标注为 NVIDIA Open Model License）</b>；RTX Spark 笔记本 10/16 上市。</td></tr>
       <tr><td class="rk">③</td><td><b>Muse Glimmer 30B</b></td><td>30B</td><td>INT4</td><td>≈18GB</td><td>131K</td><td>Apache 2.0</td><td>17</td><td>Meta 8/10 开源（Apache 2.0 首例）；AA v4.3.2 由 18 下调至 17（v4.1.1 口径曾为 35）；本地 Agent 定位，INT4 单卡 4090 可跑。</td></tr>
       <tr><td class="rk">④</td><td><b>Granite 4.2 30B</b></td><td>30B</td><td>INT4</td><td>≈16.5GB</td><td>128K→512K</td><td>Apache 2.0</td><td>13</td><td>16GB 档临界、本档舒适；三档思考模式可按任务控制推理开销；文本 only。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>INT4</td><td>≈18GB</td><td>262K</td><td>Apache 2.0</td><td>15</td><td>谷歌开源主力，AA v4.3.2 14.7（上期 15），多模态。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>INT4</td><td>≈18GB</td><td>262K</td><td>Apache 2.0</td><td>15</td><td>谷歌开源主力，AA v4.3.2 15（整数分；小数约 14.7–15），多模态。</td></tr>
       <tr><td class="rk">⑥</td><td><b>Nemotron 3.5 Lightning</b></td><td>30B / 3B</td><td>INT4</td><td>≈17GB</td><td>256K–1M</td><td>OpenMDW-1.1</td><td>13</td><td>16GB 临界、24GB 舒适；Agent 高频调用最划算。</td></tr>
       <tr><td class="rk">⑦</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>INT4</td><td>≈20GB</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>"本地英雄"：MoE 快、能力接近 30B+ 稠密。</td></tr>
       <tr><td class="rk">⑧</td><td><b>K2 Horizon 36B-A4B</b></td><td>36B / 4B</td><td>INT4</td><td>≈20GB</td><td>512K</td><td>Apache 2.0</td><td>—</td><td>9/3 全开源舰队成员：Mixture-of-Value-Attention 稀疏注意力、每 token 仅 4B 激活；AA 待评，暂列候选。</td></tr>
       <tr><td class="rk">⑨</td><td><b>Nemotron 3 Nano Omni 30B-A3B</b></td><td>30B / 3B</td><td>INT4</td><td>≈18GB</td><td>128K</td><td>NVIDIA Open Model License</td><td>—</td><td>文/图/音/视/文档多模态 MoE。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">32GB 档（FP8 全精度 / 长上下文）</h3>
+  <h3 class="sub" id="local-llm-32gb">32GB 档（FP8 全精度 / 长上下文）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>Qwen3.8-27B</b></td><td>27B</td><td>FP8</td><td>≈31GB（临界）</td><td>262K→1M</td><td>Apache 2.0</td><td>34</td><td>AA v4.3.2 34 分为 32GB 档最高（官方发布 FP8 权重，与 16GB 档首选同款）；FP8 全精度 + 长 KV 偏紧，常规上下文或配量化更稳。</td></tr>
       <tr><td class="rk">②</td><td><b>Qwen3.6-27B</b></td><td>27B</td><td>FP8</td><td>≈30GB</td><td>262K</td><td>Apache 2.0</td><td>22</td><td>上代 27B 全精度，长文档舒适。</td></tr>
       <tr><td class="rk">③</td><td><b>Granite 4.2 30B</b></td><td>30B</td><td>FP8</td><td>≈33GB（临界）</td><td>128K→512K</td><td>Apache 2.0</td><td>13</td><td>FP8 高精度临界档（48GB 舒适）；官方提供 FP8/NVFP4/GGUF 多量化。</td></tr>
-      <tr><td class="rk">④</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>FP8</td><td>≈33GB（临界）</td><td>262K</td><td>Apache 2.0</td><td>15</td><td>高精度 31B，显存偏紧；AA v4.3.2 14.7。</td></tr>
+      <tr><td class="rk">④</td><td><b>Gemma 4 31B</b></td><td>31B</td><td>FP8</td><td>≈33GB（临界）</td><td>262K</td><td>Apache 2.0</td><td>15</td><td>高精度 31B，显存偏紧；AA v4.3.2 15。</td></tr>
       <tr><td class="rk">⑤</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>INT4 长上下文</td><td>20GB + 余量</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>24GB 的升级：更大 batch 与更长上下文。</td></tr>
       <tr><td class="rk">⑥</td><td><b>K2 Horizon 32B</b></td><td>32B（稠密）</td><td>INT4</td><td>≈18GB</td><td>512K</td><td>Apache 2.0</td><td>—</td><td>9/3 全开源舰队成员：32B 稠密推理、本地工作站/企业服务器定位；512K 长上下文为同显存段最长；AA 待评。</td></tr>
       <tr><td class="rk">⑦</td><td><b>Llama 3.3 70B</b></td><td>70B</td><td>INT4</td><td>≈40GB（超档）</td><td>128K</td><td>Llama License</td><td>—</td><td>70B 级 INT4 建议上 48GB 档。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">48GB 档（A6000 等专业卡，INT4 / FP8）</h3>
+  <h3 class="sub" id="local-llm-48gb">48GB 档（A6000 等专业卡，INT4 / FP8）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -536,9 +601,8 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">③</td><td><b>Qwen3.6-35B-A3B</b></td><td>35B / 3B</td><td>FP8</td><td>≈36GB</td><td>262K</td><td>Apache 2.0</td><td>—</td><td>MoE 高精度档，速度依然快。</td></tr>
       <tr><td class="rk">④</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB（超档）</td><td>1M</td><td>NVIDIA Open Model License</td><td>14</td><td>1M 上下文，建议 96GB 档。</td></tr>
       <tr><td class="rk">⑤</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>INT4</td><td>≈66GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>120B 级请上 64GB 档。</td></tr>
-      <tr><td class="rk">⑥</td><td><b>Nemotron 3.5 Bolt E4B</b></td><td>≈8B / 4B</td><td>Q4_K_M</td><td>≈4GB</td><td>64K</td><td>OpenMDW-1.1</td><td>—</td><td>10/23 HF 发布，基于 Gemma 4 E4B-it 后训练的端侧模型（总参约 8B、有效约 4B）；Q4_K_M 约 4GB 内存即可运行，面向本地语音助手、游戏角色与机器人；对话模式 + 可设思考预算；厂商自测 Brevity Benchmark 82.52（优于 Gemma 4 E4B-it 的 79.99、Qwen3.5 4B 的 75.35）；<b>无 AA Intelligence Index 分，按候选列位、不入档内分排序</b></td></tr>
     </tbody></table></div>
-  <h3 class="sub">64GB 档（INT4 的 120B 级门槛）</h3>
+  <h3 class="sub" id="local-llm-64gb">64GB 档（INT4 的 120B 级门槛）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -548,7 +612,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">④</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB（临界）</td><td>1M</td><td>NVIDIA Open Model License</td><td>14</td><td>1M 上下文企业工作负载。</td></tr>
       <tr><td class="rk">⑤</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>INT4</td><td>≈66GB（临界；官方 MXFP4 ≈61GB 可入本档）</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>官方称单张 80GB 可跑；改用官方 MXFP4 量化（≈61GB）可真正入档。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">96GB 档（工作站 / A100 80G 级）</h3>
+  <h3 class="sub" id="local-llm-96gb">96GB 档（工作站 / A100 80G 级）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -559,44 +623,46 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑤</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>INT4</td><td>≈68GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>14</td><td>1M 上下文的 Agent 与检索工作流。</td></tr>
       <tr><td class="rk">⑥</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>FP8 ≈132GB 超 96GB 档，需 128GB+。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">128GB 档（个人工作站极限：Q3 量化 / 内存卸载）</h3>
+  <h3 class="sub" id="local-llm-128gb">128GB 档（个人工作站极限：Q3 量化 / 内存卸载）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
-      <tr class="top"><td class="rk">①</td><td><b>Ling-3.0-flash</b></td><td>124B / 5.1B</td><td>FP8</td><td>官方 FP8 ≈128GB</td><td>262K</td><td>MIT</td><td>25</td><td>官方 BF16≈255GB / FP8≈128GB 两版；FP8 版体积减半、单机 128GB 统一内存或 2×80GB 可跑（官方 DGX Spark 方案），SGLang/vLLM 均可部署。</td></tr>
-      <tr><td class="rk">②</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>FP8 ≈132GB 超 128GB 档；本档请用 INT4（≈66GB）或上 160GB 档。</td></tr>
-      <tr><td class="rk">③</td><td><b>Qwen3.8-Flash-Next</b></td><td>125B + 51B Emb / 6B</td><td>FP8</td><td>主模型 ≈138GB（超档，51B embedding 需卸载内存）</td><td>262K→1M</td><td>Qwen Community 1.0</td><td>—</td><td>官方 FP8 版（8/26 同步开源）；主模型 FP8 超 128GB 档，建议 192GB 档或大内存工作站；与 96GB 档 INT4 方案同模型。</td></tr>
-      <tr><td class="rk">④</td><td><b>Nemotron 3.5 Bolt E4B</b></td><td>≈8B / 4B</td><td>Q4_K_M</td><td>≈4GB</td><td>64K</td><td>OpenMDW-1.1</td><td>—</td><td>10/23 HF 发布，基于 Gemma 4 E4B-it 后训练的端侧模型（总参约 8B、有效约 4B）；Q4_K_M 约 4GB 内存即可运行，面向本地语音助手、游戏角色与机器人；对话模式 + 可设思考预算；厂商自测 Brevity Benchmark 82.52（优于 Gemma 4 E4B-it 的 79.99、Qwen3.5 4B 的 75.35）；<b>无 AA Intelligence Index 分，按候选列位、不入档内分排序</b></td></tr>
+      <tr class="top"><td class="rk">①</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>Q3 / INT4</td><td>Q3 ≈120GB（可入本档）<br>INT4 ≈156GB（超档，需 2×80GB 或 192GB+）</td><td>1M</td><td>MIT</td><td>35</td><td>INT4 ≈156GB 超 128GB 档；本档以 Q3 量化或系统内存卸载运行，仍为能力天花板。API 已被 V4.1-Flash 取代（权重 MIT 仍可部署），因 V4.1-Flash（552B）无法在本显存段完整放入而保留本档。</td></tr>
+      <tr><td class="rk">②</td><td><b>Ling-3.0-flash</b></td><td>124B / 5.1B</td><td>FP8</td><td>官方 FP8 ≈128GB</td><td>262K</td><td>MIT</td><td>25</td><td>官方 BF16≈255GB / FP8≈128GB 两版；FP8 版体积减半、单机 128GB 统一内存或 2×80GB 可跑（官方 DGX Spark 方案），SGLang/vLLM 均可部署。</td></tr>
+      <tr><td class="rk">③</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB（超档）</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>FP8 ≈132GB 超 128GB 档；本档请用 INT4（≈66GB）或上 160GB 档。</td></tr>
+      <tr><td class="rk">④</td><td><b>Qwen3.8-Flash-Next</b></td><td>125B + 51B Emb / 6B</td><td>FP8</td><td>主模型 ≈138GB（超档，51B embedding 需卸载内存）</td><td>262K→1M</td><td>Qwen Community 1.0</td><td>—</td><td>官方 FP8 版（8/26 同步开源）；主模型 FP8 超 128GB 档，建议 192GB 档或大内存工作站；与 96GB 档 INT4 方案同模型。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">192GB 档（Mac Studio 顶配 / 2×80GB 专业卡，INT4 / FP8）</h3>
+  <h3 class="sub" id="local-llm-192gb">192GB 档（Mac Studio 顶配 / 2×80GB 专业卡，INT4 / FP8）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>GLM-5.3-Flash</b></td><td>320B / 18B</td><td>INT4</td><td>≈176GB</td><td>1M</td><td>MIT</td><td>42</td><td><b>8/26 发布即开源（= Ox Alpha「牛来」）</b>：AA 41.8 分为 192GB 档最高；原生多模态 + 1M 上下文；45 层混合注意力（3 线性:1 稀疏），KV 缓存为 GLM-5.3 的 1/4.44；国产芯片集群已验证规模化服务；INT4 全量需 192GB 统一内存或 2×96GB 专业卡。</td></tr>
       <tr><td class="rk">②</td><td><b>MiMo-V2.6-Flash</b></td><td>309B / 15B</td><td>INT4</td><td>≈170GB</td><td>1M</td><td>MIT</td><td><b>38</b></td><td><b>小米 9/22 发布的新一代 Flash 档</b>（上期新增），全模态输入（文本/图像/音频/视频）、1M 上下文；AA v4.3.2 38；MIT 权重可自部署；海外 API $0.14/$0.28（缓存 $0.0028）可作为性能基准对照。</td></tr>
-      <tr><td class="rk">③</td><td><b>Nemotron 3.5 Super VL</b></td><td>120B / 12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>OpenMDW-1.1</td><td>26</td><td><b>本期新增入档</b>：FP8 全精度舒适区（官方称 NVFP4 与 BF16 分差 &lt;0.1，近无损量化）；AA v4.3.2 26.5；1M 上下文的 FP8 Agent/检索工作流；OpenMDW-1.1 可商用。</td></tr>
-      <tr><td class="rk">④</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>FP8</td><td>≈141GB</td><td>256K</td><td>Modified MIT</td><td>14</td><td>FP8 高精度稠密，长文连贯好。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>14</td><td>1M 上下文的 FP8 全精度 Agent 工作流。</td></tr>
-      <tr><td class="rk">⑥</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>FP8 全精度舒适区（128GB 档超档，本档正合适）。</td></tr>
+      <tr><td class="rk">③</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>INT4</td><td>≈156GB</td><td>1M</td><td>MIT</td><td>35</td><td>INT4 全量舒适区：2×80GB（160GB）或 192GB 统一内存直接跑，无需 Q3。</td></tr>
+      <tr><td class="rk">④</td><td><b>Nemotron 3.5 Super VL</b></td><td>120B / 12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>OpenMDW-1.1</td><td>26</td><td><b>本期新增入档</b>：FP8 全精度舒适区（官方称 NVFP4 与 BF16 分差 &lt;0.1，近无损量化）；AA v4.3.2 26.5；1M 上下文的 FP8 Agent/检索工作流；OpenMDW-1.1 可商用。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>FP8</td><td>≈141GB</td><td>256K</td><td>Modified MIT</td><td>14</td><td>FP8 高精度稠密，长文连贯好。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>Nemotron 3 Super</b></td><td>120B / 12B</td><td>FP8</td><td>≈132GB</td><td>1M</td><td>NVIDIA Open Model License</td><td>14</td><td>1M 上下文的 FP8 全精度 Agent 工作流。</td></tr>
+      <tr><td class="rk">⑦</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>FP8</td><td>≈132GB</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>FP8 全精度舒适区（128GB 档超档，本档正合适）。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">512GB 档（个人旗舰工作站 / 准数据中心，FP8 / 1-bit）</h3>
+  <h3 class="sub" id="local-llm-512gb">512GB 档（个人旗舰工作站 / 准数据中心，FP8 / 1-bit）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
       <tr class="top"><td class="rk">①</td><td><b>GLM-5.3</b></td><td>744B / 40B</td><td>INT4（2-bit GGUF）</td><td>INT4 ≈410GB（临界）<br>Unsloth UD-IQ2_M ≈245GB（舒适）</td><td>200K</td><td>GLM-5.3 License（非 MIT）</td><td>45</td><td><b>8/28 深夜开源（HF zai-org/GLM-5.3 + ModelScope）</b>：开放权重能力第一梯队（v4.3.2 44.8）；744B/40B MoE、上下文回调至 200K（1M 需求用 GLM-5.2）；Unsloth 已发布 GGUF 量化（UD-IQ2_M 版官方称 256GB 统一内存 Mac 或 24GB 显存 + 256GB 内存的 PC 可跑）；许可为自定义 GLM-5.3 License；高危网络安全能力不随权重开放。</td></tr>
-      <tr><td class="rk">②</td><td><b>DeepSeek-V4.1-Flash-1017</b></td><td>552B / 16B</td><td>INT4</td><td>≈300GB</td><td>1M</td><td>MIT</td><td>45</td><td>9/10 发布的闪系列新一代（CED 非对称架构，输入 8B/输出 16B 激活）；AA v4.3.2 39.46 分为 512GB 档 MIT 许可最高分；INT4 按 0.55GB/B 估算 ≈300GB、512GB 统一内存余量充足；KV 缓存压缩（HBM 需求 1/4、SSD 1/8）对长上下文本地部署友好；原生视觉。</td></tr>
-      <tr><td class="rk">③</td><td><b>Step 5 Preview</b></td><td>600B / 27B</td><td>INT4</td><td>≈330GB</td><td>1M</td><td>Apache 2.0</td><td>44</td><td><b>10/15 正式开源完整权重（BF16+FP8、技术报告、部署指南，HF/ModelScope 同步；上期新增入档）</b>：稀疏 MoE 600B/27B、92 层窄深架构、Sparse GQA、1M 上下文、原生文本+视觉；AA v4.3.2 43.7，为 Apache 2.0 阵营最高分；vLLM/SGLang/Transformers 均支持，适配多种国产芯片平台与推理框架。</td></tr>
-      <tr><td class="rk">④</td><td><b>GLM-5.3-Flash</b></td><td>320B / 18B</td><td>FP8</td><td>≈352GB</td><td>1M</td><td>MIT</td><td>42</td><td>FP8 全精度：512GB 统一内存或 4×80GB 服务器；与 192GB 档 INT4 方案同模型；线性+稀疏混合注意力使 KV 缓存仅为 GLM-5.3 的 1/4.44。</td></tr>
-      <tr><td class="rk">⑤</td><td><b>Ling-3.1-flash</b></td><td>560B / 25B</td><td>MXFP4 + block-FP8</td><td>≈292GB</td><td>1M</td><td>MIT</td><td>41</td><td><b>9/30 发布、10/15 正式开源完整权重（上期新增入档）</b>：routed experts 采用 MXFP4、dense 层保持 block-FP8，权重占用由约 534GB 降至 292GB，对应 Hopper 配置部署卡数由 8 张降至 4 张；提供长上下文并行推理方案 PCP/DCP 与 JSON Schema 工具调用增强；输出约 210 tok/s。</td></tr>
-      <tr><td class="rk">⑥</td><td><b>Qwen3.8-2.4T-A95B</b></td><td>2.4T / 95B</td><td>1-bit</td><td>≈397GB</td><td>262K→1M</td><td><b>Qwen3.8-Max License（非 Apache 2.0）</b></td><td>40</td><td>Unsloth 1-bit 397GB 官方量化，512GB 内存可本地跑；权重版未单独评分（1-bit 量化有损）；<b>许可为自定义 Qwen3.8-Max License（收入门槛条款，商用前需审阅）</b>。</td></tr>
+      <tr><td class="rk">②</td><td><b>Step 5 Preview</b></td><td>600B / 27B</td><td>INT4</td><td>≈330GB</td><td>1M</td><td>Apache 2.0</td><td>44</td><td><b>10/15 正式开源完整权重（BF16+FP8、技术报告、部署指南，HF/ModelScope 同步；上期新增入档）</b>：稀疏 MoE 600B/27B、92 层窄深架构、Sparse GQA、1M 上下文、原生文本+视觉；AA v4.3.2 43.7，为 Apache 2.0 阵营最高分；vLLM/SGLang/Transformers 均支持，适配多种国产芯片平台与推理框架。</td></tr>
+      <tr><td class="rk">③</td><td><b>GLM-5.3-Flash</b></td><td>320B / 18B</td><td>FP8</td><td>≈352GB</td><td>1M</td><td>MIT</td><td>42</td><td>FP8 全精度：512GB 统一内存或 4×80GB 服务器；与 192GB 档 INT4 方案同模型；线性+稀疏混合注意力使 KV 缓存仅为 GLM-5.3 的 1/4.44。</td></tr>
+      <tr><td class="rk">④</td><td><b>Ling-3.1-flash</b></td><td>560B / 25B</td><td>MXFP4 + block-FP8</td><td>≈292GB</td><td>1M</td><td>MIT</td><td>41</td><td><b>9/30 发布、10/15 正式开源完整权重（上期新增入档）</b>：routed experts 采用 MXFP4、dense 层保持 block-FP8，权重占用由约 534GB 降至 292GB，对应 Hopper 配置部署卡数由 8 张降至 4 张；提供长上下文并行推理方案 PCP/DCP 与 JSON Schema 工具调用增强；输出约 210 tok/s。</td></tr>
+      <tr><td class="rk">⑤</td><td><b>Qwen3.8-2.4T-A95B</b></td><td>2.4T / 95B</td><td>1-bit</td><td>≈397GB</td><td>262K→1M</td><td><b>Qwen3.8-Max License（非 Apache 2.0）</b></td><td>40</td><td>Unsloth 1-bit 397GB 官方量化，512GB 内存可本地跑；权重版未单独评分（1-bit 量化有损）；<b>许可为自定义 Qwen3.8-Max License（收入门槛条款，商用前需审阅）</b>。</td></tr>
+      <tr><td class="rk">⑥</td><td><b>DeepSeek-V4.1-Flash-1017</b></td><td>552B / 16B</td><td>INT4</td><td>≈300GB</td><td>1M</td><td>MIT</td><td>45</td><td>10/17 小版本更新（API 名 deepseek-flash）；CED 非对称架构，输入 8B/输出 16B 激活；<b>AA v4.3.2 45</b>（开放权重第 2，仅次于 MiMo-V2.6-Pro）；INT4 ≈300GB、512GB 统一内存余量充足；KV 缓存压缩对长上下文本地部署友好；原生视觉。旧快照「V4.1 Flash」约 39 分条目以 1017 为准替换。</td></tr>
       <tr><td class="rk">⑦</td><td><b>Muse Spark Open</b></td><td>816B / 42B</td><td>4-bit（社区量化）</td><td>≈493GB（Apple 4-bit 实测，单机 512GB 统一内存临界）<br>官方 NVFP4 ≥700GB（超档）</td><td>1M</td><td>Muse Model License（非 Apache 2.0）</td><td>39</td><td><b>本期新增入档</b>：Meta 10/15 放出权重（816B 总参/42B 激活 MoE、1M 上下文、文本+图像+音频+视频输入、推理不可关闭且默认 xhigh）；<b>AA v4.3.2 xHigh 档 39 分</b>，为美国开放权重最高分梯队，但低于小米 MiMo-V2.6-Pro（46）、智谱 GLM-5.3（45）、Kimi K3（44）；<b>许可为自定义 Muse Model License</b>——可商用/微调/蒸馏/转售，须显著标注「Built with Muse Spark Open」，以 MaaS 对外提供且公司及关联方 12 个月营收 &gt;$2000 万须先与 Meta 单独签署协议（内部使用/研究/嵌入自家产品豁免），无地域限制；官方推荐 2×M5 Ultra Mac Studio；AA 单任务成本约 $0.84。</td></tr>
-      <tr><td class="rk">⑧</td><td><b>K2 Horizon 375B-A23B</b></td><td>375B / 23B</td><td>FP8 / INT4</td><td>FP8 ≈410GB（临界）<br>INT4 ≈205GB（192GB 档超档可降级跑）</td><td>512K</td><td>Apache 2.0</td><td>31</td><td>9/3 全开源舰队旗舰：<b>AA v4.3.2 31（本期由 34 更正，依据 AA 官网模型页与 AA 官方文章）</b>；FP8 临界入档（多卡更稳）；每指数任务约 130M 输出 token（口径偏冗长，实际部署务必按 token 预算压测）；训练代码/数据配方/checkpoint 全开放；本地跑建议 2×H200 或 512GB 统一内存 + 量化。</td></tr>
-      <tr><td class="rk">⑨</td><td><b>Reflection Beam 1.0</b></td><td>501B / 23B</td><td>INT4</td><td>INT4 ≈276GB（0.55GB/B）<br>FP8 ≈551GB（超档）<br>官方 NVFP4 ≈273GiB（4×B300 参考配置）</td><td>1M</td><td><b>Apache 2.0（无附加限制）</b></td><td>30</td><td><b>本期新增入档</b>：Reflection AI 10/16 放出权重（501B 总参/23B 激活、256 专家/52 层、1M 上下文、最长 128K 输出、纯文本）；<b>AA v4.3.2 30 分（开放权重第 10、美国开放权重第 2）</b>，AA Cyber Index 34% 为美国开放权重第一；<b>本档最大价值在许可——权重卡为纯 Apache 2.0，未附加任何限制，官方明示不禁止蒸馏、以输出训练他模型、微调与合并</b>；token 效率突出（每指数任务约 26K 输出 token），BF16/FP8/NVFP4 三档权重 + DFlash2 投机解码草稿模型；INT4 单机 512GB 统一内存余量充足，官方参考部署为 4×B300 单机 NVLink；<b>短板须注意：Terminal-Bench 4.0 仅 3.0%、AA-Omniscience 幻觉率 47%</b>——适合代码审查与安全 Agent，不适合终端自动化与高事实性问答。</td></tr>
-      <tr><td class="rk">⑩</td><td><b>Inkling</b></td><td>975B / 41B</td><td>1-bit GGUF</td><td>≈280GB</td><td>1M</td><td>Apache 2.0</td><td>26</td><td>美国开源最强梯队，多模态微调基座；本档属轻量配置。</td></tr>
-      <tr><td class="rk">⑪</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>BF16</td><td>≈256GB</td><td>256K</td><td>Modified MIT</td><td>14</td><td>BF16 全精度稠密。</td></tr>
-      <tr><td class="rk">⑫</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>BF16</td><td>≈240GB</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>BF16 全精度。</td></tr>
+      <tr><td class="rk">⑧</td><td><b>DeepSeek V4 Flash</b></td><td>284B / 13B</td><td>FP8</td><td>≈312GB</td><td>1M</td><td>MIT</td><td>35</td><td>9/10 起被 V4.1-Flash 取代（API 已下线），FP8 全精度：512GB 统一内存或 4×80GB 服务器；新部署建议直接选上行 V4.1-Flash。</td></tr>
+      <tr><td class="rk">⑨</td><td><b>K2 Horizon 375B-A23B</b></td><td>375B / 23B</td><td>FP8 / INT4</td><td>FP8 ≈410GB（临界）<br>INT4 ≈205GB（192GB 档超档可降级跑）</td><td>512K</td><td>Apache 2.0</td><td>31</td><td>9/3 全开源舰队旗舰：<b>AA v4.3.2 31（本期由 34 更正，依据 AA 官网模型页与 AA 官方文章）</b>；FP8 临界入档（多卡更稳）；每指数任务约 130M 输出 token（口径偏冗长，实际部署务必按 token 预算压测）；训练代码/数据配方/checkpoint 全开放；本地跑建议 2×H200 或 512GB 统一内存 + 量化。</td></tr>
+      <tr><td class="rk">⑩</td><td><b>Reflection Beam 1.0</b></td><td>501B / 23B</td><td>INT4</td><td>INT4 ≈276GB（0.55GB/B）<br>FP8 ≈551GB（超档）<br>官方 NVFP4 ≈273GiB（4×B300 参考配置）</td><td>1M</td><td><b>Apache 2.0（无附加限制）</b></td><td>30</td><td><b>本期新增入档</b>：Reflection AI 10/16 放出权重（501B 总参/23B 激活、256 专家/52 层、1M 上下文、最长 128K 输出、纯文本）；<b>AA v4.3.2 30 分（开放权重第 10、美国开放权重第 2）</b>，AA Cyber Index 34% 为美国开放权重第一；<b>本档最大价值在许可——权重卡为纯 Apache 2.0，未附加任何限制，官方明示不禁止蒸馏、以输出训练他模型、微调与合并</b>；token 效率突出（每指数任务约 26K 输出 token），BF16/FP8/NVFP4 三档权重 + DFlash2 投机解码草稿模型；INT4 单机 512GB 统一内存余量充足，官方参考部署为 4×B300 单机 NVLink；<b>短板须注意：Terminal-Bench 4.0 仅 3.0%、AA-Omniscience 幻觉率 47%</b>——适合代码审查与安全 Agent，不适合终端自动化与高事实性问答。</td></tr>
+      <tr><td class="rk">⑪</td><td><b>Inkling</b></td><td>975B / 41B</td><td>1-bit GGUF</td><td>≈280GB</td><td>1M</td><td>Apache 2.0</td><td>26</td><td>美国开源最强梯队，多模态微调基座；本档属轻量配置。</td></tr>
+      <tr><td class="rk">⑫</td><td><b>Mistral Medium 3.5</b></td><td>128B（稠密）</td><td>BF16</td><td>≈256GB</td><td>256K</td><td>Modified MIT</td><td>14</td><td>BF16 全精度稠密。</td></tr>
+      <tr><td class="rk">⑬</td><td><b>gpt-oss-120b</b></td><td>120B / 5.1B</td><td>BF16</td><td>≈240GB</td><td>128K</td><td>Apache 2.0</td><td>12</td><td>BF16 全精度。</td></tr>
     </tbody></table></div>
-  <h3 class="sub">数据中心级（多卡 / 企业集群，个人电脑不适用）</h3>
+  <h3 class="sub" id="local-llm-datacenter">数据中心级（多卡 / 企业集群，个人电脑不适用）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>量化</th><th>显存</th><th>上下文</th><th>许可</th><th>AA</th><th>点评</th></tr></thead>
     <tbody>
@@ -610,9 +676,9 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑧</td><td><b>K-EXAONE 2.0</b></td><td>750B / 37B</td><td>FP8 / INT4</td><td>≈825GB / ≈412GB</td><td>262K</td><td>Apache 2.0</td><td>20</td><td>LG 主权模型，Apache 2.0 可商用。</td></tr>
     </tbody></table></div>
   <p class="lead" style="margin-top:8px">注：自部署模型无统一 token 价格，成本取决于硬件与利用率，不与 API token 价格混入同一性价比评分。显存估算按 INT4≈0.55GB/十亿参数、FP8≈1.1GB/十亿参数、BF16≈2.0GB/十亿参数、Q3≈0.42GB/十亿参数粗算（128GB 档按 Q3 口径；1-bit 量化以官方量化包为准），实际请以 vLLM/llama.cpp 实测为准。</p>
-  <h2 class="sec" style="margin-top:22px">本地部署生图榜（文生图逐档位，5A 同步）</h2>
-  <p class="lead" style="color:#64748b;font-size:13px">文生图模型与 LLM 分榜：无同口径 AA 分，按画质/提示词遵循/许可/速度综合推荐。显存 = 权重（推荐量化）+ 采样余量，≈ 为估算值，以 ComfyUI/SD.Next 实测为准。许可红线同主榜：权重可下载 ≠ 宽松开源（FLUX dev 系禁商用；腾讯混元社区许可月活 &gt;1 亿需授权、欧盟/英国/韩国地域除外）。</p>
-  <h3 class="sub2">8GB 档（入门卡 / 核显 hybrid / 8GB Mac，量化 GGUF / NF4）</h3>
+  <h2 class="sec" id="local-img" style="margin-top:22px">本地部署生图榜（文生图逐档位，5A 同步）</h2>
+  <p class="lead" style="color:var(--muted);font-size:13px">文生图模型与 LLM 分榜：无同口径 AA 分，按画质/提示词遵循/许可/速度综合推荐。显存 = 权重（推荐量化）+ 采样余量，≈ 为估算值，以 ComfyUI/SD.Next 实测为准。许可红线同主榜：权重可下载 ≠ 宽松开源（FLUX dev 系禁商用；腾讯混元社区许可月活 &gt;1 亿需授权、欧盟/英国/韩国地域除外）。</p>
+  <h3 class="sub2" id="local-img-8gb">8GB 档（入门卡 / 核显 hybrid / 8GB Mac，量化 GGUF / NF4）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
     <tbody>
@@ -624,7 +690,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑥</td><td><b>FLUX.1 dev</b></td><td>12B</td><td>DiT/MM-DiT 双流</td><td>GGUF Q4</td><td>≈8–12GB（临界）</td><td>20–28</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>质量基准模型：社区公认开源生图质量基准，纹理/光影/手部细节最好；Q4 量化 8GB 卡临界可跑（更稳选 12GB 档）；<b>禁商用</b>，商用请选 schnell／klein 4B／Qwen-Image。</td></tr>
       <tr><td class="rk">⑦</td><td><b>Sana 1.5 / 0.6B–1.6B</b></td><td>0.6–1.6B</td><td>深度压缩 AE + 线性注意力 DiT</td><td>FP16</td><td>≈4–8GB</td><td>20–40</td><td>Apache 2.0</td><td>✓</td><td>NVIDIA 系，线性注意力 + 极小 AE 使 1024 图仅 4–8GB；速度极快（笔记本可跑）；质量中上、生态较新。</td></tr>
     </tbody></table></div>
-  <h3 class="sub2">16GB 档（主流游戏卡 / 16GB Mac，生图甜点档）</h3>
+  <h3 class="sub2" id="local-img-16gb">16GB 档（主流游戏卡 / 16GB Mac，生图甜点档）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
     <tbody>
@@ -638,7 +704,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑧</td><td><b>SD 3.5 Large</b></td><td>8.1B</td><td>MMDiT</td><td>FP8</td><td>≈7–12GB</td><td>28–40</td><td>Stability Community</td><td>✓（营收 &lt;$100 万免许可）</td><td>FP8 后本档可跑；提示词遵循与排版强于 SDXL；许可同 Medium 条款。</td></tr>
       <tr><td class="rk">⑨</td><td><b>Krea 2</b></td><td>12B</td><td>DiT</td><td>FP8</td><td>≈12GB</td><td>—</td><td>Krea 2（营收 &lt;$100 万免许可）</td><td>✓（限条款）</td><td>2026 年新增开源权重（Krea），美学风格突出；营收门槛同 Stability 社区口径。</td></tr>
     </tbody></table></div>
-  <h3 class="sub2">24GB 档（RTX 4090 等消费级旗舰，画质优先）</h3>
+  <h3 class="sub2" id="local-img-24gb">24GB 档（RTX 4090 等消费级旗舰，画质优先）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
     <tbody>
@@ -653,7 +719,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">⑨</td><td><b>HiDream-O1-Image</b></td><td>8B</td><td>DiT</td><td>FP8</td><td>≈16–22GB</td><td>—</td><td>MIT</td><td>✓</td><td>2026 年开源生图模型，MIT 许可；写实人像与光影表现较好。</td></tr>
       <tr><td class="rk">⑩</td><td><b>Ideogram 4</b></td><td>9.3B</td><td>DiT</td><td>FP8</td><td>≈20–24GB</td><td>—</td><td>Ideogram（非商用/营收门槛）</td><td>✗（限条款）</td><td>文字排版与 Logo/海报生成见长；许可为收入门槛／非商用混合口径，商用前须核对官方条款。</td></tr>
     </tbody></table></div>
-  <h3 class="sub2">48GB+ 档（专业卡 / 大内存工作站，全精度舒适区）</h3>
+  <h3 class="sub2" id="local-img-48gb">48GB+ 档（专业卡 / 大内存工作站，全精度舒适区）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
     <tbody>
@@ -662,7 +728,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">③</td><td><b>HunyuanImage 3.0</b></td><td>80B / 13B 激活</td><td>MoE（64 专家）+ Transfusion 自回归</td><td>FP8 / 层卸载</td><td>≈40–80GB（层卸载可 24GB 卡慢速跑）</td><td>30–50</td><td>腾讯混元社区许可</td><td>✓（月活 &gt;1 亿需授权）</td><td>80B/13B 激活为开放权重生图参数之王：世界知识推理 + 千字级长提示词遵循最强，图内多语言文字渲染优秀；层卸载后 24GB 卡可慢速跑，全量需 48–80GB；另有 Instruct-Distil 8 步蒸馏版提速；月活 &gt;1 亿需向腾讯申请。</td></tr>
       <tr><td class="rk">④</td><td><b>FLUX.2 dev</b></td><td>32B</td><td>DiT（FLUX.2 系）</td><td>FP16</td><td>≈64GB（超档）</td><td>25–50</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>FP16 全精度 64GB 属本档超档偏上；质量优先的工作室可选（仍禁商用）；一般用 FP8/Q6 量化即可覆盖。</td></tr>
     </tbody></table></div>
-  <h3 class="sub2">数据中心级（多卡 / 企业集群，个人电脑不适用）</h3>
+  <h3 class="sub2" id="local-img-datacenter">数据中心级（多卡 / 企业集群，个人电脑不适用）</h3>
   <div class="card" style="overflow-x:auto"><table>
     <thead><tr><th class="rk">#</th><th>模型</th><th>参数</th><th>架构</th><th>推荐量化</th><th>量化后显存</th><th>步数</th><th>许可证</th><th>商用</th><th>点评</th></tr></thead>
     <tbody>
@@ -670,8 +736,7 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
       <tr><td class="rk">②</td><td><b>FLUX.2 dev FP16</b></td><td>32B</td><td>DiT（FLUX.2 系）</td><td>BF16</td><td>≈64GB</td><td>25–50</td><td>FLUX [dev] Non-Commercial</td><td>✗</td><td>单卡 80GB 即全精度；商用需 BFL 企业授权，多卡批量出图仅为吞吐场景。</td></tr>
       <tr><td class="rk">③</td><td><b>Qwen-Image-2512</b></td><td>20B（MMDiT）</td><td>MMDiT 双流 + VAE</td><td>BF16</td><td>≈40GB</td><td>30–50</td><td>Apache 2.0</td><td>✓</td><td>本档许可最宽松的数据中心级选项：多卡批量出图吞吐场景，Apache 2.0 无条款负担、可商用可微调。</td></tr>
     </tbody></table></div>
-  <p class="lead" style="margin-top:8px">注：生图榜为静态调研榜（首期 2026-09-12）；步数列为默认推荐采样步数；商用标记：✓ = 宽松许可可商用，✓（限条款）= 可商用但附加条款，✗ = Non-Commercial 禁商用。</p>
-</div>
+  <p class="lead" style="margin-top:8px">注：生图榜为静态调研榜（首期 2026-09-12）；步数列为默认推荐采样步数；商用标记：✓ = 宽松许可可商用，✓（限条款）= 可商用但附加条款，✗ = Non-Commercial 禁商用。</p></script>
 
 <!-- 本周变化 -->
 <div class="view" id="v-changes" role="tabpanel" aria-labelledby="tab-changes" hidden>
@@ -688,6 +753,9 @@ html[data-theme="dark"] .cmp-fab{box-shadow:0 6px 20px rgba(0,0,0,.45)}
     <button type="button" class="detail-close" id="detailClose" aria-label="关闭">✕</button>
   </div>
   <div class="detail-body" id="detailBody"></div>
+  <div class="detail-foot">
+    <button type="button" class="detail-board-btn" id="detailBoardBtn">在主榜查看</button>
+  </div>
 </div>
 
 <button type="button" class="cmp-fab" id="cmpFab" aria-expanded="false" aria-controls="cmp" hidden>对比 <span class="cmp-fab-n" id="cmpFabN">0</span></button>
@@ -901,16 +969,32 @@ document.querySelectorAll(".hub-toc a[data-hub]").forEach(function(a){
 })();
 
 /* ---------- 模型定位：跳主榜 + 高亮 ---------- */
-function goModel(name, filterOnly){
-  document.getElementById("q").value = name;
+var _detailModel = null;
+/* 非主榜 / 主榜点模型：只开详情弹窗，不跳主榜、不灌搜索 */
+function goModel(name){
+  showDetail(name);
+}
+/* 弹窗「在主榜查看」：关弹窗后切主榜 + 填搜索 + 定位闪行 */
+function goModelOnBoard(name){
+  if(!name) return;
+  closeDetail();
+  /* 只切主榜定位闪行/卡；不写 #q、不因搜索过滤成一条 */
+  var q = document.getElementById("q");
+  if(q && q.value) q.value = "";
   go("board");
-  applyFilters(name);
+  applyFilters(""); /* 全表渲染，邻居都留着 */
   var rows = document.querySelectorAll("#boardTbl tbody tr");
   rows.forEach(function(r){
     if(r.dataset.n === name){
       r.scrollIntoView({block:"center"});
       r.classList.remove("flash"); void r.offsetWidth; r.classList.add("flash");
-      showDetail(name);
+    }
+  });
+  /* 窄屏格子卡：有 data-n 的同步闪一下 */
+  document.querySelectorAll(".bc-item").forEach(function(c){
+    if(c.dataset.n === name){
+      c.scrollIntoView({block:"center"});
+      c.classList.remove("flash"); void c.offsetWidth; c.classList.add("flash");
     }
   });
 }
@@ -991,7 +1075,8 @@ function pickBestByName(list){
 function setBoardMode(mode, opts){
   opts = opts || {};
   boardMode = (mode === "top") ? "top" : "full";
-  document.querySelectorAll(".board-mode-btn").forEach(function(b){
+  /* 只动全量/同系（data-mode）；勿扫窄屏三态 data-mobile-mode */
+  document.querySelectorAll(".board-mode-btn[data-mode]").forEach(function(b){
     var on = b.getAttribute("data-mode") === boardMode;
     b.classList.toggle("on", on);
     b.setAttribute("aria-pressed", on ? "true" : "false");
@@ -1089,10 +1174,12 @@ function closeDetail(){
   var scrim = document.getElementById("detailScrim");
   if(d){ d.classList.remove("on"); d.hidden = true; }
   if(scrim){ scrim.classList.remove("on"); scrim.hidden = true; }
+  _detailModel = null;
 }
 function showDetail(name){
   var r = MODELS.filter(function(x){return x.n===name})[0];
   if(!r) return;
+  _detailModel = name;
   if(typeof closeCmpDrawer === "function") closeCmpDrawer();
   var rel = NEWS.filter(function(n){return n.m.indexOf(name)>=0});
   var d = document.getElementById("detail");
@@ -1112,8 +1199,12 @@ function showDetail(name){
 (function bindDetailUi(){
   var closeBtn = document.getElementById("detailClose");
   var scrim = document.getElementById("detailScrim");
+  var boardBtn = document.getElementById("detailBoardBtn");
   if(closeBtn) closeBtn.addEventListener("click", closeDetail);
   if(scrim) scrim.addEventListener("click", closeDetail);
+  if(boardBtn) boardBtn.addEventListener("click", function(){
+    if(_detailModel) goModelOnBoard(_detailModel);
+  });
   document.addEventListener("keydown", function(e){
     if(e.key !== "Escape") return;
     var d = document.getElementById("detail");
@@ -1621,6 +1712,38 @@ document.getElementById("q").oninput = function(){
   btn.onclick = function(){ setCompact(tbl.classList.contains("board-compact") ? false : true); };
 })();
 
+/* ---------- 窄屏主榜三态：详细 | 精简 | 格子（三榜同切） ---------- */
+(function bindMobileBoardMode(){
+  var KEY = "hub-board-mobile";
+  var root = document.documentElement;
+  var group = document.getElementById("mobileBoardMode");
+  if(!group) return;
+  var btns = group.querySelectorAll("[data-mobile-mode]");
+  function normalize(v){
+    if(v === "table") return "compact"; // 旧双模
+    if(v === "full" || v === "compact" || v === "cards") return v;
+    return "compact";
+  }
+  function apply(mode){
+    mode = normalize(mode);
+    root.setAttribute("data-hub-board-mobile", mode);
+    btns.forEach(function(b){
+      var on = b.getAttribute("data-mobile-mode") === mode;
+      b.classList.toggle("on", on);
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    try{ localStorage.setItem(KEY, mode); }catch(e){}
+  }
+  var saved = null;
+  try{ saved = localStorage.getItem(KEY); }catch(e){}
+  apply(saved || "compact");
+  group.addEventListener("click", function(e){
+    var b = e.target.closest("[data-mobile-mode]");
+    if(!b || !group.contains(b)) return;
+    apply(b.getAttribute("data-mobile-mode"));
+  });
+})();
+
 /* ---------- Wave4b⑦：本地档 IntersectionObserver → TOC 高亮（懒挂载后 rebind） ---------- */
 _localSpyApi = (function initLocalTierSpy(){
   if(!window.IntersectionObserver) return { rebind: function(){} };
@@ -1895,7 +2018,8 @@ function init(){
   document.querySelectorAll("#fVendor,#fLic,#fOpen,#fAA,#fCost,#fValued").forEach(function(el){
     el.onchange = function(){ applyFilters(); };
   });
-  document.querySelectorAll(".board-mode-btn").forEach(function(btn){
+  /* 全量/同系：只绑 [data-mode]；窄屏三态由 #mobileBoardMode 独立 handler */
+  document.querySelectorAll(".board-mode-btn[data-mode]").forEach(function(btn){
     btn.addEventListener("click", function(){
       setBoardMode(btn.getAttribute("data-mode") || "full");
     });
