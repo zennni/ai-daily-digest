@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "models": [
     {
       "name": "Claude Opus 5.5",
@@ -2555,6 +2555,19 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-27",
+      "t": "全日量核验：AA v4.3.2 榜首与 Top 无变；Changelog 10/26 有 GPT-6.1 Terra（Max 48，未冲击 Top）；官价/促销抽核一致；早间人行/CFETS 尚未公布 10/27 中间价，汇率继续沿用 10/26 CFETS 6.7162",
+      "m": [
+        "Claude Opus 5.5",
+        "Claude Sonnet 5.5",
+        "Muse Wonder Full",
+        "Kimi K3.1 Pro",
+        "GPT-6 Astra",
+        "Gemini 4 Argon"
+      ],
+      "s": "<b>06:30 全日量定稿</b>：联网复核 Artificial Analysis Intelligence Index 仍为 <b>v4.3.2</b>，Top 仍 Opus 5.5 Max（58）/ Sonnet 5.5 Max（56）/ Opus 5.5 xHigh（56）/ Muse Wonder Full Max（56）/ Kimi K3.1 Pro（55）。Changelog：最新高位具名冲击仍为 <b>10/23 Kimi K3.1 Pro</b>；另见 <b>10/26 GPT-6.1 Terra</b>（Max 48 / Xhigh 45 等，未冲击 Top 与前排名次；早八日报已覆盖、aliases 已增补），本期不改正文 models。官价抽核：Anthropic Opus/Sonnet/Fable（$4/$20、$2/$10、$10/$50）标价未变；OpenAI Astra $10/$50 · 6.1 Sol $2/$10 · Luna $0.10/$0.50 · GPT-5.6 Sol 促销 $4/$20 至少至 <b>11/21</b>；Gemini 4 Argon 介绍期 $2/$10 至 <b>11/30</b>、3.8 Flash $0.75/$3.75 至 <b>12/31</b>，与主表一致。10/27 为周二，截至早间核验时刻（≈06:40 Asia/Shanghai）人行/CFETS 尚未公布当日中间价（官网/SAFE 最新仍为 <b>10/26 的 6.7162</b>），汇率继续沿用。<b>未改</b> Qwen3.8-Flash / Step 缓存等 FX 挂价。本地/生图：K3.1 Pro 权重仍未放出（承诺 11/4 前）；FLUX.3 Klein 无新证据需改模板。本期不改正文 models 分数与标价，仅翻日并记核验结论。未改日报产物。"
+    },
     {
       "d": "10-26",
       "t": "半点核验：AA/官价无变；汇率调至 6.7162（较 6.7180 调升 18 基点）；微调 Qwen3.8-Flash / Step 5 Preview 缓存挂价",
