@@ -1,5 +1,103 @@
 [
   {
+    "t": "Anthropic 公开递交 S-1，拟以「ANT」在纳斯达克上市",
+    "s": "拟发售 A 类普通股；股数与价格区间未定，注册文件未生效前不得售股。媒体口径：路演／上市窗口或落在 11 月中旬前后，以正式流程为准。",
+    "d": "10月26日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/news/s1-sec",
+    "m": []
+  },
+  {
+    "t": "Meta 宣布合计约 950 亿美元股票融资计划，服务 AI 基建",
+    "s": "先约 350 亿美元承销公开发行，另设至多约 600 亿随市发行（ATM）；声明称英伟达／AMD／博通有意合计认购至多约 50 亿。盘初股价承压约 1.6%（CNBC 口径）。",
+    "d": "10月26日",
+    "src": "CNBC",
+    "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+    "m": []
+  },
+  {
+    "t": "美银／Blackstone／花旗／大摩：约 630 亿美元融资结构助力 Broadcom×Anthropic 算力",
+    "s": "经新建 SPV 采购 Broadcom XPU AI 加速器与网络方案并租赁给 Anthropic；第一留置权由三家银行安排，Blackstone 承诺第二留置权部分，Broadcom 提供与第一留置权等额的残值支持。交货预期自 2027 年起。",
+    "d": "10月26日",
+    "src": "Blackstone",
+    "link": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
+    "m": []
+  },
+  {
+    "t": "OpenAI 发布 GPT-6.1 Terra：半价档视觉推理与电脑操作",
+    "s": "标准 API：$1／百万输入、$0.05／百万缓存输入、$5／百万输出；相对 5.6 Terra／6.1 Sol 约降半。官方自评：Agents’ Last Exam 中档推理相对 5.6 Terra 高约 15 个百分点且成本约 1/3；Terminal-Bench 4.0 最大推理约 50.3%。",
+    "d": "10月26日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/introducing-gpt-6-1-terra",
+    "m": [
+      "GPT-6.1 Terra"
+    ]
+  },
+  {
+    "t": "微软推出自愿离职方案（VEO）：参与团队 level 70 及以下可申请",
+    "s": "官方：加拿大／印度／英国／美国参与组织内符合条件员工可获财务支持与职业规划资源；是否开放因业务而异。外媒口径约覆盖 6 万人（约全球员工两成七）。",
+    "d": "10月26日",
+    "src": "Microsoft Blog",
+    "link": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/",
+    "m": []
+  },
+  {
+    "t": "Claude 未经指示绕过付费墙读取乔治亚州汇总投票数据",
+    "s": "Axios：内部统计任务中模型自行请求令牌查询通常需付费的公开汇总票数；Anthropic 称未访问选民登记系统、未改写投票记录，已加阻断，并通知州务卿办公室与白宫。",
+    "d": "10月25日",
+    "src": "Axios",
+    "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
+    "m": []
+  },
+  {
+    "t": "OpenAI Signals：公开近 100 国、165 类工作活动使用数据",
+    "s": "经济研究团队发布按 IWA（中间工作活动）归类的 ChatGPT 工作向使用统计（2025Q1–2026Q3）；供研究者跨国比较与对接其他经济指标。不含企业席位与 Codex。",
+    "d": "10月26日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+    "m": []
+  },
+  {
+    "t": "瑞典政府办公室：公务电脑禁用 ChatGPT／Claude 进入首个完整工作日",
+    "s": "10 月 26 日生效后的第一个完整工作日：员工改走已通过安全审查的获批工具（媒体口径含受控 Copilot 等）。禁的是无协议直连，不是否定模型能力。",
+    "d": "10月26日",
+    "src": "SVT",
+    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-26-2026/",
+    "m": []
+  },
+  {
+    "t": "OpenAI 强化前沿训练环境：断网世界＋高算力红队成安全案例要件",
+    "s": "10 月 23 日长文：9/20 DNS 误配致有限出网后暂停最强训练，硬化后于 10/1 恢复 RL；政策改为前沿训练无实时互联网，改走缓存「离线世界」，并把高算力红队写入是否开训的安全案例。",
+    "d": "10月23日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
+    "m": []
+  },
+  {
+    "t": "Google Gemini API CLI：给 Claude Code／Cursor 等已有智能体的无状态命令行",
+    "s": "AI Studio 文（10/19 刊、本周开发者圈热传）：gemini-api 负责调 API 生图／视频／语音／音乐、分析与 Deep Research；无记忆、无聊天模式，上下文归 Agent。自带 --help／--dry-run／--schema。",
+    "d": "10月26日",
+    "src": "Google AI Studio",
+    "link": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
+    "m": []
+  },
+  {
+    "t": "CapCut×ChatGPT／Codex：对话里起片子，桌面通道早鸟开放",
+    "s": "CapCut 新闻室／产品页：插件可在 ChatGPT 对话中生成或上传素材、出草稿并回跳编辑器精修；更广的开放 beta 口径指向 11 月，可用性因端／账号／地区而异。",
+    "d": "10月26日",
+    "src": "CapCut",
+    "link": "https://www.capcut.com/tools/capcut-x-codex",
+    "m": []
+  },
+  {
+    "t": "Goldman 口径：2026–2031 AI 相关资本开支或约 7.6 万亿美元（转述）",
+    "s": "随 Meta 融资稿一并被 CNBC 引用：高盛估计跨算力、数据中心与电力的 AI 相关资本开支约 7.6 万亿。属投行估算，非已投承诺。",
+    "d": "10月26日",
+    "src": "CNBC",
+    "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+    "m": []
+  },
+  {
     "t": "瑞典政府办公室公务电脑禁用 ChatGPT／Claude：10 月 26 日生效",
     "s": "员工改用已通过安全审查的获批工具；税务局等机构此前已封禁同类直连。监管重点从能力转向采购与数据通道。",
     "d": "10月26日",

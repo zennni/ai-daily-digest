@@ -1,5 +1,9 @@
 [
   {
+    "name": "GPT-6.1 Terra",
+    "pattern": "gpt[ -]?6\\.1[ -]?terra|6\\.1[ -]?terra"
+  },
+  {
     "name": "Qwen3.8-27B",
     "pattern": "qwen3\\.8[ -]27b"
   },

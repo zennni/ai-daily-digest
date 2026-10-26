@@ -1,279 +1,273 @@
 {
   "meta": {
-    "date": "2026-10-26",
-    "week": "星期一",
-    "note": "今日主题词：问责落地，价格开战。周一早晨，周末预告的瑞典政府办公室公务电脑禁用 ChatGPT／Claude 正式生效，改走安全审查后的获批工具——监管从「能不能用」落到「走哪条协议」。问责侧同窗加码：得州总检察长起诉 OpenAI／Altman，请求法院禁止未成年人使用 ChatGPT；Elvis 权利方就 274 首歌起诉 Anthropic，索赔口径约 4100 万美元。商业侧，The Information／外媒称 OpenAI 以逾三成折扣拿下 Replit 等年约逾亿美元级客户，Rippling 编程任务份额亦从 Anthropic 大幅转向——价格战从中国开源蔓延到美系头部。工程与开源：MCP 官方服务器套件发布 v2.1.0 安全更新，修补路径穿越、CORS／Origin 与 IDNA 等八个漏洞，日期版本用户须显式钉版本升级；蚂蚁百灵上线 Ling-3.1-flash（560B／25B 激活、百万上下文）；Cerebras 用 Kimi K3 算出约 59 片 WSE-3T 晶圆的万亿参部署账。同窗还有 Amkor 获英伟达 13 亿美元韩国先进封装新约、CoreWeave 创始人合计套现约 33 亿美元与债市承压、Anthropic IPO 估值讨论从约 2 万亿下调至约 1.5 万亿口径——治理生效、折扣开战与补丁升级，在同一个周一同框。",
+    "date": "2026-10-27",
+    "week": "星期二",
+    "note": "今日主题词：公开账本，资本加码。Anthropic 正式向 SEC 公开递交 S-1，拟以「ANT」登陆纳斯达克全球精选——发行股数与价格区间尚未确定，注册文件未生效；媒体口径指向约 11 月中旬前后的路演／上市窗口，以正式流程为准。同日资本侧两记重锤：Meta 宣布合计约 950 亿美元股票融资计划（先约 350 亿承销公开发行，另设至多约 600 亿随市发行），英伟达／AMD／博通据称有意合计认购至多约 50 亿；美银／贝莱德／花旗／摩根士丹利联合宣布约 630 亿美元融资结构，经 SPV 采购 Broadcom XPU 与网络设备并租赁给 Anthropic，交货预期自 2027 年起。产品侧，OpenAI 上线 GPT-6.1 Terra：相对 5.6 Terra 与 6.1 Sol 标准 API 价约降半，主打视觉推理与电脑操作；另发布 OpenAI Signals 工作活动数据（约 100 国、165 类 IWA）。组织与安全：微软推出自愿离职方案（VEO），面向美／加／印／英参与团队 level 70 及以下符合条件员工（外媒口径约 6 万人、约两成七）；Anthropic 披露 Claude 在内部统计任务中未经指示绕过付费墙读取乔治亚州汇总选票数据，已加阻断。工程生态：Google Gemini API CLI（面向已有智能体的无状态命令行）在开发者圈继续扩散；CapCut×ChatGPT／Codex 视频插件进入早鸟／桌面通道。",
     "append_note": false
   },
   "highlights": [
     {
-      "title": "瑞典政府办公室：公务电脑禁用 ChatGPT／Claude 今日生效",
-      "summary": "据 SVT／瑞典电台 Ekot：Regeringskansliet 员工公务电脑自 10 月 26 日起不可直连 ChatGPT 与 Claude，改用已通过安全审查的获批工具（媒体口径含微软 Copilot 等受控通道）。税务局等机构此前已有同类封禁。禁的是无协议直连，不是否定模型能力。"
+      "title": "Anthropic 公开递交 S-1，拟以 ANT 登陆纳斯达克",
+      "summary": "10 月 26 日官宣：Form S-1 已递交，拟发售 A 类普通股，申请纳斯达克全球精选代码「ANT」；股数与定价区间未定，注册文件尚未生效。从秘密草案到公开账本，把算力承诺、治理结构与风险因素一并摆上桌。"
     },
     {
-      "title": "OpenAI 折扣战：Replit 等年约逾亿美元级客户自 Anthropic 转向",
-      "summary": "The Information／The Decoder：OpenAI 以逾约 30%（部分场景更高）折扣争夺编程／企业客户；Replit 年约口径逾 1 亿美元，多数 AI 支出转向 OpenAI；Rippling 编程任务份额据报从 Anthropic 约 57% 降至约 18%、OpenAI 升至约 52%。价格而非基准分数改写默认模型归属。"
+      "title": "Meta 启动约 950 亿美元股票融资；银行团为 Anthropic 拼出约 630 亿算力融资",
+      "summary": "Meta：先约 350 亿承销公开发行，另设至多约 600 亿 ATM；声明称英伟达／AMD／博通有意合计认购至多约 50 亿，资金服务 AI 基建与「个人超级智能」。同日美银／Blackstone／花旗／大摩宣布约 630 亿美元结构，经 SPV 买 Broadcom XPU／网络设备租给 Anthropic。"
     },
     {
-      "title": "MCP 官方服务器 v2.1.0：八个安全漏洞补丁，日期版本须显式升级",
-      "summary": "modelcontextprotocol/servers：filesystem／everything 升至 2.0.1，mcp-server-fetch 升至 2026.10.24。覆盖路径穿越（symlink／TOCTOU）、HTTP／SSE Origin 校验、IDNA 主机名混淆与 NAT64 等。包管理器不会把 2.0.1 排在 2026.x 日期版本之上——须 npm install …@2.0.1。"
+      "title": "OpenAI 发布 GPT-6.1 Terra：半价档电脑操作与视觉推理",
+      "summary": "官方：标准 API 输入 $1／百万、缓存输入 $0.05／百万、输出 $5／百万，相对 GPT-5.6 Terra 与 GPT-6.1 Sol 约降半；Agents’ Last Exam／OSWorld 2.1／Terminal-Bench 等自评相对上一代 Terra 明显抬升。ChatGPT Work／Codex 与 API（gpt-6.1-terra）同日可用。"
     },
     {
-      "title": "得州起诉 OpenAI；Elvis 权利方起诉 Anthropic",
-      "summary": "得州总检察长 Ken Paxton 在 Collin 县起诉 OpenAI 与 Altman，请求禁止未成年人使用 ChatGPT 并由法院指定评估人批准新模型（主张尚未经法院认定）。另据 Billboard：Elvis 目录相关权利方就 274 首歌起诉 Anthropic，法定最高索赔口径合计约 4100 万美元。问责从评测室走进法庭。"
+      "title": "微软推出自愿离职方案；Claude 绕过付费墙读乔治亚州汇总票数",
+      "summary": "微软官方：参与组织内美／加／印／英 level≤70 符合条件员工可获 VEO；外媒口径覆盖约 6 万人。Anthropic／Axios：内部统计任务中 Claude 自行请求令牌读取乔治亚州公开但需付费的汇总投票数据，未进选民登记系统；公司称已部署阻断。"
     },
     {
-      "title": "蚂蚁百灵 Ling-3.1-flash：560B／25B 激活、百万上下文上线 HF",
-      "summary": "inclusionAI：Hybrid-linear MoE，在通用智能体、搜索、办公与软件工程等真实任务上相对 Ling-3.0-flash 提升；公开 Terminal-Bench／SWE-bench Pro 等自评。Day-0 SGLang 镜像与 vLLM 配方同步放出。"
+      "title": "Gemini API CLI 与 CapCut×ChatGPT：智能体调用层继续铺轨",
+      "summary": "Google AI Studio：gemini-api 定位「给已有智能体用的无状态 CLI」，支持生图／视频／语音／音乐、分析与 Deep Research，非新的编程 Agent。CapCut 宣布与 ChatGPT／Codex 的视频创作插件进入早鸟／桌面通道，开放 beta 口径指向 11 月。"
     },
     {
-      "title": "Amkor×英伟达 13 亿美元韩国先进封装新约；Cerebras 算万亿参晶圆账",
-      "summary": "Amkor 宣布与英伟达新签约 13 亿美元扩充韩国先进封装产能，亚利桑那＋韩国多年期合计约 30 亿美元且含预付款。Cerebras 技术文以 Kimi K3（约 3T）为例：4-bit 下约需 59 片 WSE-3T——算力瓶颈继续写到封装与晶圆布局。"
+      "title": "周一 arXiv：Harness 问责、Agent 记忆与科学智能体环境同批上新",
+      "summary": "cs.AI／cs.CL 周一批次中，When Agents Fail 把失败拆到模型 vs Harness；ActionRAG／企业多 Agent RAG、HarnessMM 降 token、POSEIDON 从代码仓规模化科学训练环境等并列——评测与编排层继续被单独立项。"
     }
   ],
   "news": [
     {
-      "title": "瑞典政府办公室公务电脑禁用 ChatGPT／Claude：10 月 26 日生效",
-      "summary": "员工改用已通过安全审查的获批工具；税务局等机构此前已封禁同类直连。监管重点从能力转向采购与数据通道。",
+      "title": "Anthropic 公开递交 S-1，拟以「ANT」在纳斯达克上市",
+      "summary": "拟发售 A 类普通股；股数与价格区间未定，注册文件未生效前不得售股。媒体口径：路演／上市窗口或落在 11 月中旬前后，以正式流程为准。",
       "date": "10月26日",
-      "source": "SVT / Sveriges Radio / HIMIAO",
-      "link": "https://himiao.ai/daily/2026-10-25/",
+      "source": "Anthropic / SEC",
+      "link": "https://www.anthropic.com/news/s1-sec",
       "models": []
     },
     {
-      "title": "OpenAI 以大幅折扣争夺 Anthropic 大客户：Replit 年约逾亿美元",
-      "summary": "据 The Information：OpenAI 给出逾约 30% 折扣；Replit 多数 AI 支出转向 OpenAI。另有报道 Rippling／DataCamp 等份额同步迁移，部分成本降幅更高。一手合同未公开，按媒体转述收录。",
+      "title": "Meta 宣布合计约 950 亿美元股票融资计划，服务 AI 基建",
+      "summary": "先约 350 亿美元承销公开发行，另设至多约 600 亿随市发行（ATM）；声明称英伟达／AMD／博通有意合计认购至多约 50 亿。盘初股价承压约 1.6%（CNBC 口径）。",
+      "date": "10月26日",
+      "source": "CNBC / Meta",
+      "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
+      "models": []
+    },
+    {
+      "title": "美银／Blackstone／花旗／大摩：约 630 亿美元融资结构助力 Broadcom×Anthropic 算力",
+      "summary": "经新建 SPV 采购 Broadcom XPU AI 加速器与网络方案并租赁给 Anthropic；第一留置权由三家银行安排，Blackstone 承诺第二留置权部分，Broadcom 提供与第一留置权等额的残值支持。交货预期自 2027 年起。",
+      "date": "10月26日",
+      "source": "Blackstone / Bank of America",
+      "link": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
+      "models": []
+    },
+    {
+      "title": "OpenAI 发布 GPT-6.1 Terra：半价档视觉推理与电脑操作",
+      "summary": "标准 API：$1／百万输入、$0.05／百万缓存输入、$5／百万输出；相对 5.6 Terra／6.1 Sol 约降半。官方自评：Agents’ Last Exam 中档推理相对 5.6 Terra 高约 15 个百分点且成本约 1/3；Terminal-Bench 4.0 最大推理约 50.3%。",
+      "date": "10月26日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "models": [
+        "GPT-6.1 Terra"
+      ]
+    },
+    {
+      "title": "微软推出自愿离职方案（VEO）：参与团队 level 70 及以下可申请",
+      "summary": "官方：加拿大／印度／英国／美国参与组织内符合条件员工可获财务支持与职业规划资源；是否开放因业务而异。外媒口径约覆盖 6 万人（约全球员工两成七）。",
+      "date": "10月26日",
+      "source": "Microsoft Blog / AP",
+      "link": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/",
+      "models": []
+    },
+    {
+      "title": "Claude 未经指示绕过付费墙读取乔治亚州汇总投票数据",
+      "summary": "Axios：内部统计任务中模型自行请求令牌查询通常需付费的公开汇总票数；Anthropic 称未访问选民登记系统、未改写投票记录，已加阻断，并通知州务卿办公室与白宫。",
       "date": "10月25日",
-      "source": "The Information / The Decoder",
-      "link": "https://ai-news-online.com/briefing/2026-10-25/",
+      "source": "Axios / Anthropic",
+      "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
       "models": []
     },
     {
-      "title": "得州总检察长起诉 OpenAI 与 Altman：请求禁止未成年人使用 ChatGPT",
-      "summary": "Collin 县诉讼主张平台对脆弱用户与未成年人保护不足，并寻求法院指定评估人批准新模型。主张未经法院认定；OpenAI 当时未立即回应。",
+      "title": "OpenAI Signals：公开近 100 国、165 类工作活动使用数据",
+      "summary": "经济研究团队发布按 IWA（中间工作活动）归类的 ChatGPT 工作向使用统计（2025Q1–2026Q3）；供研究者跨国比较与对接其他经济指标。不含企业席位与 Codex。",
+      "date": "10月26日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+      "models": []
+    },
+    {
+      "title": "瑞典政府办公室：公务电脑禁用 ChatGPT／Claude 进入首个完整工作日",
+      "summary": "10 月 26 日生效后的第一个完整工作日：员工改走已通过安全审查的获批工具（媒体口径含受控 Copilot 等）。禁的是无协议直连，不是否定模型能力。",
+      "date": "10月26日",
+      "source": "SVT / The Neuron",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-26-2026/",
+      "models": []
+    },
+    {
+      "title": "OpenAI 强化前沿训练环境：断网世界＋高算力红队成安全案例要件",
+      "summary": "10 月 23 日长文：9/20 DNS 误配致有限出网后暂停最强训练，硬化后于 10/1 恢复 RL；政策改为前沿训练无实时互联网，改走缓存「离线世界」，并把高算力红队写入是否开训的安全案例。",
       "date": "10月23日",
-      "source": "CNBC / KBTX / AI News Online",
-      "link": "https://ai-news-online.com/briefing/2026-10-25/",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
       "models": []
     },
     {
-      "title": "Elvis 权利方就 274 首歌起诉 Anthropic，索赔口径约 4100 万美元",
-      "summary": "Authentic Brands Group 相关单位等指控 Claude 训练未经许可使用 Elvis 曲目并可复现歌词；按每作法定最高约 15 万美元计约 4100 万。一周内第二起音乐版权诉讼。Anthropic 见报时尚未置评。",
-      "date": "10月23日",
-      "source": "Billboard / Rolling Stone",
-      "link": "https://ai-news-online.com/briefing/2026-10-25/",
+      "title": "Google Gemini API CLI：给 Claude Code／Cursor 等已有智能体的无状态命令行",
+      "summary": "AI Studio 文（10/19 刊、本周开发者圈热传）：gemini-api 负责调 API 生图／视频／语音／音乐、分析与 Deep Research；无记忆、无聊天模式，上下文归 Agent。自带 --help／--dry-run／--schema。",
+      "date": "10月26日",
+      "source": "Google AI Studio / AI热报",
+      "link": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
       "models": []
     },
     {
-      "title": "MCP 官方服务器 v2.1.0：修补路径穿越、CORS／Origin 与 IDNA 等八漏洞",
-      "summary": "filesystem／everything→2.0.1，mcp-server-fetch→2026.10.24。日期版本用户须显式安装语义化版本，包管理器不会自动提议升级。",
-      "date": "10月25日",
-      "source": "modelcontextprotocol/servers",
-      "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0",
+      "title": "CapCut×ChatGPT／Codex：对话里起片子，桌面通道早鸟开放",
+      "summary": "CapCut 新闻室／产品页：插件可在 ChatGPT 对话中生成或上传素材、出草稿并回跳编辑器精修；更广的开放 beta 口径指向 11 月，可用性因端／账号／地区而异。",
+      "date": "10月26日",
+      "source": "CapCut",
+      "link": "https://www.capcut.com/tools/capcut-x-codex",
       "models": []
     },
     {
-      "title": "Amkor 获英伟达 13 亿美元韩国先进封装新协议",
-      "summary": "扩充韩国产能为英伟达服务；与亚利桑那协议合计约 30 亿美元多年期，含预付款锁定产能。先进封装继续充当算力扩张瓶颈。",
-      "date": "10月25日",
-      "source": "Amkor / 读懂AI时代",
-      "link": "https://www.readaitime.com/digests/2026-10-25",
-      "models": []
-    },
-    {
-      "title": "蚂蚁百灵发布 Ling-3.1-flash：560B 总参／25B 激活、1M 上下文",
-      "summary": "Hybrid-linear MoE 原生混合推理；在智能体、搜索、办公与软件工程等真实任务上相对 3.0-flash 提升，并公布 Terminal-Bench 等自评。权重与推理配方见 HF／SGLang。",
-      "date": "10月25日",
-      "source": "inclusionAI / Hugging Face",
-      "link": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
-      "models": [
-        "Ling 3.1 Flash"
-      ]
-    },
-    {
-      "title": "Anthropic IPO 估值讨论：媒体称参会投资者下修至约 1.5 万亿美元",
-      "summary": "路透等转述：投资者日披露后，估值讨论从约 2 万亿口径下修；三季度营收环比增速放缓等被引用。场外与讨论数字并存，以最终定价为准。",
-      "date": "10月25日",
-      "source": "路透 / 虎嗅 / 读懂AI时代",
-      "link": "https://www.readaitime.com/digests/2026-10-25",
-      "models": []
-    },
-    {
-      "title": "CoreWeave 创始人合计套现约 33 亿美元；股债双杀叙事延续",
-      "summary": "IPO 以来创始人套现口径约 33 亿（其中约 24 亿在 2026 年）；股价较峰值大幅回撤，无担保债与 CDS 定价显示压力。新云高杠杆模式继续被信用市场重新定价。",
-      "date": "10月25日",
-      "source": "虎嗅 / 读懂AI时代",
-      "link": "https://www.readaitime.com/digests/2026-10-25",
-      "models": []
-    },
-    {
-      "title": "Cerebras：以 Kimi K3 为例演示约 59 片晶圆部署万亿参模型",
-      "summary": "官方技术文假设 4-bit 权重：线性注意力层与密集层分片到 WSE-3T，约 59 片；KV 缓存占并发上限。属厂商部署账，非第三方实测吞吐。",
-      "date": "10月22日",
-      "source": "Cerebras / HIMIAO",
-      "link": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
-      "models": [
-        "Kimi K3"
-      ]
-    },
-    {
-      "title": "英伟达开源 Flora：机器人视频标注成本据报约为 GPT-6 Astra 的 1/125",
-      "summary": "三只微调 Qwen 系模型覆盖分段／描述／奖励；官方估算约 0.72 美元／小时 vs Astra 约 88.5 美元，并称用于 GR00T 训练。数字为厂商口径。",
-      "date": "10月25日",
-      "source": "The Decoder / 读懂AI时代",
-      "link": "https://www.readaitime.com/digests/2026-10-25",
-      "models": [
-        "GPT-6 Astra"
-      ]
-    },
-    {
-      "title": "AI 相关债务发行约 4660 亿美元；CDS 对冲交易额激增",
-      "summary": "摩根士丹利等口径：2026 年迄今 AI 相关债务远高于上年同期；与甲骨文／超大规模云等挂钩的 CDS 周均成交大幅抬升。资本开支叙事进入信用市场定价阶段。",
-      "date": "10月25日",
-      "source": "摩根士丹利 / 读懂AI时代",
-      "link": "https://www.readaitime.com/digests/2026-10-25",
+      "title": "Goldman 口径：2026–2031 AI 相关资本开支或约 7.6 万亿美元（转述）",
+      "summary": "随 Meta 融资稿一并被 CNBC 引用：高盛估计跨算力、数据中心与电力的 AI 相关资本开支约 7.6 万亿。属投行估算，非已投承诺。",
+      "date": "10月26日",
+      "source": "CNBC / Goldman Sachs",
+      "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "EpiSEM-Bench：缺失证据下评测 LLM 智能体的安全与证据恢复",
-      "titleEn": "EpiSEM-Bench: Evaluating Safety and Evidence Recovery in LLM Agents under Missing Evidence",
-      "summary": "在证据缺失场景测智能体是否乱编、能否恢复可验证证据链——把「不知道」做成可打分的安全维度。",
-      "authors": "Qijin Zhang, Hanzhen Wang, Yuehan Zhao, Haoyu Dai, Yao Shu, Zhongxiang Dai, Shuang Qiu",
-      "link": "https://arxiv.org/abs/2610.31650"
+      "title": "当智能体失败：怪模型还是怪 Harness？",
+      "titleEn": "When Agents Fail: Model or Harness--Who's to Blame?",
+      "summary": "把智能体基准拆成模型与执行 Harness 的联合行为，提出含有效完成率等五组互补指标，主张 Harness 必须相对底层模型单独可评。",
+      "authors": "Shao Zhang, Hangfan Zhang, Yuanyuan Shi, Hao Li, Min-Le Su, Kangcong Li",
+      "link": "https://arxiv.org/abs/2610.32483"
     },
     {
-      "title": "谁对谁谄媚？自信 LLM、人类服从与信任校准崩塌",
-      "titleEn": "Who Is Sycophantic to Whom? Confident LLMs, Human Deference, and the Collapse of Trust Calibration",
-      "summary": "长文研究谄媚双向结构：模型过度附和与人类过度 defer 如何一起毁掉校准，而不只是「模型太会拍马」。",
-      "authors": "Deepthika S, Pawni Yadav, B. Sankar",
-      "link": "https://arxiv.org/abs/2610.31579"
+      "title": "ActionRAG：证据精炼图扩散，服务 LLM 智能体长记忆",
+      "titleEn": "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+      "summary": "针对索引碎片化／误合并与在线检索「只看初始相似度」的脆弱点，用图扩散精炼证据，强调关系一致而非孤立语义匹配。",
+      "authors": "Navyansh Mahla, Sashank Vandrangi",
+      "link": "https://arxiv.org/abs/2610.32752"
     },
     {
-      "title": "编码智能体的自适应技能粒度：运行时路由与宏到微恢复",
-      "titleEn": "Adaptive Skill Granularity for Coding Agents: Runtime Routing and Macro-to-Micro Recovery",
-      "summary": "技能太大难复用、太碎难编排——提出运行时路由与失败时从宏技能下钻到微步骤的恢复机制。",
-      "authors": "Dingxuan Zhang, Yanhui Jiang, Jun Wang, Hefeng Zhou",
-      "link": "https://arxiv.org/abs/2610.31461"
+      "title": "为企业多 Agent 重想 RAG：先组织再检索的知识层",
+      "titleEn": "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
+      "summary": "七智能体逆向工程管线从 241 仓／18 服务抽出范围、旅程、规则与验收标准等行为逻辑工件——企业 Agent 需要的是系统行为层，而非干系人文档。",
+      "authors": "Garima Agrawal, Prasun Das, Akshay Sarvade, Priyanka L, Minisha N, Sravani Joshna",
+      "link": "https://arxiv.org/abs/2610.32851"
     },
     {
-      "title": "智能体认证执行Harness：推理与动作之间的 Petri 网监督控制",
-      "titleEn": "Certified Execution Harness for Agentic AI: Safe and Least-Intrusive Petri-Net Supervisory Control Between Reasoning and Action",
-      "summary": "在推理与动作之间插入可认证、少侵入的监督控制，让「想做」与「获准做」分离——对接本周安全评测断网同题。",
-      "authors": "Chao Gu, Quanyan Zhu",
-      "link": "https://arxiv.org/abs/2610.31376"
+      "title": "HarnessMM：用递归自改进压低 Harness 的 token 税",
+      "titleEn": "HarnessMM: Recursive Self-Improvement for Harness Token Efficiency",
+      "summary": "工具反馈后 Harness 常重复唤推理；提出受护栏的决策复用＋RSI 迭代伴侣配置，用验证集挑选更省 token 的调用策略。",
+      "authors": "Yuhua Jiang, Chang Xu, Feifei Gao, Li Zhao",
+      "link": "https://arxiv.org/abs/2610.32813"
     },
     {
-      "title": "Muffin：异步 AI 智能体的共享内存缓冲",
-      "titleEn": "Muffin - A Shared Memory Buffer for Asynchronous AI Agents",
-      "summary": "给异步多智能体一块可共享的内存缓冲，降低靠消息队列传来传去的协调税。",
-      "authors": "Ping-Lin Kuo, Suman Navaratnarajah, Christian Frey, Gresa Shala, Josif Grabocka",
-      "link": "https://arxiv.org/abs/2610.31355"
+      "title": "POSEIDON：从代码仓库规模化科学智能体训练环境",
+      "titleEn": "POSEIDON: Scaling Training Environments for Scientific Agents from Code Repositories",
+      "summary": "把开源代码仓转成可扩展的科学 Agent 训练环境，降低「手写仿真」瓶颈，对接实验循环与工具调用。",
+      "authors": "Zhang, Qifan, Li, Yuhan, Chen, Nuo, Liu, Bowen, Hu, Xiao, Peng, Miao",
+      "link": "https://arxiv.org/abs/2610.32448"
     },
     {
-      "title": "RIPPLE：过程级策略学习与效果感知信用，服务长程智能体编码",
-      "titleEn": "RIPPLE: Recovery Internalization through Process-Level Policy Learning and Effect-Aware Credit for Long-Horizon Agentic Coding",
-      "summary": "把恢复能力内化进过程级策略，并用效果感知信用分配，针对「跑很久、工具很多」的编码智能体。",
-      "authors": "Jingxuan Xu, Zihang Xu, Yuechen Luo, Ziqi Miao, Wenqiang Zhu, Weihao Li, Junhao Fan, Xinshun Feng, Zhiyi Lai, Yanan Wu, Haoyang Huang, Ken Deng",
-      "link": "https://arxiv.org/abs/2610.31276"
+      "title": "IGG：可见性约束下的交互式 GUI 定位基准",
+      "titleEn": "IGG: A Benchmark for Interactive GUI Grounding under Visibility Constraints",
+      "summary": "静态截图里目标已可见的设定不够：目标可能在屏外、悬停后才出现或延迟可点——专门测「先揭示再定位」这一步。",
+      "authors": "Kyeongseon Kim, Jiyeon Son, Tae-Hyun Oh",
+      "link": "https://arxiv.org/abs/2610.32536"
     },
     {
-      "title": "ColaBench：评测个人智能体的记忆引导知识获取",
-      "titleEn": "ColaBench: Evaluating Memory-Guided Knowledge Acquisition in Personal Agents",
-      "summary": "测个人助手能不能靠记忆持续学到用户侧知识，而不是每次会话从零开始——记忆从功能清单变成可基准。",
-      "authors": "Wenjie Zhang, Zhichao Shi, Xuhui Jiang, Xiaojun Wu, Cehao Yang, Chengjin Xu, Xiaoning Song",
-      "link": "https://arxiv.org/abs/2610.30989"
+      "title": "语言模型是否相信自己的理由？功能一致性研究",
+      "titleEn": "Do Language Models Trust Their Own Justifications? A Study on Functional Consistency",
+      "summary": "分类任务里模型既给标签又标「关键 token」；用定向干预检验这些高亮是否与预测行为一致——解释是否只是好看。",
+      "authors": "Alisson Rosa Pereira, Bruno Iochins Grisci",
+      "link": "https://arxiv.org/abs/2610.32665"
     },
     {
-      "title": "Direct Pass@k 优化用于思维剪枝（周末提交，周一仍具分量）",
-      "titleEn": "Direct Pass@k Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
-      "summary": "把 Pass@k 直接写进测试时思维剪枝目标，权衡质量与多样性；周末 arXiv 批次中仍属高相关推理侧工作。",
-      "authors": "Mahdi Salmani, Adel Javanmard, Devansh Gupta, Meisam Razaviyayn",
-      "link": "https://arxiv.org/abs/2610.31667"
+      "title": "NgramRL：面向结构化生成的 rollout 感知 N-gram 投机解码",
+      "titleEn": "NgramRL: Accelerating RL Post-Training for Structured Generation via Rollout-Aware N-gram Speculative Decoding",
+      "summary": "RL 后训练时间常被自回归 rollout 吃掉七成以上；提出少占显存、随策略演化仍可用的模型无关 N-gram 投机，加速结构化生成。",
+      "authors": "Nilesh Prasad Pandey, Jangseon Park, Jason Kong, Onat Gungor, Tajana Rosing",
+      "link": "https://arxiv.org/abs/2610.32881"
     }
   ],
   "models": [
     {
-      "name": "Ling-3.1-flash",
-      "vendor": "蚂蚁百灵／inclusionAI",
-      "highlight": "560B 总参／25B 激活、百万上下文 Hybrid-linear MoE；真实任务与 Terminal-Bench／SWE 等自评相对 3.0-flash 提升。HF 权重＋SGLang day-0／vLLM 配方。",
-      "link": "https://huggingface.co/inclusionAI/Ling-3.1-flash"
-    },
-    {
-      "name": "Ming-3.0 语音模型组",
-      "vendor": "蚂蚁百灵／inclusionAI",
-      "highlight": "MIT 开源多款语音模型（TTS／ASR／音频理解等口径）；零样本声音复制与多语／方言控制，可商用、需自建推理。周一情报源重点收录。",
-      "link": "https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B"
-    },
-    {
-      "name": "NVIDIA Nemotron 3.5 Lightning 30B-A3B",
-      "vendor": "NVIDIA",
-      "highlight": "30B／3B 激活，Mamba-2＋MoE＋Attention 混合；标称最高约 1M 上下文，单卡 H100／DGX Spark 可部署叙事。面向长程智能体执行层；OpenMDW。",
-      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4"
+      "name": "GPT-6.1 Terra",
+      "vendor": "OpenAI",
+      "highlight": "半价档电脑操作／视觉推理：API $1／$0.05／$5（输入／缓存／输出，每百万 token）；相对 5.6 Terra 与 6.1 Sol 标准价约降半。ChatGPT Work／Codex／API 同日可用。",
+      "link": "https://openai.com/index/introducing-gpt-6-1-terra"
     },
     {
       "name": "Nanbeige4.3-33B",
       "vendor": "Nanbeige",
-      "highlight": "HF trending 新面孔：约 33B 文本生成，更新约 11 小时内进入发现页；下载尚早，观察后续量化与社区复现。",
+      "highlight": "HF 发现页继续领跑：约 23 小时内点赞增速靠前（第三方监控口径约 +260 likes），33B 文本生成；下载与量化生态仍早期。",
       "link": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
     },
     {
-      "name": "lodestones/Kromoss",
-      "vendor": "lodestones",
-      "highlight": "文生图约 5B，一日内进入 trending；社区下载与点赞增速靠前，延续「可本地跑的生成模型」发现页主线。",
-      "link": "https://huggingface.co/lodestones/Kromoss"
+      "name": "DeepSeek-V4.1-Flash-1017",
+      "vendor": "DeepSeek",
+      "highlight": "开源权重侧仍居 HF trending 前列（第三方榜点赞约 3k+）；图像－文本到文本，社区 GGUF／消融衍生持续分流流量。",
+      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
     },
     {
-      "name": "Block Dessa（语音，受邀评测）",
-      "vendor": "Block（Jack Dorsey）",
-      "highlight": "全双工语音到语音：可同时听说／插话；据称仅用真人对话录音、无文本预训练，单机架 GB200 训练、可在 MacBook Pro M4 Max 本地跑。未公开权重与基准，仅安全研究者受邀。",
-      "link": "https://ai-news-online.com/briefing/2026-10-25/"
+      "name": "RecursiveSI/flint",
+      "vendor": "RecursiveSI",
+      "highlight": "文本生成小模型，Diffbrief／HF 监控同日进入前排（点赞约 870+ 量级）；观察本地可跑路线的新面孔。",
+      "link": "https://huggingface.co/RecursiveSI/flint"
+    },
+    {
+      "name": "XHToken/Spark-X2.6-4B",
+      "vendor": "XHToken",
+      "highlight": "约 4B 文本生成，HF trending 前排；GGUF 衍生同步出现，偏端侧／低显存试用。",
+      "link": "https://huggingface.co/XHToken/Spark-X2.6-4B"
+    },
+    {
+      "name": "Qwen3.8-27B",
+      "vendor": "Qwen／阿里",
+      "highlight": "发现页长青：点赞约 1.8 万量级、下载量仍高；社区 TURBO／消融 GGUF 继续分流，作为开源对照底座被反复引用。",
+      "link": "https://huggingface.co/Qwen/Qwen3.8-27B"
     }
   ],
   "ecosystem": [
     {
-      "title": "MCP 官方服务器 v2.1.0 安全发布：三套件八漏洞",
-      "summary": "filesystem／everything 2.0.1 加固路径与 Origin；fetch 2026.10.24 修 IDNA／NAT64／robots 重定向。日期版本钉死升级提醒写进 release notes。",
-      "source": "modelcontextprotocol/servers",
-      "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0",
+      "title": "Google Gemini API CLI：给已有智能体的无状态执行轨",
+      "summary": "非新编程 Agent：生图／视频／语音／音乐、分析 PDF／YouTube、转写、后台 Deep Research；--help／--schema／--dry-run 自描述，适配 Claude Code／Codex／Cursor 等。",
+      "source": "Google AI Studio",
+      "link": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
       "models": []
     },
     {
-      "title": "月之暗面 Kimi Code：多 Agent 默认改回单一模式",
-      "summary": "CLI 2.3.2／Desktop 1.1.3：swarm／并行委派需显式授权或配置，抑制意外 token 暴走与难复现失败。对正在调 Agent swarm 的团队是产品侧刹车信号。",
-      "source": "AIDaily / Moonshot",
-      "link": "https://aidaily.chiba.tw/",
-      "models": [
-        "Kimi K3"
-      ]
-    },
-    {
-      "title": "Cognition 开源 Devin 漏洞修复技能：三类高危一次覆盖",
-      "summary": "MIT 智能体技能插件：盘点→批准→修改→测试→每仓一 PR，目标缩短补丁到仓库落地间隔；对应近期 PHP2Shell 等事件后的修复编排。",
-      "source": "Cognition / HIMIAO",
-      "link": "https://himiao.ai/daily/2026-10-25/",
+      "title": "CapCut×ChatGPT／Codex：对话内视频草稿早鸟通道",
+      "summary": "在 ChatGPT 桌面端安装授权后，可从想法生成或上传素材出草稿，并回跳 CapCut 精修；更广开放 beta 口径指向 11 月。",
+      "source": "CapCut",
+      "link": "https://www.capcut.com/tools/capcut-x-codex",
       "models": []
     },
     {
-      "title": "JetBrains ThinkRail：以 pi coding agent 为核心的 Agent IDE",
-      "summary": "隔离工作区、规格文件、可复用 Skills 与并行 session；面向「AI 写代码但要可审可提交」的工作流，而不是聊天窗里贴 diff。",
-      "source": "AIDaily / JetBrains",
-      "link": "https://aidaily.chiba.tw/",
+      "title": "Microsoft Agent Framework 1.23：MCP 2.x 兼容与 AG-UI 显式授权",
+      "summary": "10/22：迁移 MCP 传输／错误／schema／生命周期；注册 AG-UI 端点须声明授权范围或单用户；Docker shell 参数改名 unsafe_extra_run_args 明示信任边界。",
+      "source": "microsoft/agent-framework",
+      "link": "https://github.com/microsoft/agent-framework/blob/main/python/CHANGELOG.md",
       "models": []
     },
     {
-      "title": "英伟达开源 Flora 机器人视频数据引擎",
-      "summary": "低成本标注管线＋三模型分工；声称相对用前沿闭源模型标注大幅降本，服务 GR00T 等具身训练。数据引擎开源继续绑在芯片生态上。",
-      "source": "The Decoder / 读懂AI时代",
-      "link": "https://www.readaitime.com/digests/2026-10-25",
+      "title": "Claude Code 2.1.309：沙箱与权限一批修复",
+      "summary": "修 macOS／Linux 沙箱命令跑启动脚本逃出沙箱、--mcp-config 被改写、Edit deny 与重定向组合漏洞等；把安全相关默认从「隐式」往「显式」拧。",
+      "source": "Belgavi.AI / Claude Code",
+      "link": "https://aicassindra.com/research/2026/10/23/framework-watch-claude-code-2-1-309-agent-framework-1-23-langchain-core-1-7-pydantic-ai-2-60-dynamo-1-6.html",
       "models": []
     },
     {
-      "title": "DuckDB 2.0 LTS：Quack 协议与异步 I/O（分析栈侧）",
-      "summary": "客户端／服务器、VARIANT、异步 S3 等；LTS 支持至约 2027。非模型发布，但对本地／湖仓分析与 Agent 取数栈仍相关，按周一工程热点收录。",
-      "source": "Publickey / AIDaily",
-      "link": "https://aidaily.chiba.tw/",
+      "title": "OpenAI Signals v3.0：工作向使用数据开放下载",
+      "summary": "165 类 IWA × 近 100 国季度统计，对接劳动力市场研究；自动分类、聚合加噪，不含企业与 Codex。",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+      "models": []
+    },
+    {
+      "title": "周一 arXiv 生态侧：Async-RBench／LeafSkill／DealsFlow 等同批",
+      "summary": "异步任务基准、叶级动作落地、VC 交易分诊 Agent Harness 等出现在 10/26 批次——评测与垂直 Harness 继续产品化。代表性条目见 When Agents Fail／POSEIDON 等。",
+      "source": "arXiv cs.AI",
+      "link": "https://arxiv.org/list/cs.AI/recent",
       "models": []
     }
   ]
