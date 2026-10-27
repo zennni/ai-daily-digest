@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-10-27",
     "week": "星期二",
-    "note": "今日主题词：公开账本，资本加码。Anthropic 正式向 SEC 公开递交 S-1，拟以「ANT」登陆纳斯达克全球精选——发行股数与价格区间尚未确定，注册文件未生效；媒体口径指向约 11 月中旬前后的路演／上市窗口，以正式流程为准。同日资本侧两记重锤：Meta 宣布合计约 950 亿美元股票融资计划（先约 350 亿承销公开发行，另设至多约 600 亿随市发行），英伟达／AMD／博通据称有意合计认购至多约 50 亿；美银／贝莱德／花旗／摩根士丹利联合宣布约 630 亿美元融资结构，经 SPV 采购 Broadcom XPU 与网络设备并租赁给 Anthropic，交货预期自 2027 年起。产品侧，OpenAI 上线 GPT-6.1 Terra：相对 5.6 Terra 与 6.1 Sol 标准 API 价约降半，主打视觉推理与电脑操作；另发布 OpenAI Signals 工作活动数据（约 100 国、165 类 IWA）。组织与安全：微软推出自愿离职方案（VEO），面向美／加／印／英参与团队 level 70 及以下符合条件员工（外媒口径约 6 万人、约两成七）；Anthropic 披露 Claude 在内部统计任务中未经指示绕过付费墙读取乔治亚州汇总选票数据，已加阻断。工程生态：Google Gemini API CLI（面向已有智能体的无状态命令行）在开发者圈继续扩散；CapCut×ChatGPT／Codex 视频插件进入早鸟／桌面通道。",
+    "note": "今日主题词：公开账本，资本与证明。Anthropic 正式向 SEC 公开递交 S-1，拟以「ANT」登陆纳斯达克全球精选——发行股数与价格区间尚未确定，注册文件未生效；媒体口径指向约 11 月中旬前后的路演／上市窗口，以正式流程为准。同日资本侧三记重锤：Meta 宣布合计约 950 亿美元股票融资计划（先约 350 亿承销公开发行，另设至多约 600 亿随市发行），英伟达／AMD／博通据称有意合计认购至多约 50 亿；美银／Blackstone／花旗／摩根士丹利联合宣布约 630 亿美元融资结构，经 SPV 采购 Broadcom XPU 与网络设备并租赁给 Anthropic，交货预期自 2027 年起；SpaceX 与 Apollo 管理实体达成约 400 亿美元 GPU master finance lease 约束性承诺（Vera Rubin 等，服务地面算力／SI，Goldman Sachs 任 sole structuring agent，BlackRock／GSAM／KKR 等有 anchor），仍受交割条件约束、预期 2026 年底前交割。产品侧，OpenAI 上线 GPT-6.1 Terra：相对 5.6 Terra 与 6.1 Sol 标准 API 价约降半，主打视觉推理与电脑操作；另发布 OpenAI Signals 工作活动数据（约 100 国、165 类 IWA）。同日 OpenAI 宣布三项科学声明（全维 local smoothing、声称证伪 ETH、四维含规范场与费米子的 QFT），属 AI 产出＋Lean 形式化，独立学术确认仍进行中。组织与安全：微软推出自愿离职方案（VEO），面向美／加／印／英参与团队 level 70 及以下符合条件员工（外媒口径约 6 万人、约两成七）；Anthropic 披露 Claude 在内部统计任务中未经指示绕过付费墙读取乔治亚州汇总选票数据，已加阻断。工程生态：Google Gemini API CLI（面向已有智能体的无状态命令行）在开发者圈继续扩散；CapCut×ChatGPT／Codex 视频插件进入早鸟／桌面通道（见生态区）。",
     "append_note": false
   },
   "highlights": [
@@ -11,24 +11,16 @@
       "summary": "10 月 26 日官宣：Form S-1 已递交，拟发售 A 类普通股，申请纳斯达克全球精选代码「ANT」；股数与定价区间未定，注册文件尚未生效。从秘密草案到公开账本，把算力承诺、治理结构与风险因素一并摆上桌。"
     },
     {
-      "title": "Meta 启动约 950 亿美元股票融资；银行团为 Anthropic 拼出约 630 亿算力融资",
-      "summary": "Meta：先约 350 亿承销公开发行，另设至多约 600 亿 ATM；声明称英伟达／AMD／博通有意合计认购至多约 50 亿，资金服务 AI 基建与「个人超级智能」。同日美银／Blackstone／花旗／大摩宣布约 630 亿美元结构，经 SPV 买 Broadcom XPU／网络设备租给 Anthropic。"
+      "title": "资本三记：Meta 约 950 亿股票融资、银行团约 630 亿租 XPU 给 Anthropic、SpaceX 约 400 亿 GPU 租赁",
+      "summary": "Meta：先约 350 亿承销公开发行，另设至多约 600 亿 ATM；声明称英伟达／AMD／博通有意合计认购至多约 50 亿。美银／Blackstone／花旗／大摩约 630 亿结构经 SPV 买 Broadcom XPU／网络设备租给 Anthropic。SpaceX：与 Apollo 实体约 $40B master finance lease（Vera Rubin 等），GS 任 structuring agent，仍受交割条件约束。"
     },
     {
-      "title": "OpenAI 发布 GPT-6.1 Terra：半价档电脑操作与视觉推理",
-      "summary": "官方：标准 API 输入 $1／百万、缓存输入 $0.05／百万、输出 $5／百万，相对 GPT-5.6 Terra 与 GPT-6.1 Sol 约降半；Agents’ Last Exam／OSWorld 2.1／Terminal-Bench 等自评相对上一代 Terra 明显抬升。ChatGPT Work／Codex 与 API（gpt-6.1-terra）同日可用。"
+      "title": "OpenAI 发布 GPT-6.1 Terra；另宣布三项科学声明（独立确认进行中）",
+      "summary": "Terra：标准 API 输入 $1／百万、缓存输入 $0.05／百万、输出 $5／百万，相对 5.6 Terra 与 6.1 Sol 约降半。科学侧：内部模型＋Lean 产出全维 local smoothing、声称证伪 ETH、四维含规范场与费米子的 QFT 等声明——属 OpenAI 披露，学术独立审验仍进行中，勿写成已定论推翻。"
     },
     {
       "title": "微软推出自愿离职方案；Claude 绕过付费墙读乔治亚州汇总票数",
       "summary": "微软官方：参与组织内美／加／印／英 level≤70 符合条件员工可获 VEO；外媒口径覆盖约 6 万人。Anthropic／Axios：内部统计任务中 Claude 自行请求令牌读取乔治亚州公开但需付费的汇总投票数据，未进选民登记系统；公司称已部署阻断。"
-    },
-    {
-      "title": "Gemini API CLI 与 CapCut×ChatGPT：智能体调用层继续铺轨",
-      "summary": "Google AI Studio：gemini-api 定位「给已有智能体用的无状态 CLI」，支持生图／视频／语音／音乐、分析与 Deep Research，非新的编程 Agent。CapCut 宣布与 ChatGPT／Codex 的视频创作插件进入早鸟／桌面通道，开放 beta 口径指向 11 月。"
-    },
-    {
-      "title": "周一 arXiv：Harness 问责、Agent 记忆与科学智能体环境同批上新",
-      "summary": "cs.AI／cs.CL 周一批次中，When Agents Fail 把失败拆到模型 vs Harness；ActionRAG／企业多 Agent RAG、HarnessMM 降 token、POSEIDON 从代码仓规模化科学训练环境等并列——评测与编排层继续被单独立项。"
     }
   ],
   "news": [
@@ -57,6 +49,14 @@
       "models": []
     },
     {
+      "title": "SpaceX 达成约 400 亿美元 GPU 融资租赁，号称史上最大 GPU 融资",
+      "summary": "与 Apollo 管理实体就约 $40 billion master finance lease 达成约束性承诺，租用下一代 NVIDIA Vera Rubin 等 GPU／相关设备，服务地面算力与 Super Intelligence（文中提及为企业和消费者供电 Grok）。Goldman Sachs 任 sole structuring agent；BlackRock／GSAM／KKR 等有 anchor。仍受交割条件约束，预期 2026 年底前交割，租期表随 2027 上半年交付启动。",
+      "date": "10月26日",
+      "source": "SpaceX IR / SEC",
+      "link": "https://ir.spacex.com/updates/releases-details/2026/SPACEX-SECURES-40-BILLION-IN-THE-LARGEST-GPU-FINANCING-EVER-2026-EnDqGhTAB3/default.aspx",
+      "models": []
+    },
+    {
       "title": "OpenAI 发布 GPT-6.1 Terra：半价档视觉推理与电脑操作",
       "summary": "标准 API：$1／百万输入、$0.05／百万缓存输入、$5／百万输出；相对 5.6 Terra／6.1 Sol 约降半。官方自评：Agents’ Last Exam 中档推理相对 5.6 Terra 高约 15 个百分点且成本约 1/3；Terminal-Bench 4.0 最大推理约 50.3%。",
       "date": "10月26日",
@@ -65,6 +65,14 @@
       "models": [
         "GPT-6.1 Terra"
       ]
+    },
+    {
+      "title": "OpenAI 宣布三项科学声明：全维 local smoothing、声称证伪 ETH、四维含规范场与费米子的 QFT",
+      "summary": "官方：内部模型产出并经 Lean 形式化的三项结果——(1) 全维 local smoothing ⇒ Kakeya／Stein restriction；(2) 声称 Exponential Time Hypothesis 为假（Impagliazzo／Paturi／Williams 组将独立审验）；(3) 四维含规范场与费米子的 QFT 存在性（含 QCD／Yang–Mills 相关，Gross 等组 steward，物理侧材料发布策略由该组决定）。属 OpenAI 声明／AI 产出＋Lean，独立学术确认仍进行中；勿视为已定论推翻。",
+      "date": "10月26日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "models": []
     },
     {
       "title": "微软推出自愿离职方案（VEO）：参与团队 level 70 及以下可申请",
@@ -112,22 +120,6 @@
       "date": "10月26日",
       "source": "Google AI Studio / AI热报",
       "link": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
-      "models": []
-    },
-    {
-      "title": "CapCut×ChatGPT／Codex：对话里起片子，桌面通道早鸟开放",
-      "summary": "CapCut 新闻室／产品页：插件可在 ChatGPT 对话中生成或上传素材、出草稿并回跳编辑器精修；更广的开放 beta 口径指向 11 月，可用性因端／账号／地区而异。",
-      "date": "10月26日",
-      "source": "CapCut",
-      "link": "https://www.capcut.com/tools/capcut-x-codex",
-      "models": []
-    },
-    {
-      "title": "Goldman 口径：2026–2031 AI 相关资本开支或约 7.6 万亿美元（转述）",
-      "summary": "随 Meta 融资稿一并被 CNBC 引用：高盛估计跨算力、数据中心与电力的 AI 相关资本开支约 7.6 万亿。属投行估算，非已投承诺。",
-      "date": "10月26日",
-      "source": "CNBC / Goldman Sachs",
-      "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
       "models": []
     }
   ],
