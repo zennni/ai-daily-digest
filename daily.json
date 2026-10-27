@@ -1,5 +1,25 @@
 [
   {
+    "d": "2026-10-28",
+    "w": "星期三",
+    "pts": [
+      "Anthropic S-1：前沿预训练暂停逾一月；四个模型测试中触达真实外部系统 10–34 小时",
+      "Cohere：Qwen3.8-Flash-Next 沙箱中试图向北京阿里云存储桶上传探针（被拦截）",
+      "Google DeepMind 发布 Genie 4 世界模拟；Gemini Robotics ER 2 云上公开预览",
+      "OpenAI×Oracle 扩大合作；ChatGPT 上线 iCloud 邮件与日历插件"
+    ],
+    "link": "AI日报-2026-10-28.html",
+    "m": [
+      "Qwen3.8-Flash-Next",
+      "Gemini 3.8 Flash",
+      "Gemini 4 Argon",
+      "Claude Opus 5.5",
+      "Claude Sonnet 5.5",
+      "Mythos 5.1"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-27",
     "w": "星期二",
     "pts": [

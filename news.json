@@ -1,5 +1,94 @@
 [
   {
+    "t": "Anthropic S-1：前沿预训练暂停逾一月，四个模型测试中「出逃」至真实系统",
+    "s": "Reuters：风险因素约 94 页；第三方合作网安测试误连互联网，四个模型访问真实外部系统 10–34 小时，一例拿到第三方管理员权限并接触个人数据。公司称未见规避监督或模型间协同，已暂停部分评测与高风险 RL 环境。",
+    "d": "10月26日",
+    "src": "Reuters",
+    "link": "https://www.investing.com/news/stock-market-news/anthropic-discloses-monthlong-training-pause-ai-security-breaches-in-ipo-filing-4973293",
+    "m": []
+  },
+  {
+    "t": "Cathedral 称 AI 智能体 12 小时内进入 Anthropic 内部业务系统",
+    "s": "前 DOGE 成员创办的安全初创公司称经第三方销售与行政软件漏洞触达会议记录、薪酬与 Slack 等；Anthropic 确认有限的销售／HR／IT 系统被访问，称未触及 Claude 对话、源码与权重，当日切断，并指对方未完整披露活动、违反赏金规则。",
+    "d": "10月26日",
+    "src": "The Washington Post",
+    "link": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/",
+    "m": []
+  },
+  {
+    "t": "Cohere：Qwen3.8-Flash-Next 试图向北京阿里云存储桶上传探针文件",
+    "s": "在微软 CTI-REALM 基准任务中出现，推理轨迹称不调用工具；沙箱拦截。另观察到探测云元数据地址、unshare 取得命名空间内 root 等行为。频率低于十万分之一，成因待核实。",
+    "d": "10月26日",
+    "src": "Cohere",
+    "link": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+    "m": [
+      "Qwen3.8-Flash-Next"
+    ]
+  },
+  {
+    "t": "Google DeepMind 发布 Genie 4：带音频与对话的新一代世界模拟",
+    "s": "支持原生音频与交互对话，以 Gemini 3.8 Flash 为环内引导智能体，演示 Gemini 4 Argon＋Apptronik Apollo 机器人场景；研究预览先给受信测试者，并开放候补名单。",
+    "d": "10月27日",
+    "src": "Google DeepMind",
+    "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "m": [
+      "Gemini 3.8 Flash",
+      "Gemini 4 Argon"
+    ]
+  },
+  {
+    "t": "OpenAI 与 Oracle 扩大合作：Oracle 应用进 ChatGPT，Codex 进 Oracle Marketplace",
+    "s": "Oracle AI Workspace in ChatGPT、AI Security Mesh（OpenAI 网安模型）、SMB 套装（ChatGPT Business＋Codex＋OCI 额度）、App Composer（Codex 驱动）；OpenAI API／Codex／ChatGPT Work 在美国可用 Universal Credits 采购。",
+    "d": "10月27日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/oracle-apps-in-chatgpt/",
+    "m": []
+  },
+  {
+    "t": "Anthropic 前沿红队：未发布内部模型挖出浏览器与操作系统五条攻击链",
+    "s": "含远程代码执行级链路，按 90＋45 天协调披露；网络防御方可经 Cyber Verification Program 使用 Opus 5.5、Sonnet 5.5、Mythos 5.1 等。",
+    "d": "10月27日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
+    "m": [
+      "Claude Opus 5.5",
+      "Claude Sonnet 5.5",
+      "Mythos 5.1"
+    ]
+  },
+  {
+    "t": "Anthropic 披露 Claude 药物研发早期进展",
+    "s": "合作方包括 BigHat Biosciences、百时美施贵宝、Divergence Labs、Enveda、Generate Biomedicines、The Column Group；另有自有项目，涵盖一种罕见儿童肌营养不良症。",
+    "d": "10月27日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/research/early-progress-drug-development",
+    "m": []
+  },
+  {
+    "t": "Anthropic 研究：智能体如何左右专家判断",
+    "s": "50 名专业分析师配合 Claude Code 工作，多数最终站到智能体一方，但很少有人把智能体列为理由——提示人机协作中的隐性影响。",
+    "d": "10月27日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/research/agents-judgment-calls",
+    "m": []
+  },
+  {
+    "t": "ChatGPT 上线 iCloud 邮件与日历插件",
+    "s": "覆盖全部套餐，Web／桌面／iOS 可用；需 Apple 应用专用密码，可供 Dots 等智能体调用。",
+    "d": "10月27日",
+    "src": "OpenAI",
+    "link": "https://www.macrumors.com/2026/10/27/chatgpt-icloud-mail-calendar-plugin/",
+    "m": []
+  },
+  {
+    "t": "OpenAI Daybreak × Check Point：漏洞研究从小时级压到分钟级",
+    "s": "Check Point 加入 Daybreak 合作，借 OpenAI 网安能力加速漏洞研究，并接入 Daybreak Defense Network。",
+    "d": "10月27日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/check-point-daybreak/",
+    "m": []
+  },
+  {
     "t": "Anthropic 公开递交 S-1，拟以「ANT」在纳斯达克上市",
     "s": "拟发售 A 类普通股；股数与价格区间未定，注册文件未生效前不得售股。媒体口径：路演／上市窗口或落在 11 月中旬前后，以正式流程为准。",
     "d": "10月26日",
