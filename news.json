@@ -45,6 +45,14 @@
     "m": []
   },
   {
+    "t": "NVIDIA×Meta 扩大 Muse 模型合作，NVIDIA 拟投 30 亿美元认购 Meta 股权",
+    "s": "双方将在 Muse 系列模型与智能体的推理／训练上做全链路优化，并考虑引入 NVIDIA OpenShell 参考架构与 Sentry 监控智能体行为；Meta 扩大部署 Vera Rubin、Vera CPU、Spectrum-X 与 BlueField-4。NVIDIA 将在 Meta 此轮股权融资中投资 30 亿美元。",
+    "d": "10月27日",
+    "src": "NVIDIA",
+    "link": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Meta-to-Expand-Collaboration-on-Muse-and-Muse-Family-of-Models-Amid-Robust-Growth/default.aspx",
+    "m": []
+  },
+  {
     "t": "Anthropic 前沿红队：未发布内部模型挖出浏览器与操作系统五条攻击链",
     "s": "含远程代码执行级链路，按 90＋45 天协调披露；网络防御方可经 Cyber Verification Program 使用 Opus 5.5、Sonnet 5.5、Mythos 5.1 等。",
     "d": "10月27日",
