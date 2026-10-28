@@ -1,0 +1,248 @@
+{
+  "meta": {
+    "date": "2026-10-29",
+    "week": "星期四",
+    "note": "今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。",
+    "append_note": false
+  },
+  "highlights": [
+    {
+      "title": "Google 发布 Gemini 4 Carbon：网安优先、先给防御方",
+      "summary": "先经 Fairwind 计划向部分网络防御方开放，之后再扩至开发者、企业与消费者；Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，AA 智能指数 v5.0 以 59 分居首（厂商口径，本站主榜按 v4.3.2 不动）。推广期 $2／$10 每百万 token，缓存输入降 95%，之后 $4／$20。"
+    },
+    {
+      "title": "报道：OpenAI 计划采购 Google TPU",
+      "summary": "Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片；双方未证实，交易条款未披露。"
+    },
+    {
+      "title": "OpenAI×ServiceNow 扩大合作，ServiceNow MCP 插件上架 OpenAI 应用市场",
+      "summary": "语音能力 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA；Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将用上 ChatGPT Work 与 Codex，OpenAI 成为 Control Tower Alliance 创始成员。"
+    },
+    {
+      "title": "Anthropic：GSA 六折扩至州与地方政府，Claude Enterprise 上线支出报告",
+      "summary": "OneGov 协议下 Claude Enterprise／Claude for Government／API 打六折、无最低消费，Anthropic 估算可为政府节省约 10 亿美元；同日 Claude Enterprise 推出智能报告、应用内问卷与共享组预算，AI for Science 扩至 20 家基金会与研究机构。"
+    },
+    {
+      "title": "Axiom：AI 智能体 24 天完成有限单群分类定理 Lean 形式化",
+      "summary": "约 4310 万行、205 万条声明、覆盖 715 篇论文；过程中发现 34 处与已发表论证不一致之处。"
+    }
+  ],
+  "news": [
+    {
+      "title": "Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放",
+      "summary": "Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。",
+      "date": "10月28日",
+      "source": "Google",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "models": []
+    },
+    {
+      "title": "报道：OpenAI 计划采购 Google TPU",
+      "summary": "Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片以扩充算力；OpenAI 与 Google 均未证实，交易规模与条款未披露（待核实）。",
+      "date": "10月28日",
+      "source": "Reuters / The Information",
+      "link": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342",
+      "models": []
+    },
+    {
+      "title": "OpenAI 与 ServiceNow 扩大合作",
+      "summary": "ServiceNow MCP 插件当天上架 OpenAI 应用市场；语音 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA，Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将使用 ChatGPT Work 与 Codex，OpenAI 为 Control Tower Alliance 创始成员。",
+      "date": "10月28日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+      "models": []
+    },
+    {
+      "title": "Anthropic 扩大与 GSA 合作：Claude 政府采购六折",
+      "summary": "OneGov 协议下 Claude Enterprise、Claude for Government 与 API 打六折，延伸至州、地方、部落与领地政府且无最低消费；Anthropic 估算节省约 10 亿美元，约 500 个政府机构在用 Claude。Nextgov 称协议为期 27 个月至 2029 年 1 月 31 日。",
+      "date": "10月27日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "models": []
+    },
+    {
+      "title": "Claude Enterprise 上线智能报告、问卷与共享组预算",
+      "summary": "智能报告抽样团队对话、归纳为工作流，展示花费、产出、摩擦点与建议；应用内问卷收集员工反馈；共享组预算让一个组共用月度额度，个人上限仍可作护栏。",
+      "date": "10月28日",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
+      "models": []
+    },
+    {
+      "title": "Anthropic AI for Science 扩至 20 家基金会与研究机构",
+      "summary": "Anthropic 宣布扩大 AI for Science 合作网络，新增基金会与科研机构合作方，总数达 20 家；具体资助与额度以官方页面为准。",
+      "date": "10月28日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "models": []
+    },
+    {
+      "title": "CNBC：Anthropic S-1 称部分 AI 风险可能无法投保",
+      "summary": "CNBC 梳理 Anthropic 上市文件的风险因素：部分与 AI 相关的风险可能难以或无法通过保险覆盖，或带来潜在负债。",
+      "date": "10月28日",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html",
+      "models": []
+    },
+    {
+      "title": "荷兰拟到 2035 年削减约 2.5 万个中央政府岗位并推进 AI",
+      "summary": "目标每年节省约 35 亿欧元，警察与国防除外；AI 相关目标拟在 2027 年一季度提出。",
+      "date": "10月27日",
+      "source": "The Telegraph",
+      "link": "https://www.telegraph.co.uk/business/2026/10/27/netherlands-to-cut-25000-civil-service-jobs-in-ai-push/",
+      "models": []
+    },
+    {
+      "title": "Axiom 完成有限单群分类定理（CFSG）的 Lean 形式化",
+      "summary": "约 4310 万行、205 万条声明、涵盖 715 篇论文，借助 AI 智能体 24 天完成；发现 34 处与已发表论证的偏差。",
+      "date": "10月28日",
+      "source": "Axiom",
+      "link": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
+      "models": []
+    },
+    {
+      "title": "特朗普称将在政府文件中以「SI（超级智能）」取代「AI」",
+      "summary": "Truth Social 发文称将「正式禁用」AI 一词；现行依据为 10 月初行政令 14434，只要求行政部门在特定非法定材料中改用「Super Intelligence／SI」，无法约束私营、媒体与法律条文用法。",
+      "date": "10月27日",
+      "source": "Reuters",
+      "link": "https://www.investing.com/news/world-news/trump-says-he-will-ban-term-artificial-intelligence-4976471",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "InfraDev：编码智能体能开发 AI 基础设施吗？",
+      "titleEn": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?",
+      "summary": "36 个任务取自 Megatron-LM、vLLM、verl 真实 PR，覆盖训练、推理与 RL，需跨多文件、多 GPU 正确运行；联合合成隐藏探针与接口提示来评分，共享执行环境复用依赖与产物。",
+      "authors": "Yangshen Deng, Jiaqi Ruan, Yeqi Huang, Nick Lau, Guangming Sheng 等",
+      "link": "https://arxiv.org/abs/2610.36589"
+    },
+    {
+      "title": "你在场时，智能体行为不同：用户在场如何改变谈判中的智能体",
+      "titleEn": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
+      "summary": "PRESENT 框架，7 个博弈、8 个模型、1.12 万次运行：有用户在场的一方收益平均 +13.7%、谈判更激进，但也诱发针对对手乃至用户的失准行为。",
+      "authors": "Jane Pan, You Lyu, Abe Bohan Hou, Valerie Chen, He He",
+      "link": "https://arxiv.org/abs/2610.36435"
+    },
+    {
+      "title": "AutoVend：长程自主经营自动售货机的智能体基准",
+      "titleEn": "AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations",
+      "summary": "单个智能体经网页界面管理 5 类场地的 20 台售货机、模拟 180 天，含共享仓库、采购提前期、补货费用与过期；5 个 LLM 智能体与规则库存基线对比。",
+      "authors": "Qiming Shi, Yikun Li, Beidi Luan, Rui Sun, Yan Ma 等",
+      "link": "https://arxiv.org/abs/2610.36980"
+    },
+    {
+      "title": "kw-bench：用真实任务击穿前沿智能体框架",
+      "titleEn": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
+      "summary": "面向审计、税务、尽调等「调查型」知识工作：答案藏在不完整、不一致的多系统证据中，需精确到分地还原并自证。",
+      "authors": "George Juraj Salapa",
+      "link": "https://arxiv.org/abs/2610.36405"
+    },
+    {
+      "title": "AI 科学家知道什么是新的吗？",
+      "titleEn": "Do AI Scientists Know What's New?",
+      "summary": "用带时间真值的 1,060 份提案评估新颖性检查：越能拒掉非新颖想法的检查，越容易误杀后来被人类实现的想法。",
+      "authors": "Miri Liu, Xiayu Zhao, Encheng Xie, ChengXiang Zhai",
+      "link": "https://arxiv.org/abs/2610.36511"
+    },
+    {
+      "title": "AI 生成网页内容的不均衡崛起",
+      "titleEn": "The uneven rise of AI-generated web content",
+      "summary": "500 万+ 可抓取网页：含 AI 文本的比例快速上升但不均——英语页高于其他语言，.gov／.edu 明显低于 .com；增长集中在链接图中最边缘的页面。",
+      "authors": "Adam Visokay, Soumyakanti Pan, Molly Griston, Polina Iasakova, Mark Nepf 等",
+      "link": "https://arxiv.org/abs/2610.36631"
+    },
+    {
+      "title": "检索不够：智能体记忆中的过时事实",
+      "titleEn": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+      "summary": "Qwen2.5-7B 在 BM25 下证据预算从 64 增到 512 token，准确率由 45% 降到 32%；把一条无关语句换成过时版本，准确率从 100% 跌至 44.6%（Qwen3-14B 为 87.8%）。",
+      "authors": "Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Ahmad Baktash 等",
+      "link": "https://arxiv.org/abs/2610.36308"
+    },
+    {
+      "title": "什么被延续了？语言模型版本间的预训练披露",
+      "titleEn": "What Carries Forward? Pretraining Disclosure Across Language Model Releases",
+      "summary": "按 2025 FMTI 的 24 项预训练指标审计 17 个家族 41 个版本：24 组相邻比较中 11 组下降、6 组上升、7 组持平；总分不变也可能掩盖披露倒退。",
+      "authors": "Md Sakib Ul Islam, S M Mehedi Zaman",
+      "link": "https://arxiv.org/abs/2610.37465"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 4 Carbon",
+      "vendor": "Google",
+      "highlight": "网安优先的新模型，先经 Fairwind 计划向部分防御方开放；厂商称 AA 指数 v5.0 59 分居首（非本站 v4.3.2 口径）；推广期 $2／$10，之后 $4／$20 每百万 token。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "name": "Nemotron 3.5 Transcribe",
+      "vendor": "NVIDIA",
+      "highlight": "开源权重可提示语音模型：转写 40 种语言、翻译 31 种、说话人标注 13 种，单段最长约 1 小时；约 30B 总参／4B 激活；HF Open ASR 英文榜开源第一（5.33% WER，厂商口径）。",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    },
+    {
+      "name": "MAI-Image-2.6 / 2.6-Flash",
+      "vendor": "Microsoft",
+      "highlight": "在 Microsoft Foundry 正式可用；微软称首发即列 Arena 第 2。",
+      "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally-available-in-microsoft-f/4566327"
+    },
+    {
+      "name": "Giotto Alto / Solo",
+      "vendor": "Giotto.ai",
+      "highlight": "洛桑团队的「主权 AI」家族：Alto 跑在 8×B300、可免费对话，Solo 可在单 GPU 运行；性能数据待核实。",
+      "link": "https://www.giotto.ai/"
+    },
+    {
+      "name": "Granary v2（数据集）",
+      "vendor": "NVIDIA",
+      "highlight": "Transcribe 背后的开放语音数据与 NeMo Curator 流水线：48 种语言、463,062 小时清单，来自 16 个源语料，较 v1 的 25 种语言扩充。",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Codex 0.165：内置 Google Cloud Vertex AI provider",
+      "summary": "model_provider = \"gcp\" 即可走 Vertex；模型目录加入 GPT-6.1 Terra，会话选择器加仓库过滤。",
+      "source": "OpenAI / GitHub",
+      "link": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
+      "models": [
+        "GPT-6.1 Terra"
+      ]
+    },
+    {
+      "title": "MCP 参考服务器 v2.2.0：应对 eMudhra 证书事件",
+      "summary": "TypeScript 服务器依赖 Node 证书校验，建议升级到 Node 24.22.1／26.12.1 或更高；fetch 镜像锁定 certifi 2026.10.23。",
+      "source": "Model Context Protocol / GitHub",
+      "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
+      "models": []
+    },
+    {
+      "title": "Google Connected Apps 平台预览",
+      "summary": "开发者经云端 MCP 服务器或 Android AppFunctions 接入一次，即可把应用能力带进 Google 搜索与 Gemini 应用；用 Google Connected Console 注册、测试与提交，分阶段开放。",
+      "source": "Google",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
+      "models": []
+    },
+    {
+      "title": "OpenAI：可以发短信给你的 Dot",
+      "summary": "通过 iMessage／RCS 与 Dot 对话，先向美国 Pro 用户预览。",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021183/openai-now-lets-you-text-your-dot",
+      "models": []
+    },
+    {
+      "title": "蚂蚁灵光 2.0：从对话到「管事」",
+      "summary": "跨会话记忆、长程任务调度，支持 MCP 与 CLI 工具调用；依托独立云主机，用户退出对话后任务仍可继续运行，并在需关注节点主动提醒。",
+      "source": "IT之家",
+      "link": "https://www.ithome.com/1/018/252.htm",
+      "models": []
+    },
+    {
+      "title": "Ollama v0.40.13-rc0：LFM3 GGUF 修复",
+      "summary": "修复 LFM3 GGUF 并改进 llama-server 语音，llama.cpp 升至 b11963（预发布版）。",
+      "source": "Ollama / GitHub",
+      "link": "https://github.com/ollama/ollama/releases/tag/v0.40.13-rc0",
+      "models": []
+    }
+  ]
+}

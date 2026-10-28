@@ -1,5 +1,20 @@
 [
   {
+    "d": "2026-10-29",
+    "w": "星期四",
+    "pts": [
+      "Google 发布 Gemini 4 Carbon：网安优先，先经 Fairwind 计划向防御方开放",
+      "报道：OpenAI 计划采购 Google TPU；OpenAI×ServiceNow 扩大合作",
+      "Anthropic：GSA 六折扩至州与地方政府；Claude Enterprise 上线智能报告与共享预算",
+      "Axiom 用 AI 智能体 24 天完成有限单群分类定理 Lean 形式化"
+    ],
+    "link": "AI日报-2026-10-29.html",
+    "m": [
+      "GPT-6.1 Terra"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-28",
     "w": "星期三",
     "pts": [

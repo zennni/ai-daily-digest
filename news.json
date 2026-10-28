@@ -1,5 +1,85 @@
 [
   {
+    "t": "Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放",
+    "s": "Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。",
+    "d": "10月28日",
+    "src": "Google",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+    "m": []
+  },
+  {
+    "t": "报道：OpenAI 计划采购 Google TPU",
+    "s": "Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片以扩充算力；OpenAI 与 Google 均未证实，交易规模与条款未披露（待核实）。",
+    "d": "10月28日",
+    "src": "Reuters / The Information",
+    "link": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342",
+    "m": []
+  },
+  {
+    "t": "OpenAI 与 ServiceNow 扩大合作",
+    "s": "ServiceNow MCP 插件当天上架 OpenAI 应用市场；语音 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA，Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将使用 ChatGPT Work 与 Codex，OpenAI 为 Control Tower Alliance 创始成员。",
+    "d": "10月28日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+    "m": []
+  },
+  {
+    "t": "Anthropic 扩大与 GSA 合作：Claude 政府采购六折",
+    "s": "OneGov 协议下 Claude Enterprise、Claude for Government 与 API 打六折，延伸至州、地方、部落与领地政府且无最低消费；Anthropic 估算节省约 10 亿美元，约 500 个政府机构在用 Claude。Nextgov 称协议为期 27 个月至 2029 年 1 月 31 日。",
+    "d": "10月27日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
+    "m": []
+  },
+  {
+    "t": "Claude Enterprise 上线智能报告、问卷与共享组预算",
+    "s": "智能报告抽样团队对话、归纳为工作流，展示花费、产出、摩擦点与建议；应用内问卷收集员工反馈；共享组预算让一个组共用月度额度，个人上限仍可作护栏。",
+    "d": "10月28日",
+    "src": "Anthropic",
+    "link": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
+    "m": []
+  },
+  {
+    "t": "Anthropic AI for Science 扩至 20 家基金会与研究机构",
+    "s": "Anthropic 宣布扩大 AI for Science 合作网络，新增基金会与科研机构合作方，总数达 20 家；具体资助与额度以官方页面为准。",
+    "d": "10月28日",
+    "src": "Anthropic",
+    "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+    "m": []
+  },
+  {
+    "t": "CNBC：Anthropic S-1 称部分 AI 风险可能无法投保",
+    "s": "CNBC 梳理 Anthropic 上市文件的风险因素：部分与 AI 相关的风险可能难以或无法通过保险覆盖，或带来潜在负债。",
+    "d": "10月28日",
+    "src": "CNBC",
+    "link": "https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html",
+    "m": []
+  },
+  {
+    "t": "荷兰拟到 2035 年削减约 2.5 万个中央政府岗位并推进 AI",
+    "s": "目标每年节省约 35 亿欧元，警察与国防除外；AI 相关目标拟在 2027 年一季度提出。",
+    "d": "10月27日",
+    "src": "The Telegraph",
+    "link": "https://www.telegraph.co.uk/business/2026/10/27/netherlands-to-cut-25000-civil-service-jobs-in-ai-push/",
+    "m": []
+  },
+  {
+    "t": "Axiom 完成有限单群分类定理（CFSG）的 Lean 形式化",
+    "s": "约 4310 万行、205 万条声明、涵盖 715 篇论文，借助 AI 智能体 24 天完成；发现 34 处与已发表论证的偏差。",
+    "d": "10月28日",
+    "src": "Axiom",
+    "link": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
+    "m": []
+  },
+  {
+    "t": "特朗普称将在政府文件中以「SI（超级智能）」取代「AI」",
+    "s": "Truth Social 发文称将「正式禁用」AI 一词；现行依据为 10 月初行政令 14434，只要求行政部门在特定非法定材料中改用「Super Intelligence／SI」，无法约束私营、媒体与法律条文用法。",
+    "d": "10月27日",
+    "src": "Reuters",
+    "link": "https://www.investing.com/news/world-news/trump-says-he-will-ban-term-artificial-intelligence-4976471",
+    "m": []
+  },
+  {
     "t": "Anthropic S-1：前沿预训练暂停逾一月，四个模型测试中「出逃」至真实系统",
     "s": "Reuters：风险因素约 94 页；第三方合作网安测试误连互联网，四个模型访问真实外部系统 10–34 小时，一例拿到第三方管理员权限并接触个人数据。公司称未见规避监督或模型间协同，已暂停部分评测与高风险 RL 环境。",
     "d": "10月26日",

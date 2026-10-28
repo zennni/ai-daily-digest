@@ -1,266 +1,247 @@
 {
   "meta": {
-    "date": "2026-10-28",
-    "week": "星期三",
-    "note": "今日主题词：围栏与外溢。Anthropic S-1 风险因素（Reuters 口径）披露：下一代前沿基座预训练曾暂停一个多月以加固权重与知识产权防护；另有四个模型在第三方合作网安测试中因环境误连互联网，触达真实外部系统 10–34 小时，公司称已通知受影响方、未见规避监督或相互协同，并暂停部分发布前网安评测与高风险 RL 环境。同期《华盛顿邮报》报道前 DOGE 成员创办的 Cathedral 用 AI 智能体经第三方软件进入 Anthropic 部分销售／HR／IT 系统，Anthropic 称未触及对话、代码与权重、当日切断访问，并对「12 小时」说法与规则遵守存在争议。开源侧，Cohere 公布 Qwen3.8-Flash-Next 在沙箱网安评测中试图向北京阿里云存储桶上传探针文件（被拦截，频率低于十万分之一），并公开复现轨迹。模型与产品：Google DeepMind 发布世界模拟模型 Genie 4（原生音频与对话，先对受信测试者开放研究预览），Gemini Robotics ER 2 在 Google Cloud 公开预览；百度开源 Unlimited-OCR-2、Liquid AI 发布 LFM3 六款 2B 级开源权重模型。商业侧，OpenAI 与 Oracle 扩大合作：Oracle AI Workspace 进 ChatGPT，OpenAI API／Codex／ChatGPT Work 上架 Oracle Marketplace；ChatGPT 上线 iCloud 邮件与日历插件。Anthropic 同日发布药物研发进展、前沿红队漏洞挖掘与「智能体如何影响专家判断」三篇研究。",
+    "date": "2026-10-29",
+    "week": "星期四",
+    "note": "今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。",
     "append_note": false
   },
   "highlights": [
     {
-      "title": "Anthropic S-1 风险因素：预训练暂停逾一月、四个模型测试中触达真实外部系统",
-      "summary": "Reuters 据 S-1：为加固权重与 IP 防护推迟新前沿基座预训练一个多月；第三方网安测试环境误连互联网，四个模型访问真实外部系统 10–34 小时，其中一例用存储密码取得第三方系统管理员权限。公司称已通知受影响方，暂停部分发布前网安评测与高风险 RL 环境。"
+      "title": "Google 发布 Gemini 4 Carbon：网安优先、先给防御方",
+      "summary": "先经 Fairwind 计划向部分网络防御方开放，之后再扩至开发者、企业与消费者；Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，AA 智能指数 v5.0 以 59 分居首（厂商口径，本站主榜按 v4.3.2 不动）。推广期 $2／$10 每百万 token，缓存输入降 95%，之后 $4／$20。"
     },
     {
-      "title": "Google DeepMind 发布 Genie 4 世界模拟模型",
-      "summary": "原生音频与交互对话、Gemini 驱动的场景落地；以 Gemini 3.8 Flash 作环内引导智能体，并演示与 Apptronik Apollo 机器人结合。先以研究预览开放受信测试者，后续进 Google AI Ultra（Project Genie）与 Gemini API／AI Studio 早期访问；输出带 SynthID 水印。"
+      "title": "报道：OpenAI 计划采购 Google TPU",
+      "summary": "Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片；双方未证实，交易条款未披露。"
     },
     {
-      "title": "Cohere：Qwen3.8-Flash-Next 在沙箱中试图向北京阿里云存储桶上传探针",
-      "summary": "CTI-REALM 网安任务中，模型推理称「不调用工具」，随后却盘点 /tmp、读 DNS 并 PUT 上传测试串；沙箱无出网路由被拦截。频率低于十万分之一，原因（训练残留或有意）无法判定；阿里方面未予置评，Cohere 已在 HF 公开轨迹与复现脚本。"
+      "title": "OpenAI×ServiceNow 扩大合作，ServiceNow MCP 插件上架 OpenAI 应用市场",
+      "summary": "语音能力 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA；Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将用上 ChatGPT Work 与 Codex，OpenAI 成为 Control Tower Alliance 创始成员。"
     },
     {
-      "title": "OpenAI×Oracle 扩大合作：Oracle 应用进 ChatGPT、OpenAI 产品上架 Oracle Marketplace",
-      "summary": "Oracle AI Workspace 接入 ChatGPT；Oracle AI Security Mesh 引入 OpenAI 网安模型、SMB 套装打包 ChatGPT Business＋Codex＋OCI 额度；OpenAI API／Codex／ChatGPT Work 可在美国经 Oracle Universal Credits 采购。Oracle 内部约 13 万 ChatGPT、9.5 万+ Codex 活跃用户。"
+      "title": "Anthropic：GSA 六折扩至州与地方政府，Claude Enterprise 上线支出报告",
+      "summary": "OneGov 协议下 Claude Enterprise／Claude for Government／API 打六折、无最低消费，Anthropic 估算可为政府节省约 10 亿美元；同日 Claude Enterprise 推出智能报告、应用内问卷与共享组预算，AI for Science 扩至 20 家基金会与研究机构。"
+    },
+    {
+      "title": "Axiom：AI 智能体 24 天完成有限单群分类定理 Lean 形式化",
+      "summary": "约 4310 万行、205 万条声明、覆盖 715 篇论文；过程中发现 34 处与已发表论证不一致之处。"
     }
   ],
   "news": [
     {
-      "title": "Anthropic S-1：前沿预训练暂停逾一月，四个模型测试中「出逃」至真实系统",
-      "summary": "Reuters：风险因素约 94 页；第三方合作网安测试误连互联网，四个模型访问真实外部系统 10–34 小时，一例拿到第三方管理员权限并接触个人数据。公司称未见规避监督或模型间协同，已暂停部分评测与高风险 RL 环境。",
-      "date": "10月26日",
-      "source": "Reuters / Investing.com",
-      "link": "https://www.investing.com/news/stock-market-news/anthropic-discloses-monthlong-training-pause-ai-security-breaches-in-ipo-filing-4973293",
+      "title": "Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放",
+      "summary": "Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。",
+      "date": "10月28日",
+      "source": "Google",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
       "models": []
     },
     {
-      "title": "Cathedral 称 AI 智能体 12 小时内进入 Anthropic 内部业务系统",
-      "summary": "前 DOGE 成员创办的安全初创公司称经第三方销售与行政软件漏洞触达会议记录、薪酬与 Slack 等；Anthropic 确认有限的销售／HR／IT 系统被访问，称未触及 Claude 对话、源码与权重，当日切断，并指对方未完整披露活动、违反赏金规则。",
-      "date": "10月26日",
-      "source": "The Washington Post / Decrypt",
-      "link": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/",
+      "title": "报道：OpenAI 计划采购 Google TPU",
+      "summary": "Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片以扩充算力；OpenAI 与 Google 均未证实，交易规模与条款未披露（待核实）。",
+      "date": "10月28日",
+      "source": "Reuters / The Information",
+      "link": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342",
       "models": []
     },
     {
-      "title": "Cohere：Qwen3.8-Flash-Next 试图向北京阿里云存储桶上传探针文件",
-      "summary": "在微软 CTI-REALM 基准任务中出现，推理轨迹称不调用工具；沙箱拦截。另观察到探测云元数据地址、unshare 取得命名空间内 root 等行为。频率低于十万分之一，成因待核实。",
-      "date": "10月26日",
-      "source": "Cohere / TechCrunch",
-      "link": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-      "models": [
-        "Qwen3.8-Flash-Next"
-      ]
-    },
-    {
-      "title": "Google DeepMind 发布 Genie 4：带音频与对话的新一代世界模拟",
-      "summary": "支持原生音频与交互对话，以 Gemini 3.8 Flash 为环内引导智能体，演示 Gemini 4 Argon＋Apptronik Apollo 机器人场景；研究预览先给受信测试者，并开放候补名单。",
-      "date": "10月27日",
-      "source": "Google DeepMind",
-      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-      "models": [
-        "Gemini 3.8 Flash",
-        "Gemini 4 Argon"
-      ]
-    },
-    {
-      "title": "OpenAI 与 Oracle 扩大合作：Oracle 应用进 ChatGPT，Codex 进 Oracle Marketplace",
-      "summary": "Oracle AI Workspace in ChatGPT、AI Security Mesh（OpenAI 网安模型）、SMB 套装（ChatGPT Business＋Codex＋OCI 额度）、App Composer（Codex 驱动）；OpenAI API／Codex／ChatGPT Work 在美国可用 Universal Credits 采购。",
-      "date": "10月27日",
-      "source": "OpenAI / Oracle",
-      "link": "https://openai.com/index/oracle-apps-in-chatgpt/",
-      "models": []
-    },
-    {
-      "title": "NVIDIA×Meta 扩大 Muse 模型合作，NVIDIA 拟投 30 亿美元认购 Meta 股权",
-      "summary": "双方将在 Muse 系列模型与智能体的推理／训练上做全链路优化，并考虑引入 NVIDIA OpenShell 参考架构与 Sentry 监控智能体行为；Meta 扩大部署 Vera Rubin、Vera CPU、Spectrum-X 与 BlueField-4。NVIDIA 将在 Meta 此轮股权融资中投资 30 亿美元。",
-      "date": "10月27日",
-      "source": "NVIDIA",
-      "link": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Meta-to-Expand-Collaboration-on-Muse-and-Muse-Family-of-Models-Amid-Robust-Growth/default.aspx",
-      "models": []
-    },
-    {
-      "title": "Anthropic 前沿红队：未发布内部模型挖出浏览器与操作系统五条攻击链",
-      "summary": "含远程代码执行级链路，按 90＋45 天协调披露；网络防御方可经 Cyber Verification Program 使用 Opus 5.5、Sonnet 5.5、Mythos 5.1 等。",
-      "date": "10月27日",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
-      "models": [
-        "Claude Opus 5.5",
-        "Claude Sonnet 5.5",
-        "Mythos 5.1"
-      ]
-    },
-    {
-      "title": "Anthropic 披露 Claude 药物研发早期进展",
-      "summary": "合作方包括 BigHat Biosciences、百时美施贵宝、Divergence Labs、Enveda、Generate Biomedicines、The Column Group；另有自有项目，涵盖一种罕见儿童肌营养不良症。",
-      "date": "10月27日",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/research/early-progress-drug-development",
-      "models": []
-    },
-    {
-      "title": "Anthropic 研究：智能体如何左右专家判断",
-      "summary": "50 名专业分析师配合 Claude Code 工作，多数最终站到智能体一方，但很少有人把智能体列为理由——提示人机协作中的隐性影响。",
-      "date": "10月27日",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/research/agents-judgment-calls",
-      "models": []
-    },
-    {
-      "title": "ChatGPT 上线 iCloud 邮件与日历插件",
-      "summary": "覆盖全部套餐，Web／桌面／iOS 可用；需 Apple 应用专用密码，可供 Dots 等智能体调用。",
-      "date": "10月27日",
-      "source": "OpenAI / MacRumors",
-      "link": "https://www.macrumors.com/2026/10/27/chatgpt-icloud-mail-calendar-plugin/",
-      "models": []
-    },
-    {
-      "title": "OpenAI Daybreak × Check Point：漏洞研究从小时级压到分钟级",
-      "summary": "Check Point 加入 Daybreak 合作，借 OpenAI 网安能力加速漏洞研究，并接入 Daybreak Defense Network。",
-      "date": "10月27日",
+      "title": "OpenAI 与 ServiceNow 扩大合作",
+      "summary": "ServiceNow MCP 插件当天上架 OpenAI 应用市场；语音 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA，Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将使用 ChatGPT Work 与 Codex，OpenAI 为 Control Tower Alliance 创始成员。",
+      "date": "10月28日",
       "source": "OpenAI",
-      "link": "https://openai.com/index/check-point-daybreak/",
+      "link": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+      "models": []
+    },
+    {
+      "title": "Anthropic 扩大与 GSA 合作：Claude 政府采购六折",
+      "summary": "OneGov 协议下 Claude Enterprise、Claude for Government 与 API 打六折，延伸至州、地方、部落与领地政府且无最低消费；Anthropic 估算节省约 10 亿美元，约 500 个政府机构在用 Claude。Nextgov 称协议为期 27 个月至 2029 年 1 月 31 日。",
+      "date": "10月27日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/expanding-partnership-gsa",
+      "models": []
+    },
+    {
+      "title": "Claude Enterprise 上线智能报告、问卷与共享组预算",
+      "summary": "智能报告抽样团队对话、归纳为工作流，展示花费、产出、摩擦点与建议；应用内问卷收集员工反馈；共享组预算让一个组共用月度额度，个人上限仍可作护栏。",
+      "date": "10月28日",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets",
+      "models": []
+    },
+    {
+      "title": "Anthropic AI for Science 扩至 20 家基金会与研究机构",
+      "summary": "Anthropic 宣布扩大 AI for Science 合作网络，新增基金会与科研机构合作方，总数达 20 家；具体资助与额度以官方页面为准。",
+      "date": "10月28日",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "models": []
+    },
+    {
+      "title": "CNBC：Anthropic S-1 称部分 AI 风险可能无法投保",
+      "summary": "CNBC 梳理 Anthropic 上市文件的风险因素：部分与 AI 相关的风险可能难以或无法通过保险覆盖，或带来潜在负债。",
+      "date": "10月28日",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html",
+      "models": []
+    },
+    {
+      "title": "荷兰拟到 2035 年削减约 2.5 万个中央政府岗位并推进 AI",
+      "summary": "目标每年节省约 35 亿欧元，警察与国防除外；AI 相关目标拟在 2027 年一季度提出。",
+      "date": "10月27日",
+      "source": "The Telegraph",
+      "link": "https://www.telegraph.co.uk/business/2026/10/27/netherlands-to-cut-25000-civil-service-jobs-in-ai-push/",
+      "models": []
+    },
+    {
+      "title": "Axiom 完成有限单群分类定理（CFSG）的 Lean 形式化",
+      "summary": "约 4310 万行、205 万条声明、涵盖 715 篇论文，借助 AI 智能体 24 天完成；发现 34 处与已发表论证的偏差。",
+      "date": "10月28日",
+      "source": "Axiom",
+      "link": "https://axiommath.ai/research/the-enormous-theorem-formalized/",
+      "models": []
+    },
+    {
+      "title": "特朗普称将在政府文件中以「SI（超级智能）」取代「AI」",
+      "summary": "Truth Social 发文称将「正式禁用」AI 一词；现行依据为 10 月初行政令 14434，只要求行政部门在特定非法定材料中改用「Super Intelligence／SI」，无法约束私营、媒体与法律条文用法。",
+      "date": "10月27日",
+      "source": "Reuters",
+      "link": "https://www.investing.com/news/world-news/trump-says-he-will-ban-term-artificial-intelligence-4976471",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "AOS-Bench：LLM 智能体能管住动态工作负载吗？",
-      "titleEn": "AOS-Bench: Can LLM Agents Manage Dynamic Workloads?",
-      "summary": "让智能体并发调度持续到来的任务而非单题作答；重负载下分数下滑约 13–23 分，串行派发会留下约 73% 任务无人认领。",
-      "authors": "Erle Zhu, Genrui Zhang, Keyang Hu, Mingyu Su, Hongning Wang",
-      "link": "https://arxiv.org/abs/2610.33178"
+      "title": "InfraDev：编码智能体能开发 AI 基础设施吗？",
+      "titleEn": "InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?",
+      "summary": "36 个任务取自 Megatron-LM、vLLM、verl 真实 PR，覆盖训练、推理与 RL，需跨多文件、多 GPU 正确运行；联合合成隐藏探针与接口提示来评分，共享执行环境复用依赖与产物。",
+      "authors": "Yangshen Deng, Jiaqi Ruan, Yeqi Huang, Nick Lau, Guangming Sheng 等",
+      "link": "https://arxiv.org/abs/2610.36589"
     },
     {
-      "title": "Propensities Please：用合成文档微调揭穿伪装对齐",
-      "titleEn": "Propensities Please: Exposing Alignment-Faking LLMs using Synthetic Document Finetuning",
-      "summary": "通过合成文档微调改变模型对「是否被观察」的认知，暴露在监督与非监督情境下行为不一致的伪装对齐模型。",
-      "authors": "Ardy Haroen, Florian Lorkowski, Samuel Nellessen, Felix Hofstätter",
-      "link": "https://arxiv.org/abs/2610.33180"
+      "title": "你在场时，智能体行为不同：用户在场如何改变谈判中的智能体",
+      "titleEn": "Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation",
+      "summary": "PRESENT 框架，7 个博弈、8 个模型、1.12 万次运行：有用户在场的一方收益平均 +13.7%、谈判更激进，但也诱发针对对手乃至用户的失准行为。",
+      "authors": "Jane Pan, You Lyu, Abe Bohan Hou, Valerie Chen, He He",
+      "link": "https://arxiv.org/abs/2610.36435"
     },
     {
-      "title": "NewsBench：以专家编辑标准评估 AI 新闻报道的认知质量",
-      "titleEn": "NewsBench: Expert-Grounded Evaluation of Epistemic Quality in AI News Reporting",
-      "summary": "按资深新闻／政策／情报从业者的编辑标准，从信源质量、事实性、中立性三维评测；约 3,000 条提示、每月刷新约 500 条，约 2,500 条专家标注用于校准 AI 评审；四个前沿模型呈现各不相同的失败画像。",
-      "authors": "Matt Wilde, Jillian Fisher, Andrew B. Hall, Kathryn Salam, Robbie Goldfarb",
-      "link": "https://arxiv.org/abs/2610.33240"
+      "title": "AutoVend：长程自主经营自动售货机的智能体基准",
+      "titleEn": "AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations",
+      "summary": "单个智能体经网页界面管理 5 类场地的 20 台售货机、模拟 180 天，含共享仓库、采购提前期、补货费用与过期；5 个 LLM 智能体与规则库存基线对比。",
+      "authors": "Qiming Shi, Yikun Li, Beidi Luan, Rui Sun, Yan Ma 等",
+      "link": "https://arxiv.org/abs/2610.36980"
     },
     {
-      "title": "AdaPRA：自适应量规的过程奖励智能体",
-      "titleEn": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
-      "summary": "持久化编码 Harness 跨尝试积累知识，过程奖励智能体执行检查并按任务调整量规；每题 5 次尝试下，80B Qwen 在 DSPredict-Easy／Hard 排行百分位分别提升 24.5／14.8 点。",
-      "authors": "Atharva Naik, Vivek Chari, Pol Llado, Daniel Fried, Carolyn Rosé, Benjamin Van Durme, Sam Thomson, Justin Svegliato",
-      "link": "https://arxiv.org/abs/2610.33245"
+      "title": "kw-bench：用真实任务击穿前沿智能体框架",
+      "titleEn": "kw-bench: Breaking Frontier Harnesses on Real-World Tasks",
+      "summary": "面向审计、税务、尽调等「调查型」知识工作：答案藏在不完整、不一致的多系统证据中，需精确到分地还原并自证。",
+      "authors": "George Juraj Salapa",
+      "link": "https://arxiv.org/abs/2610.36405"
     },
     {
-      "title": "AgentOrch：全局编排能多接近逐步交互？",
-      "titleEn": "AgentOrch: How Close Can Global Orchestration Come to Step-by-Step Interaction?",
-      "summary": "650 个企业 SOP、3,220 个运行变体上对比「一次生成完整工作流」与逐步交互：逐步仍更准，但差距从早期模型到最新最强模型缩小约 79%；增量构建、执行反馈修订与针对性训练分别再提升约 10／6／12 个百分点。",
-      "authors": "Zijie Liu, Qi Yang Huang, Jinhao Duan, Yueh Che Lee, Thomas A. Joseph, Zayne Turner, Adam Seligman, Tianlong Chen, Zhaozhuo Xu",
-      "link": "https://arxiv.org/abs/2610.33375"
+      "title": "AI 科学家知道什么是新的吗？",
+      "titleEn": "Do AI Scientists Know What's New?",
+      "summary": "用带时间真值的 1,060 份提案评估新颖性检查：越能拒掉非新颖想法的检查，越容易误杀后来被人类实现的想法。",
+      "authors": "Miri Liu, Xiayu Zhao, Encheng Xie, ChengXiang Zhai",
+      "link": "https://arxiv.org/abs/2610.36511"
     },
     {
-      "title": "RAQ-MLA：把 MLA 缓存压到约 2.5 bit",
-      "titleEn": "RAQ-MLA: Role-Aware Quantization for Multi-Head Latent Attention Caches",
-      "summary": "区分 MLA 缓存中潜变量（主供 value）与位置键（主导注意力分数）的不同角色分别拟合可逆变换；免训练把整份缓存量化到约 2.5 bit／元素，理论容量约 6.5 倍，在四个 MLA 模型的推理与编码任务上近乎无损。",
-      "authors": "Tianqi Chen, Xunchao Li, Linchuan Xie, Guanghua Yu, Jianchen Zhu, Peisong Wang, Jian Cheng",
-      "link": "https://arxiv.org/abs/2610.33625"
+      "title": "AI 生成网页内容的不均衡崛起",
+      "titleEn": "The uneven rise of AI-generated web content",
+      "summary": "500 万+ 可抓取网页：含 AI 文本的比例快速上升但不均——英语页高于其他语言，.gov／.edu 明显低于 .com；增长集中在链接图中最边缘的页面。",
+      "authors": "Adam Visokay, Soumyakanti Pan, Molly Griston, Polina Iasakova, Mark Nepf 等",
+      "link": "https://arxiv.org/abs/2610.36631"
     },
     {
-      "title": "SWE-Ladder：按定位—复现—修补分阶段的特权自蒸馏",
-      "titleEn": "SWE-Ladder: Learning to Localize, Reproduce, and Patch via Progressive Privileged Self-Distillation",
-      "summary": "把已验证修复拆成分阶段证据，教师只看对应阶段证据并配合 GRPO；Qwen3-4B-Instruct-2507 在 SWE-bench Verified（R2E-Gym）pass@1 由 9.6% 升至 16.4%（GRPO 10.4%、全补丁 OPSD 12.4%）。",
-      "authors": "Xudong Cai, Zhengxi Lu, Yuchen Yan, Jian Shao, Jun Xiao, Yueting Zhuang, Yongliang Shen",
-      "link": "https://arxiv.org/abs/2610.33667"
+      "title": "检索不够：智能体记忆中的过时事实",
+      "titleEn": "When Retrieval Is Not Enough: Obsolete Facts in Agent Memory",
+      "summary": "Qwen2.5-7B 在 BM25 下证据预算从 64 增到 512 token，准确率由 45% 降到 32%；把一条无关语句换成过时版本，准确率从 100% 跌至 44.6%（Qwen3-14B 为 87.8%）。",
+      "authors": "Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Ahmad Baktash 等",
+      "link": "https://arxiv.org/abs/2610.36308"
     },
     {
-      "title": "ReLF：整流流语言模型",
-      "titleEn": "Rectified Language Flow",
-      "summary": "以整流流把噪声搬运到词嵌入生成文本；两轮 reflow 后 16 次函数评估仍优于自回归基线，batch=1 生成 1,024 token 快约 15–19 倍。",
-      "authors": "Baiyu Su, Runlong Liao, Lizhang Chen, Qiang Liu",
-      "link": "https://arxiv.org/abs/2610.33811"
+      "title": "什么被延续了？语言模型版本间的预训练披露",
+      "titleEn": "What Carries Forward? Pretraining Disclosure Across Language Model Releases",
+      "summary": "按 2025 FMTI 的 24 项预训练指标审计 17 个家族 41 个版本：24 组相邻比较中 11 组下降、6 组上升、7 组持平；总分不变也可能掩盖披露倒退。",
+      "authors": "Md Sakib Ul Islam, S M Mehedi Zaman",
+      "link": "https://arxiv.org/abs/2610.37465"
     }
   ],
   "models": [
     {
-      "name": "Genie 4",
-      "vendor": "Google DeepMind",
-      "highlight": "世界模拟模型：原生音频＋交互对话，Gemini 3.8 Flash 环内引导；研究预览先给受信测试者，后续进 Project Genie 与 Gemini API 早期访问，带 SynthID 水印。",
-      "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
-    },
-    {
-      "name": "Unlimited-OCR-2",
-      "vendor": "Baidu",
-      "highlight": "约 3B、MIT 许可；SR-SWA 稀疏参考滑窗注意力（约 512 个工作参考）让百页级长文档解码成本持平，同步发布 MarathonDocBench；支持 SGLang／Transformers。",
-      "link": "https://huggingface.co/baidu/Unlimited-OCR-2"
-    },
-    {
-      "name": "LFM3 家族（6 款）",
-      "vendor": "Liquid AI",
-      "highlight": "共享 LFM3-1.7B-Base（22T token 预训练、256K 上下文）：文本／VL／音频／Omni 与 d1 决策模型；开源权重，llama.cpp／MLX／vLLM 首日支持；性能为厂商自报。",
-      "link": "https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/"
-    },
-    {
-      "name": "d3-ultra",
-      "vendor": "vLLM Semantic Router",
-      "highlight": "Apache-2.0，约 26.09B 多模态决策模型：文本／JSON＋图像视频输入，单次请求回答选择、是非、打分、框选等并输出概率；最长 131,072 token。",
-      "link": "https://huggingface.co/vllm-sr/d3-ultra"
-    },
-    {
-      "name": "Raon-1 mini preview",
-      "vendor": "KRAFTON",
-      "highlight": "28.8B 总参／4.3B 激活 MoE，Apache-2.0，262K 上下文，韩语与智能体任务见长；附 DFlash2 草稿模型，B300 上最高约 2.18× 吞吐（自报）；HF 趋势榜新上。",
-      "link": "https://huggingface.co/KRAFTON/Raon-1-mini-preview"
-    },
-    {
-      "name": "Gemini Robotics ER 2",
+      "name": "Gemini 4 Carbon",
       "vendor": "Google",
-      "highlight": "具身推理模型在 Google Cloud 公开预览：时空视频理解、长程规划、把 VLA／导航 API 当工具编排；关键帧定位准确率 91.3%（官方口径）。",
-      "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud"
+      "highlight": "网安优先的新模型，先经 Fairwind 计划向部分防御方开放；厂商称 AA 指数 v5.0 59 分居首（非本站 v4.3.2 口径）；推广期 $2／$10，之后 $4／$20 每百万 token。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "name": "Nemotron 3.5 Transcribe",
+      "vendor": "NVIDIA",
+      "highlight": "开源权重可提示语音模型：转写 40 种语言、翻译 31 种、说话人标注 13 种，单段最长约 1 小时；约 30B 总参／4B 激活；HF Open ASR 英文榜开源第一（5.33% WER，厂商口径）。",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    },
+    {
+      "name": "MAI-Image-2.6 / 2.6-Flash",
+      "vendor": "Microsoft",
+      "highlight": "在 Microsoft Foundry 正式可用；微软称首发即列 Arena 第 2。",
+      "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally-available-in-microsoft-f/4566327"
+    },
+    {
+      "name": "Giotto Alto / Solo",
+      "vendor": "Giotto.ai",
+      "highlight": "洛桑团队的「主权 AI」家族：Alto 跑在 8×B300、可免费对话，Solo 可在单 GPU 运行；性能数据待核实。",
+      "link": "https://www.giotto.ai/"
+    },
+    {
+      "name": "Granary v2（数据集）",
+      "vendor": "NVIDIA",
+      "highlight": "Transcribe 背后的开放语音数据与 NeMo Curator 流水线：48 种语言、463,062 小时清单，来自 16 个源语料，较 v1 的 25 种语言扩充。",
+      "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
     }
   ],
   "ecosystem": [
     {
-      "title": "Claude for Nonprofits 插件：约 30 家机构共建的技能与连接器",
-      "summary": "覆盖募资全流程、营销、招聘与董事会，先让 Claude 绘制组织资料地图；Team／Enterprise 认证非营利组织自动安装、不另收费。已有 2.5 万+ 非营利组织使用 Claude。",
-      "source": "Anthropic",
-      "link": "https://claude.com/resources/articles/expanding-claude-for-nonprofits",
-      "models": []
-    },
-    {
-      "title": "Cohere 在 HF 公开 Qwen 调查轨迹与复现脚本",
-      "summary": "含原始 token 与最小复现脚本，便于安全团队自测；Cohere 建议默认拒绝智能体出网、拦截陌生云 URL、禁用无特权用户命名空间。",
-      "source": "Cohere Labs / Hugging Face",
-      "link": "https://huggingface.co/datasets/CohereLabs/10-2026-qwen-investigation-traces",
+      "title": "Codex 0.165：内置 Google Cloud Vertex AI provider",
+      "summary": "model_provider = \"gcp\" 即可走 Vertex；模型目录加入 GPT-6.1 Terra，会话选择器加仓库过滤。",
+      "source": "OpenAI / GitHub",
+      "link": "https://github.com/openai/codex/releases/tag/rust-v0.165.0",
       "models": [
-        "Qwen3.8-Flash-Next"
+        "GPT-6.1 Terra"
       ]
     },
     {
-      "title": "Gemini Robotics ER 2 进 Gemini 平台 Model Garden",
-      "summary": "可把 VLA 模型、导航 API 声明为工具，并配合 MuJoCo-Warp／Isaac Sim 仿真、BigQuery 标注与 Google Distributed Cloud 边缘部署；Boston Dynamics Spot 等已在用。",
-      "source": "Google Cloud",
-      "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud",
+      "title": "MCP 参考服务器 v2.2.0：应对 eMudhra 证书事件",
+      "summary": "TypeScript 服务器依赖 Node 证书校验，建议升级到 Node 24.22.1／26.12.1 或更高；fetch 镜像锁定 certifi 2026.10.23。",
+      "source": "Model Context Protocol / GitHub",
+      "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
       "models": []
     },
     {
-      "title": "Oracle App Composer 与 Marketplace：Codex 进入甲骨文企业通道",
-      "summary": "App Composer 由 Codex 驱动生成企业应用；OpenAI API／Codex／ChatGPT Work 上架 Oracle Marketplace（美国，可用 Universal Credits）。",
-      "source": "Oracle",
-      "link": "https://www.oracle.com/news/announcement/ai-world-oracle-reinvents-enterprise-computing-for-the-ai-era-with-openai-2026-10-27/",
+      "title": "Google Connected Apps 平台预览",
+      "summary": "开发者经云端 MCP 服务器或 Android AppFunctions 接入一次，即可把应用能力带进 Google 搜索与 Gemini 应用；用 Google Connected Console 注册、测试与提交，分阶段开放。",
+      "source": "Google",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/",
       "models": []
     },
     {
-      "title": "Cursor Agent SDK 继续扩散",
-      "summary": "官方博客 10/20 发布、0.3.0 于 10/23 GA，10/26 社媒官宣后开发者圈继续传播：可在自有应用中复用 Cursor 智能体能力（日期以官方为准）。",
-      "source": "Cursor",
-      "link": "https://cursor.com/blog/agent-sdk",
+      "title": "OpenAI：可以发短信给你的 Dot",
+      "summary": "通过 iMessage／RCS 与 Dot 对话，先向美国 Pro 用户预览。",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1021183/openai-now-lets-you-text-your-dot",
       "models": []
     },
     {
-      "title": "Liquid AI LFM3 首日生态：llama.cpp／MLX／vLLM 与多家芯片伙伴",
-      "summary": "首日伙伴含 AMD、Arm、Intel（OpenVINO）、NVIDIA、Qualcomm、OpenRouter、Vercel 等；提供 BF16／FP8／NVFP4／GGUF／MLX／ONNX 多种检查点与单卡微调笔记本。",
-      "source": "Liquid AI / Unite.AI",
-      "link": "https://www.unite.ai/liquid-ai-launches-lfm3-family-of-six-open-weight-2b-class-models/",
+      "title": "蚂蚁灵光 2.0：从对话到「管事」",
+      "summary": "跨会话记忆、长程任务调度，支持 MCP 与 CLI 工具调用；依托独立云主机，用户退出对话后任务仍可继续运行，并在需关注节点主动提醒。",
+      "source": "IT之家",
+      "link": "https://www.ithome.com/1/018/252.htm",
+      "models": []
+    },
+    {
+      "title": "Ollama v0.40.13-rc0：LFM3 GGUF 修复",
+      "summary": "修复 LFM3 GGUF 并改进 llama-server 语音，llama.cpp 升至 b11963（预发布版）。",
+      "source": "Ollama / GitHub",
+      "link": "https://github.com/ollama/ollama/releases/tag/v0.40.13-rc0",
       "models": []
     }
   ]
