@@ -2,8 +2,8 @@
   "meta": {
     "date": "2026-10-29",
     "week": "星期四",
-    "note": "今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。",
-    "append_note": false
+    "note": "今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。【午后补更·并集】美股收盘把当天的第二本账翻开：微软第一财季营收 922.8 亿美元（+19%）、Azure 增 48% 首破 300 亿，并从 OpenAI 相关安排拿到 100 亿美元收入；Alphabet 云增 103% 更猛，但 514 亿美元资本开支把自由现金流打到 -91 亿，盘后跌超 10%、市值蒸发逾 3000 亿美元——同一套基建叙事，一边在证明回报，一边在证明成本。资金侧同日结账：全球债券发行 6.61 万亿美元提前两月创纪录，云厂商与数据中心开发商单独发债近 3680 亿、为去年同期六倍以上；Pimco 高位减持 Meta 与甲骨文两笔旗舰 AI 债各约五成，甲骨文密歇根项目债从 98.7 美分跌到 88 美分，而甲骨文自己给出 2030 财年 2250 亿美元营收指引、股价单日反弹 13%。美联储 10:2 维持 3.75%–4.00%，两名票委主张加息，沃什公开质疑「AI 让经济免疫利率」。存储侧三星净利不及预期但半导体营业利润创纪录、并预警明年供应更紧；A 股算力硬件午后集体调整，创业板跌超 3%、天孚通信近 20cm 跌停，资金半日内切向红利。能力侧另两条线：扩散语言模型 Clover-35B-A3B-Preview 用块并行解码打进 Agent 主场（WindTunnel 49 项任务中位 1.52 秒、Jellyfish 口径下成功率高过早八提到的快速决策路线），腾讯宣布 Hy4 与 Hy4 flash 即将发布、首次带上视觉理解。工程侧 Claude Code v2.1.312 把钩子并发压到 24，AWS 开源 Strands Decider 2B 与内核级沙箱 Strands Box，谷歌把 Android Studio 开放给 40 余款第三方编码代理，腾讯称 WorkBuddy 将开放架构支持企业自建 Agent 网络。一天之内，能力的上限、资金的成本与执行的边界，被同时重新标价。",
+    "append_note": true
   },
   "highlights": [
     {
@@ -25,6 +25,18 @@
     {
       "title": "Axiom：AI 智能体 24 天完成有限单群分类定理 Lean 形式化",
       "summary": "约 4310 万行、205 万条声明、覆盖 715 篇论文；过程中发现 34 处与已发表论证不一致之处。"
+    },
+    {
+      "title": "微软稳、谷歌跌：AI 收入增速与现金流的第一次正面对撞",
+      "summary": "微软第一财季营收 922.8 亿美元（同比 +19%），Azure 增 48%、单季首次突破 300 亿，智能云 639 亿超预期，当季从 OpenAI 商业安排（含收入分成）拿到 100 亿美元、约占营收近 11%；资本开支加融资租赁 452 亿、低于 507 亿预期，被读成投入效率改善。Alphabet 则相反：云增 103%、营收 307 亿，但总营收 1275.8 亿不及预期，季度资本开支 514 亿把自由现金流打到 -91 亿，盘后跌超 10%。同一套 AI 基建叙事，一边在证明回报，一边在证明成本。"
+    },
+    {
+      "title": "AI 基建正式债务化：全球债市创纪录，Pimco 先撤了一步",
+      "summary": "全球投资级与垃圾级债券融资达 6.61 万亿美元、同比增 15%，提前两个月破纪录，其中云巨头与数据中心开发商单独发债近 3680 亿美元，为去年同期六倍以上、约占增量三分之一；亚马逊已升至全球第四大债券发行人。同一周 Pimco 高位减持 Meta 路易斯安那（约 180 亿美元）与甲骨文密歇根（约 100 亿美元）两笔旗舰 AI 债各约五成，甲骨文密歇根债券从 98.7 美分跌至约 88 美分。算力扩张的融资结构，正从股权转向债务与评级。"
+    },
+    {
+      "title": "扩散语言模型打进 Agent 主场：Clover 35B 走的是另一条速度路线",
+      "summary": "扩散智能 DiffuSpace 开源 Clover-35B-A3B-Preview，MoE 总参数 350 亿、每 token 激活约 30 亿，基于 Qwen3.6-35B-A3B 权重改块扩散与门控 Delta 网络，内部测试整体生成约 680 tokens/s。网页 Agent 评测 WindTunnel 的 49 项任务里中位执行 1.52 秒，Jev+Mercury 2.5 组合为 3.21 秒；成功率 98.6% 对 95.9%；SWE-bench Verified 73.6、Terminal-Bench 2.1 51.7。这不是替代自回归，而是把「一次定一块」的并行解码塞进了 Agent 延迟敏感的那一侧。"
     }
   ],
   "news": [
@@ -34,7 +46,9 @@
       "date": "10月28日",
       "source": "Google",
       "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-      "models": []
+      "models": [
+        "Gemini 4 Carbon"
+      ]
     },
     {
       "title": "报道：OpenAI 计划采购 Google TPU",
@@ -107,6 +121,88 @@
       "source": "Reuters",
       "link": "https://www.investing.com/news/world-news/trump-says-he-will-ban-term-artificial-intelligence-4976471",
       "models": []
+    },
+    {
+      "title": "微软第一财季：Azure 增 48% 首破 300 亿美元，从 OpenAI 相关安排获 100 亿美元收入",
+      "summary": "营收同比 +19% 至 922.8 亿美元（预期 906.3 亿），云收入 639 亿超预期；Azure 增 48%、单季首次超过 300 亿。截至 9 月 30 日季度从 OpenAI 商业安排（含收入分成）获得 100 亿美元，约占当季营收近 11%，2026 财年累计 241 亿；来自 OpenAI 的未结应收 72 亿美元（6 月底为 60 亿）。现金资本开支 393.7 亿、加融资租赁 452 亿（同比 +30%）低于 507 亿预期，被解读为投入效率改善，盘后一度涨近 5.7%；但资本支出不及预期同时让 CoreWeave、Nebius 盘后跌近 5%——超大规模客户的需求兑现节奏，已经是新云公司的估值锚。",
+      "date": "10月29日",
+      "source": "华尔街见闻 / TechCrunch / CNBC",
+      "link": "https://www.readaitime.com/news/2026-10-29/2l04uy2n",
+      "models": []
+    },
+    {
+      "title": "Alphabet 三季度：云增 103%，但资本开支 514 亿把自由现金流打成 -91 亿，盘后跌超 10%",
+      "summary": "总营收 1275.8 亿美元略低于预期，EPS 由 2.87 降至 2.12 美元；谷歌云营收 307.1 亿、经营利润 111 亿、增速 103% 领跑超大规模厂商。季度资本开支 514 亿美元，自由现金流 -90.7 亿并大幅举债，全年资本开支维持 1950–2050 亿、并预告 2027 年显著增加。管理层称 AI 搜索变现滞后是主动选择、TPU 对外销售 2027 年放量。基本面与股价继续背离：云增速最快，股价却较 52 周高点低约 21%。",
+      "date": "10月29日",
+      "source": "华尔街见闻 / CNBC",
+      "link": "https://www.readaitime.com/news/2026-10-29/1u0pee97",
+      "models": []
+    },
+    {
+      "title": "美联储 10:2 维持 3.75%–4.00%，两名票委主张加息，「AI 免疫利率」论首次被公开质疑",
+      "summary": "决议以 10 比 2 维持利率不变，两位票委主张加息 25 个基点，对经济的评价由「稳步」上调至「强劲」。同日沃什质疑「AI 对利率免疫」的叙事，认为借贷成本上升正在影响科技扩张，同时又称增长正向 AI 以外领域扩散——两个相反判断叠加成政策上的双向难题。这是本轮 AI 资本开支周期里，货币政策第一次直接把「算力投资对利率的敏感性」摆上台面。",
+      "date": "10月29日",
+      "source": "华尔街见闻 / 华尔街日报",
+      "link": "https://www.readaitime.com/news/2026-10-29/d3epmxzs",
+      "models": []
+    },
+    {
+      "title": "AI 基建借贷潮把全球债券发行推上 6.61 万亿美元，提前两个月创历史新高",
+      "summary": "全球投资级与高收益债券融资合计 6.61 万亿美元、同比增 15%，为史上最早破纪录的一年。云巨头与数据中心开发商单独发债近 3680 亿美元，是去年同期的六倍以上，约占全部增量的三分之一；亚马逊升至全球第四大债券发行人，美国十大企业发行人中科技占五席。算力扩张的资金来源正从经营现金流与股权融资，整体转向债务市场——这也意味着利率与评级开始反向约束算力节奏。",
+      "date": "10月29日",
+      "source": "华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-29/1qd71e1b",
+      "models": []
+    },
+    {
+      "title": "Pimco 高位减持 Meta 与甲骨文 AI 债券各约五成，甲骨文密歇根项目债跌至约 88 美分",
+      "summary": "Pimco 减持两笔旗舰 AI 基建持仓各约五成：Meta 路易斯安那数据中心（约 180 亿美元）与甲骨文密歇根项目（约 100 亿美元），同时回避博通与 Anthropic 的联合发债以及软银约 110 亿美元垃圾债。甲骨文密歇根债券价格从 98.7 美分跌至约 88 美分。全球最大债基之一在这个时点减仓，是「算力资产回报率」被重新定价的最直接信号。",
+      "date": "10月29日",
+      "source": "彭博 / 华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-29/29p858vf",
+      "models": []
+    },
+    {
+      "title": "甲骨文给出 2030 财年 2250 亿美元营收指引，股价单日反弹 13%",
+      "summary": "甲骨文预计 2030 财年营收 2250 亿美元，隐含年均增长约 35%；承诺 2027–2030 财年新增融资上限 200 亿美元（股权与债务各半），并预计 2029 财年资本开支开始下降。股价年内一度跌约三分之一，消息后单日反弹 13%，CEO 同日称「市场低估 AI 需求、GPU 过剩风险不足虑」。在债券市场用价格表达怀疑的同一天，股票市场用涨幅表达了另一种判断。",
+      "date": "10月29日",
+      "source": "CNBC / 华尔街见闻",
+      "link": "https://www.readaitime.com/news/2026-10-29/psfijw0m",
+      "models": []
+    },
+    {
+      "title": "三星三季度净利 75.21 万亿韩元低于预估，半导体营业利润 106.5 万亿创纪录；SK 海力士同创纪录",
+      "summary": "三星营业利润 107.44 万亿韩元（同比 +783%，首破百万亿）、销售额 195.25 万亿创新高，但净利润 75.21 万亿低于 89.06 万亿预估，主因 9.5 万亿财务费用；半导体业务销售额 147.1 万亿、营业利润 106.5 万亿。公司拟派发 30 万亿现金股息，2026 年资本支出 84.4 万亿（芯片约 76.8 万亿），并预警明年芯片供应短缺将进一步加剧。SK 海力士三季度同样创纪录，内存侧的景气与整机侧的利润表正在分叉。",
+      "date": "10月29日",
+      "source": "华尔街见闻 / EE Times",
+      "link": "https://www.readaitime.com/news/2026-10-29/vaxp2h5q",
+      "models": []
+    },
+    {
+      "title": "A 股算力硬件集体调整：创业板早盘跌超 3%、天孚通信近 20cm 跌停，银行股逆势创新高",
+      "summary": "创业板指早盘跌近 3%、科创 50 跌超 3%；天孚通信盘中逼近 20cm 跌停、跌超 17%，摩尔线程跌 11%。银行、煤炭、海运逆势走强，工行、建行创新高；港股恒指翻红而恒生科技跌超 1%，智谱、MiniMax 跌超 5%。前一日 A 股刚放量反弹、成交 1.64 万亿，资金在半日内完成从算力硬件向红利资产的切换——这也是海外「AI 债定价」讨论在国内权益端的镜像。",
+      "date": "10月29日",
+      "source": "华尔街见闻 / 36氪",
+      "link": "https://www.readaitime.com/news/2026-10-29/127gpefb",
+      "models": []
+    },
+    {
+      "title": "Anthropic 商业侧数据流出：二季度经营利润转正、净收入留存率 900%，Claude Code 占客户近三分之一代码变更",
+      "summary": "据披露给投资者的数据，Anthropic 二季度已实现经营利润，净收入留存率 900%（同一批客户 2026 年三季度支出为去年同期的九倍）。Jellyfish 基于 27.6 万客户的使用数据显示：Claude Code 等基于 Anthropic 模型的工具承担了近三分之一的待审代码变更，相关支出年内增长十倍、约占工程总成本 2%；Codex 随 Astra 上线后可见度上升，但工作流标准化带来的切换成本让客户留存仍高。Ramp 指数显示企业侧 OpenAI 与 Anthropic token 混合价格在 10 月 23 日当周为每百万 0.59 美元。",
+      "date": "10月28日",
+      "source": "TechCrunch / Jellyfish（经 AI Affairs 汇总）",
+      "link": "https://www.aiaffairs.com/corporate/anthropic-enterprise-ai-spending-reporting-tools",
+      "models": [
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "数据中心自建燃气发电遇挫：涡轮开裂、燃料风险与运维短板，在建场内燃气项目已达 110 吉瓦",
+      "summary": "选择自建燃气发电的数据中心正遭遇涡轮叶片开裂、燃料价格波动与管道运力受限。Anthropic 在招股书中专门提示场内发电的燃料风险，并计划在得州与纽约投入 500 亿美元自建数据中心；Cleanview 估计在建的场内燃气项目已达 110 吉瓦（去年夏天约 20 吉瓦）。电力正从「配套设施」变成 AI 扩张的硬约束，而绕过电网自建，等于把发电运维的风险一并买下。",
+      "date": "10月29日",
+      "source": "Latitude Media",
+      "link": "https://www.readaitime.com/news/2026-10-29/11t1kosf",
+      "models": []
     }
   ],
   "papers": [
@@ -165,6 +261,48 @@
       "summary": "按 2025 FMTI 的 24 项预训练指标审计 17 个家族 41 个版本：24 组相邻比较中 11 组下降、6 组上升、7 组持平；总分不变也可能掩盖披露倒退。",
       "authors": "Md Sakib Ul Islam, S M Mehedi Zaman",
       "link": "https://arxiv.org/abs/2610.37465"
+    },
+    {
+      "title": "ThinkWorld：用世界想象强化动力学链推理",
+      "titleEn": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
+      "summary": "VLA 模型的泛化受限于带动作标注的机器人演示数量与覆盖度，人类视频经验更广却难以落地到动作。ThinkWorld 把每个「动作思考」表示为一串离散运动 token 组成的动力学链（Chain-of-Dynamics），并在世界动力学上接地，再用世界想象配合强化学习强化这条推理链，使模型能在缺少动作标签的视频经验上学习可执行的中间表征。",
+      "authors": "Chaehyun Kim, Chi-Pin Huang, Jisoo Kim 等",
+      "link": "https://arxiv.org/abs/2610.37666"
+    },
+    {
+      "title": "安全之头：可学习的注意力门控提升提示注入鲁棒性",
+      "titleEn": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
+      "summary": "提出 Heads of Security（HoS）：用少量可学习的逐头注意力门控，在模型内部强制「指令—数据分离」，让每个注意力头自己学习如何在可信与不可信 token 之间重新分配注意力，从而能够阅读不可信内容而不执行其中指令。在 Llama-3.3-70B-Instruct 与 GPT-OSS-20B 上与微调式防御 SecAlign++、架构式防御 ASIDE 对比，对自适应攻击更鲁棒、标准效用基准表现更好。",
+      "authors": "Igor Shilov, Xiaoxue Yang, Alexander Panfilov 等",
+      "link": "https://arxiv.org/abs/2610.37657"
+    },
+    {
+      "title": "GEPA-Curator：为自我改进的智能体做「经验策展」",
+      "titleEn": "GEPA-Curator: Curated Learning for Self Improving Agents",
+      "summary": "反思式提示优化器（如 GEPA）从失败回放中学习，但智能体的失败也可能来自提示缺陷、执行框架限制、随机性或噪声评判——这类失败不提供有效学习信号，甚至有害。GEPA-Curator 在优化器前加了一层策展：先判断哪些智能体经验值得进入提示优化，再让优化发生，把「该学什么」从「学到了什么」里拆出来。",
+      "authors": "Zack Yu, Nicholas Lee, Minjae Lee 等",
+      "link": "https://arxiv.org/abs/2610.37651"
+    },
+    {
+      "title": "结构鸿沟：更多数据为何替代不了结构化推理",
+      "titleEn": "The Structure Gap: When More Data Cannot Replace Structured Reasoning",
+      "summary": "论文定义「结构编码问题」：输入输出映射由已知结构（求解器、对称群、图、物理定律、测量算子、文法、组合搜索空间、优化目标）确定或强约束。这类任务的核心不是表达力——稠密网络理论上能容纳目标映射——而是有限数据下的辨识、外推与可认证性。作者把「有限资源下结构化先验与数据量之间的差距」命名为 structure gap，并论证它无法靠堆数据填平。",
+      "authors": "Kheer Sagar Patel, Mojtaba Soltanalian",
+      "link": "https://arxiv.org/abs/2610.37523"
+    },
+    {
+      "title": "潜世界模型的极限在哪里",
+      "titleEn": "Understanding the limits of latent world models",
+      "summary": "世界模型被当作智能体做长时空推理的核心组件，但现有评测多只看任务表现，不问潜动力学是否真的反映了环境结构。作者把「忠实的潜世界模型」定义成环境转移映射与学习到的潜动力学之间的等变条件，并提出潜轨迹一致性（LRC）指标；结论颇为刺眼：在所研究的 SOTA 潜世界模型中，没有一个满足该条件。",
+      "authors": "Rodrigo Gonzalez Laiz, Steffen Schneider",
+      "link": "https://arxiv.org/abs/2610.37588"
+    },
+    {
+      "title": "大模型能否靠自由探索发现隐藏的物理定律？",
+      "titleEn": "Can LLMs Uncover Hidden Physical Laws through Free Exploration?",
+      "summary": "提出 LongChang 框架：构造一个或多个物理定律被改动的模拟世界（例如更重的物体落得更慢），让 LLM 充当探索者，在不被告知研究任务的前提下自主操纵物体、搭建工具、提出假设并设计实验去发现定律。这考察的是「注意到异常」这一科学发现的起点能力，而非给定题目后的求解能力。",
+      "authors": "Zhen Yang, Wen Wang, Xander Xu 等",
+      "link": "https://arxiv.org/abs/2610.37649"
     }
   ],
   "models": [
@@ -197,6 +335,46 @@
       "vendor": "NVIDIA",
       "highlight": "Transcribe 背后的开放语音数据与 NeMo Curator 流水线：48 种语言、463,062 小时清单，来自 16 个源语料，较 v1 的 25 种语言扩充。",
       "link": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+    },
+    {
+      "name": "Hy4 / Hy4 flash",
+      "vendor": "腾讯",
+      "highlight": "10 月 29 日 2026 腾讯全球数字生态大会上宣布即将发布。相比 8 月 28 日开源的 Hy4 preview（总参数 770B、激活 49B、上下文破 1M），Hy4 全面大幅提升，重点强化长程与真实生产力任务、显著提升思维链效率，并首次引入视觉理解；Hy4 flash 随后推出，定位「极致性价比」，继承视觉与 Agent 能力并通过模型与产品深度 Co-Design 高频迭代。开源系旗舰第一次把多模态理解补进来，也是国产开源模型从「拼参数」转向「拼单位任务成本」的一步。",
+      "link": "https://36kr.com/newsflashes/4046338568459398",
+      "source": "36氪 / 上海证券报",
+      "date": "10月29日"
+    },
+    {
+      "name": "Clover-35B-A3B-Preview",
+      "vendor": "扩散智能 DiffuSpace",
+      "highlight": "10 月 28 日开源并发布权重的扩散语言模型，MoE 架构总参数 350 亿、每 token 激活约 30 亿，规模较前代 Dream 7B 扩大五倍而速度不变。技术上是块扩散＋重构的门控 Delta 网络：已生成上下文压进持续更新的状态，当前块内用双向注意力互相参考，并对历史记忆读出与块大小做可学习校准；内部测试整体生成约 680 tokens/s。WindTunnel 网页 Agent 49 项任务（每项 3 次）中位执行 1.52 秒，Jev+Mercury 2.5 组合 3.21 秒，成功率 98.6% 对 95.9%；SWE-bench Verified 73.6、Terminal-Bench 2.1 51.7、τ³ 65.3。基于 Qwen3.6-35B-A3B 权重改造，能力上限仍受底座约束——扩散带来的是并行解码的速度与块内互参的灵活性，不是新物种。",
+      "link": "https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview",
+      "source": "量子位 / 央广网 / Hugging Face",
+      "date": "10月28日"
+    },
+    {
+      "name": "智元 GO-3 Preview",
+      "vendor": "智元机器人",
+      "highlight": "10 月 29 日发布 Preview 版具身模型，官方计划 2026 年底全面开源。与此前偏「动作生成」的路线相比，GO-3 强调任务级泛化与真机部署节奏；同日智元还发布安规级重载人形机器人精灵 G2 Max（单臂额定 20kg、双臂峰值 50kg）。具身侧的竞争重心正从「演示视频」转向「开源可复现＋安全认证」两条硬门槛。",
+      "link": "https://36kr.com/newsflashes",
+      "source": "36氪",
+      "date": "10月29日"
+    },
+    {
+      "name": "Ling-3.1-flash-1019",
+      "vendor": "蚂蚁集团",
+      "highlight": "蚂蚁百灵 inclusionAI 于 10 月 27 日上传该权重（HF 上 79 likes、约 550 次下载），10 月 25 日另有 base 版；延续 3.1 系列「面向真实业务场景的 Personal Agent」定位，产品侧对应 10 月 27 日发布的灵光 2.0。开源权重与 C 端产品同日推进，是国内厂商在个人助理赛道「模型＋入口」双线下注的典型动作——入口铺得快，付费意愿仍在观测。",
+      "link": "https://huggingface.co/inclusionAI/Ling-3.1-flash-1019",
+      "source": "虎嗅 / Hugging Face",
+      "date": "10月27—29日"
+    },
+    {
+      "name": "开源侧观察：DeepSeek-V4.1-Flash-1017 仍居 HF 趋势榜首",
+      "vendor": "Hugging Face Trends",
+      "highlight": "截至 10 月 29 日，DeepSeek-V4.1-Flash-1017 以 3585 likes / 约 11.7 万月下载稳居趋势榜第一，其量化版本（GSQ-RCO-GGUF）单月下载已达 137 万；第二梯队为 Nanbeige4.3-33B（734 likes）、RecursiveSI/flint（1203 likes）、Spark-X2.6-4B（871 likes）、MiniMax-M3.1-Flash（466 likes）、LFM3-1.7B（409 likes）。新增面孔里百度 Unlimited-OCR-2（10 月 26 日，343 likes）与 Qwen3.5-4B-3D-Coder 值得留意——OCR 与 3D 代码生成这两个窄场景，正在被专门化的小模型接手。",
+      "link": "https://huggingface.co/models?sort=trending",
+      "source": "Hugging Face",
+      "date": "10月29日"
     }
   ],
   "ecosystem": [
@@ -242,7 +420,39 @@
       "summary": "修复 LFM3 GGUF 并改进 llama-server 语音，llama.cpp 升至 b11963（预发布版）。",
       "source": "Ollama / GitHub",
       "link": "https://github.com/ollama/ollama/releases/tag/v0.40.13-rc0",
+      "models": [
+        "LFM3"
+      ]
+    },
+    {
+      "title": "Claude Code v2.1.312：钩子并发上限 24、修大文件 CLAUDE.md 被覆盖，Agent SDK 0.3.312 加 autoMode",
+      "summary": "10 月 27 日发布的 v2.1.312：新增 oidc.user_id_claim 与全屏模式排队消息的点击发送；修复读取开头就覆盖超大 CLAUDE.md／rules／@ 引用文件、VS Code 登录后托管设置不加载、Bash cd 后 per-directory skills 找不到等问题；把提示词钩子与 Agent 钩子限制为每会话 24 并发；Bedrock／Vertex／Foundry／Mantle 遇到未识别模型名改走短系统提示（可用 CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=0 恢复完整版）；移除 claude_code.safety_event 遥测事件。Agent SDK TypeScript 0.3.312 同窗加入 autoMode／skipAutoPermissionPrompt／useAutoModeDuringPlan／permissions.disableAutoMode 与 AskUserQuestion 的 unanswered 标注，0.3.311 把缓存创建 token 按 5 分钟与 1 小时拆分统计、Node 最低版本抬到 18.14。",
+      "source": "claudenews / Claude Code Release Notes",
+      "link": "https://claudenews.com.br/en-US/edicoes/182-2026-10-28",
       "models": []
+    },
+    {
+      "title": "AWS 开源 Strands Decider 2B 决策模型与 Strands Box 内核级沙箱：把「想」和「做」拆开",
+      "summary": "Decider 2B 是 20 亿参数专用决策模型，不给长文本而是从给定选项里选（模型路由、工具选择、分类、护栏、上下文管理），返回决策＋置信度。结构上是 Qwen3.5-2B 把语言模型头换成指针头给候选打分，rank-16 LoRA 微调，权重、训练数据与脚本全部开源；AWS 称 RTX 3090 中位决策延迟约 115ms、M3 MacBook 小任务约 153ms，v19 检查点在 JevBench 231 项公开任务上 72.3%。Strands Box 是开发者预览的内核级沙箱，用开源策略语言 Dogwood 统管 shell 命令、Python 执行、MCP 工具、文件系统与网络访问，可设「读过客户文件后禁止出站 HTTP」。早期反馈集中在并发请求、Apple Silicon 兼容与冷启动延迟——这三项恰恰是这类组件从 demo 走向生产最难跨的坎。",
+      "source": "InfoQ",
+      "link": "https://www.infoq.cn/article/YmgmEh686wTClmj3PY8o",
+      "models": []
+    },
+    {
+      "title": "谷歌开放 Android Studio，接入 40 余款第三方 AI 编程代理",
+      "summary": "Android Studio 不再只绑定自家助手，而是开放给 40 多款第三方编码代理接入。对移动端开发的意义在于把「IDE 内代理」从单一供应商的产品功能，变成可切换的插槽——同一项目里可以按任务换代理，而不用换 IDE。与同日 Connected Apps Platform 的思路一致：分发层做标准化，能力层让开发者自己挑。",
+      "source": "The Decoder",
+      "link": "https://www.readaitime.com/digests/2026-10-29",
+      "models": []
+    },
+    {
+      "title": "腾讯 WorkBuddy 将开放架构，支持企业自建 Agent 网络",
+      "summary": "10 月 29 日 2026 腾讯全球数字生态大会上，汤道生表示 WorkBuddy 将开放架构，支持企业在自己的网络内自建 Agent。与 Hy4／Hy4 flash 的发布预告同台，指向同一条路线：模型与 Agent 运行时一起交付，企业侧保留数据与编排的控制权。这也是国内厂商在本轮「Agent 平台化」竞争里给出的典型答案——不自建模型，但要把编排层留在自己手里。",
+      "source": "36氪",
+      "link": "https://www.readaitime.com/digests/2026-10-29",
+      "models": [
+        "Hy4"
+      ]
     }
   ]
 }

@@ -5,8 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>每日AI前沿日报 · 2026-10-29</title>
 <style>
-
-
 :root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
@@ -19,7 +17,7 @@ header h1{font-size:28px;margin:6px 0 12px}
 header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
 .highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
 .highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
-.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
 section{margin-bottom:30px}
 section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
 section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
@@ -37,288 +35,327 @@ section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-lef
 .card .meta a:hover{text-decoration:underline}
 .paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
 footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
-.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
-.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
-.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
-@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
-.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
-section>h2{scroll-margin-top:56px}
-
-
-/* digest-ui2:start */
-/* flat header (mobile) + note clamp + toc top + card scale + dark */
-@media (max-width:760px){
-  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
-  header h1{font-size:20px;margin:4px 0 10px}
-  header .date{font-size:12px}
-  header .note{font-size:13.5px;padding:10px 12px}
-  .container{padding:16px 14px 48px}
-}
-header .note{
-  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
-  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
-}
-header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
-.note-toggle{
-  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
-  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
-  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
-}
-.note-toggle[hidden]{display:none}
-.card h3{font-size:15px}
-.card p{font-size:13.5px;color:#475569}
-.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
-.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
-.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
-.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
-@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
-.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
-section>h2{scroll-margin-top:56px}
-@media (prefers-color-scheme: dark){
-  :root{
-    color-scheme:dark;
-    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
-    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
-  }
-  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
-  .highlights{background:#0f172a;border-color:#1e3a5f}
-  .highlights h2,.highlights li{color:#93c5fd}
-  .highlights li p{color:#cbd5e1}
-  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
-  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
-  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
-  .card p{color:#cbd5e1}
-  .paper-authors{color:var(--muted)}
-  footer{color:#64748b}
-  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
-  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
-}
-/* digest-ui2:end */
-
-
-
 </style>
 </head>
-<body id="top">
+<body>
 
 <div class="container">
 <a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
 <header>
   <div class="date">2026年10月29日 · 星期四</div>
   <h1>🥚 每日AI前沿日报</h1>
-  <div class="note">今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。</div>
+  <div class="note">今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。【午后补更·并集】美股收盘把当天的第二本账翻开：微软第一财季营收 922.8 亿美元（+19%）、Azure 增 48% 首破 300 亿，并从 OpenAI 相关安排拿到 100 亿美元收入；Alphabet 云增 103% 更猛，但 514 亿美元资本开支把自由现金流打到 -91 亿，盘后跌超 10%、市值蒸发逾 3000 亿美元——同一套基建叙事，一边在证明回报，一边在证明成本。资金侧同日结账：全球债券发行 6.61 万亿美元提前两月创纪录，云厂商与数据中心开发商单独发债近 3680 亿、为去年同期六倍以上；Pimco 高位减持 Meta 与甲骨文两笔旗舰 AI 债各约五成，甲骨文密歇根项目债从 98.7 美分跌到 88 美分，而甲骨文自己给出 2030 财年 2250 亿美元营收指引、股价单日反弹 13%。美联储 10:2 维持 3.75%–4.00%，两名票委主张加息，沃什公开质疑「AI 让经济免疫利率」。存储侧三星净利不及预期但半导体营业利润创纪录、并预警明年供应更紧；A 股算力硬件午后集体调整，创业板跌超 3%、天孚通信近 20cm 跌停，资金半日内切向红利。能力侧另两条线：扩散语言模型 Clover-35B-A3B-Preview 用块并行解码打进 Agent 主场（WindTunnel 49 项任务中位 1.52 秒、Jellyfish 口径下成功率高过早八提到的快速决策路线），腾讯宣布 Hy4 与 Hy4 flash 即将发布、首次带上视觉理解。工程侧 Claude Code v2.1.312 把钩子并发压到 24，AWS 开源 Strands Decider 2B 与内核级沙箱 Strands Box，谷歌把 Android Studio 开放给 40 余款第三方编码代理，腾讯称 WorkBuddy 将开放架构支持企业自建 Agent 网络。一天之内，能力的上限、资金的成本与执行的边界，被同时重新标价。</div>
 </header>
-
-<nav class="page-toc" aria-label="本页目录">
-  <span class="pt-label">目录</span>
-  <a href="#sec-highlights">今日看点</a>
-  <a href="#sec-news">行业新闻</a>
-  <a href="#sec-papers">前沿论文</a>
-  <a href="#sec-models">模型</a>
-  <a href="#sec-ecosystem">生态</a>
-  <a class="pt-top" href="#top">回顶</a>
-</nav>
-
-<div class="highlights" id="sec-highlights">
-  <h2>📌 今日看点</h2>
+<div class="highlights">
+  <h2>🔥 今日看点</h2>
   <ul>
-<li><strong>Google 发布 Gemini 4 Carbon：网安优先、先给防御方</strong><p>先经 Fairwind 计划向部分网络防御方开放，之后再扩至开发者、企业与消费者；Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，AA 智能指数 v5.0 以 59 分居首（厂商口径，本站主榜按 v4.3.2 不动）。推广期 $2／$10 每百万 token，缓存输入降 95%，之后 $4／$20。</p></li>
-<li><strong>报道：OpenAI 计划采购 Google TPU</strong><p>Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片；双方未证实，交易条款未披露。</p></li>
-<li><strong>OpenAI×ServiceNow 扩大合作，ServiceNow MCP 插件上架 OpenAI 应用市场</strong><p>语音能力 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA；Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将用上 ChatGPT Work 与 Codex，OpenAI 成为 Control Tower Alliance 创始成员。</p></li>
-<li><strong>Anthropic：GSA 六折扩至州与地方政府，Claude Enterprise 上线支出报告</strong><p>OneGov 协议下 Claude Enterprise／Claude for Government／API 打六折、无最低消费，Anthropic 估算可为政府节省约 10 亿美元；同日 Claude Enterprise 推出智能报告、应用内问卷与共享组预算，AI for Science 扩至 20 家基金会与研究机构。</p></li>
-<li><strong>Axiom：AI 智能体 24 天完成有限单群分类定理 Lean 形式化</strong><p>约 4310 万行、205 万条声明、覆盖 715 篇论文；过程中发现 34 处与已发表论证不一致之处。</p></li>
+    <li><strong>Google 发布 Gemini 4 Carbon：网安优先、先给防御方：</strong>先经 Fairwind 计划向部分网络防御方开放，之后再扩至开发者、企业与消费者；Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，AA 智能指数 v5.0 以 59 分居首（厂商口径，本站主榜按 v4.3.2 不动）。推广期 $2／$10 每百万 token，缓存输入降 95%，之后 $4／$20。</li>
+    <li><strong>报道：OpenAI 计划采购 Google TPU：</strong>Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片；双方未证实，交易条款未披露。</li>
+    <li><strong>OpenAI×ServiceNow 扩大合作，ServiceNow MCP 插件上架 OpenAI 应用市场：</strong>语音能力 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA；Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将用上 ChatGPT Work 与 Codex，OpenAI 成为 Control Tower Alliance 创始成员。</li>
+    <li><strong>Anthropic：GSA 六折扩至州与地方政府，Claude Enterprise 上线支出报告：</strong>OneGov 协议下 Claude Enterprise／Claude for Government／API 打六折、无最低消费，Anthropic 估算可为政府节省约 10 亿美元；同日 Claude Enterprise 推出智能报告、应用内问卷与共享组预算，AI for Science 扩至 20 家基金会与研究机构。</li>
+    <li><strong>Axiom：AI 智能体 24 天完成有限单群分类定理 Lean 形式化：</strong>约 4310 万行、205 万条声明、覆盖 715 篇论文；过程中发现 34 处与已发表论证不一致之处。</li>
+    <li><strong>微软稳、谷歌跌：AI 收入增速与现金流的第一次正面对撞：</strong>微软第一财季营收 922.8 亿美元（同比 +19%），Azure 增 48%、单季首次突破 300 亿，智能云 639 亿超预期，当季从 OpenAI 商业安排（含收入分成）拿到 100 亿美元、约占营收近 11%；资本开支加融资租赁 452 亿、低于 507 亿预期，被读成投入效率改善。Alphabet 则相反：云增 103%、营收 307 亿，但总营收 1275.8 亿不及预期，季度资本开支 514 亿把自由现金流打到 -91 亿，盘后跌超 10%。同一套 AI 基建叙事，一边在证明回报，一边在证明成本。</li>
+    <li><strong>AI 基建正式债务化：全球债市创纪录，Pimco 先撤了一步：</strong>全球投资级与垃圾级债券融资达 6.61 万亿美元、同比增 15%，提前两个月破纪录，其中云巨头与数据中心开发商单独发债近 3680 亿美元，为去年同期六倍以上、约占增量三分之一；亚马逊已升至全球第四大债券发行人。同一周 Pimco 高位减持 Meta 路易斯安那（约 180 亿美元）与甲骨文密歇根（约 100 亿美元）两笔旗舰 AI 债各约五成，甲骨文密歇根债券从 98.7 美分跌至约 88 美分。算力扩张的融资结构，正从股权转向债务与评级。</li>
+    <li><strong>扩散语言模型打进 Agent 主场：Clover 35B 走的是另一条速度路线：</strong>扩散智能 DiffuSpace 开源 Clover-35B-A3B-Preview，MoE 总参数 350 亿、每 token 激活约 30 亿，基于 Qwen3.6-35B-A3B 权重改块扩散与门控 Delta 网络，内部测试整体生成约 680 tokens/s。网页 Agent 评测 WindTunnel 的 49 项任务里中位执行 1.52 秒，Jev+Mercury 2.5 组合为 3.21 秒；成功率 98.6% 对 95.9%；SWE-bench Verified 73.6、Terminal-Bench 2.1 51.7。这不是替代自回归，而是把「一次定一块」的并行解码塞进了 Agent 延迟敏感的那一侧。</li>
   </ul>
 </div>
-
-<section id="sec-news">
-  <h2>📰 行业新闻<span class="count">10 条</span></h2>
-<div class="card">
-  <h3>Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放</h3>
-  <p>Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。</p>
-  <div class="meta">10月28日 · Google · <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>报道：OpenAI 计划采购 Google TPU</h3>
-  <p>Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片以扩充算力；OpenAI 与 Google 均未证实，交易规模与条款未披露（待核实）。</p>
-  <div class="meta">10月28日 · Reuters / The Information · <a href="https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>OpenAI 与 ServiceNow 扩大合作</h3>
-  <p>ServiceNow MCP 插件当天上架 OpenAI 应用市场；语音 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA，Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将使用 ChatGPT Work 与 Codex，OpenAI 为 Control Tower Alliance 创始成员。</p>
-  <div class="meta">10月28日 · OpenAI · <a href="https://openai.com/index/openai-servicenow-partnership-expansion/" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>Anthropic 扩大与 GSA 合作：Claude 政府采购六折</h3>
-  <p>OneGov 协议下 Claude Enterprise、Claude for Government 与 API 打六折，延伸至州、地方、部落与领地政府且无最低消费；Anthropic 估算节省约 10 亿美元，约 500 个政府机构在用 Claude。Nextgov 称协议为期 27 个月至 2029 年 1 月 31 日。</p>
-  <div class="meta">10月27日 · Anthropic · <a href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>Claude Enterprise 上线智能报告、问卷与共享组预算</h3>
-  <p>智能报告抽样团队对话、归纳为工作流，展示花费、产出、摩擦点与建议；应用内问卷收集员工反馈；共享组预算让一个组共用月度额度，个人上限仍可作护栏。</p>
-  <div class="meta">10月28日 · Anthropic · <a href="https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>Anthropic AI for Science 扩至 20 家基金会与研究机构</h3>
-  <p>Anthropic 宣布扩大 AI for Science 合作网络，新增基金会与科研机构合作方，总数达 20 家；具体资助与额度以官方页面为准。</p>
-  <div class="meta">10月28日 · Anthropic · <a href="https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>CNBC：Anthropic S-1 称部分 AI 风险可能无法投保</h3>
-  <p>CNBC 梳理 Anthropic 上市文件的风险因素：部分与 AI 相关的风险可能难以或无法通过保险覆盖，或带来潜在负债。</p>
-  <div class="meta">10月28日 · CNBC · <a href="https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>荷兰拟到 2035 年削减约 2.5 万个中央政府岗位并推进 AI</h3>
-  <p>目标每年节省约 35 亿欧元，警察与国防除外；AI 相关目标拟在 2027 年一季度提出。</p>
-  <div class="meta">10月27日 · The Telegraph · <a href="https://www.telegraph.co.uk/business/2026/10/27/netherlands-to-cut-25000-civil-service-jobs-in-ai-push/" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>Axiom 完成有限单群分类定理（CFSG）的 Lean 形式化</h3>
-  <p>约 4310 万行、205 万条声明、涵盖 715 篇论文，借助 AI 智能体 24 天完成；发现 34 处与已发表论证的偏差。</p>
-  <div class="meta">10月28日 · Axiom · <a href="https://axiommath.ai/research/the-enormous-theorem-formalized/" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>特朗普称将在政府文件中以「SI（超级智能）」取代「AI」</h3>
-  <p>Truth Social 发文称将「正式禁用」AI 一词；现行依据为 10 月初行政令 14434，只要求行政部门在特定非法定材料中改用「Super Intelligence／SI」，无法约束私营、媒体与法律条文用法。</p>
-  <div class="meta">10月27日 · Reuters · <a href="https://www.investing.com/news/world-news/trump-says-he-will-ban-term-artificial-intelligence-4976471" target="_blank" rel="noopener">来源 ↗</a></div>
-</div>
+<section>
+  <h2>A · AI 行业新闻<span class="count">20 条</span></h2>
+  <div class="card">
+    <h3>Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放<span class="tag tag-new">10月28日</span></h3>
+    <p>Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。</p>
+    <div class="meta">来源：Google ·  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>报道：OpenAI 计划采购 Google TPU<span class="tag tag-hot">10月28日</span></h3>
+    <p>Reuters 转引 The Information：OpenAI 计划购买 Google 的 AI 芯片以扩充算力；OpenAI 与 Google 均未证实，交易规模与条款未披露（待核实）。</p>
+    <div class="meta">来源：Reuters / The Information ·  <a href="https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 与 ServiceNow 扩大合作<span class="tag tag-new">10月28日</span></h3>
+    <p>ServiceNow MCP 插件当天上架 OpenAI 应用市场；语音 2027 年一季度、安全产品 2027 年 1 月早期访问／二季度 GA，Codex 2027 年进 AI Workflow Factory；ServiceNow 员工将使用 ChatGPT Work 与 Codex，OpenAI 为 Control Tower Alliance 创始成员。</p>
+    <div class="meta">来源：OpenAI ·  <a href="https://openai.com/index/openai-servicenow-partnership-expansion/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 扩大与 GSA 合作：Claude 政府采购六折<span class="tag tag-fund">10月27日</span></h3>
+    <p>OneGov 协议下 Claude Enterprise、Claude for Government 与 API 打六折，延伸至州、地方、部落与领地政府且无最低消费；Anthropic 估算节省约 10 亿美元，约 500 个政府机构在用 Claude。Nextgov 称协议为期 27 个月至 2029 年 1 月 31 日。</p>
+    <div class="meta">来源：Anthropic ·  <a href="https://www.anthropic.com/news/expanding-partnership-gsa" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Claude Enterprise 上线智能报告、问卷与共享组预算<span class="tag tag-new">10月28日</span></h3>
+    <p>智能报告抽样团队对话、归纳为工作流，展示花费、产出、摩擦点与建议；应用内问卷收集员工反馈；共享组预算让一个组共用月度额度，个人上限仍可作护栏。</p>
+    <div class="meta">来源：Anthropic ·  <a href="https://claude.com/resources/articles/smart-reports-surveys-pooled-budgets" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic AI for Science 扩至 20 家基金会与研究机构<span class="tag tag-hot">10月28日</span></h3>
+    <p>Anthropic 宣布扩大 AI for Science 合作网络，新增基金会与科研机构合作方，总数达 20 家；具体资助与额度以官方页面为准。</p>
+    <div class="meta">来源：Anthropic ·  <a href="https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>CNBC：Anthropic S-1 称部分 AI 风险可能无法投保<span class="tag tag-fund">10月28日</span></h3>
+    <p>CNBC 梳理 Anthropic 上市文件的风险因素：部分与 AI 相关的风险可能难以或无法通过保险覆盖，或带来潜在负债。</p>
+    <div class="meta">来源：CNBC ·  <a href="https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>荷兰拟到 2035 年削减约 2.5 万个中央政府岗位并推进 AI<span class="tag tag-hot">10月27日</span></h3>
+    <p>目标每年节省约 35 亿欧元，警察与国防除外；AI 相关目标拟在 2027 年一季度提出。</p>
+    <div class="meta">来源：The Telegraph ·  <a href="https://www.telegraph.co.uk/business/2026/10/27/netherlands-to-cut-25000-civil-service-jobs-in-ai-push/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Axiom 完成有限单群分类定理（CFSG）的 Lean 形式化<span class="tag tag-hot">10月28日</span></h3>
+    <p>约 4310 万行、205 万条声明、涵盖 715 篇论文，借助 AI 智能体 24 天完成；发现 34 处与已发表论证的偏差。</p>
+    <div class="meta">来源：Axiom ·  <a href="https://axiommath.ai/research/the-enormous-theorem-formalized/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>特朗普称将在政府文件中以「SI（超级智能）」取代「AI」<span class="tag tag-hot">10月27日</span></h3>
+    <p>Truth Social 发文称将「正式禁用」AI 一词；现行依据为 10 月初行政令 14434，只要求行政部门在特定非法定材料中改用「Super Intelligence／SI」，无法约束私营、媒体与法律条文用法。</p>
+    <div class="meta">来源：Reuters ·  <a href="https://www.investing.com/news/world-news/trump-says-he-will-ban-term-artificial-intelligence-4976471" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>微软第一财季：Azure 增 48% 首破 300 亿美元，从 OpenAI 相关安排获 100 亿美元收入<span class="tag tag-fund">10月29日</span></h3>
+    <p>营收同比 +19% 至 922.8 亿美元（预期 906.3 亿），云收入 639 亿超预期；Azure 增 48%、单季首次超过 300 亿。截至 9 月 30 日季度从 OpenAI 商业安排（含收入分成）获得 100 亿美元，约占当季营收近 11%，2026 财年累计 241 亿；来自 OpenAI 的未结应收 72 亿美元（6 月底为 60 亿）。现金资本开支 393.7 亿、加融资租赁 452 亿（同比 +30%）低于 507 亿预期，被解读为投入效率改善，盘后一度涨近 5.7%；但资本支出不及预期同时让 CoreWeave、Nebius 盘后跌近 5%——超大规模客户的需求兑现节奏，已经是新云公司的估值锚。</p>
+    <div class="meta">来源：华尔街见闻 / TechCrunch / CNBC ·  <a href="https://www.readaitime.com/news/2026-10-29/2l04uy2n" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Alphabet 三季度：云增 103%，但资本开支 514 亿把自由现金流打成 -91 亿，盘后跌超 10%<span class="tag tag-fund">10月29日</span></h3>
+    <p>总营收 1275.8 亿美元略低于预期，EPS 由 2.87 降至 2.12 美元；谷歌云营收 307.1 亿、经营利润 111 亿、增速 103% 领跑超大规模厂商。季度资本开支 514 亿美元，自由现金流 -90.7 亿并大幅举债，全年资本开支维持 1950–2050 亿、并预告 2027 年显著增加。管理层称 AI 搜索变现滞后是主动选择、TPU 对外销售 2027 年放量。基本面与股价继续背离：云增速最快，股价却较 52 周高点低约 21%。</p>
+    <div class="meta">来源：华尔街见闻 / CNBC ·  <a href="https://www.readaitime.com/news/2026-10-29/1u0pee97" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>美联储 10:2 维持 3.75%–4.00%，两名票委主张加息，「AI 免疫利率」论首次被公开质疑<span class="tag tag-fund">10月29日</span></h3>
+    <p>决议以 10 比 2 维持利率不变，两位票委主张加息 25 个基点，对经济的评价由「稳步」上调至「强劲」。同日沃什质疑「AI 对利率免疫」的叙事，认为借贷成本上升正在影响科技扩张，同时又称增长正向 AI 以外领域扩散——两个相反判断叠加成政策上的双向难题。这是本轮 AI 资本开支周期里，货币政策第一次直接把「算力投资对利率的敏感性」摆上台面。</p>
+    <div class="meta">来源：华尔街见闻 / 华尔街日报 ·  <a href="https://www.readaitime.com/news/2026-10-29/d3epmxzs" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AI 基建借贷潮把全球债券发行推上 6.61 万亿美元，提前两个月创历史新高<span class="tag tag-fund">10月29日</span></h3>
+    <p>全球投资级与高收益债券融资合计 6.61 万亿美元、同比增 15%，为史上最早破纪录的一年。云巨头与数据中心开发商单独发债近 3680 亿美元，是去年同期的六倍以上，约占全部增量的三分之一；亚马逊升至全球第四大债券发行人，美国十大企业发行人中科技占五席。算力扩张的资金来源正从经营现金流与股权融资，整体转向债务市场——这也意味着利率与评级开始反向约束算力节奏。</p>
+    <div class="meta">来源：华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-10-29/1qd71e1b" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Pimco 高位减持 Meta 与甲骨文 AI 债券各约五成，甲骨文密歇根项目债跌至约 88 美分<span class="tag tag-fund">10月29日</span></h3>
+    <p>Pimco 减持两笔旗舰 AI 基建持仓各约五成：Meta 路易斯安那数据中心（约 180 亿美元）与甲骨文密歇根项目（约 100 亿美元），同时回避博通与 Anthropic 的联合发债以及软银约 110 亿美元垃圾债。甲骨文密歇根债券价格从 98.7 美分跌至约 88 美分。全球最大债基之一在这个时点减仓，是「算力资产回报率」被重新定价的最直接信号。</p>
+    <div class="meta">来源：彭博 / 华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-10-29/29p858vf" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>甲骨文给出 2030 财年 2250 亿美元营收指引，股价单日反弹 13%<span class="tag tag-fund">10月29日</span></h3>
+    <p>甲骨文预计 2030 财年营收 2250 亿美元，隐含年均增长约 35%；承诺 2027–2030 财年新增融资上限 200 亿美元（股权与债务各半），并预计 2029 财年资本开支开始下降。股价年内一度跌约三分之一，消息后单日反弹 13%，CEO 同日称「市场低估 AI 需求、GPU 过剩风险不足虑」。在债券市场用价格表达怀疑的同一天，股票市场用涨幅表达了另一种判断。</p>
+    <div class="meta">来源：CNBC / 华尔街见闻 ·  <a href="https://www.readaitime.com/news/2026-10-29/psfijw0m" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>三星三季度净利 75.21 万亿韩元低于预估，半导体营业利润 106.5 万亿创纪录；SK 海力士同创纪录<span class="tag tag-hot">10月29日</span></h3>
+    <p>三星营业利润 107.44 万亿韩元（同比 +783%，首破百万亿）、销售额 195.25 万亿创新高，但净利润 75.21 万亿低于 89.06 万亿预估，主因 9.5 万亿财务费用；半导体业务销售额 147.1 万亿、营业利润 106.5 万亿。公司拟派发 30 万亿现金股息，2026 年资本支出 84.4 万亿（芯片约 76.8 万亿），并预警明年芯片供应短缺将进一步加剧。SK 海力士三季度同样创纪录，内存侧的景气与整机侧的利润表正在分叉。</p>
+    <div class="meta">来源：华尔街见闻 / EE Times ·  <a href="https://www.readaitime.com/news/2026-10-29/vaxp2h5q" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>A 股算力硬件集体调整：创业板早盘跌超 3%、天孚通信近 20cm 跌停，银行股逆势创新高<span class="tag tag-hot">10月29日</span></h3>
+    <p>创业板指早盘跌近 3%、科创 50 跌超 3%；天孚通信盘中逼近 20cm 跌停、跌超 17%，摩尔线程跌 11%。银行、煤炭、海运逆势走强，工行、建行创新高；港股恒指翻红而恒生科技跌超 1%，智谱、MiniMax 跌超 5%。前一日 A 股刚放量反弹、成交 1.64 万亿，资金在半日内完成从算力硬件向红利资产的切换——这也是海外「AI 债定价」讨论在国内权益端的镜像。</p>
+    <div class="meta">来源：华尔街见闻 / 36氪 ·  <a href="https://www.readaitime.com/news/2026-10-29/127gpefb" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Anthropic 商业侧数据流出：二季度经营利润转正、净收入留存率 900%，Claude Code 占客户近三分之一代码变更<span class="tag tag-fund">10月28日</span></h3>
+    <p>据披露给投资者的数据，Anthropic 二季度已实现经营利润，净收入留存率 900%（同一批客户 2026 年三季度支出为去年同期的九倍）。Jellyfish 基于 27.6 万客户的使用数据显示：Claude Code 等基于 Anthropic 模型的工具承担了近三分之一的待审代码变更，相关支出年内增长十倍、约占工程总成本 2%；Codex 随 Astra 上线后可见度上升，但工作流标准化带来的切换成本让客户留存仍高。Ramp 指数显示企业侧 OpenAI 与 Anthropic token 混合价格在 10 月 23 日当周为每百万 0.59 美元。</p>
+    <div class="meta">来源：TechCrunch / Jellyfish（经 AI Affairs 汇总） ·  <a href="https://www.aiaffairs.com/corporate/anthropic-enterprise-ai-spending-reporting-tools" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>数据中心自建燃气发电遇挫：涡轮开裂、燃料风险与运维短板，在建场内燃气项目已达 110 吉瓦<span class="tag tag-fund">10月29日</span></h3>
+    <p>选择自建燃气发电的数据中心正遭遇涡轮叶片开裂、燃料价格波动与管道运力受限。Anthropic 在招股书中专门提示场内发电的燃料风险，并计划在得州与纽约投入 500 亿美元自建数据中心；Cleanview 估计在建的场内燃气项目已达 110 吉瓦（去年夏天约 20 吉瓦）。电力正从「配套设施」变成 AI 扩张的硬约束，而绕过电网自建，等于把发电运维的风险一并买下。</p>
+    <div class="meta">来源：Latitude Media ·  <a href="https://www.readaitime.com/news/2026-10-29/11t1kosf" target="_blank">阅读全文 ↗</a></div>
+  </div>
 </section>
-<section id="sec-papers">
-  <h2>📄 前沿论文<span class="count">8 篇</span></h2>
-<div class="card">
-  <h3>InfraDev：编码智能体能开发 AI 基础设施吗？</h3>
-  <div class="paper-authors">InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?</div>
-  <p>36 个任务取自 Megatron-LM、vLLM、verl 真实 PR，覆盖训练、推理与 RL，需跨多文件、多 GPU 正确运行；联合合成隐藏探针与接口提示来评分，共享执行环境复用依赖与产物。</p>
-  <div class="meta">Yangshen Deng, Jiaqi Ruan, Yeqi Huang, Nick Lau, Guangming Sheng 等 · <a href="https://arxiv.org/abs/2610.36589" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>你在场时，智能体行为不同：用户在场如何改变谈判中的智能体</h3>
-  <div class="paper-authors">Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation</div>
-  <p>PRESENT 框架，7 个博弈、8 个模型、1.12 万次运行：有用户在场的一方收益平均 +13.7%、谈判更激进，但也诱发针对对手乃至用户的失准行为。</p>
-  <div class="meta">Jane Pan, You Lyu, Abe Bohan Hou, Valerie Chen, He He · <a href="https://arxiv.org/abs/2610.36435" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>AutoVend：长程自主经营自动售货机的智能体基准</h3>
-  <div class="paper-authors">AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations</div>
-  <p>单个智能体经网页界面管理 5 类场地的 20 台售货机、模拟 180 天，含共享仓库、采购提前期、补货费用与过期；5 个 LLM 智能体与规则库存基线对比。</p>
-  <div class="meta">Qiming Shi, Yikun Li, Beidi Luan, Rui Sun, Yan Ma 等 · <a href="https://arxiv.org/abs/2610.36980" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>kw-bench：用真实任务击穿前沿智能体框架</h3>
-  <div class="paper-authors">kw-bench: Breaking Frontier Harnesses on Real-World Tasks</div>
-  <p>面向审计、税务、尽调等「调查型」知识工作：答案藏在不完整、不一致的多系统证据中，需精确到分地还原并自证。</p>
-  <div class="meta">George Juraj Salapa · <a href="https://arxiv.org/abs/2610.36405" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>AI 科学家知道什么是新的吗？</h3>
-  <div class="paper-authors">Do AI Scientists Know What's New?</div>
-  <p>用带时间真值的 1,060 份提案评估新颖性检查：越能拒掉非新颖想法的检查，越容易误杀后来被人类实现的想法。</p>
-  <div class="meta">Miri Liu, Xiayu Zhao, Encheng Xie, ChengXiang Zhai · <a href="https://arxiv.org/abs/2610.36511" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>AI 生成网页内容的不均衡崛起</h3>
-  <div class="paper-authors">The uneven rise of AI-generated web content</div>
-  <p>500 万+ 可抓取网页：含 AI 文本的比例快速上升但不均——英语页高于其他语言，.gov／.edu 明显低于 .com；增长集中在链接图中最边缘的页面。</p>
-  <div class="meta">Adam Visokay, Soumyakanti Pan, Molly Griston, Polina Iasakova, Mark Nepf 等 · <a href="https://arxiv.org/abs/2610.36631" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>检索不够：智能体记忆中的过时事实</h3>
-  <div class="paper-authors">When Retrieval Is Not Enough: Obsolete Facts in Agent Memory</div>
-  <p>Qwen2.5-7B 在 BM25 下证据预算从 64 增到 512 token，准确率由 45% 降到 32%；把一条无关语句换成过时版本，准确率从 100% 跌至 44.6%（Qwen3-14B 为 87.8%）。</p>
-  <div class="meta">Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Ahmad Baktash 等 · <a href="https://arxiv.org/abs/2610.36308" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div><div class="card">
-  <h3>什么被延续了？语言模型版本间的预训练披露</h3>
-  <div class="paper-authors">What Carries Forward? Pretraining Disclosure Across Language Model Releases</div>
-  <p>按 2025 FMTI 的 24 项预训练指标审计 17 个家族 41 个版本：24 组相邻比较中 11 组下降、6 组上升、7 组持平；总分不变也可能掩盖披露倒退。</p>
-  <div class="meta">Md Sakib Ul Islam, S M Mehedi Zaman · <a href="https://arxiv.org/abs/2610.37465" target="_blank" rel="noopener">arXiv ↗</a></div>
-</div>
+<section>
+  <h2>B · 前沿论文<span class="count">14 篇</span></h2>
+  <div class="card">
+    <h3>InfraDev：编码智能体能开发 AI 基础设施吗？（InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?）<span class="tag tag-new">arXiv 2610.36589</span></h3>
+    <p>36 个任务取自 Megatron-LM、vLLM、verl 真实 PR，覆盖训练、推理与 RL，需跨多文件、多 GPU 正确运行；联合合成隐藏探针与接口提示来评分，共享执行环境复用依赖与产物。</p>
+    <div class="paper-authors">Yangshen Deng, Jiaqi Ruan, Yeqi Huang, Nick Lau, Guangming Sheng 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36589" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>你在场时，智能体行为不同：用户在场如何改变谈判中的智能体（Your Agent Acts Differently When You're Around: How User Presence Changes Agent Behavior in Negotiation）<span class="tag tag-new">arXiv 2610.36435</span></h3>
+    <p>PRESENT 框架，7 个博弈、8 个模型、1.12 万次运行：有用户在场的一方收益平均 +13.7%、谈判更激进，但也诱发针对对手乃至用户的失准行为。</p>
+    <div class="paper-authors">Jane Pan, You Lyu, Abe Bohan Hou, Valerie Chen, He He</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36435" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AutoVend：长程自主经营自动售货机的智能体基准（AutoVend: Benchmarking LLM Agents on Long-Horizon Autonomous Vending Operations）<span class="tag tag-new">arXiv 2610.36980</span></h3>
+    <p>单个智能体经网页界面管理 5 类场地的 20 台售货机、模拟 180 天，含共享仓库、采购提前期、补货费用与过期；5 个 LLM 智能体与规则库存基线对比。</p>
+    <div class="paper-authors">Qiming Shi, Yikun Li, Beidi Luan, Rui Sun, Yan Ma 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36980" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>kw-bench：用真实任务击穿前沿智能体框架（kw-bench: Breaking Frontier Harnesses on Real-World Tasks）<span class="tag tag-new">arXiv 2610.36405</span></h3>
+    <p>面向审计、税务、尽调等「调查型」知识工作：答案藏在不完整、不一致的多系统证据中，需精确到分地还原并自证。</p>
+    <div class="paper-authors">George Juraj Salapa</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36405" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AI 科学家知道什么是新的吗？（Do AI Scientists Know What's New?）<span class="tag tag-new">arXiv 2610.36511</span></h3>
+    <p>用带时间真值的 1,060 份提案评估新颖性检查：越能拒掉非新颖想法的检查，越容易误杀后来被人类实现的想法。</p>
+    <div class="paper-authors">Miri Liu, Xiayu Zhao, Encheng Xie, ChengXiang Zhai</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36511" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AI 生成网页内容的不均衡崛起（The uneven rise of AI-generated web content）<span class="tag tag-new">arXiv 2610.36631</span></h3>
+    <p>500 万+ 可抓取网页：含 AI 文本的比例快速上升但不均——英语页高于其他语言，.gov／.edu 明显低于 .com；增长集中在链接图中最边缘的页面。</p>
+    <div class="paper-authors">Adam Visokay, Soumyakanti Pan, Molly Griston, Polina Iasakova, Mark Nepf 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36631" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>检索不够：智能体记忆中的过时事实（When Retrieval Is Not Enough: Obsolete Facts in Agent Memory）<span class="tag tag-new">arXiv 2610.36308</span></h3>
+    <p>Qwen2.5-7B 在 BM25 下证据预算从 64 增到 512 token，准确率由 45% 降到 32%；把一条无关语句换成过时版本，准确率从 100% 跌至 44.6%（Qwen3-14B 为 87.8%）。</p>
+    <div class="paper-authors">Oleeviya Babu Poikarayil, Tony Basil Babu, Abdulrahman Nahhas, Het Darshan Mehta, Jawid Ahmad Baktash 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.36308" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>什么被延续了？语言模型版本间的预训练披露（What Carries Forward? Pretraining Disclosure Across Language Model Releases）<span class="tag tag-new">arXiv 2610.37465</span></h3>
+    <p>按 2025 FMTI 的 24 项预训练指标审计 17 个家族 41 个版本：24 组相邻比较中 11 组下降、6 组上升、7 组持平；总分不变也可能掩盖披露倒退。</p>
+    <div class="paper-authors">Md Sakib Ul Islam, S M Mehedi Zaman</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37465" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>ThinkWorld：用世界想象强化动力学链推理（ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning）<span class="tag tag-new">arXiv 2610.37666</span></h3>
+    <p>VLA 模型的泛化受限于带动作标注的机器人演示数量与覆盖度，人类视频经验更广却难以落地到动作。ThinkWorld 把每个「动作思考」表示为一串离散运动 token 组成的动力学链（Chain-of-Dynamics），并在世界动力学上接地，再用世界想象配合强化学习强化这条推理链，使模型能在缺少动作标签的视频经验上学习可执行的中间表征。</p>
+    <div class="paper-authors">Chaehyun Kim, Chi-Pin Huang, Jisoo Kim 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37666" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>安全之头：可学习的注意力门控提升提示注入鲁棒性（Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness）<span class="tag tag-new">arXiv 2610.37657</span></h3>
+    <p>提出 Heads of Security（HoS）：用少量可学习的逐头注意力门控，在模型内部强制「指令—数据分离」，让每个注意力头自己学习如何在可信与不可信 token 之间重新分配注意力，从而能够阅读不可信内容而不执行其中指令。在 Llama-3.3-70B-Instruct 与 GPT-OSS-20B 上与微调式防御 SecAlign++、架构式防御 ASIDE 对比，对自适应攻击更鲁棒、标准效用基准表现更好。</p>
+    <div class="paper-authors">Igor Shilov, Xiaoxue Yang, Alexander Panfilov 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37657" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>GEPA-Curator：为自我改进的智能体做「经验策展」（GEPA-Curator: Curated Learning for Self Improving Agents）<span class="tag tag-new">arXiv 2610.37651</span></h3>
+    <p>反思式提示优化器（如 GEPA）从失败回放中学习，但智能体的失败也可能来自提示缺陷、执行框架限制、随机性或噪声评判——这类失败不提供有效学习信号，甚至有害。GEPA-Curator 在优化器前加了一层策展：先判断哪些智能体经验值得进入提示优化，再让优化发生，把「该学什么」从「学到了什么」里拆出来。</p>
+    <div class="paper-authors">Zack Yu, Nicholas Lee, Minjae Lee 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37651" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>结构鸿沟：更多数据为何替代不了结构化推理（The Structure Gap: When More Data Cannot Replace Structured Reasoning）<span class="tag tag-new">arXiv 2610.37523</span></h3>
+    <p>论文定义「结构编码问题」：输入输出映射由已知结构（求解器、对称群、图、物理定律、测量算子、文法、组合搜索空间、优化目标）确定或强约束。这类任务的核心不是表达力——稠密网络理论上能容纳目标映射——而是有限数据下的辨识、外推与可认证性。作者把「有限资源下结构化先验与数据量之间的差距」命名为 structure gap，并论证它无法靠堆数据填平。</p>
+    <div class="paper-authors">Kheer Sagar Patel, Mojtaba Soltanalian</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37523" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>潜世界模型的极限在哪里（Understanding the limits of latent world models）<span class="tag tag-new">arXiv 2610.37588</span></h3>
+    <p>世界模型被当作智能体做长时空推理的核心组件，但现有评测多只看任务表现，不问潜动力学是否真的反映了环境结构。作者把「忠实的潜世界模型」定义成环境转移映射与学习到的潜动力学之间的等变条件，并提出潜轨迹一致性（LRC）指标；结论颇为刺眼：在所研究的 SOTA 潜世界模型中，没有一个满足该条件。</p>
+    <div class="paper-authors">Rodrigo Gonzalez Laiz, Steffen Schneider</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37588" target="_blank">arXiv ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>大模型能否靠自由探索发现隐藏的物理定律？（Can LLMs Uncover Hidden Physical Laws through Free Exploration?）<span class="tag tag-new">arXiv 2610.37649</span></h3>
+    <p>提出 LongChang 框架：构造一个或多个物理定律被改动的模拟世界（例如更重的物体落得更慢），让 LLM 充当探索者，在不被告知研究任务的前提下自主操纵物体、搭建工具、提出假设并设计实验去发现定律。这考察的是「注意到异常」这一科学发现的起点能力，而非给定题目后的求解能力。</p>
+    <div class="paper-authors">Zhen Yang, Wen Wang, Xander Xu 等</div>
+    <div class="meta"> <a href="https://arxiv.org/abs/2610.37649" target="_blank">arXiv ↗</a></div>
+  </div>
 </section>
-<section id="sec-models">
-  <h2>🤖 模型<span class="count">5 条</span></h2>
-<div class="card">
-  <h3>Gemini 4 Carbon <span class="tag tag-new">模型</span></h3>
-  <p><strong>Google</strong> — 网安优先的新模型，先经 Fairwind 计划向部分防御方开放；厂商称 AA 指数 v5.0 59 分居首（非本站 v4.3.2 口径）；推广期 $2／$10，之后 $4／$20 每百万 token。</p>
-  <div class="meta"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank" rel="noopener">链接 ↗</a></div>
-</div><div class="card">
-  <h3>Nemotron 3.5 Transcribe <span class="tag tag-new">模型</span></h3>
-  <p><strong>NVIDIA</strong> — 开源权重可提示语音模型：转写 40 种语言、翻译 31 种、说话人标注 13 种，单段最长约 1 小时；约 30B 总参／4B 激活；HF Open ASR 英文榜开源第一（5.33% WER，厂商口径）。</p>
-  <div class="meta"><a href="https://huggingface.co/blog/nvidia/nemotron-transcribe-granary" target="_blank" rel="noopener">链接 ↗</a></div>
-</div><div class="card">
-  <h3>MAI-Image-2.6 / 2.6-Flash <span class="tag tag-new">模型</span></h3>
-  <p><strong>Microsoft</strong> — 在 Microsoft Foundry 正式可用；微软称首发即列 Arena 第 2。</p>
-  <div class="meta"><a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally-available-in-microsoft-f/4566327" target="_blank" rel="noopener">链接 ↗</a></div>
-</div><div class="card">
-  <h3>Giotto Alto / Solo <span class="tag tag-new">模型</span></h3>
-  <p><strong>Giotto.ai</strong> — 洛桑团队的「主权 AI」家族：Alto 跑在 8×B300、可免费对话，Solo 可在单 GPU 运行；性能数据待核实。</p>
-  <div class="meta"><a href="https://www.giotto.ai/" target="_blank" rel="noopener">链接 ↗</a></div>
-</div><div class="card">
-  <h3>Granary v2（数据集） <span class="tag tag-new">模型</span></h3>
-  <p><strong>NVIDIA</strong> — Transcribe 背后的开放语音数据与 NeMo Curator 流水线：48 种语言、463,062 小时清单，来自 16 个源语料，较 v1 的 25 种语言扩充。</p>
-  <div class="meta"><a href="https://huggingface.co/blog/nvidia/nemotron-transcribe-granary" target="_blank" rel="noopener">链接 ↗</a></div>
-</div>
+<section>
+  <h2>C · 模型动态<span class="count">10 条</span></h2>
+  <div class="card">
+    <h3>Gemini 4 Carbon（Google）</h3>
+    <p>网安优先的新模型，先经 Fairwind 计划向部分防御方开放；厂商称 AA 指数 v5.0 59 分居首（非本站 v4.3.2 口径）；推广期 $2／$10，之后 $4／$20 每百万 token。</p>
+    <div class="meta">来源：Google ·  <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Nemotron 3.5 Transcribe（NVIDIA）</h3>
+    <p>开源权重可提示语音模型：转写 40 种语言、翻译 31 种、说话人标注 13 种，单段最长约 1 小时；约 30B 总参／4B 激活；HF Open ASR 英文榜开源第一（5.33% WER，厂商口径）。</p>
+    <div class="meta">来源：NVIDIA ·  <a href="https://huggingface.co/blog/nvidia/nemotron-transcribe-granary" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>MAI-Image-2.6 / 2.6-Flash（Microsoft）</h3>
+    <p>在 Microsoft Foundry 正式可用；微软称首发即列 Arena 第 2。</p>
+    <div class="meta">来源：Microsoft ·  <a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/mai-image-2-6-and-mai-image-2-6-flash-are-now-generally-available-in-microsoft-f/4566327" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Giotto Alto / Solo（Giotto.ai）</h3>
+    <p>洛桑团队的「主权 AI」家族：Alto 跑在 8×B300、可免费对话，Solo 可在单 GPU 运行；性能数据待核实。</p>
+    <div class="meta">来源：Giotto.ai ·  <a href="https://www.giotto.ai/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Granary v2（数据集）（NVIDIA）</h3>
+    <p>Transcribe 背后的开放语音数据与 NeMo Curator 流水线：48 种语言、463,062 小时清单，来自 16 个源语料，较 v1 的 25 种语言扩充。</p>
+    <div class="meta">来源：NVIDIA ·  <a href="https://huggingface.co/blog/nvidia/nemotron-transcribe-granary" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Hy4 / Hy4 flash（腾讯）<span class="tag tag-oss">10月29日</span></h3>
+    <p>10 月 29 日 2026 腾讯全球数字生态大会上宣布即将发布。相比 8 月 28 日开源的 Hy4 preview（总参数 770B、激活 49B、上下文破 1M），Hy4 全面大幅提升，重点强化长程与真实生产力任务、显著提升思维链效率，并首次引入视觉理解；Hy4 flash 随后推出，定位「极致性价比」，继承视觉与 Agent 能力并通过模型与产品深度 Co-Design 高频迭代。开源系旗舰第一次把多模态理解补进来，也是国产开源模型从「拼参数」转向「拼单位任务成本」的一步。</p>
+    <div class="meta">来源：36氪 / 上海证券报 ·  <a href="https://36kr.com/newsflashes/4046338568459398" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Clover-35B-A3B-Preview（扩散智能 DiffuSpace）<span class="tag tag-oss">10月28日</span></h3>
+    <p>10 月 28 日开源并发布权重的扩散语言模型，MoE 架构总参数 350 亿、每 token 激活约 30 亿，规模较前代 Dream 7B 扩大五倍而速度不变。技术上是块扩散＋重构的门控 Delta 网络：已生成上下文压进持续更新的状态，当前块内用双向注意力互相参考，并对历史记忆读出与块大小做可学习校准；内部测试整体生成约 680 tokens/s。WindTunnel 网页 Agent 49 项任务（每项 3 次）中位执行 1.52 秒，Jev+Mercury 2.5 组合 3.21 秒，成功率 98.6% 对 95.9%；SWE-bench Verified 73.6、Terminal-Bench 2.1 51.7、τ³ 65.3。基于 Qwen3.6-35B-A3B 权重改造，能力上限仍受底座约束——扩散带来的是并行解码的速度与块内互参的灵活性，不是新物种。</p>
+    <div class="meta">来源：量子位 / 央广网 / Hugging Face ·  <a href="https://huggingface.co/Diffuspace/Clover-35B-A3B-Preview" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>智元 GO-3 Preview（智元机器人）<span class="tag tag-oss">10月29日</span></h3>
+    <p>10 月 29 日发布 Preview 版具身模型，官方计划 2026 年底全面开源。与此前偏「动作生成」的路线相比，GO-3 强调任务级泛化与真机部署节奏；同日智元还发布安规级重载人形机器人精灵 G2 Max（单臂额定 20kg、双臂峰值 50kg）。具身侧的竞争重心正从「演示视频」转向「开源可复现＋安全认证」两条硬门槛。</p>
+    <div class="meta">来源：36氪 ·  <a href="https://36kr.com/newsflashes" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Ling-3.1-flash-1019（蚂蚁集团）<span class="tag tag-oss">10月27—29日</span></h3>
+    <p>蚂蚁百灵 inclusionAI 于 10 月 27 日上传该权重（HF 上 79 likes、约 550 次下载），10 月 25 日另有 base 版；延续 3.1 系列「面向真实业务场景的 Personal Agent」定位，产品侧对应 10 月 27 日发布的灵光 2.0。开源权重与 C 端产品同日推进，是国内厂商在个人助理赛道「模型＋入口」双线下注的典型动作——入口铺得快，付费意愿仍在观测。</p>
+    <div class="meta">来源：虎嗅 / Hugging Face ·  <a href="https://huggingface.co/inclusionAI/Ling-3.1-flash-1019" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>开源侧观察：DeepSeek-V4.1-Flash-1017 仍居 HF 趋势榜首（Hugging Face Trends）<span class="tag tag-oss">10月29日</span></h3>
+    <p>截至 10 月 29 日，DeepSeek-V4.1-Flash-1017 以 3585 likes / 约 11.7 万月下载稳居趋势榜第一，其量化版本（GSQ-RCO-GGUF）单月下载已达 137 万；第二梯队为 Nanbeige4.3-33B（734 likes）、RecursiveSI/flint（1203 likes）、Spark-X2.6-4B（871 likes）、MiniMax-M3.1-Flash（466 likes）、LFM3-1.7B（409 likes）。新增面孔里百度 Unlimited-OCR-2（10 月 26 日，343 likes）与 Qwen3.5-4B-3D-Coder 值得留意——OCR 与 3D 代码生成这两个窄场景，正在被专门化的小模型接手。</p>
+    <div class="meta">来源：Hugging Face ·  <a href="https://huggingface.co/models?sort=trending" target="_blank">阅读全文 ↗</a></div>
+  </div>
 </section>
-<section id="sec-ecosystem">
-  <h2>🛠️ 生态<span class="count">6 条</span></h2>
-<div class="card">
-  <h3>Codex 0.165：内置 Google Cloud Vertex AI provider <span class="tag tag-new">生态</span></h3>
-  <p>model_provider = "gcp" 即可走 Vertex；模型目录加入 GPT-6.1 Terra，会话选择器加仓库过滤。</p>
-  <div class="meta">OpenAI / GitHub · <a href="https://github.com/openai/codex/releases/tag/rust-v0.165.0" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>MCP 参考服务器 v2.2.0：应对 eMudhra 证书事件 <span class="tag tag-new">生态</span></h3>
-  <p>TypeScript 服务器依赖 Node 证书校验，建议升级到 Node 24.22.1／26.12.1 或更高；fetch 镜像锁定 certifi 2026.10.23。</p>
-  <div class="meta">Model Context Protocol / GitHub · <a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>Google Connected Apps 平台预览 <span class="tag tag-new">生态</span></h3>
-  <p>开发者经云端 MCP 服务器或 Android AppFunctions 接入一次，即可把应用能力带进 Google 搜索与 Gemini 应用；用 Google Connected Console 注册、测试与提交，分阶段开放。</p>
-  <div class="meta">Google · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>OpenAI：可以发短信给你的 Dot <span class="tag tag-new">生态</span></h3>
-  <p>通过 iMessage／RCS 与 Dot 对话，先向美国 Pro 用户预览。</p>
-  <div class="meta">The Verge · <a href="https://www.theverge.com/ai-artificial-intelligence/1021183/openai-now-lets-you-text-your-dot" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>蚂蚁灵光 2.0：从对话到「管事」 <span class="tag tag-new">生态</span></h3>
-  <p>跨会话记忆、长程任务调度，支持 MCP 与 CLI 工具调用；依托独立云主机，用户退出对话后任务仍可继续运行，并在需关注节点主动提醒。</p>
-  <div class="meta">IT之家 · <a href="https://www.ithome.com/1/018/252.htm" target="_blank" rel="noopener">来源 ↗</a></div>
-</div><div class="card">
-  <h3>Ollama v0.40.13-rc0：LFM3 GGUF 修复 <span class="tag tag-new">生态</span></h3>
-  <p>修复 LFM3 GGUF 并改进 llama-server 语音，llama.cpp 升至 b11963（预发布版）。</p>
-  <div class="meta">Ollama / GitHub · <a href="https://github.com/ollama/ollama/releases/tag/v0.40.13-rc0" target="_blank" rel="noopener">来源 ↗</a></div>
-</div>
+<section>
+  <h2>D · Agent / 生态<span class="count">10 条</span></h2>
+  <div class="card">
+    <h3>Codex 0.165：内置 Google Cloud Vertex AI provider</h3>
+    <p>model_provider = "gcp" 即可走 Vertex；模型目录加入 GPT-6.1 Terra，会话选择器加仓库过滤。</p>
+    <div class="meta">来源：OpenAI / GitHub ·  <a href="https://github.com/openai/codex/releases/tag/rust-v0.165.0" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>MCP 参考服务器 v2.2.0：应对 eMudhra 证书事件</h3>
+    <p>TypeScript 服务器依赖 Node 证书校验，建议升级到 Node 24.22.1／26.12.1 或更高；fetch 镜像锁定 certifi 2026.10.23。</p>
+    <div class="meta">来源：Model Context Protocol / GitHub ·  <a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Google Connected Apps 平台预览</h3>
+    <p>开发者经云端 MCP 服务器或 Android AppFunctions 接入一次，即可把应用能力带进 Google 搜索与 Gemini 应用；用 Google Connected Console 注册、测试与提交，分阶段开放。</p>
+    <div class="meta">来源：Google ·  <a href="https://blog.google/innovation-and-ai/technology/developers-tools/connected-apps-one-place/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI：可以发短信给你的 Dot</h3>
+    <p>通过 iMessage／RCS 与 Dot 对话，先向美国 Pro 用户预览。</p>
+    <div class="meta">来源：The Verge ·  <a href="https://www.theverge.com/ai-artificial-intelligence/1021183/openai-now-lets-you-text-your-dot" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>蚂蚁灵光 2.0：从对话到「管事」</h3>
+    <p>跨会话记忆、长程任务调度，支持 MCP 与 CLI 工具调用；依托独立云主机，用户退出对话后任务仍可继续运行，并在需关注节点主动提醒。</p>
+    <div class="meta">来源：IT之家 ·  <a href="https://www.ithome.com/1/018/252.htm" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Ollama v0.40.13-rc0：LFM3 GGUF 修复</h3>
+    <p>修复 LFM3 GGUF 并改进 llama-server 语音，llama.cpp 升至 b11963（预发布版）。</p>
+    <div class="meta">来源：Ollama / GitHub ·  <a href="https://github.com/ollama/ollama/releases/tag/v0.40.13-rc0" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Claude Code v2.1.312：钩子并发上限 24、修大文件 CLAUDE.md 被覆盖，Agent SDK 0.3.312 加 autoMode</h3>
+    <p>10 月 27 日发布的 v2.1.312：新增 oidc.user_id_claim 与全屏模式排队消息的点击发送；修复读取开头就覆盖超大 CLAUDE.md／rules／@ 引用文件、VS Code 登录后托管设置不加载、Bash cd 后 per-directory skills 找不到等问题；把提示词钩子与 Agent 钩子限制为每会话 24 并发；Bedrock／Vertex／Foundry／Mantle 遇到未识别模型名改走短系统提示（可用 CLAUDE_CODE_SIMPLE_SYSTEM_PROMPT=0 恢复完整版）；移除 claude_code.safety_event 遥测事件。Agent SDK TypeScript 0.3.312 同窗加入 autoMode／skipAutoPermissionPrompt／useAutoModeDuringPlan／permissions.disableAutoMode 与 AskUserQuestion 的 unanswered 标注，0.3.311 把缓存创建 token 按 5 分钟与 1 小时拆分统计、Node 最低版本抬到 18.14。</p>
+    <div class="meta">来源：claudenews / Claude Code Release Notes ·  <a href="https://claudenews.com.br/en-US/edicoes/182-2026-10-28" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>AWS 开源 Strands Decider 2B 决策模型与 Strands Box 内核级沙箱：把「想」和「做」拆开</h3>
+    <p>Decider 2B 是 20 亿参数专用决策模型，不给长文本而是从给定选项里选（模型路由、工具选择、分类、护栏、上下文管理），返回决策＋置信度。结构上是 Qwen3.5-2B 把语言模型头换成指针头给候选打分，rank-16 LoRA 微调，权重、训练数据与脚本全部开源；AWS 称 RTX 3090 中位决策延迟约 115ms、M3 MacBook 小任务约 153ms，v19 检查点在 JevBench 231 项公开任务上 72.3%。Strands Box 是开发者预览的内核级沙箱，用开源策略语言 Dogwood 统管 shell 命令、Python 执行、MCP 工具、文件系统与网络访问，可设「读过客户文件后禁止出站 HTTP」。早期反馈集中在并发请求、Apple Silicon 兼容与冷启动延迟——这三项恰恰是这类组件从 demo 走向生产最难跨的坎。</p>
+    <div class="meta">来源：InfoQ ·  <a href="https://www.infoq.cn/article/YmgmEh686wTClmj3PY8o" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>谷歌开放 Android Studio，接入 40 余款第三方 AI 编程代理</h3>
+    <p>Android Studio 不再只绑定自家助手，而是开放给 40 多款第三方编码代理接入。对移动端开发的意义在于把「IDE 内代理」从单一供应商的产品功能，变成可切换的插槽——同一项目里可以按任务换代理，而不用换 IDE。与同日 Connected Apps Platform 的思路一致：分发层做标准化，能力层让开发者自己挑。</p>
+    <div class="meta">来源：The Decoder ·  <a href="https://www.readaitime.com/digests/2026-10-29" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>腾讯 WorkBuddy 将开放架构，支持企业自建 Agent 网络</h3>
+    <p>10 月 29 日 2026 腾讯全球数字生态大会上，汤道生表示 WorkBuddy 将开放架构，支持企业在自己的网络内自建 Agent。与 Hy4／Hy4 flash 的发布预告同台，指向同一条路线：模型与 Agent 运行时一起交付，企业侧保留数据与编排的控制权。这也是国内厂商在本轮「Agent 平台化」竞争里给出的典型答案——不自建模型，但要把编排层留在自己手里。</p>
+    <div class="meta">来源：36氪 ·  <a href="https://www.readaitime.com/digests/2026-10-29" target="_blank">阅读全文 ↗</a></div>
+  </div>
 </section>
-<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
-
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
 </div>
-<!-- digest-ui2:js -->
-<script>
-(function(){
-  var note=document.querySelector('header .note');
-  if(note){
-    var btn=document.querySelector('.note-toggle');
-    if(!btn){
-      btn=document.createElement('button');
-      btn.type='button';
-      btn.className='note-toggle';
-      btn.setAttribute('aria-expanded','false');
-      btn.textContent='展开';
-      note.insertAdjacentElement('afterend', btn);
-    }
-    function measureNeeds(){
-      var open=note.classList.contains('is-open');
-      if(open) note.classList.remove('is-open');
-      var needs=note.scrollHeight>note.clientHeight+2;
-      if(open) note.classList.add('is-open');
-      return needs;
-    }
-    function syncBtn(){
-      var open=note.classList.contains('is-open');
-      btn.setAttribute('aria-expanded', open?'true':'false');
-      btn.textContent=open?'收起':'展开';
-      if(!open && !measureNeeds()) btn.hidden=true;
-      else btn.hidden=false;
-    }
-    btn.addEventListener('click', function(){
-      note.classList.toggle('is-open');
-      syncBtn();
-    });
-    requestAnimationFrame(syncBtn);
-    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
-  }
-  var topLink=document.querySelector('.page-toc a.pt-top');
-  if(topLink){
-    topLink.addEventListener('click', function(e){
-      e.preventDefault();
-      window.scrollTo({top:0,behavior:'smooth'});
-      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
-    });
-  }
-})();
-</script>
-<!-- /digest-ui2:js -->
-
 </body>
 </html>
