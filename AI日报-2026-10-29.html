@@ -40,13 +40,21 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 <body>
 
 <div class="container">
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+</nav>
 <a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
 <header>
   <div class="date">2026年10月29日 · 星期四</div>
   <h1>🥚 每日AI前沿日报</h1>
   <div class="note">今日主题词：先防后放。Google 发布 Gemini 4 Carbon，主打网络安全：先经 Fairwind 计划向部分网络防御方开放，之后再面向开发者、企业与消费者；Google 称其在 Artificial Analysis 智能指数 v5.0 以 59 分居首（本站主榜仍按 v4.3.2 口径，未改动），参与美国政府自愿发布前测试，推广期价格每百万 token 输入 2 美元／输出 10 美元，之后 4／20 美元。算力与渠道：The Information 称 OpenAI 计划采购 Google TPU（双方未证实）；OpenAI 与 ServiceNow 扩大合作，ServiceNow MCP 插件当天上架 OpenAI 应用市场。政府侧：Anthropic 扩大与美国 GSA 的 OneGov 协议，Claude Enterprise／Claude for Government／API 打六折并延伸至州与地方政府；特朗普称将在政府文件中以「SI（超级智能）」取代「AI」；荷兰计划到 2035 年削减约 2.5 万个中央政府岗位并推进 AI。Anthropic 同日为 Claude Enterprise 上线智能报告、问卷与共享预算，AI for Science 扩至 20 家机构；CNBC 据 S-1 称部分 AI 风险可能无法投保。科研侧，Axiom 宣布用 AI 智能体在 24 天内完成有限单群分类定理的 Lean 形式化（约 4310 万行）。【午后补更·并集】美股收盘把当天的第二本账翻开：微软第一财季营收 922.8 亿美元（+19%）、Azure 增 48% 首破 300 亿，并从 OpenAI 相关安排拿到 100 亿美元收入；Alphabet 云增 103% 更猛，但 514 亿美元资本开支把自由现金流打到 -91 亿，盘后跌超 10%、市值蒸发逾 3000 亿美元——同一套基建叙事，一边在证明回报，一边在证明成本。资金侧同日结账：全球债券发行 6.61 万亿美元提前两月创纪录，云厂商与数据中心开发商单独发债近 3680 亿、为去年同期六倍以上；Pimco 高位减持 Meta 与甲骨文两笔旗舰 AI 债各约五成，甲骨文密歇根项目债从 98.7 美分跌到 88 美分，而甲骨文自己给出 2030 财年 2250 亿美元营收指引、股价单日反弹 13%。美联储 10:2 维持 3.75%–4.00%，两名票委主张加息，沃什公开质疑「AI 让经济免疫利率」。存储侧三星净利不及预期但半导体营业利润创纪录、并预警明年供应更紧；A 股算力硬件午后集体调整，创业板跌超 3%、天孚通信近 20cm 跌停，资金半日内切向红利。能力侧另两条线：扩散语言模型 Clover-35B-A3B-Preview 用块并行解码打进 Agent 主场（WindTunnel 49 项任务中位 1.52 秒、Jellyfish 口径下成功率高过早八提到的快速决策路线），腾讯宣布 Hy4 与 Hy4 flash 即将发布、首次带上视觉理解。工程侧 Claude Code v2.1.312 把钩子并发压到 24，AWS 开源 Strands Decider 2B 与内核级沙箱 Strands Box，谷歌把 Android Studio 开放给 40 余款第三方编码代理，腾讯称 WorkBuddy 将开放架构支持企业自建 Agent 网络。一天之内，能力的上限、资金的成本与执行的边界，被同时重新标价。</div>
 </header>
-<div class="highlights">
+<div class="highlights" id="sec-highlights">
   <h2>🔥 今日看点</h2>
   <ul>
     <li><strong>Google 发布 Gemini 4 Carbon：网安优先、先给防御方：</strong>先经 Fairwind 计划向部分网络防御方开放，之后再扩至开发者、企业与消费者；Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，AA 智能指数 v5.0 以 59 分居首（厂商口径，本站主榜按 v4.3.2 不动）。推广期 $2／$10 每百万 token，缓存输入降 95%，之后 $4／$20。</li>
@@ -60,7 +68,8 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   </ul>
 </div>
 <section>
-  <h2>A · AI 行业新闻<span class="count">20 条</span></h2>
+  <section id="sec-news">
+<h2>A · AI 行业新闻<span class="count">20 条</span></h2>
   <div class="card">
     <h3>Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放<span class="tag tag-new">10月28日</span></h3>
     <p>Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。</p>
@@ -163,7 +172,9 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   </div>
 </section>
 <section>
-  <h2>B · 前沿论文<span class="count">14 篇</span></h2>
+  </section>
+<section id="sec-papers">
+<h2>B · 前沿论文<span class="count">14 篇</span></h2>
   <div class="card">
     <h3>InfraDev：编码智能体能开发 AI 基础设施吗？（InfraDev: Can Coding Agents Develop AI Infrastructure, and How Can We Tell?）<span class="tag tag-new">arXiv 2610.36589</span></h3>
     <p>36 个任务取自 Megatron-LM、vLLM、verl 真实 PR，覆盖训练、推理与 RL，需跨多文件、多 GPU 正确运行；联合合成隐藏探针与接口提示来评分，共享执行环境复用依赖与产物。</p>
@@ -250,7 +261,9 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   </div>
 </section>
 <section>
-  <h2>C · 模型动态<span class="count">10 条</span></h2>
+  </section>
+<section id="sec-models">
+<h2>C · 模型动态<span class="count">10 条</span></h2>
   <div class="card">
     <h3>Gemini 4 Carbon（Google）</h3>
     <p>网安优先的新模型，先经 Fairwind 计划向部分防御方开放；厂商称 AA 指数 v5.0 59 分居首（非本站 v4.3.2 口径）；推广期 $2／$10，之后 $4／$20 每百万 token。</p>
@@ -303,7 +316,9 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   </div>
 </section>
 <section>
-  <h2>D · Agent / 生态<span class="count">10 条</span></h2>
+  </section>
+<section id="sec-ecosystem">
+<h2>D · Agent / 生态<span class="count">10 条</span></h2>
   <div class="card">
     <h3>Codex 0.165：内置 Google Cloud Vertex AI provider</h3>
     <p>model_provider = "gcp" 即可走 Vertex；模型目录加入 GPT-6.1 Terra，会话选择器加仓库过滤。</p>
@@ -356,6 +371,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   </div>
 </section>
 <footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 24:00</footer>
+</section>
 </div>
 </body>
 </html>
