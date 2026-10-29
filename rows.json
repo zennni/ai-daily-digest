@@ -845,7 +845,7 @@
       "aa": 44,
       "aa_dec": 43.7,
       "pin": 1,
-      "pcache": 0.104221,
+      "pcache": 0.104249,
       "pout": 2.7,
       "open_": "开放权重(10/15 正式开源)",
       "lic": "Apache 2.0",
@@ -1240,16 +1240,16 @@
       "tier": "默认",
       "aa": 40,
       "aa_dec": 39.9,
-      "pin": 0.11911,
-      "pcache": 0.014889,
-      "pout": 0.401995,
+      "pin": 0.119142,
+      "pcache": 0.014893,
+      "pout": 0.402103,
       "open_": "开放权重(Flash-Next 已开源)",
       "lic": "Qwen Community 1.0",
       "src": "官方(QwenCloud)",
       "note": "Qwen4 架构先导多模态 MoE(125B+51B Emb/6B 激活);262K→1M 上下文;AA v4.3.2 39.9;国内 ¥0.8/¥2.7/缓存 ¥0.1;Flash-Next 权重已开源(Qwen Community 1.0);AA 实测 200M 输出 token(冗长,实际账单高于直觉)",
-      "cost": 0.21961,
+      "cost": 0.21967,
       "ability": 69,
-      "costscore": 83.41845933935521,
+      "costscore": 83.41353695356473,
       "value": 75,
       "eff": 182.1,
       "grade": "A",
@@ -2687,6 +2687,15 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-29",
+      "t": "半点核验：AA/官价无变；汇率调至 6.7147（较 6.7165 下调 18 基点／人民币升值）；微调 Qwen3.8-Flash / Step 5 Preview 缓存挂价",
+      "m": [
+        "Qwen3.8-Flash",
+        "Step 5 Preview"
+      ],
+      "s": "<b>2026-10-29 总策划 ≈09:40 半点核对</b>：对照 Artificial Analysis Changelog：最新仍为 10/28（Gemini 4 Carbon 仅 Index v5 分，已在 06:30 记录未混入），无新的 <b>v4.3.2</b> 具名分，主表 122 行与名次不变。促销截止均未到（GPT-5.6 Sol 至 11/21、Gemini 4 Argon 至 11/30、3.8 Flash 至 12/31）。<b>汇率</b>：CFETS 已公布 <b>2026-10-29 1 USD = 6.7147</b>（较 10/28 的 6.7165 下调 18 基点／人民币升值；chinamoney.com.cn 中间价）。仍经 FX 换算的 Qwen3.8-Flash（¥0.8/¥2.7/缓存 ¥0.1）与 Step 5 Preview 缓存（¥0.70）已按 6.7147 微调美分级挂价；Qwen 标准任务成本约 $0.21967、综合性价比仍 A/75；Step 美元刊例价与任务成本不变。本地/生图无新证据，未改模板。未改日报产物。"
+    },
     {
       "d": "10-29",
       "t": "全日量核验：v4.3.2 主榜无新同口径分、名次不变；Gemini 4 Carbon 仅有 AA v5 分（High 59），未混入主榜；官价/促销一致；汇率沿用 10/28 CFETS 6.7165",
