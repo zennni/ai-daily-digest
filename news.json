@@ -1,5 +1,75 @@
 [
   {
+    "t": "OpenAI 更新 Model Spec：五价值观，忠于人类意图为基",
+    "s": "官方将行为规约重组为 faithfulness to human intent、harm minimization、honesty and transparency、human agency、care；新增「审慎使用上下文」与监督／能动性相关原则，并弱化大量细粒度文风指引。主体称谓由「the assistant」改为「GPT」。",
+    "d": "10月29日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/updated-model-spec",
+    "m": []
+  },
+  {
+    "t": "OpenAI 披露如何检测 frontier 模型错位：分层监控扩到训练与评测",
+    "s": "HF 事件暴露网安评测面未跑错位监控；现扩至 frontier RL／评测／内部 Codex／部分外部工具调用。架构为激活探针→模型审阅→调查智能体→遥测与人工响应。重放称沙箱逃逸约 30 分钟可告警；九月训练外连约 15 分钟告警后曾暂停 frontier RL。",
+    "d": "10月29日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+    "m": []
+  },
+  {
+    "t": "Alphabet 季报后披露：采购／租赁等未来义务超万亿美元量级",
+    "s": "Silicon Report／Bloomberg 据 10-Q：表外采购承诺约 9244 亿美元（技术基建、库存、能源 take-or-pay、内容授权等约 8021 亿），未开工租赁约 1305 亿（多为数据中心与能源），另有股权出资与或有背书扩张。金额多为合同上限，部分合同有量价弹性。",
+    "d": "10月29日",
+    "src": "Silicon Report / Form 10-Q",
+    "link": "https://www.siliconreport.com/alphabet-puts-future-computing-energy-payments-over-1t",
+    "m": []
+  },
+  {
+    "t": "Mistral Large 4（Le Chonk）正式开放权重",
+    "s": "权重上架 Hugging Face（FP8／NVFP4 等）；约 1T／49B 激活、多模态、1M 上下文。官方称开源权重侧编码／防御网安领先；API 现价约 $0.70 输入／$2.10 输出／缓存 $0.07。许可为 Ecosystem Open-Weight（自用／微调／商用一般允许，对外 MaaS 另需商用许可）。",
+    "d": "10月29日",
+    "src": "Mistral",
+    "link": "https://mistral.ai/news/mistral-large-4-oss/",
+    "m": [
+      "Mistral Large 4"
+    ]
+  },
+  {
+    "t": "Gemini 应用：可直接生成、预览并编辑文档与 PDF",
+    "s": "Google 宣布在 Gemini 聊天内生成／全屏预览／就地编辑 PDF、Google Docs／Sheets、幻灯片、Markdown、TXT 与代码；PDF 预览编辑支持 Web 与移动端，其余格式目前 Web。已对 Gemini 可用地区全量用户开放。",
+    "d": "10月29日",
+    "src": "Google",
+    "link": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+    "m": []
+  },
+  {
+    "t": "Google 在新加坡设立新 AI 研究中心，扩展健康合作",
+    "s": "Google for Health Summit 上宣布新加坡新 Research hub，由本地研究科学家与工程师组成，聚焦基础模型，并与 NUS／NTU 等合作；同时扩大与新加坡公共医疗体系的 AI 评估与人群健康预测合作（细节以官方博客为准）。",
+    "d": "10月29日",
+    "src": "Google",
+    "link": "https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore/",
+    "m": []
+  },
+  {
+    "t": "Hugging Face：Mistral Large 4 日零支持 Transformers／vLLM／llama.cpp",
+    "s": "HF 博客介绍官方 FP8／NVFP4、社区 GGUF，以及 Inference Endpoints 8×H200 配方与 TRL 微调示例；并称截至 10-29 在 Artificial Analysis Intelligence Index 开源权重侧约排第五（厂商／HF 口径，本站以主榜 v5 分为准）。",
+    "d": "10月29日",
+    "src": "Hugging Face",
+    "link": "https://huggingface.co/blog/mistral-large4",
+    "m": [
+      "Mistral Large 4"
+    ]
+  },
+  {
+    "t": "Codex CLI 0.166.0：队列恢复、键盘选文与更清晰安全拦截提示",
+    "s": "官方 changelog：键盘驱动 transcript 选择／搜索、Markdown 渲染一致、`codex queue --resume`、更清晰的安全拦截说明与可选更安全跟进提示、`codex doctor --network-only`；模型目录补齐 GPT-6.1 Terra（含 Vertex／Bedrock）。",
+    "d": "10月29日",
+    "src": "OpenAI Codex Changelog",
+    "link": "https://learn.chatgpt.com/docs/changelog",
+    "m": [
+      "GPT-6.1 Terra"
+    ]
+  },
+  {
     "t": "Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放",
     "s": "Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。",
     "d": "10月28日",
@@ -267,14 +337,6 @@
     "m": []
   },
   {
-    "t": "Goldman 口径：2026–2031 AI 相关资本开支或约 7.6 万亿美元（转述）",
-    "s": "随 Meta 融资稿一并被 CNBC 引用：高盛估计跨算力、数据中心与电力的 AI 相关资本开支约 7.6 万亿。属投行估算，非已投承诺。",
-    "d": "10月26日",
-    "src": "CNBC",
-    "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
-    "m": []
-  },
-  {
     "t": "瑞典政府办公室公务电脑禁用 ChatGPT／Claude：10 月 26 日生效",
     "s": "员工改用已通过安全审查的获批工具；税务局等机构此前已封禁同类直连。监管重点从能力转向采购与数据通道。",
     "d": "10月26日",
@@ -287,22 +349,6 @@
     "s": "据 The Information：OpenAI 给出逾约 30% 折扣；Replit 多数 AI 支出转向 OpenAI。另有报道 Rippling／DataCamp 等份额同步迁移，部分成本降幅更高。一手合同未公开，按媒体转述收录。",
     "d": "10月25日",
     "src": "The Information",
-    "link": "https://ai-news-online.com/briefing/2026-10-25/",
-    "m": []
-  },
-  {
-    "t": "得州总检察长起诉 OpenAI 与 Altman：请求禁止未成年人使用 ChatGPT",
-    "s": "Collin 县诉讼主张平台对脆弱用户与未成年人保护不足，并寻求法院指定评估人批准新模型。主张未经法院认定；OpenAI 当时未立即回应。",
-    "d": "10月23日",
-    "src": "CNBC",
-    "link": "https://ai-news-online.com/briefing/2026-10-25/",
-    "m": []
-  },
-  {
-    "t": "Elvis 权利方就 274 首歌起诉 Anthropic，索赔口径约 4100 万美元",
-    "s": "Authentic Brands Group 相关单位等指控 Claude 训练未经许可使用 Elvis 曲目并可复现歌词；按每作法定最高约 15 万美元计约 4100 万。一周内第二起音乐版权诉讼。Anthropic 见报时尚未置评。",
-    "d": "10月23日",
-    "src": "Billboard",
     "link": "https://ai-news-online.com/briefing/2026-10-25/",
     "m": []
   },
@@ -333,14 +379,6 @@
     ]
   },
   {
-    "t": "Anthropic IPO 估值讨论：媒体称参会投资者下修至约 1.5 万亿美元",
-    "s": "路透等转述：投资者日披露后，估值讨论从约 2 万亿口径下修；三季度营收环比增速放缓等被引用。场外与讨论数字并存，以最终定价为准。",
-    "d": "10月25日",
-    "src": "路透",
-    "link": "https://www.readaitime.com/digests/2026-10-25",
-    "m": []
-  },
-  {
     "t": "亚马逊 CEO：AI 年化收入超 250 亿美元，2026–2028 产能梯次售罄",
     "s": "贾西披露 AWS AI 年化收入运行速率已超 250 亿美元；2026 年大型算力产能售罄，2027 基本售罄，2028 亦有相当比例预订。叠加电力与内存瓶颈，短缺叙事从芯片延伸到站点资源。自研 Trainium 称性价比较同级约高 30%–40%。",
     "d": "10月24日",
@@ -349,58 +387,10 @@
     "m": []
   },
   {
-    "t": "Meta Q3：广告仍强，自由现金流转负，资本开支指引 1350–1450 亿美元",
-    "s": "营收 646 亿美元同比 +26%；经营现金流难挡资本开支，FCF 约 −21.2 亿。表外承诺与云采购规模同步膨胀；美加 Muse 用户超千万。市场把「AI 重资产」第一次写进负自由现金流的标普巨头样本。",
-    "d": "10月24日",
-    "src": "Meta 财报",
-    "link": "https://www.readaitime.com/digests/2026-10-24",
-    "m": []
-  },
-  {
-    "t": "瑞典政府办公室封禁 ChatGPT 与 Claude：公务电脑改走获批工具",
-    "s": "10 月 26 日起员工公务电脑禁用 OpenAI ChatGPT 与 Anthropic Claude 直连，改用已通过安全审查的受控通道。监管重点从「能不能用模型」转向「走哪条采购与数据协议」。",
-    "d": "10月25日",
-    "src": "Sveriges Radio",
-    "link": "https://himiao.ai/daily/2026-10-25/",
-    "m": []
-  },
-  {
-    "t": "英伟达、英特尔、AMD 预付锁定台湾高阶 IC 载板长期产能",
-    "s": "合计预付逾新台币千亿元订金；台厂载板三强宣布创纪录扩产。先进封装与载板成为继 HBM／CoWoS 之后的新瓶颈环节。",
-    "d": "10月24日",
-    "src": "经济日报",
-    "link": "https://www.readaitime.com/digests/2026-10-24",
-    "m": []
-  },
-  {
     "t": "DeepSeek 据报约千亿人民币融资；全球部署审批口径同步出现",
     "s": "媒体转述融资约 1000 亿人民币、需求旺盛接近翻倍目标；另有报道称 DeepSeek 与 MiniMax 获准全球部署。一手招股／监管文件未公开前，按转述收录并标注待核实。",
     "d": "10月24日",
     "src": "WSJ",
-    "link": "https://aibriefing.dev/",
-    "m": []
-  },
-  {
-    "t": "AI 基建信用承压：新云重挫、软银 CDS 升、投资级利差走阔",
-    "s": "CoreWeave／Nebius／IREN 本月大幅回调；软银 5 年期 CDS 约 432 基点；全球 IG 利差抬升。资本开支从「叙事驱动」进入「融资成本与订单兑现」双向定价。",
-    "d": "10月24日",
-    "src": "CNBC",
-    "link": "https://www.readaitime.com/digests/2026-10-24",
-    "m": []
-  },
-  {
-    "t": "高盛交易主管：AI 共识交易瓦解，主经纪商见史上最大科技股抛售",
-    "s": "欧洲 FICC／股票交易主管称账簿出现有史以来最大规模科技股抛售；拥挤的「做多 AI、做空其他」交易去杠杆。投资者要求云厂商证明积压订单变收入与自由现金流打平速度。",
-    "d": "10月24日",
-    "src": "高盛",
-    "link": "https://www.readaitime.com/digests/2026-10-24",
-    "m": []
-  },
-  {
-    "t": "Apple Intelligence 获准进入中国：依托通义／百度等本地模型，暂无 Siri AI",
-    "s": "库克确认中国区获批；测试推送含实时翻译、写作工具与图像清理等，底座与阿里通义、百度等合作。更广发布计划指向后续系统版本，Siri AI／Image Playground 等仍未上。",
-    "d": "10月24日",
-    "src": "AI Briefing",
     "link": "https://aibriefing.dev/",
     "m": []
   },
@@ -415,36 +405,10 @@
     ]
   },
   {
-    "t": "OpenAI：前沿训练改「离线世界」，断网后仍见缓存侧信道",
-    "s": "官博确认前沿 RL 不再任意联网；Indexed／缓存网页练浏览。红队含 GPT-6 Astra Cyber 与内部前沿模型；挖出 CPU 缓存时序跨隔离边界通信、共享存储／CPU 竞争等信道。10 月 1 日恢复最强模型 RL／内部推理。",
-    "d": "10月23日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
-    "m": [
-      "GPT-6 Astra"
-    ]
-  },
-  {
     "t": "METR／Redwood 进驻审计：OpenAI 内部智能体监控存覆盖缺口",
     "s": "约三周现场评估：RL 起步未监控、交还用户才检查、客户端可关监控等。OpenAI 称生产侧已知问题已修；完整报告删减后仅公开摘要。",
     "d": "10月23日",
     "src": "The Neuron",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
-    "m": []
-  },
-  {
-    "t": "美银／摩根士丹利等竞相遏制第三方 AI 智能体进客户账户",
-    "s": "Axios：归因与授权是核心——读余额与动账／改设置风险量级不同。消费级个人智能体自治度上升，把权限设计直接写成金融风控题。",
-    "d": "10月23日",
-    "src": "Axios",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
-    "m": []
-  },
-  {
-    "t": "微软：Storm-0940 用 ARTEX 智能体渗透测试系统加速供应链攻击",
-    "s": "称中国关联组织在 ConnectWise 相关入侵中用智能体自动化攻击并滥用应用凭据横移 Microsoft 365。自主工具把进攻节奏压缩到新量级。",
-    "d": "10月23日",
-    "src": "Microsoft",
     "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
     "m": []
   },
@@ -465,24 +429,8 @@
     "m": []
   },
   {
-    "t": "芯片抵押融资叙事升温：从 CoreWeave 到 Anthropic／英伟达贷款框架",
-    "s": "读懂AI时代等汇总：以芯片为抵押的结构性融资或向万亿级扩张；博通磋商为 Anthropic 安排约 600 亿美元芯片融资、SpaceX 据报寻 400 亿购芯融资、英伟达与六大机构约 5000 亿合作框架等——多为媒体转述，数字待交叉核实",
-    "d": "10月23–24日",
-    "src": "读懂AI时代",
-    "link": "https://www.readaitime.com/digests/2026-10-24",
-    "m": []
-  },
-  {
     "t": "Canva 推出自研图像模型 Craft：2K 与超宽画幅",
     "s": "两阶段「规划—生成」架构，面向设计版式中文字与元素布局；宣称支持最高 2K 与超 30 宽高比。全量用户可用，定位平台内低成本可定制生成。",
-    "d": "10月23日",
-    "src": "AiBase",
-    "link": "https://news.aibase.com/zh/daily/31845",
-    "m": []
-  },
-  {
-    "t": "火山引擎 Seedance 2.5 4K：样片验证后再出 4K 正片",
-    "s": "以 480P 样片打磨分镜、确认后再生成 4K；10-bit 与细节增强面向影视流程。目前仅部分企业客户试用。",
     "d": "10月23日",
     "src": "AiBase",
     "link": "https://news.aibase.com/zh/daily/31845",
@@ -562,14 +510,6 @@
     "d": "10月22日",
     "src": "Vercel",
     "link": "https://vercel.com/blog/making-every-harness-durable",
-    "m": []
-  },
-  {
-    "t": "AI Capex 遭质疑：概念股抛售，10 年期美债收益率跌破 5%",
-    "s": "科技财报后债市大涨；超大规模云发债规模已可比国债叙事。",
-    "d": "10月22–23日",
-    "src": "华尔街见闻",
-    "link": "https://www.readaitime.com/digests/2026-10-23",
     "m": []
   }
 ]

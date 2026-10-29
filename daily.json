@@ -1,5 +1,21 @@
 [
   {
+    "d": "2026-10-30",
+    "w": "星期五",
+    "pts": [
+      "OpenAI 更新 Model Spec：五价值观，忠于人类意图为基",
+      "OpenAI 披露 frontier misalignment 分层监控；重放约 30 分钟可告警",
+      "Mistral Large 4 权重开放 HF；主榜已记 AA v5 High 26／Medium 23",
+      "Alphabet 10-Q：采购／租赁等未来义务超万亿美元量级"
+    ],
+    "link": "AI日报-2026-10-30.html",
+    "m": [
+      "Mistral Large 4",
+      "GPT-6.1 Terra"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-10-29",
     "w": "星期四",
     "pts": [
