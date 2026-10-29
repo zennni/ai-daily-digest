@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "aa_index_version": "v5.0",
   "models": [
     {
@@ -1676,6 +1676,20 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-30",
+      "t": "全日量核验：AA Changelog 仍止于 29 Oct（Mistral Large 4 High 26/Medium 23），Index 仍 v5.0、76 模；官价/促销未到期；CFETS 10/30 中间价约 09:15 才公布，汇率沿用 10/29 的 6.7147",
+      "m": [
+        "Gemini 4 Carbon",
+        "Claude Opus 5.5",
+        "GPT-6 Astra",
+        "GPT-6.1 Sol",
+        "Mistral Large 4",
+        "Gemini 4 Argon",
+        "Gemini 3.8 Flash"
+      ],
+      "s": "<b>2026-10-30 06:30 全日量定稿</b>：联网复核 Artificial Analysis Changelog：最新仍为 <b>29 Oct 2026</b>（Mistral Large 4 High 26 / Medium 23），<b>无 30 Oct 新 Intelligence Index 条目</b>；Index 页仍标 <b>v5.0</b>，#1 Gemini 4 Carbon (High) 59。仓内已是 v5.0 + 76 模（含昨夜半点入榜的 Mistral Large 4 High/Medium），版本未变，不必全表重抓分数；主表名次与分数不变。<b>Top</b>：#1 Gemini 4 Carbon High (59), #2 Claude Opus 5.5 Max (58), #3 Claude Opus 5.5 xHigh (57), #4 GPT-6 Astra Max (57), #5 GPT-6.1 Sol Max (55)。官价/促销抽核：Gemini 4 Argon 介绍期 $2/$10/缓存 $0.10 至 <b>11/30</b>、12/1 起 $4/$20/$0.20；Gemini 3.8 Flash 促销 $0.75/$3.75 至 <b>12/31</b>；Carbon 介绍期 50% 折（有效 $2/$10）截止未官宣；GPT-5.6 Sol 促销至少至 <b>11/21</b>（无 v5 分已不在主表，仅记口径）。均未到期。<b>汇率</b>：10/30 为周四交易日，但截至早间核验（≈06:40 Asia/Shanghai）CFETS/SAFE 尚未公布当日中间价（最新仍为 <b>10/29 的 6.7147</b>），沿用；不重算人民币挂价模型。本地/生图无新证据。本期不改正文 models 分数与标价，仅翻日并记核验结论。<b>未改日报产物</b>。"
+    },
     {
       "d": "10-29",
       "t": "半点更新：Mistral Large 4 权重开放并获 AA v5.0 分（High 26 / Medium 23），取代 Preview 行；官方价降至 $0.7/$2.1、缓存 $0.07；重算名次",
