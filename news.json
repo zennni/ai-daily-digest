@@ -70,6 +70,34 @@
     ]
   },
   {
+    "t": "Canva 发布设计向视觉语言模型 Canva Brush",
+    "s": "Canva Research 自研 VLM，能读懂设计结构并按指令修改，从单行文案到整套幻灯片；即日起为 Canva Pro 的 Canva AI 设计编辑提供支持，更广开放稍后。官方称较上一代设计智能体通用编辑最多快 69%、单次编辑成本低 46%；一周前刚发布自研生图模型 Canva Craft。",
+    "d": "10月29日",
+    "src": "Canva",
+    "link": "https://www.canva.com/newsroom/news/canva-brush/",
+    "m": []
+  },
+  {
+    "t": "Pika H3 Flex：基于 MiniMax H3 后训练的视频模型，开放权重",
+    "s": "6 步采样（原 50 步），官方称 768p 带同步音频的 15 秒片段最快约 7 秒 transformer 计算；支持最多 12 张参考、五轨音频分轨、最高 4K（1080p 以上超分、音频分轨等为 Pika 托管功能）。开放生成器适配器与推理代码（文生视频、首尾帧、多模态参考，480p／768p），按模型许可使用；官方称 DesignArena 文生视频开源权重第 1、总榜第 7；11 月 2 日进 Pika 创作产品。",
+    "d": "10月29日",
+    "src": "Pika",
+    "link": "https://pika.art/blog/pika-h3-flex",
+    "m": [
+      "Pika H3 Flex"
+    ]
+  },
+  {
+    "t": "Kakao 开源 Kanana-2-embedding 两款嵌入模型",
+    "s": "Kanana-2-3b-embedding（30 亿参数）与 Kanana-2-1.3b-embedding（13 亿，知识蒸馏）上架 Hugging Face，面向语义检索与个性化 AI 智能体；采用 MRL 可调向量维度。官方称对比 llama-nemotron-embed-1b-v2、Qwen3-Embedding-4B 韩语最佳、英语相当；Kanana Open License 允许按条款商用。",
+    "d": "10月29日",
+    "src": "Kakao",
+    "link": "https://www.kakaocorp.com/page/detail/12181",
+    "m": [
+      "Kanana-2-embedding"
+    ]
+  },
+  {
     "t": "Google 发布 Gemini 4 Carbon：网安优先，先向防御方开放",
     "s": "Google 称 SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，WebDev Arena 第 4（1768，+89）；AA 智能指数 v5.0 以 59 分居首（厂商口径）。先经 Fairwind 计划开放给部分网络防御方，参与美国政府自愿发布前测试；推广期 $2／$10 每百万 token、缓存输入降 95%，之后 $4／$20。",
     "d": "10月28日",

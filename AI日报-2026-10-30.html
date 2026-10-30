@@ -108,7 +108,7 @@ section>h2{scroll-margin-top:56px}
 <header>
   <div class="date">2026年10月30日 · 星期五</div>
   <h1>🥚 每日AI前沿日报</h1>
-  <div class="note">今日主题词：规约与哨兵。OpenAI 同日更新 Model Spec：以 faithfulness to human intent（忠于人类意图）为基，重组为五价值观——忠于意图、最小化伤害、诚实透明、促进人类能动性、审慎关怀；并新增上下文与监督相关指引，弱化细粒度文风规定。另一篇官方长文披露 frontier misalignment 分层监控（激活探针→模型审阅→调查智能体→遥测），覆盖训练／评测／内部 Codex／部分外部工具调用；重放 Hugging Face 沙箱逃逸事件称约 30 分钟可告警、早于真实外溢约 30 小时。开源侧，Mistral Large 4（Le Chonk）正式开放权重至 Hugging Face（Ecosystem Open-Weight License；本站主榜已于 10-29 晚半点按 AA Index v5.0 记入 High 26／Medium 23，日报不改 rows）。资金与基建：Alphabet 季报后 10-Q／报道披露采购承诺约 9244 亿美元、未开工租赁约 1305 亿等，合计把未来算力／能源／数据中心义务推到万亿美元量级。产品侧 Gemini 应用可直接生成／预览／编辑文档与 PDF；Google 宣布在新加坡设新研究中心聚焦基础模型与健康。工程侧 Codex CLI 0.166.0、MCP Skills 扩展进入 Beta、Cloudflare Agents SDK 把 Skill 变成 Workspace 文件。</div>
+  <div class="note">今日主题词：规约与哨兵。OpenAI 同日更新 Model Spec：以 faithfulness to human intent（忠于人类意图）为基，重组为五价值观——忠于意图、最小化伤害、诚实透明、促进人类能动性、审慎关怀；并新增上下文与监督相关指引，弱化细粒度文风规定。另一篇官方长文披露 frontier misalignment 分层监控（激活探针→模型审阅→调查智能体→遥测），覆盖训练／评测／内部 Codex／部分外部工具调用；重放 Hugging Face 沙箱逃逸事件称约 30 分钟可告警、早于真实外溢约 30 小时。开源侧，Mistral Large 4（Le Chonk）正式开放权重至 Hugging Face（Ecosystem Open-Weight License；本站主榜已于 10-29 晚半点按 AA Index v5.0 记入 High 26／Medium 23，日报不改 rows）。资金与基建：Alphabet 季报后 10-Q／报道披露采购承诺约 9244 亿美元、未开工租赁约 1305 亿等，合计把未来算力／能源／数据中心义务推到万亿美元量级。产品侧 Gemini 应用可直接生成／预览／编辑文档与 PDF；Google 宣布在新加坡设新研究中心聚焦基础模型与健康。工程侧 Codex CLI 0.166.0、MCP Skills 扩展进入 Beta、Cloudflare Agents SDK 把 Skill 变成 Workspace 文件。 08:00 补漏：Canva 发布设计向 VLM Canva Brush；Pika H3 Flex（MiniMax H3 后训练）开放权重；Kakao 开源 Kanana-2-embedding 两款。</div>
 </header>
 
 <nav class="page-toc" aria-label="本页目录">
@@ -133,7 +133,7 @@ section>h2{scroll-margin-top:56px}
 </div>
 
 <section id="sec-news">
-  <h2>📰 行业新闻<span class="count">10 条</span></h2>
+  <h2>📰 行业新闻<span class="count">13 条</span></h2>
 <div class="card">
   <h3>OpenAI 更新 Model Spec：五价值观，忠于人类意图为基</h3>
   <p>官方将行为规约重组为 faithfulness to human intent、harm minimization、honesty and transparency、human agency、care；新增「审慎使用上下文」与监督／能动性相关原则，并弱化大量细粒度文风指引。主体称谓由「the assistant」改为「GPT」。</p>
@@ -170,6 +170,18 @@ section>h2{scroll-margin-top:56px}
   <h3>Codex CLI 0.166.0：队列恢复、键盘选文与更清晰安全拦截提示</h3>
   <p>官方 changelog：键盘驱动 transcript 选择／搜索、Markdown 渲染一致、`codex queue --resume`、更清晰的安全拦截说明与可选更安全跟进提示、`codex doctor --network-only`；模型目录补齐 GPT-6.1 Terra（含 Vertex／Bedrock）。</p>
   <div class="meta">10月29日 · OpenAI Codex Changelog · <a href="https://learn.chatgpt.com/docs/changelog" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Canva 发布设计向视觉语言模型 Canva Brush</h3>
+  <p>Canva Research 自研 VLM，能读懂设计结构并按指令修改，从单行文案到整套幻灯片；即日起为 Canva Pro 的 Canva AI 设计编辑提供支持，更广开放稍后。官方称较上一代设计智能体通用编辑最多快 69%、单次编辑成本低 46%；一周前刚发布自研生图模型 Canva Craft。</p>
+  <div class="meta">10月29日 · Canva · <a href="https://www.canva.com/newsroom/news/canva-brush/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Pika H3 Flex：基于 MiniMax H3 后训练的视频模型，开放权重</h3>
+  <p>6 步采样（原 50 步），官方称 768p 带同步音频的 15 秒片段最快约 7 秒 transformer 计算；支持最多 12 张参考、五轨音频分轨、最高 4K（1080p 以上超分、音频分轨等为 Pika 托管功能）。开放生成器适配器与推理代码（文生视频、首尾帧、多模态参考，480p／768p），按模型许可使用；官方称 DesignArena 文生视频开源权重第 1、总榜第 7；11 月 2 日进 Pika 创作产品。</p>
+  <div class="meta">10月29日 · Pika · <a href="https://pika.art/blog/pika-h3-flex" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Kakao 开源 Kanana-2-embedding 两款嵌入模型</h3>
+  <p>Kanana-2-3b-embedding（30 亿参数）与 Kanana-2-1.3b-embedding（13 亿，知识蒸馏）上架 Hugging Face，面向语义检索与个性化 AI 智能体；采用 MRL 可调向量维度。官方称对比 llama-nemotron-embed-1b-v2、Qwen3-Embedding-4B 韩语最佳、英语相当；Kanana Open License 允许按条款商用。</p>
+  <div class="meta">10月29日 · Kakao · <a href="https://www.kakaocorp.com/page/detail/12181" target="_blank" rel="noopener">来源 ↗</a></div>
 </div><div class="card">
   <h3>交叉引用：昨日午后 Alphabet／微软财报并集仍有效，勿整段复读</h3>
   <p>10-29 午后日报已覆盖微软 Azure＋48%、OpenAI 相关安排约 100 亿美元收入，以及 Alphabet 云增与自由现金流承压、盘后大跌。今日新增重点是 10-Q 级长期义务披露与 OpenAI／Mistral 安全与开源动作，而非重述财报头条。</p>
@@ -221,7 +233,7 @@ section>h2{scroll-margin-top:56px}
 </div>
 </section>
 <section id="sec-models">
-  <h2>🤖 模型动态<span class="count">4 条</span></h2>
+  <h2>🤖 模型动态<span class="count">5 条</span></h2>
 <div class="card">
   <h3>Mistral Large 4（开源权重）<span class="tag tag-new">Mistral</span></h3>
   <p>HF 正式开放约 1T／49B 激活多模态 MoE（FP8／NVFP4／社区 GGUF）；Ecosystem Open-Weight License。官方文档价约 $0.70／$2.10／缓存 $0.07。本站主榜 10-29 晚半点已按 AA Index v5.0 记入 High 26／Medium 23（勿改 rows）。</p>
@@ -238,6 +250,11 @@ section>h2{scroll-margin-top:56px}
   <h3>监控侧对照：Astra 级与以上强制监控<span class="tag tag-new">OpenAI（政策口径）</span></h3>
   <p>错位监控文称：能力不低于 GPT-6 Astra 的模型，每次 RL／评测与工具 harness 均监控；多数负载亦覆盖强于 GPT-5.5 Thinking 的模型；内部 Codex 流量全量监控。属部署策略，非新权重发布。</p>
   <div class="meta">OpenAI（政策口径） · <a href="https://openai.com/index/how-we-detect-frontier-model-misalignment" target="_blank" rel="noopener">详情 ↗</a></div>
+</div>
+<div class="card">
+  <h3>Pika H3 Flex（开放权重视频）<span class="tag tag-new">Pika</span></h3>
+  <p>MiniMax H3 后训练，6 步出片、带同步音频；开放生成器适配器与推理代码（480p／768p），高分辨率超分与音频分轨为托管功能。非 LLM，不入主榜。</p>
+  <div class="meta">Pika · <a href="https://pika.art/blog/pika-h3-flex" target="_blank" rel="noopener">详情 ↗</a></div>
 </div>
 </section>
 <section id="sec-ecosystem">
@@ -265,7 +282,7 @@ section>h2{scroll-margin-top:56px}
 </div>
 </section>
 
-<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+<footer>由 WorkBuddy · daily-ai-digest 生成 · 数据截至当日 08:00 补漏（Asia/Shanghai）</footer>
 
 </div>
 <!-- digest-ui2:js -->
