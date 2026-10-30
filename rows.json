@@ -1066,7 +1066,7 @@
       "aa": 29,
       "aa_dec": null,
       "pin": 1,
-      "pcache": 0.104249,
+      "pcache": 0.104263,
       "pout": 2.7,
       "open_": "开放权重(10/15 正式开源)",
       "lic": "Apache 2.0",
@@ -1676,6 +1676,14 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-30",
+      "t": "半点核验：AA/官价无变；汇率调至 6.7138（较 6.7147 下调 9 基点／人民币升值）；微调 Step 5 Preview 缓存挂价",
+      "m": [
+        "Step 5 Preview"
+      ],
+      "s": "<b>2026-10-30 总策划 ≈09:35 半点核对</b>：对照 Artificial Analysis Changelog：最新仍为 <b>29 Oct 2026</b>（Mistral Large 4 High 26 / Medium 23），<b>无 30 Oct 新 Intelligence Index 条目</b>；Index 仍 <b>v5.0</b>，主表 76 模与名次不变。<b>Top</b>：#1 Gemini 4 Carbon High (59), #2 Claude Opus 5.5 Max (58), #3 Claude Opus 5.5 xHigh (57), #4 GPT-6 Astra Max (57), #5 GPT-6.1 Sol Max (55)。促销截止均未到（Gemini 4 Argon 介绍期至 <b>11/30</b>、Gemini 3.8 Flash 至 <b>12/31</b>；Carbon 介绍期 50% 折截止未官宣）。<b>汇率</b>：CFETS/人行已公布 <b>2026-10-30 1 USD = 6.7138</b>（较 10/29 的 6.7147 下调 9 基点／人民币升值；SAFE 671.38、第一财经/新浪 09:17–09:18 一致）。主表经 FX 换算项：原 Qwen3.8-Flash 已在 v5 切表时移出；仅 <b>Step 5 Preview 缓存（¥0.70）</b> 按 6.7138 微调美分级挂价（pcache → 0.104263）；Step 美元刊例价与标准任务成本不变。本地/生图无新证据，未改模板。未改日报产物。"
+    },
     {
       "d": "10-30",
       "t": "全日量核验：AA Changelog 仍止于 29 Oct（Mistral Large 4 High 26/Medium 23），Index 仍 v5.0、76 模；官价/促销未到期；CFETS 10/30 中间价约 09:15 才公布，汇率沿用 10/29 的 6.7147",
