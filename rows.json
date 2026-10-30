@@ -1433,6 +1433,28 @@
       "rank": 65
     },
     {
+      "name": "DeepSeek-V4.1-Flash-1017",
+      "vendor": "DeepSeek",
+      "country": "中国",
+      "tier": "Non-reasoning",
+      "aa": 19,
+      "aa_dec": null,
+      "pin": 0.3,
+      "pcache": 0.006,
+      "pout": 1.2,
+      "open_": "开放权重",
+      "lic": "MIT",
+      "src": "官方/AA",
+      "note": "<b>10/30 AA Changelog 新增 Non-reasoning 档 Intelligence Index v5.0 = 19</b>（同模型 Max 档 32）；即 deepseek-flash 关闭思考模式；官方定价页思考/非思考同价：峰值 $0.30/$1.20/缓存 $0.006，闲时减半；开放权重 MIT；Search/Fetch 工具计费自 11/1 00:00（北京时间）起",
+      "cost": 0.6,
+      "ability": 32.20338983050847,
+      "costscore": 77.5398908512664,
+      "value": 50,
+      "eff": 31.666666666666668,
+      "grade": "C",
+      "rank": 66
+    },
+    {
       "name": "GPT-6 Luna",
       "vendor": "OpenAI",
       "country": "美国",
@@ -1452,7 +1474,7 @@
       "value": 58,
       "eff": 80.0,
       "grade": "C",
-      "rank": 66
+      "rank": 67
     },
     {
       "name": "Beam 1.0",
@@ -1474,7 +1496,7 @@
       "value": 51,
       "eff": 36.0,
       "grade": "C",
-      "rank": 67
+      "rank": 68
     },
     {
       "name": "K2 Horizon 375B-A23B",
@@ -1496,7 +1518,7 @@
       "value": null,
       "eff": null,
       "grade": "N/A",
-      "rank": 68
+      "rank": 69
     },
     {
       "name": "Nemotron 3.5 Super VL",
@@ -1518,7 +1540,7 @@
       "value": 52,
       "eff": 50.90909090909091,
       "grade": "C",
-      "rank": 69
+      "rank": 70
     },
     {
       "name": "Inkling Small",
@@ -1540,7 +1562,7 @@
       "value": 44,
       "eff": 21.666666666666668,
       "grade": "D",
-      "rank": 70
+      "rank": 71
     },
     {
       "name": "Gemini 3.5 Flash-Lite",
@@ -1562,7 +1584,7 @@
       "value": 40,
       "eff": 12.972972972972972,
       "grade": "D",
-      "rank": 71
+      "rank": 72
     },
     {
       "name": "Nemotron 3 Ultra",
@@ -1584,7 +1606,7 @@
       "value": 35,
       "eff": 8.0,
       "grade": "D",
-      "rank": 72
+      "rank": 73
     },
     {
       "name": "Inkling",
@@ -1606,7 +1628,7 @@
       "value": 29,
       "eff": 3.9473684210526314,
       "grade": "D",
-      "rank": 73
+      "rank": 74
     },
     {
       "name": "GPT-6 Luna",
@@ -1628,7 +1650,7 @@
       "value": 50,
       "eff": 44.44444444444444,
       "grade": "C",
-      "rank": 74
+      "rank": 75
     },
     {
       "name": "GPT-6 Luna",
@@ -1650,7 +1672,7 @@
       "value": 49,
       "eff": 40.0,
       "grade": "D",
-      "rank": 75
+      "rank": 76
     },
     {
       "name": "Muse Glimmer",
@@ -1672,10 +1694,18 @@
       "value": null,
       "eff": null,
       "grade": "N/A",
-      "rank": 76
+      "rank": 77
     }
   ],
   "changes": [
+    {
+      "d": "10-30",
+      "t": "半点更新：DeepSeek-V4.1-Flash-1017 新增 Non-reasoning 档（AA v5.0 = 19）入榜，#66；其余分数/标价不变，仅名次顺延",
+      "m": [
+        "DeepSeek-V4.1-Flash-1017"
+      ],
+      "s": "<b>2026-10-30 总策划 ≈23:40 半点核对</b>：Artificial Analysis Changelog 新增 <b>30 Oct 2026</b> 条目：<b>DeepSeek V4.1 Flash 1017 (Non-reasoning) Intelligence Index 19</b>（Index 版本仍 <b>v5.0</b>，未变）。按「推理档位必须拆开」新增 Non-reasoning 档一行；DeepSeek 官方定价页 deepseek-flash 由 V4.1-Flash-1017 承接、思考/非思考同价：峰值 <b>$0.30/$1.20、缓存 $0.006</b>（闲时减半），标准任务成本 $0.60，综合性价比 50（C）、原始价格效率 31.7，名次 <b>#66</b>（同分 19 按成本低优先）。本期最高/最低标准成本不变，其他模型分数与性价比不变，仅 #66 起名次顺延（主表 77 模）。<b>Top</b>：#1 Gemini 4 Carbon High (59), #2 Claude Opus 5.5 Max (58), #3 Claude Opus 5.5 xHigh (57), #4 GPT-6 Astra Max (57), #5 GPT-6.1 Sol Max (55)。促销均未到期；CFETS 10/30 中间价 6.7138 不变。本地/生图无新证据，未改模板。未改日报产物。"
+    },
     {
       "d": "10-30",
       "t": "半点核验：AA/官价无变；汇率调至 6.7138（较 6.7147 下调 9 基点／人民币升值）；微调 Step 5 Preview 缓存挂价",
