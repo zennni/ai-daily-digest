@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "aa_index_version": "v5.0",
   "models": [
     {
@@ -1698,6 +1698,12 @@
     }
   ],
   "changes": [
+    {
+      "d": "10-31",
+      "t": "全日量核验：AA Index 仍 v5.0，Changelog 最新 30 Oct（DeepSeek V4.1 Flash 1017 Non-reasoning 19，已入榜）；分数/官价/促销无变，主表 77 模名次不变",
+      "m": [],
+      "s": "<b>2026-10-31 总策划 ≈06:40 全日量核对</b>：Artificial Analysis Changelog 最新条目为 <b>30 Oct 2026</b>（DeepSeek V4.1 Flash 1017 Non-reasoning Index 19，昨晚半点已入榜 #66），其余仅为托管商性能数据，<b>无 31 Oct 新 Intelligence Index 条目</b>；Index 版本仍 <b>v5.0</b>（与仓内口径一致，无需全表重算）。官方定价抽核：DeepSeek 定价页 Flash $0.30/$1.20/缓存 $0.006、V4 Pro $1.32/$3.96/缓存 $0.044（峰值）与表内一致。促销均未到期（GPT-5.6 Sol 至 11/21、Gemini 4 Argon 介绍期至 11/30、Gemini 3.8 Flash 至 12/31；Carbon 介绍期截止未官宣）。Kimi K3.1 Pro 权重 Hugging Face 尚未放出（官方承诺 11/4 前）。<b>汇率</b>：10/31 为周六，沿用 CFETS 10/30 中间价 6.7138。主表 77 模、名次与性价比不变。<b>Top</b>：#1 Gemini 4 Carbon High (59), #2 Claude Opus 5.5 Max (58), #3 Claude Opus 5.5 xHigh (57), #4 GPT-6 Astra Max (57), #5 GPT-6.1 Sol Max (55)。本地/生图无新证据，未改模板。未改日报产物。"
+    },
     {
       "d": "10-30",
       "t": "半点更新：DeepSeek-V4.1-Flash-1017 新增 Non-reasoning 档（AA v5.0 = 19）入榜，#66；其余分数/标价不变，仅名次顺延",
