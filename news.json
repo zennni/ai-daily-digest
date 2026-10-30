@@ -1,5 +1,100 @@
 [
   {
+    "t": "AI 成本恐慌：纳指收跌 3.37%，英特尔单日暴跌约 31%",
+    "s": "10-30 美股科技股大跌，纳指收于近三个月低位。英特尔称 PC 需求至少疲软到 2027 年上半年、2026 年无正自由现金流、资本开支约 200 亿美元且 2027 年将大增；亚马逊、英伟达等 AI 链同步下挫。NBC 称科技股单日市值蒸发逾 1.5 万亿美元。",
+    "d": "10月30日",
+    "src": "CNBC / NBC News / Reuters",
+    "link": "https://www.cnbc.com/2026/10/30/ai-stocks-selloff-ai-spending-returns.html",
+    "m": []
+  },
+  {
+    "t": "AWS 第三季营收约 460 亿美元、同比增 39.3%",
+    "s": "亚马逊三季报：AWS 年化约 1840 亿美元；Jassy 称约每 14 秒安装一张 AI 加速卡、客户几乎即装即用，并称 AWS 有望 5–10 年内成为万亿美元级年收入业务（预测非业绩）。亚马逊预计 2026 年资本开支约 2200 亿美元，盘后股价承压。",
+    "d": "10月29日（美东盘后）",
+    "src": "Amazon IR / CNBC",
+    "link": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+    "m": []
+  },
+  {
+    "t": "Cursor 安全通告：扩展市场出现植入 SSH 后门的伪 Claude Code 扩展",
+    "s": "Anthropic.claude-code 2.1.312／2.1.313（Windows／macOS，非 Anthropic 发布）于 10-29 约 02:27–13:35 PT 在 Cursor VS Code 扩展市场上架：收集主机信息、写入攻击者 svc-telemetry 公钥、装持久化并尝试反向 SSH 隧道。Cursor 已下架、整站重建并轮换密钥；The Verge 称约 5000 人可能安装。官方建议自查 authorized_keys、运行清除脚本并轮换凭据（仅卸载不够）。",
+    "d": "10月29–30日",
+    "src": "Cursor",
+    "link": "https://cursor.com/blog/claude-code-extension-security-notice",
+    "m": [
+      "Claude Code"
+    ]
+  },
+  {
+    "t": "加拿大政府拟至多 16 亿加元入股 Cohere",
+    "s": "总理 Carney 宣布商业性股权投资，随 Schwarz Group 领投、英伟达、Bell 等参与的约 C$70 亿融资轮（估值约 C$360 亿，目前仅首轮交割）。条件：Cohere 保持加拿大注册与总部、2030 年前新增至少 C$17 亿本土算力、创造至少 1000 个技术岗位；分阶段注资。",
+    "d": "10月29日",
+    "src": "Prime Minister of Canada / Reuters",
+    "link": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+    "m": []
+  },
+  {
+    "t": "美国司法部问询英伟达约 129 亿美元收购 Hugging Face",
+    "s": "据 Reuters／CNBC，DOJ 询问交易是否会让英伟达掌控主要模型分发平台、影响 AI 竞争，并纳入对英伟达收购、投资与销售做法的更广调查。交易预计 2027 年上半年完成；问询不代表认定违法。",
+    "d": "10月28–30日",
+    "src": "Reuters / CNBC",
+    "link": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html",
+    "m": []
+  },
+  {
+    "t": "OpenAI 将遵循 robots.txt 中的通用 AI 训练偏好信号",
+    "s": "基于 IETF AI Preferences 工作组成果，网站可用一个通用信号向多家参与厂商同时表达是否允许用于基础生成式模型训练；OpenAI 计划未来数月实施并另行公布细节，现有 GPTBot 等爬虫控制继续有效，并呼吁其他厂商跟进。",
+    "d": "10月30日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+    "m": []
+  },
+  {
+    "t": "OpenAI 社区安全报告与未成年人保护加码",
+    "s": "承诺 2027 年初发布首份 Community Safety Report（覆盖 2026 下半年、此后半年一更）；Q3 共向执法部门转介逾 200 例。收紧对既往大规模袭击的复盘细节（武器、获取途径等），并在近期对话有暴力迹象或预测为未成年人时更保守地回答。",
+    "d": "10月30日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+    "m": []
+  },
+  {
+    "t": "OpenAI：Pro／Business Premium 的 Work＋Codex 额度翻倍，取消 Pro 200 降额",
+    "s": "10-29 起 Pro $100／$200／$500 与 Business Premium 的 ChatGPT Work 与 Codex 共用额度翻倍；原计划对 Pro 200 的削减撤回。聊天消息限额另计。",
+    "d": "10月29–30日",
+    "src": "OpenAI Help Center / BleepingComputer",
+    "link": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
+    "m": []
+  },
+  {
+    "t": "Anthropic：Max 方案更名 Max／Ultra；Claude Code 拒绝复刻特定游戏",
+    "s": "Max 5x 改名 Max（$100／月）、Max 20x 改名 Ultra（$200／月），价格不变。另经确认：Opus 5.5 下的 Claude Code 提示新增两句，禁止重建他人特定游戏（改名也不行），原创、类型游戏与用户自有设计不受影响。",
+    "d": "10月30日",
+    "src": "Game Developer / The Verge",
+    "link": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+    "m": [
+      "Claude Opus 5.5"
+    ]
+  },
+  {
+    "t": "Google Suncatcher 原型卫星上线：太空 TPU 回传首个回答",
+    "s": "Project Suncatcher 原型星完成在轨调试，TPU 托盘上电并跑通早期 AI 测试，下行了一首由 Gemma 4 生成的俳句；下一步测在轨热应力与辐射下的 TPU 表现，2027 年计划双星互联。",
+    "d": "10月30日",
+    "src": "Google / TechCrunch",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+    "m": []
+  },
+  {
+    "t": "Epoch Capabilities Index：GPT-6 Astra 与 Claude Opus 5.5 同为 169，Astra 列第一",
+    "s": "Epoch AI 模型列表中二者 ECI 均为 169、Astra 排名在前；Epoch 提示 ECI 绝对值无独立含义、重在相对比较，且随基准增补会回调。本站主榜仍以 AA Index v5.0 为准。",
+    "d": "10月30日",
+    "src": "Epoch AI",
+    "link": "https://epoch.ai/eci",
+    "m": [
+      "GPT-6 Astra",
+      "Claude Opus 5.5"
+    ]
+  },
+  {
     "t": "OpenAI 更新 Model Spec：五价值观，忠于人类意图为基",
     "s": "官方将行为规约重组为 faithfulness to human intent、harm minimization、honesty and transparency、human agency、care；新增「审慎使用上下文」与监督／能动性相关原则，并弱化大量细粒度文风指引。主体称谓由「the assistant」改为「GPT」。",
     "d": "10月29日",
@@ -446,98 +541,6 @@
     "d": "10月22–23日",
     "src": "Anthropic",
     "link": "https://www.anthropic.com/research/formal-verification",
-    "m": []
-  },
-  {
-    "t": "微软 MAI-DxO 论文登《Science》：困难病例序贯诊断报 83%",
-    "s": "对照医生 36%；成本口径约一半至三分之一检验。媒体提醒对照非专科团队、模拟设定、增益多来自底层模型。",
-    "d": "10月22–23日",
-    "src": "Science",
-    "link": "https://www.theneuron.ai/newsletter/microsoft-ai-scored-83-where-doctors-got-36/",
-    "m": []
-  },
-  {
-    "t": "Canva 推出自研图像模型 Craft：2K 与超宽画幅",
-    "s": "两阶段「规划—生成」架构，面向设计版式中文字与元素布局；宣称支持最高 2K 与超 30 宽高比。全量用户可用，定位平台内低成本可定制生成。",
-    "d": "10月23日",
-    "src": "AiBase",
-    "link": "https://news.aibase.com/zh/daily/31845",
-    "m": []
-  },
-  {
-    "t": "OpenAI Decisions API 正式 GA（GPT-6 Luna）",
-    "s": "有界答案近实时决策，相对同模 Responses 最高约 10× 快；单请求最多 400 问；约 $0.10／M 入、无输出费。",
-    "d": "10月22日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/decisions-api",
-    "m": [
-      "GPT-6 Luna"
-    ]
-  },
-  {
-    "t": "Anthropic 将 Agent Skills 捐赠给 AAIF（Linux Foundation）",
-    "s": "捐标准名／logo／GitHub／agentskills.io；70+ 平台已集成，约 100 万 skills、近 2.8 亿安装。",
-    "d": "10月22日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
-    "m": []
-  },
-  {
-    "t": "谷歌 Agent Compute Engine：硬件隔离微虚拟机跑智能体",
-    "s": "Titanium 硅根隔离；空闲亚秒挂起／恢复；开源 Agent Substrate 宣称最高约 10× 密度。",
-    "d": "10月22日",
-    "src": "Google Cloud",
-    "link": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance",
-    "m": []
-  },
-  {
-    "t": "OpenAI 接近 300 亿美元融资、估值约 1.25 万亿",
-    "s": "阿联酋投资者与 Coatue 领投；定位 2027 IPO 前过桥；数字待最终敲定。",
-    "d": "10月22日",
-    "src": "CNBC",
-    "link": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
-    "m": []
-  },
-  {
-    "t": "PHP 双高危 RCE（CVSS 9.2）：AI 辅助发现，全球紧急补丁",
-    "s": "CVE-2026-109618／109619；Calif 用 GPT-5.6 Sol、Wiz 独立验证；多国站点临时下线。",
-    "d": "10月21–22日",
-    "src": "The Neuron / OpenAI",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-22-2026/",
-    "m": [
-      "GPT-5.6 Sol"
-    ]
-  },
-  {
-    "t": "讯飞星火 X2.6 端云一体＋SparkAudio 1.0",
-    "s": "云端 293B-A30B、百万上下文；端侧开源 4B；全国产算力叙事。",
-    "d": "10月22日",
-    "src": "AiBase",
-    "link": "https://news.aibase.com/zh/news/31807",
-    "m": []
-  },
-  {
-    "t": "彭博：DeepSeek 据报约 150 亿美元融资",
-    "s": "称中国最大私募之一；潜在投资方含宁德时代与腾讯；待交叉核实。",
-    "d": "10月22日",
-    "src": "Bloomberg 转述",
-    "link": "https://www.readaitime.com/digests/2026-10-22",
-    "m": []
-  },
-  {
-    "t": "微软 AI 诊断工具：测试准确率最高约人类医生四倍",
-    "s": "Science 发表相关工作；Mustafa Suleyman 介绍自建基准口径。",
-    "d": "10月22–23日",
-    "src": "The Verge",
-    "link": "https://www.readaitime.com/digests/2026-10-23",
-    "m": []
-  },
-  {
-    "t": "Vercel durable-harness：编码智能体崩溃可续跑",
-    "s": "任意 harness（含 Claude Code／Codex）接到持久执行层。",
-    "d": "10月22日",
-    "src": "Vercel",
-    "link": "https://vercel.com/blog/making-every-harness-durable",
     "m": []
   }
 ]

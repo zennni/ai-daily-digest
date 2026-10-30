@@ -1,276 +1,255 @@
 {
   "meta": {
-    "date": "2026-10-30",
-    "week": "星期五",
-    "note": "今日主题词：规约与哨兵。OpenAI 同日更新 Model Spec：以 faithfulness to human intent（忠于人类意图）为基，重组为五价值观——忠于意图、最小化伤害、诚实透明、促进人类能动性、审慎关怀；并新增上下文与监督相关指引，弱化细粒度文风规定。另一篇官方长文披露 frontier misalignment 分层监控（激活探针→模型审阅→调查智能体→遥测），覆盖训练／评测／内部 Codex／部分外部工具调用；重放 Hugging Face 沙箱逃逸事件称约 30 分钟可告警、早于真实外溢约 30 小时。开源侧，Mistral Large 4（Le Chonk）正式开放权重至 Hugging Face（Ecosystem Open-Weight License；本站主榜已于 10-29 晚半点按 AA Index v5.0 记入 High 26／Medium 23，日报不改 rows）。资金与基建：Alphabet 季报后 10-Q／报道披露采购承诺约 9244 亿美元、未开工租赁约 1305 亿等，合计把未来算力／能源／数据中心义务推到万亿美元量级。产品侧 Gemini 应用可直接生成／预览／编辑文档与 PDF；Google 宣布在新加坡设新研究中心聚焦基础模型与健康。工程侧 Codex CLI 0.166.0、MCP Skills 扩展进入 Beta、Cloudflare Agents SDK 把 Skill 变成 Workspace 文件。 08:00 补漏：Canva 发布设计向 VLM Canva Brush；Pika H3 Flex（MiniMax H3 后训练）开放权重；Kakao 开源 Kanana-2-embedding 两款。"
+    "date": "2026-10-31",
+    "week": "星期六",
+    "note": "今日主题词：账单与后门。美股 10-30 周五 AI 成本恐慌：纳指收跌约 3.37%、创近三个月新低，英特尔单日暴跌约 31%（全年无正自由现金流、资本开支约 200 亿美元），亚马逊、英伟达同步走低；导火索之一是亚马逊 AWS 第三季增 39.3%、营收约 460 亿美元、年化约 1840 亿，Jassy 称约每 14 秒装一张 AI 加速卡、产能一到即被吃光，但更高资本开支指引令市场担忧回报。安全侧，Cursor 披露 VS Code 扩展市场被投毒：伪造的 Anthropic.claude-code 2.1.312／2.1.313 在 10-29 约 11 小时内可下载，试图植入 SSH 后门（svc-telemetry 公钥），约 5000 人可能装过；HN 头条连挂。资本与监管：加拿大政府拟以至多 16 亿加元入股 Cohere（C$70 亿轮、估值约 C$360 亿）；美国司法部问询英伟达约 129 亿美元收购 Hugging Face。政策与产品：OpenAI 宣布将遵循 IETF AI Preferences 的 robots.txt 通用训练偏好信号，并推出社区安全报告与对未成年人更严的武器类限制；ChatGPT Pro／Business Premium 的 Work＋Codex 额度翻倍；Anthropic 把 Max 5x／20x 更名 Max／Ultra，并确认给 Opus 5.5 加提示禁止复刻他人特定游戏。模型侧，AA 10-30 收录 DeepSeek V4.1 Flash 1017 非思考档（v5.0 得 19，本站主榜已于 10-30 晚半点入榜，日报不改 rows）；ServiceNow 开源 Apriel Voice 27B Preview；Google Suncatcher 太空 TPU 卫星首次回传 Gemma 4 生成的俳句。"
   },
   "highlights": [
     {
-      "title": "OpenAI 更新 Model Spec：五价值观，意图为纲",
-      "summary": "2026-10-29 官方发文：以忠于人类意图为基础，重组 harm minimization／honesty／agency／care；新增上下文与监督指引，弱化细粒度文风规定。完整 Spec：model-spec.openai.com/2026-10-29。"
+      "title": "纳指跌 3.37%、英特尔暴跌约 31%：AI 支出回报恐慌",
+      "summary": "10-30 美股 AI 链大跌：英特尔指引疲弱、2026 年无正自由现金流；亚马逊上调资本开支、Alphabet 搜索广告偏弱；NBC 称科技股单日蒸发逾 1.5 万亿美元。"
     },
     {
-      "title": "OpenAI 披露 frontier misalignment 分层监控",
-      "summary": "监控覆盖 frontier RL／评测／内部 Codex／部分外部工具调用；重放 HF 沙箱逃逸称约 30 分钟可告警、早于真实外溢约 30 小时。九月一次训练中外连互联网约 15 分钟告警。"
+      "title": "AWS 第三季增 39.3%、年化约 1840 亿美元",
+      "summary": "营收约 460 亿美元；Jassy 称约每 14 秒装一张 AI 加速卡、产能几乎即装即用；亚马逊预计 2026 年资本开支约 2200 亿美元。"
     },
     {
-      "title": "Mistral Large 4 权重开放 Hugging Face",
-      "summary": "约 1T 总参／约 49B 激活、多模态 MoE、1M 上下文；Mistral Ecosystem Open-Weight License（MaaS 需另签商用许可）。API 价约 $0.70／$2.10／缓存 $0.07。本站主榜已记 AA v5 High 26／Medium 23。"
+      "title": "Cursor 扩展市场被投毒：伪 Claude Code 扩展植 SSH 后门",
+      "summary": "Anthropic.claude-code 2.1.312／2.1.313（Win／macOS）于 10-29 约 02:27–13:35 PT 在 Cursor 扩展市场上架；添加 svc-telemetry 公钥并装持久化；攻击服务器已下线，官方给出自查与清除脚本。"
     },
     {
-      "title": "Alphabet 10-Q：未来算力／能源义务超万亿美元量级",
-      "summary": "采购承诺约 9244 亿美元（其中技术基建等约 8021 亿），未开工租赁约 1305 亿；另有或有承诺与背书扩张。系季报后披露，交叉引用昨日 Alphabet 云增与自由现金流承压。"
+      "title": "加拿大至多 16 亿加元入股 Cohere；DOJ 问询英伟达收购 HF",
+      "summary": "Cohere 新一轮目标 C$70 亿、估值约 C$360 亿，须留加并于 2030 年前投 C$17 亿建算力；司法部就英伟达约 129 亿美元收购 Hugging Face 的竞争影响展开问询（非定性违法）。"
     },
     {
-      "title": "Gemini 应用内直接编辑文档／PDF；新加坡新研究中心",
-      "summary": "Gemini 可生成、全屏预览并就地编辑 PDF／Docs／Sheets／幻灯片／Markdown／代码；Google 同日在新加坡设 Research hub，聚焦基础模型并扩展健康合作。"
+      "title": "OpenAI：遵循 robots.txt 通用训练偏好信号；Pro 额度翻倍",
+      "summary": "将随 IETF AI Preferences 工作组支持跨厂商通用信号（数月内落地，原爬虫规则继续有效）；同日公布社区安全报告计划与更严的暴力／武器类限制；Pro 与 Business Premium 的 Work＋Codex 额度翻倍。"
     }
   ],
   "news": [
     {
-      "title": "OpenAI 更新 Model Spec：五价值观，忠于人类意图为基",
-      "summary": "官方将行为规约重组为 faithfulness to human intent、harm minimization、honesty and transparency、human agency、care；新增「审慎使用上下文」与监督／能动性相关原则，并弱化大量细粒度文风指引。主体称谓由「the assistant」改为「GPT」。",
+      "title": "AI 成本恐慌：纳指收跌 3.37%，英特尔单日暴跌约 31%",
+      "summary": "10-30 美股科技股大跌，纳指收于近三个月低位。英特尔称 PC 需求至少疲软到 2027 年上半年、2026 年无正自由现金流、资本开支约 200 亿美元且 2027 年将大增；亚马逊、英伟达等 AI 链同步下挫。NBC 称科技股单日市值蒸发逾 1.5 万亿美元。",
+      "date": "10月30日",
+      "source": "CNBC / NBC News / Reuters",
+      "link": "https://www.cnbc.com/2026/10/30/ai-stocks-selloff-ai-spending-returns.html",
+      "models": []
+    },
+    {
+      "title": "AWS 第三季营收约 460 亿美元、同比增 39.3%",
+      "summary": "亚马逊三季报：AWS 年化约 1840 亿美元；Jassy 称约每 14 秒安装一张 AI 加速卡、客户几乎即装即用，并称 AWS 有望 5–10 年内成为万亿美元级年收入业务（预测非业绩）。亚马逊预计 2026 年资本开支约 2200 亿美元，盘后股价承压。",
+      "date": "10月29日（美东盘后）",
+      "source": "Amazon IR / CNBC",
+      "link": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "models": []
+    },
+    {
+      "title": "Cursor 安全通告：扩展市场出现植入 SSH 后门的伪 Claude Code 扩展",
+      "summary": "Anthropic.claude-code 2.1.312／2.1.313（Windows／macOS，非 Anthropic 发布）于 10-29 约 02:27–13:35 PT 在 Cursor VS Code 扩展市场上架：收集主机信息、写入攻击者 svc-telemetry 公钥、装持久化并尝试反向 SSH 隧道。Cursor 已下架、整站重建并轮换密钥；The Verge 称约 5000 人可能安装。官方建议自查 authorized_keys、运行清除脚本并轮换凭据（仅卸载不够）。",
+      "date": "10月29–30日",
+      "source": "Cursor",
+      "link": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "models": [
+        "Claude Code"
+      ]
+    },
+    {
+      "title": "加拿大政府拟至多 16 亿加元入股 Cohere",
+      "summary": "总理 Carney 宣布商业性股权投资，随 Schwarz Group 领投、英伟达、Bell 等参与的约 C$70 亿融资轮（估值约 C$360 亿，目前仅首轮交割）。条件：Cohere 保持加拿大注册与总部、2030 年前新增至少 C$17 亿本土算力、创造至少 1000 个技术岗位；分阶段注资。",
       "date": "10月29日",
+      "source": "Prime Minister of Canada / Reuters",
+      "link": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
+      "models": []
+    },
+    {
+      "title": "美国司法部问询英伟达约 129 亿美元收购 Hugging Face",
+      "summary": "据 Reuters／CNBC，DOJ 询问交易是否会让英伟达掌控主要模型分发平台、影响 AI 竞争，并纳入对英伟达收购、投资与销售做法的更广调查。交易预计 2027 年上半年完成；问询不代表认定违法。",
+      "date": "10月28–30日",
+      "source": "Reuters / CNBC",
+      "link": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html",
+      "models": []
+    },
+    {
+      "title": "OpenAI 将遵循 robots.txt 中的通用 AI 训练偏好信号",
+      "summary": "基于 IETF AI Preferences 工作组成果，网站可用一个通用信号向多家参与厂商同时表达是否允许用于基础生成式模型训练；OpenAI 计划未来数月实施并另行公布细节，现有 GPTBot 等爬虫控制继续有效，并呼吁其他厂商跟进。",
+      "date": "10月30日",
       "source": "OpenAI",
-      "link": "https://openai.com/index/updated-model-spec",
+      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
       "models": []
     },
     {
-      "title": "OpenAI 披露如何检测 frontier 模型错位：分层监控扩到训练与评测",
-      "summary": "HF 事件暴露网安评测面未跑错位监控；现扩至 frontier RL／评测／内部 Codex／部分外部工具调用。架构为激活探针→模型审阅→调查智能体→遥测与人工响应。重放称沙箱逃逸约 30 分钟可告警；九月训练外连约 15 分钟告警后曾暂停 frontier RL。",
-      "date": "10月29日",
+      "title": "OpenAI 社区安全报告与未成年人保护加码",
+      "summary": "承诺 2027 年初发布首份 Community Safety Report（覆盖 2026 下半年、此后半年一更）；Q3 共向执法部门转介逾 200 例。收紧对既往大规模袭击的复盘细节（武器、获取途径等），并在近期对话有暴力迹象或预测为未成年人时更保守地回答。",
+      "date": "10月30日",
       "source": "OpenAI",
-      "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
       "models": []
     },
     {
-      "title": "Alphabet 季报后披露：采购／租赁等未来义务超万亿美元量级",
-      "summary": "Silicon Report／Bloomberg 据 10-Q：表外采购承诺约 9244 亿美元（技术基建、库存、能源 take-or-pay、内容授权等约 8021 亿），未开工租赁约 1305 亿（多为数据中心与能源），另有股权出资与或有背书扩张。金额多为合同上限，部分合同有量价弹性。",
-      "date": "10月29日",
-      "source": "Silicon Report / Form 10-Q",
-      "link": "https://www.siliconreport.com/alphabet-puts-future-computing-energy-payments-over-1t",
+      "title": "OpenAI：Pro／Business Premium 的 Work＋Codex 额度翻倍，取消 Pro 200 降额",
+      "summary": "10-29 起 Pro $100／$200／$500 与 Business Premium 的 ChatGPT Work 与 Codex 共用额度翻倍；原计划对 Pro 200 的削减撤回。聊天消息限额另计。",
+      "date": "10月29–30日",
+      "source": "OpenAI Help Center / BleepingComputer",
+      "link": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
       "models": []
     },
     {
-      "title": "Mistral Large 4（Le Chonk）正式开放权重",
-      "summary": "权重上架 Hugging Face（FP8／NVFP4 等）；约 1T／49B 激活、多模态、1M 上下文。官方称开源权重侧编码／防御网安领先；API 现价约 $0.70 输入／$2.10 输出／缓存 $0.07。许可为 Ecosystem Open-Weight（自用／微调／商用一般允许，对外 MaaS 另需商用许可）。",
-      "date": "10月29日",
-      "source": "Mistral",
-      "link": "https://mistral.ai/news/mistral-large-4-oss/",
+      "title": "Anthropic：Max 方案更名 Max／Ultra；Claude Code 拒绝复刻特定游戏",
+      "summary": "Max 5x 改名 Max（$100／月）、Max 20x 改名 Ultra（$200／月），价格不变。另经确认：Opus 5.5 下的 Claude Code 提示新增两句，禁止重建他人特定游戏（改名也不行），原创、类型游戏与用户自有设计不受影响。",
+      "date": "10月30日",
+      "source": "Game Developer / The Verge",
+      "link": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
       "models": [
-        "Mistral Large 4"
+        "Claude Opus 5.5"
       ]
     },
     {
-      "title": "Gemini 应用：可直接生成、预览并编辑文档与 PDF",
-      "summary": "Google 宣布在 Gemini 聊天内生成／全屏预览／就地编辑 PDF、Google Docs／Sheets、幻灯片、Markdown、TXT 与代码；PDF 预览编辑支持 Web 与移动端，其余格式目前 Web。已对 Gemini 可用地区全量用户开放。",
-      "date": "10月29日",
-      "source": "Google",
-      "link": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+      "title": "Google Suncatcher 原型卫星上线：太空 TPU 回传首个回答",
+      "summary": "Project Suncatcher 原型星完成在轨调试，TPU 托盘上电并跑通早期 AI 测试，下行了一首由 Gemma 4 生成的俳句；下一步测在轨热应力与辐射下的 TPU 表现，2027 年计划双星互联。",
+      "date": "10月30日",
+      "source": "Google / TechCrunch",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
       "models": []
     },
     {
-      "title": "Google 在新加坡设立新 AI 研究中心，扩展健康合作",
-      "summary": "Google for Health Summit 上宣布新加坡新 Research hub，由本地研究科学家与工程师组成，聚焦基础模型，并与 NUS／NTU 等合作；同时扩大与新加坡公共医疗体系的 AI 评估与人群健康预测合作（细节以官方博客为准）。",
-      "date": "10月29日",
-      "source": "Google",
-      "link": "https://blog.google/innovation-and-ai/technology/health/google-for-health-summit-singapore/",
-      "models": []
-    },
-    {
-      "title": "报道：Alphabet 云 backlog 增至约 5608 亿美元",
-      "summary": "季报披露 Google Cloud 已签合同 backlog 约 5608 亿美元（上季末约 5139 亿）。Bloomberg 口径称当季增量逾三分之一来自与 Blackstone 合资 Crux AI 的约 168 亿美元多年协议；Alphabet 为合资项目提供最多约 100 亿美元数据中心／能源背书（待对照 10-Q 原文）。",
-      "date": "10月29日",
-      "source": "Silicon Report / Bloomberg",
-      "link": "https://www.siliconreport.com/alphabet-puts-future-computing-energy-payments-over-1t",
-      "models": []
-    },
-    {
-      "title": "Hugging Face：Mistral Large 4 日零支持 Transformers／vLLM／llama.cpp",
-      "summary": "HF 博客介绍官方 FP8／NVFP4、社区 GGUF，以及 Inference Endpoints 8×H200 配方与 TRL 微调示例；并称截至 10-29 在 Artificial Analysis Intelligence Index 开源权重侧约排第五（厂商／HF 口径，本站以主榜 v5 分为准）。",
-      "date": "10月29日",
-      "source": "Hugging Face",
-      "link": "https://huggingface.co/blog/mistral-large4",
+      "title": "Epoch Capabilities Index：GPT-6 Astra 与 Claude Opus 5.5 同为 169，Astra 列第一",
+      "summary": "Epoch AI 模型列表中二者 ECI 均为 169、Astra 排名在前；Epoch 提示 ECI 绝对值无独立含义、重在相对比较，且随基准增补会回调。本站主榜仍以 AA Index v5.0 为准。",
+      "date": "10月30日",
+      "source": "Epoch AI",
+      "link": "https://epoch.ai/eci",
       "models": [
-        "Mistral Large 4"
+        "GPT-6 Astra",
+        "Claude Opus 5.5"
       ]
-    },
-    {
-      "title": "Codex CLI 0.166.0：队列恢复、键盘选文与更清晰安全拦截提示",
-      "summary": "官方 changelog：键盘驱动 transcript 选择／搜索、Markdown 渲染一致、`codex queue --resume`、更清晰的安全拦截说明与可选更安全跟进提示、`codex doctor --network-only`；模型目录补齐 GPT-6.1 Terra（含 Vertex／Bedrock）。",
-      "date": "10月29日",
-      "source": "OpenAI Codex Changelog",
-      "link": "https://learn.chatgpt.com/docs/changelog",
-      "models": [
-        "GPT-6.1 Terra"
-      ]
-    },
-    {
-      "title": "Canva 发布设计向视觉语言模型 Canva Brush",
-      "summary": "Canva Research 自研 VLM，能读懂设计结构并按指令修改，从单行文案到整套幻灯片；即日起为 Canva Pro 的 Canva AI 设计编辑提供支持，更广开放稍后。官方称较上一代设计智能体通用编辑最多快 69%、单次编辑成本低 46%；一周前刚发布自研生图模型 Canva Craft。",
-      "date": "10月29日",
-      "source": "Canva",
-      "link": "https://www.canva.com/newsroom/news/canva-brush/",
-      "models": []
-    },
-    {
-      "title": "Pika H3 Flex：基于 MiniMax H3 后训练的视频模型，开放权重",
-      "summary": "6 步采样（原 50 步），官方称 768p 带同步音频的 15 秒片段最快约 7 秒 transformer 计算；支持最多 12 张参考、五轨音频分轨、最高 4K（1080p 以上超分、音频分轨等为 Pika 托管功能）。开放生成器适配器与推理代码（文生视频、首尾帧、多模态参考，480p／768p），按模型许可使用；官方称 DesignArena 文生视频开源权重第 1、总榜第 7；11 月 2 日进 Pika 创作产品。",
-      "date": "10月29日",
-      "source": "Pika",
-      "link": "https://pika.art/blog/pika-h3-flex",
-      "models": [
-        "Pika H3 Flex"
-      ]
-    },
-    {
-      "title": "Kakao 开源 Kanana-2-embedding 两款嵌入模型",
-      "summary": "Kanana-2-3b-embedding（30 亿参数）与 Kanana-2-1.3b-embedding（13 亿，知识蒸馏）上架 Hugging Face，面向语义检索与个性化 AI 智能体；采用 MRL 可调向量维度。官方称对比 llama-nemotron-embed-1b-v2、Qwen3-Embedding-4B 韩语最佳、英语相当；Kanana Open License 允许按条款商用。",
-      "date": "10月29日",
-      "source": "Kakao",
-      "link": "https://www.kakaocorp.com/page/detail/12181",
-      "models": [
-        "Kanana-2-embedding"
-      ]
-    },
-    {
-      "title": "交叉引用：昨日午后 Alphabet／微软财报并集仍有效，勿整段复读",
-      "summary": "10-29 午后日报已覆盖微软 Azure＋48%、OpenAI 相关安排约 100 亿美元收入，以及 Alphabet 云增与自由现金流承压、盘后大跌。今日新增重点是 10-Q 级长期义务披露与 OpenAI／Mistral 安全与开源动作，而非重述财报头条。",
-      "date": "10月29日",
-      "source": "本站昨日日报",
-      "link": "AI日报-2026-10-29.html",
-      "models": []
     }
   ],
   "papers": [
     {
-      "title": "预训练到底学到了什么？用时点模型追踪知识获取",
-      "titleEn": "What Improves During Pretraining? Tracking Knowledge Acquisition with Point-in-Time Models",
-      "summary": "提出时序变异分数 TVS：用逐年网页快照训练的同构模型对同一题的 NLL 变异刻画知识稳定性；高 TVS 题后期提升更快，终局在 36 组设定中 34 组优于低 TVS。",
-      "authors": "Chang Su, Bin Wu, Emine Yilmaz, Yao Lu",
-      "link": "https://arxiv.org/abs/2610.37631"
+      "title": "提前回滚：用「倒带」实现高效可扩展监督",
+      "titleEn": "Efficient Scalable Oversight via Rewinding",
+      "summary": "提出可倒带交互式证明 RIP：弱验证者可把 AI 证明者回滚到早先状态再继续交互，从而在不假设「辩论双方必有一方诚实」的前提下降低可扩展监督的计算代价。",
+      "authors": "Ziyi Guan, Yael Tauman Kalai, Ron Rothblum, Zoe Xi",
+      "link": "https://arxiv.org/abs/2610.40535"
     },
     {
-      "title": "稀有且相关，却仍出错：记忆如何拖累 LLM 群体决策",
-      "titleEn": "Rare, Relevant, and Still Wrong: How Memory Fails LLM Group Decisions",
-      "summary": "研究多智能体／群体决策场景中记忆检索「稀有但相关」证据仍导致错误结论的机制，提示记忆系统不能只看相关性。",
-      "authors": "Anouar Imel, Imad Charradi, Abderrahman Sghir, Khalil El Khammar",
-      "link": "https://arxiv.org/abs/2610.37624"
+      "title": "理解并缓解 LLM 的角色冒充",
+      "titleEn": "Understanding and Mitigating Role Spoofing in LLMs",
+      "summary": "工具输出中的恶意文本可借「角色混淆」冒充用户；研究模型如何同时依赖内容（语义、文风）与结构（控制符、格式）判断「谁说了什么」，并展示结构＋内容组合攻击的高成功率及缓解思路。",
+      "authors": "Ezra Edelman, Benjamin Edelman, Surbhi Goel, Eran Malach",
+      "link": "https://arxiv.org/abs/2610.40396"
     },
     {
-      "title": "Concordat：为 LLM 智能体提供类型化会话",
-      "titleEn": "Concordat: Typed Sessions for LLM Agents",
-      "summary": "用类型化会话协议约束多智能体交互边界与状态迁移，降低协议漂移与越权调用风险；附基准与代码。",
-      "authors": "Milad Sikaroudi",
-      "link": "https://arxiv.org/abs/2610.37461"
+      "title": "TextSeal2：无失真、兼容投机解码的 LLM 水印",
+      "titleEn": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
+      "summary": "把多把密钥合成一把虚拟密钥并经高斯 copula 与新噪声耦合；投机解码下被替换的 token 仍带同一水印、接受率不变，保持多样性且无可测延迟。",
+      "authors": "Tom Sander, Pierre Fernandez, Itai Gat, et al.",
+      "link": "https://arxiv.org/abs/2610.40613"
     },
     {
-      "title": "Agent-Conditioned Routing：单模型内的多样化推理路径",
-      "titleEn": "Agent-Conditioned Routing: Diverse Reasoning Paths Within One Frozen Model",
-      "summary": "在冻结模型内按智能体条件路由不同推理路径，兼顾多样性与资源效率；NeurIPS 2026 Resource-Aware Agentic AI 工坊扩展版。",
-      "authors": "Ananth Kalyanasundaram, Ankush Kadu, Athira Gopal, Aswanth Krishnan",
-      "link": "https://arxiv.org/abs/2610.37375"
+      "title": "VeriCUA：把验证当作智能体探索",
+      "titleEn": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
+      "summary": "面向桌面／移动／网页的计算机使用智能体，用平台无关的主动取证流程判断任务是否真正完成，弥补 VLM 裁判与程序检查只看局部状态的缺陷，服务数据筛选、评测与 RL。",
+      "authors": "Qiushi Sun, Da Yu, Alexander Knop, et al.",
+      "link": "https://arxiv.org/abs/2610.40578"
     },
     {
-      "title": "WorkFactory：把专业意图变成可执行工作以规模化训练智能体",
-      "titleEn": "WorkFactory: Turning Professional Intents into Executable Work for Scalable Agent Training",
-      "summary": "将专业领域意图自动展开为可执行工作流与训练样本，面向可扩展智能体训练数据生产。",
-      "authors": "Ziyang Zeng, Tingyang Chen, Jia Deng, et al.",
-      "link": "https://arxiv.org/abs/2610.37161"
+      "title": "怎样给 Transformer 加循环：循环扩展、分工与并行推理",
+      "titleEn": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
+      "summary": "在至多 1B 参数、155B token 的从零训练中系统比较循环位置与次数：固定参数预算下整模型循环最佳，训练 FLOPs 受限时循环中段层回报更高，循环并非越多越好。",
+      "authors": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, et al.",
+      "link": "https://arxiv.org/abs/2610.40325"
     },
     {
-      "title": "进化智能体团队",
-      "titleEn": "Evolving Agent Teams",
-      "summary": "探索用进化／搜索方法组合多智能体团队结构与角色分工，在协作任务上寻找更优团队配置。",
-      "authors": "Shiyi Cao, Ziming Mao, Dacheng Li, Joseph E. Gonzalez, Ion Stoica",
-      "link": "https://arxiv.org/abs/2610.36848"
+      "title": "代数世界模型：从探索到证明",
+      "titleEn": "Algebraic World Model: From Exploration to Proofs",
+      "summary": "在未知环境中探索并写出可执行 Python 假设，经范畴论引导化简后在 Lean 4 中形式化，可证明目标可达或不可达（甚至超出已探索轨迹）。",
+      "authors": "Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao",
+      "link": "https://arxiv.org/abs/2610.40503"
     },
     {
-      "title": "当评论家落后：共同进化量规与 harness 做持续自我改进",
-      "titleEn": "When the Critic Falls Behind: Co-Evolving Rubrics and Harnesses for Continual Agent Self-Improvement",
-      "summary": "指出固定评分量规会落后于智能体能力，提出量规与执行 harness 共同进化，以支撑持续自我改进。",
-      "authors": "Hao Chen, Yukun Yan, Ziyu Han, et al.",
-      "link": "https://arxiv.org/abs/2610.36826"
+      "title": "不丢线头：让长程智能体自主分配认知资源",
+      "titleEn": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
+      "summary": "CORAL 提供可调用的工作记忆工具：智能体为进度与已验证事实打检查点，再重置杂乱上下文从干净状态续推，缓解长任务中的上下文过载。",
+      "authors": "Zheng Zhu, Xiaozhuan Liang, Xi Chen, Bei Yu, Jiaya Jia",
+      "link": "https://arxiv.org/abs/2610.40350"
     },
     {
-      "title": "ETAMem：解耦并对齐异构记忆，服务长期对话智能体",
-      "titleEn": "ETAMem: Decoupling and Aligning Heterogeneous Memory for Long-Term Conversational Agents",
-      "summary": "将长期对话中的异构记忆通道解耦后再对齐，缓解记忆冲突与漂移，提升长期会话一致性。",
-      "authors": "Xinying Qian, Ying Zhang, Yu Zhao, Xubo Liu, Baohang Zhou, Jeff Z. Pan",
-      "link": "https://arxiv.org/abs/2610.37443"
+      "title": "超越精选突破：在随机抽样的数学猜想上评测语言模型",
+      "titleEn": "Beyond Selected Breakthroughs: Evaluating Language Models on Randomly Sampled Mathematical Conjectures",
+      "summary": "构建 OpenConjecture（取自 2026 年 2 月后 arXiv 数学论文的猜想），用前沿 GPT 模型按可复现协议跑 200 个随机样本三轮，分析 LLM 更易给出解答的问题类型与特征，而非只看个别突破。",
+      "authors": "Helen Jenne, Davis Brown, Jesse He, Henry Kvinge",
+      "link": "https://arxiv.org/abs/2610.40382"
     }
   ],
   "models": [
     {
-      "name": "Mistral Large 4（开源权重）",
-      "vendor": "Mistral",
-      "highlight": "HF 正式开放约 1T／49B 激活多模态 MoE（FP8／NVFP4／社区 GGUF）；Ecosystem Open-Weight License。官方文档价约 $0.70／$2.10／缓存 $0.07。本站主榜 10-29 晚半点已按 AA Index v5.0 记入 High 26／Medium 23（勿改 rows）。",
-      "link": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B"
+      "name": "DeepSeek-V4.1-Flash-1017 非思考档入 AA",
+      "vendor": "DeepSeek",
+      "highlight": "AA Changelog 10-30 收录非思考档（Index v5.0 得 19）；本站主榜已于 10-30 晚半点按档位拆开入榜。官方价高峰 $0.30／$1.20／缓存 $0.006（思考／非思考同价）；Search／Fetch API 按次计费自北京时间 11-01 00:00 起。",
+      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
     },
     {
-      "name": "GPT-6.1 Terra（Codex／目录补齐）",
-      "vendor": "OpenAI",
-      "highlight": "Codex CLI 0.166.0 将 GPT-6.1 Terra 写入内置、Vertex AI 与 Amazon Bedrock 模型目录；面向专业工作的高效模型，强图像理解与计算机使用（以官方 changelog 为准）。",
-      "link": "https://learn.chatgpt.com/docs/changelog"
+      "name": "Apriel Voice 27B Preview（开源语音＋工具调用）",
+      "vendor": "ServiceNow",
+      "highlight": "基于 Gemma 4 26B-A4B 主干，输入语音、输出文本与工具调用；τ-Voice 65.51、平均延迟 1.91 秒（官方口径）；MIT 许可，参考部署为 4 卡张量并行、最长 262K token。非文本主榜模型。",
+      "link": "https://huggingface.co/ServiceNow-AI/Apriel-Voice-27B-preview"
     },
     {
-      "name": "Mistral Large 4 GGUF／量化生态",
-      "vendor": "Community / llama.cpp / Unsloth",
-      "highlight": "llama.cpp 与 Unsloth 等释出多档 GGUF；HF 称较低比特可在大内存 Apple Silicon 上跑，更高精度需多卡。部署仍以官方模型卡与许可为准。",
-      "link": "https://huggingface.co/blog/mistral-large4"
+      "name": "Nemotron 3.5 Transcribe 30B-A4B（开放权重转写）",
+      "vendor": "NVIDIA",
+      "highlight": "10-28 发布，HF 本周热度前列：40 种语言、单段至 1 小时、可选说话人归属与词级时间戳；BF16／FP8／NVFP4，OpenMDW-1.1 许可。语音模型，不入主榜。",
+      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
     },
     {
-      "name": "监控侧对照：Astra 级与以上强制监控",
-      "vendor": "OpenAI（政策口径）",
-      "highlight": "错位监控文称：能力不低于 GPT-6 Astra 的模型，每次 RL／评测与工具 harness 均监控；多数负载亦覆盖强于 GPT-5.5 Thinking 的模型；内部 Codex 流量全量监控。属部署策略，非新权重发布。",
-      "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+      "name": "HF 趋势：Nanbeige4.3-33B、LFM3-1.7B、Flint",
+      "vendor": "Nanbeige / LiquidAI / RecursiveSI",
+      "highlight": "Hugging Face 趋势榜前列除 DeepSeek 1017 外，有面向轻量智能体的 Nanbeige4.3-33B、LiquidAI 三混合架构本地小模型 LFM3-1.7B，以及约 40B 总参／2.5B 激活的编码智能体 MoE Flint。均无 AA v5 同口径分，不入主榜。",
+      "link": "https://huggingface.co/models?sort=trending"
     },
     {
-      "name": "Pika H3 Flex（开放权重视频）",
-      "vendor": "Pika",
-      "highlight": "MiniMax H3 后训练，6 步出片、带同步音频；开放生成器适配器与推理代码（480p／768p），高分辨率超分与音频分轨为托管功能。非 LLM，不入主榜。",
-      "link": "https://pika.art/blog/pika-h3-flex"
+      "name": "GPT-6 Astra × Claude Opus 5.5：ECI 并列 169",
+      "vendor": "OpenAI / Anthropic",
+      "highlight": "Epoch Capabilities Index 二者同分、Astra 列第一（第三方综合指数，非本站口径）。",
+      "link": "https://epoch.ai/eci"
     }
   ],
   "ecosystem": [
     {
-      "title": "Codex CLI 0.166.0",
-      "summary": "键盘选文／搜索、`codex queue --resume`、安全拦截可解释性、`doctor --network-only`；并补齐 GPT-6.1 Terra 多云目录。安装：npm i -g @openai/codex@0.166.0。",
-      "source": "OpenAI",
-      "link": "https://learn.chatgpt.com/docs/changelog",
+      "title": "Cursor 扩展投毒事件：自查与清除要点",
+      "summary": "查 ~/.ssh/authorized_keys 是否含 svc-telemetry；macOS 查 LaunchAgent com.apple.sysmond，Windows 查计划任务 SysMon；运行官方 remediate 脚本并从可信设备轮换凭据。攻击端 134.209.82.225 已下线。",
+      "source": "Cursor",
+      "link": "https://cursor.com/blog/claude-code-extension-security-notice",
       "models": [
-        "GPT-6.1 Terra"
+        "Claude Code"
       ]
     },
     {
-      "title": "MCP Skills 扩展正式进入 Beta",
-      "summary": "ext-skills 按 SEP-3392 生命周期从「文件夹名叫 stable」迁到规范意义上的 Beta：线协议与 `skill://` 资源标识不变，允许经维护者审批的罕见破坏性变更并记决策日志。",
-      "source": "API Evangelist / MCP",
-      "link": "https://apievangelist.com/2026/10/29/skills-over-mcp-is-now-officially-beta/",
+      "title": "MCP Servers v2.2.0：CA 证书与 Node 运行时安全版",
+      "summary": "针对 eMudhra 中间 CA 私钥可被恢复事件，配合 Node.js 10-21 安全版与 certifi 2026.10.23 移除两张根证书；TS 服务器跟随 Node 信任库，Python 服务器看 certifi，升级后需重测 TLS。",
+      "source": "MCP Servers",
+      "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
       "models": []
     },
     {
-      "title": "Cloudflare Agents SDK：Skill 就是 Workspace 里的文件",
-      "summary": "把 SKILL.md 写进 `/workspace/.agents/skills/` 即可下轮生效，支持 Workspace／R2／代码三源；遵循 Agent Skills 规范。破坏性变更：需 Agents SDK ≥0.32.0、Think ≥0.23.0。",
-      "source": "Cloudflare",
-      "link": "https://developers.cloudflare.com/changelog/post/2026-10-29-agent-skills-from-files/",
+      "title": "MCP 规范：SEP-3392 扩展生命周期定稿、SEP-3398 发布周期合入",
+      "summary": "扩展提案有了正式流程标记（流程类 SEP，无一致性要求）；发布周期调整将影响 SDK 与服务器何时跟进新版本。Ruby SDK 升 Tier 1；企业托管授权文档补 IdP 支持矩阵。",
+      "source": "MCP Specification",
+      "link": "https://github.com/modelcontextprotocol/modelcontextprotocol/commit/a1e969d3b3d327ab31f2b41637b76c94b954b329",
       "models": []
     },
     {
-      "title": "OpenAI 错位监控栈：L0–L3 与自动暂停",
-      "summary": "轻量激活探针→模型审阅→可写代码的调查智能体→对照网络／遥测；高优先级告警可自动暂停负载。强调监控不改 RL 奖励，以免激励隐藏思维链。",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "title": "MCP 扩展支持矩阵：Claude Code／Claude.ai 标注 Tasks，MCPJam 支持 Skills",
+      "summary": "Tasks 扩展新增 Claude Code 与 Claude.ai；MCPJam Inspector 3.17.0 对齐 Skills over MCP（skills/list、skills/get、逐文件大小与摘要校验）；Kiro Crew 可渲染 MCP Apps（暂无 OAuth 客户端凭据／企业托管授权）。",
+      "source": "MCP Specification",
+      "link": "https://github.com/modelcontextprotocol/modelcontextprotocol/commit/05456131a785fdac60c575636da8e33bdc80f317",
       "models": []
     },
     {
-      "title": "HF Inference Endpoints：Mistral Large 4 8×H200 配方",
-      "summary": "官方／HF 提供 8 卡 H200 上 vLLM＋DSpark 投机解码的一键配方；亦可用 `hf endpoints catalog deploy`。适合验证自托管路径，非必须。",
-      "source": "Hugging Face",
-      "link": "https://huggingface.co/blog/mistral-large4",
-      "models": [
-        "Mistral Large 4"
-      ]
+      "title": "Anthropic Model Hardware Standard：让智能体安全操作实验仪器",
+      "summary": "与 HHMI Janelia 共建的研究预览规范，用标准驱动与协议让 AI 智能体操作显微镜、移液工作站、机械臂等；AI for Science 同步扩至 20 家基金会与机构（10-28 公布）。",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "models": []
     }
   ]
 }

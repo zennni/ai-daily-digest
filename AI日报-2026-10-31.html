@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-10-31</title>
+<style>
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+</style>
+</head>
+<body id="top">
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年10月31日 · 星期六</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：账单与后门。美股 10-30 周五 AI 成本恐慌：纳指收跌约 3.37%、创近三个月新低，英特尔单日暴跌约 31%（全年无正自由现金流、资本开支约 200 亿美元），亚马逊、英伟达同步走低；导火索之一是亚马逊 AWS 第三季增 39.3%、营收约 460 亿美元、年化约 1840 亿，Jassy 称约每 14 秒装一张 AI 加速卡、产能一到即被吃光，但更高资本开支指引令市场担忧回报。安全侧，Cursor 披露 VS Code 扩展市场被投毒：伪造的 Anthropic.claude-code 2.1.312／2.1.313 在 10-29 约 11 小时内可下载，试图植入 SSH 后门（svc-telemetry 公钥），约 5000 人可能装过；HN 头条连挂。资本与监管：加拿大政府拟以至多 16 亿加元入股 Cohere（C$70 亿轮、估值约 C$360 亿）；美国司法部问询英伟达约 129 亿美元收购 Hugging Face。政策与产品：OpenAI 宣布将遵循 IETF AI Preferences 的 robots.txt 通用训练偏好信号，并推出社区安全报告与对未成年人更严的武器类限制；ChatGPT Pro／Business Premium 的 Work＋Codex 额度翻倍；Anthropic 把 Max 5x／20x 更名 Max／Ultra，并确认给 Opus 5.5 加提示禁止复刻他人特定游戏。模型侧，AA 10-30 收录 DeepSeek V4.1 Flash 1017 非思考档（v5.0 得 19，本站主榜已于 10-30 晚半点入榜，日报不改 rows）；ServiceNow 开源 Apriel Voice 27B Preview；Google Suncatcher 太空 TPU 卫星首次回传 Gemma 4 生成的俳句。</div>
+</header>
+
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a class="pt-top" href="#top">回顶</a>
+</nav>
+
+<div class="highlights" id="sec-highlights">
+  <h2>📌 今日看点</h2>
+  <ul>
+<li><strong>纳指跌 3.37%、英特尔暴跌约 31%：AI 支出回报恐慌</strong><p>10-30 美股 AI 链大跌：英特尔指引疲弱、2026 年无正自由现金流；亚马逊上调资本开支、Alphabet 搜索广告偏弱；NBC 称科技股单日蒸发逾 1.5 万亿美元。</p></li>
+<li><strong>AWS 第三季增 39.3%、年化约 1840 亿美元</strong><p>营收约 460 亿美元；Jassy 称约每 14 秒装一张 AI 加速卡、产能几乎即装即用；亚马逊预计 2026 年资本开支约 2200 亿美元。</p></li>
+<li><strong>Cursor 扩展市场被投毒：伪 Claude Code 扩展植 SSH 后门</strong><p>Anthropic.claude-code 2.1.312／2.1.313（Win／macOS）于 10-29 约 02:27–13:35 PT 在 Cursor 扩展市场上架；添加 svc-telemetry 公钥并装持久化；攻击服务器已下线，官方给出自查与清除脚本。</p></li>
+<li><strong>加拿大至多 16 亿加元入股 Cohere；DOJ 问询英伟达收购 HF</strong><p>Cohere 新一轮目标 C$70 亿、估值约 C$360 亿，须留加并于 2030 年前投 C$17 亿建算力；司法部就英伟达约 129 亿美元收购 Hugging Face 的竞争影响展开问询（非定性违法）。</p></li>
+<li><strong>OpenAI：遵循 robots.txt 通用训练偏好信号；Pro 额度翻倍</strong><p>将随 IETF AI Preferences 工作组支持跨厂商通用信号（数月内落地，原爬虫规则继续有效）；同日公布社区安全报告计划与更严的暴力／武器类限制；Pro 与 Business Premium 的 Work＋Codex 额度翻倍。</p></li>
+  </ul>
+</div>
+
+<section id="sec-news">
+  <h2>📰 行业新闻<span class="count">11 条</span></h2>
+<div class="card">
+  <h3>AI 成本恐慌：纳指收跌 3.37%，英特尔单日暴跌约 31%</h3>
+  <p>10-30 美股科技股大跌，纳指收于近三个月低位。英特尔称 PC 需求至少疲软到 2027 年上半年、2026 年无正自由现金流、资本开支约 200 亿美元且 2027 年将大增；亚马逊、英伟达等 AI 链同步下挫。NBC 称科技股单日市值蒸发逾 1.5 万亿美元。</p>
+  <div class="meta">10月30日 · CNBC / NBC News / Reuters · <a href="https://www.cnbc.com/2026/10/30/ai-stocks-selloff-ai-spending-returns.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>AWS 第三季营收约 460 亿美元、同比增 39.3%</h3>
+  <p>亚马逊三季报：AWS 年化约 1840 亿美元；Jassy 称约每 14 秒安装一张 AI 加速卡、客户几乎即装即用，并称 AWS 有望 5–10 年内成为万亿美元级年收入业务（预测非业绩）。亚马逊预计 2026 年资本开支约 2200 亿美元，盘后股价承压。</p>
+  <div class="meta">10月29日（美东盘后） · Amazon IR / CNBC · <a href="https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Cursor 安全通告：扩展市场出现植入 SSH 后门的伪 Claude Code 扩展</h3>
+  <p>Anthropic.claude-code 2.1.312／2.1.313（Windows／macOS，非 Anthropic 发布）于 10-29 约 02:27–13:35 PT 在 Cursor VS Code 扩展市场上架：收集主机信息、写入攻击者 svc-telemetry 公钥、装持久化并尝试反向 SSH 隧道。Cursor 已下架、整站重建并轮换密钥；The Verge 称约 5000 人可能安装。官方建议自查 authorized_keys、运行清除脚本并轮换凭据（仅卸载不够）。</p>
+  <div class="meta">10月29–30日 · Cursor · <a href="https://cursor.com/blog/claude-code-extension-security-notice" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>加拿大政府拟至多 16 亿加元入股 Cohere</h3>
+  <p>总理 Carney 宣布商业性股权投资，随 Schwarz Group 领投、英伟达、Bell 等参与的约 C$70 亿融资轮（估值约 C$360 亿，目前仅首轮交割）。条件：Cohere 保持加拿大注册与总部、2030 年前新增至少 C$17 亿本土算力、创造至少 1000 个技术岗位；分阶段注资。</p>
+  <div class="meta">10月29日 · Prime Minister of Canada / Reuters · <a href="https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>美国司法部问询英伟达约 129 亿美元收购 Hugging Face</h3>
+  <p>据 Reuters／CNBC，DOJ 询问交易是否会让英伟达掌控主要模型分发平台、影响 AI 竞争，并纳入对英伟达收购、投资与销售做法的更广调查。交易预计 2027 年上半年完成；问询不代表认定违法。</p>
+  <div class="meta">10月28–30日 · Reuters / CNBC · <a href="https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI 将遵循 robots.txt 中的通用 AI 训练偏好信号</h3>
+  <p>基于 IETF AI Preferences 工作组成果，网站可用一个通用信号向多家参与厂商同时表达是否允许用于基础生成式模型训练；OpenAI 计划未来数月实施并另行公布细节，现有 GPTBot 等爬虫控制继续有效，并呼吁其他厂商跟进。</p>
+  <div class="meta">10月30日 · OpenAI · <a href="https://openai.com/index/helping-websites-express-ai-training-preferences" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI 社区安全报告与未成年人保护加码</h3>
+  <p>承诺 2027 年初发布首份 Community Safety Report（覆盖 2026 下半年、此后半年一更）；Q3 共向执法部门转介逾 200 例。收紧对既往大规模袭击的复盘细节（武器、获取途径等），并在近期对话有暴力迹象或预测为未成年人时更保守地回答。</p>
+  <div class="meta">10月30日 · OpenAI · <a href="https://openai.com/index/community-safety-report-and-new-protections-for-teens" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI：Pro／Business Premium 的 Work＋Codex 额度翻倍，取消 Pro 200 降额</h3>
+  <p>10-29 起 Pro $100／$200／$500 与 Business Premium 的 ChatGPT Work 与 Codex 共用额度翻倍；原计划对 Pro 200 的削减撤回。聊天消息限额另计。</p>
+  <div class="meta">10月29–30日 · OpenAI Help Center / BleepingComputer · <a href="https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Anthropic：Max 方案更名 Max／Ultra；Claude Code 拒绝复刻特定游戏</h3>
+  <p>Max 5x 改名 Max（$100／月）、Max 20x 改名 Ultra（$200／月），价格不变。另经确认：Opus 5.5 下的 Claude Code 提示新增两句，禁止重建他人特定游戏（改名也不行），原创、类型游戏与用户自有设计不受影响。</p>
+  <div class="meta">10月30日 · Game Developer / The Verge · <a href="https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Google Suncatcher 原型卫星上线：太空 TPU 回传首个回答</h3>
+  <p>Project Suncatcher 原型星完成在轨调试，TPU 托盘上电并跑通早期 AI 测试，下行了一首由 Gemma 4 生成的俳句；下一步测在轨热应力与辐射下的 TPU 表现，2027 年计划双星互联。</p>
+  <div class="meta">10月30日 · Google / TechCrunch · <a href="https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Epoch Capabilities Index：GPT-6 Astra 与 Claude Opus 5.5 同为 169，Astra 列第一</h3>
+  <p>Epoch AI 模型列表中二者 ECI 均为 169、Astra 排名在前；Epoch 提示 ECI 绝对值无独立含义、重在相对比较，且随基准增补会回调。本站主榜仍以 AA Index v5.0 为准。</p>
+  <div class="meta">10月30日 · Epoch AI · <a href="https://epoch.ai/eci" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+<section id="sec-papers">
+  <h2>📄 前沿论文<span class="count">8 篇</span></h2>
+<div class="card">
+  <h3>提前回滚：用「倒带」实现高效可扩展监督<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Efficient Scalable Oversight via Rewinding</span></h3>
+  <div class="paper-authors">Ziyi Guan, Yael Tauman Kalai, Ron Rothblum, Zoe Xi</div>
+  <p>提出可倒带交互式证明 RIP：弱验证者可把 AI 证明者回滚到早先状态再继续交互，从而在不假设「辩论双方必有一方诚实」的前提下降低可扩展监督的计算代价。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40535" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>理解并缓解 LLM 的角色冒充<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Understanding and Mitigating Role Spoofing in LLMs</span></h3>
+  <div class="paper-authors">Ezra Edelman, Benjamin Edelman, Surbhi Goel, Eran Malach</div>
+  <p>工具输出中的恶意文本可借「角色混淆」冒充用户；研究模型如何同时依赖内容（语义、文风）与结构（控制符、格式）判断「谁说了什么」，并展示结构＋内容组合攻击的高成功率及缓解思路。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40396" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>TextSeal2：无失真、兼容投机解码的 LLM 水印<br><span style="font-size:12.5px;font-weight:500;color:#64748b">TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races</span></h3>
+  <div class="paper-authors">Tom Sander, Pierre Fernandez, Itai Gat, et al.</div>
+  <p>把多把密钥合成一把虚拟密钥并经高斯 copula 与新噪声耦合；投机解码下被替换的 token 仍带同一水印、接受率不变，保持多样性且无可测延迟。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40613" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>VeriCUA：把验证当作智能体探索<br><span style="font-size:12.5px;font-weight:500;color:#64748b">VeriCUA: Verification as Agentic Exploration for Computer-Using Agents</span></h3>
+  <div class="paper-authors">Qiushi Sun, Da Yu, Alexander Knop, et al.</div>
+  <p>面向桌面／移动／网页的计算机使用智能体，用平台无关的主动取证流程判断任务是否真正完成，弥补 VLM 裁判与程序检查只看局部状态的缺陷，服务数据筛选、评测与 RL。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40578" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>怎样给 Transformer 加循环：循环扩展、分工与并行推理<br><span style="font-size:12.5px;font-weight:500;color:#64748b">How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference</span></h3>
+  <div class="paper-authors">Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, et al.</div>
+  <p>在至多 1B 参数、155B token 的从零训练中系统比较循环位置与次数：固定参数预算下整模型循环最佳，训练 FLOPs 受限时循环中段层回报更高，循环并非越多越好。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40325" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>代数世界模型：从探索到证明<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Algebraic World Model: From Exploration to Proofs</span></h3>
+  <div class="paper-authors">Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao</div>
+  <p>在未知环境中探索并写出可执行 Python 假设，经范畴论引导化简后在 Lean 4 中形式化，可证明目标可达或不可达（甚至超出已探索轨迹）。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40503" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>不丢线头：让长程智能体自主分配认知资源<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Don&#x27;t Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation</span></h3>
+  <div class="paper-authors">Zheng Zhu, Xiaozhuan Liang, Xi Chen, Bei Yu, Jiaya Jia</div>
+  <p>CORAL 提供可调用的工作记忆工具：智能体为进度与已验证事实打检查点，再重置杂乱上下文从干净状态续推，缓解长任务中的上下文过载。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40350" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>超越精选突破：在随机抽样的数学猜想上评测语言模型<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Beyond Selected Breakthroughs: Evaluating Language Models on Randomly Sampled Mathematical Conjectures</span></h3>
+  <div class="paper-authors">Helen Jenne, Davis Brown, Jesse He, Henry Kvinge</div>
+  <p>构建 OpenConjecture（取自 2026 年 2 月后 arXiv 数学论文的猜想），用前沿 GPT 模型按可复现协议跑 200 个随机样本三轮，分析 LLM 更易给出解答的问题类型与特征，而非只看个别突破。</p>
+  <div class="meta"><a href="https://arxiv.org/abs/2610.40382" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+</section>
+<section id="sec-models">
+  <h2>🤖 模型动态<span class="count">5 条</span></h2>
+<div class="card">
+  <h3>DeepSeek-V4.1-Flash-1017 非思考档入 AA<span class="tag tag-new">DeepSeek</span></h3>
+  <p>AA Changelog 10-30 收录非思考档（Index v5.0 得 19）；本站主榜已于 10-30 晚半点按档位拆开入榜。官方价高峰 $0.30／$1.20／缓存 $0.006（思考／非思考同价）；Search／Fetch API 按次计费自北京时间 11-01 00:00 起。</p>
+  <div class="meta">DeepSeek · <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>Apriel Voice 27B Preview（开源语音＋工具调用）<span class="tag tag-new">ServiceNow</span></h3>
+  <p>基于 Gemma 4 26B-A4B 主干，输入语音、输出文本与工具调用；τ-Voice 65.51、平均延迟 1.91 秒（官方口径）；MIT 许可，参考部署为 4 卡张量并行、最长 262K token。非文本主榜模型。</p>
+  <div class="meta">ServiceNow · <a href="https://huggingface.co/ServiceNow-AI/Apriel-Voice-27B-preview" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>Nemotron 3.5 Transcribe 30B-A4B（开放权重转写）<span class="tag tag-new">NVIDIA</span></h3>
+  <p>10-28 发布，HF 本周热度前列：40 种语言、单段至 1 小时、可选说话人归属与词级时间戳；BF16／FP8／NVFP4，OpenMDW-1.1 许可。语音模型，不入主榜。</p>
+  <div class="meta">NVIDIA · <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>HF 趋势：Nanbeige4.3-33B、LFM3-1.7B、Flint<span class="tag tag-new">Nanbeige / LiquidAI / RecursiveSI</span></h3>
+  <p>Hugging Face 趋势榜前列除 DeepSeek 1017 外，有面向轻量智能体的 Nanbeige4.3-33B、LiquidAI 三混合架构本地小模型 LFM3-1.7B，以及约 40B 总参／2.5B 激活的编码智能体 MoE Flint。均无 AA v5 同口径分，不入主榜。</p>
+  <div class="meta">Nanbeige / LiquidAI / RecursiveSI · <a href="https://huggingface.co/models?sort=trending" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>GPT-6 Astra × Claude Opus 5.5：ECI 并列 169<span class="tag tag-new">OpenAI / Anthropic</span></h3>
+  <p>Epoch Capabilities Index 二者同分、Astra 列第一（第三方综合指数，非本站口径）。</p>
+  <div class="meta">OpenAI / Anthropic · <a href="https://epoch.ai/eci" target="_blank" rel="noopener">详情 ↗</a></div>
+</div>
+</section>
+<section id="sec-ecosystem">
+  <h2>🧩 Agent / Skill 生态<span class="count">5 条</span></h2>
+<div class="card">
+  <h3>Cursor 扩展投毒事件：自查与清除要点</h3>
+  <p>查 ~/.ssh/authorized_keys 是否含 svc-telemetry；macOS 查 LaunchAgent com.apple.sysmond，Windows 查计划任务 SysMon；运行官方 remediate 脚本并从可信设备轮换凭据。攻击端 134.209.82.225 已下线。</p>
+  <div class="meta">Cursor · <a href="https://cursor.com/blog/claude-code-extension-security-notice" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>MCP Servers v2.2.0：CA 证书与 Node 运行时安全版</h3>
+  <p>针对 eMudhra 中间 CA 私钥可被恢复事件，配合 Node.js 10-21 安全版与 certifi 2026.10.23 移除两张根证书；TS 服务器跟随 Node 信任库，Python 服务器看 certifi，升级后需重测 TLS。</p>
+  <div class="meta">MCP Servers · <a href="https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>MCP 规范：SEP-3392 扩展生命周期定稿、SEP-3398 发布周期合入</h3>
+  <p>扩展提案有了正式流程标记（流程类 SEP，无一致性要求）；发布周期调整将影响 SDK 与服务器何时跟进新版本。Ruby SDK 升 Tier 1；企业托管授权文档补 IdP 支持矩阵。</p>
+  <div class="meta">MCP Specification · <a href="https://github.com/modelcontextprotocol/modelcontextprotocol/commit/a1e969d3b3d327ab31f2b41637b76c94b954b329" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>MCP 扩展支持矩阵：Claude Code／Claude.ai 标注 Tasks，MCPJam 支持 Skills</h3>
+  <p>Tasks 扩展新增 Claude Code 与 Claude.ai；MCPJam Inspector 3.17.0 对齐 Skills over MCP（skills/list、skills/get、逐文件大小与摘要校验）；Kiro Crew 可渲染 MCP Apps（暂无 OAuth 客户端凭据／企业托管授权）。</p>
+  <div class="meta">MCP Specification · <a href="https://github.com/modelcontextprotocol/modelcontextprotocol/commit/05456131a785fdac60c575636da8e33bdc80f317" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Anthropic Model Hardware Standard：让智能体安全操作实验仪器</h3>
+  <p>与 HHMI Janelia 共建的研究预览规范，用标准驱动与协议让 AI 智能体操作显微镜、移液工作站、机械臂等；AI for Science 同步扩至 20 家基金会与机构（10-28 公布）。</p>
+  <div class="meta">Anthropic · <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+
+<footer>由总策划 · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+<!-- /digest-ui2:js -->
+
+</body>
+</html>
