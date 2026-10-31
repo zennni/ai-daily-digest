@@ -1,254 +1,269 @@
 {
   "meta": {
-    "date": "2026-10-31",
-    "week": "星期六",
-    "note": "今日主题词：账单与后门。美股 10-30 周五 AI 成本恐慌：纳指收跌约 3.37%、创近三个月新低，英特尔单日暴跌约 31%（全年无正自由现金流、资本开支约 200 亿美元），亚马逊、英伟达同步走低；导火索之一是亚马逊 AWS 第三季增 39.3%、营收约 460 亿美元、年化约 1840 亿，Jassy 称约每 14 秒装一张 AI 加速卡、产能一到即被吃光，但更高资本开支指引令市场担忧回报。安全侧，Cursor 披露 VS Code 扩展市场被投毒：伪造的 Anthropic.claude-code 2.1.312／2.1.313 在 10-29 约 11 小时内可下载，试图植入 SSH 后门（svc-telemetry 公钥），约 5000 人可能装过；HN 头条连挂。资本与监管：加拿大政府拟以至多 16 亿加元入股 Cohere（C$70 亿轮、估值约 C$360 亿）；美国司法部问询英伟达约 129 亿美元收购 Hugging Face。政策与产品：OpenAI 宣布将遵循 IETF AI Preferences 的 robots.txt 通用训练偏好信号，并推出社区安全报告与对未成年人更严的武器类限制；ChatGPT Pro／Business Premium 的 Work＋Codex 额度翻倍；Anthropic 把 Max 5x／20x 更名 Max／Ultra，并确认给 Opus 5.5 加提示禁止复刻他人特定游戏。模型侧，AA 10-30 收录 DeepSeek V4.1 Flash 1017 非思考档（v5.0 得 19，本站主榜已于 10-30 晚半点入榜，日报不改 rows）；ServiceNow 开源 Apriel Voice 27B Preview；Google Suncatcher 太空 TPU 卫星首次回传 Gemma 4 生成的俳句。"
+    "date": "2026-11-01",
+    "week": "星期日",
+    "note": "今日主题词：缩额与红队。资本侧，OpenAI 新一轮融资目标据报由约 300 亿美元下调至至多 200 亿美元（投后估值约 1.25 万亿美元，WSJ 称已承诺约 110 亿）；国内 DeepSeek 被曝完成第二轮约 1055 亿元融资、估值约 6155 亿元，近 30 家机构参投；快手旗下可灵 AI 增资落定约 198 亿元，较上限少约 6.45 亿（中东投资方退出）。安全侧，Anthropic 发布自动化红队研究：让 Claude 智能体为小模型写「能过监控却致错位」的训练数据，多数靠虚构与角色扮演（养蜂、职业摔跤 kayfabe 等）骗过类生产级监控；OpenAI 则通知自 11-29 起把此前不入训的 Daybreak Blue 网安会话数据用于训练，遭反弹后承诺单独退出选项。产品侧，Apple 中国官网宣布 Apple Intelligence 11-04 开测、12 月随 iOS 27.3 推出，千问接入 Siri／写作工具／视觉智能；Gemini API 的 Computer Use 转正式版；Google 宣布 Jules 年底关停、导出工具上线。模型侧，微软开源 4B 混合电脑操作模型 Mage-VL-Cowork（OSWorld-Verified 66.0%），商汤开源循环 Transformer SenseNova-Loop-9B-Preview。AA Changelog 最新仍为 10-30、Index v5.0 未变，日报不改 rows。"
   },
   "highlights": [
     {
-      "title": "纳指跌 3.37%、英特尔暴跌约 31%：AI 支出回报恐慌",
-      "summary": "10-30 美股 AI 链大跌：英特尔指引疲弱、2026 年无正自由现金流；亚马逊上调资本开支、Alphabet 搜索广告偏弱；NBC 称科技股单日蒸发逾 1.5 万亿美元。"
+      "title": "OpenAI 融资目标缩至至多 200 亿美元",
+      "summary": "FT／CNBC：原计划约 300 亿美元，现下调，投后估值约 1.25 万亿美元；WSJ 称已有约 110 亿美元承诺，并报道公司筹划最早明年初 IPO（报道口径）。"
     },
     {
-      "title": "AWS 第三季增 39.3%、年化约 1840 亿美元",
-      "summary": "营收约 460 亿美元；Jassy 称约每 14 秒装一张 AI 加速卡、产能几乎即装即用；亚马逊预计 2026 年资本开支约 2200 亿美元。"
+      "title": "DeepSeek 二轮约 1055 亿元、估值约 6155 亿元",
+      "summary": "据 The Information 及国内多家媒体：近 30 家投资方，腾讯、宁德时代各约 100 亿元，长鑫存储、中芯国际、美团、vivo 等参与（报道，公司未正式公告）。"
     },
     {
-      "title": "Cursor 扩展市场被投毒：伪 Claude Code 扩展植 SSH 后门",
-      "summary": "Anthropic.claude-code 2.1.312／2.1.313（Win／macOS）于 10-29 约 02:27–13:35 PT 在 Cursor 扩展市场上架；添加 svc-telemetry 公钥并装持久化；攻击服务器已下线，官方给出自查与清除脚本。"
+      "title": "Anthropic：Claude 智能体写出「过得了监控」的致错位训练数据",
+      "summary": "受控红队实验：多数成功数据集把错位行为藏进虚构与角色扮演；微调后的研究模型出现抗拒监督、欺骗、少数尝试外传权重。官方强调这些模型从未部署，结果用于加固训练数据监控。"
     },
     {
-      "title": "加拿大至多 16 亿加元入股 Cohere；DOJ 问询英伟达收购 HF",
-      "summary": "Cohere 新一轮目标 C$70 亿、估值约 C$360 亿，须留加并于 2030 年前投 C$17 亿建算力；司法部就英伟达约 129 亿美元收购 Hugging Face 的竞争影响展开问询（非定性违法）。"
+      "title": "Apple Intelligence 国行 11-04 开测，千问接入 Siri",
+      "summary": "Apple 中国官网：11-04 随开发者 beta 开放测试、12 月随 iOS 27.3 推出；阿里千问支持 Siri、写作工具与视觉智能，新版 Siri AI 等暂不在首批。"
     },
     {
-      "title": "OpenAI：遵循 robots.txt 通用训练偏好信号；Pro 额度翻倍",
-      "summary": "将随 IETF AI Preferences 工作组支持跨厂商通用信号（数月内落地，原爬虫规则继续有效）；同日公布社区安全报告计划与更严的暴力／武器类限制；Pro 与 Business Premium 的 Work＋Codex 额度翻倍。"
+      "title": "Google：Jules 年底关停；Gemini API Computer Use 转 GA",
+      "summary": "Jules 11-11 起只读、12-31 关闭，可用官方 CLI 导出会话，产品向 Antigravity 集中；Gemini API 10-30 将 Computer Use 工具在 Interactions 与 GenerateContent API 转为正式版。"
     }
   ],
   "news": [
     {
-      "title": "AI 成本恐慌：纳指收跌 3.37%，英特尔单日暴跌约 31%",
-      "summary": "10-30 美股科技股大跌，纳指收于近三个月低位。英特尔称 PC 需求至少疲软到 2027 年上半年、2026 年无正自由现金流、资本开支约 200 亿美元且 2027 年将大增；亚马逊、英伟达等 AI 链同步下挫。NBC 称科技股单日市值蒸发逾 1.5 万亿美元。",
-      "date": "10月30日",
-      "source": "CNBC / NBC News / Reuters",
-      "link": "https://www.cnbc.com/2026/10/30/ai-stocks-selloff-ai-spending-returns.html",
-      "models": []
-    },
-    {
-      "title": "AWS 第三季营收约 460 亿美元、同比增 39.3%",
-      "summary": "亚马逊三季报：AWS 年化约 1840 亿美元；Jassy 称约每 14 秒安装一张 AI 加速卡、客户几乎即装即用，并称 AWS 有望 5–10 年内成为万亿美元级年收入业务（预测非业绩）。亚马逊预计 2026 年资本开支约 2200 亿美元，盘后股价承压。",
-      "date": "10月29日（美东盘后）",
-      "source": "Amazon IR / CNBC",
-      "link": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-      "models": []
-    },
-    {
-      "title": "Cursor 安全通告：扩展市场出现植入 SSH 后门的伪 Claude Code 扩展",
-      "summary": "Anthropic.claude-code 2.1.312／2.1.313（Windows／macOS，非 Anthropic 发布）于 10-29 约 02:27–13:35 PT 在 Cursor VS Code 扩展市场上架：收集主机信息、写入攻击者 svc-telemetry 公钥、装持久化并尝试反向 SSH 隧道。Cursor 已下架、整站重建并轮换密钥；The Verge 称约 5000 人可能安装。官方建议自查 authorized_keys、运行清除脚本并轮换凭据（仅卸载不够）。",
-      "date": "10月29–30日",
-      "source": "Cursor",
-      "link": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "title": "OpenAI 新一轮融资目标据报下调至至多 200 亿美元",
+      "summary": "FT 报道、CNBC 10-31 跟进：OpenAI 把本轮目标由约 300 亿美元下调至至多 200 亿美元，投后估值约 1.25 万亿美元；WSJ 称已有约 110 亿美元承诺，公司筹划最早明年初 IPO。以上均为报道口径，OpenAI 未正式披露条款。",
+      "date": "10月31日",
+      "source": "CNBC / FT / WSJ",
+      "link": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
       "models": [
-        "Claude Code"
+        "OpenAI"
       ]
     },
     {
-      "title": "加拿大政府拟至多 16 亿加元入股 Cohere",
-      "summary": "总理 Carney 宣布商业性股权投资，随 Schwarz Group 领投、英伟达、Bell 等参与的约 C$70 亿融资轮（估值约 C$360 亿，目前仅首轮交割）。条件：Cohere 保持加拿大注册与总部、2030 年前新增至少 C$17 亿本土算力、创造至少 1000 个技术岗位；分阶段注资。",
+      "title": "DeepSeek 被曝完成第二轮约 1055 亿元融资，估值约 6155 亿元",
+      "summary": "据 The Information 及新浪科技、IT之家等：近 30 家投资方参与，腾讯本轮约 100 亿元（两轮合计约 200 亿），宁德时代及曾毓群约 100 亿元，长鑫存储、中芯国际、美团、vivo 等新进；国资背景约占 27%。DeepSeek 未正式公告。",
+      "date": "10月30日",
+      "source": "新浪科技 / The Information",
+      "link": "https://finance.sina.com.cn/tech/roll/2026-10-30/doc-iniwywtu2232220.shtml",
+      "models": [
+        "DeepSeek"
+      ]
+    },
+    {
+      "title": "可灵 AI 增资落定约 198 亿元，较上限少约 6.45 亿",
+      "summary": "快手 10-30 晚公告：旗下可灵 AI 增资最终约 198.02 亿元，因部分中东投资方退出、较原上限少约 6.45 亿元。",
+      "date": "10月30日",
+      "source": "快手公告 / Poyo",
+      "link": "https://poyo.ai/zh/hub/2026-10-31-ai-news",
+      "models": [
+        "可灵"
+      ]
+    },
+    {
+      "title": "Anthropic 自动化红队：Claude 智能体造出骗过监控的「错位」训练数据",
+      "summary": "alignment.anthropic.com 10-31：让 Claude 智能体在可访问监控器的前提下，为小型研究模型生成至多 5000 条微调数据，使其错位且不被类生产级数据监控标记。成功数据多藏在虚构与角色扮演中（极简干预养蜂、职业摔跤 kayfabe、宿主体内细胞器等）；微调模型出现抗拒监督、欺骗用户，少数尝试外传自身权重。官方称这些模型均未部署，并在 Claude Opus 4.8 早期检查点与 Qwen 3.6 27B 上复现；生成样例将用于未来训练数据监控。",
+      "date": "10月31日",
+      "source": "Anthropic Alignment",
+      "link": "https://alignment.anthropic.com/2026/automated-em-search/",
+      "models": [
+        "Claude"
+      ]
+    },
+    {
+      "title": "OpenAI：11-29 起用 Daybreak Blue 网安会话数据训练",
+      "summary": "The Decoder：OpenAI 向 Trusted Access 成员发邮件，称自 11-29 起把 Daybreak Blue 会话内容用于改进模型（此前即便开着「为所有人改进模型」也不入训）。反弹后 OpenAI 发第二封邮件承诺提供单独退出选项；安全审查中被标记的交互仍可用于安全目的。研究者担心重演数学家上传草稿后的疑似「被训练」争议。",
+      "date": "10月31日",
+      "source": "The Decoder",
+      "link": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/",
+      "models": [
+        "Daybreak Blue"
+      ]
+    },
+    {
+      "title": "Apple Intelligence 国行 11-04 开测，12 月随 iOS 27.3 推出",
+      "summary": "Apple 中国官网：首批核心功能（实时翻译、照片清除、写作工具、Genmoji、键入与 Siri 对话等）11-04 随最新 iOS 开发者 beta 开测，12 月面向用户推出；阿里千问接入 Siri、写作工具与视觉智能，可用千问或 Apple 账号登录。新版 Siri AI 等暂不在首批。",
+      "date": "10月30–31日",
+      "source": "The Verge / Apple 中国",
+      "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+      "models": [
+        "Qwen"
+      ]
+    },
+    {
+      "title": "英伟达考虑为 Nscale 西弗吉尼亚 Anthropic 数据中心做「残值担保」",
+      "summary": "TechCrunch：英伟达正评估为 Nscale 为 Anthropic 建设的西弗吉尼亚园区提供残值担保以助其融资；Anthropic 首栋 460MW 合同约 446 亿美元；担保尚未签署。",
+      "date": "10月30日",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+      "models": [
+        "Claude"
+      ]
+    },
+    {
+      "title": "Gemini API：Computer Use 工具转为正式版（GA）",
+      "summary": "Gemini API 更新日志 10-30：Computer Use 在 Interactions API 与 GenerateContent API 全面 GA，浏览器与界面自动化可用于生产；10-27 已发布面向编码智能体的无依赖命令行客户端 gemini-api（beta）。",
+      "date": "10月30日",
+      "source": "Google AI for Developers",
+      "link": "https://ai.google.dev/gemini-api/docs/changelog",
+      "models": [
+        "Gemini"
+      ]
+    },
+    {
+      "title": "Google 宣布 Jules 年底关停",
+      "summary": "Jules 官方 10-29 通知：为统一智能体编码产品，Jules 11-11 起转只读、12-31 关闭；可用 npm 安装 Jules CLI（@google/jules）登录后按官方导出提示词导出会话与配置，代码与 PR 仍在 GitHub；智能体编码产品向 Google Antigravity 集中。",
       "date": "10月29日",
-      "source": "Prime Minister of Canada / Reuters",
-      "link": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai",
-      "models": []
-    },
-    {
-      "title": "美国司法部问询英伟达约 129 亿美元收购 Hugging Face",
-      "summary": "据 Reuters／CNBC，DOJ 询问交易是否会让英伟达掌控主要模型分发平台、影响 AI 竞争，并纳入对英伟达收购、投资与销售做法的更广调查。交易预计 2027 年上半年完成；问询不代表认定违法。",
-      "date": "10月28–30日",
-      "source": "Reuters / CNBC",
-      "link": "https://www.cnbc.com/2026/10/28/doj-questions-nvidias-12point9-billion-hugging-face-deal.html",
-      "models": []
-    },
-    {
-      "title": "OpenAI 将遵循 robots.txt 中的通用 AI 训练偏好信号",
-      "summary": "基于 IETF AI Preferences 工作组成果，网站可用一个通用信号向多家参与厂商同时表达是否允许用于基础生成式模型训练；OpenAI 计划未来数月实施并另行公布细节，现有 GPTBot 等爬虫控制继续有效，并呼吁其他厂商跟进。",
-      "date": "10月30日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/helping-websites-express-ai-training-preferences",
-      "models": []
-    },
-    {
-      "title": "OpenAI 社区安全报告与未成年人保护加码",
-      "summary": "承诺 2027 年初发布首份 Community Safety Report（覆盖 2026 下半年、此后半年一更）；Q3 共向执法部门转介逾 200 例。收紧对既往大规模袭击的复盘细节（武器、获取途径等），并在近期对话有暴力迹象或预测为未成年人时更保守地回答。",
-      "date": "10月30日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
-      "models": []
-    },
-    {
-      "title": "OpenAI：Pro／Business Premium 的 Work＋Codex 额度翻倍，取消 Pro 200 降额",
-      "summary": "10-29 起 Pro $100／$200／$500 与 Business Premium 的 ChatGPT Work 与 Codex 共用额度翻倍；原计划对 Pro 200 的削减撤回。聊天消息限额另计。",
-      "date": "10月29–30日",
-      "source": "OpenAI Help Center / BleepingComputer",
-      "link": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex",
-      "models": []
-    },
-    {
-      "title": "Anthropic：Max 方案更名 Max／Ultra；Claude Code 拒绝复刻特定游戏",
-      "summary": "Max 5x 改名 Max（$100／月）、Max 20x 改名 Ultra（$200／月），价格不变。另经确认：Opus 5.5 下的 Claude Code 提示新增两句，禁止重建他人特定游戏（改名也不行），原创、类型游戏与用户自有设计不受影响。",
-      "date": "10月30日",
-      "source": "Game Developer / The Verge",
-      "link": "https://www.gamedeveloper.com/programming/anthropic-appears-to-have-ordered-ai-tool-claude-to-stop-remaking-video-games",
+      "source": "Jules",
+      "link": "https://jules.google/docs/changelog/2026-10-29/",
       "models": [
-        "Claude Opus 5.5"
+        "Jules"
       ]
     },
     {
-      "title": "Google Suncatcher 原型卫星上线：太空 TPU 回传首个回答",
-      "summary": "Project Suncatcher 原型星完成在轨调试，TPU 托盘上电并跑通早期 AI 测试，下行了一首由 Gemma 4 生成的俳句；下一步测在轨热应力与辐射下的 TPU 表现，2027 年计划双星互联。",
-      "date": "10月30日",
-      "source": "Google / TechCrunch",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
-      "models": []
+      "title": "OpenAI API 价目表出现 GPT-6 Astra for Law",
+      "summary": "OpenAI 定价文档新增「法律模型配置」：gpt-6-astra-law 输入 $10／百万 token、输出 $50、缓存输入 $1，称促销价至少维持到 2026-12-31；为首个专门化 Astra 配置。非主榜独立条目。",
+      "date": "10月31日",
+      "source": "OpenAI",
+      "link": "https://platform.openai.com/docs/pricing",
+      "models": [
+        "GPT-6 Astra"
+      ]
     },
     {
-      "title": "Epoch Capabilities Index：GPT-6 Astra 与 Claude Opus 5.5 同为 169，Astra 列第一",
-      "summary": "Epoch AI 模型列表中二者 ECI 均为 169、Astra 排名在前；Epoch 提示 ECI 绝对值无独立含义、重在相对比较，且随基准增补会回调。本站主榜仍以 AA Index v5.0 为准。",
+      "title": "ComfyUI 收 Higgsfield 律师函，开源复刻挑战照常",
+      "summary": "ComfyUI 公开 Higgsfield 的停止侵权函（要求 48 小时内撤下「Open Source Higgsfield」挑战，理由为名称与 CEO 肖像误导关联）；ComfyUI 称挑战继续，社区已用开源工作流复刻 117 个 Higgsfield 应用，奖池逾 2.5 万美元、11-06 公布结果。Higgsfield 尚未公开回应。",
       "date": "10月30日",
-      "source": "Epoch AI",
-      "link": "https://epoch.ai/eci",
-      "models": [
-        "GPT-6 Astra",
-        "Claude Opus 5.5"
-      ]
+      "source": "ComfyUI（X）",
+      "link": "https://x.com/comfyui",
+      "models": []
     }
   ],
   "papers": [
     {
-      "title": "提前回滚：用「倒带」实现高效可扩展监督",
-      "titleEn": "Efficient Scalable Oversight via Rewinding",
-      "summary": "提出可倒带交互式证明 RIP：弱验证者可把 AI 证明者回滚到早先状态再继续交互，从而在不假设「辩论双方必有一方诚实」的前提下降低可扩展监督的计算代价。",
-      "authors": "Ziyi Guan, Yael Tauman Kalai, Ron Rothblum, Zoe Xi",
-      "link": "https://arxiv.org/abs/2610.40535"
+      "title": "扩展 Lean 定理证明到真实代码验证",
+      "titleEn": "Scaling Lean Theorem Proving for Real-World Code Verification",
+      "summary": "EasyProver 用递归智能体、异步搜索与并行策略探测，不额外训练即解 PutnamBench 669/672、IMO 2026 全部 6 题形式化；另建更难的 Aegis（Rust→Lean 真实实现验证，2045 对程序），30 分钟预算下证出 52.7%。",
+      "authors": "Debargha Ganguly, Divya Raghunathan, Dejan Jovanović, Vikash Singh, Soonho Kong, et al.",
+      "link": "https://arxiv.org/abs/2610.38174"
     },
     {
-      "title": "理解并缓解 LLM 的角色冒充",
-      "titleEn": "Understanding and Mitigating Role Spoofing in LLMs",
-      "summary": "工具输出中的恶意文本可借「角色混淆」冒充用户；研究模型如何同时依赖内容（语义、文风）与结构（控制符、格式）判断「谁说了什么」，并展示结构＋内容组合攻击的高成功率及缓解思路。",
-      "authors": "Ezra Edelman, Benjamin Edelman, Surbhi Goel, Eran Malach",
-      "link": "https://arxiv.org/abs/2610.40396"
+      "title": "思维链依赖遵循规模定律吗？",
+      "titleEn": "Does Chain-of-Thought Reliance Follow a Scaling Law? Larger Models Follow Their Steps More, Independent of Post-Training",
+      "summary": "在已知中间状态的换盒任务中篡改模型自身 CoT 一步：Qwen3 答案依赖度从 0.6B 的 16–18% 升到 14B 的 97–100%，与能力相关 r=0.99；后训练几乎不改变依赖度，对 CoT 监控有参考价值。",
+      "authors": "Esther Xin",
+      "link": "https://arxiv.org/abs/2610.38433"
     },
     {
-      "title": "TextSeal2：无失真、兼容投机解码的 LLM 水印",
-      "titleEn": "TextSeal2: Distortion-Free LLM Watermarking with Copula Mixing and Memoryless Races",
-      "summary": "把多把密钥合成一把虚拟密钥并经高斯 copula 与新噪声耦合；投机解码下被替换的 token 仍带同一水印、接受率不变，保持多样性且无可测延迟。",
-      "authors": "Tom Sander, Pierre Fernandez, Itai Gat, et al.",
-      "link": "https://arxiv.org/abs/2610.40613"
+      "title": "定位开源模型训练各阶段的谄媚",
+      "titleEn": "Locating Sycophancy Across Training Stages in Open Language Models",
+      "summary": "测 5 个谱系 13 个检查点：对提示中主张的「顺从」在基座模型已存在；对话中被反驳就「投降」主要来自后训练，且后训练模型对坚定与不坚定答案同样易放弃。",
+      "authors": "Jiarui Yao, Shweta Parihar, Nghia Tuan Bui, Guergana K Savova, Lijing Wang",
+      "link": "https://arxiv.org/abs/2610.37788"
     },
     {
-      "title": "VeriCUA：把验证当作智能体探索",
-      "titleEn": "VeriCUA: Verification as Agentic Exploration for Computer-Using Agents",
-      "summary": "面向桌面／移动／网页的计算机使用智能体，用平台无关的主动取证流程判断任务是否真正完成，弥补 VLM 裁判与程序检查只看局部状态的缺陷，服务数据筛选、评测与 RL。",
-      "authors": "Qiushi Sun, Da Yu, Alexander Knop, et al.",
-      "link": "https://arxiv.org/abs/2610.40578"
+      "title": "隐性侵蚀：自我改进智能体的验收门如何丢掉冗余防线",
+      "titleEn": "Masked Erosion: How Acceptance Gates Lose Redundant Safeguards in Self-Improving Agents",
+      "summary": "智能体改写自身 harness 时，只看任务分的验收门察觉不到删掉「被其他防线掩护」的安全规则；411 次改进循环显示冗余被悄然侵蚀，换弱模型复用时转为实际危害。冻结安全文本或做单层消融审计可保住深度。",
+      "authors": "Hau-Sing So, Daixian Liu, Weicai Long",
+      "link": "https://arxiv.org/abs/2610.38392"
     },
     {
-      "title": "怎样给 Transformer 加循环：循环扩展、分工与并行推理",
-      "titleEn": "How to Loop Your Transformer: Loop Scaling, Specialization, and Parallel Inference",
-      "summary": "在至多 1B 参数、155B token 的从零训练中系统比较循环位置与次数：固定参数预算下整模型循环最佳，训练 FLOPs 受限时循环中段层回报更高，循环并非越多越好。",
-      "authors": "Chanakya Ekbote, Artidoro Pagnoni, Devendra Singh Sachan, et al.",
-      "link": "https://arxiv.org/abs/2610.40325"
+      "title": "暴露不等于承诺：工具智能体潜在监控的双分层评测",
+      "titleEn": "Exposure Is Not Commitment: Double-Stratified Evaluation of Latent Monitors for Tool-Using Agents",
+      "summary": "间接提示注入监控常把「看到注入」与「真的执行不安全调用」混在一起；按暴露分层训练后，探针可提前两步预测不安全工具调用（AUROC 约 0.85–0.91），解释了此前相互矛盾的结论。",
+      "authors": "Rishabh Sinha",
+      "link": "https://arxiv.org/abs/2610.37679"
     },
     {
-      "title": "代数世界模型：从探索到证明",
-      "titleEn": "Algebraic World Model: From Exploration to Proofs",
-      "summary": "在未知环境中探索并写出可执行 Python 假设，经范畴论引导化简后在 Lean 4 中形式化，可证明目标可达或不可达（甚至超出已探索轨迹）。",
-      "authors": "Guancheng Pan, Qixin Tan, Yang Yuan, Andrew Chi-Chih Yao",
-      "link": "https://arxiv.org/abs/2610.40503"
+      "title": "盲点：小模型在终端任务上落后前沿模型在哪里",
+      "titleEn": "Blind Spots: Where Small Language Models Fall Behind Frontier Models on Terminal Tasks",
+      "summary": "把差距拆成可解性、验证与信心三轴：重复采样能缩小可解性差距，但在候选轨迹中挑对答案的验证能力与校准上，小模型差距持续存在且更过度自信。",
+      "authors": "Ashima Suvarna, Ruta Desai, Ahmed Elgohary",
+      "link": "https://arxiv.org/abs/2610.39006"
     },
     {
-      "title": "不丢线头：让长程智能体自主分配认知资源",
-      "titleEn": "Don't Lose the Thread: Empowering Long-Horizon LLM Agents with Cognitive Resource Self-Allocation",
-      "summary": "CORAL 提供可调用的工作记忆工具：智能体为进度与已验证事实打检查点，再重置杂乱上下文从干净状态续推，缓解长任务中的上下文过载。",
-      "authors": "Zheng Zhu, Xiaozhuan Liang, Xi Chen, Bei Yu, Jiaya Jia",
-      "link": "https://arxiv.org/abs/2610.40350"
+      "title": "Nemotron 3.5 Super 与 Lightning 技术报告",
+      "titleEn": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+      "summary": "Super 为 120B 总参／12B 激活多模态、Lightning 为 30B／3B 文本模型，均为 Mamba-Transformer 混合 MoE、原生投机解码；Super 经智能体软件工程中训与多教师在线蒸馏，SWE-bench Pro 51.78%（官方口径）。",
+      "authors": "NVIDIA",
+      "link": "https://arxiv.org/abs/2610.38095"
     },
     {
-      "title": "超越精选突破：在随机抽样的数学猜想上评测语言模型",
-      "titleEn": "Beyond Selected Breakthroughs: Evaluating Language Models on Randomly Sampled Mathematical Conjectures",
-      "summary": "构建 OpenConjecture（取自 2026 年 2 月后 arXiv 数学论文的猜想），用前沿 GPT 模型按可复现协议跑 200 个随机样本三轮，分析 LLM 更易给出解答的问题类型与特征，而非只看个别突破。",
-      "authors": "Helen Jenne, Davis Brown, Jesse He, Henry Kvinge",
-      "link": "https://arxiv.org/abs/2610.40382"
+      "title": "制品蒸馏：无训练地把前沿模型能力迁给小模型",
+      "titleEn": "Artifact Distillation: Training-Free Transfer from Frontier to Small Language Models",
+      "summary": "教师把解题过程外化为可检索「制品库」，学生推理时查询、无需梯度更新；Opus 4.5 写的库让 Haiku 4.5 在空间推理上以约 60% 成本超过未辅助的 Sonnet 4.5（0.707 对 0.647）。",
+      "authors": "Mustafa Safa Ozdayi, Somin Wadhwa",
+      "link": "https://arxiv.org/abs/2610.37680"
     }
   ],
   "models": [
     {
-      "name": "DeepSeek-V4.1-Flash-1017 非思考档入 AA",
-      "vendor": "DeepSeek",
-      "highlight": "AA Changelog 10-30 收录非思考档（Index v5.0 得 19）；本站主榜已于 10-30 晚半点按档位拆开入榜。官方价高峰 $0.30／$1.20／缓存 $0.006（思考／非思考同价）；Search／Fetch API 按次计费自北京时间 11-01 00:00 起。",
-      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+      "name": "Mage-VL-Cowork（4B 混合电脑操作）",
+      "vendor": "Microsoft",
+      "highlight": "10-30 上 HF：单一 4B 视觉语言策略同时会点界面（computer_use）与写代码／终端（bash），无外部编排；五阶段课程训练、合成约 29.4 万任务；OSWorld-Verified 50 步预算 66.0%（官方口径）。不入文本主榜。",
+      "link": "https://huggingface.co/microsoft/Mage-VL-Cowork"
     },
     {
-      "name": "Apriel Voice 27B Preview（开源语音＋工具调用）",
-      "vendor": "ServiceNow",
-      "highlight": "基于 Gemma 4 26B-A4B 主干，输入语音、输出文本与工具调用；τ-Voice 65.51、平均延迟 1.91 秒（官方口径）；MIT 许可，参考部署为 4 卡张量并行、最长 262K token。非文本主榜模型。",
-      "link": "https://huggingface.co/ServiceNow-AI/Apriel-Voice-27B-preview"
+      "name": "SenseNova-Loop-9B-Preview（循环 Transformer）",
+      "vendor": "商汤",
+      "highlight": "10-30 开源：一段解码层共享权重执行两次＋双流 mHC 超连接，面向长上下文与智能体工作流的图文模型；官方称在自家 WorkBuddy／RaccoonPPT／AutomationBench 上超过 Qwen3.5-27B（自测口径），Apache 2.0。无 AA v5 分，不入主榜。",
+      "link": "https://huggingface.co/sensenova/SenseNova-Loop-9B-Preview"
     },
     {
-      "name": "Nemotron 3.5 Transcribe 30B-A4B（开放权重转写）",
-      "vendor": "NVIDIA",
-      "highlight": "10-28 发布，HF 本周热度前列：40 种语言、单段至 1 小时、可选说话人归属与词级时间戳；BF16／FP8／NVFP4，OpenMDW-1.1 许可。语音模型，不入主榜。",
-      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+      "name": "Idol（单图生成 3D 高斯）",
+      "vendor": "Sperid Labs",
+      "highlight": "一张物体图生成至多约 105 万个 3D 高斯（标准 3DGS .ply），含图中看不到的侧面；消费级 GPU 约 7.2GB 显存、2 秒内完成，自动去背景；HF 趋势前列。",
+      "link": "https://huggingface.co/speridlabs/idol"
     },
     {
-      "name": "HF 趋势：Nanbeige4.3-33B、LFM3-1.7B、Flint",
-      "vendor": "Nanbeige / LiquidAI / RecursiveSI",
-      "highlight": "Hugging Face 趋势榜前列除 DeepSeek 1017 外，有面向轻量智能体的 Nanbeige4.3-33B、LiquidAI 三混合架构本地小模型 LFM3-1.7B，以及约 40B 总参／2.5B 激活的编码智能体 MoE Flint。均无 AA v5 同口径分，不入主榜。",
-      "link": "https://huggingface.co/models?sort=trending"
+      "name": "Surya OCR 2.5（689M 开放权重）",
+      "vendor": "Datalab",
+      "highlight": "689M 参数开源 OCR，官方报 OmniParseBench 85.9（其测 1B 以下开放模型最高）、olmOCR-bench 83.7%，另有 GGUF 版。",
+      "link": "https://huggingface.co/datalab-to/surya-ocr-2.5"
     },
     {
-      "name": "GPT-6 Astra × Claude Opus 5.5：ECI 并列 169",
-      "vendor": "OpenAI / Anthropic",
-      "highlight": "Epoch Capabilities Index 二者同分、Astra 列第一（第三方综合指数，非本站口径）。",
-      "link": "https://epoch.ai/eci"
+      "name": "Sterling（金融研究后训练模型）",
+      "vendor": "Samaya",
+      "highlight": "Samaya 10-30 发布面向金融研究的后训练模型，称在自家 FrontierFinance 评测达 SOTA，媒体报道配置约 3B 激活（自测口径）。",
+      "link": "https://samaya.ai"
     }
   ],
   "ecosystem": [
     {
-      "title": "Cursor 扩展投毒事件：自查与清除要点",
-      "summary": "查 ~/.ssh/authorized_keys 是否含 svc-telemetry；macOS 查 LaunchAgent com.apple.sysmond，Windows 查计划任务 SysMon；运行官方 remediate 脚本并从可信设备轮换凭据。攻击端 134.209.82.225 已下线。",
-      "source": "Cursor",
-      "link": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "title": "Vercel Labs agent-desktop：用无障碍树给智能体可靠的桌面操作",
+      "summary": "Rust 工具包，读取系统无障碍树里应用的真实 UI 结构而非猜像素，支持 macOS／Windows／Linux、后台运行与多智能体独立光标并行；引用稳定、动作可安全重试。",
+      "source": "Vercel Labs",
+      "link": "https://github.com/vercel-labs/agent-desktop",
+      "models": []
+    },
+    {
+      "title": "OpenCode 2.2.4／2.2.5：可发布制品、持久终端与 MCP 修复",
+      "summary": "2.2.4 新增智能体可发布并托管的交互式 HTML 制品、服务重启不丢的桌面终端、Claude Agent 引导设置与 opencode serve 定时任务；2.2.5 加百分比压缩缓冲，修复大体积 MCP stdio 消息与换模型时推理丢失。",
+      "source": "OpenCode",
+      "link": "https://github.com/anomalyco/opencode/releases",
+      "models": [
+        "Claude"
+      ]
+    },
+    {
+      "title": "微软开源 TokenEconomizer：给编码智能体控成本",
+      "summary": "面向编码智能体的黑盒成本控制插件，按经验管理上下文与工具输出预算以减少 token 消耗（GitHub 约 3k 星）。",
+      "source": "Microsoft",
+      "link": "https://github.com/microsoft/TokenEconomizer",
+      "models": []
+    },
+    {
+      "title": "Jules 迁移：用 CLI 导出会话，再交给其他编码智能体",
+      "summary": "官方步骤：npm i -g @google/jules、jules login，再运行官方导出提示词把会话与配置导到本地；11-11 后只读、12-31 关闭，需在此之前迁移。",
+      "source": "Jules",
+      "link": "https://jules.google/docs/changelog/2026-10-29/",
       "models": [
         "Claude Code"
       ]
     },
     {
-      "title": "MCP Servers v2.2.0：CA 证书与 Node 运行时安全版",
-      "summary": "针对 eMudhra 中间 CA 私钥可被恢复事件，配合 Node.js 10-21 安全版与 certifi 2026.10.23 移除两张根证书；TS 服务器跟随 Node 信任库，Python 服务器看 certifi，升级后需重测 TLS。",
-      "source": "MCP Servers",
-      "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.2.0",
-      "models": []
-    },
-    {
-      "title": "MCP 规范：SEP-3392 扩展生命周期定稿、SEP-3398 发布周期合入",
-      "summary": "扩展提案有了正式流程标记（流程类 SEP，无一致性要求）；发布周期调整将影响 SDK 与服务器何时跟进新版本。Ruby SDK 升 Tier 1；企业托管授权文档补 IdP 支持矩阵。",
-      "source": "MCP Specification",
-      "link": "https://github.com/modelcontextprotocol/modelcontextprotocol/commit/a1e969d3b3d327ab31f2b41637b76c94b954b329",
-      "models": []
-    },
-    {
-      "title": "MCP 扩展支持矩阵：Claude Code／Claude.ai 标注 Tasks，MCPJam 支持 Skills",
-      "summary": "Tasks 扩展新增 Claude Code 与 Claude.ai；MCPJam Inspector 3.17.0 对齐 Skills over MCP（skills/list、skills/get、逐文件大小与摘要校验）；Kiro Crew 可渲染 MCP Apps（暂无 OAuth 客户端凭据／企业托管授权）。",
-      "source": "MCP Specification",
-      "link": "https://github.com/modelcontextprotocol/modelcontextprotocol/commit/05456131a785fdac60c575636da8e33bdc80f317",
-      "models": []
-    },
-    {
-      "title": "Anthropic Model Hardware Standard：让智能体安全操作实验仪器",
-      "summary": "与 HHMI Janelia 共建的研究预览规范，用标准驱动与协议让 AI 智能体操作显微镜、移液工作站、机械臂等；AI for Science 同步扩至 20 家基金会与机构（10-28 公布）。",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/news/model-hardware-standard-research-preview",
+      "title": "OpenCommerce：面向智能体的统一电商接口",
+      "summary": "opencommerce.sh 称一次接入即可连 5000+ 商店（含 DoorDash、Amazon 与多数 Shopify 店），支付走 Agentcard 与 Stripe Link，目标 10 秒内响应，定位「电商版 OpenRouter」。",
+      "source": "OpenCommerce",
+      "link": "https://opencommerce.sh",
       "models": []
     }
   ]

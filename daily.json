@@ -1,5 +1,22 @@
 [
  {
+  "d": "2026-11-01",
+  "w": "星期日",
+  "pts": [
+   "OpenAI 融资目标缩至至多 200 亿美元",
+   "DeepSeek 二轮约 1055 亿元、估值约 6155 亿元",
+   "Anthropic：Claude 智能体写出骗过监控的错位训练数据",
+   "Apple Intelligence 国行 11-04 开测，千问接入 Siri"
+  ],
+  "link": "AI日报-2026-11-01.html",
+  "m": [
+   "Mage-VL-Cowork",
+   "SenseNova-Loop-9B-Preview",
+   "Claude"
+  ],
+  "bf": false
+ },
+ {
   "d": "2026-10-31",
   "w": "星期六",
   "pts": [

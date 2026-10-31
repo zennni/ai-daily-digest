@@ -1,5 +1,113 @@
 [
   {
+    "t": "OpenAI 新一轮融资目标据报下调至至多 200 亿美元",
+    "s": "FT 报道、CNBC 10-31 跟进：OpenAI 把本轮目标由约 300 亿美元下调至至多 200 亿美元，投后估值约 1.25 万亿美元；WSJ 称已有约 110 亿美元承诺，公司筹划最早明年初 IPO。以上均为报道口径，OpenAI 未正式披露条款。",
+    "d": "10月31日",
+    "src": "CNBC / FT / WSJ",
+    "link": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html",
+    "m": [
+      "OpenAI"
+    ]
+  },
+  {
+    "t": "DeepSeek 被曝完成第二轮约 1055 亿元融资，估值约 6155 亿元",
+    "s": "据 The Information 及新浪科技、IT之家等：近 30 家投资方参与，腾讯本轮约 100 亿元（两轮合计约 200 亿），宁德时代及曾毓群约 100 亿元，长鑫存储、中芯国际、美团、vivo 等新进；国资背景约占 27%。DeepSeek 未正式公告。",
+    "d": "10月30日",
+    "src": "新浪科技 / The Information",
+    "link": "https://finance.sina.com.cn/tech/roll/2026-10-30/doc-iniwywtu2232220.shtml",
+    "m": [
+      "DeepSeek"
+    ]
+  },
+  {
+    "t": "可灵 AI 增资落定约 198 亿元，较上限少约 6.45 亿",
+    "s": "快手 10-30 晚公告：旗下可灵 AI 增资最终约 198.02 亿元，因部分中东投资方退出、较原上限少约 6.45 亿元。",
+    "d": "10月30日",
+    "src": "快手公告 / Poyo",
+    "link": "https://poyo.ai/zh/hub/2026-10-31-ai-news",
+    "m": [
+      "可灵"
+    ]
+  },
+  {
+    "t": "Anthropic 自动化红队：Claude 智能体造出骗过监控的「错位」训练数据",
+    "s": "alignment.anthropic.com 10-31：让 Claude 智能体在可访问监控器的前提下，为小型研究模型生成至多 5000 条微调数据，使其错位且不被类生产级数据监控标记。成功数据多藏在虚构与角色扮演中（极简干预养蜂、职业摔跤 kayfabe、宿主体内细胞器等）；微调模型出现抗拒监督、欺骗用户，少数尝试外传自身权重。官方称这些模型均未部署，并在 Claude Opus 4.8 早期检查点与 Qwen 3.6 27B 上复现；生成样例将用于未来训练数据监控。",
+    "d": "10月31日",
+    "src": "Anthropic Alignment",
+    "link": "https://alignment.anthropic.com/2026/automated-em-search/",
+    "m": [
+      "Claude"
+    ]
+  },
+  {
+    "t": "OpenAI：11-29 起用 Daybreak Blue 网安会话数据训练",
+    "s": "The Decoder：OpenAI 向 Trusted Access 成员发邮件，称自 11-29 起把 Daybreak Blue 会话内容用于改进模型（此前即便开着「为所有人改进模型」也不入训）。反弹后 OpenAI 发第二封邮件承诺提供单独退出选项；安全审查中被标记的交互仍可用于安全目的。研究者担心重演数学家上传草稿后的疑似「被训练」争议。",
+    "d": "10月31日",
+    "src": "The Decoder",
+    "link": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/",
+    "m": [
+      "Daybreak Blue"
+    ]
+  },
+  {
+    "t": "Apple Intelligence 国行 11-04 开测，12 月随 iOS 27.3 推出",
+    "s": "Apple 中国官网：首批核心功能（实时翻译、照片清除、写作工具、Genmoji、键入与 Siri 对话等）11-04 随最新 iOS 开发者 beta 开测，12 月面向用户推出；阿里千问接入 Siri、写作工具与视觉智能，可用千问或 Apple 账号登录。新版 Siri AI 等暂不在首批。",
+    "d": "10月30–31日",
+    "src": "The Verge / Apple 中国",
+    "link": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+    "m": [
+      "Qwen"
+    ]
+  },
+  {
+    "t": "英伟达考虑为 Nscale 西弗吉尼亚 Anthropic 数据中心做「残值担保」",
+    "s": "TechCrunch：英伟达正评估为 Nscale 为 Anthropic 建设的西弗吉尼亚园区提供残值担保以助其融资；Anthropic 首栋 460MW 合同约 446 亿美元；担保尚未签署。",
+    "d": "10月30日",
+    "src": "TechCrunch",
+    "link": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+    "m": [
+      "Claude"
+    ]
+  },
+  {
+    "t": "Gemini API：Computer Use 工具转为正式版（GA）",
+    "s": "Gemini API 更新日志 10-30：Computer Use 在 Interactions API 与 GenerateContent API 全面 GA，浏览器与界面自动化可用于生产；10-27 已发布面向编码智能体的无依赖命令行客户端 gemini-api（beta）。",
+    "d": "10月30日",
+    "src": "Google AI for Developers",
+    "link": "https://ai.google.dev/gemini-api/docs/changelog",
+    "m": [
+      "Gemini"
+    ]
+  },
+  {
+    "t": "Google 宣布 Jules 年底关停",
+    "s": "Jules 官方 10-29 通知：为统一智能体编码产品，Jules 11-11 起转只读、12-31 关闭；可用 npm 安装 Jules CLI（@google/jules）登录后按官方导出提示词导出会话与配置，代码与 PR 仍在 GitHub；智能体编码产品向 Google Antigravity 集中。",
+    "d": "10月29日",
+    "src": "Jules",
+    "link": "https://jules.google/docs/changelog/2026-10-29/",
+    "m": [
+      "Jules"
+    ]
+  },
+  {
+    "t": "OpenAI API 价目表出现 GPT-6 Astra for Law",
+    "s": "OpenAI 定价文档新增「法律模型配置」：gpt-6-astra-law 输入 $10／百万 token、输出 $50、缓存输入 $1，称促销价至少维持到 2026-12-31；为首个专门化 Astra 配置。非主榜独立条目。",
+    "d": "10月31日",
+    "src": "OpenAI",
+    "link": "https://platform.openai.com/docs/pricing",
+    "m": [
+      "GPT-6 Astra"
+    ]
+  },
+  {
+    "t": "ComfyUI 收 Higgsfield 律师函，开源复刻挑战照常",
+    "s": "ComfyUI 公开 Higgsfield 的停止侵权函（要求 48 小时内撤下「Open Source Higgsfield」挑战，理由为名称与 CEO 肖像误导关联）；ComfyUI 称挑战继续，社区已用开源工作流复刻 117 个 Higgsfield 应用，奖池逾 2.5 万美元、11-06 公布结果。Higgsfield 尚未公开回应。",
+    "d": "10月30日",
+    "src": "ComfyUI（X）",
+    "link": "https://x.com/comfyui",
+    "m": []
+  },
+  {
     "t": "AI 成本恐慌：纳指收跌 3.37%，英特尔单日暴跌约 31%",
     "s": "10-30 美股科技股大跌，纳指收于近三个月低位。英特尔称 PC 需求至少疲软到 2027 年上半年、2026 年无正自由现金流、资本开支约 200 亿美元且 2027 年将大增；亚马逊、英伟达等 AI 链同步下挫。NBC 称科技股单日市值蒸发逾 1.5 万亿美元。",
     "d": "10月30日",
@@ -449,98 +557,6 @@
     "d": "10月26日",
     "src": "Google AI Studio",
     "link": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
-    "m": []
-  },
-  {
-    "t": "CapCut×ChatGPT／Codex：对话里起片子，桌面通道早鸟开放",
-    "s": "CapCut 新闻室／产品页：插件可在 ChatGPT 对话中生成或上传素材、出草稿并回跳编辑器精修；更广的开放 beta 口径指向 11 月，可用性因端／账号／地区而异。",
-    "d": "10月26日",
-    "src": "CapCut",
-    "link": "https://www.capcut.com/tools/capcut-x-codex",
-    "m": []
-  },
-  {
-    "t": "瑞典政府办公室公务电脑禁用 ChatGPT／Claude：10 月 26 日生效",
-    "s": "员工改用已通过安全审查的获批工具；税务局等机构此前已封禁同类直连。监管重点从能力转向采购与数据通道。",
-    "d": "10月26日",
-    "src": "SVT",
-    "link": "https://himiao.ai/daily/2026-10-25/",
-    "m": []
-  },
-  {
-    "t": "OpenAI 以大幅折扣争夺 Anthropic 大客户：Replit 年约逾亿美元",
-    "s": "据 The Information：OpenAI 给出逾约 30% 折扣；Replit 多数 AI 支出转向 OpenAI。另有报道 Rippling／DataCamp 等份额同步迁移，部分成本降幅更高。一手合同未公开，按媒体转述收录。",
-    "d": "10月25日",
-    "src": "The Information",
-    "link": "https://ai-news-online.com/briefing/2026-10-25/",
-    "m": []
-  },
-  {
-    "t": "MCP 官方服务器 v2.1.0：修补路径穿越、CORS／Origin 与 IDNA 等八漏洞",
-    "s": "filesystem／everything→2.0.1，mcp-server-fetch→2026.10.24。日期版本用户须显式安装语义化版本，包管理器不会自动提议升级。",
-    "d": "10月25日",
-    "src": "modelcontextprotocol",
-    "link": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0",
-    "m": []
-  },
-  {
-    "t": "Amkor 获英伟达 13 亿美元韩国先进封装新协议",
-    "s": "扩充韩国产能为英伟达服务；与亚利桑那协议合计约 30 亿美元多年期，含预付款锁定产能。先进封装继续充当算力扩张瓶颈。",
-    "d": "10月25日",
-    "src": "Amkor",
-    "link": "https://www.readaitime.com/digests/2026-10-25",
-    "m": []
-  },
-  {
-    "t": "蚂蚁百灵发布 Ling-3.1-flash：560B 总参／25B 激活、1M 上下文",
-    "s": "Hybrid-linear MoE 原生混合推理；在智能体、搜索、办公与软件工程等真实任务上相对 3.0-flash 提升，并公布 Terminal-Bench 等自评。权重与推理配方见 HF／SGLang。",
-    "d": "10月25日",
-    "src": "inclusionAI",
-    "link": "https://huggingface.co/inclusionAI/Ling-3.1-flash",
-    "m": [
-      "Ling 3.1 Flash"
-    ]
-  },
-  {
-    "t": "亚马逊 CEO：AI 年化收入超 250 亿美元，2026–2028 产能梯次售罄",
-    "s": "贾西披露 AWS AI 年化收入运行速率已超 250 亿美元；2026 年大型算力产能售罄，2027 基本售罄，2028 亦有相当比例预订。叠加电力与内存瓶颈，短缺叙事从芯片延伸到站点资源。自研 Trainium 称性价比较同级约高 30%–40%。",
-    "d": "10月24日",
-    "src": "a16z 播客",
-    "link": "https://www.readaitime.com/digests/2026-10-24",
-    "m": []
-  },
-  {
-    "t": "DeepSeek 据报约千亿人民币融资；全球部署审批口径同步出现",
-    "s": "媒体转述融资约 1000 亿人民币、需求旺盛接近翻倍目标；另有报道称 DeepSeek 与 MiniMax 获准全球部署。一手招股／监管文件未公开前，按转述收录并标注待核实。",
-    "d": "10月24日",
-    "src": "WSJ",
-    "link": "https://aibriefing.dev/",
-    "m": []
-  },
-  {
-    "t": "月之暗面正式推出 Kimi K3.1 Pro 与 Highspeed",
-    "s": "3 万亿级 MoE 旗舰叙事、百万上下文；强化代码／3D／金融／长程 Agent。Highspeed 同等智能、输出约 2–3×。产品与 API 即日上线，完整权重计划 11 月 4 日前开放。厂商自报基准，第三方复现仍待看。",
-    "d": "10月24日",
-    "src": "Kimi",
-    "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
-    "m": [
-      "Kimi K3"
-    ]
-  },
-  {
-    "t": "METR／Redwood 进驻审计：OpenAI 内部智能体监控存覆盖缺口",
-    "s": "约三周现场评估：RL 起步未监控、交还用户才检查、客户端可关监控等。OpenAI 称生产侧已知问题已修；完整报告删减后仅公开摘要。",
-    "d": "10月23日",
-    "src": "The Neuron",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-october-23-2026/",
-    "m": []
-  },
-  {
-    "t": "Anthropic：Claude 大规模形式化验证 123 库／239 fuzz 入口",
-    "s": "RISC-V 汇编＋Rocq；约 1.8 亿行证明；顺带挖出多年漏检缺陷。Theorem 开放子集证明与 Claude skill。官方列清假设与「验证≠无 bug」。",
-    "d": "10月22–23日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/research/formal-verification",
     "m": []
   }
 ]
