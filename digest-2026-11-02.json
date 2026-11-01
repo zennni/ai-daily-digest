@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "date": "2026-11-02",
+    "week": "星期一",
+    "note": "今日主题词：定价与放量。周末没有停摆，反而把上周埋下的伏笔一一兑现。资本侧从「讲增长」转向「讲条款」：Anthropic 招股书细节浮出——代码 ANT、拟 11 月中旬登陆纳斯达克、最高募资 1000 亿美元、估值 1.5 万亿至 2 万亿美元，但同一份文件把未来在服务器、建筑与电力上的近 9000 亿美元承诺摊在台面上，与账面 1175 亿美元负债、1120 亿美元现金并列，等于把未来收入提前抵押给算力；彭博统计 Alphabet、Meta、微软、亚马逊、甲骨文五家已承诺超 3 万亿美元建 AI 基础设施，甲骨文成为首家因 AI 数据中心把自由现金流做成负数的大型科技公司；微软在资本开支创纪录的同时向约 6 万人发出自愿离职，却把基础模型训练与专用云基础设施团队明确豁免——「钱照花、人换岗」成了这一轮的标准动作。能力侧的兑现方式是「按用途放量」：Gemini 4 Carbon 在 Artificial Analysis 智能指数 v5.0 以 59 分登顶，SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%，却只先发给 Fairwind 计划内受审查的白帽与伙伴，之后再逐批放开——前沿模型第一次按「用途」而不是按「地区」发钥匙；开源侧继续用计算量换参数量，腾讯混元 Hy-Nomas 让 8B 模型在单张 4090 上生成 60 秒可控世界，小米 Xiaomi-OCR-0 用 0.8B 在文档基准上压过 8B 级对手。治理侧的关键词是「默认」：Anthropic 把文本水印回溯铺到 Mythos 5、Opus 4.7/4.6、Sonnet 4.6 四款旧模型，以对齐 12 月生效的欧盟义务（同时被评测指认调采样即可绕过），xAI 宣布 11 月 7 日起对 Grok API 的所有文本包括 tool-call 参数默认加水印。而应用层的账依旧难看：司法部「捉鬼行动」披露 AI 批量伪造假学生骗走逾 2 亿美元联邦助学贷款，Parameter Labs 演示了经 HTML 预览 iframe 与 CSP 白名单端点接管 ChatGPT 账户的完整链路。一天之内，钥匙、水印与报价单同时收紧——行业的重心正从「能不能做」挪到「谁能用、怎么核」。"
+  },
+  "highlights": [
+    {
+      "title": "Anthropic 招股细节落地",
+      "summary": "代码 ANT、拟 11 月中旬纳斯达克挂牌、最高募资 1000 亿美元、估值 1.5 万亿至 2 万亿美元；文件同时列明近 9000 亿美元算力与电力债务承诺，账面 1175 亿美元负债对 1120 亿美元现金。"
+    },
+    {
+      "title": "3 万亿美元基建承诺与 6 万份离职方案",
+      "summary": "彭博统计五巨头已承诺超 3 万亿美元建 AI 基础设施，甲骨文成首家因 AI 数据中心自由现金流转负的大型科技公司；微软同周向约 6 万人发出自愿离职，基础模型训练与专用云团队被豁免。"
+    },
+    {
+      "title": "Carbon 登顶 AA v5.0，按「用途」发钥匙",
+      "summary": "59 分排名第一，SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%；本周只发放给 Fairwind 计划内的白帽与受审查伙伴，之后才轮到开发者与消费者，定价沿用 Argon 的 $2/$10。"
+    },
+    {
+      "title": "水印变默认，AI 骗贷与账户接管被点名",
+      "summary": "Anthropic 回溯四款旧模型加水印、xAI 自 11 月 7 日起给 Grok API 全部文本（含 tool-call 参数）加水印；同日司法部披露 AI 伪造假学生骗贷逾 2 亿美元，Parameter Labs 公布可接管 ChatGPT 账户的攻击链。"
+    }
+  ],
+  "news": [
+    {
+      "title": "Anthropic 招股书细节：代码「ANT」，最高募资 1000 亿美元",
+      "summary": "招股书显示 Anthropic 计划 11 月中旬登陆纳斯达克、股票代码 ANT，市场预计募资额最高可达 1000 亿美元，将成为美国大模型企业首次冲击 IPO；估值预期 1.5 万亿至 2 万亿美元，若按上限落地将超越 SpaceX 6 月创下的 1.77 万亿美元纪录。文件同时披露未来在服务器、建筑与电力等领域的近 9000 亿美元债务承诺，与账面 1175 亿美元负债、1120 亿美元现金基本持平。公司 2026 年上半年营收 162.86 亿美元，二季度已录得 9.74 亿美元营业利润；按此前报道，未来约十年将与六家伙伴投入至少 5180 亿美元用于 AI 基础设施。",
+      "date": "11月1日",
+      "source": "中国经济网 / 招股文件",
+      "link": "http://intl.ce.cn/qqss/202611/t20261101_3279177.shtml",
+      "models": []
+    },
+    {
+      "title": "彭博统计：五巨头承诺超 3 万亿美元建 AI 基础设施",
+      "summary": "彭博 10 月 31 日统计，Alphabet、Meta、微软、亚马逊与甲骨文已承诺未来数年在数据中心等领域投入超 3 万亿美元。其中谷歌支出承诺超 1 万亿美元、接近一年前的八倍；Meta 超 8000 亿美元且近半数为最长 30 年的数据中心租约，把短期开支变成长期负债；甲骨文成为首家因 AI 数据中心投资导致自由现金流转负的大型科技公司，预计 2028 年才恢复正值。3 万亿美元已相当于一个中等经济体的年度 GDP。",
+      "date": "10月31日",
+      "source": "彭博社",
+      "link": "https://www.toutiao.com/a7703041882113884726",
+      "models": []
+    },
+    {
+      "title": "OpenAI 12 月起把 ChatGPT 与 Codex 合并为同一份 Token 额度",
+      "summary": "OpenAI 11 月 1 日更新帮助文档：自 12 月起，Plus、Pro 与 Business 订阅用户的 ChatGPT 聊天与 Codex 用量将共用一份按 Token 计价的额度，仅 Instant 聊天请求豁免，ChatGPT Work 中的多步智能体动作同样计入该池。官方口径是 7 月起 Codex 能力已并入 ChatGPT 主体验、产品边界消融，计费随之统一。对同时重度使用对话与编码的用户，两个高频场景开始互相挤占配额——「无限额度」的窗口正在关闭。",
+      "date": "11月1日",
+      "source": "OpenAI 帮助文档 / AI Briefing",
+      "link": "https://aibriefing.dev/",
+      "models": []
+    },
+    {
+      "title": "微软向约 6 万名员工提供自愿离职，AI 核心团队豁免",
+      "summary": "微软向约占员工总数 25% 的约 6 万人发出自愿离职方案，覆盖 Windows、Copilot、Xbox 与财务等部门，对象包含副总裁及以下层级，涉及美国、加拿大、印度与英国；核心 AI 研究、基础模型训练与专用云基础设施团队被明确排除在外。这是资本开支创纪录扩张与传统业务人力收缩同时发生的典型样本。",
+      "date": "11月1日",
+      "source": "The Decoder",
+      "link": "https://www.communeify.com/en/blog/ai-daily-latest",
+      "models": []
+    },
+    {
+      "title": "水印变默认：Anthropic 回溯四款旧模型，xAI 给 Grok API 全面加水印",
+      "summary": "Anthropic 将文本水印回溯铺到 Claude Mythos 5、Opus 4.7、Opus 4.6 与 Sonnet 4.6 四款上一代模型，以满足 12 月生效的欧盟《AI 法案》透明度与来源标注要求；但安全评测发现其中两款旧模型的水印可被调整采样与温度参数绕过。xAI 则宣布自 11 月 7 日起对 Grok API（4.7、4.6、4.5、4.3、4.20）输出的普通回答、结构化响应乃至 tool-call 参数默认加隐形统计水印，无需改代码，仅提供极有限的退出选项。",
+      "date": "11月1日",
+      "source": "The Decoder / AI Briefing",
+      "link": "https://geetpurwar.com/blog/top-10-ai-news-2026-11-01",
+      "models": [
+        "Mythos 5"
+      ]
+    },
+    {
+      "title": "美司法部「捉鬼行动」：AI 伪造假学生骗贷逾 2 亿美元",
+      "summary": "美国司法部 10 月 31 日公布 Operation Ghostbusters 调查结果：诈骗者先窃取身份信息，再用 AI 批量伪造入学申请，让根本不存在的「学生」看起来正常参与在线课程，绕过学校出勤与进度核查，从联邦学生资助（FAFSA）项目骗取贷款。部分赃款作为剩余款项转入诈骗者账户并迅速转往海外，另一部分落在被盗身份的真实受害者名下，多名从未上过大学者背上债务、信用受损。这是 AI 首次被美国司法部作为助学贷款欺诈的核心工具点名。",
+      "date": "10月31日",
+      "source": "美国司法部",
+      "link": "https://www.toutiao.com/a7703041882113884726",
+      "models": []
+    },
+    {
+      "title": "2026 世界互联网大会乌镇峰会今日开幕，首个开源主题生态体验馆开馆",
+      "summary": "2026 年世界互联网大会乌镇峰会 11 月 2 日至 5 日举行，主题为「开源开放 共建共享——携手构建网络空间命运共同体」，设 27 场分论坛，议题覆盖智能体互信互联互操作全球合作、数智技术绿色低碳、时空智能等，实践案例来自 80 个国家和地区。11 月 1 日，由国家网信办与新华社牵头的全国首个开源主题生态体验馆在乌镇世界互联网科技馆开馆，展出之江实验室 021 科学基础模型（MoE + OneTokenizer，2360 亿参数已完整训练上线）、DeepSeek、千问「浙江开源三剑客」，以及魔搭社区、龙蜥操作系统、玄铁与摩尔线程芯片，并设六大国家人工智能应用中试基地展区。博览会集中展示 670 余家企业、1000 余项成果。",
+      "date": "11月1日",
+      "source": "国家网信办 / 潮新闻",
+      "link": "https://www.toutiao.com/article/7703165699695100458/",
+      "models": []
+    },
+    {
+      "title": "豆包工作版开放第三方模型接入，首批含 Kimi 3.1 Pro、GLM 5.3、DeepSeek V4.1 Flash",
+      "summary": "豆包工作向团队版与企业版开放第三方模型接入，企业可按成员、部门或场景划定范围，按用量从既有 AI 点数中扣除，无需逐个采购。首批接入 Kimi 3.1 Pro、GLM 5.3 与 DeepSeek V4.1 Flash。这一动作把办公入口从「自家模型」变成「模型货架」，也意味着第三方模型在国内 B 端开始走平台分发而非直客销售。",
+      "date": "11月1日",
+      "source": "AI 日报（头条）",
+      "link": "https://www.toutiao.com/a7702986244703257097",
+      "models": [
+        "GLM-5.3",
+        "DeepSeek-V4.1-Flash",
+        "Seed 2.1"
+      ]
+    },
+    {
+      "title": "甲骨文联合 OpenAI 推出企业 AI 套件：办公、安全与开发三件套",
+      "summary": "甲骨文宣布扩大与 OpenAI 的合作，把其模型、ChatGPT 与 Codex 整合进甲骨文的应用、数据与云基础设施，一次推出三个企业产品：可通过 ChatGPT 调用企业系统的 Oracle AI Workspace、用 AI 模型检测并修复漏洞的 Oracle AI Security Mesh，以及让员工借助 Codex 开发企业应用的 Oracle App Composer。这是把模型能力直接缝进既有 ERP／数据库客群的一次尝试——卖的不是模型，是原地可用的入口。",
+      "date": "11月1日",
+      "source": "腾讯新闻·数智周报",
+      "link": "https://news.qq.com/rain/a/20261101A05BEC00",
+      "models": []
+    },
+    {
+      "title": "Parameter Labs 披露可接管 ChatGPT 账户的完整攻击链",
+      "summary": "安全研究机构 Parameter Labs 披露一条账户接管链路：起点是 ChatGPT 的 HTML 预览 iframe，其中的不可信代码可通过 postMessage 触发 MathLive 虚拟键盘组件的 innerHTML 注入造成跨站脚本；随后攻击者利用被内容安全策略（CSP）列入白名单的 YouTube oEmbed 端点作为跳板，反射执行任意 JavaScript，绕过原本限制脚本来源的防护。链路走通后可窃取已登录用户的私有对话，甚至以受害者身份操作账户。研究者已按负责任披露流程向 OpenAI 报告。真正值得记的是「CSP 白名单第三方端点」这种常见配置如何被当成绕过工具。",
+      "date": "11月1日",
+      "source": "Parameter Labs",
+      "link": "https://www.toutiao.com/a7703041882113884726",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "前缀可执行性：超越最终成功率的工具智能体评测",
+      "titleEn": "Prefix Executability: Evaluating Tool-Using Agents Beyond Final Success",
+      "summary": "只看最终成败会掩盖中间工具调用轨迹是否真的可执行。作者提出轨迹级评测协议：检验预测出的工具调用序列的每一个前缀，在工具 schema、状态前置条件与数据依赖下是否仍可执行，并用前缀可执行性曲线（PEC）、首次出错深度（FED）、轨迹可执行率（TER）、按步长归一化的 AUC-PEC 与恢复率（RR）刻画可靠性。在 BFCL-v3 多轮、ToolSandbox 与 τ³-bench 上发现：只看结果与看前缀的排名会分叉，那些按未验证计划一路执行任务的智能体会拿到虚高的分数。NeurIPS 2026。",
+      "authors": "Amir H. Rezaeian, Weiyi Sun, Yassine Benajiba, Dan Roth",
+      "link": "https://arxiv.org/abs/2610.40444"
+    },
+    {
+      "title": "EpiAgent：面向 LLM 智能体的认知自博弈",
+      "titleEn": "EpiAgent: Epistemic Self-Play for LLM Agents",
+      "summary": "借鉴认知博弈论，为 LLM 智能体加一层显式可学习的「认知层」：维护关于对手私有信息的信念，并与自身可用信息合成认知状态用于决策。策略拆成两级耦合阶段——认知更新（从交互历史更新信念）与行动规划（在更新后的认知状态下选动作），两者依赖关系建模为双层优化。目标是在不完全信息博弈里补上「我猜你怎么想」这一环。",
+      "authors": "Xuanfa Jin, Xinyu Cui, Zhijian Ma, Xue Yan 等",
+      "link": "https://arxiv.org/abs/2610.40227"
+    },
+    {
+      "title": "我是怎么对齐你的模型：用模板把多语言安全训练规模化",
+      "titleEn": "How I Aligned Your Model: Scaling Up Multilingual Safety Training with Templates",
+      "summary": "现有安全对齐严重偏英语、低资源语言受损，公开训练集规模有限且缺少区域本土化的有害话题。作者提出模板化增广流水线：从有害提示里抽出安全模板，翻译后用文化上真实的实体（有害与无害两版）填充槽位，产出大规模多语言拒答与良性语料，并发布覆盖 60 种语言的 MSafeTemp。实验显示只有英语评测会误判多语言安全性——一些模型在英语下攻击失败，一翻译就成功。",
+      "authors": "Max Neuwinger, Hanna Yukhymenko, Imanol Schlag",
+      "link": "https://arxiv.org/abs/2610.40516"
+    },
+    {
+      "title": "rTaste：研究智能体有「品味」吗？评估早期科研判断力",
+      "titleEn": "rTaste: Do Research Agents Have Taste? Evaluating Early Stage Research Judgment",
+      "summary": "把六个前沿模型放到研究智能体位置上，给七篇近期 NLP 论文，要求各自（单独或组队）提出最小可行实验（MVE）、预测能否过自己设的阈值，并排序；再由独立执行器把包括排在最后的每个 MVE 都真跑一遍，三个模型审计员判分。415 个 MVE 中 194 个被评为可靠、有价值且新颖，但仅 73 个同时被认为超出种子论文且非显而易见；智能体的首选比随机选更接近审计员最看重的实验，却未能证明优于「直接选论文里写的第一个实验」。",
+      "authors": "Art Kanke",
+      "link": "https://arxiv.org/abs/2610.40488"
+    },
+    {
+      "title": "澄清设计空间：语言模型数据归因到底在测什么",
+      "titleEn": "Elucidating the Design Space of LM Data Attribution",
+      "summary": "数据归因方法通常用事实检索这类下游任务评测，但现有评测会同时变动多个数据属性，无法判断算法究竟败在哪里。作者构造 CATT（Controlled Attribution Benchmark）：让模型微调在完全虚构的知识上，从而获得无歧义的归因真值，再逐项改动冗余度、词法干扰等配置。结论是冗余与干扰会稳定拉低归因性能；作者并不提出新估计器，而是先把「评测本身」拆成可控变量。作者含 Antonio Torralba、David Bau。",
+      "authors": "Steven Yu, Sheng-Yu Wang, Kimia Hamidieh, Antonio Torralba, David Bau",
+      "link": "https://arxiv.org/abs/2610.40655"
+    },
+    {
+      "title": "我到底要写多具体？查询欠明确如何拖垮深度研究智能体",
+      "titleEn": "How Specific Do I Need to Be? Effects of User Query Underspecification on Deep Research Agents",
+      "summary": "深度研究智能体（DRA）通常在「完全明确」的查询上训练与评测，而真实用户的提问往往含糊。作者提出 UNDERSPEC-DR 框架，系统评测欠明确查询对最终答案质量与中间检索行为的影响：三个 DRA 上，答案对用户信息需求的满足度显著下降，尽管仍带引用、有据可依。中间检索行为分析给出一个可能解释——智能体会做更宽泛的搜索、更少依赖原始查询，转而依赖训练中习得的先验，而这个先验可能和用户意图不符。",
+      "authors": "Yi Wen, Xiangjue Dong, Bingxuan Li, Hangxiao Zhu 等",
+      "link": "https://arxiv.org/abs/2610.39413"
+    },
+    {
+      "title": "HairDeck：一张图生成可动画的风格化发片",
+      "titleEn": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
+      "summary": "游戏与虚拟形象的发型由「发片 + 弹簧骨」构成，此前唯一能生成风格化发片的 CHARM 用自回归方式逐点解码，慢且受限。作者观察到发片本质是「无序的图元集合」，于是给每张发片一个 token、用集合扩散 Transformer 一次并行去噪全部发片，再由第二个扩散 Transformer 生成驱动发丝物理的弹簧骨链。在 CHARM 测试集上 Chamfer 距离降 44%、发片朝向误差从 40.0° 降到 16.8°，速度提升 33 倍（约 1.01 秒）。代码与权重以 Apache-2.0 开源，可直接导出 GLB/VRM。",
+      "authors": "Yuze He, Yixiang Wei, Wang Zhao, Chuhao Chen 等",
+      "link": "https://arxiv.org/abs/2610.40599"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 4 Carbon",
+      "vendor": "Google DeepMind",
+      "highlight": "10 月 28 日发布、本周开始放量。Artificial Analysis 智能指数 v5.0 以 59 分排名第一，SEC-bench Pro（找真实漏洞）88.2%、ExploitGym（利用验证）54.8%、CWE-bench（根因修补）71.0%，WebDev Arena 提升 89 elo 至第 4（1768 分）；内部安全代码生成成功率较 Argon 提升 2 倍以上，Terminal-Bench 4.0 作弊成功率压到 0.0%。放量方式罕见：本周先给 Fairwind 计划内受审查的白帽与伙伴，之后再面向开发者与企业；介绍期定价与 Argon 持平（输入 $2、输出 $10，缓存输入再打 95 折），之后调整为 $4/$20。",
+      "date": "10月28日发布 · 本周放量",
+      "link": "https://aiflare.cc/en/archives/3047"
+    },
+    {
+      "name": "Genie 4",
+      "vendor": "Google DeepMind",
+      "highlight": "新一代世界模型：可根据文本指令构建可探索的虚拟环境，并在用户持续输入时实时调整场景，单次最长维持两分钟连贯一致的场景（约为 Genie 3 的两倍），并首次实现与虚拟世界同步的实时音频生成，涵盖音乐、环境音与可交互对话。与传统视频生成模型只按提示出片段不同，它的产物是「可玩的世界」。",
+      "date": "10月31日",
+      "link": "https://news.qq.com/rain/a/20261101A05BEC00"
+    },
+    {
+      "name": "Hy-Nomas",
+      "vendor": "腾讯混元",
+      "highlight": "交互式世界模型开源：权重、推理与训练代码一并放出，8B 参数即可在单张 RTX 4090 上生成 60 秒可控世界，同步开源 Hy-Nomas-Bench 评测基准。把世界模型的硬件门槛从集群拉到消费级显卡，是本周开源侧最实在的一步。",
+      "date": "10月31日",
+      "link": "https://www.toutiao.com/a7702630221396132392"
+    },
+    {
+      "name": "Xiaomi-OCR-0",
+      "vendor": "小米",
+      "highlight": "仅 0.8B 参数的 OCR 专用模型，覆盖文档解析、关键信息抽取与 OCR 视觉问答，可还原复杂表格与公式并输出 Markdown/LaTeX。Real5-OmniDocBench 得 95.24 分居首，五项视觉问答平均 83.2 分，超过 8B 的 MiniCPM-V-4.5。小参数在单据与文档流水线上的性价比叙事继续成立。",
+      "date": "10月31日",
+      "link": "https://www.toutiao.com/a7702986244703257097"
+    },
+    {
+      "name": "Kling 4.0（PixVerse 接入）",
+      "vendor": "快手可灵 / PixVerse",
+      "highlight": "PixVerse 正式接入可灵 4.0：支持 30 秒连续场景生成、多图 Omni Reference 一致性，并把原生音频直接放进生成通路——最长 30 秒片段内同步生成对口型台词与环境音，同时增强快速物理动态与运镜稳定性。视频模型开始把「声音」当默认输出而非后期配音。",
+      "date": "11月1日",
+      "link": "https://www.communeify.com/en/blog/ai-daily-latest"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude Code 2.1.316：组级预算池、子智能体推理投入可调",
+      "summary": "10 月 31 日发布。新增 CLAUDE_CODE_DISABLE_ULTRATHINK、CLAUDE_CODE_SUBAGENT_EFFORT 与 CLAUDE_CODE_DISABLE_LOOPED_CROSS_CERT_DROP 三个环境变量；管理端 API 增加 pooled_budget 组级预算池，Bedrock 上游支持 managed.policy_mode: layered 与 guardrail.input_tagging。安全侧加固 --restricted 会话（此前可上传工作目录外文件）、校验每个请求点名的模型是否在 availableModels/deniedModels 内、修正 PowerShell 钩子在退出码 2 时不阻断的问题。同时把 claude-opus-4-8 的 fast 模式标记弃用、11 月 30 日移除，官方指引迁移到 Opus 5.5；AI for Science 计划扩至 20 家科研基金会与机构。",
+      "date": "10月31日",
+      "source": "Claude Report #185",
+      "link": "https://www.claudenews.com.br/en-US/edicoes/185-2026-10-31",
+      "models": [
+        "Claude Opus 5.5"
+      ]
+    },
+    {
+      "title": "DeepSeek 开源 dsh-superagent：按「最少人类注意力」设计的编码智能体",
+      "summary": "10 月 31 日建仓、MIT 许可，定位「面向单个 GitHub 仓库的主动式编码智能体」，作为 DeepSeek Harness 的 bundle 发布：监听 GitHub（可选接飞书），被授权的人提出请求后，它开一个工作项、在自己的会话与目录里处理，再回到原对话答复（例如给出一个 PR），并有网页面板只展示「需要人处理的」。README 明言「能替整个团队行动的智能体，也能浪费整个团队的注意力」，因此只在必须有人行动或结果可用时才说话。官方标注研究原型、非正式产品，未公布基准成绩；彭博称其瞄准 Claude Code。",
+      "date": "11月1日",
+      "source": "GitHub / Times of AI",
+      "link": "https://github.com/deepseek-ai/dsh-superagent-prototype",
+      "models": []
+    },
+    {
+      "title": "Factory 发布 Droid 1.0：把「脚本模式」工具调用设为默认",
+      "summary": "Droid 1.0 把沙箱内的程序化脚本模式设为默认 harness：前沿模型不再走一轮一调用的 ReAct 循环，而是一次生成一小段 JavaScript，在本地安全沙箱里批量执行数百个操作。对超大仓库的多步任务，这直接砍掉往返延迟与上下文累积——工具调用正从「对话协议」退化为「生成一段程序」。",
+      "date": "11月1日",
+      "source": "Factory / MarkTechPost",
+      "link": "https://www.communeify.com/en/blog/ai-daily-latest",
+      "models": []
+    },
+    {
+      "title": "Chrome DevTools MCP：给编码智能体装上「看得见」的浏览器",
+      "summary": "chrome-devtools-mcp 把运行中的 Chrome 交给 Claude Code、Cursor、Copilot 等编码智能体：可录制 DevTools trace、分析网络请求、抓截图与带 source map 的控制台堆栈，并基于 Puppeteer 执行动作后再等结果确认。核心价值是补上前端调试这个结构性盲区——智能体原来只能改它看不见运行的代码，现在可以「复现失败、读真实报错、修完再验证」。默认开启用量统计、trace URL 会发往 Google CrUX，需用 --no-usage-statistics / --no-performance-crux 手动关闭；浏览器内容对 MCP 客户端完全可见，别指向已登录的敏感会话。",
+      "date": "11月1日",
+      "source": "chrome-devtools-mcp",
+      "link": "https://deniz.in/chrome-devtools-mcp-lets-ai-coding-agents-debug-pages-in-a-live-browser",
+      "models": []
+    },
+    {
+      "title": "安天溯源 Cursor 投毒事件：定性为「凭据植入型」供应链攻击",
+      "summary": "11 月 1 日的溯源报告给出技术判定：被篡改的 Anthropic.claude-code 2.1.312/2.1.313 在 Windows 与 macOS 上随扩展加载即执行，试图写入攻击者 SSH 公钥、启用系统 SSH 服务、建立反向转发，并在扩展目录之外留下脚本、密钥文件与启动项——因此「下架包、卸载扩展、关掉攻击服务器」都无法替代清理残留状态。安天认为这类手法的关键范式是：恶意代码在目标环境植入攻击者凭据，再借系统自带的合法远程服务建立可独立保留的访问点；它既不是严格意义的无文件攻击，也不能归为「只发配置不发代码」，访问能力分散在授权文件、合法服务、反向转发与启动脚本之间。",
+      "date": "11月1日",
+      "source": "安天实验室",
+      "link": "https://www.antiy.net/p/credential-implant-supply-chain-poisoning-has-emerged-as-a-typical-paradigm-for-attacking-ai-developers",
+      "models": []
+    }
+  ]
+}
