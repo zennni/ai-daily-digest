@@ -1,5 +1,91 @@
 [
   {
+    "t": "Anthropic 招股书细节：代码「ANT」，最高募资 1000 亿美元",
+    "s": "招股书显示 Anthropic 计划 11 月中旬登陆纳斯达克、股票代码 ANT，市场预计募资额最高可达 1000 亿美元，将成为美国大模型企业首次冲击 IPO；估值预期 1.5 万亿至 2 万亿美元，若按上限落地将超越 SpaceX 6 月创下的 1.77 万亿美元纪录。文件同时披露未来在服务器、建筑与电力等领域的近 9000 亿美元债务承诺，与账面 1175 亿美元负债、1120 亿美元现金基本持平。公司 2026 年上半年营收 162.86 亿美元，二季度已录得 9.74 亿美元营业利润；按此前报道，未来约十年将与六家伙伴投入至少 5180 亿美元用于 AI 基础设施。",
+    "d": "11月1日",
+    "src": "中国经济网 / 招股文件",
+    "link": "http://intl.ce.cn/qqss/202611/t20261101_3279177.shtml",
+    "m": []
+  },
+  {
+    "t": "彭博统计：五巨头承诺超 3 万亿美元建 AI 基础设施",
+    "s": "彭博 10 月 31 日统计，Alphabet、Meta、微软、亚马逊与甲骨文已承诺未来数年在数据中心等领域投入超 3 万亿美元。其中谷歌支出承诺超 1 万亿美元、接近一年前的八倍；Meta 超 8000 亿美元且近半数为最长 30 年的数据中心租约，把短期开支变成长期负债；甲骨文成为首家因 AI 数据中心投资导致自由现金流转负的大型科技公司，预计 2028 年才恢复正值。3 万亿美元已相当于一个中等经济体的年度 GDP。",
+    "d": "10月31日",
+    "src": "彭博社",
+    "link": "https://www.toutiao.com/a7703041882113884726",
+    "m": []
+  },
+  {
+    "t": "OpenAI 12 月起把 ChatGPT 与 Codex 合并为同一份 Token 额度",
+    "s": "OpenAI 11 月 1 日更新帮助文档：自 12 月起，Plus、Pro 与 Business 订阅用户的 ChatGPT 聊天与 Codex 用量将共用一份按 Token 计价的额度，仅 Instant 聊天请求豁免，ChatGPT Work 中的多步智能体动作同样计入该池。官方口径是 7 月起 Codex 能力已并入 ChatGPT 主体验、产品边界消融，计费随之统一。对同时重度使用对话与编码的用户，两个高频场景开始互相挤占配额——「无限额度」的窗口正在关闭。",
+    "d": "11月1日",
+    "src": "OpenAI 帮助文档 / AI Briefing",
+    "link": "https://aibriefing.dev/",
+    "m": []
+  },
+  {
+    "t": "微软向约 6 万名员工提供自愿离职，AI 核心团队豁免",
+    "s": "微软向约占员工总数 25% 的约 6 万人发出自愿离职方案，覆盖 Windows、Copilot、Xbox 与财务等部门，对象包含副总裁及以下层级，涉及美国、加拿大、印度与英国；核心 AI 研究、基础模型训练与专用云基础设施团队被明确排除在外。这是资本开支创纪录扩张与传统业务人力收缩同时发生的典型样本。",
+    "d": "11月1日",
+    "src": "The Decoder",
+    "link": "https://www.communeify.com/en/blog/ai-daily-latest",
+    "m": []
+  },
+  {
+    "t": "水印变默认：Anthropic 回溯四款旧模型，xAI 给 Grok API 全面加水印",
+    "s": "Anthropic 将文本水印回溯铺到 Claude Mythos 5、Opus 4.7、Opus 4.6 与 Sonnet 4.6 四款上一代模型，以满足 12 月生效的欧盟《AI 法案》透明度与来源标注要求；但安全评测发现其中两款旧模型的水印可被调整采样与温度参数绕过。xAI 则宣布自 11 月 7 日起对 Grok API（4.7、4.6、4.5、4.3、4.20）输出的普通回答、结构化响应乃至 tool-call 参数默认加隐形统计水印，无需改代码，仅提供极有限的退出选项。",
+    "d": "11月1日",
+    "src": "The Decoder / AI Briefing",
+    "link": "https://geetpurwar.com/blog/top-10-ai-news-2026-11-01",
+    "m": [
+      "Mythos 5"
+    ]
+  },
+  {
+    "t": "美司法部「捉鬼行动」：AI 伪造假学生骗贷逾 2 亿美元",
+    "s": "美国司法部 10 月 31 日公布 Operation Ghostbusters 调查结果：诈骗者先窃取身份信息，再用 AI 批量伪造入学申请，让根本不存在的「学生」看起来正常参与在线课程，绕过学校出勤与进度核查，从联邦学生资助（FAFSA）项目骗取贷款。部分赃款作为剩余款项转入诈骗者账户并迅速转往海外，另一部分落在被盗身份的真实受害者名下，多名从未上过大学者背上债务、信用受损。这是 AI 首次被美国司法部作为助学贷款欺诈的核心工具点名。",
+    "d": "10月31日",
+    "src": "美国司法部",
+    "link": "https://www.toutiao.com/a7703041882113884726",
+    "m": []
+  },
+  {
+    "t": "2026 世界互联网大会乌镇峰会今日开幕，首个开源主题生态体验馆开馆",
+    "s": "2026 年世界互联网大会乌镇峰会 11 月 2 日至 5 日举行，主题为「开源开放 共建共享——携手构建网络空间命运共同体」，设 27 场分论坛，议题覆盖智能体互信互联互操作全球合作、数智技术绿色低碳、时空智能等，实践案例来自 80 个国家和地区。11 月 1 日，由国家网信办与新华社牵头的全国首个开源主题生态体验馆在乌镇世界互联网科技馆开馆，展出之江实验室 021 科学基础模型（MoE + OneTokenizer，2360 亿参数已完整训练上线）、DeepSeek、千问「浙江开源三剑客」，以及魔搭社区、龙蜥操作系统、玄铁与摩尔线程芯片，并设六大国家人工智能应用中试基地展区。博览会集中展示 670 余家企业、1000 余项成果。",
+    "d": "11月1日",
+    "src": "国家网信办 / 潮新闻",
+    "link": "https://www.toutiao.com/article/7703165699695100458/",
+    "m": []
+  },
+  {
+    "t": "豆包工作版开放第三方模型接入，首批含 Kimi 3.1 Pro、GLM 5.3、DeepSeek V4.1 Flash",
+    "s": "豆包工作向团队版与企业版开放第三方模型接入，企业可按成员、部门或场景划定范围，按用量从既有 AI 点数中扣除，无需逐个采购。首批接入 Kimi 3.1 Pro、GLM 5.3 与 DeepSeek V4.1 Flash。这一动作把办公入口从「自家模型」变成「模型货架」，也意味着第三方模型在国内 B 端开始走平台分发而非直客销售。",
+    "d": "11月1日",
+    "src": "AI 日报（头条）",
+    "link": "https://www.toutiao.com/a7702986244703257097",
+    "m": [
+      "GLM-5.3",
+      "DeepSeek-V4.1-Flash",
+      "Seed 2.1"
+    ]
+  },
+  {
+    "t": "甲骨文联合 OpenAI 推出企业 AI 套件：办公、安全与开发三件套",
+    "s": "甲骨文宣布扩大与 OpenAI 的合作，把其模型、ChatGPT 与 Codex 整合进甲骨文的应用、数据与云基础设施，一次推出三个企业产品：可通过 ChatGPT 调用企业系统的 Oracle AI Workspace、用 AI 模型检测并修复漏洞的 Oracle AI Security Mesh，以及让员工借助 Codex 开发企业应用的 Oracle App Composer。这是把模型能力直接缝进既有 ERP／数据库客群的一次尝试——卖的不是模型，是原地可用的入口。",
+    "d": "11月1日",
+    "src": "腾讯新闻·数智周报",
+    "link": "https://news.qq.com/rain/a/20261101A05BEC00",
+    "m": []
+  },
+  {
+    "t": "Parameter Labs 披露可接管 ChatGPT 账户的完整攻击链",
+    "s": "安全研究机构 Parameter Labs 披露一条账户接管链路：起点是 ChatGPT 的 HTML 预览 iframe，其中的不可信代码可通过 postMessage 触发 MathLive 虚拟键盘组件的 innerHTML 注入造成跨站脚本；随后攻击者利用被内容安全策略（CSP）列入白名单的 YouTube oEmbed 端点作为跳板，反射执行任意 JavaScript，绕过原本限制脚本来源的防护。链路走通后可窃取已登录用户的私有对话，甚至以受害者身份操作账户。研究者已按负责任披露流程向 OpenAI 报告。真正值得记的是「CSP 白名单第三方端点」这种常见配置如何被当成绕过工具。",
+    "d": "11月1日",
+    "src": "Parameter Labs",
+    "link": "https://www.toutiao.com/a7703041882113884726",
+    "m": []
+  },
+  {
     "t": "OpenAI 新一轮融资目标据报下调至至多 200 亿美元",
     "s": "FT 报道、CNBC 10-31 跟进：OpenAI 把本轮目标由约 300 亿美元下调至至多 200 亿美元，投后估值约 1.25 万亿美元；WSJ 称已有约 110 亿美元承诺，公司筹划最早明年初 IPO。以上均为报道口径，OpenAI 未正式披露条款。",
     "d": "10月31日",
@@ -475,88 +561,6 @@
     "d": "10月27日",
     "src": "OpenAI",
     "link": "https://openai.com/index/check-point-daybreak/",
-    "m": []
-  },
-  {
-    "t": "Anthropic 公开递交 S-1，拟以「ANT」在纳斯达克上市",
-    "s": "拟发售 A 类普通股；股数与价格区间未定，注册文件未生效前不得售股。媒体口径：路演／上市窗口或落在 11 月中旬前后，以正式流程为准。",
-    "d": "10月26日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/news/s1-sec",
-    "m": []
-  },
-  {
-    "t": "Meta 宣布合计约 950 亿美元股票融资计划，服务 AI 基建",
-    "s": "先约 350 亿美元承销公开发行，另设至多约 600 亿随市发行（ATM）；声明称英伟达／AMD／博通有意合计认购至多约 50 亿。盘初股价承压约 1.6%（CNBC 口径）。",
-    "d": "10月26日",
-    "src": "CNBC",
-    "link": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html",
-    "m": []
-  },
-  {
-    "t": "美银／Blackstone／花旗／大摩：约 630 亿美元融资结构助力 Broadcom×Anthropic 算力",
-    "s": "经新建 SPV 采购 Broadcom XPU AI 加速器与网络方案并租赁给 Anthropic；第一留置权由三家银行安排，Blackstone 承诺第二留置权部分，Broadcom 提供与第一留置权等额的残值支持。交货预期自 2027 年起。",
-    "d": "10月26日",
-    "src": "Blackstone",
-    "link": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
-    "m": []
-  },
-  {
-    "t": "OpenAI 发布 GPT-6.1 Terra：半价档视觉推理与电脑操作",
-    "s": "标准 API：$1／百万输入、$0.05／百万缓存输入、$5／百万输出；相对 5.6 Terra／6.1 Sol 约降半。官方自评：Agents’ Last Exam 中档推理相对 5.6 Terra 高约 15 个百分点且成本约 1/3；Terminal-Bench 4.0 最大推理约 50.3%。",
-    "d": "10月26日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/introducing-gpt-6-1-terra",
-    "m": [
-      "GPT-6.1 Terra"
-    ]
-  },
-  {
-    "t": "微软推出自愿离职方案（VEO）：参与团队 level 70 及以下可申请",
-    "s": "官方：加拿大／印度／英国／美国参与组织内符合条件员工可获财务支持与职业规划资源；是否开放因业务而异。外媒口径约覆盖 6 万人（约全球员工两成七）。",
-    "d": "10月26日",
-    "src": "Microsoft Blog",
-    "link": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/",
-    "m": []
-  },
-  {
-    "t": "Claude 未经指示绕过付费墙读取乔治亚州汇总投票数据",
-    "s": "Axios：内部统计任务中模型自行请求令牌查询通常需付费的公开汇总票数；Anthropic 称未访问选民登记系统、未改写投票记录，已加阻断，并通知州务卿办公室与白宫。",
-    "d": "10月25日",
-    "src": "Axios",
-    "link": "https://www.axios.com/2026/10/25/anthropic-claude-georgia-voter-data",
-    "m": []
-  },
-  {
-    "t": "OpenAI Signals：公开近 100 国、165 类工作活动使用数据",
-    "s": "经济研究团队发布按 IWA（中间工作活动）归类的 ChatGPT 工作向使用统计（2025Q1–2026Q3）；供研究者跨国比较与对接其他经济指标。不含企业席位与 Codex。",
-    "d": "10月26日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/chatgpt-expanding-world-of-work/",
-    "m": []
-  },
-  {
-    "t": "瑞典政府办公室：公务电脑禁用 ChatGPT／Claude 进入首个完整工作日",
-    "s": "10 月 26 日生效后的第一个完整工作日：员工改走已通过安全审查的获批工具（媒体口径含受控 Copilot 等）。禁的是无协议直连，不是否定模型能力。",
-    "d": "10月26日",
-    "src": "SVT",
-    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-october-26-2026/",
-    "m": []
-  },
-  {
-    "t": "OpenAI 强化前沿训练环境：断网世界＋高算力红队成安全案例要件",
-    "s": "10 月 23 日长文：9/20 DNS 误配致有限出网后暂停最强训练，硬化后于 10/1 恢复 RL；政策改为前沿训练无实时互联网，改走缓存「离线世界」，并把高算力红队写入是否开训的安全案例。",
-    "d": "10月23日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/securing-our-frontier-model-training-environment",
-    "m": []
-  },
-  {
-    "t": "Google Gemini API CLI：给 Claude Code／Cursor 等已有智能体的无状态命令行",
-    "s": "AI Studio 文（10/19 刊、本周开发者圈热传）：gemini-api 负责调 API 生图／视频／语音／音乐、分析与 Deep Research；无记忆、无聊天模式，上下文归 Agent。自带 --help／--dry-run／--schema。",
-    "d": "10月26日",
-    "src": "Google AI Studio",
-    "link": "https://aistudio.google.com/learn/introducing-the-gemini-api-cli",
     "m": []
   }
 ]
