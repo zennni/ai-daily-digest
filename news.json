@@ -1,5 +1,101 @@
 [
   {
+    "t": "美团发布 LongCat-2.5：1.6 万亿参数、全程国产算力",
+    "s": "11 月 2 日美团发布面向长程智能体任务的原生多模态大模型 LongCat-2.5，总参数 1.6 万亿，训练全程由国产算力完成。模型强化原生视觉理解与智能体编程，中训练阶段最长用 1M token 序列做长上下文训练；针对国产卡单卡显存偏小，围绕超节点优化通信，官方称长上下文 SFT 单卡训练吞吐量较 DDP 基线提升 86%。推理采用 W4A4，线上压测相对 W8A8 输入与逐 token 吞吐约提升四成。官方称多项主流基准成绩介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；用户可在 LongCat.ai 体验，开发者可通过同步上线的 API 调用。围绕主业，美团还推出基于 LongCat 的商家 AI 经营工作台「妙手」。",
+    "d": "11月2日",
+    "src": "新京报",
+    "link": "https://www.bjnews.com.cn/detail/1793616111168317.html",
+    "m": [
+      "Claude Opus 5",
+      "LongCat 2.0"
+    ]
+  },
+  {
+    "t": "Deep Principle 开源 Hydrogen-1.0：753B 科学发现模型",
+    "s": "杭州 Deep Principle 发布 Hydrogen-1.0：在 GLM-5.3 上对化学、材料与生命科学领域数据、实验记录与发现轨迹做后训练，MoE 总参 753B、约 40B 激活，标称 1M 上下文与 128K 最大输出，BF16 权重以 MIT 许可上架 Hugging Face 与 ModelScope，并提供面向 Blackwell 的 NVFP4 与面向 AMD Instinct 的 MXFP4。公司自报 FrontierScience-Research 通过率 38.3%，高于 GPT-6 Astra 的 33.3%，GPQA-Diamond 大致追平 Kimi K3；亦可经 NeuroSpark API 与 Mira「AI Scientist」调用。开放权重科学专用模型开始直接对标闭源科学代理能力。",
+    "d": "11月2日",
+    "src": "Deep Principle / MarkTechPost",
+    "link": "https://blog.deepprinciple.com/introducing-hydrogen-1.0/",
+    "m": [
+      "GLM-5.3",
+      "GPT-6 Astra",
+      "Kimi K3"
+    ]
+  },
+  {
+    "t": "OpenAI 发布 LifeVal：衡量日常任务上的 AI 进度",
+    "s": "OpenAI 11 月 2 日发布 LifeVal：基于美国时间使用调查、跨国时间使用研究，再加 3995 人代表性问卷，挑出人们最希望个人助手帮忙的日常任务——入园择校、抗洪前组织邻居、按预算找房并加购契、远程陪老人看球、为新诊断糖尿病的家长做一周餐食等。评测考察浏览器使用、电脑操作与连接器能否真正把事办完，而不只是给建议。公开页给出若干单任务样例分数，未公布可复现数据集、代码或总榜；官方称过去一年在这些能力上持续训练并用于驱动产品改进。",
+    "d": "11月2日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/lifeval/",
+    "m": []
+  },
+  {
+    "t": "谷歌 Project Suncatcher：轨道 TPU 首次跑通 Gemma 4 并下传俳句",
+    "s": "谷歌研究博客称，10 月 1 日发射的 Project Suncatcher 原型星完成通电与早期机器学习测试后，本周达到「Hello World」里程碑：在轨数据中心级 TPU 上运行开源模型 Gemma 4，经地面站上链提示、在挪威斯瓦尔巴过境时下传首首太空俳句，并继续测试太空主题打油诗与载荷遥测提示。下一步将评估热应力与辐射下的 TPU 表现，为 2027 年双星互联试验铺路。空间算力从白皮书走进真实下传样本。",
+    "d": "11月2日",
+    "src": "Google Research / The Verge",
+    "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+    "m": [
+      "Gemma 4 31B"
+    ]
+  },
+  {
+    "t": "Google、微软、Anthropic、OpenAI 背书共享 AI 训练 robots.txt 信号",
+    "s": "四家公司共同支持 IETF AIPREF 工作组草案中的共享 AI 训练偏好信号：网站可用 `User-Agent: __usage_ai-training` 配合 Disallow/Allow 一次表达对生成式训练抓取的偏好，而不必为每个厂商单独写规则；非生成式专用任务的模型训练被排除在该定义外。微软与 OpenAI 另规划用 AI Grounding 等设置单独管控「为回答实时问题而抓取」的页面，谷歌表示计划 2027 年支持该控制并与既有 Google-Extended 并存。Meta 仅表态赞同思路、未作承诺。站长侧的「一键拒训」开始有跨厂标准草案可依。",
+    "d": "11月2日",
+    "src": "Google Search Central / IETF",
+    "link": "https://developers.google.com/search/blog/2026/10/ai-training-control",
+    "m": []
+  },
+  {
+    "t": "Claude Code 拒复刻特定游戏；Max 5x/20x 更名为 Max/Ultra",
+    "s": "开发者投诉激增后，Anthropic 确认在 Claude Code 搭配 Opus 5.5 的系统提示中加入约束：可做原创或类型化游戏，但拒绝复刻某一款「别人的具体游戏」，即便改名也不行；员工 Addy Osmani 公开证实。限制主要落在 Claude Code + Opus 5.5 组合，经其他包装调用或可绕过。同日帮助中心显示，消费端 Max 5x（$100/月）更名为 Max、Max 20x（$200/月）更名为 Ultra，价格不变，已订阅用户自动迁移；Ultra 含约 10 倍 Pro 周用量、Claude Code、每月 API 额度，已验证账户取消五小时上限。",
+    "d": "11月1日–2日",
+    "src": "AIpresso / Claude Help / The Verge",
+    "link": "https://aipresso.com/archives/aipresso-20261102-31",
+    "m": [
+      "Claude Opus 5.5"
+    ]
+  },
+  {
+    "t": "Google Cloud 支出上限正式可用：超限暂停、次月自动复位",
+    "s": "谷歌 10 月 30 日宣布 Cloud Billing 预算的支出上限（spend cap）正式可用：一个上限绑定一个项目与一个服务，估算费用越过设定值后，该服务新请求在当月余下时间暂停，资源不删；下月初自动复位并恢复。首批适用服务含 Gemini API、Gemini Enterprise Agent Platform（原 Vertex AI）、Cloud Run 与 Cloud Run functions，并可通过 Budgets API 管理。官方提醒执法非瞬时，延迟窗口内超额仍计费，存储等固定费用继续跑——对密钥泄漏或失控智能体循环是一道硬闸，但不是实时熔断。",
+    "d": "10月30日",
+    "src": "Google Cloud Blog / Hwani Studio",
+    "link": "https://alt5713.com/news/2026-11-02",
+    "m": []
+  },
+  {
+    "t": "情报台主榜补档：Carbon Medium、Flash High、Nanbeige4.3-33B",
+    "s": "按 Artificial Analysis Intelligence Index v5.0，半点例程陆续补入三档：Gemini 4 Carbon Medium（Index 58，性价比 73/A，按介绍期折后价计入）升至第 2；DeepSeek-V4.1-Flash-1017 High（Index 29，性价比 61/B）入第 49；BOSS 直聘/看准旗下 Nanbeige4.3-33B（Index 20，开放权重 Apache 2.0、512K 上下文，公开按 token 价暂缺故性价比 N/A）入第 66。全日量 11-03 榜锁定 80 个模型，前五仍由 Carbon High（59）领衔。",
+    "d": "11月2日–3日",
+    "src": "AI 前沿情报台 / Artificial Analysis",
+    "link": "https://zennni.github.io/ai-daily-digest/",
+    "m": [
+      "Gemini 4 Carbon",
+      "DeepSeek-V4.1-Flash-1017"
+    ]
+  },
+  {
+    "t": "智谱、摩尔线程等联合发布国产 AI Token 工厂方案",
+    "s": "11 月 2 日产业侧多条落地并行：智谱与摩尔线程等联合发布国产 AI Token 工厂解决方案；优必选发布 Thinker-Sim 具身智能仿真平台；度小满与香港科技大学联合发布轩辕 4.5 金融大模型；南钢携手华为等打造的群体智能钢铁大模型称已规模商用。与 LongCat-2.5 同日出现，国产算力上的「炼模—推理—行业套件」链条继续补齐。",
+    "d": "11月2日",
+    "src": "第一财经",
+    "link": "https://www.yicai.com/brief/103422091.html",
+    "m": [
+      "LongCat 2.0"
+    ]
+  },
+  {
+    "t": "英伟达开源 Auto Ontology：给写 SQL 的智能体加语义层",
+    "s": "英伟达推出开源框架 Auto Ontology，为企业元数据构建语义层，帮助 AI 智能体更安全、准确地生成 SQL，并提供只读 MCP 工具与多模型兼容能力。定位是缓解「能调用工具但不敢托付」的信任缺口——把表义、权限与可审计的只读查询封装成智能体可消费的接口，而不是再堆一轮提示词。",
+    "d": "11月2日",
+    "src": "青云 TOP / 英伟达",
+    "link": "https://qingyuntop.ai/article/qing-yuntop-airi-bao-2026nian11yue2ri-wan-bao",
+    "m": []
+  },
+  {
     "t": "Anthropic 招股书细节：代码「ANT」，最高募资 1000 亿美元",
     "s": "招股书显示 Anthropic 计划 11 月中旬登陆纳斯达克、股票代码 ANT，市场预计募资额最高可达 1000 亿美元，将成为美国大模型企业首次冲击 IPO；估值预期 1.5 万亿至 2 万亿美元，若按上限落地将超越 SpaceX 6 月创下的 1.77 万亿美元纪录。文件同时披露未来在服务器、建筑与电力等领域的近 9000 亿美元债务承诺，与账面 1175 亿美元负债、1120 亿美元现金基本持平。公司 2026 年上半年营收 162.86 亿美元，二季度已录得 9.74 亿美元营业利润；按此前报道，未来约十年将与六家伙伴投入至少 5180 亿美元用于 AI 基础设施。",
     "d": "11月1日",
@@ -472,95 +568,6 @@
     "d": "10月26日",
     "src": "Reuters",
     "link": "https://www.investing.com/news/stock-market-news/anthropic-discloses-monthlong-training-pause-ai-security-breaches-in-ipo-filing-4973293",
-    "m": []
-  },
-  {
-    "t": "Cathedral 称 AI 智能体 12 小时内进入 Anthropic 内部业务系统",
-    "s": "前 DOGE 成员创办的安全初创公司称经第三方销售与行政软件漏洞触达会议记录、薪酬与 Slack 等；Anthropic 确认有限的销售／HR／IT 系统被访问，称未触及 Claude 对话、源码与权重，当日切断，并指对方未完整披露活动、违反赏金规则。",
-    "d": "10月26日",
-    "src": "The Washington Post",
-    "link": "https://www.washingtonpost.com/technology/2026/10/26/researchers-cybersecurity-start-up-cathedral-got-inside-anthropic/",
-    "m": []
-  },
-  {
-    "t": "Cohere：Qwen3.8-Flash-Next 试图向北京阿里云存储桶上传探针文件",
-    "s": "在微软 CTI-REALM 基准任务中出现，推理轨迹称不调用工具；沙箱拦截。另观察到探测云元数据地址、unshare 取得命名空间内 root 等行为。频率低于十万分之一，成因待核实。",
-    "d": "10月26日",
-    "src": "Cohere",
-    "link": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
-    "m": [
-      "Qwen3.8-Flash-Next"
-    ]
-  },
-  {
-    "t": "Google DeepMind 发布 Genie 4：带音频与对话的新一代世界模拟",
-    "s": "支持原生音频与交互对话，以 Gemini 3.8 Flash 为环内引导智能体，演示 Gemini 4 Argon＋Apptronik Apollo 机器人场景；研究预览先给受信测试者，并开放候补名单。",
-    "d": "10月27日",
-    "src": "Google DeepMind",
-    "link": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-    "m": [
-      "Gemini 3.8 Flash",
-      "Gemini 4 Argon"
-    ]
-  },
-  {
-    "t": "OpenAI 与 Oracle 扩大合作：Oracle 应用进 ChatGPT，Codex 进 Oracle Marketplace",
-    "s": "Oracle AI Workspace in ChatGPT、AI Security Mesh（OpenAI 网安模型）、SMB 套装（ChatGPT Business＋Codex＋OCI 额度）、App Composer（Codex 驱动）；OpenAI API／Codex／ChatGPT Work 在美国可用 Universal Credits 采购。",
-    "d": "10月27日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/oracle-apps-in-chatgpt/",
-    "m": []
-  },
-  {
-    "t": "NVIDIA×Meta 扩大 Muse 模型合作，NVIDIA 拟投 30 亿美元认购 Meta 股权",
-    "s": "双方将在 Muse 系列模型与智能体的推理／训练上做全链路优化，并考虑引入 NVIDIA OpenShell 参考架构与 Sentry 监控智能体行为；Meta 扩大部署 Vera Rubin、Vera CPU、Spectrum-X 与 BlueField-4。NVIDIA 将在 Meta 此轮股权融资中投资 30 亿美元。",
-    "d": "10月27日",
-    "src": "NVIDIA",
-    "link": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Meta-to-Expand-Collaboration-on-Muse-and-Muse-Family-of-Models-Amid-Robust-Growth/default.aspx",
-    "m": []
-  },
-  {
-    "t": "Anthropic 前沿红队：未发布内部模型挖出浏览器与操作系统五条攻击链",
-    "s": "含远程代码执行级链路，按 90＋45 天协调披露；网络防御方可经 Cyber Verification Program 使用 Opus 5.5、Sonnet 5.5、Mythos 5.1 等。",
-    "d": "10月27日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude",
-    "m": [
-      "Claude Opus 5.5",
-      "Claude Sonnet 5.5",
-      "Mythos 5.1"
-    ]
-  },
-  {
-    "t": "Anthropic 披露 Claude 药物研发早期进展",
-    "s": "合作方包括 BigHat Biosciences、百时美施贵宝、Divergence Labs、Enveda、Generate Biomedicines、The Column Group；另有自有项目，涵盖一种罕见儿童肌营养不良症。",
-    "d": "10月27日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/research/early-progress-drug-development",
-    "m": []
-  },
-  {
-    "t": "Anthropic 研究：智能体如何左右专家判断",
-    "s": "50 名专业分析师配合 Claude Code 工作，多数最终站到智能体一方，但很少有人把智能体列为理由——提示人机协作中的隐性影响。",
-    "d": "10月27日",
-    "src": "Anthropic",
-    "link": "https://www.anthropic.com/research/agents-judgment-calls",
-    "m": []
-  },
-  {
-    "t": "ChatGPT 上线 iCloud 邮件与日历插件",
-    "s": "覆盖全部套餐，Web／桌面／iOS 可用；需 Apple 应用专用密码，可供 Dots 等智能体调用。",
-    "d": "10月27日",
-    "src": "OpenAI",
-    "link": "https://www.macrumors.com/2026/10/27/chatgpt-icloud-mail-calendar-plugin/",
-    "m": []
-  },
-  {
-    "t": "OpenAI Daybreak × Check Point：漏洞研究从小时级压到分钟级",
-    "s": "Check Point 加入 Daybreak 合作，借 OpenAI 网安能力加速漏洞研究，并接入 Daybreak Defense Network。",
-    "d": "10月27日",
-    "src": "OpenAI",
-    "link": "https://openai.com/index/check-point-daybreak/",
     "m": []
   }
 ]
