@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "aa_index_version": "v5.0",
   "models": [
     {
@@ -1764,6 +1764,12 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-03",
+      "t": "全日量核验：AA Index 仍 v5.0，Changelog 最新 02 Nov（Nanbeige4.3-33B 20，已入榜），无 03 Nov 新评测；官价/促销无变，主表 80 模名次不变",
+      "m": [],
+      "s": "<b>2026-11-03 总策划 ≈06:48 全日量核对</b>：Artificial Analysis Changelog 最新 Intelligence Index 条目仍为 <b>02 Nov 2026</b>（Nanbeige4.3-33B Intelligence Index 20，已于 11-02 半点入榜），<b>无 03 Nov 新评测</b>；Index 页与 methodology 仍为 <b>Index v5.0</b>（9 项评测、四类各 25%，与仓内口径一致，无需全表重算）。昨日半点已入榜条目（Gemini 4 Carbon Medium 58、DeepSeek V4.1 Flash 1017 High 29、Nanbeige4.3-33B 20）均已在主表。促销均未到期（GPT-5.6 Sol 至少至 11/21、Gemini 4 Argon 介绍期至 11/30、Gemini 3.8 Flash 至 12/31；Carbon 介绍期截止未官宣）。<b>汇率</b>：11/03 为周二交易日，但截至早间核验（≈06:48 Asia/Shanghai）CFETS 当日中间价约 09:15 才公布；最新可核验为 CFETS <b>11/02 中间价 6.7146</b>（SAFE/中新网；BOC 11/03 05:30 Middle Rate 亦显示 671.46）；相对仓内此前记录的 10/30 的 6.7138 上调 8 基点——早间全日量不重算人民币挂价模型。主表 <b>80</b> 模、名次与性价比不变。<b>Top</b>：#1 Gemini 4 Carbon High (59), #2 Gemini 4 Carbon Medium (58), #3 Claude Opus 5.5 Max (58), #4 Claude Opus 5.5 xHigh (57), #5 GPT-6 Astra Max (57)。本地/生图无新证据，未改模板。未改日报产物。"
+    },
     {
       "d": "11-02",
       "t": "半点更新：Nanbeige4.3-33B（AA v5.0 = 20）入榜，#66；无公开官价，性价比 N/A；其余分数/标价不变，仅名次顺延",
