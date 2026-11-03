@@ -1132,7 +1132,7 @@
       "aa": 29,
       "aa_dec": null,
       "pin": 1,
-      "pcache": 0.104263,
+      "pcache": 0.104244,
       "pout": 2.7,
       "open_": "开放权重(10/15 正式开源)",
       "lic": "Apache 2.0",
@@ -1786,6 +1786,14 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-03",
+      "t": "半点核验：AA/官价无变；汇率调至 6.7150（较 6.7146 上调 4 基点／人民币贬值）；微调 Step 5 Preview 缓存挂价",
+      "m": [
+        "Step 5 Preview"
+      ],
+      "s": "<b>2026-11-03 总策划 ≈09:32 半点核对</b>：Artificial Analysis Changelog 最新仍为 <b>02 Nov 2026</b>（Gemini 4 Carbon Low 54、Nanbeige4.3-33B 20，均已入榜），<b>无 03 Nov 新 Intelligence Index 条目</b>；methodology / Index 页仍 <b>Index v5.0</b>（与仓内口径一致，无需全表重算）。主表 <b>81</b> 模、分数与名次不变。<b>Top</b>：#1 Gemini 4 Carbon High (59), #2 Gemini 4 Carbon Medium (58), #3 Claude Opus 5.5 Max (58), #4 Claude Opus 5.5 xHigh (57), #5 GPT-6 Astra Max (57)。促销均未到期（GPT-5.6 Sol 至少至 11/21、Gemini 4 Argon 介绍期至 11/30、Gemini 3.8 Flash 至 12/31；Carbon 介绍期截止未官宣）。<b>汇率</b>：CFETS/中国货币网已公布 <b>2026-11-03 1 USD = 6.7150</b>（较 11/02 的 6.7146 上调 4 基点／人民币贬值；chinamoney CcprHisNew lastDate 2026-11-03 9:15）。仅 <b>Step 5 Preview 缓存（¥0.70）</b> 按 6.7150 微调美分级挂价（pcache → 0.104244）；Step 美元刊例价 $1/$2.7 与标准任务成本不变，其他模型分数与性价比不变。本地/生图无新证据，未改模板。未改日报产物。"
+    },
     {
       "d": "11-03",
       "t": "半点更新：补录 Gemini 4 Carbon Low 档（AA v5.0 = 54）入榜，#10；其余分数/标价不变，仅名次顺延",
