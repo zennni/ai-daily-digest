@@ -1,5 +1,87 @@
 [
   {
+    "t": "国行「Apple 智能与 Siri」如期上线：iOS 27.3 开发者预览版凌晨实测可用",
+    "s": "苹果今日凌晨面向 iPhone 推送首个 iOS 27.3 开发者预览版，IT之家实测设置中已出现「Apple 智能与 Siri」。首批功能含信息/FaceTime/电话中的实时翻译（部分 AirPods 支持面对面翻译）、写作工具、视觉智能、照片消除、智绘表情、通知摘要与优先邮件等。千问作为拓展接入：可在 Siri、写作工具与视觉智能中调用文本/图像理解与内容生成；首次使用需登录千问账号或「通过 Apple 登录」。视觉智能「询问」连接千问、「搜索」连接百度识图。支持机型包括 iPhone 15 Pro/Pro Max、iPhone 16 及后续、iPhone Air、iPhone Duo，Siri 与设备语言需为英文或简体中文。正式版预计 12 月随 iOS 27.3 面向中国用户推出。",
+    "d": "11月4日",
+    "src": "IT之家 / Apple 中国 / MacRumors",
+    "link": "https://www.ithome.com/0/1021/867.htm",
+    "m": []
+  },
+  {
+    "t": "OpenAI：ChatGPT 搜索量已达 Google 的约 20%",
+    "s": "The Verge 报道，OpenAI ChatGPT 消费产品负责人 Adam Fry 在 11 月 3 日（美东）新闻活动上称：按「用户输入触发网页检索」的口径（不含释义、简单 how-to），ChatGPT 搜索量已约等于 Google 搜索量的 20%。他未说明 Google 对照数据来源。对照 2023 年反垄断案中微软称 Bing 约占 3% 搜索份额，这一相对规模仍远谈不上超越，但足以说明对话式检索已成为搜索格局里不可忽视的一支。同期 Fry 称广告「未对产品与用量造成持续负面影响」，并暗示可进一步加大广告形态。",
+    "d": "11月3日",
+    "src": "The Verge",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+    "m": []
+  },
+  {
+    "t": "12 月起 Plus/Pro/Business：ChatGPT 与 Codex 共用一套 token 额度",
+    "s": "OpenAI 帮助中心更新：自 12 月起，Plus、Pro、Business 计划将把 ChatGPT 与 Codex 的用量并入同一套以 token 计量的额度，作为把 Work 的智能体能力并入主 ChatGPT 体验的一部分。Instant 对话不计入该共享池；更先进模型与更复杂任务一般消耗更快。用户可在 Settings → Usage 查看合并后的剩余额度与复位时间；触顶后可等待复位、升级套餐或购买额度。公司未公布 12 月内精确生效日，也未公布各档位新的 token 总量。",
+    "d": "11月3日",
+    "src": "OpenAI Help Center",
+    "link": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+    "m": []
+  },
+  {
+    "t": "OpenAI 推出 Grid Protectors：校园可在电网紧张时主动减负",
+    "s": "OpenAI 11 月 2 日宣布全国性 Grid Protectors 计划：未来算力校园在电网承压时可降低用电，并与公用事业就可削减量、响应速度与持续时长达成安排。佐治亚 Effingham 校园协议中，公司承诺自付全部基础设施与电力服务成本，并含最高 1000 MW 可调节需求响应——官方称约等于约 70 万户家庭平均用电；Georgia Power 预计其大型负荷组合自 2029 年起每年可为用户节省约 9.5 亿美元。计划强调「家庭与小企业不应补贴算力校园电费」。",
+    "d": "11月2日–3日",
+    "src": "OpenAI / Georgia Power",
+    "link": "https://openai.com/index/grid-protectors-program",
+    "m": []
+  },
+  {
+    "t": "前陆军部长 Dan Driscoll 出任 OpenAI 国安现代化高级顾问",
+    "s": "OpenAI 任命第 26 任美国陆军部长 Dan Driscoll 为新设职位「Senior Counselor for National Security Modernization」，协助就先进 AI 加强国家与网络安全、并与盟友推进负责任使用提供建议；亦帮助内部团队理解全球国安机构的运营需求。任命衔接公司既有 Daybreak 盟友网络韧性工作。另有报道称前国防部长 Mark Esper 亦将以战略顾问身份参与军事 AI 相关拓展，细节以官方口径为准。",
+    "d": "11月2日–3日",
+    "src": "OpenAI / CNBC",
+    "link": "https://openai.com/index/dan-driscoll-joins-openai/",
+    "m": []
+  },
+  {
+    "t": "DeepMind PlanAssist：英国家庭改建审批评估时间最高减 58%，扩至 15 个议会",
+    "s": "Google DeepMind 与英国政府、Google Cloud、Faculty 合作的 PlanAssist，用 Gemini 协助校验材料、对照遗产与规划政策、汇总既有异议，并起草带引用的评估报告，最终决定仍由规划官做出。Barnet、Camden、Dorset 试点显示，官员在家庭改建类评估任务上平均耗时最高可降 58%，超 70% 的 AI 生成报告无需修改即获批准。工具现进入 12 个月 Beta，再接入 12 个议会至共 15 个；若测试顺利，政府计划 2027 年向英格兰所有议会开放。",
+    "d": "10月31日–11月3日",
+    "src": "Google DeepMind / GOV.UK",
+    "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+    "m": []
+  },
+  {
+    "t": "Kimi K3.1 Pro 权重进入承诺日：截至 11-03 晚官方 HF 仍未见仓库",
+    "s": "Moonshot 10 月下旬发布 Kimi K3.1 Pro（约 2.8T 总参 / ~104B 激活、1M 上下文）及 Highspeed 变体时承诺「完整权重将于 11 月 4 日前发布」。第三方跟踪显示，截至 11 月 3 日约 14:00 UTC，Moonshot 官方 Hugging Face 最新仓库仍为较早的 Kimi K3，许可证条款亦未随权重公布。模型现可通过 kimi.com、Kimi API（kimi-k3.1-pro / highspeed）与 OpenRouter 使用。本轮早六截稿时权重是否已上架，请以官方仓库为准。",
+    "d": "11月4日（承诺日）",
+    "src": "Kimi / LeakDeck / DataCamp",
+    "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "m": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "t": "学校若全面关闭 Google AI，也将失去 Google 搜索",
+    "s": "TechCrunch 等报道：由于 AI 功能已深度嵌入 Google Search，选择整体限制 Google AI 工具的学校将同时无法使用 Google 搜索，课堂被迫在「要 AI」与「要搜索」之间做硬选择。与 ChatGPT 搜索量攀升同一周出现，说明传统搜索入口与生成式功能正在被绑成同一产品面。",
+    "d": "11月3日",
+    "src": "TechCrunch / The Verge",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+    "m": []
+  },
+  {
+    "t": "Apple Watch「Audio Intelligence」进入 Beta：对话回放与摘要",
+    "s": "Apple 在 Watch 上测试 Audio Intelligence：Live Rewind 与 Siri Recaps 可帮助回听刚才说过的话并生成对话摘要。苹果称音频在安全区处理、不保存原始音频，未保存的片段与摘要会自动删除。与国行 iPhone 侧 Apple 智能同周推进，可穿戴入口也在补齐「听得见、记得住」的能力。",
+    "d": "11月3日",
+    "src": "TechCrunch / AI Week Daily",
+    "link": "https://aiweekdaily.com/digest/2026-11-03",
+    "m": []
+  },
+  {
+    "t": "参议员 Warren 就 Anthropic S-1 风险措辞发函，要求 11-03 前回函",
+    "s": "继修订版 S-1 披露三季度账本、RSP「显著加速」风险与模型越权访问事件后，参议员 Elizabeth Warren 向 CEO Dario Amodei 发出约 11 页信函，引用招股书自身风险语言，质疑公司公益使命表述并警示系统性金融风险，要求 11 月 3 日前答复。招股书风险段正从投资者阅读材料变成国会质询文本。",
+    "d": "11月3日",
+    "src": "The Information Machine / TechCrunch",
+    "link": "https://theinfomachine.fyi/daily/2026-11-03",
+    "m": []
+  },
+  {
     "t": "美团发布 LongCat-2.5：1.6 万亿参数、全程国产算力",
     "s": "11 月 2 日美团发布面向长程智能体任务的原生多模态大模型 LongCat-2.5，总参数 1.6 万亿，训练全程由国产算力完成。模型强化原生视觉理解与智能体编程，中训练阶段最长用 1M token 序列做长上下文训练；针对国产卡单卡显存偏小，围绕超节点优化通信，官方称长上下文 SFT 单卡训练吞吐量较 DDP 基线提升 86%。推理采用 W4A4，线上压测相对 W8A8 输入与逐 token 吞吐约提升四成。官方称多项主流基准成绩介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；用户可在 LongCat.ai 体验，开发者可通过同步上线的 API 调用。围绕主业，美团还推出基于 LongCat 的商家 AI 经营工作台「妙手」。",
     "d": "11月2日",

@@ -1,5 +1,25 @@
 [
  {
+  "d": "2026-11-04",
+  "w": "星期三",
+  "pts": [
+   "国行 Apple 智能随 iOS 27.3 开发者预览开测",
+   "ChatGPT 搜索量约达 Google 的 20%",
+   "12 月起 ChatGPT 与 Codex 共用 token 额度",
+   "LFM3 冲趋势前列；Kimi K3.1 Pro 权重承诺日"
+  ],
+  "link": "AI日报-2026-11-04.html",
+  "m": [
+   "DeepSeek-V4.1-Flash-1017",
+   "Kimi K3",
+   "Nemotron 3.5 Bolt E4B",
+   "Nemotron 3.5 Lightning",
+   "Claude Opus 5.5",
+   "Mistral Large 4"
+  ],
+  "bf": false
+ },
+ {
   "d": "2026-11-03",
   "w": "星期二",
   "pts": [

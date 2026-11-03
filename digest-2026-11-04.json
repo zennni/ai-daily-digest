@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "date": "2026-11-04",
+    "week": "星期三",
+    "note": "今日主题词：入口与配额。凌晨最硬的落地是国行「Apple 智能与 Siri」：苹果如期推送 iOS 27.3 首个开发者预览版，IT之家实测设置页已出现「Apple 智能与 Siri」，实时翻译、写作工具、视觉智能、照片消除、智绘表情与通知摘要一并上线；千问作为拓展接入 Siri、写作与视觉智能，首次使用需登录千问账号，视觉智能「询问」走千问、「搜索」走百度识图。这是苹果首次在国行系统中把国产大模型嵌进系统入口，12 月随 iOS 27.3 正式版面向中国用户推送。产品侧同一天另一条「入口」消息来自 OpenAI：ChatGPT 消费产品负责人 Adam Fry 称，经网页检索定义的 ChatGPT 搜索量已达 Google 搜索量的约 20%；帮助中心同步明确，12 月起 Plus/Pro/Business 的 ChatGPT 与 Codex 将共用一套以 token 计的额度，Instant 对话不计入——聊天与写代码从两本账并成一本账。基建与治理线继续发酵：OpenAI 推出 Grid Protectors，佐治亚 Effingham 校园协议含最高 1000 MW 可调节负荷；前陆军部长 Dan Driscoll 出任国安现代化高级顾问。开源侧 LiquidAI LFM3-1.7B 以 1.7B 体量冲上 Hugging Face 趋势前列，DeepSeek-V4.1-Flash-1017 仍居榜首；Kimi K3.1 Pro 完整权重承诺「11 月 4 日前」发布，截至 11-03 晚官方 HF 仍未见仓库。论文侧 agent 评测与安全继续密集：WebHarbor、DeliverBench、VeriHarm-Bench、Think with Skills 等同日涌上 arXiv。一句话：系统入口在中国打开，产品配额在美国合流。"
+  },
+  "highlights": [
+    {
+      "title": "国行 Apple 智能如期开测：iOS 27.3 开发者预览版凌晨上线",
+      "summary": "苹果推送 iOS 27.3 首个开发者预览版，国行「Apple 智能与 Siri」实测可用；千问接入 Siri/写作/视觉智能，12 月随正式版推送。"
+    },
+    {
+      "title": "ChatGPT 搜索量约等于 Google 的 20%",
+      "summary": "OpenAI 消费产品负责人 Adam Fry 称，按「触发网页检索」口径，ChatGPT 搜索量已达 Google 的约五分之一；同期帮助中心确认 12 月起 ChatGPT 与 Codex 共用 token 额度。"
+    },
+    {
+      "title": "ChatGPT 与 Codex 12 月共用额度：Instant 除外",
+      "summary": "Plus/Pro/Business 将把两套用量并成以 token 计量的一本账，高级模型与复杂任务消耗更快；剩余额度与复位时间在 Settings → Usage 可见。"
+    },
+    {
+      "title": "Grid Protectors：最高 1000 MW 可调节负荷试点佐治亚",
+      "summary": "OpenAI 推出全国性电网保护计划，Effingham 校园协议含最高 1000 MW 需求响应，约等于 70 万户家庭平均用电；公司承诺自付基础设施与电费。"
+    },
+    {
+      "title": "LFM3-1.7B 冲上 HF 趋势前列；Kimi K3.1 Pro 权重进入承诺日",
+      "summary": "LiquidAI 1.7B 本地智能体模型逼近 DeepSeek-V4.1-Flash-1017；Moonshot 承诺 K3.1 Pro 完整权重于 11-04 前发布，截至 11-03 晚官方仓库仍未上架。"
+    }
+  ],
+  "news": [
+    {
+      "title": "国行「Apple 智能与 Siri」如期上线：iOS 27.3 开发者预览版凌晨实测可用",
+      "summary": "苹果今日凌晨面向 iPhone 推送首个 iOS 27.3 开发者预览版，IT之家实测设置中已出现「Apple 智能与 Siri」。首批功能含信息/FaceTime/电话中的实时翻译（部分 AirPods 支持面对面翻译）、写作工具、视觉智能、照片消除、智绘表情、通知摘要与优先邮件等。千问作为拓展接入：可在 Siri、写作工具与视觉智能中调用文本/图像理解与内容生成；首次使用需登录千问账号或「通过 Apple 登录」。视觉智能「询问」连接千问、「搜索」连接百度识图。支持机型包括 iPhone 15 Pro/Pro Max、iPhone 16 及后续、iPhone Air、iPhone Duo，Siri 与设备语言需为英文或简体中文。正式版预计 12 月随 iOS 27.3 面向中国用户推出。",
+      "date": "11月4日",
+      "source": "IT之家 / Apple 中国 / MacRumors",
+      "link": "https://www.ithome.com/0/1021/867.htm",
+      "models": []
+    },
+    {
+      "title": "OpenAI：ChatGPT 搜索量已达 Google 的约 20%",
+      "summary": "The Verge 报道，OpenAI ChatGPT 消费产品负责人 Adam Fry 在 11 月 3 日（美东）新闻活动上称：按「用户输入触发网页检索」的口径（不含释义、简单 how-to），ChatGPT 搜索量已约等于 Google 搜索量的 20%。他未说明 Google 对照数据来源。对照 2023 年反垄断案中微软称 Bing 约占 3% 搜索份额，这一相对规模仍远谈不上超越，但足以说明对话式检索已成为搜索格局里不可忽视的一支。同期 Fry 称广告「未对产品与用量造成持续负面影响」，并暗示可进一步加大广告形态。",
+      "date": "11月3日",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "models": []
+    },
+    {
+      "title": "12 月起 Plus/Pro/Business：ChatGPT 与 Codex 共用一套 token 额度",
+      "summary": "OpenAI 帮助中心更新：自 12 月起，Plus、Pro、Business 计划将把 ChatGPT 与 Codex 的用量并入同一套以 token 计量的额度，作为把 Work 的智能体能力并入主 ChatGPT 体验的一部分。Instant 对话不计入该共享池；更先进模型与更复杂任务一般消耗更快。用户可在 Settings → Usage 查看合并后的剩余额度与复位时间；触顶后可等待复位、升级套餐或购买额度。公司未公布 12 月内精确生效日，也未公布各档位新的 token 总量。",
+      "date": "11月3日",
+      "source": "OpenAI Help Center",
+      "link": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "models": []
+    },
+    {
+      "title": "OpenAI 推出 Grid Protectors：校园可在电网紧张时主动减负",
+      "summary": "OpenAI 11 月 2 日宣布全国性 Grid Protectors 计划：未来算力校园在电网承压时可降低用电，并与公用事业就可削减量、响应速度与持续时长达成安排。佐治亚 Effingham 校园协议中，公司承诺自付全部基础设施与电力服务成本，并含最高 1000 MW 可调节需求响应——官方称约等于约 70 万户家庭平均用电；Georgia Power 预计其大型负荷组合自 2029 年起每年可为用户节省约 9.5 亿美元。计划强调「家庭与小企业不应补贴算力校园电费」。",
+      "date": "11月2日–3日",
+      "source": "OpenAI / Georgia Power",
+      "link": "https://openai.com/index/grid-protectors-program",
+      "models": []
+    },
+    {
+      "title": "前陆军部长 Dan Driscoll 出任 OpenAI 国安现代化高级顾问",
+      "summary": "OpenAI 任命第 26 任美国陆军部长 Dan Driscoll 为新设职位「Senior Counselor for National Security Modernization」，协助就先进 AI 加强国家与网络安全、并与盟友推进负责任使用提供建议；亦帮助内部团队理解全球国安机构的运营需求。任命衔接公司既有 Daybreak 盟友网络韧性工作。另有报道称前国防部长 Mark Esper 亦将以战略顾问身份参与军事 AI 相关拓展，细节以官方口径为准。",
+      "date": "11月2日–3日",
+      "source": "OpenAI / CNBC",
+      "link": "https://openai.com/index/dan-driscoll-joins-openai/",
+      "models": []
+    },
+    {
+      "title": "DeepMind PlanAssist：英国家庭改建审批评估时间最高减 58%，扩至 15 个议会",
+      "summary": "Google DeepMind 与英国政府、Google Cloud、Faculty 合作的 PlanAssist，用 Gemini 协助校验材料、对照遗产与规划政策、汇总既有异议，并起草带引用的评估报告，最终决定仍由规划官做出。Barnet、Camden、Dorset 试点显示，官员在家庭改建类评估任务上平均耗时最高可降 58%，超 70% 的 AI 生成报告无需修改即获批准。工具现进入 12 个月 Beta，再接入 12 个议会至共 15 个；若测试顺利，政府计划 2027 年向英格兰所有议会开放。",
+      "date": "10月31日–11月3日",
+      "source": "Google DeepMind / GOV.UK",
+      "link": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "models": []
+    },
+    {
+      "title": "Kimi K3.1 Pro 权重进入承诺日：截至 11-03 晚官方 HF 仍未见仓库",
+      "summary": "Moonshot 10 月下旬发布 Kimi K3.1 Pro（约 2.8T 总参 / ~104B 激活、1M 上下文）及 Highspeed 变体时承诺「完整权重将于 11 月 4 日前发布」。第三方跟踪显示，截至 11 月 3 日约 14:00 UTC，Moonshot 官方 Hugging Face 最新仓库仍为较早的 Kimi K3，许可证条款亦未随权重公布。模型现可通过 kimi.com、Kimi API（kimi-k3.1-pro / highspeed）与 OpenRouter 使用。本轮早六截稿时权重是否已上架，请以官方仓库为准。",
+      "date": "11月4日（承诺日）",
+      "source": "Kimi / LeakDeck / DataCamp",
+      "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+      "models": [
+        "Kimi K3"
+      ]
+    },
+    {
+      "title": "学校若全面关闭 Google AI，也将失去 Google 搜索",
+      "summary": "TechCrunch 等报道：由于 AI 功能已深度嵌入 Google Search，选择整体限制 Google AI 工具的学校将同时无法使用 Google 搜索，课堂被迫在「要 AI」与「要搜索」之间做硬选择。与 ChatGPT 搜索量攀升同一周出现，说明传统搜索入口与生成式功能正在被绑成同一产品面。",
+      "date": "11月3日",
+      "source": "TechCrunch / The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+      "models": []
+    },
+    {
+      "title": "Apple Watch「Audio Intelligence」进入 Beta：对话回放与摘要",
+      "summary": "Apple 在 Watch 上测试 Audio Intelligence：Live Rewind 与 Siri Recaps 可帮助回听刚才说过的话并生成对话摘要。苹果称音频在安全区处理、不保存原始音频，未保存的片段与摘要会自动删除。与国行 iPhone 侧 Apple 智能同周推进，可穿戴入口也在补齐「听得见、记得住」的能力。",
+      "date": "11月3日",
+      "source": "TechCrunch / AI Week Daily",
+      "link": "https://aiweekdaily.com/digest/2026-11-03",
+      "models": []
+    },
+    {
+      "title": "参议员 Warren 就 Anthropic S-1 风险措辞发函，要求 11-03 前回函",
+      "summary": "继修订版 S-1 披露三季度账本、RSP「显著加速」风险与模型越权访问事件后，参议员 Elizabeth Warren 向 CEO Dario Amodei 发出约 11 页信函，引用招股书自身风险语言，质疑公司公益使命表述并警示系统性金融风险，要求 11 月 3 日前答复。招股书风险段正从投资者阅读材料变成国会质询文本。",
+      "date": "11月3日",
+      "source": "The Information Machine / TechCrunch",
+      "link": "https://theinfomachine.fyi/daily/2026-11-03",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "WebHarbor：为演化中的 GUI 智能体环境对接真实网站",
+      "titleEn": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
+      "summary": "提出把真实网站「停靠」进可持续演化的 GUI 智能体评测环境，缓解静态网页快照与真实站点漂移之间的落差，面向网页操作智能体的长期评测与训练。",
+      "authors": "Zhaoyang Wang, Qianhui Wu, Boyu Gou 等",
+      "link": "https://arxiv.org/abs/2611.03634"
+    },
+    {
+      "title": "Strategist：用智能体演化推理",
+      "titleEn": "Strategist: Evolving Reasoning with Agents",
+      "summary": "NeurIPS 2026 相关工作：把多智能体协作引入推理策略的演化，尝试让模型在任务反馈下改写自身推理流程，而不是只扩上下文或堆采样。",
+      "authors": "Taiming Lu, Qi Xu, Zhigang Hua, Zhuang Liu",
+      "link": "https://arxiv.org/abs/2611.03618"
+    },
+    {
+      "title": "DeliverBench：多阶段真实专业项目交付基准",
+      "titleEn": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+      "summary": "面向「把多阶段专业项目真正交出去」而非单步答题，考察智能体在长程交付链上的规划、协作与验收能力，补齐现有 coding/web 基准对「交付」维度的空白。",
+      "authors": "Yumou Liu, Mingju Chen, Zhoufutu Wen 等",
+      "link": "https://arxiv.org/abs/2611.03388"
+    },
+    {
+      "title": "CoworkOS：规模化真实世界自动协作的同事型智能体",
+      "titleEn": "CoworkOS: Scaling Agent Coworkers for Real-world Automation",
+      "summary": "提出面向真实办公自动化的同事型智能体操作系统思路，强调多智能体分工、工具编排与规模化部署，对应产业侧「Cowork / Work」产品线对底层运行时的需求。",
+      "authors": "Jiajie Jin, Guanting Dong, Chengjun Pan 等",
+      "link": "https://arxiv.org/abs/2611.03178"
+    },
+    {
+      "title": "VeriHarm-Bench：可核验地衡量编程智能体的有害成功",
+      "titleEn": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
+      "summary": "不只看智能体是否写出可运行代码，而是可核验地度量「有害却成功」的情形——例如利用未公开补丁缺口完成利用——把安全评测从拒答率推进到可复现危害成功。",
+      "authors": "Wei-Lin Chen, Zhepei Wei, Xinyu Zhu 等",
+      "link": "https://arxiv.org/abs/2611.03575"
+    },
+    {
+      "title": "预测式安全护栏并不总让 LLM 智能体更安全",
+      "titleEn": "Predictive Safety Guardrails Do Not Always Make LLM Agents Safer",
+      "summary": "实证表明，预测式安全护栏在部分智能体场景下未必降低危害，甚至可能改变策略分布带来副作用；提醒「多加一层护栏」不等于「更安全」。",
+      "authors": "Weixiang Zhao, Zhihao Liu, Guancheng Li 等",
+      "link": "https://arxiv.org/abs/2611.02826"
+    },
+    {
+      "title": "Think with Skills：执行前先用伪代码规划",
+      "titleEn": "Think with Skills: Pseudocode Planning Before Execution for Advanced Reasoners",
+      "summary": "让推理模型在调用技能/工具前先输出伪代码式计划，再执行；在需要多技能编排的任务上，把「想到」与「做到」拆成可检查的两步。",
+      "authors": "Boshen Zhou, Boxuan Yue, Xiang Li, Shanchao Yang",
+      "link": "https://arxiv.org/abs/2611.02830"
+    },
+    {
+      "title": "四桥游戏：多智能体博弈中的欺骗倾向度量",
+      "titleEn": "Four Bridges: Measuring Deception Propensity in a Multi-Agent Game",
+      "summary": "用多智能体博弈环境度量模型的欺骗倾向，提供可复现的行为刻度，补充静态安全问卷对「会不会主动骗人」的覆盖不足。",
+      "authors": "Raphael Casey, Michael Simeone, Alberto Tosato 等",
+      "link": "https://arxiv.org/abs/2611.03600"
+    }
+  ],
+  "models": [
+    {
+      "name": "LiquidAI LFM3-1.7B",
+      "vendor": "Liquid AI",
+      "highlight": "1.73B 本地智能体取向模型：24 层三混合架构（门控短卷积 + 滑窗注意力 + 全局注意力），256K 上下文，覆盖 16 种语言；4-bit 约 1GB 显存，提供 BF16/FP8/NVFP4/GGUF/MLX/ONNX。官方表报 BFCL V4 71.39，高于 Qwen3.5-9B 的 62.83，但 SWE-bench Verified 落后（43.40 vs 51.20），厂商明确不推荐复杂多智能体编程。11-02～11-03 在 Hugging Face 趋势榜上逼近甚至短暂并列 DeepSeek-V4.1-Flash-1017。许可为 LFM Open License v1.0。",
+      "date": "10月23日发布 / 11月趋势",
+      "link": "https://huggingface.co/LiquidAI/LFM3-1.7B"
+    },
+    {
+      "name": "DeepSeek-V4.1-Flash-1017",
+      "vendor": "DeepSeek",
+      "highlight": "10 月 17 日更新的 Flash 检查点，MIT 许可；官方表报 Terminal-Bench 4.0 升至 42.3（前代 Flash 31.2），建议上下文 1M。连续多周占据 Hugging Face 趋势榜首，30 日下载约 18 万量级，仍是本周开源多模态快模型的流量锚点。",
+      "date": "持续趋势",
+      "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+    },
+    {
+      "name": "NVIDIA Nemotron 3.5 Transcribe / Bolt E4B",
+      "vendor": "NVIDIA",
+      "highlight": "开源权重语音与轻量文本线并行放量：Nemotron 3.5 Transcribe（约 30B-A4B，40 语种、最长约 1 小时音频，OpenMDW-1.1）与 Nemotron 3.5 Bolt E4B（约 4GB 档文本生成）同日段登上 HF 趋势前列。Transcribe 除转写外支持翻译、说话人归因、词级时间戳与音频问答。",
+      "date": "11月趋势",
+      "link": "https://huggingface.co/nvidia"
+    },
+    {
+      "name": "Kimi K3.1 Pro（权重承诺日）",
+      "vendor": "Moonshot AI",
+      "highlight": "API/应用已上线的 3T 级开放权重承诺模型：约 2.8T / ~104B 激活、1M 上下文，官方称智能体编码与 Claude Opus 5.5 接近。完整权重承诺 11-04 前发布；截至 11-03 晚官方 HF 未见 K3.1 Pro 仓库，许可证未公布。可经 kimi-k3.1-pro / highspeed API 与 OpenRouter 调用。",
+      "date": "11月4日承诺",
+      "link": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+    },
+    {
+      "name": "Mistral Large 4",
+      "vendor": "Mistral AI",
+      "highlight": "约 1T 参数多模态 MoE（公开卡常见作 1T-A52B）开放权重继续在 HF 趋势前列盘桓；与 LFM3、Nemotron 3.5、DeepSeek Flash 同周构成「可下载旗舰 + 端侧小模型」双轨流量。",
+      "date": "持续趋势",
+      "link": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Skills over MCP 双周工作会：技能规范与 MCP 扩展的合流讨论",
+      "summary": "MCP 社区 11 月 3 日举行 Skills over MCP 双周工作会。背景是 Anthropic 此前将 Agent Skills（SKILL.md 文件夹标准）捐赠给 Linux 基金会旗下 Agentic AI Foundation，同时 MCP 侧 SEP-2640 Skills 扩展已定稿；但 Cursor、Claude 等主流客户端尚未从 MCP 通道加载远程技能，ChatGPT / fast-agent / MCP Inspector 仅有部分支持。「技能优先还是工具优先」从口号变成协议层议程。",
+      "source": "MCP Events / Anthropic AAIF",
+      "link": "https://meet.modelcontextprotocol.io/2026/11/skills-over-mcp-working-session-bi-weekly--0f5Zx8IdrJ8U",
+      "models": []
+    },
+    {
+      "title": "ChatGPT × Codex 额度合流：智能体工作负载被并进主聊天账本",
+      "summary": "帮助中心把 12 月变更写成「把 Work 的智能体能力并入主 ChatGPT 体验」的配套计量：Plus/Pro/Business 下一本 token 账同时覆盖聊天侧复杂任务与 Codex 编码。Instant 对话留在账本外，等于把「随便问问」与「真干活」拆开计价。对 Agent 产品而言，这是一次配额架构向交付型工作负载倾斜的信号。",
+      "source": "OpenAI Help",
+      "link": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits",
+      "models": []
+    },
+    {
+      "title": "DeliverBench 与 CoworkOS：从「能调用工具」到「能交付项目」",
+      "summary": "同日 arXiv 上 DeliverBench 直接考核多阶段专业项目交付，CoworkOS 讨论规模化同事型智能体运行时。与产业侧 ChatGPT Work / Claude Cowork / 各家 Coding Agent 的产品叙事对齐：评测与系统论文都在从单步工具调用，转向长程交付与协作编排。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.03388",
+      "models": []
+    },
+    {
+      "title": "VeriHarm-Bench：编程智能体安全评测盯上「有害却成功」",
+      "summary": "新基准要求可核验地度量编码智能体完成有害目标的成功率，而不是只统计拒答。结合本周 Anthropic S-1 披露的模型越权访问案例，安全评测正从「会不会说不」转向「能不能在真实系统里把坏事做成」。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.03575",
+      "models": []
+    },
+    {
+      "title": "Think with Skills：执行前伪代码规划，给技能编排加一道可检查门槛",
+      "summary": "论文提议在调用技能前先产出伪代码计划再执行，把 Skill 生态里常见的「直接开跑」改成「先写步骤」。与 AAIF 托管的 Agent Skills 标准、以及「Skills over MCP」讨论形成同一条线：技能越来越多，缺的是可审查的规划层。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.02830",
+      "models": []
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-04</title>
+<style>
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:6px;color:#1e3a8a}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年11月4日 · 星期三</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：入口与配额。凌晨最硬的落地是国行「Apple 智能与 Siri」：苹果如期推送 iOS 27.3 首个开发者预览版，IT之家实测设置页已出现「Apple 智能与 Siri」，实时翻译、写作工具、视觉智能、照片消除、智绘表情与通知摘要一并上线；千问作为拓展接入 Siri、写作与视觉智能，首次使用需登录千问账号，视觉智能「询问」走千问、「搜索」走百度识图。这是苹果首次在国行系统中把国产大模型嵌进系统入口，12 月随 iOS 27.3 正式版面向中国用户推送。产品侧同一天另一条「入口」消息来自 OpenAI：ChatGPT 消费产品负责人 Adam Fry 称，经网页检索定义的 ChatGPT 搜索量已达 Google 搜索量的约 20%；帮助中心同步明确，12 月起 Plus/Pro/Business 的 ChatGPT 与 Codex 将共用一套以 token 计的额度，Instant 对话不计入——聊天与写代码从两本账并成一本账。基建与治理线继续发酵：OpenAI 推出 Grid Protectors，佐治亚 Effingham 校园协议含最高 1000 MW 可调节负荷；前陆军部长 Dan Driscoll 出任国安现代化高级顾问。开源侧 LiquidAI LFM3-1.7B 以 1.7B 体量冲上 Hugging Face 趋势前列，DeepSeek-V4.1-Flash-1017 仍居榜首；Kimi K3.1 Pro 完整权重承诺「11 月 4 日前」发布，截至 11-03 晚官方 HF 仍未见仓库。论文侧 agent 评测与安全继续密集：WebHarbor、DeliverBench、VeriHarm-Bench、Think with Skills 等同日涌上 arXiv。一句话：系统入口在中国打开，产品配额在美国合流。</div>
+</header>
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">本页</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a class="pt-top" href="#">回顶</a>
+</nav>
+<div class="highlights" id="sec-highlights">
+  <h2>🔥 今日看点</h2>
+  <ul>
+    <li><strong>国行 Apple 智能如期开测：iOS 27.3 开发者预览版凌晨上线：</strong>苹果推送 iOS 27.3 首个开发者预览版，国行「Apple 智能与 Siri」实测可用；千问接入 Siri/写作/视觉智能，12 月随正式版推送。</li>
+    <li><strong>ChatGPT 搜索量约等于 Google 的 20%：</strong>OpenAI 消费产品负责人 Adam Fry 称，按「触发网页检索」口径，ChatGPT 搜索量已达 Google 的约五分之一；同期帮助中心确认 12 月起 ChatGPT 与 Codex 共用 token 额度。</li>
+    <li><strong>ChatGPT 与 Codex 12 月共用额度：Instant 除外：</strong>Plus/Pro/Business 将把两套用量并成以 token 计量的一本账，高级模型与复杂任务消耗更快；剩余额度与复位时间在 Settings → Usage 可见。</li>
+    <li><strong>Grid Protectors：最高 1000 MW 可调节负荷试点佐治亚：</strong>OpenAI 推出全国性电网保护计划，Effingham 校园协议含最高 1000 MW 需求响应，约等于 70 万户家庭平均用电；公司承诺自付基础设施与电费。</li>
+    <li><strong>LFM3-1.7B 冲上 HF 趋势前列；Kimi K3.1 Pro 权重进入承诺日：</strong>LiquidAI 1.7B 本地智能体模型逼近 DeepSeek-V4.1-Flash-1017；Moonshot 承诺 K3.1 Pro 完整权重于 11-04 前发布，截至 11-03 晚官方仓库仍未上架。</li>
+  </ul>
+</div>
+<section id="sec-news">
+  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+  <div class="card">
+    <h3>国行「Apple 智能与 Siri」如期上线：iOS 27.3 开发者预览版凌晨实测可用<span class="tag tag-new">11月4日</span></h3>
+    <p>苹果今日凌晨面向 iPhone 推送首个 iOS 27.3 开发者预览版，IT之家实测设置中已出现「Apple 智能与 Siri」。首批功能含信息/FaceTime/电话中的实时翻译（部分 AirPods 支持面对面翻译）、写作工具、视觉智能、照片消除、智绘表情、通知摘要与优先邮件等。千问作为拓展接入：可在 Siri、写作工具与视觉智能中调用文本/图像理解与内容生成；首次使用需登录千问账号或「通过 Apple 登录」。视觉智能「询问」连接千问、「搜索」连接百度识图。支持机型包括 iPhone 15 Pro/Pro Max、iPhone 16 及后续、iPhone Air、iPhone Duo，Siri 与设备语言需为英文或简体中文。正式版预计 12 月随 iOS 27.3 面向中国用户推出。</p>
+    <div class="meta">来源：IT之家 / Apple 中国 / MacRumors ·  <a href="https://www.ithome.com/0/1021/867.htm" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI：ChatGPT 搜索量已达 Google 的约 20%<span class="tag tag-oss">11月3日</span></h3>
+    <p>The Verge 报道，OpenAI ChatGPT 消费产品负责人 Adam Fry 在 11 月 3 日（美东）新闻活动上称：按「用户输入触发网页检索」的口径（不含释义、简单 how-to），ChatGPT 搜索量已约等于 Google 搜索量的 20%。他未说明 Google 对照数据来源。对照 2023 年反垄断案中微软称 Bing 约占 3% 搜索份额，这一相对规模仍远谈不上超越，但足以说明对话式检索已成为搜索格局里不可忽视的一支。同期 Fry 称广告「未对产品与用量造成持续负面影响」，并暗示可进一步加大广告形态。</p>
+    <div class="meta">来源：The Verge ·  <a href="https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>12 月起 Plus/Pro/Business：ChatGPT 与 Codex 共用一套 token 额度<span class="tag tag-oss">11月3日</span></h3>
+    <p>OpenAI 帮助中心更新：自 12 月起，Plus、Pro、Business 计划将把 ChatGPT 与 Codex 的用量并入同一套以 token 计量的额度，作为把 Work 的智能体能力并入主 ChatGPT 体验的一部分。Instant 对话不计入该共享池；更先进模型与更复杂任务一般消耗更快。用户可在 Settings → Usage 查看合并后的剩余额度与复位时间；触顶后可等待复位、升级套餐或购买额度。公司未公布 12 月内精确生效日，也未公布各档位新的 token 总量。</p>
+    <div class="meta">来源：OpenAI Help Center ·  <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>OpenAI 推出 Grid Protectors：校园可在电网紧张时主动减负<span class="tag tag-oss">11月2日–3日</span></h3>
+    <p>OpenAI 11 月 2 日宣布全国性 Grid Protectors 计划：未来算力校园在电网承压时可降低用电，并与公用事业就可削减量、响应速度与持续时长达成安排。佐治亚 Effingham 校园协议中，公司承诺自付全部基础设施与电力服务成本，并含最高 1000 MW 可调节需求响应——官方称约等于约 70 万户家庭平均用电；Georgia Power 预计其大型负荷组合自 2029 年起每年可为用户节省约 9.5 亿美元。计划强调「家庭与小企业不应补贴算力校园电费」。</p>
+    <div class="meta">来源：OpenAI / Georgia Power ·  <a href="https://openai.com/index/grid-protectors-program" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>前陆军部长 Dan Driscoll 出任 OpenAI 国安现代化高级顾问<span class="tag tag-oss">11月2日–3日</span></h3>
+    <p>OpenAI 任命第 26 任美国陆军部长 Dan Driscoll 为新设职位「Senior Counselor for National Security Modernization」，协助就先进 AI 加强国家与网络安全、并与盟友推进负责任使用提供建议；亦帮助内部团队理解全球国安机构的运营需求。任命衔接公司既有 Daybreak 盟友网络韧性工作。另有报道称前国防部长 Mark Esper 亦将以战略顾问身份参与军事 AI 相关拓展，细节以官方口径为准。</p>
+    <div class="meta">来源：OpenAI / CNBC ·  <a href="https://openai.com/index/dan-driscoll-joins-openai/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeepMind PlanAssist：英国家庭改建审批评估时间最高减 58%，扩至 15 个议会<span class="tag tag-new">10月31日–11月3日</span></h3>
+    <p>Google DeepMind 与英国政府、Google Cloud、Faculty 合作的 PlanAssist，用 Gemini 协助校验材料、对照遗产与规划政策、汇总既有异议，并起草带引用的评估报告，最终决定仍由规划官做出。Barnet、Camden、Dorset 试点显示，官员在家庭改建类评估任务上平均耗时最高可降 58%，超 70% 的 AI 生成报告无需修改即获批准。工具现进入 12 个月 Beta，再接入 12 个议会至共 15 个；若测试顺利，政府计划 2027 年向英格兰所有议会开放。</p>
+    <div class="meta">来源：Google DeepMind / GOV.UK ·  <a href="https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Kimi K3.1 Pro 权重进入承诺日：截至 11-03 晚官方 HF 仍未见仓库<span class="tag tag-oss">11月4日（承诺日）</span></h3>
+    <p>Moonshot 10 月下旬发布 Kimi K3.1 Pro（约 2.8T 总参 / ~104B 激活、1M 上下文）及 Highspeed 变体时承诺「完整权重将于 11 月 4 日前发布」。第三方跟踪显示，截至 11 月 3 日约 14:00 UTC，Moonshot 官方 Hugging Face 最新仓库仍为较早的 Kimi K3，许可证条款亦未随权重公布。模型现可通过 kimi.com、Kimi API（kimi-k3.1-pro / highspeed）与 OpenRouter 使用。本轮早六截稿时权重是否已上架，请以官方仓库为准。</p>
+    <div class="meta">来源：Kimi / LeakDeck / DataCamp ·  <a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>学校若全面关闭 Google AI，也将失去 Google 搜索<span class="tag tag-hot">11月3日</span></h3>
+    <p>TechCrunch 等报道：由于 AI 功能已深度嵌入 Google Search，选择整体限制 Google AI 工具的学校将同时无法使用 Google 搜索，课堂被迫在「要 AI」与「要搜索」之间做硬选择。与 ChatGPT 搜索量攀升同一周出现，说明传统搜索入口与生成式功能正在被绑成同一产品面。</p>
+    <div class="meta">来源：TechCrunch / The Verge ·  <a href="https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Apple Watch「Audio Intelligence」进入 Beta：对话回放与摘要<span class="tag tag-new">11月3日</span></h3>
+    <p>Apple 在 Watch 上测试 Audio Intelligence：Live Rewind 与 Siri Recaps 可帮助回听刚才说过的话并生成对话摘要。苹果称音频在安全区处理、不保存原始音频，未保存的片段与摘要会自动删除。与国行 iPhone 侧 Apple 智能同周推进，可穿戴入口也在补齐「听得见、记得住」的能力。</p>
+    <div class="meta">来源：TechCrunch / AI Week Daily ·  <a href="https://aiweekdaily.com/digest/2026-11-03" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>参议员 Warren 就 Anthropic S-1 风险措辞发函，要求 11-03 前回函<span class="tag tag-hot">11月3日</span></h3>
+    <p>继修订版 S-1 披露三季度账本、RSP「显著加速」风险与模型越权访问事件后，参议员 Elizabeth Warren 向 CEO Dario Amodei 发出约 11 页信函，引用招股书自身风险语言，质疑公司公益使命表述并警示系统性金融风险，要求 11 月 3 日前答复。招股书风险段正从投资者阅读材料变成国会质询文本。</p>
+    <div class="meta">来源：The Information Machine / TechCrunch ·  <a href="https://theinfomachine.fyi/daily/2026-11-03" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section id="sec-papers">
+  <h2>B · 前沿论文<span class="count">8 条</span></h2>
+  <div class="card">
+    <h3>WebHarbor：为演化中的 GUI 智能体环境对接真实网站<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">WebHarbor: Docking Real Websites for Evolving GUI Agent Environments</div>
+    <p>提出把真实网站「停靠」进可持续演化的 GUI 智能体评测环境，缓解静态网页快照与真实站点漂移之间的落差，面向网页操作智能体的长期评测与训练。</p>
+    <div class="paper-authors">作者：Zhaoyang Wang, Qianhui Wu, Boyu Gou 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.03634" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Strategist：用智能体演化推理<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">Strategist: Evolving Reasoning with Agents</div>
+    <p>NeurIPS 2026 相关工作：把多智能体协作引入推理策略的演化，尝试让模型在任务反馈下改写自身推理流程，而不是只扩上下文或堆采样。</p>
+    <div class="paper-authors">作者：Taiming Lu, Qi Xu, Zhigang Hua, Zhuang Liu</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.03618" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeliverBench：多阶段真实专业项目交付基准<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects</div>
+    <p>面向「把多阶段专业项目真正交出去」而非单步答题，考察智能体在长程交付链上的规划、协作与验收能力，补齐现有 coding/web 基准对「交付」维度的空白。</p>
+    <div class="paper-authors">作者：Yumou Liu, Mingju Chen, Zhoufutu Wen 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.03388" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>CoworkOS：规模化真实世界自动协作的同事型智能体<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">CoworkOS: Scaling Agent Coworkers for Real-world Automation</div>
+    <p>提出面向真实办公自动化的同事型智能体操作系统思路，强调多智能体分工、工具编排与规模化部署，对应产业侧「Cowork / Work」产品线对底层运行时的需求。</p>
+    <div class="paper-authors">作者：Jiajie Jin, Guanting Dong, Chengjun Pan 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.03178" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>VeriHarm-Bench：可核验地衡量编程智能体的有害成功<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably</div>
+    <p>不只看智能体是否写出可运行代码，而是可核验地度量「有害却成功」的情形——例如利用未公开补丁缺口完成利用——把安全评测从拒答率推进到可复现危害成功。</p>
+    <div class="paper-authors">作者：Wei-Lin Chen, Zhepei Wei, Xinyu Zhu 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.03575" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>预测式安全护栏并不总让 LLM 智能体更安全<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">Predictive Safety Guardrails Do Not Always Make LLM Agents Safer</div>
+    <p>实证表明，预测式安全护栏在部分智能体场景下未必降低危害，甚至可能改变策略分布带来副作用；提醒「多加一层护栏」不等于「更安全」。</p>
+    <div class="paper-authors">作者：Weixiang Zhao, Zhihao Liu, Guancheng Li 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.02826" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Think with Skills：执行前先用伪代码规划<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">Think with Skills: Pseudocode Planning Before Execution for Advanced Reasoners</div>
+    <p>让推理模型在调用技能/工具前先输出伪代码式计划，再执行；在需要多技能编排的任务上，把「想到」与「做到」拆成可检查的两步。</p>
+    <div class="paper-authors">作者：Boshen Zhou, Boxuan Yue, Xiang Li, Shanchao Yang</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.02830" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>四桥游戏：多智能体博弈中的欺骗倾向度量<span class="tag tag-oss">论文</span></h3>
+    <div class="paper-authors">Four Bridges: Measuring Deception Propensity in a Multi-Agent Game</div>
+    <p>用多智能体博弈环境度量模型的欺骗倾向，提供可复现的行为刻度，补充静态安全问卷对「会不会主动骗人」的覆盖不足。</p>
+    <div class="paper-authors">作者：Raphael Casey, Michael Simeone, Alberto Tosato 等</div>
+    <div class="meta"><a href="https://arxiv.org/abs/2611.03600" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section id="sec-models">
+  <h2>C · 模型动态<span class="count">5 条</span></h2>
+  <div class="card">
+    <h3>LiquidAI LFM3-1.7B · Liquid AI<span class="tag tag-new">10月23日发布 / 11月趋势</span></h3>
+    <p>1.73B 本地智能体取向模型：24 层三混合架构（门控短卷积 + 滑窗注意力 + 全局注意力），256K 上下文，覆盖 16 种语言；4-bit 约 1GB 显存，提供 BF16/FP8/NVFP4/GGUF/MLX/ONNX。官方表报 BFCL V4 71.39，高于 Qwen3.5-9B 的 62.83，但 SWE-bench Verified 落后（43.40 vs 51.20），厂商明确不推荐复杂多智能体编程。11-02～11-03 在 Hugging Face 趋势榜上逼近甚至短暂并列 DeepSeek-V4.1-Flash-1017。许可为 LFM Open License v1.0。</p>
+    <div class="meta"><a href="https://huggingface.co/LiquidAI/LFM3-1.7B" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeepSeek-V4.1-Flash-1017 · DeepSeek<span class="tag tag-new">持续趋势</span></h3>
+    <p>10 月 17 日更新的 Flash 检查点，MIT 许可；官方表报 Terminal-Bench 4.0 升至 42.3（前代 Flash 31.2），建议上下文 1M。连续多周占据 Hugging Face 趋势榜首，30 日下载约 18 万量级，仍是本周开源多模态快模型的流量锚点。</p>
+    <div class="meta"><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>NVIDIA Nemotron 3.5 Transcribe / Bolt E4B · NVIDIA<span class="tag tag-new">11月趋势</span></h3>
+    <p>开源权重语音与轻量文本线并行放量：Nemotron 3.5 Transcribe（约 30B-A4B，40 语种、最长约 1 小时音频，OpenMDW-1.1）与 Nemotron 3.5 Bolt E4B（约 4GB 档文本生成）同日段登上 HF 趋势前列。Transcribe 除转写外支持翻译、说话人归因、词级时间戳与音频问答。</p>
+    <div class="meta"><a href="https://huggingface.co/nvidia" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Kimi K3.1 Pro（权重承诺日） · Moonshot AI<span class="tag tag-new">11月4日承诺</span></h3>
+    <p>API/应用已上线的 3T 级开放权重承诺模型：约 2.8T / ~104B 激活、1M 上下文，官方称智能体编码与 Claude Opus 5.5 接近。完整权重承诺 11-04 前发布；截至 11-03 晚官方 HF 未见 K3.1 Pro 仓库，许可证未公布。可经 kimi-k3.1-pro / highspeed API 与 OpenRouter 调用。</p>
+    <div class="meta"><a href="https://www.kimi.ai/blog/kimi-k3-1-pro" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Mistral Large 4 · Mistral AI<span class="tag tag-new">持续趋势</span></h3>
+    <p>约 1T 参数多模态 MoE（公开卡常见作 1T-A52B）开放权重继续在 HF 趋势前列盘桓；与 LFM3、Nemotron 3.5、DeepSeek Flash 同周构成「可下载旗舰 + 端侧小模型」双轨流量。</p>
+    <div class="meta"><a href="https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<section id="sec-ecosystem">
+  <h2>D · Agent / 生态<span class="count">5 条</span></h2>
+  <div class="card">
+    <h3>Skills over MCP 双周工作会：技能规范与 MCP 扩展的合流讨论<span class="tag tag-hot">生态</span></h3>
+    <p>MCP 社区 11 月 3 日举行 Skills over MCP 双周工作会。背景是 Anthropic 此前将 Agent Skills（SKILL.md 文件夹标准）捐赠给 Linux 基金会旗下 Agentic AI Foundation，同时 MCP 侧 SEP-2640 Skills 扩展已定稿；但 Cursor、Claude 等主流客户端尚未从 MCP 通道加载远程技能，ChatGPT / fast-agent / MCP Inspector 仅有部分支持。「技能优先还是工具优先」从口号变成协议层议程。</p>
+    <div class="meta">来源：MCP Events / Anthropic AAIF ·  <a href="https://meet.modelcontextprotocol.io/2026/11/skills-over-mcp-working-session-bi-weekly--0f5Zx8IdrJ8U" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>ChatGPT × Codex 额度合流：智能体工作负载被并进主聊天账本<span class="tag tag-hot">生态</span></h3>
+    <p>帮助中心把 12 月变更写成「把 Work 的智能体能力并入主 ChatGPT 体验」的配套计量：Plus/Pro/Business 下一本 token 账同时覆盖聊天侧复杂任务与 Codex 编码。Instant 对话留在账本外，等于把「随便问问」与「真干活」拆开计价。对 Agent 产品而言，这是一次配额架构向交付型工作负载倾斜的信号。</p>
+    <div class="meta">来源：OpenAI Help ·  <a href="https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>DeliverBench 与 CoworkOS：从「能调用工具」到「能交付项目」<span class="tag tag-hot">生态</span></h3>
+    <p>同日 arXiv 上 DeliverBench 直接考核多阶段专业项目交付，CoworkOS 讨论规模化同事型智能体运行时。与产业侧 ChatGPT Work / Claude Cowork / 各家 Coding Agent 的产品叙事对齐：评测与系统论文都在从单步工具调用，转向长程交付与协作编排。</p>
+    <div class="meta">来源：arXiv ·  <a href="https://arxiv.org/abs/2611.03388" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>VeriHarm-Bench：编程智能体安全评测盯上「有害却成功」<span class="tag tag-hot">生态</span></h3>
+    <p>新基准要求可核验地度量编码智能体完成有害目标的成功率，而不是只统计拒答。结合本周 Anthropic S-1 披露的模型越权访问案例，安全评测正从「会不会说不」转向「能不能在真实系统里把坏事做成」。</p>
+    <div class="meta">来源：arXiv ·  <a href="https://arxiv.org/abs/2611.03575" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Think with Skills：执行前伪代码规划，给技能编排加一道可检查门槛<span class="tag tag-hot">生态</span></h3>
+    <p>论文提议在调用技能前先产出伪代码计划再执行，把 Skill 生态里常见的「直接开跑」改成「先写步骤」。与 AAIF 托管的 Agent Skills 标准、以及「Skills over MCP」讨论形成同一条线：技能越来越多，缺的是可审查的规划层。</p>
+    <div class="meta">来源：arXiv ·  <a href="https://arxiv.org/abs/2611.02830" target="_blank">阅读全文 ↗</a></div>
+  </div>
+</section>
+<footer>由运营 · 情报台早六日报生成 · 数据截至 2026-11-04 早六（Asia/Shanghai）</footer>
+</div>
+</body>
+</html>
