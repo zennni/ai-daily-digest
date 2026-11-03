@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-11-03",
     "week": "星期二",
-    "note": "今日主题词：国芯与轨道。国内与空间两侧同时给出新样本。美团发布 LongCat-2.5：总参数 1.6 万亿、全程国产算力训练的原生多模态长程智能体模型，官网与 API 同步开放，官方称多项主流基准成绩介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；杭州 Deep Principle 则把 GLM-5.3 做成面向化学、材料与生命科学的开放权重科学模型 Hydrogen-1.0——753B MoE、约 40B 激活、MIT 许可、自报 FrontierScience-Research 38.3% 压过 GPT-6 Astra 的 33.3%。评测侧 OpenAI 抛出 LifeVal：按时间使用调查与 3995 人问卷挑出的日常任务（入园、抗洪志愿者、购屋过户、远程看球、糖尿病餐食），用浏览器/电脑操作与连接器考察「能不能把事办成」。基础设施侧谷歌 Project Suncatcher 原型星在轨跑通 Gemma 4，经斯瓦尔巴下传首首俳句；同一窗口 Google、微软、Anthropic、OpenAI 共同背书 IETF 草案里的共享 AI 训练偏好信号，网站可用一条 robots.txt 组表达「禁止生成式训练抓取」。治理与产品边界同步收口：Anthropic 给 Claude Code + Opus 5.5 加了「不得复刻特定现有游戏」的系统提示，并把 Max 5x/20x 更名为 Max/Ultra；Google Cloud 把对 Gemini API 等服务的支出上限做成每月自动复位的硬闸。主榜这边半点已把 Nanbeige4.3-33B、Gemini 4 Carbon Medium、DeepSeek V4.1 Flash High 补进 v5.0 表——开放权重、按用途放量与科学专用模型，在同一天里把「谁能训练、谁能部署、谁能办成日常事」三件事钉在一起。"
+    "note": "今日主题词：国芯与轨道。国内与空间两侧同时给出新样本。美团发布 LongCat-2.5：总参数 1.6 万亿、全程国产算力训练的原生多模态长程智能体模型，官网与 API 同步开放，官方称多项主流基准成绩介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；杭州 Deep Principle 则把 GLM-5.3 做成面向化学、材料与生命科学的开放权重科学模型 Hydrogen-1.0——753B MoE、约 40B 激活、MIT 许可、自报 FrontierScience-Research 38.3% 压过 GPT-6 Astra 的 33.3%。评测侧 OpenAI 抛出 LifeVal：按时间使用调查与 3995 人问卷挑出的日常任务（入园、抗洪志愿者、购屋过户、远程看球、糖尿病餐食），用浏览器/电脑操作与连接器考察「能不能把事办成」。基础设施侧谷歌 Project Suncatcher 原型星在轨跑通 Gemma 4，经斯瓦尔巴下传首首俳句；同一窗口 Google、微软、Anthropic、OpenAI 共同背书 IETF 草案里的共享 AI 训练偏好信号，网站可用一条 robots.txt 组表达「禁止生成式训练抓取」。治理与产品边界同步收口：Anthropic 给 Claude Code + Opus 5.5 加了「不得复刻特定现有游戏」的系统提示，并把 Max 5x/20x 更名为 Max/Ultra；Google Cloud 把对 Gemini API 等服务的支出上限做成每月自动复位的硬闸。主榜这边半点已把 Nanbeige4.3-33B、Gemini 4 Carbon Medium/Low、DeepSeek V4.1 Flash High 补进 v5.0 表（11-03 主表 81 模，Low 档 Index 54、性价比 69/B、#10）——开放权重、按用途放量与科学专用模型，在同一天里把「谁能训练、谁能部署、谁能办成日常事」三件事钉在一起。"
   },
   "highlights": [
     {
@@ -91,8 +91,8 @@
       "models": []
     },
     {
-      "title": "情报台主榜补档：Carbon Medium、Flash High、Nanbeige4.3-33B",
-      "summary": "按 Artificial Analysis Intelligence Index v5.0，半点例程陆续补入三档：Gemini 4 Carbon Medium（Index 58，性价比 73/A，按介绍期折后价计入）升至第 2；DeepSeek-V4.1-Flash-1017 High（Index 29，性价比 61/B）入第 49；BOSS 直聘/看准旗下 Nanbeige4.3-33B（Index 20，开放权重 Apache 2.0、512K 上下文，公开按 token 价暂缺故性价比 N/A）入第 66。全日量 11-03 榜锁定 80 个模型，前五仍由 Carbon High（59）领衔。",
+      "title": "情报台主榜补档：Carbon Medium/Low、Flash High、Nanbeige4.3-33B",
+      "summary": "按 Artificial Analysis Intelligence Index v5.0，半点例程陆续补入四档：Gemini 4 Carbon Medium（Index 58，性价比 73/A，按介绍期折后价计入）升至第 2；同系列 Low 档（Index 54，性价比 69/B，同分排 Sonnet 5.5 Max 后）入第 10；DeepSeek-V4.1-Flash-1017 High（Index 29，性价比 61/B）入第 49；BOSS 直聘/看准旗下 Nanbeige4.3-33B（Index 20，开放权重 Apache 2.0、512K 上下文，公开按 token 价暂缺故性价比 N/A）入第 66。11-03 主表现锁定 81 个模型，前五仍由 Carbon High（59）领衔。",
       "date": "11月2日–3日",
       "source": "AI 前沿情报台 / Artificial Analysis",
       "link": "https://zennni.github.io/ai-daily-digest/",
@@ -198,6 +198,13 @@
       "vendor": "Google DeepMind",
       "highlight": "同系列 Medium 档补入主榜：AA Index 58，性价比 73/A，按介绍期折后 $2/$10、缓存 $0.10 计价，排名第 2，压在 Opus 5.5 Max 之前。",
       "date": "11月2日入榜",
+      "link": "https://zennni.github.io/ai-daily-digest/"
+    },
+    {
+      "name": "Gemini 4 Carbon Low",
+      "vendor": "Google DeepMind",
+      "highlight": "同系列 Low 档补入主榜：AA Index 54，性价比 69/B，按介绍期折后 $2/$10、缓存 $0.10 计价，排名第 10，同分排在 Sonnet 5.5 Max 之后。High/Medium/Low 三档同价介绍期，主表 80→81 模。",
+      "date": "11月3日入榜",
       "link": "https://zennni.github.io/ai-daily-digest/"
     },
     {

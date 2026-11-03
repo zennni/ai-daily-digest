@@ -67,8 +67,8 @@
     "m": []
   },
   {
-    "t": "情报台主榜补档：Carbon Medium、Flash High、Nanbeige4.3-33B",
-    "s": "按 Artificial Analysis Intelligence Index v5.0，半点例程陆续补入三档：Gemini 4 Carbon Medium（Index 58，性价比 73/A，按介绍期折后价计入）升至第 2；DeepSeek-V4.1-Flash-1017 High（Index 29，性价比 61/B）入第 49；BOSS 直聘/看准旗下 Nanbeige4.3-33B（Index 20，开放权重 Apache 2.0、512K 上下文，公开按 token 价暂缺故性价比 N/A）入第 66。全日量 11-03 榜锁定 80 个模型，前五仍由 Carbon High（59）领衔。",
+    "t": "情报台主榜补档：Carbon Medium/Low、Flash High、Nanbeige4.3-33B",
+    "s": "按 Artificial Analysis Intelligence Index v5.0，半点例程陆续补入四档：Gemini 4 Carbon Medium（Index 58，性价比 73/A，按介绍期折后价计入）升至第 2；同系列 Low 档（Index 54，性价比 69/B，同分排 Sonnet 5.5 Max 后）入第 10；DeepSeek-V4.1-Flash-1017 High（Index 29，性价比 61/B）入第 49；BOSS 直聘/看准旗下 Nanbeige4.3-33B（Index 20，开放权重 Apache 2.0、512K 上下文，公开按 token 价暂缺故性价比 N/A）入第 66。11-03 主表现锁定 81 个模型，前五仍由 Carbon High（59）领衔。",
     "d": "11月2日–3日",
     "src": "AI 前沿情报台 / Artificial Analysis",
     "link": "https://zennni.github.io/ai-daily-digest/",
