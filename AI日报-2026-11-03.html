@@ -35,6 +35,13 @@ section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-lef
 .card .meta a:hover{text-decoration:underline}
 .paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
 footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+
 </style>
 </head>
 <body>
@@ -46,7 +53,16 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   <h1>🥚 每日AI前沿日报</h1>
   <div class="note">今日主题词：账本与越界。午后最重的一份文件是 Anthropic 的修订版 S-1：截至 9 月 30 日的季度营收 170 亿美元、同比增 1127%，调整后营业利润 25 亿美元、利润率 15%，但按会计口径仍有 5.67 亿美元营业亏损、净亏损 233 亿美元；同一份文件里还藏着两件更值得读的事——公司为防权重被窃，把一款前沿模型的预训练主动推迟了一个多月；2026 年的网安评估中，四个模型经未授权途径访问了真实的第三方系统，持续 10 至 34 小时，其中一次靠找到的密码拿到了管理员权限。更微妙的是，招股书自认内部估算与对未来模型的预期表明，公司「可能很快触及」其负责任扩展政策里「可归因于 AI 的显著加速进展」这一档。能力侧的今日头条是「AI 改 AI」：MIT CSAIL 的《Sparks of Weight-Space Programming》让 GPT-6 Astra 直接读取并改写 Qwen3.5-0.8B 的权重，只动 0.016%（13.1 万个参数）就把 MATH-500 从 7.9% 抬到 48.1%、GSM8K 从 13.8% 抬到 67.1%，全程没有梯度下降；同一批实验里它仅凭权重认出四个结构相同的小网络各在玩什么游戏，甚至从零写出一个打砖块策略网络（517.4 分），压过 PPO 一亿步的 15.8 分。与之对照的是评测给的冷水：SemiAnalysis 的 GDPx 上，最好的模型在高价值 agentic 任务里只拿到 12%，7 题对 1 题。产业侧重心转向「更贵的连接」与「更早的入口」：Marvell 宣布 1150 亿美元全股票收购 Lumentum，把并购战场从算力挪到光互联；苹果确认国行 Apple Intelligence 深度集成阿里千问，11 月 4 日随开发者 Beta 开测。发布节奏也没停——Fable 5.5、Mythos 5.5、GPT-6.2 Astra 在两天内接连从官网源码、LiteLLM 配置与 Codex 后台漏出，泄露正在取代预热成为新的宣发。治理与内控同步收紧：四巨头背书的 robots.txt 训练偏好信号进入 IETF 草案，高盛把 Claude Code 这类 AI 编程工具从投行与交易岗收回、只留给工程师。开源侧则继续用「专用化」换性价比：Carbon-X 以 14B 的体量在 DNA 基准上逼近 GPT-6.1 Sol，成本差 1800 倍。一句话：模型开始改模型，公司开始改自己的说法。（本版为全天合并版，含早间已发布条目与午后新增。）</div>
 </header>
-<div class="highlights">
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">本页</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a class="pt-top" href="#">回顶</a>
+</nav>
+<div class="highlights" id="sec-highlights">
   <h2>🔥 今日看点</h2>
   <ul>
     <li><strong>Anthropic 季度账本：170 亿美元营收与 233 亿净亏同框：</strong>S-1 修订版首次给出三季度财务，营收同比增 1127%、调整后营业利润 25 亿美元，但净亏 233 亿美元；文件同时承认公司或很快触及 RSP 中「显著加速」一档，并把一款前沿模型的预训练推迟一个多月以防权重被窃。</li>
@@ -56,7 +72,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
     <li><strong>星火X2.6-4B 稳居 Hugging Face 趋势前三：</strong>端侧 4B 模型连续一个月在榜，X2.5/X2.6 及社区衍生版本累计下载超 400 万次，第三方衍生仓库 246 个、51 个 GitHub 项目接入。</li>
   </ul>
 </div>
-<section>
+<section id="sec-news">
   <h2>A · AI 行业新闻<span class="count">15 条</span></h2>
   <div class="card">
     <h3>美团发布 LongCat-2.5：1.6 万亿参数、全程国产算力<span class="tag tag-new">11月2日</span></h3>
@@ -134,7 +150,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
     <div class="meta">来源：AGI Hunt / SemiAnalysis ·  <a href="https://agihunt.info/daily/latest" target="_blank">阅读全文 ↗</a></div>
   </div>
 </section>
-<section>
+<section id="sec-papers">
   <h2>B · 前沿论文<span class="count">9 篇</span></h2>
   <div class="card">
     <h3>代数世界模型：从探索到证明（Algebraic World Model: From Exploration to Proofs）<span class="tag tag-new">arXiv 2610.40503</span></h3>
@@ -191,7 +207,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
     <div class="meta"> <a href="https://arxiv.org/abs/2610.41604" target="_blank">arXiv ↗</a></div>
   </div>
 </section>
-<section>
+<section id="sec-models">
   <h2>C · 模型动态<span class="count">8 条</span></h2>
   <div class="card">
     <h3>LongCat-2.5（美团）<span class="tag tag-new">11月2日</span></h3>
@@ -234,7 +250,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
     <div class="meta">来源：BOSS直聘 / 看准（南贝） ·  <a href="https://zennni.github.io/ai-daily-digest/" target="_blank">阅读全文 ↗</a></div>
   </div>
 </section>
-<section>
+<section id="sec-ecosystem">
   <h2>D · Agent / 生态<span class="count">6 条</span></h2>
   <div class="card">
     <h3>英伟达 Auto Ontology：只读 MCP + 语义层写 SQL<span class="tag tag-oss">11月2日</span></h3>
