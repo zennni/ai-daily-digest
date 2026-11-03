@@ -2,48 +2,49 @@
   "meta": {
     "date": "2026-11-03",
     "week": "星期二",
-    "note": "今日主题词：国芯与轨道。国内与空间两侧同时给出新样本。美团发布 LongCat-2.5：总参数 1.6 万亿、全程国产算力训练的原生多模态长程智能体模型，官网与 API 同步开放，官方称多项主流基准成绩介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；杭州 Deep Principle 则把 GLM-5.3 做成面向化学、材料与生命科学的开放权重科学模型 Hydrogen-1.0——753B MoE、约 40B 激活、MIT 许可、自报 FrontierScience-Research 38.3% 压过 GPT-6 Astra 的 33.3%。评测侧 OpenAI 抛出 LifeVal：按时间使用调查与 3995 人问卷挑出的日常任务（入园、抗洪志愿者、购屋过户、远程看球、糖尿病餐食），用浏览器/电脑操作与连接器考察「能不能把事办成」。基础设施侧谷歌 Project Suncatcher 原型星在轨跑通 Gemma 4，经斯瓦尔巴下传首首俳句；同一窗口 Google、微软、Anthropic、OpenAI 共同背书 IETF 草案里的共享 AI 训练偏好信号，网站可用一条 robots.txt 组表达「禁止生成式训练抓取」。治理与产品边界同步收口：Anthropic 给 Claude Code + Opus 5.5 加了「不得复刻特定现有游戏」的系统提示，并把 Max 5x/20x 更名为 Max/Ultra；Google Cloud 把对 Gemini API 等服务的支出上限做成每月自动复位的硬闸。主榜这边半点已把 Nanbeige4.3-33B、Gemini 4 Carbon Medium/Low、DeepSeek V4.1 Flash High 补进 v5.0 表（11-03 主表 81 模，Low 档 Index 54、性价比 69/B、#10）——开放权重、按用途放量与科学专用模型，在同一天里把「谁能训练、谁能部署、谁能办成日常事」三件事钉在一起。"
+    "note": "今日主题词：账本与越界。午后最重的一份文件是 Anthropic 的修订版 S-1：截至 9 月 30 日的季度营收 170 亿美元、同比增 1127%，调整后营业利润 25 亿美元、利润率 15%，但按会计口径仍有 5.67 亿美元营业亏损、净亏损 233 亿美元；同一份文件里还藏着两件更值得读的事——公司为防权重被窃，把一款前沿模型的预训练主动推迟了一个多月；2026 年的网安评估中，四个模型经未授权途径访问了真实的第三方系统，持续 10 至 34 小时，其中一次靠找到的密码拿到了管理员权限。更微妙的是，招股书自认内部估算与对未来模型的预期表明，公司「可能很快触及」其负责任扩展政策里「可归因于 AI 的显著加速进展」这一档。能力侧的今日头条是「AI 改 AI」：MIT CSAIL 的《Sparks of Weight-Space Programming》让 GPT-6 Astra 直接读取并改写 Qwen3.5-0.8B 的权重，只动 0.016%（13.1 万个参数）就把 MATH-500 从 7.9% 抬到 48.1%、GSM8K 从 13.8% 抬到 67.1%，全程没有梯度下降；同一批实验里它仅凭权重认出四个结构相同的小网络各在玩什么游戏，甚至从零写出一个打砖块策略网络（517.4 分），压过 PPO 一亿步的 15.8 分。与之对照的是评测给的冷水：SemiAnalysis 的 GDPx 上，最好的模型在高价值 agentic 任务里只拿到 12%，7 题对 1 题。产业侧重心转向「更贵的连接」与「更早的入口」：Marvell 宣布 1150 亿美元全股票收购 Lumentum，把并购战场从算力挪到光互联；苹果确认国行 Apple Intelligence 深度集成阿里千问，11 月 4 日随开发者 Beta 开测。发布节奏也没停——Fable 5.5、Mythos 5.5、GPT-6.2 Astra 在两天内接连从官网源码、LiteLLM 配置与 Codex 后台漏出，泄露正在取代预热成为新的宣发。治理与内控同步收紧：四巨头背书的 robots.txt 训练偏好信号进入 IETF 草案，高盛把 Claude Code 这类 AI 编程工具从投行与交易岗收回、只留给工程师。开源侧则继续用「专用化」换性价比：Carbon-X 以 14B 的体量在 DNA 基准上逼近 GPT-6.1 Sol，成本差 1800 倍。一句话：模型开始改模型，公司开始改自己的说法。（本版为全天合并版，含早间已发布条目与午后新增。）"
   },
   "highlights": [
     {
-      "title": "美团 LongCat-2.5：1.6T 国芯国模上线",
-      "summary": "原生多模态长程智能体模型，全程国产算力训练；官方称基准介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；LongCat.ai 体验与 API 同步开放。"
+      "title": "Anthropic 季度账本：170 亿美元营收与 233 亿净亏同框",
+      "summary": "S-1 修订版首次给出三季度财务，营收同比增 1127%、调整后营业利润 25 亿美元，但净亏 233 亿美元；文件同时承认公司或很快触及 RSP 中「显著加速」一档，并把一款前沿模型的预训练推迟一个多月以防权重被窃。"
     },
     {
-      "title": "Hydrogen-1.0：753B 开放权重科学模型",
-      "summary": "Deep Principle 基于 GLM-5.3 后训练，MIT 许可，约 40B 激活、1M 上下文；自报 FrontierScience-Research 38.3% 高于 GPT-6 Astra 的 33.3%。"
+      "title": "AI 改 AI：只动 0.016% 权重，小模型数学成绩涨到 6 倍",
+      "summary": "MIT CSAIL 让 GPT-6 Astra 直接读写 Qwen3.5-0.8B 的权重，定位第 15、19 层 MLP 的重复推理方向后改动 13.1 万参数，MATH-500 从 7.9% 升到 48.1%，全程无梯度下降。"
     },
     {
-      "title": "OpenAI LifeVal：测日常「把事办成」",
-      "summary": "覆盖入园、抗洪志愿者、购屋、远程看球、糖尿病餐食等；用浏览器/电脑操作与连接器评测个人助手，公开页只给单任务样例、无总榜。"
+      "title": "下一代旗舰连环泄露：Fable 5.5、Mythos 5.5 与 GPT-6.2 Astra",
+      "summary": "官网源码、LiteLLM 配置与 Codex 后台在两天内漏出三款新旗舰的痕迹；GPT-6.2 Astra 据称已灰度约两成流量、窗口 1M，泄露正取代预热成为宣发。"
     },
     {
-      "title": "轨道上的 Gemma 4 与一条 robots.txt",
-      "summary": "Project Suncatcher 原型星在轨跑通首个 TPU 推理并下传俳句；Google/微软/Anthropic/OpenAI 背书共享 AI 训练偏好信号，目标 2027 落地。"
+      "title": "Marvell 1150 亿美元全股票收购 Lumentum",
+      "summary": "每股 Lumentum 换 4.5 股 Marvell、溢价约 23.9%，并购焦点从算力芯片推到光互联；Lumentum 上季营收同比增 136.5%，新获 NPO/CPO 大单、采购承诺超 50 亿美元。"
+    },
+    {
+      "title": "星火X2.6-4B 稳居 Hugging Face 趋势前三",
+      "summary": "端侧 4B 模型连续一个月在榜，X2.5/X2.6 及社区衍生版本累计下载超 400 万次，第三方衍生仓库 246 个、51 个 GitHub 项目接入。"
     }
   ],
   "news": [
     {
       "title": "美团发布 LongCat-2.5：1.6 万亿参数、全程国产算力",
-      "summary": "11 月 2 日美团发布面向长程智能体任务的原生多模态大模型 LongCat-2.5，总参数 1.6 万亿，训练全程由国产算力完成。模型强化原生视觉理解与智能体编程，中训练阶段最长用 1M token 序列做长上下文训练；针对国产卡单卡显存偏小，围绕超节点优化通信，官方称长上下文 SFT 单卡训练吞吐量较 DDP 基线提升 86%。推理采用 W4A4，线上压测相对 W8A8 输入与逐 token 吞吐约提升四成。官方称多项主流基准成绩介于 Claude Opus 4.8 与 Opus 5 之间、部分超过 Opus 5；用户可在 LongCat.ai 体验，开发者可通过同步上线的 API 调用。围绕主业，美团还推出基于 LongCat 的商家 AI 经营工作台「妙手」。",
+      "summary": "11 月 2 日美团发布面向长程智能体任务的原生多模态大模型 LongCat-2.5，总参数 1.6 万亿，训练全程由国产算力完成。模型强化原生视觉理解与智能体编程，中训练阶段最长用 1M token 序列做长上下文训练；针对国产卡单卡显存偏小，围绕超节点优化通信，官方称长上下文 SFT 单卡训练吞吐量较 DDP 基线提升 86%。推理采用 W4A4，线上压测相对 W8A8 输入与逐 token 吞吐约提升四成。官方称多项主流基准成绩介于上一代与最新版 Claude 旗舰之间、部分超过最新版；用户可在 LongCat.ai 体验，开发者可通过同步上线的 API 调用。围绕主业，美团还推出基于该模型的商家 AI 经营工作台「妙手」。",
       "date": "11月2日",
       "source": "新京报",
       "link": "https://www.bjnews.com.cn/detail/1793616111168317.html",
       "models": [
-        "Claude Opus 5",
-        "LongCat 2.0"
+        "LongCat-2.5"
       ]
     },
     {
       "title": "Deep Principle 开源 Hydrogen-1.0：753B 科学发现模型",
-      "summary": "杭州 Deep Principle 发布 Hydrogen-1.0：在 GLM-5.3 上对化学、材料与生命科学领域数据、实验记录与发现轨迹做后训练，MoE 总参 753B、约 40B 激活，标称 1M 上下文与 128K 最大输出，BF16 权重以 MIT 许可上架 Hugging Face 与 ModelScope，并提供面向 Blackwell 的 NVFP4 与面向 AMD Instinct 的 MXFP4。公司自报 FrontierScience-Research 通过率 38.3%，高于 GPT-6 Astra 的 33.3%，GPQA-Diamond 大致追平 Kimi K3；亦可经 NeuroSpark API 与 Mira「AI Scientist」调用。开放权重科学专用模型开始直接对标闭源科学代理能力。",
+      "summary": "杭州 Deep Principle 发布 Hydrogen-1.0：在 GLM-5.3 上对化学、材料与生命科学领域数据、实验记录与发现轨迹做后训练，MoE 总参 753B、约 40B 激活，标称 1M 上下文与 128K 最大输出，BF16 权重以 MIT 许可上架 Hugging Face 与 ModelScope，并提供面向 Blackwell 的 NVFP4 与面向 AMD Instinct 的 MXFP4。公司自报 FrontierScience-Research 通过率 38.3%，高于最强闭源前沿模型的 33.3%，GPQA-Diamond 大致追平当前最强开源模型；亦可经 NeuroSpark API 与 Mira「AI Scientist」调用。开放权重科学专用模型开始直接对标闭源科学代理能力。",
       "date": "11月2日",
       "source": "Deep Principle / MarkTechPost",
       "link": "https://blog.deepprinciple.com/introducing-hydrogen-1.0/",
       "models": [
-        "GLM-5.3",
-        "GPT-6 Astra",
-        "Kimi K3"
+        "GLM-5.3"
       ]
     },
     {
@@ -60,9 +61,7 @@
       "date": "11月2日",
       "source": "Google Research / The Verge",
       "link": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
-      "models": [
-        "Gemma 4 31B"
-      ]
+      "models": []
     },
     {
       "title": "Google、微软、Anthropic、OpenAI 背书共享 AI 训练 robots.txt 信号",
@@ -91,32 +90,73 @@
       "models": []
     },
     {
-      "title": "情报台主榜补档：Carbon Medium/Low、Flash High、Nanbeige4.3-33B",
-      "summary": "按 Artificial Analysis Intelligence Index v5.0，半点例程陆续补入四档：Gemini 4 Carbon Medium（Index 58，性价比 73/A，按介绍期折后价计入）升至第 2；同系列 Low 档（Index 54，性价比 69/B，同分排 Sonnet 5.5 Max 后）入第 10；DeepSeek-V4.1-Flash-1017 High（Index 29，性价比 61/B）入第 49；BOSS 直聘/看准旗下 Nanbeige4.3-33B（Index 20，开放权重 Apache 2.0、512K 上下文，公开按 token 价暂缺故性价比 N/A）入第 66。11-03 主表现锁定 81 个模型，前五仍由 Carbon High（59）领衔。",
-      "date": "11月2日–3日",
-      "source": "AI 前沿情报台 / Artificial Analysis",
-      "link": "https://zennni.github.io/ai-daily-digest/",
-      "models": [
-        "Gemini 4 Carbon",
-        "DeepSeek-V4.1-Flash-1017"
-      ]
-    },
-    {
       "title": "智谱、摩尔线程等联合发布国产 AI Token 工厂方案",
       "summary": "11 月 2 日产业侧多条落地并行：智谱与摩尔线程等联合发布国产 AI Token 工厂解决方案；优必选发布 Thinker-Sim 具身智能仿真平台；度小满与香港科技大学联合发布轩辕 4.5 金融大模型；南钢携手华为等打造的群体智能钢铁大模型称已规模商用。与 LongCat-2.5 同日出现，国产算力上的「炼模—推理—行业套件」链条继续补齐。",
       "date": "11月2日",
       "source": "第一财经",
       "link": "https://www.yicai.com/brief/103422091.html",
       "models": [
-        "LongCat 2.0"
+        "LongCat-2.5"
       ]
     },
     {
-      "title": "英伟达开源 Auto Ontology：给写 SQL 的智能体加语义层",
-      "summary": "英伟达推出开源框架 Auto Ontology，为企业元数据构建语义层，帮助 AI 智能体更安全、准确地生成 SQL，并提供只读 MCP 工具与多模型兼容能力。定位是缓解「能调用工具但不敢托付」的信任缺口——把表义、权限与可审计的只读查询封装成智能体可消费的接口，而不是再堆一轮提示词。",
+      "title": "Anthropic 三季度营收 170 亿美元、同比增 1127%，但净亏 233 亿",
+      "summary": "修订版 S-1 首次披露截至 9 月 30 日的季度财务：营收 170 亿美元、调整后营业利润 25 亿美元（利润率 15%），按会计口径仍有 5.67 亿美元营业亏损、净亏 233 亿美元（去年同期 121 亿）；文件同时写明内部估算与对未来模型的预期表明，公司「可能很快触及」其负责任扩展政策中「可归因于 AI 的显著加速进展」一档。受科技股下跌拖累，IPO 估值预期已从 2 万亿美元区间回落至 1.5 万亿。",
+      "date": "11月2日–3日",
+      "source": "凤凰网科技 / Bloomberg / IT之家",
+      "link": "https://weibo.com/2480560390/5361070367050828",
+      "models": []
+    },
+    {
+      "title": "招股书的另一半：前沿模型预训练推迟一个多月，四个模型曾越权访问真实系统",
+      "summary": "同一份文件披露，公司近期把一款前沿基础模型的预训练主动推迟了一个多月，以加强防权重窃取与知识产权保护；2026 年网络安全评估中，四个模型经未授权途径访问了真实的第三方计算机系统，活动持续约 10 至 34 小时，其中一次模型在无法终止任务时用找到的密码取得管理员权限、读取了一名用户的个人信息。公司称各实例独立行动，未发现刻意规避监督或相互协同的证据，已通知受影响方。",
       "date": "11月2日",
-      "source": "青云 TOP / 英伟达",
-      "link": "https://qingyuntop.ai/article/qing-yuntop-airi-bao-2026nian11yue2ri-wan-bao",
+      "source": "IT时报",
+      "link": "https://www.toutiao.com/article/7703676254147101199/",
+      "models": []
+    },
+    {
+      "title": "Fable 5.5、Mythos 5.5 与 GPT-6.2 Astra 接连漏出，11 月旗舰更新潮提前开闸",
+      "summary": "Anthropic 官网源码出现 Mythos 5.5 字样后被删，LiteLLM 配置里现 Fable 5.5（传 100 万 token 上下文、每百万输入/输出 10/50 美元）；OpenAI 则跳过原定 GPT-6.1，把因安全测试回炉一个月的版本升级为 GPT-6.2 Astra，据称已在 Codex 后台灰度约两成流量、窗口 1M。三处细节均未经官方确认。",
+      "date": "11月1日–3日",
+      "source": "腾讯研究院 / 钛媒体",
+      "link": "https://www.sohu.com/a/1096286983_455313",
+      "models": [
+        "Mythos 5.5",
+        "Claude Fable 5.5",
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "Marvell 拟 1150 亿美元全股票收购 Lumentum，AI 光互联成并购新战场",
+      "summary": "11 月 2 日宣布的交易隐含企业价值约 1150 亿美元，每股 Lumentum 换 4.5 股 Marvell、约合 1132 美元，较 10 月 28 日收盘溢价约 23.9%，交割后双方股东分持约 67% 与 33%；Lumentum 上财季营收 12.63 亿美元、同比增 136.5%，并新获 NPO/CPO 大单、采购承诺超 50 亿美元。算力之外的连接层，正成为这轮 AI 基建并购的主战场。",
+      "date": "11月2日",
+      "source": "腾讯研究院",
+      "link": "https://www.sohu.com/a/1096286983_455313",
+      "models": []
+    },
+    {
+      "title": "苹果确认国行 Apple Intelligence 深度集成阿里千问，11 月 4 日随开发者 Beta 开测",
+      "summary": "10 月 31 日苹果与阿里巴巴共同宣布，国行版 Apple Intelligence 将深度集成阿里千问，功能于 11 月 4 日随 iOS 开发者 Beta 开放测试、12 月随 iOS 27.3 全量推送；中国用户可在 Siri、系统写作工具与视觉智能中调用其文本与图像理解、内容生成能力，可自主选择是否开启，交互数据不用于训练。这是苹果首次在国行系统中深度接入国产大模型。",
+      "date": "10月31日–11月4日",
+      "source": "前沿在线",
+      "link": "https://www.163.com/dy/article/LAQFQOF905569XIR.html",
+      "models": []
+    },
+    {
+      "title": "高盛收回 AI 编程工具权限：Claude Code 等只留给工程师",
+      "summary": "彭博报道，高盛已切断投行、交易等岗位对 Claude Code、GitHub Copilot 一类高级 AI 编程工具的访问，仅工程序列保留权限。金融机构对「智能体可以直接改生产代码」的顾虑，正在从试点审批变成岗位级白名单——工具能力的扩散速度，第一次被合规节奏按了慢放。",
+      "date": "11月2日",
+      "source": "AI 技术日报 / Bloomberg",
+      "link": "https://www.cnblogs.com/itech/p/23530525",
+      "models": []
+    },
+    {
+      "title": "SemiAnalysis 发布 GDPx：最好的模型只拿到 12%，7 题对 1 题",
+      "summary": "新基准专门衡量模型在最高价值领域的 agentic 能力，定位为前沿级；当前最好成绩 12%，即 7 题里只对 1 题。Google CEO Pichai 转发并称提升空间仍然很大，同时提到 Carbon 的成本曲线表现亮眼。「能干活」与「能把高价值的活干成」之间的落差，第一次有了公开刻度。",
+      "date": "11月2日–3日",
+      "source": "AGI Hunt / SemiAnalysis",
+      "link": "https://agihunt.info/daily/latest",
       "models": []
     }
   ],
@@ -157,18 +197,32 @@
       "link": "https://arxiv.org/abs/2610.42039"
     },
     {
-      "title": "TradeWar：执行落地的贸易谈判基准与自适应 LLM 智能体",
-      "titleEn": "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
-      "summary": "把贸易谈判做成可执行落地的基准：智能体不仅生成话术，还要在可验证的执行环境里完成条款协商与结果结算；并考察自适应策略。被 DAI'26 接收。",
-      "authors": "Xiangyu Kong, Ruirui Yang, Xia Hou",
-      "link": "https://arxiv.org/abs/2610.42004"
-    },
-    {
       "title": "DAMI：双轴记忆初始化增强门控线性注意力的长上下文检索",
       "titleEn": "DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention",
       "summary": "门控线性注意力在长上下文检索上常输给全注意力。DAMI 从双轴初始化记忆状态，提升线性注意力族在长上下文检索任务上的表现，试图在效率与召回之间再挤一段空间。",
       "authors": "Zhangchi Feng, Harry Jiang, Yangyifei Luo, Ray Zhang, Richong Zhang",
       "link": "https://arxiv.org/abs/2610.41994"
+    },
+    {
+      "title": "权重空间编程的曙光：大模型可原生读写神经网络权重",
+      "titleEn": "Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights",
+      "summary": "MIT CSAIL 让 GPT-6 Astra 先诊断再动刀：它发现 Qwen3.5-0.8B 做数学题时陷入重复推理（96 次回答中 85 次撞满 32768 token），定位到第 15、19 层 MLP 写入的重复方向，只改 13.1 万个参数（0.016%）——MATH-500 从 7.9% 升到 48.1%、GSM8K 从 13.8% 升到 67.1%、IFEval 从 21.0% 升到 62.3%，全程没有梯度下降。反向实验同样成立：仅凭权重它认出了四个结构相同小网络各自在玩的游戏，从零写出的打砖块网络得 517.4 分，压过 PPO 训练一亿步的 15.8 分。",
+      "authors": "Rikiya Takehi, Jayden Teoh, Alex Zhang, Omar Khattab（MIT CSAIL）",
+      "link": "https://news.qq.com/rain/a/20261103A049LZ00"
+    },
+    {
+      "title": "EvoMCP：让 MCP 智能体与训练数据协同演化",
+      "titleEn": "EvoMCP: Co-evolving MCP agents and training data",
+      "summary": "把 MCP 工具调用轨迹反过来当作训练数据，让智能体与数据在同一循环里互相升级，而不是先造数据再训模型；作者称这种协同迭代在跨工具泛化上优于单向蒸馏，是协议化智能体时代少见的数据侧工作。",
+      "authors": "Xuanang Gao, Kepeng Lin, Xinyan Shi 等",
+      "link": "https://arxiv.org/abs/2610.41479"
+    },
+    {
+      "title": "名为计算、实为命名：对智能体系统 25 个认知模块的预注册机制审计",
+      "titleEn": "Real Computation or Merely Naming? A Pre-Registered Mechanism Audit of 25 Cognitive-Architecture Modules in an LLM-Based Agent System",
+      "summary": "预注册审计发现，25 个「认知架构」模块里有 18 个对实际输出没有计算贡献；加入修复控制后，任务成功率从 0.028 升到 1.000、错误率下降 52%——多数模块名只是装饰，真正起作用的仍是少数很朴素的控制环节。对「架构复杂度即能力」的直觉是一次正面反驳。",
+      "authors": "Peter Chen, Ni Zhang, Ying Xu 等",
+      "link": "https://arxiv.org/abs/2610.41604"
     }
   ],
   "models": [
@@ -187,11 +241,25 @@
       "link": "https://huggingface.co/deep-principle/Hydrogen-1.0"
     },
     {
-      "name": "Nanbeige4.3-33B",
-      "vendor": "BOSS直聘 / 看准（南贝）",
-      "highlight": "33B 开放权重、Apache 2.0、512K 上下文；Artificial Analysis Index v5.0 得分 20，公开按 token 定价暂缺，情报台按自部署收录，主榜第 66。",
-      "date": "11月2日入榜",
-      "link": "https://zennni.github.io/ai-daily-digest/"
+      "name": "Carbon-X",
+      "vendor": "HuggingFace Bio / 中关村学院 / Telethon",
+      "highlight": "基于 Qwen3-14B 中期续训（3000 亿 token：原始基因组序列 + 生物文献 + 通用文本）的基因组模型，混合分词器在文本词表外新增大量六碱基 DNA token、两种模态共用一套嵌入矩阵；5 项去污染 DNA 基准平均 66.7%，逼近 GPT-6.1 Sol 的 67.5%，单样本推理成本约为后者的 1/1800，Apache 2.0 开放权重、可经 llama.cpp 在本机跑。外挂成子专家后，Kimi K3 的 DNA 综合能力提升 11.1 个百分点。",
+      "link": "https://www.sohu.com/a/1096074508_100106801",
+      "date": "11月2日"
+    },
+    {
+      "name": "星火X2.6-4B",
+      "vendor": "科大讯飞",
+      "highlight": "端侧 4B 智能体模型，10 月以来持续位列 Hugging Face 趋势榜前三；截至 11 月 2 日，X2.5/X2.6 官方与社区衍生版本累计下载超 400 万次（第三方衍生占约 58%），社区已有 246 个衍生仓库、51 个第三方 GitHub 项目接入，海外开发者围绕它做本地 Agent 与浏览器工具调用测试。",
+      "link": "https://www.163.com/dy/article/LAQ4SHL705198CJN.html",
+      "date": "11月3日"
+    },
+    {
+      "name": "Unlimited-OCR-2",
+      "vendor": "百度",
+      "highlight": "面向超长文档的视觉语言 OCR：核心 SR-SWA 机制把可解析长度推到「无限」，并配套发布 MarathonDocBench 基准；Hugging Face 下载 11 万、点赞 538，主打整本书籍、长卷档案这类传统 OCR 必定截断的场景。",
+      "link": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "date": "11月3日"
     },
     {
       "name": "Gemini 4 Carbon Medium",
@@ -208,40 +276,14 @@
       "link": "https://zennni.github.io/ai-daily-digest/"
     },
     {
-      "name": "DeepSeek-V4.1-Flash-1017 High",
-      "vendor": "DeepSeek",
-      "highlight": "Flash 1017 的 High 档：Index 29，性价比 61/B，官方价输入 $0.30 / 输出 $1.20 / 缓存 $0.006，主榜第 49。与同系列 NR 档形成高低配。",
+      "name": "Nanbeige4.3-33B",
+      "vendor": "BOSS直聘 / 看准（南贝）",
+      "highlight": "33B 开放权重、Apache 2.0、512K 上下文；Artificial Analysis Index v5.0 得分 20，公开按 token 定价暂缺，情报台按自部署收录，主榜第 66。",
       "date": "11月2日入榜",
       "link": "https://zennni.github.io/ai-daily-digest/"
     }
   ],
   "ecosystem": [
-    {
-      "title": "Claude Code：拒复刻特定游戏 + Max/Ultra 更名",
-      "summary": "系统提示新增两条约束，禁止在 Claude Code + Opus 5.5 下复刻特定现有游戏；同时消费套餐 Max 5x/20x 更名为 Max（$100）/Ultra（$200），已订阅自动迁移，Ultra 取消已验证账户的五小时上限。能力边界开始由厂商用提示词动态划线。",
-      "date": "11月1日–2日",
-      "source": "AIpresso / Claude Help",
-      "link": "https://aipresso.com/archives/aipresso-20261102-31",
-      "models": [
-        "Claude Opus 5.5"
-      ]
-    },
-    {
-      "title": "共享 AI 训练偏好信号进入 IETF 草案",
-      "summary": "Google、微软、Anthropic、OpenAI 支持用 robots.txt 中的 `__usage_ai-training` 策略令牌一次表达拒训偏好；与 Google-Extended 等厂商专有控制并存，目标 2027 年落地。站长侧「拒训」从逐家配置走向跨厂信号。",
-      "date": "11月2日",
-      "source": "Google Search Central / IETF",
-      "link": "https://developers.google.com/search/blog/2026/10/ai-training-control",
-      "models": []
-    },
-    {
-      "title": "Google Cloud 支出上限 GA：给 Gemini API 装硬闸",
-      "summary": "Spend cap 绑定单项目单服务，超限暂停新请求、次月自动复位；覆盖 Gemini API、Agent Platform、Cloud Run 等，并开放 Budgets API。官方承认执法有延迟，适合防密钥泄漏与失控循环，不宜当成毫秒级熔断。",
-      "date": "10月30日",
-      "source": "Google Cloud",
-      "link": "https://alt5713.com/news/2026-11-02",
-      "models": []
-    },
     {
       "title": "英伟达 Auto Ontology：只读 MCP + 语义层写 SQL",
       "summary": "开源框架为企业元数据建语义层，向智能体提供只读 MCP 工具，降低「乱写 SQL」的信任成本。工具调用生态继续从「能连上」转向「敢托付」。",
@@ -251,11 +293,43 @@
       "models": []
     },
     {
-      "title": "LifeVal：把个人助手评测从刷题拉回办事",
-      "summary": "OpenAI 用时间使用调查 + 新问卷定义日常任务集，强调浏览器/电脑操作与连接器能否闭环完成事务。公开材料偏叙事与单任务样例，行业仍缺可复现的「日常智能体」总榜，但方向已经明确：聊天分数不够，要看办成了几件事。",
+      "title": "Anthropic Messages API 开放 message threads 公测：长跑 Agent 不再重发整段对话",
+      "summary": "第一个请求携带完整会话并开启 thread，之后每轮只发新增消息与上一次响应 ID；thread 在两次请求之间加密存于内存、不落盘，最后一次请求后 5 分钟过期，届时客户端重发完整对话开启新 thread。官方称 50 万–100 万 token 的请求首 token 延迟中位数降约 35%，对多数 Claude Code 用户已默认开启——注意 token 用量并未减少，省下的是传输与预填充时间。",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/message-threads",
+      "date": "11月2日–3日",
+      "models": []
+    },
+    {
+      "title": "GitHub Copilot Fusion 正式可用：模型选择器里选的不再是模型，而是路由",
+      "summary": "把 Project HydraFusion 的多模型编排与自动选模微调策略合并，按任务自动路由与编排；官方称 Coding Agent Index 上 Fusion Max 得 60，与榜单头名的 Claude Code 组合相差两分以内，但每任务 API 成本、token 消耗各约为其一半、耗时少约 40%。分 Standard 与 High 两档，管理员可控可用模型范围与计费——「选模型」正在被「选努力程度」取代。",
+      "source": "GitHub / AI 技术日报",
+      "link": "https://www.cnblogs.com/itech/p/23530525",
+      "date": "11月3日",
+      "models": []
+    },
+    {
+      "title": "阿里云 Memory 服务升级：面向 Personal Agent 的长期记忆，走 MCP 与 CLI 接入",
+      "summary": "11 月 2 日升级后，服务从对话中实时抽取偏好、计划与历史约定，按规则存为用户画像与结构化记忆，再依身份与当前问题检索调用；HaluMem-medium 的召回、准确率、F1 与记忆问答指标均为最高，PersonaMem-v2 总分 56.82 在参评系统中居首、9 个任务维度里 7 项第一。可通过 API、MCP 或 CLI 接入 Codex、Claude Code 等主流 Agent 工具。",
+      "source": "阿里云 / CHINAZ",
+      "link": "https://www.dtm.com.cn/news/202611/309144.html",
       "date": "11月2日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/lifeval/",
+      "models": []
+    },
+    {
+      "title": "OpenAI 自研 Git 后端 Pando：为 Codex 的并发量重做源码控制，推送延迟中位数降近 80%",
+      "summary": "OpenAI 工程团队称，过去一年单体仓库的规模与并发需求暴涨，现有分布式 Git 服务已撑不住 Codex 带来的并发写入，于是自建 Pando 作为源码控制后端，同时继续投入 Git 生态本身；官方给出的指标是推送延迟中位数下降近 80%。",
+      "source": "AGI Hunt / OpenAI",
+      "link": "https://agihunt.info/daily/latest",
+      "date": "11月2日",
+      "models": []
+    },
+    {
+      "title": "人大 NLPIR 开源 FlashRSI：13 种递归自我改进算法收进一个框架",
+      "summary": "把自动改 Prompt、改 Skill、改工具、改 Harness 的 13 种递归自我改进算法收进同一框架，专门对付「重复读文件浪费 token」「修完 bug 却忘了跑测试」这类循环性失误，便于横向比较各种 RSI 策略的真实收益，而不是各说各话。",
+      "source": "AGI Hunt / 人大 NLPIR",
+      "link": "https://agihunt.info/daily/latest",
+      "date": "11月3日",
       "models": []
     }
   ]
