@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "models": [
     {
       "name": "Gemini 4 Carbon",
@@ -2005,6 +2005,12 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-05",
+      "t": "全日量核对：AA 仍 v5.0.1、官价/促销/开放权重无实质变化；汇率沿用 CFETS 11-04 中间价 6.7180（11-05 约 09:15 才公布）",
+      "m": [],
+      "s": "<b>2026-11-05 运营 ≈06:30 榜单全日量</b>：一手核 Artificial Analysis Changelog／methodology／Index，<b>Intelligence Index 仍为 v5.0.1</b>（Changelog 最新方法论条目仍 03 Nov CritPt v2 重评；Index 页标题仍 v5.0.1；自 03 Nov 后无新模型分数入榜），与仓内口径一致，<b>本轮不触发全表重算</b>，91 模／名次／AA 分保持。<b>定价与促销</b>：OpenAI／Anthropic／Google／DeepSeek 等仓内已有条目复核——Gemini 4 Carbon 介绍期仍 $2/$10（后续 $4/$20）；Gemini 4 Argon 介绍期 $2/$10 至 11-30；Gemini 3.8 Flash 促销 $0.75/$3.75 至 12-31；GPT-5.6 Sol 官方促销价至 11-30（本榜无同口径独立行，仅作促销日历核验）；DeepSeek 峰值 ¥2/¥8（Flash）／¥9/¥27（V4 Pro）与 GLM-5.3-Flash ¥0.8/¥2.8 未变；折美元挂价仍按 CFETS 6.7180，无需微调。<b>开放权重</b>：HF API 复核 moonshotai/Kimi-K3.1-Pro 仍 private=false、gated=false（≈96 个 safetensors 分片、LICENSE=Kimi K3.1-Pro License，lastModified 仍 2026-11-02）；Changelog 本周无新增「有同口径 AA 分且应进主榜」的开放权重条目。<b>汇率</b>：中国货币网／CFETS 当前 lastDate 仍为 <b>2026-11-04 9:15</b> 美元/人民币中间价 <b>6.7180</b>；历史接口检索至 11-05 亦无 11-05 记录（中间价约每日 09:15 发布，本轮 06:30 早于公布时刻），故沿用最近一次并写明。本地 LLM／生图五档无新实质证据，未改模板静态章。壳仍 Wave4。未改日报 digest／AI日报／list。"
+    },
     {
       "d": "11-04",
       "t": "Kimi K3.1 Pro 权重兑现：HF moonshotai/Kimi-K3.1-Pro 公开（≈1.56TB MXFP4）；主表改开放权重并同步本地数据中心档",
