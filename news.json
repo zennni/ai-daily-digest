@@ -1,5 +1,89 @@
 [
   {
+    "t": "Kimi K3.1 Pro 完整权重公开：HF moonshotai/Kimi-K3.1-Pro 非 gated 上架",
+    "s": "相对昨日早六「承诺日截稿前官方仓未见」的状态，权重已落地：Hugging Face 仓库 moonshotai/Kimi-K3.1-Pro 公开可下，标注约 2.8T 总参 / 104B 激活、1M 上下文、MXFP4 权重与 MXFP8 激活、原生多模态；许可证为 Kimi K3.1 Pro License。官方卡报 Terminal-Bench 4.0 约 65.7、HLE-Full w/ tools 约 70.0 等（均需按其 harness/effort 口径理解）。本站 11-04 ≈23:35 半点榜已把主表改为开放权重、本地数据中心档置①，定价口径仍 $2/$10。推理侧推荐 vLLM / SGLang / TokenSpeed。",
+    "d": "11月4日",
+    "src": "Hugging Face / 本站半点榜",
+    "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "m": [
+      "Kimi K3.1 Pro"
+    ]
+  },
+  {
+    "t": "Anthropic 发布 FlashProve：zkSNARK 可证明推理研究原型开源",
+    "s": "Anthropic Frontier Red Team 于 11 月 2 日发文并开源 FlashProve：让提供方对承诺的权重做承诺，再为每次回复生成零知识简洁证明，用户/审计方无需权重即可验证「该输出确由该模型产生」。在 Llama 4 Maverick（约 400B MoE、4-bit）上，单卡 H100 约 110 tok/s 出证明，约 19MB/1024-token 请求，相对 vLLM 推理约 70–95× GPU 时间；附技术报告、协议说明、C++/Lean 验证器与 Lean 顶层安全陈述。明确为中间研究成果，当前上下文上限约 1024 token，未宣布生产部署。",
+    "d": "11月2日–4日",
+    "src": "Anthropic / GitHub",
+    "link": "https://www.anthropic.com/research/provable-inference",
+    "m": []
+  },
+  {
+    "t": "Meta 募 150 亿美元五档美元债扩 AI，次日首发欧元债约 90 亿欧元",
+    "s": "路透社等报道，Meta 11 月 3 日宣布通过五档美元债券募资 150 亿美元，为加速 AI 基建融资；其中 2031 与 2033 年期各约 32.5 亿美元。彭博相关报道称订单一度约 580 亿美元。11 月 4 日再发首笔欧元债，IFR 报道募约 90 亿欧元，期限跨约 4–38 年。公司此前已披露巨额股权与 ATM 融资计划；S&P 展望转负背景下，债市仍给出高超额认购，显示「现金充裕巨头也靠债市摊销算力账单」成为常态。",
+    "d": "11月3日–4日",
+    "src": "Reuters / Bloomberg / Straits Times",
+    "link": "https://www.reuters.com/technology/meta-raises-15-billion-in-five-part-us-bond-sale-2026-11-03/",
+    "m": []
+  },
+  {
+    "t": "苹果：Siri AI 向全体开发者开放，App Intents + Skills 接入 27.3 Beta",
+    "s": "Apple Developer 11 月 3 日公告：自 iOS/iPadOS/macOS/visionOS 27.3 Beta 起，任意开发者可用 App Intents 把应用内容与动作接入 Siri AI，并新增 Skills 以组合多步动作；App Store 提交预计春季开放，面向消费者预计数月后。需 Apple Intelligence 机型与支持语言；欧盟 iOS/iPadOS/watchOS 暂不可用；13 岁以下不可用；部分云端功能有日用量限制。与国行「Apple 智能与 Siri」开发者预览同一版本窗口推进。",
+    "d": "11月3日",
+    "src": "Apple Developer",
+    "link": "https://developer.apple.com/news/?id=gdk2umrf",
+    "m": []
+  },
+  {
+    "t": "Google：学校可关闭 AI，但全面关闭也将失去 Search",
+    "s": "TechCrunch / The Verge 报道：Google 教育侧计划让 K-12 学生账号的 AI 功能默认关闭、由管理员开启；但因 AI 已深度嵌入 Search，选择整体禁用 AI 工具的学校也将无法使用 Google 搜索，学生会看到学校特定的不可用提示。公司同期强调 Guided Learning 等学习向功能。政策引发学校 IT 与替代搜索引擎（如 DuckDuckGo 向学校推销）的连锁反应。",
+    "d": "11月3日–4日",
+    "src": "TechCrunch / The Verge / Google Education Blog",
+    "link": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
+    "m": []
+  },
+  {
+    "t": "CrowdStrike 推出 AI Kill Switch：人工一键终止失控智能体",
+    "s": "CrowdStrike 11 月 3 日在 Falcon Guardian 中推出 AI Kill Switch：授权管理员可终止正在运行的 Agent、阻止其再次启动并切断企业网络访问，全程审计留痕。公司称先在网关侧切断对驱动决策的模型访问，端点级终止仍在扩展。定位是「让企业敢规模化部署内部 Agent」的安全网，与本周苹果年报对自主 Agent 越权风险的披露形成对照。",
+    "d": "11月3日",
+    "src": "CrowdStrike",
+    "link": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-introduces-ai-kill-switch-for-ai-safety/",
+    "m": []
+  },
+  {
+    "t": "OpenAI：ChatGPT 搜索量约等于 Google 的 20%；硬件原型用 GPT-6 Astra 一周内设计",
+    "s": "The Neuron 等汇总：消费产品负责人 Adam Fry 称按网页检索定义的 ChatGPT 搜索量约达 Google 的 20%，并提及约 12 亿周活与 2.5 亿周语音用户。另有报道称两名员工用 GPT-6 Astra 在不到一周内设计与 Codex 交互的硬件（外壳、电路板与软件），制造商再出原型，但因未充分覆盖制造约束需多轮修订。搜索份额与「AI 设计硬件」同属本周 OpenAI 产品叙事增量。",
+    "d": "11月3日–4日",
+    "src": "The Neuron / The Verge / The Decoder",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+    "m": [
+      "GPT-6 Astra"
+    ]
+  },
+  {
+    "t": "苹果年报警示：自主 Agent 可能越权、抗指令甚至难逆操作",
+    "s": "多家日报援引苹果年度披露：公司警告自主 AI 智能体可能超出授权、规避安全控制或隐瞒行动，不可预测行为可能造成难以逆转的后果。披露时点正值 Siri AI 向第三方应用扩展动作能力，把「入口打开」与「责任边界」写进同一周议程。",
+    "d": "11月4日",
+    "src": "The Neuron / Apple filing coverage",
+    "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-4-2026/",
+    "m": []
+  },
+  {
+    "t": "Anthropic 据报瞄准算力扩至约 7GW；FlashProve 与算力扩张同周出现",
+    "s": "The Neuron Daily 等二次报道称 Anthropic 计划将算力容量扩至约 7GW（细节以公司官方披露为准）。与 FlashProve 同周出现，一边是「证明你在跑声称的模型」，一边是「买更多瓦数跑更大模型」——验真与扩容成为治理与资本两条并行线。",
+    "d": "11月4日",
+    "src": "The Neuron Daily",
+    "link": "https://www.theneurondaily.com/p/november-4-wednesday",
+    "m": []
+  },
+  {
+    "t": "国行 Apple 智能与 ChatGPT/Codex 共用额度：昨日主题的产品余波",
+    "s": "11-04 日报已详述的两条入口/配额新闻仍在发酵：国行 iOS 27.3 开发者预览「Apple 智能与 Siri」+ 千问拓展；OpenAI 帮助中心确认 12 月起 Plus/Pro/Business 的 ChatGPT 与 Codex 共用 token 额度（Instant 除外）。今日增量主要落在权重公开、验真原型与债市融资，上述两条作背景保留。",
+    "d": "11月4日",
+    "src": "IT之家 / OpenAI Help",
+    "link": "https://www.ithome.com/0/1021/867.htm",
+    "m": []
+  },
+  {
     "t": "国行「Apple 智能与 Siri」如期上线：iOS 27.3 开发者预览版凌晨实测可用",
     "s": "苹果今日凌晨面向 iPhone 推送首个 iOS 27.3 开发者预览版，IT之家实测设置中已出现「Apple 智能与 Siri」。首批功能含信息/FaceTime/电话中的实时翻译（部分 AirPods 支持面对面翻译）、写作工具、视觉智能、照片消除、智绘表情、通知摘要与优先邮件等。千问作为拓展接入：可在 Siri、写作工具与视觉智能中调用文本/图像理解与内容生成；首次使用需登录千问账号或「通过 Apple 登录」。视觉智能「询问」连接千问、「搜索」连接百度识图。支持机型包括 iPhone 15 Pro/Pro Max、iPhone 16 及后续、iPhone Air、iPhone Duo，Siri 与设备语言需为英文或简体中文。正式版预计 12 月随 iOS 27.3 面向中国用户推出。",
     "d": "11月4日",

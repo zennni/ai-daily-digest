@@ -1,5 +1,24 @@
 [
  {
+  "d": "2026-11-05",
+  "w": "星期四",
+  "pts": [
+   "Kimi K3.1 Pro 权重 HF 公开落地",
+   "Anthropic FlashProve 可证明推理开源",
+   "Meta 150 亿美元债 + 首笔欧元债",
+   "Siri AI 向全体开发者开放；学校关 AI 失 Search"
+  ],
+  "link": "AI日报-2026-11-05.html",
+  "m": [
+   "GPT-6 Astra",
+   "DeepSeek-V4.1-Flash-1017",
+   "Kimi K3.1 Pro",
+   "Nemotron 3.5 Lightning",
+   "Mistral Large 4"
+  ],
+  "bf": false
+ },
+ {
   "d": "2026-11-04",
   "w": "星期三",
   "pts": [
