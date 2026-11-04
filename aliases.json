@@ -88,8 +88,12 @@
     "pattern": "grok[ -]4\\.6"
   },
   {
+    "name": "Kimi K3.1 Pro",
+    "pattern": "kimi[ -]?k3\\.1[ -]?pro|k3\\.1[ -]?pro"
+  },
+  {
     "name": "Kimi K3",
-    "pattern": "kimi[ -]k3|月之暗面"
+    "pattern": "kimi[ -]?k3(?!\\.1)|月之暗面"
   },
   {
     "name": "SWE-2",

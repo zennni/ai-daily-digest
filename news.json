@@ -48,13 +48,13 @@
     "m": []
   },
   {
-    "t": "Kimi K3.1 Pro 权重进入承诺日：截至 11-03 晚官方 HF 仍未见仓库",
-    "s": "Moonshot 10 月下旬发布 Kimi K3.1 Pro（约 2.8T 总参 / ~104B 激活、1M 上下文）及 Highspeed 变体时承诺「完整权重将于 11 月 4 日前发布」。第三方跟踪显示，截至 11 月 3 日约 14:00 UTC，Moonshot 官方 Hugging Face 最新仓库仍为较早的 Kimi K3，许可证条款亦未随权重公布。模型现可通过 kimi.com、Kimi API（kimi-k3.1-pro / highspeed）与 OpenRouter 使用。本轮早六截稿时权重是否已上架，请以官方仓库为准。",
-    "d": "11月4日（承诺日）",
-    "src": "Kimi / LeakDeck / DataCamp",
-    "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "t": "Kimi K3.1 Pro 权重已上架 Hugging Face：moonshotai/Kimi-K3.1-Pro（≈1.56TB）",
+    "s": "Moonshot 官方 Hugging Face 仓库 moonshotai/Kimi-K3.1-Pro 已公开可下载：约 96 个 safetensors 分片、MXFP4 合计约 1.56TB，非 gated；许可为 Kimi K3.1-Pro License（自定义，含 MaaS 营收门槛与大体量产品署名条款）。模型规格仍约 2.8T 总参 / ~104B 激活、1M 上下文；API（kimi.com / Kimi API / OpenRouter）价目未因开源权重变动。情报台主榜已将其由「闭源（权重未发布）」改为「开放权重」，并同步本地数据中心档。",
+    "d": "11月4日",
+    "src": "Hugging Face / Kimi",
+    "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
     "m": [
-      "Kimi K3"
+      "Kimi K3.1 Pro"
     ]
   },
   {

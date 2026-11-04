@@ -495,10 +495,10 @@
       "pin": 2.0,
       "pcache": 0.2,
       "pout": 10.0,
-      "open_": "闭源（权重未发布）",
-      "lic": "专有（权重许可待公布）",
+      "open_": "开放权重",
+      "lic": "Kimi K3.1-Pro License（自定义；MaaS 年营收>$2000 万须另签；月活>1 亿或月收>$2000 万商用产品须显著标注）",
       "src": "官方",
-      "note": "<b>v5.0 名义最强开放权重模型,但权重尚未发布</b>——AA 在 v5 报告中标注 weights not yet released,官方承诺 11-4 前放出,故本期仍计为闭源;<b>v5.0 单项第一:Terminal-Bench 4.0 67%</b>;HLE-Diamond 37%、Terminal-Bench-Science 34% 为其短板;$2/$10、缓存 $0.20;AA 记单任务成本 $3.68、31 tok/s(全榜最慢);<b>唯一进入前 25 的中国模型(第 22 位)</b>",
+      "note": "<b>权重已兑现开放</b>：HF <code>moonshotai/Kimi-K3.1-Pro</code>（约 96×safetensors / MXFP4 合计 ≈1.56TB；createdAt 2026-11-02 UTC，非 gated；LICENSE=Kimi K3.1-Pro License）；<b>现为可下载开放权重中 AA 分最高（v5.0.1 Max 46.5→46）</b>；2.8T/104B MoE、1M 上下文、原生多模态；API 仍 $2/$10、缓存 $0.20（OR moonshotai/kimi-k3.1-pro 一致）；AA 记单任务成本约 $3.68、约 31 tok/s；<b>v5.0 单项第一:Terminal-Bench 4.0 67%</b>；许可含 MaaS 营收门槛与大体量产品署名条款，≠MIT/Apache",
       "cost": 4.5,
       "ability": 76.7,
       "costscore": 30.24809934544115,
@@ -2005,6 +2005,14 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-04",
+      "t": "Kimi K3.1 Pro 权重兑现：HF moonshotai/Kimi-K3.1-Pro 公开（≈1.56TB MXFP4）；主表改开放权重并同步本地数据中心档",
+      "m": [
+        "Kimi K3.1 Pro"
+      ],
+      "s": "<b>2026-11-04 运营 ≈23:35 半点核对·实质变化</b>：重新核验 Hugging Face 官方账号，确认 <b>moonshotai/Kimi-K3.1-Pro</b> 已公开（private=false、gated=false；约 96 个 safetensors 分片、合计 ≈1.56TB MXFP4；README 自述 open-weight；LICENSE=Kimi K3.1-Pro License，含 MaaS 年营收 &gt;$2000 万另签与大体量产品署名条款；createdAt/lastModified 2026-11-02T04:13:51Z）。此前半点曾记「未见公开仓」，本轮按实核改写，不得再标「闭源（权重未发布）」。<b>主表</b>：Kimi K3.1 Pro（#23 Max，AA 46）open_/lic/note 改为开放权重 + 上述许可；AA 版本仍 <b>v5.0.1</b>、91 模、名次与分数不变（Changelog 最新仍 03 Nov）。<b>定价</b>：仍 $2/$10/缓存 $0.20；OpenRouter kimi-k3.1-pro 一致。<b>本地</b>：数据中心档插入 Kimi K3.1 Pro 为档内首选；开放权重 notice 补许可名。<b>汇率</b>：CFETS 11-04 中间价仍 6.7180，无新 FX 微调。壳仍 Wave4。未改日报 digest/AI日报/list。"
+    },
     {
       "d": "11-04",
       "t": "半点核验：AA/官价/开放权重无变；汇率调至 CFETS 6.7180（较 6.7150 上调 30 基点／人民币贬值）；微调 DeepSeek / GLM-5.3-Flash 人民币价折美元挂价",
