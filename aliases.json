@@ -200,12 +200,16 @@
     "pattern": "nemotron[ -]3\\.5(?![- ]super[- ]vl|[- ]bolt)"
   },
   {
+    "name": "Inkling 2 Small",
+    "pattern": "inkling[ -]?2[ -]?small"
+  },
+  {
     "name": "Inkling Small",
     "pattern": "inkling[ -]small"
   },
   {
     "name": "Inkling",
-    "pattern": "inkling"
+    "pattern": "inkling(?![ -]?2|[ -]?small)"
   },
   {
     "name": "Mistral Medium 3.5",
