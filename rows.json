@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "models": [
     {
       "name": "Gemini 4 Carbon",
@@ -2050,9 +2050,17 @@
   ],
   "changes": [
     {
+      "d": "11-06",
+      "t": "全日量核验：AA 仍 v5.0.1、官价/促销/开放权重无实质变化；汇率沿用 CFETS 11-05 中间价 6.7156（11-06 约 09:15 才公布；周末/节假亦沿用最近一次）",
+      "m": [],
+      "s": "<b>2026-11-06 运营 ≈06:30 榜单全日量</b>：一手核 Artificial Analysis Changelog／methodology／Index，<b>Intelligence Index 仍为 v5.0.1</b>（methodology 页与 Changelog 最新方法论条目仍 03 Nov CritPt v2 重评／Performance Benchmarking v3.0.0；Index 页标题仍 v5.0.1）。Changelog <b>05 Nov</b> 仅 Nanbeige4.3-33B 发文（Index 20，仓内已有 20.4 行）及 Mistral Large 4／Hy4／Nunchux 等<b>performance</b> 备注，<b>无新 Intelligence Index 分、无方法论变更</b>——本轮不触发全表重算；最新 Index 分仍 04 Nov（Muse Wonder High=41／Hy4=35），93 模／名次／AA 分保持。<b>定价与促销</b>：OpenAI 官方 pricing 复核 GPT-6 Astra 仍 $10/$50（缓存 $1；&gt;272K 为 $20/$75）；Anthropic Opus 5.5 仍 $4/$20（缓存读 $0.20）；OpenRouter 交叉 Muse Wonder $4/$20、Hy4 折后约 $0.417/$1.251；Google AI 定价页 Gemini 4 Argon 介绍期仍 $2/$10 至 11-30（其后 $4/$20）、Gemini 3.8 Flash 促销仍 $0.75/$3.75 至 12-31（标准 $1.50/$7.50）；腾讯云 TokenHub 文档 Hy4 目录价仍 ¥6/¥18、缓存 ¥0.3，官方限时 5 折至 <b>2026-12-31 23:59:59 北京时间</b> 未变——折后入主性价分挂价仍按 CFETS 6.7156（$0.446721/$1.340163），无需微调。<b>开放权重</b>：HF API 复核 moonshotai/Kimi-K3.1-Pro 仍 private=false、gated=false、license=other（Kimi K3.1-Pro License；lastModified 2026-11-05T07:11:43Z 触碰但不改表）；不得标 MIT。Nanbeige4.3-33B 仍开放权重 Apache 2.0。<b>汇率</b>：中国货币网／CFETS ccpr.json lastDate 仍为 <b>2026-11-05 9:15</b> 美元/人民币中间价 <b>6.7156</b>（较 11-04 的 6.7180 下调 24 基点）；中间价约每日 09:15 发布，本轮 06:30 早于 11-06 公布时刻，故沿用最近一次并写明。本地 LLM／生图五档无新实质证据，未改模板静态章。壳仍 Wave4。未改日报 digest／AI日报／list。"
+    },
+    {
       "d": "11-05",
       "t": "半点核验：Meta Muse Wonder High 档入主榜（AA 41）",
-      "m": ["Muse Wonder"],
+      "m": [
+        "Muse Wonder"
+      ],
       "s": "<b>2026-11-05 运营 ≈10:51 半点核对·实质变化</b>：Artificial Analysis Changelog <b>04 Nov 2026</b> 在 Hy4 之外另增 <b>Muse Wonder (High)</b>（slug <code>muse-wonder-high</code>）Intelligence Index <b>41</b>；方法论仍为 Index <b>v5.0.1</b>，无需全表重算旧模分数。同模型 Max 档（AA 44）已在榜；High 与 Max 同官价 <b>$4/$20</b>、缓存 $0.20（Meta / OpenRouter <code>meta/muse-wonder</code>）。插入主榜后顺延后续 rank；CFETS 仍 <b>6.7156</b>；Kimi K3.1 Pro HF 仍公开非 gated；未改本地 LLM/生图静态章；未改日报。"
     },
     {
