@@ -3,18 +3,19 @@
     "d": "2026-11-06",
     "w": "星期五",
     "pts": [
-      "OpenAI 流水线一次产出 948 个 Linux LPE",
+      "OpenAI 发布 GPT-6 Cyber；流水线 948 个 Linux LPE",
       "Meta 收购 Conductor；OpenAI 收购 Pierre",
-      "AA：Nanbeige4.3-33B Index=20",
-      "Kimi K3.1 Pro 稳居 HF 趋势第 1"
+      "AA：Nanbeige Index=20；Inkling 2 Small=31",
+      "Kimi K3.1 Pro 稳居 HF 趋势第 1；Dropbox 收购 Tigris"
     ],
     "link": "AI日报-2026-11-06.html",
     "m": [
+      "GPT-6 Cyber",
+      "Inkling 2 Small",
       "Kimi K3.1 Pro",
       "Nanbeige4.3-33B",
       "Mistral Large 4",
-      "Hy4",
-      "Qwen3.8-27B"
+      "Hy4"
     ],
     "bf": false
   },

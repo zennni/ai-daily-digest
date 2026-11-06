@@ -52,7 +52,7 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 <header>
   <div class="date">2026年11月6日 · 星期五</div>
   <h1>🥚 每日AI前沿日报</h1>
-  <div class="note">今日主题词：攻防规模化。相对昨日「权重落地与验真」，议题从「能不能下载、能不能证明是声称的模型」递进到「Agent 能不能以工业规模找洞、修洞、并行写代码」。OpenAI 发文《A thousand fewer paths to root》：自主漏洞发现/利用/补丁流水线在中等十月一次运行中，对常用 Linux 发行版动态复现 1724 个漏洞并产出 948 个可工作的本地提权（LPE）利用，API 费用约 121.3 万美元（约 1279 美元/LPE）；维护者在扫描期间已上游修复 61 个、另有 43 个暂存补丁。同周资本侧：Meta 收购多智能体编码创业公司 Conductor（并行工作区派发多 Agent），OpenAI 宣布收购 Pierre Computer 以强化 Codex 的代码浏览与 Diff 工具链。评测侧 AA Changelog 11-05：BOSS 直聘 Nanbeige 团队开源 Nanbeige4.3-33B（Apache 2.0、33B 稠密、524K 上下文）在 Intelligence Index v5 打到 20，与 Qwen3.8 27B（xhigh）同分但终端使用更强、知识更弱；同日补上 Mistral Large 4 / Hy4 等性能结果。开源流量：Kimi K3.1 Pro 在 HF 趋势稳居第 1。论文侧 Agent 编排与 harness 感知、SlackBench 协作基准、审稿管辖权同日涌上 arXiv。一句话：找洞变便宜之后，修洞与多智能体编排成了新瓶颈。</div>
+  <div class="note">今日主题词：攻防规模化。相对昨日「权重落地与验真」，议题从「能不能下载、能不能证明是声称的模型」递进到「Agent 能不能以工业规模找洞、修洞、并行写代码」。OpenAI 同日线发布网络安全专用模型 GPT-6 Cyber，并以《A thousand fewer paths to root》披露其自主漏洞发现/利用/补丁流水线在中等十月一次运行中，对常用 Linux 发行版动态复现 1724 个漏洞并产出 948 个可工作的本地提权（LPE）利用，API 费用约 121.3 万美元（约 1279 美元/LPE）；维护者在扫描期间已上游修复 61 个、另有 43 个暂存补丁。同周资本侧：Meta 收购多智能体编码创业公司 Conductor（并行工作区派发多 Agent），OpenAI 宣布收购 Pierre Computer 以强化 Codex 的代码浏览与 Diff 工具链。评测侧 AA Changelog 11-05：BOSS 直聘 Nanbeige 团队开源 Nanbeige4.3-33B（Apache 2.0、33B 稠密、524K 上下文）在 Intelligence Index v5 打到 20，与 Qwen3.8 27B（xhigh）同分但终端使用更强、知识更弱；同日 Changelog 还新入 Thinking Machines Inkling 2 Small（Index=31），并补 Mistral Large 4 / Hy4 等性能结果。开源流量：Kimi K3.1 Pro 在 HF 趋势稳居第 1。论文侧 Agent 编排与 harness 感知、SlackBench 协作基准、审稿管辖权同日涌上 arXiv。一句话：找洞变便宜之后，修洞与多智能体编排成了新瓶颈。</div>
 </header>
 <nav class="page-toc" aria-label="本页目录">
   <span class="pt-label">本页</span>
@@ -66,18 +66,23 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 <div class="highlights" id="sec-highlights">
   <h2>🔥 今日看点</h2>
   <ul>
-    <li><strong>OpenAI 自主流水线：一次运行产出 948 个 Linux LPE 利用：</strong>官方《A thousand fewer paths to root》：候选 2308→复现 1724→948 个可工作 LPE；约 121.3 万美元 API 费；人审后报维护者，已提交数百份报告/候选补丁。</li>
+    <li><strong>OpenAI 发布 GPT-6 Cyber：攻防专用模型驱动 948 个 Linux LPE：</strong>11-05 官方产品帖：GPT-6 Cyber 在 ExploitGym 相对 GPT-5.6 Cyber 提升约 51%；Preparedness 网安等级升至 Critical；同线研究流水线产出 948 个可工作 LPE，并助发现 81 个 Firefox 高危。</li>
     <li><strong>Meta 收购 Conductor：多智能体并行编码工作区并入：</strong>TechCrunch / 官方确认：Conductor 让开发者为项目分片派发多 Agent；云服务 11-20 关停；创始人称明年早些有新产品。</li>
-    <li><strong>AA：Nanbeige4.3-33B Index=20，与 Qwen3.8 27B 同分：</strong>11-05 Changelog：Apache 2.0 开源稠密 33B、524K 上下文；终端/CritPt 相对更强，Briefcase/HLE 更弱；勿改本站 rows。</li>
+    <li><strong>AA：Nanbeige4.3-33B Index=20；Inkling 2 Small 新入 Index=31：</strong>11-05 Changelog：Nanbeige 开源稠密 33B 打到 20；同日新入 Thinking Machines Inkling 2 Small（Index 31，本站半点榜已入 #44）。勿改本站 rows。</li>
     <li><strong>Kimi K3.1 Pro 权重公开后稳居 HF 趋势第 1：</strong>Trendoday 11-05 多次观测仍 #1；likes/downloads 继续爬升。递进昨日落地叙事：从「能下」到「流量锚」。</li>
     <li><strong>OpenAI 收购 Pierre 强化 Codex；Claude Marketplace 扩到 25+ 伙伴 Agent：</strong>Pierre 的 Trees/Diffs 已进 Codex 应用；收购待监管交割。Anthropic Marketplace 新增安全/基建/创意伙伴，可用承诺支出抵扣。</li>
   </ul>
 </div>
 <section id="sec-news">
-  <h2>A · AI 行业新闻<span class="count">10 条</span></h2>
+  <h2>A · AI 行业新闻<span class="count">12 条</span></h2>
+  <div class="card">
+    <h3>OpenAI 发布 GPT-6 Cyber：对齐导向的网络安全专用模型<span class="tag tag-new">11月5日</span></h3>
+    <p>11 月 5 日官方产品帖：推出 GPT-6 Cyber，相对 GPT-5.6 Cyber 在 ExploitGym 提升约 51%（48.5% vs 32.1%），越权攻击范围外服务的对齐评测无部署提示达 99.93%、有提示达 100%；Preparedness Framework 网安能力从 High 升至 Critical。已用于产出 948 个 Linux LPE、发现 81 个 Firefox 此前未知高危，并生成候选补丁；初期经 Daybreak Red 向获批客户开放 API/Codex，同步扩 Daybreak Blue。与同周《A thousand fewer paths to root》研究帖互为产品与流水线两端。</p>
+    <div class="meta">来源：OpenAI ·  <a href="https://openai.com/index/introducing-gpt-6-cyber" target="_blank">阅读全文 ↗</a></div>
+  </div>
   <div class="card">
     <h3>OpenAI：自主漏洞流水线一次跑出 948 个 Linux 本地提权利用<span class="tag tag-new">11月4日–5日</span></h3>
-    <p>11 月 4 日官方研究帖：Scout/Analyst 锁定约 7% 内核审计面，产出 2308 条候选；隔离 VM+KASAN 动态复现 1724 个；ExploitDev 在开启 SMEP/SMAP/KASLR 等常规防护的发行版 VM 上做出 1169 个可提权到 root 的利用，经变体分析对应 948 个独立 LPE，并生成候选补丁。整次运行 API 约 1,213,430 美元（约 1279 美元/LPE）。扫描期间维护者已上游修 61、暂存 43、公开讨论约 299。结论侧强调：未打补丁系统上的低权账户对高资源攻击者可近似等价 root；防御需沙箱与纵深隔离。人审后才上报，非自动化直接合入主线。</p>
+    <p>11 月 4 日官方研究帖（模型侧已由 11-05 GPT-6 Cyber 产品帖点名）：Scout/Analyst 锁定约 7% 内核审计面，产出 2308 条候选；隔离 VM+KASAN 动态复现 1724 个；ExploitDev 在开启 SMEP/SMAP/KASLR 等常规防护的发行版 VM 上做出 1169 个可提权到 root 的利用，经变体分析对应 948 个独立 LPE，并生成候选补丁。整次运行 API 约 1,213,430 美元（约 1279 美元/LPE）。扫描期间维护者已上游修 61、暂存 43、公开讨论约 299。结论侧强调：未打补丁系统上的低权账户对高资源攻击者可近似等价 root；防御需沙箱与纵深隔离。人审后才上报，非自动化直接合入主线。</p>
     <div class="meta">来源：OpenAI ·  <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" target="_blank">阅读全文 ↗</a></div>
   </div>
   <div class="card">
@@ -91,9 +96,9 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
     <div class="meta">来源：OpenAI ·  <a href="https://openai.com/index/openai-to-acquire-pierre/" target="_blank">阅读全文 ↗</a></div>
   </div>
   <div class="card">
-    <h3>AA Changelog 11-05：Nanbeige4.3-33B 打到 Index 20；补 Mistral/Hy4 性能结果<span class="tag tag-new">11月5日</span></h3>
-    <p>Artificial Analysis 11 月 5 日：BOSS 直聘 Nanbeige 团队发布 Nanbeige4.3-33B，开源权重 Apache 2.0，稠密 33B、纯文本、524K 上下文，Intelligence Index v5 得分 20，与 Qwen3.8 27B（xhigh）同分；终端使用（Terminal-Bench 4.0 约 30% vs 6%）与 CritPt 硬子集更强，Briefcase/FrontierCode/HLE-Diamond 更弱，Omniscience 幻觉率更低但拒答更多。同日 Changelog 亦挂出 Mistral Large 4（High/Medium）与 Tencent Hy4 等性能结果。本站日报可提，rows 榜线本轮不动。</p>
-    <div class="meta">来源：Artificial Analysis ·  <a href="https://artificialanalysis.ai/articles/nanbeige-has-released-nanbeige4-3-33b-scoring-20-on-the-intelligence-index" target="_blank">阅读全文 ↗</a></div>
+    <h3>AA Changelog 11-05：Nanbeige4.3-33B Index=20；Inkling 2 Small 新入 31；补 Mistral/Hy4<span class="tag tag-new">11月5日</span></h3>
+    <p>Artificial Analysis 11 月 5 日：BOSS 直聘 Nanbeige 团队发布 Nanbeige4.3-33B，开源权重 Apache 2.0，稠密 33B、纯文本、524K 上下文，Intelligence Index v5 得分 20，与 Qwen3.8 27B（xhigh）同分；终端使用与 CritPt 硬子集更强，Briefcase/FrontierCode/HLE-Diamond 更弱。同日 Changelog 新入 Thinking Machines Inkling 2 Small（Intelligence Index 31；Tinker Serverless 约 $0.30/$1.00；HF 仓仍私有故本站标开放权重待核实许可，半点榜已入主榜 #44）。另挂出 Mistral Large 4（High/Medium）与 Tencent Hy4 等性能结果。</p>
+    <div class="meta">来源：Artificial Analysis ·  <a href="https://artificialanalysis.ai/changelog" target="_blank">阅读全文 ↗</a></div>
   </div>
   <div class="card">
     <h3>Kimi K3.1 Pro：权重公开次日仍稳居 Hugging Face 趋势第 1<span class="tag tag-new">11月5日</span></h3>
@@ -121,6 +126,11 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
     <div class="meta">来源：Adweek / The Neuron ·  <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/" target="_blank">阅读全文 ↗</a></div>
   </div>
   <div class="card">
+    <h3>Dropbox 约 3.5 亿美元收购 Tigris，推出 DBX Agent Cloud 对象存储<span class="tag tag-new">11月5日</span></h3>
+    <p>11 月 5 日官方与 TechCrunch：Dropbox 计划以约 3.5 亿美元现金收购面向 AI 负载的分布式对象存储公司 Tigris Data（前 Uber 存储工程师创办），并同步推出 DBX Agent Cloud——先以独立、S3 兼容对象存储面向企业与开发者；交割预计 2026 年四季度。公司称暂无裁员计划；核心产品亦接入多模型与第三方工具连接。属本周 AI 基础设施并购增量，作资本侧补记。</p>
+    <div class="meta">来源：Dropbox / TechCrunch ·  <a href="https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/" target="_blank">阅读全文 ↗</a></div>
+  </div>
+  <div class="card">
     <h3>ChatGPT Images 2.6：原生动图与更快出图（产品余波）<span class="tag tag-new">11月5日</span></h3>
     <p>多家日报称 OpenAI 推出 ChatGPT Images 2.6，支持从文本或上传图生成可调速 GIF、更快图像生成，并在 ChatGPT/Codex 多端铺开；另有「Flare/Sunburst」等 API 图像模型说法，细节以 OpenAI 官方产品页为准。今日主线仍在攻防与收购，图像更新作产品侧背景保留。</p>
     <div class="meta">来源：The Neuron / 行业汇总 ·  <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/" target="_blank">阅读全文 ↗</a></div>
@@ -130,49 +140,52 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
   <h2>B · 前沿论文<span class="count">7 篇</span></h2>
   <div class="card">
     <h3>谁可以否决 Agent？LLM 审稿机构中的证据门控管辖权</h3>
-    <div class="paper-authors">Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions</div>
     <p>把多 Agent「审稿人可否决上游决策」建模为制度管辖权问题：仅当审稿人产出机械可验证的约束违反记录与合规修复时才允许替换。在开源权重模型与空间政策/组合迁移基准上，证据门显著减少「改坏已正确提案」，同时保留大部分违规修复；前瞻验证显示界面设计会改变行为但非模型无关保障。</p>
     <div class="meta">作者：Fuad Ali ·  <a href="https://arxiv.org/abs/2611.05390" target="_blank">arXiv ↗</a></div>
   </div>
   <div class="card">
     <h3>Agent Harness 感知：把已验证遥测变成工具 Agent 的操作控制</h3>
-    <div class="paper-authors">Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents</div>
     <p>指出工具描述不告诉 Agent「此刻该动作是否健康」的 operational blindness。提出宿主在关键动作前注入新鲜、已验证状态快照并保留执行权威。ToolRoute 消融中，验证工具健康状态使可观察策略后悔均值降约 96.9%，单次派发完成率 69.4%→95.8%。</p>
     <div class="meta">作者：Manu Agrawal, Shrey Nagpal ·  <a href="https://arxiv.org/abs/2611.05391" target="_blank">arXiv ↗</a></div>
   </div>
   <div class="card">
     <h3>SlackBench：在真实代码仓协作项目上评测 Agent</h3>
-    <div class="paper-authors">SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories</div>
     <p>针对知识工作中多参与方、信息散落在对话/代码/演进决策的设定，基于真实学术项目隐私保护重演构建 140 查询环境。33 个前沿模型/harness 中最佳约 80%、多数低于 66%，暴露联合推理工作区通信与仓库状态的巨大空间。</p>
     <div class="meta">作者：Mingxuan Li, Huanzhi Mao, Ruitao Zheng 等 ·  <a href="https://arxiv.org/abs/2611.05512" target="_blank">arXiv ↗</a></div>
   </div>
   <div class="card">
     <h3>面向长寿命 Agent：在演化环境中基准化经验生命周期</h3>
-    <div class="paper-authors">Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments</div>
     <p>提出 ReScopeBench：18 个交互环境区分结构经验与规则经验，并引入静默环境变化。20 个模型显示保留经验能提分，但环境变化时难以及时修订；即使经验记录正确也未必完成任务——选择性维护与有效使用是互补挑战。</p>
     <div class="meta">作者：Shijue Huang, Hangyu Guo, Hengheng Zhang 等 ·  <a href="https://arxiv.org/abs/2611.05450" target="_blank">arXiv ↗</a></div>
   </div>
   <div class="card">
     <h3>面向 Agentic AI 的不确定性资源编排</h3>
-    <div class="paper-authors">Uncertainty-Aware Resource Orchestration for Agentic AI Systems</div>
     <p>Agent 流水线算力/带宽/时延在派发时未知且重尾。提出 Conformal Reservation for Orchestration（CRO），用共形预测在有限样本、无分布假设下做派发时资源预留，仿真中在满足概率覆盖的同时约减半切比雪夫基线的过度预留。</p>
     <div class="meta">作者：Masoud Shokrnezhad, Tarik Taleb ·  <a href="https://arxiv.org/abs/2611.05392" target="_blank">arXiv ↗</a></div>
   </div>
   <div class="card">
     <h3>有根据也不免疫：Agent-as-a-judge 的确认偏误</h3>
-    <div class="paper-authors">Grounded but Not Immune: Confirmation Bias in Agent-as-a-judge</div>
     <p>即使工具型评判者自行采集决定性证据，一条无证据效力的虚假预审备注仍可推翻最多约 40% 的正确裁决（四评判者×五数据集）。失败模式分过度信任、幻觉支持与调查不足；轻量缓解可钝化但无法消除。</p>
     <div class="meta">作者：Drake Benjamin Brown, Khushbu Pahwa, Yubin Ge 等 ·  <a href="https://arxiv.org/abs/2611.05662" target="_blank">arXiv ↗</a></div>
   </div>
   <div class="card">
     <h3>把 Agent 失败归因到其历史需要「已执行的反事实」</h3>
-    <div class="paper-authors">Attributing Agent Failures to Their History Needs an Executed Counterfactual: Toward a Reporting Standard</div>
     <p>主张仅靠读完轨迹贴标签的失败分类不够：归因声明应携带干预验证证据——冻结可执行中途状态、只改历史再续跑，并报告与估计量匹配的回放证书。提出四类操纵与测量警示，推动报告标准。</p>
     <div class="meta">作者：Egor Pakhomov, Erik Nijkamp ·  <a href="https://arxiv.org/abs/2611.05650" target="_blank">arXiv ↗</a></div>
   </div>
 </section>
 <section id="sec-models">
-  <h2>C · 新模型 / HF 动态<span class="count">5 条</span></h2>
+  <h2>C · 新模型 / HF 动态<span class="count">7 条</span></h2>
+  <div class="card">
+    <h3>GPT-6 Cyber<span class="tag tag-oss">11月5日</span></h3>
+    <p><strong>OpenAI</strong> — 11-05 产品发布：网安专用模型；ExploitGym 48.5%（较 GPT-5.6 Cyber +16pp）；越界对齐近满分；Preparedness 网安 Critical。初期 Daybreak Red 获批客户可用 API/Codex；驱动 948 Linux LPE 与 81 Firefox 高危发现。</p>
+    <div class="meta"><a href="https://openai.com/index/introducing-gpt-6-cyber" target="_blank">查看 ↗</a></div>
+  </div>
+  <div class="card">
+    <h3>Inkling 2 Small<span class="tag tag-oss">11月5日 AA</span></h3>
+    <p><strong>Thinking Machines</strong> — AA Changelog 11-05 新入 Intelligence Index 31（本站半点榜 #44，value 59/C）。Tinker Serverless 约 $0.30/$1.00、缓存 $0.03；HF thinkingmachines/Inkling-2-Small 仍 401 私有，许可待核实。勿改 rows。</p>
+    <div class="meta"><a href="https://artificialanalysis.ai/changelog" target="_blank">查看 ↗</a></div>
+  </div>
   <div class="card">
     <h3>Nanbeige4.3-33B<span class="tag tag-oss">11月5日 AA 评测</span></h3>
     <p><strong>Nanbeige / BOSS 直聘</strong> — AA 11-05：开源 Apache 2.0 稠密推理模型，33B、524K 上下文、纯文本；Intelligence Index v5 = 20，与 Qwen3.8 27B（xhigh）同分，终端与 CritPt 相对更强。可笔记本本地跑；无确认公开 API。本站 rows 本轮不改。</p>
@@ -202,9 +215,9 @@ footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
 <section id="sec-ecosystem">
   <h2>D · Agent / MCP / Skill 生态<span class="count">5 条</span></h2>
   <div class="card">
-    <h3>OpenAI 漏洞流水线：安全研究 Agent 进入「工业量级」</h3>
-    <p>Scout→Analyst→动态验证→ExploitDev→补丁→人审的五段流水线，把曾经「一洞一查」改成可复现流程；强调发现变便宜后，排序、验证与补丁合入成新瓶颈。与昨日 CrowdStrike Kill Switch、FlashProve 形成「攻防两侧同时规模化」。</p>
-    <div class="meta">来源：OpenAI ·  <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/" target="_blank">阅读全文 ↗</a></div>
+    <h3>GPT-6 Cyber × 漏洞流水线：安全研究 Agent 进入「工业量级」</h3>
+    <p>产品侧 GPT-6 Cyber + 研究侧 Scout→Analyst→动态验证→ExploitDev→补丁→人审五段流水线，把「一洞一查」改成可复现流程；强调发现变便宜后，排序、验证与补丁合入成新瓶颈。Daybreak Red/Blue 把能力闸在获批防御方。与昨日 CrowdStrike Kill Switch、FlashProve 形成「攻防两侧同时规模化」。</p>
+    <div class="meta">来源：OpenAI ·  <a href="https://openai.com/index/introducing-gpt-6-cyber" target="_blank">阅读全文 ↗</a></div>
   </div>
   <div class="card">
     <h3>Conductor → Meta：多智能体并行工作区被大厂收编</h3>

@@ -32,6 +32,10 @@
     "pattern": "gpt[ -]?6(?:\\.1)?[ -]?astra|astra"
   },
   {
+    "name": "GPT-6 Cyber",
+    "pattern": "gpt[ -]?6[ -]?cyber"
+  },
+  {
     "name": "Muse Spark Open",
     "pattern": "muse[ -]spark[ -]open"
   },

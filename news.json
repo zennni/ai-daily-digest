@@ -1,11 +1,31 @@
 [
   {
+    "t": "OpenAI 发布 GPT-6 Cyber：对齐导向的网络安全专用模型",
+    "s": "11 月 5 日官方产品帖：推出 GPT-6 Cyber，相对 GPT-5.6 Cyber 在 ExploitGym 提升约 51%（48.5% vs 32.1%），越权攻击范围外服务的对齐评测无部署提示达 99.93%、有提示达 100%；Preparedness Framework 网安能力从 High 升至 Critical。已用于产出 948 个 Linux LPE、发现 81 个 Firefox 此前未知高危，并生成候选补丁；初期经 Daybreak Red 向获批客户开放 API/Codex，同步扩 Daybreak Blue。与同周《A thousand fewer paths to root》研究帖互为产品与流水线两端。",
+    "d": "11月5日",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/introducing-gpt-6-cyber",
+    "m": [
+      "GPT-6 Cyber"
+    ]
+  },
+  {
+    "t": "Dropbox 约 3.5 亿美元收购 Tigris，推出 DBX Agent Cloud 对象存储",
+    "s": "11 月 5 日官方与 TechCrunch：Dropbox 计划以约 3.5 亿美元现金收购面向 AI 负载的分布式对象存储公司 Tigris Data，并同步推出 DBX Agent Cloud——先以独立、S3 兼容对象存储面向企业与开发者；交割预计 2026 年四季度。属本周 AI 基础设施并购增量。",
+    "d": "11月5日",
+    "src": "Dropbox / TechCrunch",
+    "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+    "m": []
+  },
+  {
     "t": "OpenAI：自主漏洞流水线一次跑出 948 个 Linux 本地提权利用",
-    "s": "11 月 4 日官方研究帖：Scout/Analyst 锁定约 7% 内核审计面，产出 2308 条候选；隔离 VM+KASAN 动态复现 1724 个；ExploitDev 在开启 SMEP/SMAP/KASLR 等常规防护的发行版 VM 上做出 1169 个可提权到 root 的利用，经变体分析对应 948 个独立 LPE，并生成候选补丁。整次运行 API 约 1,213,430 美元（约 1279 美元/LPE）。扫描期间维护者已上游修 61、暂存 43、公开讨论约 299。结论侧强调：未打补丁系统上的低权账户对高资源攻击者可近似等价 root；防御需沙箱与纵深隔离。人审后才上报，非自动化直接合入主线。",
+    "s": "11 月 4 日官方研究帖（模型侧已由 11-05 GPT-6 Cyber 产品帖点名）：Scout/Analyst 锁定约 7% 内核审计面，产出 2308 条候选；隔离 VM+KASAN 动态复现 1724 个；ExploitDev 在开启 SMEP/SMAP/KASLR 等常规防护的发行版 VM 上做出 1169 个可提权到 root 的利用，经变体分析对应 948 个独立 LPE，并生成候选补丁。整次运行 API 约 1,213,430 美元（约 1279 美元/LPE）。扫描期间维护者已上游修 61、暂存 43、公开讨论约 299。结论侧强调：未打补丁系统上的低权账户对高资源攻击者可近似等价 root；防御需沙箱与纵深隔离。人审后才上报，非自动化直接合入主线。",
     "d": "11月4日–5日",
     "src": "OpenAI",
     "link": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-    "m": []
+    "m": [
+      "GPT-6 Cyber"
+    ]
   },
   {
     "t": "Meta 收购 AI 编码创业公司 Conductor：多 Agent 并行工作区",
@@ -24,12 +44,14 @@
     "m": []
   },
   {
-    "t": "AA Changelog 11-05：Nanbeige4.3-33B 打到 Index 20；补 Mistral/Hy4 性能结果",
-    "s": "Artificial Analysis 11 月 5 日：BOSS 直聘 Nanbeige 团队发布 Nanbeige4.3-33B，开源权重 Apache 2.0，稠密 33B、纯文本、524K 上下文，Intelligence Index v5 得分 20，与 Qwen3.8 27B（xhigh）同分；终端使用（Terminal-Bench 4.0 约 30% vs 6%）与 CritPt 硬子集更强，Briefcase/FrontierCode/HLE-Diamond 更弱，Omniscience 幻觉率更低但拒答更多。同日 Changelog 亦挂出 Mistral Large 4（High/Medium）与 Tencent Hy4 等性能结果。本站日报可提，rows 榜线本轮不动。",
+    "t": "AA Changelog 11-05：Nanbeige4.3-33B Index=20；Inkling 2 Small 新入 31；补 Mistral/Hy4",
+    "s": "Artificial Analysis 11 月 5 日：BOSS 直聘 Nanbeige 团队发布 Nanbeige4.3-33B，开源权重 Apache 2.0，稠密 33B、纯文本、524K 上下文，Intelligence Index v5 得分 20，与 Qwen3.8 27B（xhigh）同分。同日 Changelog 新入 Thinking Machines Inkling 2 Small（Intelligence Index 31；本站半点榜已入主榜 #44）。另挂出 Mistral Large 4（High/Medium）与 Tencent Hy4 等性能结果。",
     "d": "11月5日",
     "src": "Artificial Analysis",
-    "link": "https://artificialanalysis.ai/articles/nanbeige-has-released-nanbeige4-3-33b-scoring-20-on-the-intelligence-index",
+    "link": "https://artificialanalysis.ai/changelog",
     "m": [
+      "Nanbeige4.3-33B",
+      "Inkling 2 Small",
       "Qwen3.8-27B",
       "Mistral Large 4",
       "Hy4"
