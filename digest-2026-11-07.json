@@ -1,0 +1,249 @@
+{
+  "meta": {
+    "date": "2026-11-07",
+    "week": "星期六",
+    "note": "今日主题词：外压刹车与产品落地。相对昨日「攻防规模化」，议题从「Agent 工业级找洞」递进到「法院/监管先动手、产品与可下载权重继续放量」。Meta 于 11-05 无限期暂停拟议商业条款更新（原定 11-20 生效），挪威/巴西法院初步禁令与英国 CMA 调查在先，公司称「暂停≠撤回」并继续咨询利益相关方；Anthropic 为满足欧盟 AI Act 透明度要求，自 11-16 起向 Opus 4.6/4.5、Sonnet 4.5、Haiku 4.5 等回溯隐形文本水印，但 Decoder 指出部分型号仅在默认采样参数下生效。产品侧：Google 正式 GA Gemini Omni 1.2 Flash（原生最长 15 秒视频、多轮对话式剪辑，720p 约 $0.07/秒、较 1.1 降价约 30%）；Anthropic 为美区 Pro/Max/Ultra 推 Claude Personal Finance 公测（经 Plaid 只读连接银行/信用卡，不可转账投资）。开源侧：Ricursive Intelligence 放出 Apache 2.0 的 Ripple-65B Preview（稠密 65B 编码/Agent，自称 Terminal-Bench 2.1≈80.5，算力预算约 3200 万美元——以官方与媒体转述为准）；Kimi K3.1 Pro 仍居 HF 趋势前列。论文侧 Scientist World 把千篇论文变成可执行 AI-Scientist 环境，MCPHallu 对 MCP Agent 幻觉分型评测，StepBack 用步级回滚省推理 token。一句话：刹车装在分发与条款上，能力与权重仍在往外冲。"
+  },
+  "highlights": [
+    {
+      "title": "Meta 无限期暂停商业条款：抓取条款 11-20 不再生效",
+      "summary": "Nieman Lab 11-05：挪威/巴西法院与英国 CMA 施压后，Meta 暂停拟议商业条款更新；「暂停」非撤回，现有条款继续有效。"
+    },
+    {
+      "title": "Gemini Omni 1.2 Flash GA：15 秒视频、降价约 30%",
+      "summary": "Google 开发者博客 11-05：原生最长 15 秒、多轮对话剪辑；720p 约 $0.07/秒；API 与 Google Cloud / Vids 可用。"
+    },
+    {
+      "title": "Claude Personal Finance 公测：经 Plaid 只读查账",
+      "summary": "Anthropic / TechCrunch：美区 Pro/Max/Ultra；只读余额与交易、出图表与仪表盘；不可转账/投资；对话不进训练。"
+    },
+    {
+      "title": "Ripple-65B Preview：Apache 2.0 美国开源编码模型上架 HF",
+      "summary": "Ricursive 放出 65B 稠密编码/Agent 权重；自称 Terminal-Bench 2.1≈80.5、训练约 3200 万美元——许可证是硬新闻，榜分待独立复现。"
+    },
+    {
+      "title": "Anthropic 水印第二波 11-16：默认采样才打标",
+      "summary": "为欧盟 AI Act：回溯四款旧 Claude；Decoder 发现改 temperature/top_p/top_k 可绕过——合规依赖「别动默认参数」。"
+    }
+  ],
+  "news": [
+    {
+      "title": "Meta 无限期暂停拟议商业条款：原定 11-20 的网站抓取更新不再生效",
+      "summary": "Nieman Lab 11 月 5 日：Meta 撤下拟议商业条款预览，并在 Business Help Center 写明更新「现已暂停，不会于 2026 年 11 月 20 日生效」；现有条款继续有效。背景是挪威法院在十余家媒体起诉后发出初步禁令、巴西禁止未经授权使用新闻内容，以及英国 CMA 就「是否对出版商与广告主施加剥削性条款」立案调查。公司对 Nieman Lab 称「继续与利益相关方沟通、把事情做对」。报道强调「暂停≠撤回」，底层计划是否改写仍待后续更新。",
+      "date": "11月5日",
+      "source": "Nieman Lab",
+      "link": "https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service/",
+      "models": []
+    },
+    {
+      "title": "Google 正式推出 Gemini Omni 1.2 Flash：最长 15 秒视频、降价约 30%",
+      "summary": "Google 开发者博客 11 月 5 日：Gemini Omni 1.2 Flash 在 Gemini API 与企业端正式可用；原生生成/剪辑最长 15 秒视频（1.1 为 10 秒），支持 3–15 秒按秒指定时长、多轮对话式改镜头/换产品/改光效，并强化参考图一致性。720p 报价约 $0.07/秒（15 秒约 $1.05），较 Omni 1.1 降约 30%；草稿可先 360p/720p 再升至 1080p/4K。Google Vids 同步接入，有谷歌账号者每月可免费生成最多 3 条 15 秒视频（以官方说明为准）。",
+      "date": "11月5日",
+      "source": "Google Blog",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+      "models": []
+    },
+    {
+      "title": "Anthropic 推 Claude Personal Finance 公测：Plaid 只读接入银行与信用卡",
+      "summary": "Anthropic 官方文章与 TechCrunch 11-05：美区 Claude Pro / Max / Ultra 用户可经 Plaid 以只读方式连接银行、信用卡等账户，查询余额、分类支出、追踪账单、发现重复扣款与异常费用，并生成图表与财务仪表盘。明确不能转账、管钱或投资；Personal Finance 对话排除在模型训练之外。属「Agent + 受控工具」进入个人金融场景的产品落地，权限边界写进产品页。",
+      "date": "11月5日",
+      "source": "Anthropic / TechCrunch",
+      "link": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "models": []
+    },
+    {
+      "title": "Anthropic 文本水印第二波：11-16 起回溯四款旧 Claude，默认采样才生效",
+      "summary": "为满足欧盟 AI Act 透明度要求，Anthropic 对 2026 年 8 月 2 日之后新发模型已默认带隐形文本水印；第二波自 11 月 16 日起覆盖 Opus 4.6、Opus 4.5、Sonnet 4.5、Haiku 4.5 等。The Decoder 指出：若干第二波型号仅在 temperature / top_p / top_k 保持默认时打标，改任一参数输出可无水印；官方亦提醒依赖水印做合规的客户勿改默认采样。过渡期约到 12 月初。水印检测主要在厂商与监管侧，不宜当作公众可用的「是否 AI」检测器。",
+      "date": "11月5日–16日",
+      "source": "The Decoder / Anthropic Help",
+      "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
+      "models": [
+        "Claude 4.5 Haiku"
+      ]
+    },
+    {
+      "title": "Ricursive 发布 Ripple-65B Preview：Apache 2.0 稠密编码/Agent 开源权重",
+      "summary": "Hugging Face ricursiveAI/Ripple-65B-Preview 与 The Decoder / VentureBeat 报道：前谷歌背景团队放出约 65B 稠密编码与 Agent 模型，Apache 2.0；自称预训练约 12T token、最长约 1M 上下文，Terminal-Bench 2.1 约 80.5，训练算力预算约 3200 万美元。媒体强调「许可证可商用自托管」是对多数构建者更硬的新闻；榜分依赖 harness、待独立复现。HF 趋势榜近期亦出现该仓。",
+      "date": "近期",
+      "source": "Hugging Face / The Decoder",
+      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "models": []
+    },
+    {
+      "title": "Kimi K3.1 Pro：公开权重后仍居 Hugging Face 趋势前列",
+      "summary": "相对 11-05/11-06「仓已上架并冲到趋势第 1」的叙事，11-06 多源（Daily Launch / TOP10 / HF）观测仍显示 moonshotai/Kimi-K3.1-Pro 稳居趋势前列，likes 已过千量级（以观测时刻为准）。技术卡仍为约 2.8T/104B 激活 MoE、1M 上下文。今日仅作流量锚续报，无新发权重。",
+      "date": "11月6日",
+      "source": "Hugging Face / Daily Launch",
+      "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+      "models": [
+        "Kimi K3.1 Pro"
+      ]
+    },
+    {
+      "title": "苹果 10-K 将「未授权行动的 AI Agent」列入经营风险",
+      "summary": "多家 11-07 日报转引：苹果最新年度报告把 AI Agent 在未获授权情况下采取行动列为需向股东披露的业务风险之一。具体措辞与风险段落以 SEC 文件原文为准；与本周「外压装刹车」叙事同属治理侧信号。",
+      "date": "近期",
+      "source": "BYOBot / 行业汇总",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
+      "models": []
+    },
+    {
+      "title": "Uber：最忙十月周仅录得 4 次 AI Agent 叫车、约 500 次 Agent 点餐",
+      "summary": "BYOBot 11-07 转述 Uber 披露：在其最忙的十月周，AI Agent 完成的叫车仅 4 次，Uber Eats 上 Agent 订单约 500，对照同期合计约 3.2 亿次行程与订单。说明「Agent 真下单」仍极早期；数字以 Uber 披露为准。",
+      "date": "近期",
+      "source": "BYOBot / Uber",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
+      "models": []
+    },
+    {
+      "title": "背景回顾：GPT-6 Cyber 仍处获批客户闸内（无重大新增量）",
+      "summary": "11-05 已详述：OpenAI 网安专用模型 ExploitGym 48.5%、Preparedness 网安 Critical、IP 白名单默认开启。11-07 各日报仍作头条回顾，但未见独立复现或大规模扩权新披露；本报略记以免与昨日重复。",
+      "date": "11月5日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/introducing-gpt-6-cyber",
+      "models": [
+        "GPT-6 Cyber"
+      ]
+    },
+    {
+      "title": "联邦法院裁减 Anthropic 歌词案：对 CEO 个人版权主张驳回（可修改诉状）",
+      "summary": "BYOBot 11-07 转述：联邦法院驳回针对 Anthropic CEO Dario Amodei 个人的版权主张（允许修改诉状），质疑出版商是否充分主张 Claude 复制了受保护歌词。案件实体争议未终局；以法院文书为准。",
+      "date": "近期",
+      "source": "BYOBot / 法院报道",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Scientist World：为 AI-Scientist 长出可运行的研究世界",
+      "titleEn": "Scientist World: Grow a Research World for AI-Scientists",
+      "summary": "普林斯顿团队把经验论文自动转成可执行环境：复现论文方法作基线，用 Frontier-Normalized Improvement（FNI）衡量 AI-Scientist 相对人类作者方法的改进。首发 1000 个已验证环境；称前沿模型在 innovate 模式下约 74% 次尝试可超过复现基线；并释出约 6400 小时研究轨迹，可用其把小模型 ideation 拉到前沿水平。",
+      "authors": "Taiming Lu, Sachin Konan, Zhuang Liu",
+      "link": "https://arxiv.org/abs/2611.08478"
+    },
+    {
+      "title": "SwarmEvolve：潜空间 Agent 群做演化发现与优化",
+      "titleEn": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "summary": "用数百低成本潜空间 Agent（不解码长文本、传 KV cache）做程序演化搜索。21 个数学/科学计算题上，同用 Qwen3 时平均分高于 OpenEvolve 等；中位 3–8 分钟达到基线 60 分钟分数；Qwen3 8B 在若干题上改进 AlphaEvolve 曾用前沿模型找到的构造。",
+      "authors": "Qile Jiang, George Em Karniadakis",
+      "link": "https://arxiv.org/abs/2611.08483"
+    },
+    {
+      "title": "StepBack：步级定位首错再重采样，省推理 token",
+      "titleEn": "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning",
+      "summary": "相对整条轨迹重采样的 Self-Consistency，先出少量草稿、用 NLL/PRM 轻量信号定位疑似首错步，只重采样该步及后缀再多数投票。七个数学/多跳 QA 基准上平均精度对齐 SC@32，token 最多省约 41.26%；可与 Adaptive Consistency 等叠加。",
+      "authors": "Yang Ouyang, Jung-Eun Kim",
+      "link": "https://arxiv.org/abs/2611.08403"
+    },
+    {
+      "title": "MCPHallu：评测 MCP Agent 的推理/执行/记忆幻觉",
+      "titleEn": "MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents",
+      "summary": "358 题、36 个真实 MCP 服务器容器；四亚型：Branch Collapse、Unreachable Goal、Tool Misuse、Context Forgetting。14 家前沿模型 5012 条轨迹，均分约 0.642（满分 1）；Unreachable Goal 最难（均分约 0.458）。亚型排名跨模型漂移大，反对只看总分。",
+      "authors": "Yizhen Jiang, Haowei Guo, Tianyi Bai et al.",
+      "link": "https://arxiv.org/abs/2611.07689"
+    },
+    {
+      "title": "多智能体经济里该让谁知道什么？实证信息设计",
+      "titleEn": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
+      "summary": "在交易/议价/双边拍卖中系统改变信息披露粒度，固定规则与模型。发现更细信息高度模型依赖：对部分模型提高福利，对另一些（如若干拍卖场景）反而抬价导致市场失灵。结论：选模与信息设计须联合优化。",
+      "authors": "Mete Erdogan, Mirac Suzgun, Aneesh Pappu et al.",
+      "link": "https://arxiv.org/abs/2611.07667"
+    },
+    {
+      "title": "Unsatz：不给定 Ansatz 时的科学发现评测",
+      "titleEn": "Unsatz: Evaluating Scientific Discovery Without a Given Ansatz",
+      "summary": "多数方程发现基准把函数形式（ansatz）白送；Unsatz 要求系统自己发明假设形状。80 个模拟系统、20 科学域；九个语言模型解出约 21%–60%。失败模式：变量找对、交互搞错，且修订偏向下已见数据误差而非提升未见数据预测。",
+      "authors": "见 arXiv 2611.03713",
+      "link": "https://arxiv.org/abs/2611.03713"
+    },
+    {
+      "title": "压缩 Agent 记忆时同时保住局部与全局结构",
+      "titleEn": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
+      "summary": "Agent 记忆压缩常只保「近邻仍在」，但巩固/删除/比较还依赖远距离结构。用无标签局部/全局保真度评估两端；讨论压缩接受准则如何兼顾。",
+      "authors": "Henry Han",
+      "link": "https://arxiv.org/abs/2611.08341"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini Omni 1.2 Flash",
+      "vendor": "Google",
+      "highlight": "11-05 GA：原生最长 15 秒视频 + 多轮对话剪辑；720p ≈$0.07/秒（较 1.1 降约 30%）；Gemini API / Cloud / Vids 可用。",
+      "date": "11月5日",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "name": "Ripple-65B Preview",
+      "vendor": "Ricursive Intelligence",
+      "highlight": "Apache 2.0 稠密 65B 编码/Agent；自称 Terminal-Bench 2.1≈80.5、训练约 $32M；HF 已上架，榜分待独立复现。",
+      "date": "近期",
+      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "vendor": "Moonshot AI",
+      "highlight": "公开权重后续报：11-06 多源仍居 HF 趋势前列；约 2.8T/104B MoE、1M 上下文。无新发权重。",
+      "date": "11月6日",
+      "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+    },
+    {
+      "name": "Idol (speridlabs)",
+      "vendor": "speridlabs",
+      "highlight": "开源 image-to-3D；HF 趋势多次进前三（trending score 约 700+，likes 八百余——以观测时刻为准）。",
+      "date": "11月6日",
+      "link": "https://huggingface.co/speridlabs/idol"
+    },
+    {
+      "name": "LTX-2.5",
+      "vendor": "Lightricks",
+      "highlight": "image-to-video；HF 趋势前列、likes 过万；与 Idol 等共同把趋势榜从纯语言推向几何/视频。",
+      "date": "11月6日",
+      "link": "https://huggingface.co/Lightricks/LTX-2.5"
+    },
+    {
+      "name": "Nemotron-3.5-Transcribe-30B-A4B",
+      "vendor": "NVIDIA",
+      "highlight": "离线语音转写开源仓；HF 趋势与 likes 均靠前（约 3k likes 量级）。",
+      "date": "近期",
+      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "MCPHallu：给 MCP Agent 做幻觉分型体检",
+      "summary": "相对只报任务完成率的 MCP 榜，MCPHallu 把失败建成可触发的结构陷阱（分支坍塌/不可达目标/工具误用/上下文遗忘）。不可达目标上模型常继续瞎调工具或谎称完成——部署侧应报亚型可靠度而非只看总分。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.07689",
+      "models": []
+    },
+    {
+      "title": "Claude Personal Finance：只读金融工具进 Agent 产品",
+      "summary": "经 Plaid 接账户、只读分析支出与账单，显式禁止转账投资。是「Skill/工具权限边界写进产品」的样本：能力靠连接器，安全靠能力否定列表。",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "models": []
+    },
+    {
+      "title": "Agent Skills 可移植：同一 SKILL.md 跨 Claude / Cursor / Codex",
+      "summary": "Cursor 文档与社区指南（约 11-04 更新）重申：Skills 为开放 SKILL.md 标准；项目级可放 `.agents/skills/` 或 `.cursor/skills/`，并兼容 `.claude/skills/`。Skill 管「怎么做」，MCP 管「连到什么」——多数认真部署需要两者刻意接线。",
+      "source": "Cursor Docs / 社区",
+      "link": "https://cursor.com/docs/skills",
+      "models": []
+    },
+    {
+      "title": "Scientist World：AI-Scientist 的可扩展 Gym",
+      "summary": "论文环境可同时当基准、轨迹数据集与训练场；用真实实验奖励抬升小模型 ideation。与昨日「工业级找洞」对照：一边是安全流水线，一边是科学发现流水线。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.08478",
+      "models": []
+    },
+    {
+      "title": "Skillware 论述：少提示、多装备可审计能力模块",
+      "summary": "arXiv 2611.07652 主张用模块化 Skillware 替代反复提示，强调主权、可审计与确定性执行。与 MCP/Skills 分工讨论同周出现，作生态侧观点条。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.07652",
+      "models": []
+    }
+  ]
+}

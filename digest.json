@@ -1,247 +1,104 @@
 {
   "meta": {
-    "date": "2026-11-06",
-    "week": "星期五",
-    "note": "今日主题词：攻防规模化。相对昨日「权重落地与验真」，议题从「能不能下载、能不能证明是声称的模型」递进到「Agent 能不能以工业规模找洞、修洞、并行写代码」。OpenAI 同日线发布网络安全专用模型 GPT-6 Cyber，并以《A thousand fewer paths to root》披露其自主漏洞发现/利用/补丁流水线在中等十月一次运行中，对常用 Linux 发行版动态复现 1724 个漏洞并产出 948 个可工作的本地提权（LPE）利用，API 费用约 121.3 万美元（约 1279 美元/LPE）；维护者在扫描期间已上游修复 61 个、另有 43 个暂存补丁。同周资本侧：Meta 收购多智能体编码创业公司 Conductor（并行工作区派发多 Agent），OpenAI 宣布收购 Pierre Computer 以强化 Codex 的代码浏览与 Diff 工具链。评测侧 AA Changelog 11-05：BOSS 直聘 Nanbeige 团队开源 Nanbeige4.3-33B（Apache 2.0、33B 稠密、524K 上下文）在 Intelligence Index v5 打到 20，与 Qwen3.8 27B（xhigh）同分但终端使用更强、知识更弱；同日 Changelog 还新入 Thinking Machines Inkling 2 Small（Index=31），并补 Mistral Large 4 / Hy4 等性能结果。开源流量：Kimi K3.1 Pro 在 HF 趋势稳居第 1。论文侧 Agent 编排与 harness 感知、SlackBench 协作基准、审稿管辖权同日涌上 arXiv。一句话：找洞变便宜之后，修洞与多智能体编排成了新瓶颈。"
+    "date": "2026-11-07",
+    "week": "星期六",
+    "note": "今日主题词：外压刹车与产品落地。相对昨日「攻防规模化」，议题从「Agent 工业级找洞」递进到「法院/监管先动手、产品与可下载权重继续放量」。Meta 于 11-05 无限期暂停拟议商业条款更新（原定 11-20 生效），挪威/巴西法院初步禁令与英国 CMA 调查在先，公司称「暂停≠撤回」并继续咨询利益相关方；Anthropic 为满足欧盟 AI Act 透明度要求，自 11-16 起向 Opus 4.6/4.5、Sonnet 4.5、Haiku 4.5 等回溯隐形文本水印，但 Decoder 指出部分型号仅在默认采样参数下生效。产品侧：Google 正式 GA Gemini Omni 1.2 Flash（原生最长 15 秒视频、多轮对话式剪辑，720p 约 $0.07/秒、较 1.1 降价约 30%）；Anthropic 为美区 Pro/Max/Ultra 推 Claude Personal Finance 公测（经 Plaid 只读连接银行/信用卡，不可转账投资）。开源侧：Ricursive Intelligence 放出 Apache 2.0 的 Ripple-65B Preview（稠密 65B 编码/Agent，自称 Terminal-Bench 2.1≈80.5，算力预算约 3200 万美元——以官方与媒体转述为准）；Kimi K3.1 Pro 仍居 HF 趋势前列。论文侧 Scientist World 把千篇论文变成可执行 AI-Scientist 环境，MCPHallu 对 MCP Agent 幻觉分型评测，StepBack 用步级回滚省推理 token。一句话：刹车装在分发与条款上，能力与权重仍在往外冲。"
   },
   "highlights": [
     {
-      "title": "OpenAI 发布 GPT-6 Cyber：攻防专用模型驱动 948 个 Linux LPE",
-      "summary": "11-05 官方产品帖：GPT-6 Cyber 在 ExploitGym 相对 GPT-5.6 Cyber 提升约 51%；Preparedness 网安等级升至 Critical；同线研究流水线产出 948 个可工作 LPE，并助发现 81 个 Firefox 高危。"
+      "title": "Meta 无限期暂停商业条款：抓取条款 11-20 不再生效",
+      "summary": "Nieman Lab 11-05：挪威/巴西法院与英国 CMA 施压后，Meta 暂停拟议商业条款更新；「暂停」非撤回，现有条款继续有效。"
     },
     {
-      "title": "Meta 收购 Conductor：多智能体并行编码工作区并入",
-      "summary": "TechCrunch / 官方确认：Conductor 让开发者为项目分片派发多 Agent；云服务 11-20 关停；创始人称明年早些有新产品。"
+      "title": "Gemini Omni 1.2 Flash GA：15 秒视频、降价约 30%",
+      "summary": "Google 开发者博客 11-05：原生最长 15 秒、多轮对话剪辑；720p 约 $0.07/秒；API 与 Google Cloud / Vids 可用。"
     },
     {
-      "title": "AA：Nanbeige4.3-33B Index=20；Inkling 2 Small 新入 Index=31",
-      "summary": "11-05 Changelog：Nanbeige 开源稠密 33B 打到 20；同日新入 Thinking Machines Inkling 2 Small（Index 31，本站半点榜已入 #44）。勿改本站 rows。"
+      "title": "Claude Personal Finance 公测：经 Plaid 只读查账",
+      "summary": "Anthropic / TechCrunch：美区 Pro/Max/Ultra；只读余额与交易、出图表与仪表盘；不可转账/投资；对话不进训练。"
     },
     {
-      "title": "Kimi K3.1 Pro 权重公开后稳居 HF 趋势第 1",
-      "summary": "Trendoday 11-05 多次观测仍 #1；likes/downloads 继续爬升。递进昨日落地叙事：从「能下」到「流量锚」。"
+      "title": "Ripple-65B Preview：Apache 2.0 美国开源编码模型上架 HF",
+      "summary": "Ricursive 放出 65B 稠密编码/Agent 权重；自称 Terminal-Bench 2.1≈80.5、训练约 3200 万美元——许可证是硬新闻，榜分待独立复现。"
     },
     {
-      "title": "OpenAI 收购 Pierre 强化 Codex；Claude Marketplace 扩到 25+ 伙伴 Agent",
-      "summary": "Pierre 的 Trees/Diffs 已进 Codex 应用；收购待监管交割。Anthropic Marketplace 新增安全/基建/创意伙伴，可用承诺支出抵扣。"
+      "title": "Anthropic 水印第二波 11-16：默认采样才打标",
+      "summary": "为欧盟 AI Act：回溯四款旧 Claude；Decoder 发现改 temperature/top_p/top_k 可绕过——合规依赖「别动默认参数」。"
     }
   ],
   "news": [
     {
-      "title": "OpenAI 发布 GPT-6 Cyber：对齐导向的网络安全专用模型",
-      "summary": "11 月 5 日官方产品帖：推出 GPT-6 Cyber，相对 GPT-5.6 Cyber 在 ExploitGym 提升约 51%（48.5% vs 32.1%），越权攻击范围外服务的对齐评测无部署提示达 99.93%、有提示达 100%；Preparedness Framework 网安能力从 High 升至 Critical。已用于产出 948 个 Linux LPE、发现 81 个 Firefox 此前未知高危，并生成候选补丁；初期经 Daybreak Red 向获批客户开放 API/Codex，同步扩 Daybreak Blue。与同周《A thousand fewer paths to root》研究帖互为产品与流水线两端。",
+      "title": "Meta 无限期暂停拟议商业条款：原定 11-20 的网站抓取更新不再生效",
+      "summary": "Nieman Lab 11 月 5 日：Meta 撤下拟议商业条款预览，并在 Business Help Center 写明更新「现已暂停，不会于 2026 年 11 月 20 日生效」；现有条款继续有效。背景是挪威法院在十余家媒体起诉后发出初步禁令、巴西禁止未经授权使用新闻内容，以及英国 CMA 就「是否对出版商与广告主施加剥削性条款」立案调查。公司对 Nieman Lab 称「继续与利益相关方沟通、把事情做对」。报道强调「暂停≠撤回」，底层计划是否改写仍待后续更新。",
       "date": "11月5日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/introducing-gpt-6-cyber",
-      "models": [
-        "GPT-6 Cyber"
-      ]
-    },
-    {
-      "title": "OpenAI：自主漏洞流水线一次跑出 948 个 Linux 本地提权利用",
-      "summary": "11 月 4 日官方研究帖（模型侧已由 11-05 GPT-6 Cyber 产品帖点名）：Scout/Analyst 锁定约 7% 内核审计面，产出 2308 条候选；隔离 VM+KASAN 动态复现 1724 个；ExploitDev 在开启 SMEP/SMAP/KASLR 等常规防护的发行版 VM 上做出 1169 个可提权到 root 的利用，经变体分析对应 948 个独立 LPE，并生成候选补丁。整次运行 API 约 1,213,430 美元（约 1279 美元/LPE）。扫描期间维护者已上游修 61、暂存 43、公开讨论约 299。结论侧强调：未打补丁系统上的低权账户对高资源攻击者可近似等价 root；防御需沙箱与纵深隔离。人审后才上报，非自动化直接合入主线。",
-      "date": "11月4日–5日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "models": [
-        "GPT-6 Cyber"
-      ]
-    },
-    {
-      "title": "Meta 收购 AI 编码创业公司 Conductor：多 Agent 并行工作区",
-      "summary": "Axios 首报、TechCrunch 11-04 确认：Meta 收购 Conductor（2024 创立），产品让工程师把项目拆到并行、隔离工作区并由多 Agent 协同；Agent 本身来自 Anthropic/OpenAI 等实验室而非自研。云服务将于 11 月 20 日关停并开始删除云端数据；本地能力继续维护至明年早些时候，创始人 Charlie Holtz 称将与 Alexandr Wang、Nat Friedman 等合作并预告新产品。与 Meta 近期 Muse Code / Muse agents 叙事同属「编码 Agent 收编」线。",
-      "date": "11月4日",
-      "source": "TechCrunch / Conductor",
-      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "source": "Nieman Lab",
+      "link": "https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service/",
       "models": []
     },
     {
-      "title": "OpenAI 宣布收购 Pierre Computer：把 Git 工作流做进 Codex",
-      "summary": "11 月 4 日 OpenAI 官方：将收购 Pierre（Code Storage 与 Trees/Diffs 等开源库背后公司）；Codex 应用里浏览文件与审 Diff 已在用其库。目标是让源码管理适配「人与 Agent 并行」的开发节奏，并与此前公开的 Pando 源控后端形成配套。开源项目承诺继续开源；交割前两家独立运营，需监管审批。与同日 Linux 攻防规模化实验同属「Agent 进入系统软件栈」议程。",
-      "date": "11月4日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/openai-to-acquire-pierre/",
+      "title": "Google 正式推出 Gemini Omni 1.2 Flash：最长 15 秒视频、降价约 30%",
+      "summary": "Google 开发者博客 11 月 5 日：Gemini Omni 1.2 Flash 在 Gemini API 与企业端正式可用；原生生成/剪辑最长 15 秒视频（1.1 为 10 秒），支持 3–15 秒按秒指定时长、多轮对话式改镜头/换产品/改光效，并强化参考图一致性。720p 报价约 $0.07/秒（15 秒约 $1.05），较 Omni 1.1 降约 30%；草稿可先 360p/720p 再升至 1080p/4K。Google Vids 同步接入，有谷歌账号者每月可免费生成最多 3 条 15 秒视频（以官方说明为准）。",
+      "date": "11月5日",
+      "source": "Google Blog",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
       "models": []
     },
     {
-      "title": "AA Changelog 11-05：Nanbeige4.3-33B Index=20；Inkling 2 Small 新入 31；补 Mistral/Hy4",
-      "summary": "Artificial Analysis 11 月 5 日：BOSS 直聘 Nanbeige 团队发布 Nanbeige4.3-33B，开源权重 Apache 2.0，稠密 33B、纯文本、524K 上下文，Intelligence Index v5 得分 20，与 Qwen3.8 27B（xhigh）同分；终端使用与 CritPt 硬子集更强，Briefcase/FrontierCode/HLE-Diamond 更弱。同日 Changelog 新入 Thinking Machines Inkling 2 Small（Intelligence Index 31；Tinker Serverless 约 $0.30/$1.00；HF 仓仍私有故本站标开放权重待核实许可，半点榜已入主榜 #44）。另挂出 Mistral Large 4（High/Medium）与 Tencent Hy4 等性能结果。",
+      "title": "Anthropic 推 Claude Personal Finance 公测：Plaid 只读接入银行与信用卡",
+      "summary": "Anthropic 官方文章与 TechCrunch 11-05：美区 Claude Pro / Max / Ultra 用户可经 Plaid 以只读方式连接银行、信用卡等账户，查询余额、分类支出、追踪账单、发现重复扣款与异常费用，并生成图表与财务仪表盘。明确不能转账、管钱或投资；Personal Finance 对话排除在模型训练之外。属「Agent + 受控工具」进入个人金融场景的产品落地，权限边界写进产品页。",
       "date": "11月5日",
-      "source": "Artificial Analysis",
-      "link": "https://artificialanalysis.ai/changelog",
+      "source": "Anthropic / TechCrunch",
+      "link": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "models": []
+    },
+    {
+      "title": "Anthropic 文本水印第二波：11-16 起回溯四款旧 Claude，默认采样才生效",
+      "summary": "为满足欧盟 AI Act 透明度要求，Anthropic 对 2026 年 8 月 2 日之后新发模型已默认带隐形文本水印；第二波自 11 月 16 日起覆盖 Opus 4.6、Opus 4.5、Sonnet 4.5、Haiku 4.5 等。The Decoder 指出：若干第二波型号仅在 temperature / top_p / top_k 保持默认时打标，改任一参数输出可无水印；官方亦提醒依赖水印做合规的客户勿改默认采样。过渡期约到 12 月初。水印检测主要在厂商与监管侧，不宜当作公众可用的「是否 AI」检测器。",
+      "date": "11月5日–16日",
+      "source": "The Decoder / Anthropic Help",
+      "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
       "models": [
-        "Nanbeige4.3-33B",
-        "Inkling 2 Small",
-        "Qwen3.8-27B",
-        "Mistral Large 4",
-        "Hy4"
+        "Claude 4.5 Haiku"
       ]
     },
     {
-      "title": "Kimi K3.1 Pro：权重公开次日仍稳居 Hugging Face 趋势第 1",
-      "summary": "相对昨日「仓已上架」的落地叙事，11-05 Trendoday / GitNova 等多源观测显示 moonshotai/Kimi-K3.1-Pro 连续占据 HF Trending Models 第 1（曾于 UTC 10:42 触顶），likes 约八百余、月下载过万量级（以观测时刻为准）。技术卡仍为约 2.8T/104B 激活 MoE、1M 上下文、MXFP4、Kimi K3.1 Pro License。今日增量是「公开后立刻成为流量锚」，而非新发权重。",
-      "date": "11月5日",
-      "source": "Hugging Face / Trendoday",
+      "title": "Ricursive 发布 Ripple-65B Preview：Apache 2.0 稠密编码/Agent 开源权重",
+      "summary": "Hugging Face ricursiveAI/Ripple-65B-Preview 与 The Decoder / VentureBeat 报道：前谷歌背景团队放出约 65B 稠密编码与 Agent 模型，Apache 2.0；自称预训练约 12T token、最长约 1M 上下文，Terminal-Bench 2.1 约 80.5，训练算力预算约 3200 万美元。媒体强调「许可证可商用自托管」是对多数构建者更硬的新闻；榜分依赖 harness、待独立复现。HF 趋势榜近期亦出现该仓。",
+      "date": "近期",
+      "source": "Hugging Face / The Decoder",
+      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
+      "models": []
+    },
+    {
+      "title": "Kimi K3.1 Pro：公开权重后仍居 Hugging Face 趋势前列",
+      "summary": "相对 11-05/11-06「仓已上架并冲到趋势第 1」的叙事，11-06 多源（Daily Launch / TOP10 / HF）观测仍显示 moonshotai/Kimi-K3.1-Pro 稳居趋势前列，likes 已过千量级（以观测时刻为准）。技术卡仍为约 2.8T/104B 激活 MoE、1M 上下文。今日仅作流量锚续报，无新发权重。",
+      "date": "11月6日",
+      "source": "Hugging Face / Daily Launch",
       "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
       "models": [
         "Kimi K3.1 Pro"
       ]
     },
     {
-      "title": "Anthropic Claude Marketplace：伙伴 Agent/产品扩至 25+，可用承诺支出抵扣",
-      "summary": "Anthropic 官方文章：Marketplace 新增安全（Chainguard、Checkmarx、Cyera、Rubrik、Tanium）、开发基建（Datadog、Netlify）、创意（AirOps、Runway、Webflow）与生产力（Asana、Glean、monday、Zoom）等伙伴 Agent/产品，总数逾 25。符合条件的企业客户可将部分 Anthropic 承诺支出用于购买或扩容这些方案（有限预览，需申请）。与昨日 FlashProve「验真」线并行：一边证明模型身份，一边把企业安全与可观测性 Agent 卖进同一账单。",
+      "title": "苹果 10-K 将「未授权行动的 AI Agent」列入经营风险",
+      "summary": "多家 11-07 日报转引：苹果最新年度报告把 AI Agent 在未获授权情况下采取行动列为需向股东披露的业务风险之一。具体措辞与风险段落以 SEC 文件原文为准；与本周「外压装刹车」叙事同属治理侧信号。",
       "date": "近期",
-      "source": "Anthropic",
-      "link": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
+      "source": "BYOBot / 行业汇总",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
       "models": []
     },
     {
-      "title": "METR：Anthropic 模型能力改进速度约为一年前两倍",
-      "summary": "美联社 11 月 5 日援引独立监测组织 METR：Anthropic 在「定义良好任务」上的能力改进速度约为一年前的两倍，研究者认为大量加速来自 AI 协助改进 AI。报道置于 CEO 呼吁放缓改进速度的语境下，细节以 METR 原文与公司披露为准。与本周 FlashProve、算力扩张传闻同属「加速 vs 治理」对照。",
-      "date": "11月5日",
-      "source": "AP News / METR",
-      "link": "https://apnews.com/article/anthropic-metr-ai-claude-acceleration-9cf8c590ffc1abdb489179bdccc69c23",
+      "title": "Uber：最忙十月周仅录得 4 次 AI Agent 叫车、约 500 次 Agent 点餐",
+      "summary": "BYOBot 11-07 转述 Uber 披露：在其最忙的十月周，AI Agent 完成的叫车仅 4 次，Uber Eats 上 Agent 订单约 500，对照同期合计约 3.2 亿次行程与订单。说明「Agent 真下单」仍极早期；数字以 Uber 披露为准。",
+      "date": "近期",
+      "source": "BYOBot / Uber",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
       "models": []
     },
     {
-      "title": "苹果据报下调部分工程师每日 AI 预算；鼓励更便宜与端侧模型",
-      "summary": "The Neuron 等汇总报道：部分工程师每日 AI 额度从约 300 美元降至 200 美元，进一步降至 100 美元在讨论中，非工程团队或低至 25 美元；可申请例外。公司鼓励使用更便宜模型与端侧 AI 以控制内部支出。与本周 Siri AI 向第三方开放、国行 Apple 智能开测同周出现，产品入口扩张与内部账单收紧并行。",
+      "title": "背景回顾：GPT-6 Cyber 仍处获批客户闸内（无重大新增量）",
+      "summary": "11-05 已详述：OpenAI 网安专用模型 ExploitGym 48.5%、Preparedness 网安 Critical、IP 白名单默认开启。11-07 各日报仍作头条回顾，但未见独立复现或大规模扩权新披露；本报略记以免与昨日重复。",
       "date": "11月5日",
-      "source": "The Neuron",
-      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/",
-      "models": []
-    },
-    {
-      "title": "Anthropic 据报签下首笔付费出版商授权：美联社选举报道接入 Claude",
-      "summary": "Adweek 报道、多家日报转引：Anthropic 在中期选举前就美联社选举报道达成付费授权，使 Claude 可引用及时、带归属的选举信息；此前该公司相对回避 OpenAI 等同行的出版商授权模式。具体金额与条款以双方正式披露为准。",
-      "date": "11月5日",
-      "source": "Adweek / The Neuron",
-      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/",
-      "models": []
-    },
-    {
-      "title": "Dropbox 约 3.5 亿美元收购 Tigris，推出 DBX Agent Cloud 对象存储",
-      "summary": "11 月 5 日官方与 TechCrunch：Dropbox 计划以约 3.5 亿美元现金收购面向 AI 负载的分布式对象存储公司 Tigris Data（前 Uber 存储工程师创办），并同步推出 DBX Agent Cloud——先以独立、S3 兼容对象存储面向企业与开发者；交割预计 2026 年四季度。公司称暂无裁员计划；核心产品亦接入多模型与第三方工具连接。属本周 AI 基础设施并购增量，作资本侧补记。",
-      "date": "11月5日",
-      "source": "Dropbox / TechCrunch",
-      "link": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
-      "models": []
-    },
-    {
-      "title": "ChatGPT Images 2.6：原生动图与更快出图（产品余波）",
-      "summary": "多家日报称 OpenAI 推出 ChatGPT Images 2.6，支持从文本或上传图生成可调速 GIF、更快图像生成，并在 ChatGPT/Codex 多端铺开；另有「Flare/Sunburst」等 API 图像模型说法，细节以 OpenAI 官方产品页为准。今日主线仍在攻防与收购，图像更新作产品侧背景保留。",
-      "date": "11月5日",
-      "source": "The Neuron / 行业汇总",
-      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/",
-      "models": []
-    }
-  ],
-  "papers": [
-    {
-      "title": "谁可以否决 Agent？LLM 审稿机构中的证据门控管辖权",
-      "titleEn": "Who May Overrule the Agent? Evidence-Gated Authority in LLM Review Institutions",
-      "summary": "把多 Agent「审稿人可否决上游决策」建模为制度管辖权问题：仅当审稿人产出机械可验证的约束违反记录与合规修复时才允许替换。在开源权重模型与空间政策/组合迁移基准上，证据门显著减少「改坏已正确提案」，同时保留大部分违规修复；前瞻验证显示界面设计会改变行为但非模型无关保障。",
-      "authors": "Fuad Ali",
-      "link": "https://arxiv.org/abs/2611.05390"
-    },
-    {
-      "title": "Agent Harness 感知：把已验证遥测变成工具 Agent 的操作控制",
-      "titleEn": "Agent Harness Awareness: Turning Verified Telemetry into Operational Control for Tool-Using Agents",
-      "summary": "指出工具描述不告诉 Agent「此刻该动作是否健康」的 operational blindness。提出宿主在关键动作前注入新鲜、已验证状态快照并保留执行权威。ToolRoute 消融中，验证工具健康状态使可观察策略后悔均值降约 96.9%，单次派发完成率 69.4%→95.8%。",
-      "authors": "Manu Agrawal, Shrey Nagpal",
-      "link": "https://arxiv.org/abs/2611.05391"
-    },
-    {
-      "title": "SlackBench：在真实代码仓协作项目上评测 Agent",
-      "titleEn": "SlackBench: Benchmarking Agents on Collaborative Projects Grounded in Real Code Repositories",
-      "summary": "针对知识工作中多参与方、信息散落在对话/代码/演进决策的设定，基于真实学术项目隐私保护重演构建 140 查询环境。33 个前沿模型/harness 中最佳约 80%、多数低于 66%，暴露联合推理工作区通信与仓库状态的巨大空间。",
-      "authors": "Mingxuan Li, Huanzhi Mao, Ruitao Zheng 等",
-      "link": "https://arxiv.org/abs/2611.05512"
-    },
-    {
-      "title": "面向长寿命 Agent：在演化环境中基准化经验生命周期",
-      "titleEn": "Towards Robust Long-Lived Agents: Benchmarking Experience Lifecycles in Evolving Environments",
-      "summary": "提出 ReScopeBench：18 个交互环境区分结构经验与规则经验，并引入静默环境变化。20 个模型显示保留经验能提分，但环境变化时难以及时修订；即使经验记录正确也未必完成任务——选择性维护与有效使用是互补挑战。",
-      "authors": "Shijue Huang, Hangyu Guo, Hengheng Zhang 等",
-      "link": "https://arxiv.org/abs/2611.05450"
-    },
-    {
-      "title": "面向 Agentic AI 的不确定性资源编排",
-      "titleEn": "Uncertainty-Aware Resource Orchestration for Agentic AI Systems",
-      "summary": "Agent 流水线算力/带宽/时延在派发时未知且重尾。提出 Conformal Reservation for Orchestration（CRO），用共形预测在有限样本、无分布假设下做派发时资源预留，仿真中在满足概率覆盖的同时约减半切比雪夫基线的过度预留。",
-      "authors": "Masoud Shokrnezhad, Tarik Taleb",
-      "link": "https://arxiv.org/abs/2611.05392"
-    },
-    {
-      "title": "有根据也不免疫：Agent-as-a-judge 的确认偏误",
-      "titleEn": "Grounded but Not Immune: Confirmation Bias in Agent-as-a-judge",
-      "summary": "即使工具型评判者自行采集决定性证据，一条无证据效力的虚假预审备注仍可推翻最多约 40% 的正确裁决（四评判者×五数据集）。失败模式分过度信任、幻觉支持与调查不足；轻量缓解可钝化但无法消除。",
-      "authors": "Drake Benjamin Brown, Khushbu Pahwa, Yubin Ge 等",
-      "link": "https://arxiv.org/abs/2611.05662"
-    },
-    {
-      "title": "把 Agent 失败归因到其历史需要「已执行的反事实」",
-      "titleEn": "Attributing Agent Failures to Their History Needs an Executed Counterfactual: Toward a Reporting Standard",
-      "summary": "主张仅靠读完轨迹贴标签的失败分类不够：归因声明应携带干预验证证据——冻结可执行中途状态、只改历史再续跑，并报告与估计量匹配的回放证书。提出四类操纵与测量警示，推动报告标准。",
-      "authors": "Egor Pakhomov, Erik Nijkamp",
-      "link": "https://arxiv.org/abs/2611.05650"
-    }
-  ],
-  "models": [
-    {
-      "name": "GPT-6 Cyber",
-      "vendor": "OpenAI",
-      "highlight": "11-05 产品发布：网安专用模型；ExploitGym 48.5%（较 GPT-5.6 Cyber +16pp）；越界对齐近满分；Preparedness 网安 Critical。初期 Daybreak Red 获批客户可用 API/Codex；驱动 948 Linux LPE 与 81 Firefox 高危发现。",
-      "date": "11月5日",
-      "link": "https://openai.com/index/introducing-gpt-6-cyber"
-    },
-    {
-      "name": "Inkling 2 Small",
-      "vendor": "Thinking Machines",
-      "highlight": "AA Changelog 11-05 新入 Intelligence Index 31（本站半点榜 #44，value 59/C）。Tinker Serverless 约 $0.30/$1.00、缓存 $0.03；HF thinkingmachines/Inkling-2-Small 仍 401 私有，许可待核实。勿改 rows。",
-      "date": "11月5日 AA",
-      "link": "https://artificialanalysis.ai/changelog"
-    },
-    {
-      "name": "Nanbeige4.3-33B",
-      "vendor": "Nanbeige / BOSS 直聘",
-      "highlight": "AA 11-05：开源 Apache 2.0 稠密推理模型，33B、524K 上下文、纯文本；Intelligence Index v5 = 20，与 Qwen3.8 27B（xhigh）同分，终端与 CritPt 相对更强。可笔记本本地跑；无确认公开 API。本站 rows 本轮不改。",
-      "date": "11月5日 AA 评测",
-      "link": "https://artificialanalysis.ai/articles/nanbeige-has-released-nanbeige4-3-33b-scoring-20-on-the-intelligence-index"
-    },
-    {
-      "name": "Kimi K3.1 Pro",
-      "vendor": "Moonshot AI",
-      "highlight": "权重公开后次日仍居 HF 趋势 #1（Trendoday 11-05）。约 2.8T/104B 激活、1M 上下文、MXFP4；许可 Kimi K3.1 Pro License。从「落地可下」递进为开源流量锚。",
-      "date": "11月5日趋势",
-      "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
-    },
-    {
-      "name": "Mistral Large 4",
-      "vendor": "Mistral AI",
-      "highlight": "AA Changelog 11-05 挂出 Mistral Large 4（High/Medium）性能结果；HF mistralai/Mistral-Large-4-1T-A52B 仍在趋势前段（Trendoday 约第 4–5）。开源旗舰集群成员。",
-      "date": "11月5日",
-      "link": "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B"
-    },
-    {
-      "name": "Hy4",
-      "vendor": "Tencent",
-      "highlight": "AA 11-04/11-05 持续补性能结果：Intelligence Index 约 35（以 Changelog 为准）；可解读图表文档并操作 GUI/CLI。与 Nanbeige、Mistral 同日出现在 Changelog。",
-      "date": "11月4日–5日",
-      "link": "https://artificialanalysis.ai/changelog"
-    },
-    {
-      "name": "Qwen3.8-27B",
-      "vendor": "Alibaba",
-      "highlight": "作为 Nanbeige4.3-33B 的同分对照：Index 20（xhigh）；Briefcase/HLE 更强、终端更弱。HF 趋势仍有曝光（Trendoday 约前十）。",
-      "date": "对照评测",
-      "link": "https://huggingface.co/Qwen/Qwen3.8-27B"
-    }
-  ],
-  "ecosystem": [
-    {
-      "title": "GPT-6 Cyber × 漏洞流水线：安全研究 Agent 进入「工业量级」",
-      "summary": "产品侧 GPT-6 Cyber + 研究侧 Scout→Analyst→动态验证→ExploitDev→补丁→人审五段流水线，把「一洞一查」改成可复现流程；强调发现变便宜后，排序、验证与补丁合入成新瓶颈。Daybreak Red/Blue 把能力闸在获批防御方。与昨日 CrowdStrike Kill Switch、FlashProve 形成「攻防两侧同时规模化」。",
       "source": "OpenAI",
       "link": "https://openai.com/index/introducing-gpt-6-cyber",
       "models": [
@@ -249,31 +106,143 @@
       ]
     },
     {
-      "title": "Conductor → Meta：多智能体并行工作区被大厂收编",
-      "summary": "产品形态是「分片工作区 + 多 Agent 协同」，不自研底层模型。收购后云端关停、本地过渡，预告明年新产品——编码 Agent 生态从独立 SaaS 走向实验室产品线整合。",
-      "source": "TechCrunch / Conductor",
-      "link": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
+      "title": "联邦法院裁减 Anthropic 歌词案：对 CEO 个人版权主张驳回（可修改诉状）",
+      "summary": "BYOBot 11-07 转述：联邦法院驳回针对 Anthropic CEO Dario Amodei 个人的版权主张（允许修改诉状），质疑出版商是否充分主张 Claude 复制了受保护歌词。案件实体争议未终局；以法院文书为准。",
+      "date": "近期",
+      "source": "BYOBot / 法院报道",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
       "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Scientist World：为 AI-Scientist 长出可运行的研究世界",
+      "titleEn": "Scientist World: Grow a Research World for AI-Scientists",
+      "summary": "普林斯顿团队把经验论文自动转成可执行环境：复现论文方法作基线，用 Frontier-Normalized Improvement（FNI）衡量 AI-Scientist 相对人类作者方法的改进。首发 1000 个已验证环境；称前沿模型在 innovate 模式下约 74% 次尝试可超过复现基线；并释出约 6400 小时研究轨迹，可用其把小模型 ideation 拉到前沿水平。",
+      "authors": "Taiming Lu, Sachin Konan, Zhuang Liu",
+      "link": "https://arxiv.org/abs/2611.08478"
     },
     {
-      "title": "Pierre × Codex：为 Agent 并行改 Git 周边工具",
-      "summary": "Trees/Diffs/Highlights/Code Storage 进入 Codex 叙事，目标是让审代码、存代码、跟历史适配「人与 Agent 同时开分支」。开源承诺保留；与 Pando 后端同属源控现代化。",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/openai-to-acquire-pierre/",
-      "models": []
+      "title": "SwarmEvolve：潜空间 Agent 群做演化发现与优化",
+      "titleEn": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+      "summary": "用数百低成本潜空间 Agent（不解码长文本、传 KV cache）做程序演化搜索。21 个数学/科学计算题上，同用 Qwen3 时平均分高于 OpenEvolve 等；中位 3–8 分钟达到基线 60 分钟分数；Qwen3 8B 在若干题上改进 AlphaEvolve 曾用前沿模型找到的构造。",
+      "authors": "Qile Jiang, George Em Karniadakis",
+      "link": "https://arxiv.org/abs/2611.08483"
     },
     {
-      "title": "Claude Marketplace：企业承诺支出可买伙伴安全/可观测 Agent",
-      "summary": "25+ 伙伴覆盖 Chainguard/Cyera/Datadog 等；把「Agent 安全网」与「账单合一」绑在一起。和 AAIF/Skills、Siri Skills 并行，分发面继续裂变。",
-      "source": "Anthropic",
-      "link": "https://claude.com/resources/articles/new-agents-and-products-claude-marketplace",
-      "models": []
+      "title": "StepBack：步级定位首错再重采样，省推理 token",
+      "titleEn": "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning",
+      "summary": "相对整条轨迹重采样的 Self-Consistency，先出少量草稿、用 NLL/PRM 轻量信号定位疑似首错步，只重采样该步及后缀再多数投票。七个数学/多跳 QA 基准上平均精度对齐 SC@32，token 最多省约 41.26%；可与 Adaptive Consistency 等叠加。",
+      "authors": "Yang Ouyang, Jung-Eun Kim",
+      "link": "https://arxiv.org/abs/2611.08403"
     },
     {
-      "title": "论文侧：Harness 感知、SlackBench、证据门控审稿同日升温",
-      "summary": "Agent Harness Awareness 用宿主遥测降操作后悔；SlackBench 测真实协作；「谁可否决 Agent」用证据门控管辖权。生态讨论从「技能文件怎么写」扩到「运行时状态与制度接口」。",
+      "title": "MCPHallu：评测 MCP Agent 的推理/执行/记忆幻觉",
+      "titleEn": "MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents",
+      "summary": "358 题、36 个真实 MCP 服务器容器；四亚型：Branch Collapse、Unreachable Goal、Tool Misuse、Context Forgetting。14 家前沿模型 5012 条轨迹，均分约 0.642（满分 1）；Unreachable Goal 最难（均分约 0.458）。亚型排名跨模型漂移大，反对只看总分。",
+      "authors": "Yizhen Jiang, Haowei Guo, Tianyi Bai et al.",
+      "link": "https://arxiv.org/abs/2611.07689"
+    },
+    {
+      "title": "多智能体经济里该让谁知道什么？实证信息设计",
+      "titleEn": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
+      "summary": "在交易/议价/双边拍卖中系统改变信息披露粒度，固定规则与模型。发现更细信息高度模型依赖：对部分模型提高福利，对另一些（如若干拍卖场景）反而抬价导致市场失灵。结论：选模与信息设计须联合优化。",
+      "authors": "Mete Erdogan, Mirac Suzgun, Aneesh Pappu et al.",
+      "link": "https://arxiv.org/abs/2611.07667"
+    },
+    {
+      "title": "Unsatz：不给定 Ansatz 时的科学发现评测",
+      "titleEn": "Unsatz: Evaluating Scientific Discovery Without a Given Ansatz",
+      "summary": "多数方程发现基准把函数形式（ansatz）白送；Unsatz 要求系统自己发明假设形状。80 个模拟系统、20 科学域；九个语言模型解出约 21%–60%。失败模式：变量找对、交互搞错，且修订偏向下已见数据误差而非提升未见数据预测。",
+      "authors": "见 arXiv 2611.03713",
+      "link": "https://arxiv.org/abs/2611.03713"
+    },
+    {
+      "title": "压缩 Agent 记忆时同时保住局部与全局结构",
+      "titleEn": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
+      "summary": "Agent 记忆压缩常只保「近邻仍在」，但巩固/删除/比较还依赖远距离结构。用无标签局部/全局保真度评估两端；讨论压缩接受准则如何兼顾。",
+      "authors": "Henry Han",
+      "link": "https://arxiv.org/abs/2611.08341"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini Omni 1.2 Flash",
+      "vendor": "Google",
+      "highlight": "11-05 GA：原生最长 15 秒视频 + 多轮对话剪辑；720p ≈$0.07/秒（较 1.1 降约 30%）；Gemini API / Cloud / Vids 可用。",
+      "date": "11月5日",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "name": "Ripple-65B Preview",
+      "vendor": "Ricursive Intelligence",
+      "highlight": "Apache 2.0 稠密 65B 编码/Agent；自称 Terminal-Bench 2.1≈80.5、训练约 $32M；HF 已上架，榜分待独立复现。",
+      "date": "近期",
+      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "vendor": "Moonshot AI",
+      "highlight": "公开权重后续报：11-06 多源仍居 HF 趋势前列；约 2.8T/104B MoE、1M 上下文。无新发权重。",
+      "date": "11月6日",
+      "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+    },
+    {
+      "name": "Idol (speridlabs)",
+      "vendor": "speridlabs",
+      "highlight": "开源 image-to-3D；HF 趋势多次进前三（trending score 约 700+，likes 八百余——以观测时刻为准）。",
+      "date": "11月6日",
+      "link": "https://huggingface.co/speridlabs/idol"
+    },
+    {
+      "name": "LTX-2.5",
+      "vendor": "Lightricks",
+      "highlight": "image-to-video；HF 趋势前列、likes 过万；与 Idol 等共同把趋势榜从纯语言推向几何/视频。",
+      "date": "11月6日",
+      "link": "https://huggingface.co/Lightricks/LTX-2.5"
+    },
+    {
+      "name": "Nemotron-3.5-Transcribe-30B-A4B",
+      "vendor": "NVIDIA",
+      "highlight": "离线语音转写开源仓；HF 趋势与 likes 均靠前（约 3k likes 量级）。",
+      "date": "近期",
+      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "MCPHallu：给 MCP Agent 做幻觉分型体检",
+      "summary": "相对只报任务完成率的 MCP 榜，MCPHallu 把失败建成可触发的结构陷阱（分支坍塌/不可达目标/工具误用/上下文遗忘）。不可达目标上模型常继续瞎调工具或谎称完成——部署侧应报亚型可靠度而非只看总分。",
       "source": "arXiv",
-      "link": "https://arxiv.org/abs/2611.05391",
+      "link": "https://arxiv.org/abs/2611.07689",
+      "models": []
+    },
+    {
+      "title": "Claude Personal Finance：只读金融工具进 Agent 产品",
+      "summary": "经 Plaid 接账户、只读分析支出与账单，显式禁止转账投资。是「Skill/工具权限边界写进产品」的样本：能力靠连接器，安全靠能力否定列表。",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+      "models": []
+    },
+    {
+      "title": "Agent Skills 可移植：同一 SKILL.md 跨 Claude / Cursor / Codex",
+      "summary": "Cursor 文档与社区指南（约 11-04 更新）重申：Skills 为开放 SKILL.md 标准；项目级可放 `.agents/skills/` 或 `.cursor/skills/`，并兼容 `.claude/skills/`。Skill 管「怎么做」，MCP 管「连到什么」——多数认真部署需要两者刻意接线。",
+      "source": "Cursor Docs / 社区",
+      "link": "https://cursor.com/docs/skills",
+      "models": []
+    },
+    {
+      "title": "Scientist World：AI-Scientist 的可扩展 Gym",
+      "summary": "论文环境可同时当基准、轨迹数据集与训练场；用真实实验奖励抬升小模型 ideation。与昨日「工业级找洞」对照：一边是安全流水线，一边是科学发现流水线。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.08478",
+      "models": []
+    },
+    {
+      "title": "Skillware 论述：少提示、多装备可审计能力模块",
+      "summary": "arXiv 2611.07652 主张用模块化 Skillware 替代反复提示，强调主权、可审计与确定性执行。与 MCP/Skills 分工讨论同周出现，作生态侧观点条。",
+      "source": "arXiv",
+      "link": "https://arxiv.org/abs/2611.07652",
       "models": []
     }
   ]
