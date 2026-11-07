@@ -1,5 +1,23 @@
 [
   {
+    "d": "2026-11-08",
+    "w": "星期日",
+    "pts": [
+      "OpenAI 约 $11B 首笔到账、估值约 $1.25T；目标下修",
+      "DeepMind Agent 推进 1024-bit RSA 分析；2048 不受冲击",
+      "METR：Anthropic 加速约 2× 但证据多被 redact；DOJ-SITF 成立",
+      "开源：ERNIE 5.5 Flash Base、LFM3-1.7B、Cosmos 3；论文 ReproBridge / TB2.1"
+    ],
+    "link": "AI日报-2026-11-08.html",
+    "m": [
+      "ERNIE 5.0",
+      "DeepSeek-V4.1-Flash-1017",
+      "Kimi K3.1 Pro",
+      "Qwen3.8-27B"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-07",
     "w": "星期六",
     "pts": [

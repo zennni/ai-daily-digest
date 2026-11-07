@@ -1,248 +1,246 @@
 {
   "meta": {
-    "date": "2026-11-07",
-    "week": "星期六",
-    "note": "今日主题词：外压刹车与产品落地。相对昨日「攻防规模化」，议题从「Agent 工业级找洞」递进到「法院/监管先动手、产品与可下载权重继续放量」。Meta 于 11-05 无限期暂停拟议商业条款更新（原定 11-20 生效），挪威/巴西法院初步禁令与英国 CMA 调查在先，公司称「暂停≠撤回」并继续咨询利益相关方；Anthropic 为满足欧盟 AI Act 透明度要求，自 11-16 起向 Opus 4.6/4.5、Sonnet 4.5、Haiku 4.5 等回溯隐形文本水印，但 Decoder 指出部分型号仅在默认采样参数下生效。产品侧：Google 正式 GA Gemini Omni 1.2 Flash（原生最长 15 秒视频、多轮对话式剪辑，720p 约 $0.07/秒、较 1.1 降价约 30%）；Anthropic 为美区 Pro/Max/Ultra 推 Claude Personal Finance 公测（经 Plaid 只读连接银行/信用卡，不可转账投资）。开源侧：Ricursive Intelligence 放出 Apache 2.0 的 Ripple-65B Preview（稠密 65B 编码/Agent，自称 Terminal-Bench 2.1≈80.5，算力预算约 3200 万美元——以官方与媒体转述为准）；Kimi K3.1 Pro 仍居 HF 趋势前列。论文侧 Scientist World 把千篇论文变成可执行 AI-Scientist 环境，MCPHallu 对 MCP Agent 幻觉分型评测，StepBack 用步级回滚省推理 token。一句话：刹车装在分发与条款上，能力与权重仍在往外冲。"
+    "date": "2026-11-08",
+    "week": "星期日",
+    "note": "今日主题词：验真缺口与资本再定价。相对昨日「外压刹车与产品落地」，议题从「法院/监管先动手、产品与权重放量」递进到「大数字带着星号、融资目标下修、执法侧组队」。资本侧：Bloomberg / TechCrunch 11-06 称 OpenAI 已到账首笔约 110 亿美元、估值约 1.25 万亿美元，整轮或扩至约 200 亿，远低于此前寻求的约 300 亿/1.4 万亿；Anthropic IPO 询价亦被媒体报道下修预期。验真侧：DeepMind 11-06 称人机协作 Agent 在遗留 1024-bit RSA 上推进签名伪造与批量分解方向，并强调现代 2048-bit 不受本次结果冲击——约 1600×/30× 等倍数多为理论估计，沙箱复现约省 3.5× CPU；METR 11-05 评估 Anthropic 在明确任务上的能力提升速率约为 2024–2025 区间的约 2 倍，但实验室对多数「最有信息量」证据行使了单方 redact。执法侧：美国司法部 11-05 成立 Super Intelligence Task Force（DOJ-SITF），定位刑事/民事执法协调而非立新规。开源与基建：Baidu ERNIE 5.5 Flash Base（约 280B/14B 激活基座）与 Liquid LFM3-1.7B、NVIDIA Cosmos 3 世界模型开源仓继续占 HF 趋势；论文侧 ReproBridge 把复现经验打成可复用工件，Terminal-Bench 2.1 论证「基准也要持续维护」。一句话：能力仍在冲，数字与融资都要带着复现与口径看。"
   },
   "highlights": [
     {
-      "title": "Meta 无限期暂停商业条款：抓取条款 11-20 不再生效",
-      "summary": "Nieman Lab 11-05：挪威/巴西法院与英国 CMA 施压后，Meta 暂停拟议商业条款更新；「暂停」非撤回，现有条款继续有效。"
+      "title": "OpenAI 首笔约 110 亿美元到账：估值约 1.25 万亿、目标下修",
+      "summary": "Bloomberg / TechCrunch 11-06：首笔约 $11B 已到账；整轮或至约 $20B；远低于此前约 $30B/$1.4T 目标——资本降温写进估值。"
     },
     {
-      "title": "Gemini Omni 1.2 Flash GA：15 秒视频、降价约 30%",
-      "summary": "Google 开发者博客 11-05：原生最长 15 秒、多轮对话剪辑；720p 约 $0.07/秒；API 与 Google Cloud / Vids 可用。"
+      "title": "DeepMind：人机协作 Agent 推进遗留 1024-bit RSA 密码分析",
+      "summary": "11-06 宣布：签名伪造与批量分解方向有新进展；强调 2048-bit 现代部署不受冲击；大倍数多为理论估计，沙箱复现约 3.5× 省时。"
     },
     {
-      "title": "Claude Personal Finance 公测：经 Plaid 只读查账",
-      "summary": "Anthropic / TechCrunch：美区 Pro/Max/Ultra；只读余额与交易、出图表与仪表盘；不可转账/投资；对话不进训练。"
+      "title": "METR 评 Anthropic R&D 加速约 2×：多数关键证据被 redact",
+      "summary": "11-05 独立评估：明确任务能力提升速率约 1.9×（区间约 1.5–2.8×）；约八成归因 AI 辅助属主观判断；实验室单方删证。"
     },
     {
-      "title": "Ripple-65B Preview：Apache 2.0 美国开源编码模型上架 HF",
-      "summary": "Ricursive 放出 65B 稠密编码/Agent 权重；自称 Terminal-Bench 2.1≈80.5、训练约 3200 万美元——许可证是硬新闻，榜分待独立复现。"
+      "title": "美国司法部成立 Super Intelligence Task Force",
+      "summary": "DOJ 11-05：协调打击滥用前沿 AI 的外国行为体、跨国犯罪与欺诈；强调企业内部管控与日志可审计——执法兴趣，非新合规标准。"
     },
     {
-      "title": "Anthropic 水印第二波 11-16：默认采样才打标",
-      "summary": "为欧盟 AI Act：回溯四款旧 Claude；Decoder 发现改 temperature/top_p/top_k 可绕过——合规依赖「别动默认参数」。"
+      "title": "开源续冲：ERNIE 5.5 Flash Base、LFM3-1.7B、Cosmos 3",
+      "summary": "Baidu 放出约 280B 基座权重；Liquid 1.7B 本地 Agent 模型居 HF 趋势前列；NVIDIA Cosmos 3 Nano 世界模型开源检查点上架。"
     }
   ],
   "news": [
     {
-      "title": "Meta 无限期暂停拟议商业条款：原定 11-20 的网站抓取更新不再生效",
-      "summary": "Nieman Lab 11 月 5 日：Meta 撤下拟议商业条款预览，并在 Business Help Center 写明更新「现已暂停，不会于 2026 年 11 月 20 日生效」；现有条款继续有效。背景是挪威法院在十余家媒体起诉后发出初步禁令、巴西禁止未经授权使用新闻内容，以及英国 CMA 就「是否对出版商与广告主施加剥削性条款」立案调查。公司对 Nieman Lab 称「继续与利益相关方沟通、把事情做对」。报道强调「暂停≠撤回」，底层计划是否改写仍待后续更新。",
-      "date": "11月5日",
-      "source": "Nieman Lab",
-      "link": "https://www.niemanlab.org/2026/11/meta-pulls-down-controversial-terms-of-service/",
+      "title": "OpenAI 据报完成约 110 亿美元首笔融资：估值约 1.25 万亿美元",
+      "summary": "Bloomberg 11-06 援引知情人士、TechCrunch 转述：OpenAI 已收到约 110 亿美元新资金，为本轮首笔；整轮尚未关账，或扩至约 200 亿美元。公司此前寻求约 300 亿美元、估值约 1.4 万亿，在 AI 板块抛售与中期选举后数据中心政治压力下目标下修。报道点名 SoftBank、MGX、Coatue、T. Rowe Price、Sequoia、a16z 等参与或拟参与（以各源为准）。属「资本再定价」硬新闻：钱仍进账，但叙事从「无限抬价」切到「先关一笔」。",
+      "date": "11月6日",
+      "source": "Bloomberg / TechCrunch",
+      "link": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
       "models": []
     },
     {
-      "title": "Google 正式推出 Gemini Omni 1.2 Flash：最长 15 秒视频、降价约 30%",
-      "summary": "Google 开发者博客 11 月 5 日：Gemini Omni 1.2 Flash 在 Gemini API 与企业端正式可用；原生生成/剪辑最长 15 秒视频（1.1 为 10 秒），支持 3–15 秒按秒指定时长、多轮对话式改镜头/换产品/改光效，并强化参考图一致性。720p 报价约 $0.07/秒（15 秒约 $1.05），较 Omni 1.1 降约 30%；草稿可先 360p/720p 再升至 1080p/4K。Google Vids 同步接入，有谷歌账号者每月可免费生成最多 3 条 15 秒视频（以官方说明为准）。",
+      "title": "DeepMind：人机协作 AI Agent 发现遗留 1024-bit RSA 两处弱点",
+      "summary": "Google DeepMind 11-06 称：在人类密码学家（含 UCSD/Inria 等合作者）指导下，Agent 推进 PKCS#1 v1.5 签名伪造与「fan factory」批量分解方向。公司与报道均强调：现代 2048-bit 及以上部署不受本次具体结果冲击；约 1600× 伪造加速与约 30× 批量分解为理论/渐近估计，非端到端实测；沙箱内对已破 1024-bit 实例复现约用 391 CPU 核年，约比原报告少 3.5×。实务含义是盘点仍依赖 1024-bit 的旧证书/嵌入式系统，而非宣布加密全面失效。",
+      "date": "11月6日",
+      "source": "Google DeepMind / CryptoBriefing",
+      "link": "https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/",
+      "models": []
+    },
+    {
+      "title": "METR：Anthropic 在明确任务上的能力提升速率约翻倍，但证据大多被 redact",
+      "summary": "独立评估组织 METR 11-05 发布基于 8/12–10/29 驻场观察的评估：估计 Anthropic 在「定义清晰任务」上的模型能力改进速率约为 2024-03 至 2025-10 区间的约 1.9 倍（约 1.5–2.8× 区间）；约 80% 归因于 AI 自身加速属主观判断。更尖锐的一点：Anthropic 保留单方 redact 权，删去了 METR 认为「最有信息量」的多数证据，并中途取消一项关于算力在能力/安全间分配的计划检查。结论应作「认真估计」而非「可核验测量」阅读。",
       "date": "11月5日",
-      "source": "Google Blog",
+      "source": "METR",
+      "link": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "models": []
+    },
+    {
+      "title": "美国司法部成立 Super Intelligence Task Force（DOJ-SITF）",
+      "summary": "DOJ 官方新闻稿 11-05：由 Associate AG Stanley Woodward 与 Associate DAG Stephen Weiss 牵头，协调打击外国国家/代理、跨国犯罪组织以及欺诈等滥用「超级智能」技术的行为；并作为与总统侧 Super Intelligence Force 的联络。口径强调「vigorous internal controls」与「SI technology behaves as intended」——属执法兴趣与日志可审计压力，不自动等于新合规义务或技术标准。",
+      "date": "11月5日",
+      "source": "U.S. Department of Justice",
+      "link": "https://www.justice.gov/opa/pr/department-justice-launches-super-intelligence-task-force",
+      "models": []
+    },
+    {
+      "title": "Baidu 放出 ERNIE 5.5 Flash Base：约 280B MoE 基座、无指令微调",
+      "summary": "Hugging Face baidu/ERNIE-5.5-Flash-Base 与行业汇总：约 280B 总参、约 14B 激活的基座模型，刻意不带指令微调以便下游自行后训练；报道称训练约 33.5T token，许可证对欧盟/英国/韩国等地区使用有限制（以卡页与许可证原文为准）。与「只发聊天微调版」相对，基座权重更利于研究与定制——但也把合规地域限制写进分发。",
+      "date": "11月5日前后",
+      "source": "Hugging Face / 行业汇总",
+      "link": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+      "models": [
+        "ERNIE 5.0"
+      ]
+    },
+    {
+      "title": "NVIDIA Cosmos 3：交互式世界模型开源检查点上架 HF",
+      "summary": "NVIDIA / Hugging Face 博客：Cosmos 3 Nano 系列开源权重面向驾驶与机器人交互式世界仿真（给定动作预测下一帧相机/传感器观测），提供 Transfer-Auto、Sim-* 等多检查点；最小配置可在单工作站 GPU 运行（以官方卡页为准）。世界模型把策略训练从「停车场试错」部分搬进仿真——属具身/自动驾驶基建新闻，而非又一聊天模型。",
+      "date": "11月5日",
+      "source": "NVIDIA / Hugging Face Blog",
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+      "models": []
+    },
+    {
+      "title": "Liquid AI LFM3-1.7B：1.7B 本地 Agent 模型冲上 HF 趋势前列",
+      "summary": "LiquidAI/LFM3-1.7B 技术卡：约 1.73B、256K 上下文、tri-hybrid（短卷积+滑窗+全局注意力）；官方称面向 Hermes Agent / Pi 等本地 Agent 套件，4-bit 约 1GB 显存，并提供 GGUF/MLX/ONNX 等变体。自报 BFCL V4 等分数高于同量级对照，同时坦言 SWE-bench 等编码 Agent 场景弱于更大模型。许可证为 LFM Open License v1.0（非标准 OSI）。HF 趋势观测中其常与 DeepSeek-V4.1-Flash 争夺前列。",
+      "date": "11月6日前后",
+      "source": "Hugging Face / Liquid AI",
+      "link": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+      "models": [
+        "DeepSeek-V4.1-Flash-1017"
+      ]
+    },
+    {
+      "title": "背景回顾：Gemini Omni 1.2 Flash GA 与 Meta 商业条款暂停（无重大新增量）",
+      "summary": "昨日已详述：Google 11-05 正式推出 Omni 1.2 Flash（最长 15 秒视频、720p 约 $0.07/秒、较 1.1 降约 30%）；Meta 无限期暂停拟议商业条款（原定 11-20 抓取更新不再生效）。11-08 各早报仍作头条回顾，但未见官方重大修订；本报略记以免复读。",
+      "date": "11月5日",
+      "source": "Google Blog / Nieman Lab",
       "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
       "models": []
     },
     {
-      "title": "Anthropic 推 Claude Personal Finance 公测：Plaid 只读接入银行与信用卡",
-      "summary": "Anthropic 官方文章与 TechCrunch 11-05：美区 Claude Pro / Max / Ultra 用户可经 Plaid 以只读方式连接银行、信用卡等账户，查询余额、分类支出、追踪账单、发现重复扣款与异常费用，并生成图表与财务仪表盘。明确不能转账、管钱或投资；Personal Finance 对话排除在模型训练之外。属「Agent + 受控工具」进入个人金融场景的产品落地，权限边界写进产品页。",
-      "date": "11月5日",
-      "source": "Anthropic / TechCrunch",
+      "title": "背景回顾：Claude Personal Finance 公测与水印第二波（无重大新增量）",
+      "summary": "昨日已覆盖：美区 Claude Pro/Max/Ultra 经 Plaid 只读查账；文本水印第二波 11-16 起回溯旧 Claude，部分型号仅默认采样打标。今日未见产品页或 Decoder 跟进的重大新披露，作递进背景条。",
+      "date": "11月5日–16日",
+      "source": "Anthropic / The Decoder",
       "link": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
       "models": []
     },
     {
-      "title": "Anthropic 文本水印第二波：11-16 起回溯四款旧 Claude，默认采样才生效",
-      "summary": "为满足欧盟 AI Act 透明度要求，Anthropic 对 2026 年 8 月 2 日之后新发模型已默认带隐形文本水印；第二波自 11 月 16 日起覆盖 Opus 4.6、Opus 4.5、Sonnet 4.5、Haiku 4.5 等。The Decoder 指出：若干第二波型号仅在 temperature / top_p / top_k 保持默认时打标，改任一参数输出可无水印；官方亦提醒依赖水印做合规的客户勿改默认采样。过渡期约到 12 月初。水印检测主要在厂商与监管侧，不宜当作公众可用的「是否 AI」检测器。",
-      "date": "11月5日–16日",
-      "source": "The Decoder / Anthropic Help",
-      "link": "https://the-decoder.com/anthropics-text-watermark-is-easy-to-bypass-on-several-older-claude-models/",
-      "models": [
-        "Claude 4.5 Haiku"
-      ]
-    },
-    {
-      "title": "Ricursive 发布 Ripple-65B Preview：Apache 2.0 稠密编码/Agent 开源权重",
-      "summary": "Hugging Face ricursiveAI/Ripple-65B-Preview 与 The Decoder / VentureBeat 报道：前谷歌背景团队放出约 65B 稠密编码与 Agent 模型，Apache 2.0；自称预训练约 12T token、最长约 1M 上下文，Terminal-Bench 2.1 约 80.5，训练算力预算约 3200 万美元。媒体强调「许可证可商用自托管」是对多数构建者更硬的新闻；榜分依赖 harness、待独立复现。HF 趋势榜近期亦出现该仓。",
-      "date": "近期",
-      "source": "Hugging Face / The Decoder",
-      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview",
-      "models": []
-    },
-    {
-      "title": "Kimi K3.1 Pro：公开权重后仍居 Hugging Face 趋势前列",
-      "summary": "相对 11-05/11-06「仓已上架并冲到趋势第 1」的叙事，11-06 多源（Daily Launch / TOP10 / HF）观测仍显示 moonshotai/Kimi-K3.1-Pro 稳居趋势前列，likes 已过千量级（以观测时刻为准）。技术卡仍为约 2.8T/104B 激活 MoE、1M 上下文。今日仅作流量锚续报，无新发权重。",
-      "date": "11月6日",
-      "source": "Hugging Face / Daily Launch",
-      "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "models": [
-        "Kimi K3.1 Pro"
-      ]
-    },
-    {
-      "title": "苹果 10-K 将「未授权行动的 AI Agent」列入经营风险",
-      "summary": "多家 11-07 日报转引：苹果最新年度报告把 AI Agent 在未获授权情况下采取行动列为需向股东披露的业务风险之一。具体措辞与风险段落以 SEC 文件原文为准；与本周「外压装刹车」叙事同属治理侧信号。",
-      "date": "近期",
-      "source": "BYOBot / 行业汇总",
-      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
-      "models": []
-    },
-    {
-      "title": "Uber：最忙十月周仅录得 4 次 AI Agent 叫车、约 500 次 Agent 点餐",
-      "summary": "BYOBot 11-07 转述 Uber 披露：在其最忙的十月周，AI Agent 完成的叫车仅 4 次，Uber Eats 上 Agent 订单约 500，对照同期合计约 3.2 亿次行程与订单。说明「Agent 真下单」仍极早期；数字以 Uber 披露为准。",
-      "date": "近期",
-      "source": "BYOBot / Uber",
-      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
-      "models": []
-    },
-    {
-      "title": "背景回顾：GPT-6 Cyber 仍处获批客户闸内（无重大新增量）",
-      "summary": "11-05 已详述：OpenAI 网安专用模型 ExploitGym 48.5%、Preparedness 网安 Critical、IP 白名单默认开启。11-07 各日报仍作头条回顾，但未见独立复现或大规模扩权新披露；本报略记以免与昨日重复。",
-      "date": "11月5日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/introducing-gpt-6-cyber",
-      "models": [
-        "GPT-6 Cyber"
-      ]
-    },
-    {
-      "title": "联邦法院裁减 Anthropic 歌词案：对 CEO 个人版权主张驳回（可修改诉状）",
-      "summary": "BYOBot 11-07 转述：联邦法院驳回针对 Anthropic CEO Dario Amodei 个人的版权主张（允许修改诉状），质疑出版商是否充分主张 Claude 复制了受保护歌词。案件实体争议未终局；以法院文书为准。",
-      "date": "近期",
-      "source": "BYOBot / 法院报道",
-      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-7-2026",
+      "title": "行业周报：中期选举后 AI/数据中心政治压力与 Nvidia 波动（汇总）",
+      "summary": "Fring / 多家周报转述：美国中期选举后民主党侧强化对数据中心扩张的政治压力，白宫取消原定科技座谈等信号叠加，AI 相关股票剧烈波动（报道称 Nvidia 单日跌幅可达约 9% 量级——以交易所数据为准）。与 OpenAI 融资目标下修同属「外压→资本再定价」链条；本条作宏观背景，不作个股建议。",
+      "date": "11月7日周",
+      "source": "Fring Weekly / 行业汇总",
+      "link": "https://fring.io/brief/2026-11-07.html",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "Scientist World：为 AI-Scientist 长出可运行的研究世界",
-      "titleEn": "Scientist World: Grow a Research World for AI-Scientists",
-      "summary": "普林斯顿团队把经验论文自动转成可执行环境：复现论文方法作基线，用 Frontier-Normalized Improvement（FNI）衡量 AI-Scientist 相对人类作者方法的改进。首发 1000 个已验证环境；称前沿模型在 innovate 模式下约 74% 次尝试可超过复现基线；并释出约 6400 小时研究轨迹，可用其把小模型 ideation 拉到前沿水平。",
-      "authors": "Taiming Lu, Sachin Konan, Zhuang Liu",
-      "link": "https://arxiv.org/abs/2611.08478"
+      "title": "ReproBridge：把复现经验打成可复用研究工件",
+      "titleEn": "ReproBridge: Building Reproducibility into ML Research Artifacts",
+      "summary": "Google/Waterloo 团队定义「精炼可复现工件」（修过的代码、环境、启动器、复现指南），并用 Agent 工作流从论文+官方仓构造。ReproBridge-Bench：36 篇论文、1029 任务；精炼工件把四模型平均复现成功率从约 76.4% 提到约 92.6%，下游 API 花费平均降约 19.7%，跨模型差距从约 21.6pp 收到约 3.9pp。消融显示代码与环境贡献最大。",
+      "authors": "Yubo Wang, Rui Meng, Jaehyun Nam, Tomas Pfister, Jinsung Yoon",
+      "link": "https://arxiv.org/abs/2611.08452"
     },
     {
-      "title": "SwarmEvolve：潜空间 Agent 群做演化发现与优化",
-      "titleEn": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
-      "summary": "用数百低成本潜空间 Agent（不解码长文本、传 KV cache）做程序演化搜索。21 个数学/科学计算题上，同用 Qwen3 时平均分高于 OpenEvolve 等；中位 3–8 分钟达到基线 60 分钟分数；Qwen3 8B 在若干题上改进 AlphaEvolve 曾用前沿模型找到的构造。",
-      "authors": "Qile Jiang, George Em Karniadakis",
-      "link": "https://arxiv.org/abs/2611.08483"
+      "title": "基准也是软件：Terminal-Bench 与持续校验",
+      "titleEn": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
+      "summary": "论证 Agent 基准会积累「维护债」：环境漂移、指令-验分不一致、任务漂移。对 Terminal-Bench 2.0 审计约 30% 任务有问题并发布 2.1；修复后准确率可升逾 10pp、个别名次变动最多约 3 位，但总排序仍高度相关（Spearman ρ≈0.958）。另显示固定时限/token 预算会显著改写「谁更强」的结论。",
+      "authors": "E. Kelly Buchanan, Crystal Zhou, Scott W. Linderman, Christopher Ré",
+      "link": "https://arxiv.org/abs/2611.08417"
     },
     {
-      "title": "StepBack：步级定位首错再重采样，省推理 token",
-      "titleEn": "StepBack: Step-Level Error-Localized Resampling for Efficient Test-Time Reasoning",
-      "summary": "相对整条轨迹重采样的 Self-Consistency，先出少量草稿、用 NLL/PRM 轻量信号定位疑似首错步，只重采样该步及后缀再多数投票。七个数学/多跳 QA 基准上平均精度对齐 SC@32，token 最多省约 41.26%；可与 Adaptive Consistency 等叠加。",
-      "authors": "Yang Ouyang, Jung-Eun Kim",
-      "link": "https://arxiv.org/abs/2611.08403"
+      "title": "从内部理解 AI：安全向机制可解释性现状综述",
+      "titleEn": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+      "summary": "Barez、Bengio、Biderman、Geva 等多人综述：梳理机制可解释性在 AI 安全中的方法、证据强度与开放问题。适合作为「验真」主题下的方法论文本——不是新榜分，而是如何拆开模型内部计算。",
+      "authors": "Fazl Barez, Tung-Yu Wu, Hunar Batra et al.",
+      "link": "https://arxiv.org/abs/2611.08438"
     },
     {
-      "title": "MCPHallu：评测 MCP Agent 的推理/执行/记忆幻觉",
-      "titleEn": "MCPHallu: Benchmarking Reasoning, Execution, and Memory Hallucinations in MCP Agents",
-      "summary": "358 题、36 个真实 MCP 服务器容器；四亚型：Branch Collapse、Unreachable Goal、Tool Misuse、Context Forgetting。14 家前沿模型 5012 条轨迹，均分约 0.642（满分 1）；Unreachable Goal 最难（均分约 0.458）。亚型排名跨模型漂移大，反对只看总分。",
-      "authors": "Yizhen Jiang, Haowei Guo, Tianyi Bai et al.",
-      "link": "https://arxiv.org/abs/2611.07689"
+      "title": "Multimodal-SEA：多模态社会工程攻击下的 Agent 安全基准",
+      "titleEn": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
+      "summary": "评测 AI Agent 在多模态社会工程攻击下的安全性。与 MCPHallu「工具幻觉」互补：一边是结构失败分型，一边是对抗诱导——部署 Agent 时两边都要测。",
+      "authors": "Zhitao He, Chi Him Zhang, Chengru Han, Yi R Fung",
+      "link": "https://arxiv.org/abs/2611.08281"
     },
     {
-      "title": "多智能体经济里该让谁知道什么？实证信息设计",
-      "titleEn": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
-      "summary": "在交易/议价/双边拍卖中系统改变信息披露粒度，固定规则与模型。发现更细信息高度模型依赖：对部分模型提高福利，对另一些（如若干拍卖场景）反而抬价导致市场失灵。结论：选模与信息设计须联合优化。",
-      "authors": "Mete Erdogan, Mirac Suzgun, Aneesh Pappu et al.",
-      "link": "https://arxiv.org/abs/2611.07667"
+      "title": "Agent-R²：用真实源数据合成扩展生产力 Agent",
+      "titleEn": "Agent-R²: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+      "summary": "面向真实生产力场景的 Agent 扩展：强调从真实源数据合成训练/评测材料，缩小「基准分好看、办公场景翻车」的鸿沟。与今日「验真」叙事同向——能力声明要落到可复现任务分布。",
+      "authors": "Teng Pan, Zixuan Wang, Yuchen Yan et al.",
+      "link": "https://arxiv.org/abs/2611.08219"
     },
     {
-      "title": "Unsatz：不给定 Ansatz 时的科学发现评测",
-      "titleEn": "Unsatz: Evaluating Scientific Discovery Without a Given Ansatz",
-      "summary": "多数方程发现基准把函数形式（ansatz）白送；Unsatz 要求系统自己发明假设形状。80 个模拟系统、20 科学域；九个语言模型解出约 21%–60%。失败模式：变量找对、交互搞错，且修订偏向下已见数据误差而非提升未见数据预测。",
-      "authors": "见 arXiv 2611.03713",
-      "link": "https://arxiv.org/abs/2611.03713"
+      "title": "通往真实世界的最后一英里：Agent 原生原语",
+      "titleEn": "The Last Mile to the Real World: Agent-Native Primitives as Reusable Building Blocks",
+      "summary": "长文主张把真实任务拆成可复用的 Agent 原生原语（原语级构件），而不是一次性提示工程。与 Skills/MCP/Skillware 同周讨论「怎么装备能力」——偏工程标准视角。",
+      "authors": "Haibo Jin, Peng Kuang, Xiaopeng Yuan et al.",
+      "link": "https://arxiv.org/abs/2611.07461"
     },
     {
-      "title": "压缩 Agent 记忆时同时保住局部与全局结构",
-      "titleEn": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
-      "summary": "Agent 记忆压缩常只保「近邻仍在」，但巩固/删除/比较还依赖远距离结构。用无标签局部/全局保真度评估两端；讨论压缩接受准则如何兼顾。",
-      "authors": "Henry Han",
-      "link": "https://arxiv.org/abs/2611.08341"
+      "title": "AI Agent 如何浪费你的钱？",
+      "titleEn": "How Do AI Agents Waste Your Money?",
+      "summary": "分析 Agent 在真实工作流中的成本泄漏模式（无效工具调用、重复检索、过长轨迹等）。与「能力翻倍」新闻对照：加速若不可观测，账单会先翻倍。",
+      "authors": "Huimin Zeng, Yuxuan Lu, Jesse Cai et al.",
+      "link": "https://arxiv.org/abs/2611.07263"
     }
   ],
   "models": [
     {
-      "name": "Gemini Omni 1.2 Flash",
-      "vendor": "Google",
-      "highlight": "11-05 GA：原生最长 15 秒视频 + 多轮对话剪辑；720p ≈$0.07/秒（较 1.1 降约 30%）；Gemini API / Cloud / Vids 可用。",
-      "date": "11月5日",
-      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+      "name": "LFM3-1.7B",
+      "vendor": "Liquid AI",
+      "highlight": "约 1.73B 本地 Agent 模型；256K 上下文、tri-hybrid；4-bit≈1GB；HF 趋势前列。LFM Open License v1.0。",
+      "date": "11月6日前后",
+      "link": "https://huggingface.co/LiquidAI/LFM3-1.7B"
     },
     {
-      "name": "Ripple-65B Preview",
-      "vendor": "Ricursive Intelligence",
-      "highlight": "Apache 2.0 稠密 65B 编码/Agent；自称 Terminal-Bench 2.1≈80.5、训练约 $32M；HF 已上架，榜分待独立复现。",
-      "date": "近期",
-      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
+      "name": "ERNIE 5.5 Flash Base",
+      "vendor": "Baidu",
+      "highlight": "约 280B/14B 激活 MoE 基座、无指令微调；HF 已上架；许可证含地域限制（以卡页为准）。",
+      "date": "11月5日前后",
+      "link": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base"
+    },
+    {
+      "name": "Cosmos 3 Nano",
+      "vendor": "NVIDIA",
+      "highlight": "交互式世界模型开源检查点（驾驶/机器人仿真）；最小配置可单卡；HF blog + nvidia/Cosmos3-*。",
+      "date": "11月5日",
+      "link": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
     },
     {
       "name": "Kimi K3.1 Pro",
       "vendor": "Moonshot AI",
-      "highlight": "公开权重后续报：11-06 多源仍居 HF 趋势前列；约 2.8T/104B MoE、1M 上下文。无新发权重。",
-      "date": "11月6日",
+      "highlight": "续报：HF 趋势仍居前列（likes 约 1.6k 量级，以观测时刻为准）；约 2.8T MoE。无新发权重。",
+      "date": "11月7–8日",
       "link": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
     },
     {
-      "name": "Idol (speridlabs)",
-      "vendor": "speridlabs",
-      "highlight": "开源 image-to-3D；HF 趋势多次进前三（trending score 约 700+，likes 八百余——以观测时刻为准）。",
-      "date": "11月6日",
-      "link": "https://huggingface.co/speridlabs/idol"
+      "name": "Ripple-65B Preview",
+      "vendor": "Ricursive Intelligence",
+      "highlight": "Apache 2.0 稠密 65B；HF 趋势仍在榜；自称 Terminal-Bench 等分数待独立复现。",
+      "date": "续报",
+      "link": "https://huggingface.co/ricursiveAI/Ripple-65B-Preview"
     },
     {
-      "name": "LTX-2.5",
-      "vendor": "Lightricks",
-      "highlight": "image-to-video；HF 趋势前列、likes 过万；与 Idol 等共同把趋势榜从纯语言推向几何/视频。",
-      "date": "11月6日",
-      "link": "https://huggingface.co/Lightricks/LTX-2.5"
-    },
-    {
-      "name": "Nemotron-3.5-Transcribe-30B-A4B",
-      "vendor": "NVIDIA",
-      "highlight": "离线语音转写开源仓；HF 趋势与 likes 均靠前（约 3k likes 量级）。",
+      "name": "Qwen3.8-27B",
+      "vendor": "Alibaba / Qwen",
+      "highlight": "HF 趋势观测：Qwen/Qwen3.8-27B 下载与 likes 均靠前（约 19k likes 量级）；多模态 text-image。以卡页为准。",
       "date": "近期",
-      "link": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B"
+      "link": "https://huggingface.co/Qwen/Qwen3.8-27B"
     }
   ],
   "ecosystem": [
     {
-      "title": "MCPHallu：给 MCP Agent 做幻觉分型体检",
-      "summary": "相对只报任务完成率的 MCP 榜，MCPHallu 把失败建成可触发的结构陷阱（分支坍塌/不可达目标/工具误用/上下文遗忘）。不可达目标上模型常继续瞎调工具或谎称完成——部署侧应报亚型可靠度而非只看总分。",
+      "title": "Microsoft Agent Framework python-1.25.0：MCP 发现审批与上限",
+      "summary": "11-06 发布：支持可调用的 MCP discovery 审批策略与 Foundry Toolbox 审批元数据；破坏性变更包括发现目录默认最多 100 页/1000 项、框架侧请求超时默认 30 秒，并要求 Python≥3.11。大目录需显式调高 max_discovery_pages/items 或仅对可信服务器设 None。",
+      "source": "GitHub Releases",
+      "link": "https://github.com/microsoft/agent-framework/releases",
+      "models": []
+    },
+    {
+      "title": "ReproBridge：复现流水线本身产品化",
+      "summary": "把「能跑通一次」升级为「可交接的四件套工件」。对 Agent 写论文/复现赛道：成功率和成本同时改善，且弱模型受益更大——说明瓶颈常在工件信息量而非纯智商。",
       "source": "arXiv",
-      "link": "https://arxiv.org/abs/2611.07689",
+      "link": "https://arxiv.org/abs/2611.08452",
       "models": []
     },
     {
-      "title": "Claude Personal Finance：只读金融工具进 Agent 产品",
-      "summary": "经 Plaid 接账户、只读分析支出与账单，显式禁止转账投资。是「Skill/工具权限边界写进产品」的样本：能力靠连接器，安全靠能力否定列表。",
-      "source": "Anthropic",
-      "link": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
-      "models": []
-    },
-    {
-      "title": "Agent Skills 可移植：同一 SKILL.md 跨 Claude / Cursor / Codex",
-      "summary": "Cursor 文档与社区指南（约 11-04 更新）重申：Skills 为开放 SKILL.md 标准；项目级可放 `.agents/skills/` 或 `.cursor/skills/`，并兼容 `.claude/skills/`。Skill 管「怎么做」，MCP 管「连到什么」——多数认真部署需要两者刻意接线。",
-      "source": "Cursor Docs / 社区",
-      "link": "https://cursor.com/docs/skills",
-      "models": []
-    },
-    {
-      "title": "Scientist World：AI-Scientist 的可扩展 Gym",
-      "summary": "论文环境可同时当基准、轨迹数据集与训练场；用真实实验奖励抬升小模型 ideation。与昨日「工业级找洞」对照：一边是安全流水线，一边是科学发现流水线。",
+      "title": "Terminal-Bench 2.1：Agent 基准进入持续维护时代",
+      "summary": "社区报告+轨迹+oracle 检查+人工门控的持续校验工作流；约三分之一任务需修。部署启示：固定时限下的 harness 差距，很多其实是速度预算问题。",
       "source": "arXiv",
-      "link": "https://arxiv.org/abs/2611.08478",
+      "link": "https://arxiv.org/abs/2611.08417",
       "models": []
     },
     {
-      "title": "Skillware 论述：少提示、多装备可审计能力模块",
-      "summary": "arXiv 2611.07652 主张用模块化 Skillware 替代反复提示，强调主权、可审计与确定性执行。与 MCP/Skills 分工讨论同周出现，作生态侧观点条。",
+      "title": "DOJ-SITF：Agent 落地要准备「可交出的审计轨迹」",
+      "summary": "执法侧组队不等于立新规，但把「内部管控与行为符合预期」写进官方口径。对跑真实世界动作的 Agent：最便宜的保险是你愿意交出的日志。",
+      "source": "U.S. DOJ",
+      "link": "https://www.justice.gov/opa/pr/department-justice-launches-super-intelligence-task-force",
+      "models": []
+    },
+    {
+      "title": "Multimodal-SEA：多模态社工攻击进 Agent 安全评测",
+      "summary": "相对只测工具调用正确率，加入图像/多模态诱导场景。与 MCPHallu、MCP discovery 审批同周出现：生态正从「能不能连上」转向「连上以后会不会被骗/乱花钱」。",
       "source": "arXiv",
-      "link": "https://arxiv.org/abs/2611.07652",
+      "link": "https://arxiv.org/abs/2611.08281",
       "models": []
     }
   ]

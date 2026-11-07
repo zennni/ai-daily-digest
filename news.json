@@ -1,5 +1,89 @@
 [
   {
+    "t": "OpenAI 据报完成约 110 亿美元首笔融资：估值约 1.25 万亿美元",
+    "s": "Bloomberg 11-06 援引知情人士、TechCrunch 转述：OpenAI 已收到约 110 亿美元新资金，为本轮首笔；整轮尚未关账，或扩至约 200 亿美元。公司此前寻求约 300 亿美元、估值约 1.4 万亿，在 AI 板块抛售与中期选举后数据中心政治压力下目标下修。报道点名 SoftBank、MGX、Coatue、T. Rowe Price、Sequoia、a16z 等参与或拟参与（以各源为准）。属「资本再定价」硬新闻：钱仍进账，但叙事从「无限抬价」切到「先关一笔」。",
+    "d": "11月6日",
+    "src": "Bloomberg / TechCrunch",
+    "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+    "m": []
+  },
+  {
+    "t": "DeepMind：人机协作 AI Agent 发现遗留 1024-bit RSA 两处弱点",
+    "s": "Google DeepMind 11-06 称：在人类密码学家（含 UCSD/Inria 等合作者）指导下，Agent 推进 PKCS#1 v1.5 签名伪造与「fan factory」批量分解方向。公司与报道均强调：现代 2048-bit 及以上部署不受本次具体结果冲击；约 1600× 伪造加速与约 30× 批量分解为理论/渐近估计，非端到端实测；沙箱内对已破 1024-bit 实例复现约用 391 CPU 核年，约比原报告少 3.5×。实务含义是盘点仍依赖 1024-bit 的旧证书/嵌入式系统，而非宣布加密全面失效。",
+    "d": "11月6日",
+    "src": "Google DeepMind / CryptoBriefing",
+    "url": "https://cryptobriefing.com/google-deepmind-ai-rsa-1024-bit-weaknesses/",
+    "m": []
+  },
+  {
+    "t": "METR：Anthropic 在明确任务上的能力提升速率约翻倍，但证据大多被 redact",
+    "s": "独立评估组织 METR 11-05 发布基于 8/12–10/29 驻场观察的评估：估计 Anthropic 在「定义清晰任务」上的模型能力改进速率约为 2024-03 至 2025-10 区间的约 1.9 倍（约 1.5–2.8× 区间）；约 80% 归因于 AI 自身加速属主观判断。更尖锐的一点：Anthropic 保留单方 redact 权，删去了 METR 认为「最有信息量」的多数证据，并中途取消一项关于算力在能力/安全间分配的计划检查。结论应作「认真估计」而非「可核验测量」阅读。",
+    "d": "11月5日",
+    "src": "METR",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+    "m": []
+  },
+  {
+    "t": "美国司法部成立 Super Intelligence Task Force（DOJ-SITF）",
+    "s": "DOJ 官方新闻稿 11-05：由 Associate AG Stanley Woodward 与 Associate DAG Stephen Weiss 牵头，协调打击外国国家/代理、跨国犯罪组织以及欺诈等滥用「超级智能」技术的行为；并作为与总统侧 Super Intelligence Force 的联络。口径强调「vigorous internal controls」与「SI technology behaves as intended」——属执法兴趣与日志可审计压力，不自动等于新合规义务或技术标准。",
+    "d": "11月5日",
+    "src": "U.S. Department of Justice",
+    "url": "https://www.justice.gov/opa/pr/department-justice-launches-super-intelligence-task-force",
+    "m": []
+  },
+  {
+    "t": "Baidu 放出 ERNIE 5.5 Flash Base：约 280B MoE 基座、无指令微调",
+    "s": "Hugging Face baidu/ERNIE-5.5-Flash-Base 与行业汇总：约 280B 总参、约 14B 激活的基座模型，刻意不带指令微调以便下游自行后训练；报道称训练约 33.5T token，许可证对欧盟/英国/韩国等地区使用有限制（以卡页与许可证原文为准）。与「只发聊天微调版」相对，基座权重更利于研究与定制——但也把合规地域限制写进分发。",
+    "d": "11月5日前后",
+    "src": "Hugging Face / 行业汇总",
+    "url": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Base",
+    "m": [
+      "ERNIE 5.0"
+    ]
+  },
+  {
+    "t": "NVIDIA Cosmos 3：交互式世界模型开源检查点上架 HF",
+    "s": "NVIDIA / Hugging Face 博客：Cosmos 3 Nano 系列开源权重面向驾驶与机器人交互式世界仿真（给定动作预测下一帧相机/传感器观测），提供 Transfer-Auto、Sim-* 等多检查点；最小配置可在单工作站 GPU 运行（以官方卡页为准）。世界模型把策略训练从「停车场试错」部分搬进仿真——属具身/自动驾驶基建新闻，而非又一聊天模型。",
+    "d": "11月5日",
+    "src": "NVIDIA / Hugging Face Blog",
+    "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation",
+    "m": []
+  },
+  {
+    "t": "Liquid AI LFM3-1.7B：1.7B 本地 Agent 模型冲上 HF 趋势前列",
+    "s": "LiquidAI/LFM3-1.7B 技术卡：约 1.73B、256K 上下文、tri-hybrid（短卷积+滑窗+全局注意力）；官方称面向 Hermes Agent / Pi 等本地 Agent 套件，4-bit 约 1GB 显存，并提供 GGUF/MLX/ONNX 等变体。自报 BFCL V4 等分数高于同量级对照，同时坦言 SWE-bench 等编码 Agent 场景弱于更大模型。许可证为 LFM Open License v1.0（非标准 OSI）。HF 趋势观测中其常与 DeepSeek-V4.1-Flash 争夺前列。",
+    "d": "11月6日前后",
+    "src": "Hugging Face / Liquid AI",
+    "url": "https://huggingface.co/LiquidAI/LFM3-1.7B",
+    "m": [
+      "DeepSeek-V4.1-Flash-1017"
+    ]
+  },
+  {
+    "t": "背景回顾：Gemini Omni 1.2 Flash GA 与 Meta 商业条款暂停（无重大新增量）",
+    "s": "昨日已详述：Google 11-05 正式推出 Omni 1.2 Flash（最长 15 秒视频、720p 约 $0.07/秒、较 1.1 降约 30%）；Meta 无限期暂停拟议商业条款（原定 11-20 抓取更新不再生效）。11-08 各早报仍作头条回顾，但未见官方重大修订；本报略记以免复读。",
+    "d": "11月5日",
+    "src": "Google Blog / Nieman Lab",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "m": []
+  },
+  {
+    "t": "背景回顾：Claude Personal Finance 公测与水印第二波（无重大新增量）",
+    "s": "昨日已覆盖：美区 Claude Pro/Max/Ultra 经 Plaid 只读查账；文本水印第二波 11-16 起回溯旧 Claude，部分型号仅默认采样打标。今日未见产品页或 Decoder 跟进的重大新披露，作递进背景条。",
+    "d": "11月5日–16日",
+    "src": "Anthropic / The Decoder",
+    "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude",
+    "m": []
+  },
+  {
+    "t": "行业周报：中期选举后 AI/数据中心政治压力与 Nvidia 波动（汇总）",
+    "s": "Fring / 多家周报转述：美国中期选举后民主党侧强化对数据中心扩张的政治压力，白宫取消原定科技座谈等信号叠加，AI 相关股票剧烈波动（报道称 Nvidia 单日跌幅可达约 9% 量级——以交易所数据为准）。与 OpenAI 融资目标下修同属「外压→资本再定价」链条；本条作宏观背景，不作个股建议。",
+    "d": "11月7日周",
+    "src": "Fring Weekly / 行业汇总",
+    "url": "https://fring.io/brief/2026-11-07.html",
+    "m": []
+  },
+  {
     "t": "Meta 无限期暂停拟议商业条款：原定 11-20 的网站抓取更新不再生效",
     "s": "Nieman Lab 11 月 5 日：Meta 撤下拟议商业条款预览，并在 Business Help Center 写明更新「现已暂停，不会于 2026 年 11 月 20 日生效」；现有条款继续有效。背景是挪威法院在十余家媒体起诉后发出初步禁令、巴西禁止未经授权使用新闻内容，以及英国 CMA 就「是否对出版商与广告主施加剥削性条款」立案调查。公司对 Nieman Lab 称「继续与利益相关方沟通、把事情做对」。报道强调「暂停≠撤回」，底层计划是否改写仍待后续更新。",
     "d": "11月5日",
