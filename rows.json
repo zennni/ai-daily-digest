@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "models": [
     {
       "name": "Gemini 4 Carbon",
@@ -2071,6 +2071,12 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-08",
+      "t": "全日量核验：AA 仍 v5.0.1、官价/促销/开放权重无实质变化；周日汇率沿用 CFETS 11-06 中间价 6.7168",
+      "m": [],
+      "s": "<b>2026-11-08 运营 ≈06:30 榜单全日量</b>：一手核 Artificial Analysis Changelog／methodology／Index，<b>Intelligence Index 仍为 v5.0.1</b>（Index 页标题仍 v5.0.1；methodology／Changelog 最新方法论条目仍 03 Nov CritPt v2 重评／Performance Benchmarking v3.0.0）。Changelog 最新日历日为 <b>06 Nov</b>，但仅 host／endpoint performance（Modal／Systalyze／Scaleway／Fireworks／Bitdeer 等），<b>无 06–08 Nov 新 Intelligence Index 分／方法论变更</b>；05 Nov Inkling 2 Small Index=31 与 Nanbeige4.3-33B Index=20 仓内已入——本轮不触发全表重算；94 模／名次／AA 分保持；顶三仍 Gemini 4 Carbon High 60／Claude Opus 5.5 Max 59／Gemini 4 Carbon Medium 58。<b>定价与促销</b>：OpenAI 官方 pricing 复核 GPT-6 Astra 仍 $10/$50（缓存 $1；&gt;272K 为 $20/$75），GPT-6.1 Sol $2/$10、Terra $1/$5；Anthropic Opus 5.5 仍 $4/$20（缓存读 $0.20）；DeepSeek 官方峰值仍 Flash ¥2/¥8、Pro ¥9/¥27；Google Gemini 4 Carbon／Argon 介绍期仍约 $2/$10；腾讯云 TokenHub Hy4 目录价仍 ¥6/¥18、官方限时 5 折至 <b>2026-12-31 23:59:59 北京时间</b> 未变（折后入主性价分仍按 CFETS 6.7168）。<b>开放权重</b>：HF API 复核 moonshotai/Kimi-K3.1-Pro 仍 private=false、gated=false（lastModified 2026-11-05T07:11:43Z 触碰不改表）；thinkingmachines/Inkling-2-Small 仍 401 私有。<b>汇率</b>：今日为周日，中国外汇交易中心中间价不更新；沿用最近工作日 <b>2026-11-06</b> 美元/人民币中间价 <b>6.7168</b> 并写明（SAFE／CFETS 表与 EconoTimes／forecasteconomy 一致）。本地 LLM／生图五档无新实质证据，未改模板静态章。壳仍 Wave4。未改日报 digest／AI日报／list。"
+    },
     {
       "d": "11-07",
       "t": "全日量核验：AA 仍 v5.0.1、官价/促销/开放权重无实质变化；周末汇率沿用 CFETS 11-06 中间价 6.7168",
