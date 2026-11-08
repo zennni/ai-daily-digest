@@ -1,5 +1,82 @@
 [
   {
+    "t": "OpenAI 发布 BioBasicsBench：用 100 道日常湿实验任务测 Agent 解读原始数据的能力",
+    "s": "OpenAI 11 月 6 日与酶设计公司 Ligo 共同发布 BioBasicsBench：100 道任务覆盖蛋白质方法、成像与流式、定量检测、核酸方法和分子克隆，测的是智能体能否解读凝胶、菌落平板、显微图像和仪器读数等原始实验证据，找出错误，并在证据不足以支撑结论时承认这一点。任务由科学家用自己的实验数据撰写，并经过内部未参与命题的 Ligo 科学家、外部湿实验博士与最终内部评审。官方在 xhigh 推理强度下报告：GPT-6 Astra 平均拿到约 66.7% 的分数（95% CI 约 60.3–73.1%），对照 GPT-5.6 Sol 约 43.8%（95% CI 约 37.6–50.0%），且 Astra 的输出 token 更少。评测共覆盖 7 款模型、37 组设置、每题 5 次尝试、合计 18500 条结果。公司同时展示了 Astra 仍会把熟悉假设压过对照、忽略与自己偏好矛盾的观察、以及常规菌落计数偏差约 12% 的失败例子——分数进步不等于已经可以在实验室里做可靠判断。这条把昨日「验真缺口」从论文诚信检查，下沉到了每天都在发生的读图与对对照。",
+    "d": "11月6日",
+    "src": "OpenAI",
+    "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "m": [
+      "GPT-6 Astra",
+      "GPT-5.6 Sol"
+    ]
+  },
+  {
+    "t": "OpenAI 与 Hacktron 合作排查自身系统漏洞，重点测试与第三方服务的连接",
+    "s": "OpenAI 11 月 6 日宣布与安全公司 Hacktron 合作，由其研究员与 OpenAI 工程师共同选定高优先级测试领域，重点关注 OpenAI 系统如何与第三方服务交互；作为合作的一部分，OpenAI 将通过 Daybreak Red 扩大 Hacktron 对其前沿模型的访问。双方因安全漏洞赏金计划结识，OpenAI 称对 Hacktron 已发现并披露的漏洞影响印象深刻。Hacktron 构建用于代码审查、渗透测试与红队演练的人工智能智能体。Hacktron CEO Zayne Zhang 表示，网络安全的未来不取决于谁拥有最大的安全团队，而取决于谁能最好地把人类创造力与人工智能能力结合起来。OpenAI 并提到，本周早些时候已宣布 Cathedral 的研究人员将在下一轮安全冲刺中与其团队合作，同时上调了漏洞赏金奖励。智能体把更多服务连在一起之后，攻击面往往出在连接处，而不是单个模型本身。",
+    "d": "11月6日",
+    "src": "OpenAI / Hacktron",
+    "url": "https://openai.com/index/partnering-with-hacktron",
+    "m": []
+  },
+  {
+    "t": "Meta 在 Muse 中推出 Spaces，并把 Active Memory / Active Focus 下放到大众产品",
+    "s": "Meta 11 月 6 日宣布在 Muse 应用中推出 Spaces：用户用自然语言描述想法——例如节日礼物追踪器、每日文字游戏或 DIY 规划板——即可生成围绕自身日程、目标与兴趣的自定义体验，并可继续调整外观与功能。Spaces 可放入侧边栏或主标签、按需隐藏，并预约何时出现；连接常用应用后，空间可在后台自行更新。公司称即日起在所有 Muse 可用的地方提供 Spaces，并在探索让用户分享空间。同日研究博客介绍，Meta 正在向 Muse 和 Meta AI 推出由 Muse Wonder 训练的专用模型版本，并下放两项能力：Active Memory 训练模型区分临时与永久信息、识别过时细节，官方称 Muse 中遗忘达成目标所需关键信息的情况约下降 2.4 倍，Active Memory 评测上正确使用关键上下文的任务从约 76% 升至约 90%；Active Focus 训练模型在意外障碍时恢复或另寻路径，官方称完成这类日常任务的表现约提升 67%。这些数字来自 Meta 自己的评测。",
+    "d": "11月6日",
+    "src": "Meta / Meta AI Research",
+    "url": "https://about.fb.com/news/2026/11/introducing-spaces-customize-muse-app/",
+    "m": [
+      "Muse Wonder"
+    ]
+  },
+  {
+    "t": "Google 宣布在怀俄明州建设首个数据中心：长期投资 170 亿美元",
+    "s": "Google 全球基础设施与能源副总裁 Steve Walter 11 月 5 日发文：公司将在怀俄明州建设首个数据中心，长期投资 170 亿美元，合作方包括 Tallgrass Energy、Black Hills Energy、美国电力公司（AEP）与 Related Digital，面向拉勒米县／夏延一带。项目与 AEP 签约，规划规模为商业级、702 兆瓦的燃料电池发电并配套碳捕集与封存（CCS），Google 称为迄今计划中同类项目之最；燃料电池由 Bloom Energy 在美国制造，以天然气为燃料、通过电化学反应发电，捕集的碳将送往 Tallgrass 附近的东怀俄明封存枢纽作永久地质封存。公司称这是继去年秋季宣布的美国首个 CCS 项目之后的新进展，已签约 CCS 容量合计近 1 吉瓦。该数据中心将采用风冷以减轻对当地水资源的压力；Google 表示将支付所使用的全部电力，并承担由其增长直接驱动的基础设施需求。这是中期选举后多地反对新建数据中心的背景下，一家超大规模云厂商仍选择把长期算力承诺写进州级投资的例子。",
+    "d": "11月5日",
+    "src": "Google Blog",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/wyoming-data-center/",
+    "m": []
+  },
+  {
+    "t": "Google 开源 XLA Serving Engine：Train in Python, Serve in C++",
+    "s": "Google 开源博客 11 月 5 日宣布推出 XLA Serving Engine（XSE），以 Apache 2.0 许可开源。它面向 OpenXLA 生态，提供「在 Python 中训练、在 C++ 中服务」的工作流：把模型导出为包含 StableHLO 的 XLA SavedModel，再由 C++ 运行时加载执行，从而避开生产环境中不允许 Python 的约束。Google 称，对短请求，XSE 的吞吐量是其能做出的最佳 Python 服务器的 2 到 5 倍、是朴素实现的 8 到 36 倍，每次预测的 CPU 时间低 30% 到 70%，内存约为四分之一。公司并称去年起已把核心组件用于内部生产，目前 XSE 每秒处理超过 600 万次查询，支撑 YouTube Shorts、Google Ads、Search 以及部分 Gemini Omni 在线推理流水线。它支持 CPU、NVIDIA GPU 与 Cloud TPU，并提供 Docker 镜像与 gRPC 接口。官方明确限制：XSE 是轻量的一次性推理引擎，对长上下文的自回归大语言模型，建议继续使用 vLLM 或 SGLang。",
+    "d": "11月5日",
+    "src": "Google Open Source Blog",
+    "url": "https://opensource.googleblog.com/2026/11/supercharging-xla-inference-xla-serving-engine.html",
+    "m": []
+  },
+  {
+    "t": "欧央行据报考虑审查银行对 AI 数据中心贷款",
+    "s": "彭博 11 月 6 日报道，欧洲央行正在考虑对欧元区银行的数据中心贷款做一次有针对性的审查，评估人工智能市场情绪变化与估值波动带来的风险。报道称，审查或包含现场检查，重点看银行对未来现金流、抵押品价值及违约风险的评估；更高的利率与地方对数据中心建设的反对，可能给这块迅速扩张的贷款带来压力。具体方案与范围尚未敲定，规模也可能小于 2023 年那轮杠杆融资审查。这条仍属「考虑中」而非已经立案——但和昨日资本再定价、本周地方反对新建数据中心的新闻是同一条链：一级市场在重标估值，信用市场开始问贷款假设还站不站得住。",
+    "d": "11月6日",
+    "src": "Bloomberg",
+    "url": "https://news.bloomberglaw.com/banking-law/ecb-considers-review-of-bank-data-center-lending-on-ai-risk-1",
+    "m": []
+  },
+  {
+    "t": "报道称 Thinking Machines Lab 接近完成约 50 亿美元新融资，Accel 拟领投",
+    "s": "Business Insider 等 11 月上旬报道称，Mira Murati 创立的 Thinking Machines Lab 接近完成一轮约 50 亿美元的新融资，由 Accel 领投，投前估值约 400 亿美元。公司与 Accel 均未就此官方确认，条款仍应以后续公告为准。这条应读成「接近敲定的报道」而不是已经交割的事实；它和本周 OpenAI 首笔约 110 亿美元到账、Anthropic 更新招股书财务放在一起看，才构成完整的一级市场温度计：钱还在进头部实验室，但单笔规模与估值锚都比盛夏那一轮更需要证据。",
+    "d": "11月上旬",
+    "src": "Business Insider（报道，待官方确认）",
+    "url": "https://www.businessinsider.com/thinking-machines-lab-is-closing-5-billion-new-round-2026-11",
+    "m": []
+  },
+  {
+    "t": "Anthropic 更新招股书财务：三季度经营由盈转亏，算力承诺约 8954 亿美元",
+    "s": "相对昨日已报的 IPO 定价区间，本周中文财经媒体系统拆开了 Anthropic 11 月 2 日更新的 S-1/A。第一财经援引文件：公司今年前三季度营收约 332.42 亿美元，同比增长约 1206%；第三季度营收环比增速由第二季度的约 144% 放缓至约 47%，经营业绩按 GAAP 口径由盈转亏——第三季度经营亏损约 5.67 亿美元，而第二季度曾实现约 9.74 亿美元经营利润。文件同时披露约 8954 亿美元的算力及基础设施采购、租赁承诺；前三季度计算与基础设施支出约 188.08 亿美元，同比增长超 3 倍，约占营收的 57%。公司并预估自身可能很快达到负责任规模化政策（RSP）所定义的「由 AI 带来的显著加速进展」阈值。这些数字把昨日的「估值下修」补成一张更完整的资产负债表：收入仍在高速增长，但增速放缓、经营重新亏损，且未来算力账单已经被提前写进承诺。",
+    "d": "11月2日文件 / 11月8日媒体拆解",
+    "src": "第一财经 / Anthropic S-1/A",
+    "url": "https://www.yicai.com/news/103431043.html",
+    "m": []
+  },
+  {
+    "t": "背景回顾：OpenAI 约 110 亿美元首笔到账与 Anthropic IPO 定价（无重大新增量）",
+    "s": "昨日全天合并版已详述：Bloomberg / TechCrunch 称 OpenAI 已收到约 110 亿美元新资金、估值约 1.25 万亿美元，整轮或至约 200 亿美元；FT 等称 Anthropic 仍计划感恩节前上市，讨论中的募资额约 800 亿至 1000 亿美元、估值区间约 1.25 万亿至 1.75 万亿美元。11 月 8 日各早报与周报仍作头条回顾，但未见官方对这两项数字的重大修订；定价与到账细节以昨日条目为准，本报只作递进背景，以免复读全卡。",
+    "d": "11月6日–8日",
+    "src": "Bloomberg / TechCrunch / Financial Times（昨日已报）",
+    "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+    "m": []
+  },
+  {
     "t": "OpenAI 据报完成约 110 亿美元首笔融资：估值约 1.25 万亿美元",
     "s": "Bloomberg 11-06 援引知情人士、TechCrunch 转述：OpenAI 已收到约 110 亿美元新资金，为本轮首笔；整轮尚未关账，或扩至约 200 亿美元。公司此前寻求约 300 亿美元、估值约 1.4 万亿，在 AI 板块抛售与中期选举后数据中心政治压力下目标下修。报道点名 SoftBank、MGX、Coatue、T. Rowe Price、Sequoia、a16z 等参与或拟参与（以各源为准）。属「资本再定价」硬新闻：钱仍进账，但叙事从「无限抬价」切到「先关一笔」。",
     "d": "11月6日",

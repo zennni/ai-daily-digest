@@ -1,5 +1,26 @@
 [
   {
+    "d": "2026-11-09",
+    "w": "星期一",
+    "pts": [
+      "OpenAI BioBasicsBench：Astra 约 66.7% vs Sol 约 43.8%，验真下沉到湿实验",
+      "Meta Muse Spaces + Active Memory；遗忘关键信息约降 2.4 倍",
+      "OpenAI 联手 Hacktron 测第三方连接；Google 宣布 170 亿美元怀俄明数据中心",
+      "论文：ProofTrace / 学判分器 / Memory Trap；Anthropic 用 dreaming 整理记忆"
+    ],
+    "link": "AI日报-2026-11-09.html",
+    "m": [
+      "Qwen3.8-27B",
+      "GPT-6 Astra",
+      "Claude Fable 5",
+      "Kimi K3.1 Pro",
+      "GPT-5.6 Sol",
+      "Nemotron 3.5 Lightning",
+      "Muse Wonder"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-08",
     "w": "星期日",
     "pts": [
