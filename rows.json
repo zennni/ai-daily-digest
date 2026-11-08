@@ -1,5 +1,5 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "models": [
   {
    "name": "Gemini 4 Carbon",
@@ -2072,6 +2072,12 @@
  ],
  "changes": [
   {
+   "d": "11-09",
+   "t": "全日量核验：AA 仍 v5.0.1、官价/促销/开放权重无实质变化；周一截稿时汇率沿用 CFETS 11-06 中间价 6.7168",
+   "m": [],
+   "s": "<b>2026-11-09 运营 ≈06:30 榜单全日量</b>：一手核 Artificial Analysis Changelog／methodology／Index，<b>Intelligence Index 仍为 v5.0.1</b>（Index 页标题仍 v5.0.1；methodology 页全文仍标注 v5.0.1，九项评测与四类各 25% 权重未变；Changelog 最新方法论条目仍 03 Nov CritPt v2 重评／Performance Benchmarking v3.0.0）。Changelog 最新日历日仍为 <b>06 Nov</b>，且仅 host／endpoint performance（Modal／Systalyze／Scaleway／Fireworks／Bitdeer 等），<b>无 07–09 Nov 新 Intelligence Index 分／方法论变更</b>——本轮不触发全表重算；94 模／名次／AA 分保持；顶三仍 Gemini 4 Carbon High 60（aa_dec 60.0）／Claude Opus 5.5 Max 59（aa_dec 59.1）／Gemini 4 Carbon Medium 58（aa_dec 58.3）。<b>定价与促销</b>：OpenAI 官方 pricing 复核 GPT-6 Astra 仍 $10/$50（缓存 $1；&gt;272K 为 $20/$75），GPT-6.1 Sol $2/$10、Terra $1/$5、Luna $0.10/$0.50；Anthropic Opus 5.5 仍 $4/$20（缓存读 $0.20）、Sonnet 5.5 仍 $2/$10；xAI Grok 4.7 仍 $2/$6（缓存 $0.50，&lt;200k）；DeepSeek 英文定价页峰值折美元约 Flash $0.30/$1.20、Pro $1.32/$3.96，与官方人民币峰值 Flash ¥2/¥8、Pro ¥9/¥27 口径一致（主表继续按人民币峰值以 CFETS 6.7168 折算，非调价）；Google Gemini 4 Carbon／Argon 介绍期仍约 $2/$10；阿里云 Qwen3.8 Max 国际站仍 $2/$6；Kimi K3.1 Pro 官价仍 $2/$10（缓存 $0.20）；智谱 GLM-5.3 国际站仍 $1.40/$4.40；腾讯云 TokenHub Hy4 目录价仍 ¥6/¥18、官方限时 5 折至 <b>2026-12-31 23:59:59 北京时间</b> 未变（折后入主性价分仍按 CFETS 6.7168）。另：OpenAI 官价页现列 GPT-6 Cyber $20/$100，但仍属受限安全专用，不入主榜。<b>开放权重</b>：HF API 复核 moonshotai/Kimi-K3.1-Pro 仍 private=false、gated=false（lastModified 仍 2026-11-05T07:11:43.000Z，未改表）；thinkingmachines/Inkling-2-Small 仍 401 私有（官方 11-05 称「下周」Apache 2.0 权重尚未兑现）。<b>汇率</b>：今日为周一约 06:40（上海），CFETS 中间价通常约 09:15 公布；截稿时 SAFE 人民币汇率中间价表与央行授权公告最新工作日均为 <b>2026-11-06</b> 的 1 USD = <b>6.7168</b> CNY（表列 671.68／100 美元）；11-07（周六）与 11-08（周日）无报价，11-09 中间价尚未见官方发布——本期沿用 6.7168。根字段补回 aa_index_version=v5.0.1（11-08 第四十七期全表重写时遗漏）。本地 LLM／生图五档无新实质证据（缺参数/量化/显存/许可四要素齐备的新模型），未改模板静态章。壳仍 Wave4。未改日报 digest／AI日报／list。"
+  },
+  {
    "d": "11-08",
    "t": "指数升级 Intelligence Index v5.0.1：CritPt v2 判分收敛后全表重评，榜首 59.4→60.0；主榜 91→94 配置",
    "m": [
@@ -2156,5 +2162,6 @@
    ],
    "s": "<b>① OpenAI 新一轮首笔约 110 亿美元到账、投前估值 1.25 万亿美元，较原计划（募 300 亿、估值 1.4 万亿）明显缩水，本轮上限约 200 亿</b>；<b>② Anthropic 已递交招股书（代码 ANT，拟 11 月中旬纳斯达克），上市估值预期由近 2 万亿下调至 1.2–1.3 万亿美元，Q3 收入 169.6 亿美元、环比 +47%，降价与合同折扣合计少收约 6 亿美元</b>；<b>③ 企业侧「量增价减」实证：Ramp 样本显示 8 月初至 10 月中旬企业 token 用量增约 65%、支出仅增 1.5%</b>——<b>对采购的含义：模型单价下行速度快于用量增长，按「每美元买到多少能力」而非「每 token 单价」做预算更稳，本榜的性价比分即按此口径设计</b>。<b>以上均不改变任何模型的分数、价格或许可，仅作供应商稳定性与预算口径参考</b>。"
   }
- ]
+ ],
+ "aa_index_version": "v5.0.1"
 }
