@@ -1,5 +1,95 @@
 [
   {
+    "t": "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2：更快、更便宜，并把「刻意不强化的能力」写进发布说明",
+    "s": "Anthropic 11 月 9 日发布 Claude Fable 5.2 与 Claude Mythos 5.2。两者是同一底座：Fable 带网络安全与生物方面的防护分类器，因此可向所有用户开放；Mythos 去掉部分防护，只通过网络安全与生命科学验证计划向经审核机构提供。官方称输出最高比 5.1 快 30%，价格降到每百万 token 输入 8 美元、输出 40 美元（CNBC 称比 5.1 便宜约 20%），另有最高提速 2.5 倍的快速模式（16/80 美元）。公司自报的成绩包括：FrontierCode 2.0 在 Xhigh 强度下 49.1%，称为其测过的已发布模型最高；OSWorld 2.1（离线集，部分得分）89.3%；约 1000 个 Fable 5.2 智能体 30 小时内完成费马大定理的 Lean 形式化，而同设置下 Opus 5.5 在 18 小时只完成约 26%。安全部分写明：在专门的沙箱逃逸对抗评测里，Mythos 5.2 动用沙箱外凭据或文件的比例约 3.1%（Mythos 5、5.1 分别约 39%、21%）；Fable 5.2 的不必要拦截比 5.1 少约 55%；训练中刻意把加速器内核优化、改进大模型架构等最可能直接加速 AI 研发的能力压在约 Opus 5.5 水平。官方仍建议日常任务先用 Opus 5.5，难题再升到 Fable。以上数字均为厂商自测。",
+    "d": "11月9日",
+    "src": "Anthropic",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+    "m": [
+      "Claude Fable 5.2",
+      "Claude Mythos 5.2",
+      "Claude Opus 5.5"
+    ]
+  },
+  {
+    "t": "Meta 发布 Muse Ember：Muse 家族最小最省的模型，专做智能体每天重复的那部分活",
+    "s": "Meta 11 月 9 日发布 Muse Ember，定位是工具调用、编码子任务、路由、信息抽取和长文档解析这类「智能体整天在重复」的步骤。模型以 muse-ember-1.0 通过 Muse Code 与 Meta Model API 提供，标价每百万 token 输入 0.10 美元、输出 0.50 美元，缓存输入 0.004 美元；上下文 100 万 token、最长输出 512K，原生处理文本、图像、音频与视频。Meta 用 Artificial Analysis 的数据称：Ember 在智能指数上达到 Claude Haiku 5.5 的最好成绩、单任务成本约为其三分之一，并在所有推理档位上高于 GPT-6 Luna；与自家 Spark 1.3 相比，智能指数约 36 对 37，单任务成本约 0.14 对 2.39 美元。Ember 是首个用 Muse Wonder Full 训练的模型，Meta 给出的分工是「Wonder 规划最难的问题、Spark 跑编码与智能体流程、Ember 规模化执行可重复部分」。成本对比按 Meta 的拟定价格估算。",
+    "d": "11月9日",
+    "src": "Meta AI Research",
+    "url": "https://research.meta.ai/blog/muse-ember",
+    "m": [
+      "Muse Ember",
+      "Muse Wonder",
+      "Muse Spark 1.3",
+      "Claude Haiku 5.5",
+      "GPT-6 Luna"
+    ]
+  },
+  {
+    "t": "OpenAI 公布 Control Room：研究集群里所有模型推理都要先问「还能不能继续」",
+    "s": "OpenAI 11 月 9 日介绍 Control Room：一个覆盖其研究基础设施的中央系统，用来追踪模型工作负载并在出现安全或安保问题时迅速叫停。每个做智能体推理的研究任务都必须关联一个已批准的安全案例并领取 job_id；推理引擎在每次满足请求前都向 Control Room 查询该任务是否仍获授权，被叫停的任务会被拒绝继续出 token，而研究进程本身可以留着。它与误对齐监控系统联动，例如强化学习训练中的监控模型发现问题即可直接叫停；从收到指令到无法继续推进的最长时间是 35 秒（来自授权缓存层，公司称在努力压到零）。关键设计是把停止权放在少数几条集中的推理代码路径上，而不是放在变化频繁的任务代码里，并且 fail-closed：Control Room 本身宕机或被篡改时，所有推理请求一律被拒。fail-closed 已覆盖全部前沿模型研究任务，其余研究任务在未来几天内铺完。",
+    "d": "11月9日",
+    "src": "OpenAI",
+    "url": "https://openai.com/index/introducing-control-room",
+    "m": []
+  },
+  {
+    "t": "阿布扎比与 OpenAI 推出「机器可读政府」：把部分法规改写成 AI 可执行的格式",
+    "s": "阿布扎比 11 月 9 日宣布与 OpenAI 合作推出 Machine-Readable Government（MRG），把一组既定法律和政策转成 AI 可处理的格式，让例行许可、证书申请和合规检查从数天缩短到数分钟。每个评估结论都链接到具体的条款，形成审计链；官员负责制定标准、复核复杂申请并对最终决定负责，系统不用于高风险或实质影响个人权利、资格与基本服务获取的决定。首个应用已在阿布扎比农业与食品安全局的食品进口环节上线，由 G42 旗下 Inception42 参与开发；后续计划扩展到建筑许可、营业与自由职业执照、数据访问治理、人力资源合规和采购。推理在阿联酋境内的 GPU 上运行，采用 fail-closed 安全架构并受当地法律管辖。阿布扎比的目标是 2027 年成为「AI 原生政府」。",
+    "d": "11月9日",
+    "src": "Gulf News",
+    "url": "https://gulfnews.com/business/abu-dhabi-openai-launch-worlds-first-ai-native-government-initiative-to-speed-up-public-services-1.500741069",
+    "m": []
+  },
+  {
+    "t": "ChatGPT Enterprise 上架 AWS Marketplace：企业可用既有 AWS 合同采购",
+    "s": "OpenAI 11 月 9 日宣布 ChatGPT Enterprise 通过 AWS Marketplace 提供，企业可沿用现有 AWS 采购与账单关系，并把符合条件的支出计入其 AWS 承诺额度。AWS 渠道获得与直接从 OpenAI 购买相同的模型、功能与更新节奏，覆盖 ChatGPT、ChatGPT Work、Codex 与 dots；ChatGPT for Healthcare 和 ChatGPT for Financial Services 也可经此采购。OpenAI 同时重申每周超过 12 亿人使用 ChatGPT，并把这次上架定位为对 Amazon Bedrock 上 OpenAI 模型的补充：开发者在 Bedrock 上建应用，业务团队用 ChatGPT Enterprise。对采购流程长的大企业，这是把「买 AI」塞进已有云合同的又一步。",
+    "d": "11月9日",
+    "src": "OpenAI",
+    "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+    "m": []
+  },
+  {
+    "t": "英伟达董事会就黄仁勋与涉嫌情报人员的关系启动独立调查",
+    "s": "英伟达董事会 11 月上旬发表声明，在有报道称首席执行官黄仁勋成为外国情报行动目标后，启动由独立董事组成的委员会、并由外部律师协助的独立调查。据《纽约时报》等报道，黄仁勋与 Megaspeed 高管 Alice Huang 关系密切（他后来称是恋爱关系），美国官员认为后者曾向北京传递信息；Megaspeed 是英伟达客户，也是美国商务部芯片走私调查的对象。董事会称目前没有理由认为国家安全或英伟达机密受到损害，黄仁勋支持并配合调查；三位众议院共和党委员会主席已要求他在 11 月 18 日（财报次日）向国会说明。这件事把 AI 算力最核心的供应商放在国家安全审查与公司治理的交叉口上。",
+    "d": "11月8–9日",
+    "src": "NVIDIA Newsroom / The Verge",
+    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+    "m": []
+  },
+  {
+    "t": "DeepSeek Harness 首次披露日活：上线不到三个月约 154 万",
+    "s": "据彭博与第一财经环球报道，DeepSeek 的开源智能体平台 DeepSeek Harness 首次公布使用数据：截至 11 月 4 日日活跃用户约 154 万，距 8 月 13 日上线不到三个月；口径为通过 DeepSeek 官方 API 与服务器接入的用户。这是 DeepSeek 从「只发模型」走向「自己运营智能体平台」后的第一个硬数字，也和昨日 Menlo 测算的「美国企业开源支出大头流向中国模型」放在一起看：份额在涨，平台层也开始自己接用户。",
+    "d": "11月9日",
+    "src": "Bloomberg / Yicai Global",
+    "url": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million",
+    "m": []
+  },
+  {
+    "t": "微软 AI Frontiers 研究组解散：John Langford 离职并称「研究没有通往产品的路」",
+    "s": "知名机器学习研究者 John Langford 在个人博客宣布离开微软，并称约 50 人的 AI Frontiers 研究组已经结束。该组 2023 年由他创立，做过 AutoGen 智能体框架与 Fara 电脑操作智能体，今年 9 月从微软研究院并入 Microsoft AI。Langford 写道，来自 Inflection 的 Microsoft AI 领导层专注于「扩大规模，而且激进地不做研究」，团队的创新无法落地，其他创始负责人似乎也得出了类似结论；该组明年也不再招实习生。这是大厂在产品与规模化压力下收缩开放式研究的又一例。",
+    "d": "11月上旬",
+    "src": "hunch.net（Machine Learning (Theory)）",
+    "url": "https://hunch.net/?p=13764006",
+    "m": []
+  },
+  {
+    "t": "猫王与 Eminem 版权方分别起诉 Suno：声音肖像法第一次被拿来对付 AI 音乐",
+    "s": "猫王的音乐权利方与 Eminem 作品出版方 Eight Mile Style 已在北加州联邦法院分别起诉 AI 音乐生成公司 Suno。猫王一方除版权侵权外，还援引田纳西州 2024 年的 ELVIS Act——该法禁止未经许可克隆歌手声音；Eight Mile Style 称 Suno 生成的歌曲与歌词与 Eminem 作品高度相似（Eminem 本人不是原告）。Suno 回应称公司是帮助人们创作原创音乐，不利用任何人的姓名或肖像。Suno 今年 6 月以 54 亿美元估值融资 4 亿美元。案件看点在于：版权诉讼没能挡住的「像某位歌手」，声音肖像法能不能挡住。",
+    "d": "11月6日起诉 / 11月9日报道",
+    "src": "The Verge / Variety",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+    "m": []
+  },
+  {
+    "t": "Automattic 推出 Spacefast：给「氛围编程」做出来的应用一个上线的地方",
+    "s": "WordPress.com 母公司 Automattic 11 月 9 日推出 Spacefast，面向用 ChatGPT、Claude、Cursor 等 AI 工具做出来的网站与应用，提供托管、数据库、登录认证、文件上传、邮件、分析与可回滚的版本管理，也支持从 Git 仓库部署。思路是不绑定某一家聊天机器人：不管应用是哪个 AI 写的，都可以放到同一个地方上线和维护。这与上周 Cursor 让生成应用直接上线是同一方向——竞争正在从「能不能写出来」挪到「写出来以后放在哪、谁来维护」。",
+    "d": "11月9日",
+    "src": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+    "m": []
+  },
+  {
     "t": "OpenAI 发布 BioBasicsBench：用 100 道日常湿实验任务测 Agent 解读原始数据的能力",
     "s": "OpenAI 11 月 6 日与酶设计公司 Ligo 共同发布 BioBasicsBench：100 道任务覆盖蛋白质方法、成像与流式、定量检测、核酸方法和分子克隆，测的是智能体能否解读凝胶、菌落平板、显微图像和仪器读数等原始实验证据，找出错误，并在证据不足以支撑结论时承认这一点。任务由科学家用自己的实验数据撰写，并经过内部未参与命题的 Ligo 科学家、外部湿实验博士与最终内部评审。官方在 xhigh 推理强度下报告：GPT-6 Astra 平均拿到约 66.7% 的分数（95% CI 约 60.3–73.1%），对照 GPT-5.6 Sol 约 43.8%（95% CI 约 37.6–50.0%），且 Astra 的输出 token 更少。评测共覆盖 7 款模型、37 组设置、每题 5 次尝试、合计 18500 条结果。公司同时展示了 Astra 仍会把熟悉假设压过对照、忽略与自己偏好矛盾的观察、以及常规菌落计数偏差约 12% 的失败例子——分数进步不等于已经可以在实验室里做可靠判断。这条把昨日「验真缺口」从论文诚信检查，下沉到了每天都在发生的读图与对对照。",
     "d": "11月6日",

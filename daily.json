@@ -1,5 +1,26 @@
 [
   {
+    "d": "2026-11-10",
+    "w": "星期二",
+    "pts": [
+      "Claude Fable 5.2 / Mythos 5.2：快 30%、价降至 $8/$40，训练中刻意压住 AI 研发加速能力",
+      "Meta Muse Ember：入 $0.10 / 出 $0.50，「Wonder 规划，Ember 跑量」",
+      "OpenAI Control Room：叫停 35 秒内停止出 token、宕机即拒；阿布扎比机器可读政府",
+      "论文：Co-Design Bench 整题完成仅 26.4% / 思维注入攻击 / Flex-RSI 递归自改进"
+    ],
+    "link": "AI日报-2026-11-10.html",
+    "m": [
+      "Claude Fable 5.2",
+      "Claude Mythos 5.2",
+      "Claude Opus 5.5",
+      "Muse Ember",
+      "Muse Wonder",
+      "Muse Spark 1.3",
+      "Claude Haiku 5.5"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-09",
     "w": "星期一",
     "pts": [

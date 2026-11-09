@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-10</title>
+<style>
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+</style>
+</head>
+<body id="top">
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年11月10日 · 星期二</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：前沿上新与刹车同框。相对昨日「验真下沉与记忆越界」，议题从「把验真探头插进实验室与记忆」递进到「最强模型一边上新、一边把刹车和限速一起写进发布说明」。上新侧：Anthropic 11-09 发布 Claude Fable 5.2 与 Mythos 5.2（同一底座，Fable 带网络安全与生物防护对所有人开放，Mythos 只给经验证机构），输出最高快 30%、价格降到每百万 token 入 8 美元/出 40 美元；官方称 FrontierCode 2.0 在 Xhigh 下 49.1% 为已发布模型最高、约 1000 个智能体 30 小时完成费马大定理的 Lean 形式化，同时说明训练中刻意压住了加速器内核优化等最可能加速 AI 研发的能力。Meta 同日发布最小最省的 Muse Ember（入 0.10/出 0.50 美元，100 万上下文），定位是「Wonder 规划、Ember 跑量」。刹车侧：OpenAI 公布 Control Room——研究集群里每个智能体推理任务都要挂已批准的安全案例，决定叫停后 35 秒内停止出 token，服务本身宕机时一律拒绝推理（fail-closed）。落地与治理：OpenAI 与阿布扎比把部分法规改成机器可读、例行许可审批由 AI 按条款出结论并留审计链；ChatGPT Enterprise 上架 AWS Marketplace；DeepSeek Harness 日活约 154 万；英伟达董事会就黄仁勋与涉嫌情报人员的关系启动独立调查。论文侧，阿里等的 Co-Design Bench 用真实会话说明「每题满足约七成要求」与「整题做完只有约 26%」之间的落差，另有思维注入攻击、提示注入防护在合同上的误报率、递归自改进基准 Flex-RSI。一句话：能力继续往上跳，但发布说明里「能停、能拒、能审计」的篇幅也在同步变长。</div>
+</header>
+
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a class="pt-top" href="#top">回顶</a>
+</nav>
+
+<div class="highlights" id="sec-highlights">
+  <h2>📌 今日看点</h2>
+  <ul>
+<li><strong>Claude Fable 5.2 / Mythos 5.2 发布：快 30%、价降至 $8/$40</strong><p>同一底座两种发放：Fable 带安全防护全量开放，Mythos 仅向经验证的网络安全与生命科学机构开放。官方称 FrontierCode 2.0（Xhigh）49.1%、约 1000 个智能体 30 小时完成费马大定理 Lean 形式化；不必要拦截比 5.1 少约 55%。</p></li>
+<li><strong>Meta Muse Ember：每百万 token 入 0.10、出 0.50 美元的执行模型</strong><p>1M 上下文、最长 512K 输出，原生读图音视频；Meta 称在 AA 智能指数上与 Spark 1.3 只差 1 分，单任务成本约 0.14 对 2.39 美元——「Wonder 规划，Ember 跑量」。</p></li>
+<li><strong>OpenAI Control Room：叫停后 35 秒内停止出 token，宕机即拒绝</strong><p>研究集群每个智能体推理任务都要挂已批准的安全案例；停止权放在推理层而非任务代码里，服务失效时整体 fail-closed。</p></li>
+<li><strong>阿布扎比 × OpenAI「机器可读政府」：例行审批按条款自动出结论</strong><p>首个应用已在食品进口合规上线，每个结论链接到具体条款；高风险与涉及个人权利的决定不交给系统，推理在阿联酋境内完成。</p></li>
+<li><strong>Co-Design Bench：要求平均满足约 70%，整题做完只有约 26%</strong><p>阿里等从 2.6 万个真实编码会话里整理 273 题、2331 条隐藏验收标准；最强端点逐条通过率约 69.9%，但完整通过只有 26.4%，改动类型越多越难。</p></li>
+<li><strong>英伟达董事会启动对黄仁勋的独立调查</strong><p>起因是其与涉嫌向北京传递信息的 Megaspeed 高管的关系；董事会称目前没有理由认为国家安全或公司机密受损，黄仁勋表示配合。</p></li>
+  </ul>
+</div>
+
+<section id="sec-news">
+  <h2>📰 行业新闻<span class="count">10 条</span></h2>
+<div class="card">
+  <h3>Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2：更快、更便宜，并把「刻意不强化的能力」写进发布说明</h3>
+  <p>Anthropic 11 月 9 日发布 Claude Fable 5.2 与 Claude Mythos 5.2。两者是同一底座：Fable 带网络安全与生物方面的防护分类器，因此可向所有用户开放；Mythos 去掉部分防护，只通过网络安全与生命科学验证计划向经审核机构提供。官方称输出最高比 5.1 快 30%，价格降到每百万 token 输入 8 美元、输出 40 美元（CNBC 称比 5.1 便宜约 20%），另有最高提速 2.5 倍的快速模式（16/80 美元）。公司自报的成绩包括：FrontierCode 2.0 在 Xhigh 强度下 49.1%，称为其测过的已发布模型最高；OSWorld 2.1（离线集，部分得分）89.3%；约 1000 个 Fable 5.2 智能体 30 小时内完成费马大定理的 Lean 形式化，而同设置下 Opus 5.5 在 18 小时只完成约 26%。安全部分写明：在专门的沙箱逃逸对抗评测里，Mythos 5.2 动用沙箱外凭据或文件的比例约 3.1%（Mythos 5、5.1 分别约 39%、21%）；Fable 5.2 的不必要拦截比 5.1 少约 55%；训练中刻意把加速器内核优化、改进大模型架构等最可能直接加速 AI 研发的能力压在约 Opus 5.5 水平。官方仍建议日常任务先用 Opus 5.5，难题再升到 Fable。以上数字均为厂商自测。</p>
+  <div class="meta">11月9日 · Anthropic · <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Meta 发布 Muse Ember：Muse 家族最小最省的模型，专做智能体每天重复的那部分活</h3>
+  <p>Meta 11 月 9 日发布 Muse Ember，定位是工具调用、编码子任务、路由、信息抽取和长文档解析这类「智能体整天在重复」的步骤。模型以 muse-ember-1.0 通过 Muse Code 与 Meta Model API 提供，标价每百万 token 输入 0.10 美元、输出 0.50 美元，缓存输入 0.004 美元；上下文 100 万 token、最长输出 512K，原生处理文本、图像、音频与视频。Meta 用 Artificial Analysis 的数据称：Ember 在智能指数上达到 Claude Haiku 5.5 的最好成绩、单任务成本约为其三分之一，并在所有推理档位上高于 GPT-6 Luna；与自家 Spark 1.3 相比，智能指数约 36 对 37，单任务成本约 0.14 对 2.39 美元。Ember 是首个用 Muse Wonder Full 训练的模型，Meta 给出的分工是「Wonder 规划最难的问题、Spark 跑编码与智能体流程、Ember 规模化执行可重复部分」。成本对比按 Meta 的拟定价格估算。</p>
+  <div class="meta">11月9日 · Meta AI Research · <a href="https://research.meta.ai/blog/muse-ember" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI 公布 Control Room：研究集群里所有模型推理都要先问「还能不能继续」</h3>
+  <p>OpenAI 11 月 9 日介绍 Control Room：一个覆盖其研究基础设施的中央系统，用来追踪模型工作负载并在出现安全或安保问题时迅速叫停。每个做智能体推理的研究任务都必须关联一个已批准的安全案例并领取 job_id；推理引擎在每次满足请求前都向 Control Room 查询该任务是否仍获授权，被叫停的任务会被拒绝继续出 token，而研究进程本身可以留着。它与误对齐监控系统联动，例如强化学习训练中的监控模型发现问题即可直接叫停；从收到指令到无法继续推进的最长时间是 35 秒（来自授权缓存层，公司称在努力压到零）。关键设计是把停止权放在少数几条集中的推理代码路径上，而不是放在变化频繁的任务代码里，并且 fail-closed：Control Room 本身宕机或被篡改时，所有推理请求一律被拒。fail-closed 已覆盖全部前沿模型研究任务，其余研究任务在未来几天内铺完。</p>
+  <div class="meta">11月9日 · OpenAI · <a href="https://openai.com/index/introducing-control-room" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>阿布扎比与 OpenAI 推出「机器可读政府」：把部分法规改写成 AI 可执行的格式</h3>
+  <p>阿布扎比 11 月 9 日宣布与 OpenAI 合作推出 Machine-Readable Government（MRG），把一组既定法律和政策转成 AI 可处理的格式，让例行许可、证书申请和合规检查从数天缩短到数分钟。每个评估结论都链接到具体的条款，形成审计链；官员负责制定标准、复核复杂申请并对最终决定负责，系统不用于高风险或实质影响个人权利、资格与基本服务获取的决定。首个应用已在阿布扎比农业与食品安全局的食品进口环节上线，由 G42 旗下 Inception42 参与开发；后续计划扩展到建筑许可、营业与自由职业执照、数据访问治理、人力资源合规和采购。推理在阿联酋境内的 GPU 上运行，采用 fail-closed 安全架构并受当地法律管辖。阿布扎比的目标是 2027 年成为「AI 原生政府」。</p>
+  <div class="meta">11月9日 · Gulf News · <a href="https://gulfnews.com/business/abu-dhabi-openai-launch-worlds-first-ai-native-government-initiative-to-speed-up-public-services-1.500741069" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>ChatGPT Enterprise 上架 AWS Marketplace：企业可用既有 AWS 合同采购</h3>
+  <p>OpenAI 11 月 9 日宣布 ChatGPT Enterprise 通过 AWS Marketplace 提供，企业可沿用现有 AWS 采购与账单关系，并把符合条件的支出计入其 AWS 承诺额度。AWS 渠道获得与直接从 OpenAI 购买相同的模型、功能与更新节奏，覆盖 ChatGPT、ChatGPT Work、Codex 与 dots；ChatGPT for Healthcare 和 ChatGPT for Financial Services 也可经此采购。OpenAI 同时重申每周超过 12 亿人使用 ChatGPT，并把这次上架定位为对 Amazon Bedrock 上 OpenAI 模型的补充：开发者在 Bedrock 上建应用，业务团队用 ChatGPT Enterprise。对采购流程长的大企业，这是把「买 AI」塞进已有云合同的又一步。</p>
+  <div class="meta">11月9日 · OpenAI · <a href="https://openai.com/index/chatgpt-enterprise-aws-marketplace" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>英伟达董事会就黄仁勋与涉嫌情报人员的关系启动独立调查</h3>
+  <p>英伟达董事会 11 月上旬发表声明，在有报道称首席执行官黄仁勋成为外国情报行动目标后，启动由独立董事组成的委员会、并由外部律师协助的独立调查。据《纽约时报》等报道，黄仁勋与 Megaspeed 高管 Alice Huang 关系密切（他后来称是恋爱关系），美国官员认为后者曾向北京传递信息；Megaspeed 是英伟达客户，也是美国商务部芯片走私调查的对象。董事会称目前没有理由认为国家安全或英伟达机密受到损害，黄仁勋支持并配合调查；三位众议院共和党委员会主席已要求他在 11 月 18 日（财报次日）向国会说明。这件事把 AI 算力最核心的供应商放在国家安全审查与公司治理的交叉口上。</p>
+  <div class="meta">11月8–9日 · NVIDIA Newsroom / The Verge · <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>DeepSeek Harness 首次披露日活：上线不到三个月约 154 万</h3>
+  <p>据彭博与第一财经环球报道，DeepSeek 的开源智能体平台 DeepSeek Harness 首次公布使用数据：截至 11 月 4 日日活跃用户约 154 万，距 8 月 13 日上线不到三个月；口径为通过 DeepSeek 官方 API 与服务器接入的用户。这是 DeepSeek 从「只发模型」走向「自己运营智能体平台」后的第一个硬数字，也和昨日 Menlo 测算的「美国企业开源支出大头流向中国模型」放在一起看：份额在涨，平台层也开始自己接用户。</p>
+  <div class="meta">11月9日 · Bloomberg / Yicai Global · <a href="https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>微软 AI Frontiers 研究组解散：John Langford 离职并称「研究没有通往产品的路」</h3>
+  <p>知名机器学习研究者 John Langford 在个人博客宣布离开微软，并称约 50 人的 AI Frontiers 研究组已经结束。该组 2023 年由他创立，做过 AutoGen 智能体框架与 Fara 电脑操作智能体，今年 9 月从微软研究院并入 Microsoft AI。Langford 写道，来自 Inflection 的 Microsoft AI 领导层专注于「扩大规模，而且激进地不做研究」，团队的创新无法落地，其他创始负责人似乎也得出了类似结论；该组明年也不再招实习生。这是大厂在产品与规模化压力下收缩开放式研究的又一例。</p>
+  <div class="meta">11月上旬 · hunch.net（Machine Learning (Theory)） · <a href="https://hunch.net/?p=13764006" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>猫王与 Eminem 版权方分别起诉 Suno：声音肖像法第一次被拿来对付 AI 音乐</h3>
+  <p>猫王的音乐权利方与 Eminem 作品出版方 Eight Mile Style 已在北加州联邦法院分别起诉 AI 音乐生成公司 Suno。猫王一方除版权侵权外，还援引田纳西州 2024 年的 ELVIS Act——该法禁止未经许可克隆歌手声音；Eight Mile Style 称 Suno 生成的歌曲与歌词与 Eminem 作品高度相似（Eminem 本人不是原告）。Suno 回应称公司是帮助人们创作原创音乐，不利用任何人的姓名或肖像。Suno 今年 6 月以 54 亿美元估值融资 4 亿美元。案件看点在于：版权诉讼没能挡住的「像某位歌手」，声音肖像法能不能挡住。</p>
+  <div class="meta">11月6日起诉 / 11月9日报道 · The Verge / Variety · <a href="https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Automattic 推出 Spacefast：给「氛围编程」做出来的应用一个上线的地方</h3>
+  <p>WordPress.com 母公司 Automattic 11 月 9 日推出 Spacefast，面向用 ChatGPT、Claude、Cursor 等 AI 工具做出来的网站与应用，提供托管、数据库、登录认证、文件上传、邮件、分析与可回滚的版本管理，也支持从 Git 仓库部署。思路是不绑定某一家聊天机器人：不管应用是哪个 AI 写的，都可以放到同一个地方上线和维护。这与上周 Cursor 让生成应用直接上线是同一方向——竞争正在从「能不能写出来」挪到「写出来以后放在哪、谁来维护」。</p>
+  <div class="meta">11月9日 · TechCrunch · <a href="https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div></section>
+
+<section id="sec-papers">
+  <h2>📄 前沿论文<span class="count">7 篇</span></h2>
+<div class="card">
+  <h3>Co-Design Bench：真实用户的多模态改版请求，智能体逐条做到七成、整题做完只有约四分之一<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models</span></h3>
+  <div class="paper-authors">Xilin Wei, Shengyuan Ding, Xinyu Fang, …, Dahua Lin, Hang Zhang, Shuai Bai, Dayiheng Liu</div>
+  <p>复旦、阿里 Token Hub、港中文等团队从 26314 个真实编码会话、37463 条去重请求中整理出 273 个任务，配 2331 条专家撰写的隐藏验收标准，分「多模态编辑」（可附图片、音频、视频、文档）与「仓库编辑」两条赛道。评判采用「先判后驳」：先用源码与浏览器证据给每条标准打分，再由另一个大模型专门挑战通过的判定。统一智能体框架下，十个模型端点里最强的逐条平均满足约 69.9% 的标准，但完整做完的任务只有 26.4%；涉及三到四类改动的仓库任务，所有端点都明显更差。11 月 9 日起被多家媒体作为「旧基准已饱和、真实任务仍需人工收尾」的证据引用。</p>
+  <div class="meta">作者：Xilin Wei, Shengyuan Ding, Xinyu Fang, …, Dahua Lin, Hang Zhang, Shuai Bai, Dayiheng Liu · <a href="https://arxiv.org/abs/2610.35138" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>我思故我攻：对推理型智能体的「思维注入」攻击<br><span style="font-size:12.5px;font-weight:500;color:#64748b">I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents</span></h3>
+  <div class="paper-authors">Parth Illendula, Garik Livingston, Zain Shamsi, Ravi Srinivasan, Alex Liu</div>
+  <p>推理模型会把自己的思维链喂回上下文，这就多了一个攻击面：把一段长得像模型自己内心独白的不可信文本塞进去。作者先在 GLM-5.3、MiniMax-M2.5、Qwen3.8-Flash-Next 等开放权重模型上测静态注入，发现思维标签与载荷风格的效果都因模型而异；再在容器化的智能体网络靶场里，用模仿目标模型自身推理风格的间接注入，在反弹 shell 外泄、给仓库植后门等目标上拿到最高约 50% 的攻击成功率。同样的恶意目标若用普通「用户口吻」注入则一次都没成功；带思维标签还会压低智能体主动披露被注入的倾向。结论：模仿模型自己的想法有效，靠剥离标签来防并不可靠。</p>
+  <div class="meta">作者：Parth Illendula, Garik Livingston, Zain Shamsi, Ravi Srinivasan, Alex Liu · <a href="https://arxiv.org/abs/2611.08811" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>「尽管有任何相反规定，忽略所有指令」：提示注入防护在法律合同上的误报<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks</span></h3>
+  <div class="paper-authors">Mark Heimann, Katherine Taylor, Bruno Jacob</div>
+  <p>文档分析系统前面常挂专门的提示注入防护模型，但此前没人公布它们在法律合同上的误报率。作者在两个合同语料上测了 11 个开放权重防护模型：文档级误报率最高达 92.39%，有两个在成对 AUC 上低于随机，一个只有五条正则的基线也没有被任何防护模型全面压过。直接提示大模型能解决测到的这些失败，包括所有防护模型都得零分的「未授权范围声明」这一类威胁；用中档模型初筛、前沿模型复核阳性的级联方案，成本约为全用前沿模型的 1/6.5 且接近其效果。</p>
+  <div class="meta">作者：Mark Heimann, Katherine Taylor, Bruno Jacob · <a href="https://arxiv.org/abs/2611.08834" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>Flex-RSI：给前沿智能体的「递归自改进」做基准<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents</span></h3>
+  <div class="paper-authors">Jingdong Zhang, Jionghao Wang, Zhengming Yu, …, Wojciech Matusik, Zhengzhong Tu, Wenping Wang</div>
+  <p>智能体表现不只取决于模型，也取决于它的「外壳」——提示、工具、记忆与控制循环。Flex-RSI 在固定预算下考察智能体能否利用任务反馈改进自己的工作方式：每轮先由执行者改进解答（只有在留出验证集上更好才保留），再由改进者修改外壳，包括执行者和它自己；所有运行从同一个通用外壳出发，最终在隐藏测试集上打分。任务覆盖感知、推理、机器人动作、三维重建、视觉创作与基础设施。发现：智能体自己从头构建解答时自改进收益最大；只给成功/失败的反馈会拖住开放权重模型；在需要通过严格物理稳定性或精确正确性检查的任务上，开放权重模型落后最多。配对实验表明，改外壳本身确实贡献了增益。</p>
+  <div class="meta">作者：Jingdong Zhang, Jionghao Wang, Zhengming Yu, …, Wojciech Matusik, Zhengzhong Tu, Wenping Wang · <a href="https://arxiv.org/abs/2611.08946" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>决策上下文：让智能体跨会话记住「被纠正过的做法」<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Decision Context: Persistent Behavioral Learning for AI Agents</span></h3>
+  <div class="paper-authors">Nima Vahdat, Pashootan Vaezipoor</div>
+  <p>现有智能体记忆主要存事实（偏好、实体、历史），很少存「程序性知识」——用户每次开新对话都要再纠正一遍同样的错误。forge_dc 从人类纠正与智能体自评的工具调用失败中提取行为信号，编译成祈使式的 RULE 指令，并只在适用的决策点注入。作者构建了 71 个场景、9 个行为维度的 DC-Bench（来自真实执行轨迹、在确定性模拟工具环境中运行），forge_dc 达到 95% 的合规率（朴素检索为 55%），每次查询注入的 token 约少 10 倍。结论是：表示（写成显式指令）、激活与放置位置是持久行为学习的三项核心设计。和昨日 Memory Trap 放在一起看：规则写得准能省事，写宽了会越界。</p>
+  <div class="meta">作者：Nima Vahdat, Pashootan Vaezipoor · <a href="https://arxiv.org/abs/2611.08644" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>取消请求还不够：重试在过载的 LLM 引擎里留下了什么<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Cancellation Is Not Enough: What Retries Leave Behind in an Overloaded LLM Engine</span></h3>
+  <div class="paper-authors">Xindan Zhang, Fei Wang</div>
+  <p>LLM 引擎前面的客户端和代理会对超时请求重试；一次短暂过载之后，即使到达速率已低于容量，重试也可能让引擎迟迟恢复不了。作者在 vLLM 上用三个开放模型做过载实验并追踪调度器：开启重试时，仅靠传播取消在所有运行中都没能恢复服务，过载后到达的请求只有 12–38% 被送达；被 vLLM 运行的重试通常在超时前不到半秒才开始 prefill，后来被中止的执行吃掉了 79–85% 的已计算提示 token，而 vLLM 的提示 token 计数器漏记了三分之一到一半。重试预算能恢复服务但会丢掉大量请求；请求合并则能把过载以来的请求全部送达（部分迟到）。结论：评估过载控制要看重试新增了多少执行、客户端最终收到了多少。</p>
+  <div class="meta">作者：Xindan Zhang, Fei Wang · <a href="https://arxiv.org/abs/2611.08684" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>NormGym：智能体能不能在陌生社群里「学会规矩」<br><span style="font-size:12.5px;font-weight:500;color:#64748b">NormGym: Evaluating Normative Competence through Social Interaction</span></h3>
+  <div class="paper-authors">Binze Li, Zihuan Zhang, Seokhyun Baek, Gillian K. Hadfield, Tianmin Shu</div>
+  <p>现有评测多半在考智能体能否识别或执行它本来就知道的规范，而 NormGym 让一个「新来者」在多智能体社区里一边完成自己的任务、一边推断一条隐藏且任意的规范：要区分「能做」与「被允许做」，从别人的行为与受到的惩罚里推出规则，并在新情境中应用。最强的大模型在「任务完成且守规」上的联合成功率只有 55.3%。分析发现，模型有时能在自己挨罚后修正行为，但很难利用其他智能体的行为及其受罚来推断规则；微调也未必能提升这项能力。</p>
+  <div class="meta">作者：Binze Li, Zihuan Zhang, Seokhyun Baek, Gillian K. Hadfield, Tianmin Shu · <a href="https://arxiv.org/abs/2611.08613" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div></section>
+
+<section id="sec-models">
+  <h2>🤖 模型动态<span class="count">6 条</span></h2>
+<div class="card">
+  <h3>Claude Fable 5.2 / Claude Mythos 5.2<span class="tag tag-new">Anthropic</span></h3>
+  <p>同一底座的两个发放版本，11 月 9 日上线。API ID 为 claude-fable-5-2 / claude-mythos-5-2；上下文 100 万 token、最长输出 128K，自适应思考常开、用 effort 参数控深度；标价每百万 token 入 8 美元、出 40 美元，快速模式 16/80 美元。Fable 已在 Claude API、Amazon Bedrock、Google Cloud、Microsoft Foundry 全量提供；Mythos 需通过网络安全或生命科学验证计划。迁移注意：旧版 computer_20251124 电脑操作工具除 Bedrock 外都会报错，前缀检查对所有账号生效。主榜 AA 分以 Artificial Analysis 后续公布为准。</p>
+  <div class="meta">Anthropic · <a href="https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>Muse Ember（muse-ember-1.0）<span class="tag tag-new">Meta</span></h3>
+  <p>Muse 家族第四款、体量最小的模型，继 Spark（4 月）、开放权重的 Glimmer（8 月）与旗舰 Wonder（10 月）之后推出。标价入 0.10 / 出 0.50 美元每百万 token、缓存输入 0.004 美元；1M 上下文、最长 512K 输出；原生多模态，支持 Responses API。Meta 自报最高推理档：AutomationBench-AA 37.8%、Terminal-Bench 4.0 40.9%、OSWorld 2.1 部分得分 69.5%，但 FrontierCode 2.0-AA 27.2% 低于 Claude Haiku 5.5 的 34.9%。</p>
+  <div class="meta">Meta · <a href="https://dev.meta.ai/models/muse-ember" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>LongCat-2.5（开源）<span class="tag tag-new">美团</span></h3>
+  <p>美团龙猫 11 月 2 日发布、11 月 9 日宣布开源的原生多模态模型，MIT 协议，可商用推理与二次训练。总参数约 1.6 万亿、每 token 激活约 480 亿，支持 100 万上下文；视觉信号经残差向量量化变成多层级离散 token，与文本共用同一主干；推理采用 W4A4（专家权重与激活都量化到 4 bit），并针对显存与带宽受限的国产芯片做了适配。性能数字以官方技术博客为准。</p>
+  <div class="meta">美团 · <a href="https://huggingface.co/meituan-longcat/LongCat-2.5" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>Arete-27B<span class="tag tag-new">Nous Research</span></h3>
+  <p>基于 Qwen3.8-27B 仅做监督微调（无强化学习、无偏好优化），以 Inkling 为教师，目标是改掉原模型在政治敏感话题上的拒答、回避与特定立场表述。Nous 自评：事实分从 2.32 升到 2.98（满分 5），含宣传内容的回答从 22% 降到 0.9%，在其所测的通用与智能体基准上无明显退化。Apache 2.0，正在 Hugging Face 趋势榜上。评测为 Nous 自建。</p>
+  <div class="meta">Nous Research · <a href="https://huggingface.co/NousResearch/Arete-27B" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>Idol（单图转 3D 高斯）<span class="tag tag-new">Sperid Labs</span></h3>
+  <p>趋势榜前列的图生 3D 模型：输入一张物体照片、渲染图或生成图，自动去背景、取景，输出最多 1048576 个三维高斯（标准 3DGS .ply），包括原图看不到的侧面。官方称在消费级显卡上约占 7.2GB 显存、可在 2 秒内完成；Apache 2.0，附 SDK 与在线 Demo。</p>
+  <div class="meta">Sperid Labs · <a href="https://huggingface.co/speridlabs/idol" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>Qwen3.8-27B 社区衍生继续霸榜<span class="tag tag-new">Alibaba / 社区</span></h3>
+  <p>本轮 Hugging Face 趋势榜上 Qwen3.8-27B 本体（likes 约 1.9 万）与其 GGUF、Flash-Next 量化版、各类社区微调仍占多席，Arete-27B 也是以它为底座；今日论文区 Co-Design Bench 的报道中 Qwen3.8-27B 在不同环境下大改版得分 75% 或 56%，说明同一开放权重换外壳差别很大。数字以本轮观测为准。</p>
+  <div class="meta">Alibaba / 社区 · <a href="https://huggingface.co/Qwen/Qwen3.8-27B" target="_blank" rel="noopener">详情 ↗</a></div>
+</div></section>
+
+<section id="sec-ecosystem">
+  <h2>🧩 Agent / Skill 生态<span class="count">5 条</span></h2>
+<div class="card">
+  <h3>OpenAI dots 支持连接多台本地电脑：一个 dot 自己选哪台机器干活</h3>
+  <p>OpenAI 开发者账号 11 月 9 日宣布，同一个 dot 现在可以连接多台本地电脑，并按任务选择用哪一台：例如在专用机器上构建和测试应用，开发者继续在笔记本上写代码。ChatGPT 帮助文档同步更新了「连接电脑与应用」的说明。这让常驻智能体从「云端加一个本地落脚点」变成能在开发者整张桌子上调度的协调者，适合依赖特定本地工具链、SDK 版本或桌面应用的构建、测试与 QA 工作。</p>
+  <div class="meta">OpenAI Developers / RuntimeWire · <a href="https://runtimewire.com/article/openai-dots-multiple-local-computers" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Claude Security 接入 Mythos 5.2，并能持续盯仓库</h3>
+  <p>随 5.2 发布，Anthropic 称 Claude Enterprise 客户即使不在网络安全验证计划里，也能通过 Claude Security 使用包括 Mythos 5.2 在内的模型扫描代码库漏洞；近期更新让它可以随代码更新持续监看仓库、追踪发现直到修复、吸收额外上下文，并通过 API 与 MCP 连到用户自己的工具。另推 Enterprise Frontier Safeguards 私测：把跨请求的安全监控放在客户自己的基础设施里运行，以兼容零数据留存。</p>
+  <div class="meta">Anthropic · <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Nous 为 Hermes Agent 推出官方 Security 插件：先在临时副本里复现，再报漏洞</h3>
+  <p>Nous Research 为开源智能体 Hermes Agent 上线官方 Security 插件，可从聊天、CLI 或 Hermes Desktop 发起代码库安全审查。它先画出攻击者可达路径与受信任输入，再把代码拆给并行子智能体逐项核对可利用性；开启测试确认后，会在仓库的临时副本里写并运行小型复现程序，最终报告同时记录验证证据和被排除的候选项，并可导出 SARIF 接入现有工具链。思路与 Claude Security、OpenAI Daybreak 一致：用「复现」去掉静态扫描的噪音。</p>
+  <div class="meta">HiFox 汇编 / Nous Research · <a href="https://hifox.com/blog/ai-news-2026-11-09/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Vercel 把 json-render 接进 Chat SDK：聊天里的智能体直接流式生成可点的界面</h3>
+  <p>Vercel 宣布将 json-render 与 Chat SDK、AI SDK 结合，开发者可以在 Slack、Microsoft Teams 等平台上，把模型输出直接流式渲染成卡片、表格和按钮等生成式界面，而不只是多轮纯文本。查询营收拆解、工单状态或部署进度时，智能体输出受控的 JSON 结构即可变成可操作的界面；渲染仍受所在聊天平台的组件规范与权限约束。</p>
+  <div class="meta">HiFox 汇编 / Vercel · <a href="https://hifox.com/blog/ai-news-2026-11-09/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenCode Browse：编码智能体进到你的浏览器标签页里干活</h3>
+  <p>The Neuron 11 月 9 日推荐的新工具：OpenCode Browse 让 AI 编码智能体在用户自己的浏览器标签页和扩展里操作，登录、付款等敏感步骤仍由人来做。和上周发布的 OpenCode 2.2.6 共享 MCP 连接放在一起，这家编码智能体在一周内同时补了「连接复用」与「浏览器现场」两块。</p>
+  <div class="meta">The Neuron · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-9-2026/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div></section>
+
+<footer>由运营 · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+<!-- /digest-ui2:js -->
+
+</body>
+</html>
