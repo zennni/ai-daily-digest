@@ -1388,6 +1388,28 @@
    "rank": 63
   },
   {
+   "name": "Agnes 2.5 Pro Theta",
+   "vendor": "Sapiens AI",
+   "country": "新加坡",
+   "tier": "默认",
+   "aa": 24,
+   "aa_dec": 24.0,
+   "pin": 0.45,
+   "pcache": 0.045,
+   "pout": 0.9,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA Changelog 11-08 与模型页公布 Intelligence Index v5.0.1 独立分 24（原始 24.03）</b>；<b>新加坡 Sapiens AI / Agnes AI 官方 API，型号 <code>agnes-2.5-pro-theta</code>，定价输入 $0.45 / 输出 $0.90 / 缓存命中 $0.045（输入价的 10%），标价与试用价相同、无额外折扣</b>；1M 上下文，文本+图像输入、文本输出，推理版；闭源专有；可用性取决于账号与 API key；AA 记单任务成本 $2.46。<b>同系 Beta 在 v5.0.1 仍为 Unknown，3.0 Pro 官方标 Coming soon，均不入主榜</b>。",
+   "cost": 0.675,
+   "ability": 40.0,
+   "costscore": 65.90295333497001,
+   "value": 50,
+   "eff": 35.6,
+   "grade": "C",
+   "rank": 64
+  },
+  {
    "name": "GPT-6 Luna",
    "vendor": "OpenAI",
    "country": "美国",
@@ -1407,7 +1429,7 @@
    "value": 58,
    "eff": 102.2,
    "grade": "C",
-   "rank": 64
+   "rank": 65
   },
   {
    "name": "Mistral Large 4",
@@ -1429,7 +1451,7 @@
    "value": 45,
    "eff": 18.8,
    "grade": "D",
-   "rank": 65
+   "rank": 66
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1451,7 +1473,7 @@
    "value": 40,
    "eff": 9.8,
    "grade": "D",
-   "rank": 66
+   "rank": 67
   },
   {
    "name": "GLM-5.3",
@@ -1473,7 +1495,7 @@
    "value": 39,
    "eff": 9.2,
    "grade": "D",
-   "rank": 67
+   "rank": 68
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1495,7 +1517,7 @@
    "value": 42,
    "eff": 13.6,
    "grade": "D",
-   "rank": 68
+   "rank": 69
   },
   {
    "name": "GPT-6 Luna",
@@ -1517,7 +1539,7 @@
    "value": 56,
    "eff": 93.3,
    "grade": "C",
-   "rank": 69
+   "rank": 70
   },
   {
    "name": "Nanbeige4.3-33B",
@@ -1539,7 +1561,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 70
+   "rank": 71
   },
   {
    "name": "Qwen3.8 27B",
@@ -1561,7 +1583,7 @@
    "value": 42,
    "eff": 16.0,
    "grade": "D",
-   "rank": 71
+   "rank": 72
   },
   {
    "name": "MiniMax M3",
@@ -1583,7 +1605,7 @@
    "value": 46,
    "eff": 31.7,
    "grade": "D",
-   "rank": 72
+   "rank": 73
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1605,7 +1627,7 @@
    "value": 54,
    "eff": 84.4,
    "grade": "C",
-   "rank": 73
+   "rank": 74
   },
   {
    "name": "GPT-6 Luna",
@@ -1627,7 +1649,7 @@
    "value": 53,
    "eff": 80.0,
    "grade": "C",
-   "rank": 74
+   "rank": 75
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1649,7 +1671,7 @@
    "value": 46,
    "eff": 31.9,
    "grade": "D",
-   "rank": 75
+   "rank": 76
   },
   {
    "name": "K2 Horizon 375B-A23B",
@@ -1671,7 +1693,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 76
+   "rank": 77
   },
   {
    "name": "Beam 1.0",
@@ -1693,7 +1715,7 @@
    "value": 44,
    "eff": 25.7,
    "grade": "D",
-   "rank": 77
+   "rank": 78
   },
   {
    "name": "Qwen3.8 27B",
@@ -1715,7 +1737,7 @@
    "value": 39,
    "eff": 13.6,
    "grade": "D",
-   "rank": 78
+   "rank": 79
   },
   {
    "name": "Qwen3.8 27B",
@@ -1737,7 +1759,7 @@
    "value": 38,
    "eff": 12.8,
    "grade": "D",
-   "rank": 79
+   "rank": 80
   },
   {
    "name": "Nemotron 3.5 Super VL",
@@ -1759,7 +1781,7 @@
    "value": 46,
    "eff": 43.1,
    "grade": "D",
-   "rank": 80
+   "rank": 81
   },
   {
    "name": "Inkling Small",
@@ -1781,7 +1803,7 @@
    "value": 40,
    "eff": 21.7,
    "grade": "D",
-   "rank": 81
+   "rank": 82
   },
   {
    "name": "Inkling",
@@ -1803,7 +1825,7 @@
    "value": 30,
    "eff": 6.0,
    "grade": "D",
-   "rank": 82
+   "rank": 83
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -1825,7 +1847,7 @@
    "value": 34,
    "eff": 9.4,
    "grade": "D",
-   "rank": 83
+   "rank": 84
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -1847,7 +1869,7 @@
    "value": 36,
    "eff": 13.0,
    "grade": "D",
-   "rank": 84
+   "rank": 85
   },
   {
    "name": "Qwen3.8 27B",
@@ -1869,7 +1891,7 @@
    "value": 32,
    "eff": 8.0,
    "grade": "D",
-   "rank": 85
+   "rank": 86
   },
   {
    "name": "GPT-6 Luna",
@@ -1891,7 +1913,7 @@
    "value": 45,
    "eff": 44.4,
    "grade": "D",
-   "rank": 86
+   "rank": 87
   },
   {
    "name": "GPT-6 Luna",
@@ -1913,7 +1935,7 @@
    "value": 44,
    "eff": 40.0,
    "grade": "D",
-   "rank": 87
+   "rank": 88
   },
   {
    "name": "Muse Glimmer",
@@ -1935,7 +1957,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 88
+   "rank": 89
   },
   {
    "name": "Command A+",
@@ -1957,7 +1979,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 89
+   "rank": 90
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -1979,7 +2001,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 90
+   "rank": 91
   },
   {
    "name": "Granite 4.2 8B",
@@ -2001,7 +2023,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 91
+   "rank": 92
   },
   {
    "name": "Granite 4.2 3B",
@@ -2023,7 +2045,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 92
+   "rank": 93
   },
   {
    "name": "Mistral Small 4",
@@ -2045,7 +2067,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 93
+   "rank": 94
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2067,7 +2089,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 94
+   "rank": 95
   }
  ],
  "changes": [
@@ -2130,6 +2152,14 @@
     "Hy4"
    ],
    "s": "<b>① 智谱与中国移动 11-09 签署全面合作协议，GLM 系列接入移动云 MaaS 平台，覆盖国产算力供给到商业化分发全链条</b>；<b>② Anthropic 以约 34 亿美元直接接手供应商向卡特彼勒订购的重型发电机组、自建 1.7GW 发电能力，创 AI 企业单笔发电设备采购纪录；OpenAI 110 亿美元首笔融资到账、投前估值 1.25 万亿美元</b>——<b>算力竞赛正转向能源与资本成本，这是长期单价的底层变量，但不改变本期任何报价</b>；<b>③ Meta 收购多 Agent 编排初创 Conductor（Cloud 版 11-13 转只读、11-20 关停），并为 Muse 智能体推出 Spaces 协作空间</b>；<b>④ METR 报告称「AI 正在加速 AI 自身研发」，Wired 报道称 DeepSeek 与 GLM 在模拟入侵测试中已接近 OpenAI 受限网安模型</b>——<b>四条均属生态与治理信号，不改动任何模型的分数、许可与价格</b>。"
+  },
+  {
+   "d": "11-09",
+   "t": "新增 Agnes 2.5 Pro Theta：AA v5.0.1 独立分 24，官方 API $0.45/$0.90",
+   "m": [
+    "Agnes 2.5 Pro Theta"
+   ],
+   "s": "<b>AA Changelog 11-08 与模型页公布 Agnes 2.5 Pro Theta 的 Intelligence Index v5.0.1 分 24（原始 24.03）</b>。<b>新加坡 Sapiens AI / Agnes AI 官方价：输入 $0.45、输出 $0.90、缓存命中 $0.045（输入价 10%），标价与试用价相同、无额外折扣</b>。<b>推理模型，1M 上下文，文本+图像输入、文本输出；闭源专有；官方 API 型号 agnes-2.5-pro-theta（apihub.agnes-ai.com），可用性取决于账号与 API key</b>。<b>同系 Beta 在 v5.0.1 仍为 Unknown，3.0 Pro 官方标 Coming soon，均不入主榜</b>。主榜由 94 条增至 95 条，插入第 64 名（Haiku 5.5 Medium 的 24.6 分之后、GPT-6 Luna xHigh 的 23.5 分之前）。"
   }
  ],
  "aa_index_version": "v5.0.1"
