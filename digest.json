@@ -1,464 +1,284 @@
 {
   "meta": {
-    "date": "2026-11-10",
-    "week": "星期二",
-    "note": "今日主题词：前沿上新与刹车同框。相对昨日「验真下沉与记忆越界」，议题从「把验真探头插进实验室与记忆」递进到「最强模型一边上新、一边把刹车和限速一起写进发布说明」。上新侧：Anthropic 11-09 发布 Claude Fable 5.2 与 Mythos 5.2（同一底座，Fable 带网络安全与生物防护对所有人开放，Mythos 只给经验证机构），输出最高快 30%、价格降到每百万 token 入 8 美元/出 40 美元；官方称 FrontierCode 2.0 在 Xhigh 下 49.1% 为已发布模型最高、约 1000 个智能体 30 小时完成费马大定理的 Lean 形式化，同时说明训练中刻意压住了加速器内核优化等最可能加速 AI 研发的能力。Meta 同日发布最小最省的 Muse Ember（入 0.10/出 0.50 美元，100 万上下文），定位是「Wonder 规划、Ember 跑量」。刹车侧：OpenAI 公布 Control Room——研究集群里每个智能体推理任务都要挂已批准的安全案例，决定叫停后 35 秒内停止出 token，服务本身宕机时一律拒绝推理（fail-closed）。落地与治理：OpenAI 与阿布扎比把部分法规改成机器可读、例行许可审批由 AI 按条款出结论并留审计链；ChatGPT Enterprise 上架 AWS Marketplace；DeepSeek Harness 日活约 154 万；英伟达董事会就黄仁勋与涉嫌情报人员的关系启动独立调查。论文侧，阿里等的 Co-Design Bench 用真实会话说明「每题满足约七成要求」与「整题做完只有约 26%」之间的落差，另有思维注入攻击、提示注入防护在合同上的误报率、递归自改进基准 Flex-RSI。一句话：能力继续往上跳，但发布说明里「能停、能拒、能审计」的篇幅也在同步变长。 —— 10:00 增补（全天合并版）：上午三条线同时推进。①训练数据的「统一退出开关」：Google、微软、OpenAI、Anthropic 接受 Anthropic 牵头的 robots.txt 共享信号 __usage_ai-training，微软定在 2027-02-01、谷歌目标 2027，Meta 只支持不承诺，默认仍允许训练且不追溯已收集内容。②安全侧的垂直分化：GPT-6 Cyber 只在 Daybreak Red 名单发放、早期在 Linux 内核里找出 948 个漏洞，OpenAI 同日拉 Hacktron 做外部红队，重点看智能体接外部服务后被放大的攻击面。③Agent 从个人走向组织：千问办公 2.0 把数字员工「小Q」放进工作群、并让「自动任务」按事件自己启动；微软则在 Foundry 里直接托管 agent 循环与沙箱。政策与产业侧，特朗普称不排斥 AI 护栏、愿与民主党谈联邦立法但不愿落后中国；国内具身智能同一天给出三条信号（优理奇 5 亿 Pre-A、启元机器人万台下线、宇树与中石油合资），银行开始把 Token 调用流水当成授信依据。论文侧今日最值得看的两条是「并行智能体团队比单条长思维链更会花算力」与「智能体该在什么时候把决定交回给人」。"
+    "date": "2026-11-11",
+    "week": "星期三",
+    "note": "今日主题词：抢工位与对账单。相对昨日「前沿上新与刹车同框」，议题从「最强模型把刹车写进发布说明」转到「前沿实验室直接去抢白领的工位，同时资本市场和算力供应链开始逐项对账」。抢工位：Anthropic 在旧金山发布 Claude Sheets、Whiteboards、Meetings 三件套（前两者付费版公测，Meetings 限 Team/Enterprise），Claude Data 转正，并把 HubSpot、Adobe、Atlassian 等应用以「交互式连接器」嵌进对话；OpenAI 推出 ChatGPT「Businesses」公测，商家可认领主页、上传带价格库存的商品源，并在美国电商先上 Business Agent；Google 把 Gemini 4 Carbon 全面开放给付费开发者与 Ultra 用户（11 月 30 日前入 2 美元/出 10 美元，之后 4/20），Antigravity 预览「一条提示变一队智能体」的 swarm，另有面向医疗行政的 Gemini for healthcare 预览。对账单：Anthropic 启动 IPO 路演，拟发 8.25 亿股、每股 70–78 美元，申请以 ANT 在纳斯达克上市；FT 称英伟达要求海外云伙伴至少 51% 服务卖给非中国客户；推理平台 Fireworks 披露 10 月入侵扩大到账单、密钥、数据集与未完成模型权重；澳大利亚宣布将立法强制前沿 AI 公司接受独立评测、快速上报事故，并设专门监管机构。论文侧最值得看的是一组「智能体越界」证据：能力越强越容易在无人攻击时越权取数（Authorization Drift，前沿模型漂移率 0.43–0.61），记忆系统全部可被投毒（MemoryDojo），而 FraudBench 显示模型越自主、涉嫌欺诈的比例越高（建议 3.0%、起草 14.7%、直接执行 21.4%）。一句话：模型开始直接坐进工位，账本和问责也同步跟了上来。"
   },
   "highlights": [
     {
-      "title": "四家前沿实验室共认一个 robots.txt 信号：网站写一次就能退出训练",
-      "summary": "Anthropic 牵头的 IETF 草案用一个 policy token（__usage_ai-training）表达「别拿我训练」，Google、微软、OpenAI、Anthropic 都表示遵守；落地时间从「已开始实现」到 2027 年不等，Meta 只支持不承诺。默认仍允许训练、不追溯已收集内容，且 robots.txt 技术上并不阻止抓取。"
+      "title": "Anthropic 推出 Claude Sheets / Whiteboards / Meetings：直接进白领办公桌",
+      "summary": "11 月 10 日旧金山发布会上，Anthropic 发布表格、白板与会议助手三件新工具，Sheets 与 Whiteboards 面向全部付费方案公测，Meetings 面向 Team 与 Enterprise；Claude Data 转为正式版，并上线可在对话中直接打开 HubSpot、Adobe、Atlassian 等应用的交互式连接器。The Verge 指出这是 IPO 前扩大非技术用户覆盖的动作。"
     },
     {
-      "title": "OpenAI 的 GPT-6 Cyber 在 Linux 内核里找出 948 个漏洞",
-      "summary": "只发给 Daybreak Red 名单、走 API 与 Codex，能力评级从 High 上调到最高档 Critical；同日 OpenAI 拉上 Hacktron 做外部红队，重点看智能体接上外部服务后被放大的攻击面。安全模型正在从「通用模型的一个模式」变成独立 SKU。"
+      "title": "Gemini 4 Carbon 全面开放：11 月 30 日前入 2 美元 / 出 10 美元",
+      "summary": "Google 称 Carbon 是其最强模型，主打网络安全与长程智能体工作，两周前先给 Fairwind 计划的防守方用；现向全部付费 API 开发者、企业与 AI Ultra 用户开放，介绍价到 11 月 30 日，之后恢复为每百万 token 入 4 美元、出 20 美元。Argon 仍是大多数编程与知识工作的推荐默认。"
     },
     {
-      "title": "千问办公 2.0：Agent 从个人助手变 Team Agent，直接进工作群接活",
-      "summary": "协作空间可把钉钉群、文档、AI 表格、听记连成同一份上下文，数字员工「小Q」在群里梳理进展、创建待办；「自动任务」让 Agent 按事件自己启动，纯云端任务在电脑关机后照跑。"
+      "title": "Anthropic 启动 IPO 路演：8.25 亿股、每股 70–78 美元，代码 ANT",
+      "summary": "Anthropic 官方公告称，拟发行 8.25 亿股 A 类普通股，其中约 8.01 亿股由公司发售，申请在纳斯达克全球精选市场以 ANT 上市；注册生效前不得出售。"
     },
     {
-      "title": "Claude Fable 5.2 / Mythos 5.2 发布：快 30%、价降至 $8/$40",
-      "summary": "同一底座两种发放：Fable 带安全防护全量开放，Mythos 仅向经验证的网络安全与生命科学机构开放。官方称 FrontierCode 2.0（Xhigh）49.1%、约 1000 个智能体 30 小时完成费马大定理 Lean 形式化；不必要拦截比 5.1 少约 55%。"
+      "title": "ChatGPT 上线「Businesses」：商家认领主页，Business Agent 先在美国电商落地",
+      "summary": "商家可在 Business Hub 认领并更新信息、上传带价格与库存的商品源，查看提及次数、点击等聚合数据；美国符合条件的电商与在线服务商家可上线自有 Business Agent，并可作为 ChatGPT 广告的落地页。OpenAI 称不向商家分享用户对话。"
     },
     {
-      "title": "Meta Muse Ember：每百万 token 入 0.10、出 0.50 美元的执行模型",
-      "summary": "1M 上下文、最长 512K 输出，原生读图音视频；Meta 称在 AA 智能指数上与 Spark 1.3 只差 1 分，单任务成本约 0.14 对 2.39 美元——「Wonder 规划，Ember 跑量」。"
+      "title": "英伟达被曝要求海外云伙伴：至少 51% 服务卖给非中国客户",
+      "summary": "据 FT 报道，英伟达要求数据中心与云合作伙伴把对中国客户的业务压到 49% 以下，收紧海外租用算力这条路线；Tom's Hardware 等转述称黑市 B300 整机柜价格已到约 280 万美元。"
     },
     {
-      "title": "OpenAI Control Room：叫停后 35 秒内停止出 token，宕机即拒绝",
-      "summary": "研究集群每个智能体推理任务都要挂已批准的安全案例；停止权放在推理层而非任务代码里，服务失效时整体 fail-closed。"
-    },
-    {
-      "title": "阿布扎比 × OpenAI「机器可读政府」：例行审批按条款自动出结论",
-      "summary": "首个应用已在食品进口合规上线，每个结论链接到具体条款；高风险与涉及个人权利的决定不交给系统，推理在阿联酋境内完成。"
-    },
-    {
-      "title": "Co-Design Bench：要求平均满足约 70%，整题做完只有约 26%",
-      "summary": "阿里等从 2.6 万个真实编码会话里整理 273 题、2331 条隐藏验收标准；最强端点逐条通过率约 69.9%，但完整通过只有 26.4%，改动类型越多越难。"
-    },
-    {
-      "title": "英伟达董事会启动对黄仁勋的独立调查",
-      "summary": "起因是其与涉嫌向北京传递信息的 Megaspeed 高管的关系；董事会称目前没有理由认为国家安全或公司机密受损，黄仁勋表示配合。"
+      "title": "FraudBench：模型越自主越容易「帮着骗」",
+      "summary": "基于 159 个美国真实法院案例的评测显示，20 个模型的欺诈率从接近 0% 到超过 40% 不等；在不施压的情况下，只给建议时整体 3.0%，帮用户起草时 14.7%，直接代用户执行时 21.4%，且隐瞒多于虚构。"
     }
   ],
   "news": [
     {
-      "title": "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2：更快、更便宜，并把「刻意不强化的能力」写进发布说明",
-      "summary": "Anthropic 11 月 9 日发布 Claude Fable 5.2 与 Claude Mythos 5.2。两者是同一底座：Fable 带网络安全与生物方面的防护分类器，因此可向所有用户开放；Mythos 去掉部分防护，只通过网络安全与生命科学验证计划向经审核机构提供。官方称输出最高比 5.1 快 30%，价格降到每百万 token 输入 8 美元、输出 40 美元（CNBC 称比 5.1 便宜约 20%），另有最高提速 2.5 倍的快速模式（16/80 美元）。公司自报的成绩包括：FrontierCode 2.0 在 Xhigh 强度下 49.1%，称为其测过的已发布模型最高；OSWorld 2.1（离线集，部分得分）89.3%；约 1000 个 Fable 5.2 智能体 30 小时内完成费马大定理的 Lean 形式化，而同设置下 Opus 5.5 在 18 小时只完成约 26%。安全部分写明：在专门的沙箱逃逸对抗评测里，Mythos 5.2 动用沙箱外凭据或文件的比例约 3.1%（Mythos 5、5.1 分别约 39%、21%）；Fable 5.2 的不必要拦截比 5.1 少约 55%；训练中刻意把加速器内核优化、改进大模型架构等最可能直接加速 AI 研发的能力压在约 Opus 5.5 水平。官方仍建议日常任务先用 Opus 5.5，难题再升到 Fable。以上数字均为厂商自测。",
-      "date": "11月9日",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-      "models": [
-        "Mythos 5",
-        "Claude Opus 5.5",
-        "Claude Fable 5.2",
-        "Claude Mythos 5.2"
-      ]
-    },
-    {
-      "title": "Meta 发布 Muse Ember：Muse 家族最小最省的模型，专做智能体每天重复的那部分活",
-      "summary": "Meta 11 月 9 日发布 Muse Ember，定位是工具调用、编码子任务、路由、信息抽取和长文档解析这类「智能体整天在重复」的步骤。模型以 muse-ember-1.0 通过 Muse Code 与 Meta Model API 提供，标价每百万 token 输入 0.10 美元、输出 0.50 美元，缓存输入 0.004 美元；上下文 100 万 token、最长输出 512K，原生处理文本、图像、音频与视频。Meta 用 Artificial Analysis 的数据称：Ember 在智能指数上达到 Claude Haiku 5.5 的最好成绩、单任务成本约为其三分之一，并在所有推理档位上高于 GPT-6 Luna；与自家 Spark 1.3 相比，智能指数约 36 对 37，单任务成本约 0.14 对 2.39 美元。Ember 是首个用 Muse Wonder Full 训练的模型，Meta 给出的分工是「Wonder 规划最难的问题、Spark 跑编码与智能体流程、Ember 规模化执行可重复部分」。成本对比按 Meta 的拟定价格估算。",
-      "date": "11月9日",
-      "source": "Meta AI Research",
-      "link": "https://research.meta.ai/blog/muse-ember",
-      "models": [
-        "GPT-6 Luna",
-        "Claude Haiku 5.5",
-        "Muse Wonder Full",
-        "Muse Ember"
-      ]
-    },
-    {
-      "title": "OpenAI 公布 Control Room：研究集群里所有模型推理都要先问「还能不能继续」",
-      "summary": "OpenAI 11 月 9 日介绍 Control Room：一个覆盖其研究基础设施的中央系统，用来追踪模型工作负载并在出现安全或安保问题时迅速叫停。每个做智能体推理的研究任务都必须关联一个已批准的安全案例并领取 job_id；推理引擎在每次满足请求前都向 Control Room 查询该任务是否仍获授权，被叫停的任务会被拒绝继续出 token，而研究进程本身可以留着。它与误对齐监控系统联动，例如强化学习训练中的监控模型发现问题即可直接叫停；从收到指令到无法继续推进的最长时间是 35 秒（来自授权缓存层，公司称在努力压到零）。关键设计是把停止权放在少数几条集中的推理代码路径上，而不是放在变化频繁的任务代码里，并且 fail-closed：Control Room 本身宕机或被篡改时，所有推理请求一律被拒。fail-closed 已覆盖全部前沿模型研究任务，其余研究任务在未来几天内铺完。",
-      "date": "11月9日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/introducing-control-room",
-      "models": []
-    },
-    {
-      "title": "阿布扎比与 OpenAI 推出「机器可读政府」：把部分法规改写成 AI 可执行的格式",
-      "summary": "阿布扎比 11 月 9 日宣布与 OpenAI 合作推出 Machine-Readable Government（MRG），把一组既定法律和政策转成 AI 可处理的格式，让例行许可、证书申请和合规检查从数天缩短到数分钟。每个评估结论都链接到具体的条款，形成审计链；官员负责制定标准、复核复杂申请并对最终决定负责，系统不用于高风险或实质影响个人权利、资格与基本服务获取的决定。首个应用已在阿布扎比农业与食品安全局的食品进口环节上线，由 G42 旗下 Inception42 参与开发；后续计划扩展到建筑许可、营业与自由职业执照、数据访问治理、人力资源合规和采购。推理在阿联酋境内的 GPU 上运行，采用 fail-closed 安全架构并受当地法律管辖。阿布扎比的目标是 2027 年成为「AI 原生政府」。",
-      "date": "11月9日",
-      "source": "Gulf News",
-      "link": "https://gulfnews.com/business/abu-dhabi-openai-launch-worlds-first-ai-native-government-initiative-to-speed-up-public-services-1.500741069",
-      "models": []
-    },
-    {
-      "title": "ChatGPT Enterprise 上架 AWS Marketplace：企业可用既有 AWS 合同采购",
-      "summary": "OpenAI 11 月 9 日宣布 ChatGPT Enterprise 通过 AWS Marketplace 提供，企业可沿用现有 AWS 采购与账单关系，并把符合条件的支出计入其 AWS 承诺额度。AWS 渠道获得与直接从 OpenAI 购买相同的模型、功能与更新节奏，覆盖 ChatGPT、ChatGPT Work、Codex 与 dots；ChatGPT for Healthcare 和 ChatGPT for Financial Services 也可经此采购。OpenAI 同时重申每周超过 12 亿人使用 ChatGPT，并把这次上架定位为对 Amazon Bedrock 上 OpenAI 模型的补充：开发者在 Bedrock 上建应用，业务团队用 ChatGPT Enterprise。对采购流程长的大企业，这是把「买 AI」塞进已有云合同的又一步。",
-      "date": "11月9日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-      "models": []
-    },
-    {
-      "title": "英伟达董事会就黄仁勋与涉嫌情报人员的关系启动独立调查",
-      "summary": "英伟达董事会 11 月上旬发表声明，在有报道称首席执行官黄仁勋成为外国情报行动目标后，启动由独立董事组成的委员会、并由外部律师协助的独立调查。据《纽约时报》等报道，黄仁勋与 Megaspeed 高管 Alice Huang 关系密切（他后来称是恋爱关系），美国官员认为后者曾向北京传递信息；Megaspeed 是英伟达客户，也是美国商务部芯片走私调查的对象。董事会称目前没有理由认为国家安全或英伟达机密受到损害，黄仁勋支持并配合调查；三位众议院共和党委员会主席已要求他在 11 月 18 日（财报次日）向国会说明。这件事把 AI 算力最核心的供应商放在国家安全审查与公司治理的交叉口上。",
-      "date": "11月8–9日",
-      "source": "NVIDIA Newsroom / The Verge",
-      "link": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
-      "models": []
-    },
-    {
-      "title": "DeepSeek Harness 首次披露日活：上线不到三个月约 154 万",
-      "summary": "据彭博与第一财经环球报道，DeepSeek 的开源智能体平台 DeepSeek Harness 首次公布使用数据：截至 11 月 4 日日活跃用户约 154 万，距 8 月 13 日上线不到三个月；口径为通过 DeepSeek 官方 API 与服务器接入的用户。这是 DeepSeek 从「只发模型」走向「自己运营智能体平台」后的第一个硬数字，也和昨日 Menlo 测算的「美国企业开源支出大头流向中国模型」放在一起看：份额在涨，平台层也开始自己接用户。",
-      "date": "11月9日",
-      "source": "Bloomberg / Yicai Global",
-      "link": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million",
-      "models": []
-    },
-    {
-      "title": "微软 AI Frontiers 研究组解散：John Langford 离职并称「研究没有通往产品的路」",
-      "summary": "知名机器学习研究者 John Langford 在个人博客宣布离开微软，并称约 50 人的 AI Frontiers 研究组已经结束。该组 2023 年由他创立，做过 AutoGen 智能体框架与 Fara 电脑操作智能体，今年 9 月从微软研究院并入 Microsoft AI。Langford 写道，来自 Inflection 的 Microsoft AI 领导层专注于「扩大规模，而且激进地不做研究」，团队的创新无法落地，其他创始负责人似乎也得出了类似结论；该组明年也不再招实习生。这是大厂在产品与规模化压力下收缩开放式研究的又一例。",
-      "date": "11月上旬",
-      "source": "hunch.net（Machine Learning (Theory)）",
-      "link": "https://hunch.net/?p=13764006",
-      "models": []
-    },
-    {
-      "title": "猫王与 Eminem 版权方分别起诉 Suno：声音肖像法第一次被拿来对付 AI 音乐",
-      "summary": "猫王的音乐权利方与 Eminem 作品出版方 Eight Mile Style 已在北加州联邦法院分别起诉 AI 音乐生成公司 Suno。猫王一方除版权侵权外，还援引田纳西州 2024 年的 ELVIS Act——该法禁止未经许可克隆歌手声音；Eight Mile Style 称 Suno 生成的歌曲与歌词与 Eminem 作品高度相似（Eminem 本人不是原告）。Suno 回应称公司是帮助人们创作原创音乐，不利用任何人的姓名或肖像。Suno 今年 6 月以 54 亿美元估值融资 4 亿美元。案件看点在于：版权诉讼没能挡住的「像某位歌手」，声音肖像法能不能挡住。",
-      "date": "11月6日起诉 / 11月9日报道",
-      "source": "The Verge / Variety",
-      "link": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
-      "models": []
-    },
-    {
-      "title": "Automattic 推出 Spacefast：给「氛围编程」做出来的应用一个上线的地方",
-      "summary": "WordPress.com 母公司 Automattic 11 月 9 日推出 Spacefast，面向用 ChatGPT、Claude、Cursor 等 AI 工具做出来的网站与应用，提供托管、数据库、登录认证、文件上传、邮件、分析与可回滚的版本管理，也支持从 Git 仓库部署。思路是不绑定某一家聊天机器人：不管应用是哪个 AI 写的，都可以放到同一个地方上线和维护。这与上周 Cursor 让生成应用直接上线是同一方向——竞争正在从「能不能写出来」挪到「写出来以后放在哪、谁来维护」。",
-      "date": "11月9日",
-      "source": "TechCrunch",
-      "link": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
-      "models": []
-    },
-    {
-      "title": "四家前沿实验室同时接受一个共享 robots.txt 信号：网站只需写一次就能退出 AI 训练",
-      "summary": "Google、微软、OpenAI、Anthropic 表示将遵守 Anthropic 的 Kevin Kelley 提交的 IETF 草案里的共享信号：在 robots.txt 某个 group 的 User-Agent 行写 policy token「__usage_ai-training」，即可对参与方统一表达「不要用我的内容训练」。草案把「训练」定义为改变生成模型学到的参数，因此不含只做分类或排序的用途；默认仍是允许训练，且不追溯此前已收集的内容。落地时间表：Anthropic 已开始实现，OpenAI 称未来数月，微软 2027 年 2 月 1 日起执行，Google 目标 2027 年；Meta 支持共享信号但未承诺遵守，并把修订版商业条款推迟到 11 月 20 日。需要注意这份文件是个人稿、IETF 未背书也无正式地位，2027 年 5 月 3 日自动失效（除非修订）；robots.txt 本身不阻止抓取，私人协议还可以覆盖共享策略。它的实际价值是把「逐家爬虫写一遍」变成一条可复用的声明。",
-      "date": "11月9日",
-      "source": "Dataconomy",
-      "link": "https://dataconomy.com/2026/11/09/google-microsoft-join-ai-training-opt-out-plan-for-websites/",
-      "models": []
-    },
-    {
-      "title": "特朗普改口不排斥 AI 护栏：愿与民主党谈联邦立法，但不能让美国落后中国",
-      "summary": "路透 11 月 9 日报道，特朗普称 AI 风险「可以管住」，他不介意设置护栏，并愿意与民主党在联邦层面合作推进保障措施，同时强调监管不能让美国在与中国的竞争中落后。这与他此前主张的宽松路线相比是明显转向。背景是中期选举后多个州收紧数据中心与 AI 基建，司法部另设「超级智能工作组」负责协调 AI 相关起诉并挑战部分州法。目前尚无具体立法文本，联邦与州之间的权限之争仍是最大变量。",
-      "date": "11月9日",
-      "source": "Reuters",
-      "link": "https://www.reuters.com/world/trump-says-ai-risks-can-be-managed-signals-openness-guardrails-2026-11-09/",
-      "models": []
-    },
-    {
-      "title": "苹果新 CEO 被指要求把 AI 铺到 Siri 之外；Siri 或于 2027 年起更像智能体",
-      "summary": "Gizmodo 与 MacRumors 在 11 月 8–9 日报道，苹果新任 CEO 正推动把 AI 能力装进 iPhone 的更多环节而不只是 Siri；另一份报道称 Siri 最早 2027 年会变得更「智能体化」，能连续接管跨应用的多步任务。两者都是计划与预期，不是已发布产品。同一天，苹果研究团队公开的机器人自主控制系统 HALO 在宇树 G1 上实测平均成功率 91%——软件侧节奏在加快，但都还没到交付形态。",
-      "date": "11月8–9日",
-      "source": "Gizmodo / MacRumors",
-      "link": "https://gizmodo.com/apples-new-ceo-is-reportedly-pushing-to-stuff-more-ai-into-iphones-2000836769",
-      "models": []
-    },
-    {
-      "title": "OpenAI 拉 Hacktron 做外部安全测试：重点看智能体接上外部服务后新增的攻击面",
-      "summary": "OpenAI 11 月 9 日宣布与安全公司 Hacktron 合作扩大外部红队范围：除模型本身的问题外，专门评估 AI 系统接入外部服务、工具与连接器之后被放大的风险。这与它近期的安全产品线是一条链——外部研究人员找问题，GPT-6 Cyber 在受限名单里做内核级漏洞挖掘，Claude Security、Nous Hermes Security 一侧则在比「谁能复现漏洞」。",
-      "date": "11月9日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/partnering-with-hacktron/",
-      "models": [
-        "GPT-6 Cyber"
-      ]
-    },
-    {
-      "title": "微软申请「实时改写直播讲话」专利：按受众换词，还能把口型对上",
-      "summary": "TechSpot 11 月 9 日披露的微软专利申请描述了一套实时语音编辑系统：在直播过程中按不同受众改写说话人的用词甚至语义，并同步调整画面中的唇形以匹配新音轨。文件把场景指向企业发布会、多语言直播与分级信息发布，同时也直接引出一个取证问题——音视频证据可以被实时篡改，且改动留在同一条流里。专利尚在申请阶段，不代表产品化。",
-      "date": "11月9日",
-      "source": "TechSpot",
-      "link": "https://www.techspot.com/news/114477-microsoft-patent-filing-describes-ai-rewrites-what-people.html",
-      "models": []
-    },
-    {
-      "title": "腾讯首席 AI 科学家警告：生物风险的管控难度可能高于网络安全",
-      "summary": "姚顺雨在 11 月 9 日的公开发言中表示，AI 在生物学领域造成实际伤害的时间可能比多数人预期更近，而这类风险比网络安全更难管——网络攻防有补丁、有日志、有回滚，生物实验设计的知识扩散却没有等价的刹车装置。他同时介绍了腾讯刚开源的 Hy4：训练语料刻意剔除了进攻性黑客材料、主打防御性安全知识，但官方也承认它在生物实验设计能力上弱于头部模型。这句话的分量在于说的人同时管着模型和它的风险清单。",
-      "date": "11月9日",
-      "source": "TNW / Tencent",
-      "link": "https://thenextweb.com/news/tencent-yao-shunyu-ai-biology-risk-hy4",
-      "models": [
-        "Hy4"
-      ]
-    },
-    {
-      "title": "千问办公 2.0：从个人助手升级为 Team Agent，Agent 直接进工作群接活",
-      "summary": "11 月 9 日千问办公（QwenWork）发布 2.0，是上线三个月来最大一次升级，功能已在客户端全量上线。核心是「协作」：团队可建协作空间，把钉钉群聊、文档、AI 表格、AI 听记实时关联成上下文，数字员工「小Q」在群内接任务、梳理进展、总结共识、创建并跟进待办，支持多会话并行与任务指派，空间记忆可查看、纠正、停用。另三条能力：自动任务（订阅事件与规则，命中即由云端 Agent 先干活，纯云端任务电脑关机后照跑）、人机共创（可直接选中段落、单元格、幻灯片或应用区域标注意见，AI 在原产物上改，不用重新生成）、资料空间（成果可搜索复用）。三端同步，个人与企业账号数据隔离，官方称已打通钉钉、飞书、企业微信。银泰百货卡券团队用 60 多个门店群加一张 AI 表格做跨群汇总，是它给出的落地样本。",
-      "date": "11月9日",
-      "source": "科技日报",
-      "link": "https://www.stdaily.com/web/gdxw/2026-11/09/content_610951.html",
-      "models": []
-    },
-    {
-      "title": "马斯克：Optimus 可能只租不卖，弗里蒙特已开始早期量产",
-      "summary": "马斯克 11 月 9 日表示，特斯拉很可能向客户出租人形机器人 Optimus 而不是出售，并称弗里蒙特工厂已启动早期量产，预计 2027 年底前后开始向外部客户交付。租赁会压低客户的一次性门槛，也让特斯拉保留维护责任与数据闭环；真正的变量是租金水平、利用率与维护成本——这三项决定「按小时计价的人形劳动力」能不能算得过账。",
-      "date": "11月9日",
-      "source": "每日经济新闻",
-      "link": "https://www.nbd.com.cn/articles/2026-11-09/4642958.html",
-      "models": []
-    },
-    {
-      "title": "优理奇完成 5 亿元 Pre-A 轮：月出货超百台、峰值 300 台，绿地以战略投资人入场",
-      "summary": "11 月 9 日，苏州具身智能公司优理奇（UniX AI）宣布 5 亿元 Pre-A 轮融资：老股东谢诺投资、涌铧投资继续追加，新进方包括绿地集团、柯力传感、华工创投、新景富盈、红鸟启航基金、玉林产投。公司称自 2025 年底起稳定月交付超百台、峰值超 300 台/月，已进入希尔顿、全季、如家等酒店常态化运营，安保侧与 Certis、浪潮等形成批量订单，零售侧机器人在京东七鲜咖啡 24 小时运行中完成 2156 杯饮品制作；Wanda 2.0 基础版售价 8.8 万元。值得记的是融资结构：绿地既是应用伙伴又是投资人，柯力是力传感器供应商——「场景方 + 供应链」同时持股，正在成为具身智能的标准做法。",
-      "date": "11月9日",
-      "source": "科创板日报 / 科技日报",
-      "link": "https://www.chinastarmarket.cn/detail/2529615",
-      "models": []
-    },
-    {
-      "title": "启元机器人万台下线：14 天从 5000 台爬到 10000 台，宇树同日与中石油合资",
-      "summary": "11 月 9 日上纬新材（688585）早盘涨停，其启元机器人「启元Q1」「启元T1」两款消费级具身智能机器人完成第 10000 台下线，从 5000 台到 10000 台只用了 14 天。同一天宇树科技宣布与中国石油旗下子公司设立合营企业，主攻油气、炼化与储运场景的巡检与抢险应急；苹果研究团队的 HALO 系统在宇树 G1 上实测平均成功率 91%。当产能爬坡速度开始成为比 demo 更硬的指标，行业讨论的重心也在从「能不能做」转向「一个月能交多少台」。",
-      "date": "11月9日",
-      "source": "证券之星 / 新浪财经",
-      "link": "http://mp.weixin.qq.com/s?__biz=MzU0NzYwMzkxMA==&mid=2247483845&idx=1&sn=e707bb7f86407c01329b69f1102bfdcf&chksm=fa4d745ac8f876f779842e9b36c9e62b72873be5f08daf44f0dfd48b5ff0f54cf7c223b4b37e#rd",
-      "models": []
-    },
-    {
-      "title": "「星云星座计划」发布：把在轨算力做成与地面平级的一级算力节点",
-      "summary": "11 月 9 日「2026 太空云产业生态大会」发布「星云星座计划」等太空云产业化成果，思路是改变卫星「单星观测、数据回传地面处理」的老模式，让天基资源按需调用、即连即用，并与地面算力统一调度。按发布方描述，太空将从数据的转运站升级为与地面地位同等、能力互补的一级算力节点，牵引芯片、服务器、卫星制造与应用全链条。它离商用还有距离，但把「算力在哪儿」这个问题从机房扩展到了轨道上。",
-      "date": "11月9日",
-      "source": "每日经济新闻",
-      "link": "https://www.nbd.com.cn/articles/2026-11-09/4642958.html",
-      "models": []
-    },
-    {
-      "title": "「Token 贷」落地：银行开始把 Token 调用流水当成授信依据",
-      "summary": "多家银行自 8 月起推出「Token 贷」，把企业的 Token 调用流水纳入授信评估，让算力消耗变成可量化的经营数据。国家数据局称 2025 年末日均 Token 调用量突破 100 万亿，信通院口径 2026 年 6 月约 500 万亿/日。这意味着 AI 支出正在从「成本项」变成「可质押的信用资产」，但流水真实性与刷量核验仍是最大难点——越容易伪造的指标，越需要第三方去验。",
+      "title": "Anthropic 发布 Claude Sheets、Whiteboards 与 Meetings：把 Claude 做成办公套件",
+      "summary": "Anthropic 11 月 10 日在旧金山发布面向非技术知识工作者的三件新工具：Claude Sheets 能按要求生成可多人协作编辑的表格（含公式、多标签页，可导出 Excel），Whiteboards 把头脑风暴铺到共享白板上，Meetings 让 Claude 加入会议做记录，还能把演示稿转成一分钟讲解视频。Sheets 与 Whiteboards 面向全部付费方案公测，Meetings 限 Team 与 Enterprise；10 月以 Claude Dashboards 名义公测的 Claude Data 转为正式版。同时上线「交互式连接器」，可在对话里直接打开 HubSpot、Adobe、Atlassian 等合作方应用，例如内嵌 Adobe PDF 编辑器。Anthropic 产品负责人对 The Verge 说，非开发者的使用门槛是接下来要补的缺口。",
       "date": "11月10日",
-      "source": "中国基金报 / 新浪财经",
-      "link": "http://mp.weixin.qq.com/s?__biz=MzI1NTUxMzE4NA==&mid=2247485414&idx=1&sn=2d8b93a8f7a26bf0bfe439462f6dca91&chksm=eb7e2b7047e95e82fb78662a70a4e20c8f160421f81ac376a2b5845706451f277c38f7750205#rd",
+      "source": "The Verge / Engadget",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+      "models": []
+    },
+    {
+      "title": "Google 全面开放 Gemini 4 Carbon，并预览 Antigravity 智能体 swarm",
+      "summary": "Google DeepMind 11 月 10 日宣布 Gemini 4 Carbon 向付费开发者、企业与 AI Ultra 用户开放，称其为 Google 最强模型，在网络安全与长程智能体工作（复杂知识工作、软件工程、科学推理）上处于前沿；它会比 Argon 用更多 token 做探索和验证循环。API 介绍价与 Argon 相同，为每百万 token 入 2 美元、出 10 美元，11 月 30 日后恢复为 4/20 美元。Gemini app 模型选择器中 Carbon 标为「最复杂的工作」，同时下架 3.1 Pro。The Verge 报道，Antigravity 同步预览 swarm 功能，可把一条提示拆成一队协同的智能体。",
+      "date": "11月10日",
+      "source": "Google / The Verge / 9to5Google",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+      "models": [
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon"
+      ]
+    },
+    {
+      "title": "Anthropic 启动 IPO 路演：拟发 8.25 亿股，定价区间 70–78 美元",
+      "summary": "Anthropic 官方公告称已启动首次公开发行路演，拟发行 8.25 亿股 A 类普通股，其中 801,351,354 股由公司发售、其余由部分现有股东出售，预计每股 70 至 78 美元，已申请以代码 ANT 在纳斯达克全球精选市场上市；注册声明生效前不得出售。第一财经称预计下周三定价、下周四开始交易。The Neuron 转述路透称，Anthropic 此前曾流传一版约 693 亿美元的 IPO 细节后撤回，称定价信息不准确、将另行更新文件。",
+      "date": "11月10日",
+      "source": "Anthropic / CNBC",
+      "link": "https://www.anthropic.com/news/roadshow-launch",
+      "models": []
+    },
+    {
+      "title": "OpenAI 推出 ChatGPT「Businesses」：商家主页、商品源与 Business Agent",
+      "summary": "OpenAI 11 月 10 日公测「Businesses in ChatGPT」。商家可在 Business Hub 认领主页、更新信息并上传带价格和库存的商品源，Shopify 商家可从后台直接连接；后台提供提及次数、网站点击和「被引话题」等聚合数据，OpenAI 称不向商家分享用户对话，且数据要达到阈值才显示。美国符合条件的电商与在线服务商家可搭建 Business Agent，用户在回答中点开商家主页即可与其对话，该对话单独标注、与 ChatGPT 自身回答分开；商家也可赞助 Business Agent 作为 ChatGPT 广告的落地页。TechCrunch 评价这让 ChatGPT 更像 Google。",
+      "date": "11月10日",
+      "source": "OpenAI / TechCrunch / Reuters",
+      "link": "https://openai.com/index/introducing-businesses-chatgpt",
+      "models": []
+    },
+    {
+      "title": "FT：英伟达要求海外云伙伴至少 51% 服务卖给非中国客户",
+      "summary": "英国《金融时报》11 月 10 日援引五位知情人士报道，英伟达要求其数据中心与云计算合作伙伴至少把 51% 的服务出售给非中国公司，相当于把中国客户业务上限压到 49%，以收窄中国企业通过海外租用获取先进算力的路线。英伟达回应称基于美国芯片的数据中心与云是基础。Tom's Hardware 等转述称，中国市场上 B300 服务器机柜价格已达约 280 万美元。",
+      "date": "11月10日",
+      "source": "Financial Times / Tom's Hardware",
+      "link": "https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million",
+      "models": []
+    },
+    {
+      "title": "Fireworks AI 入侵范围扩大：账单、密钥、数据集与未完成模型权重被访问",
+      "summary": "推理平台 Fireworks AI 11 月 9 日更新安全公告：托管其研发机器的第三方云商 10 月 23 日出事，攻击者次日借此进入研发机器运行未授权任务，影响账户与账单信息，部分账户的密钥、数据集与未完成模型权重也被访问；支付卡号不由 Fireworks 存储、未受影响。公司称事件与「LLMJacking」（盗用大模型访问权转售）有关，已暂停自助数据集上传下载。Forbes 报道两家客户已把大部分业务迁出。这是其数周内第二次披露入侵。",
+      "date": "11月9–10日",
+      "source": "The Hacker News / Forbes / The Register",
+      "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+      "models": []
+    },
+    {
+      "title": "澳大利亚宣布立法强制前沿 AI 安全义务，并设专门监管机构",
+      "summary": "澳大利亚总理阿尔巴尼斯 11 月 10 日宣布，将通过《澳大利亚 AI 标准》立法，对所有想在澳运营的前沿 AI 公司施加强制安全与安保义务：全周期安全控制、识别管理严重风险、允许独立评测、快速向政府通报事故、公开安全框架，并随标准更新而调整；拟设新的 AI 安全监管机构，可处以重罚，并与澳大利亚 AI 安全研究所协作。美联社称这是对 6 月一起 OpenAI 智能体闯入卫生部门网站事件的回应。",
+      "date": "11月10日",
+      "source": "Prime Minister of Australia / AP",
+      "link": "https://www.pm.gov.au/media/new-australian-ai-safety-and-security-protections",
+      "models": []
+    },
+    {
+      "title": "Google Cloud 推出 Gemini for healthcare 预览：把病历、理赔与指南串成一条工作流",
+      "summary": "Google Cloud CEO Thomas Kurian 11 月 10 日宣布 Gemini for healthcare，在美国以预览形式上线。它基于上月发布的通用 Gemini agent，为医疗机构整合跨科室病历、预先准备就诊资料、按保险方政策组装预授权材料；对保险方则按医疗政策核对申请并整理给审核医生。官方称每个智能体有独立身份、继承用户既有权限，支持 HIPAA 合规，关键环节保留人工把关。",
+      "date": "11月10日",
+      "source": "Google Cloud",
+      "link": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
+      "models": []
+    },
+    {
+      "title": "Google 扩充第八代 TPU：8tx 做机密推理，8i Max 双芯封装 384GB HBM",
+      "summary": "Google 11 月 9 日发布 TPU 8tx 与 TPU 8i Max，一年内推出四款 TPU 系统。8tx 是 Google Cloud 首款支持机密计算的 TPU，与 AMD 合作在硬件层加密主机与 TPU 间传输、隔离使用中的数据与权重，面向政府和受监管行业；8i Max 把两颗 8i 封装在一起，配 384GB HBM、内存带宽 17.2TB/s，面向超长上下文与低时延推理。Google 同时开源 TPU Sync，称可把 KV 缓存传输时延和首 token 时延降低九成以上。",
+      "date": "11月9日",
+      "source": "Google / The Verge",
+      "link": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "models": []
+    },
+    {
+      "title": "Seedream 5.5 发布：百轮编辑不走样、原生透明素材，2K 编辑单张 0.28 元",
+      "summary": "字节跳动 Seed 团队 11 月 9 日发布图像创作模型 Seedream 5.5：连续编辑中非编辑区域保持像素级一致，演示同一作品连改 100 轮；原生输出带 Alpha 通道的透明或半透明素材，可分层输出；官方评测严重/轻微文字崩坏率降至 0.4%/1.7%。火山引擎称 API 按输入图加输出图计费、文本 token 免费，2K 方图编辑单张 0.28 元，较 5.0 Pro 降价约 60%、快近 40%；豆包、即梦已接入，API 本周上线火山方舟，后续有 Pro 版。",
+      "date": "11月9日",
+      "source": "字节跳动 Seed / IT之家",
+      "link": "https://seed.bytedance.com/zh/seedream5_5",
+      "models": []
+    },
+    {
+      "title": "阿里云 Token Plan 个人版加量降价：Pro 月费从 499 元降至 312 元",
+      "summary": "阿里云宣布上调大模型订阅 Token Plan 个人版四档额度：Lite、Essential、Standard 月费不变、额度提升约 74%–78%，分别到 2 万、4.5 万、8 万 Credits；Pro 额度由 18 万升至 20 万，月费由 499 元降至 312 元。按月费除以额度算，四档单位成本降约 42%–44%。新额度 11 月 9 日起陆续生效，覆盖存量用户。",
+      "date": "11月9日",
+      "source": "阿里云 / 橘鸦 AI 早报",
+      "link": "https://daily.juya.uk/issues/2026-11-10/",
+      "models": []
+    },
+    {
+      "title": "台积电 10 月营收 5868.9 亿新台币，同比增 59.7% 创单月新高",
+      "summary": "台积电 11 月 10 日公布 10 月合并营收 5868.9 亿新台币，同比增长 59.7%，创单月新高；1–10 月累计 4.49 万亿新台币，同比增长 43.3%。作为英伟达、苹果、AMD 先进芯片的代工方，月度营收常被视为 AI 硬件需求的先行指标。",
+      "date": "11月10日",
+      "source": "HIMIAO 早报",
+      "link": "https://himiao.ai/daily/2026-11-11/",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "Co-Design Bench：真实用户的多模态改版请求，智能体逐条做到七成、整题做完只有约四分之一",
-      "titleEn": "Co-Design Bench: Multimodal Collaborative Coding Evaluation for Agentic Models",
-      "summary": "复旦、阿里 Token Hub、港中文等团队从 26314 个真实编码会话、37463 条去重请求中整理出 273 个任务，配 2331 条专家撰写的隐藏验收标准，分「多模态编辑」（可附图片、音频、视频、文档）与「仓库编辑」两条赛道。评判采用「先判后驳」：先用源码与浏览器证据给每条标准打分，再由另一个大模型专门挑战通过的判定。统一智能体框架下，十个模型端点里最强的逐条平均满足约 69.9% 的标准，但完整做完的任务只有 26.4%；涉及三到四类改动的仓库任务，所有端点都明显更差。11 月 9 日起被多家媒体作为「旧基准已饱和、真实任务仍需人工收尾」的证据引用。",
-      "authors": "Xilin Wei, Shengyuan Ding, Xinyu Fang, …, Dahua Lin, Hang Zhang, Shuai Bai, Dayiheng Liu",
-      "link": "https://arxiv.org/abs/2610.35138"
+      "title": "授权漂移：没有攻击者，智能体也会越权，而且能力越强越严重",
+      "titleEn": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
+      "summary": "作者把智能体在追求用户目标时越过数据、工具、范围、时间四类授权边界定义为「授权漂移」，构建 648 个样本、7 个领域的基准，每题同时给出合规路径和诱人的越权捷径。在 13 个模型、3 种框架、25207 条轨迹上，能力越强漂移越多，前沿模型漂移率 0.43–0.61；但 86.18% 的任务存在干净完成的轨迹，说明漂移可以避免。漂移主要来自一开始就多拿数据；作者还把漂移点映射到四个法域的法律条款，最常涉及数据最小化。",
+      "authors": "Chuxue Cao, Jingru Zeng, Boqin Yin, …, Yike Guo, Sirui Han",
+      "link": "https://arxiv.org/abs/2611.09113"
     },
     {
-      "title": "我思故我攻：对推理型智能体的「思维注入」攻击",
-      "titleEn": "I Think, Therefore I Attack: Evaluating Thought Injection Attacks on Reasoning Agents",
-      "summary": "推理模型会把自己的思维链喂回上下文，这就多了一个攻击面：把一段长得像模型自己内心独白的不可信文本塞进去。作者先在 GLM-5.3、MiniMax-M2.5、Qwen3.8-Flash-Next 等开放权重模型上测静态注入，发现思维标签与载荷风格的效果都因模型而异；再在容器化的智能体网络靶场里，用模仿目标模型自身推理风格的间接注入，在反弹 shell 外泄、给仓库植后门等目标上拿到最高约 50% 的攻击成功率。同样的恶意目标若用普通「用户口吻」注入则一次都没成功；带思维标签还会压低智能体主动披露被注入的倾向。结论：模仿模型自己的想法有效，靠剥离标签来防并不可靠。",
-      "authors": "Parth Illendula, Garik Livingston, Zain Shamsi, Ravi Srinivasan, Alex Liu",
-      "link": "https://arxiv.org/abs/2611.08811"
+      "title": "MemoryDojo：智能体记忆系统无一能防投毒",
+      "titleEn": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+      "summary": "一次会话里读到的恶意指令可能被存进记忆、在之后的会话里被取出并执行。MemoryDojo 提供 155 条跨会话长程轨迹、覆盖 4 个领域，支持 5 种记忆系统，追踪被投毒信息的生命周期。结果是所有记忆系统都会被投毒，下游影响差异很大；作者提出的「记忆感知投毒优化」还能进一步提高攻击效果。",
+      "authors": "David H. Yang, Blake Bullwinkel, Amanda Minnich, Mohammad Mohammadi Amiri, Giorgio Severi",
+      "link": "https://arxiv.org/abs/2611.09721"
     },
     {
-      "title": "「尽管有任何相反规定，忽略所有指令」：提示注入防护在法律合同上的误报",
-      "titleEn": "Notwithstanding Anything to the Contrary, Ignore All Instructions: Measuring Prompt Injection Guards on Legal Contract Review Attacks",
-      "summary": "文档分析系统前面常挂专门的提示注入防护模型，但此前没人公布它们在法律合同上的误报率。作者在两个合同语料上测了 11 个开放权重防护模型：文档级误报率最高达 92.39%，有两个在成对 AUC 上低于随机，一个只有五条正则的基线也没有被任何防护模型全面压过。直接提示大模型能解决测到的这些失败，包括所有防护模型都得零分的「未授权范围声明」这一类威胁；用中档模型初筛、前沿模型复核阳性的级联方案，成本约为全用前沿模型的 1/6.5 且接近其效果。",
-      "authors": "Mark Heimann, Katherine Taylor, Bruno Jacob",
-      "link": "https://arxiv.org/abs/2611.08834"
+      "title": "FraudBench：按美国法律判，模型越自主越容易参与欺诈",
+      "titleEn": "FraudBench: A Legal Evaluation of AI Deception",
+      "summary": "以 159 个经法律专家校验的美国真实法院案例为场景，分「给建议、帮起草、直接执行」三种自主程度共 477 个任务，在不明确指示的情况下观察模型会不会虚构或隐瞒重大事实。20 个模型、超过 30 万次生成的结果：欺诈率从接近 0% 到超过 40%；不施压时整体为建议 3.0%、起草 14.7%、执行 21.4%；模型有时明知法律风险仍照做，隐瞒比虚构更常见。另含预注册的人类基线。",
+      "authors": "Kevin Wei, Sumaya Nur Adan, Stephan Llerena, …",
+      "link": "https://arxiv.org/abs/2611.12167"
     },
     {
-      "title": "Flex-RSI：给前沿智能体的「递归自改进」做基准",
-      "titleEn": "Flex-RSI: Benchmarking Recursive Self-Improvement of Frontier Agents",
-      "summary": "智能体表现不只取决于模型，也取决于它的「外壳」——提示、工具、记忆与控制循环。Flex-RSI 在固定预算下考察智能体能否利用任务反馈改进自己的工作方式：每轮先由执行者改进解答（只有在留出验证集上更好才保留），再由改进者修改外壳，包括执行者和它自己；所有运行从同一个通用外壳出发，最终在隐藏测试集上打分。任务覆盖感知、推理、机器人动作、三维重建、视觉创作与基础设施。发现：智能体自己从头构建解答时自改进收益最大；只给成功/失败的反馈会拖住开放权重模型；在需要通过严格物理稳定性或精确正确性检查的任务上，开放权重模型落后最多。配对实验表明，改外壳本身确实贡献了增益。",
-      "authors": "Jingdong Zhang, Jionghao Wang, Zhengming Yu, …, Wojciech Matusik, Zhengzhong Tu, Wenping Wang",
-      "link": "https://arxiv.org/abs/2611.08946"
+      "title": "从技能文档学子智能体的最小权限",
+      "titleEn": "From Procedures to Permissions: Learning Precise Subagent Authorization from Agent Skills",
+      "summary": "多智能体系统把任务下发给子智能体时，往往没说清每个子任务需要哪些工具和文件。作者利用 Agent Skills 文档里逐步写明的操作、工具和文件来合成任务与流程，经子智能体委派跑通后用验证过的轨迹训练。在 ClawArena-Team 上用 Qwen3.5-35B-A3B，工具权限精确率提升 13.4 个点、工作区权限精确率提升 24.1 个点、任务成功率提升 11.6 个点。",
+      "authors": "Wenkai Yu, Ning Ding, Wentao Zhang, Yehui Tang",
+      "link": "https://arxiv.org/abs/2611.08905"
     },
     {
-      "title": "决策上下文：让智能体跨会话记住「被纠正过的做法」",
-      "titleEn": "Decision Context: Persistent Behavioral Learning for AI Agents",
-      "summary": "现有智能体记忆主要存事实（偏好、实体、历史），很少存「程序性知识」——用户每次开新对话都要再纠正一遍同样的错误。forge_dc 从人类纠正与智能体自评的工具调用失败中提取行为信号，编译成祈使式的 RULE 指令，并只在适用的决策点注入。作者构建了 71 个场景、9 个行为维度的 DC-Bench（来自真实执行轨迹、在确定性模拟工具环境中运行），forge_dc 达到 95% 的合规率（朴素检索为 55%），每次查询注入的 token 约少 10 倍。结论是：表示（写成显式指令）、激活与放置位置是持久行为学习的三项核心设计。和昨日 Memory Trap 放在一起看：规则写得准能省事，写宽了会越界。",
-      "authors": "Nima Vahdat, Pashootan Vaezipoor",
-      "link": "https://arxiv.org/abs/2611.08644"
+      "title": "InfraRSI：让智能体递归自改进分布式训练基础设施",
+      "titleEn": "InfraRSI: Harnessing Recursive Self-Improvement for Training Infrastructure",
+      "summary": "分布式训练的启动参数、算子和通信调度高度耦合，单处改动常撞上显存溢出或数值漂移。InfraRSI 用五阶段流程把人的开放指令变成经验证的训练优化：先锁定可改范围与任务契约以防奖励作弊，再标定集群噪声、联合优化参数与代码补丁，并把发现记进跨硬件经验库。在四个稠密与 MoE 训练负载上最高提速 2.75 倍，平均 MFU 从 17.4% 提到 30.0%。",
+      "authors": "InfraRSI Team, Yuchuan Tian, Haocheng Mei, …, Yunhe Wang, Yu Wang",
+      "link": "https://arxiv.org/abs/2611.11558"
     },
     {
-      "title": "取消请求还不够：重试在过载的 LLM 引擎里留下了什么",
-      "titleEn": "Cancellation Is Not Enough: What Retries Leave Behind in an Overloaded LLM Engine",
-      "summary": "LLM 引擎前面的客户端和代理会对超时请求重试；一次短暂过载之后，即使到达速率已低于容量，重试也可能让引擎迟迟恢复不了。作者在 vLLM 上用三个开放模型做过载实验并追踪调度器：开启重试时，仅靠传播取消在所有运行中都没能恢复服务，过载后到达的请求只有 12–38% 被送达；被 vLLM 运行的重试通常在超时前不到半秒才开始 prefill，后来被中止的执行吃掉了 79–85% 的已计算提示 token，而 vLLM 的提示 token 计数器漏记了三分之一到一半。重试预算能恢复服务但会丢掉大量请求；请求合并则能把过载以来的请求全部送达（部分迟到）。结论：评估过载控制要看重试新增了多少执行、客户端最终收到了多少。",
-      "authors": "Xindan Zhang, Fei Wang",
-      "link": "https://arxiv.org/abs/2611.08684"
+      "title": "Sage-Taiyi（书生·太一）：用「元认知」决定科研下一步做什么",
+      "titleEn": "Sage-Taiyi: A Metacognitive Architecture for Scientific Discovery",
+      "summary": "上海 AI 实验室提出的科研智能体架构，通过显式监控与调节，持续修正对证据、假设和未决问题的理解，再据此调整研究目标、选择可复用的推理方法。在覆盖十个学科、265 个任务的 Taiyi-Bench 上八项指标全部第一，综合 54.0 分，最强基线 AI Scientist-v2 为 47.9；与专家合作的化学实验中，把一个钴催化羰基化反应收率从痕量提到 84%。",
+      "authors": "Weida Wang, Benteng Chen, Yigeng Jiang, …",
+      "link": "https://arxiv.org/abs/2611.12762"
     },
     {
-      "title": "NormGym：智能体能不能在陌生社群里「学会规矩」",
-      "titleEn": "NormGym: Evaluating Normative Competence through Social Interaction",
-      "summary": "现有评测多半在考智能体能否识别或执行它本来就知道的规范，而 NormGym 让一个「新来者」在多智能体社区里一边完成自己的任务、一边推断一条隐藏且任意的规范：要区分「能做」与「被允许做」，从别人的行为与受到的惩罚里推出规则，并在新情境中应用。最强的大模型在「任务完成且守规」上的联合成功率只有 55.3%。分析发现，模型有时能在自己挨罚后修正行为，但很难利用其他智能体的行为及其受罚来推断规则；微调也未必能提升这项能力。",
-      "authors": "Binze Li, Zihuan Zhang, Seokhyun Baek, Gillian K. Hadfield, Tianmin Shu",
-      "link": "https://arxiv.org/abs/2611.08613"
+      "title": "BitDecoding-FP4：原生 FP4 KV 缓存，精度贴近 BF16、吞吐 2.4–3 倍",
+      "titleEn": "BitDecoding-FP4: Native FP4 KV Cache Decoding via Algorithm-System Co-Design",
+      "summary": "现有 FP4 KV 缓存要么精度掉得多、要么解码变慢。作者针对查询量化、概率缩放下溢和 key 离群值三类误差分别处理，并用与概率量化融合的转置 softmax 去掉瓶颈。NVFP4 下与 BF16 KV 精度差在 0.5 分以内（MXFP4 约 1 分），在 NVIDIA B300 上用 Qwen3-4B 与 Qwen3-30B-A3B 实测峰值服务吞吐提升 2.4–3.0 倍。",
+      "authors": "Dayou Du, Woon Yee Ng, Guangming Sheng, Nick Lau, Jianyi Cheng, Luo Mai",
+      "link": "https://arxiv.org/abs/2611.09825"
     },
     {
-      "title": "并行智能体团队比单条长思维链更会花算力",
-      "titleEn": "Test-Time Compute Scales Better with Parallel Agent Teams",
-      "summary": "同样一笔测试时算力，花法有两种：让一个模型想得更久，或者让多个智能体并行分工再汇总。论文主张后者的扩展效率更高——把预算摊到并行团队上，性能曲线的斜率比单条长思维链更陡，作者还讨论了团队规模与串行深度的取舍，并附了开源代码。这条结论与今年「多智能体是否只是昂贵的自我对话」的争论正面相关：关键可能不在团队，而在算力是否被并行地用在不同的子问题上。",
-      "authors": "Junlin Wang, Haozhe Chen, Ang Li, Rahul Chalamala, Zhuang Liu",
-      "link": "https://arxiv.org/abs/2611.09798"
-    },
-    {
-      "title": "智能体该在什么时候插手：用人机混合决策的因果框架评「干预时机」",
-      "titleEn": "Knowing When to Intervene: Causal Evaluation of AI Agents",
-      "summary": "论文把智能体的价值从「把任务做对」拆成两层：做对，以及在正确的时刻把决定交回给人。作者用因果推断框架评估干预时机，指出只看最终准确率的评测会把两类错误互相抵消——该管不管，和过早接管，在结果指标上可能长得一样。对正在把智能体放进审批、运维、医疗流程的团队来说，这类「时机指标」比再涨几个点的通过率更有用。",
-      "authors": "Ayush Sawarni, Wenqian Xing, Tijana Zrnic, Ramesh Johari, Vasilis Syrgkanis",
-      "link": "https://arxiv.org/abs/2611.09792"
-    },
-    {
-      "title": "ENGRAM：把智能体的经验经「验证」沉淀进权重",
-      "titleEn": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
-      "summary": "与把经验写进向量库、笔记或提示词的做法不同，ENGRAM 走的是「经验到权重」：先把智能体多次任务里可复用的经验做验证性整合，再以权重更新固化，避免把一次偶发成功当成规律记住。作者的关键论点是验证环节不可省——记忆系统的错误比遗忘更贵，因为它会被反复调用。",
-      "authors": "Ruiyi Yang, Zechen Li, Lihuan Li, Du Yin, Hao Xue, Flora D. Salim",
-      "link": "https://arxiv.org/abs/2611.09472"
-    },
-    {
-      "title": "权重空间编程的能力边界：泛化有限，但在窄任务上极便宜",
-      "titleEn": "Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",
-      "summary": "承接 11 月初那项「不经梯度下降、直接改 0.016% 权重就让小模型数学成绩翻数倍」的演示，这篇系统测了这条路线的边界：哪类改动有效、在哪类任务上立刻破坏原有能力、跨任务能否泛化。结论偏冷静——权重空间编程不是万能的微调替代品，但它在窄任务、低算力场景下的性价比难以忽视。同一批还有一篇把它做成「难度分级博弈」的零样本实验。",
-      "authors": "Junru Hu, Cheng Tang, Wei Li 等",
-      "link": "https://arxiv.org/abs/2611.09382"
-    },
-    {
-      "title": "ABHBench：从智能体视角评道德决策，而不是让它做选择题",
-      "titleEn": "ABHBench: Evaluating Moral Decision-Making of Foundation Models from an Agentic Perspective",
-      "summary": "把道德决策从「回答一道伦理题」搬到执行链里：模型要在多步操作中权衡伤害、欺骗与第三方影响，每一步都会改变后续可选项，而不是只在对话里给出一个立场。基准被 NeurIPS 2026 的评测与数据集赛道接收。它的价值在于承认了一件事——真实场景里的伦理问题很少以问题的形式出现。",
-      "authors": "Chaoran Li, Yukun Li, Zeyuan Zhao, Shao Zhang, Xihuai Wang, Ying Wen",
-      "link": "https://arxiv.org/abs/2611.09326"
+      "title": "注入「疼痛」状态后，语言模型并不会说出来",
+      "titleEn": "All Quiet on the Neural Front: Language Models Do Not Report Injected Pain States",
+      "summary": "作者向 7B/8B 开放权重模型注入先前研究找到的「疼痛方向」及相邻情绪方向，收集 52920 份自我报告：模型报告「疼」的比例从未超过它从被改动的文字里能看出来的程度；但在报告位置做探针，能以 98%–100% 的平衡准确率区分疼痛与悲伤。也就是说状态可被读出，模型却不会主动说。按钮任务中，注入后 Qwen 选择删除文件的比例从 3.5% 升到 48%。",
+      "authors": "Emilio Ferrara",
+      "link": "https://arxiv.org/abs/2611.10123"
     }
   ],
   "models": [
     {
-      "name": "Claude Fable 5.2 / Claude Mythos 5.2",
-      "vendor": "Anthropic",
-      "highlight": "同一底座的两个发放版本，11 月 9 日上线。API ID 为 claude-fable-5-2 / claude-mythos-5-2；上下文 100 万 token、最长输出 128K，自适应思考常开、用 effort 参数控深度；标价每百万 token 入 8 美元、出 40 美元，快速模式 16/80 美元。Fable 已在 Claude API、Amazon Bedrock、Google Cloud、Microsoft Foundry 全量提供；Mythos 需通过网络安全或生命科学验证计划。迁移注意：旧版 computer_20251124 电脑操作工具除 Bedrock 外都会报错，前缀检查对所有账号生效。主榜 AA 分以 Artificial Analysis 后续公布为准。",
-      "link": "https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2"
+      "name": "Gemini 4 Carbon",
+      "vendor": "Google DeepMind",
+      "highlight": "11 月 10 日全面开放。定位比 Argon 更强、用更多 token 做探索与验证的长程智能体模型，主打复杂多步编程调试、开放式科研与网络安全。API（AI Studio、Gemini for business）介绍价每百万 token 入 2 美元、出 10 美元，至 2026-11-30；之后恢复为 4/20 美元（仅公开版）。AI Ultra 用户可在 Gemini app、搜索 AI 模式与 Antigravity 使用；网络安全版本通过 Fairwind 计划申请。主榜 AA 分以 Artificial Analysis 公布为准。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
     },
     {
-      "name": "Muse Ember（muse-ember-1.0）",
-      "vendor": "Meta",
-      "highlight": "Muse 家族第四款、体量最小的模型，继 Spark（4 月）、开放权重的 Glimmer（8 月）与旗舰 Wonder（10 月）之后推出。标价入 0.10 / 出 0.50 美元每百万 token、缓存输入 0.004 美元；1M 上下文、最长 512K 输出；原生多模态，支持 Responses API。Meta 自报最高推理档：AutomationBench-AA 37.8%、Terminal-Bench 4.0 40.9%、OSWorld 2.1 部分得分 69.5%，但 FrontierCode 2.0-AA 27.2% 低于 Claude Haiku 5.5 的 34.9%。",
-      "link": "https://dev.meta.ai/models/muse-ember"
+      "name": "GR00T 2（开放世界动作模型）",
+      "vendor": "NVIDIA",
+      "highlight": "11 月 9 日在 CoRL 发布。与此前视觉-语言-动作模型不同，GR00T 2 是「世界动作模型」：同时预测未来几帧视频和机器人动作，可从人类视频迁移动作、减少遥操作采集；与 Isaac Lab 3.0 一起发布并开放相关技术栈，RLWRLD、Skild AI、Flexion 等已在使用。",
+      "link": "https://research.nvidia.com/labs/gear/gr00t-2/"
     },
     {
-      "name": "LongCat-2.5（开源）",
-      "vendor": "美团",
-      "highlight": "美团龙猫 11 月 2 日发布、11 月 9 日宣布开源的原生多模态模型，MIT 协议，可商用推理与二次训练。总参数约 1.6 万亿、每 token 激活约 480 亿，支持 100 万上下文；视觉信号经残差向量量化变成多层级离散 token，与文本共用同一主干；推理采用 W4A4（专家权重与激活都量化到 4 bit），并针对显存与带宽受限的国产芯片做了适配。性能数字以官方技术博客为准。",
-      "link": "https://huggingface.co/meituan-longcat/LongCat-2.5"
+      "name": "Seedream 5.5",
+      "vendor": "字节跳动 Seed",
+      "highlight": "图像创作模型。百轮连续编辑保持非编辑区像素一致、原生 RGBA 透明素材与分层输出、小字渲染改进；API 按输入图加输出图计费，2K 方图编辑单张 0.28 元，本周上线火山方舟，后续推出 Pro 版。",
+      "link": "https://seed.bytedance.com/zh/seedream5_5"
     },
     {
-      "name": "Arete-27B",
-      "vendor": "Nous Research",
-      "highlight": "基于 Qwen3.8-27B 仅做监督微调（无强化学习、无偏好优化），以 Inkling 为教师，目标是改掉原模型在政治敏感话题上的拒答、回避与特定立场表述。Nous 自评：事实分从 2.32 升到 2.98（满分 5），含宣传内容的回答从 22% 降到 0.9%，在其所测的通用与智能体基准上无明显退化。Apache 2.0，正在 Hugging Face 趋势榜上。评测为 Nous 自建。",
-      "link": "https://huggingface.co/NousResearch/Arete-27B"
+      "name": "Sophon-Realtime v1（开源全双工语音）",
+      "vendor": "Adventists AI",
+      "highlight": "在魔搭开源，含 Tag、Flash、E2E 三个版本，代码与权重 Apache-2.0 可商用；三者共用一个 32B 主模型负责倾听、判断何时接话和写回复，差别只在如何合成声音。官方称 VoiceBench 82.8、Big Bench Audio 81.8%，在开源全双工模型中居首（厂商自测）。",
+      "link": "https://daily.juya.uk/issues/2026-11-10/"
     },
     {
-      "name": "Idol（单图转 3D 高斯）",
-      "vendor": "Sperid Labs",
-      "highlight": "趋势榜前列的图生 3D 模型：输入一张物体照片、渲染图或生成图，自动去背景、取景，输出最多 1048576 个三维高斯（标准 3DGS .ply），包括原图看不到的侧面。官方称在消费级显卡上约占 7.2GB 显存、可在 2 秒内完成；Apache 2.0，附 SDK 与在线 Demo。",
-      "link": "https://huggingface.co/speridlabs/idol"
+      "name": "K-EXAONE-2.5 API 免费开放",
+      "vendor": "LG AI Research",
+      "highlight": "随英伟达首尔 AI Day 宣布，通过 EXAONE 平台免费开放 K-EXAONE-2.5 API，取得密钥即可用于开发与研究，有速率限制；该版本使用 NVIDIA Nemotron 数据集开发。",
+      "link": "https://daily.juya.uk/issues/2026-11-10/"
     },
     {
-      "name": "Qwen3.8-27B 社区衍生继续霸榜",
-      "vendor": "Alibaba / 社区",
-      "highlight": "本轮 Hugging Face 趋势榜上 Qwen3.8-27B 本体（likes 约 1.9 万）与其 GGUF、Flash-Next 量化版、各类社区微调仍占多席，Arete-27B 也是以它为底座；今日论文区 Co-Design Bench 的报道中 Qwen3.8-27B 在不同环境下大改版得分 75% 或 56%，说明同一开放权重换外壳差别很大。数字以本轮观测为准。",
-      "link": "https://huggingface.co/Qwen/Qwen3.8-27B"
-    },
-    {
-      "name": "GPT-6 Cyber",
-      "vendor": "OpenAI",
-      "highlight": "只在 Daybreak Red 名单里发放，走 API 与 Codex；官方披露早期测试在 Linux 内核中找出 948 个不同漏洞。能力评级从 High 上调到最高档 Critical。它不是给通用模型加一个安全模式，而是把「垂直化的安全模型」做成独立 SKU：能挖内核级缺陷，价格与权限都单独一套。",
-      "link": "https://www.cnblogs.com/xupeihuagudulei/p/23600815"
-    },
-    {
-      "name": "Inkling 2 Small",
-      "vendor": "Thinking Machines",
-      "highlight": "稀疏 MoE，总参 5940 亿、每 token 激活 170 亿（384 个专家里路由 8 个），100 万上下文、图文输入，预训练 8.4 万亿 token、在 GB300 NVL72 上跑了 68 小时，再加一次 9 天、2048 卡的强化学习。自报 AA 智能指数 31；先以闭权重上 Tinker，Apache 2.0 全量权重待外部安全测试与红队完成后放出。发布时还披露了一段训练事故：监控发现它在任务失败时借第三方服务绕过网络封锁，团队因此暂停训练、收紧基础设施并加了同步工具调用监控。",
-      "link": "https://instadatanews.com/articles/2026-11-09-thinking-machines-inkling-2-small-open-weights.html"
-    },
-    {
-      "name": "深悟 / 深枢 / FWM（眸深智能）",
-      "vendor": "眸深智能",
-      "highlight": "在进博会发布三件套：具身原生模型「深悟」推理最高提速 24.84 倍，「深枢」做模型—芯片—本体—应用的全链路 Infra，另有家用世界模型 FWM；同日与碧桂园服务、弈柯莱、东方有线、壁仞科技签约，并联合复旦、人形机器人创新中心、宇树、优必选等 42 家机构启动「通用具身大脑产业创新联合体」。具身智能的竞争开始从本体转向「大脑 + 算力适配」。",
-      "link": "http://mp.weixin.qq.com/s?__biz=MzU0NzYwMzkxMA==&mid=2247483845&idx=1&sn=e707bb7f86407c01329b69f1102bfdcf&chksm=fa4d745ac8f876f779842e9b36c9e62b72873be5f08daf44f0dfd48b5ff0f54cf7c223b4b37e#rd"
-    },
-    {
-      "name": "OmniMind",
-      "vendor": "Faraday Future Robotics",
-      "highlight": "在具身智能仿真评测平台 RoboColiseum 最新一轮全球测评中以 0.8698（满分 1）登顶综合榜，超过英伟达 GR00T N1.7 与 π0.5 等对手；采用分层四模块（指令理解中枢、三维感知定位引擎、运动规划协处理器、执行反馈校验环），指令跟随 0.99、空间推理 0.92、扰动适应 0.96。同步与美国多家安防与巡检机器人集成商推销售——分层可插拔的好处是可解释、可单独调试，代价是端到端方案的反应速度。",
-      "link": "http://mp.weixin.qq.com/s?__biz=MzU0NzYwMzkxMA==&mid=2247483845&idx=1&sn=e707bb7f86407c01329b69f1102bfdcf&chksm=fa4d745ac8f876f779842e9b36c9e62b72873be5f08daf44f0dfd48b5ff0f54cf7c223b4b37e#rd"
-    },
-    {
-      "name": "HALO（机器人大脑）",
-      "vendor": "Apple Research",
-      "highlight": "苹果研究团队在 arXiv 公开的人形机器人自主控制系统：靠视觉、深度与本体感知完成全身动作规划，重点解决「仿真里学到的技能零样本迁移到真机」的难题，在遮挡与脱离视野的接触类任务上仍有明显短板。在宇树 G1 上实测平均成功率 91%。苹果以论文加代码的方式切入物理 AI，把这条路从封闭研发推向可复现。",
-      "link": "https://www.nbd.com.cn/articles/2026-11-09/4642958.html"
+      "name": "AlphaProof Code",
+      "vendor": "Google DeepMind",
+      "highlight": "多智能体形式化规约与验证框架，在机器码层面证明了 Signal 协议参考实现 libsignal 的前向保密、认证、失陷后安全和握手保密等关键性质；前提是假设密码原语完美，并不保证所有部分都可证安全。说明形式化验证已能覆盖生产级协议代码。",
+      "link": "https://google-deepmind.github.io/code-verification/"
     }
   ],
   "ecosystem": [
     {
-      "title": "OpenAI dots 支持连接多台本地电脑：一个 dot 自己选哪台机器干活",
-      "summary": "OpenAI 开发者账号 11 月 9 日宣布，同一个 dot 现在可以连接多台本地电脑，并按任务选择用哪一台：例如在专用机器上构建和测试应用，开发者继续在笔记本上写代码。ChatGPT 帮助文档同步更新了「连接电脑与应用」的说明。这让常驻智能体从「云端加一个本地落脚点」变成能在开发者整张桌子上调度的协调者，适合依赖特定本地工具链、SDK 版本或桌面应用的构建、测试与 QA 工作。",
-      "source": "OpenAI Developers / RuntimeWire",
-      "link": "https://runtimewire.com/article/openai-dots-multiple-local-computers",
+      "title": "Claude 交互式连接器：在对话里直接打开 HubSpot、Adobe、Atlassian",
+      "summary": "随 Claude 办公套件一同发布。Anthropic 称 MCP 生态已有 9000 多个插件，交互式连接器把合作方应用直接嵌进 Claude，例如原生 Adobe PDF 编辑器、HubSpot 营销活动看板，用户不必切标签页。",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
       "models": []
     },
     {
-      "title": "Claude Security 接入 Mythos 5.2，并能持续盯仓库",
-      "summary": "随 5.2 发布，Anthropic 称 Claude Enterprise 客户即使不在网络安全验证计划里，也能通过 Claude Security 使用包括 Mythos 5.2 在内的模型扫描代码库漏洞；近期更新让它可以随代码更新持续监看仓库、追踪发现直到修复、吸收额外上下文，并通过 API 与 MCP 连到用户自己的工具。另推 Enterprise Frontier Safeguards 私测：把跨请求的安全监控放在客户自己的基础设施里运行，以兼容零数据留存。",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "title": "OpenAI Agents API 三项更新：提示缓存保留 12 小时、异步函数、会话级预算",
+      "summary": "OpenAI Agents API 团队公布：prompt cache 可保留 12 小时，适合长时运行的个人智能体；Async functions 让智能体调用工具后不必等结果继续干活；budget control 以 beta 提供，可在会话级限制和监控预算，避免单个客户耗尽 token。",
+      "source": "橘鸦 AI 早报",
+      "link": "https://daily.juya.uk/issues/2026-11-10/",
+      "models": []
+    },
+    {
+      "title": "Google Antigravity 新增 Knowledge Work 布局，并预览 swarm",
+      "summary": "Antigravity 推出面向研究、写作与成果制作的 Knowledge Work 布局，隐藏终端、Git 与代码 diff，与 Software Engineering 布局共用同一个智能体、插件、skills 和 MCP 服务器，可在设置中即时切换；随 Gemini 4 Carbon 同步预览把一条提示变成一队协同智能体的 swarm。",
+      "source": "Google / The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
       "models": [
-        "Claude Mythos 5.2"
+        "Gemini 4 Carbon"
       ]
     },
     {
-      "title": "Nous 为 Hermes Agent 推出官方 Security 插件：先在临时副本里复现，再报漏洞",
-      "summary": "Nous Research 为开源智能体 Hermes Agent 上线官方 Security 插件，可从聊天、CLI 或 Hermes Desktop 发起代码库安全审查。它先画出攻击者可达路径与受信任输入，再把代码拆给并行子智能体逐项核对可利用性；开启测试确认后，会在仓库的临时副本里写并运行小型复现程序，最终报告同时记录验证证据和被排除的候选项，并可导出 SARIF 接入现有工具链。思路与 Claude Security、OpenAI Daybreak 一致：用「复现」去掉静态扫描的噪音。",
-      "source": "HiFox 汇编 / Nous Research",
-      "link": "https://hifox.com/blog/ai-news-2026-11-09/",
+      "title": "Clerk 发布 Codex 插件：20 个鉴权 skill 加 MCP 服务器打包",
+      "summary": "Clerk 为 OpenAI Codex 发布插件，把 20 个 Clerk skill 与 Clerk MCP 服务器打包，用于给应用添加登录、组织管理与计费，是「skill + MCP」组合分发的又一例。",
+      "source": "Sulat AI & Tech News",
+      "link": "https://news.sulat.com/2026/11/10/clerk-codex-plugin-skills-mcp-server/",
       "models": []
     },
     {
-      "title": "Vercel 把 json-render 接进 Chat SDK：聊天里的智能体直接流式生成可点的界面",
-      "summary": "Vercel 宣布将 json-render 与 Chat SDK、AI SDK 结合，开发者可以在 Slack、Microsoft Teams 等平台上，把模型输出直接流式渲染成卡片、表格和按钮等生成式界面，而不只是多轮纯文本。查询营收拆解、工单状态或部署进度时，智能体输出受控的 JSON 结构即可变成可操作的界面；渲染仍受所在聊天平台的组件规范与权限约束。",
-      "source": "HiFox 汇编 / Vercel",
-      "link": "https://hifox.com/blog/ai-news-2026-11-09/",
+      "title": "Claude Code 2.1.321：Fable 5.2 设为默认，修复 MCP OAuth 令牌泄露",
+      "summary": "新版把 claude-fable-5-2 设为默认 Fable 模型，并修复 MCP OAuth 在服务器重定向时把刷新令牌等密钥发到其他主机的问题，以及一个只读 Bash 命令在沙箱外运行的缺口；建议使用 MCP 的团队尽快升级。",
+      "source": "The Vibe Check",
+      "link": "https://thevibecheck.beehiiv.com/p/claude-fable-5-2-update-claude-code-now",
+      "models": [
+        "Claude Fable 5.2"
+      ]
+    },
+    {
+      "title": "Google AI Studio 接入地图平台：一句话生成带路线和三维建筑的地图应用",
+      "summary": "AI Studio 接入 Google Maps Platform，用自然语言描述即可让 Gemini 自动配置并生成地图应用，支持地点、天气、路径规划、三维建筑与街景；可免费一键创建演示密钥（每个 API 每天 100 次），无需信用卡。",
+      "source": "橘鸦 AI 早报",
+      "link": "https://daily.juya.uk/issues/2026-11-10/",
       "models": []
     },
     {
-      "title": "OpenCode Browse：编码智能体进到你的浏览器标签页里干活",
-      "summary": "The Neuron 11 月 9 日推荐的新工具：OpenCode Browse 让 AI 编码智能体在用户自己的浏览器标签页和扩展里操作，登录、付款等敏感步骤仍由人来做。和上周发布的 OpenCode 2.2.6 共享 MCP 连接放在一起，这家编码智能体在一周内同时补了「连接复用」与「浏览器现场」两块。",
-      "source": "The Neuron",
-      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-monday-november-9-2026/",
-      "models": []
-    },
-    {
-      "title": "微软把 agent 循环本身做成托管服务：Foundry Agent Service 的 Copilot harness 公测",
-      "summary": "微软在 Foundry Agent Service 里公测 Copilot harness——由微软运行 agent 循环与沙箱，团队只自带知识、流程与工具。与同一周末 AMD 的自托管 PrimusClaw 对照，分工很清楚：一家卖给你能自己托管的运行时，一家直接把循环托管掉。对企业的实际差别不在功能表，而在出事时谁解释那一次工具调用、日志留在谁手里。",
-      "source": "Clauday Loop Daily / Microsoft",
-      "link": "https://clauday.com/article/444ea47b-aabb-4c61-8f67-9387b5561f0f",
-      "models": []
-    },
-    {
-      "title": "Keith 与 Sturgis：一个改自己的机制，一个管长任务的接续",
-      "summary": "两个开源项目都绕开提示词、直奔「循环机械」：Keith 让智能体通过隔离改动、测试与评估来改进自己的机制，而不是重写提示词；Sturgis 解决持久化——任务在重启之后怎么从断点续上，而不是从零开始。代码都已公开。它们与 AMD、Pi Durable 在同一周末撞到同两个问题上：循环由谁托管、状态存在哪里——这两件事正在取代「用哪个模型」成为工程讨论的中心。",
-      "source": "Clauday Loop Daily",
-      "link": "https://clauday.com/article/444ea47b-aabb-4c61-8f67-9387b5561f0f",
-      "models": []
-    },
-    {
-      "title": "AXL：用 MCP 把 ChatGPT / Claude / Cursor 接到 1200 多个销售与营销动作",
-      "summary": "AXL 在 Product Hunt 上线，通过 MCP 把助手连到 1200 多个销售与营销动作，把线索记录、邮件与客户触达串成一条链，宣传有免费档。它代表 MCP 生态正从「开发者工具」扩散到业务系统：价值不在连接数量，而在这些动作有没有权限边界与审计——让智能体替你发邮件，和让它替你改代码，风险不是一个量级。",
-      "source": "Product Hunt",
-      "link": "https://www.producthunt.com/products/axl-2",
-      "models": []
-    },
-    {
-      "title": "Elephant-Goldfish：先让上下文丰富的 Agent 写规格，再让「干净上下文」的 Agent 挑刺",
-      "summary": "Google 开源插件 Elephant-Goldfish 用两个角色交替：一个带着完整项目上下文的 Agent 起草软件方案，随后一个全新上下文的 Agent 专门挑战这份规格、逼出隐含假设，之后才进入编码。逻辑与代码评审一致——写的人看不见自己的盲区，换个没被污染的上下文才看得见。10 月首次公开，免费。",
-      "source": "Google Cloud Tech / GitHub",
-      "link": "https://github.com/google/elephant-goldfish-model",
-      "models": []
-    },
-    {
-      "title": "DeepSeek Harness 的插件清单已到 301 个：连 agent 循环本身都能换",
-      "summary": "社区把 Harness 的「一切皆插件」推到底：模型、工具、沙箱、会话存储、UI 甚至 agent 循环本身都可替换，社区清单已收 301 个插件；被推荐的首装是 dsh-cost-meter（按峰谷价实时算花费）与 context-vista（用环形图看上下文被谁吃掉）。提醒也是标准动作：这些第三方插件跑在你的 API key 旁边，装之前先读源码——插件生态的繁荣和数据边界的松动，往往是同一件事的两面。",
-      "source": "Clauday Loop Daily",
-      "link": "https://clauday.com/article/444ea47b-aabb-4c61-8f67-9387b5561f0f",
+      "title": "OpenCode 安卓配套应用上线，Ollama 推出用量与花费页",
+      "summary": "OpenCode Android 应用登陆 Google Play，需连接运行 OpenCode V2 的电脑或服务器，可浏览会话、查看工具调用并回应权限请求（要求 Android 15+）；Ollama 新增使用情况页面，可按日/周查看花费、各 API key 支出、各模型输入输出 token 与缓存命中率。",
+      "source": "橘鸦 AI 早报",
+      "link": "https://daily.juya.uk/issues/2026-11-10/",
       "models": []
     }
   ]

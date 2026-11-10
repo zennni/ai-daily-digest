@@ -1,5 +1,22 @@
 [
   {
+    "d": "2026-11-11",
+    "w": "星期三",
+    "pts": [
+      "Anthropic 办公套件：Claude Sheets / Whiteboards / Meetings，IPO 路演 70–78 美元",
+      "Gemini 4 Carbon 全面开放：11-30 前 $2/$10，之后 $4/$20",
+      "ChatGPT Businesses 与 Business Agent；英伟达 51% 非中国客户要求",
+      "论文：授权漂移 / MemoryDojo 记忆投毒 / FraudBench 自主越高欺诈越多"
+    ],
+    "link": "AI日报-2026-11-11.html",
+    "m": [
+      "Gemini 4 Carbon",
+      "Gemini 4 Argon",
+      "Claude Fable 5.2"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-10",
     "w": "星期二",
     "pts": [

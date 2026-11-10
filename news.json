@@ -1,5 +1,104 @@
 [
   {
+    "t": "Anthropic 发布 Claude Sheets、Whiteboards 与 Meetings：把 Claude 做成办公套件",
+    "s": "Anthropic 11 月 10 日在旧金山发布面向非技术知识工作者的三件新工具：Claude Sheets 能按要求生成可多人协作编辑的表格（含公式、多标签页，可导出 Excel），Whiteboards 把头脑风暴铺到共享白板上，Meetings 让 Claude 加入会议做记录，还能把演示稿转成一分钟讲解视频。Sheets 与 Whiteboards 面向全部付费方案公测，Meetings 限 Team 与 Enterprise；10 月以 Claude Dashboards 名义公测的 Claude Data 转为正式版。同时上线「交互式连接器」，可在对话里直接打开 HubSpot、Adobe、Atlassian 等合作方应用，例如内嵌 Adobe PDF 编辑器。Anthropic 产品负责人对 The Verge 说，非开发者的使用门槛是接下来要补的缺口。",
+    "d": "11月10日",
+    "src": "The Verge / Engadget",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+    "m": []
+  },
+  {
+    "t": "Google 全面开放 Gemini 4 Carbon，并预览 Antigravity 智能体 swarm",
+    "s": "Google DeepMind 11 月 10 日宣布 Gemini 4 Carbon 向付费开发者、企业与 AI Ultra 用户开放，称其为 Google 最强模型，在网络安全与长程智能体工作（复杂知识工作、软件工程、科学推理）上处于前沿；它会比 Argon 用更多 token 做探索和验证循环。API 介绍价与 Argon 相同，为每百万 token 入 2 美元、出 10 美元，11 月 30 日后恢复为 4/20 美元。Gemini app 模型选择器中 Carbon 标为「最复杂的工作」，同时下架 3.1 Pro。The Verge 报道，Antigravity 同步预览 swarm 功能，可把一条提示拆成一队协同的智能体。",
+    "d": "11月10日",
+    "src": "Google / The Verge / 9to5Google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "m": [
+      "Gemini 4 Carbon",
+      "Gemini 4 Argon"
+    ]
+  },
+  {
+    "t": "Anthropic 启动 IPO 路演：拟发 8.25 亿股，定价区间 70–78 美元",
+    "s": "Anthropic 官方公告称已启动首次公开发行路演，拟发行 8.25 亿股 A 类普通股，其中 801,351,354 股由公司发售、其余由部分现有股东出售，预计每股 70 至 78 美元，已申请以代码 ANT 在纳斯达克全球精选市场上市；注册声明生效前不得出售。第一财经称预计下周三定价、下周四开始交易。The Neuron 转述路透称，Anthropic 此前曾流传一版约 693 亿美元的 IPO 细节后撤回，称定价信息不准确、将另行更新文件。",
+    "d": "11月10日",
+    "src": "Anthropic / CNBC",
+    "url": "https://www.anthropic.com/news/roadshow-launch",
+    "m": []
+  },
+  {
+    "t": "OpenAI 推出 ChatGPT「Businesses」：商家主页、商品源与 Business Agent",
+    "s": "OpenAI 11 月 10 日公测「Businesses in ChatGPT」。商家可在 Business Hub 认领主页、更新信息并上传带价格和库存的商品源，Shopify 商家可从后台直接连接；后台提供提及次数、网站点击和「被引话题」等聚合数据，OpenAI 称不向商家分享用户对话，且数据要达到阈值才显示。美国符合条件的电商与在线服务商家可搭建 Business Agent，用户在回答中点开商家主页即可与其对话，该对话单独标注、与 ChatGPT 自身回答分开；商家也可赞助 Business Agent 作为 ChatGPT 广告的落地页。TechCrunch 评价这让 ChatGPT 更像 Google。",
+    "d": "11月10日",
+    "src": "OpenAI / TechCrunch / Reuters",
+    "url": "https://openai.com/index/introducing-businesses-chatgpt",
+    "m": []
+  },
+  {
+    "t": "FT：英伟达要求海外云伙伴至少 51% 服务卖给非中国客户",
+    "s": "英国《金融时报》11 月 10 日援引五位知情人士报道，英伟达要求其数据中心与云计算合作伙伴至少把 51% 的服务出售给非中国公司，相当于把中国客户业务上限压到 49%，以收窄中国企业通过海外租用获取先进算力的路线。英伟达回应称基于美国芯片的数据中心与云是基础。Tom's Hardware 等转述称，中国市场上 B300 服务器机柜价格已达约 280 万美元。",
+    "d": "11月10日",
+    "src": "Financial Times / Tom's Hardware",
+    "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million",
+    "m": []
+  },
+  {
+    "t": "Fireworks AI 入侵范围扩大：账单、密钥、数据集与未完成模型权重被访问",
+    "s": "推理平台 Fireworks AI 11 月 9 日更新安全公告：托管其研发机器的第三方云商 10 月 23 日出事，攻击者次日借此进入研发机器运行未授权任务，影响账户与账单信息，部分账户的密钥、数据集与未完成模型权重也被访问；支付卡号不由 Fireworks 存储、未受影响。公司称事件与「LLMJacking」（盗用大模型访问权转售）有关，已暂停自助数据集上传下载。Forbes 报道两家客户已把大部分业务迁出。这是其数周内第二次披露入侵。",
+    "d": "11月9–10日",
+    "src": "The Hacker News / Forbes / The Register",
+    "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
+    "m": []
+  },
+  {
+    "t": "澳大利亚宣布立法强制前沿 AI 安全义务，并设专门监管机构",
+    "s": "澳大利亚总理阿尔巴尼斯 11 月 10 日宣布，将通过《澳大利亚 AI 标准》立法，对所有想在澳运营的前沿 AI 公司施加强制安全与安保义务：全周期安全控制、识别管理严重风险、允许独立评测、快速向政府通报事故、公开安全框架，并随标准更新而调整；拟设新的 AI 安全监管机构，可处以重罚，并与澳大利亚 AI 安全研究所协作。美联社称这是对 6 月一起 OpenAI 智能体闯入卫生部门网站事件的回应。",
+    "d": "11月10日",
+    "src": "Prime Minister of Australia / AP",
+    "url": "https://www.pm.gov.au/media/new-australian-ai-safety-and-security-protections",
+    "m": []
+  },
+  {
+    "t": "Google Cloud 推出 Gemini for healthcare 预览：把病历、理赔与指南串成一条工作流",
+    "s": "Google Cloud CEO Thomas Kurian 11 月 10 日宣布 Gemini for healthcare，在美国以预览形式上线。它基于上月发布的通用 Gemini agent，为医疗机构整合跨科室病历、预先准备就诊资料、按保险方政策组装预授权材料；对保险方则按医疗政策核对申请并整理给审核医生。官方称每个智能体有独立身份、继承用户既有权限，支持 HIPAA 合规，关键环节保留人工把关。",
+    "d": "11月10日",
+    "src": "Google Cloud",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare",
+    "m": []
+  },
+  {
+    "t": "Google 扩充第八代 TPU：8tx 做机密推理，8i Max 双芯封装 384GB HBM",
+    "s": "Google 11 月 9 日发布 TPU 8tx 与 TPU 8i Max，一年内推出四款 TPU 系统。8tx 是 Google Cloud 首款支持机密计算的 TPU，与 AMD 合作在硬件层加密主机与 TPU 间传输、隔离使用中的数据与权重，面向政府和受监管行业；8i Max 把两颗 8i 封装在一起，配 384GB HBM、内存带宽 17.2TB/s，面向超长上下文与低时延推理。Google 同时开源 TPU Sync，称可把 KV 缓存传输时延和首 token 时延降低九成以上。",
+    "d": "11月9日",
+    "src": "Google / The Verge",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+    "m": []
+  },
+  {
+    "t": "Seedream 5.5 发布：百轮编辑不走样、原生透明素材，2K 编辑单张 0.28 元",
+    "s": "字节跳动 Seed 团队 11 月 9 日发布图像创作模型 Seedream 5.5：连续编辑中非编辑区域保持像素级一致，演示同一作品连改 100 轮；原生输出带 Alpha 通道的透明或半透明素材，可分层输出；官方评测严重/轻微文字崩坏率降至 0.4%/1.7%。火山引擎称 API 按输入图加输出图计费、文本 token 免费，2K 方图编辑单张 0.28 元，较 5.0 Pro 降价约 60%、快近 40%；豆包、即梦已接入，API 本周上线火山方舟，后续有 Pro 版。",
+    "d": "11月9日",
+    "src": "字节跳动 Seed / IT之家",
+    "url": "https://seed.bytedance.com/zh/seedream5_5",
+    "m": []
+  },
+  {
+    "t": "阿里云 Token Plan 个人版加量降价：Pro 月费从 499 元降至 312 元",
+    "s": "阿里云宣布上调大模型订阅 Token Plan 个人版四档额度：Lite、Essential、Standard 月费不变、额度提升约 74%–78%，分别到 2 万、4.5 万、8 万 Credits；Pro 额度由 18 万升至 20 万，月费由 499 元降至 312 元。按月费除以额度算，四档单位成本降约 42%–44%。新额度 11 月 9 日起陆续生效，覆盖存量用户。",
+    "d": "11月9日",
+    "src": "阿里云 / 橘鸦 AI 早报",
+    "url": "https://daily.juya.uk/issues/2026-11-10/",
+    "m": []
+  },
+  {
+    "t": "台积电 10 月营收 5868.9 亿新台币，同比增 59.7% 创单月新高",
+    "s": "台积电 11 月 10 日公布 10 月合并营收 5868.9 亿新台币，同比增长 59.7%，创单月新高；1–10 月累计 4.49 万亿新台币，同比增长 43.3%。作为英伟达、苹果、AMD 先进芯片的代工方，月度营收常被视为 AI 硬件需求的先行指标。",
+    "d": "11月10日",
+    "src": "HIMIAO 早报",
+    "url": "https://himiao.ai/daily/2026-11-11/",
+    "m": []
+  },
+  {
     "t": "Anthropic 发布 Claude Fable 5.2 与 Claude Mythos 5.2：更快、更便宜，并把「刻意不强化的能力」写进发布说明",
     "s": "Anthropic 11 月 9 日发布 Claude Fable 5.2 与 Claude Mythos 5.2。两者是同一底座：Fable 带网络安全与生物方面的防护分类器，因此可向所有用户开放；Mythos 去掉部分防护，只通过网络安全与生命科学验证计划向经审核机构提供。官方称输出最高比 5.1 快 30%，价格降到每百万 token 输入 8 美元、输出 40 美元（CNBC 称比 5.1 便宜约 20%），另有最高提速 2.5 倍的快速模式（16/80 美元）。公司自报的成绩包括：FrontierCode 2.0 在 Xhigh 强度下 49.1%，称为其测过的已发布模型最高；OSWorld 2.1（离线集，部分得分）89.3%；约 1000 个 Fable 5.2 智能体 30 小时内完成费马大定理的 Lean 形式化，而同设置下 Opus 5.5 在 18 小时只完成约 26%。安全部分写明：在专门的沙箱逃逸对抗评测里，Mythos 5.2 动用沙箱外凭据或文件的比例约 3.1%（Mythos 5、5.1 分别约 39%、21%）；Fable 5.2 的不必要拦截比 5.1 少约 55%；训练中刻意把加速器内核优化、改进大模型架构等最可能直接加速 AI 研发的能力压在约 Opus 5.5 水平。官方仍建议日常任务先用 Opus 5.5，难题再升到 Fable。以上数字均为厂商自测。",
     "d": "11月9日",
