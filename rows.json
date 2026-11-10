@@ -14,10 +14,10 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "11/9 发布(model ID <code>claude-fable-5-2</code>);<b>较 5.1 降价 20%:$8/$40、缓存读 $0.20(0.025×)</b>;批处理 5 折;fast 模式 $16/$80;1M 上下文/128K 输出;AA Changelog 09 Nov 以「Default Fallback」配置收录;AA 单任务成本 $26.54(全榜最贵之一,约 275M 输出 token);价格同 Max 档;<b>取代并移除 Fable 5.1(各档)</b>;AA 仅公布整数分,小数位按整数记",
+   "note": "<b>11-09 发布,AA v5.0.1 登顶 65 分(较 Fable 5.1 Max 的 49 分跃升 16 分、较 Gemini 4 Carbon 高 5 分)</b>;单价 $8/$40,较 5.1 下调 20%,缓存读取 $0.20(98% 折扣)、缓存写入 $10;1M 上下文,文本+图像输入;<b>九项评测中五项第一:HLE-Diamond 80%(前纪录 69%)、AA-Omniscience v1.1 67(前 54)、Terminal-Bench-Science 0.1 73%、CritPt v2 77%、FrontierCode 2.0 49%</b>;<b>代价同样极端:AA 记单任务成本 $26.54 为全榜最高、46.4 分钟/任务为全榜最慢、275M 输出 token 为全榜最啰嗦;Fast 模式 $16/$80、Batch 五折 $4/$20</b>;AA 页标注暂无第三方公开 API 供应商,成本按官方价目表折算",
    "cost": 18.0,
    "ability": 100.0,
-   "costscore": 4.193804716727856,
+   "costscore": 4.193804716727855,
    "value": 62,
    "eff": 3.6,
    "grade": "B",
@@ -36,10 +36,10 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "11/9 发布(model ID <code>claude-fable-5-2</code>);<b>较 5.1 降价 20%:$8/$40、缓存读 $0.20(0.025×)</b>;批处理 5 折;fast 模式 $16/$80;1M 上下文/128K 输出;AA Changelog 09 Nov 以「Default Fallback」配置收录;AA 记 xHigh 档 Intelligence Index 62;价格同 Max 档;<b>取代并移除 Fable 5.1(各档)</b>;AA 仅公布整数分,小数位按整数记",
+   "note": "<b>AA v5.0.1 xHigh 档 62,与 High 档并列「非 Max 档最高分」——高于 Gemini 4 Carbon(60) 2 分、高于 Opus 5.5 Max(59) 3 分</b>;价格同 Max 档($8/$40、缓存 $0.20);AA 记单任务成本 $14.83、26.3 分钟/任务;<b>官方口径 FrontierCode 2.0 在 Xhigh 档升至 49.1%,与 Max 档持平,而 High 档为 45.3%</b>——<b>「同分不同质」:62 分的 xHigh 比 62 分的 High 在代码合入率上高 3.8 个百分点</b>",
    "cost": 18.0,
    "ability": 95.4,
-   "costscore": 4.193804716727856,
+   "costscore": 4.193804716727855,
    "value": 59,
    "eff": 3.4,
    "grade": "C",
@@ -58,10 +58,10 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "11/9 发布(model ID <code>claude-fable-5-2</code>);<b>较 5.1 降价 20%:$8/$40、缓存读 $0.20(0.025×)</b>;批处理 5 折;fast 模式 $16/$80;1M 上下文/128K 输出;AA Changelog 09 Nov 以「Default Fallback」配置收录;AA 记 High 档 Intelligence Index 62;价格同 Max 档;<b>取代并移除 Fable 5.1(各档)</b>;AA 仅公布整数分,小数位按整数记",
+   "note": "<b>AA v5.0.1 High 档 62;与 xHigh 同分但便宜 39%、快 33%(单任务 $9.08 vs $14.83、17.7 分钟 vs 26.3 分钟)</b>;价格同 Max 档;<b>官方口径 FrontierCode 2.0 45.3%,已接近 Opus 5.5 Max 的 45.5%,而单任务费用约为后者一半</b>——<b>官方建议「日常用 Opus 5.5、最难任务再上 Fable」,若要长跑 Fable,High 档是最不烧钱的入口</b>",
    "cost": 18.0,
    "ability": 95.4,
-   "costscore": 4.193804716727856,
+   "costscore": 4.193804716727855,
    "value": 59,
    "eff": 3.4,
    "grade": "C",
@@ -83,7 +83,7 @@
    "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>可用性受限:本周先向 Fairwind 计划内的白帽与受信任伙伴分批放量,其后才面向开发者与企业;面向公众的公开 API 仍无时间表</b>;介绍期定价 $2/$10(与 Argon 持平,后续调整为 $4/$20),缓存输入再享 95% 折扣=$0.20;1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
    "cost": 4.5,
    "ability": 92.3,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 67,
    "eff": 13.3,
    "grade": "B",
@@ -105,7 +105,7 @@
    "note": "9/22 发布;1M 上下文/128K 输出;知识截止 2026-06;effort low→max(默认 high);<b>v5.0 三项单项第一:FrontierCode 2.0 46%、HLE-Diamond 68%、AA-Omniscience v1.1 48</b>;缓存读取 $0.20(较 Opus 5 降 60%)、缓存写 5 分钟 $5/1 小时 $8;Batch 5 折;Fast 模式 2 倍($8/$40);<b>AA 记单任务成本 $10.04,为前十名最贵</b>",
    "cost": 9.0,
    "ability": 90.8,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 61,
    "eff": 6.6,
    "grade": "B",
@@ -127,7 +127,7 @@
    "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档(介绍期 $2/$10、标准 $4/$20,缓存 $0.20);AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(Fairwind 计划分批放量)",
    "cost": 4.5,
    "ability": 89.2,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 66,
    "eff": 12.9,
    "grade": "B",
@@ -149,7 +149,7 @@
    "note": "AA v5.0 xHigh 档 57.0;价格同 Max 档;<b>AA 记单任务成本 $6.05——比 Max 档省 40% 成本只少 1.4 分,是 Opus 5.5 五档里性价比最优点</b>",
    "cost": 9.0,
    "ability": 87.7,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 60,
    "eff": 6.3,
    "grade": "B",
@@ -190,10 +190,10 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "11/9 发布(model ID <code>claude-fable-5-2</code>);<b>较 5.1 降价 20%:$8/$40、缓存读 $0.20(0.025×)</b>;批处理 5 折;fast 模式 $16/$80;1M 上下文/128K 输出;AA Changelog 09 Nov 以「Default Fallback」配置收录;AA 记 Medium 档 Intelligence Index 56;价格同 Max 档;<b>取代并移除 Fable 5.1(各档)</b>;AA 仅公布整数分,小数位按整数记",
+   "note": "<b>AA v5.0.1 Medium 档 56;单任务成本 $3.80、8.3 分钟——比 Max 档便宜 86%、快 5.6 倍,只少 9 分,是本模型性价比最优档</b>;价格同 Max 档;官方称 5.2 在 Medium 档即可完成部分难题且输出 token 少于 5.1,实际账单可能进一步下降;<b>已高于 Gemini 4 Carbon 的 Medium 档(58)之外的所有非 Anthropic 模型</b>",
    "cost": 18.0,
    "ability": 86.2,
-   "costscore": 4.193804716727856,
+   "costscore": 4.193804716727855,
    "value": 53,
    "eff": 3.1,
    "grade": "C",
@@ -259,7 +259,7 @@
    "note": "<b>9/29 DevDay 发布</b>;$2/$10、缓存读 $0.10、缓存写 $2.50;>272K 整单输入 2x/输出 1.5x;effort low/medium(默认)/high/xhigh/max、<b>无 none</b>;Chat Completions 不支持工具调用(需 Responses API);DeepSWE v1.1 75.2%@high;<b>AA 记单任务成本 $1.27——与 Opus 5.5 仅差 3.4 分,单任务成本只有其 1/8,本期「旗舰档性价比」标杆</b>",
    "cost": 4.5,
    "ability": 84.6,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 63,
    "eff": 12.2,
    "grade": "B",
@@ -281,7 +281,7 @@
    "note": "9/28 发布;1M 上下文/128K 输出;<b>AA-Briefcase 1812 Elo 为全榜第一</b>;缓存读取 10/7 随 Haiku 5.5 发布再砍半至 $0.10;官方默认 effort=high;<b>五档跨度 28.9 分为全榜最大(v5 较 v4.3 的 20 分继续拉大);AA 记 Max 档每任务约 193K 输出 token、单任务 $10.02——「单价低、账单高」的典型</b>",
    "cost": 4.5,
    "ability": 84.6,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 63,
    "eff": 12.2,
    "grade": "B",
@@ -303,7 +303,7 @@
    "note": "AA v5.0 Low 档 54——<b>本模型三档跨度 5.4 分(59.4→54),是同代旗舰里档位跨度最小的一组,说明其能力主要来自基础模型而非推理时长</b>;价格同 High 档;AA 未公布该档单任务成本(显示为空)",
    "cost": 4.5,
    "ability": 83.1,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 62,
    "eff": 12.0,
    "grade": "B",
@@ -322,10 +322,10 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "11/9 发布(model ID <code>claude-fable-5-2</code>);<b>较 5.1 降价 20%:$8/$40、缓存读 $0.20(0.025×)</b>;批处理 5 折;fast 模式 $16/$80;1M 上下文/128K 输出;AA Changelog 09 Nov 以「Default Fallback」配置收录;AA 记 Low 档 Intelligence Index 54;价格同 Max 档;<b>取代并移除 Fable 5.1(各档)</b>;AA 仅公布整数分,小数位按整数记",
+   "note": "<b>AA v5.0.1 Low 档 54;单任务成本 $3.10、6.5 分钟、首 token 6.54 秒——延迟已接近轻量模型</b>;价格同 Max 档;<b>与 Gemini 4 Carbon Low 档(54)同分,但标准任务成本为其 4 倍($18.00 vs $4.50)</b>;<b>低档仍保留 98% 缓存折扣,长对话／RAG 场景缓存命中 $0.20 是其主要缓冲</b>",
    "cost": 18.0,
    "ability": 83.1,
-   "costscore": 4.193804716727856,
+   "costscore": 4.193804716727855,
    "value": 52,
    "eff": 3.0,
    "grade": "C",
@@ -347,7 +347,7 @@
    "note": "AA v5.0 xHigh 档 52;价格同 Max 档;AA 记单任务成本 $0.76",
    "cost": 4.5,
    "ability": 80.0,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 60,
    "eff": 11.6,
    "grade": "B",
@@ -369,7 +369,7 @@
    "note": "AA v5.0 High 档 52(官方默认 effort);价格同 Max 档;AA 记单任务成本 $3.46、80 tok/s",
    "cost": 9.0,
    "ability": 80.0,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 55,
    "eff": 5.8,
    "grade": "C",
@@ -435,7 +435,7 @@
    "note": "10/13 起对公众开放,当前 Google 公开可用的最高档;<b>v5.0 单项第一:AutomationBench-AA 78%</b>;1M 统一上下文、默认输出 65,536;介绍期 $2/$10 至 11-30,缓存 $0.10;AA 记单任务成本 $7.68;官方 thinking 提供 low/medium(默认)/high 三档,<b>AA 仅发布 High 档独立分(其余档列入第六节)</b>",
    "cost": 4.5,
    "ability": 76.9,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 58,
    "eff": 11.1,
    "grade": "C",
@@ -457,7 +457,7 @@
    "note": "AA v5.0 High 档 50;DeepSWE v1.1 75.2% 即官方公布的 high 档成绩;价格同 Max 档;AA 记单任务成本 $0.59",
    "cost": 4.5,
    "ability": 76.9,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 58,
    "eff": 11.1,
    "grade": "C",
@@ -501,7 +501,7 @@
    "note": "AA v5.0 xHigh 档 50;价格同 Max 档;AA 记单任务成本 $4.09、107 tok/s",
    "cost": 4.5,
    "ability": 76.9,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 58,
    "eff": 11.1,
    "grade": "C",
@@ -523,7 +523,7 @@
    "note": "AA v5.0 Medium 档 48;价格同 Max 档;AA 记单任务成本 $2.45",
    "cost": 9.0,
    "ability": 73.8,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 51,
    "eff": 5.3,
    "grade": "C",
@@ -545,7 +545,7 @@
    "note": "<b>权重已兑现开放</b>：HF <code>moonshotai/Kimi-K3.1-Pro</code>（约 96×safetensors / MXFP4 合计 ≈1.56TB；createdAt 2026-11-02 UTC，非 gated；LICENSE=Kimi K3.1-Pro License）；<b>现为可下载开放权重中 AA 分最高（v5.0.1 Max 46.5→46）</b>；2.8T/104B MoE、1M 上下文、原生多模态；API 仍 $2/$10、缓存 $0.20（OR moonshotai/kimi-k3.1-pro 一致）；AA 记单任务成本约 $3.68、约 31 tok/s；<b>v5.0 单项第一:Terminal-Bench 4.0 67%</b>；许可含 MaaS 营收门槛与大体量产品署名条款，≠MIT/Apache",
    "cost": 4.5,
    "ability": 70.8,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 55,
    "eff": 10.2,
    "grade": "C",
@@ -567,7 +567,7 @@
    "note": "AA v5.0 Medium(官方默认)档 46;价格同 Max 档;AA 记单任务成本 $0.36",
    "cost": 4.5,
    "ability": 70.8,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 55,
    "eff": 10.2,
    "grade": "C",
@@ -611,7 +611,7 @@
    "note": "muse-wonder-1.0;$4/$20、缓存 $0.20;1.05M 上下文;AA 记单任务成本 $6.95、143 tok/s;High 档 AA 41 已另列",
    "cost": 9.0,
    "ability": 67.7,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 48,
    "eff": 4.9,
    "grade": "D",
@@ -677,7 +677,7 @@
    "note": "AA v5.0 High 档 41(API 默认档、官方建议起始档);价格同 Max 档;AA 记单任务成本 $1.64",
    "cost": 4.5,
    "ability": 64.6,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 51,
    "eff": 9.3,
    "grade": "C",
@@ -699,7 +699,7 @@
    "note": "muse-wonder-1.0 High 档；AA Changelog <b>04 Nov</b> 新增 Intelligence Index <b>41</b>（slug <code>muse-wonder-high</code>）；与 Max 同价 $4/$20、缓存 $0.20；1.05M 上下文；闭源专有；同模型 Max 档 AA 44 已在榜",
    "cost": 9.0,
    "ability": 63.1,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 45,
    "eff": 4.6,
    "grade": "D",
@@ -762,7 +762,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "muse-ember-1.0(11/9 AA 收录);≤200K 输入 $0.10/$0.50、缓存 $0.004;<b>>200K 输入整请求按 $0.30/$1.50、缓存 $0.012 计</b>;1.05M 上下文/524K 输出;文本/图/音/视频/PDF 输入;Meta Model API 仅标准模式;<b>AA 记单任务成本 $0.14,与 Claude Haiku 5.5(Max)同为 36 分而成本约其三分之一</b>;AA 仅公布整数分",
+   "note": "<b>11-09 发布;AA v5.0.1 Max 档 36,与 Claude Haiku 5.5 Max 同分,但 AA 单任务成本 $0.14 仅为其 34%</b>;muse-ember-1.0;$0.10/$0.50、缓存 $0.004(96% 折扣);1M 上下文、最长 512K 输出;原生多模态(文本／图像／音频／视频／PDF)入、文本出;<b>Agent 侧强:AutomationBench-AA 68.1%(与 Muse Wonder Max 持平,Haiku 为 35.4%)、Terminal-Bench 4.0 40.9%(Haiku 32.8%);弱项是知识:AA-Omniscience 仅 21.1%(拒答 64% 换得幻觉率 17.4%,为 Haiku 一半)、FrontierCode 2.0 27.2% 低于 Haiku 的 34.9%</b>;Muse Code 内 Coding Agent Index 46(高于 Claude Code 中 Haiku 的 37);<b>AA 尚未测出其输出速度与时间指标</b>",
    "cost": 0.225,
    "ability": 55.4,
    "costscore": 86.55049331959562,
@@ -853,7 +853,7 @@
    "note": "AA v5.0 Low 档 35;价格同 Max 档;AA 记单任务成本 $0.16",
    "cost": 4.5,
    "ability": 53.8,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 44,
    "eff": 7.8,
    "grade": "D",
@@ -875,7 +875,7 @@
    "note": "AA v5.0 Low 档 35;价格同 Max 档;<b>五档跨度 23.9 分(Max 58.4 → Low 35),单任务成本 $10.04 → $0.98</b>",
    "cost": 9.0,
    "ability": 53.8,
-   "costscore": 17.220952031084508,
+   "costscore": 17.2209520310845,
    "value": 39,
    "eff": 3.9,
    "grade": "D",
@@ -916,7 +916,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "muse-ember-1.0(11/9 AA 收录);≤200K 输入 $0.10/$0.50、缓存 $0.004;<b>>200K 输入整请求按 $0.30/$1.50、缓存 $0.012 计</b>;1.05M 上下文/524K 输出;文本/图/音/视频/PDF 输入;Meta Model API 仅标准模式;AA v5.0.1 xHigh 档 34;价格同 Max 档;AA 仅公布整数分",
+   "note": "<b>AA v5.0.1 xHigh 档 34;单任务成本 $0.12——比 Max 档少 2 分、省 14%</b>;价格同 Max 档($0.10/$0.50、缓存 $0.004);1M 上下文;<b>与 Qwen3.8 Max(34)同分,但标准任务成本 $0.225 仅为其 $3.50 的 6.4%</b>——以「便宜到可无脑调用」为设计目标,适用路由、抽取、长文档解析等高频重复环节",
    "cost": 0.225,
    "ability": 52.3,
    "costscore": 86.55049331959562,
@@ -963,7 +963,7 @@
    "note": "552B/16B MoE、原生视觉、1M 上下文,10/17 权重开源(纯 MIT);<b>峰值 ¥2/¥8、缓存命中 ¥0.04,闲时减半</b>;AA 记单任务成本 $0.60、175 tok/s;<b>v5 报告点名其为「已发布权重的最高分」并列者(32);FrontierCode 2.0 28% 为开放权重第一、Cyber Index 57% 亦为开放模型第一</b>",
    "cost": 0.59534175,
    "ability": 50.8,
-   "costscore": 68.2630742045638,
+   "costscore": 68.26307420456378,
    "value": 58,
    "eff": 55.4,
    "grade": "C",
@@ -985,7 +985,7 @@
    "note": "744B/40B,200K 上下文,8/28 开源;$1.40/$4.40、缓存 $0.27;<b>与 DeepSeek V4.1 Flash 并列「已发布权重的中国开源最强」(32);AA v5 指出开放权重与榜首差距由 v4.3 的 3 分扩大到 12 分</b>;AA 记单任务成本 $5.01(输出冗长);Coding Agent Index 48%",
    "cost": 2.5,
    "ability": 49.2,
-   "costscore": 41.295079969251226,
+   "costscore": 41.29507996925122,
    "value": 46,
    "eff": 12.8,
    "grade": "D",
@@ -1051,7 +1051,7 @@
    "note": "9/2 发布;促销价 $0.75/$3.75 至 12-31(标准价 $1.50/$7.50),缓存 90% 折扣;1M 上下文;AA 记单任务成本 $7.77——<b>单价低但输出极长,单任务成本反而高于多数旗舰</b>",
    "cost": 1.6875,
    "ability": 47.7,
-   "costscore": 48.6820013038855,
+   "costscore": 48.682001303885485,
    "value": 48,
    "eff": 18.4,
    "grade": "D",
@@ -1073,7 +1073,7 @@
    "note": "AA v5.0 Medium 档 30(Claude 应用默认档);价格同 Max 档;AA 记单任务成本 $0.78",
    "cost": 4.5,
    "ability": 47.7,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 41,
    "eff": 6.9,
    "grade": "D",
@@ -1117,7 +1117,7 @@
    "note": "AA v5.0 Medium(官方默认)档 30;促销价同 High 档;AA 记单任务成本 $6.26",
    "cost": 1.6875,
    "ability": 46.2,
-   "costscore": 48.6820013038855,
+   "costscore": 48.682001303885485,
    "value": 47,
    "eff": 17.8,
    "grade": "D",
@@ -1161,7 +1161,7 @@
    "note": "1.02T/42B,1M 上下文,9/22 发布(纯 MIT);$0.435/$0.87、缓存 $0.0036;<b>Cyber Index 56% 为开放模型第二</b>;AA 记单任务成本 $0.26、49 tok/s——<b>开放权重里单位成本最低的大模型之一</b>",
    "cost": 0.6525,
    "ability": 46.2,
-   "costscore": 66.54010590552163,
+   "costscore": 66.54010590552161,
    "value": 54,
    "eff": 46.0,
    "grade": "C",
@@ -1249,7 +1249,7 @@
    "note": "<b>本期新增:AA v5.0 首次给出 High 档独立分 29(介于默认档 32 与 Non-reasoning 档 19 之间)</b>;价格同默认档(峰值 ¥2/¥8、缓存 ¥0.04、闲时减半);<b>High 档速度 203 tok/s,介于默认档 175 与 Non-reasoning 档 1,486 之间</b>——<b>三档至此齐全:32／29／19,可按「质量—吞吐」曲线选档</b>",
    "cost": 0.59534175,
    "ability": 44.6,
-   "costscore": 68.2630742045638,
+   "costscore": 68.26307420456378,
    "value": 54,
    "eff": 48.7,
    "grade": "C",
@@ -1271,7 +1271,7 @@
    "note": "<b>本期新增入榜</b>:600B/27B 激活稀疏 MoE、1M 上下文、64K 最大输出,9/16 起以 Preview 发布并在 HF 放出 FP8/BF16(10-14 增 NVFP4)权重;<b>许可为 StepFun Model License 1.0——Apache 2.0 风格但带条件:商用须署名,商业产品月活 &gt;1 亿或单月营收 &gt;2,000 万美元需另签授权,硬件厂商与 MaaS 转售另有条款,不得标为 Apache 2.0</b>;官方 $1.00/$2.70、缓存 $0.10;AA 记单任务成本 $2.35、165 tok/s;<b>Preview 标记保留(厂商尚未发布正式版)</b>",
    "cost": 1.675,
    "ability": 44.6,
-   "costscore": 48.82173578272696,
+   "costscore": 48.82173578272695,
    "value": 46,
    "eff": 17.3,
    "grade": "D",
@@ -1315,7 +1315,7 @@
    "note": "320B/18B,1M 上下文,8/26 发布即开源(纯 MIT);国内官方价 ¥0.8/¥2.8/缓存 ¥0.23(阿里云百炼原厂直供页 10-10 更新,本期复核未变),z.ai 国际站另挂 $0.15/$0.50;<b>本报告取国内官价口径</b>;AA 记单任务成本 $0.58、69 tok/s",
    "cost": 0.22325224999999999,
    "ability": 43.1,
-   "costscore": 86.697052454333,
+   "costscore": 86.69705245433298,
    "value": 61,
    "eff": 125.4,
    "grade": "B",
@@ -1381,7 +1381,7 @@
    "note": "AA v5.0 Low 档 25;价格同 Max 档;AA 记单任务成本 $0.51",
    "cost": 4.5,
    "ability": 40.0,
-   "costscore": 30.248099345441158,
+   "costscore": 30.24809934544115,
    "value": 36,
    "eff": 5.8,
    "grade": "D",
@@ -1403,7 +1403,7 @@
    "note": "816B/42B;10/15 放出权重;$1.25/$4.25、缓存 $0.15;1.05M 上下文;<b>许可非 Apache/MIT:需署名且有 2,000 万美元级转售条款,商用前必须核条款</b>;AA 记单任务成本 $2.02;<b>同代更小的 Muse Spark 1.3 已被 AA 标记 deprecated、移出 v5.0 榜单</b>",
    "cost": 2.3125,
    "ability": 38.5,
-   "costscore": 42.76030483644295,
+   "costscore": 42.76030483644294,
    "value": 40,
    "eff": 10.8,
    "grade": "D",
@@ -1434,17 +1434,17 @@
   {
    "name": "Agnes 2.5 Pro Theta",
    "vendor": "Sapiens AI",
-   "country": "新加坡",
+   "country": "中国",
    "tier": "默认",
    "aa": 24,
    "aa_dec": 24.0,
    "pin": 0.1,
    "pcache": 0.01,
    "pout": 0.3,
-   "open_": "闭源",
-   "lic": "专有",
+   "open_": "待核实（未见官方权重发布）",
+   "lic": "待核实（未见官方许可声明）",
    "src": "官方",
-   "note": "<b>AA Changelog 11-08 与模型页公布 Intelligence Index v5.0.1 独立分 24（原始 24.03）</b>；<b>新加坡 Sapiens AI / Agnes AI 官方 API，型号 <code>agnes-2.5-pro-theta</code>，定价输入 $0.10 / 输出 $0.30 / 缓存命中 $0.01（输入价的 10%），标价与试用价相同、无额外折扣（国际站定价页、Wiki 定价页与 Theta 模型页三处一致；同系 <code>agnes-2.5-pro</code> 才是 $0.45/$0.90/$0.045，不得混用）</b>；1M 上下文，文本+图像输入、文本输出，推理版；闭源专有；可用性取决于账号与 API key；AA 记单任务成本 $0.57。<b>同系 Beta 在 v5.0.1 仍为 Unknown，3.0 Pro 官方标 Coming soon，均不入主榜</b>。",
+   "note": "<b>11-08 获 AA 首评,24 分</b>;1M 上下文、文本+图像输入;$0.10/$0.30、缓存命中 $0.01(90% 折扣);AA 记单任务成本 $0.57(257M 输出 token 明显啰嗦)、210 tok/s、首 token 20.53 秒、22.0 分钟/任务;<b>属「便宜但不算强」区间:能力分 24,低于同为 $0.10/$0.50 的 Muse Ember(36) 与 Claude Haiku 5.5(36),高于 DeepSeek V4 Pro 0813(23)</b>;<b>权重是否开放、许可条款均未见官方声明,按规则标「待核实」,不计入第四节开放权重榜</b>",
    "cost": 0.175,
    "ability": 36.9,
    "costscore": 91.2737471555182,
@@ -1513,7 +1513,7 @@
    "note": "1.6T/49B,1M 上下文;峰值 ¥9/¥27、缓存 ¥0.30;<b>AA 榜单以 0813 标识该系列并给出 v5.0 23 分;0813 属当前生产版官方名称自带日期,按规则保留、不视作历史快照</b>;AA 记单任务成本 $1.77、81 tok/s;<b>其单位成本远高于 V4.1 Flash 却分数更低——老一代旗舰已被自家 Flash 系列超越</b>",
    "cost": 2.34417125,
    "ability": 35.4,
-   "costscore": 42.50465225577726,
+   "costscore": 42.504652255777245,
    "value": 38,
    "eff": 9.8,
    "grade": "D",
@@ -1535,7 +1535,7 @@
    "note": "AA v5.0 Low 档 23(较 Max 少 8.7 分);价格同 Max 档;<b>AA 记单任务成本 $1.57——比 Max 档省 69%,本榜「降档省钱」幅度最大的开放权重旗舰档</b>",
    "cost": 2.5,
    "ability": 35.4,
-   "costscore": 41.295079969251226,
+   "costscore": 41.29507996925122,
    "value": 38,
    "eff": 9.2,
    "grade": "D",
@@ -1557,7 +1557,7 @@
    "note": "AA v5.0 Low 档 22;促销价同 High 档;AA 未给出该档单任务成本(显示为空)",
    "cost": 1.6875,
    "ability": 35.4,
-   "costscore": 48.6820013038855,
+   "costscore": 48.682001303885485,
    "value": 41,
    "eff": 13.6,
    "grade": "D",
@@ -1645,7 +1645,7 @@
    "note": "上代旗舰,1M 上下文;$0.30/$1.20、缓存 $0.06;AA 记单任务成本 $1.29、106 tok/s;<b>已被 M3.1 Flash 全面超越(19 vs 29)且更贵,存量部署仍有价值</b>",
    "cost": 0.6,
    "ability": 29.2,
-   "costscore": 68.11659136115128,
+   "costscore": 68.11659136115127,
    "value": 45,
    "eff": 31.7,
    "grade": "D",
@@ -1711,7 +1711,7 @@
    "note": "<b>AA v5.0 Non-reasoning 档 19(较默认档少 13.5 分),但输出速度 1,486 tok/s 为全榜最快</b>;价格同默认档;<b>关推理换来 8.5 倍吞吐,代价是 13.5 分能力</b>;适用批处理抽取、分类、格式转换等「要吞吐不要推理」的任务",
    "cost": 0.59534175,
    "ability": 29.2,
-   "costscore": 68.2630742045638,
+   "costscore": 68.26307420456378,
    "value": 45,
    "eff": 31.9,
    "grade": "D",
@@ -1755,7 +1755,7 @@
    "note": "501B/23B,1M 上下文,10/16 放出权重(纯 Apache 2.0);$0.40/$1.20(<b>第三方托管挂牌价,原厂未刊布统一 API 价</b>);AA 记单任务成本 $0.28、299 tok/s",
    "cost": 0.7,
    "ability": 27.7,
-   "costscore": 65.2194525268049,
+   "costscore": 65.21945252680489,
    "value": 43,
    "eff": 25.7,
    "grade": "D",
@@ -1828,6 +1828,28 @@
    "rank": 83
   },
   {
+   "name": "DeepSeek V4 Pro 0813",
+   "vendor": "DeepSeek",
+   "country": "中国",
+   "tier": "Non-reasoning",
+   "aa": 13,
+   "aa_dec": 13.0,
+   "pin": 1.339525,
+   "pcache": 0.044651,
+   "pout": 4.018585,
+   "open_": "开放权重",
+   "lic": "MIT",
+   "src": "官方",
+   "note": "<b>本期新增:AA v5.0.1 首次给出 V4 Pro 0813 的 Non-reasoning 档独立分 13(较 Max 档 23 少 10 分)</b>;价格同 Max 档(峰值 ¥9/¥27、缓存 ¥0.30);AA 记单任务成本 $0.98、首 token 3.41 秒;<b>至此 V4 Pro 两档齐全:Max 23／Non-reasoning 13;同价位下仍不及自家 V4.1 Flash 任一档(33／29／19),老旗舰的劣势被进一步量化</b>",
+   "cost": 2.34417125,
+   "ability": 20.0,
+   "costscore": 42.504652255777245,
+   "value": 29,
+   "eff": 5.5,
+   "grade": "D",
+   "rank": 84
+  },
+  {
    "name": "Inkling Small",
    "vendor": "Thinking Machines",
    "country": "美国",
@@ -1843,11 +1865,11 @@
    "note": "小型开放权重;$0.30/$1.20、缓存 $0.06;1M 上下文;AA 记单任务成本 $0.20、204 tok/s;<b>v5.0 13 分,较 v4.3.2 的 26 分腰斩——同一模型跨版分数大幅下移,不可跨版比较</b>",
    "cost": 0.6,
    "ability": 20.0,
-   "costscore": 68.11659136115128,
+   "costscore": 68.11659136115127,
    "value": 39,
    "eff": 21.7,
    "grade": "D",
-   "rank": 84
+   "rank": 85
   },
   {
    "name": "Inkling",
@@ -1868,8 +1890,8 @@
    "costscore": 45.37178648270081,
    "value": 29,
    "eff": 6.0,
-   "grade": "E",
-   "rank": 85
+   "grade": "D",
+   "rank": 86
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -1887,11 +1909,11 @@
    "note": "550B/55B,262K 上下文;$0.60/$2.70(<b>第三方托管挂牌价</b>);AA 记单任务成本 $2.23、153 tok/s;<b>v5.0 仅 12 分,与 550B 规模严重不匹配——NVIDIA 开放模型在通用推理上仍落后中国开源阵营约 18 分</b>",
    "cost": 1.275,
    "ability": 18.5,
-   "costscore": 53.95005272929427,
+   "costscore": 53.950052729294256,
    "value": 33,
    "eff": 9.4,
    "grade": "D",
-   "rank": 86
+   "rank": 87
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -1913,7 +1935,7 @@
    "value": 35,
    "eff": 13.0,
    "grade": "D",
-   "rank": 87
+   "rank": 88
   },
   {
    "name": "Qwen3.8 27B",
@@ -1935,7 +1957,7 @@
    "value": 31,
    "eff": 8.0,
    "grade": "D",
-   "rank": 88
+   "rank": 89
   },
   {
    "name": "GPT-6 Luna",
@@ -1957,7 +1979,7 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 89
+   "rank": 90
   },
   {
    "name": "GPT-6 Luna",
@@ -1979,7 +2001,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 90
+   "rank": 91
   },
   {
    "name": "Muse Glimmer",
@@ -2001,7 +2023,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 91
+   "rank": 92
   },
   {
    "name": "Command A+",
@@ -2023,7 +2045,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 92
+   "rank": 93
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2045,7 +2067,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 93
+   "rank": 94
   },
   {
    "name": "Granite 4.2 8B",
@@ -2067,7 +2089,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 94
+   "rank": 95
   },
   {
    "name": "Granite 4.2 3B",
@@ -2089,7 +2111,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 95
+   "rank": 96
   },
   {
    "name": "Mistral Small 4",
@@ -2111,7 +2133,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 96
+   "rank": 97
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2133,19 +2155,74 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 97
+   "rank": 98
   }
  ],
  "changes": [
   {
-   "d": "11-10",
-   "t": "AA 11-09 新增评测:Claude Fable 5.2 五档(Max 65 / xHigh 62 / High 62 / Medium 56 / Low 54)与 Muse Ember(Max 36 / xHigh 34)入榜,Fable 5.2 取代 5.1;榜首易主,能力分母 60→65",
+   "d": "11-09",
+   "t": "Claude Fable 5.2 五档入榜登顶（Max 65）：较 5.1 跃升 16 分、单价降 20%，TOP_AA 60→65 全榜重算",
    "m": [
     "Claude Fable 5.2",
-    "Muse Ember",
-    "Claude Fable 5.1"
+    "Claude Fable 5.1",
+    "Gemini 4 Carbon",
+    "Claude Opus 5.5"
    ],
-   "s": "<b>AA Changelog 09 Nov(指数仍 v5.0.1,无方法学变更)</b>新增 Claude Fable 5.2 五档与 Muse Ember 两档。<b>Fable 5.2 官方价 $8/$40、缓存 $0.20(较 5.1 的 $10/$50 降 20%),标准任务成本 $18.00(5.1 为 $22.50)</b>;<b>Fable 5.2(Max)65 分登顶,取代 Gemini 4 Carbon(High)60;因 5.1 已被 5.2 取代,按「只留系列最新版」移除 Fable 5.1 五档</b>。<b>Muse Ember 官方价 ≤200K 输入 $0.10/$0.50、缓存 $0.004(>200K 整请求 $0.30/$1.50),标准任务成本 $0.225,与 Haiku 5.5 同价;Max 36 分</b>。<b>能力分分母由 60 升至 65,全榜能力分、综合分与等级按同一公式重算;成本锚点($22.50/$0.11)不变(GPT-6 Astra 仍为 $22.50)</b>。Inkling 2 Small 与 Hy4 权重仍未发布(沿用原条目);Mythos 5.2 为受限开放(limited availability)且 AA 未收录,不入榜。"
+   "s": "<b>Anthropic 于当地时间 11-09 发布 Claude Fable 5.2 与 Claude Mythos 5.2（同一底层模型，Fable 带网安／生物防护面向全部用户，Mythos 仅向通过审核的机构开放）。AA 11-09 当日给出五档独立分：Max 65、xHigh 62、High 62、Medium 56、Low 54——<u>Max 档比自家 Fable 5.1 Max（49）高 16 分，比上期榜首 Gemini 4 Carbon（60）高 5 分，指数榜首一个月内第二次易主</u></b>。<b>价格反向走：标准价由 $10/$50 降至 $8/$40（-20%），缓存读取 $0.20、缓存写入 $10，Fast 模式 $16/$80、Batch 五折 $4/$20</b>。<b>能力来自五项评测同时第一：HLE-Diamond 80%（前纪录 69%）、AA-Omniscience v1.1 67（前 54）、Terminal-Bench-Science 0.1 73%、CritPt v2 77%、FrontierCode 2.0 49%</b>。<b>但它是「最贵、最慢、最啰嗦」三冠：AA 记单任务成本 $26.54（全榜最高）、46.4 分钟/任务（最慢）、275M 输出 token（最啰嗦），单次任务成本是 Opus 5.5 Max（$10.04）的 2.6 倍</b>。<b>连带两个结构性后果：① Gemini 4 Carbon 让出榜首，退居第 4（60）；② Claude Fable 5.1 五档随换代整体移出主榜（官方价目已转入 Legacy），主榜「同一系列只留当前版本」的口径本期首次触发实际移出</b>。"
+  },
+  {
+   "d": "11-09",
+   "t": "Meta Muse Ember 两档入榜（36／34）：36 分档最便宜，$0.14/任务仅为 Haiku 5.5 的三分之一，但知识项是短板",
+   "m": [
+    "Muse Ember",
+    "Claude Haiku 5.5",
+    "GPT-6 Luna",
+    "Muse Wonder"
+   ],
+   "s": "<b>Meta 于当地时间 11-09 发布 Muse Ember（muse-ember-1.0），定位「最小、最省」的高频执行档，已在 Meta Model API 与 Muse Code 上线：$0.10 输入／$0.004 缓存输入／$0.50 输出，1M 上下文、最长 512K 输出，原生接受文本／图像／音频／视频／PDF</b>。<b>AA v5.0.1 给出 Max 36、xHigh 34——Max 档与 Claude Haiku 5.5 Max 同分，但 AA 记单任务成本 $0.14 只有后者（$0.41）的 34%，是「36 分及以上」这一档里最便宜的模型；xHigh 档 34 分、$0.12/任务，标准任务成本 $0.225 仅为 Qwen3.8 Max（$3.50）的 6.4%</b>。<b>强项明确在 Agent：AutomationBench-AA 68.1%（与 Muse Wonder Max 持平，Haiku 仅 35.4%）、Terminal-Bench 4.0 40.9%（Haiku 32.8%）、Muse Code 内 Coding Agent Index 46（Claude Code 里的 Haiku 为 37）</b>。<b>短板同样明确在知识：AA-Omniscience 准确率仅 21.1%（拒答率 64%），换来 17.4% 的幻觉率——约为 Haiku 5.5 的一半；FrontierCode 2.0 27.2% 落后 Haiku 的 34.9%</b>。<b>选型建议写清楚：把它当执行层（子智能体、路由、抽取、长文档解析）划算；把它当知识问答主力则不划算</b>。"
+  },
+  {
+   "d": "11-09",
+   "t": "Claude Fable 5.1 五档整体移出主榜：被 5.2 取代，官方价目已转入 Legacy",
+   "m": [
+    "Claude Fable 5.1",
+    "Claude Fable 5.2"
+   ],
+   "s": "<b>按「只保留每个系列当前最新、仍在使用的通用版本」规则，Claude Fable 5.1 的五个档位（xHigh 50／Max 49／High 47／Medium 43／Low 39）本期整体移出主榜</b>。<b>依据有三：① Anthropic 官方定价页已将 Fable 5.1 移入 Legacy models 分区（与 Opus 5、Sonnet 5、Haiku 4.5 并列），现行 Fable 区仅剩 5.2；② AA 榜单在「Current」筛选下已不再展示 Fable 5.1 任何档位；③ 5.2 在同价位区（降 20% 后）对 5.1 形成全面覆盖——Max 档 +16 分、High 档 +15 分、Medium 档 +13 分、Low 档 +15 分，无任何一档 5.1 更优</b>。<b>这不是「删除旧模型」而是「换代」：Fable 5.1 仍可通过 Legacy 价目调用（$10/$50），但已不是官方当前版本，按本报告口径不再占用主榜行位</b>。"
+  },
+  {
+   "d": "11-10",
+   "t": "汇率 6.7188→6.7167（11-10 中间价调升 21 点）：人民币定价模型美元成本上移 0.03%；另新增两行（Agnes 2.5 Pro Theta、DeepSeek V4 Pro Non-reasoning）",
+   "m": [
+    "DeepSeek V4.1 Flash（1017 当前正式版）",
+    "DeepSeek V4 Pro 0813",
+    "Hy4",
+    "GLM-5.3-Flash",
+    "Agnes 2.5 Pro Theta"
+   ],
+   "s": "<b>中国外汇交易中心 2026-11-10 人民币对美元中间价报 1 USD = 6.7167 CNY，较 11-09 的 6.7188 调升（人民币升值）21 基点</b>（财联社、金十数据一致）。<b>影响面仅限人民币定价的四组模型：DeepSeek V4.1 Flash 三档（$0.2971/$1.1903/缓存 $0.00595）、DeepSeek V4 Pro 0813 两档（$1.3395/$4.0186/缓存 $0.04465）、腾讯混元 Hy4（$0.4465/$1.3395/缓存 $0.0223）、GLM-5.3-Flash（$0.1191/$0.4167/缓存 $0.0342），变动幅度约 0.03%，不改变任何名次与等级</b>。<b>另新增两行：① Sapiens AI（爱思科技）Agnes 2.5 Pro Theta 11-08 获 AA 首评 24 分（$0.10/$0.30、缓存 $0.01、1M 上下文），权重与许可未见官方声明，标「待核实」并不计入开放权重榜；② DeepSeek V4 Pro 0813 的 Non-reasoning 档首次获独立分 13（此前长期列第六节「暂无独立分」），至此该系列两档齐全（Max 23／Non-reasoning 13）</b>。"
+  },
+  {
+   "d": "11-10",
+   "t": "复核维持：Hy4 正式版权重仍未落地、Inkling 2 Small 的 Apache 2.0 权重待安全测试、K2 Horizon 托管价 68 天未公布",
+   "m": [
+    "Hy4",
+    "Inkling 2 Small",
+    "K2 Horizon 375B-A23B",
+    "Qwen4",
+    "Ling-3.2-flash"
+   ],
+   "s": "<b>四项复核结论：① 腾讯混元 Hy4 正式版权重仍未发布（官方口径「近期开源」，HF 上可得的仍是 8 月 preview 版 Apache 2.0），Hy4 Flash 亦未在腾讯云价格页挂牌；② Inkling 2 Small 的权重仍未开放——11-05 发布时仅通过 Tinker 平台提供推理与微调，官方明确「外部安全测试完成后」再以 Apache 2.0 放出全量权重，截至 11-10 09:40 未见落地，AA 仍标 proprietary；③ K2 Horizon 375B-A23B 托管价自 9-03 发布已 68 天未公布（Cerebras／AWS／Nebius／Compass 四渠道无挂牌价），主表维持 N/A——<u>AA 现记其单任务成本 $0.00、第三方聚合站标「免费」，但该免费属预览期额度而非长期挂牌价，按规则不写入主表价格列</u>；④ Qwen4 仍无发布日期、模型 ID、定价与许可，11-09 网传「部分基准超越 Opus 5.5」的跑分泄露无官方出处与评测复现，不予采信</b>。<b>另：蚂蚁 Ling-3.2-flash 仍无 AA v5.0.1 条目；百度 ERNIE-5.5-Flash-Base 的后训练版仍未推出</b>。"
+  },
+  {
+   "d": "11-10",
+   "t": "产业备查：Anthropic 拟下周四五挂牌、美团 LongCat-2.5 原生多模态发布、智谱×中国移动、全球周调用量 210 万亿 tokens",
+   "m": [
+    "GLM-5.3",
+    "Hy4",
+    "LongCat 2.5"
+   ],
+   "s": "<b>① Anthropic 计划本月晚些时候推进 IPO，目标在下周四或周五开始交易，管理团队本周将与重要投资者会面，估值区间将在本周稍早的文件中披露</b>；<b>② 美团 11-02 发布 LongCat-2.5（1.6T 总参／约 48B 激活，原生多模态，训练全程国产算力），官方称 GitHub 与 Hugging Face 权重「即将上线」——<u>尚无 AA 同口径评分，登记第七节不入主榜</u></b>；<b>③ 智谱与中国移动云 11-06 签署合作协议，依托 MoMA 平台提供 GLM 系列、共建 Token 联合发展中心</b>；<b>④ 据 OpenRouter 数据测算，11-02～11-08 全球 AI 大模型周调用量 210 万亿 tokens（环比 +8.25%），中国模型 116.18 万亿连续二十八周居首；DeepSeek V4.1 Flash 1017 连续三周第一（56 万亿），Hy4 发布即列第四（12.8 万亿）</b>——<b>四条均属生态与资本信号，不改动任何模型的分数、许可与价格</b>。"
   },
   {
    "d": "11-09",
@@ -2154,29 +2231,6 @@
     "Agnes 2.5 Pro Theta"
    ],
    "s": "<b>交叉核验 Agnes AI 国际站定价页、Wiki 定价页与 Theta 模型文档（型号 <code>agnes-2.5-pro-theta</code>）：标价与试用价均为输入 $0.10、输出 $0.30、缓存命中 $0.01（输入价的 10%），无额外折扣</b>。<b>AA 模型页同步列出 In $0.10 / Out $0.30、缓存 90% 折扣（即 $0.01），Intelligence Index 单任务成本 $0.57（此前按错价记录的 $2.46 作废）</b>。<b>15:00 窗写入的 $0.45/$0.90/$0.045 实为同系 <code>agnes-2.5-pro</code> 的价，不是 Theta</b>。<b>标准任务成本由 $0.675 降至 $0.175，综合性价比分 50→61、等级 C→B；AA 分仍为 24（原始 24.03），能力排名仍为第 64，主榜仍 95 条。成本锚点（$22.50／$0.11）未变，其余 94 条的成本分与综合分不受影响</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "AA 指数维持 v5.0.1（第 4 期）：11-06～11-09 无新增评测，主榜 94 配置与全部分数逐行不变",
-   "m": [
-    "Gemini 4 Carbon",
-    "Claude Opus 5.5",
-    "Kimi K3.1 Pro",
-    "Hy4",
-    "Inkling 2 Small"
-   ],
-   "s": "<b>本期是「数据静默日」而非「数据缺失日」：AA Changelog 自 11-05（Inkling 2 Small、Nanbeige4.3-33B）之后无任何新模型评测、无方法学更新、无指数版本变更，指数仍为 v5.0.1</b>。<b>因此主表 94 个配置的成绩与名次与上期逐行一致：榜首 Gemini 4 Carbon（High）60.0，其后 Claude Opus 5.5（Max）59.1、Carbon（Medium）58.3、Opus 5.5（xHigh）57.4 ＝ GPT-6 Astra（Max）56.9，可下载权重最高仍为 Kimi K3.1 Pro（46.5，第 23 位），国产闭源最高性价比仍为 Hy4（35，60 B）</b>。<b>口径纪律：本期<u>不</u>对任何模型做分数修正、不做插值、不用旧快照补齐，也不为「看起来有新内容」而更换候选集</b>。<b>能力分分母（TOP_AA 60.0）与成本锚点（$22.50／$0.11）均未变，故全榜能力分、成本分与综合分逐项不变</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "汇率 6.7168→6.7188（11-09 中间价调贬 20 基点）：人民币定价模型美元成本下移 0.03%，无名次与等级变化",
-   "m": [
-    "DeepSeek V4.1 Flash（1017 当前正式版）",
-    "DeepSeek V4 Pro 0813",
-    "Hy4",
-    "GLM-5.3-Flash"
-   ],
-   "s": "<b>中国外汇交易中心 2026-11-09 人民币对美元中间价报 1 USD = 6.7188 CNY，较 11-06 的 6.7168 调贬 20 基点</b>（财联社、21 财经、每日经济新闻、金十数据、汇通财经多源一致）。<b>影响面仅限人民币定价的四组模型：DeepSeek V4.1 Flash 三档（$0.2977/$1.1907/缓存 $0.00595）、DeepSeek V4 Pro 0813（$1.3395/$4.0186/缓存 $0.04464）、腾讯混元 Hy4（$0.4465/$1.3395/缓存 $0.0223）、GLM-5.3-Flash（$0.1191/$0.4167/缓存 $0.0342）</b>。<b>标准任务成本变动幅度约 0.03%（如 DeepSeek V4.1 Flash 由 $0.596 降至 $0.595），<u>无一模型跨名次、无一模型跨性价比等级</u>——本期的数值差异全部来自汇率，不含任何模型能力或厂商定价变化</b>。"
   },
   {
    "d": "11-04",
@@ -2193,36 +2247,6 @@
     "NVIDIA Cosmos 3"
    ],
    "s": "<b>英伟达 11-05 在 Hugging Face 放出 Cosmos 3 家族四个开放权重检查点：Transfer-Auto（离线合成驾驶数据，最多 11 路同步相机含鱼眼 + LiDAR）、Sim-Auto（因果蒸馏流式版）、Sim-Transfer（把仿真器深度/分割/边缘控制渲染成拟真 RGB）、Sim-Bimanual（双臂机器人动作预测，YAM 与 AgiBot 本体），各 16B 可训练参数，家族另有 64B 的 Cosmos 3 Super</b>。<b>许可由此前「待核实」明确为 <u>OpenMDW 1.1</u>（允许商业与非商业使用）</b>。<b>工程门槛：BF16 生成约 58GiB 显存、FP8 约 31GiB，双臂版验证配置为单台 GB200（官方明示非最低规格）；官方自留边界「能否可靠支持策略学习与评估仍需测量」</b>。<b>属世界模型／具身基础模型，不是通用文本 LLM、也不是文生图，<u>既不进主榜也不进 5A 生图榜</u>，仅更新第七节登记</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "复核维持：Hy4 正式版权重与 Inkling 2 Small 的 Apache 2.0 权重均未落地；K2 Horizon 托管价 67 天未公布",
-   "m": [
-    "Hy4",
-    "Inkling 2 Small",
-    "K2 Horizon 375B-A23B",
-    "Qwen4",
-    "Ling-3.2-flash"
-   ],
-   "s": "<b>四项复核结论：① 腾讯混元 Hy4 正式版权重仍未发布（官方口径「近期开源」，HF 上可得的仍是 8 月 preview 版 Apache 2.0），Hy4 Flash 亦未在腾讯云价格页挂牌；② Inkling 2 Small 的 Apache 2.0 权重仍未发布（官方承诺「下周」，截至 11-09 09:40 未见公告，AA 仍标 proprietary）；③ K2 Horizon 375B-A23B 托管价自 9-03 发布已 67 天未公布（Cerebras／AWS／Nebius／Compass 四渠道无挂牌价），主表维持 N/A；④ Qwen4 仍无发布日期、模型 ID、定价与许可，11-09 网传「部分基准超越 Opus 5.5」的跑分泄露<u>无官方出处与评测复现，不予采信</u></b>。<b>另：蚂蚁 Ling-3.2-flash 仍无 AA v5.0.1 条目与开源计划，登记第七节；百度 ERNIE-5.5-Flash-Base 的后训练版仍未推出</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "产业备查：智谱×中国移动、Anthropic 34 亿美元自建 1.7GW 发电、OpenAI 110 亿到账、Meta 收购 Conductor",
-   "m": [
-    "GLM-5.3",
-    "Hy4"
-   ],
-   "s": "<b>① 智谱与中国移动 11-09 签署全面合作协议，GLM 系列接入移动云 MaaS 平台，覆盖国产算力供给到商业化分发全链条</b>；<b>② Anthropic 以约 34 亿美元直接接手供应商向卡特彼勒订购的重型发电机组、自建 1.7GW 发电能力，创 AI 企业单笔发电设备采购纪录；OpenAI 110 亿美元首笔融资到账、投前估值 1.25 万亿美元</b>——<b>算力竞赛正转向能源与资本成本，这是长期单价的底层变量，但不改变本期任何报价</b>；<b>③ Meta 收购多 Agent 编排初创 Conductor（Cloud 版 11-13 转只读、11-20 关停），并为 Muse 智能体推出 Spaces 协作空间</b>；<b>④ METR 报告称「AI 正在加速 AI 自身研发」，Wired 报道称 DeepSeek 与 GLM 在模拟入侵测试中已接近 OpenAI 受限网安模型</b>——<b>四条均属生态与治理信号，不改动任何模型的分数、许可与价格</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "新增 Agnes 2.5 Pro Theta：AA v5.0.1 独立分 24，官方 API $0.45/$0.90",
-   "m": [
-    "Agnes 2.5 Pro Theta"
-   ],
-   "s": "<b>AA Changelog 11-08 与模型页公布 Agnes 2.5 Pro Theta 的 Intelligence Index v5.0.1 分 24（原始 24.03）</b>。<b>新加坡 Sapiens AI / Agnes AI 官方价：输入 $0.45、输出 $0.90、缓存命中 $0.045（输入价 10%），标价与试用价相同、无额外折扣</b>。<b>推理模型，1M 上下文，文本+图像输入、文本输出；闭源专有；官方 API 型号 agnes-2.5-pro-theta（apihub.agnes-ai.com），可用性取决于账号与 API key</b>。<b>同系 Beta 在 v5.0.1 仍为 Unknown，3.0 Pro 官方标 Coming soon，均不入主榜</b>。主榜由 94 条增至 95 条，插入第 64 名（Haiku 5.5 Medium 的 24.6 分之后、GPT-6 Luna xHigh 的 23.5 分之前）。"
   }
- ],
- "aa_index_version": "v5.0.1"
+ ]
 }
