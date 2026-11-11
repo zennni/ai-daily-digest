@@ -1828,6 +1828,28 @@
    "rank": 83
   },
   {
+   "name": "Apodex 1.1",
+   "vendor": "Apodex",
+   "country": "美国",
+   "tier": "默认",
+   "aa": 14,
+   "aa_dec": 13.7,
+   "pin": 0.6,
+   "pcache": 0.06,
+   "pout": 3.6,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA Changelog 至 11-11 13:45 仍无 11 日条目，但模型页与主榜数据已给出 Intelligence Index v5.0.1 分数 13.67（四舍五入 14）</b>；11-10 15:00 抓取时该条 intelligenceIndex 仍为空，本期新增 CritPt v2 hard 17% 后指数落地，属现行同口径首评，按规则入主榜。闭源旗舰 397B，上下文 262,144（AA 记 256k），文本+图像输入；<b>官方标价（platform.apodex.ai/docs/pricing，11-11 核验）为输入 $0.60 / 输出 $3.60 / 缓存命中 $0.06（90% 折扣）</b>，输入超过 200K 时整单（含输入、缓存、输出）按 2× 计，主分按不超过 200K 的普通标价；<b>AA 价目仍列旧价 $0.30/$3.00，主表不用该旧标价</b>。标准任务成本 $1.50；AA 记单任务成本 $0.76、约 13.5 分钟/任务（其成本按旧价折算，仅供对照）。<b>与同为 14 分的 Nemotron 3.5 Super VL（任务成本 $0.325）相比更贵，综合性价比 33 D</b>；2026-08 旧口径曾报 44 分，不得与 v5.0.1 混排。厂商为 Apodex US, Inc.（特拉华注册，总部 Redwood City），权重未开放、许可专有。同系列 Apodex 1.1 Mini（35B、官方称开放权重）尚无 v5 同口径分，不入主榜。",
+   "cost": 1.5,
+   "ability": 21.5,
+   "costscore": 50.895639330066764,
+   "value": 33,
+   "eff": 9.3,
+   "grade": "D",
+   "rank": 84
+  },
+  {
    "name": "DeepSeek V4 Pro 0813",
    "vendor": "DeepSeek",
    "country": "中国",
@@ -1847,7 +1869,7 @@
    "value": 29,
    "eff": 5.5,
    "grade": "D",
-   "rank": 84
+   "rank": 85
   },
   {
    "name": "Inkling Small",
@@ -1869,7 +1891,7 @@
    "value": 39,
    "eff": 21.7,
    "grade": "D",
-   "rank": 85
+   "rank": 86
   },
   {
    "name": "Inkling",
@@ -1891,7 +1913,7 @@
    "value": 29,
    "eff": 6.0,
    "grade": "D",
-   "rank": 86
+   "rank": 87
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -1913,7 +1935,7 @@
    "value": 33,
    "eff": 9.4,
    "grade": "D",
-   "rank": 87
+   "rank": 88
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -1935,7 +1957,7 @@
    "value": 35,
    "eff": 13.0,
    "grade": "D",
-   "rank": 88
+   "rank": 89
   },
   {
    "name": "Qwen3.8 27B",
@@ -1957,7 +1979,7 @@
    "value": 31,
    "eff": 8.0,
    "grade": "D",
-   "rank": 89
+   "rank": 90
   },
   {
    "name": "GPT-6 Luna",
@@ -1979,7 +2001,7 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 90
+   "rank": 91
   },
   {
    "name": "GPT-6 Luna",
@@ -2001,7 +2023,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 91
+   "rank": 92
   },
   {
    "name": "Muse Glimmer",
@@ -2023,7 +2045,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 92
+   "rank": 93
   },
   {
    "name": "Command A+",
@@ -2045,7 +2067,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 93
+   "rank": 94
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2067,7 +2089,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 94
+   "rank": 95
   },
   {
    "name": "Granite 4.2 8B",
@@ -2089,7 +2111,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 95
+   "rank": 96
   },
   {
    "name": "Granite 4.2 3B",
@@ -2111,7 +2133,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 96
+   "rank": 97
   },
   {
    "name": "Mistral Small 4",
@@ -2133,7 +2155,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 97
+   "rank": 98
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2155,10 +2177,19 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 98
+   "rank": 99
   }
  ],
  "changes": [
+  {
+   "d": "11-11",
+   "t": "Apodex 1.1 获 AA v5.0.1 同口径分 14：主表 98→99，插在 Nemotron 3.5 Super VL 之后",
+   "m": [
+    "Apodex 1.1",
+    "Nemotron 3.5 Super VL"
+   ],
+   "s": "<b>Artificial Analysis 已为 Apodex 1.1 给出 Intelligence Index v5.0.1 分数 13.67（四舍五入 14），Changelog 至 11-11 13:45 仍无当日条目；11-10 抓取时该条指数还是空值，本期补上 CritPt v2 hard 17% 后指数落地</b>，属现行同口径首评，按「有分才入主榜」收录，主表由 98 增至 99 条。<b>名次：与同为 14 分的 Nemotron 3.5 Super VL 并列档位，按标准任务成本低者在前，Nemotron（$0.325）仍为第 83，Apodex（$1.50）为第 84，其后原 84 名及以下顺延</b>；TOP_AA 仍 65.0、成本锚点仍 $22.50／$0.11，其余 98 条能力分、成本分、综合性价比与等级均不变。<b>计价跟官方现价而非 AA 旧标价：platform.apodex.ai 核验为 $0.60 / $3.60 / 缓存 $0.06，输入超 200K 整单 2×；AA 仍列 $0.30/$3.00，主表不用</b>。厂商 Apodex US, Inc.（美国，总部 Redwood City），闭源专有；同系列 Mini（35B）尚无 v5 同口径分，不入主榜。其余核对：指数版本仍 v5.0.1；汇率仍 6.7191；Hy4 正式版与 Inkling 2 Small 权重仍未公开；既有 98 条分数与官方价无变动。"
+  },
   {
    "d": "11-11",
    "t": "主榜零新增、零移出：AA 11-10／11-11 无新增模型评测，98 配置与全部分数逐行不变",
