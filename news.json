@@ -1,5 +1,75 @@
 [
   {
+    "t": "FT：Anthropic 承销商考虑把 IPO 定价抬到区间之上，估值或到 1.5 万亿美元以上",
+    "s": "定价区间每股 70–78 美元、完全摊薄估值约 1.26–1.41 万亿美元刚披露不到一天，《金融时报》11 月 11 日援引五位知情人士报道，牵头承销的高盛与摩根士丹利因 11 月 10 日开始的路演需求旺盛，正考虑把发行价抬到区间之上，估值可能达到 1.5 万亿美元以上。按已宣布条款，公开发行最高约 644 亿美元，外加近 100 亿美元超额配售；谷歌、英伟达、微软等已安排 260 亿美元战略私募。FT 称，若发行价上调，整包募资可能超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募到的现金，而不是把估值抬到最高——它已向投资者展示未来数年约 9000 亿美元的算力开支，以及 10 月年化 810 亿美元、三季度 170 亿美元的收入。此前近 2 万亿美元的估值预期已被下调。Morningstar 分析师给出的公允价值中枢为 1.7 万亿美元，区间为 5000 亿至 3 万亿美元。FT 还称，纽约一家券商正按发行价上浮 4% 代售至多 5 亿美元存量股，另有风投通过特殊目的载体按 1.5 万亿美元估值出售 12.5 亿美元股份。",
+    "d": "11月11日",
+    "src": "Financial Times / Moneycontrol",
+    "url": "https://www.ft.com/content/68bcba57-0575-44ee-80f4-2e5ea23a431e",
+    "m": []
+  },
+  {
+    "t": "OpenAI 三季度营收约 100 亿美元，经营亏损扩大到 109 亿美元",
+    "s": "路透社 11 月 10 日援引《华尔街日报》报道，OpenAI 向投资者披露第三季度营收环比约增 50%、达到 100 亿美元，但经营亏损从 101 亿美元扩大到 109 亿美元；调整后经营利润率从 -150% 改善到 -109%。CFO Sarah Friar 同一天对雅虎财经表示，这是「大获全胜的一个季度」，年化收入约 500 亿美元，增长好于二季度的 18%。她称增长主要来自前沿研究与企业业务：企业业务单季翻倍，目前已与消费业务对半；消费端销售环比增 20%，付费订阅超过 1 亿、周活约 12 亿。Friar 提到 Coding、网络安全以及企业智能体平台 Dots 是企业侧的推动力，并表示要从 Anthropic 的多云分发里吸取教训，认为此前卡在与微软 Azure 的合同上，解开之后有望成为 2027 年的尾风。OpenAI 未立即回应路透社的置评请求。这组数字出现在 Anthropic 路演期间，也把两家实验室的「收入高、亏损或开支同样高」同时摊到桌上。",
+    "d": "11月10日",
+    "src": "Reuters / Wall Street Journal / Yahoo Finance",
+    "url": "https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353",
+    "m": []
+  },
+  {
+    "t": "阿里云上架 Qwen4-Max-Preview：新一代旗舰多模态预览，仅走 Token Plan",
+    "s": "阿里云百炼模型上架记录显示，2026-11-11 新增 qwen4-max-preview。官方介绍这是通义千问新一代旗舰多模态模型，融合文本生成、图片与视频理解及深度思考，适用于编程、办公、前端设计与复杂智能体任务，并支持联网搜索、工具调用和结构化输出，兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages API。规格上，上下文长度为 1M Token，最大输出 393,216 Token（思考与最终回答共享预算），默认开启思考，可通过 reasoning_effort 在 low / medium / xhigh（默认）之间调节。帮助中心写明：当前为预览版，仅支持 Token Plan、不支持按量计费；预览期为 2026 年 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），期间不做变更，预览结束后下线。接入需使用套餐专用 API Key 和 Base URL。",
+    "d": "11月11日",
+    "src": "阿里云百炼",
+    "url": "https://help.aliyun.com/zh/model-studio/qwen4-max-preview",
+    "m": [
+      "Qwen4-Max-Preview"
+    ]
+  },
+  {
+    "t": "百度发布文心 5.5 Flash Preview：2800 亿总参、140 亿激活，权重拟开源",
+    "s": "百度文心 11 月 11 日发布 ERNIE 5.5 Flash Preview，官方称之为此前发布的 ERNIE 5.5 Flash Base 的首个后训练模型。总参数 2800 亿、每个 token 激活 140 亿，上下文 1M，官方强调编程、3D 建模、知识工作与内容创作，并展示了在 Unreal Engine 中单次约 11 小时写出完整武侠游戏等长程任务演示。官方英文页写明，API 已在千帆平台上线，权重即将以 Apache 2.0 开源；新华网报道称权重将于 11 月 25 日面向全球开源社区发布，IT之家则写「11 月 25 日前」。新华网还称 API 定价为每百万 token 输入忙时 2 元、闲时 1 元，输出忙时 8 元、闲时 4 元，并有限时五折，以及混合稀疏注意力、多路由器 MoE、ECHO 多 token 预测和自研 RSI（由 ERNIE Evolve 参与推理优化）等技术细节。官方同时提醒：这仍是后训练过程中的中间检查点，部分能力可能因训练未完成而不足，正式版还会再改。",
+    "d": "11月11日",
+    "src": "百度文心 / 新华网",
+    "url": "https://ernie.baidu.com/release/ernie-5-5-flash-preview/",
+    "m": [
+      "ERNIE 5.5 Flash Preview"
+    ]
+  },
+  {
+    "t": "DeepMind 发布 AlphaGenome 2：按细胞类型预测 DNA 变异如何致病",
+    "s": "Google DeepMind 11 月 11 日宣布 AlphaGenome 2。与去年那种一次性并行预测多个组织均值的前代不同，它改成条件模型：在 100 万字母的 DNA 序列之外，再输入组织、细胞类型或细胞状态，从而学习同一段 DNA 在不同细胞里如何被「读」。训练数据包含人和小鼠的 bulk 与单细胞数据，其中超过 1.07 亿个单细胞图谱、覆盖 68 种组织，并新增 DNA 甲基化等读出。官方称，在 TenK10K 的 28 种原代免疫细胞上，它能可靠识别的因果变异从约 16% 升至约 30%，方向性基因效应从约 23% 升至约 43%，接近前代微调版及其他专用工具的两倍。它还可以在不重新训练的情况下，用几十个细胞的单细胞 RNA-seq 快照推广到未见过的细胞状态。非商业研究即日起可通过 AlphaGenome API 使用，商业研究为小范围预览。官方强调仅供研究使用，未经临床或诊断验证。The Verge 采访中，基因组学负责人 Žiga Avsec 表示更细粒度的预测计算成本更高，因此暂不会用它重做覆盖「人类基因组每一个单字母变化」的 Atlas。",
+    "d": "11月11日",
+    "src": "Google DeepMind / The Verge",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "m": []
+  },
+  {
+    "t": "MiniMax 发布 H3-Image 并放出权重：官方称 4K 图可在 10 秒内生成",
+    "s": "MiniMax 11 月 11 日发布基于 H3 的开放权重图像生成模型 H3-Image，支持文生图、参考图生成和图像编辑，最多 16 张参考图。官方称可在 10 秒内生成 4096×4096（约 1600 万像素）的 4K 图，速度最高可达主流方案的约 5 倍，并同步在 MiniMax API、MiniMax Code 与海螺上线。官方还称 Standard 模式比主流方案快 1.5–2 倍，Highspeed 模式快 3–4 倍，定价约为同类的 50%–70%，上线周对 4K 及以上请求五折。权重已放在 Hugging Face 的 MiniMaxAI/MiniMax-H3-Image。需注意这是开放权重发布，使用条款以仓库许可证为准，不宜直接写成无限制的「完全开源」。",
+    "d": "11月11日",
+    "src": "MiniMax",
+    "url": "https://www.minimax.io/blog/minimax-h3-image",
+    "m": [
+      "MiniMax H3-Image"
+    ]
+  },
+  {
+    "t": "软银财政二季度净亏损约 70 亿美元，美国数据中心发电设备计提 37 亿美元",
+    "s": "软银集团 11 月 10 日公布，财政第二季度净亏损 1.12 万亿日元（约 70 亿美元），上年同期为盈利 2.5 万亿日元。CNBC 报道，公司在截至 9 月 30 日的六个月里，因美国人工智能数据中心发电设备采购计划变更，记了 5972 亿日元（约 37 亿美元）亏损。截至 9 月末，为包括俄亥俄州派克县 PORTS-Pike 在内的项目预付的发电设备款项累计达 94.8 亿美元。当季营收 2.22 万亿日元，高于 LSEG 预期的 2.02 万亿。愿景基金板块由盈转亏。截至 9 月末，软银对 OpenAI 的累计投资为 546 亿美元，公允价值 996 亿美元，累计浮盈 450 亿美元；新一轮融资若抬高估值，尚未计入本期。公司还提到与 OpenAI 就俄亥俄一个数据中心项目签署 20 年、8 吉瓦 IT 容量的租赁协议。财报公布当日，软银股价收涨 13.9%。",
+    "d": "11月10日",
+    "src": "CNBC / SoftBank",
+    "url": "https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html",
+    "m": []
+  },
+  {
+    "t": "英伟达投资的英国云商 Nscale 被报道考虑推迟约 350 亿美元上市计划",
+    "s": "路透社 11 月 10 日援引《每日电讯报》报道，获英伟达投资的英国云与数据中心公司 Nscale 正在评估是否把原计划的约 350 亿美元上市推迟到明年。Nscale 未在非工作时间立即回应置评。报道出现在路透社此前称微软拒绝扩大其在德州数据中心向 Nscale 增租算力的消息之后。这家伦敦公司今年 9 月提交了 IPO 文件，当时寻求约 35 亿美元融资，其中包含来自英伟达的 20 亿美元，并计划在纽交所以代码 NSCL 上市。这与 Anthropic 继续推进路演形成对照：一边是前沿实验室仍在询价，一边是算力云商开始把上市时间往后再放。",
+    "d": "11月10–11日",
+    "src": "Reuters / The Telegraph",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/11/11/ai-cloud-firm-nscale-considers-delaying-35-billion-listing-the-telegraph-reports",
+    "m": []
+  },
+  {
     "t": "Anthropic 发布 Claude Sheets、Whiteboards 与 Meetings：把 Claude 做成办公套件",
     "s": "Anthropic 11 月 10 日在旧金山发布面向非技术知识工作者的三件新工具：Claude Sheets 能按要求生成可多人协作编辑的表格（含公式、多标签页，可导出 Excel），Whiteboards 把头脑风暴铺到共享白板上，Meetings 让 Claude 加入会议做记录，还能把演示稿转成一分钟讲解视频。Sheets 与 Whiteboards 面向全部付费方案公测，Meetings 限 Team 与 Enterprise；10 月以 Claude Dashboards 名义公测的 Claude Data 转为正式版。同时上线「交互式连接器」，可在对话里直接打开 HubSpot、Adobe、Atlassian 等合作方应用，例如内嵌 Adobe PDF 编辑器。Anthropic 产品负责人对 The Verge 说，非开发者的使用门槛是接下来要补的缺口。",
     "d": "11月10日",

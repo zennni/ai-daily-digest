@@ -1,5 +1,24 @@
 [
   {
+    "d": "2026-11-12",
+    "w": "星期四",
+    "pts": [
+      "FT：Anthropic 承销商考虑把 IPO 定价抬到 1.5 万亿美元以上",
+      "OpenAI 三季度营收约 100 亿美元，亏损同步扩大到 109 亿美元",
+      "国内开闸：Qwen4-Max-Preview、文心 5.5 Flash Preview、H3-Image 放权重",
+      "AlphaGenome 2 下钻到细胞类型；论文开始问记忆该不该写入"
+    ],
+    "link": "AI日报-2026-11-12.html",
+    "m": [
+      "Qwen4-Max-Preview",
+      "ERNIE 5.5 Flash Preview",
+      "MiniMax H3-Image",
+      "AlphaGenome 2",
+      "BotPsy"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-11",
     "w": "星期三",
     "pts": [

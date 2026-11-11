@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-12</title>
+<style>
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+</style>
+</head>
+<body id="top">
+
+<div class="container">
+<a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+<header>
+  <div class="date">2026年11月12日 · 星期四</div>
+  <h1>🥚 每日AI前沿日报</h1>
+  <div class="note">今日主题词：加价与开闸。相对昨日「抢工位与对账单」，账本对完之后，一边是承销商把 Anthropic 的招股价往上抬，一边是国内实验室把新模型的闸门打开，科学模型则从组织均值下钻到细胞。加价：定价区间 70–78 美元、完全摊薄估值约 1.26–1.41 万亿美元刚披露不到一天，英国《金融时报》援引五位知情人士称，牵头承销的高盛与摩根士丹利因路演需求旺盛，正考虑把发行价抬到区间之上，估值或到 1.5 万亿美元以上；若再加上已安排的 260 亿美元战略私募和超额配售，整包募资有可能超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募到的现金，而不是把估值抬到最高——它已向投资者展示未来数年约 9000 亿美元的算力开支计划，以及 10 月年化 810 亿美元、三季度 170 亿美元的收入。对账单的另一面同期交出：据《华尔街日报》和路透社，OpenAI 向投资者披露三季度营收约 100 亿美元、环比约增五成，但经营亏损从 101 亿美元扩大到 109 亿美元，调整后经营利润率从 -150% 改善到 -109%；CFO Sarah Friar 称企业业务单季翻倍，已与消费业务对半，付费订阅超过 1 亿、周活约 12 亿。软银同期录得财政二季度净亏损 1.12 万亿日元（约 70 亿美元），美国数据中心发电设备采购计划变更计提约 37 亿美元；获英伟达投资的英国云商 Nscale 则被报道考虑把约 350 亿美元的上市计划推迟到明年。开闸：阿里云百炼上线 Qwen4-Max-Preview（1M 上下文，仅支持 Token Plan，预览期至 11 月 25 日 24:00 后下线）；百度发布文心 5.5 Flash Preview（总参 2800 亿、激活 140 亿、1M 上下文），官方英文页写权重即将以 Apache 2.0 开源，新华网报道开源日为 11 月 25 日（IT之家写「11 月 25 日前」）；MiniMax 放出 H3-Image 权重，官方称可在 10 秒内生成 4K 图。科学侧，DeepMind 发布 AlphaGenome 2，按细胞类型预测 DNA 变异效应，在 TenK10K 上识别出的因果变异大约是前代的两倍，非商业研究即日起可通过 API 使用。论文则把问题从「记忆会不会被投毒」推进到「该不该把这条经验写进记忆」：Contrastive Discovery 用互斥且穷尽的解释集，把一次拒绝变成对替代解释的决断；ARE-bench 显示一旦把历史决定和未清理的工作区算进去，研究智能体的通过率会掉一大截；WikiTrace 与 FGSE 分别用证据链接和证伪门，降低「写了记忆反而更差」的回归。一句话：价钱被往上喊的同时，闸门打开了，但记忆该不该落下，还得先过一遍证伪。</div>
+</header>
+
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">目录</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a class="pt-top" href="#top">回顶</a>
+</nav>
+
+<div class="highlights" id="sec-highlights">
+  <h2>📌 今日看点</h2>
+  <ul>
+<li><strong>FT：Anthropic 承销商考虑上调 IPO 定价，估值或到 1.5 万亿美元以上</strong><p>定价区间 70–78 美元刚披露不到一天，《金融时报》援引五位知情人士称，高盛与摩根士丹利因路演需求旺盛，正考虑把发行价抬到区间之上。完全摊薄估值由此前约 1.26–1.41 万亿美元，可能升至 1.5 万亿美元以上；若加上 260 亿美元私募和超额配售，整包募资或超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募资规模而不是最高估值。</p></li>
+<li><strong>OpenAI 三季度营收约 100 亿美元，经营亏损同步扩大到 109 亿美元</strong><p>据《华尔街日报》和路透社，OpenAI 向投资者披露三季度营收约 100 亿美元、环比约增五成，经营亏损从 101 亿美元扩至 109 亿美元，调整后经营利润率从 -150% 改善到 -109%。CFO Sarah Friar 称企业业务单季翻倍，已与消费业务对半，付费订阅超过 1 亿、周活约 12 亿，年化收入约 500 亿美元。</p></li>
+<li><strong>通义千问 Qwen4-Max-Preview 上线：仅 Token Plan，预览期至 11 月 25 日</strong><p>阿里云百炼 11 月 11 日上架新一代旗舰多模态预览模型，支持文本生成、图片与视频理解、深度思考、联网搜索、工具调用和结构化输出，兼容 OpenAI 与 Anthropic API，上下文 1M Token。官方写明仅支持 Token Plan、不支持按量计费，预览期为 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），结束后下线。</p></li>
+<li><strong>文心 5.5 Flash Preview：2800 亿总参 / 140 亿激活，权重拟开源</strong><p>百度 11 月 11 日发布基于此前 Flash Base 的首个后训练预览版，总参数 2800 亿、激活 140 亿，1M 上下文，官方强调编程、3D 建模、知识工作与内容创作。API 已在千帆上线；官方英文页写权重即将以 Apache 2.0 开源，新华网报道开源日为 11 月 25 日。官方同时提醒这仍是后训练中的中间检查点。</p></li>
+<li><strong>AlphaGenome 2：从组织均值下钻到细胞类型，因果变异召回近翻倍</strong><p>DeepMind 11 月 11 日发布下一代 DNA 序列模型，按特定细胞类型或状态预测基因变异效应，训练数据超过 1 亿个单细胞图谱、覆盖 68 种组织。在 TenK10K 上，识别出的因果变异从约 16% 升至约 30%。非商业研究即日起可通过 AlphaGenome API 使用，商业用途为小范围预览；官方写明仅供研究、未经临床验证。</p></li>
+<li><strong>MiniMax 放出 H3-Image 权重：官方称 4K 图可在 10 秒内生成</strong><p>MiniMax 11 月 11 日发布基于 H3 的开放权重图像模型，支持文生图、参考图生成与图像编辑，最多 16 张参考图，并同步上线 API、MiniMax Code 与海螺。官方称可在 10 秒内生成 4096×4096 的 4K 图，上线周对 4K 及以上请求五折。</p></li>
+  </ul>
+</div>
+
+<section id="sec-news">
+  <h2>📰 行业新闻<span class="count">8 条</span></h2>
+<div class="card">
+  <h3>FT：Anthropic 承销商考虑把 IPO 定价抬到区间之上，估值或到 1.5 万亿美元以上</h3>
+  <p>定价区间每股 70–78 美元、完全摊薄估值约 1.26–1.41 万亿美元刚披露不到一天，《金融时报》11 月 11 日援引五位知情人士报道，牵头承销的高盛与摩根士丹利因 11 月 10 日开始的路演需求旺盛，正考虑把发行价抬到区间之上，估值可能达到 1.5 万亿美元以上。按已宣布条款，公开发行最高约 644 亿美元，外加近 100 亿美元超额配售；谷歌、英伟达、微软等已安排 260 亿美元战略私募。FT 称，若发行价上调，整包募资可能超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募到的现金，而不是把估值抬到最高——它已向投资者展示未来数年约 9000 亿美元的算力开支，以及 10 月年化 810 亿美元、三季度 170 亿美元的收入。此前近 2 万亿美元的估值预期已被下调。Morningstar 分析师给出的公允价值中枢为 1.7 万亿美元，区间为 5000 亿至 3 万亿美元。FT 还称，纽约一家券商正按发行价上浮 4% 代售至多 5 亿美元存量股，另有风投通过特殊目的载体按 1.5 万亿美元估值出售 12.5 亿美元股份。</p>
+  <div class="meta">11月11日 · Financial Times / Moneycontrol · <a href="https://www.ft.com/content/68bcba57-0575-44ee-80f4-2e5ea23a431e" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI 三季度营收约 100 亿美元，经营亏损扩大到 109 亿美元</h3>
+  <p>路透社 11 月 10 日援引《华尔街日报》报道，OpenAI 向投资者披露第三季度营收环比约增 50%、达到 100 亿美元，但经营亏损从 101 亿美元扩大到 109 亿美元；调整后经营利润率从 -150% 改善到 -109%。CFO Sarah Friar 同一天对雅虎财经表示，这是「大获全胜的一个季度」，年化收入约 500 亿美元，增长好于二季度的 18%。她称增长主要来自前沿研究与企业业务：企业业务单季翻倍，目前已与消费业务对半；消费端销售环比增 20%，付费订阅超过 1 亿、周活约 12 亿。Friar 提到 Coding、网络安全以及企业智能体平台 Dots 是企业侧的推动力，并表示要从 Anthropic 的多云分发里吸取教训，认为此前卡在与微软 Azure 的合同上，解开之后有望成为 2027 年的尾风。OpenAI 未立即回应路透社的置评请求。这组数字出现在 Anthropic 路演期间，也把两家实验室的「收入高、亏损或开支同样高」同时摊到桌上。</p>
+  <div class="meta">11月10日 · Reuters / Wall Street Journal / Yahoo Finance · <a href="https://www.investing.com/news/stock-market-news/openai-posts-steep-losses-even-as-quarterly-revenue-rises-to-10-billion-wsj-reports-5017353" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>阿里云上架 Qwen4-Max-Preview：新一代旗舰多模态预览，仅走 Token Plan</h3>
+  <p>阿里云百炼模型上架记录显示，2026-11-11 新增 qwen4-max-preview。官方介绍这是通义千问新一代旗舰多模态模型，融合文本生成、图片与视频理解及深度思考，适用于编程、办公、前端设计与复杂智能体任务，并支持联网搜索、工具调用和结构化输出，兼容 OpenAI Chat Completions / Responses 与 Anthropic Messages API。规格上，上下文长度为 1M Token，最大输出 393,216 Token（思考与最终回答共享预算），默认开启思考，可通过 reasoning_effort 在 low / medium / xhigh（默认）之间调节。帮助中心写明：当前为预览版，仅支持 Token Plan、不支持按量计费；预览期为 2026 年 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），期间不做变更，预览结束后下线。接入需使用套餐专用 API Key 和 Base URL。</p>
+  <div class="meta">11月11日 · 阿里云百炼 · <a href="https://help.aliyun.com/zh/model-studio/qwen4-max-preview" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>百度发布文心 5.5 Flash Preview：2800 亿总参、140 亿激活，权重拟开源</h3>
+  <p>百度文心 11 月 11 日发布 ERNIE 5.5 Flash Preview，官方称之为此前发布的 ERNIE 5.5 Flash Base 的首个后训练模型。总参数 2800 亿、每个 token 激活 140 亿，上下文 1M，官方强调编程、3D 建模、知识工作与内容创作，并展示了在 Unreal Engine 中单次约 11 小时写出完整武侠游戏等长程任务演示。官方英文页写明，API 已在千帆平台上线，权重即将以 Apache 2.0 开源；新华网报道称权重将于 11 月 25 日面向全球开源社区发布，IT之家则写「11 月 25 日前」。新华网还称 API 定价为每百万 token 输入忙时 2 元、闲时 1 元，输出忙时 8 元、闲时 4 元，并有限时五折，以及混合稀疏注意力、多路由器 MoE、ECHO 多 token 预测和自研 RSI（由 ERNIE Evolve 参与推理优化）等技术细节。官方同时提醒：这仍是后训练过程中的中间检查点，部分能力可能因训练未完成而不足，正式版还会再改。</p>
+  <div class="meta">11月11日 · 百度文心 / 新华网 · <a href="https://ernie.baidu.com/release/ernie-5-5-flash-preview/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>DeepMind 发布 AlphaGenome 2：按细胞类型预测 DNA 变异如何致病</h3>
+  <p>Google DeepMind 11 月 11 日宣布 AlphaGenome 2。与去年那种一次性并行预测多个组织均值的前代不同，它改成条件模型：在 100 万字母的 DNA 序列之外，再输入组织、细胞类型或细胞状态，从而学习同一段 DNA 在不同细胞里如何被「读」。训练数据包含人和小鼠的 bulk 与单细胞数据，其中超过 1.07 亿个单细胞图谱、覆盖 68 种组织，并新增 DNA 甲基化等读出。官方称，在 TenK10K 的 28 种原代免疫细胞上，它能可靠识别的因果变异从约 16% 升至约 30%，方向性基因效应从约 23% 升至约 43%，接近前代微调版及其他专用工具的两倍。它还可以在不重新训练的情况下，用几十个细胞的单细胞 RNA-seq 快照推广到未见过的细胞状态。非商业研究即日起可通过 AlphaGenome API 使用，商业研究为小范围预览。官方强调仅供研究使用，未经临床或诊断验证。The Verge 采访中，基因组学负责人 Žiga Avsec 表示更细粒度的预测计算成本更高，因此暂不会用它重做覆盖「人类基因组每一个单字母变化」的 Atlas。</p>
+  <div class="meta">11月11日 · Google DeepMind / The Verge · <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>MiniMax 发布 H3-Image 并放出权重：官方称 4K 图可在 10 秒内生成</h3>
+  <p>MiniMax 11 月 11 日发布基于 H3 的开放权重图像生成模型 H3-Image，支持文生图、参考图生成和图像编辑，最多 16 张参考图。官方称可在 10 秒内生成 4096×4096（约 1600 万像素）的 4K 图，速度最高可达主流方案的约 5 倍，并同步在 MiniMax API、MiniMax Code 与海螺上线。官方还称 Standard 模式比主流方案快 1.5–2 倍，Highspeed 模式快 3–4 倍，定价约为同类的 50%–70%，上线周对 4K 及以上请求五折。权重已放在 Hugging Face 的 MiniMaxAI/MiniMax-H3-Image。需注意这是开放权重发布，使用条款以仓库许可证为准，不宜直接写成无限制的「完全开源」。</p>
+  <div class="meta">11月11日 · MiniMax · <a href="https://www.minimax.io/blog/minimax-h3-image" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>软银财政二季度净亏损约 70 亿美元，美国数据中心发电设备计提 37 亿美元</h3>
+  <p>软银集团 11 月 10 日公布，财政第二季度净亏损 1.12 万亿日元（约 70 亿美元），上年同期为盈利 2.5 万亿日元。CNBC 报道，公司在截至 9 月 30 日的六个月里，因美国人工智能数据中心发电设备采购计划变更，记了 5972 亿日元（约 37 亿美元）亏损。截至 9 月末，为包括俄亥俄州派克县 PORTS-Pike 在内的项目预付的发电设备款项累计达 94.8 亿美元。当季营收 2.22 万亿日元，高于 LSEG 预期的 2.02 万亿。愿景基金板块由盈转亏。截至 9 月末，软银对 OpenAI 的累计投资为 546 亿美元，公允价值 996 亿美元，累计浮盈 450 亿美元；新一轮融资若抬高估值，尚未计入本期。公司还提到与 OpenAI 就俄亥俄一个数据中心项目签署 20 年、8 吉瓦 IT 容量的租赁协议。财报公布当日，软银股价收涨 13.9%。</p>
+  <div class="meta">11月10日 · CNBC / SoftBank · <a href="https://www.cnbc.com/2026/11/10/softbank-2q-earnings-tech-selloff.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>英伟达投资的英国云商 Nscale 被报道考虑推迟约 350 亿美元上市计划</h3>
+  <p>路透社 11 月 10 日援引《每日电讯报》报道，获英伟达投资的英国云与数据中心公司 Nscale 正在评估是否把原计划的约 350 亿美元上市推迟到明年。Nscale 未在非工作时间立即回应置评。报道出现在路透社此前称微软拒绝扩大其在德州数据中心向 Nscale 增租算力的消息之后。这家伦敦公司今年 9 月提交了 IPO 文件，当时寻求约 35 亿美元融资，其中包含来自英伟达的 20 亿美元，并计划在纽交所以代码 NSCL 上市。这与 Anthropic 继续推进路演形成对照：一边是前沿实验室仍在询价，一边是算力云商开始把上市时间往后再放。</p>
+  <div class="meta">11月10–11日 · Reuters / The Telegraph · <a href="https://www.thestar.com.my/tech/tech-news/2026/11/11/ai-cloud-firm-nscale-considers-delaying-35-billion-listing-the-telegraph-reports" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+
+<section id="sec-papers">
+  <h2>📄 前沿论文<span class="count">6 篇</span></h2>
+<div class="card">
+  <h3>对比发现：把互斥解释放在一起，拒绝才能变成决断<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations</span></h3>
+  <div class="paper-authors">Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun</div>
+  <p>现有科学发现智能体大多按「单点假说 vs 其补集」打分：证据否定了 h，智能体只知道 h 不太可能，却不知道证据支持哪一个替代解释。作者把提问单位改成「对比集」——一个科学问题配上一组互斥且穷尽的竞争解释，每次实验按证据如何在集合里重新分配信念来打分，当信念集中到一个解释时问题才算解决。因为只改提议和打分的单位，已有智能体也可以用对比集去回头评估已经做过的实验。在六个领域里，信念移动最大的单点候选中有 89% 其实是拒绝；同一批证据上，对比集能把其中 73% 决断到一个具体替代解释。用对比集引导搜索时，同等实验预算下解决的问题数比单点surprisal 多 67%。38 位专家的盲测中，在已决断问题上有 78% 与模型选了同一个解释。论文被 NeurIPS 2026 接收。</p>
+  <div class="meta">作者：Ziang Liu, James J. Kim, Yijia Dai, Jennifer J. Sun · <a href="https://arxiv.org/abs/2611.14514" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>ARE-bench：把真实进行中的课题和工作区留给研究智能体，通过率会掉一大截<br><span style="font-size:12.5px;font-weight:500;color:#64748b">ARE-bench: Benchmarking Agents' Research Ability in Real-World Researcher Sessions and Workspaces</span></h3>
+  <div class="paper-authors">Jiahang Lin, Wanying Ren, Wanghan Xu, …, Tao Gui, Xuanjing Huang</div>
+  <p>许多研究智能体基准给出的是相对干净、自成一体的任务；现实里，研究者往往只是让智能体在一个进行中的项目里接着做下一步，请求依赖于更早的会话决定，工作区里还有未完成文件、过期版本和失败尝试。ARE-bench 用招募来的研究者自己的真实会话与完整工作区切出 75 道题，覆盖 7 个研究阶段、33 项要求、1173 条二元检查项；每题停在一个真实请求处，保留当时仍有效的历史要求，并回放未经清理的工作区。七个前沿模型里，最强的也只在 66.2% 的任务上通过全部检查项，设计和执行对所有模型都最难。有三个模型在只检查交付约定和一般规范时通过约 69%，一旦把历史决定和工作区里的材料要求也算进去，通过率降到 28.4%–40.0%。也就是说，不看上下文的评测会高估研究智能体，也会抹平它们之间的差别。</p>
+  <div class="meta">作者：Jiahang Lin, Wanying Ren, Wanghan Xu, …, Tao Gui, Xuanjing Huang · <a href="https://arxiv.org/abs/2611.14364" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>智能体基准往往在题目用完之前，就已经排不出名次了<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Agent Benchmarks Stop Ranking Before They Run Out of Tasks</span></h3>
+  <div class="paper-authors">Zihan Dong, Qishi Zhan, Minxuan Hu</div>
+  <p>数据科学和工程类智能体基准（如 MLE-bench、ALE-Bench、SWE-fficiency）的任务本身产出的是一个数量（竞赛分数、加速比），但大多数评测仍把它压成通过/不通过的一比特。作者重评了包括 SWE-bench Verified 和 Terminal-Bench 在内的八个已发布结果，发现许多「饱和」出在测量而不是题目上：SWE-bench Verified 前十名之间的差距小于测试本身的误差；ALE-Bench 按竞赛分能分出三档的前十名，若改用「是否超过中位人类」来打，五款模型在 40 题里过了 39 题、前十名并成一档，尽管近一半运行其实超过了那位人类。把及格线再抬高，只会让更早的模型大面积得零分。作者提出带日期锚点的截断对数比分数，并把成本单独作为一条轴。在 Terminal-Bench 的重跑里，按通过/不通过打成平手的模型，在测试丢掉的那个数量上可以相差十倍以上。</p>
+  <div class="meta">作者：Zihan Dong, Qishi Zhan, Minxuan Hu · <a href="https://arxiv.org/abs/2611.13541" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>别只信记忆：把教训链回原轨迹，才能减少「有记忆反而更差」<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents</span></h3>
+  <div class="paper-authors">Yukyeong Lee, Yumin Choi, Jinheon Baek, Sung Ju Hwang</div>
+  <p>外部记忆能让智能体把旧任务轨迹蒸馏成教训，再用到新任务上；但也可能造成「记忆诱导退化」——没有记忆本来能做对的题，因为听信了错误教训、或误用/误读了正确教训而失败。原因是教训往往只从「成功/失败」标签里推断出来，却不再附上原轨迹，智能体没法核对。作者提出 WikiTrace：每条教训同时链到「这条轨迹为何成功或失败」的摘要和原始轨迹；新任务上先看全部洞察，一旦某条缺少行动所需细节、与另一条冲突、或来自失败任务，就顺着链接下去核对或修正后再行动。在五个智能体基准上，它持续优于现有记忆方法和「只给同样洞察、不给证据链」的对照，并降低了记忆诱导退化。代码在 GitHub 仓库 yukyeongleee/wikitrace。</p>
+  <div class="meta">作者：Yukyeong Lee, Yumin Choi, Jinheon Baek, Sung Ju Hwang · <a href="https://arxiv.org/abs/2611.14320" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>记忆该何时落下？先把教训当成假说，过完证伪门再写入<br><span style="font-size:12.5px;font-weight:500;color:#64748b">When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents</span></h3>
+  <div class="paper-authors">Runxuan Tang, Haoyu Gao, Yuyan Ding, Junyi Yao, Zihao Zheng, Zecheng Sheng, Liwei Hou</div>
+  <p>长程、可验证环境里的自我改进，常常把某一局得出的教训直接写入持久记忆，但局部成功并不是「可复用且安全」的可靠信号。作者提出证伪门控的自我进化（FGSE）：每条候选教训写成带前置条件、行为改动、预期效果和验证器的结构化假说，先只在临时状态里启用，再分别做迁移、证伪和归档回归探测，按测到的收益与风险决定提交、修改或拒绝。在网页、应用、工具使用和长期记忆基准上，FGSE 取得了较强的任务表现（WebArena 成功率 39.8%，AppWorld 平均完成 78.8%，τ-Retail / τ-Airline 的 Pass@1 为 0.724 / 0.487），同时把证伪失败降到 5.0%、回归损伤降到 1.3%、有害的已提交更新降到 3.6%。它和 WikiTrace 一起，把「智能体记忆」从「尽量多写」推进到「先问该不该写」。</p>
+  <div class="meta">作者：Runxuan Tang, Haoyu Gao, Yuyan Ding, Junyi Yao, Zihao Zheng, Zecheng Sheng, Liwei Hou · <a href="https://arxiv.org/abs/2611.14326" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>ReTrace：把会用工具的智能体蒸馏成不用规划器的工作流<br><span style="font-size:12.5px;font-weight:500;color:#64748b">ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows</span></h3>
+  <div class="paper-authors">Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, …, Xiaofan Jiang, Francesco Carbone</div>
+  <p>业务流程会把同一套 SOP 在新输入上跑成千上万次。LLM 智能体能读自然语言 SOP 并调用工具，但每一步都要再问一次模型，量和延迟都贵。ReTrace 用 SOP 和少量已记录的智能体运行，抽出每一步背后的条件，合并成紧凑规则文档，再生成由代码而非 LLM 选择下一步的可执行工作流；只有最后编译阶段依赖具体编排平台。在其生产平台的 79 个流程上，工作流完成率 93.8%，对照智能体 96.8%，单任务成本低 24%。在 τ²-bench 上，任务成功率为 75.8%（智能体 80.6%），运行时间从 170 秒降到 1.3 秒；用训练失败做三轮修复后，k=2 工作流从 66.7% 升到 81.2%。在八个 SOP-Bench 流程上，修复后达到 87.8%、每任务 0.40 秒，对照智能体为 85.5%、46.6 秒。</p>
+  <div class="meta">作者：Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, …, Xiaofan Jiang, Francesco Carbone · <a href="https://arxiv.org/abs/2611.14492" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+</section>
+
+<section id="sec-models">
+  <h2>🤖 模型动态<span class="count">5 条</span></h2>
+<div class="card">
+  <h3>Qwen4-Max-Preview<span class="tag tag-new">阿里云 / 通义千问</span></h3>
+  <p>11 月 11 日在阿里云百炼上架，模型 ID 为 qwen4-max-preview。官方定位为新一代旗舰多模态预览模型：文本生成、图片与视频理解、深度思考，并支持联网搜索、工具调用和结构化输出，兼容 OpenAI 与 Anthropic API。上下文 1M Token，最大输出 393,216 Token（思考与回答共享预算），默认开启思考，reasoning_effort 可选 low / medium / xhigh（默认）。仅支持 Token Plan，不支持按量计费；预览期为 2026-11-11 10:00 至 2026-11-25 24:00（UTC+8），结束后下线。主榜 AA 分以 Artificial Analysis 公布为准，预览期暂未见到同口径分数。</p>
+  <div class="meta">阿里云 / 通义千问 · <a href="https://help.aliyun.com/zh/model-studio/qwen4-max-preview" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>ERNIE 5.5 Flash Preview<span class="tag tag-new">百度文心</span></h3>
+  <p>11 月 11 日发布，基于此前 ERNIE 5.5 Flash Base 的首个后训练预览版。总参数 2800 亿、激活 140 亿，上下文 1M，官方强调编程、3D 建模、知识工作与内容创作。API 已在千帆上线；官方英文页写权重即将以 Apache 2.0 开源，新华网报道开源日为 11 月 25 日，并称 API 定价为每百万 token 输入忙时 2 元 / 闲时 1 元、输出忙时 8 元 / 闲时 4 元，限时五折。官方提醒这仍是后训练中间检查点，正式版还会再改。主榜 AA 分以 Artificial Analysis 公布为准，无同口径分不得强行插主榜。</p>
+  <div class="meta">百度文心 · <a href="https://ernie.baidu.com/release/ernie-5-5-flash-preview/" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>MiniMax H3-Image<span class="tag tag-new">MiniMax</span></h3>
+  <p>11 月 11 日发布的开放权重图像模型，支持文生图、参考图生成与图像编辑，最多 16 张参考图。官方称可在 10 秒内生成 4096×4096 的 4K 图，并在 API、MiniMax Code 与海螺同步提供服务；上线周对 4K 及以上请求五折。权重在 Hugging Face MiniMaxAI/MiniMax-H3-Image，使用条款以仓库许可证为准。</p>
+  <div class="meta">MiniMax · <a href="https://www.minimax.io/blog/minimax-h3-image" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>AlphaGenome 2<span class="tag tag-new">Google DeepMind</span></h3>
+  <p>11 月 11 日发布的下一代 DNA 序列模型，按细胞类型或状态预测变异效应。训练数据超过 1 亿个单细胞图谱、覆盖 68 种组织；在 TenK10K 上因果变异召回接近前代两倍。非商业研究可通过 AlphaGenome API 使用，商业为小范围预览；仅供研究，未经临床验证。DeepMind 还预告将在 Antigravity 中提供 AlphaGenome 2 Skills。</p>
+  <div class="meta">Google DeepMind · <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">详情 ↗</a></div>
+</div><div class="card">
+  <h3>BotPsy<span class="tag tag-new">Tether AI Research</span></h3>
+  <p>11 月 11 日在 Hugging Face 博客发布的 0.8B 端侧智能体模型，基于 Qwen3.5-0.8B，面向函数调用和中低难度的个人助理任务（搜索、出行、日历、邮件等）。作者称在所测的不超过 1.2B 参数模型中，六个工具/智能体基准均领先；相对基座，BFCL v4 从 23.4 升至 44.0，ACEBench 从 30.1 升至 58.7，τ-bench 从 23.2 升至 51.5。计划以 Apache 2.0 开放权重，并提供 bf16 / Q8 / Q4 的 safetensors 与 GGUF。官方明确：模型仍会出错，不适合高风险用途。</p>
+  <div class="meta">Tether AI Research · <a href="https://huggingface.co/blog/qvac/botpsy" target="_blank" rel="noopener">详情 ↗</a></div>
+</div>
+</section>
+
+<section id="sec-ecosystem">
+  <h2>🧩 Agent / Skill 生态<span class="count">4 条</span></h2>
+<div class="card">
+  <h3>AlphaGenome 2 Skills 即将进入 Antigravity</h3>
+  <p>DeepMind 在 AlphaGenome 2 公告末尾写明：很快会在智能体开发平台 Google Antigravity 中发布 AlphaGenome 2 Skills，希望把这类专用科学模型与 Gemini 4 的智能体工具组合起来，帮助科研人员加快实验与发现。这是「科学模型」和「编码/研究智能体工作台」开始接在同一条工作流里的一个明确信号。</p>
+  <div class="meta">Google DeepMind · <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Qwen4-Max-Preview 只走 Token Plan，预览期结束即下线</h3>
+  <p>与常见的「预览但可按量付费」不同，阿里云帮助中心把这条写得很硬：qwen4-max-preview 仅支持 Token Plan，不支持按量计费；预览期为 11 月 11 日 10:00 至 11 月 25 日 24:00（UTC+8），期间不做变更，结束后下线。接入必须用套餐专用 API Key 和北京地域的 Token Plan Base URL。对要在预览窗里评测或接入智能体工作流的人来说，时间盒和计费通道都是硬约束。</p>
+  <div class="meta">阿里云百炼 · <a href="https://help.aliyun.com/zh/model-studio/qwen4-max-preview" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>H3-Image 同步上 API、MiniMax Code 与海螺，4K 及以上首周五折</h3>
+  <p>除开放权重外，MiniMax 把 H3-Image 接到了 API 平台、MiniMax Code 和海螺（Hailuo）。官方称 Standard 模式比主流方案快 1.5–2 倍，Highspeed 模式快 3–4 倍，定价约为同类的 50%–70%；上线周对 4K 及以上分辨率的图像生成请求提供标准价五折。这是「权重可下、服务也可直接调用」的双通道发布。</p>
+  <div class="meta">MiniMax · <a href="https://www.minimax.io/blog/minimax-h3-image" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI CFO：要学 Anthropic 走多云分发，解开对 Azure 的卡住</h3>
+  <p>在雅虎财经采访里，Sarah Friar 谈到企业业务翻倍时说，Anthropic 的企业进展提醒他们要更多与第三方云做分发协议。「我们之前真的卡在和微软 Azure 的合同上。解开之后，Anthropic 让我看到这种模式的力量，我觉得对咱们来说，这可能是 2027 年很大的尾风。」这不是一条产品更新，但说明 OpenAI 把自己在企业侧落后的一部分原因，归到了分发通道而不仅仅是模型本身。</p>
+  <div class="meta">Yahoo Finance · <a href="https://finance.yahoo.com/technology/article/openai-q3-revenue-jumped-50-to-10-billion-215223357.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+
+<footer>由运营 · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+<!-- /digest-ui2:js -->
+
+</body>
+</html>
