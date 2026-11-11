@@ -1,5 +1,6 @@
 {
- "date": "2026-11-11",
+ "date": "2026-11-12",
+ "aa_index_version": "v5.0.1",
  "models": [
   {
    "name": "Claude Fable 5.2",
@@ -1234,6 +1235,28 @@
    "rank": 56
   },
   {
+   "name": "Qwen3.8-Flash-Next",
+   "vendor": "阿里云 Qwen",
+   "country": "中国",
+   "tier": "默认",
+   "aa": 29,
+   "aa_dec": 28.6,
+   "pin": 0.15,
+   "pcache": 0.016,
+   "pout": 0.47,
+   "open_": "开放权重",
+   "lic": "Qwen Community License 1.0（自定义,非 Apache）",
+   "src": "官方",
+   "note": "<b>11-12 获 AA v5.0.1 同口径分 28.58（四舍五入 29），为 Flash-Next 权重在领袖榜首次出分；Changelog 至 11-12 06:45 仍无 11-11／11-12 条目</b>。官方 HF 权重为 <code>Qwen/Qwen3.8-Flash-Next</code>（2026-08-24 起公开）；<b>官方 API 产品名为 Qwen3.8-Flash（基于 Flash-Next，默认约 1M 上下文、内置工具）</b>；Qwen Cloud 原厂价 $0.15/$0.47，隐式缓存与显式缓存读取 $0.016、显式缓存写入 $0.20（与 AA 价目一致；百炼北京档 0.8/2.7 元另计，主表用官方美元标价）。原生 262,144 上下文（可扩展至 1M），文本+图像+视频输入；<b>开放权重，许可为 Qwen Community License 1.0（非 Apache：月活超 1 亿或月营收超 2,000 万美元须显著展示模型名；对外提供 MaaS 或办公/编程助手须另授许可）</b>。架构 125B 总参、6B 激活，另加 51B n-gram 嵌入与 4B MTP（权重合计约 180B），自部署属数据中心级，未改本地/生图五档。标准任务成本 $0.2675；AA 记单任务成本 $0.57、约 30.4 分钟/任务。<b>与同分 29、aa_dec 同为 28.6 的 DeepSeek V4.1 Flash High（任务成本 $0.595）相比更便宜，综合性价比 60 B</b>。",
+   "cost": 0.2675,
+   "ability": 44.6,
+   "costscore": 83.29873640192493,
+   "value": 60,
+   "eff": 108.4,
+   "grade": "B",
+   "rank": 57
+  },
+  {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
    "vendor": "DeepSeek",
    "country": "中国",
@@ -1253,7 +1276,7 @@
    "value": 54,
    "eff": 48.7,
    "grade": "C",
-   "rank": 57
+   "rank": 58
   },
   {
    "name": "Step 5 Preview",
@@ -1275,7 +1298,7 @@
    "value": 46,
    "eff": 17.3,
    "grade": "D",
-   "rank": 58
+   "rank": 59
   },
   {
    "name": "GPT-6 Luna",
@@ -1297,7 +1320,7 @@
    "value": 60,
    "eff": 124.4,
    "grade": "B",
-   "rank": 59
+   "rank": 60
   },
   {
    "name": "GLM-5.3-Flash",
@@ -1319,7 +1342,7 @@
    "value": 61,
    "eff": 125.4,
    "grade": "B",
-   "rank": 60
+   "rank": 61
   },
   {
    "name": "MiMo-V2.6-Flash",
@@ -1341,7 +1364,7 @@
    "value": 60,
    "eff": 128.6,
    "grade": "B",
-   "rank": 61
+   "rank": 62
   },
   {
    "name": "Mistral Large 4",
@@ -1363,7 +1386,7 @@
    "value": 46,
    "eff": 21.2,
    "grade": "D",
-   "rank": 62
+   "rank": 63
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -1385,7 +1408,7 @@
    "value": 36,
    "eff": 5.8,
    "grade": "D",
-   "rank": 63
+   "rank": 64
   },
   {
    "name": "Muse Spark Open",
@@ -1407,7 +1430,7 @@
    "value": 40,
    "eff": 10.8,
    "grade": "D",
-   "rank": 64
+   "rank": 65
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1429,7 +1452,7 @@
    "value": 58,
    "eff": 111.1,
    "grade": "C",
-   "rank": 65
+   "rank": 66
   },
   {
    "name": "Agnes 2.5 Pro Theta",
@@ -1451,7 +1474,7 @@
    "value": 59,
    "eff": 137.1,
    "grade": "C",
-   "rank": 66
+   "rank": 67
   },
   {
    "name": "GPT-6 Luna",
@@ -1473,7 +1496,7 @@
    "value": 56,
    "eff": 102.2,
    "grade": "C",
-   "rank": 67
+   "rank": 68
   },
   {
    "name": "Mistral Large 4",
@@ -1495,7 +1518,7 @@
    "value": 43,
    "eff": 18.8,
    "grade": "D",
-   "rank": 68
+   "rank": 69
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1517,7 +1540,7 @@
    "value": 38,
    "eff": 9.8,
    "grade": "D",
-   "rank": 69
+   "rank": 70
   },
   {
    "name": "GLM-5.3",
@@ -1539,7 +1562,7 @@
    "value": 38,
    "eff": 9.2,
    "grade": "D",
-   "rank": 70
+   "rank": 71
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1561,7 +1584,7 @@
    "value": 41,
    "eff": 13.6,
    "grade": "D",
-   "rank": 71
+   "rank": 72
   },
   {
    "name": "GPT-6 Luna",
@@ -1583,7 +1606,7 @@
    "value": 54,
    "eff": 93.3,
    "grade": "C",
-   "rank": 72
+   "rank": 73
   },
   {
    "name": "Nanbeige4.3-33B",
@@ -1605,7 +1628,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 73
+   "rank": 74
   },
   {
    "name": "Qwen3.8 27B",
@@ -1627,7 +1650,7 @@
    "value": 40,
    "eff": 16.0,
    "grade": "D",
-   "rank": 74
+   "rank": 75
   },
   {
    "name": "MiniMax M3",
@@ -1649,7 +1672,7 @@
    "value": 45,
    "eff": 31.7,
    "grade": "D",
-   "rank": 75
+   "rank": 76
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1671,7 +1694,7 @@
    "value": 52,
    "eff": 84.4,
    "grade": "C",
-   "rank": 76
+   "rank": 77
   },
   {
    "name": "GPT-6 Luna",
@@ -1693,7 +1716,7 @@
    "value": 51,
    "eff": 80.0,
    "grade": "C",
-   "rank": 77
+   "rank": 78
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1715,7 +1738,7 @@
    "value": 45,
    "eff": 31.9,
    "grade": "D",
-   "rank": 78
+   "rank": 79
   },
   {
    "name": "K2 Horizon 375B-A23B",
@@ -1737,7 +1760,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 79
+   "rank": 80
   },
   {
    "name": "Beam 1.0",
@@ -1759,7 +1782,7 @@
    "value": 43,
    "eff": 25.7,
    "grade": "D",
-   "rank": 80
+   "rank": 81
   },
   {
    "name": "Qwen3.8 27B",
@@ -1781,7 +1804,7 @@
    "value": 37,
    "eff": 13.6,
    "grade": "D",
-   "rank": 81
+   "rank": 82
   },
   {
    "name": "Qwen3.8 27B",
@@ -1803,7 +1826,29 @@
    "value": 36,
    "eff": 12.8,
    "grade": "D",
-   "rank": 82
+   "rank": 83
+  },
+  {
+   "name": "Solar Pro 4",
+   "vendor": "Upstage",
+   "country": "韩国",
+   "tier": "默认",
+   "aa": 14,
+   "aa_dec": 14.2,
+   "pin": 0.3,
+   "pcache": 0.06,
+   "pout": 1.2,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>11-12 获 AA v5.0.1 同口径分 14.16（四舍五入 14），为 Upstage Solar Pro 4 在领袖榜首次出分；Changelog 至 11-12 06:45 仍无 11-11／11-12 条目</b>。闭源，512K 上下文，定位多步工具调用、终端任务与长文档推理；<b>官方标准价（upstage.ai/pricing 核验）为输入 $0.30／输出 $1.20／缓存 $0.06，与 AA 价目一致</b>；2026-08-06 起的免费／九折／七折限时活动已于 2026-10-11 结束并恢复标价，主分用标准价；<b>不得把第三方托管 $0.15/$0.60 写成原厂价</b>。标准任务成本 $0.60；AA 记单任务成本 $0.96、约 63.7 分钟/任务。<b>按 aa_dec 14.2 排在 Qwen3.8 27B Low（15.7）之后、Nemotron 3.5 Super VL（13.6）与 Apodex 1.1（13.7）之前，综合性价比 40 D</b>。权重未开放、许可专有。韩国 Upstage。",
+   "cost": 0.6,
+   "ability": 21.5,
+   "costscore": 68.11659136115127,
+   "value": 40,
+   "eff": 23.3,
+   "grade": "D",
+   "rank": 84
   },
   {
    "name": "Nemotron 3.5 Super VL",
@@ -1825,7 +1870,7 @@
    "value": 45,
    "eff": 43.1,
    "grade": "D",
-   "rank": 83
+   "rank": 85
   },
   {
    "name": "Apodex 1.1",
@@ -1847,7 +1892,7 @@
    "value": 33,
    "eff": 9.3,
    "grade": "D",
-   "rank": 84
+   "rank": 86
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1869,7 +1914,7 @@
    "value": 29,
    "eff": 5.5,
    "grade": "D",
-   "rank": 85
+   "rank": 87
   },
   {
    "name": "Inkling Small",
@@ -1891,7 +1936,7 @@
    "value": 39,
    "eff": 21.7,
    "grade": "D",
-   "rank": 86
+   "rank": 88
   },
   {
    "name": "Inkling",
@@ -1913,7 +1958,7 @@
    "value": 29,
    "eff": 6.0,
    "grade": "D",
-   "rank": 87
+   "rank": 89
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -1935,7 +1980,7 @@
    "value": 33,
    "eff": 9.4,
    "grade": "D",
-   "rank": 88
+   "rank": 90
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -1957,7 +2002,7 @@
    "value": 35,
    "eff": 13.0,
    "grade": "D",
-   "rank": 89
+   "rank": 91
   },
   {
    "name": "Qwen3.8 27B",
@@ -1979,7 +2024,7 @@
    "value": 31,
    "eff": 8.0,
    "grade": "D",
-   "rank": 90
+   "rank": 92
   },
   {
    "name": "GPT-6 Luna",
@@ -2001,7 +2046,7 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 91
+   "rank": 93
   },
   {
    "name": "GPT-6 Luna",
@@ -2023,7 +2068,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 92
+   "rank": 94
   },
   {
    "name": "Muse Glimmer",
@@ -2045,7 +2090,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 93
+   "rank": 95
   },
   {
    "name": "Command A+",
@@ -2067,7 +2112,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 94
+   "rank": 96
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2089,7 +2134,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 95
+   "rank": 97
   },
   {
    "name": "Granite 4.2 8B",
@@ -2111,7 +2156,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 96
+   "rank": 98
   },
   {
    "name": "Granite 4.2 3B",
@@ -2133,7 +2178,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 97
+   "rank": 99
   },
   {
    "name": "Mistral Small 4",
@@ -2155,7 +2200,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 98
+   "rank": 100
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2177,10 +2222,40 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 99
+   "rank": 101
   }
  ],
  "changes": [
+  {
+   "d": "11-12",
+   "t": "Qwen3.8-Flash-Next 获 AA v5.0.1 同口径分 29：主表 99→100，插在 MiniMax M3.1 Flash 之后",
+   "m": [
+    "Qwen3.8-Flash-Next",
+    "MiniMax M3.1 Flash",
+    "DeepSeek V4.1 Flash（1017 当前正式版）"
+   ],
+   "s": "<b>Artificial Analysis 已为 Qwen3.8-Flash-Next 给出 Intelligence Index v5.0.1 分数 28.58（四舍五入 29）；Changelog 至 11-12 06:45（上海）仍无 11-11／11-12 条目，11-11 18:00 抓取时该条指数还是空值，属现行同口径首评</b>，按「有分才入主榜」收录。<b>名次：aa_dec 28.6 与 DeepSeek V4.1 Flash High 同分，按标准任务成本低者在前，本条（$0.2675）为第 57，DeepSeek High（$0.595）顺延为第 58</b>；TOP_AA 仍 65.0、成本锚点仍 $22.50／$0.11，原 99 条能力分、成本分、综合性价比与等级均不变。<b>计价跟 Qwen Cloud 原厂美元价 $0.15/$0.47、缓存读取 $0.016（与 AA 一致），不用百炼人民币档充作美元标价</b>。开放权重，许可为 Qwen Community License 1.0（非 Apache）；官方 API 产品名为 Qwen3.8-Flash（基于 Flash-Next）。125B/6B 激活另加 51B n-gram 与 4B MTP（约 180B 权重），未改本地/生图五档。综合性价比 60 B。"
+  },
+  {
+   "d": "11-12",
+   "t": "Solar Pro 4 获 AA v5.0.1 同口径分 14：主表 100→101，插在 Qwen3.8 27B Low 之后、Nemotron 3.5 Super VL 之前",
+   "m": [
+    "Solar Pro 4",
+    "Qwen3.8 27B",
+    "Nemotron 3.5 Super VL",
+    "Apodex 1.1"
+   ],
+   "s": "<b>Artificial Analysis 已为 Upstage Solar Pro 4 给出 Intelligence Index v5.0.1 分数 14.16（四舍五入 14）；Changelog 至 11-12 06:45 同样没有新日期条目，11-11 18:00 抓取时该条指数还是空值</b>，属现行同口径首评。<b>名次：aa_dec 14.2，排在 Qwen3.8 27B Low（15.7）之后、Nemotron 3.5 Super VL（13.6）与 Apodex 1.1（13.7）之前，为第 84</b>；成本锚点不变，其余行分数不重算。<b>官方标准价 $0.30/$1.20、缓存 $0.06（与 AA 一致）；2026-08 起限时折扣已于 10-11 结束并恢复标价，主分用标准价，不得把第三方 $0.15/$0.60 写成原厂价</b>。闭源专有，512K 上下文。综合性价比 40 D。"
+  },
+  {
+   "d": "11-12",
+   "t": "指数仍为 v5.0.1；汇率沿用 11-11 中间价 6.7191（06:30 截稿时尚无 11-12 中间价）；Hy4／Inkling 2 Small 正式权重仍未落地",
+   "m": [
+    "Hy4",
+    "Inkling 2 Small"
+   ],
+   "s": "<b>AA Changelog／methodology／Index／领袖榜页均仍标注 Intelligence Index v5.0.1，无版本或方法论切换，故不对全表重算能力分</b>。中国外汇交易中心 11-12 中间价在 06:45 截稿时尚未公布（CcprHisNew 当日记录为空，ccpr.json 最近日期仍为 2026-11-11 9:15），<b>沿用 11-11 中间价 1 USD = 6.7191 CNY</b>，人民币定价四组（Hy4、DeepSeek V4.1 Flash 1017、DeepSeek V4 Pro 0813、GLM-5.3-Flash）美元成本不变。<b>开放状态复核：tencent/Hy4 正式版与 thinkingmachines/Inkling-2-Small 官方权重仍 401 未公开</b>（仅有 Hy4-preview／FP8 与 Inkling-Small 等既有条目）；FLUX.2 klein 正式 4B 权重仍在，本期不改生图五档。既有 99 条官方价与分数无变动。"
+  },
   {
    "d": "11-11",
    "t": "Apodex 1.1 获 AA v5.0.1 同口径分 14：主表 98→99，插在 Nemotron 3.5 Super VL 之后",
