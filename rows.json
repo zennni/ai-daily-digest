@@ -1,6 +1,5 @@
 {
  "date": "2026-11-12",
- "aa_index_version": "v5.0.1",
  "models": [
   {
    "name": "Claude Fable 5.2",
@@ -81,7 +80,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>可用性受限:本周先向 Fairwind 计划内的白帽与受信任伙伴分批放量,其后才面向开发者与企业;面向公众的公开 API 仍无时间表</b>;介绍期定价 $2/$10(与 Argon 持平,后续调整为 $4/$20),缓存输入再享 95% 折扣=$0.20;1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
+   "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>11-10(美东)全球全量开放:Gemini API／AI Studio／Gemini for Business／AI Ultra 订阅(Gemini App、搜索 AI Mode、Antigravity)同步可用;Fairwind 计划继续受理网安防御者申请</b>;介绍期定价 $2/$10(与 Argon 持平,后续调整为 $4/$20),缓存输入再享 95% 折扣=$0.20;1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
    "cost": 4.5,
    "ability": 92.3,
    "costscore": 30.24809934544115,
@@ -125,7 +124,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档(介绍期 $2/$10、标准 $4/$20,缓存 $0.20);AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(Fairwind 计划分批放量)",
+   "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档(介绍期 $2/$10、标准 $4/$20,缓存 $0.20);AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(11-10 起全球全量开放)",
    "cost": 4.5,
    "ability": 89.2,
    "costscore": 30.24809934544115,
@@ -823,16 +822,16 @@
    "tier": "默认",
    "aa": 35,
    "aa_dec": 35.0,
-   "pin": 0.446487,
-   "pcache": 0.022324,
-   "pout": 1.339462,
+   "pin": 0.446601,
+   "pcache": 0.02233,
+   "pout": 1.339804,
    "open_": "闭源（正式版权重未发布）",
    "lic": "专有（正式版权重待开源；预览 Hy4-preview 为 Apache 2.0）",
    "src": "官方",
    "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7188 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重尚未在 HF 发布</b>（仅有 tencent/Hy4-preview Apache 2.0）；Hy4 Flash 官方称即将推出、本轮未收录",
-   "cost": 0.7813525,
+   "cost": 0.781552,
    "ability": 53.8,
-   "costscore": 63.1531042438304,
+   "costscore": 63.148306198798956,
    "value": 58,
    "eff": 44.8,
    "grade": "C",
@@ -955,16 +954,16 @@
    "tier": "默认",
    "aa": 33,
    "aa_dec": 32.6,
-   "pin": 0.297663,
-   "pcache": 0.005953,
-   "pout": 1.190651,
+   "pin": 0.297734,
+   "pcache": 0.005955,
+   "pout": 1.190937,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "552B/16B MoE、原生视觉、1M 上下文,10/17 权重开源(纯 MIT);<b>峰值 ¥2/¥8、缓存命中 ¥0.04,闲时减半</b>;AA 记单任务成本 $0.60、175 tok/s;<b>v5 报告点名其为「已发布权重的最高分」并列者(32);FrontierCode 2.0 28% 为开放权重第一、Cyber Index 57% 亦为开放模型第一</b>",
-   "cost": 0.59532575,
+   "cost": 0.5954682499999999,
    "ability": 50.8,
-   "costscore": 68.26357931151136,
+   "costscore": 68.25908118063285,
    "value": 58,
    "eff": 55.4,
    "grade": "C",
@@ -1245,10 +1244,10 @@
    "pcache": 0.016,
    "pout": 0.47,
    "open_": "开放权重",
-   "lic": "Qwen Community License 1.0（自定义,非 Apache）",
+   "lic": "Qwen Community License 1.0（自定义，非 Apache）",
    "src": "官方",
-   "note": "<b>11-12 获 AA v5.0.1 同口径分 28.58（四舍五入 29），为 Flash-Next 权重在领袖榜首次出分；Changelog 至 11-12 06:45 仍无 11-11／11-12 条目</b>。官方 HF 权重为 <code>Qwen/Qwen3.8-Flash-Next</code>（2026-08-24 起公开）；<b>官方 API 产品名为 Qwen3.8-Flash（基于 Flash-Next，默认约 1M 上下文、内置工具）</b>；Qwen Cloud 原厂价 $0.15/$0.47，隐式缓存与显式缓存读取 $0.016、显式缓存写入 $0.20（与 AA 价目一致；百炼北京档 0.8/2.7 元另计，主表用官方美元标价）。原生 262,144 上下文（可扩展至 1M），文本+图像+视频输入；<b>开放权重，许可为 Qwen Community License 1.0（非 Apache：月活超 1 亿或月营收超 2,000 万美元须显著展示模型名；对外提供 MaaS 或办公/编程助手须另授许可）</b>。架构 125B 总参、6B 激活，另加 51B n-gram 嵌入与 4B MTP（权重合计约 180B），自部署属数据中心级，未改本地/生图五档。标准任务成本 $0.2675；AA 记单任务成本 $0.57、约 30.4 分钟/任务。<b>与同分 29、aa_dec 同为 28.6 的 DeepSeek V4.1 Flash High（任务成本 $0.595）相比更便宜，综合性价比 60 B</b>。",
-   "cost": 0.2675,
+   "note": "AA 榜单页 2026-11-12 09:20 抓取首次给出 Intelligence Index v5.0.1 <b>28.6（四舍五入 29）</b>，Changelog 尚未列出该条（更新滞后于榜单页）;HF 权重 <code>Qwen/Qwen3.8-Flash-Next</code>（2026-08-24 起公开）;<b>价格按官方 API 挂牌 $0.15／$0.47、缓存命中 $0.016</b>;许可为自定义 Qwen Community License 1.0，<u>不得标 Apache</u>;上下文与多模态能力见官方模型卡",
+   "cost": 0.26749999999999996,
    "ability": 44.6,
    "costscore": 83.29873640192493,
    "value": 60,
@@ -1263,16 +1262,16 @@
    "tier": "High",
    "aa": 29,
    "aa_dec": 28.6,
-   "pin": 0.297663,
-   "pcache": 0.005953,
-   "pout": 1.190651,
+   "pin": 0.297734,
+   "pcache": 0.005955,
+   "pout": 1.190937,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>本期新增:AA v5.0 首次给出 High 档独立分 29(介于默认档 32 与 Non-reasoning 档 19 之间)</b>;价格同默认档(峰值 ¥2/¥8、缓存 ¥0.04、闲时减半);<b>High 档速度 203 tok/s,介于默认档 175 与 Non-reasoning 档 1,486 之间</b>——<b>三档至此齐全:32／29／19,可按「质量—吞吐」曲线选档</b>",
-   "cost": 0.59532575,
+   "cost": 0.5954682499999999,
    "ability": 44.6,
-   "costscore": 68.26357931151136,
+   "costscore": 68.25908118063285,
    "value": 54,
    "eff": 48.7,
    "grade": "C",
@@ -1329,16 +1328,16 @@
    "tier": "默认",
    "aa": 28,
    "aa_dec": 27.8,
-   "pin": 0.119065,
-   "pcache": 0.034231,
-   "pout": 0.416718,
+   "pin": 0.119094,
+   "pcache": 0.034239,
+   "pout": 0.416828,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "320B/18B,1M 上下文,8/26 发布即开源(纯 MIT);国内官方价 ¥0.8/¥2.8/缓存 ¥0.23(阿里云百炼原厂直供页 10-10 更新,本期复核未变),z.ai 国际站另挂 $0.15/$0.50;<b>本报告取国内官价口径</b>;AA 记单任务成本 $0.58、69 tok/s",
-   "cost": 0.2232445,
+   "cost": 0.223301,
    "ability": 43.1,
-   "costscore": 86.6977048893459,
+   "costscore": 86.69294894688355,
    "value": 61,
    "eff": 125.4,
    "grade": "B",
@@ -1527,16 +1526,16 @@
    "tier": "Max",
    "aa": 23,
    "aa_dec": 23.1,
-   "pin": 1.339462,
-   "pcache": 0.044649,
-   "pout": 4.018385,
+   "pin": 1.339804,
+   "pcache": 0.04466,
+   "pout": 4.019412,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "1.6T/49B,1M 上下文;峰值 ¥9/¥27、缓存 ¥0.30;<b>AA 榜单以 0813 标识该系列并给出 v5.0 23 分;0813 属当前生产版官方名称自带日期,按规则保留、不视作历史快照</b>;AA 记单任务成本 $1.77、81 tok/s;<b>其单位成本远高于 V4.1 Flash 却分数更低——老一代旗舰已被自家 Flash 系列超越</b>",
-   "cost": 2.34405825,
+   "cost": 2.3446569999999998,
    "ability": 35.4,
-   "costscore": 42.50555824585042,
+   "costscore": 42.50075819841461,
    "value": 38,
    "eff": 9.8,
    "grade": "D",
@@ -1654,18 +1653,18 @@
   },
   {
    "name": "JT-4.1 Flash 236B A21B",
-   "vendor": "中国移动 九天",
+   "vendor": "中国移动",
    "country": "中国",
-   "tier": "默认",
+   "tier": "Reasoning",
    "aa": 19,
    "aa_dec": 19.0,
    "pin": null,
    "pcache": null,
    "pout": null,
-   "open_": "闭源",
-   "lic": "专有",
-   "src": "官方",
-   "note": "<b>AA Changelog 11 Nov 首次给出 Intelligence Index v5.0.1 同口径分 18.95（四舍五入 19）；11-11 18:00 抓取时该条指数仍为空值，06:30 全日量时 Changelog 最新仍为 10 Nov</b>。中国移动九天闭源模型，236B/21B MoE，262K 上下文，文本输入／文本输出，推理配置；<b>AA 领袖榜与模型页均记暂无公开 API、无 token 单价与单任务成本，主表记 N/A、不计性价比、不入 Top15</b>。AA 页标明此为推理版，并提示可能另有 non-reasoning 变体，但本期领袖榜无独立 v5.0.1 分，不单列。AA 记本指数输出约 1.43 亿 token（中位约 0.79 亿），偏啰嗦。未改本地/生图五档。按 aa_dec 19.0 插在 Qwen3.8 27B xHigh（20.1）之后、MiniMax M3（18.9）之前。",
+   "open_": "待核实",
+   "lic": "待核实",
+   "src": "N/A",
+   "note": "AA Changelog <b>11 Nov</b> 新入 Intelligence Index <b>19</b>（slug jt-4-1-flash-236b-a21b；AA 标注此为 reasoning 版本、非推理变体可能存在但无独立分）;九天 JT4.1 系列 2026-07-17 WAIC 首发（236B 与 35B 两版，产业级安全可信多模态基座），本次为 AA 首次同口径评测;<b>236B 总参／A21B 每 token 激活约 210 亿 MoE、262K 上下文、AA 实测仅文本输入、文本输出</b>;<b>AA 记 143M 输出 token——为中位数 78.8M 的 1.8 倍,「极啰嗦」分位</b>;<b>无公开 API per-token 挂牌价（AA 模型页标「No publicly available API」、成本栏 N/A）：企业侧经中国移动 MoMA 平台／移动云专属算力交付,不对外挂牌按量价,故不计性价比分</b>;<b>开放状态本期降级为「待核实」:上期本报告曾按「开放权重」收录,本期复核 Hugging Face、官方 GitHub 与焕新社区均未见该模型的可下载权重入口与许可证文本,按「不得仅因宣传口径标注开放」原则改标待核实 → 不列入第四节开放权重榜;若后续放出权重再行核实</b>",
    "cost": null,
    "ability": 29.2,
    "costscore": null,
@@ -1747,16 +1746,16 @@
    "tier": "Non-reasoning",
    "aa": 19,
    "aa_dec": 18.5,
-   "pin": 0.297663,
-   "pcache": 0.005953,
-   "pout": 1.190651,
+   "pin": 0.297734,
+   "pcache": 0.005955,
+   "pout": 1.190937,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>AA v5.0 Non-reasoning 档 19(较默认档少 13.5 分),但输出速度 1,486 tok/s 为全榜最快</b>;价格同默认档;<b>关推理换来 8.5 倍吞吐,代价是 13.5 分能力</b>;适用批处理抽取、分类、格式转换等「要吞吐不要推理」的任务",
-   "cost": 0.59532575,
+   "cost": 0.5954682499999999,
    "ability": 29.2,
-   "costscore": 68.26357931151136,
+   "costscore": 68.25908118063285,
    "value": 45,
    "eff": 31.9,
    "grade": "D",
@@ -1863,7 +1862,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>11-12 获 AA v5.0.1 同口径分 14.16（四舍五入 14），为 Upstage Solar Pro 4 在领袖榜首次出分；Changelog 至 11-12 06:45 仍无 11-11／11-12 条目</b>。闭源，512K 上下文，定位多步工具调用、终端任务与长文档推理；<b>官方标准价（upstage.ai/pricing 核验）为输入 $0.30／输出 $1.20／缓存 $0.06，与 AA 价目一致</b>；2026-08-06 起的免费／九折／七折限时活动已于 2026-10-11 结束并恢复标价，主分用标准价；<b>不得把第三方托管 $0.15/$0.60 写成原厂价</b>。标准任务成本 $0.60；AA 记单任务成本 $0.96、约 63.7 分钟/任务。<b>按 aa_dec 14.2 排在 Qwen3.8 27B Low（15.7）之后、Nemotron 3.5 Super VL（13.6）与 Apodex 1.1（13.7）之前，综合性价比 40 D</b>。权重未开放、许可专有。韩国 Upstage。",
+   "note": "AA 榜单页 2026-11-12 09:20 抓取首次给出 Intelligence Index v5.0.1 <b>14.2（四舍五入 14）</b>;韩国 Upstage 闭源旗舰、512K 上下文，定位多步工具调用与长文档推理;<b>官方定价页核验：输入 $0.30／输出 $1.20、缓存命中 $0.06</b>",
    "cost": 0.6,
    "ability": 21.5,
    "costscore": 68.11659136115127,
@@ -1885,10 +1884,10 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA Changelog 至 11-11 13:45 仍无 11 日条目，但模型页与主榜数据已给出 Intelligence Index v5.0.1 分数 13.67（四舍五入 14）</b>；11-10 15:00 抓取时该条 intelligenceIndex 仍为空，本期新增 CritPt v2 hard 17% 后指数落地，属现行同口径首评，按规则入主榜。闭源旗舰 397B，上下文 262,144（AA 记 256k），文本+图像输入；<b>官方标价（platform.apodex.ai/docs/pricing，11-11 核验）为输入 $0.60 / 输出 $3.60 / 缓存命中 $0.06（90% 折扣）</b>，输入超过 200K 时整单（含输入、缓存、输出）按 2× 计，主分按不超过 200K 的普通标价；<b>AA 价目仍列旧价 $0.30/$3.00，主表不用该旧标价</b>。标准任务成本 $1.50；AA 记单任务成本 $0.76、约 13.5 分钟/任务（其成本按旧价折算，仅供对照）。<b>与同为 14 分的 Nemotron 3.5 Super VL（任务成本 $0.325）相比更贵，综合性价比 33 D</b>；2026-08 旧口径曾报 44 分，不得与 v5.0.1 混排。厂商为 Apodex US, Inc.（特拉华注册，总部 Redwood City），权重未开放、许可专有。同系列 Apodex 1.1 Mini（35B、官方称开放权重）尚无 v5 同口径分，不入主榜。",
+   "note": "AA 模型页 2026-11-12 09:20 抓取给出 Intelligence Index v5.0.1 <b>13.7（四舍五入 14）</b>——本期 CritPt v2 硬子集 17% 落地后指数首次可得，属现行同口径首评，按规则入主榜;<b>397B 闭源旗舰；官方价 $0.60／$3.60、缓存命中 $0.06</b>",
    "cost": 1.5,
    "ability": 21.5,
-   "costscore": 50.895639330066764,
+   "costscore": 50.89563933006676,
    "value": 33,
    "eff": 9.3,
    "grade": "D",
@@ -1923,16 +1922,16 @@
    "tier": "Non-reasoning",
    "aa": 13,
    "aa_dec": 13.0,
-   "pin": 1.339462,
-   "pcache": 0.044649,
-   "pout": 4.018385,
+   "pin": 1.339804,
+   "pcache": 0.04466,
+   "pout": 4.019412,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>本期新增:AA v5.0.1 首次给出 V4 Pro 0813 的 Non-reasoning 档独立分 13(较 Max 档 23 少 10 分)</b>;价格同 Max 档(峰值 ¥9/¥27、缓存 ¥0.30);AA 记单任务成本 $0.98、首 token 3.41 秒;<b>至此 V4 Pro 两档齐全:Max 23／Non-reasoning 13;同价位下仍不及自家 V4.1 Flash 任一档(33／29／19),老旗舰的劣势被进一步量化</b>",
-   "cost": 2.34405825,
+   "cost": 2.3446569999999998,
    "ability": 20.0,
-   "costscore": 42.50555824585042,
+   "costscore": 42.50075819841461,
    "value": 29,
    "eff": 5.5,
    "grade": "D",
@@ -2250,144 +2249,67 @@
  "changes": [
   {
    "d": "11-12",
-   "t": "JT-4.1 Flash 236B A21B 获 AA v5.0.1 同口径分 19：主表 101→102，插在 MiniMax M3 之前",
-   "m": [
-    "JT-4.1 Flash 236B A21B",
-    "MiniMax M3",
-    "Qwen3.8 27B"
-   ],
-   "s": "<b>AA Changelog 11 Nov 新增「New language model evaluation results available」：JT-4.1 Flash 236B A21B 获 Intelligence Index v5.0.1 分数 18.95（四舍五入 19）。11-11 18:00 抓取时该条指数仍为空，06:30 全日量时 Changelog 最新仍为 10 Nov，属现行同口径首评</b>，按「有分才入主榜」收录。<b>名次：aa_dec 19.0，排在 Qwen3.8 27B xHigh（20.1）之后、MiniMax M3（18.9）之前，为第 76</b>。指数仍为 v5.0.1，无方法论切换，不对全表重算能力分；成本锚点仍 $22.50／$0.11。<b>AA 记暂无公开 API、无 token 单价，主表价格与性价比均为 N/A，不入 Top15</b>。闭源专有，236B/21B MoE，262K 上下文，推理配置；非推理变体无独立 v5 分故不单列。<b>中国外汇交易中心 11-12 中间价在 09:00 核验时仍未公布（CcprHisNew 最近日期仍为 2026-11-11），继续沿用 11-11 中间价 6.7191</b>。未改本地/生图五档。"
-  },
-  {
-   "d": "11-12",
-   "t": "Qwen3.8-Flash-Next 获 AA v5.0.1 同口径分 29：主表 99→100，插在 MiniMax M3.1 Flash 之后",
-   "m": [
-    "Qwen3.8-Flash-Next",
-    "MiniMax M3.1 Flash",
-    "DeepSeek V4.1 Flash（1017 当前正式版）"
-   ],
-   "s": "<b>Artificial Analysis 已为 Qwen3.8-Flash-Next 给出 Intelligence Index v5.0.1 分数 28.58（四舍五入 29）；Changelog 至 11-12 06:45（上海）仍无 11-11／11-12 条目，11-11 18:00 抓取时该条指数还是空值，属现行同口径首评</b>，按「有分才入主榜」收录。<b>名次：aa_dec 28.6 与 DeepSeek V4.1 Flash High 同分，按标准任务成本低者在前，本条（$0.2675）为第 57，DeepSeek High（$0.595）顺延为第 58</b>；TOP_AA 仍 65.0、成本锚点仍 $22.50／$0.11，原 99 条能力分、成本分、综合性价比与等级均不变。<b>计价跟 Qwen Cloud 原厂美元价 $0.15/$0.47、缓存读取 $0.016（与 AA 一致），不用百炼人民币档充作美元标价</b>。开放权重，许可为 Qwen Community License 1.0（非 Apache）；官方 API 产品名为 Qwen3.8-Flash（基于 Flash-Next）。125B/6B 激活另加 51B n-gram 与 4B MTP（约 180B 权重），未改本地/生图五档。综合性价比 60 B。"
-  },
-  {
-   "d": "11-12",
-   "t": "Solar Pro 4 获 AA v5.0.1 同口径分 14：主表 100→101，插在 Qwen3.8 27B Low 之后、Nemotron 3.5 Super VL 之前",
-   "m": [
-    "Solar Pro 4",
-    "Qwen3.8 27B",
-    "Nemotron 3.5 Super VL",
-    "Apodex 1.1"
-   ],
-   "s": "<b>Artificial Analysis 已为 Upstage Solar Pro 4 给出 Intelligence Index v5.0.1 分数 14.16（四舍五入 14）；Changelog 至 11-12 06:45 同样没有新日期条目，11-11 18:00 抓取时该条指数还是空值</b>，属现行同口径首评。<b>名次：aa_dec 14.2，排在 Qwen3.8 27B Low（15.7）之后、Nemotron 3.5 Super VL（13.6）与 Apodex 1.1（13.7）之前，为第 84</b>；成本锚点不变，其余行分数不重算。<b>官方标准价 $0.30/$1.20、缓存 $0.06（与 AA 一致）；2026-08 起限时折扣已于 10-11 结束并恢复标价，主分用标准价，不得把第三方 $0.15/$0.60 写成原厂价</b>。闭源专有，512K 上下文。综合性价比 40 D。"
-  },
-  {
-   "d": "11-12",
-   "t": "指数仍为 v5.0.1；汇率沿用 11-11 中间价 6.7191（06:30 截稿时尚无 11-12 中间价）；Hy4／Inkling 2 Small 正式权重仍未落地",
+   "t": "汇率 6.7191→6.7174（调升 17 基点）：四组人民币定价模型美元成本下移约 0.03%，无名次与等级变化",
    "m": [
     "Hy4",
-    "Inkling 2 Small"
-   ],
-   "s": "<b>AA Changelog／methodology／Index／领袖榜页均仍标注 Intelligence Index v5.0.1，无版本或方法论切换，故不对全表重算能力分</b>。中国外汇交易中心 11-12 中间价在 06:45 截稿时尚未公布（CcprHisNew 当日记录为空，ccpr.json 最近日期仍为 2026-11-11 9:15），<b>沿用 11-11 中间价 1 USD = 6.7191 CNY</b>，人民币定价四组（Hy4、DeepSeek V4.1 Flash 1017、DeepSeek V4 Pro 0813、GLM-5.3-Flash）美元成本不变。<b>开放状态复核：tencent/Hy4 正式版与 thinkingmachines/Inkling-2-Small 官方权重仍 401 未公开</b>（仅有 Hy4-preview／FP8 与 Inkling-Small 等既有条目）；FLUX.2 klein 正式 4B 权重仍在，本期不改生图五档。既有 99 条官方价与分数无变动。"
-  },
-  {
-   "d": "11-11",
-   "t": "Apodex 1.1 获 AA v5.0.1 同口径分 14：主表 98→99，插在 Nemotron 3.5 Super VL 之后",
-   "m": [
-    "Apodex 1.1",
-    "Nemotron 3.5 Super VL"
-   ],
-   "s": "<b>Artificial Analysis 已为 Apodex 1.1 给出 Intelligence Index v5.0.1 分数 13.67（四舍五入 14），Changelog 至 11-11 13:45 仍无当日条目；11-10 抓取时该条指数还是空值，本期补上 CritPt v2 hard 17% 后指数落地</b>，属现行同口径首评，按「有分才入主榜」收录，主表由 98 增至 99 条。<b>名次：与同为 14 分的 Nemotron 3.5 Super VL 并列档位，按标准任务成本低者在前，Nemotron（$0.325）仍为第 83，Apodex（$1.50）为第 84，其后原 84 名及以下顺延</b>；TOP_AA 仍 65.0、成本锚点仍 $22.50／$0.11，其余 98 条能力分、成本分、综合性价比与等级均不变。<b>计价跟官方现价而非 AA 旧标价：platform.apodex.ai 核验为 $0.60 / $3.60 / 缓存 $0.06，输入超 200K 整单 2×；AA 仍列 $0.30/$3.00，主表不用</b>。厂商 Apodex US, Inc.（美国，总部 Redwood City），闭源专有；同系列 Mini（35B）尚无 v5 同口径分，不入主榜。其余核对：指数版本仍 v5.0.1；汇率仍 6.7191；Hy4 正式版与 Inkling 2 Small 权重仍未公开；既有 98 条分数与官方价无变动。"
-  },
-  {
-   "d": "11-11",
-   "t": "主榜零新增、零移出：AA 11-10／11-11 无新增模型评测，98 配置与全部分数逐行不变",
-   "m": [
-    "Claude Fable 5.2",
-    "Gemini 4 Carbon",
-    "Claude Opus 5.5",
-    "GPT-6 Astra"
-   ],
-   "s": "<b>AA Changelog 11-10 只有两条：与 Google DeepMind 联合发布 MKA（Multimodal Knowledge Agent）多模态知识智能体基准、Kimi K3.1 Pro 的 DigitalOcean 供应商性能结果；11-11 截至 09:20 无条目。两条<u>都不是「新增模型 Intelligence Index 评分」</u>，故不产生新行</b>。<b>指数版本仍为 v5.0.1（11-03 发布，第 6 期沿用），榜首仍 Claude Fable 5.2（Max）65.0，其后 Fable 5.2（xHigh）62、（High）62、Gemini 4 Carbon（High）60——顺序与上期一致</b>。<b>连带结果：TOP_AA 仍 65.0、成本锚点仍 $22.50（GPT-6 Astra）／$0.11（Nemotron 3.5 Lightning），因此<u>全榜能力分、成本分、综合性价比分与等级逐行不变</u>，Top 15 名单与顺序亦无进出（最高仍 68 B，连续第 2 期无 A 级及以上）</b>。"
-  },
-  {
-   "d": "11-11",
-   "t": "汇率 6.7167→6.7191（调贬 24 基点）：四组人民币定价模型美元成本上移约 0.04%，无名次与等级变化",
-   "m": [
     "DeepSeek V4.1 Flash（1017 当前正式版）",
     "DeepSeek V4 Pro 0813",
-    "Hy4",
     "GLM-5.3-Flash"
    ],
-   "s": "<b>中国外汇交易中心 2026-11-11 人民币对美元中间价报 1 USD = 6.7191 CNY，较 11-10 的 6.7167 调贬（人民币贬值）24 基点</b>（证券时报、金十数据、第一财经、财联社、每日经济新闻五源一致；前一日 6.7167）。<b>影响面仅限人民币定价的四组：Hy4 $0.446487／$1.339462／缓存 $0.022324；DeepSeek V4.1 Flash 1017 三档 $0.297663／$1.190651／缓存 $0.005953；DeepSeek V4 Pro 0813 两档 $1.339462／$4.018389／缓存 $0.044649；GLM-5.3-Flash $0.119065／$0.416718／缓存 $0.034231</b>。<b>这是本期唯一的数值变动来源，幅度为 3–4 位小数级，<u>不产生任何名次、等级或 Top15 进出</u></b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "美团 LongCat-2.5 兑现纯 MIT 全量权重（1.6T/48B、约 3.56TB、另发 W4A4 量化版），但 AA 无条目故仍不入榜",
-   "m": [
-    "LongCat 2.5",
-    "Qwen3.8 Max",
-    "Kimi K3.1 Pro"
-   ],
-   "s": "<b>LongCat 团队 11-09 在 Hugging Face 上线 LongCat-2.5 完整权重：<u>MIT 协议（2026 Meituan 版权），208 个分片、合计约 3.56TB</u>，同时放出 W4A4 量化版（专家权重与激活同压 4bit）与基于 SGLang-FluentLLM 的国产 NPU 部署说明——上期「权重即将上线／许可待核实」的状态就此结清</b>。<b>规格：MoE 总参 1.6 万亿、每 token 激活约 480 亿、1M 上下文、原生多模态（视觉信号转多层级离散 token 与文本共用主干），训练全程国产算力</b>。<b>三组数字须分开读：① 厂商自测 31 项测试中 BrowseComp 91.9／ALE v1.1 38.5／ResearchRubrics 81.0／3DCodeBench 55.4 四项第一，Terminal Bench v2.1 88.4、v4.0 38.5、DeepSWE v1.1 64.6——<u>均为自测，未经独立复现</u>；② 第三方 Lobe Bench Hard50 三次全通率 44%（默认）／52%（开推理），与 Hy4 持平、低于 GPT-6.1 Terra 64%，属小样本非 AA 口径；③ <u>AA 榜单至今无 LongCat-2.5 条目，无 v5.0.1 同口径分</u></b>。<b>处置：按「无同口径分不得入正式排名」规则，不入主榜、第四节与第五节（本地口径另因 W4A4 ≈880GB 远超个人硬件），仅在第七节登记</b>。<b>意义：这是本季规模最大的一份纯宽松许可权重，「许可可核实、分数不可比」——它的价值判断必须等 AA 首评</b>。"
-  },
-  {
-   "d": "11-10",
-   "t": "MiniMax H3-Image 发布即开源（33.1B DiT、6 步出 16MP、最多 16 参考图）：入 5A 生图榜 48GB+ 档",
-   "m": [
-    "MiniMax H3-Image"
-   ],
-   "s": "<b>MiniMax 11-10 发布 H3-Image 并<u>当天</u>在 Hugging Face 与 GitHub 放出权重：33.1B 稠密单流 DiT（H3 去音频分支、50 层）+ Qwen3-VL-32B 文本编码器，蒸馏到 6 步、CFG 1、无需负向提示词；原生出图 ≈16MP（4096×4096，21:9 可至 6272×2688），单一检查点同时做文生图与多参考图编辑（最多 16 张）</b>。<b>工程口径：BF16 权重合计 137.69GB（DiT 68.65 + 编码器 66.7 + VAE 2.34）——单张 H200（141GB）装完权重只剩 3.3GB，16MP 的激活与注意力缓存放不下；INT4 后 ≈38GB 才落进 48GB 档，FP8 ≈74GB 属数据中心级</b>。<b>许可红线：<u>MiniMax-H3-Image Community License，非 Apache／MIT</u>——年化营收 &gt;$100 万或对外提供托管服务须获书面授权，部分外媒称排除美／欧／英／韩地域</b>。<b>定位：纯图像生成模型，按主榜筛除规则不入 LLM 榜、不进 rows.json；已入 5A 本地部署生图榜 48GB+ 档第 ④ 位。API 按输出档计价（1K 约 $0.022、4K 约 $0.069/张，16.6MP 及以上五折至 11-17）</b>。"
-  },
-  {
-   "d": "11-10",
-   "t": "Google 与 AA 联合发布 MKA 多模态知识智能体基准：独立于 Intelligence Index，不改变任何分数",
-   "m": [
-    "Gemini 4 Carbon"
-   ],
-   "s": "<b>双方 11-10 公布 MKA（Multimodal Knowledge Agent）：200 项任务、覆盖 10 个行业 83 种职业（商业／建筑／教育／工程／金融／医疗／法律与政府／物流地图／科学／软件与数据），每项对应资深专业人士 3–8 小时工作量，评分细则平均约 70 项是非判断（事实准确性 75%、视觉设计 25%）</b>。<b>评测机制：所有模型跑在同一开源智能体框架 Stirrup 上（同工具、同沙箱、同交互轮次预算），由<u>非谷歌模型</u>构建的智能体评审，领域专家人工复核与自动评审一致率 96%；200 项正式任务设为私有以防污染，另在 Hugging Face 公开 10 项示例</b>。<b>官方口径：Gemini 4 Carbon 质量排名第二，平均任务成本约为第一名的 1/6</b>。<b>处理：MKA 不并入 Intelligence Index 的九项评测，<u>故本期不改动任何模型分数</u>；「厂商与评测机构共建基准」的独立性仍需时间检验，本报告仅作补充说明备查</b>。"
+   "s": "<b>中国外汇交易中心 2026-11-12 人民币对美元中间价报 1 USD = 6.7174 CNY，较 11-11 的 6.7191 调升（人民币升值）17 基点</b>（金十数据 11-12 09:15 中间价快讯、新浪财经、中国货币网三源一致）。<b>影响面仅限人民币定价的四组：Hy4 $0.446601／$1.339804／缓存 $0.02233；DeepSeek V4.1 Flash 1017 三档 $0.297734／$1.190937／缓存 $0.005955；DeepSeek V4 Pro 0813 两档 $1.339804／$4.019412／缓存 $0.04466；GLM-5.3-Flash $0.119094／$0.416828／缓存 $0.034239</b>。<b>幅度为 3 位小数级（成本下移约 0.03%），<u>不产生任何名次、等级或 Top15 进出</u>；本期唯一的结构变化来自新增一行（见下条），与汇率无关</b>。"
   },
   {
    "d": "11-11",
-   "t": "开放状态复核：Hy4 正式版权重与 Inkling 2 Small 的 Apache 2.0 权重仍未落地；Qwen3.8 旗舰许可非 Apache",
+   "t": "四个配置首获同口径分（98→102）：JT-4.1 Flash 236B 19、Qwen3.8-Flash-Next 29、Solar Pro 4 14、Apodex 1.1 14",
    "m": [
-    "Hy4",
-    "Inkling 2 Small",
-    "Qwen3.8 Max",
-    "LongCat 2.5"
+    "JT-4.1 Flash 236B A21B",
+    "Qwen3.8-Flash-Next",
+    "Solar Pro 4",
+    "Apodex 1.1"
    ],
-   "s": "<b>① 腾讯混元 Hy4 正式版：官方 11-04 称「近期开源模型权重」并同步发布系统卡片，截至 11-11 09:20，Hugging Face 与 GitHub 上可下载的<u>仍只有 8 月 Hy4-preview（Apache 2.0）</u>，正式版权重未出现 → 第四节与第五节继续不收录</b>。<b>② Inkling 2 Small：官方 11-05 口径为「外部安全测试与红队完成后下周以 Apache 2.0 放出全量权重」，<u>自 11-05 起算已满一周，未见发布公告</u>；AA 已给 31 分（单任务 $1.18、18.5 分钟），主榜按「权重未发布」标注保留</b>。<b>③ Qwen3.8 旗舰权重复核：阿里已把 Qwen3.8-2.4T-A95B 权重放上 HF 与 ModelScope（27B 为 Apache 2.0），但<u>2.4T 的官方 LICENSE 是自定义 Qwen3.8-Max License（MaaS 年营收 &gt;$5,000 万需另签）</u>——媒体「全系 Apache 2.0」的表述与官方许可文件不符，本报告以官方 LICENSE 为准，主榜「开放权重 + 自定义许可」标注不变</b>。<b>④ K2 Horizon 375B-A23B 托管价自 9-03 发布<u>69 天</u>仍未公布（四渠道复核 N/A）；Ling-3.2-flash 仍无 AA 分</b>。"
+   "s": "<b>AA Changelog 11-11 唯一一条与榜单相关的更新：新增中国移动九天 <u>JT-4.1 Flash 236B A21B，Intelligence Index 19</u>（slug jt-4-1-flash-236b-a21b），同日另有 Databricks（Kimi K3.1 Pro）与 SambaNova（GLM-5.3 Low／Max）两条供应商性能结果，不改分</b>。<b>规格：236B 总参／每 token 激活约 210 亿 MoE、262K 上下文、AA 实测文本输入与文本输出；标为 reasoning 版本（非推理变体 AA 称可能存在但无独立分）</b>。<b>两点须如实标注：① <u>AA 记 143M 输出 token，为中位数 78.8M 的 1.8 倍</u>——「极啰嗦」分位，实际账单会显著高于同分位模型；② <u>AA 模型页成本栏为 N/A、标注「No publicly available API」</u>，九天面向企业经中国移动 MoMA 平台／移动云专属算力交付，不对外挂牌按量价，故该行「输入价／缓存价／输出价／标准任务成本／性价比分」全部 N/A，<u>不参与性价比排名</u></b>。<b>同日榜单页另揭示三档同口径分（Changelog 未列，属更新滞后）：<u>Qwen3.8-Flash-Next 28.6（29）、Solar Pro 4 14.2（14）、Apodex 1.1 13.7（14）</u></b>——<b>① Qwen3.8-Flash-Next 为开放权重，官方 API $0.15／$0.47、缓存 $0.016，标准任务成本 $0.2675、综合 60 B（未进 Top 15），许可为自定义 Qwen Community License 1.0（<u>非 Apache</u>）；</b><b>② Solar Pro 4 使<u>韩国成为本期新增的第 6 个经济体</u>（Upstage 闭源、512K、$0.30／$1.20，综合 40 D）；</b><b>③ Apodex 1.1（397B 闭源，$0.60／$3.60，综合 33 D）系 CritPt v2 硬子集 17% 落地后指数首次可得。</b><b>连带：主榜 98→102、厂商 23→26 家、经济体 5→6 个，前十与 Top 15 名单顺序仍逐行不变（新增四行最高 60 B，未触及前十五门槛）</b>。<b>意义：运营商自研基座首次进入同一口径榜，19 分位于榜尾区，说明「行业可信 + 安全合规」路线在通用能力上仍有距离；本报告不对其做能力优劣评价，仅记录可比的同口径分</b>。"
   },
   {
-   "d": "11-10",
-   "t": "渠道层促销密集但原厂牌价横盘逾三周：火山 Agent Plan 包年 5 折 11-12 截止、阿里云 Token Plan 提额",
+   "d": "11-11",
+   "t": "Gemini 4 Carbon 全球全量开放：从 Fairwind 定向放量转为 API／AI Studio／Business／AI Ultra 全渠道",
+   "m": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon"
+   ],
+   "s": "<b>Google DeepMind 11-10（美东）宣布 Gemini 4 Carbon 正式面向全部付费开发者、企业与消费者开放——此前（10-28 起）仅通过 Fairwind 计划向网络安全防御人员定向放量</b>。<b>渠道：Gemini API 与 Google AI Studio（模型 ID gemini-4-carbon）、Gemini for Business、Google AI Ultra 订阅（Gemini App、搜索 AI Mode、Antigravity）；科研人员可申请 Antigravity 六个月免费额度；Fairwind 计划继续受理网安防御者申请</b>。<b>价格与分数均不变：介绍期 $2／$10（与 Argon 同价，<u>官方文档注明优惠至 2026-11-30，之后调整为 $4／$20</u>，缓存 $0.20），AA v5.0.1 三档 High 60／Medium 58／Low 54 维持</b>。<b>同批事实：1,048,576 上下文、标准请求最大输出 65,536、Long Decode 可扩至 1,048,576、支持 low／medium／high 三档推理强度；AlphaProof Code 用四周产出逾 650 万行机器检验的 Signal 协议形式化证明（厂商案例，非独立复现）</b>。<b>本报告处置：仅更新「可用性」标注，不因开放而调整分数或价格；<u>介绍期结束日（11-30）已进入跟踪清单</u></b>。"
+  },
+  {
+   "d": "11-11",
+   "t": "开放状态复核：Inkling 2 Small 官方口径实为「初期闭源权重」，Apache 2.0 承诺在安全测试后「下周」兑现，截至 11-12 仍未发布",
+   "m": [
+    "Inkling 2 Small",
+    "Hy4",
+    "LongCat 2.5",
+    "Qwen3.8 Max"
+   ],
+   "s": "<b>本期对 Inkling 2 Small 的许可表述作书面澄清：官方发布页原话为 <u>「will initially be available through Tinker, with closed weights」</u>，随后才是 <u>「We intend to make the full weights available under an Apache 2.0 license next week after the completion of external safety testing and red-teaming」</u>——即当前状态是<b>闭源权重</b>，「Apache 2.0」是<u>承诺而非既成事实</u></b>。<b>自 11-05 起算已满 7 天（官方口径的「下周」窗口为 11-10～11-16），截至 11-12 09:20 未见权重发布公告，HF 仓仍不可下载 → 主榜继续按「开放权重（HF 仍私有）＋许可待核实」标注，<u>不标 Apache 2.0</u></b>。<b>另三项复核维持：① 腾讯混元 Hy4 正式版权重仍未发布（HF／GitHub 可下载的仍只有 8 月 Hy4-preview，Apache 2.0）；② 美团 LongCat-2.5 的 MIT 全量权重已于 11-09 落地，但 AA 至今无该模型条目，继续只登记第七节；③ K2 Horizon 375B-A23B 托管价自 9-03 发布已 <u>70 天</u>未公布（四渠道复核 N/A）</b>。<b>另附一条许可澄清的延续：Qwen3.8-2.4T-A95B 权重虽已放上 HF／ModelScope，但官方 LICENSE 为自定义 Qwen3.8-Max License，<u>「全系 Apache 2.0」的媒体表述不实</u></b>。"
+  },
+  {
+   "d": "11-11",
+   "t": "非入榜项登记：aiXcompact-4B（上下文压缩专用）、Gemini Robotics 2.5／NVIDIA GR00T 2（VLA）、LingBot-Touch（触觉）",
+   "m": [
+    "aiXcompact-4B",
+    "Gemini Robotics 2.5",
+    "GR00T 2",
+    "LingBot-Touch"
+   ],
+   "s": "<b>11-11 发布的新模型中，四类按既定筛除规则不入主榜：① <u>aiXcompact-4B</u>（孵化自北大软件所的 aiXcoder 开源，4B 上下文压缩专用模型，面向编程 Agent 历史上下文压缩，单卡 A100-40GB 可私有化；相对 DeepSeek V4 Pro 单次压缩成本降 78%、历史上下文压至原长 25.89%）——<b>属单项专用，非通用模型</b>；② <u>Gemini Robotics 2.5</u>（VLA 视觉-语言-动作，奔驰产线试点分拣成功率 96%）与 <u>NVIDIA GR00T 2</u>（人类视频学习机械臂，任务成功率 10%–80%）——<b>机器人控制模型，非通用文本／推理模型</b>；③ <u>LingBot-Touch</u>（蚂蚁灵波触觉基础模型，近 5000 小时真实触觉数据，灵巧手任务成功率 45.6%→72.51%）——<b>具身触觉模态</b></b>。<b>三者均无 AA Intelligence Index 同口径分，<u>不进入主榜、第四节、第五节，也不进 rows.json</u>；本条仅作「已见但依规则不收」的留痕，避免下期误判为遗漏</b>。"
+  },
+  {
+   "d": "11-12",
+   "t": "渠道促销收官与牌价横盘：火山方舟 Agent Plan 个人版包年 5 折今日 24:00 截止，原厂 per-token 价横盘第四周",
    "m": [
     "DeepSeek V4.1 Flash（1017 当前正式版）",
     "GLM-5.3-Flash",
-    "Kimi K3.1 Pro",
-    "Hy4"
+    "Hy4",
+    "Kimi K3.1 Pro"
    ],
-   "s": "<b>国内平台官方按量牌价已横盘逾三周，价格战转入渠道与套餐层</b>：<b>① 火山方舟 Agent Plan 个人版包年 5 折（Small 480→240 元/年，月均 20 元）11-12 24:00 收官；② 阿里云 Token Plan 11-09 起全面提额，Pro 档月费降约 37%；③ Kimi K3.1-Pro 出现首个低于官方牌价的第三方页面价（8.45 元/百万 tokens）；④ 腾讯云 V4.1-Flash-1017 缓存命中折扣活动至 11-16；⑤ 阶跃 stepaudio-3 语音全系限免至 11-17、蚂蚁 Ling-3.2-flash 上线前两周全免至 11-19</b>。<b>处置：这些均<u>非原厂 per-token 挂牌价</u>，一律不写入主表价格列、不计入性价比分，仅作渠道备查。另：Hy4 TokenHub 5 折至 12-31、Token Plan 个人版 2.5 折至 11-17 维持，主表按标准价计</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "Claude Fable 5.2 五档入榜登顶（Max 65）：较 5.1 跃升 16 分、单价降 20%，TOP_AA 60→65 全榜重算",
-   "m": [
-    "Claude Fable 5.2",
-    "Claude Fable 5.1",
-    "Gemini 4 Carbon",
-    "Claude Opus 5.5"
-   ],
-   "s": "<b>Anthropic 于当地时间 11-09 发布 Claude Fable 5.2 与 Claude Mythos 5.2（同一底层模型，Fable 带网安／生物防护面向全部用户，Mythos 仅向通过审核的机构开放）。AA 11-09 当日给出五档独立分：Max 65、xHigh 62、High 62、Medium 56、Low 54——<u>Max 档比自家 Fable 5.1 Max（49）高 16 分，比上期榜首 Gemini 4 Carbon（60）高 5 分</u></b>。<b>价格反向走：标准价由 $10/$50 降至 $8/$40（-20%），缓存读取 $0.20、缓存写入 $10，Fast 模式 $16/$80、Batch 五折 $4/$20</b>。<b>代价是「最贵、最慢、最啰嗦」三冠：AA 记单任务成本 $26.54（全榜最高）、46.4 分钟/任务、275M 输出 token，单次任务成本是 Opus 5.5 Max（$10.04）的 2.6 倍</b>。<b>连带：TOP_AA 由 60.0 抬至 65.0，全榜能力分同步 ×0.923，最高综合分由 72 A 降为 68 B——本期仍延续该分母</b>。"
-  },
-  {
-   "d": "11-09",
-   "t": "Meta Muse Ember 两档入榜（36／34）：36 分档最便宜，$0.14/任务仅为 Haiku 5.5 的三分之一",
-   "m": [
-    "Muse Ember",
-    "Claude Haiku 5.5",
-    "GPT-6 Luna",
-    "Muse Wonder"
-   ],
-   "s": "<b>Meta 于当地时间 11-09 发布 Muse Ember（muse-ember-1.0），定位「最小、最省」的高频执行档：$0.10 输入／$0.004 缓存输入／$0.50 输出，1M 上下文、最长 512K 输出，原生接受文本／图像／音频／视频／PDF</b>。<b>AA v5.0.1 给出 Max 36、xHigh 34——Max 档与 Claude Haiku 5.5 Max 同分，但 AA 记单任务成本 $0.14 只有后者（$0.41）的 34%，是「36 分及以上」这一档里最便宜的模型</b>。<b>强项在 Agent（AutomationBench-AA 68.1%、Terminal-Bench 4.0 40.9%、Coding Agent Index 46），短板在知识（AA-Omniscience 准确率 21.1%、幻觉率 17.4%、FrontierCode 2.0 27.2%）</b>。<b>选型结论：当执行层（子智能体、路由、抽取、长文档解析）划算；当知识问答主力不划算。本期它与 Haiku 5.5 Max 并列性价比第 1（68 B）</b>。"
+   "s": "<b>国内平台官方按量牌价继续横盘（第 4 周），价格动作仍在渠道与套餐层</b>：<b>① 火山方舟 Agent Plan 个人版包年 5 折（Small 480→240 元/年）<u>11-12 24:00 收官</u>；② 腾讯云 V4.1-Flash-1017 缓存命中折扣活动至 11-16；③ 阶跃 stepaudio-3 语音全系限免至 11-17、蚂蚁 Ling-3.2-flash 上线前两周全免至 11-19；④ 腾讯混元 Hy4 TokenHub 5 折至 12-31、Token Plan 个人版 2.5 折至 11-17；⑤ MiniMax H3-Image API 首周五折（16.6MP 及以上）至 11-17；⑥ Gemini 4 Carbon／Argon 介绍期 $2／$10 至 11-30</b>。<b>处置：渠道层与套餐层一律<u>不写入主表价格列、不计入性价比分</u>，仅作备查。另本期对 Hy4 的价格口径作书面澄清（见第九节）：主表实际按现行 5 折价 ¥3／¥9／缓存 ¥0.15 折算，此前后文「促销不计入评分」的表述与数据不一致，本期统一明确为「按促销价折算并标注恢复价与截止日」</b>。"
   }
  ]
 }
