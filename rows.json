@@ -1653,6 +1653,28 @@
    "rank": 75
   },
   {
+   "name": "JT-4.1 Flash 236B A21B",
+   "vendor": "中国移动 九天",
+   "country": "中国",
+   "tier": "默认",
+   "aa": 19,
+   "aa_dec": 19.0,
+   "pin": null,
+   "pcache": null,
+   "pout": null,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA Changelog 11 Nov 首次给出 Intelligence Index v5.0.1 同口径分 18.95（四舍五入 19）；11-11 18:00 抓取时该条指数仍为空值，06:30 全日量时 Changelog 最新仍为 10 Nov</b>。中国移动九天闭源模型，236B/21B MoE，262K 上下文，文本输入／文本输出，推理配置；<b>AA 领袖榜与模型页均记暂无公开 API、无 token 单价与单任务成本，主表记 N/A、不计性价比、不入 Top15</b>。AA 页标明此为推理版，并提示可能另有 non-reasoning 变体，但本期领袖榜无独立 v5.0.1 分，不单列。AA 记本指数输出约 1.43 亿 token（中位约 0.79 亿），偏啰嗦。未改本地/生图五档。按 aa_dec 19.0 插在 Qwen3.8 27B xHigh（20.1）之后、MiniMax M3（18.9）之前。",
+   "cost": null,
+   "ability": 29.2,
+   "costscore": null,
+   "value": null,
+   "eff": null,
+   "grade": "N/A",
+   "rank": 76
+  },
+  {
    "name": "MiniMax M3",
    "vendor": "MiniMax",
    "country": "中国",
@@ -1672,7 +1694,7 @@
    "value": 45,
    "eff": 31.7,
    "grade": "D",
-   "rank": 76
+   "rank": 77
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1694,7 +1716,7 @@
    "value": 52,
    "eff": 84.4,
    "grade": "C",
-   "rank": 77
+   "rank": 78
   },
   {
    "name": "GPT-6 Luna",
@@ -1716,7 +1738,7 @@
    "value": 51,
    "eff": 80.0,
    "grade": "C",
-   "rank": 78
+   "rank": 79
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1738,7 +1760,7 @@
    "value": 45,
    "eff": 31.9,
    "grade": "D",
-   "rank": 79
+   "rank": 80
   },
   {
    "name": "K2 Horizon 375B-A23B",
@@ -1760,7 +1782,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 80
+   "rank": 81
   },
   {
    "name": "Beam 1.0",
@@ -1782,7 +1804,7 @@
    "value": 43,
    "eff": 25.7,
    "grade": "D",
-   "rank": 81
+   "rank": 82
   },
   {
    "name": "Qwen3.8 27B",
@@ -1804,7 +1826,7 @@
    "value": 37,
    "eff": 13.6,
    "grade": "D",
-   "rank": 82
+   "rank": 83
   },
   {
    "name": "Qwen3.8 27B",
@@ -1826,7 +1848,7 @@
    "value": 36,
    "eff": 12.8,
    "grade": "D",
-   "rank": 83
+   "rank": 84
   },
   {
    "name": "Solar Pro 4",
@@ -1847,28 +1869,6 @@
    "costscore": 68.11659136115127,
    "value": 40,
    "eff": 23.3,
-   "grade": "D",
-   "rank": 84
-  },
-  {
-   "name": "Nemotron 3.5 Super VL",
-   "vendor": "NVIDIA",
-   "country": "美国",
-   "tier": "默认",
-   "aa": 14,
-   "aa_dec": 13.6,
-   "pin": 0.2,
-   "pcache": null,
-   "pout": 0.5,
-   "open_": "开放权重",
-   "lic": "OpenMDW-1.1",
-   "src": "第三方（AA 收录）",
-   "note": "120B/12B,1M 上下文,10/15 发布,官方提供 NVFP4 量化;$0.20/$0.50(<b>第三方托管挂牌价</b>);AA 记单任务成本 $0.54、474 tok/s——全榜速度第二;VL 全模态",
-   "cost": 0.325,
-   "ability": 21.5,
-   "costscore": 79.63939995272642,
-   "value": 45,
-   "eff": 43.1,
    "grade": "D",
    "rank": 85
   },
@@ -1895,6 +1895,28 @@
    "rank": 86
   },
   {
+   "name": "Nemotron 3.5 Super VL",
+   "vendor": "NVIDIA",
+   "country": "美国",
+   "tier": "默认",
+   "aa": 14,
+   "aa_dec": 13.6,
+   "pin": 0.2,
+   "pcache": null,
+   "pout": 0.5,
+   "open_": "开放权重",
+   "lic": "OpenMDW-1.1",
+   "src": "第三方（AA 收录）",
+   "note": "120B/12B,1M 上下文,10/15 发布,官方提供 NVFP4 量化;$0.20/$0.50(<b>第三方托管挂牌价</b>);AA 记单任务成本 $0.54、474 tok/s——全榜速度第二;VL 全模态",
+   "cost": 0.325,
+   "ability": 21.5,
+   "costscore": 79.63939995272642,
+   "value": 45,
+   "eff": 43.1,
+   "grade": "D",
+   "rank": 87
+  },
+  {
    "name": "DeepSeek V4 Pro 0813",
    "vendor": "DeepSeek",
    "country": "中国",
@@ -1914,7 +1936,7 @@
    "value": 29,
    "eff": 5.5,
    "grade": "D",
-   "rank": 87
+   "rank": 88
   },
   {
    "name": "Inkling Small",
@@ -1936,7 +1958,7 @@
    "value": 39,
    "eff": 21.7,
    "grade": "D",
-   "rank": 88
+   "rank": 89
   },
   {
    "name": "Inkling",
@@ -1958,7 +1980,7 @@
    "value": 29,
    "eff": 6.0,
    "grade": "D",
-   "rank": 89
+   "rank": 90
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -1980,7 +2002,7 @@
    "value": 33,
    "eff": 9.4,
    "grade": "D",
-   "rank": 90
+   "rank": 91
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -2002,7 +2024,7 @@
    "value": 35,
    "eff": 13.0,
    "grade": "D",
-   "rank": 91
+   "rank": 92
   },
   {
    "name": "Qwen3.8 27B",
@@ -2024,7 +2046,7 @@
    "value": 31,
    "eff": 8.0,
    "grade": "D",
-   "rank": 92
+   "rank": 93
   },
   {
    "name": "GPT-6 Luna",
@@ -2046,7 +2068,7 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 93
+   "rank": 94
   },
   {
    "name": "GPT-6 Luna",
@@ -2068,7 +2090,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 94
+   "rank": 95
   },
   {
    "name": "Muse Glimmer",
@@ -2090,7 +2112,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 95
+   "rank": 96
   },
   {
    "name": "Command A+",
@@ -2112,7 +2134,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 96
+   "rank": 97
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2134,7 +2156,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 97
+   "rank": 98
   },
   {
    "name": "Granite 4.2 8B",
@@ -2156,7 +2178,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 98
+   "rank": 99
   },
   {
    "name": "Granite 4.2 3B",
@@ -2178,7 +2200,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 99
+   "rank": 100
   },
   {
    "name": "Mistral Small 4",
@@ -2200,7 +2222,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 100
+   "rank": 101
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2222,10 +2244,20 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 101
+   "rank": 102
   }
  ],
  "changes": [
+  {
+   "d": "11-12",
+   "t": "JT-4.1 Flash 236B A21B 获 AA v5.0.1 同口径分 19：主表 101→102，插在 MiniMax M3 之前",
+   "m": [
+    "JT-4.1 Flash 236B A21B",
+    "MiniMax M3",
+    "Qwen3.8 27B"
+   ],
+   "s": "<b>AA Changelog 11 Nov 新增「New language model evaluation results available」：JT-4.1 Flash 236B A21B 获 Intelligence Index v5.0.1 分数 18.95（四舍五入 19）。11-11 18:00 抓取时该条指数仍为空，06:30 全日量时 Changelog 最新仍为 10 Nov，属现行同口径首评</b>，按「有分才入主榜」收录。<b>名次：aa_dec 19.0，排在 Qwen3.8 27B xHigh（20.1）之后、MiniMax M3（18.9）之前，为第 76</b>。指数仍为 v5.0.1，无方法论切换，不对全表重算能力分；成本锚点仍 $22.50／$0.11。<b>AA 记暂无公开 API、无 token 单价，主表价格与性价比均为 N/A，不入 Top15</b>。闭源专有，236B/21B MoE，262K 上下文，推理配置；非推理变体无独立 v5 分故不单列。<b>中国外汇交易中心 11-12 中间价在 09:00 核验时仍未公布（CcprHisNew 最近日期仍为 2026-11-11），继续沿用 11-11 中间价 6.7191</b>。未改本地/生图五档。"
+  },
   {
    "d": "11-12",
    "t": "Qwen3.8-Flash-Next 获 AA v5.0.1 同口径分 29：主表 99→100，插在 MiniMax M3.1 Flash 之后",
