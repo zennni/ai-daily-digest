@@ -1,5 +1,6 @@
 {
- "date": "2026-11-12",
+ "date": "2026-11-13",
+ "aa_index_version": "v5.0.1",
  "models": [
   {
    "name": "Claude Fable 5.2",
@@ -75,12 +76,12 @@
    "aa": 60,
    "aa_dec": 60.0,
    "pin": 2.0,
-   "pcache": 0.2,
+   "pcache": 0.1,
    "pout": 10.0,
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>11-10(美东)全球全量开放:Gemini API／AI Studio／Gemini for Business／AI Ultra 订阅(Gemini App、搜索 AI Mode、Antigravity)同步可用;Fairwind 计划继续受理网安防御者申请</b>;介绍期定价 $2/$10(与 Argon 持平,后续调整为 $4/$20),缓存输入再享 95% 折扣=$0.20;1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
+   "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>11-10(美东)全球全量开放:Gemini API／AI Studio／Gemini for Business／AI Ultra 订阅(Gemini App、搜索 AI Mode、Antigravity)同步可用;Fairwind 计划继续受理网安防御者申请</b>;介绍期定价 $2/$10、缓存 $0.10，至 2026-11-30（与 Argon 同档）；2026-12-01 起恢复标价 $4/$20、缓存 $0.20（官方 Standard 价目表，主分用折后有效价；缓存不入主性价比）;1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
    "cost": 4.5,
    "ability": 92.3,
    "costscore": 30.24809934544115,
@@ -119,12 +120,12 @@
    "aa": 58,
    "aa_dec": 58.3,
    "pin": 2.0,
-   "pcache": 0.2,
+   "pcache": 0.1,
    "pout": 10.0,
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档(介绍期 $2/$10、标准 $4/$20,缓存 $0.20);AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(11-10 起全球全量开放)",
+   "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档（介绍期 $2/$10、缓存 $0.10 至 11-30；12-01 起恢复 $4/$20、缓存 $0.20）;AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(11-10 起全球全量开放)",
    "cost": 4.5,
    "ability": 89.2,
    "costscore": 30.24809934544115,
@@ -295,12 +296,12 @@
    "aa": 54,
    "aa_dec": 54.2,
    "pin": 2.0,
-   "pcache": 0.2,
+   "pcache": 0.1,
    "pout": 10.0,
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "AA v5.0 Low 档 54——<b>本模型三档跨度 5.4 分(59.4→54),是同代旗舰里档位跨度最小的一组,说明其能力主要来自基础模型而非推理时长</b>;价格同 High 档;AA 未公布该档单任务成本(显示为空)",
+   "note": "AA v5.0 Low 档 54——<b>本模型三档跨度 5.4 分(59.4→54),是同代旗舰里档位跨度最小的一组,说明其能力主要来自基础模型而非推理时长</b>;价格同 High 档（介绍期 $2/$10、缓存 $0.10 至 11-30；12-01 起恢复 $4/$20、缓存 $0.20）;AA 未公布该档单任务成本(显示为空)",
    "cost": 4.5,
    "ability": 83.1,
    "costscore": 30.24809934544115,
@@ -332,6 +333,28 @@
    "rank": 15
   },
   {
+   "name": "Gemini 4 Hydrogen",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "xHigh",
+   "aa": 54,
+   "aa_dec": 53.9,
+   "pin": 1.5,
+   "pcache": 0.075,
+   "pout": 7.5,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA v5.0.1 Xhigh 档 53.9</b>（同系四档最高；High 50.8、Medium 41.2、Low 26.9）；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "cost": 3.375,
+   "ability": 83.1,
+   "costscore": 35.654853989528846,
+   "value": 64,
+   "eff": 16.0,
+   "grade": "B",
+   "rank": 16
+  },
+  {
    "name": "GPT-6.1 Sol",
    "vendor": "OpenAI",
    "country": "美国",
@@ -351,7 +374,7 @@
    "value": 60,
    "eff": 11.6,
    "grade": "B",
-   "rank": 16
+   "rank": 17
   },
   {
    "name": "Claude Opus 5.5",
@@ -373,7 +396,7 @@
    "value": 55,
    "eff": 5.8,
    "grade": "C",
-   "rank": 17
+   "rank": 18
   },
   {
    "name": "GPT-6 Astra",
@@ -395,7 +418,7 @@
    "value": 48,
    "eff": 2.3,
    "grade": "D",
-   "rank": 18
+   "rank": 19
   },
   {
    "name": "GPT-6.1 Terra",
@@ -417,7 +440,29 @@
    "value": 64,
    "eff": 22.7,
    "grade": "B",
-   "rank": 19
+   "rank": 20
+  },
+  {
+   "name": "Gemini 4 Hydrogen",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "High",
+   "aa": 51,
+   "aa_dec": 50.8,
+   "pin": 1.5,
+   "pcache": 0.075,
+   "pout": 7.5,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA v5.0.1 High 档 50.8</b>；价格同 xHigh 档；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "cost": 3.375,
+   "ability": 78.5,
+   "costscore": 35.654853989528846,
+   "value": 61,
+   "eff": 15.1,
+   "grade": "B",
+   "rank": 21
   },
   {
    "name": "Gemini 4 Argon",
@@ -432,14 +477,14 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "10/13 起对公众开放,当前 Google 公开可用的最高档;<b>v5.0 单项第一:AutomationBench-AA 78%</b>;1M 统一上下文、默认输出 65,536;介绍期 $2/$10 至 11-30,缓存 $0.10;AA 记单任务成本 $7.68;官方 thinking 提供 low/medium(默认)/high 三档,<b>AA 仅发布 High 档独立分(其余档列入第六节)</b>",
+   "note": "10/13 起对公众开放,当前 Google 公开可用的最高档;<b>v5.0 单项第一:AutomationBench-AA 78%</b>;1M 统一上下文、默认输出 65,536;介绍期 $2/$10、缓存 $0.10 至 11-30；12-01 起恢复标价 $4/$20、缓存 $0.20;AA 记单任务成本 $7.68;官方 thinking 提供 low/medium(默认)/high 三档,<b>AA 仅发布 High 档独立分(其余档列入第六节)</b>",
    "cost": 4.5,
    "ability": 76.9,
    "costscore": 30.24809934544115,
    "value": 58,
    "eff": 11.1,
    "grade": "C",
-   "rank": 20
+   "rank": 22
   },
   {
    "name": "GPT-6.1 Sol",
@@ -461,7 +506,7 @@
    "value": 58,
    "eff": 11.1,
    "grade": "C",
-   "rank": 21
+   "rank": 23
   },
   {
    "name": "Muse Wonder Full",
@@ -483,7 +528,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 22
+   "rank": 24
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -505,7 +550,7 @@
    "value": 58,
    "eff": 11.1,
    "grade": "C",
-   "rank": 23
+   "rank": 25
   },
   {
    "name": "Claude Opus 5.5",
@@ -527,7 +572,7 @@
    "value": 51,
    "eff": 5.3,
    "grade": "C",
-   "rank": 24
+   "rank": 26
   },
   {
    "name": "Kimi K3.1 Pro",
@@ -549,7 +594,7 @@
    "value": 55,
    "eff": 10.2,
    "grade": "C",
-   "rank": 25
+   "rank": 27
   },
   {
    "name": "GPT-6.1 Sol",
@@ -571,7 +616,7 @@
    "value": 55,
    "eff": 10.2,
    "grade": "C",
-   "rank": 26
+   "rank": 28
   },
   {
    "name": "GPT-6.1 Terra",
@@ -593,7 +638,7 @@
    "value": 59,
    "eff": 20.0,
    "grade": "C",
-   "rank": 27
+   "rank": 29
   },
   {
    "name": "Muse Wonder",
@@ -615,7 +660,7 @@
    "value": 48,
    "eff": 4.9,
    "grade": "D",
-   "rank": 28
+   "rank": 30
   },
   {
    "name": "GPT-6 Astra",
@@ -637,7 +682,7 @@
    "value": 40,
    "eff": 1.9,
    "grade": "D",
-   "rank": 29
+   "rank": 31
   },
   {
    "name": "GPT-6.1 Terra",
@@ -659,7 +704,7 @@
    "value": 56,
    "eff": 18.7,
    "grade": "C",
-   "rank": 30
+   "rank": 32
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -681,7 +726,29 @@
    "value": 51,
    "eff": 9.3,
    "grade": "C",
-   "rank": 31
+   "rank": 33
+  },
+  {
+   "name": "Gemini 4 Hydrogen",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "Medium",
+   "aa": 41,
+   "aa_dec": 41.2,
+   "pin": 1.5,
+   "pcache": 0.075,
+   "pout": 7.5,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA v5.0.1 Medium 档 41.2</b>；价格同 xHigh 档；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "cost": 3.375,
+   "ability": 63.1,
+   "costscore": 35.654853989528846,
+   "value": 52,
+   "eff": 12.1,
+   "grade": "C",
+   "rank": 34
   },
   {
    "name": "Muse Wonder",
@@ -703,7 +770,7 @@
    "value": 45,
    "eff": 4.6,
    "grade": "D",
-   "rank": 32
+   "rank": 35
   },
   {
    "name": "GPT-6.1 Terra",
@@ -725,7 +792,7 @@
    "value": 52,
    "eff": 16.9,
    "grade": "C",
-   "rank": 33
+   "rank": 36
   },
   {
    "name": "Claude Haiku 5.5",
@@ -747,7 +814,7 @@
    "value": 68,
    "eff": 160.0,
    "grade": "B",
-   "rank": 34
+   "rank": 37
   },
   {
    "name": "Muse Ember",
@@ -769,7 +836,7 @@
    "value": 68,
    "eff": 160.0,
    "grade": "B",
-   "rank": 35
+   "rank": 38
   },
   {
    "name": "Grok 4.7",
@@ -791,7 +858,7 @@
    "value": 46,
    "eff": 10.0,
    "grade": "D",
-   "rank": 36
+   "rank": 39
   },
   {
    "name": "Grok 4.7",
@@ -813,7 +880,7 @@
    "value": 46,
    "eff": 10.0,
    "grade": "D",
-   "rank": 37
+   "rank": 40
   },
   {
    "name": "Hy4",
@@ -835,7 +902,7 @@
    "value": 58,
    "eff": 44.8,
    "grade": "C",
-   "rank": 38
+   "rank": 41
   },
   {
    "name": "GPT-6.1 Sol",
@@ -857,7 +924,7 @@
    "value": 44,
    "eff": 7.8,
    "grade": "D",
-   "rank": 39
+   "rank": 42
   },
   {
    "name": "Claude Opus 5.5",
@@ -879,7 +946,7 @@
    "value": 39,
    "eff": 3.9,
    "grade": "D",
-   "rank": 40
+   "rank": 43
   },
   {
    "name": "Claude Haiku 5.5",
@@ -901,7 +968,7 @@
    "value": 67,
    "eff": 155.6,
    "grade": "B",
-   "rank": 41
+   "rank": 44
   },
   {
    "name": "Muse Ember",
@@ -923,7 +990,7 @@
    "value": 66,
    "eff": 151.1,
    "grade": "B",
-   "rank": 42
+   "rank": 45
   },
   {
    "name": "Qwen3.8 Max",
@@ -945,7 +1012,7 @@
    "value": 45,
    "eff": 9.7,
    "grade": "D",
-   "rank": 43
+   "rank": 46
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -967,7 +1034,7 @@
    "value": 58,
    "eff": 55.4,
    "grade": "C",
-   "rank": 44
+   "rank": 47
   },
   {
    "name": "GLM-5.3",
@@ -989,7 +1056,7 @@
    "value": 46,
    "eff": 12.8,
    "grade": "D",
-   "rank": 45
+   "rank": 48
   },
   {
    "name": "Grok 4.7",
@@ -1011,7 +1078,7 @@
    "value": 43,
    "eff": 8.9,
    "grade": "D",
-   "rank": 46
+   "rank": 49
   },
   {
    "name": "Inkling 2 Small",
@@ -1023,17 +1090,17 @@
    "pin": 0.3,
    "pcache": 0.03,
    "pout": 1.0,
-   "open_": "开放权重（HF 仍私有）",
-   "lic": "待核实（同系 Inkling/Inkling-Small 为 Apache 2.0；本模型 HF 仓仍 401 私有）",
+   "open_": "开放权重",
+   "lic": "Apache 2.0",
    "src": "官方",
-   "note": "AA Changelog <b>05 Nov</b> 新入 Intelligence Index <b>31</b>（slug inkling-2-small / release inkling-small-1102-rc17，releaseDate 2026-11-05）；Thinking Machines Tinker 官方 Models & Pricing：594B/17B MoE Hybrid+Vision、默认 64K（:peft:262144 为 256K）；Serverless Inference（Beta）挂牌 <b>$0.30/$1.00</b>、缓存输入 $0.03（与训练侧 prefill/sample 同价）；HF <code>thinkingmachines/Inkling-2-Small</code> 目前 API 401 私有、官方 models.json 的 url 为空——<b>权重尚未公开可下载</b>，不得标 MIT/已开源；无统一公开原厂消费级 API 页，价取 Tinker 官方 serverless。未改本地/生图五档（594B 级不入个人档）。",
+   "note": "AA Changelog <b>05 Nov</b> 新入 Intelligence Index <b>31</b>（slug inkling-2-small / release inkling-small-1102-rc17，releaseDate 2026-11-05）；Thinking Machines Tinker 官方 Models & Pricing：594B/17B MoE Hybrid+Vision、默认 64K（:peft:262144 为 256K）；Serverless Inference（Beta）挂牌 <b>$0.30/$1.00</b>、缓存输入 $0.03（与训练侧 prefill/sample 同价）；<b>官方新闻页 2026-11-12 更新：Inkling 2 Small’s weights are now available for download on HuggingFace</b>（主仓 <code>thinkingmachines/Inkling-2-Small</code> NVFP4，另有 MXFP8；HF lastModified 2026-11-12 21:35 UTC／上海 11-13 05:35；模型卡与 README 均标 Apache 2.0，并另有 Acceptable Use Policy）。原生 NVFP4 约需合计 500GB 显存（如 2×B300 或 4×H200）——<b>仍不入个人本地档</b>。无统一公开原厂消费级 API 页，价仍取 Tinker 官方 serverless。",
    "cost": 0.55,
    "ability": 47.7,
    "costscore": 69.75190065455884,
    "value": 57,
    "eff": 56.4,
    "grade": "C",
-   "rank": 47
+   "rank": 50
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1055,7 +1122,7 @@
    "value": 48,
    "eff": 18.4,
    "grade": "D",
-   "rank": 48
+   "rank": 51
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -1077,7 +1144,7 @@
    "value": 41,
    "eff": 6.9,
    "grade": "D",
-   "rank": 49
+   "rank": 52
   },
   {
    "name": "GPT-6.1 Terra",
@@ -1099,7 +1166,7 @@
    "value": 46,
    "eff": 13.8,
    "grade": "D",
-   "rank": 50
+   "rank": 53
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1121,7 +1188,7 @@
    "value": 47,
    "eff": 17.8,
    "grade": "D",
-   "rank": 51
+   "rank": 54
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1143,7 +1210,7 @@
    "value": 62,
    "eff": 133.3,
    "grade": "B",
-   "rank": 52
+   "rank": 55
   },
   {
    "name": "MiMo-V2.6-Pro",
@@ -1165,7 +1232,7 @@
    "value": 54,
    "eff": 46.0,
    "grade": "C",
-   "rank": 53
+   "rank": 56
   },
   {
    "name": "Ling 3.1 Flash（1019 版）",
@@ -1187,7 +1254,7 @@
    "value": 56,
    "eff": 57.1,
    "grade": "C",
-   "rank": 54
+   "rank": 57
   },
   {
    "name": "GPT-6.1 Terra",
@@ -1209,7 +1276,7 @@
    "value": 44,
    "eff": 12.9,
    "grade": "D",
-   "rank": 55
+   "rank": 58
   },
   {
    "name": "MiniMax M3.1 Flash",
@@ -1231,7 +1298,7 @@
    "value": 59,
    "eff": 96.7,
    "grade": "C",
-   "rank": 56
+   "rank": 59
   },
   {
    "name": "Qwen3.8-Flash-Next",
@@ -1253,7 +1320,7 @@
    "value": 60,
    "eff": 108.4,
    "grade": "B",
-   "rank": 57
+   "rank": 60
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1275,7 +1342,7 @@
    "value": 54,
    "eff": 48.7,
    "grade": "C",
-   "rank": 58
+   "rank": 61
   },
   {
    "name": "Step 5 Preview",
@@ -1297,7 +1364,7 @@
    "value": 46,
    "eff": 17.3,
    "grade": "D",
-   "rank": 59
+   "rank": 62
   },
   {
    "name": "GPT-6 Luna",
@@ -1319,7 +1386,7 @@
    "value": 60,
    "eff": 124.4,
    "grade": "B",
-   "rank": 60
+   "rank": 63
   },
   {
    "name": "GLM-5.3-Flash",
@@ -1341,7 +1408,29 @@
    "value": 61,
    "eff": 125.4,
    "grade": "B",
-   "rank": 61
+   "rank": 64
+  },
+  {
+   "name": "Gemini 4 Hydrogen",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "Low",
+   "aa": 27,
+   "aa_dec": 26.9,
+   "pin": 1.5,
+   "pcache": 0.075,
+   "pout": 7.5,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>AA v5.0.1 Low 档 26.9</b>；价格同 xHigh 档；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "cost": 3.375,
+   "ability": 41.5,
+   "costscore": 35.654853989528846,
+   "value": 39,
+   "eff": 8.0,
+   "grade": "D",
+   "rank": 65
   },
   {
    "name": "MiMo-V2.6-Flash",
@@ -1363,7 +1452,7 @@
    "value": 60,
    "eff": 128.6,
    "grade": "B",
-   "rank": 62
+   "rank": 66
   },
   {
    "name": "Mistral Large 4",
@@ -1385,7 +1474,7 @@
    "value": 46,
    "eff": 21.2,
    "grade": "D",
-   "rank": 63
+   "rank": 67
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -1407,7 +1496,7 @@
    "value": 36,
    "eff": 5.8,
    "grade": "D",
-   "rank": 64
+   "rank": 68
   },
   {
    "name": "Muse Spark Open",
@@ -1429,7 +1518,7 @@
    "value": 40,
    "eff": 10.8,
    "grade": "D",
-   "rank": 65
+   "rank": 69
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1451,7 +1540,7 @@
    "value": 58,
    "eff": 111.1,
    "grade": "C",
-   "rank": 66
+   "rank": 70
   },
   {
    "name": "Agnes 2.5 Pro Theta",
@@ -1473,7 +1562,7 @@
    "value": 59,
    "eff": 137.1,
    "grade": "C",
-   "rank": 67
+   "rank": 71
   },
   {
    "name": "GPT-6 Luna",
@@ -1495,7 +1584,7 @@
    "value": 56,
    "eff": 102.2,
    "grade": "C",
-   "rank": 68
+   "rank": 72
   },
   {
    "name": "Mistral Large 4",
@@ -1517,7 +1606,7 @@
    "value": 43,
    "eff": 18.8,
    "grade": "D",
-   "rank": 69
+   "rank": 73
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1539,7 +1628,7 @@
    "value": 38,
    "eff": 9.8,
    "grade": "D",
-   "rank": 70
+   "rank": 74
   },
   {
    "name": "GLM-5.3",
@@ -1561,7 +1650,7 @@
    "value": 38,
    "eff": 9.2,
    "grade": "D",
-   "rank": 71
+   "rank": 75
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1583,7 +1672,7 @@
    "value": 41,
    "eff": 13.6,
    "grade": "D",
-   "rank": 72
+   "rank": 76
   },
   {
    "name": "GPT-6 Luna",
@@ -1605,7 +1694,7 @@
    "value": 54,
    "eff": 93.3,
    "grade": "C",
-   "rank": 73
+   "rank": 77
   },
   {
    "name": "Nanbeige4.3-33B",
@@ -1627,7 +1716,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 74
+   "rank": 78
   },
   {
    "name": "Qwen3.8 27B",
@@ -1649,7 +1738,7 @@
    "value": 40,
    "eff": 16.0,
    "grade": "D",
-   "rank": 75
+   "rank": 79
   },
   {
    "name": "JT-4.1 Flash 236B A21B",
@@ -1671,7 +1760,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 76
+   "rank": 80
   },
   {
    "name": "MiniMax M3",
@@ -1693,7 +1782,7 @@
    "value": 45,
    "eff": 31.7,
    "grade": "D",
-   "rank": 77
+   "rank": 81
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1715,7 +1804,7 @@
    "value": 52,
    "eff": 84.4,
    "grade": "C",
-   "rank": 78
+   "rank": 82
   },
   {
    "name": "GPT-6 Luna",
@@ -1737,7 +1826,7 @@
    "value": 51,
    "eff": 80.0,
    "grade": "C",
-   "rank": 79
+   "rank": 83
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1759,7 +1848,7 @@
    "value": 45,
    "eff": 31.9,
    "grade": "D",
-   "rank": 80
+   "rank": 84
   },
   {
    "name": "K2 Horizon 375B-A23B",
@@ -1781,7 +1870,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 81
+   "rank": 85
   },
   {
    "name": "Beam 1.0",
@@ -1803,7 +1892,7 @@
    "value": 43,
    "eff": 25.7,
    "grade": "D",
-   "rank": 82
+   "rank": 86
   },
   {
    "name": "Qwen3.8 27B",
@@ -1825,7 +1914,7 @@
    "value": 37,
    "eff": 13.6,
    "grade": "D",
-   "rank": 83
+   "rank": 87
   },
   {
    "name": "Qwen3.8 27B",
@@ -1847,7 +1936,7 @@
    "value": 36,
    "eff": 12.8,
    "grade": "D",
-   "rank": 84
+   "rank": 88
   },
   {
    "name": "Solar Pro 4",
@@ -1869,7 +1958,7 @@
    "value": 40,
    "eff": 23.3,
    "grade": "D",
-   "rank": 85
+   "rank": 89
   },
   {
    "name": "Apodex 1.1",
@@ -1891,7 +1980,7 @@
    "value": 33,
    "eff": 9.3,
    "grade": "D",
-   "rank": 86
+   "rank": 90
   },
   {
    "name": "Nemotron 3.5 Super VL",
@@ -1913,7 +2002,7 @@
    "value": 45,
    "eff": 43.1,
    "grade": "D",
-   "rank": 87
+   "rank": 91
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1935,7 +2024,7 @@
    "value": 29,
    "eff": 5.5,
    "grade": "D",
-   "rank": 88
+   "rank": 92
   },
   {
    "name": "Inkling Small",
@@ -1957,7 +2046,7 @@
    "value": 39,
    "eff": 21.7,
    "grade": "D",
-   "rank": 89
+   "rank": 93
   },
   {
    "name": "Inkling",
@@ -1979,7 +2068,7 @@
    "value": 29,
    "eff": 6.0,
    "grade": "D",
-   "rank": 90
+   "rank": 94
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -2001,7 +2090,7 @@
    "value": 33,
    "eff": 9.4,
    "grade": "D",
-   "rank": 91
+   "rank": 95
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -2023,7 +2112,7 @@
    "value": 35,
    "eff": 13.0,
    "grade": "D",
-   "rank": 92
+   "rank": 96
   },
   {
    "name": "Qwen3.8 27B",
@@ -2045,7 +2134,7 @@
    "value": 31,
    "eff": 8.0,
    "grade": "D",
-   "rank": 93
+   "rank": 97
   },
   {
    "name": "GPT-6 Luna",
@@ -2067,7 +2156,7 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 94
+   "rank": 98
   },
   {
    "name": "GPT-6 Luna",
@@ -2089,7 +2178,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 95
+   "rank": 99
   },
   {
    "name": "Muse Glimmer",
@@ -2111,7 +2200,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 96
+   "rank": 100
   },
   {
    "name": "Command A+",
@@ -2133,7 +2222,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 97
+   "rank": 101
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2155,7 +2244,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 98
+   "rank": 102
   },
   {
    "name": "Granite 4.2 8B",
@@ -2177,7 +2266,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 99
+   "rank": 103
   },
   {
    "name": "Granite 4.2 3B",
@@ -2199,7 +2288,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 100
+   "rank": 104
   },
   {
    "name": "Mistral Small 4",
@@ -2221,7 +2310,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 101
+   "rank": 105
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2243,10 +2332,35 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 102
+   "rank": 106
   }
  ],
  "changes": [
+  {
+   "d": "11-13",
+   "t": "Gemini 4 Hydrogen 四档首获同口径分（102→106）：Xhigh 54、High 51、Medium 41、Low 27",
+   "m": [
+    "Gemini 4 Hydrogen"
+   ],
+   "s": "<b>AA Changelog 2026-11-12 新增 Gemini 4 Hydrogen 四个推理档，均已有 Intelligence Index v5.0.1 独立分：Xhigh 53.9、High 50.8、Medium 41.2、Low 26.9</b>（slug gemini-4-hydrogen / -high / -medium / -low；官方 releaseDate 2026-11-12）。<b>Google 官方 Standard 价目表（AI Studio／Gemini API）为 $1.50/$7.50、缓存 $0.075（仅隐式缓存），1M 上下文；Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用</b>。闭源专有。标准任务成本 $3.375，不改变本期成本锚点（$0.11–$22.50），既有配置性价比分不变。主表 102→106；Xhigh 插入原第 16 位附近（54.0 与 52.5 之间）。"
+  },
+  {
+   "d": "11-13",
+   "t": "Inkling 2 Small 权重按期兑现：HF 可下载，许可落实 Apache 2.0",
+   "m": [
+    "Inkling 2 Small"
+   ],
+   "s": "<b>Thinking Machines 官方新闻页 2026-11-12 更新原文：「Nov 12, 2026 Update: Inkling 2 Small’s weights are now available for download on HuggingFace」</b>；官网标题同步改为「Open weights, ready to tinker」。<b>HF 仓 <code>thinkingmachines/Inkling-2-Small</code>（另有 MXFP8）已公开、非 gated，cardData.license 与 README 均为 Apache 2.0</b>（另有 Model Acceptable Use Policy）；API lastModified 2026-11-12 21:35 UTC（上海 11-13 05:35）。此前 11-11 条已写明「初期闭源权重、下周兑现 Apache 2.0」——现已兑现，主榜改为「开放权重 + Apache 2.0」。594B/17B MoE，原生 NVFP4 约需 500GB 显存，<b>仍不入个人本地／生图档</b>。Tinker serverless 挂牌仍为 $0.30/$1.00、缓存 $0.03，分数与性价比不变。"
+  },
+  {
+   "d": "11-13",
+   "t": "Gemini 4 Carbon 缓存价按介绍期口径更正为 $0.10（至 11-30；12-01 恢复 $0.20）",
+   "m": [
+    "Gemini 4 Carbon",
+    "Gemini 4 Argon"
+   ],
+   "s": "<b>Google 官方 Standard 价目表现仍为介绍期 $2/$10，至 2026-11-30；2026-12-01 起恢复 $4/$20；缓存同步为 $0.10 至 11-30、$0.20 自 12-01</b>（Carbon／Argon 同档，仅隐式缓存）。主分入/出价本就按折后 $2/$10 计（标准任务成本 $4.50），性价比分不变。<b>仅将 Carbon 三档 pcache 由 $0.20 更正为介绍期 $0.10</b>（此前误按恢复价／或按 $4 的 95% 折扣书写）；Argon 已是 $0.10，只补恢复日说明。缓存命中价不进入主性价比。"
+  },
   {
    "d": "11-12",
    "t": "汇率 6.7191→6.7174（调升 17 基点）：四组人民币定价模型美元成本下移约 0.03%，无名次与等级变化",
