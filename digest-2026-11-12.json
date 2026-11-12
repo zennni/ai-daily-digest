@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-11-12",
     "week": "星期四",
-    "note": "今日主题词：加价与开闸。相对昨日「抢工位与对账单」，账本对完之后，一边是承销商把 Anthropic 的招股价往上抬，一边是国内实验室把新模型的闸门打开，科学模型则从组织均值下钻到细胞。加价：定价区间 70–78 美元、完全摊薄估值约 1.26–1.41 万亿美元刚披露不到一天，英国《金融时报》援引五位知情人士称，牵头承销的高盛与摩根士丹利因路演需求旺盛，正考虑把发行价抬到区间之上，估值或到 1.5 万亿美元以上；若再加上已安排的 260 亿美元战略私募和超额配售，整包募资有可能超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募到的现金，而不是把估值抬到最高——它已向投资者展示未来数年约 9000 亿美元的算力开支计划，以及 10 月年化 810 亿美元、三季度 170 亿美元的收入。对账单的另一面同期交出：据《华尔街日报》和路透社，OpenAI 向投资者披露三季度营收约 100 亿美元、环比约增五成，但经营亏损从 101 亿美元扩大到 109 亿美元，调整后经营利润率从 -150% 改善到 -109%；CFO Sarah Friar 称企业业务单季翻倍，已与消费业务对半，付费订阅超过 1 亿、周活约 12 亿。软银同期录得财政二季度净亏损 1.12 万亿日元（约 70 亿美元），美国数据中心发电设备采购计划变更计提约 37 亿美元；获英伟达投资的英国云商 Nscale 则被报道考虑把约 350 亿美元的上市计划推迟到明年。开闸：阿里云百炼上线 Qwen4-Max-Preview（1M 上下文，仅支持 Token Plan，预览期至 11 月 25 日 24:00 后下线）；百度发布文心 5.5 Flash Preview（总参 2800 亿、激活 140 亿、1M 上下文），官方英文页写权重即将以 Apache 2.0 开源，新华网报道开源日为 11 月 25 日（IT之家写「11 月 25 日前」）；MiniMax 放出 H3-Image 权重，官方称可在 10 秒内生成 4K 图。科学侧，DeepMind 发布 AlphaGenome 2，按细胞类型预测 DNA 变异效应，在 TenK10K 上识别出的因果变异大约是前代的两倍，非商业研究即日起可通过 API 使用。论文则把问题从「记忆会不会被投毒」推进到「该不该把这条经验写进记忆」：Contrastive Discovery 用互斥且穷尽的解释集，把一次拒绝变成对替代解释的决断；ARE-bench 显示一旦把历史决定和未清理的工作区算进去，研究智能体的通过率会掉一大截；WikiTrace 与 FGSE 分别用证据链接和证伪门，降低「写了记忆反而更差」的回归。一句话：价钱被往上喊的同时，闸门打开了，但记忆该不该落下，还得先过一遍证伪。"
+    "note": "今日主题词：加价与开闸。相对昨日「抢工位与对账单」，账本对完之后，一边是承销商把 Anthropic 的招股价往上抬，一边是国内实验室把新模型的闸门打开，科学模型则从组织均值下钻到细胞。加价：定价区间 70–78 美元、完全摊薄估值约 1.26–1.41 万亿美元刚披露不到一天，英国《金融时报》援引五位知情人士称，牵头承销的高盛与摩根士丹利因路演需求旺盛，正考虑把发行价抬到区间之上，估值或到 1.5 万亿美元以上；若再加上已安排的 260 亿美元战略私募和超额配售，整包募资有可能超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募到的现金，而不是把估值抬到最高——它已向投资者展示未来数年约 9000 亿美元的算力开支计划，以及 10 月年化 810 亿美元、三季度 170 亿美元的收入。对账单的另一面同期交出：据《华尔街日报》和路透社，OpenAI 向投资者披露三季度营收约 100 亿美元、环比约增五成，但经营亏损从 101 亿美元扩大到 109 亿美元，调整后经营利润率从 -150% 改善到 -109%；CFO Sarah Friar 称企业业务单季翻倍，已与消费业务对半，付费订阅超过 1 亿、周活约 12 亿。软银同期录得财政二季度净亏损 1.12 万亿日元（约 70 亿美元），美国数据中心发电设备采购计划变更计提约 37 亿美元；获英伟达投资的英国云商 Nscale 则被报道考虑把约 350 亿美元的上市计划推迟到明年。开闸：阿里云百炼上线 Qwen4-Max-Preview（1M 上下文，仅支持 Token Plan，预览期至 11 月 25 日 24:00 后下线）；百度发布文心 5.5 Flash Preview（总参 2800 亿、激活 140 亿、1M 上下文），官方英文页写权重即将以 Apache 2.0 开源，新华网报道开源日为 11 月 25 日（IT之家写「11 月 25 日前」）；MiniMax 放出 H3-Image 权重，官方称可在 10 秒内生成 4K 图。科学侧，DeepMind 发布 AlphaGenome 2，按细胞类型预测 DNA 变异效应，在 TenK10K 上识别出的因果变异大约是前代的两倍，非商业研究即日起可通过 API 使用。论文则把问题从「记忆会不会被投毒」推进到「该不该把这条经验写进记忆」：Contrastive Discovery 用互斥且穷尽的解释集，把一次拒绝变成对替代解释的决断；ARE-bench 显示一旦把历史决定和未清理的工作区算进去，研究智能体的通过率会掉一大截；WikiTrace 与 FGSE 分别用证据链接和证伪门，降低「写了记忆反而更差」的回归。一句话：价钱被往上喊的同时，闸门打开了，但记忆该不该落下，还得先过一遍证伪。午间到夜里的增量，把主题从「加价与开闸」推到「谁来签字」。先是治理签字：据《华尔街日报》，英伟达董事会正准备讨论罢免黄仁勋，最早当日开会；《纽约时报》同日曝出第二段婚外情涉及直接向其汇报的医疗业务副总裁，盘后股价一度跌超 8%。按公司章程第 32 条，11 名董事中通常需 6 票赞成才能罢免 CEO；国会三个委员会把答复期限压到当天结束前，两委员会主席均称传票已备好，摩根士丹利同日把英伟达移出首选股名单（仍维持增持与 300 美元目标价）。然后是披露签字：Anthropic 在定价的同一份修订招股书里写进「已认定达到研发加速阈值」——其《负责任扩展政策》把「AI 把自身研发提速约一倍」设为红线，独立机构 METR 11 月 5 日估算相关能力进步速度已达此前基线约 1.9 倍；公司同时声明不预期能放手让 Claude 完全自主设计下一代前沿模型，也未宣布暂停研发。再是学术签字：KITP 的杨-米尔斯工作组（David Gross 领衔）11 月 9 日发出第三次声明、11 月 10 日开源 OpenAI 的 Lean 形式化与自己的验证文档，认可其「按物理与数学的标准题述证明了纯杨-米尔斯理论存在」；质量间隙仍未解，委员会自陈仍在用 OpenAI 的 Astra 帮助消化 Lean 代码、「尚不声称完全理解该证明」。而在消费端，签字变成了付款：Token 第一次作为独立品类上双十一货架，李佳琦直播间的千问办公月卡 0.01 元半小时卖出近 10 万份、约 2 万亿词元，罗永浩当晚接力卖 Qoder 专业版 19.9 元——热闹的是引流款，五折的正价套餐多数只卖出几百件，腾讯研究院的数字是 AI 用户整体付费率 9.8%。能力可以先行，但谁对结果负责，今天有四拨人在四个场合被追问同一个问题。"
   },
   "highlights": [
     {
@@ -28,6 +28,18 @@
     {
       "title": "MiniMax 放出 H3-Image 权重：官方称 4K 图可在 10 秒内生成",
       "summary": "MiniMax 11 月 11 日发布基于 H3 的开放权重图像模型，支持文生图、参考图生成与图像编辑，最多 16 张参考图，并同步上线 API、MiniMax Code 与海螺。官方称可在 10 秒内生成 4096×4096 的 4K 图，上线周对 4K 及以上请求五折。"
+    },
+    {
+      "title": "英伟达董事会准备讨论罢免黄仁勋：第二段婚外情曝光，国会三委员会备好传票",
+      "summary": "《华尔街日报》11 月 11 日援引知情人士称董事会正准备讨论罢免 CEO，最早当日开会；《纽约时报》同日曝出第二段婚外情涉及直接向其汇报的医疗业务副总裁 Kimberly Powell，盘后股价一度跌超 8%。按公司章程第 32 条，11 名董事全部在任时罢免 CEO 通常需至少 6 票；国会三个委员会把闭门简报答复期限压到当日结束前，两委员会主席表示传票已备好。"
+    },
+    {
+      "title": "Anthropic 在定价的同一份招股书里自认：RSP「研发加速」阈值已被触发",
+      "summary": "修订版 S-1 写入「我们已认定达到该阈值」——即《负责任扩展政策》里「AI 把自身研发提速约一倍」的红线。公司称判断基于对未来模型的预期而非现有模型已观测能力，未宣布暂停研发，也不预期能放手让 Claude 完全自主设计下一代前沿模型。独立机构 METR 11 月 5 日估算其能力进步速度已达此前约 1.9 倍。"
+    },
+    {
+      "title": "杨-米尔斯「存在性」获 KITP 委员会验证并开源 Lean 代码：AI 出题、诺奖得主签字",
+      "summary": "David Gross 领衔的杨-米尔斯工作组 11 月 9 日发出第三次声明、11 月 10 日开源 OpenAI 10 月 28 日提交的完整 Lean 形式化与委员会验证文档，认定其「按物理与数学的标准题述证明了纯杨-米尔斯理论存在」。这是七大千禧年难题中「存在性」一半首次以机器可核验形式公开；更难的「质量间隙」仍未解决。"
     }
   ],
   "news": [
@@ -73,7 +85,9 @@
       "date": "11月11日",
       "source": "Google DeepMind / The Verge",
       "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "models": []
+      "models": [
+        "AlphaGenome 2"
+      ]
     },
     {
       "title": "MiniMax 发布 H3-Image 并放出权重：官方称 4K 图可在 10 秒内生成",
@@ -99,6 +113,56 @@
       "date": "11月10–11日",
       "source": "Reuters / The Telegraph",
       "link": "https://www.thestar.com.my/tech/tech-news/2026/11/11/ai-cloud-firm-nscale-considers-delaying-35-billion-listing-the-telegraph-reports",
+      "models": []
+    },
+    {
+      "title": "英伟达董事会准备讨论罢免黄仁勋：第二段婚外情曝光、国会三委员会备好传票",
+      "summary": "据《华尔街日报》11 月 11 日援引知情人士，董事会正准备讨论罢免首席执行官黄仁勋，最早可能于当日召开会议；《纽约时报》同日报道称第二段婚外情涉及直接向其汇报的医疗业务副总裁 Kimberly Powell，据称今年 3 月圣何塞 GTC 期间有酒店视频。消息后股价盘后一度跌超 8%–9%（当日常规时段收涨 2.87%）。按公司章程第 32 条，11 名董事全部在任时罢免 CEO 通常至少需 6 票赞成；国会三个委员会把闭门简报的答复期限压到当日结束前，众议院外交委员会与中国问题特别委员会主席均表示传票已备好，参议员 Kevin Cramer 以可能被勒索、涉国家安全风险为由要求其辞职。摩根士丹利同日把英伟达移出研究部首选股名单（自 10 月 2 日入列以来累计跌超 25%，触发止损政策），但维持增持评级与 300 美元目标价。",
+      "date": "11月12日",
+      "source": "华尔街日报 / 纽约时报 / CNBC（经东方财富、腾讯新闻转述）",
+      "link": "https://finance.eastmoney.com/a/202611123929070120.html",
+      "models": []
+    },
+    {
+      "title": "Anthropic 修订招股书自认：RSP「研发加速」阈值已被触发",
+      "summary": "在设定 70–78 美元定价区间的同一份修订招股书中，Anthropic 写入了「我们已认定达到该阈值」，即《负责任扩展政策》里「AI 足以把自身研发提速约一倍」的红线——相当于把 2018–2024 的两年进度压缩进一年。公司强调判断基于「对未来模型的预期与整体进展速度，而非现有模型已观测到的能力」，并未宣布暂停研发，也仍表示不预期能放手让 Claude 在缺少有意义人类监督时完全自主设计与构建下一代前沿模型。独立机构 METR 11 月 5 日的评估估算其能力测试进步速度已达此前约 1.9 倍，并称 8 月「仍在阈值之下」的论证「被高估」、7 月中越线「可信」。共同创始人 Sam McCandlish 称「AI 在加速我们的研究，但具体多少很难说」；招股书同时提示，过度依赖内部 AI 可能让组织对部分流程失去可视性。",
+      "date": "11月12日",
+      "source": "Yahoo Finance / AOL / METR",
+      "link": "https://www.aol.com/articles/anthropic-says-key-ai-safety-171519000.html",
+      "models": []
+    },
+    {
+      "title": "杨-米尔斯「存在性」获 KITP 委员会验证：OpenAI 的 Lean 代码与验证文档同步开源",
+      "summary": "由诺奖得主 David Gross 领衔、含 Michael Douglas、Arthur Jaffe、Igor Klebanov、Nikita Nekrasov 的 KITP 杨-米尔斯工作组 11 月 9 日发出第三次声明，11 月 10 日开源两套材料：OpenAI 10 月 28 日提交的完整 Lean 形式化（仓库 OpenAI-YM-20261028）与委员会自己的验证文档，认定其「按物理与数学中的标准题述证明了纯杨-米尔斯理论存在」。这是克雷研究所七大千禧年难题中「存在性」这一半首次以机器可核验形式公开，更难的「质量间隙」仍未解决。委员会在评估中写明用 OpenAI 的 Astra 协助消化 Lean 代码，且「尚不声称完全理解该证明」，同时声明不为 AI 发现索取学术 credit、参与自愿无薪。此前 OpenAI 10 月单日放出 700 余份 AI 证明被批「slop drop」，这次改为先由委员会「放牧」再公开，也被部分数学家批评为不必要的把关。",
+      "date": "11月11日",
+      "source": "Scientific American / KITP 工作组声明",
+      "link": "https://www.scientificamerican.com/article/openais-shepherds-affirm-blockbuster-physics-result/",
+      "models": [
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "Token 第一次上双十一货架：李佳琦半小时卖出近 10 万份月卡，约 2 万亿词元",
+      "summary": "今年双十一天猫、京东首次把词元（Token）作为独立品类摆上货架。11 月 2 日晚千问办公 CEO 陈宇森进李佳琦直播间，个人会员月卡原价 28 元、促销 0.01 元，半小时售出近 10 万份、约 2 万亿 Token；11 月 11 日晚罗永浩在交个朋友直播间上架 Qoder 国内专业版月卡 19.9 元（原价 59 元，约 3.3 折，另赠 1000 Credits），前一晚还带过 TRAE Lite 9.9 元。平台侧，淘宝 10 月 20 日开售首日词元品类成交额环比增长 450%，京东开播 1 小时送出超 10 亿 Token、2 小时内 Token 包销量环比增长 20 倍。不过引流款之外的正价套餐多数只卖出几百件，腾讯研究院数据显示 AI 用户整体付费率仅 9.8%，「囤词元」的象征意义暂时大于实际销量。",
+      "date": "11月12日",
+      "source": "东方网 / 红星资本局",
+      "link": "https://nw.eastday.com/zq/zh/20261112/b32fb7331e5460f5c4aa1b684918752a.html",
+      "models": []
+    },
+    {
+      "title": "CoreWeave 三季度营收 36.61 亿美元、同比增 168%，上调全年指引，股价单日涨 24.71%",
+      "summary": "AI 算力云厂商 CoreWeave 公布 2026 年三季度业绩：营收 36.61 亿美元、同比增长 168%，净亏损 7.09 亿美元，全年营收指引上调至 130–133 亿美元，全年资本开支 370–390 亿美元。业绩超预期带动股价单日大涨 24.71%、成交 91.16 亿美元，成为当日安抚 AI 交易情绪的关键信号。另据彭博社，公司正寻求通过投资级贷款再融资至少 40 亿美元，由摩根士丹利与三菱日联主导，最快下周启动银团推介，延续以英伟达芯片与客户合同作抵押的结构，预计发行收益率约 7%–7.5%，远低于其垃圾级债券；消息后盘后又跌近 6%。",
+      "date": "11月12日",
+      "source": "环球市场播报 / 彭博社",
+      "link": "https://finance.sina.com.cn/stock/usstock/c/2026-11-12/doc-iniymmzi1304922.shtml",
+      "models": []
+    },
+    {
+      "title": "Anthropic 与微软、谷歌新增约 100 亿美元算力承诺，Lambda 349 亿美元协议或被取消",
+      "summary": "据修订版 S-1，Anthropic 过去一个月与微软、谷歌新增约 100 亿美元云服务器租赁承诺、期限延至 2033 年：对微软 Azure 的累计支出承诺升至约 492 亿美元，对谷歌云的承诺升至约 1216 亿美元，均为不可撤销、无论是否使用容量均须付款。公司同时提示与较小云商 Lambda 签署的 349 亿美元服务器租赁协议存在被取消的可能，原因是 Lambda 未能在约定期限内建成数据中心。近 9000 亿美元的多年算力与基础设施承诺（并非已支出）与其 10 月 31 日约 810 亿美元的年化营收运行率形成对照，上游供应商的收入能见度与单一供应商依赖同时被放大。",
+      "date": "11月12日",
+      "source": "腾讯新闻 · 陆家嘴财经早餐 / Anthropic S-1",
+      "link": "https://news.qq.com/rain/a/20261112A0344C00",
       "models": []
     }
   ],
@@ -144,6 +208,48 @@
       "summary": "业务流程会把同一套 SOP 在新输入上跑成千上万次。LLM 智能体能读自然语言 SOP 并调用工具，但每一步都要再问一次模型，量和延迟都贵。ReTrace 用 SOP 和少量已记录的智能体运行，抽出每一步背后的条件，合并成紧凑规则文档，再生成由代码而非 LLM 选择下一步的可执行工作流；只有最后编译阶段依赖具体编排平台。在其生产平台的 79 个流程上，工作流完成率 93.8%，对照智能体 96.8%，单任务成本低 24%。在 τ²-bench 上，任务成功率为 75.8%（智能体 80.6%），运行时间从 170 秒降到 1.3 秒；用训练失败做三轮修复后，k=2 工作流从 66.7% 升到 81.2%。在八个 SOP-Bench 流程上，修复后达到 87.8%、每任务 0.40 秒，对照智能体为 85.5%、46.6 秒。",
       "authors": "Kaiyuan Hou, Yang Ping Kuo, Indranil Bhattacharya, …, Xiaofan Jiang, Francesco Carbone",
       "link": "https://arxiv.org/abs/2611.14492"
+    },
+    {
+      "title": "把科研点子做成「二十问」：模型几乎都在前 30 个问题里定输赢",
+      "titleEn": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "summary": "作者把 200 篇 ICML 2026 论文改造成「二十问」：只给研究问题，模型需靠最多 100 个是/否提问重发现论文的核心想法，从而把「提出想法」与「执行」切开。六个近期模型上，几乎全部进展发生在前 30 个问题内，之后普遍进入平台期。对候选问题与假设空间做受控干预后，结论是瓶颈在「生成」而非「判断」——模型能认出好点子、好问题，却常常自己产不出来；失败轨迹分两类，过度开采单一方向或过度探索太多方向。对自动科研系统的含义是：与其提升单个模型的生成能力，不如从外部引入点子与问题来丰富搜索。",
+      "authors": "Muhan Gao, Hangxiao Zhu, Xinqi Su, Yu Zhang, Daniel Khashabi, Kuan-Hao Huang",
+      "link": "https://arxiv.org/abs/2611.14487"
+    },
+    {
+      "title": "三种智能体评测框架对比：带轨迹的评判者 F1 0.90，纯文本评判误报高 5 倍",
+      "titleEn": "Comparative Analysis of Agent Evaluation Frameworks: Stability, Detection, and Discovery in Enterprise Analytics Agents",
+      "summary": "在企业分析智能体的冻结执行轨迹上比较三种范式：带轨迹的 LLM 评判、纯文本 LLM 评判加红队、确定性启发式。第一阶段重复测量显示 97% 配置达到稳定性阈值，且稳定性与具体智能体无关；第二阶段在 72 个有标准答案的风险用例上，带轨迹方案取得最佳精确率-召回平衡（F1=0.90），纯文本方案召回相当但误报多 5 倍；第三阶段发现 24 个此前未知的失败，功能测试与安全红队结果零重叠。作者建议双框架并用：功能靠轨迹评判，安全靠对抗红队。（KDD 2026）",
+      "authors": "Howard Zhang, Chuck Arvin, Logan Brown, Mihir Bhatia, Neelu Choudhary, Lily Miao",
+      "link": "https://arxiv.org/abs/2611.14493"
+    },
+    {
+      "title": "机械可执行不等于忠实：LLM 生成的形式化世界模型结构 F1 只有 0.366",
+      "titleEn": "Evaluating LLM-Generated World Models for Neuro-Symbolic Reasoning",
+      "summary": "作者让五个 LLM 把开放式自然语言情境写成部分可观测随机博弈形式的世界模型，并构造 44 个覆盖博弈、情境与文化设定的场景、分析 410 次首轮生成。在有参考解可比的博弈赛道，134/135 个生成模型通过严格的机械审计，但排列不变的结构 F1 均值仅 0.366，只有 28/134 与人工参考完全一致；文化赛道里，明确写出国家名会改变多数模型的结构表征，而自动语义打分几乎不变。结论是「可执行」只是必要条件：机械合规的模型仍可能在结构上偏离下游神经符号推理与规划真正依赖的东西。",
+      "authors": "Souhaila Djaffal, Amna Jamal, Gagana Madhugiri Devaraja, Anidipta Pal, Jobst Heitzig",
+      "link": "https://arxiv.org/abs/2611.14419"
+    },
+    {
+      "title": "检索到「家族级」证据时，模型会猜而不是弃权，猜错率约一半",
+      "titleEn": "CLADE: Category-Level Answering from Deficient Evidence in Retrieval-Augmented Language Models",
+      "summary": "作者命名了一种可解的不足：检索到的段落正确但粒度太粗，比如问题问某药治哪种具体疾病（家族性高胆固醇血症），段落只说到疾病大类。模型读到这种「只有家族」的段落时既不弃权也不继续检索，而是直接作答——在 PrimeKG 生物医学问题上，家族级段落比无信息段落降低弃权 13.8 个点，猜出的答案是错的约一半；把确切病名换成家族名比删掉整句更能降低弃权（17.4 个点），反事实实验证实因果。置信度过滤、换更大模型、明令要求弃权都无效，GloBI 生态互作数据上同样复现。给定正确家族时本体列表 98.5% 含真答案，但字符串匹配只在 19.8% 的页面里找到该家族；让模型自己选可把端到端恢复率从 10.0% 提到 26.8%。",
+      "authors": "S M Rayeed, Charles V. Stewart, Yao Ma",
+      "link": "https://arxiv.org/abs/2611.14355"
+    },
+    {
+      "title": "给记忆更新配上「个性化评分标准」：把终局对错拆成逐词元的功劳账",
+      "titleEn": "Personalized Memory Rubrics: Learning What to Remember per User via Rubric-Guided Credit Assignment",
+      "summary": "长程个性化智能体要持续决定记忆该加、该改、该删，但只用终局问答准确率训练会给出粗糙信号，且同一记忆动作对不同用户可能效果相反。PMR 把评分拆成两层：通用层捕捉跨人格的失败模式，个人层在通用基线上学一个 delta；再用 Rubric-Guided Credit Assignment 在 token 级别重新分配功劳——成功轨迹上放大被验证的决策，失败轨迹退回标准策略优化以免错误归因；评分标准与记忆策略在带防循环保证的闭环里共同演化。部署时不需要评分标准也不需要外部裁判，零推理开销；四个基准上稳定优于强记忆基线。（WSDM 2027）",
+      "authors": "Yupeng Han, Kai Zhang, Shuochen Liu, Ze Liu, Xianquan Wang, Zhihong Pan, Xiangyu Zhao, Qi Liu, Enhong Chen",
+      "link": "https://arxiv.org/abs/2611.14017"
+    },
+    {
+      "title": "训练模拟器也需要基准：348 个可行配置，让「选并行策略」不必真跑",
+      "titleEn": "LM-SimBench: A Unified Framework, Dataset, and Benchmark for LLM Training Simulation",
+      "summary": "大规模训练里逐一试并行策略代价过高，性能模拟是廉价替代，但现有模拟器建模的训练阶段与评测负载各异，难以受控比较。作者提出 LM-SimBench：把模拟拆成从模型编译到调度级聚合的功能阶段，并给出可测的评测目标。基于昇腾 NPU 集群对 10 个稠密与 MoE 模型家族的 23 种设置做画像，得到 348 个可行配置，联合变化五个并行维度与激活重算，覆盖配置、rank、算子、事件、kernel 六种视图。用它可比较预测精度、评估配置选择、诊断误差来源；配对 GPU-NPU 实验验证了跨平台可迁移，并展示了用 NPU 数据反推 GPU 配置选择。",
+      "authors": "Yu Dong, Hong Li, Qiang Sun, Xu Zhou, Jinbiao Huo, Qixiu Cheng, Zhiyuan Liu",
+      "link": "https://arxiv.org/abs/2611.14285"
     }
   ],
   "models": [
@@ -176,6 +282,30 @@
       "vendor": "Tether AI Research",
       "highlight": "11 月 11 日在 Hugging Face 博客发布的 0.8B 端侧智能体模型，基于 Qwen3.5-0.8B，面向函数调用和中低难度的个人助理任务（搜索、出行、日历、邮件等）。作者称在所测的不超过 1.2B 参数模型中，六个工具/智能体基准均领先；相对基座，BFCL v4 从 23.4 升至 44.0，ACEBench 从 30.1 升至 58.7，τ-bench 从 23.2 升至 51.5。计划以 Apache 2.0 开放权重，并提供 bf16 / Q8 / Q4 的 safetensors 与 GGUF。官方明确：模型仍会出错，不适合高风险用途。",
       "link": "https://huggingface.co/blog/qvac/botpsy"
+    },
+    {
+      "name": "Gemini Decision 1",
+      "vendor": "Google",
+      "highlight": "谷歌首个「决策模型」：不逐 token 生成，而在单次前向传播中对预设候选打分、返回概率与置信度；支持文本、图像、音频、视频、PDF 的共享输入，一次可评估最多 1000 个问题，覆盖是/否、最多 255 项多选与按评分标准打分三类，共享上下文可达 256K，端到端延迟 150–250 毫秒。定价每百万输入 Token 0.10 美元、输出 Token 不计费，官方称为 Flash-Lite 的五分之一；9 项基准拿下 7 项第一且校准误差最低。已随 Gemini Decisions API 在 AI Studio 上线。",
+      "link": "https://www.163.com/dy/article/LBH2G1ND0511D3QS.html"
+    },
+    {
+      "name": "Doubao-Seed-Code",
+      "vendor": "字节跳动 / 火山引擎",
+      "highlight": "11 月 11 日随方舟 Coding Plan 上线，专为 agentic 编程任务优化、兼容 Anthropic API 等主流开发环境；官方称在 SWE-Bench-Verified 达 SOTA，并称是国内首个支持视觉理解的编程模型，可参照 UI 设计稿、截图或手绘草图生成代码，支持 256K 上下文。综合使用成本较行业平均降低 62.7%，个人开发者 Coding Plan 首月 9.9 元。",
+      "link": "https://console.volcengine.com/ark/region:cn-beijing/docs/coding-plan-personal-feature-release"
+    },
+    {
+      "name": "LongCat-2.5",
+      "vendor": "美团",
+      "highlight": "美团开源的原生长程智能体多模态模型，MIT 协议、支持商用推理部署与二次训练；总参数 1.6 万亿、每 token 激活约 480 亿，支持一百万上下文。开源把检验权交给市场，但长程智能体任务的实际完成率、国产芯片上的部署成本与稳定性，才是决定它能否被真正用起来的关键。",
+      "link": "https://news.qq.com/rain/a/20261111A0DZZZ00"
+    },
+    {
+      "name": "Runway Praxis-1",
+      "vendor": "Runway",
+      "highlight": "首个可下载的 Runway 机器人策略模型，Apache 2.0 开放权重：26.9B 的 MoE 扩散 Transformer 视频主干（激活约 2.8B）＋314M 动作专家，一次预测未来 1.6 秒画面与 24 行动作（15Hz），单张 H100 往返约 0.55–0.6 秒。厂商口径在英伟达 RoboLab-120 上成功率 46.2%（FLUX 3 Action 42.9%、Cosmos3 Nano 36.8%、π0.5 28.0%），在未参与训练的 RT-1 上微调后 SimplerEnv 达 80.0%（原策略 52.4%）。权重在 HuggingFace 并原生支持 LeRobot，另附推理/微调代码与 vLLM-Omni 部署。",
+      "link": "https://runwayml.com/news/company-news/praxis-1-is-now-available"
     }
   ],
   "ecosystem": [
@@ -184,7 +314,9 @@
       "summary": "DeepMind 在 AlphaGenome 2 公告末尾写明：很快会在智能体开发平台 Google Antigravity 中发布 AlphaGenome 2 Skills，希望把这类专用科学模型与 Gemini 4 的智能体工具组合起来，帮助科研人员加快实验与发现。这是「科学模型」和「编码/研究智能体工作台」开始接在同一条工作流里的一个明确信号。",
       "source": "Google DeepMind",
       "link": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
-      "models": []
+      "models": [
+        "AlphaGenome 2"
+      ]
     },
     {
       "title": "Qwen4-Max-Preview 只走 Token Plan，预览期结束即下线",
@@ -209,6 +341,39 @@
       "summary": "在雅虎财经采访里，Sarah Friar 谈到企业业务翻倍时说，Anthropic 的企业进展提醒他们要更多与第三方云做分发协议。「我们之前真的卡在和微软 Azure 的合同上。解开之后，Anthropic 让我看到这种模式的力量，我觉得对咱们来说，这可能是 2027 年很大的尾风。」这不是一条产品更新，但说明 OpenAI 把自己在企业侧落后的一部分原因，归到了分发通道而不仅仅是模型本身。",
       "source": "Yahoo Finance",
       "link": "https://finance.yahoo.com/technology/article/openai-q3-revenue-jumped-50-to-10-billion-215223357.html",
+      "models": []
+    },
+    {
+      "title": "英伟达把智能体安全运行时 OpenShell 捐给 CNCF",
+      "summary": "在 KubeCon + CloudNativeCon 上，英伟达宣布把用于保护与治理自主智能体的开源运行时 OpenShell 捐给 CNCF，以 Sandbox 项目身份交由社区治理。OpenShell 把策略执行放在智能体进程之外（沙箱、策略证明器、网关、监督器四件套），默认拒绝、按意图授权，每次允许与拒绝都可审计，支持 Claude Code、Codex、Copilot CLI、Hermes、OpenClaw 等 agent 路径。同场还宣布参与谷歌发起的 Agent Substrate（CNCF Sandbox，任务间保留环境、空闲时释放算力）并推进与 Dynamo、KAI Scheduler 的集成，以及 DSX 平台的 NVKE、NVKR、Snapshot——Crusoe 用 Snapshot 把 GLM-5.3 就绪时间从约 8 分钟降到 31 秒，Saturn Cloud 把 vLLM 启动从 2–8.5 分钟降到 6–34 秒。",
+      "source": "NVIDIA / CNCF（KubeCon）",
+      "link": "https://www.nvidia.com/en-us/ai/openshell",
+      "models": [
+        "GLM-5.3"
+      ]
+    },
+    {
+      "title": "改不到 10 个休眠神经元就能给开放权重模型装后门，还能通过常规评测",
+      "summary": "微软研究院与微软 AI 红队披露 Lazarus：在模型最后一层前馈网络的休眠神经元上直接改权重，无需重训、无需投毒数据，即可让触发词出现时把一个预先指定的 token 顶进输出，串起约「一个神经元一个 token」写出完整命令。在 Nemotron-Terminal-8B 上改 7 个（共 1.2 万余个）神经元、用 23 条轨迹拟合，留出触发场景中至少 98.8% 产出载荷、良性场景零触发；Qwen3.6-27B 改 6 个达 51%（样本增至 2393 条后 83.7%），Gemma-4-31B-IT 同样受影响。被改模型仍能通过 AIME 与 Terminal-Bench（通过率 46.59%→42.05%），触发可以只是普通字符串甚至日期翻页（如进入 2027 年）。检测上，AI 检测器标出 91.4% 的改后检查点但有 9.7% 误报，让前沿模型直看权重更差（Opus 5.5 把 41% 的改后检查点判为干净）；可靠办法是把权重与声明的原始版本做差分，于是「来源＋签名＋哈希」成了部署前的新关卡。论文注明核心思路由 Claude Code（Opus 4.5）在 2026 年 2 月自主发现。",
+      "source": "Microsoft Research / Microsoft Security Blog",
+      "link": "https://www.infoworld.com/article/4247378/rewriting-less-than-10-neurons-in-an-llm-can-turn-it-into-a-sleeper-backdoor-2.html",
+      "models": [
+        "Gemma 4 31B",
+        "Claude Opus 5.5"
+      ]
+    },
+    {
+      "title": "智元发布终身具身框架 LIFE，RoboBeats 系列 0.8B/2B/4B 权重开放",
+      "summary": "智元发布 LIFE（Learning to Live）框架，把持续感知、长期记忆与能力复用接在一起，让机器人在任务执行期与任务间隔期都持续获取环境信息，并把历史观察用于后续决策。官方称在 FindingDory 的 597 个查询测试中，靠复用已有工具与技能把任务成功率从 37.5% 提升到 65.8%；论文、项目主页、RoboBeats 系列模型（0.8B/2B/4B）的推理代码与权重，以及 SSS-Bench 评测资源已开放。",
+      "source": "智元 / 界面新闻（经东方财富转载）",
+      "link": "https://finance.eastmoney.com/a/202611123929069626.html",
+      "models": []
+    },
+    {
+      "title": "把「决策」抽象成 API 原语：OpenRouter、LangChain、Vercel 首发接入",
+      "summary": "Gemini Decisions API 上线即获 OpenRouter、LangChain、Vercel 等集成：智能体流水线里大量细小判断（这封邮件算不算垃圾、这个任务该路由给哪个 agent）过去要先让生成式模型吐文本再解析，现在改由一次前向传播直接给出概率与置信度，输出 token 不计费。谷歌内部先用它做 Notebook 的路由，延迟降 40%；同一天该公司允许员工测试一款代号 Hydrogen 的「快速」Gemini 模型。业界解读是：把判断从生成流里拆出来单独定价，可能比再发一个更大的模型更重要。",
+      "source": "Google / 新浪财经",
+      "link": "https://finance.sina.com.cn/stock/usstock/c/2026-11-12/doc-iniymmzi1304922.shtml",
       "models": []
     }
   ]
