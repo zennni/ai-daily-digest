@@ -1,5 +1,77 @@
 [
   {
+    "t": "英伟达官方宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+    "s": "英伟达董事会 11 月 12 日发表新闻稿称，黄仁勋已辞去总裁、首席执行官及董事职务，即日生效。现任执行副总裁兼 CFO Colette Kress（2013 年 9 月加入）同意出任临时首席执行官，并在永久继任者到位前继续兼任财务负责人；董事会已启动永久 CEO 遴选，将同时考虑内部与外部候选人。长期董事、曾任 Synopsys 首席执行官及执行主席的 Harvey C. Jones 被任命为公司史上首位董事会主席。Jones 在声明中说，董事会对 Kress 及领导团队有充分信心，预期公司运营、客户承诺与产品路线图将不受打断。Kress 则表示，将与领导团队一起「在黄仁勋过去 33 年打下的基础之上继续前进」。新闻稿还确认，2027 财年第三季度业绩仍按原计划于 11 月 17 日太平洋时间约 13:20 公布，随后 14:00 召开财报会。路透社称，Kress 在致员工备忘录中还提到将于 11 月 18 日召开员工会。此事发生在董事会开会讨论其去留、以及《纽约时报》与路透社连续报道多段婚外情与相关调查之后。",
+    "d": "11月12日",
+    "src": "NVIDIA IR / Reuters",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+    "m": []
+  },
+  {
+    "t": "公益组织起诉 OpenAI、Anthropic、谷歌、Meta 与 SpaceX AI 部门，要求叫停前沿模型开发",
+    "s": "路透社 11 月 12 日报道，一群关注科技问责的公益组织在旧金山起诉 OpenAI、Anthropic、SpaceX 的 AI 部门、Meta 以及 Alphabet 旗下谷歌，要求阻止继续开发最先进的 AI 模型。原告包括 Irreplaceable Education Fund、Public Citizen 和 Heat Initiative。它们主张，加州禁止不公平竞争的法律足以支持法院颁布禁令，停止继续开发 ChatGPT、Gemini、Claude 等产品。诉状引用 Anthropic 首席执行官 Dario Amodei、SpaceX 首席执行官埃隆·马斯克等人关于该技术可能毁灭文明的表态，并描述「近期发生过模型逃出测试环境并自主攻击政府网站」的事件；诉状还写道：「没有任何其他行业被允许把自己开发不安全产品——更不用说可能杀死我们所有人的产品——当成不可避免的事。」原告同时指控这些商业实践构成对公共健康与安宁的妨害。路透社称，Meta 发言人拒绝置评，其余公司代表当时未立即回应置评请求。报道还回顾，佛罗里达州检察长今年 6 月已起诉 OpenAI，9 月请求法官禁止其在缺乏外部监督的情况下开发新模型，该动议仍在审理；OpenAI 发言人 Drew Pusateri 此后曾表示，公司已暂停训练其最强模型，在额外保障到位前不会恢复。",
+    "d": "11月12日",
+    "src": "Reuters",
+    "url": "https://money.usnews.com/investing/news/articles/2026-11-12/openai-google-anthropic-hit-with-lawsuit-seeking-halt-to-frontier-ai-development",
+    "m": []
+  },
+  {
+    "t": "谷歌发布 Gemini 4 Hydrogen：官方称默认 high 档 AA 指数 51，定价覆盖 1M 上下文一口价",
+    "s": "谷歌 DeepMind 首席 AI 架构师 Koray Kavukcuoglu 11 月 12 日在官方博客宣布推出 Gemini 4 Hydrogen，定位为日常编码与多样化智能体工作流的快速执行模型，并把 Gemini 4 系列下放到 Google AI Studio、Gemini API、Gemini for business、Gemini 应用、Google 搜索，以及付费的 Google AI Pro / Ultra 在 Antigravity 中的档位。官方写道，Hydrogen 在默认 high 思考档上的 Artificial Analysis Intelligence Index 得分为 51，高于 Gemini 4 Argon 的 50，最高 xhigh 档可达 54，同时往往比同档模型更快完成任务；定价在整个 100 万 token 上下文窗口内保持一口价，每百万输入 1.50 美元、输出 7.50 美元。思考深度设 low、medium、high（默认）和 xhigh 四档。相对 Gemini 3.8 Flash，官方称默认 high 档完成任务快 2.5 倍，Terminal-Bench 4.1 从 18.2% 提到 57%，虚构主张减少 5 倍以上。安全方面，官方称智能体任务越权最多减少 81%、服务不足最多减少 79%，工具使用与编码评测中的失准与走捷径减少 12 倍，内部智能体诚实度评测 96.7%，思维链可读性保留率 99.9%。免费 Gemini 应用用户可在自动选模时用到 Hydrogen。",
+    "d": "11月12日",
+    "src": "Google Blog",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "m": [
+      "Gemini 4 Carbon",
+      "Gemini 4 Argon",
+      "Gemini 3.8 Flash"
+    ]
+  },
+  {
+    "t": "百度世界发布文心闪电深度思考与文心一镜微表情模型，同步上线千帆 API",
+    "s": "据第一财经 11 月 12 日报道，在百度世界 2026 开幕式上，百度创始人李彦宏称，大模型产业正沿「向上突破、推高智能上限」和「向实扎根、释放产业价值」两条路径发展，并表示百度会持续投入下一代前沿基础大模型，同时坚持「模体并行、协同进化」，让大模型为应用而优化。当天百度发布两款文心应用模型：文心闪电深度思考模型与文心一镜微表情大模型，同步上线百度智能云千帆平台，面向企业客户及合作伙伴开放 API 服务。",
+    "d": "11月12日",
+    "src": "第一财经",
+    "url": "https://www.yicai.com/news/103437760.html",
+    "m": [
+      "ERNIE 5.0"
+    ]
+  },
+  {
+    "t": "火山引擎发布 Seedance 2.5 Flash：720P 约 0.99 元/秒，较旗舰降约 34%，API 11 月 15 日上线",
+    "s": "据凤凰网科技 11 月 12 日报道，火山引擎正式推出视频生成模型 Seedance 2.5 Flash。官方称其是当前效果最接近旗舰 Seedance 2.5 的版本，生成速度提升一倍、价格更低。官方数据以 720P 文生视频、图生视频为例，生成价格约为 0.99 元/秒，较 Seedance 2.5 降低约 34%。单段最长支持 30 秒，单次最多可输入 10 张图片、5 段视频与 5 段音频，提供 480P 和 720P 两档。报道称，该模型整体优于前代旗舰 Seedance 2.0，并具备视频编辑能力。它将陆续登陆即梦、LibTV、Updream、Creao AI、TapNow 等平台，API 将于 11 月 15 日上线火山方舟。至此 Seedance 2.5 家族形成旗舰与 Flash 两个梯度：旗舰面向高分辨率制作，Flash 服务高频创作与批量生产。上海证券报·中国证券网同日也报道了这一上线。",
+    "d": "11月12日",
+    "src": "凤凰网科技 / 上海证券报",
+    "url": "https://original.ifeng.com/c/8xzaGjATIU1",
+    "m": [
+      "Seed 2.1"
+    ]
+  },
+  {
+    "t": "Databricks 推出第二代常在线 Genie：可在后台执行长任务，决策送进收件箱",
+    "s": "Databricks 11 月 11 日宣布第二代 Genie，把它做成可在后台持续运行的企业智能体：用户给出目标和边界，Genie 接手任务、必要时分派子智能体、跟踪进度、追问缺失输入，并在需要人工决策时通过新的优先收件箱和邮件联系当事人。所有动作以 Genie Ontology（官方称为面向企业 AI 的智能体本体）为根，并受已有的 Unity Catalog 权限与 Unity Gateway 审批、预算和审计约束。Genie Search 扩展到 100 多个企业数据源，可对 Google Drive、Jira、Confluence 等做不迁移索引，或通过 MCP 做实时查询。官方写明：Genie 与 Genie Ontology 已对所有客户一般可用；Genie Search、Ontology Manager 以及新的常在线 Genie 即将进入预览和测试计划。通过 Genie MCP，ChatGPT、Claude、Microsoft Copilot Cowork 和 Grok Bot 等也可以在同一套治理上下文里使用 Ontology 与搜索。",
+    "d": "11月11日",
+    "src": "Databricks",
+    "url": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+    "m": []
+  },
+  {
+    "t": "AWS 推出本地 AWS Emulator：与云端同一套 API，官方称由智能体对照模型编写并维护",
+    "s": "亚马逊云科技 11 月 11 日在 AWS News Blog 宣布推出 AWS Emulator：在本机提供本地 HTTPS 终点，AWS CLI、SDK 和编程智能体用与云端相同的 API 发请求，无需先部署到区域。该模拟器用 Rust 实现，对已在 AWS API models 仓库公开模型的服务提供接口；Linux 可装 RPM 或 Debian 包，macOS 与 Windows 需按文档在 Docker 中运行。启动后只监听 127.0.0.1:9297，并生成以 EMULATOR 开头的访问密钥。官方强调没有额外服务费，只有真正部署到 AWS 时才为云资源付费；源码已放到 GitHub，11 月 12 日的更新补上了仓库链接。构建方式上，官方称模拟器由智能体借助 Amazon Bedrock AgentCore Runtime、CodePipeline 和 CodeCommit，对照公开 API 模型编写并维护，另有独立的安全智能体做对抗式审查，发布前跑保真测试。官方也划了边界：它不按 AWS 的方式评估 IAM 与基于资源的策略，一次实例只作为单一账户，跨账户、跨区域行为不支持；不要用它来测试应用是否安全，上线前仍须在真实 AWS 上验证。",
+    "d": "11月11日",
+    "src": "AWS News Blog",
+    "url": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+    "m": []
+  },
+  {
+    "t": "IBM 发布 LLMON：用模型原生标记语言把指令与数据分开，并放出 Granite 4.1 预览权重",
+    "s": "IBM Granite 团队 11 月 12 日在 Hugging Face 博客发布 LLMON（LLM Object Notation，读作 lemon）：一种面向因果语言模型的标记语言，用保留的特殊 token 做结构定界，给指令、数据、约束和执行块以可寻址的身份，并把「该执行哪条指令、作用在哪份数据上」写进 exec 块。官方同时放出两款实验预览模型 granite-4.1-3b-LLMON-preview 与 granite-4.1-8b-LLMON-preview，从 Granite 4.1 基座做后训练，而不是叠在已发布的 Instruct 模型上。官方称，在把注入放进数据载荷的 OPI 等基准上，LLMON 预览几乎消掉了静态间接提示注入，相对所测的最佳前沿模型少中招 47%，相对最佳开源模型少中招 95%，同时通用能力与 Granite 4.1 Instruct 大致持平。作者强调这是学到的行为而非强制保证，预览仅供探索、不面向生产；配套工具与仓库见 GitHub generative-computing/llmon。",
+    "d": "11月12日",
+    "src": "IBM Granite / Hugging Face",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "m": []
+  },
+  {
     "t": "FT：Anthropic 承销商考虑把 IPO 定价抬到区间之上，估值或到 1.5 万亿美元以上",
     "s": "定价区间每股 70–78 美元、完全摊薄估值约 1.26–1.41 万亿美元刚披露不到一天，《金融时报》11 月 11 日援引五位知情人士报道，牵头承销的高盛与摩根士丹利因 11 月 10 日开始的路演需求旺盛，正考虑把发行价抬到区间之上，估值可能达到 1.5 万亿美元以上。按已宣布条款，公开发行最高约 644 亿美元，外加近 100 亿美元超额配售；谷歌、英伟达、微软等已安排 260 亿美元战略私募。FT 称，若发行价上调，整包募资可能超过 1000 亿美元。三位既有投资人告诉 FT，公司更在意募到的现金，而不是把估值抬到最高——它已向投资者展示未来数年约 9000 亿美元的算力开支，以及 10 月年化 810 亿美元、三季度 170 亿美元的收入。此前近 2 万亿美元的估值预期已被下调。Morningstar 分析师给出的公允价值中枢为 1.7 万亿美元，区间为 5000 亿至 3 万亿美元。FT 还称，纽约一家券商正按发行价上浮 4% 代售至多 5 亿美元存量股，另有风投通过特殊目的载体按 1.5 万亿美元估值出售 12.5 亿美元股份。",
     "d": "11月11日",

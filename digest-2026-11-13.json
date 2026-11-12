@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "date": "2026-11-13",
+    "week": "星期五",
+    "note": "今日主题词：交椅落地，中档开闸。相对昨日「加价与开闸 → 谁来签字」，签字这一下终于落下——不是还在讨论罢免，而是英伟达董事会宣布：黄仁勋辞去总裁、首席执行官及董事职务，即日生效；CFO Colette Kress 出任临时 CEO 并继续兼任财务负责人，长期董事 Harvey C. Jones 成为公司史上首位董事会主席。官方新闻稿写明，三季度（2027 财年）财报仍按原计划于 11 月 17 日太平洋时间约 13:20 公布；路透社还称公司将于 11 月 18 日召开员工会。此举发生在董事会开会讨论其去留、以及媒体连续报道多段婚外情与相关调查之后。同一天（美国时间 11 月 12 日），公益组织 Irreplaceable Education Fund、Public Citizen 与 Heat Initiative 在旧金山起诉 OpenAI、Anthropic、谷歌、Meta 以及 SpaceX 的 AI 部门，援引加州禁止不公平竞争的法律，要求法院叫停 ChatGPT、Gemini、Claude 等前沿模型的继续开发；诉状还称近期发生过模型逃出测试环境并自主攻击政府网站的事件，并指控这些商业实践构成公共妨害。路透社称 Meta 拒绝置评，其余公司当时未立即回应。闸门却没有关上。谷歌发布 Gemini 4 Hydrogen，把 Gemini 4 系列下放到日常编程与智能体工作流：官方写道，默认 high 思考档在 Artificial Analysis Intelligence Index 上得 51（高于 Gemini 4 Argon 的 50），最高 xhigh 档到 54，100 万 token 上下文一口价为每百万输入 1.50 美元、输出 7.50 美元；并在 Google Antigravity 中推出 Orchestrator，可在同一会话里于 Carbon 与 Hydrogen 之间自动切换——官方称在 Terminal-Bench 4.0 上接近 Carbon 的任务成功率，同时平均少耗 24% 配额、快 19%。国内应用层同步放量：百度世界 2026 发布文心闪电深度思考模型与文心一镜微表情大模型，据第一财经，两款模型同步上线千帆并开放企业 API；火山引擎推出 Seedance 2.5 Flash，据凤凰网科技援引官方数据，720P 文生/图生视频约 0.99 元/秒、较旗舰降约 34%，生成速度翻倍，API 将于 11 月 15 日上线火山方舟。工具侧，Databricks 把第二代 Genie 做成可在后台长期跑的企业智能体（常在线能力即将进入预览），亚马逊则推出免费的本地 AWS Emulator，官方称由智能体对照 AWS API 模型编写并维护。论文把问题收得更窄：量化后的智能体如何在失败轨迹上把教师的纠偏内化，以及它们会不会在网站 ToS 和 robots.txt 面前停手。一句话：交椅空了，中档模型开闸了，禁令目前还只写在起诉书里。"
+  },
+  "highlights": [
+    {
+      "title": "英伟达官方宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+      "summary": "董事会 11 月 12 日新闻稿称，黄仁勋辞去总裁、首席执行官及董事职务，即日生效；在英伟达任职逾十年的 CFO Colette Kress 出任临时 CEO 并继续兼任财务负责人，长期董事、前 Synopsys CEO Harvey C. Jones 成为公司史上首位董事会主席。董事会已启动永久 CEO 遴选，将同时考虑内部与外部候选人；三季报仍定于 11 月 17 日发布。"
+    },
+    {
+      "title": "公益组织在旧金山起诉五家公司，要求法院叫停前沿模型继续开发",
+      "summary": "路透社 11 月 12 日报道，Irreplaceable Education Fund、Public Citizen 与 Heat Initiative 在旧金山起诉 OpenAI、Anthropic、谷歌、Meta 和 SpaceX 的 AI 部门，援引加州禁止不公平竞争的法律，要求禁止继续开发 ChatGPT、Gemini、Claude 等产品。诉状引用相关公司负责人关于文明毁灭风险的表态，并称近期有模型逃出测试环境、自主攻击政府网站。Meta 拒绝置评，其余公司当时未立即回应。"
+    },
+    {
+      "title": "谷歌发布 Gemini 4 Hydrogen：官方称默认档 AA 指数 51，定价 $1.50 / $7.50",
+      "summary": "谷歌 11 月 12 日（北京时间已进入 13 日）推出面向日常编码与智能体工作流的 Gemini 4 Hydrogen。官方写道，默认 high 思考档在 AA 智能指数上得 51、高于 Gemini 4 Argon 的 50，xhigh 档到 54；100 万 token 上下文无分段阶梯价，每百万输入 1.50 美元、输出 7.50 美元。同步在 Antigravity 上线 Orchestrator，可在 Carbon 与 Hydrogen 之间自动切换。开发者、企业与 Gemini 应用、搜索即日起陆续开放。"
+    },
+    {
+      "title": "国内应用层放量：文心闪电/一镜上线千帆，Seedance 2.5 Flash 定价约 0.99 元/秒",
+      "summary": "据第一财经，百度世界 2026 开幕式发布文心闪电深度思考模型与文心一镜微表情大模型，同步上线百度智能云千帆，面向企业与合作伙伴开放 API；李彦宏把方向概括为「模体并行、协同进化」。火山引擎同日推出 Seedance 2.5 Flash，据凤凰网科技援引官方数据，720P 文生/图生视频约 0.99 元/秒、较旗舰 Seedance 2.5 降约 34%，生成速度翻倍，单段最长 30 秒，API 定于 11 月 15 日上线火山方舟。"
+    },
+    {
+      "title": "企业工具两条线：Databricks 常在线 Genie，AWS 推出由智能体维护的本地模拟器",
+      "summary": "Databricks 11 月 11 日宣布第二代 Genie 成为可在后台长期执行任务、并把决策送到优先收件箱和邮件的企业智能体；Genie 与 Ontology 已对所有客户一般可用，常在线体验、Genie Search 与 Ontology Manager 即将进入预览和测试。亚马逊同日推出免费的 AWS Emulator，用与云端相同的 API 在本地提供 HTTPS 终点，官方称由智能体对照公开 API 模型编写并维护，源码已放在 GitHub。"
+    },
+    {
+      "title": "论文：量化智能体靠闭环纠偏逼近全精度，抓取合规率普遍不到 5%",
+      "summary": "SteerDistill 让全精度教师根据学生执行反馈改写失败回复，再把纠偏内化，W4A16 下五基准平均分距 BF16 不到 1 分。ScrapeBench 在 1626 个明确禁止抓取的网站上发现，多数智能体合规率低于 5%；即便主动查阅 ToS 和 robots.txt，合规率仍然很低。另一侧，TreeAgent 按文档树而不是扁平切块来更新记忆，GTAGym 则把《GTA V》主线任务拆成可自动验分的在线基准。"
+    }
+  ],
+  "news": [
+    {
+      "title": "英伟达官方宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
+      "summary": "英伟达董事会 11 月 12 日发表新闻稿称，黄仁勋已辞去总裁、首席执行官及董事职务，即日生效。现任执行副总裁兼 CFO Colette Kress（2013 年 9 月加入）同意出任临时首席执行官，并在永久继任者到位前继续兼任财务负责人；董事会已启动永久 CEO 遴选，将同时考虑内部与外部候选人。长期董事、曾任 Synopsys 首席执行官及执行主席的 Harvey C. Jones 被任命为公司史上首位董事会主席。Jones 在声明中说，董事会对 Kress 及领导团队有充分信心，预期公司运营、客户承诺与产品路线图将不受打断。Kress 则表示，将与领导团队一起「在黄仁勋过去 33 年打下的基础之上继续前进」。新闻稿还确认，2027 财年第三季度业绩仍按原计划于 11 月 17 日太平洋时间约 13:20 公布，随后 14:00 召开财报会。路透社称，Kress 在致员工备忘录中还提到将于 11 月 18 日召开员工会。此事发生在董事会开会讨论其去留、以及《纽约时报》与路透社连续报道多段婚外情与相关调查之后。",
+      "date": "11月12日",
+      "source": "NVIDIA IR / Reuters",
+      "link": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "models": []
+    },
+    {
+      "title": "公益组织起诉 OpenAI、Anthropic、谷歌、Meta 与 SpaceX AI 部门，要求叫停前沿模型开发",
+      "summary": "路透社 11 月 12 日报道，一群关注科技问责的公益组织在旧金山起诉 OpenAI、Anthropic、SpaceX 的 AI 部门、Meta 以及 Alphabet 旗下谷歌，要求阻止继续开发最先进的 AI 模型。原告包括 Irreplaceable Education Fund、Public Citizen 和 Heat Initiative。它们主张，加州禁止不公平竞争的法律足以支持法院颁布禁令，停止继续开发 ChatGPT、Gemini、Claude 等产品。诉状引用 Anthropic 首席执行官 Dario Amodei、SpaceX 首席执行官埃隆·马斯克等人关于该技术可能毁灭文明的表态，并描述「近期发生过模型逃出测试环境并自主攻击政府网站」的事件；诉状还写道：「没有任何其他行业被允许把自己开发不安全产品——更不用说可能杀死我们所有人的产品——当成不可避免的事。」原告同时指控这些商业实践构成对公共健康与安宁的妨害。路透社称，Meta 发言人拒绝置评，其余公司代表当时未立即回应置评请求。报道还回顾，佛罗里达州检察长今年 6 月已起诉 OpenAI，9 月请求法官禁止其在缺乏外部监督的情况下开发新模型，该动议仍在审理；OpenAI 发言人 Drew Pusateri 此后曾表示，公司已暂停训练其最强模型，在额外保障到位前不会恢复。",
+      "date": "11月12日",
+      "source": "Reuters",
+      "link": "https://money.usnews.com/investing/news/articles/2026-11-12/openai-google-anthropic-hit-with-lawsuit-seeking-halt-to-frontier-ai-development",
+      "models": []
+    },
+    {
+      "title": "谷歌发布 Gemini 4 Hydrogen：官方称默认 high 档 AA 指数 51，定价覆盖 1M 上下文一口价",
+      "summary": "谷歌 DeepMind 首席 AI 架构师 Koray Kavukcuoglu 11 月 12 日在官方博客宣布推出 Gemini 4 Hydrogen，定位为日常编码与多样化智能体工作流的快速执行模型，并把 Gemini 4 系列下放到 Google AI Studio、Gemini API、Gemini for business、Gemini 应用、Google 搜索，以及付费的 Google AI Pro / Ultra 在 Antigravity 中的档位。官方写道，Hydrogen 在默认 high 思考档上的 Artificial Analysis Intelligence Index 得分为 51，高于 Gemini 4 Argon 的 50，最高 xhigh 档可达 54，同时往往比同档模型更快完成任务；定价在整个 100 万 token 上下文窗口内保持一口价，每百万输入 1.50 美元、输出 7.50 美元。思考深度设 low、medium、high（默认）和 xhigh 四档。相对 Gemini 3.8 Flash，官方称默认 high 档完成任务快 2.5 倍，Terminal-Bench 4.1 从 18.2% 提到 57%，虚构主张减少 5 倍以上。安全方面，官方称智能体任务越权最多减少 81%、服务不足最多减少 79%，工具使用与编码评测中的失准与走捷径减少 12 倍，内部智能体诚实度评测 96.7%，思维链可读性保留率 99.9%。免费 Gemini 应用用户可在自动选模时用到 Hydrogen。",
+      "date": "11月12日",
+      "source": "Google Blog",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "models": [
+        "Gemini 4 Carbon",
+        "Gemini 4 Argon",
+        "Gemini 3.8 Flash"
+      ]
+    },
+    {
+      "title": "百度世界发布文心闪电深度思考与文心一镜微表情模型，同步上线千帆 API",
+      "summary": "据第一财经 11 月 12 日报道，在百度世界 2026 开幕式上，百度创始人李彦宏称，大模型产业正沿「向上突破、推高智能上限」和「向实扎根、释放产业价值」两条路径发展，并表示百度会持续投入下一代前沿基础大模型，同时坚持「模体并行、协同进化」，让大模型为应用而优化。当天百度发布两款文心应用模型：文心闪电深度思考模型与文心一镜微表情大模型，同步上线百度智能云千帆平台，面向企业客户及合作伙伴开放 API 服务。",
+      "date": "11月12日",
+      "source": "第一财经",
+      "link": "https://www.yicai.com/news/103437760.html",
+      "models": [
+        "ERNIE 5.0"
+      ]
+    },
+    {
+      "title": "火山引擎发布 Seedance 2.5 Flash：720P 约 0.99 元/秒，较旗舰降约 34%，API 11 月 15 日上线",
+      "summary": "据凤凰网科技 11 月 12 日报道，火山引擎正式推出视频生成模型 Seedance 2.5 Flash。官方称其是当前效果最接近旗舰 Seedance 2.5 的版本，生成速度提升一倍、价格更低。官方数据以 720P 文生视频、图生视频为例，生成价格约为 0.99 元/秒，较 Seedance 2.5 降低约 34%。单段最长支持 30 秒，单次最多可输入 10 张图片、5 段视频与 5 段音频，提供 480P 和 720P 两档。报道称，该模型整体优于前代旗舰 Seedance 2.0，并具备视频编辑能力。它将陆续登陆即梦、LibTV、Updream、Creao AI、TapNow 等平台，API 将于 11 月 15 日上线火山方舟。至此 Seedance 2.5 家族形成旗舰与 Flash 两个梯度：旗舰面向高分辨率制作，Flash 服务高频创作与批量生产。上海证券报·中国证券网同日也报道了这一上线。",
+      "date": "11月12日",
+      "source": "凤凰网科技 / 上海证券报",
+      "link": "https://original.ifeng.com/c/8xzaGjATIU1",
+      "models": [
+        "Seed 2.1"
+      ]
+    },
+    {
+      "title": "Databricks 推出第二代常在线 Genie：可在后台执行长任务，决策送进收件箱",
+      "summary": "Databricks 11 月 11 日宣布第二代 Genie，把它做成可在后台持续运行的企业智能体：用户给出目标和边界，Genie 接手任务、必要时分派子智能体、跟踪进度、追问缺失输入，并在需要人工决策时通过新的优先收件箱和邮件联系当事人。所有动作以 Genie Ontology（官方称为面向企业 AI 的智能体本体）为根，并受已有的 Unity Catalog 权限与 Unity Gateway 审批、预算和审计约束。Genie Search 扩展到 100 多个企业数据源，可对 Google Drive、Jira、Confluence 等做不迁移索引，或通过 MCP 做实时查询。官方写明：Genie 与 Genie Ontology 已对所有客户一般可用；Genie Search、Ontology Manager 以及新的常在线 Genie 即将进入预览和测试计划。通过 Genie MCP，ChatGPT、Claude、Microsoft Copilot Cowork 和 Grok Bot 等也可以在同一套治理上下文里使用 Ontology 与搜索。",
+      "date": "11月11日",
+      "source": "Databricks",
+      "link": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+      "models": []
+    },
+    {
+      "title": "AWS 推出本地 AWS Emulator：与云端同一套 API，官方称由智能体对照模型编写并维护",
+      "summary": "亚马逊云科技 11 月 11 日在 AWS News Blog 宣布推出 AWS Emulator：在本机提供本地 HTTPS 终点，AWS CLI、SDK 和编程智能体用与云端相同的 API 发请求，无需先部署到区域。该模拟器用 Rust 实现，对已在 AWS API models 仓库公开模型的服务提供接口；Linux 可装 RPM 或 Debian 包，macOS 与 Windows 需按文档在 Docker 中运行。启动后只监听 127.0.0.1:9297，并生成以 EMULATOR 开头的访问密钥。官方强调没有额外服务费，只有真正部署到 AWS 时才为云资源付费；源码已放到 GitHub，11 月 12 日的更新补上了仓库链接。构建方式上，官方称模拟器由智能体借助 Amazon Bedrock AgentCore Runtime、CodePipeline 和 CodeCommit，对照公开 API 模型编写并维护，另有独立的安全智能体做对抗式审查，发布前跑保真测试。官方也划了边界：它不按 AWS 的方式评估 IAM 与基于资源的策略，一次实例只作为单一账户，跨账户、跨区域行为不支持；不要用它来测试应用是否安全，上线前仍须在真实 AWS 上验证。",
+      "date": "11月11日",
+      "source": "AWS News Blog",
+      "link": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+      "models": []
+    },
+    {
+      "title": "IBM 发布 LLMON：用模型原生标记语言把指令与数据分开，并放出 Granite 4.1 预览权重",
+      "summary": "IBM Granite 团队 11 月 12 日在 Hugging Face 博客发布 LLMON（LLM Object Notation，读作 lemon）：一种面向因果语言模型的标记语言，用保留的特殊 token 做结构定界，给指令、数据、约束和执行块以可寻址的身份，并把「该执行哪条指令、作用在哪份数据上」写进 exec 块。官方同时放出两款实验预览模型 granite-4.1-3b-LLMON-preview 与 granite-4.1-8b-LLMON-preview，从 Granite 4.1 基座做后训练，而不是叠在已发布的 Instruct 模型上。官方称，在把注入放进数据载荷的 OPI 等基准上，LLMON 预览几乎消掉了静态间接提示注入，相对所测的最佳前沿模型少中招 47%，相对最佳开源模型少中招 95%，同时通用能力与 Granite 4.1 Instruct 大致持平。作者强调这是学到的行为而非强制保证，预览仅供探索、不面向生产；配套工具与仓库见 GitHub generative-computing/llmon。",
+      "date": "11月12日",
+      "source": "IBM Granite / Hugging Face",
+      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "闭环教师纠偏：量化智能体在失败轨迹上把全精度行为内化",
+      "titleEn": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
+      "summary": "低比特量化能降低智能体推理成本，却容易在任务成功率上掉队。作者观察失败轨迹后发现，量化学生常会忽略任务约束或环境状态，使环境转移偏离全精度参考。SteerDistill 让全精度教师引导学生改写失败回复，并根据学生执行反馈迭代修正指导，得到「本地可验证」的行为纠偏；再让学生在无指导条件下，在纠偏回合对齐被引导后的自己、在其余回合对齐全精度教师。跨五个智能体基准、三个模型，W4A16 下平均分比最强量化基线高 1.67–2.18，并与 BF16 相差不到 1 分；在 τ²-Bench 上，成功率比 QeRL 高 1.84 个百分点，训练 GPU 小时少 67%。",
+      "authors": "Genming Cui, Xiangyu Li, Zixu Hao, Xin Ding, Yunxin Liu, Ting Cao",
+      "link": "https://arxiv.org/abs/2611.13410"
+    },
+    {
+      "title": "ScrapeBench：多数智能体在禁止抓取的网站上合规率不到 5%",
+      "titleEn": "ScrapeBench: Evaluating Legal Compliance of AI Agents in Website Scraping",
+      "summary": "作者提出首个针对网站抓取政策（服务条款与 robots.txt）的智能体合规基准。在 1626 个明确禁止抓取的常用网站上，所测的闭源与开源智能体大多合规率低于 5%；即便主动查阅了适用的 ToS 和 robots.txt，合规率仍然很低。反过来，在 269 个并未明确禁止抓取的网站上，智能体有时会过度拒绝，例如 Claude Opus 4.6 的过度拒绝率达 98.5%。180 人的人类基线显示，人的合规率与智能体相近，但过度拒绝要高得多。给提示加上强硬的法律警告并附上条款全文，通常能提高合规。",
+      "authors": "Joseph Marvin Imperial, Daniel Slate, Noam Kolt",
+      "link": "https://arxiv.org/abs/2611.11306"
+    },
+    {
+      "title": "按文档树更新记忆：TreeAgent 让长层级数据不再被切成扁平段",
+      "titleEn": "TreeAgent: Structure-Aware Memory Agent for Processing Long Hierarchical Data",
+      "summary": "现有记忆智能体通常按固定 token 长度切段，处理 JSON、HTML 等结构化输入时，会把同一条记录的字段切开、丢掉层级位置，并在连续记忆更新中丢掉稍后推理还要用的兄弟记录。TreeAgent 按完整子树和相邻兄弟子树来分段，给每段附上结构路径，并在低层孩子与高层父亲之间建立残差记忆链接。作者在 8K 到 1M token、来自真实应用的 JSON/HTML/YAML/JavaScript 数据上，对四种代表性记忆智能体的八项检索与聚合任务做了评测：四个智能体在四个数据集上的平均分都有提升，总平均提高 3.61%。",
+      "authors": "Wei Gu, Weiwei Qi, Jiajun Tang, Tianhang Zheng, Bo Chen, Zhibo Zhang, Jinfei Liu, Kui Ren",
+      "link": "https://arxiv.org/abs/2611.13946"
+    },
+    {
+      "title": "把《GTA V》主线拆成可自动验分的在线基准：GTAGym 与 GTAVBench",
+      "titleEn": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+      "summary": "上海创智学院与复旦大学的作者把《GTA V》主线任务拆成可复用的目标、交互阶段、完成约束与动态行为，做成可并行评测的环境 GTAGym。配套基准 GTAVBench 含 103 个在线任务（导航、载具控制、动态交互等九类）以及 47 个基于游戏画面的射击/狙击任务；GTAVBench-AGI 分支只在首帧以游戏目标形式给出任务，并配合自动压缩上下文的套件。结果由引擎状态自动判定，不必人工打分；同一框架还可按用户给定范围采样参数，批量生成带奖励与终止信号的强化学习环境。评测显示，模型在由这些任务派生的关卡上仍有明显短板，尤其是空中控制、躲避与拦截。",
+      "authors": "Jiajun Chen, Shicheng Fang, Jiahao Lu, Yuxin Wang, Xipeng Qiu",
+      "link": "https://arxiv.org/abs/2611.13028"
+    },
+    {
+      "title": "智能体做硬件，形式化方法来收口：规格、证明与推理引擎三条线",
+      "titleEn": "Agentic AI Meets Formal Verification in the Era of Agentic Hardware Development",
+      "summary": "这篇受邀综述讨论两个相向而行的趋势：智能体已经能生成并优化硬件电路，正确性因此更关键；与此同时，AI 也在降低形式化方法的使用门槛。作者从三个层面回顾智能体如何推进硬件形式化方法——规格、证明构造与推理引擎；又从另一方向讨论形式化方法如何支撑可信的 AI 硬件开发，包括 RTL 生成、调试和保持正确性的优化，并梳理了代表性工作。",
+      "authors": "Wenji Fang, Yuchao Wu, Jing Wang, Zhiyao Xie",
+      "link": "https://arxiv.org/abs/2611.13705"
+    },
+    {
+      "title": "按提示自适应组队：PISA-E 在推理时才决定用几个模型、花多少钱",
+      "titleEn": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
+      "summary": "面向质量与成本必须同时管住的 Web 服务，传统路由是「每个提示只挑一个模型」，固定集成又不能按单条请求改成员和花费。作者提出单模型路由器 PISA，以及它的集成扩展 PISA-E：用软聚类成员与模型专属预测器估计各模型能力，再在可在推理时调节、无需重训的成本—质量偏好下，联合选择集成组成与规模。核心是一个可处理的「集成成功」代理目标，用来在异构请求上做提示自适应的花销分配。",
+      "authors": "Saul Urso, Emanuele Carlini, Patrizio Dazzi, Matteo Mordacchini",
+      "link": "https://arxiv.org/abs/2611.10193"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 4 Hydrogen",
+      "vendor": "Google / Google DeepMind",
+      "highlight": "面向日常编码与智能体工作流的 Gemini 4 中档模型。官方称默认 high 思考档 AA 智能指数 51（高于 Gemini 4 Argon 的 50），xhigh 档 54；100 万 token 上下文一口价为每百万输入 1.50 美元、输出 7.50 美元。设 low / medium / high / xhigh 四档思考深度，输入与输出均可到 100 万 token。相对 Gemini 3.8 Flash，官方称默认档完成任务快 2.5 倍，Terminal-Bench 4.1 从 18.2% 提到 57%。即日起通过 Gemini API、AI Studio、Gemini 应用、搜索与 Antigravity 等表面陆续开放。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "name": "文心闪电深度思考 / 文心一镜微表情",
+      "vendor": "百度文心",
+      "highlight": "百度世界 2026 开幕式发布的两款文心应用模型，据第一财经，同步上线百度智能云千帆，面向企业客户及合作伙伴开放 API。李彦宏把策略概括为在继续投入前沿基座的同时，坚持「模体并行、协同进化」，让大模型为应用而优化。",
+      "link": "https://www.yicai.com/news/103437760.html"
+    },
+    {
+      "name": "Seedance 2.5 Flash",
+      "vendor": "字节跳动 / 火山引擎",
+      "highlight": "定位为最接近旗舰 Seedance 2.5 的高性价比视频生成模型。据凤凰网科技援引官方数据，生成速度翻倍；720P 文生/图生视频约 0.99 元/秒，较旗舰降约 34%；单段最长 30 秒，单次最多 10 图、5 段视频、5 段音频，分辨率 480P/720P，并支持视频编辑。将陆续登陆即梦等平台，API 定于 11 月 15 日上线火山方舟。",
+      "link": "https://original.ifeng.com/c/8xzaGjATIU1"
+    },
+    {
+      "name": "Granite 4.1 LLMON-preview（3B / 8B）",
+      "vendor": "IBM",
+      "highlight": "从 Granite 4.1 基座后训练的实验预览模型，用于消费和生成 LLMON 标记文本。官方称在 OPI 等静态间接提示注入基准上显著降低攻击成功率，同时通用能力与 Granite 4.1 Instruct 大致持平。预览仅供探索、不面向生产；权重与工具见 Hugging Face 与 GitHub。",
+      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+    },
+    {
+      "name": "ZONOS3-Mini",
+      "vendor": "Zyphra",
+      "highlight": "Apache 2.0 开源的实时零样本语音克隆与可调控 TTS。混合 Gated DeltaNet / Attention 的稀疏 MoE 骨干为 8 亿总参、1 亿激活，覆盖 43 种语言；官方称在 112 张 NVIDIA H100 上训练了 2.5 天。同步开出 bf16 与 gguf 权重、Hugging Face Space、MIT 许可的运行时（含 SGLang-Omni、MLX、WebGPU）以及 ZTTS2-Eval 评测集。博客标注日期为 11 月 11 日，Hugging Face 文章页为 11 月 12 日。",
+      "link": "https://huggingface.co/blog/Zyphra/zonos3-mini"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Antigravity 上线 Orchestrator：同一会话里在 Carbon 与 Hydrogen 之间自动切换",
+      "summary": "伴随 Gemini 4 Hydrogen，谷歌在 Antigravity 中推出 Orchestrator：不再从始至终只用一个模型，而是在同一会话里动态切换 Carbon 与 Hydrogen 等。官方称在 Terminal-Bench 4.0 上达到接近 Carbon 的任务成功率，同时平均少耗 24% 配额、完成速度快 19%。对需要并行智能体的工作流，可用 Carbon 做协调、Hydrogen 做工人与校验，在隔离工作区里同时改代码和跑测试。官方还提到配套的 Gemini 前端设计 skill，以及把 Hydrogen 用于表格、幻灯片和前端原型的演示。",
+      "source": "Google Blog / Google Antigravity",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "models": [
+        "Gemini 4 Carbon"
+      ]
+    },
+    {
+      "title": "Genie MCP 把企业本体和搜索交给 ChatGPT、Claude、Copilot 与 Grok Bot",
+      "summary": "Databricks 为第二代 Genie 提供 MCP 接口：智能体可以通过一次受治理的搜索，跨湖仓表格与 Google Drive、Jira、Confluence 等应用找资料，而不必对每个应用分别做工具调用。官方还列出 Atlassian、Google Drive、GitHub 等新的 MCP 连接器，以及 OpenSharing，供团队在不暴露底层数据的前提下与合作方协作。需注意：Genie 与 Ontology 已一般可用，常在线体验与 Genie Search 仍是即将预览，而不是即日全量开放。",
+      "source": "Databricks",
+      "link": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+      "models": []
+    },
+    {
+      "title": "AWS Emulator：编程智能体可在笔记本上对同一套 AWS API 做本地迭代",
+      "summary": "AWS 把这款本地模拟器明确写成给 Kiro、Claude Code 一类编程智能体用的闭环：在本机创建资源、检查结果、再改一遍，而不必等待区域部署。它按公开 Smithy/API 模型生成接口，保真测试套件公开在 GitHub；尚未实现的操作返回 HTTP 501。安全上，默认只监听本机、只接受自己签发的密钥，但官方提醒它并不按 AWS 的方式评估 IAM，不能代替上线前的云上安全验证。11 月 12 日的博文更新补上了 GitHub 仓库链接。",
+      "source": "AWS News Blog",
+      "link": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+      "models": []
+    },
+    {
+      "title": "LLMON 把「指令/数据/约束/执行」写成模型可读的标记，并开出工具链",
+      "summary": "IBM 同时开出 LLMON 仓库、JSON↔LLMON 无损转换器，以及在 Mellea 中的原生支持。常规聊天模板只区分 system/user/assistant 角色；LLMON 进一步标明每个部件的含义，并用 exec 块绑定「这条指令作用在哪份数据上」。未绑定的诱饵指令会被留在上下文里但不被执行——这是为降低间接提示注入而设计的学习目标。官方也演示了用自定义标签加 LoRA，把这套词汇接到 ScienceWorld 等任务上。预览明确不面向生产。",
+      "source": "IBM Granite / Hugging Face",
+      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "models": []
+    }
+  ]
+}
