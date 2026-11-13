@@ -4,9 +4,14 @@
     "w": "星期五",
     "pts": [
       "英伟达官方宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
-      "公益组织在旧金山起诉五家公司，要求叫停前沿模型继续开发",
-      "谷歌发布 Gemini 4 Hydrogen：官方称默认档 AA 指数 51，定价 $1.50/$7.50",
-      "百度文心闪电/一镜上线千帆；火山引擎 Seedance 2.5 Flash 约 0.99 元/秒"
+      "公益组织在旧金山起诉五家公司，要求法院叫停前沿模型继续开发",
+      "谷歌发布 Gemini 4 Hydrogen：官方称默认档 AA 指数 51，定价 $1.50 / $7.50",
+      "国内应用层放量：文心闪电/一镜上线千帆，Seedance 2.5 Flash 定价约 0.99 元/秒",
+      "企业工具两条线：Databricks 常在线 Genie，AWS 推出由智能体维护的本地模拟器",
+      "论文：量化智能体靠闭环纠偏逼近全精度，抓取合规率普遍不到 5%",
+      "Thinking Machines 按期履约：Inkling 2 Small 594B 权重以 Apache 2.0 开源",
+      "Anthropic 招股定档：11 月 18 日定价、19 日以 ANT 挂牌，传超购约 6 倍",
+      "具身智能一年 648 起、1237.11 亿元；北京出三年方案、深圳设百亿基金"
     ],
     "link": "AI日报-2026-11-13.html",
     "m": [
@@ -14,7 +19,14 @@
       "Gemini 4 Carbon",
       "Gemini 4 Argon",
       "文心闪电深度思考",
-      "Seedance 2.5 Flash"
+      "Seedance 2.5 Flash",
+      "文心闪电深度思考 / 文心一镜微表情",
+      "Granite 4.1 LLMON-preview（3B / 8B）",
+      "ZONOS3-Mini",
+      "Inkling 2 Small",
+      "Nex-N2.6",
+      "Alpamayo 2 Edge",
+      "meta-encoder-v1"
     ],
     "bf": false
   },
