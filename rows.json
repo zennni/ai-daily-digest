@@ -1,6 +1,5 @@
 {
  "date": "2026-11-13",
- "aa_index_version": "v5.0.1",
  "models": [
   {
    "name": "Claude Fable 5.2",
@@ -81,7 +80,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>11-10(美东)全球全量开放:Gemini API／AI Studio／Gemini for Business／AI Ultra 订阅(Gemini App、搜索 AI Mode、Antigravity)同步可用;Fairwind 计划继续受理网安防御者申请</b>;介绍期定价 $2/$10、缓存 $0.10，至 2026-11-30（与 Argon 同档）；2026-12-01 起恢复标价 $4/$20、缓存 $0.20（官方 Standard 价目表，主分用折后有效价；缓存不入主性价比）;1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
+   "note": "<b>10/28 发布,AA v5.0 榜首 59.4</b>;<b>11-10(美东)全球全量开放:Gemini API／AI Studio／Gemini for Business／AI Ultra 订阅(Gemini App、搜索 AI Mode、Antigravity)同步可用;Fairwind 计划继续受理网安防御者申请</b>;介绍期定价 $2/$10(与 Argon 持平,后续调整为 $4/$20),缓存输入再享 95% 折扣=$0.10(<b>12-01 起输入恢复 $4/$20 时同为 95% 折扣=$0.20</b>);1M 上下文,文本+图像+视频+语音输入;SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0%、WebDev Arena 1769 Elo(第 4,较 Argon +89)、Terminal-Bench 4.0 作弊成功 0.0%;AA 记单任务成本 $7.76;<b>AA 本期已给出 High／Medium／Low 三档独立分(59／58／54),其余思考档仍未评分(列入第六节)</b>",
    "cost": 4.5,
    "ability": 92.3,
    "costscore": 30.24809934544115,
@@ -125,7 +124,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档（介绍期 $2/$10、缓存 $0.10 至 11-30；12-01 起恢复 $4/$20、缓存 $0.20）;AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(11-10 起全球全量开放)",
+   "note": "<b>AA v5.0 Medium 档 57.7,主榜第 3 位——同一基础模型的中档首次获得独立分,且分数高于 Claude Opus 5.5 的 Max 档(58.4)之下的所有条目</b>;价格同 High 档(介绍期 $2/$10、标准 $4/$20,缓存命中 $0.10；12-01 起恢复 $0.20);AA 记单任务成本 $6.59(低于 High 档 $7.76)——<b>降一档省 15% 成本只少 1.7 分</b>;可用性同 High 档(11-10 起全球全量开放)",
    "cost": 4.5,
    "ability": 89.2,
    "costscore": 30.24809934544115,
@@ -301,7 +300,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "AA v5.0 Low 档 54——<b>本模型三档跨度 5.4 分(59.4→54),是同代旗舰里档位跨度最小的一组,说明其能力主要来自基础模型而非推理时长</b>;价格同 High 档（介绍期 $2/$10、缓存 $0.10 至 11-30；12-01 起恢复 $4/$20、缓存 $0.20）;AA 未公布该档单任务成本(显示为空)",
+   "note": "AA v5.0 Low 档 54——<b>本模型三档跨度 5.4 分(59.4→54),是同代旗舰里档位跨度最小的一组,说明其能力主要来自基础模型而非推理时长</b>;价格同 High 档;AA 未公布该档单任务成本(显示为空)",
    "cost": 4.5,
    "ability": 83.1,
    "costscore": 30.24809934544115,
@@ -309,6 +308,28 @@
    "eff": 12.0,
    "grade": "B",
    "rank": 14
+  },
+  {
+   "name": "Gemini 4 Hydrogen",
+   "vendor": "Google",
+   "country": "美国",
+   "tier": "xHigh",
+   "aa": 54,
+   "aa_dec": null,
+   "pin": 1.5,
+   "pcache": 0.075,
+   "pout": 7.5,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>11-12（美东，北京时间 11-13 凌晨）发布即入榜：AA v5.0.1 <u>xhigh 档 54</u>——Gemini 系首次出现高于 high 的推理档，比 Gemini 4 Argon（High 50）高 4 分，比 Claude Sonnet 5.5 与 GPT-6.1 Sol 的最高档（各 55）低 1 分</b>;<b>定价 $1.50／$7.50、缓存命中 $0.075（95% 折扣）</b>，官方口径「完整 1M 上下文窗口内统一计价、无阶梯」;1M 输入／最高 1M 输出，文本+图像+音频+视频输入、文本输出;AA 记单任务成本 <b>$3.16</b>（约为 Sonnet 5.5 Max 的 32%、GPT-6.1 Sol Max 的 2.5 倍）;<b>必须提醒：AA 记每任务输出 304M token，为中位数（≈72.8M）的 4 倍，属「极啰嗦」分位——xhigh 用近一倍输出 token 只换来相对 high 的 3 分</b>;第三方独立分：Terminal-Bench 4.0 54%（低于 Sonnet 5.5 的 64%、Sol 的 56%）、Terminal-Bench-Science 0.1 50%、GDP.pdf medium 档 33% all-pass 并列第一、AA-Omniscience 幻觉率 8%（AA 记录的最低值之一）",
+   "cost": 3.375,
+   "ability": 83.1,
+   "costscore": 35.654853989528846,
+   "value": 64,
+   "eff": 16.0,
+   "grade": "B",
+   "rank": 15
   },
   {
    "name": "Claude Fable 5.2",
@@ -330,28 +351,6 @@
    "value": 52,
    "eff": 3.0,
    "grade": "C",
-   "rank": 15
-  },
-  {
-   "name": "Gemini 4 Hydrogen",
-   "vendor": "Google",
-   "country": "美国",
-   "tier": "xHigh",
-   "aa": 54,
-   "aa_dec": 53.9,
-   "pin": 1.5,
-   "pcache": 0.075,
-   "pout": 7.5,
-   "open_": "闭源",
-   "lic": "专有",
-   "src": "官方",
-   "note": "<b>AA v5.0.1 Xhigh 档 53.9</b>（同系四档最高；High 50.8、Medium 41.2、Low 26.9）；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
-   "cost": 3.375,
-   "ability": 83.1,
-   "costscore": 35.654853989528846,
-   "value": 64,
-   "eff": 16.0,
-   "grade": "B",
    "rank": 16
   },
   {
@@ -448,14 +447,14 @@
    "country": "美国",
    "tier": "High",
    "aa": 51,
-   "aa_dec": 50.8,
+   "aa_dec": null,
    "pin": 1.5,
    "pcache": 0.075,
    "pout": 7.5,
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA v5.0.1 High 档 50.8</b>；价格同 xHigh 档；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "note": "<b>AA v5.0.1 High（官方默认档）51——高于 Gemini 4 Argon（50），AA 称「以约 19% 的单任务成本拿到与 Argon 相当的智能」</b>;价格与 xhigh 同档 $1.50／$7.50、缓存 $0.075;AA 记单任务成本 $1.87、输出速度约 190–200 tok/s、单任务 13.5 分钟;<b>Google 自报（厂商口径，非独立复现）：相较 Gemini 3.8 Flash（High）完成任务快 2.5 倍、Terminal-Bench 4.1 由 18.2% 升至 57%、捏造陈述减少 5 倍以上、HLE-Diamond 58.8%、MKA 53.4%</b>;可用性：Gemini API／AI Studio（全档位）／Gemini App（含免费用户模型选择）／Google Search／Gemini for Business，Antigravity 面向 AI Pro／Ultra 订阅;同批发布 Antigravity「Orchestrator」可在 Carbon 与 Hydrogen 间动态分工（Google 自报 Terminal-Bench 4.0 配额省 24%、快 19%）",
    "cost": 3.375,
    "ability": 78.5,
    "costscore": 35.654853989528846,
@@ -477,7 +476,7 @@
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "10/13 起对公众开放,当前 Google 公开可用的最高档;<b>v5.0 单项第一:AutomationBench-AA 78%</b>;1M 统一上下文、默认输出 65,536;介绍期 $2/$10、缓存 $0.10 至 11-30；12-01 起恢复标价 $4/$20、缓存 $0.20;AA 记单任务成本 $7.68;官方 thinking 提供 low/medium(默认)/high 三档,<b>AA 仅发布 High 档独立分(其余档列入第六节)</b>",
+   "note": "10/13 起对公众开放,当前 Google 公开可用的最高档;<b>v5.0 单项第一:AutomationBench-AA 78%</b>;1M 统一上下文、默认输出 65,536;介绍期 $2/$10 至 11-30,缓存 $0.10;AA 记单任务成本 $7.68;官方 thinking 提供 low/medium(默认)/high 三档,<b>AA 仅发布 High 档独立分(其余档列入第六节)</b>",
    "cost": 4.5,
    "ability": 76.9,
    "costscore": 30.24809934544115,
@@ -734,14 +733,14 @@
    "country": "美国",
    "tier": "Medium",
    "aa": 41,
-   "aa_dec": 41.2,
+   "aa_dec": null,
    "pin": 1.5,
    "pcache": 0.075,
    "pout": 7.5,
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA v5.0.1 Medium 档 41.2</b>；价格同 xHigh 档；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "note": "AA v5.0.1 Medium 档 41；价格同档 $1.50／$7.50（AA 记单任务成本 $0.80）；<b>四档近乎线性递进（27／41／51／54），Medium 是本代 Gemini 4 的「成本-能力」折中点</b>；AA 记 GDP.pdf 在该档取得 33% all-pass，称与榜首并列；<b>Medium 41 分已高于上代 Gemini 3.8 Flash 的全部三档（31／30／23）</b>",
    "cost": 3.375,
    "ability": 63.1,
    "costscore": 35.654853989528846,
@@ -1090,10 +1089,10 @@
    "pin": 0.3,
    "pcache": 0.03,
    "pout": 1.0,
-   "open_": "开放权重",
+   "open_": "开源",
    "lic": "Apache 2.0",
    "src": "官方",
-   "note": "AA Changelog <b>05 Nov</b> 新入 Intelligence Index <b>31</b>（slug inkling-2-small / release inkling-small-1102-rc17，releaseDate 2026-11-05）；Thinking Machines Tinker 官方 Models & Pricing：594B/17B MoE Hybrid+Vision、默认 64K（:peft:262144 为 256K）；Serverless Inference（Beta）挂牌 <b>$0.30/$1.00</b>、缓存输入 $0.03（与训练侧 prefill/sample 同价）；<b>官方新闻页 2026-11-12 更新：Inkling 2 Small’s weights are now available for download on HuggingFace</b>（主仓 <code>thinkingmachines/Inkling-2-Small</code> NVFP4，另有 MXFP8；HF lastModified 2026-11-12 21:35 UTC／上海 11-13 05:35；模型卡与 README 均标 Apache 2.0，并另有 Acceptable Use Policy）。原生 NVFP4 约需合计 500GB 显存（如 2×B300 或 4×H200）——<b>仍不入个人本地档</b>。无统一公开原厂消费级 API 页，价仍取 Tinker 官方 serverless。",
+   "note": "AA Changelog <b>05 Nov</b> 首评 Intelligence Index <b>31</b>（slug inkling-2-small）；<b>11-12 权重落地：Thinking Machines 在 11-05 发布页追加更新，HF <code>thinkingmachines/Inkling-2-Small</code> 放出全量检查点，许可证 <u>Apache 2.0</u>（含专利授权、可商用/微调/再分发，无研究限定、无用户规模门槛）——上期「闭源权重、Apache 2.0 仅为承诺」的标注本期兑现，开放状态由「开放权重（HF 私有）」改为「开源」</b>;规格：第二代 MoE，<b>594B 总参／17B 激活</b>（384 专家取 8）、48 层、文本+图像输入、1M 上下文、可变思考强度;官方同步给出 SGLang／vLLM／TokenSpeed／Unsloth 与 Miles／SkyRL 后训练集成，托管侧 NVIDIA／Fireworks／Together／Baseten／Nebius／Modal／Cloudflare 挂牌统一 <b>$0.30／$1.00</b>、缓存输入 $0.03（Tinker serverless 同价）;<b>硬件现实：模型卡载 NVFP4 检查点需约 500GB 显存、MXFP8 约 800GB——不是单卡可跑，本期按「权重已发布」首次列入第五节 512GB 档（INT4≈327GB）与数据中心级说明</b>;AA 记单任务成本 $1.18;<b>定位提示：AA 文章称其为「中国以外最高分的开放权重模型」，但编码分项仍低于 DeepSeek V4.1 Flash（DeepSWE v1.1 72.1% vs 77.0%）——厂商自测口径，仅作参考</b>",
    "cost": 0.55,
    "ability": 47.7,
    "costscore": 69.75190065455884,
@@ -1416,14 +1415,14 @@
    "country": "美国",
    "tier": "Low",
    "aa": 27,
-   "aa_dec": 26.9,
+   "aa_dec": null,
    "pin": 1.5,
    "pcache": 0.075,
    "pout": 7.5,
    "open_": "闭源",
    "lic": "专有",
    "src": "官方",
-   "note": "<b>AA v5.0.1 Low 档 26.9</b>；价格同 xHigh 档；<b>11-12 发布</b>（AA Changelog dateLa 2026-11-12，releaseDate 同日）；Google 官方 Gemini API／AI Studio 模型 <code>gemini-4-hydrogen</code>，定位日常编程与 Agent 工作流，统一 1M 上下文、长解码至 1M tokens；<b>官方 Standard 价 $1.50/$7.50、缓存 $0.075（仅隐式缓存）</b>，Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用；闭源专有。主分按官方 Standard 计标准任务成本 $3.375。",
+   "note": "AA v5.0.1 Low 档 27（AA 记单任务成本 $0.29，四档中最快）；<b>须注意：Low 档 27 分低于同门 Gemini 3.8 Flash 的 Medium（30）与 High（31）——低思考档并不必然优于上一代中档，选型必须按档位比对而非按代际</b>；价格同档 $1.50／$7.50（同一模型各推理档 API 单价相同）",
    "cost": 3.375,
    "ability": 41.5,
    "costscore": 35.654853989528846,
@@ -2337,29 +2336,70 @@
  ],
  "changes": [
   {
-   "d": "11-13",
-   "t": "Gemini 4 Hydrogen 四档首获同口径分（102→106）：Xhigh 54、High 51、Medium 41、Low 27",
+   "d": "11-12",
+   "t": "Gemini 4 Hydrogen 发布即入榜四档（27／41／51／54）：主表 102→106，xhigh 档 54 分成为谷歌最高分档位",
    "m": [
     "Gemini 4 Hydrogen"
    ],
-   "s": "<b>AA Changelog 2026-11-12 新增 Gemini 4 Hydrogen 四个推理档，均已有 Intelligence Index v5.0.1 独立分：Xhigh 53.9、High 50.8、Medium 41.2、Low 26.9</b>（slug gemini-4-hydrogen / -high / -medium / -low；官方 releaseDate 2026-11-12）。<b>Google 官方 Standard 价目表（AI Studio／Gemini API）为 $1.50/$7.50、缓存 $0.075（仅隐式缓存），1M 上下文；Batch／Flex 半价 $0.75/$3.75，Priority $2.70/$13.50，Standard 免费档可用</b>。闭源专有。标准任务成本 $3.375，不改变本期成本锚点（$0.11–$22.50），既有配置性价比分不变。主表 102→106；Xhigh 插入原第 16 位附近（54.0 与 52.5 之间）。"
+   "s": "<b>Google 于 11-12（美东 18:00，北京时间 11-13 凌晨）发布 Gemini 4 Hydrogen，AA 在发布后约 7 分钟给出四档独立分：<u>Low 27／Medium 41／High（默认）51／Xhigh 54</u>（AA Changelog 11-12 唯一一条「New language model evaluation results available」）</b>。<b>定价 <u>$1.50／$7.50 每百万 token、缓存命中 $0.075（95% 折扣）</u>，官方口径「完整 100 万 token 上下文窗口内统一计价、无阶梯」；1M 输入、最高 1M 输出，文本+图像+音频+视频输入、文本输出；四档思考深度（low／medium／high／xhigh），xhigh 为 Gemini 系首次出现的高于 high 的档位</b>。<b>两点超出「又一个小模型」的意义：① <u>High 档 51 分已高于同门旗舰 Gemini 4 Argon（50）</u>，xhigh 54 与 Claude Sonnet 5.5、GPT-6.1 Sol 的最高档仅差 1 分——「高效执行档」与「旗舰档」的分数差被压缩到 1–3 分；② <u>免费用户首次可通过 Gemini App 模型选择用到 Gemini 4 系列</u>，Google Search 同步升级（官方称迄今最大规模模型升级）</b>。<b>成本侧须如实提示：AA 记 xhigh 单任务成本 $3.16、每任务输出 304M token（中位数约 72.8M 的 4 倍，属「极啰嗦」分位）——xhigh 把输出 token 推高近一倍只换来 3 分；High 档 $1.87、Medium $0.80、Low $0.29</b>。<b>本报告处置：四档全部入主榜（第 15／21／34／65 位），标准任务成本均按 $3.375 计、综合性价比 64 B／61 B／52 C／39 D；<u>Top 15 名单因此出现两处进出：xhigh 档（64 B）进第 7、High 档（61 B）进第 15；GLM-5.3-Flash（61 B）由第 14 退至第 16、Claude Opus 5.5 xHigh（60 B）退至第 17</u></b>。<b>另须标注：AA 榜单页对 Hydrogen 仅给整数分（无小数位），本表按整数记录，同分段内按「标准任务成本→输出价→档位强度」既定链路打破并列，不做小数插值</b>。"
   },
   {
-   "d": "11-13",
-   "t": "Inkling 2 Small 权重按期兑现：HF 可下载，许可落实 Apache 2.0",
+   "d": "11-12",
+   "t": "Inkling 2 Small 兑现 Apache 2.0 全量权重（594B/17B）：开放状态改「开源」，成中国以外最高分开放权重模型",
    "m": [
     "Inkling 2 Small"
    ],
-   "s": "<b>Thinking Machines 官方新闻页 2026-11-12 更新原文：「Nov 12, 2026 Update: Inkling 2 Small’s weights are now available for download on HuggingFace」</b>；官网标题同步改为「Open weights, ready to tinker」。<b>HF 仓 <code>thinkingmachines/Inkling-2-Small</code>（另有 MXFP8）已公开、非 gated，cardData.license 与 README 均为 Apache 2.0</b>（另有 Model Acceptable Use Policy）；API lastModified 2026-11-12 21:35 UTC（上海 11-13 05:35）。此前 11-11 条已写明「初期闭源权重、下周兑现 Apache 2.0」——现已兑现，主榜改为「开放权重 + Apache 2.0」。594B/17B MoE，原生 NVFP4 约需 500GB 显存，<b>仍不入个人本地／生图档</b>。Tinker serverless 挂牌仍为 $0.30/$1.00、缓存 $0.03，分数与性价比不变。"
+   "s": "<b>Thinking Machines 于 11-12 在 11-05 发布页追加更新，Hugging Face <code>thinkingmachines/Inkling-2-Small</code> 放出全量检查点，许可证 <u>Apache 2.0</u>——上期「闭源权重、Apache 2.0 属承诺而非既成事实」的标注本期兑现，「下周」窗口（11-10～11-16）内落地</b>。<b>许可实质：Apache 2.0 允许商用、微调、再分发并附明确专利授权，<u>无研究限定、无用户规模门槛、无地域限制</u>（区别于 Llama／Qwen／混元社区许可的营收或月活条款）</b>。<b>规格：第二代 MoE，594B 总参／17B 激活（384 专家取 8）、48 层、文本+图像输入、1M 上下文、可变思考强度；官方同步给出 SGLang／vLLM／TokenSpeed／Unsloth 与 Miles／SkyRL 后训练集成；托管侧 NVIDIA／Fireworks／Together／Baseten／Nebius／Modal／Cloudflare 统一 $0.30／$1.00、缓存 $0.03</b>。<b>硬件现实（本期最重要的一句提醒）：模型卡载 <u>NVFP4 检查点需约 500GB 显存、MXFP8 约 800GB</u>——「17B 激活」省的是算力不是显存，个人单卡仍不可跑；本报告据此首次将该模型列入第五节 <u>512GB 档（INT4≈327GB）</u>并同步数据中心级说明</b>。<b>能力侧不变：AA v5.0.1 维持 31 分（第 47 位），AA 文章称其为「中国以外最高分的开放权重模型」；但厂商自测的编码分项仍低于 DeepSeek V4.1 Flash（DeepSWE v1.1 72.1% vs 77.0%、FrontierCode v2.0 25.4% vs 28.5%）——「最高分」限定在 AA 综合指数，不等于编码领先</b>。"
   },
   {
    "d": "11-13",
-   "t": "Gemini 4 Carbon 缓存价按介绍期口径更正为 $0.10（至 11-30；12-01 恢复 $0.20）",
+   "t": "口径更正：Gemini 4 Carbon 三档缓存命中价按介绍期 $0.10 记（12-01 起输入恢复 $4 时同步为 $0.20）",
    "m": [
-    "Gemini 4 Carbon",
-    "Gemini 4 Argon"
+    "Gemini 4 Carbon"
    ],
-   "s": "<b>Google 官方 Standard 价目表现仍为介绍期 $2/$10，至 2026-11-30；2026-12-01 起恢复 $4/$20；缓存同步为 $0.10 至 11-30、$0.20 自 12-01</b>（Carbon／Argon 同档，仅隐式缓存）。主分入/出价本就按折后 $2/$10 计（标准任务成本 $4.50），性价比分不变。<b>仅将 Carbon 三档 pcache 由 $0.20 更正为介绍期 $0.10</b>（此前误按恢复价／或按 $4 的 95% 折扣书写）；Argon 已是 $0.10，只补恢复日说明。缓存命中价不进入主性价比。"
+   "s": "<b>自查发现并更正：Carbon 三档原记缓存命中价 $0.20，与同价档的 Gemini 4 Argon（介绍期 $2/$10 时缓存 95% 折扣＝$0.10、12-01 恢复 $4/$20 后才为 $0.20）以及 Google 模型页标注的「Cache discount 95%」不一致——<u>$2 输入的 95% 折扣应为 $0.10</u></b>。<b>本期将三档 pcache 由 $0.20 更正为 $0.10，并在第九节促销段补注恢复日后的 $0.20</b>。<b>影响：<u>无</u>——缓存命中价不参与标准任务成本（按 100 万未缓存输入 + 25 万输出计），三档能力分、成本分、综合性价比分与名次全部不变，仅「缓存输入价」列显示值更正</b>。"
+  },
+  {
+   "d": "11-13",
+   "t": "汇率 6.7174→6.7152（调升 22 基点）：四组人民币定价模型美元成本下移约 0.03%，无名次与等级变化",
+   "m": [
+    "Hy4",
+    "DeepSeek V4.1 Flash（1017 当前正式版）",
+    "DeepSeek V4 Pro 0813",
+    "GLM-5.3-Flash"
+   ],
+   "s": "<b>中国外汇交易中心 2026-11-13 人民币对美元中间价报 1 USD = 6.7152 CNY，较 11-12 的 6.7174 调升（人民币升值）22 基点</b>（金十数据 11-13 09:15 快讯、每日经济新闻、中国货币网三源一致）。<b>影响面仍限于人民币定价的四组：Hy4 $0.446787／$1.34036／缓存 $0.022338；DeepSeek V4.1 Flash 1017 三档 $0.297841／$1.191363／缓存 $0.005957；DeepSeek V4 Pro 0813 两档 $1.34036／$4.021081／缓存 $0.044679；GLM-5.3-Flash $0.119133／$0.416912／缓存 $0.03425</b>。<b>幅度为 3 位小数级（成本下移约 0.03%），<u>不产生任何名次、等级或 Top15 进出</u>——本期全部结构变化来自 Hydrogen 四行与 Inkling 2 Small 的开放状态变更</b>。"
+  },
+  {
+   "d": "11-12",
+   "t": "产业：英伟达公告黄仁勋辞任总裁/CEO/董事，CFO Colette Kress 任临时 CEO，股价盘中跌约 13%",
+   "m": [
+    "NVIDIA Nemotron 3 Ultra",
+    "NVIDIA Nemotron 3.5 Super VL",
+    "NVIDIA Nemotron 3.5 Lightning"
+   ],
+   "s": "<b>英伟达 11-12（美东）公告：联合创始人黄仁勋辞去总裁、首席执行官及董事会成员职务，即刻生效；执行副总裁兼 CFO 科莱特·克雷斯（Colette Kress）出任临时 CEO 并继续兼任 CFO；董事会任命 Harvey C. Jones 为史上首位董事会主席，并启动正式 CEO 遴选（含外部候选人）</b>（英伟达公告；环球时报、中国证券网、新华社等转载）。<b>市场反应：开盘一度跌 13%，市值自 2025-07 以来首次跌破 4 万亿美元（路透／BBC 报道）</b>。<b><u>公告未披露离任具体原因，独立调查（Wachtell Lipton 主导）结论尚未公布——本报告只记录「公告事实 + 市场反应」，不对未经核实的原因作任何推断</u></b>。<b>对榜单的口径影响：<u>无</u>。NVIDIA 三条 Nemotron 的 AA 分数与第三方托管价均未变（Nemotron 3 Ultra 550B-A55B 12、3.5 Super VL 14、3.5 Lightning 6），本条仅作算力供给侧的风险留痕——若后续资本开支或供货节奏变化，将主要影响自部署硬件成本而非 token 牌价</b>。"
+  },
+  {
+   "d": "11-12",
+   "t": "非入榜项登记：Runway Praxis-1（27B 视频/机器人世界模型）、Iris-Z（基于 FLUX.2 的 32.2B/9.1B 生图）、文心 5.5 Flash Preview（280B/14B，权重承诺 11-25 前 Apache 2.0）",
+   "m": [
+    "Runway Praxis-1",
+    "Iris-Z",
+    "文心 5.5 Flash Preview"
+   ],
+   "s": "<b>三类按既定筛除规则不入主榜，仅留痕：① <u>Runway Praxis-1</u>（27B，同时预测视频与机器人动作的世界模型，权重已在 HF、代码在 GitHub、支持 LeRobot；厂商称 NVIDIA RoboLab-120 的 1200 次测试成功率 46.2%）——<b>属世界模型/具身控制，非通用文本 LLM</b>；② <u>Iris-Z</u>（基于 FLUX.2 的 32.2B 与 9.1B 两版，9.1B 约 33GB 显存可跑全任务）——<b>纯生图模型，归五A 生图榜；但许可条款与量化口径尚未核实，本期只登记不入档</b>；③ <u>文心 5.5 Flash Preview</u>（280B 总参／14B 激活，API 已上限千帆，忙时输入 ¥2／输出 ¥8、闲时 ¥1／¥4 且限时五折，官方称权重将于 11-25 前以 Apache 2.0 放出）——<b>AA 尚无条目、Preview 阶段且权重未落地，按规则不入主榜与第四节，转第七节跟踪</b></b>。<b>另两条本期发布但不属主榜口径：<u>小红书 dots.tts.edit V1.1</u>（语音编辑，Apache 2.0）与 <u>DeepL Aure</u>（实时语音翻译）——纯语音，不入榜；<u>Claude Meetings</u>（11-12，Team/Enterprise 测试版，可加入视频会议实时产出文档/白板）为产品功能而非模型，不入榜</b>。"
+  },
+  {
+   "d": "11-13",
+   "t": "复核维持：LongCat-2.5 仍无 AA 条目、Hy4 正式版权重未发、K2 Horizon 托管价 71 天未公布",
+   "m": [
+    "LongCat 2.5",
+    "Hy4",
+    "K2 Horizon 375B-A23B",
+    "Qwen3.8 Max"
+   ],
+   "s": "<b>三项上期挂账本期复核仍无进展：① 美团 <u>LongCat-2.5</u>（1.6T 总参／≈48B 激活、MIT、1M 上下文）的 MIT 全量权重自 11-09 落地后，<u>AA 至今无该模型条目</u>，继续只登记第七节、不入主榜与第四/五节；② 腾讯混元 <u>Hy4 正式版权重</u>仍未发布（HF／GitHub 可下载的仍只有 8 月 Hy4-preview，Apache 2.0），官方「近期开源」口径已挂 9 天；③ MBZUAI IFM <u>K2 Horizon 375B-A23B</u> 托管价自 9-03 发布已 <u>71 天</u>未公布（Cerebras／AWS／Nebius／Compass 四渠道复核仍无挂牌价，主表价格列 N/A）</b>。<b>另复核维持：<u>Qwen3.8-2.4T-A95B</u> 权重虽已上 HF／ModelScope，但 LICENSE 为自定义 Qwen3.8-Max License，<u>「全系 Apache」的媒体表述不实</u>，主表与第五节均按自定义许可标注；<u>阿里 Qwen4</u> 仍无发布日期/模型 ID/定价与许可，11-09 的「跑分泄露」不予采信</b>。"
   },
   {
    "d": "11-12",
