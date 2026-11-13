@@ -1,5 +1,29 @@
 [
   {
+    "d": "2026-11-14",
+    "w": "星期六",
+    "pts": [
+      "OpenAI 推出 ChatGPT Wallet：智能体代下单，每笔须本人生物识别确认",
+      "研究者称六个中国模型权重带 Blackwell「指纹」，报告自认不能证明违规",
+      "SpaceX 宣布两座超算园区，计划投资合计逾 740 亿美元",
+      "Notion 确认 Fireworks 被入侵致部分 Notion AI 聊天记录外泄",
+      "OpenAI Daybreak 两款安全产品：智能体找漏洞、起草补丁，不自动部署",
+      "LangChain 3 亿美元 C 轮估值 30 亿，Mirendil 10 亿美元 A 轮",
+      "DeepSeek 开放全家桶应用 API；混元 Hy Realtime、讯飞 SparkAudio 1.0 上线",
+      "论文：差执行者也能当好老师，JEV 把 ALFWorld 成功率提到 82.9%"
+    ],
+    "link": "AI日报-2026-11-14.html",
+    "m": [
+      "DeepSeek V4 Pro",
+      "DeepSeek V4 Flash",
+      "Kimi K3.1 Pro",
+      "Kimi K3",
+      "MiniMax M3",
+      "Ling 3.1 Flash"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-13",
     "w": "星期五",
     "pts": [

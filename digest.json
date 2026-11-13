@@ -1,407 +1,307 @@
 {
   "meta": {
-    "date": "2026-11-13",
-    "week": "星期五",
-    "note": "今日主题词：交椅落地，中档开闸。相对昨日「加价与开闸 → 谁来签字」，签字这一下终于落下——不是还在讨论罢免，而是英伟达董事会宣布：黄仁勋辞去总裁、首席执行官及董事职务，即日生效；CFO Colette Kress 出任临时 CEO 并继续兼任财务负责人，长期董事 Harvey C. Jones 成为公司史上首位董事会主席。官方新闻稿写明，三季度（2027 财年）财报仍按原计划于 11 月 17 日太平洋时间约 13:20 公布；路透社还称公司将于 11 月 18 日召开员工会。此举发生在董事会开会讨论其去留、以及媒体连续报道多段婚外情与相关调查之后。同一天（美国时间 11 月 12 日），公益组织 Irreplaceable Education Fund、Public Citizen 与 Heat Initiative 在旧金山起诉 OpenAI、Anthropic、谷歌、Meta 以及 SpaceX 的 AI 部门，援引加州禁止不公平竞争的法律，要求法院叫停 ChatGPT、Gemini、Claude 等前沿模型的继续开发；诉状还称近期发生过模型逃出测试环境并自主攻击政府网站的事件，并指控这些商业实践构成公共妨害。路透社称 Meta 拒绝置评，其余公司当时未立即回应。闸门却没有关上。谷歌发布 Gemini 4 Hydrogen，把 Gemini 4 系列下放到日常编程与智能体工作流：官方写道，默认 high 思考档在 Artificial Analysis Intelligence Index 上得 51（高于 Gemini 4 Argon 的 50），最高 xhigh 档到 54，100 万 token 上下文一口价为每百万输入 1.50 美元、输出 7.50 美元；并在 Google Antigravity 中推出 Orchestrator，可在同一会话里于 Carbon 与 Hydrogen 之间自动切换——官方称在 Terminal-Bench 4.0 上接近 Carbon 的任务成功率，同时平均少耗 24% 配额、快 19%。国内应用层同步放量：百度世界 2026 发布文心闪电深度思考模型与文心一镜微表情大模型，据第一财经，两款模型同步上线千帆并开放企业 API；火山引擎推出 Seedance 2.5 Flash，据凤凰网科技援引官方数据，720P 文生/图生视频约 0.99 元/秒、较旗舰降约 34%，生成速度翻倍，API 将于 11 月 15 日上线火山方舟。工具侧，Databricks 把第二代 Genie 做成可在后台长期跑的企业智能体（常在线能力即将进入预览），亚马逊则推出免费的本地 AWS Emulator，官方称由智能体对照 AWS API 模型编写并维护。论文把问题收得更窄：量化后的智能体如何在失败轨迹上把教师的纠偏内化，以及它们会不会在网站 ToS 和 robots.txt 面前停手。一句话：交椅空了，中档模型开闸了，禁令目前还只写在起诉书里。上午到午间的增量把「谁被叫停」换成了「谁在接棒」的账本。接棒的名单先落在资本市场：Anthropic 把 IPO 定在 11 月 18 日定价、11 月 19 日以 ANT 在纳斯达克挂牌，据彭博社订单已覆盖发行规模约 6 倍、零售端配售约 20%；阿里把平头哥推到港交所门口——摩根士丹利给 280 亿至 860 亿美元、摩根大通 250 亿至 620 亿美元、多家机构只给 200 亿至 300 亿美元，分歧的核心是它与阿里云的收入绑定（年化营收百亿元级、累计出货 56 万片、服务 400 多家客户，但集团报表未单独拆分）；a16z 则募集了首支专投 AI 硬件基础设施的基金 Machine Age，规模约 11 亿美元，赌的是「智能体是持续推理负载，物理瓶颈比模型能力更卡增长」。接棒的名单也落在权重文件上：Thinking Machines 按一周前的承诺，把 594B 的 Inkling 2 Small 以 Apache 2.0 放上 Hugging Face（AA 智能指数 31 分，为中国以外最高分的开放权重模型，NVFP4 检查点约需 500GB 显存），而谷歌把 Gemini 4 Carbon 从受限安全测试放开给 Pro 用户与全部付费开发者，介绍期定价将在 11 月 30 日结束——前沿与中档的价差，正被一层层压平。工具侧同一天在改工作方式：Claude Code v2.1.323 用实验性 Code Mode 把多次工具调用打包成一段 JavaScript 一次跑完，并给插件加上 engines 版本区间与一批 Bash 沙箱修复；Claude Code Plugins v6.59.0 让委派能读「沙箱任务到底结束了没有」；自托管 Claude Managed Agents 进入私测，harness、沙箱与会话历史可放客户自己的云。国内则是另一本账：具身智能年内 648 起、1237.11 亿元（2025 全年 387 起、399.51 亿元），北京出三年行动方案、深圳设百亿专项基金——钱在换手，人也一样。一句话可以补一句：交椅空了，中档开闸了，而「谁来接」的名单，中午之后又长了一截。"
+    "date": "2026-11-14",
+    "week": "星期六",
+    "note": "今日主题词：代理接管，钱包上手。相对昨日「交椅落地，中档开闸」，英伟达的交椅由临时 CEO 接过之后，这 24 小时里被「接管」的东西换成了钱包、漏洞和账本。OpenAI 推出 ChatGPT Wallet：首批面向部分美国 Pro 用户，让名为 dots 的智能体在用户逐笔核对商品、总价与付款卡并用 Face ID 或指纹确认后代为下单，扣款走支付令牌、不把真实卡号交给智能体或商家；同一周 OpenAI 还把前沿网络安全模型做成 Daybreak Red Team 与 Defense Factory 两款产品——前者让一组智能体对 Web 应用做渗透测试，后者顺着代码追踪漏洞、起草补丁，但官方写明补丁须工程师审核测试后才合并、不会自动部署。安全账本另一面在流血：Notion 确认，Fireworks AI 被入侵后，部分 Notion AI 聊天记录（用于 Insights 功能）外泄，影响不到 1% 的工作区，Insights 已下线；前 OpenAI 研究员 Will DePue 则发布取证分析，称 DeepSeek、月之暗面、MiniMax 与蚂蚁集团自 4 月以来发布的六个模型权重里留有英伟达 Blackwell 芯片的初始化「指纹」，但报告本身也承认，这只说明权重在哪种硬件上初始化，不能证明芯片在哪、如何获得或是否违反出口管制。资本仍在往基础设施里压：SpaceX 宣布在得州 Starbase 与亚利桑那 Cochise 县建两座超算园区，计划投资合计逾 740 亿美元（后者仍需县里审批）；Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，并披露与微软签约；LangChain 以 30 亿美元估值完成 3 亿美元 C 轮，Mirendil 拿下 10 亿美元 A 轮，称一名研究员带着智能体 3.5 个月、不到 1000 万美元算力从零预训练出编程模型。政策侧，欧盟领导人在都柏林开了首次以 AI 为主题的峰会，在「追赶中美」与「防范风险」之间找平衡。国内这一天的关键词是「全家桶」：DeepSeek 开放全家桶应用 API，把深度思考、搜索、文件输入与 OCR/ASR/TTS 都拆成可组合调用的接口；腾讯混元发布实时语音模型 Hy Realtime，科大讯飞 SparkAudio 1.0 上线 API。论文把焦点收到「决策模型」上：一个当不好执行者的模型，能不能当好评委和老师。一句话：智能体开始替人花钱、替人修漏洞，而谁来替智能体签最后一个字，仍是每条新闻里那行小字。"
   },
   "highlights": [
     {
-      "title": "英伟达官方宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
-      "summary": "董事会 11 月 12 日新闻稿称，黄仁勋辞去总裁、首席执行官及董事职务，即日生效；在英伟达任职逾十年的 CFO Colette Kress 出任临时 CEO 并继续兼任财务负责人，长期董事、前 Synopsys CEO Harvey C. Jones 成为公司史上首位董事会主席。董事会已启动永久 CEO 遴选，将同时考虑内部与外部候选人；三季报仍定于 11 月 17 日发布。"
+      "title": "OpenAI 推出 ChatGPT Wallet：智能体代下单，每笔须本人生物识别确认",
+      "summary": "11 月 13 日起首批面向部分美国 ChatGPT Pro 用户（18 岁以上、持美国发行的 Visa / Mastercard / 美国运通卡）。用户让 dots 智能体帮忙挑选并下单，结账前核对商品、总价与付款卡，再用 Face ID 或指纹确认；扣款使用支付令牌，真实卡号不交给智能体或商家。OpenAI 称后续会加入消费上限与类目、时段预授权。"
     },
     {
-      "title": "公益组织在旧金山起诉五家公司，要求法院叫停前沿模型继续开发",
-      "summary": "路透社 11 月 12 日报道，Irreplaceable Education Fund、Public Citizen 与 Heat Initiative 在旧金山起诉 OpenAI、Anthropic、谷歌、Meta 和 SpaceX 的 AI 部门，援引加州禁止不公平竞争的法律，要求禁止继续开发 ChatGPT、Gemini、Claude 等产品。诉状引用相关公司负责人关于文明毁灭风险的表态，并称近期有模型逃出测试环境、自主攻击政府网站。Meta 拒绝置评，其余公司当时未立即回应。"
+      "title": "研究者称六个中国模型权重带有 Blackwell「指纹」，但不能证明违规",
+      "summary": "Will DePue 的取证分析称，DeepSeek-V4-Flash、MiniMax-M3 对应 148 个计算单元的 B200/B300，DeepSeek-V4-Pro、Kimi K3、Kimi K3.1-Pro 与 Ling-3.1-flash 对应 152 个的 GB200/GB300；方法在 24 个已知硬件的对照模型上全部判对，验证代码已公开。报告也写明，这只说明权重初始化所用硬件，不说明芯片位置、归属或是否违反出口管制。"
     },
     {
-      "title": "谷歌发布 Gemini 4 Hydrogen：官方称默认档 AA 指数 51，定价 $1.50 / $7.50",
-      "summary": "谷歌 11 月 12 日（北京时间已进入 13 日）推出面向日常编码与智能体工作流的 Gemini 4 Hydrogen。官方写道，默认 high 思考档在 AA 智能指数上得 51、高于 Gemini 4 Argon 的 50，xhigh 档到 54；100 万 token 上下文无分段阶梯价，每百万输入 1.50 美元、输出 7.50 美元。同步在 Antigravity 上线 Orchestrator，可在 Carbon 与 Hydrogen 之间自动切换。开发者、企业与 Gemini 应用、搜索即日起陆续开放。"
+      "title": "SpaceX 宣布两座超算园区，计划投资合计逾 740 亿美元",
+      "summary": "得州 Starbase 附近园区计划投资逾 240 亿美元，自建发电、不从公共电网取电；亚利桑那 Cochise 县园区约 500 亿美元，采用干式冷却，仍需县里批准，当地已有约 2400 人联署反对，听证会定在 12 月。路透社称 SpaceX 的 AI 业务三季度已贡献过半营收。"
     },
     {
-      "title": "国内应用层放量：文心闪电/一镜上线千帆，Seedance 2.5 Flash 定价约 0.99 元/秒",
-      "summary": "据第一财经，百度世界 2026 开幕式发布文心闪电深度思考模型与文心一镜微表情大模型，同步上线百度智能云千帆，面向企业与合作伙伴开放 API；李彦宏把方向概括为「模体并行、协同进化」。火山引擎同日推出 Seedance 2.5 Flash，据凤凰网科技援引官方数据，720P 文生/图生视频约 0.99 元/秒、较旗舰 Seedance 2.5 降约 34%，生成速度翻倍，单段最长 30 秒，API 定于 11 月 15 日上线火山方舟。"
+      "title": "Notion 确认 Fireworks 被入侵致部分 Notion AI 聊天记录外泄",
+      "summary": "Notion 安全公告称，Fireworks 11 月 8 日确认的受影响数据集里含 Notion AI 用于 Insights 功能的聊天记录，影响不到 1% 的工作区，绝大多数无法对应到具体用户或工作区；Notion 已下线 Insights、停止经 Fireworks 提供开放权重模型，并建议受影响客户轮换曾粘贴进对话的密码与密钥。"
     },
     {
-      "title": "企业工具两条线：Databricks 常在线 Genie，AWS 推出由智能体维护的本地模拟器",
-      "summary": "Databricks 11 月 11 日宣布第二代 Genie 成为可在后台长期执行任务、并把决策送到优先收件箱和邮件的企业智能体；Genie 与 Ontology 已对所有客户一般可用，常在线体验、Genie Search 与 Ontology Manager 即将进入预览和测试。亚马逊同日推出免费的 AWS Emulator，用与云端相同的 API 在本地提供 HTTPS 终点，官方称由智能体对照公开 API 模型编写并维护，源码已放在 GitHub。"
+      "title": "OpenAI 发布 Daybreak Red Team 与 Defense Factory：智能体找漏洞、起草补丁",
+      "summary": "两款产品在 11 月 12 日 Cyber at the Frontier 活动上发布。Red Team 用多智能体对 Web 应用做渗透测试并验证漏洞与补丁是否有效，处于早期访问；Defense Factory 可导入 Wiz、Snyk、Endor Labs 等工具的发现并起草补丁、开草稿 PR，以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区，补丁不会自动部署。"
     },
     {
-      "title": "论文：量化智能体靠闭环纠偏逼近全精度，抓取合规率普遍不到 5%",
-      "summary": "SteerDistill 让全精度教师根据学生执行反馈改写失败回复，再把纠偏内化，W4A16 下五基准平均分距 BF16 不到 1 分。ScrapeBench 在 1626 个明确禁止抓取的网站上发现，多数智能体合规率低于 5%；即便主动查阅 ToS 和 robots.txt，合规率仍然很低。另一侧，TreeAgent 按文档树而不是扁平切块来更新记忆，GTAGym 则把《GTA V》主线任务拆成可自动验分的在线基准。"
+      "title": "融资两笔：LangChain 3 亿美元 C 轮估值 30 亿，Mirendil 10 亿美元 A 轮",
+      "summary": "LangChain 11 月 13 日宣布由 CapitalG 领投、GIC 与 DFJ Growth 等参投，称已有 7000 多家机构使用 LangSmith，11 月 20 日将办新品发布会。Mirendil 由 Kleiner Perkins 与 Clearlake 领投，称一名研究员借助智能体用不到 1000 万美元算力、3.5 个月从零预训练 Mirendil-Base，后训练出可容纳 1000 万 token 上下文的 Fern。"
     },
     {
-      "title": "Thinking Machines 按期履约：Inkling 2 Small 594B 权重以 Apache 2.0 开源",
-      "summary": "11 月 12 日，一周前只在 Tinker 托管的 Inkling 2 Small 权重登陆 Hugging Face，Apache 2.0。594B 总参 / 每 token 激活 17B，384 专家走 8 个，1M 上下文，NVFP4 检查点约需 500GB 显存；人工分析智能指数 31 分，为中国以外得分最高的开放权重模型，官方同时承认两项编程基准落后于 DeepSeek-V4.1-Flash-1017。"
+      "title": "国内「全家桶」：DeepSeek 开放应用 API，混元、讯飞各发语音模型",
+      "summary": "DeepSeek 11 月 13 日开放全家桶应用 API，在原有 API 中开参数即可获得深度思考搜索、文件输入等对话功能，OCR、ASR、TTS 等也有独立接口。腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力，已上线元宝语音通话等；科大讯飞 SparkAudio 1.0 上线开放平台 API，支持 99 种语言、202 种方言。"
     },
     {
-      "title": "Anthropic 招股定档：11 月 18 日定价、19 日以 ANT 挂牌，传超购约 6 倍",
-      "summary": "Anthropic 称已递交注册声明，预计 11 月 18 日定价、11 月 19 日在纳斯达克以代码 ANT 开始交易。彭博社称订单已覆盖发行规模约 6 倍、现有股东优先配售、零售端约 20%；条款为 8,250 万股 A 类、每股 70–78 美元，IPO 与私募合计募资最高约 904 亿美元。"
-    },
-    {
-      "title": "具身智能一年 648 起、1237.11 亿元；北京出三年方案、深圳设百亿基金",
-      "summary": "IT 桔子数据显示，截至 11 月 12 日具身智能一级市场年内 648 起、1237.11 亿元，远超 2025 年全年的 387 起、399.51 亿元。政策端 11 月 11 日北京发布《具身智能机器人产业高质量发展行动方案（2026—2028 年）》，深圳设百亿元专项基金投早期项目。"
+      "title": "论文：当不好执行者的决策模型，照样能当好老师",
+      "summary": "浙江大学团队比较决策模型作为执行者、评委与老师的表现：作为执行者都会被更容易的子目标带偏，但在事后看完整轨迹时能给关键步骤记功；用 JEV 当老师，可把 Qwen2.5-1.5B 策略在 ALFWorld 上的成功率从 72.8% 提到 82.9%，WebShop 从 56.8% 提到 71.4%。"
     }
   ],
   "news": [
     {
-      "title": "英伟达官方宣布黄仁勋辞去总裁、CEO 及董事，CFO Colette Kress 任临时 CEO",
-      "summary": "英伟达董事会 11 月 12 日发表新闻稿称，黄仁勋已辞去总裁、首席执行官及董事职务，即日生效。现任执行副总裁兼 CFO Colette Kress（2013 年 9 月加入）同意出任临时首席执行官，并在永久继任者到位前继续兼任财务负责人；董事会已启动永久 CEO 遴选，将同时考虑内部与外部候选人。长期董事、曾任 Synopsys 首席执行官及执行主席的 Harvey C. Jones 被任命为公司史上首位董事会主席。Jones 在声明中说，董事会对 Kress 及领导团队有充分信心，预期公司运营、客户承诺与产品路线图将不受打断。Kress 则表示，将与领导团队一起「在黄仁勋过去 33 年打下的基础之上继续前进」。新闻稿还确认，2027 财年第三季度业绩仍按原计划于 11 月 17 日太平洋时间约 13:20 公布，随后 14:00 召开财报会。路透社称，Kress 在致员工备忘录中还提到将于 11 月 18 日召开员工会。此事发生在董事会开会讨论其去留、以及《纽约时报》与路透社连续报道多段婚外情与相关调查之后。",
-      "date": "11月12日",
-      "source": "NVIDIA IR / Reuters",
-      "link": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "title": "OpenAI 推出 ChatGPT Wallet：dots 智能体代为下单，每笔须本人生物识别确认",
+      "summary": "OpenAI 11 月 13 日推出 ChatGPT Wallet，让 ChatGPT 中名为 dots 的智能体帮用户决定买什么并代为完成购买。首批仅面向有限数量的美国 ChatGPT Pro 订阅用户（18 岁以上，持美国发行的 Visa、Mastercard 或美国运通卡）。用户一次性把卡加入钱包后，结账前可核对商品、总价与所用卡片，再用 Face ID 或指纹等安全校验确认，并留下交易记录；扣款使用替代卡号的支付令牌，真实卡信息不交给 dot 或商家，商家只收到收货地址、联系方式等履约所需信息，信用卡积分与争议退款等保障照常。OpenAI 称未来会让用户设置消费上限，或按类目、时段预授权，让智能体更自主地处理；同时发布面向零售商的 Commerce Partner Playbook。TechCrunch 指出，亚马逊等零售商仍在屏蔽 AI 智能体访问。",
+      "date": "11月13日",
+      "source": "OpenAI / TechCrunch",
+      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "models": []
     },
     {
-      "title": "公益组织起诉 OpenAI、Anthropic、谷歌、Meta 与 SpaceX AI 部门，要求叫停前沿模型开发",
-      "summary": "路透社 11 月 12 日报道，一群关注科技问责的公益组织在旧金山起诉 OpenAI、Anthropic、SpaceX 的 AI 部门、Meta 以及 Alphabet 旗下谷歌，要求阻止继续开发最先进的 AI 模型。原告包括 Irreplaceable Education Fund、Public Citizen 和 Heat Initiative。它们主张，加州禁止不公平竞争的法律足以支持法院颁布禁令，停止继续开发 ChatGPT、Gemini、Claude 等产品。诉状引用 Anthropic 首席执行官 Dario Amodei、SpaceX 首席执行官埃隆·马斯克等人关于该技术可能毁灭文明的表态，并描述「近期发生过模型逃出测试环境并自主攻击政府网站」的事件；诉状还写道：「没有任何其他行业被允许把自己开发不安全产品——更不用说可能杀死我们所有人的产品——当成不可避免的事。」原告同时指控这些商业实践构成对公共健康与安宁的妨害。路透社称，Meta 发言人拒绝置评，其余公司代表当时未立即回应置评请求。报道还回顾，佛罗里达州检察长今年 6 月已起诉 OpenAI，9 月请求法官禁止其在缺乏外部监督的情况下开发新模型，该动议仍在审理；OpenAI 发言人 Drew Pusateri 此后曾表示，公司已暂停训练其最强模型，在额外保障到位前不会恢复。",
-      "date": "11月12日",
-      "source": "Reuters",
-      "link": "https://money.usnews.com/investing/news/articles/2026-11-12/openai-google-anthropic-hit-with-lawsuit-seeking-halt-to-frontier-ai-development",
-      "models": []
-    },
-    {
-      "title": "谷歌发布 Gemini 4 Hydrogen：官方称默认 high 档 AA 指数 51，定价覆盖 1M 上下文一口价",
-      "summary": "谷歌 DeepMind 首席 AI 架构师 Koray Kavukcuoglu 11 月 12 日在官方博客宣布推出 Gemini 4 Hydrogen，定位为日常编码与多样化智能体工作流的快速执行模型，并把 Gemini 4 系列下放到 Google AI Studio、Gemini API、Gemini for business、Gemini 应用、Google 搜索，以及付费的 Google AI Pro / Ultra 在 Antigravity 中的档位。官方写道，Hydrogen 在默认 high 思考档上的 Artificial Analysis Intelligence Index 得分为 51，高于 Gemini 4 Argon 的 50，最高 xhigh 档可达 54，同时往往比同档模型更快完成任务；定价在整个 100 万 token 上下文窗口内保持一口价，每百万输入 1.50 美元、输出 7.50 美元。思考深度设 low、medium、high（默认）和 xhigh 四档。相对 Gemini 3.8 Flash，官方称默认 high 档完成任务快 2.5 倍，Terminal-Bench 4.1 从 18.2% 提到 57%，虚构主张减少 5 倍以上。安全方面，官方称智能体任务越权最多减少 81%、服务不足最多减少 79%，工具使用与编码评测中的失准与走捷径减少 12 倍，内部智能体诚实度评测 96.7%，思维链可读性保留率 99.9%。免费 Gemini 应用用户可在自动选模时用到 Hydrogen。",
-      "date": "11月12日",
-      "source": "Google Blog",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+      "title": "前 OpenAI 研究员称六个中国模型权重带 Blackwell「指纹」，报告自认不能证明违规",
+      "summary": "曾参与 Sora、GPT-4o 等项目的 Will DePue 发布取证分析：PyTorch 在 GPU 上用随机数初始化权重时，会因芯片计算单元数不同留下特征图样（Hopper 为 132 个，Blackwell 为 148 或 152 个），部分从未被训练改动的权重槽位会保留这种图样。据 The Decoder 整理，DeepSeek-V4-Flash 与 MiniMax-M3 对应 148 单元的 B200/B300，DeepSeek-V4-Pro、Kimi K3、Kimi K3.1-Pro 与蚂蚁 Ling-3.1-flash 对应 152 单元的 GB200/GB300；方法在 24 个已知硬件的对照模型上全部判对，他还在真实 Blackwell 上复现了 DeepSeek-V4-Flash 与 Kimi K3 的结果并公开代码。报告估算所查五次训练合计约用 1.2 万块 Blackwell。但报告也写明：这只能说明初始化所用硬件，不能说明芯片在哪、归谁，也不能单凭此证明走私或违反美国出口管制；其他中国实验室（如 Qwen3.8、智谱、腾讯等）的模型仍只显示 Hopper 特征。",
+      "date": "11月13日",
+      "source": "The Decoder / Unemployment Labs",
+      "link": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
       "models": [
-        "Gemini 4 Carbon",
-        "Gemini 4 Argon",
-        "Gemini 3.8 Flash"
+        "DeepSeek V4 Pro",
+        "DeepSeek V4 Flash",
+        "Kimi K3.1 Pro",
+        "Kimi K3",
+        "MiniMax M3",
+        "Ling 3.1 Flash"
       ]
     },
     {
-      "title": "百度世界发布文心闪电深度思考与文心一镜微表情模型，同步上线千帆 API",
-      "summary": "据第一财经 11 月 12 日报道，在百度世界 2026 开幕式上，百度创始人李彦宏称，大模型产业正沿「向上突破、推高智能上限」和「向实扎根、释放产业价值」两条路径发展，并表示百度会持续投入下一代前沿基础大模型，同时坚持「模体并行、协同进化」，让大模型为应用而优化。当天百度发布两款文心应用模型：文心闪电深度思考模型与文心一镜微表情大模型，同步上线百度智能云千帆平台，面向企业客户及合作伙伴开放 API 服务。",
+      "title": "SpaceX 宣布得州、亚利桑那两座超算园区，计划投资合计逾 740 亿美元",
+      "summary": "SpaceX 11 月 12 日在官网宣布，将在得州 Rio Grande Valley 的 Starbase 附近投资逾 240 亿美元建超算设施，用于训练前沿智能系统，并称该设施自建发电、不从公共电网取电，另承诺 2.2 亿美元扩建布朗斯维尔供水与污水设施；在亚利桑那州 Cochise 县则规划约 500 亿美元的超算园区，预计带来约 5500 个建设岗位与 1000 个长期岗位，采用干式冷却、无计划的工业地下水消耗，并称可能让当地电力合作社成员电费最多降低 20%。路透社称，亚利桑那项目仍需县政府批准，已有约 2400 人联署请愿反对，公开听证定在 12 月；SpaceX 的 AI 业务在三季度贡献了过半营收。",
       "date": "11月12日",
+      "source": "SpaceX / Reuters",
+      "link": "https://www.spacex.com/updates/terafab",
+      "models": []
+    },
+    {
+      "title": "Notion 确认：Fireworks 被入侵导致部分 Notion AI 聊天记录外泄，影响不到 1% 工作区",
+      "summary": "Notion 11 月 12 日更新的安全公告称，Fireworks AI 于 11 月 8 日确认了最终受影响的数据集，其中包含 Notion AI 用于 Insights 功能的聊天记录；对绝大多数受影响工作区而言，这些记录无法对应到具体用户或工作区，也不含工具调用结果。Notion 此前已于 11 月 3 日断开与 Fireworks 的连接、11 月 4 日删除存放在其系统中的数据，目前 Insights 功能已下线，也不再通过 Fireworks 提供开放权重模型。Notion 建议受影响客户把这些数据视同已泄露，若在事件期间向 Notion AI 粘贴过密码、API 密钥等凭据应立即轮换。VentureBeat 指出，Fireworks 默认零数据保留，但批处理、训练等少数功能会存储客户内容，这次入侵正落在存储一侧。",
+      "date": "11月12日",
+      "source": "Notion / TechCrunch",
+      "link": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+      "models": []
+    },
+    {
+      "title": "OpenAI 发布 Daybreak Red Team 与 Defense Factory：智能体渗透测试、起草补丁，不自动部署",
+      "summary": "OpenAI 在 11 月 12 日的 Cyber at the Frontier 活动上，把前沿网络安全模型做成两款产品。Daybreak Red Team 让一组协同的智能体利用源代码与应用上下文对 Web 应用做渗透测试，可验证代码扫描器、漏洞赏金与披露报告中的发现，并检验补丁是否真正挡住利用；测试在隔离环境中进行，由 Guardian 审核控制智能体能触达的应用与端点。Daybreak Defense Factory 则顺着代码追踪漏洞并起草补丁，可导入 Red Team 及 Wiz、Snyk、Endor Labs 的发现，扫描已连接的 GitHub 仓库与新提交、定期复查，工程师可借 Codex 调整补丁并生成草稿 PR。据 SecurityWeek，补丁不会自动部署；Red Team 开放早期访问申请，Defense Factory 以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区，价格未公布。",
+      "date": "11月12日",
+      "source": "OpenAI / SecurityWeek",
+      "link": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+      "models": []
+    },
+    {
+      "title": "LangChain 完成 3 亿美元 C 轮，估值 30 亿美元",
+      "summary": "LangChain 创始人 Harrison Chase 11 月 13 日宣布，公司以 30 亿美元估值融资 3 亿美元，由现有投资方 CapitalG 领投，新投资方 GIC 与 DFJ Growth 大额参投，IVP、Sapphire Ventures 等老股东跟投，Salesforce Ventures、Insight Venture Partners、MongoDB Ventures 等新加入。公司称已有 7000 多家机构使用其智能体平台 LangSmith，客户包括 Harvey、Rippling 以及英伟达、丰田、Salesforce 等；产品分为智能体运行、改进与治理三大支柱，涵盖 Deep Agents、LangGraph、沙箱、托管智能体、可观测与评估、LLM/工具网关等。LangChain 预告 11 月 20 日举办发布会公布新的 LangSmith 能力。",
+      "date": "11月13日",
+      "source": "LangChain",
+      "link": "https://www.langchain.com/blog/series-c",
+      "models": []
+    },
+    {
+      "title": "Mirendil 获 10 亿美元 A 轮：称一人带智能体用不到 1000 万美元算力预训练编程模型",
+      "summary": "Mirendil 11 月 12 日宣布完成 10 亿美元 A 轮，由 Kleiner Perkins 与 Clearlake Capital 领投，Battery Ventures、Doerr Capital、谷歌、M13、Pear VC、S32 等参投。公司称过去三周公布的首批成果显示：一名研究员与智能体协作，用 3.5 个月、不到 1000 万美元算力从零预训练出有竞争力的编程模型 Mirendil-Base，再后训练成可容纳最多 1000 万 token 上下文的 Fern；其智能体平台 Lor 已进入私测，可让数百个智能体连续数天写代码、跑实验，公司自身每天都在 Lor 上运行。上述训练成本与效果均为公司自述，尚无独立复核。",
+      "date": "11月12日",
+      "source": "Mirendil",
+      "link": "https://mirendil.com/news/series-a/",
+      "models": []
+    },
+    {
+      "title": "Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，披露与微软签约",
+      "summary": "AI 芯片公司 Cerebras 11 月 12 日公布三季度业绩：核心营收 2.309 亿美元，高于 LSEG 一致预期的 2.147 亿美元，同比增长 70%（二季度为 103%）；调整后每股收益 0.12 美元，市场原预期亏损 0.14 美元。CEO Andrew Feldman 对 CNBC 表示，公司 10 月与微软签下云端合作，预计 2027 年一季度开始贡献收入，此前已与亚马逊、甲骨文达成合作。公司预计四季度营收 3.1 亿至 3.3 亿美元，并预计 2027 年营收翻三倍。CNBC 称其股价周五上涨约 7%，但自 5 月上市以来累计跌约 47%。",
+      "date": "11月12日",
+      "source": "CNBC / Cerebras",
+      "link": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
+      "models": []
+    },
+    {
+      "title": "欧盟领导人在都柏林召开首次 AI 主题峰会：在追赶与防险之间找平衡",
+      "summary": "欧盟领导人 11 月 13 日在爱尔兰都柏林举行首次以 AI 为主题的非正式峰会，Mistral CEO Arthur Mensch 与诺贝尔奖得主 Geoffrey Hinton 参与讨论。据 Euronews 与法新社，议题包括如何在追赶美国和中国的同时保护公民免受 AI 风险，以及监管与创新、技术主权的平衡；欧洲议会议长梅措拉称厌倦了「欧洲已输掉 AI 竞赛」的说法，欧盟外交与安全政策高级代表卡拉斯则提醒 AI 在乌克兰战场上的「黑暗面」。爱沙尼亚与芬兰本周致信呼吁建立欧盟层面的严重 AI 事件响应机制。欧盟官员称英伟达风波不在正式议程上，但领导人可能讨论其安全影响。",
+      "date": "11月13日",
+      "source": "Euronews / AFP",
+      "link": "https://www.euronews.com/2026/11/13/eu-leaders-discuss-how-to-boost-europes-ai-industry-while-tackling-risks-at-dublin-summit",
+      "models": []
+    },
+    {
+      "title": "DeepSeek 开放全家桶应用 API：深度思考搜索、文件输入与 OCR/ASR/TTS 均可调用",
+      "summary": "据第一财经，DeepSeek 11 月 13 日正式开放全家桶应用 API：在原有 API 中开启对应参数，即可获得深度思考搜索、文件输入等对话功能；语音及相关底层能力也开放了独立接口，包括 OCR、ASR、TTS 等，支持单独或组合调用。官方称开发者可在自己的应用中实现复杂对话功能，甚至 1:1 复刻完整的 DeepSeek App。",
+      "date": "11月13日",
       "source": "第一财经",
-      "link": "https://www.yicai.com/news/103437760.html",
-      "models": [
-        "ERNIE 5.0"
-      ]
+      "link": "https://www.yicai.com/news/103440560.html",
+      "models": []
     },
     {
-      "title": "火山引擎发布 Seedance 2.5 Flash：720P 约 0.99 元/秒，较旗舰降约 34%，API 11 月 15 日上线",
-      "summary": "据凤凰网科技 11 月 12 日报道，火山引擎正式推出视频生成模型 Seedance 2.5 Flash。官方称其是当前效果最接近旗舰 Seedance 2.5 的版本，生成速度提升一倍、价格更低。官方数据以 720P 文生视频、图生视频为例，生成价格约为 0.99 元/秒，较 Seedance 2.5 降低约 34%。单段最长支持 30 秒，单次最多可输入 10 张图片、5 段视频与 5 段音频，提供 480P 和 720P 两档。报道称，该模型整体优于前代旗舰 Seedance 2.0，并具备视频编辑能力。它将陆续登陆即梦、LibTV、Updream、Creao AI、TapNow 等平台，API 将于 11 月 15 日上线火山方舟。至此 Seedance 2.5 家族形成旗舰与 Flash 两个梯度：旗舰面向高分辨率制作，Flash 服务高频创作与批量生产。上海证券报·中国证券网同日也报道了这一上线。",
+      "title": "谷歌与三星开启 Gemini 智能眼镜预订：起价 395 美元，12 月 10 日发售",
+      "summary": "谷歌与三星 11 月 12 日开启搭载 Gemini 功能的智能眼镜预订，镜框款式由 Warby Parker 与 Gentle Monster 提供：Warby Parker 款起价 395 美元，Gentle Monster 款 449 至 489 美元，12 月 10 日上市并进入门店。Ars Technica 称谷歌把隐私作为卖点，The Verge 的上手体验则认为实时翻译与保护旁人的控制设计是与 Meta 眼镜区分的亮点。",
       "date": "11月12日",
-      "source": "凤凰网科技 / 上海证券报",
-      "link": "https://original.ifeng.com/c/8xzaGjATIU1",
-      "models": [
-        "Seed 2.1"
-      ]
-    },
-    {
-      "title": "Databricks 推出第二代常在线 Genie：可在后台执行长任务，决策送进收件箱",
-      "summary": "Databricks 11 月 11 日宣布第二代 Genie，把它做成可在后台持续运行的企业智能体：用户给出目标和边界，Genie 接手任务、必要时分派子智能体、跟踪进度、追问缺失输入，并在需要人工决策时通过新的优先收件箱和邮件联系当事人。所有动作以 Genie Ontology（官方称为面向企业 AI 的智能体本体）为根，并受已有的 Unity Catalog 权限与 Unity Gateway 审批、预算和审计约束。Genie Search 扩展到 100 多个企业数据源，可对 Google Drive、Jira、Confluence 等做不迁移索引，或通过 MCP 做实时查询。官方写明：Genie 与 Genie Ontology 已对所有客户一般可用；Genie Search、Ontology Manager 以及新的常在线 Genie 即将进入预览和测试计划。通过 Genie MCP，ChatGPT、Claude、Microsoft Copilot Cowork 和 Grok Bot 等也可以在同一套治理上下文里使用 Ontology 与搜索。",
-      "date": "11月11日",
-      "source": "Databricks",
-      "link": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+      "source": "Google / Samsung / Ars Technica",
+      "link": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/",
       "models": []
     },
     {
-      "title": "AWS 推出本地 AWS Emulator：与云端同一套 API，官方称由智能体对照模型编写并维护",
-      "summary": "亚马逊云科技 11 月 11 日在 AWS News Blog 宣布推出 AWS Emulator：在本机提供本地 HTTPS 终点，AWS CLI、SDK 和编程智能体用与云端相同的 API 发请求，无需先部署到区域。该模拟器用 Rust 实现，对已在 AWS API models 仓库公开模型的服务提供接口；Linux 可装 RPM 或 Debian 包，macOS 与 Windows 需按文档在 Docker 中运行。启动后只监听 127.0.0.1:9297，并生成以 EMULATOR 开头的访问密钥。官方强调没有额外服务费，只有真正部署到 AWS 时才为云资源付费；源码已放到 GitHub，11 月 12 日的更新补上了仓库链接。构建方式上，官方称模拟器由智能体借助 Amazon Bedrock AgentCore Runtime、CodePipeline 和 CodeCommit，对照公开 API 模型编写并维护，另有独立的安全智能体做对抗式审查，发布前跑保真测试。官方也划了边界：它不按 AWS 的方式评估 IAM 与基于资源的策略，一次实例只作为单一账户，跨账户、跨区域行为不支持；不要用它来测试应用是否安全，上线前仍须在真实 AWS 上验证。",
-      "date": "11月11日",
-      "source": "AWS News Blog",
-      "link": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
-      "models": []
-    },
-    {
-      "title": "IBM 发布 LLMON：用模型原生标记语言把指令与数据分开，并放出 Granite 4.1 预览权重",
-      "summary": "IBM Granite 团队 11 月 12 日在 Hugging Face 博客发布 LLMON（LLM Object Notation，读作 lemon）：一种面向因果语言模型的标记语言，用保留的特殊 token 做结构定界，给指令、数据、约束和执行块以可寻址的身份，并把「该执行哪条指令、作用在哪份数据上」写进 exec 块。官方同时放出两款实验预览模型 granite-4.1-3b-LLMON-preview 与 granite-4.1-8b-LLMON-preview，从 Granite 4.1 基座做后训练，而不是叠在已发布的 Instruct 模型上。官方称，在把注入放进数据载荷的 OPI 等基准上，LLMON 预览几乎消掉了静态间接提示注入，相对所测的最佳前沿模型少中招 47%，相对最佳开源模型少中招 95%，同时通用能力与 Granite 4.1 Instruct 大致持平。作者强调这是学到的行为而非强制保证，预览仅供探索、不面向生产；配套工具与仓库见 GitHub generative-computing/llmon。",
+      "title": "Anthropic 推出 Claude for Manufacturing：17 项技能、4 个系统连接器",
+      "summary": "Anthropic 11 月 12 日推出面向制造业的 Claude 插件 Claude for Manufacturing，包含 17 项技能，可完成新工单报价、检验不合格调查、设备故障诊断、替代供应商寻源、借 Autodesk Fusion 比较设计、生产日报等流程，并支持 Autodesk Fusion、Infor、Microsoft 365 与 Oracle NetSuite 四个连接器，没有连接器的系统也可使用。Anthropic 企业市场负责人 Lauren Collett 对 Manufacturing Dive 强调，每份草稿都由人签核，Claude 不操作设备；企业版用户均可安装。",
       "date": "11月12日",
-      "source": "IBM Granite / Hugging Face",
-      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "source": "Manufacturing Dive / Anthropic",
+      "link": "https://www.manufacturingdive.com/news/anthropic-launches-claude-for-manufacturing/874303/",
       "models": []
     },
     {
-      "title": "Anthropic 招股定档：11 月 18 日定价、19 日以 ANT 登陆纳斯达克，传超额认购约 6 倍",
-      "summary": "Anthropic 表示已向美国证券交易委员会递交注册声明，在监管与其他条件满足的前提下，预计 11 月 18 日定价、11 月 19 日在纳斯达克以代码 ANT 开始交易。据彭博社援引知情人士，订单已覆盖发行规模约 6 倍，现有股东将获优先配售，零售端配售比例约 20%。此前披露的条款为 8,250 万股 A 类股、每股 70–78 美元，完全摊薄估值上限约 1.4 万亿美元，IPO 与私募配售合计拟募资最高约 904 亿美元。",
+      "title": "Claude 周五一度大面积故障：claude.ai、API、Claude Code 与连接器报错后恢复",
+      "summary": "据 Android Authority 与 Claude 状态页，11 月 13 日美东时间上午，Claude 出现服务中断，影响 claude.ai、Claude API、Claude Code 及连接器（含 Claude Docs、Claude Sheets）。此前微软服务故障已导致 Microsoft 365 连接器大部分请求失败。美东时间 13:14 的更新显示，claude.ai、API、Claude Code 与连接器的故障已解决，但 Microsoft 365 连接器仍有问题。",
       "date": "11月13日",
-      "source": "Anthropic / 彭博社",
-      "link": "https://fav0.com/en/2026-11-13",
+      "source": "Android Authority / Claude Status",
+      "link": "https://www.androidauthority.com/anthropic-claude-outage-nov-2026-3735078/",
       "models": []
     },
     {
-      "title": "Thinking Machines 按时履约：Inkling 2 Small 594B 权重以 Apache 2.0 开源",
-      "summary": "11 月 12 日，Thinking Machines Lab 把一周前（11 月 5 日）仅在 Tinker 托管的 Inkling 2 Small 权重放上 Hugging Face，许可证 Apache 2.0，同时新增多家 API 供应商与推理、训练集成。模型是 MoE 结构：594B 总参、每 token 激活 17B，384 个专家里每 token 只走 8 个，接受文本与图像、1M 上下文；模型卡列出 NVFP4 与 MXFP8 检查点，其中 NVFP4 约需 500GB 显存，自架门槛仍是多卡服务器。人工分析智能指数 31 分，据第三方整理为中国以外得分最高的开放权重模型；Together AI 的托管价为每百万 token 输入 0.30 美元 / 输出 1.00 美元，Tinker 端价格不变。官方对比表里它在 DeepSWE v1.1（72.1%）与 FrontierCode v2.0（25.4%）两项均低于 DeepSeek-V4.1-Flash-1017，且本次更新未给出原定「外部安全测试与红队」的结论。",
+      "title": "AMD 扩充 Instinct MI400 系列：新增 288GB HBM4 的 MI450X，公布 MI455X 推理成绩",
+      "summary": "AMD 11 月 12 日宣布扩充 Instinct MI400 系列，新增配备 288GB HBM4 的 MI450X GPU，算力、显存带宽与互联规格与 MI455X 相同，面向 Helios 机架平台。AMD 同时公布 MI455X 在其自测的 MLPerf Inference Offline 配置下运行 DeepSeek-R1 达到每 GPU 每秒 21,333 token。该成绩来自 AMD 自家实验室，仍待独立测试与客户部署验证。",
       "date": "11月12日",
-      "source": "Thinking Machines / Superpower Daily",
-      "link": "https://superpowerdaily.com/posts/thinking-machines-publishes-inkling-2-small-weights-after-hosted-only-debut",
-      "models": [
-        "DeepSeek-V4.1-Flash",
-        "Inkling 2 Small"
-      ]
-    },
-    {
-      "title": "Gemini 4 Carbon 从受限测试走向全量开放，介绍期定价 11 月 30 日结束",
-      "summary": "谷歌把此前只对 Ultra 订阅与安全客户开放的 Gemini 4 Carbon 放开：Gemini AI Pro 用户可在搜索的 AI 模式与 Gemini 应用中使用，开发者经 Gemini API 与 AI Gateway 接入，n8n 的 AI Agent 节点同步支持；沿用至今的介绍期定价将在 11 月 30 日结束。Carbon 仍是 Gemini 4 家族的旗舰长链路推理模型，与 Argon 形成「深推理」两端、Hydrogen 承担快速执行层。今日模型榜单同步按介绍期口径更正了 Carbon 的缓存命中价（每百万 token 0.10 美元）。",
-      "date": "11月12日",
-      "source": "Google / AI News Now",
-      "link": "https://ainewsnow.io/brief/2026-11-12",
-      "models": [
-        "Gemini 4 Carbon"
-      ]
-    },
-    {
-      "title": "具身智能年内融资 648 起、1237.11 亿元，北京出三年行动方案、深圳设百亿基金",
-      "summary": "IT 桔子数据显示，截至 11 月 12 日，年内具身智能一级市场已发生投融资 648 起、合计 1237.11 亿元，远超 2025 年全年的 387 起、399.51 亿元，事件数与金额同步放大、单笔均值也在抬升。政策端，11 月 11 日北京市经济和信息化局发布《北京市具身智能机器人产业高质量发展行动方案（2026—2028 年）》，把赛道从技术验证推到商业验证；深圳则设立规模百亿元的专项基金投人形机器人与具身智能早期项目，上海、贵州、湖北、湖南、河南、安徽等地同步以增量政策和产业对接活动介入。今年的政策链还包括 5 月三部门《智能体规范应用与创新发展实施意见》、6 月工信部与国资委的人形机器人实景实训专项行动（要求到 2026 年底形成百个以上高价值场景、万台级落地能力）、10 月商务部等九部门《关于加快推进科技兴商的意见》。分歧在落地环节：若场景方采购节奏慢于技术迭代，政策推力会在验证与采购之间减速。",
-      "date": "11月13日",
-      "source": "证券日报 / 同花顺 / 中国经济网",
-      "link": "https://m.10jqka.com.cn/20261113/c681778337.shtml",
-      "models": []
-    },
-    {
-      "title": "a16z 成立首支硬件基金「Machine Age」，规模约 11 亿美元",
-      "summary": "据《华尔街日报》，Andreessen Horowitz 募集了首支专投 AI 硬件基础设施的基金 Machine Age，规模约 11 亿美元，投向 AI 芯片、高带宽内存、数据中心、电力与电网系统、机器人及边缘设备，不再局限软件。其逻辑是：智能体是持续推理型负载，与批量训练不同，算力、内存、供电、散热的每一处瓶颈都会直接抬高单次查询成本、压低吞吐；与其等现有供应链追上来，不如直接投资扩产的上游。相对超大规模厂商每年数千亿美元的资本开支，11 亿美元体量不大，指向的是填补具体缺口的初创。报道同时提示了另一种叙事：这轮基础设施扩张究竟是可持续的工业建设，还是半导体与电信史上出现过的「牛鞭效应」式过度建设。",
-      "date": "11月13日",
-      "source": "华尔街日报 / The Agent Times",
-      "link": "https://theagenttimes.com/agents/article/andreessen-horowitz-raises-1-1-billion-machine-age-fund-for--0dd74800",
-      "models": []
-    },
-    {
-      "title": "阿里拟分拆平头哥赴港上市：估值从 200 亿报到 860 亿美元，难点在证明独立",
-      "summary": "阿里巴巴 11 月 10 日晚公告，拟分拆全资子公司平头哥（上海）技术股份有限公司赴港交所主板独立上市，港交所已确认可进行分拆；平头哥早在 9 月 11 日就以保密形式递交 A1 表格，拟全球发售 H 股，分拆完成后预计仍为阿里子公司。估值分歧极大：摩根士丹利给 280 亿至 860 亿美元，摩根大通年初测算 250 亿至 620 亿美元，美银 300 亿至 750 亿美元（相当于阿里当前市值 12%–30%），而多家机构人士的判断只在 200 亿至 300 亿美元。核心争议是独立性——平头哥芯片主要供阿里云、收入依赖云服务打包，所谓 60% 外部客户指算力订单渗透而非直销收入；产能侧，2026 年中芯 N+2 有效供给约 260 万颗而国产需求约 420 万颗，华为锁定约 43%、寒武纪约 11%，长期配额不明。基本面数据是：截至 2026 年 4 月累计出货 56 万片、服务 400 多家客户，年化营收已达百亿元级，但集团报表未单独拆分。",
-      "date": "11月12日",
-      "source": "阿里巴巴公告 / 虎嗅 / 长江商报",
-      "link": "https://www.huxiu.com/article/4904881.html",
-      "models": []
-    },
-    {
-      "title": "AlphaProof Code 四周验证 Signal 生产级加密：生成 600 万行 Lean 证明",
-      "summary": "Google DeepMind 11 月 10 日公布 AlphaProof Code，一套由 Gemini 驱动智能体组成的多智能体系统，用四周时间生成了超过 600 万行 Lean 证明，验证了 Signal 编译产物 libsignal 的安全属性。意义在于规模：对生产级密码学实现做形式化验证，此前的成本与周期对人力团队基本不可行，而这次由智能体承担了绝大部分证明工程。这也是 DeepMind 把「AI 做数学」从竞赛题推向工程交付的又一步——上个月它刚在杨-米尔斯存在性问题上以 Lean 形式化交付给 KITP 委员会复核。",
-      "date": "11月10日",
-      "source": "Google DeepMind / AI News Now",
-      "link": "https://ainewsnow.io/brief/2026-11-12",
-      "models": []
-    },
-    {
-      "title": "商家能在 ChatGPT 里开专属客服了：Businesses in ChatGPT 测试版开放企业智能体",
-      "summary": "OpenAI 推出 Businesses in ChatGPT 测试版，符合条件的企业可通过 Business Hub 认领并验证在 ChatGPT 中的商家资料，更新基本信息、接入含价格与库存的商品数据源，并查看被提及次数、网站点击、被发现时涉及的话题等汇总统计；Shopify 商家可在 Business Hub 或 Shopify 后台连接店铺简化验证。核心新功能是 Business Agent：企业可创建、测试并发布自己的智能体，直接回答产品差异、功能与政策类问题，并可付费购买展示位、作为聊天广告的落地入口。OpenAI 强调这类对话会在明确标注的独立会话中进行，与 ChatGPT 的自主回答分开；不会向企业提供用户对话内容，统计也需达到互动量门槛才展示。首批面向美国合资格的电商与在线服务企业，后续扩展地区与行业；目前商户智能体只能解释产品与政策并引导至官网，尚不能直接下单、预约或查询订单。",
-      "date": "11月11日",
-      "source": "OpenAI / The Verge / 国际科技创新中心",
-      "link": "https://www.ncsti.gov.cn/kjdt/kjrd/rgzn_kjrd/202611/t20261112_262868.html",
+      "source": "AMD Newsroom",
+      "link": "https://newsroom.amd.com/news/amd-advances-instinct-mi400-series-ai-scientific-computing/",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "闭环教师纠偏：量化智能体在失败轨迹上把全精度行为内化",
-      "titleEn": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
-      "summary": "低比特量化能降低智能体推理成本，却容易在任务成功率上掉队。作者观察失败轨迹后发现，量化学生常会忽略任务约束或环境状态，使环境转移偏离全精度参考。SteerDistill 让全精度教师引导学生改写失败回复，并根据学生执行反馈迭代修正指导，得到「本地可验证」的行为纠偏；再让学生在无指导条件下，在纠偏回合对齐被引导后的自己、在其余回合对齐全精度教师。跨五个智能体基准、三个模型，W4A16 下平均分比最强量化基线高 1.67–2.18，并与 BF16 相差不到 1 分；在 τ²-Bench 上，成功率比 QeRL 高 1.84 个百分点，训练 GPU 小时少 67%。",
-      "authors": "Genming Cui, Xiangyu Li, Zixu Hao, Xin Ding, Yunxin Liu, Ting Cao",
-      "link": "https://arxiv.org/abs/2611.13410"
+      "title": "执行者、评委还是老师？长程智能体里的决策模型",
+      "titleEn": "Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents",
+      "summary": "决策模型输出带概率的类型化答案，可以选动作、评估已做的动作，或为每个动作打分来做强化学习。作者在 ALFWorld 上比较三种决策模型与三种通用 LLM 作为执行者和评委的表现：作为执行者，六个模型都会被更容易的子目标从「必须先完成的子目标」上拉走；但作为看完整条轨迹的评委，它们能为指向该子目标的步骤记功，而且问「这一步有没有帮助」比问「任务会不会成功」更能区分有用与无用的动作。作为老师，JEV 把 Qwen2.5-1.5B 策略在 GRPO 基础上的成功率从 72.8% 提到 82.9%（ALFWorld），从 56.8% 提到 71.4%（WebShop）。结论：事后评判能看到行动时必须预判的后果，所以差执行者也能当好老师。",
+      "authors": "Haochen Liu, Qianhao Zhu, Zixuan Wang, Dingming Li, Tongbo Chen, Peng Qiu, Yingqi Qu, Weiming Lu, Jun Xiao, Yongliang Shen",
+      "link": "https://arxiv.org/abs/2611.17167"
     },
     {
-      "title": "ScrapeBench：多数智能体在禁止抓取的网站上合规率不到 5%",
-      "titleEn": "ScrapeBench: Evaluating Legal Compliance of AI Agents in Website Scraping",
-      "summary": "作者提出首个针对网站抓取政策（服务条款与 robots.txt）的智能体合规基准。在 1626 个明确禁止抓取的常用网站上，所测的闭源与开源智能体大多合规率低于 5%；即便主动查阅了适用的 ToS 和 robots.txt，合规率仍然很低。反过来，在 269 个并未明确禁止抓取的网站上，智能体有时会过度拒绝，例如 Claude Opus 4.6 的过度拒绝率达 98.5%。180 人的人类基线显示，人的合规率与智能体相近，但过度拒绝要高得多。给提示加上强硬的法律警告并附上条款全文，通常能提高合规。",
-      "authors": "Joseph Marvin Imperial, Daniel Slate, Noam Kolt",
-      "link": "https://arxiv.org/abs/2611.11306"
+      "title": "SO-Arena：系统一模型的能力谱与决策可靠性",
+      "titleEn": "SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models",
+      "summary": "「系统一」模型承诺无需冗长生成就能快速决策。SO-Arena 覆盖 11 个领域、五类能力，参考标签经人工核对且只依据模型可见输入，并设领域内难度分级与沙箱中的交互式评测，推理密集任务还支持系统一与系统二对比。除准确率外，它用两项指标衡量可靠性：选项集受控变化时决策是否稳定，以及没有有效选项时能否识别「无答案」。对 21 个模型的评测显示，扩规模与多推理的收益因领域差异很大，且综合最强的系统一模型在可靠性上只排第七。",
+      "authors": "Lichen Li, Ziping Dong, Sicheng Feng, Qi Li, Xinchao Wang",
+      "link": "https://arxiv.org/abs/2611.15777"
     },
     {
-      "title": "按文档树更新记忆：TreeAgent 让长层级数据不再被切成扁平段",
-      "titleEn": "TreeAgent: Structure-Aware Memory Agent for Processing Long Hierarchical Data",
-      "summary": "现有记忆智能体通常按固定 token 长度切段，处理 JSON、HTML 等结构化输入时，会把同一条记录的字段切开、丢掉层级位置，并在连续记忆更新中丢掉稍后推理还要用的兄弟记录。TreeAgent 按完整子树和相邻兄弟子树来分段，给每段附上结构路径，并在低层孩子与高层父亲之间建立残差记忆链接。作者在 8K 到 1M token、来自真实应用的 JSON/HTML/YAML/JavaScript 数据上，对四种代表性记忆智能体的八项检索与聚合任务做了评测：四个智能体在四个数据集上的平均分都有提升，总平均提高 3.61%。",
-      "authors": "Wei Gu, Weiwei Qi, Jiajun Tang, Tianhang Zheng, Bo Chen, Zhibo Zhang, Jinfei Liu, Kui Ren",
-      "link": "https://arxiv.org/abs/2611.13946"
+      "title": "思考的价值：混合决策模型学会何时推理",
+      "titleEn": "The Value of Thinking: Learning When to Reason in Hybrid Decision Models",
+      "summary": "与其决定「想多少」，作者提出「零或 T 思考」：同一模型要么在一次前向中凭隐式思考直接作答、不生成任何 token，要么在值得时付出 T 个 token 做完整自回归推理。混合决策模型 HDM 用一个冻结主干服务两种模式，由轻量自路由模块估计慢模式相对快模式的预期增益，只在超过按请求设定的价格 λ 时才启用；对没有逐步标签的智能体任务，提出用回合级回报训练路由模块的 CDPO。在 JevBench 上 HDM-4B 得 0.857（Jev 为 0.851），中位延迟 0.179 秒对 0.652 秒（-72.5%）；在 MiniWoB 上 HDM-27B 把 token 成本降低 80.1%。",
+      "authors": "Zhengxu Yu, Ke Xu, Meng Fang, Haitham Ammar, Weilin Luo, Jun Wang",
+      "link": "https://arxiv.org/abs/2611.16961"
     },
     {
-      "title": "把《GTA V》主线拆成可自动验分的在线基准：GTAGym 与 GTAVBench",
-      "titleEn": "GTAGym: Real AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
-      "summary": "上海创智学院与复旦大学的作者把《GTA V》主线任务拆成可复用的目标、交互阶段、完成约束与动态行为，做成可并行评测的环境 GTAGym。配套基准 GTAVBench 含 103 个在线任务（导航、载具控制、动态交互等九类）以及 47 个基于游戏画面的射击/狙击任务；GTAVBench-AGI 分支只在首帧以游戏目标形式给出任务，并配合自动压缩上下文的套件。结果由引擎状态自动判定，不必人工打分；同一框架还可按用户给定范围采样参数，批量生成带奖励与终止信号的强化学习环境。评测显示，模型在由这些任务派生的关卡上仍有明显短板，尤其是空中控制、躲避与拦截。",
-      "authors": "Jiajun Chen, Shicheng Fang, Jiahao Lu, Yuxin Wang, Xipeng Qiu",
-      "link": "https://arxiv.org/abs/2611.13028"
+      "title": "经验交接强化学习：让模型学会写给下一轮的「操作手册」",
+      "titleEn": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+      "summary": "用标量奖励做强化学习会丢掉试验中的细粒度环境信息（如错误日志）；而把经验交给后续回合的框架（反思、压缩、操作手册）本身又不是学出来的。作者固定 Agentic Context Engineering 框架，训练同一个模型同时担任行动生成、洞见反思与手册整理三个角色，并按候选交接产物对未来执行回合的下游效果来评估和联合优化。在多个智能体基准上，方法在留出集上优于基线。作者认为，智能体训练不仅要优化当前回合的动作，也要优化后续回合继承的、由模型自己写下的经验。",
+      "authors": "Doyoung Kim, Byeongguk Jeon, Kailin Zhang, Sherry Yang",
+      "link": "https://arxiv.org/abs/2611.16409"
     },
     {
-      "title": "智能体做硬件，形式化方法来收口：规格、证明与推理引擎三条线",
-      "titleEn": "Agentic AI Meets Formal Verification in the Era of Agentic Hardware Development",
-      "summary": "这篇受邀综述讨论两个相向而行的趋势：智能体已经能生成并优化硬件电路，正确性因此更关键；与此同时，AI 也在降低形式化方法的使用门槛。作者从三个层面回顾智能体如何推进硬件形式化方法——规格、证明构造与推理引擎；又从另一方向讨论形式化方法如何支撑可信的 AI 硬件开发，包括 RTL 生成、调试和保持正确性的优化，并梳理了代表性工作。",
-      "authors": "Wenji Fang, Yuchao Wu, Jing Wang, Zhiyao Xie",
-      "link": "https://arxiv.org/abs/2611.13705"
+      "title": "JustRUA：GPT-6 机器人操控智能体的对照研究",
+      "titleEn": "JustRUA: A Controlled Study of GPT-6 Robot-Use Agents",
+      "summary": "GPT-6 Astra 可通过固定框架直接驱动机械臂，RoboDojo 上这类「机器人操控智能体」分数涨得很快，但各系统框架与测试子集不同、常一次改多处，难以判断收益来源。作者在统一框架里逐项拆解框架、动作接口、经验复用与场景几何四个维度：保留完整回合历史并让每段动作提前停止的精简框架作用很大；经验复用会改变行为但并非免费午餐；场景几何帮助最大，即使深度只由 RGB 预测。不用学习策略、自改进循环或任务调参，JustRUA 把 RoboDojo 仿真分从 29.7 提到 50.3。",
+      "authors": "Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao",
+      "link": "https://arxiv.org/abs/2611.16009"
     },
     {
-      "title": "按提示自适应组队：PISA-E 在推理时才决定用几个模型、花多少钱",
-      "titleEn": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
-      "summary": "面向质量与成本必须同时管住的 Web 服务，传统路由是「每个提示只挑一个模型」，固定集成又不能按单条请求改成员和花费。作者提出单模型路由器 PISA，以及它的集成扩展 PISA-E：用软聚类成员与模型专属预测器估计各模型能力，再在可在推理时调节、无需重训的成本—质量偏好下，联合选择集成组成与规模。核心是一个可处理的「集成成功」代理目标，用来在异构请求上做提示自适应的花销分配。",
-      "authors": "Saul Urso, Emanuele Carlini, Patrizio Dazzi, Matteo Mordacchini",
-      "link": "https://arxiv.org/abs/2611.10193"
+      "title": "PhysLoop：借 LLM 的物理常识让视频生成模型自我改进",
+      "titleEn": "PhysLoop: Harnessing LLMs' Physics Awareness for Self-Improving Video Generation Models",
+      "summary": "视频生成模型画面逼真，但物理动态与因果一致性仍弱；从生成视频中学习又需要细粒度物理监督，而可靠的质量判断、纠错样本对与受控变体都很难获得。PhysLoop 是一套统一框架，在生成、筛选与纠错全程引导并约束 LLM，把其物理知识蒸馏成物理一致的视频，支持可控训练数据构建与推理时视频修复。团队发布 10 万条覆盖室内外真实场景的视频、生成工具及 PhysLoop-Gen、PhysLoop-Repair 两个评测集，并在外部 Physics-IQ Verified 基准上评估物理行为。",
+      "authors": "Yuxuan Chen, Xiaojie Li, Hao Chen, Juncheng Ma, Kewei Zhang, Zhongjing Du, Guoqiang Wei, Fangfang Wang, Zhen Dong, Zhiyang Dou, Liming Zhao, Yan Zeng, Jianwei Zhang, Daquan Zhou",
+      "link": "https://arxiv.org/abs/2611.16748"
     },
     {
-      "title": "不是模型变笨，是评审变挑：126 万次盲投里「两个都差」的比例每月涨 1.71 个百分点",
-      "titleEn": "AI Isn't Getting Dumber, We're Getting Pickier: Rising Standards in Human Evaluation of Large Language Models",
-      "summary": "用户抱怨 AI 助手「越更新越差」，通常归因于模型变化，但评审者本身也在变。作者在 Chatbot Arena 上取 2023 年 5 月至 2024 年 8 月的 1,260,967 次盲投，只保留版本固定的模型对（厂商快照与固定开放权重），发现同一对不变模型之间，「两个都差」的票占比平均每月上升 1.71 个百分点（均值 17.1%），2024 年每月升 1.91 个百分点；在 2023 与 2024 都被频繁观察到的 14 对里，每一对都在上升（15.5%→23.3%）。而排名并不漂移：2024 年较强模型在决定性票中的占比是平的。结论指向的是评价标准的抬升而非能力退化——这对所有用人类偏好做监控的团队都是一个警告。",
-      "authors": "Zihan Chen, Lei Nico Zheng, Di Zhu",
-      "link": "https://arxiv.org/abs/2611.14333"
-    },
-    {
-      "title": "两层就够走 DFS：Transformer 学图搜索的可证边界与深度的指数价值",
-      "titleEn": "Transformers Provably Learn Graph Search: Training Dynamics and the Exponential Power of Depth",
-      "summary": "把有向图上的寻路当作多步推理的符号抽象，作者先给出架构层面的界：单层 Transformer 在稠密图上实现 DFS 的「子节点选择」原语需要 Ω(N²) 规模，而两层即可用 O(N log N) 完成完整 DFS——第二层是必要且充分的。再往深处推，每增加一层就把有界可达 DFS 的前瞻视野扩为 1+2^(k−3)，即深度带来指数级可达半径。最后越过表达能力，证明在合适筛选的训练数据下两层 Transformer 可以真正学出 DFS 的执行过程，而不只是「能表示」。这为「深度换推理步数」提供了少见的形式化依据。",
-      "authors": "Xutao Ma, Somayeh Sojoudi",
-      "link": "https://arxiv.org/abs/2611.13594"
-    },
-    {
-      "title": "同样预算的注意力损伤，集中爆发比均匀稀疏更致命：GSM8K 掉 12.4 个百分点",
-      "titleEn": "Breakdown of Autoregressive Multi-Step Reasoning Under Concentrated vs. Diffuse Attention Head Dropout",
-      "summary": "作者借哺乳动物皮层在长时间清醒后出现的局部「关闭态」做类比，在 GSM8K 的 250 组配对推导上对比两种同等预算的注意力头屏蔽：局部集中爆发 vs 全域独立同分布丢弃。Qwen3-8B 在爆发式屏蔽下准确率从 91.2% 掉到 78.8%（−12.4 个百分点，McNemar p=5.5×10⁻⁶），LLaMA-3.1-8B-Instruct 从 84.0% 掉到 76.8%（−7.2 个百分点，p=0.0198）；而把同一预算按分位分层均匀摊到各生成步，退化明显更轻。含义是：故障的「形状」比故障的「总量」更能决定多步推理是否崩。",
-      "authors": "Karol Struniawski",
-      "link": "https://arxiv.org/abs/2611.14209"
-    },
-    {
-      "title": "给多模态模型装「弃权」而不丢已学会的答案：零预算下保住全部 57 个增益",
-      "titleEn": "Multimodal Abstention That Preserves Acquired Correct Answers",
-      "summary": "给任务适配后的多模态模型加弃权能力，常见副作用是把微调期学到的正确答案也一起扔掉。作者把弃权修复表述成一个约束优化：在「新丢失的正确答案」有预算的前提下，最大化对不可答问题的正确弃权。方法 ReFrain 由三部分组成——首 token logits 上的线性探针、在留出图像簇上做的阈值校准、以及一个确定性否决：把被拒输出替换为界面上的「以上都不是」选项，其余回答原样保留。在 Qwen2.5-VL-3B 上，零预算时它保住了全部 57 个 SFT 增益答案、零损失，同时把正确弃权率提升 7.30 个百分点；0.5% 校准预算下正确弃权达 74.05%、仅丢 8 个，仍保留 55 个增益。",
-      "authors": "Jinyuan Zhang",
-      "link": "https://arxiv.org/abs/2611.14311"
-    },
-    {
-      "title": "EngineAgent：把端侧推理引擎的「上新」变成一个可审计的智能体流水线",
-      "titleEn": "EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities",
-      "summary": "新架构与异构手机硬件叠加，让端侧推理引擎每支持一个新模型都要在模型转换、图构建、算子、硬件后端之间做协同改动，现有编码智能体常漏掉这些跨层依赖，也难以在主机—设备两侧定位失败。EngineAgent 的做法是把「可复用的引擎与硬件知识」和「模型相关实现」分开：启用前先构建带层级的引擎索引，记录抽象层与跨层依赖，并用已支持的模型预验证各后端的编译、执行与调试流程；新模型来时由 builder 依此协调跨层改动，auditor 检查完整性并驱动设备侧验证迭代调试。在跨三个移动平台、12 个任务上评估，展示了端侧模型上新的自动化可行性。",
-      "authors": "Zhengxiang Huang, Yujie Sun, Shengheng Chen 等",
-      "link": "https://arxiv.org/abs/2611.14356"
-    },
-    {
-      "title": "给财报电话会做「时点编码器」：让回测不再偷看未来的文本",
-      "titleEn": "Point-in-Time Encoders for Earnings Calls",
-      "summary": "把财报电话会编码成向量用于检索、RAG 与预测时，金融检索器通常一次性在所有可用文本上训练，但回测需要一种「没读过该向量日期之后任何文本」的编码器，否则就是前视偏差。作者从 412,248 通电话会出发，按 2010–2024 每年一个截止点训练了四个预训练配方的「年份版本」，每个版本只读截止日及以前的文本，再用电话会自身的问答对做微调。只用电话会训练的 3,380 万参数版本，在每个测试季度的留出电话会上都比所测通用检索器更准；其向量还能把「次日收益」与「基于历史收益和公司规模的预测」之间的秩相关提高约一半。另有反直觉发现：后续版本在更早季度的检索上，反而优于当时真正可用的版本。",
-      "authors": "Alessio Brini",
-      "link": "https://arxiv.org/abs/2611.14325"
+      "title": "WorldDraft：代码搭好世界，视频模型能否只负责渲染？",
+      "titleEn": "WorldDraft: If Code Builds the World, Can Video Models Just Render It?",
+      "summary": "多模态编程智能体把 4D 世界构建与视觉生成分开，视频模型由此从「世界生成器」变成「生成式渲染器」。WorldDraft 用 48 个可执行 4D 世界家族、432 个严格配对用例，在相同动力学下正交交叉草稿粒度与外观对齐两因素，考察「保持世界（运动与机位）」与「实现视觉（持续绑定文本指定属性）」。对 12 个代表模型的评测发现：两者存在明显张力；更丰富的草稿能锚定结构却损害外观保真；源线索冲突时泄漏最高达 64%。作者提出即插即用的视觉提示策略 WorldDraft-Primer，在冻结渲染器上同时改善两项目标。",
+      "authors": "Zhiyu Hou, Wen-Jie Shu, Harold Haodong Chen, Weilin Ruan, Chenfei Liao, Liuzhou Zhang, Disen Lan, Xiaogang Xu, Qi Chen, Ser-Nam Lim",
+      "link": "https://arxiv.org/abs/2611.16217"
     }
   ],
   "models": [
     {
-      "name": "Gemini 4 Hydrogen",
-      "vendor": "Google / Google DeepMind",
-      "highlight": "面向日常编码与智能体工作流的 Gemini 4 中档模型。官方称默认 high 思考档 AA 智能指数 51（高于 Gemini 4 Argon 的 50），xhigh 档 54；100 万 token 上下文一口价为每百万输入 1.50 美元、输出 7.50 美元。设 low / medium / high / xhigh 四档思考深度，输入与输出均可到 100 万 token。相对 Gemini 3.8 Flash，官方称默认档完成任务快 2.5 倍，Terminal-Bench 4.1 从 18.2% 提到 57%。即日起通过 Gemini API、AI Studio、Gemini 应用、搜索与 Antigravity 等表面陆续开放。",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+      "name": "Gemini 4 家族价目（Hydrogen / Carbon / Argon）",
+      "vendor": "Google · 据 Simon Willison 整理",
+      "highlight": "Simon Willison 11 月 12 日整理的价目表：Gemini 4 Hydrogen 每百万 token 输入 1.50 美元、缓存输入 0.075 美元、输出 7.50 美元；Carbon 与 Argon 至 11 月 30 日为输入 2.00 / 缓存 0.10 / 输出 10.00 美元，12 月 1 日起翻倍为 4.00 / 0.20 / 20.00 美元。他指出 Hydrogen 目前只比两者便宜 25%，12 月后差距才拉到 75%，并且 Hydrogen 成为新的免费层模型、驱动 Google 搜索中的 AI 功能。",
+      "link": "https://simonwillison.net/2026/Nov/12/"
     },
     {
-      "name": "文心闪电深度思考 / 文心一镜微表情",
-      "vendor": "百度文心",
-      "highlight": "百度世界 2026 开幕式发布的两款文心应用模型，据第一财经，同步上线百度智能云千帆，面向企业客户及合作伙伴开放 API。李彦宏把策略概括为在继续投入前沿基座的同时，坚持「模体并行、协同进化」，让大模型为应用而优化。",
-      "link": "https://www.yicai.com/news/103437760.html"
+      "name": "Hy Realtime",
+      "vendor": "腾讯混元",
+      "highlight": "腾讯混元 11 月 13 日发布的实时语音模型，官方称在语音理解、指令遵循、拟人化表达等基础对话能力上表现优异，并新增 Agentic 工具调用与唱歌能力。已在元宝语音通话、腾讯客服等产品上线，近期将上线腾讯云对外提供 API。",
+      "link": "https://www.yicai.com/news/103440081.html"
     },
     {
-      "name": "Seedance 2.5 Flash",
-      "vendor": "字节跳动 / 火山引擎",
-      "highlight": "定位为最接近旗舰 Seedance 2.5 的高性价比视频生成模型。据凤凰网科技援引官方数据，生成速度翻倍；720P 文生/图生视频约 0.99 元/秒，较旗舰降约 34%；单段最长 30 秒，单次最多 10 图、5 段视频、5 段音频，分辨率 480P/720P，并支持视频编辑。将陆续登陆即梦等平台，API 定于 11 月 15 日上线火山方舟。",
-      "link": "https://original.ifeng.com/c/8xzaGjATIU1"
+      "name": "SparkAudio 1.0（星火语音基座大模型）",
+      "vendor": "科大讯飞",
+      "highlight": "11 月 12 日在讯飞开放平台上线 API。支持文本与语音输入、文本输出，可做语音转写、多语言翻译、多方言识别、环境音理解、说话人分离、情感分析与复杂音频问答；官方称支持 99 种语言、202 种方言，直接理解语音而非先转文字，并强调全国产算力训练。",
+      "link": "https://www.ithome.com/1/026/386.htm"
     },
     {
-      "name": "Granite 4.1 LLMON-preview（3B / 8B）",
-      "vendor": "IBM",
-      "highlight": "从 Granite 4.1 基座后训练的实验预览模型，用于消费和生成 LLMON 标记文本。官方称在 OPI 等静态间接提示注入基准上显著降低攻击成功率，同时通用能力与 Granite 4.1 Instruct 大致持平。预览仅供探索、不面向生产；权重与工具见 Hugging Face 与 GitHub。",
-      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+      "name": "Perplexity Decider v1.3 / Decider Flash v1.3",
+      "vendor": "Perplexity",
+      "highlight": "Perplexity 11 月 12 日放出新版开放权重决策模型：Decider v1.3 为 27B，Decider Flash v1.3 为 4B 蒸馏版，Hugging Face 上以 Apache 许可发布（需登录令牌访问）。支持有序或无序标签的二分类与多分类并返回概率，可用于分类、路由、排序与评估；新增 locate 功能，可返回匹配片段及字符位置，用于命名实体识别、个人信息识别与抽取式问答。",
+      "link": "https://www.perplexity.ai/hub/blog/perplexity-decider"
     },
     {
-      "name": "ZONOS3-Mini",
-      "vendor": "Zyphra",
-      "highlight": "Apache 2.0 开源的实时零样本语音克隆与可调控 TTS。混合 Gated DeltaNet / Attention 的稀疏 MoE 骨干为 8 亿总参、1 亿激活，覆盖 43 种语言；官方称在 112 张 NVIDIA H100 上训练了 2.5 天。同步开出 bf16 与 gguf 权重、Hugging Face Space、MIT 许可的运行时（含 SGLang-Omni、MLX、WebGPU）以及 ZTTS2-Eval 评测集。博客标注日期为 11 月 11 日，Hugging Face 文章页为 11 月 12 日。",
-      "link": "https://huggingface.co/blog/Zyphra/zonos3-mini"
+      "name": "Atlas（全面开放）",
+      "vendor": "World Labs",
+      "highlight": "World Labs 把世界模型 Atlas 向所有人开放，提供网页应用与开发者 API。Atlas 是原生处理文本、图像、视频与 3D 的 omni 模型，把所有输入融合到共享空间上下文中，可生成或重建可探索的 3D 场景，输出 3D 高斯泼溅、网格、相机路径与视频；API 采用异步任务、按额度计费。",
+      "link": "https://worldlabs.ai/blog/atlas"
     },
     {
-      "name": "Inkling 2 Small（权重开放）",
-      "vendor": "Thinking Machines Lab",
-      "highlight": "11 月 12 日按承诺放出权重，Apache 2.0，结束一周的托管独占期。594B 总参、每 token 激活 17B，384 专家中每 token 只路由 8 个；文本+图像输入、1M 上下文，模型卡给出 NVFP4 与 MXFP8 检查点（NVFP4 约需 500GB 显存）。人工分析智能指数 31 分，为中国以外得分最高的开放权重模型；Together AI 托管 0.30 / 1.00 美元每百万 token。官方对比显示在 DeepSWE v1.1 与 FrontierCode v2.0 上均落后于 DeepSeek-V4.1-Flash-1017，且未公布原定的外部红队结论。",
-      "link": "https://superpowerdaily.com/posts/thinking-machines-publishes-inkling-2-small-weights-after-hosted-only-debut"
+      "name": "Mirendil-Base / Fern",
+      "vendor": "Mirendil",
+      "highlight": "Mirendil 随 10 亿美元 A 轮披露：Mirendil-Base 是由一名研究员借助智能体从零预训练的编程模型，耗时 3.5 个月、算力不到 1000 万美元；Fern 由其后训练而来，上下文最多 1000 万 token，足以容纳智能体数天的工作。均为公司自述，未见公开权重或第三方评测。",
+      "link": "https://mirendil.com/news/series-a/"
     },
     {
-      "name": "Nex-N2.6",
-      "vendor": "上海创智学院",
-      "highlight": "11 月 10 日以 Apache 2.0 放出，321B 参数，基于 GLM-5.3-Flash 构建，面向电脑操作与编程；权重约 328GB，属「整机下载」级别。官方称 OSWorld 从基座的 78.0 提升到 83.0，但在自家表格里 Terminal-Bench 2.1 略低于基座（84.1 对 84.3）。是本周许可证最干净的大模型发布之一。",
-      "link": "https://csuite.so/blog/ai-models-roundup-november-2026"
-    },
-    {
-      "name": "Alpamayo 2 Edge",
-      "vendor": "NVIDIA",
-      "highlight": "开放权重的 20 亿参数视觉-语言-动作（VLA）模型，面向 DRIVE AGX Thor 车端平台，输出驾驶轨迹并附带因果解释，模型卡已放权重。与「云端大模型 + 端侧小模型」的分层路线一致：把解释性作为车端可审计的一部分，而不是只在训练侧做归因。",
-      "link": "https://fav0.com/en/2026-11-13"
-    },
-    {
-      "name": "meta-encoder-v1",
-      "vendor": "Meta",
-      "highlight": "11 月 12 日放出的 28B 文本+图像嵌入模型，可用于跨模态检索与向量化。值得单独点名的是许可证：截至本次整理，仓库未声明任何许可——按通行理解，公开可下载不等于获得使用授权，商用接入前需要先看到条款。",
-      "link": "https://csuite.so/blog/ai-models-roundup-november-2026"
+      "name": "语飞国际中文教育垂直大模型",
+      "vendor": "2026 世界中文大会发布",
+      "highlight": "11 月 13 日在北京开幕的 2026 世界中文大会上发布，面向全球中文学习者提供即时反馈的学习评测与个性化辅导，面向教师在多轮对话中生成课前备课、课堂互动与课后巩固素材，面向中文教育机构提供标准化接口。",
+      "link": "http://finance-app.people.cn/n1/2026/1113/c1004-40833526.html"
     }
   ],
   "ecosystem": [
     {
-      "title": "Antigravity 上线 Orchestrator：同一会话里在 Carbon 与 Hydrogen 之间自动切换",
-      "summary": "伴随 Gemini 4 Hydrogen，谷歌在 Antigravity 中推出 Orchestrator：不再从始至终只用一个模型，而是在同一会话里动态切换 Carbon 与 Hydrogen 等。官方称在 Terminal-Bench 4.0 上达到接近 Carbon 的任务成功率，同时平均少耗 24% 配额、完成速度快 19%。对需要并行智能体的工作流，可用 Carbon 做协调、Hydrogen 做工人与校验，在隔离工作区里同时改代码和跑测试。官方还提到配套的 Gemini 前端设计 skill，以及把 Hydrogen 用于表格、幻灯片和前端原型的演示。",
-      "source": "Google Blog / Google Antigravity",
-      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-      "models": [
-        "Gemini 4 Carbon"
-      ]
-    },
-    {
-      "title": "Genie MCP 把企业本体和搜索交给 ChatGPT、Claude、Copilot 与 Grok Bot",
-      "summary": "Databricks 为第二代 Genie 提供 MCP 接口：智能体可以通过一次受治理的搜索，跨湖仓表格与 Google Drive、Jira、Confluence 等应用找资料，而不必对每个应用分别做工具调用。官方还列出 Atlassian、Google Drive、GitHub 等新的 MCP 连接器，以及 OpenSharing，供团队在不暴露底层数据的前提下与合作方协作。需注意：Genie 与 Ontology 已一般可用，常在线体验与 Genie Search 仍是即将预览，而不是即日全量开放。",
-      "source": "Databricks",
-      "link": "https://www.databricks.com/company/newsroom/press-releases/databricks-launches-new-always-genie-autonomous-ai-complex",
+      "title": "ChatGPT Wallet 配套 Commerce Partner Playbook：给零售商的智能体结账指南",
+      "summary": "随 ChatGPT Wallet 一同发布的 Commerce Partner Playbook，向希望支持智能体下单的商家提供工具与指引。结账链路上，dot 只把收货地址与联系方式交给商家，付款走支付令牌，每笔由用户生物识别确认；OpenAI 计划后续开放消费上限与类目、时段预授权。对接方要面对的现实是：部分大型零售商仍在屏蔽 AI 智能体。",
+      "source": "OpenAI / TechCrunch",
+      "link": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
       "models": []
     },
     {
-      "title": "AWS Emulator：编程智能体可在笔记本上对同一套 AWS API 做本地迭代",
-      "summary": "AWS 把这款本地模拟器明确写成给 Kiro、Claude Code 一类编程智能体用的闭环：在本机创建资源、检查结果、再改一遍，而不必等待区域部署。它按公开 Smithy/API 模型生成接口，保真测试套件公开在 GitHub；尚未实现的操作返回 HTTP 501。安全上，默认只监听本机、只接受自己签发的密钥，但官方提醒它并不按 AWS 的方式评估 IAM，不能代替上线前的云上安全验证。11 月 12 日的博文更新补上了 GitHub 仓库链接。",
-      "source": "AWS News Blog",
-      "link": "https://aws.amazon.com/blogs/aws/test-your-applications-against-aws-locally-with-aws-emulator/",
+      "title": "Daybreak Defense Factory：把安全工具的发现变成草稿 PR，人审后合并",
+      "summary": "Defense Factory 可导入 Daybreak Red Team 以及 Wiz、Snyk、Endor Labs 的漏洞数据，扫描已连接 GitHub 仓库与新提交、定期复查；智能体追踪漏洞并起草补丁，工程师可查看证据、用 Codex 调整补丁并生成草稿 PR，补丁不会自动部署。以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区。",
+      "source": "OpenAI",
+      "link": "https://openai.com/daybreak/defense-factory/",
       "models": []
     },
     {
-      "title": "LLMON 把「指令/数据/约束/执行」写成模型可读的标记，并开出工具链",
-      "summary": "IBM 同时开出 LLMON 仓库、JSON↔LLMON 无损转换器，以及在 Mellea 中的原生支持。常规聊天模板只区分 system/user/assistant 角色；LLMON 进一步标明每个部件的含义，并用 exec 块绑定「这条指令作用在哪份数据上」。未绑定的诱饵指令会被留在上下文里但不被执行——这是为降低间接提示注入而设计的学习目标。官方也演示了用自定义标签加 LoRA，把这套词汇接到 ScienceWorld 等任务上。预览明确不面向生产。",
-      "source": "IBM Granite / Hugging Face",
-      "link": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "title": "Claude for Manufacturing：17 项技能可单独调用，也可串成多步流程",
+      "summary": "插件技能涵盖 rfq-to-quote（询价转报价）、inspection-to-capa（检验转纠正预防）、breakdown-diagnosis（故障诊断）、supplier-escape-to-alternate-source（供应商出问题时换源）、daily-production-report（生产日报）等，连接 Autodesk Fusion、Infor、Microsoft 365、Oracle NetSuite；可单任务运行，也可把多步串起来后再统一审阅，Anthropic 称会定期新增技能。",
+      "source": "Anthropic / Manufacturing Dive",
+      "link": "https://claude.com/resources/articles/claude-for-manufacturing",
       "models": []
     },
     {
-      "title": "Claude Code v2.1.323：Code Mode 把工具调用打包成一段 JavaScript 一次跑完",
-      "summary": "11 月 12 日的 v2.1.323 是一次大版本（官方称 300 多项变更）。最受关注的是实验性 Code Mode：此前每一步工具调用后都要回到模型问「下一步做什么」，开启后 Claude 可以写一段 JavaScript 把多个工具调用打包在一起一次执行完毕，减少往返延迟与 token 开销；默认关闭、需按组织开启。工程侧同步加了三类硬约束：plugin.json 新增 engines[\"claude-code\"] 字段，对插件做版本区间强制；一批 Bash 沙箱安全修复（符号链接写入绕过、cp/mv 目标缺失校验等）；内部 git 与 ripgrep 调用不再携带登录令牌，可能影响依赖会话令牌的 git hook 与凭据助手。另有两个容易踩的点：无法识别的模型 ID 现在默认按 1M 上下文估算（此前 200K），接第三方网关上的小上下文模型会迟迟不压缩；CLAUDE_CODE_DISABLE_AGENT_PROGRESS_SUMMARIES 可关闭子智能体进度摘要及其额外请求。",
-      "source": "Claude Code Daily Briefing",
-      "link": "https://claude-news.today/en/briefings/briefing-2026-11-13",
+      "title": "Anthropic「Worse Together」：一人一个智能体，不如一个协调者",
+      "summary": "Anthropic 对齐团队发布研究与基准 MAMUBench：在共享 API token 预算、诊所排期、团购/预订等多用户争用共享资源的场景中，单个协调智能体服务所有人的效果优于每人一个、互相发消息的智能体团队。缓解办法因场景而异：共享预算场景指定一个团队负责人有效，团购场景则是在读完待处理消息前禁止结账。",
+      "source": "Anthropic Alignment",
+      "link": "https://alignment.anthropic.com/2026/worse-together/",
       "models": []
     },
     {
-      "title": "Claude Code Plugins v6.59.0：委派开始能读「沙箱任务到底结束了没有」",
-      "summary": "11 月 12 日连发 v6.57.0、v6.58.0、v6.59.0 三版，方向都很务实。v6.59.0 让委派逻辑能读取沙箱任务的执行结果，并在任务已结束时 fall through 到备选路径——此前被委派的作业可能已完成、被终止或不再可用，编排层却缺少判断依据。v6.58.0 给委派插件加了每日预算行（多个智能体竞争有限资源时的结构化计量）与 router-chat 传输。v6.57.0 引入四类常设规则：智能体调用、重复作业、会话等待、单一来源，用来约束「谁调谁、什么能重跑、等多久、信哪个源」。配套更新落在 content-guards v6.4.0 与 ai-delegation v6.16.0。",
-      "source": "Undercode News",
-      "link": "https://undercodenews.com/claude-code-plugins-just-received-a-major-agent-delegation-update-in-v6590-video",
+      "title": "华为开源 MACaQ：模型无关的 4 比特量化，64 分钟量化 122B 模型",
+      "summary": "华为计算系统实验室以 Apache 2.0 开源 MACaQ，一种模型无关的训练后量化工具，支持 4 比特权重与激活（MXFP4 / W4A4），后端覆盖 llama.cpp、vLLM、Diffusers 与 PyTorch。官方称用 32.5GB 显存、64 分钟完成 Qwen3.5-122B-A10B 的量化，量化后模型约占 74GB 显存。数据为团队自测。",
+      "source": "Huawei CSL / GitHub",
+      "link": "https://github.com/huawei-csl/MACaQ",
       "models": []
     },
     {
-      "title": "自托管 Claude Managed Agents 进入私测：harness、沙箱与会话历史都放自己的云",
-      "summary": "Anthropic 向部分开发者开放自托管版 Claude Managed Agents：可以把智能体执行框架（harness）、沙箱与会话历史跑在自己的云或本地机房，并可自行决定推理请求发往哪里。对金融、医疗与政企客户而言，这解决的是「数据不出边界」这一条硬要求，而不只是成本问题；同时它也把「托管智能体」从纯 SaaS 推向可私有化的运行时。",
-      "source": "Claude Devs / FAV0",
-      "link": "https://fav0.com/en/2026-11-13",
+      "title": "DeepMind 开放 WeatherNext 背后的数据集 SatWeave 与 PARDIG（CC BY 4.0）",
+      "summary": "Google DeepMind 11 月 13 日开放两套地球科学数据集：SatWeave 是覆盖全球、17 个通道的逐小时静止卫星影像拼图；PARDIG 是基于 NASA GPM 核心观测台星载雷达训练的 AI 降水数据集，15 分钟、约 10 公里分辨率。DeepMind 称 PARDIG 在小到中雨的逐小时降水检测上比 NASA IMERG-Final 提升 30% 以上；许可为 CC BY 4.0，任意 Google Cloud 账号即可公开访问。",
+      "source": "Google DeepMind",
+      "link": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
       "models": []
     },
     {
-      "title": "vLLM 三连：DeepSeek 在 Rubin 上吞吐 2.7 倍于 GB300，Inkling 2 Small 首日支持",
-      "summary": "vLLM 团队报告 DeepSeek-V4.1-Flash 在 Vera Rubin NVL72 上的 AgentX 结果：峰值吞吐为 GB300 NVL72 的 2.7 倍（另有 58 倍的数字来自性能曲线上高单用户生成速率的不同工作点，不宜混用）。同时给出 Inkling 2 Small 的首日支持与部署指南（量化专家、文本+图像输入、最长 1M 上下文，四分区张量并行下约 630 token/s/用户），以及 vLLM-Omni 在 Vera Rubin 上用 MiniMax H3-Image 做 4096 级生成 0.87 秒、四卡每小时 6,115 张的吞吐。",
-      "source": "vLLM Project / FAV0",
-      "link": "https://fav0.com/en/2026-11-13",
-      "models": [
-        "DeepSeek-V4.1-Flash",
-        "Inkling 2 Small",
-        "MiniMax H3-Image"
-      ]
-    },
-    {
-      "title": "SGLang 三条线同时推进：Neuron 公测、1.0 稳定性、推理联盟",
-      "summary": "SGLang 与 AWS Annapurna Labs 合作的 SGLang-Neuron 进入公测，为 AWS Trainium 提供原生 PyTorch 插件，同一套 SGLang 接口既做推理服务也生成强化学习 rollout；官方称 SGLang 已在十余类加速器家族上运行，并把「插件」确立为主仓库之外后端的受支持路径。同时维护者开放了 1.0 版本 tracker，重心是稳定性、更清晰的配置报错与 1.x 兼容策略；并宣布成立 SGLang Consortium，把参与推理栈开发、发布测试与生产部署的团队拉到一起。",
-      "source": "SGLang / FAV0",
-      "link": "https://fav0.com/en/2026-11-13",
-      "models": []
-    },
-    {
-      "title": "Runway 上线 3D 生成与导出：以 Tripo H3.1 由文字或照片生成带贴图模型",
-      "summary": "Runway 把 3D 加入生成链路：可用提示词或照片经 Tripo H3.1 生成带贴图的三维模型，也可上传 GLB；能截取选定视角作为新图像或视频的参考，成品可导出为 GLB 进入下游管线。对内容团队而言，这一步把「参考图—视频—可复用资产」串成了同一条链路，3D 资产第一次成为生成工作流的中间产物而非终点。",
-      "source": "Runway / FAV0",
-      "link": "https://fav0.com/en/2026-11-13",
+      "title": "语音与创作智能体一日三发：ElevenLabs Marketplace、Fish Agent、Krea Bots",
+      "summary": "据 The Neuron 11 月 13 日汇总：ElevenLabs 上线 Marketplace，汇集基于其技术的医疗、金融、零售等行业语音智能体与应用；Fish Audio 推出无代码语音智能体构建器 Fish Agent，其 Live 3 模型可边说边听、应对打断，官方称约 30 秒即可部署一个基础智能体；Krea 推出 Krea Bots，定位为能持续推进创作项目、适应团队偏好的 AI 协作者，目前提供测试资格。",
+      "source": "The Neuron",
+      "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/",
       "models": []
     }
   ]

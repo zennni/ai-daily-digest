@@ -1,5 +1,124 @@
 [
   {
+    "t": "OpenAI 推出 ChatGPT Wallet：dots 智能体代为下单，每笔须本人生物识别确认",
+    "s": "OpenAI 11 月 13 日推出 ChatGPT Wallet，让 ChatGPT 中名为 dots 的智能体帮用户决定买什么并代为完成购买。首批仅面向有限数量的美国 ChatGPT Pro 订阅用户（18 岁以上，持美国发行的 Visa、Mastercard 或美国运通卡）。用户一次性把卡加入钱包后，结账前可核对商品、总价与所用卡片，再用 Face ID 或指纹等安全校验确认，并留下交易记录；扣款使用替代卡号的支付令牌，真实卡信息不交给 dot 或商家，商家只收到收货地址、联系方式等履约所需信息，信用卡积分与争议退款等保障照常。OpenAI 称未来会让用户设置消费上限，或按类目、时段预授权，让智能体更自主地处理；同时发布面向零售商的 Commerce Partner Playbook。TechCrunch 指出，亚马逊等零售商仍在屏蔽 AI 智能体访问。",
+    "d": "11月13日",
+    "src": "OpenAI / TechCrunch",
+    "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
+    "m": []
+  },
+  {
+    "t": "前 OpenAI 研究员称六个中国模型权重带 Blackwell「指纹」，报告自认不能证明违规",
+    "s": "曾参与 Sora、GPT-4o 等项目的 Will DePue 发布取证分析：PyTorch 在 GPU 上用随机数初始化权重时，会因芯片计算单元数不同留下特征图样（Hopper 为 132 个，Blackwell 为 148 或 152 个），部分从未被训练改动的权重槽位会保留这种图样。据 The Decoder 整理，DeepSeek-V4-Flash 与 MiniMax-M3 对应 148 单元的 B200/B300，DeepSeek-V4-Pro、Kimi K3、Kimi K3.1-Pro 与蚂蚁 Ling-3.1-flash 对应 152 单元的 GB200/GB300；方法在 24 个已知硬件的对照模型上全部判对，他还在真实 Blackwell 上复现了 DeepSeek-V4-Flash 与 Kimi K3 的结果并公开代码。报告估算所查五次训练合计约用 1.2 万块 Blackwell。但报告也写明：这只能说明初始化所用硬件，不能说明芯片在哪、归谁，也不能单凭此证明走私或违反美国出口管制；其他中国实验室（如 Qwen3.8、智谱、腾讯等）的模型仍只显示 Hopper 特征。",
+    "d": "11月13日",
+    "src": "The Decoder / Unemployment Labs",
+    "url": "https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/",
+    "m": [
+      "DeepSeek V4 Pro",
+      "DeepSeek V4 Flash",
+      "Kimi K3.1 Pro",
+      "Kimi K3",
+      "MiniMax M3",
+      "Ling 3.1 Flash"
+    ]
+  },
+  {
+    "t": "SpaceX 宣布得州、亚利桑那两座超算园区，计划投资合计逾 740 亿美元",
+    "s": "SpaceX 11 月 12 日在官网宣布，将在得州 Rio Grande Valley 的 Starbase 附近投资逾 240 亿美元建超算设施，用于训练前沿智能系统，并称该设施自建发电、不从公共电网取电，另承诺 2.2 亿美元扩建布朗斯维尔供水与污水设施；在亚利桑那州 Cochise 县则规划约 500 亿美元的超算园区，预计带来约 5500 个建设岗位与 1000 个长期岗位，采用干式冷却、无计划的工业地下水消耗，并称可能让当地电力合作社成员电费最多降低 20%。路透社称，亚利桑那项目仍需县政府批准，已有约 2400 人联署请愿反对，公开听证定在 12 月；SpaceX 的 AI 业务在三季度贡献了过半营收。",
+    "d": "11月12日",
+    "src": "SpaceX / Reuters",
+    "url": "https://www.spacex.com/updates/terafab",
+    "m": []
+  },
+  {
+    "t": "Notion 确认：Fireworks 被入侵导致部分 Notion AI 聊天记录外泄，影响不到 1% 工作区",
+    "s": "Notion 11 月 12 日更新的安全公告称，Fireworks AI 于 11 月 8 日确认了最终受影响的数据集，其中包含 Notion AI 用于 Insights 功能的聊天记录；对绝大多数受影响工作区而言，这些记录无法对应到具体用户或工作区，也不含工具调用结果。Notion 此前已于 11 月 3 日断开与 Fireworks 的连接、11 月 4 日删除存放在其系统中的数据，目前 Insights 功能已下线，也不再通过 Fireworks 提供开放权重模型。Notion 建议受影响客户把这些数据视同已泄露，若在事件期间向 Notion AI 粘贴过密码、API 密钥等凭据应立即轮换。VentureBeat 指出，Fireworks 默认零数据保留，但批处理、训练等少数功能会存储客户内容，这次入侵正落在存储一侧。",
+    "d": "11月12日",
+    "src": "Notion / TechCrunch",
+    "url": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor",
+    "m": []
+  },
+  {
+    "t": "OpenAI 发布 Daybreak Red Team 与 Defense Factory：智能体渗透测试、起草补丁，不自动部署",
+    "s": "OpenAI 在 11 月 12 日的 Cyber at the Frontier 活动上，把前沿网络安全模型做成两款产品。Daybreak Red Team 让一组协同的智能体利用源代码与应用上下文对 Web 应用做渗透测试，可验证代码扫描器、漏洞赏金与披露报告中的发现，并检验补丁是否真正挡住利用；测试在隔离环境中进行，由 Guardian 审核控制智能体能触达的应用与端点。Daybreak Defense Factory 则顺着代码追踪漏洞并起草补丁，可导入 Red Team 及 Wiz、Snyk、Endor Labs 的发现，扫描已连接的 GitHub 仓库与新提交、定期复查，工程师可借 Codex 调整补丁并生成草稿 PR。据 SecurityWeek，补丁不会自动部署；Red Team 开放早期访问申请，Defense Factory 以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区，价格未公布。",
+    "d": "11月12日",
+    "src": "OpenAI / SecurityWeek",
+    "url": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+    "m": []
+  },
+  {
+    "t": "LangChain 完成 3 亿美元 C 轮，估值 30 亿美元",
+    "s": "LangChain 创始人 Harrison Chase 11 月 13 日宣布，公司以 30 亿美元估值融资 3 亿美元，由现有投资方 CapitalG 领投，新投资方 GIC 与 DFJ Growth 大额参投，IVP、Sapphire Ventures 等老股东跟投，Salesforce Ventures、Insight Venture Partners、MongoDB Ventures 等新加入。公司称已有 7000 多家机构使用其智能体平台 LangSmith，客户包括 Harvey、Rippling 以及英伟达、丰田、Salesforce 等；产品分为智能体运行、改进与治理三大支柱，涵盖 Deep Agents、LangGraph、沙箱、托管智能体、可观测与评估、LLM/工具网关等。LangChain 预告 11 月 20 日举办发布会公布新的 LangSmith 能力。",
+    "d": "11月13日",
+    "src": "LangChain",
+    "url": "https://www.langchain.com/blog/series-c",
+    "m": []
+  },
+  {
+    "t": "Mirendil 获 10 亿美元 A 轮：称一人带智能体用不到 1000 万美元算力预训练编程模型",
+    "s": "Mirendil 11 月 12 日宣布完成 10 亿美元 A 轮，由 Kleiner Perkins 与 Clearlake Capital 领投，Battery Ventures、Doerr Capital、谷歌、M13、Pear VC、S32 等参投。公司称过去三周公布的首批成果显示：一名研究员与智能体协作，用 3.5 个月、不到 1000 万美元算力从零预训练出有竞争力的编程模型 Mirendil-Base，再后训练成可容纳最多 1000 万 token 上下文的 Fern；其智能体平台 Lor 已进入私测，可让数百个智能体连续数天写代码、跑实验，公司自身每天都在 Lor 上运行。上述训练成本与效果均为公司自述，尚无独立复核。",
+    "d": "11月12日",
+    "src": "Mirendil",
+    "url": "https://mirendil.com/news/series-a/",
+    "m": []
+  },
+  {
+    "t": "Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，披露与微软签约",
+    "s": "AI 芯片公司 Cerebras 11 月 12 日公布三季度业绩：核心营收 2.309 亿美元，高于 LSEG 一致预期的 2.147 亿美元，同比增长 70%（二季度为 103%）；调整后每股收益 0.12 美元，市场原预期亏损 0.14 美元。CEO Andrew Feldman 对 CNBC 表示，公司 10 月与微软签下云端合作，预计 2027 年一季度开始贡献收入，此前已与亚马逊、甲骨文达成合作。公司预计四季度营收 3.1 亿至 3.3 亿美元，并预计 2027 年营收翻三倍。CNBC 称其股价周五上涨约 7%，但自 5 月上市以来累计跌约 47%。",
+    "d": "11月12日",
+    "src": "CNBC / Cerebras",
+    "url": "https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html",
+    "m": []
+  },
+  {
+    "t": "欧盟领导人在都柏林召开首次 AI 主题峰会：在追赶与防险之间找平衡",
+    "s": "欧盟领导人 11 月 13 日在爱尔兰都柏林举行首次以 AI 为主题的非正式峰会，Mistral CEO Arthur Mensch 与诺贝尔奖得主 Geoffrey Hinton 参与讨论。据 Euronews 与法新社，议题包括如何在追赶美国和中国的同时保护公民免受 AI 风险，以及监管与创新、技术主权的平衡；欧洲议会议长梅措拉称厌倦了「欧洲已输掉 AI 竞赛」的说法，欧盟外交与安全政策高级代表卡拉斯则提醒 AI 在乌克兰战场上的「黑暗面」。爱沙尼亚与芬兰本周致信呼吁建立欧盟层面的严重 AI 事件响应机制。欧盟官员称英伟达风波不在正式议程上，但领导人可能讨论其安全影响。",
+    "d": "11月13日",
+    "src": "Euronews / AFP",
+    "url": "https://www.euronews.com/2026/11/13/eu-leaders-discuss-how-to-boost-europes-ai-industry-while-tackling-risks-at-dublin-summit",
+    "m": []
+  },
+  {
+    "t": "DeepSeek 开放全家桶应用 API：深度思考搜索、文件输入与 OCR/ASR/TTS 均可调用",
+    "s": "据第一财经，DeepSeek 11 月 13 日正式开放全家桶应用 API：在原有 API 中开启对应参数，即可获得深度思考搜索、文件输入等对话功能；语音及相关底层能力也开放了独立接口，包括 OCR、ASR、TTS 等，支持单独或组合调用。官方称开发者可在自己的应用中实现复杂对话功能，甚至 1:1 复刻完整的 DeepSeek App。",
+    "d": "11月13日",
+    "src": "第一财经",
+    "url": "https://www.yicai.com/news/103440560.html",
+    "m": []
+  },
+  {
+    "t": "谷歌与三星开启 Gemini 智能眼镜预订：起价 395 美元，12 月 10 日发售",
+    "s": "谷歌与三星 11 月 12 日开启搭载 Gemini 功能的智能眼镜预订，镜框款式由 Warby Parker 与 Gentle Monster 提供：Warby Parker 款起价 395 美元，Gentle Monster 款 449 至 489 美元，12 月 10 日上市并进入门店。Ars Technica 称谷歌把隐私作为卖点，The Verge 的上手体验则认为实时翻译与保护旁人的控制设计是与 Meta 眼镜区分的亮点。",
+    "d": "11月12日",
+    "src": "Google / Samsung / Ars Technica",
+    "url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/",
+    "m": []
+  },
+  {
+    "t": "Anthropic 推出 Claude for Manufacturing：17 项技能、4 个系统连接器",
+    "s": "Anthropic 11 月 12 日推出面向制造业的 Claude 插件 Claude for Manufacturing，包含 17 项技能，可完成新工单报价、检验不合格调查、设备故障诊断、替代供应商寻源、借 Autodesk Fusion 比较设计、生产日报等流程，并支持 Autodesk Fusion、Infor、Microsoft 365 与 Oracle NetSuite 四个连接器，没有连接器的系统也可使用。Anthropic 企业市场负责人 Lauren Collett 对 Manufacturing Dive 强调，每份草稿都由人签核，Claude 不操作设备；企业版用户均可安装。",
+    "d": "11月12日",
+    "src": "Manufacturing Dive / Anthropic",
+    "url": "https://www.manufacturingdive.com/news/anthropic-launches-claude-for-manufacturing/874303/",
+    "m": []
+  },
+  {
+    "t": "Claude 周五一度大面积故障：claude.ai、API、Claude Code 与连接器报错后恢复",
+    "s": "据 Android Authority 与 Claude 状态页，11 月 13 日美东时间上午，Claude 出现服务中断，影响 claude.ai、Claude API、Claude Code 及连接器（含 Claude Docs、Claude Sheets）。此前微软服务故障已导致 Microsoft 365 连接器大部分请求失败。美东时间 13:14 的更新显示，claude.ai、API、Claude Code 与连接器的故障已解决，但 Microsoft 365 连接器仍有问题。",
+    "d": "11月13日",
+    "src": "Android Authority / Claude Status",
+    "url": "https://www.androidauthority.com/anthropic-claude-outage-nov-2026-3735078/",
+    "m": []
+  },
+  {
+    "t": "AMD 扩充 Instinct MI400 系列：新增 288GB HBM4 的 MI450X，公布 MI455X 推理成绩",
+    "s": "AMD 11 月 12 日宣布扩充 Instinct MI400 系列，新增配备 288GB HBM4 的 MI450X GPU，算力、显存带宽与互联规格与 MI455X 相同，面向 Helios 机架平台。AMD 同时公布 MI455X 在其自测的 MLPerf Inference Offline 配置下运行 DeepSeek-R1 达到每 GPU 每秒 21,333 token。该成绩来自 AMD 自家实验室，仍待独立测试与客户部署验证。",
+    "d": "11月12日",
+    "src": "AMD Newsroom",
+    "url": "https://newsroom.amd.com/news/amd-advances-instinct-mi400-series-ai-scientific-computing/",
+    "m": []
+  },
+  {
     "t": "Anthropic 招股定档：11 月 18 日定价、19 日以 ANT 登陆纳斯达克，传超额认购约 6 倍",
     "s": "Anthropic 表示已向美国证券交易委员会递交注册声明，在监管与其他条件满足的前提下，预计 11 月 18 日定价、11 月 19 日在纳斯达克以代码 ANT 开始交易。据彭博社援引知情人士，订单已覆盖发行规模约 6 倍，现有股东将获优先配售，零售端配售比例约 20%。此前披露的条款为 8,250 万股 A 类股、每股 70–78 美元，完全摊薄估值上限约 1.4 万亿美元，IPO 与私募配售合计拟募资最高约 904 亿美元。",
     "d": "11月13日",

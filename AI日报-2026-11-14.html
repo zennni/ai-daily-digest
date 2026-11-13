@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-14</title>
+<style>
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="home-link" href="index.html">← 返回 AI 前沿情报台</a>
+  <header>
+    <div class="date">2026年11月14日 · 星期六</div>
+    <h1>🥚 每日AI前沿日报</h1>
+    <div class="note">今日主题词：代理接管，钱包上手。相对昨日「交椅落地，中档开闸」，英伟达的交椅由临时 CEO 接过之后，这 24 小时里被「接管」的东西换成了钱包、漏洞和账本。OpenAI 推出 ChatGPT Wallet：首批面向部分美国 Pro 用户，让名为 dots 的智能体在用户逐笔核对商品、总价与付款卡并用 Face ID 或指纹确认后代为下单，扣款走支付令牌、不把真实卡号交给智能体或商家；同一周 OpenAI 还把前沿网络安全模型做成 Daybreak Red Team 与 Defense Factory 两款产品——前者让一组智能体对 Web 应用做渗透测试，后者顺着代码追踪漏洞、起草补丁，但官方写明补丁须工程师审核测试后才合并、不会自动部署。安全账本另一面在流血：Notion 确认，Fireworks AI 被入侵后，部分 Notion AI 聊天记录（用于 Insights 功能）外泄，影响不到 1% 的工作区，Insights 已下线；前 OpenAI 研究员 Will DePue 则发布取证分析，称 DeepSeek、月之暗面、MiniMax 与蚂蚁集团自 4 月以来发布的六个模型权重里留有英伟达 Blackwell 芯片的初始化「指纹」，但报告本身也承认，这只说明权重在哪种硬件上初始化，不能证明芯片在哪、如何获得或是否违反出口管制。资本仍在往基础设施里压：SpaceX 宣布在得州 Starbase 与亚利桑那 Cochise 县建两座超算园区，计划投资合计逾 740 亿美元（后者仍需县里审批）；Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，并披露与微软签约；LangChain 以 30 亿美元估值完成 3 亿美元 C 轮，Mirendil 拿下 10 亿美元 A 轮，称一名研究员带着智能体 3.5 个月、不到 1000 万美元算力从零预训练出编程模型。政策侧，欧盟领导人在都柏林开了首次以 AI 为主题的峰会，在「追赶中美」与「防范风险」之间找平衡。国内这一天的关键词是「全家桶」：DeepSeek 开放全家桶应用 API，把深度思考、搜索、文件输入与 OCR/ASR/TTS 都拆成可组合调用的接口；腾讯混元发布实时语音模型 Hy Realtime，科大讯飞 SparkAudio 1.0 上线 API。论文把焦点收到「决策模型」上：一个当不好执行者的模型，能不能当好评委和老师。一句话：智能体开始替人花钱、替人修漏洞，而谁来替智能体签最后一个字，仍是每条新闻里那行小字。</div>
+  </header>
+<nav class="page-toc" aria-label="本页目录">
+  <span class="pt-label">本页</span>
+  <a href="#sec-highlights">今日看点</a>
+  <a href="#sec-news">行业新闻</a>
+  <a href="#sec-papers">前沿论文</a>
+  <a href="#sec-models">模型</a>
+  <a href="#sec-ecosystem">生态</a>
+  <a class="pt-top" href="#">回顶</a>
+</nav>
+<div class="highlights" id="sec-highlights">
+  <h2>📌 今日看点</h2>
+  <ul>
+<li><strong>OpenAI 推出 ChatGPT Wallet：智能体代下单，每笔须本人生物识别确认</strong><p>11 月 13 日起首批面向部分美国 ChatGPT Pro 用户（18 岁以上、持美国发行的 Visa / Mastercard / 美国运通卡）。用户让 dots 智能体帮忙挑选并下单，结账前核对商品、总价与付款卡，再用 Face ID 或指纹确认；扣款使用支付令牌，真实卡号不交给智能体或商家。OpenAI 称后续会加入消费上限与类目、时段预授权。</p></li>
+<li><strong>研究者称六个中国模型权重带有 Blackwell「指纹」，但不能证明违规</strong><p>Will DePue 的取证分析称，DeepSeek-V4-Flash、MiniMax-M3 对应 148 个计算单元的 B200/B300，DeepSeek-V4-Pro、Kimi K3、Kimi K3.1-Pro 与 Ling-3.1-flash 对应 152 个的 GB200/GB300；方法在 24 个已知硬件的对照模型上全部判对，验证代码已公开。报告也写明，这只说明权重初始化所用硬件，不说明芯片位置、归属或是否违反出口管制。</p></li>
+<li><strong>SpaceX 宣布两座超算园区，计划投资合计逾 740 亿美元</strong><p>得州 Starbase 附近园区计划投资逾 240 亿美元，自建发电、不从公共电网取电；亚利桑那 Cochise 县园区约 500 亿美元，采用干式冷却，仍需县里批准，当地已有约 2400 人联署反对，听证会定在 12 月。路透社称 SpaceX 的 AI 业务三季度已贡献过半营收。</p></li>
+<li><strong>Notion 确认 Fireworks 被入侵致部分 Notion AI 聊天记录外泄</strong><p>Notion 安全公告称，Fireworks 11 月 8 日确认的受影响数据集里含 Notion AI 用于 Insights 功能的聊天记录，影响不到 1% 的工作区，绝大多数无法对应到具体用户或工作区；Notion 已下线 Insights、停止经 Fireworks 提供开放权重模型，并建议受影响客户轮换曾粘贴进对话的密码与密钥。</p></li>
+<li><strong>OpenAI 发布 Daybreak Red Team 与 Defense Factory：智能体找漏洞、起草补丁</strong><p>两款产品在 11 月 12 日 Cyber at the Frontier 活动上发布。Red Team 用多智能体对 Web 应用做渗透测试并验证漏洞与补丁是否有效，处于早期访问；Defense Factory 可导入 Wiz、Snyk、Endor Labs 等工具的发现并起草补丁、开草稿 PR，以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区，补丁不会自动部署。</p></li>
+<li><strong>融资两笔：LangChain 3 亿美元 C 轮估值 30 亿，Mirendil 10 亿美元 A 轮</strong><p>LangChain 11 月 13 日宣布由 CapitalG 领投、GIC 与 DFJ Growth 等参投，称已有 7000 多家机构使用 LangSmith，11 月 20 日将办新品发布会。Mirendil 由 Kleiner Perkins 与 Clearlake 领投，称一名研究员借助智能体用不到 1000 万美元算力、3.5 个月从零预训练 Mirendil-Base，后训练出可容纳 1000 万 token 上下文的 Fern。</p></li>
+<li><strong>国内「全家桶」：DeepSeek 开放应用 API，混元、讯飞各发语音模型</strong><p>DeepSeek 11 月 13 日开放全家桶应用 API，在原有 API 中开参数即可获得深度思考搜索、文件输入等对话功能，OCR、ASR、TTS 等也有独立接口。腾讯混元发布实时语音模型 Hy Realtime，新增工具调用与唱歌能力，已上线元宝语音通话等；科大讯飞 SparkAudio 1.0 上线开放平台 API，支持 99 种语言、202 种方言。</p></li>
+<li><strong>论文：当不好执行者的决策模型，照样能当好老师</strong><p>浙江大学团队比较决策模型作为执行者、评委与老师的表现：作为执行者都会被更容易的子目标带偏，但在事后看完整轨迹时能给关键步骤记功；用 JEV 当老师，可把 Qwen2.5-1.5B 策略在 ALFWorld 上的成功率从 72.8% 提到 82.9%，WebShop 从 56.8% 提到 71.4%。</p></li>
+  </ul>
+</div>
+<section id="sec-news">
+  <h2>📰 行业新闻<span class="count">14 条</span></h2>
+<div class="card">
+  <h3>OpenAI 推出 ChatGPT Wallet：dots 智能体代为下单，每笔须本人生物识别确认<span class="tag tag-hot">热点</span></h3>
+  <p>OpenAI 11 月 13 日推出 ChatGPT Wallet，让 ChatGPT 中名为 dots 的智能体帮用户决定买什么并代为完成购买。首批仅面向有限数量的美国 ChatGPT Pro 订阅用户（18 岁以上，持美国发行的 Visa、Mastercard 或美国运通卡）。用户一次性把卡加入钱包后，结账前可核对商品、总价与所用卡片，再用 Face ID 或指纹等安全校验确认，并留下交易记录；扣款使用替代卡号的支付令牌，真实卡信息不交给 dot 或商家，商家只收到收货地址、联系方式等履约所需信息，信用卡积分与争议退款等保障照常。OpenAI 称未来会让用户设置消费上限，或按类目、时段预授权，让智能体更自主地处理；同时发布面向零售商的 Commerce Partner Playbook。TechCrunch 指出，亚马逊等零售商仍在屏蔽 AI 智能体访问。</p>
+  <div class="meta">11月13日 · OpenAI / TechCrunch · <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>前 OpenAI 研究员称六个中国模型权重带 Blackwell「指纹」，报告自认不能证明违规<span class="tag tag-hot">热点</span></h3>
+  <p>曾参与 Sora、GPT-4o 等项目的 Will DePue 发布取证分析：PyTorch 在 GPU 上用随机数初始化权重时，会因芯片计算单元数不同留下特征图样（Hopper 为 132 个，Blackwell 为 148 或 152 个），部分从未被训练改动的权重槽位会保留这种图样。据 The Decoder 整理，DeepSeek-V4-Flash 与 MiniMax-M3 对应 148 单元的 B200/B300，DeepSeek-V4-Pro、Kimi K3、Kimi K3.1-Pro 与蚂蚁 Ling-3.1-flash 对应 152 单元的 GB200/GB300；方法在 24 个已知硬件的对照模型上全部判对，他还在真实 Blackwell 上复现了 DeepSeek-V4-Flash 与 Kimi K3 的结果并公开代码。报告估算所查五次训练合计约用 1.2 万块 Blackwell。但报告也写明：这只能说明初始化所用硬件，不能说明芯片在哪、归谁，也不能单凭此证明走私或违反美国出口管制；其他中国实验室（如 Qwen3.8、智谱、腾讯等）的模型仍只显示 Hopper 特征。</p>
+  <div class="meta">11月13日 · The Decoder / Unemployment Labs · <a href="https://the-decoder.com/former-openai-researcher-says-he-found-nvidia-blackwell-fingerprints-hidden-inside-six-chinese-ai-models/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>SpaceX 宣布得州、亚利桑那两座超算园区，计划投资合计逾 740 亿美元</h3>
+  <p>SpaceX 11 月 12 日在官网宣布，将在得州 Rio Grande Valley 的 Starbase 附近投资逾 240 亿美元建超算设施，用于训练前沿智能系统，并称该设施自建发电、不从公共电网取电，另承诺 2.2 亿美元扩建布朗斯维尔供水与污水设施；在亚利桑那州 Cochise 县则规划约 500 亿美元的超算园区，预计带来约 5500 个建设岗位与 1000 个长期岗位，采用干式冷却、无计划的工业地下水消耗，并称可能让当地电力合作社成员电费最多降低 20%。路透社称，亚利桑那项目仍需县政府批准，已有约 2400 人联署请愿反对，公开听证定在 12 月；SpaceX 的 AI 业务在三季度贡献了过半营收。</p>
+  <div class="meta">11月12日 · SpaceX / Reuters · <a href="https://www.spacex.com/updates/terafab" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Notion 确认：Fireworks 被入侵导致部分 Notion AI 聊天记录外泄，影响不到 1% 工作区</h3>
+  <p>Notion 11 月 12 日更新的安全公告称，Fireworks AI 于 11 月 8 日确认了最终受影响的数据集，其中包含 Notion AI 用于 Insights 功能的聊天记录；对绝大多数受影响工作区而言，这些记录无法对应到具体用户或工作区，也不含工具调用结果。Notion 此前已于 11 月 3 日断开与 Fireworks 的连接、11 月 4 日删除存放在其系统中的数据，目前 Insights 功能已下线，也不再通过 Fireworks 提供开放权重模型。Notion 建议受影响客户把这些数据视同已泄露，若在事件期间向 Notion AI 粘贴过密码、API 密钥等凭据应立即轮换。VentureBeat 指出，Fireworks 默认零数据保留，但批处理、训练等少数功能会存储客户内容，这次入侵正落在存储一侧。</p>
+  <div class="meta">11月12日 · Notion / TechCrunch · <a href="https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>OpenAI 发布 Daybreak Red Team 与 Defense Factory：智能体渗透测试、起草补丁，不自动部署<span class="tag tag-new">新品</span></h3>
+  <p>OpenAI 在 11 月 12 日的 Cyber at the Frontier 活动上，把前沿网络安全模型做成两款产品。Daybreak Red Team 让一组协同的智能体利用源代码与应用上下文对 Web 应用做渗透测试，可验证代码扫描器、漏洞赏金与披露报告中的发现，并检验补丁是否真正挡住利用；测试在隔离环境中进行，由 Guardian 审核控制智能体能触达的应用与端点。Daybreak Defense Factory 则顺着代码追踪漏洞并起草补丁，可导入 Red Team 及 Wiz、Snyk、Endor Labs 的发现，扫描已连接的 GitHub 仓库与新提交、定期复查，工程师可借 Codex 调整补丁并生成草稿 PR。据 SecurityWeek，补丁不会自动部署；Red Team 开放早期访问申请，Defense Factory 以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区，价格未公布。</p>
+  <div class="meta">11月12日 · OpenAI / SecurityWeek · <a href="https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>LangChain 完成 3 亿美元 C 轮，估值 30 亿美元</h3>
+  <p>LangChain 创始人 Harrison Chase 11 月 13 日宣布，公司以 30 亿美元估值融资 3 亿美元，由现有投资方 CapitalG 领投，新投资方 GIC 与 DFJ Growth 大额参投，IVP、Sapphire Ventures 等老股东跟投，Salesforce Ventures、Insight Venture Partners、MongoDB Ventures 等新加入。公司称已有 7000 多家机构使用其智能体平台 LangSmith，客户包括 Harvey、Rippling 以及英伟达、丰田、Salesforce 等；产品分为智能体运行、改进与治理三大支柱，涵盖 Deep Agents、LangGraph、沙箱、托管智能体、可观测与评估、LLM/工具网关等。LangChain 预告 11 月 20 日举办发布会公布新的 LangSmith 能力。</p>
+  <div class="meta">11月13日 · LangChain · <a href="https://www.langchain.com/blog/series-c" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Mirendil 获 10 亿美元 A 轮：称一人带智能体用不到 1000 万美元算力预训练编程模型</h3>
+  <p>Mirendil 11 月 12 日宣布完成 10 亿美元 A 轮，由 Kleiner Perkins 与 Clearlake Capital 领投，Battery Ventures、Doerr Capital、谷歌、M13、Pear VC、S32 等参投。公司称过去三周公布的首批成果显示：一名研究员与智能体协作，用 3.5 个月、不到 1000 万美元算力从零预训练出有竞争力的编程模型 Mirendil-Base，再后训练成可容纳最多 1000 万 token 上下文的 Fern；其智能体平台 Lor 已进入私测，可让数百个智能体连续数天写代码、跑实验，公司自身每天都在 Lor 上运行。上述训练成本与效果均为公司自述，尚无独立复核。</p>
+  <div class="meta">11月12日 · Mirendil · <a href="https://mirendil.com/news/series-a/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，披露与微软签约</h3>
+  <p>AI 芯片公司 Cerebras 11 月 12 日公布三季度业绩：核心营收 2.309 亿美元，高于 LSEG 一致预期的 2.147 亿美元，同比增长 70%（二季度为 103%）；调整后每股收益 0.12 美元，市场原预期亏损 0.14 美元。CEO Andrew Feldman 对 CNBC 表示，公司 10 月与微软签下云端合作，预计 2027 年一季度开始贡献收入，此前已与亚马逊、甲骨文达成合作。公司预计四季度营收 3.1 亿至 3.3 亿美元，并预计 2027 年营收翻三倍。CNBC 称其股价周五上涨约 7%，但自 5 月上市以来累计跌约 47%。</p>
+  <div class="meta">11月12日 · CNBC / Cerebras · <a href="https://www.cnbc.com/2026/11/12/cerebras-systems-cbrs-q3-earnings-report-2026.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>欧盟领导人在都柏林召开首次 AI 主题峰会：在追赶与防险之间找平衡</h3>
+  <p>欧盟领导人 11 月 13 日在爱尔兰都柏林举行首次以 AI 为主题的非正式峰会，Mistral CEO Arthur Mensch 与诺贝尔奖得主 Geoffrey Hinton 参与讨论。据 Euronews 与法新社，议题包括如何在追赶美国和中国的同时保护公民免受 AI 风险，以及监管与创新、技术主权的平衡；欧洲议会议长梅措拉称厌倦了「欧洲已输掉 AI 竞赛」的说法，欧盟外交与安全政策高级代表卡拉斯则提醒 AI 在乌克兰战场上的「黑暗面」。爱沙尼亚与芬兰本周致信呼吁建立欧盟层面的严重 AI 事件响应机制。欧盟官员称英伟达风波不在正式议程上，但领导人可能讨论其安全影响。</p>
+  <div class="meta">11月13日 · Euronews / AFP · <a href="https://www.euronews.com/2026/11/13/eu-leaders-discuss-how-to-boost-europes-ai-industry-while-tackling-risks-at-dublin-summit" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>DeepSeek 开放全家桶应用 API：深度思考搜索、文件输入与 OCR/ASR/TTS 均可调用<span class="tag tag-new">新品</span></h3>
+  <p>据第一财经，DeepSeek 11 月 13 日正式开放全家桶应用 API：在原有 API 中开启对应参数，即可获得深度思考搜索、文件输入等对话功能；语音及相关底层能力也开放了独立接口，包括 OCR、ASR、TTS 等，支持单独或组合调用。官方称开发者可在自己的应用中实现复杂对话功能，甚至 1:1 复刻完整的 DeepSeek App。</p>
+  <div class="meta">11月13日 · 第一财经 · <a href="https://www.yicai.com/news/103440560.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>谷歌与三星开启 Gemini 智能眼镜预订：起价 395 美元，12 月 10 日发售<span class="tag tag-new">新品</span></h3>
+  <p>谷歌与三星 11 月 12 日开启搭载 Gemini 功能的智能眼镜预订，镜框款式由 Warby Parker 与 Gentle Monster 提供：Warby Parker 款起价 395 美元，Gentle Monster 款 449 至 489 美元，12 月 10 日上市并进入门店。Ars Technica 称谷歌把隐私作为卖点，The Verge 的上手体验则认为实时翻译与保护旁人的控制设计是与 Meta 眼镜区分的亮点。</p>
+  <div class="meta">11月12日 · Google / Samsung / Ars Technica · <a href="https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Anthropic 推出 Claude for Manufacturing：17 项技能、4 个系统连接器<span class="tag tag-new">新品</span></h3>
+  <p>Anthropic 11 月 12 日推出面向制造业的 Claude 插件 Claude for Manufacturing，包含 17 项技能，可完成新工单报价、检验不合格调查、设备故障诊断、替代供应商寻源、借 Autodesk Fusion 比较设计、生产日报等流程，并支持 Autodesk Fusion、Infor、Microsoft 365 与 Oracle NetSuite 四个连接器，没有连接器的系统也可使用。Anthropic 企业市场负责人 Lauren Collett 对 Manufacturing Dive 强调，每份草稿都由人签核，Claude 不操作设备；企业版用户均可安装。</p>
+  <div class="meta">11月12日 · Manufacturing Dive / Anthropic · <a href="https://www.manufacturingdive.com/news/anthropic-launches-claude-for-manufacturing/874303/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Claude 周五一度大面积故障：claude.ai、API、Claude Code 与连接器报错后恢复</h3>
+  <p>据 Android Authority 与 Claude 状态页，11 月 13 日美东时间上午，Claude 出现服务中断，影响 claude.ai、Claude API、Claude Code 及连接器（含 Claude Docs、Claude Sheets）。此前微软服务故障已导致 Microsoft 365 连接器大部分请求失败。美东时间 13:14 的更新显示，claude.ai、API、Claude Code 与连接器的故障已解决，但 Microsoft 365 连接器仍有问题。</p>
+  <div class="meta">11月13日 · Android Authority / Claude Status · <a href="https://www.androidauthority.com/anthropic-claude-outage-nov-2026-3735078/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>AMD 扩充 Instinct MI400 系列：新增 288GB HBM4 的 MI450X，公布 MI455X 推理成绩<span class="tag tag-new">新品</span></h3>
+  <p>AMD 11 月 12 日宣布扩充 Instinct MI400 系列，新增配备 288GB HBM4 的 MI450X GPU，算力、显存带宽与互联规格与 MI455X 相同，面向 Helios 机架平台。AMD 同时公布 MI455X 在其自测的 MLPerf Inference Offline 配置下运行 DeepSeek-R1 达到每 GPU 每秒 21,333 token。该成绩来自 AMD 自家实验室，仍待独立测试与客户部署验证。</p>
+  <div class="meta">11月12日 · AMD Newsroom · <a href="https://newsroom.amd.com/news/amd-advances-instinct-mi400-series-ai-scientific-computing/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+<section id="sec-papers">
+  <h2>📄 前沿论文<span class="count">7 篇</span></h2>
+<div class="card">
+  <h3>执行者、评委还是老师？长程智能体里的决策模型<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Actor, Judge, or Teacher? Understanding Decision Models in Long-Horizon Agents</span></h3>
+  <div class="paper-authors">Haochen Liu, Qianhao Zhu, Zixuan Wang, Dingming Li, Tongbo Chen, Peng Qiu, Yingqi Qu, Weiming Lu, Jun Xiao, Yongliang Shen</div>
+  <p>决策模型输出带概率的类型化答案，可以选动作、评估已做的动作，或为每个动作打分来做强化学习。作者在 ALFWorld 上比较三种决策模型与三种通用 LLM 作为执行者和评委的表现：作为执行者，六个模型都会被更容易的子目标从「必须先完成的子目标」上拉走；但作为看完整条轨迹的评委，它们能为指向该子目标的步骤记功，而且问「这一步有没有帮助」比问「任务会不会成功」更能区分有用与无用的动作。作为老师，JEV 把 Qwen2.5-1.5B 策略在 GRPO 基础上的成功率从 72.8% 提到 82.9%（ALFWorld），从 56.8% 提到 71.4%（WebShop）。结论：事后评判能看到行动时必须预判的后果，所以差执行者也能当好老师。</p>
+  <div class="meta">作者：Haochen Liu, Qianhao Zhu, Zixuan Wang, Dingming Li, Tongbo Chen, Peng Qiu, Yingqi Qu, Weiming Lu, Jun Xiao, Yongliang Shen · <a href="https://arxiv.org/abs/2611.17167" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>SO-Arena：系统一模型的能力谱与决策可靠性<br><span style="font-size:12.5px;font-weight:500;color:#64748b">SO-Arena: Benchmarking the Capability Spectrum and Reliability of System One Models</span></h3>
+  <div class="paper-authors">Lichen Li, Ziping Dong, Sicheng Feng, Qi Li, Xinchao Wang</div>
+  <p>「系统一」模型承诺无需冗长生成就能快速决策。SO-Arena 覆盖 11 个领域、五类能力，参考标签经人工核对且只依据模型可见输入，并设领域内难度分级与沙箱中的交互式评测，推理密集任务还支持系统一与系统二对比。除准确率外，它用两项指标衡量可靠性：选项集受控变化时决策是否稳定，以及没有有效选项时能否识别「无答案」。对 21 个模型的评测显示，扩规模与多推理的收益因领域差异很大，且综合最强的系统一模型在可靠性上只排第七。</p>
+  <div class="meta">作者：Lichen Li, Ziping Dong, Sicheng Feng, Qi Li, Xinchao Wang · <a href="https://arxiv.org/abs/2611.15777" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>思考的价值：混合决策模型学会何时推理<br><span style="font-size:12.5px;font-weight:500;color:#64748b">The Value of Thinking: Learning When to Reason in Hybrid Decision Models</span></h3>
+  <div class="paper-authors">Zhengxu Yu, Ke Xu, Meng Fang, Haitham Ammar, Weilin Luo, Jun Wang</div>
+  <p>与其决定「想多少」，作者提出「零或 T 思考」：同一模型要么在一次前向中凭隐式思考直接作答、不生成任何 token，要么在值得时付出 T 个 token 做完整自回归推理。混合决策模型 HDM 用一个冻结主干服务两种模式，由轻量自路由模块估计慢模式相对快模式的预期增益，只在超过按请求设定的价格 λ 时才启用；对没有逐步标签的智能体任务，提出用回合级回报训练路由模块的 CDPO。在 JevBench 上 HDM-4B 得 0.857（Jev 为 0.851），中位延迟 0.179 秒对 0.652 秒（-72.5%）；在 MiniWoB 上 HDM-27B 把 token 成本降低 80.1%。</p>
+  <div class="meta">作者：Zhengxu Yu, Ke Xu, Meng Fang, Haitham Ammar, Weilin Luo, Jun Wang · <a href="https://arxiv.org/abs/2611.16961" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>经验交接强化学习：让模型学会写给下一轮的「操作手册」<br><span style="font-size:12.5px;font-weight:500;color:#64748b">Experience-Handoff Reinforcement Learning for Recursive Self-Improvement</span></h3>
+  <div class="paper-authors">Doyoung Kim, Byeongguk Jeon, Kailin Zhang, Sherry Yang</div>
+  <p>用标量奖励做强化学习会丢掉试验中的细粒度环境信息（如错误日志）；而把经验交给后续回合的框架（反思、压缩、操作手册）本身又不是学出来的。作者固定 Agentic Context Engineering 框架，训练同一个模型同时担任行动生成、洞见反思与手册整理三个角色，并按候选交接产物对未来执行回合的下游效果来评估和联合优化。在多个智能体基准上，方法在留出集上优于基线。作者认为，智能体训练不仅要优化当前回合的动作，也要优化后续回合继承的、由模型自己写下的经验。</p>
+  <div class="meta">作者：Doyoung Kim, Byeongguk Jeon, Kailin Zhang, Sherry Yang · <a href="https://arxiv.org/abs/2611.16409" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>JustRUA：GPT-6 机器人操控智能体的对照研究<br><span style="font-size:12.5px;font-weight:500;color:#64748b">JustRUA: A Controlled Study of GPT-6 Robot-Use Agents</span></h3>
+  <div class="paper-authors">Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao</div>
+  <p>GPT-6 Astra 可通过固定框架直接驱动机械臂，RoboDojo 上这类「机器人操控智能体」分数涨得很快，但各系统框架与测试子集不同、常一次改多处，难以判断收益来源。作者在统一框架里逐项拆解框架、动作接口、经验复用与场景几何四个维度：保留完整回合历史并让每段动作提前停止的精简框架作用很大；经验复用会改变行为但并非免费午餐；场景几何帮助最大，即使深度只由 RGB 预测。不用学习策略、自改进循环或任务调参，JustRUA 把 RoboDojo 仿真分从 29.7 提到 50.3。</p>
+  <div class="meta">作者：Zefan Wang, Yufan Dang, Xuanwei Shi, Mingqi Gao, Cheng Yin, SikYuen Tam, Hanyu Liu, Yasheng Wang, Yaxi Lu, Songyang Zhang, Xin Cong, Yuan Yao · <a href="https://arxiv.org/abs/2611.16009" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>PhysLoop：借 LLM 的物理常识让视频生成模型自我改进<br><span style="font-size:12.5px;font-weight:500;color:#64748b">PhysLoop: Harnessing LLMs&#x27; Physics Awareness for Self-Improving Video Generation Models</span></h3>
+  <div class="paper-authors">Yuxuan Chen, Xiaojie Li, Hao Chen, Juncheng Ma, Kewei Zhang, Zhongjing Du, Guoqiang Wei, Fangfang Wang, Zhen Dong, Zhiyang Dou, Liming Zhao, Yan Zeng, Jianwei Zhang, Daquan Zhou</div>
+  <p>视频生成模型画面逼真，但物理动态与因果一致性仍弱；从生成视频中学习又需要细粒度物理监督，而可靠的质量判断、纠错样本对与受控变体都很难获得。PhysLoop 是一套统一框架，在生成、筛选与纠错全程引导并约束 LLM，把其物理知识蒸馏成物理一致的视频，支持可控训练数据构建与推理时视频修复。团队发布 10 万条覆盖室内外真实场景的视频、生成工具及 PhysLoop-Gen、PhysLoop-Repair 两个评测集，并在外部 Physics-IQ Verified 基准上评估物理行为。</p>
+  <div class="meta">作者：Yuxuan Chen, Xiaojie Li, Hao Chen, Juncheng Ma, Kewei Zhang, Zhongjing Du, Guoqiang Wei, Fangfang Wang, Zhen Dong, Zhiyang Dou, Liming Zhao, Yan Zeng, Jianwei Zhang, Daquan Zhou · <a href="https://arxiv.org/abs/2611.16748" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div><div class="card">
+  <h3>WorldDraft：代码搭好世界，视频模型能否只负责渲染？<br><span style="font-size:12.5px;font-weight:500;color:#64748b">WorldDraft: If Code Builds the World, Can Video Models Just Render It?</span></h3>
+  <div class="paper-authors">Zhiyu Hou, Wen-Jie Shu, Harold Haodong Chen, Weilin Ruan, Chenfei Liao, Liuzhou Zhang, Disen Lan, Xiaogang Xu, Qi Chen, Ser-Nam Lim</div>
+  <p>多模态编程智能体把 4D 世界构建与视觉生成分开，视频模型由此从「世界生成器」变成「生成式渲染器」。WorldDraft 用 48 个可执行 4D 世界家族、432 个严格配对用例，在相同动力学下正交交叉草稿粒度与外观对齐两因素，考察「保持世界（运动与机位）」与「实现视觉（持续绑定文本指定属性）」。对 12 个代表模型的评测发现：两者存在明显张力；更丰富的草稿能锚定结构却损害外观保真；源线索冲突时泄漏最高达 64%。作者提出即插即用的视觉提示策略 WorldDraft-Primer，在冻结渲染器上同时改善两项目标。</p>
+  <div class="meta">作者：Zhiyu Hou, Wen-Jie Shu, Harold Haodong Chen, Weilin Ruan, Chenfei Liao, Liuzhou Zhang, Disen Lan, Xiaogang Xu, Qi Chen, Ser-Nam Lim · <a href="https://arxiv.org/abs/2611.16217" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+</section>
+<section id="sec-models">
+  <h2>🤖 模型动态<span class="count">7 条</span></h2>
+<div class="card">
+  <h3>Gemini 4 家族价目（Hydrogen / Carbon / Argon）</h3>
+  <p>Simon Willison 11 月 12 日整理的价目表：Gemini 4 Hydrogen 每百万 token 输入 1.50 美元、缓存输入 0.075 美元、输出 7.50 美元；Carbon 与 Argon 至 11 月 30 日为输入 2.00 / 缓存 0.10 / 输出 10.00 美元，12 月 1 日起翻倍为 4.00 / 0.20 / 20.00 美元。他指出 Hydrogen 目前只比两者便宜 25%，12 月后差距才拉到 75%，并且 Hydrogen 成为新的免费层模型、驱动 Google 搜索中的 AI 功能。</p>
+  <div class="meta">Google · 据 Simon Willison 整理 · <a href="https://simonwillison.net/2026/Nov/12/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Hy Realtime<span class="tag tag-new">新品</span></h3>
+  <p>腾讯混元 11 月 13 日发布的实时语音模型，官方称在语音理解、指令遵循、拟人化表达等基础对话能力上表现优异，并新增 Agentic 工具调用与唱歌能力。已在元宝语音通话、腾讯客服等产品上线，近期将上线腾讯云对外提供 API。</p>
+  <div class="meta">腾讯混元 · <a href="https://www.yicai.com/news/103440081.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>SparkAudio 1.0（星火语音基座大模型）<span class="tag tag-new">新品</span></h3>
+  <p>11 月 12 日在讯飞开放平台上线 API。支持文本与语音输入、文本输出，可做语音转写、多语言翻译、多方言识别、环境音理解、说话人分离、情感分析与复杂音频问答；官方称支持 99 种语言、202 种方言，直接理解语音而非先转文字，并强调全国产算力训练。</p>
+  <div class="meta">科大讯飞 · <a href="https://www.ithome.com/1/026/386.htm" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Perplexity Decider v1.3 / Decider Flash v1.3<span class="tag tag-oss">开源</span></h3>
+  <p>Perplexity 11 月 12 日放出新版开放权重决策模型：Decider v1.3 为 27B，Decider Flash v1.3 为 4B 蒸馏版，Hugging Face 上以 Apache 许可发布（需登录令牌访问）。支持有序或无序标签的二分类与多分类并返回概率，可用于分类、路由、排序与评估；新增 locate 功能，可返回匹配片段及字符位置，用于命名实体识别、个人信息识别与抽取式问答。</p>
+  <div class="meta">Perplexity · <a href="https://www.perplexity.ai/hub/blog/perplexity-decider" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Atlas（全面开放）<span class="tag tag-new">新品</span></h3>
+  <p>World Labs 把世界模型 Atlas 向所有人开放，提供网页应用与开发者 API。Atlas 是原生处理文本、图像、视频与 3D 的 omni 模型，把所有输入融合到共享空间上下文中，可生成或重建可探索的 3D 场景，输出 3D 高斯泼溅、网格、相机路径与视频；API 采用异步任务、按额度计费。</p>
+  <div class="meta">World Labs · <a href="https://worldlabs.ai/blog/atlas" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Mirendil-Base / Fern</h3>
+  <p>Mirendil 随 10 亿美元 A 轮披露：Mirendil-Base 是由一名研究员借助智能体从零预训练的编程模型，耗时 3.5 个月、算力不到 1000 万美元；Fern 由其后训练而来，上下文最多 1000 万 token，足以容纳智能体数天的工作。均为公司自述，未见公开权重或第三方评测。</p>
+  <div class="meta">Mirendil · <a href="https://mirendil.com/news/series-a/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>语飞国际中文教育垂直大模型<span class="tag tag-new">新品</span></h3>
+  <p>11 月 13 日在北京开幕的 2026 世界中文大会上发布，面向全球中文学习者提供即时反馈的学习评测与个性化辅导，面向教师在多轮对话中生成课前备课、课堂互动与课后巩固素材，面向中文教育机构提供标准化接口。</p>
+  <div class="meta">2026 世界中文大会发布 · <a href="http://finance-app.people.cn/n1/2026/1113/c1004-40833526.html" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+<section id="sec-ecosystem">
+  <h2>🛠 Agent / Skill 生态<span class="count">7 条</span></h2>
+<div class="card">
+  <h3>ChatGPT Wallet 配套 Commerce Partner Playbook：给零售商的智能体结账指南</h3>
+  <p>随 ChatGPT Wallet 一同发布的 Commerce Partner Playbook，向希望支持智能体下单的商家提供工具与指引。结账链路上，dot 只把收货地址与联系方式交给商家，付款走支付令牌，每笔由用户生物识别确认；OpenAI 计划后续开放消费上限与类目、时段预授权。对接方要面对的现实是：部分大型零售商仍在屏蔽 AI 智能体。</p>
+  <div class="meta">OpenAI / TechCrunch · <a href="https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Daybreak Defense Factory：把安全工具的发现变成草稿 PR，人审后合并</h3>
+  <p>Defense Factory 可导入 Daybreak Red Team 以及 Wiz、Snyk、Endor Labs 的漏洞数据，扫描已连接 GitHub 仓库与新提交、定期复查；智能体追踪漏洞并起草补丁，工程师可查看证据、用 Codex 调整补丁并生成草稿 PR，补丁不会自动部署。以 ChatGPT 预览插件形式提供给已有 Daybreak 权限的工作区。</p>
+  <div class="meta">OpenAI · <a href="https://openai.com/daybreak/defense-factory/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Claude for Manufacturing：17 项技能可单独调用，也可串成多步流程</h3>
+  <p>插件技能涵盖 rfq-to-quote（询价转报价）、inspection-to-capa（检验转纠正预防）、breakdown-diagnosis（故障诊断）、supplier-escape-to-alternate-source（供应商出问题时换源）、daily-production-report（生产日报）等，连接 Autodesk Fusion、Infor、Microsoft 365、Oracle NetSuite；可单任务运行，也可把多步串起来后再统一审阅，Anthropic 称会定期新增技能。</p>
+  <div class="meta">Anthropic / Manufacturing Dive · <a href="https://claude.com/resources/articles/claude-for-manufacturing" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>Anthropic「Worse Together」：一人一个智能体，不如一个协调者</h3>
+  <p>Anthropic 对齐团队发布研究与基准 MAMUBench：在共享 API token 预算、诊所排期、团购/预订等多用户争用共享资源的场景中，单个协调智能体服务所有人的效果优于每人一个、互相发消息的智能体团队。缓解办法因场景而异：共享预算场景指定一个团队负责人有效，团购场景则是在读完待处理消息前禁止结账。</p>
+  <div class="meta">Anthropic Alignment · <a href="https://alignment.anthropic.com/2026/worse-together/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>华为开源 MACaQ：模型无关的 4 比特量化，64 分钟量化 122B 模型</h3>
+  <p>华为计算系统实验室以 Apache 2.0 开源 MACaQ，一种模型无关的训练后量化工具，支持 4 比特权重与激活（MXFP4 / W4A4），后端覆盖 llama.cpp、vLLM、Diffusers 与 PyTorch。官方称用 32.5GB 显存、64 分钟完成 Qwen3.5-122B-A10B 的量化，量化后模型约占 74GB 显存。数据为团队自测。</p>
+  <div class="meta">Huawei CSL / GitHub · <a href="https://github.com/huawei-csl/MACaQ" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>DeepMind 开放 WeatherNext 背后的数据集 SatWeave 与 PARDIG（CC BY 4.0）</h3>
+  <p>Google DeepMind 11 月 13 日开放两套地球科学数据集：SatWeave 是覆盖全球、17 个通道的逐小时静止卫星影像拼图；PARDIG 是基于 NASA GPM 核心观测台星载雷达训练的 AI 降水数据集，15 分钟、约 10 公里分辨率。DeepMind 称 PARDIG 在小到中雨的逐小时降水检测上比 NASA IMERG-Final 提升 30% 以上；许可为 CC BY 4.0，任意 Google Cloud 账号即可公开访问。</p>
+  <div class="meta">Google DeepMind · <a href="https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div><div class="card">
+  <h3>语音与创作智能体一日三发：ElevenLabs Marketplace、Fish Agent、Krea Bots</h3>
+  <p>据 The Neuron 11 月 13 日汇总：ElevenLabs 上线 Marketplace，汇集基于其技术的医疗、金融、零售等行业语音智能体与应用；Fish Audio 推出无代码语音智能体构建器 Fish Agent，其 Live 3 模型可边说边听、应对打断，官方称约 30 秒即可部署一个基础智能体；Krea 推出 Krea Bots，定位为能持续推进创作项目、适应团队偏好的 AI 协作者，目前提供测试资格。</p>
+  <div class="meta">The Neuron · <a href="https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/" target="_blank" rel="noopener">来源 ↗</a></div>
+</div>
+</section>
+<footer>由运营 · daily-ai-digest 生成 · 数据截至当日 06:00（Asia/Shanghai）</footer>
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+<!-- /digest-ui2:js -->
+
+</body>
+</html>
