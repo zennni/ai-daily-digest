@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-11-14",
     "week": "星期六",
-    "note": "今日主题词：代理接管，钱包上手。相对昨日「交椅落地，中档开闸」，英伟达的交椅由临时 CEO 接过之后，这 24 小时里被「接管」的东西换成了钱包、漏洞和账本。OpenAI 推出 ChatGPT Wallet：首批面向部分美国 Pro 用户，让名为 dots 的智能体在用户逐笔核对商品、总价与付款卡并用 Face ID 或指纹确认后代为下单，扣款走支付令牌、不把真实卡号交给智能体或商家；同一周 OpenAI 还把前沿网络安全模型做成 Daybreak Red Team 与 Defense Factory 两款产品——前者让一组智能体对 Web 应用做渗透测试，后者顺着代码追踪漏洞、起草补丁，但官方写明补丁须工程师审核测试后才合并、不会自动部署。安全账本另一面在流血：Notion 确认，Fireworks AI 被入侵后，部分 Notion AI 聊天记录（用于 Insights 功能）外泄，影响不到 1% 的工作区，Insights 已下线；前 OpenAI 研究员 Will DePue 则发布取证分析，称 DeepSeek、月之暗面、MiniMax 与蚂蚁集团自 4 月以来发布的六个模型权重里留有英伟达 Blackwell 芯片的初始化「指纹」，但报告本身也承认，这只说明权重在哪种硬件上初始化，不能证明芯片在哪、如何获得或是否违反出口管制。资本仍在往基础设施里压：SpaceX 宣布在得州 Starbase 与亚利桑那 Cochise 县建两座超算园区，计划投资合计逾 740 亿美元（后者仍需县里审批）；Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，并披露与微软签约；LangChain 以 30 亿美元估值完成 3 亿美元 C 轮，Mirendil 拿下 10 亿美元 A 轮，称一名研究员带着智能体 3.5 个月、不到 1000 万美元算力从零预训练出编程模型。政策侧，欧盟领导人在都柏林开了首次以 AI 为主题的峰会，在「追赶中美」与「防范风险」之间找平衡。国内这一天的关键词是「全家桶」：DeepSeek 开放全家桶应用 API，把深度思考、搜索、文件输入与 OCR/ASR/TTS 都拆成可组合调用的接口；腾讯混元发布实时语音模型 Hy Realtime，科大讯飞 SparkAudio 1.0 上线 API。论文把焦点收到「决策模型」上：一个当不好执行者的模型，能不能当好评委和老师。一句话：智能体开始替人花钱、替人修漏洞，而谁来替智能体签最后一个字，仍是每条新闻里那行小字。"
+    "note": "今日主题词：代理接管，钱包上手。相对昨日「交椅落地，中档开闸」，英伟达的交椅由临时 CEO 接过之后，这 24 小时里被「接管」的东西换成了钱包、漏洞和账本。OpenAI 推出 ChatGPT Wallet：首批面向部分美国 Pro 用户，让名为 dots 的智能体在用户逐笔核对商品、总价与付款卡并用 Face ID 或指纹确认后代为下单，扣款走支付令牌、不把真实卡号交给智能体或商家；同一周 OpenAI 还把前沿网络安全模型做成 Daybreak Red Team 与 Defense Factory 两款产品——前者让一组智能体对 Web 应用做渗透测试，后者顺着代码追踪漏洞、起草补丁，但官方写明补丁须工程师审核测试后才合并、不会自动部署。安全账本另一面在流血：Notion 确认，Fireworks AI 被入侵后，部分 Notion AI 聊天记录（用于 Insights 功能）外泄，影响不到 1% 的工作区，Insights 已下线；前 OpenAI 研究员 Will DePue 则发布取证分析，称 DeepSeek、月之暗面、MiniMax 与蚂蚁集团自 4 月以来发布的六个模型权重里留有英伟达 Blackwell 芯片的初始化「指纹」，但报告本身也承认，这只说明权重在哪种硬件上初始化，不能证明芯片在哪、如何获得或是否违反出口管制。资本仍在往基础设施里压：SpaceX 宣布在得州 Starbase 与亚利桑那 Cochise 县建两座超算园区，计划投资合计逾 740 亿美元（后者仍需县里审批）；Cerebras 三季度核心营收 2.309 亿美元、同比增 70%，并披露与微软签约；LangChain 以 30 亿美元估值完成 3 亿美元 C 轮，Mirendil 拿下 10 亿美元 A 轮，称一名研究员带着智能体 3.5 个月、不到 1000 万美元算力从零预训练出编程模型。政策侧，欧盟领导人在都柏林开了首次以 AI 为主题的峰会，在「追赶中美」与「防范风险」之间找平衡。国内这一天的关键词是「全家桶」：DeepSeek 开放全家桶应用 API，把深度思考、搜索、文件输入与 OCR/ASR/TTS 都拆成可组合调用的接口；腾讯混元发布实时语音模型 Hy Realtime，科大讯飞 SparkAudio 1.0 上线 API。论文把焦点收到「决策模型」上：一个当不好执行者的模型，能不能当好评委和老师。一句话：智能体开始替人花钱、替人修漏洞，而谁来替智能体签最后一个字，仍是每条新闻里那行小字。上午到现在的增量，把「谁替智能体签字」的问题向前挪了一格：签字的人开始被换成了「能看懂物理世界的人」。谷歌 11 月 14 日把 Gemini 4 Argon 重新定位成「通用物理推理模型」，具身推理基准 ERQA 上纯推理拿到 87%（Opus 5.5 82.3%、Astra 81.0%），3D 任务比 Opus 5.5 快近 4 倍、成本不到一半，比 Astra 快 8 倍以上、成本差 22 倍；同期 Gemini Robotics 2.5 已在奔驰两家工厂的产线上做金属件配套拣选，成功率 96%，架构分成「ER 管调度、2.5 管动作」两层。同一周，OpenAI 确认解散独立机器人团队——理由是 Astra 已能直接操控机器人（英伟达一项模拟操作基准上 74.8% 对专用模型 51.0%），CoRL 的 208 号展位空着没开。两条消息拼起来是同一句话：机器人正从「需要专门攻克的难题」变成「通用模型的一个下游应用」。账本这边同日翻开两页：OpenAI 三季度营收环比近 +50% 至 100 亿美元，单季净亏扩大到 109 亿；Anthropic 的 IPO 路演据称拿到数倍超额认购，承销商正考虑把估值推到 1.5 万亿、总募资逼近 904 亿；而腰部开始退场，Nscale 在考虑推迟 350 亿美元 IPO。更值得记的是另一类签字：Revolut 把 2000 名工程师的 OpenAI 与 Anthropic 编程助手整体换成了智谱的开源 GLM，编程耗时 -60%、调用成本 -90%，Orange、雷诺、西门子也在用 DeepSeek 与千问——开源模型这一轮赢的不是跑分，是采购权。学术侧出现了年内最漂亮的一个案例：《卫报》报道赫尔辛基的 Jan von Plato 把哥德尔 1009 页加贝尔斯贝格速记笔记交给 Claude，两天得到 650 页整体解释，标出 663 条定理、约 400 条通过 Coq 校验，其中包括哥德尔 1966 年声称「1940 年代已证出」却没能复原的选择公理独立性——重构显示他当时只差一个定义。论文侧则把「省钱」写成了硬指标：CRAM 用可学习能量把训练压到 42 毫秒、推理 FLOPs 省 282 倍；Folio 用可恢复的上下文折叠让长程智能体解出 66/75 个任务（同款运行时只解 54 个），成本低 2.4 倍；还有一篇把 AI 数据中心的账算清楚了——决定度电成本的不是电价，是「多快能通电」，把错过的算力折价后直流耦合微电网在 85% 的美国选址最便宜。工具侧，ClickHouse 把智能体记忆与代码索引并进同一个库开源成 Loom，Meta 开源了给智能体读的设计系统 Astryx，而 Arctic Wolf 报告有人把开源渗透智能体 ARTEX 改造成偷 AWS 凭证的恶意软件——能力对称，风险也对称。（本版为 10:00 增补 · 全天合并版。）"
   },
   "highlights": [
     {
@@ -36,6 +36,14 @@
     {
       "title": "论文：当不好执行者的决策模型，照样能当好老师",
       "summary": "浙江大学团队比较决策模型作为执行者、评委与老师的表现：作为执行者都会被更容易的子目标带偏，但在事后看完整轨迹时能给关键步骤记功；用 JEV 当老师，可把 Qwen2.5-1.5B 策略在 ALFWorld 上的成功率从 72.8% 提到 82.9%，WebShop 从 56.8% 提到 71.4%。"
+    },
+    {
+      "title": "谷歌把「懂物理」写成模型的第一属性：Argon 具身推理 87%，同一周 OpenAI 撤掉了机器人团队",
+      "summary": "谷歌 11 月 14 日把 Gemini 4 Argon 明确定位为「通用物理推理模型」，第一次把物理理解当成模型的第一属性而非附加能力。具身推理基准 ERQA 上 Argon 仅凭纯推理拿到 87%，高于 Claude Opus 5.5 的 82.3% 与 GPT-6 Astra 的 81.0%；3D 创作实测比 Opus 5.5 快近 4 倍、成本不到一半，比 Astra 快 8 倍以上、成本差 22 倍。同一天披露的 Gemini Robotics 2.5 已在奔驰匈牙利与德国产线完成金属件配套拣选，成功率 96%。同周 OpenAI 解散独立机器人团队，理由是 Astra 已经能直接操控机器人——两条消息指向同一件事：机器人正在变成大模型的一个「外设」。"
+    },
+    {
+      "title": "Revolut 把 2000 名工程师的编程助手整体换成智谱 GLM：耗时 -60%、成本 -90%",
+      "summary": "新华社里斯本 11 月 12 日电，2026 年网络峰会联合创始人帕迪·科斯格雷夫在开幕式上主动讲起：英国金融科技企业 Revolut 已把原先使用的 OpenAI 与 Anthropic 编程助手，整体替换为中国智谱的开源 GLM 系列。Revolut 的 AI 基础设施负责人 David Abitbol 称，GLM 目前是公司约 2000 名工程师的默认编程模型，上线以来平均编程耗时缩短约 60%、AI 相关调用成本下降近 90%。法新社报道补充，Orange、雷诺与西门子等欧洲企业也已公开表示在使用 DeepSeek 与通义千问。这场替换真正争的不是跑分，而是采购权：数据出不出得去、明年涨价能不能换。"
     }
   ],
   "news": [
@@ -157,6 +165,79 @@
       "source": "AMD Newsroom",
       "link": "https://newsroom.amd.com/news/amd-advances-instinct-mi400-series-ai-scientific-computing/",
       "models": []
+    },
+    {
+      "title": "谷歌把 Gemini 4 Argon 定位为「通用物理推理模型」：具身推理 87%，3D 任务成本压到 Astra 的 1/22",
+      "summary": "谷歌 11 月 14 日把 Gemini 4 Argon 重新定位为「通用物理推理模型」，官方称它打通机器人技术栈里的物理理解、代码生成与视觉语义推理。具身推理基准 ERQA 上 Argon 仅凭纯推理拿到 87%，高于 Claude Opus 5.5 的 82.3% 与 GPT-6 Astra 的 81.0%；3D 创作实测比 Opus 5.5 快近 4 倍、成本不到一半，比 Astra 快 8 倍以上、成本差 22 倍（同一任务 Astra 约 11 美元、Argon 约 0.5 美元），在目标检测、密集场景、小文本与手写提取上被列为当前最好的视觉模型。官方给出四个落地场景：机器人控制、Real2Sim 重建、物理理解、自我改进。同期披露的 Gemini Robotics 2.5 在 200 多项任务上成功率较前代提升 30%–100%、速度提升 20%–30%，Apptronik 的 Apollo 2 在奔驰匈牙利凯奇凯梅特与德国辛德尔芬根产线完成金属件配套拣选，成功率 96%，架构是 Gemini Robotics ER 负责调度与状态感知、2.5 负责手臂与双手动作；安全侧新增 ASIMOV-Jailbreak 越狱基准，Argon 抵抗率 99.5%。DeepMind 的 Kanishka Rao 承认人类做同类重复任务几乎不出错，最后 4 个百分点是一条陡路。Artificial Analysis 智能指数给 Argon 的两档为 50（较高思考档）与 48。",
+      "date": "11月14日",
+      "source": "36氪 / 新浪财经",
+      "link": "https://finance.sina.cn/2026-11-14/detail-iniyryff0548912.d.html",
+      "models": [
+        "GPT-6 Astra",
+        "Claude Opus 5.5",
+        "Gemini 4 Argon"
+      ]
+    },
+    {
+      "title": "OpenAI 确认解散独立机器人团队：让通用模型直接当机器人「大脑」",
+      "summary": "《财富》11 月 13 日报道、OpenAI 随后确认：独立机器人团队已解散，机器人研究人员并入核心研究团队、向首席研究官 Mark Chen 汇报，应用机器人与硬件团队转入 Greg Brockman 负责的应用部门。官方给的理由是包括 GPT-6 Astra 在内的通用模型已能直接用于部分机器人任务——报道援引英伟达一项研究，Astra 驱动的智能体在模拟操作基准上成功率 74.8%，而此前最好的专用机器人模型是 51.0%。调整来得突然：OpenAI 此前报名了本周奥斯汀的机器人学习与控制会议（CoRL），记者到访其 208 号展位时现场空无一人、标识也已撤下。公司称机器人仍是长期愿景核心，自有人形机器人首次公开演示目标 2027 年。CMU 机器人研究所助理教授 Guanya Shi 的解读是，OpenAI 不再把机器人当成需要单独攻克的特殊问题，而是通用智能的一个下游应用；也有学者提醒，大模型的速度与云端依赖仍是真机落地的限制，机器人企业积累的现场数据仍有价值。",
+      "date": "11月13日",
+      "source": "Fortune / 腾讯新闻",
+      "link": "https://news.qq.com/rain/a/20261114A02AOZ00",
+      "models": [
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "两份账本同日翻开：OpenAI 单季营收 100 亿美元、净亏 109 亿；Anthropic IPO 传被上调至 1.5 万亿",
+      "summary": "据科技云汇总，OpenAI 第三季度营收环比增长近 50% 至 100 亿美元，但单季净亏损扩大到 109 亿美元，主要来自算力基础设施扩张与顶尖人才争夺；Anthropic 的 IPO 路演获得数倍超额认购，承销商正考虑把估值目标推高到 1.5 万亿美元、总募资规模逼近 904 亿美元；同一时间英国 AI 云服务商 Nscale 正考虑推迟 350 亿美元 IPO，资本向头部集中的马太效应进一步显现。文中还提到 Anthropic 披露 Claude 仅用 3 天完成 AMD 芯片的推理适配，推理成本较初期下降超过 40%，同时国内头部大模型企业也在加速冲刺港股。上述营收与估值数字均来自媒体汇总，尚未见公司正式文件确认。",
+      "date": "11月13日",
+      "source": "科技云 / 网易科技",
+      "link": "https://www.163.com/dy/article/LBLRTHSU05566SCS.html",
+      "models": []
+    },
+    {
+      "title": "Revolut 把 OpenAI 与 Anthropic 的编程助手整体换成智谱 GLM：2000 名工程师默认在用",
+      "summary": "新华社里斯本 11 月 12 日电，2026 年网络峰会在葡萄牙首都里斯本举行。峰会联合创始人帕迪·科斯格雷夫在开幕式上说，英国金融科技企业 Revolut 已将原先使用的 OpenAI 与 Anthropic 编程助手替换为中国智谱的开源 GLM 系列模型。Revolut 的 AI 基础设施负责人 David Abitbol 介绍，GLM 目前是公司约 2000 名工程师的默认编程模型，上线以来平均编程耗时缩短约 60%、AI 相关调用成本下降近 90%。法新社在会前报道中指出，中国开源模型可免费下载、支持二次修改，Orange、雷诺与西门子等欧洲企业已公开表示在使用 DeepSeek 与通义千问，作为欧美本土模型的补充；面壁智能 CEO 李大海称已参与老挝国家大模型的训练工作。",
+      "date": "11月13日",
+      "source": "新华社 / 中国经济网",
+      "link": "https://www.ce.cn/xwzx/kj/202611/t20261113_3293070.shtml",
+      "models": []
+    },
+    {
+      "title": "Claude 读完哥德尔 1009 页速记：663 条定理，约 400 条通过 Coq 校验",
+      "summary": "《卫报》11 月 13 日报道，赫尔辛基大学逻辑学家 Jan von Plato 自 2017 年起主持哥德尔 16 本「工作笔记」的研究项目——1009 页密集的数学与逻辑，多数用早已废弃的加贝尔斯贝格德语速记写成，他自称是全球仅六个能读的人之一，人工进度约每周一页。今年 9 月他把自己的转录稿、六本哥德尔专著与其他文献交给 Claude，两天内得到一份 650 页的整体解释，他说「必须逐页核对」，但「这基本是人类做不到的工作：人一次读一页、会忘，而 AI 能把一千页里的碎片连成一件东西」。Claude 标出 663 条有证明、证明草稿或证明思路的定理，经 Coq 校验约 400 条如原文成立、约 200 条需修补、约 50 条为假。最受关注的一例是选择公理独立性：哥德尔 1966 年曾声称自己在 1940 年代已证出，却无法从笔记里复原；Claude 的重构显示「只差一步」，他当时写错了一个定义、而正确版本在此前两年已写下，重构后的证明通过 Coq。Notre Dame 的逻辑学教授 Joel David Hamkins 提醒，其中多少属于哥德尔本人、多少属于 AI，仍需历史学家判定。",
+      "date": "11月13日",
+      "source": "The Guardian",
+      "link": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+      "models": []
+    },
+    {
+      "title": "《人形机器人 信息安全要求》拟立项强制性国标，征求意见到 12 月 11 日",
+      "summary": "市场监管总局标准技术司 11 月 11 日发布通知，对《人形机器人 信息安全要求》等 2 项拟立项强制性国家标准项目公开征求意见，截止时间为 2026 年 12 月 11 日，项目信息在国家标准委征求意见公示页可查。随着人形机器人加速进入工厂与公共场景，强制性国标将为行业划定数据保护、通信安全等底线要求。此前工信部《关于加强智能体终端设备进网管理的通知》已把内置智能体的手机、平板、可穿戴纳入进网管理——监管对象正从看得见的硬件，转向藏在设备里的自主执行能力。",
+      "date": "11月13日",
+      "source": "市场监管总局 / 中国质量新闻网",
+      "link": "https://www.cqn.com.cn/zj/content/2026-11/13/content_9181157.htm",
+      "models": []
+    },
+    {
+      "title": "谷歌把钱包交进 Gemini：能查订阅涨价、能画现金流，但动不了你的钱",
+      "summary": "谷歌 11 月 13 日宣布 Google Wallet 加入 Gemini 的 Personal Intelligence 连接应用清单，美国所有 Gemini 应用用户即日起可在「已连接应用」里开启。开启后在对话里 @Google Wallet 即可问个人财务与预算问题：回顾上季度支出并生成追踪现金流、资产配置与预算的动态图表；找出仍在付费的周期性订阅并标出今年涨价的项目；用过去一年的礼物与旅行支出生成节日预算。想更深可选通过 Plaid 把信用卡与银行账户接到钱包。权限边界写得很明确：Gemini 只能读取账户信息，不能转账、管理或投资，连接可随时关闭。同一批更新还上线 Memory Summary，把 Gemini 记住的偏好、兴趣与进行中的目标汇总成一页可读快照，可随时修改或删除。",
+      "date": "11月13日",
+      "source": "Google 官方博客",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/",
+      "models": []
+    },
+    {
+      "title": "无界前沿开源 Fx-Bio-1031：125B-A6B 生信 MoE，困难子集 Pass@5 达 70.59%",
+      "summary": "无界前沿开源生物信息大模型 Fx-Bio-1031，采用 125B 总参数、6B 激活的 MoE 架构，支持 512K 上下文与本地私有化部署（数据不出域）。在 Anthropic 的 BioMysteryBench 困难子集上 Pass@5 达 70.59%，发布方称比 GPT-6-Astra 高 23.53 个百分点、比 Claude Opus 5 高 17.65 个百分点；模型可自主写代码、调数据库、做交叉验证，已跑通生物医药干实验流程。上述成绩均为发布方口径，尚待独立复测。",
+      "date": "11月13日",
+      "source": "量子位",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzI1NTUxMzE4NA==&mid=2247485434&idx=1&sn=d855678a259275a0ffea9f8748b47d28",
+      "models": [
+        "GPT-6 Astra",
+        "Claude Opus 5"
+      ]
     }
   ],
   "papers": [
@@ -208,6 +289,48 @@
       "summary": "多模态编程智能体把 4D 世界构建与视觉生成分开，视频模型由此从「世界生成器」变成「生成式渲染器」。WorldDraft 用 48 个可执行 4D 世界家族、432 个严格配对用例，在相同动力学下正交交叉草稿粒度与外观对齐两因素，考察「保持世界（运动与机位）」与「实现视觉（持续绑定文本指定属性）」。对 12 个代表模型的评测发现：两者存在明显张力；更丰富的草稿能锚定结构却损害外观保真；源线索冲突时泄漏最高达 64%。作者提出即插即用的视觉提示策略 WorldDraft-Primer，在冻结渲染器上同时改善两项目标。",
       "authors": "Zhiyu Hou, Wen-Jie Shu, Harold Haodong Chen, Weilin Ruan, Chenfei Liao, Liuzhou Zhang, Disen Lan, Xiaogang Xu, Qi Chen, Ser-Nam Lim",
       "link": "https://arxiv.org/abs/2611.16217"
+    },
+    {
+      "title": "经典能量模型学推理，比循环模型快一千倍",
+      "titleEn": "Classical Energies Learn to Reason 1,000x Faster than Looped Models",
+      "summary": "循环（looped）模型在 Sudoku-Extreme、Maze-Unique 这类推理谜题上表现亮眼，但不稳定、训练慢，且解决简单谜题要吃掉大量参数与算力。作者改走「对能量做下降」的路线，用一个可学习的 Hopfield & Tank 式能量模型（称 CRAM）：单张 GPU 上训练 42 毫秒即可解出 Sudoku-Extreme 测试集 99.996%、训练 132 毫秒解出 Maze-Unique 100%，训练速度至少是循环模型的 1000 倍；在 Sudoku-Extreme 上达到循环模型最高准确率只用不到 1/282 的推理 FLOPs。附带好处是自带早停、算力随题目难度自适应、无需对求解器求导，权重还能读出谜题约束。作者同时提出一个警告：Sudoku、Maze 这类「轻易可解」的基准，不适合用来检验循环式推理方法的可扩展性。",
+      "authors": "Benjamin Hoover, Hugh Blayney, James C. R. Whittington",
+      "link": "https://arxiv.org/abs/2611.17309"
+    },
+    {
+      "title": "把已知规则编译成紧凑神经网络：在没见过的游戏上做权重空间编程",
+      "titleEn": "Compiling Known Rules into Compact Neural Agents: Weight-Space Programming on Unseen Games",
+      "summary": "权重空间编程（WSP）让语言模型不经训练直接写出神经网络权重。作者用 20 个私有、未公开的 ARC-AGI-3 风格游戏家族测试：把去掉保留关卡数据的模拟器源码交给「写手」模型，配固定 57k 参数循环结构，最强写手在带反馈条件下拿到 56% 的保留关卡成功率，四家主要写手写出的 Python 玩家则达 97–100%，放开结构自由度的探索组为 68–90%。写出的网络有明显程序特征：93% 的参数为零，其余 90% 是小整数或 2 的幂；同等算力上限下 NumPy 玩家 91%、网络 79%，而从零训练这些结构只有约 1% 成功率。结论有两面：规则→网络的编译确实成立，但相对 Python 程序优势有限；写出的权重很脆，标准 PPO 微调会抹掉大部分成功。",
+      "authors": "Jens Lehmann",
+      "link": "https://arxiv.org/abs/2611.16981"
+    },
+    {
+      "title": "CoReMem：把记忆的写读成本算进去，让编码智能体为下一个未知任务备料",
+      "titleEn": "CoReMem: Cost-Internalizing Memory for Successive Coding Tasks with Prospective Valuation",
+      "summary": "编码智能体在持续演进的仓库上接连处理任务，必须在还不知道下个任务是什么的时候就写好记忆，于是写作与读取的成本要跟未来收益一起算。CoReMem 用「前瞻式片段估值」：在同一继承仓库状态下，分别在有、无某段轨迹的情况下跑下一个任务，据差值判断该留什么；记忆被压成以「仓库位置」和「可执行检查」为锚点的紧凑形式。执行侧用 rollout 分组内有/无记忆的对比估计策略内价值，奖励优先看问题是否解决、成功轨迹中再惩罚步数；来源门控的价值分配只把额外的记忆收益记到真正用了锚点的步骤上。在 ChainSWE 上，27B 执行体的解决率从 21.0% 提到 25.7%，步数减少 17%，含记忆模块调用的缓存感知 token 总数减少 11%。",
+      "authors": "Peiwen Li, Harshit Verma, Sophia Zhou, Haiwen Wang, Ngoc Bui, Heng Chang, Fei Fei, David van Dijk, Rex Ying",
+      "link": "https://arxiv.org/abs/2611.17316"
+    },
+    {
+      "title": "Folio：可恢复的多分辨率上下文折叠，让长程智能体不必反复重写历史",
+      "titleEn": "Folio: Recoverable Multi-Resolution Context Folding for Long-Horizon Language Agents",
+      "summary": "长程智能体把工具结果与回复堆到装不下为止，现有做法是让模型写摘要来压缩，于是每次压缩都要重读重写被替换的历史，何时压缩也把结果大小当既定条件。Folio 用一套「句柄」同时做记录、折叠与恢复：运行时记录三个相互链接的层级——模型在普通回复里顺手写的回合短记（L1）、运行时写的每次调用事件清单（L2）、被捕获的原始记录（L3）。因为这些视图本就存在，运行时可以程序化折叠、给旧回合选更粗的视图，折叠时打印索引 L2/L3 的句柄，恢复工具便能在有限页内读取、在文件上对全文做计算、把发现留在常驻档案里，只需很少额外输入就能摸到证据。折叠触发把「保留预算」显式写进落点。在 75 个 LOCA-bench 任务上（所有系统背后都是 DeepSeek-V4-Pro），Folio 解出 66 个，模型自写压缩的同款运行时是 54 个，Claude Code、Codex 与 SoL-Pi 为 49–59 个；耗时约为它们的一半，成本比同款运行时低 2.4 倍，单次折叠中位耗时 0.6 秒。",
+      "authors": "Yubo Ruan, Tao Peng, Jiao Zhang, Chuanguo Ma, Lei Xu, Han Zhou, Wenwu Wang, Xiafei Lv, Xingjie Zhou, Guiju Fan, Hao Wang, Fenghui Zhang, Mao Miao, Shuo Li",
+      "link": "https://arxiv.org/abs/2611.16627"
+    },
+    {
+      "title": "Skill Adapter：通用技能的个人化改法与在线路由",
+      "titleEn": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
+      "summary": "智能体靠外部技能复用工具用法与任务流程，但通用技能只描述共享步骤，具体工具选择、操作习惯与输出要求因人而异；长程任务里子目标、可用输入与环境状态还在变。Skill Adapter 从用户需求与执行反馈里蒸馏出「本地改法」存成挂在通用技能上的 Adapter，再由路由智能体按当前子任务、执行进度与环境反馈挑选技能与适用的 Adapter，增量维护一份主模型按需读取的任务级在线技能库；系统会为后续节点预载候选，并在真实输入确定后重新校验适用性。两类决策分别用「改法收益」与「路由结果」做强化学习。在 ALFWorld、WebShop、SkillsBench 上，相比 SkillRL 平均提升 11.43 个百分点成功率，三个基准的平均执行时间都下降；技能池扩到 1000 条时优势仍保持。",
+      "authors": "Qijia Zhuang, Yanyi Gou, Wenbin Ma, Yuxiang Ren",
+      "link": "https://arxiv.org/abs/2611.17007"
+    },
+    {
+      "title": "决定 AI 数据中心能源成本的，是「多快能通电」而不是电价",
+      "titleEn": "Speed-to-Power Dominates Energy Costs for AI Data Centers: Technoeconomic Analysis of Powering AI in the Continental United States",
+      "summary": "AI 推动大规模、短周期部署的数据中心，但并网排队与燃气轮机交付延迟，正把运营商推向自建发电。作者用开源的平准化技术经济框架，比较美国本土的并网与离网方案——交流/直流耦合的光储、孤岛燃气、电网互联——负荷取自实测校准的 AI 训练曲线，含气候驱动制冷、逐级电力变换与基于物理的电池衰减。核心贡献是「速度调整后的度电成本」：把更快建成所解锁的算力折成价值，让交付周期不同的方案能在同一物理口径上比较。结果显示直流耦合因省去逆变器、效率更高，全生命周期能源成本平均低 18%（约 0.09 美元/kWh）；直流耦合微电网在未调整口径下很少最便宜，但把「错过的算力」计入后，在 85% 的美国选址成为最低成本方案（若燃气交付加速则降至 55%）。对 AI 基础设施，建设速度而非单位电价决定经济上最优的供电路径。",
+      "authors": "Alex C. Newkirk, Daniel L. Gerber, Erica R. H. Fuchs, Alex Hubbard, M. Granger Morgan, Arman Shehabi, Sarah J. Smith, Constantine Samaras",
+      "link": "https://arxiv.org/abs/2611.17098"
     }
   ],
   "models": [
@@ -252,6 +375,30 @@
       "vendor": "2026 世界中文大会发布",
       "highlight": "11 月 13 日在北京开幕的 2026 世界中文大会上发布，面向全球中文学习者提供即时反馈的学习评测与个性化辅导，面向教师在多轮对话中生成课前备课、课堂互动与课后巩固素材，面向中文教育机构提供标准化接口。",
       "link": "http://finance-app.people.cn/n1/2026/1113/c1004-40833526.html"
+    },
+    {
+      "name": "DeepSeek-V4-Pro-Qwen3.5-9B（社区蒸馏版登顶 HF 趋势榜）",
+      "vendor": "社区 · Jackrong 蒸馏 / xtools-at 衍生",
+      "highlight": "Jackrong 让 1.6 万亿总参数的 DeepSeek V4 Pro 在 Max Effect 模式下生成约 25 万条数学与理工科解题样本，用它们对阿里开源的 Qwen3.5-9B 做监督微调、再用 GSPO 做一轮轻量强化学习，两阶段都围绕数理推理、未使用编程数据；据模型卡，蒸馏后的千问在理科测试里答对的题更多，每答对一题消耗的推理 token 减少 36.1%。xtools-at 在此基础上用 Heretic v2.0.0.dev0 进一步调整拒答行为，该衍生版登上 Hugging Face 趋势榜第一（赞数约 4900、近期下载约 2.2 万）。这既是小模型靠大模型解题轨迹「抄过程」的一次公开演示，也顺带把蒸馏出来的权重推到了榜首。",
+      "link": "https://huggingface.co/xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic"
+    },
+    {
+      "name": "AlphaGenome 2",
+      "vendor": "Google DeepMind",
+      "highlight": "11 月 11 日发布的条件式 DNA 序列模型：接一段 100 万字母的序列，外加一个生物条件（组织、细胞类型或细胞状态），对该条件逐层生效地预测基因表达、组蛋白修饰、染色质可及性与 DNA 甲基化。训练用了人鼠合计 68 种组织、超 1.07 亿个单细胞图谱，把上一代「整块组织平均」的口径拉到单细胞层面——同一个免疫相关变异在肺组织里抬高 IL20RA、在食管却压低它，原因被定位到上皮细胞与血管内皮细胞中被破坏的是激活位点还是抑制位点。在 28 种原代免疫细胞的 TenK10K 上，因果变异识别率 30%（上一代经单细胞微调为 16%），基因效应方向判断 43%（23%）；无需重训即可用几十个细胞的测序数据构造新条件。目前经 AlphaGenome API 向非商业研究开放，商业使用为私测，官方明确仅限研究、未经临床验证。",
+      "link": "https://www.thepaper.cn/newsDetail_forward_34464454"
+    },
+    {
+      "name": "Naive-N0.5-Flash",
+      "vendor": "NaiveAI（清华代季峰创办）",
+      "highlight": "硅谷技术媒体 Latent Space 新测评栏目首期实测的开源模型，对手是 DeepSeek V4.1 Flash 与 GLM 5.3 Flash：综合能力介于两者之间、部分单项实现反超，极速模式峰值达 2100 token/s、中位响应 3.1 秒。据发布方介绍，其架构、训练系统与推理优化均由 AI 深度参与研发——这一点比分数本身更值得记一笔。测评来自第三方媒体，覆盖范围有限，仍待更广的独立复现。",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzI1NTUxMzE4NA==&mid=2247485434&idx=1&sn=d855678a259275a0ffea9f8748b47d28"
+    },
+    {
+      "name": "NovaAtom-Lite",
+      "vendor": "测地智能（Geodesic Intelligence）",
+      "highlight": "前字节 AI4S 核心成员顾全全创办的公司发布的 NovaAtom 家族首个模型：可直接由序列预测蛋白质、核酸及其结合分子中全部重原子的三维坐标，并输出经过校准的置信度，而不只是主链。在抗体-抗原与蛋白质-小分子配体界面预测上成功率达 79.07%，瞄准 AI 驱动的药物发现。",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzI1NTUxMzE4NA==&mid=2247485434&idx=1&sn=d855678a259275a0ffea9f8748b47d28"
     }
   ],
   "ecosystem": [
@@ -302,6 +449,45 @@
       "summary": "据 The Neuron 11 月 13 日汇总：ElevenLabs 上线 Marketplace，汇集基于其技术的医疗、金融、零售等行业语音智能体与应用；Fish Audio 推出无代码语音智能体构建器 Fish Agent，其 Live 3 模型可边说边听、应对打断，官方称约 30 秒即可部署一个基础智能体；Krea 推出 Krea Bots，定位为能持续推进创作项目、适应团队偏好的 AI 协作者，目前提供测试资格。",
       "source": "The Neuron",
       "link": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-friday-november-13-2026/",
+      "models": []
+    },
+    {
+      "title": "ClickHouse 开源 Loom：一个自托管 MCP server，让 Claude Code、Codex、Cursor 共享记忆与实时代码索引",
+      "summary": "Loom 以 Apache-2.0 开源，包含自托管 MCP server、HTTP API 与 Python/TypeScript SDK，把智能体记忆与代码库的实时索引放进同一个 ClickHouse 数据库、共用一套权限。它要解决的是「每个编码会话都从零开始」：事实按版本记录而非覆盖（三月记的 max_threads 16 与六月翻倍不冲突，都能按任意历史日期查询），记忆与代码绑定、函数改名会跟随、被重写则标记待人工复核；命名空间决定谁能读谁能写（研究智能体写、编码智能体读的单向共享，或团队双向共享）；检索把向量、BM25、逐字片段与实体图跳数四路融合成一个排序，并且在不知道时会直接说不知道。起因是 ClickHouse 自家的自主贡献者 GroeneAI 到 10 月已合并 3000 多个 PR 却仍每次从零起步，团队还拿两款既有记忆工具在真实流量上跑了三个月、8.2 万次记忆写入。自测（Claude Code + claude-sonnet-5、同一份 ClickHouse 代码库、开关 Loom 对比）：回答质量 0.84 对 0.78，文件定位 96.4% 对 91.4%，LongMemEval-S 94% 对 90%。",
+      "source": "ClickHouse / automater.ai",
+      "link": "https://automater.ai/news/clickhouse-loom-open-source-agent-memory-code-index",
+      "models": [
+        "Claude Sonnet 5"
+      ]
+    },
+    {
+      "title": "Meta 开源 Astryx：一套为智能体准备的可定制设计系统",
+      "summary": "Meta 在 GitHub 上释出 Astryx，一套完全可定制的开源设计系统，卖点不是好看而是「可被 AI 智能体读懂并用起来」——把组件、样式与约束组织成智能体能稳定消费的结构，从而在自动生成界面的流程里减少风格漂移。这类「给 agent 看的组件库」正在成为设计系统的新分支：人读文档，模型读约束。",
+      "source": "Meta / AIToolly",
+      "link": "https://aitoolly.com/ai-news/2026-11-13",
+      "models": []
+    },
+    {
+      "title": "shadcn 的 Improve：让最贵的模型审计代码库，把执行计划写给便宜的模型",
+      "summary": "一个登上 GitHub 趋势榜的 agent skill，思路很直白地把成本分层：先用你手上最强的模型审计整个代码库、摸清结构与风险，再产出一份供更便宜的模型照着执行的实现计划。它把「贵的用来想、便宜的用来做」从经验变成可复用的技能文件——在技能（Skill）成为智能体标配的当下，这类「元技能」比单个技能更值得关注。",
+      "source": "shadcn / AIToolly",
+      "link": "https://aitoolly.com/ai-news/2026-11-13",
+      "models": []
+    },
+    {
+      "title": "AlphaGenome 2 Skills 将接入 Google Antigravity：模型被打包成技能供智能体随时调用",
+      "summary": "DeepMind 在 AlphaGenome 2 的发布中说明，除经 AlphaGenome API 提供非商业研究访问外，还计划把模型包装成 Skills 放进 Google Antigravity，交由前沿模型按需调用；同时对数百种细胞与组织条件下的性状相关变异预先算好预测结果，供直接查询而不必按需推理。这是「模型即工具、工具即技能」的一个明确样本：能力不再只以端点形式出售，而是以智能体可编排的技能形式进入工作流。",
+      "source": "Google DeepMind / CASRAI",
+      "link": "https://casrai.org/news/deepmind-alphagenome-2-release-2026",
+      "models": [
+        "AlphaGenome 2"
+      ]
+    },
+    {
+      "title": "开源的渗透测试 agent 被拿去改造成恶意软件：ARTEX 分支偷 AWS 凭证",
+      "summary": "Arctic Wolf Labs 报告称，攻击者把一个名为 ARTEX 的开源安全智能体 fork 之后改造成恶意工具，用于窃取 AWS 凭据。这件事的分量不在个案，而在模式：当「会自己找路、会调用工具、会试错」的安全智能体以开源形式流通，同一套能力对攻防双方是对称的——前脚有厂商发布红队智能体，后脚就有人把它改成偷钥匙的。对部署方来说，能跑工具的 agent 需要和密钥、云凭据同等级别的隔离与审计。",
+      "source": "Arctic Wolf Labs / AI Daily Newsstand",
+      "link": "https://byobot.ai/ai-news/ai-daily-newsstand-november-14-2026",
       "models": []
     }
   ]
