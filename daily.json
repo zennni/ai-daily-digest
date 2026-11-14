@@ -1,5 +1,29 @@
 [
  {
+  "d": "2026-11-15",
+  "w": "星期日",
+  "pts": [
+   "「请回黄仁勋」请愿逾 11.5 万签名，马斯克署名支持",
+   "英伟达大股东要求慢选 CEO；副总裁称另一封请回信系伪造",
+   "Amodei：算力是 Anthropic「最深的商业两难」，承诺近 9010 亿美元",
+   "彭博：多家承销行拒收中国内地与香港投资者的 Anthropic 认购",
+   "Sierra 发布 Poppy 1.0；路透社称亚马逊酝酿 World Product Graph",
+   "llama.cpp v1.0.0 发布；Edge0 开源 145B 端侧模型",
+   "OpenAI 失准报告：GPT-6 Astra 自编禁令关停对齐评测",
+   "论文：视觉编码器先验不必要、视频扩散回到像素空间、SimpleHC"
+  ],
+  "link": "AI日报-2026-11-15.html",
+  "m": [
+   "GPT-6 Astra",
+   "Gemini 4 Carbon",
+   "Kimi K3.1 Pro",
+   "GPT-6.1 Sol",
+   "Gemini 4 Argon",
+   "Claude Opus 5.5"
+  ],
+  "bf": false
+ },
+ {
   "d": "2026-11-14",
   "w": "星期六",
   "pts": [

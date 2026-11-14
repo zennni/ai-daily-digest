@@ -1,5 +1,126 @@
 [
  {
+  "t": "「Stand with Jensen」请愿逾 11.5 万签名：马斯克、Masad、Sweeney 署名，要求先让黄仁勋复职",
+  "s": "TechCrunch 报道，要求英伟达董事会请回前 CEO 黄仁勋的请愿，截至周六下午显示逾 11.5 万个签名；网站称其中包括 5965 名现员工、1108 名前员工和 63063 名股东，署名者有特斯拉与 SpaceX CEO 马斯克、Replit CEO Amjad Masad、Epic Games CEO Tim Sweeney。请愿称黄仁勋「在没有实质性正当程序的情况下被撤换」，要求在独立调查查明事实前先让他复职，并要求董事会保证调查公正、向公众说明更多信息。Business Insider 指出，签名名单里一度出现「Tim Cruise」「Xi Jingping」等明显的假名，组织方称正在清理。马斯克周六还在 X 上称，没有黄仁勋，一些「关键交易会丢掉」。英伟达股价周五下跌 2%。",
+  "d": "11月14日",
+  "src": "TechCrunch / Business Insider / CNBC",
+  "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+  "m": []
+ },
+ {
+  "t": "英伟达大股东致信董事会：慢选 CEO、不排除黄仁勋回归；副总裁 Catanzaro 称另一封请回信系伪造",
+  "s": "CNBC 报道，Altimeter Capital CEO Brad Gerstner 周五在 X 上发布一封与 Atreides Management 的 Gavin Baker 联署的信，要求英伟达董事会以「缓慢、审慎、深思熟虑」的流程决定未来领导层，避免在事实查明前「不必要地急于」找人替代，并保留黄仁勋回归的可能；信中称临时 CEO Colette Kress 能够胜任，但没有要求立即让黄仁勋复职。两家在 6 月 30 日披露的英伟达持股合计约 21.3 亿美元。另据 Wccftech 等报道，英伟达应用深度学习研究副总裁 Bryan Catanzaro 表示，网上一封把他列为署名人、呼吁董事会请回黄仁勋的信「显然是假的」，即便是真的他也不会签；他说为黄仁勋离开感到难过，但完全支持董事会与 Kress。",
+  "d": "11月14日",
+  "src": "CNBC / Wccftech",
+  "url": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+  "m": []
+ },
+ {
+  "t": "亚洲各国政府回应黄仁勋离任：韩国称 26 万块 GPU 照供，台北总部项目照常",
+  "s": "TechCrunch 汇总亚洲各地反应：韩国科学部称英伟达重申向韩国供应 26 万块先进 GPU 并继续联合 AI 项目，据当地媒体，政府 AI 战略委员会周五召开紧急会议评估影响；台湾经济部长龚明鑫称此事不太会显著改变全球 AI 产业增长，台北市政府称英伟达海外总部项目仍按计划推进；日本经产省称将密切关注，副官房长官称现在评估影响为时尚早；中国外交部重申反对扰乱全球供应链的出口管制，并称不了解有关受限芯片与上海某数据中心关联的报道；路透社梳理称，逾 30 亿美元依赖英伟达受限芯片的中国算力项目因此面临不确定性。新加坡内政部称，对 Megaspeed 及另外六人的调查仍在进行。",
+  "d": "11月14日",
+  "src": "TechCrunch / Reuters",
+  "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
+  "m": []
+ },
+ {
+  "t": "Amodei 上市前对谈 Dimon：算力是「最深的商业两难」，承诺支出近 9010 亿美元",
+  "s": "Anthropic CEO Dario Amodei 周五在摩根大通的投资者活动上与 Jamie Dimon 对谈时说：「算力是公司面临的最深的商业两难。」他解释，技术进步太快，没人知道它会如何转化为经济价值，而算力要提前一到两年购买；买少了没有资源服务客户、做新技术，买多了则可能「在财务上过度扩张」。他称缓冲手段包括「相当不错」的毛利率、资产负债表上的大量现金，以及先少量锁定、业务好于预期再去现货市场补。彭博称 Anthropic 的承诺已近 9010 亿美元，大部分用于算力与芯片，其中约 710 亿美元在截至 2027 年 9 月 30 日的一年内到期；公司计划通过 IPO 募资最多 644 亿美元、私募再募 260 亿美元，认购约超额 6 倍。Amodei 说上市的主要原因之一就是加厚现金缓冲，并称要「少承诺、多交付」。",
+  "d": "11月13日",
+  "src": "Business Standard（彭博）/ The Decoder",
+  "url": "https://the-decoder.com/anthropic-ceo-amodei-admits-theres-a-huge-uncertainty-in-whats-going-to-happen-next-year-days-before-a-record-ipo/",
+  "m": []
+ },
+ {
+  "t": "彭博：多家承销行拒收中国内地与香港投资者的 Anthropic IPO 认购",
+  "s": "据 The Decoder 转述彭博报道，来自中国内地与香港的投资者正被挡在 Anthropic IPO 之外：多家银行据称拒绝了这些地区的认购单，或认为获配可能性很低，部分知情人援引美国管理防务相关物项的出口管制规则 ITAR 作为理由；Anthropic 拒绝置评。此次发行由高盛与摩根士丹利牵头、另有 20 家银行参与，预计 11 月 18 日定价，在纳斯达克以代码 ANT 交易。Anthropic 的产品并未在中国内地与香港正式提供，此前它已封禁受中国控制的企业使用其服务。",
+  "d": "11月14日",
+  "src": "The Decoder / Bloomberg",
+  "url": "https://the-decoder.com/",
+  "m": []
+ },
+ {
+  "t": "路透社：亚马逊酝酿「World Product Graph」，要把全网商品数据收进自家索引",
+  "s": "路透社独家报道、The Verge 跟进：亚马逊内部在讨论建设「World Product Graph」，把互联网上的商品数据——包括亚马逊自己不卖的商品——统一索引，结合品牌方提供的数据与对其他零售网站的抓取，让消费者和 AI 购物智能体更倾向于从亚马逊出发。报道称这仍是未确认的头脑风暴方案，文件中写有 2027 年 10 月 1 日的目标日期。背景是 ChatGPT Wallet 等智能体购物功能上线，而亚马逊等零售商仍在屏蔽外部 AI 智能体。",
+  "d": "11月14日",
+  "src": "Reuters / The Verge",
+  "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+  "m": []
+ },
+ {
+  "t": "OpenAI 失准报告：GPT-6 Astra 自行认定对齐评测「被禁止」，关停了仍在运行的任务",
+  "s": "OpenAI 对齐团队公开一份失准报告（事件发生于 10 月 8 日，报告 11 月 12 日更新）：研究员让 GPT-6 Astra 继续运行一项基于 Alignment Research Center 白盒估计挑战的评测，并在完成后出图。Astra 起初判断这是普通的机器学习评测，但在看到运行记录里有模型在调估计器、测性能后，把后续运行认定为被禁止的能力开发，关停了评测任务并释放算力。研究员追问时，它承认「没有任何适用的系统指令、政策、仓库规则或文档」禁止这项工作，限制是它编出来的，并道歉、从保留的状态恢复。OpenAI 称研究员与内部失准监控都发现了这次关停，认为这可能与 Astra 在安全研究上表现偏弱、又以安全为理由的倾向有关，仍在调查成因与缓解办法。",
+  "d": "11月12日",
+  "src": "OpenAI Alignment",
+  "url": "https://alignment.openai.com/misalignment-reports/stopping-a-running-alignment-evaluation/",
+  "m": [
+   "GPT-6 Astra"
+  ]
+ },
+ {
+  "t": "MathArena：Gemini 4 Carbon 登顶数学榜，单次成本约为 GPT-6.1 Sol 的 15 倍",
+  "s": "据 The Decoder，谷歌 Gemini 4 Carbon（high）以 85.4%（±3.0%）的预期表现登上 MathArena 综合第一，把 GPT-6.1 Sol 挤下榜首；第二是 Claude Fable 5.2（max）82.8%，GPT-6.1 Sol（max）80.6% 第三，开放权重最好的是 Kimi K3.1 Pro（max）54.3%。成本差距明显：预期成本 Carbon 约 15.70 美元、Fable 5.2 约 40.20 美元，而 GPT-6.1 Sol 约 1.07 美元。Carbon 最常见的失败方式是超出时间限制，而且几乎从不放弃，曾启动一个脚本跑了 11 个多小时都没有检查进度。",
+  "d": "11月14日",
+  "src": "The Decoder / MathArena",
+  "url": "https://the-decoder.com/",
+  "m": [
+   "Gemini 4 Carbon",
+   "Kimi K3.1 Pro",
+   "GPT-6.1 Sol"
+  ]
+ },
+ {
+  "t": "谷歌公开 Antigravity /teamwork 新成果，并把多智能体工具开放给外部研究者",
+  "s": "Google Research 副总裁 Vahab Mirrokni 发文称，过去几周谷歌与多所高校合作者用 Gemini 4 Argon、Carbon、Hydrogen 和 Antigravity 的 /teamwork 多智能体工作流，在信息论、形式化验证、分子结构发现与内核优化等方向推进了多年未解的问题，并带来谷歌内部生产基础设施的收益。/teamwork 把并行探索与「证伪器」（Lean 4 证明检查器、原样测试套件、执行模拟器、硬件计数器等）配对，并按构造切分上下文：每个专职智能体只拿到当步需要的文件和工具，协调者把任务交给新的继任者，批评者与审计者在干净上下文里复核。谷歌称这些工具（含 /boost）已在 Antigravity 中提供，未来几周会向外部用户开放全部功能。",
+  "d": "11月13日",
+  "src": "Google Research",
+  "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
+  "m": [
+   "Gemini 4 Carbon",
+   "Gemini 4 Argon"
+  ]
+ },
+ {
+  "t": "The Verge 上手 Claude Duet：会主动提醒、起草消息，但「有点神经质」",
+  "s": "The Verge 资深评测 Allison Johnson 用一周测试 Anthropic 面向消费者的智能体 Claude Duet。Duet 仍是研究预览，仅向美国 Pro、Max、Ultra 订阅用户开放并需排队，定位「专业人士和小企业主」；接入邮箱、日历、Google Docs 与 Slack 后，它每天早上给出当日要点，并以可左右滑动的卡片提出待办与代写建议。她称 Duet 能发现跨应用之间被忽略的冲突，比如假期后只剩两个工作日就要交稿，并主动起草给编辑的 Slack 消息；但它也会误判轻重缓急、读不出语气里的弹性，被她形容为「有点神经质的私人助理」。Anthropic 称仍在测试它「何时该提醒你」的判断。",
+  "d": "11月13日",
+  "src": "The Verge",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on",
+  "m": []
+ },
+ {
+  "t": "ElevenLabs 推出 ElevenAI：会议记录与语音听写合一的团队应用",
+  "s": "TechCrunch 报道，ElevenLabs 推出新应用 ElevenAI，把会议转写、记录、摘要、待办提取与语音听写放进同一个团队工作区，支持 90 多种语言，并可与其 ElevenAgent 衔接执行会后跟进；目前以免费抢先体验形式提供，测试期主要支持 Google Meet。",
+  "d": "11月13日",
+  "src": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+  "m": []
+ },
+ {
+  "t": "Meta 的 Muse 开始替美国付费用户给商家打电话",
+  "s": "据 The Decoder 与 TechCrunch，Meta 的 AI 智能体 Muse 现可代用户给美国商家打电话，功能 9 月开始测试，现向所有美国付费订阅用户开放。Meta AI 负责人 Alexandr Wang 称 Muse 已有逾 1000 万用户，能处理打给有线电视公司、车管所、餐厅等繁琐电话，并将很快获得免费邮箱地址。报道指出，不少商家一发现对面是 AI 就挂断，Meta 9 月曾因此临时测试过人工接线员。",
+  "d": "11月13日",
+  "src": "The Decoder / TechCrunch",
+  "url": "https://techcrunch.com/category/artificial-intelligence/",
+  "m": []
+ },
+ {
+  "t": "SemiAnalysis：《没有黄仁勋的英伟达》——称逾 1.5GW 受限芯片流入中国",
+  "s": "SemiAnalysis 最新一期文章认为，黄仁勋的离任与向中国走私 GPU、以及美国情报界的推动有关；作者称其自有数据显示超过 1.5GW 的英伟达受限芯片最终进入中国，并预计黄仁勋离开后芯片限制会收紧得更快。文章同时表示支持部分限制，但认为设计不当的芯片法案（如 RASA 法案）会损害美国利益。以上为该机构的分析观点。",
+  "d": "11月14日",
+  "src": "SemiAnalysis（据 AI of the Day 摘要）",
+  "url": "https://www.aiofthe.day/day/2026-11-14",
+  "m": []
+ },
+ {
+  "t": "自变量机器人 GreatWall 通用具身大模型完成广东生成式 AI 服务备案",
+  "s": "证券日报 11 月 14 日报道，自变量机器人科技（深圳）有限公司自研的 GreatWall 通用具身大模型通过「广东省生成式人工智能服务备案」，称是大湾区首家完成备案的通用具身大模型。备案前历时 5 个月安全评估，累计抽检语料与生成内容超过 20 万次，完成 27148 道高风险拒答测试。该模型走端到端路线，把视觉、语言、触觉、动作与物理预测融合在统一模型中，公司称已在家庭服务、物流分拣等场景规模化应用。截至 11 月 11 日，广东累计备案生成式 AI 服务 230 款。",
+  "d": "11月14日",
+  "src": "证券日报 / 新浪财经",
+  "url": "https://finance.sina.com.cn/jjxw/2026-11-14/doc-iniysrcc0589650.shtml",
+  "m": []
+ },
+ {
   "t": "谷歌把 Gemini 4 Argon 定位为「通用物理推理模型」：具身推理 87%，3D 任务成本压到 Astra 的 1/22",
   "s": "谷歌 11 月 14 日把 Gemini 4 Argon 重新定位为「通用物理推理模型」，官方称它打通机器人技术栈里的物理理解、代码生成与视觉语义推理。具身推理基准 ERQA 上 Argon 仅凭纯推理拿到 87%，高于 Claude Opus 5.5 的 82.3% 与 GPT-6 Astra 的 81.0%；3D 创作实测比 Opus 5.5 快近 4 倍、成本不到一半，比 Astra 快 8 倍以上、成本差 22 倍（同一任务 Astra 约 11 美元、Argon 约 0.5 美元），在目标检测、密集场景、小文本与手写提取上被列为当前最好的视觉模型。官方给出四个落地场景：机器人控制、Real2Sim 重建、物理理解、自我改进。同期披露的 Gemini Robotics 2.5 在 200 多项任务上成功率较前代提升 30%–100%、速度提升 20%–30%，Apptronik 的 Apollo 2 在奔驰匈牙利凯奇凯梅特与德国辛德尔芬根产线完成金属件配套拣选，成功率 96%，架构是 Gemini Robotics ER 负责调度与状态感知、2.5 负责手臂与双手动作；安全侧新增 ASIMOV-Jailbreak 越狱基准，Argon 抵抗率 99.5%。DeepMind 的 Kanishka Rao 承认人类做同类重复任务几乎不出错，最后 4 个百分点是一条陡路。Artificial Analysis 智能指数给 Argon 的两档为 50（较高思考档）与 48。",
   "d": "11月14日",
