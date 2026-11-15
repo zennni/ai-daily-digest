@@ -1,5 +1,113 @@
 [
   {
+    "t": "WSJ：Megaspeed 在 16 个月里为中国公司安排近 120 亿美元英伟达芯片订单",
+    "s": "《华尔街日报》查阅的记录显示，新加坡云计算公司 Megaspeed 在 2024 年 3 月至 2025 年 6 月间为中国公司安排了近 120 亿美元的英伟达高端芯片订单，涉及数十万颗受美国出口管制的芯片；记录不能说明实际交付量及芯片来源，也未点名买家。报道称 Megaspeed 作为英伟达云合作伙伴获得稀缺芯片的优先配额，其申请背后的大客户是阿里巴巴（WSJ 未把阿里与这 120 亿美元订单直接挂钩）。Megaspeed 称其开展的是「合法合规的业务」，Alice Huang 已于 2025 年 8 月 30 日正式离职，并已聘请外部律师做内部调查；英伟达称一直在防止走私。作为参照，英伟达财报显示截至 7 月 26 日的六个月中国收入为 124 亿美元，约占 7%；做空机构 Culper Research 则称中国相关需求超过 20%，英伟达未公布此类数字。",
+    "d": "11月15日",
+    "src": "The Wall Street Journal / The Decoder / MLQ.ai",
+    "url": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+    "m": []
+  },
+  {
+    "t": "《金融时报》：国会拟把四项 AI 芯片出口管制法案塞进国防授权法案",
+    "s": "《金融时报》报道，黄仁勋风波后，美国两党议员正推动一系列收紧先进 AI 芯片出口的法案，提案还将赋予国会审查乃至否决政府已批准出口交易的权力；据报道参议院版本的国防授权法案已包含其中三项。另据 MLQ.ai 转述 WSJ，目前把芯片放在中国境外数据中心、向中国客户出租算力本身并不违规，商务部正为马来西亚、印尼、新加坡准备一项禁止中国客户远程访问的许可规则，《远程访问安全法案》已在 1 月通过众议院、尚待参议院表决。",
+    "d": "11月15日",
+    "src": "Financial Times / The Economic Times / MLQ.ai",
+    "url": "https://economictimes.indiatimes.com/tech/technology/us-lawmakers-push-for-tighter-ai-chip-export-rules-after-nvidia-controversy-report/articleshow/135857081.cms",
+    "m": []
+  },
+  {
+    "t": "TechCrunch：英伟达的安全团队在哪？长期 CSO 8 月离任，继任者未回应",
+    "s": "TechCrunch 指出，英伟达任职四年的首席安全官兼产品安全负责人 David Reber 在 8 月以健康原因离任，两个半月后黄仁勋因婚外关系问题离开公司；继任者 Saša Zdjelar 此前在埃克森美孚工作 17 年，未回应提问。文章称目前没有公开信息把安全负责人的变动与 Megaspeed 事件联系起来，但《纽约时报》本周报道英伟达首席法务一年多前就参与了政府对 Megaspeed 的调查。前情报官员 Nicholas Eftimiades 表示，情报机构大多通过日常交谈而非黑客手段搜集信息，企业安全团队很难识别此类风险，且往往经费不足。",
+    "d": "11月14日",
+    "src": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+    "m": []
+  },
+  {
+    "t": "Equity 播客：「英伟达银行」没了黄仁勋会怎样？990 亿美元投资与 360 亿美元云承诺受关注",
+    "s": "TechCrunch 的 Equity 播客讨论黄仁勋离任对 AI 产业的影响：主持人认为临时 CEO、原 CFO Colette Kress 更像过渡安排，而英伟达约占 AI GPU 市场 80%，报告了约 990 亿美元投资、另有 250 亿美元承诺和 360 亿美元云服务承诺，涉及 CoreWeave、Nebius、OpenAI、Anthropic 等；他们担心即便英伟达只是小幅收紧，也可能对「AI 循环经济」产生连锁影响。",
+    "d": "11月15日",
+    "src": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+    "m": []
+  },
+  {
+    "t": "Anthropic 本周上市：计划 18 日定价、19 日以 ANT 在纳斯达克交易",
+    "s": "The Verge 称 Anthropic 已确认计划于 11 月 19 日开始公开交易、前一天确定最终发行价，此前公布的区间为每股 70–78 美元。第一财经梳理路演文件称，Anthropic 拟发行 8.25 亿股、最高募资约 644 亿美元，按流通股计估值上限约 1.02 万亿美元，按完全摊薄口径约 1.4 万亿美元，并计划向谷歌、英伟达、AMD 等基石投资者私募约 260 亿美元。",
+    "d": "11月15日",
+    "src": "The Verge / 第一财经",
+    "url": "https://www.yicai.com/news/103440926.html",
+    "m": []
+  },
+  {
+    "t": "前研究员 Coxon：Anthropic 路演幻灯片显示算力效率在加速提升",
+    "s": "曾在 OpenAI 与 Anthropic 任职的研究员 Jacob Coxon 称，Anthropic IPO 路演中的一页幻灯片是他离职的重要原因：它显示公司算法不只是进步快，而且在加速进步，他据此认为 Anthropic 已能用「当初所需算力的一小部分」重训 Mythos，但没有给出具体比例。幻灯片中的数字为内部示意性估算。Coxon 继续呼吁暂停前沿模型开发，让竞争者追上。",
+    "d": "11月14日",
+    "src": "The Decoder",
+    "url": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+    "m": []
+  },
+  {
+    "t": "美团开源 LongCat-2.5 权重：1.6 万亿参数，全程国产芯片训练，自托管样例用 194 张昇腾",
+    "s": "美团 LongCat 团队在模型发布一周后以 MIT 许可放出 LongCat-2.5 权重：MoE 架构、总参数 1.6 万亿、每 token 激活约 480 亿，API 支持百万上下文与最长 12.8 万 token 输出，可理解文本、图像、视频并开关推理。据 The Decoder，模型全程在中国硬件上训练；美团自测 Terminal Bench v2.1 得 88.4，略低于 Claude Opus 5 的 89.1，v4.0 得 38.5。另提供 W4A4 版本，较 8-bit 版预填充吞吐提升 43.3%、生成提升 42.77%；自托管样例为 194 张昇腾 Atlas A2，没有英伟达 GPU 指引。限时促销价约每百万输入 0.27 欧元、输出 1.07 欧元。所有基准均为美团自测。",
+    "d": "11月15日",
+    "src": "The Decoder / 美团技术团队",
+    "url": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+    "m": [
+      "Claude Opus 5"
+    ]
+  },
+  {
+    "t": "华为云 MaaS 上线 openPangu-2.1-Pro：Agent、鸿蒙开发与昇腾算子生成三向升级",
+    "s": "IT 之家报道，华为云 MaaS 平台上线开源盘古模型 openPangu-2.1-Pro：基于 10 万余条专项数据优化 Skills 触发、工具选择与调用，增强深度研究与鸿蒙系统操控；代码侧面向鸿蒙 ArkTS App 开发和昇腾算子生成优化；通过关键算子与推理链路优化提升吞吐。模型将接入华为云 AgentArts、CodeArts、OfficeAce。价格为推理输入 0.8 元、输出 3.2 元、缓存命中输入 0.016 元（每百万 tokens）。",
+    "d": "11月15日",
+    "src": "IT之家 / 华为云",
+    "url": "https://www.ithome.com/1/027/450.htm",
+    "m": []
+  },
+  {
+    "t": "澳大利亚央行：AI 先冲击年轻入门岗位，软件开发与客服最明显",
+    "s": "The Decoder 报道，澳储行研究看到早期迹象：自 ChatGPT 推出以来，软件开发、客服等高 AI 暴露职业中，15–24 岁人群的招聘与就业下滑比年长者更明显。作者 Mike Major 提醒不要急于下结论，经济周期变化和远程办公趋势也可能解释这些数字；澳储行整体判断是 AI 尚未实质扰动澳大利亚劳动力市场。",
+    "d": "11月15日",
+    "src": "The Decoder / RBA",
+    "url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+    "m": []
+  },
+  {
+    "t": "Claude Fable 5.2 不靠图像模型作画：写 Python 程序落下 70 万笔",
+    "s": "The Decoder 报道，Anthropic 员工 Jake Eaton 展示了 Claude Fable 5.2 用代码作画：每幅画是一个 1000–2000 行的 Python 程序，驱动模拟颜料引擎，模拟刷毛纹理与上色，并会在发现失误后覆盖重画；一幅接近照片的停车场购物车画面用了约 70 万笔。Eaton 称过程不使用图像模型，也不预先渲染或描摹。报道还称在 Anthropic 内部 RoboDojo Sim 基准上 Fable 5.2 得 64.9%，GPT-6 Astra 为 29.8%，但真机机械臂测试中速度与精细动作落后。这是员工个人展示，不是官方基准。",
+    "d": "11月15日",
+    "src": "The Decoder",
+    "url": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+    "m": [
+      "GPT-6 Astra"
+    ]
+  },
+  {
+    "t": "消息称张一鸣内部表示：字节追平 OpenAI 与 Anthropic「最早也要 2029 或 2030 年」",
+    "s": "第一财经 AI 周报援引消息称，字节跳动创始人张一鸣在内部分享中表示，字节有能力与 OpenAI、Anthropic 竞争，但真正追平前沿技术最早也要到 2029 或 2030 年；与海外顶尖公司相比，Seed 系列模型的预训练数据集规模仍偏少，是当下最需要关注的问题。周报同时提到市场消息称字节在预训练一款参数规模最高可达 10 万亿的模型，字节未公开确认。",
+    "d": "11月15日",
+    "src": "第一财经",
+    "url": "https://www.yicai.com/news/103440926.html",
+    "m": []
+  },
+  {
+    "t": "物理 AI 板块走强：Wind 物理 AI 指数近一个月涨 25.73%，摩根大通预测 2030 年美国人形机器人产量 30–40 万台",
+    "s": "据证券时报 11 月 16 日报道（经 uool 转述），机器人板块自 10 月下旬起走强，Wind 物理 AI 指数近一个月上涨 25.73%；过去一周多家公司集中发布机器人控制模型。摩根大通预测，美国人形机器人产量 2030 年将达 30 万至 40 万台，2035 年增至约 150 万台。行情不等于技术成熟，人形机器人仍受硬件、数据与产能约束。",
+    "d": "11月16日",
+    "src": "证券时报（经 uool 转述）",
+    "url": "https://www.uool.com/archives/10973.html",
+    "m": []
+  },
+  {
+    "t": "北京多家量子计算企业把 AI 引入校准与纠错：解码反馈压到 1 毫秒以内",
+    "s": "据北京青年报 11 月 16 日报道（经 uool 转述），相干科技把智能体与强化学习引入量子比特测控校准；华翊量子用 AI 做纠错解码器，把从探测到反馈的时间压到 1 毫秒以内、较原来快 50% 以上；两仪万象用图神经网络做原子重排算法与纠错解码器。这类工作离实用量子计算仍有距离。",
+    "d": "11月16日",
+    "src": "北京青年报（经 uool 转述）",
+    "url": "https://www.uool.com/archives/10973.html",
+    "m": []
+  },
+  {
     "t": "白宫「超级智能工作组」转向：建议给 12 个月监管责任豁免，换 AI 企业主动上报安全事件",
     "s": "据彭博社与 Cybersecurity Dive 报道，工作组 11 月 13 日在白宫开会，建议联邦各机构在未来至少 12 个月内限制企业因网络安全事件承担的监管责任，并视风险评估考虑进一步延长；对「被 AI 放大的网络攻击」也建议暂不启动执法。工作组主席为国家情报总监 Jay Clayton，副主席为国防部副部长 Emil Michael，成员还包括联邦贸易委员会主席 Andrew Ferguson 与国家网络总监 Sean Cairncross。建议的适用前提是「自愿、善意上报」，且只在合法、可行、符合公共利益（含公共卫生与安全）时生效。工作组同时表态支持 2015 年《网络安全信息共享法》长期再授权，支持 CISA 即将出台的事件报告规则并希望减少重复报送。这与 10 月首次会议的表态相反——当时要求企业上报并处置「脱轨行为」，否则面临处罚。报道称政府内部正在讨论一条自愿上报通道，由政府分析后向私营部门回传信息，但「什么算 AI 事件」、上报时限与格式都还没定义。",
     "d": "11月13日",

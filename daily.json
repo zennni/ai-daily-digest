@@ -1,5 +1,25 @@
 [
   {
+    "d": "2026-11-16",
+    "w": "星期一",
+    "pts": [
+      "WSJ：Megaspeed 曾为中国公司安排近 120 亿美元英伟达芯片订单",
+      "FT：国会拟把四项 AI 芯片出口管制法案纳入国防授权法案",
+      "TechCrunch 追问英伟达安全团队；「英伟达银行」投资承诺受关注",
+      "Anthropic 本周上市：18 日定价、19 日以 ANT 交易",
+      "美团放出 LongCat-2.5 权重（MIT，194 张昇腾）；华为云上线 openPangu-2.1-Pro",
+      "Claude Code advisor：贵模型只在关键节点把关；Messages API 改写 Rust",
+      "澳储行：AI 先冲击 15–24 岁软件与客服岗位",
+      "论文：Evolving Infra / G-STAR / 系统一决策模型 / 判据暴露"
+    ],
+    "link": "AI日报-2026-11-16.html",
+    "m": [
+      "Claude Opus 5",
+      "GPT-6 Astra"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-15",
     "w": "星期日",
     "pts": [

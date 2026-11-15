@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "date": "2026-11-16",
+    "week": "星期一",
+    "note": "今日主题词：旧单翻账，贵模型改当顾问。相对昨日「众签请回，算力问账」，周日这 24 小时依旧没有新旗舰，英伟达风波从「谁来当 CEO」转向「过去卖给了谁」。《华尔街日报》称，黄仁勋前情人 Alice Huang 持有的 Megaspeed 在 2024 年 3 月至 2025 年 6 月间为中国公司安排了近 120 亿美元的英伟达高端芯片订单，记录未能证明实际交付量；Megaspeed 称业务合法、Alice Huang 已于 2025 年 8 月离职。《金融时报》称美国国会正推动把四项 AI 芯片出口管制法案塞进年度国防授权法案；TechCrunch 则追问英伟达安全团队当时知道什么，并在 Equity 播客里盘点英伟达约 990 亿美元投资、250 亿美元承诺与 360 亿美元云服务承诺可能怎样收缩。Anthropic 本周上市：计划 11 月 18 日定价、19 日以 ANT 在纳斯达克交易；前研究员 Jacob Coxon 称路演里一页幻灯片显示其预训练效率在加速提升。国产算力这边，美团在发布一周后放出 1.6 万亿参数 LongCat-2.5 的权重（MIT 许可），自托管指南只写了 194 张昇腾卡；华为云 MaaS 上线 openPangu-2.1-Pro。工具侧的关键词是「只为决策付贵价」：Claude Code 的 advisor 让便宜模型干活、贵模型只在定方案、反复出错和收尾前把关；Claude 平台团队称用智能体把 Messages API 从 Python 迁到 Rust，首 token 时延降约 20%。澳大利亚央行则给出早期信号：AI 高暴露岗位里，15–24 岁年轻人的招聘与就业下滑得更快。论文这一轮集中在智能体推理服务、深度压缩生成与「系统一」决策模型。一句话：旧订单会被翻出来，贵模型的 token 也要按决策点来花。"
+  },
+  "highlights": [
+    {
+      "title": "WSJ：Megaspeed 曾为中国公司安排近 120 亿美元英伟达芯片订单",
+      "summary": "《华尔街日报》查阅的记录显示，2024 年 3 月至 2025 年 6 月间，Megaspeed 为中国公司安排了约数十万颗受出口管制的英伟达高端芯片订单，总额近 120 亿美元，但记录不能说明实际交付了多少、货从哪来。Megaspeed 称业务合法合规，并称 Alice Huang 已于 2025 年 8 月 30 日离职；英伟达称一直在防范走私。"
+    },
+    {
+      "title": "美国国会拟把四项 AI 芯片出口管制法案纳入国防授权法案",
+      "summary": "据《金融时报》，两党议员在黄仁勋风波后推动收紧先进 AI 芯片出口，相关提案还会让国会有权审查、甚至否决政府已批准的出口交易；参议院版本已包含其中三项。另据 MLQ.ai 转述 WSJ，商务部正准备针对马来西亚、印尼、新加坡的远程访问许可规则。"
+    },
+    {
+      "title": "TechCrunch 追问：英伟达的安全团队在哪？「英伟达银行」会不会收缩？",
+      "summary": "TechCrunch 指出，英伟达长期 CSO David Reber 8 月因健康原因离任，继任者 Saša Zdjelar 未回应提问；《纽约时报》此前称英伟达首席法务一年多前就参与了政府对 Megaspeed 的调查。Equity 播客则提到英伟达报告约 990 亿美元投资、250 亿美元承诺和 360 亿美元云服务承诺，任何收缩都可能波及整个 AI 生态。"
+    },
+    {
+      "title": "Anthropic 本周上市：18 日定价、19 日以 ANT 交易",
+      "summary": "据彭博与 The Verge，Anthropic 计划 11 月 18 日确定发行价、19 日在纳斯达克以代码 ANT 交易，此前公布的区间为每股 70–78 美元。前研究员 Jacob Coxon 称，路演中一页幻灯片显示 Anthropic 的预训练算力效率在加速提升，他据此认为重训 Mythos 只需当初的一小部分算力；幻灯片数字为内部示意性估算。"
+    },
+    {
+      "title": "美团放出 LongCat-2.5 权重：1.6 万亿参数，部署指南只写昇腾",
+      "summary": "LongCat-2.5 为 MoE 架构，总参数 1.6 万亿、每 token 激活约 480 亿，API 支持百万上下文、最长 12.8 万 token 输出，以 MIT 许可开源。美团自测 Terminal Bench v2.1 得 88.4（Claude Opus 5 为 89.1）；W4A4 版自托管样例用 194 张昇腾 Atlas A2（编码 2、预填充 64、解码 128），未给英伟达 GPU 指引。"
+    },
+    {
+      "title": "华为云上线 openPangu-2.1-Pro：主打 Agent、鸿蒙开发与昇腾算子生成",
+      "summary": "华为云 MaaS 上线开源盘古 openPangu-2.1-Pro，称用 10 万余条专项数据优化 Skills 触发与工具调用，并针对鸿蒙 ArkTS 开发和昇腾算子生成做了适配。定价为输入 0.8 元、输出 3.2 元、缓存命中输入 0.016 元（每百万 tokens）。"
+    },
+    {
+      "title": "Claude Code advisor：便宜模型干活，贵模型只在关键节点把关",
+      "summary": "Claude Code 文档介绍的 advisor 工具让主模型在选定方案前、错误反复出现时和宣布完成前，咨询一个更强的顾问模型，可用 /advisor opus、advisorModel 设置或 --advisor 参数开启，顾问须不弱于主模型。社区热传的「便宜 3.4 倍」等数字并不在官方文档中。"
+    },
+    {
+      "title": "澳大利亚央行：AI 先冲击年轻人，软件与客服岗位最明显",
+      "summary": "据 The Decoder 转述澳储行研究，自 ChatGPT 推出以来，软件开发、客服等高 AI 暴露岗位中 15–24 岁人群的招聘与就业下滑幅度大于年长者；作者 Mike Major 提醒，经济周期与远程办公趋势也可能解释这些数字，整体劳动力市场尚无明显扰动。"
+    }
+  ],
+  "news": [
+    {
+      "title": "WSJ：Megaspeed 在 16 个月里为中国公司安排近 120 亿美元英伟达芯片订单",
+      "summary": "《华尔街日报》查阅的记录显示，新加坡云计算公司 Megaspeed 在 2024 年 3 月至 2025 年 6 月间为中国公司安排了近 120 亿美元的英伟达高端芯片订单，涉及数十万颗受美国出口管制的芯片；记录不能说明实际交付量及芯片来源，也未点名买家。报道称 Megaspeed 作为英伟达云合作伙伴获得稀缺芯片的优先配额，其申请背后的大客户是阿里巴巴（WSJ 未把阿里与这 120 亿美元订单直接挂钩）。Megaspeed 称其开展的是「合法合规的业务」，Alice Huang 已于 2025 年 8 月 30 日正式离职，并已聘请外部律师做内部调查；英伟达称一直在防止走私。作为参照，英伟达财报显示截至 7 月 26 日的六个月中国收入为 124 亿美元，约占 7%；做空机构 Culper Research 则称中国相关需求超过 20%，英伟达未公布此类数字。",
+      "date": "11月15日",
+      "source": "The Wall Street Journal / The Decoder / MLQ.ai",
+      "link": "https://the-decoder.com/firm-linked-to-jensen-huangs-ex-lover-reportedly-brokered-nearly-12-billion-in-nvidia-chip-orders-for-china/",
+      "models": []
+    },
+    {
+      "title": "《金融时报》：国会拟把四项 AI 芯片出口管制法案塞进国防授权法案",
+      "summary": "《金融时报》报道，黄仁勋风波后，美国两党议员正推动一系列收紧先进 AI 芯片出口的法案，提案还将赋予国会审查乃至否决政府已批准出口交易的权力；据报道参议院版本的国防授权法案已包含其中三项。另据 MLQ.ai 转述 WSJ，目前把芯片放在中国境外数据中心、向中国客户出租算力本身并不违规，商务部正为马来西亚、印尼、新加坡准备一项禁止中国客户远程访问的许可规则，《远程访问安全法案》已在 1 月通过众议院、尚待参议院表决。",
+      "date": "11月15日",
+      "source": "Financial Times / The Economic Times / MLQ.ai",
+      "link": "https://economictimes.indiatimes.com/tech/technology/us-lawmakers-push-for-tighter-ai-chip-export-rules-after-nvidia-controversy-report/articleshow/135857081.cms",
+      "models": []
+    },
+    {
+      "title": "TechCrunch：英伟达的安全团队在哪？长期 CSO 8 月离任，继任者未回应",
+      "summary": "TechCrunch 指出，英伟达任职四年的首席安全官兼产品安全负责人 David Reber 在 8 月以健康原因离任，两个半月后黄仁勋因婚外关系问题离开公司；继任者 Saša Zdjelar 此前在埃克森美孚工作 17 年，未回应提问。文章称目前没有公开信息把安全负责人的变动与 Megaspeed 事件联系起来，但《纽约时报》本周报道英伟达首席法务一年多前就参与了政府对 Megaspeed 的调查。前情报官员 Nicholas Eftimiades 表示，情报机构大多通过日常交谈而非黑客手段搜集信息，企业安全团队很难识别此类风险，且往往经费不足。",
+      "date": "11月14日",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "models": []
+    },
+    {
+      "title": "Equity 播客：「英伟达银行」没了黄仁勋会怎样？990 亿美元投资与 360 亿美元云承诺受关注",
+      "summary": "TechCrunch 的 Equity 播客讨论黄仁勋离任对 AI 产业的影响：主持人认为临时 CEO、原 CFO Colette Kress 更像过渡安排，而英伟达约占 AI GPU 市场 80%，报告了约 990 亿美元投资、另有 250 亿美元承诺和 360 亿美元云服务承诺，涉及 CoreWeave、Nebius、OpenAI、Anthropic 等；他们担心即便英伟达只是小幅收紧，也可能对「AI 循环经济」产生连锁影响。",
+      "date": "11月15日",
+      "source": "TechCrunch",
+      "link": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "models": []
+    },
+    {
+      "title": "Anthropic 本周上市：计划 18 日定价、19 日以 ANT 在纳斯达克交易",
+      "summary": "The Verge 称 Anthropic 已确认计划于 11 月 19 日开始公开交易、前一天确定最终发行价，此前公布的区间为每股 70–78 美元。第一财经梳理路演文件称，Anthropic 拟发行 8.25 亿股、最高募资约 644 亿美元，按流通股计估值上限约 1.02 万亿美元，按完全摊薄口径约 1.4 万亿美元，并计划向谷歌、英伟达、AMD 等基石投资者私募约 260 亿美元。",
+      "date": "11月15日",
+      "source": "The Verge / 第一财经",
+      "link": "https://www.yicai.com/news/103440926.html",
+      "models": []
+    },
+    {
+      "title": "前研究员 Coxon：Anthropic 路演幻灯片显示算力效率在加速提升",
+      "summary": "曾在 OpenAI 与 Anthropic 任职的研究员 Jacob Coxon 称，Anthropic IPO 路演中的一页幻灯片是他离职的重要原因：它显示公司算法不只是进步快，而且在加速进步，他据此认为 Anthropic 已能用「当初所需算力的一小部分」重训 Mythos，但没有给出具体比例。幻灯片中的数字为内部示意性估算。Coxon 继续呼吁暂停前沿模型开发，让竞争者追上。",
+      "date": "11月14日",
+      "source": "The Decoder",
+      "link": "https://the-decoder.com/anthropic-can-already-retrain-mythos-with-a-fraction-of-the-compute-originally-needed-says-former-researcher-coxon/",
+      "models": []
+    },
+    {
+      "title": "美团开源 LongCat-2.5 权重：1.6 万亿参数，全程国产芯片训练，自托管样例用 194 张昇腾",
+      "summary": "美团 LongCat 团队在模型发布一周后以 MIT 许可放出 LongCat-2.5 权重：MoE 架构、总参数 1.6 万亿、每 token 激活约 480 亿，API 支持百万上下文与最长 12.8 万 token 输出，可理解文本、图像、视频并开关推理。据 The Decoder，模型全程在中国硬件上训练；美团自测 Terminal Bench v2.1 得 88.4，略低于 Claude Opus 5 的 89.1，v4.0 得 38.5。另提供 W4A4 版本，较 8-bit 版预填充吞吐提升 43.3%、生成提升 42.77%；自托管样例为 194 张昇腾 Atlas A2，没有英伟达 GPU 指引。限时促销价约每百万输入 0.27 欧元、输出 1.07 欧元。所有基准均为美团自测。",
+      "date": "11月15日",
+      "source": "The Decoder / 美团技术团队",
+      "link": "https://the-decoder.com/meituan-releases-a-1-6-trillion-parameter-agent-model-that-never-touched-an-nvidia-gpu/",
+      "models": [
+        "Claude Opus 5"
+      ]
+    },
+    {
+      "title": "华为云 MaaS 上线 openPangu-2.1-Pro：Agent、鸿蒙开发与昇腾算子生成三向升级",
+      "summary": "IT 之家报道，华为云 MaaS 平台上线开源盘古模型 openPangu-2.1-Pro：基于 10 万余条专项数据优化 Skills 触发、工具选择与调用，增强深度研究与鸿蒙系统操控；代码侧面向鸿蒙 ArkTS App 开发和昇腾算子生成优化；通过关键算子与推理链路优化提升吞吐。模型将接入华为云 AgentArts、CodeArts、OfficeAce。价格为推理输入 0.8 元、输出 3.2 元、缓存命中输入 0.016 元（每百万 tokens）。",
+      "date": "11月15日",
+      "source": "IT之家 / 华为云",
+      "link": "https://www.ithome.com/1/027/450.htm",
+      "models": []
+    },
+    {
+      "title": "澳大利亚央行：AI 先冲击年轻入门岗位，软件开发与客服最明显",
+      "summary": "The Decoder 报道，澳储行研究看到早期迹象：自 ChatGPT 推出以来，软件开发、客服等高 AI 暴露职业中，15–24 岁人群的招聘与就业下滑比年长者更明显。作者 Mike Major 提醒不要急于下结论，经济周期变化和远程办公趋势也可能解释这些数字；澳储行整体判断是 AI 尚未实质扰动澳大利亚劳动力市场。",
+      "date": "11月15日",
+      "source": "The Decoder / RBA",
+      "link": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+      "models": []
+    },
+    {
+      "title": "Claude Fable 5.2 不靠图像模型作画：写 Python 程序落下 70 万笔",
+      "summary": "The Decoder 报道，Anthropic 员工 Jake Eaton 展示了 Claude Fable 5.2 用代码作画：每幅画是一个 1000–2000 行的 Python 程序，驱动模拟颜料引擎，模拟刷毛纹理与上色，并会在发现失误后覆盖重画；一幅接近照片的停车场购物车画面用了约 70 万笔。Eaton 称过程不使用图像模型，也不预先渲染或描摹。报道还称在 Anthropic 内部 RoboDojo Sim 基准上 Fable 5.2 得 64.9%，GPT-6 Astra 为 29.8%，但真机机械臂测试中速度与精细动作落后。这是员工个人展示，不是官方基准。",
+      "date": "11月15日",
+      "source": "The Decoder",
+      "link": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/",
+      "models": [
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "消息称张一鸣内部表示：字节追平 OpenAI 与 Anthropic「最早也要 2029 或 2030 年」",
+      "summary": "第一财经 AI 周报援引消息称，字节跳动创始人张一鸣在内部分享中表示，字节有能力与 OpenAI、Anthropic 竞争，但真正追平前沿技术最早也要到 2029 或 2030 年；与海外顶尖公司相比，Seed 系列模型的预训练数据集规模仍偏少，是当下最需要关注的问题。周报同时提到市场消息称字节在预训练一款参数规模最高可达 10 万亿的模型，字节未公开确认。",
+      "date": "11月15日",
+      "source": "第一财经",
+      "link": "https://www.yicai.com/news/103440926.html",
+      "models": []
+    },
+    {
+      "title": "物理 AI 板块走强：Wind 物理 AI 指数近一个月涨 25.73%，摩根大通预测 2030 年美国人形机器人产量 30–40 万台",
+      "summary": "据证券时报 11 月 16 日报道（经 uool 转述），机器人板块自 10 月下旬起走强，Wind 物理 AI 指数近一个月上涨 25.73%；过去一周多家公司集中发布机器人控制模型。摩根大通预测，美国人形机器人产量 2030 年将达 30 万至 40 万台，2035 年增至约 150 万台。行情不等于技术成熟，人形机器人仍受硬件、数据与产能约束。",
+      "date": "11月16日",
+      "source": "证券时报（经 uool 转述）",
+      "link": "https://www.uool.com/archives/10973.html",
+      "models": []
+    },
+    {
+      "title": "北京多家量子计算企业把 AI 引入校准与纠错：解码反馈压到 1 毫秒以内",
+      "summary": "据北京青年报 11 月 16 日报道（经 uool 转述），相干科技把智能体与强化学习引入量子比特测控校准；华翊量子用 AI 做纠错解码器，把从探测到反馈的时间压到 1 毫秒以内、较原来快 50% 以上；两仪万象用图神经网络做原子重排算法与纠错解码器。这类工作离实用量子计算仍有距离。",
+      "date": "11月16日",
+      "source": "北京青年报（经 uool 转述）",
+      "link": "https://www.uool.com/archives/10973.html",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Evolving Infra：面向智能体负载、可在运行时自适应的大模型推理服务",
+      "titleEn": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
+      "summary": "智能体任务已是推理需求的大头，但现有预填充—解码（PD）分离系统难以在运行时调整算力分配与 KV 缓存管理，导致 P/D 节点负载失衡、智能体还要复用的 KV 缓存被逐出。作者把算力分配与 KV 缓存管理解耦，让节点能在预填充与解码间高效切换；在线规划器按负载组成调整 PD 比例，智能体感知的分布式 KV 管理器利用智能体自身的上下文管理信号指导缓存逐出与传输，在编程、数学与电脑操作任务上评测。",
+      "authors": "Hao Kang, Weili Xu, Ziyang Li, Zheng Du 等 11 人",
+      "link": "https://arxiv.org/abs/2611.12304"
+    },
+    {
+      "title": "G-STAR：分组随压缩倍数平方放大，让自回归图像生成压到 32×～64×",
+      "titleEn": "G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+      "summary": "离散自回归图像生成面临两难：长 token 序列保质量但慢，激进空间压缩又损失表示能力。基于乘积量化，作者证明在固定名义信息预算下，分组大小应随每轴空间压缩倍数呈平方增长，并据此提出空间—分组协同缩放框架，实现 32× 乃至等效 64× 压缩，同时保持重建、理解与生成表现；针对大分组带来的组内依赖，引入并行特征计算加轻量因果建模的半自回归解码器。",
+      "authors": "Xu Huang, Ye Huang, Xiaotong Li, Zhengrong Yue 等 11 人",
+      "link": "https://arxiv.org/abs/2611.13004"
+    },
+    {
+      "title": "从大语言模型到高效「系统一」决策模型：决策只需中间几层",
+      "titleEn": "From Large Language Models to Efficient System One Models via Adaptive Computation",
+      "summary": "把大模型改成「系统一」决策模型时，通常只把语言模型头换成决策头而保留整个骨干，每个决策都要付全部层的算力。作者发现决策信息集中在中间层，最后六层可移除而不损失效果，而单独训练的小模型大多只是模仿大模型。据此提出与完整模型共享末层和决策头、经自蒸馏联合训练的前缀子模型，并用轻量门控在每个出口判断是否需要继续计算，让一个模型可在多个深度上运行。",
+      "authors": "Minh-Anh Nguyen",
+      "link": "https://arxiv.org/abs/2611.16321"
+    },
+    {
+      "title": "学会任务，还是学会了验证器？重新审视具身自改进中的「判据暴露」",
+      "titleEn": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
+      "summary": "不少自改进具身智能体研究把机器人仿真基准的成功判据直接暴露给学习中的智能体（作者称为 Criteria Exposure）。这些判据原本为验证模仿学习策略而写，往往要求比语言指令更多，所以得分未必反映指令任务真被完成。作者在有无判据暴露的条件下做对照实验，发现暴露判据后智能体很快写出在给定判据下成功率更高的代码，并追问这究竟是更会完成任务，还是在过拟合验证器。",
+      "authors": "Wenbo Huang, Jianxin Bi, Shunyu Yang, Ruiyang Si 等 13 人",
+      "link": "https://arxiv.org/abs/2611.08318"
+    },
+    {
+      "title": "视觉语言模型里的「潜意识学习」：偏好可借无关任务的数字悄悄传给学生",
+      "titleEn": "Subliminal Learning in Vision-Language Models",
+      "summary": "潜意识学习指教师模型通过与偏好无关的训练数据，把隐藏偏好传给学生。作者把一个 VLM 教师微调成偏好某种动物或面部属性，再让它和同底座的对照教师为一个几何图形任务生成数字；两个学生在同样图像、不同教师生成的数字上微调。在 2B 到 7B 的 VLM 上，动物与面部偏好都能经此迁移，动物偏好任务中差距最高约 10 个百分点，且训练数据越多迁移可能越强。",
+      "authors": "Arman Hatami, Romina Aalishah, Ilya E. Monosov",
+      "link": "https://arxiv.org/abs/2611.08538"
+    },
+    {
+      "title": "UniSpark：用混合注意力做统一的多模态理解与生成",
+      "titleEn": "UniSpark: Exploring Hybrid Attention for Multimodal Understanding and Generation",
+      "summary": "UniSpark-9B 基于混合 Transformer 专家（MoT）骨干，每个分支约 9B 参数，把显式 token 交互的全注意力与 GatedDeltaNet 线性注意力结合；自回归文本预测与视觉流匹配共同支持视觉问答、文生图、指令编辑与图文交错生成。交错生成时用分块协议隔离带噪视觉目标，只让干净视觉表示为后续输出提供上下文。训练数据含 1.597 亿生成样本、2.134 亿理解样本与 62.48 万条交错序列。",
+      "authors": "Jiancheng Pan, Yuzheng Liu, Hengyuan Cao, Qiyuan Zhang 等 10 人",
+      "link": "https://arxiv.org/abs/2611.16517"
+    },
+    {
+      "title": "FOAM：只做输入侧预条件、分解二阶矩，让 SOAP 接近 AdamW 的开销",
+      "titleEn": "Factored One-sided Adam-Moment for Practical and Scalable SOAP",
+      "summary": "Shampoo、SOAP 等二阶优化器每步收敛快于 AdamW，但优化器状态内存与特征分解开销仍大。FOAM 一是只做输入侧预条件，去掉输出侧 Kronecker 因子以省内存并少一次特征分解，作者指出在输出侧曲率接近对角时这几乎无损；二是用基于行、列统计量的分解 Adam 矩估计替代 SOAP 的稠密旋转二阶矩，目标是以接近 AdamW 的效率保留 SOAP 的收益。",
+      "authors": "Jaemyung Yu, Byeongho Heo, Sangdoo Yun, Dongyoon Han",
+      "link": "https://arxiv.org/abs/2611.16905"
+    },
+    {
+      "title": "EgoX：把人、真机与仿真示范放进同一个第一视角跨本体框架",
+      "titleEn": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
+      "summary": "通用操作策略可以从人类、真实机器人和仿真智能体的经验中互补受益，但形态、传感与控制接口差异让混合示范难以有效学习。EgoX 按语义对应的观测与动作模态组织异构示范，预训练模块化跨本体 Transformer（MXT+）：每种观测模态配专属分词器、每种动作模态配专属专家，主干跨本体共享；训练期的「本体做梦」目标预测未来视觉与本体状态的潜表示，促使主干学会各本体的动力学，在 13 项任务上评测。",
+      "authors": "Yaru Niu, Binghong Chen, Changwei Yao, Shangtao Li 等 22 人",
+      "link": "https://arxiv.org/abs/2611.16728"
+    }
+  ],
+  "models": [
+    {
+      "name": "LongCat-2.5（权重开源）",
+      "vendor": "美团 LongCat · MIT 许可",
+      "highlight": "1.6 万亿参数 MoE、每 token 激活约 480 亿，API 支持百万上下文与 12.8 万 token 输出，可开关推理；W4A4 版本面向昇腾原生 INT4 计算，自托管样例为 194 张 Atlas A2。美团自测 Terminal Bench v2.1 为 88.4，限时促销价约每百万入 0.27 欧元 / 出 1.07 欧元。",
+      "link": "https://huggingface.co/meituan-longcat/LongCat-2.5"
+    },
+    {
+      "name": "openPangu-2.1-Pro",
+      "vendor": "华为云 MaaS",
+      "highlight": "开源盘古新版本上线华为云：强化 Skills 触发与工具调用、鸿蒙 ArkTS 开发与昇腾算子生成，并优化推理吞吐；价格为每百万 tokens 输入 0.8 元、输出 3.2 元、缓存命中 0.016 元。",
+      "link": "https://www.ithome.com/1/027/450.htm"
+    },
+    {
+      "name": "Claude Fable 5.2（代码作画）",
+      "vendor": "Anthropic · 据 The Decoder",
+      "highlight": "Anthropic 员工展示 Fable 5.2 写 1000–2000 行 Python 驱动模拟颜料引擎逐笔作画，照片级画面约 70 万笔，不用图像模型；内部 RoboDojo Sim 基准 64.9%（GPT-6 Astra 29.8%），真机机械臂测试速度与精细动作仍落后。属个人展示，非官方基准。",
+      "link": "https://the-decoder.com/anthropics-claude-fable-5-2-doesnt-generate-images-it-paints-them/"
+    },
+    {
+      "name": "Embla 1（10B，iPhone 离线运行）",
+      "vendor": "Sevren · 据 cere-bro 转述",
+      "highlight": "10B 参数模型，开放权重发布在 Hugging Face，可在 iPhone 18 Pro 上离线运行；57.4 的基准平均分为厂商自报，尚无第三方复现。",
+      "link": "https://bayesiansapien.github.io/cere-bro/media-zone/2026-11/2026-11-16"
+    },
+    {
+      "name": "Qwen3.5 9B 跑在初代 PS4 上（Garlic LLM）",
+      "vendor": "社区开发者 · 据 uool 转述",
+      "highlight": "开源工具 Garlic LLM 用 3-bit/4-bit 量化把 90 亿参数的 Qwen3.5 塞进 PS4 的 8GB 内存离线运行，报道称速度约每秒 31–39 个 token。",
+      "link": "https://www.uool.com/archives/10973.html"
+    },
+    {
+      "name": "MACaQ 4-bit 压缩工具",
+      "vendor": "华为 · 据 uool 转述",
+      "highlight": "华为开源模型压缩工具 MACaQ，可把模型压到 4-bit 精度；官方称单卡 32.5GB 显存、64 分钟即可完成一个 1220 亿参数模型的压缩。",
+      "link": "https://www.uool.com/archives/10973.html"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Claude Code advisor：主模型干活，强模型只在三个节点把关",
+      "summary": "Claude Code 文档介绍的 advisor 工具让主模型在选定方案前、错误反复出现时、宣布完成前咨询更强的顾问模型；顾问读完整对话（含每次工具调用）后返回指导，须不弱于主模型。可用 /advisor opus 开启（保存为 advisorModel 用户设置并跨会话保留），或用 claude --advisor opus 单次覆盖。cere-bro 汇总称文档表示它在大多数轮次例行、但方案质量决定成败的长任务上收益最大，社区流传的「便宜 3.4 倍」数字不在文档中。",
+      "source": "Claude Code Docs",
+      "link": "https://code.claude.com/docs/en/advisor",
+      "models": []
+    },
+    {
+      "title": "Claude 平台团队：智能体把 Messages API 从 Python 改写为 Rust，首 token 时延降约 20%",
+      "summary": "据 cere-bro 汇总的视频片段，Claude 平台产品负责人称团队在没有 Rust 专家的情况下，由两三名工程师用约一个月把 Messages API 从 Python 迁到 Rust，大部分代码由智能体写，首 token 时延下降约 20%；人负责规划迁移和搭建校验，主要靠影子流量比对新旧响应后再切换。她的观点是如今很大一部分工作变成验证智能体做了什么。",
+      "source": "cere-bro（转述）",
+      "link": "https://bayesiansapien.github.io/cere-bro/media-zone/2026-11/2026-11-16",
+      "models": []
+    },
+    {
+      "title": "OpenRouter 11 月 15 日用量榜：Hermes Agent 约 2 万亿 token 居首，longrun 新进前 20",
+      "summary": "按当日经 OpenRouter 路由的 token 用量（非下载或用户数）排名，智能体前五为 Hermes Agent、Claude Code、Kilo Code、pi、Codex，DeepSeek Harness 第七、OpenClaw 第九；应用榜中 Hermes Agent 约 2T token、OpenClaw 约 2460 亿。longrun 新进前 20，Fleet Dashboard Post Helper 从第 19 升到第 13。",
+      "source": "OpenRouter / AI of the Day",
+      "link": "https://www.aiofthe.day/day/2026-11-15",
+      "models": []
+    },
+    {
+      "title": "obsidianmd/obsidian-skills：给智能体用 Obsidian CLI 与开放格式的官方技能包",
+      "summary": "GitHub 上上涨最快的智能体仓库之一（约 5.3 万星、日增约 166）：为 AI 智能体提供 Obsidian 技能，使其能调用 Obsidian CLI，并读写 Markdown、Bases 与 JSON Canvas 等开放格式。",
+      "source": "GitHub / AI of the Day",
+      "link": "https://github.com/obsidianmd/obsidian-skills",
+      "models": []
+    },
+    {
+      "title": "上海 AI Lab Self-Harness：智能体聚类自己的失败、改工具与提示，只保留不退步的修改",
+      "summary": "据 cere-bro 汇总的 X 帖，Self-Harness 让智能体对自身失败做聚类、提出对工具与提示的修改，只有在没有回退时才保留；帖中称同一份 Qwen3.5 权重在 Terminal-Bench 2.0 上从 18% 提升到 36.7%。该数字来自社交平台转述，尚待核对原始论文。",
+      "source": "cere-bro（转述）",
+      "link": "https://bayesiansapien.github.io/cere-bro/media-zone/2026-11/2026-11-16",
+      "models": []
+    },
+    {
+      "title": "time-to-first-token：10 周 50 课的大模型推理服务路线图",
+      "summary": "Akshay Pachaar 公开一份每天 30 分钟、共 50 课的路线图，从屋顶线模型讲起（解码受显存带宽约束、预填充受算力约束），读 vLLM 的 PagedAttention 与调度器源码，对比 SGLang 的 RadixAttention 前缀复用，压测 1000 以上并发；后续覆盖 FP16/FP8/INT4、投机解码与 KV 逐出、Kubernetes 上的预填充/解码分离，以及带每请求 token 预算的成本—时延—质量路由。它是课程而非新研究。",
+      "source": "cere-bro（转述）",
+      "link": "https://bayesiansapien.github.io/cere-bro/media-zone/2026-11/2026-11-16",
+      "models": []
+    },
+    {
+      "title": "Kenneth Stanley 提「影子智能体」：每个部署的智能体配一个只能写报告的监督者",
+      "summary": "Kenneth Stanley 提议给每个上线的智能体配一个能看到其完整上下文与推理、唯一工具是提交报告的监督智能体；这大约会让运行成本翻倍，他把这当作「我们愿意为监督付多少钱」的真实检验。同一天 Harrison Chase 等人则主张，目标规格正在成为智能体设计的主要界面。",
+      "source": "cere-bro（转述）",
+      "link": "https://bayesiansapien.github.io/cere-bro/media-zone/2026-11/2026-11-16",
+      "models": []
+    },
+    {
+      "title": "n8n 的 Google Sheets「Append Row」并发时会覆盖同一行，作者 5 次测试全部丢数据",
+      "summary": "一位 r/n8n 用户用模板库里的 3 个线索模板做并发测试：两次表单同时提交时，两个工作流都显示成功，但表格只写入一行，5 次尝试全部丢行，间隔 2 秒才都保存。他认为原因是默认 Append Row 先数行数再写下一行号；改用节点选项里的 Use Append 后 3 次均成功，并提醒 Retry On Fail 默认关闭。为个人测试，官方未确认。",
+      "source": "Reddit r/n8n / SCT AI 出海",
+      "link": "https://sctcamp.com/radar/2026-11-15",
+      "models": []
+    }
+  ]
+}
