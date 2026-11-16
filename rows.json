@@ -1,5 +1,5 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "models": [
   {
    "name": "Claude Fable 5.2",
@@ -706,6 +706,28 @@
    "rank": 32
   },
   {
+   "name": "Qwen4 Max",
+   "vendor": "阿里云 Qwen",
+   "country": "中国",
+   "tier": "默认",
+   "aa": 43,
+   "aa_dec": 42.9,
+   "pin": 1.5,
+   "pcache": 0.075,
+   "pout": 4.5,
+   "open_": "闭源",
+   "lic": "专有",
+   "src": "官方",
+   "note": "<b>入档：AA Changelog 15 Nov 给出 Intelligence Index v5.0.1 <u>42.9（四舍五入 43）</u></b>，为 Qwen 系列现行同口径首个 Qwen4 旗舰分；阿里云 11-16 正式发布（官方新闻稿：2.4T 总参／每 token 激活 71B MoE，约 1M 上下文，文本+图像+视频输入、文本输出）。<b>本模型闭源</b>（AA 标 Proprietary；官方称随后将开放更小规模 Qwen4 权重，不得据此把本旗舰标成开放权重）。<b>价格按国际站（新加坡）官方挂牌 $1.50／$4.50、显式／隐式缓存命中 $0.075（95% 折扣）</b>；北京／香港等区域另挂 $1.413／$4.24，本表与 Qwen3.8 Max 同口径取国际站标价入主性价分（标准任务成本 $2.625）。官方支持 Non-Thinking 与 Thinking 两种模式，AA 目前仅公布一条综合分（isReasoning），<u>非思考档暂未独立评分、不插值、不单独入主榜</u>。新用户有 90 天 100 万 token 免费额度，<u>不作永久免费</u>。综合性价比 56（C）。",
+   "cost": 2.625,
+   "ability": 66.2,
+   "costscore": 40.37810782545142,
+   "value": 56,
+   "eff": 16.4,
+   "grade": "C",
+   "rank": 33
+  },
+  {
    "name": "GPT-6.1 Terra",
    "vendor": "OpenAI",
    "country": "美国",
@@ -725,7 +747,7 @@
    "value": 56,
    "eff": 18.7,
    "grade": "C",
-   "rank": 33
+   "rank": 34
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -747,7 +769,7 @@
    "value": 51,
    "eff": 9.3,
    "grade": "C",
-   "rank": 34
+   "rank": 35
   },
   {
    "name": "Gemini 4 Hydrogen",
@@ -769,7 +791,7 @@
    "value": 52,
    "eff": 12.1,
    "grade": "C",
-   "rank": 35
+   "rank": 36
   },
   {
    "name": "Muse Wonder",
@@ -791,7 +813,7 @@
    "value": 45,
    "eff": 4.6,
    "grade": "D",
-   "rank": 36
+   "rank": 37
   },
   {
    "name": "GPT-6.1 Terra",
@@ -813,7 +835,7 @@
    "value": 52,
    "eff": 16.9,
    "grade": "C",
-   "rank": 37
+   "rank": 38
   },
   {
    "name": "Claude Haiku 5.5",
@@ -835,7 +857,7 @@
    "value": 68,
    "eff": 160.0,
    "grade": "B",
-   "rank": 38
+   "rank": 39
   },
   {
    "name": "Muse Ember",
@@ -857,7 +879,7 @@
    "value": 68,
    "eff": 160.0,
    "grade": "B",
-   "rank": 39
+   "rank": 40
   },
   {
    "name": "Grok 4.7",
@@ -879,7 +901,7 @@
    "value": 46,
    "eff": 10.0,
    "grade": "D",
-   "rank": 40
+   "rank": 41
   },
   {
    "name": "Grok 4.7",
@@ -901,7 +923,7 @@
    "value": 46,
    "eff": 10.0,
    "grade": "D",
-   "rank": 41
+   "rank": 42
   },
   {
    "name": "Hy4",
@@ -923,7 +945,7 @@
    "value": 58,
    "eff": 44.8,
    "grade": "C",
-   "rank": 42
+   "rank": 43
   },
   {
    "name": "GPT-6.1 Sol",
@@ -945,7 +967,7 @@
    "value": 44,
    "eff": 7.8,
    "grade": "D",
-   "rank": 43
+   "rank": 44
   },
   {
    "name": "Claude Opus 5.5",
@@ -967,7 +989,7 @@
    "value": 39,
    "eff": 3.9,
    "grade": "D",
-   "rank": 44
+   "rank": 45
   },
   {
    "name": "Claude Haiku 5.5",
@@ -989,7 +1011,7 @@
    "value": 67,
    "eff": 155.6,
    "grade": "B",
-   "rank": 45
+   "rank": 46
   },
   {
    "name": "Muse Ember",
@@ -1011,7 +1033,7 @@
    "value": 66,
    "eff": 151.1,
    "grade": "B",
-   "rank": 46
+   "rank": 47
   },
   {
    "name": "Qwen3.8 Max",
@@ -1033,7 +1055,7 @@
    "value": 45,
    "eff": 9.7,
    "grade": "D",
-   "rank": 47
+   "rank": 48
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1055,7 +1077,7 @@
    "value": 58,
    "eff": 55.4,
    "grade": "C",
-   "rank": 48
+   "rank": 49
   },
   {
    "name": "GLM-5.3",
@@ -1077,7 +1099,7 @@
    "value": 46,
    "eff": 12.8,
    "grade": "D",
-   "rank": 49
+   "rank": 50
   },
   {
    "name": "Grok 4.7",
@@ -1099,7 +1121,7 @@
    "value": 43,
    "eff": 8.9,
    "grade": "D",
-   "rank": 50
+   "rank": 51
   },
   {
    "name": "Inkling 2 Small",
@@ -1121,7 +1143,7 @@
    "value": 57,
    "eff": 56.4,
    "grade": "C",
-   "rank": 51
+   "rank": 52
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1143,7 +1165,7 @@
    "value": 48,
    "eff": 18.4,
    "grade": "D",
-   "rank": 52
+   "rank": 53
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -1165,7 +1187,7 @@
    "value": 41,
    "eff": 6.9,
    "grade": "D",
-   "rank": 53
+   "rank": 54
   },
   {
    "name": "GPT-6.1 Terra",
@@ -1187,7 +1209,7 @@
    "value": 46,
    "eff": 13.8,
    "grade": "D",
-   "rank": 54
+   "rank": 55
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1209,7 +1231,7 @@
    "value": 47,
    "eff": 17.8,
    "grade": "D",
-   "rank": 55
+   "rank": 56
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1231,7 +1253,7 @@
    "value": 62,
    "eff": 133.3,
    "grade": "B",
-   "rank": 56
+   "rank": 57
   },
   {
    "name": "MiMo-V2.6-Pro",
@@ -1253,7 +1275,7 @@
    "value": 54,
    "eff": 46.0,
    "grade": "C",
-   "rank": 57
+   "rank": 58
   },
   {
    "name": "Ling 3.1 Flash（1019 版）",
@@ -1275,7 +1297,7 @@
    "value": 56,
    "eff": 57.1,
    "grade": "C",
-   "rank": 58
+   "rank": 59
   },
   {
    "name": "GPT-6.1 Terra",
@@ -1297,7 +1319,7 @@
    "value": 44,
    "eff": 12.9,
    "grade": "D",
-   "rank": 59
+   "rank": 60
   },
   {
    "name": "MiniMax M3.1 Flash",
@@ -1319,7 +1341,7 @@
    "value": 59,
    "eff": 96.7,
    "grade": "C",
-   "rank": 60
+   "rank": 61
   },
   {
    "name": "Qwen3.8-Flash-Next",
@@ -1341,7 +1363,7 @@
    "value": 60,
    "eff": 108.4,
    "grade": "B",
-   "rank": 61
+   "rank": 62
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1363,7 +1385,7 @@
    "value": 54,
    "eff": 48.7,
    "grade": "C",
-   "rank": 62
+   "rank": 63
   },
   {
    "name": "Step 5 Preview",
@@ -1385,7 +1407,7 @@
    "value": 46,
    "eff": 17.3,
    "grade": "D",
-   "rank": 63
+   "rank": 64
   },
   {
    "name": "GPT-6 Luna",
@@ -1407,7 +1429,7 @@
    "value": 60,
    "eff": 124.4,
    "grade": "B",
-   "rank": 64
+   "rank": 65
   },
   {
    "name": "GLM-5.3-Flash",
@@ -1429,7 +1451,7 @@
    "value": 61,
    "eff": 125.3,
    "grade": "B",
-   "rank": 65
+   "rank": 66
   },
   {
    "name": "Gemini 4 Hydrogen",
@@ -1451,7 +1473,7 @@
    "value": 39,
    "eff": 8.0,
    "grade": "D",
-   "rank": 66
+   "rank": 67
   },
   {
    "name": "MiMo-V2.6-Flash",
@@ -1473,7 +1495,7 @@
    "value": 60,
    "eff": 128.6,
    "grade": "B",
-   "rank": 67
+   "rank": 68
   },
   {
    "name": "Mistral Large 4",
@@ -1495,7 +1517,7 @@
    "value": 46,
    "eff": 21.2,
    "grade": "D",
-   "rank": 68
+   "rank": 69
   },
   {
    "name": "Claude Sonnet 5.5",
@@ -1517,7 +1539,7 @@
    "value": 36,
    "eff": 5.8,
    "grade": "D",
-   "rank": 69
+   "rank": 70
   },
   {
    "name": "Muse Spark Open",
@@ -1539,7 +1561,7 @@
    "value": 40,
    "eff": 10.8,
    "grade": "D",
-   "rank": 70
+   "rank": 71
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1561,7 +1583,7 @@
    "value": 58,
    "eff": 111.1,
    "grade": "C",
-   "rank": 71
+   "rank": 72
   },
   {
    "name": "Agnes 2.5 Pro Theta",
@@ -1583,7 +1605,7 @@
    "value": 59,
    "eff": 137.1,
    "grade": "C",
-   "rank": 72
+   "rank": 73
   },
   {
    "name": "GPT-6 Luna",
@@ -1605,7 +1627,7 @@
    "value": 56,
    "eff": 102.2,
    "grade": "C",
-   "rank": 73
+   "rank": 74
   },
   {
    "name": "Mistral Large 4",
@@ -1627,7 +1649,7 @@
    "value": 43,
    "eff": 18.8,
    "grade": "D",
-   "rank": 74
+   "rank": 75
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1649,7 +1671,7 @@
    "value": 38,
    "eff": 9.8,
    "grade": "D",
-   "rank": 75
+   "rank": 76
   },
   {
    "name": "GLM-5.3",
@@ -1671,7 +1693,7 @@
    "value": 38,
    "eff": 9.2,
    "grade": "D",
-   "rank": 76
+   "rank": 77
   },
   {
    "name": "Gemini 3.8 Flash",
@@ -1693,7 +1715,7 @@
    "value": 41,
    "eff": 13.6,
    "grade": "D",
-   "rank": 77
+   "rank": 78
   },
   {
    "name": "GPT-6 Luna",
@@ -1715,7 +1737,7 @@
    "value": 54,
    "eff": 93.3,
    "grade": "C",
-   "rank": 78
+   "rank": 79
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -1737,7 +1759,7 @@
    "value": 36,
    "eff": 9.0,
    "grade": "D",
-   "rank": 79
+   "rank": 80
   },
   {
    "name": "Nanbeige4.3-33B",
@@ -1759,7 +1781,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 80
+   "rank": 81
   },
   {
    "name": "Qwen3.8 27B",
@@ -1781,7 +1803,7 @@
    "value": 40,
    "eff": 16.0,
    "grade": "D",
-   "rank": 81
+   "rank": 82
   },
   {
    "name": "JT-4.1 Flash 236B A21B",
@@ -1803,7 +1825,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 82
+   "rank": 83
   },
   {
    "name": "MiniMax M3",
@@ -1825,7 +1847,7 @@
    "value": 45,
    "eff": 31.7,
    "grade": "D",
-   "rank": 83
+   "rank": 84
   },
   {
    "name": "Claude Haiku 5.5",
@@ -1847,7 +1869,7 @@
    "value": 52,
    "eff": 84.4,
    "grade": "C",
-   "rank": 84
+   "rank": 85
   },
   {
    "name": "GPT-6 Luna",
@@ -1869,7 +1891,7 @@
    "value": 51,
    "eff": 80.0,
    "grade": "C",
-   "rank": 85
+   "rank": 86
   },
   {
    "name": "DeepSeek V4.1 Flash（1017 当前正式版）",
@@ -1891,7 +1913,7 @@
    "value": 45,
    "eff": 31.9,
    "grade": "D",
-   "rank": 86
+   "rank": 87
   },
   {
    "name": "K2 Horizon 375B-A23B",
@@ -1913,7 +1935,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 87
+   "rank": 88
   },
   {
    "name": "Beam 1.0",
@@ -1935,7 +1957,7 @@
    "value": 43,
    "eff": 25.7,
    "grade": "D",
-   "rank": 88
+   "rank": 89
   },
   {
    "name": "Qwen3.8 27B",
@@ -1957,7 +1979,7 @@
    "value": 37,
    "eff": 13.6,
    "grade": "D",
-   "rank": 89
+   "rank": 90
   },
   {
    "name": "Qwen3.8 27B",
@@ -1979,7 +2001,7 @@
    "value": 36,
    "eff": 12.8,
    "grade": "D",
-   "rank": 90
+   "rank": 91
   },
   {
    "name": "Solar Pro 4",
@@ -2001,7 +2023,7 @@
    "value": 40,
    "eff": 23.3,
    "grade": "D",
-   "rank": 91
+   "rank": 92
   },
   {
    "name": "Apodex 1.1",
@@ -2023,7 +2045,7 @@
    "value": 33,
    "eff": 9.3,
    "grade": "D",
-   "rank": 92
+   "rank": 93
   },
   {
    "name": "Nemotron 3.5 Super VL",
@@ -2045,7 +2067,7 @@
    "value": 45,
    "eff": 43.1,
    "grade": "D",
-   "rank": 93
+   "rank": 94
   },
   {
    "name": "DeepSeek V4 Pro 0813",
@@ -2067,7 +2089,7 @@
    "value": 29,
    "eff": 5.5,
    "grade": "D",
-   "rank": 94
+   "rank": 95
   },
   {
    "name": "Inkling Small",
@@ -2089,7 +2111,7 @@
    "value": 39,
    "eff": 21.7,
    "grade": "D",
-   "rank": 95
+   "rank": 96
   },
   {
    "name": "Inkling",
@@ -2111,7 +2133,7 @@
    "value": 29,
    "eff": 6.0,
    "grade": "D",
-   "rank": 96
+   "rank": 97
   },
   {
    "name": "Nemotron 3 Ultra 550B-A55B",
@@ -2133,7 +2155,7 @@
    "value": 33,
    "eff": 9.4,
    "grade": "D",
-   "rank": 97
+   "rank": 98
   },
   {
    "name": "Gemini 3.5 Flash-Lite",
@@ -2155,7 +2177,7 @@
    "value": 35,
    "eff": 13.0,
    "grade": "D",
-   "rank": 98
+   "rank": 99
   },
   {
    "name": "Qwen3.8 27B",
@@ -2177,7 +2199,7 @@
    "value": 31,
    "eff": 8.0,
    "grade": "D",
-   "rank": 99
+   "rank": 100
   },
   {
    "name": "GPT-6 Luna",
@@ -2199,7 +2221,7 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 100
+   "rank": 101
   },
   {
    "name": "GPT-6 Luna",
@@ -2221,7 +2243,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 101
+   "rank": 102
   },
   {
    "name": "Muse Glimmer",
@@ -2243,7 +2265,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 102
+   "rank": 103
   },
   {
    "name": "Command A+",
@@ -2265,7 +2287,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 103
+   "rank": 104
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2287,7 +2309,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 104
+   "rank": 105
   },
   {
    "name": "Granite 4.2 8B",
@@ -2309,7 +2331,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 105
+   "rank": 106
   },
   {
    "name": "Granite 4.2 3B",
@@ -2331,7 +2353,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 106
+   "rank": 107
   },
   {
    "name": "Mistral Small 4",
@@ -2353,7 +2375,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 107
+   "rank": 108
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2375,10 +2397,37 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 108
+   "rank": 109
   }
  ],
  "changes": [
+  {
+   "d": "11-17",
+   "t": "Qwen4 Max 获 v5.0.1 分 43，主表 108→109，排第 33，综合性价比 56（C）",
+   "m": [
+    "Qwen4 Max"
+   ],
+   "s": "<b>AA Changelog 在 15 Nov 新增一条 Intelligence Index 评测：<u>Qwen4 Max = 42.9（四舍五入 43）</u></b>；11-16 全日量与当日半点核验时 Changelog 最新仍停在 13 Nov（Gemini 4 Argon Medium 48、DeepSeek V4 Pro 0813 High 21），本轮 06:30 抓取（<code>?x=1117a</code> 破缓存）始见该条，方法论版本仍为 <b>v5.0.1</b>，故不作全表重算。阿里云 11-16 新闻稿发布该旗舰（2.4T／71B MoE、约 1M 上下文，闭源 API；更小规模 Qwen4 开放权重尚未放出）。<b>国际站官方价 $1.50／$4.50、缓存命中 $0.075</b>，标准任务成本 $2.625；按能力 60%＋成本 40% 得综合性价比 <u>56（C）</u>，插入 GPT-6 Astra Low（43.3）与 GPT-6.1 Terra High（42.4）之间，主榜排名第 33。<b>主表 108→109</b>；原第 33 名及以后名次顺延 1 位，其余 108 个配置的分数、定价、许可、性价比分与等级逐行不变（成本锚点仍为 $22.50／$0.11，TOP_AA 仍 65.0）。官方同时提供 Non-Thinking／Thinking，AA 仅有一条综合分，非思考档不插值。"
+  },
+  {
+   "d": "11-17",
+   "t": "06:30 早于中间价发布时间，汇率沿用 11-16 的 6.7141，四组人民币定价美元价不变",
+   "m": [
+    "Hy4",
+    "DeepSeek V4.1 Flash（1017 当前正式版）",
+    "DeepSeek V4 Pro 0813",
+    "GLM-5.3-Flash"
+   ],
+   "s": "<b>中国外汇交易中心人民币汇率中间价于交易日 09:15 发布；本轮全日量约 06:30 核验时，人民银行武汉分行中间价公告页最新仍为 11-16，中国快照亦仅列到 11-16 的 <u>1 USD = 6.7141 CNY</u></b>。按既定口径沿用上一交易日中间价，四组人民币定价（Hy4 折后、DeepSeek V4.1 Flash 1017、DeepSeek V4 Pro 0813、GLM-5.3-Flash）的美元价、标准任务成本与性价比分<u>与上期逐位相同</u>。09:15 新中间价若有变动，交由当日半点例程再核；不为刷日期单独推汇率。"
+  },
+  {
+   "d": "11-17",
+   "t": "复核维持：Hy4 正式版权重第 13 天未发；11-17 Token Plan 个人版 2.5 折到期不影响主表（主表用官方 5 折至 12-31）",
+   "m": [
+    "Hy4"
+   ],
+   "s": "<b>腾讯混元 Hy4 正式版权重仍未在 Hugging Face 放出</b>：组织检索仅见 2026-08-27 的 <code>tencent/Hy4-preview</code> 与 <code>Hy4-preview-FP8</code>（Apache 2.0），<code>tencent/Hy4</code> 仍无公开仓库（第 13 天）。<b>主表价格口径不变</b>：TokenHub 目录价 ¥6／¥18、缓存 ¥0.3，官方限时 5 折至 2026-12-31 23:59:59 北京时间（折后 ¥3／¥9／缓存 ¥0.15，按 6.7141 折美元）；上期提示的「Hy4 Token Plan 个人版 2.5 折 11-17 到期」属套餐档，<u>不是主表所用的 API 5 折单价</u>，故不调整 pin／pout／性价比分。Gemini 4 Carbon／Argon 介绍期价仍至 11-30；Ling-3.2-flash 全免至 11-19，均未到期、未预估重算。"
+  },
   {
    "d": "11-16",
    "t": "AA 连续第三日零新增：主榜 108 配置与全部分数／名次／性价比分逐行不变",
