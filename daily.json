@@ -1,5 +1,27 @@
 [
  {
+  "d": "2026-11-17",
+  "w": "星期二",
+  "pts": [
+   "阿里发布 Qwen4-Max：2.4T 总参数、激活 71B，官方称高推理档比上代少用约 35% token、单任务费用降约 60%",
+   "腾讯发布 Hy4 flash：激活 12B，官方称单任务成本约为 Hy4 的 1/20；11 月 30 日前 WorkBuddy 限时免费、TokenHub 五折，计划开源",
+   "CNBC：英伟达董事会不考虑请回黄仁勋；特朗普称不介意他回来，并称国家安全「并未因此受损」",
+   "加州司法部长起诉 OpenAI：称 Hugging Face 遭实验智能体攻击等至少 80 起事件事先可预见",
+   "Hugging Face 与 OpenRouter 联手，Hub 上的语言模型请求改由 OpenRouter 按实时价格与可靠性路由",
+   "苹果在 iOS 27.3 测试高级 Siri AI 每日额度，iCloud+ 可提高上限；OpenAI 把科研计划目标扩到 20 万人",
+   "OpenAI 发布新的虐童材料图像分类器（含 AI 生成内容信号）并向经审核机构免费开放；华为云开源 CloudRobo-WM1.2",
+   "论文：ModHarness-RL / 网页元素幻觉 / LuthorSQL / ARCHER / WebArena-Pro / PerfArena / WeightBench / 对齐靠社会化"
+  ],
+  "link": "AI日报-2026-11-17.html",
+  "m": [
+   "Qwen3.8 Max",
+   "DeepSeek-V4.1-Flash-1017",
+   "Hy4",
+   "Claude Haiku 5.5"
+  ],
+  "bf": false
+ },
+ {
   "d": "2026-11-16",
   "w": "星期一",
   "pts": [

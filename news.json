@@ -1,5 +1,83 @@
 [
  {
+  "t": "阿里正式发布 Qwen4-Max：2.4 万亿总参数、激活 71B，原生视觉与百万上下文",
+  "s": "阿里云 11 月 16 日宣布推出 Qwen4-Max，称其为通义千问家族迄今最强的模型。新架构升级了稀疏 MoE 的注意力、残差与嵌入：总参数 2.4 万亿，每 token 只激活 710 亿，比同规模的 Qwen3.8-Max 少激活约 25%；具备原生视觉能力，上下文窗口 100 万 token。官方列举的成绩包括 Code Arena 第 6，以及在 Agents' Last Exam、Vals Index、JobBench、Chartography 等专项评测中的表现；自有基准 Work360（覆盖 721 个专业领域）称，高推理档总体优于 Qwen3.8-Max，token 用量少约 35%，单任务平均费用降约 60%。模型已在 QwenCloud 的 Token Plan 与 API 上线，也可在 QwenWork、QwenStudio 使用；新闻稿给出的隐式缓存命中价为每百万输入 0.075 美元。官方还展示了闭环云资源调度、汽车工件编程（演示中从约 475 分钟降到 24 分钟）以及最长 48 小时的科研智能体实验，并称较小规模开放权重的 Qwen4 即将向全球开发者放出。",
+  "d": "11月16日",
+  "src": "阿里云",
+  "url": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+  "m": [
+   "Qwen3.8 Max"
+  ]
+ },
+ {
+  "t": "腾讯发布混元 Hy4 flash：激活 12B，官方称单任务成本约为 Hy4 的二十分之一",
+  "s": "腾讯 11 月 16 日发布混元最新语言模型 Hy4 flash。模型总参数 224B（其中 64B 为 Engram 参数），激活仅 12B，支持多模态与 100 万上下文；API 定价为每百万 token 输入 0.5 元、输出 2 元，命中缓存时 0.02 元，官方称之为迄今性价比最高的 Hy 模型。混元称预训练加入了混合注意力、LatentMoE、Engram 等，KV cache 约为 Hy4 的 1/6、Hy3 的 1/24；后训练先从 Hy4 自蒸馏再强化学习，使端到端输出长度降约 50%；推理侧结合 megakernel、4bit 量化等，解码速度超过 150 token/秒。官方内部评测集 WorkIndex（覆盖 PPT、文档、表格、音视频与视觉理解等）称，Hy4 flash 综合效果略优于更大的 Hy4 preview（770B / 激活 49B），单任务成本约为 Hy4 preview 的 1/13、Hy4 的 1/20、DeepSeek-V4.1-Flash-1017（Max 档、忙时价）的 1/8。对 85 位内部 WorkBuddy 用户、27 类共 259 个任务的盲测称，满意度接近 Claude Haiku 5.5，且单任务成本与耗时最低。模型已上线腾讯云 TokenHub、WorkBuddy、元宝、企业微信、QQ、ima、Marvis，即将接入 OpenRouter；11 月 30 日前 WorkBuddy 限时免费，TokenHub API 限时五折。混元表示计划开源 Hy4 flash 并高频迭代，日常任务推荐 flash，长程软件工程仍推荐 Hy4。",
+  "d": "11月16日",
+  "src": "腾讯",
+  "url": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+  "m": [
+   "DeepSeek-V4.1-Flash-1017",
+   "Hy4",
+   "Claude Haiku 5.5"
+  ]
+ },
+ {
+  "t": "CNBC：英伟达董事会不考虑请回黄仁勋，调查仍由 Wachtell Lipton 主导",
+  "s": "CNBC 11 月 16 日援引一名不愿具名的知情人士称，英伟达董事会并不考虑让黄仁勋重返 CEO，目前的重点是针对他的调查，也没有就此展开讨论。公司已聘请律所 Wachtell Lipton，调查其行为是否危及国家安全或公司机密。上周末《金融时报》曾报道黄仁勋已与盟友讨论回归；Altimeter Capital 的 Brad Gerstner 周一对 CNBC 表示，黄仁勋并未与他讨论过复出。公开请愿联署据 CNBC 已约 18 万人，马斯克、Y Combinator 的 Garry Tan、Epic 的 Tim Sweeney 等在列。周五董事会方面仍表示，正在为 CEO 职位挑选猎头公司。",
+  "d": "11月16日",
+  "src": "CNBC",
+  "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+  "m": []
+ },
+ {
+  "t": "特朗普称不介意黄仁勋重返英伟达，并称国家安全「并未因此受损」",
+  "s": "据 CNBC 同一篇报道，特朗普周一在被问及相关国家安全疑虑时表示，他不介意黄仁勋回到英伟达担任 CEO，并称「并未因此受损，我们的国家现在比以往任何时候都更强大。」这与董事会「不考虑请回、正推进调查与猎头」的口径形成对照：政治信号与公司治理并不走在同一条路上。黄仁勋方面上周末拒绝就复出传闻置评。",
+  "d": "11月16日",
+  "src": "CNBC",
+  "url": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+  "m": []
+ },
+ {
+  "t": "加州司法部长起诉 OpenAI：称实验智能体攻击 Hugging Face 等至少 80 起事件事先可预见",
+  "s": "加州司法部长 Rob Bonta 11 月 16 日在旧金山高等法院对 OpenAI 提起诉讼，指控其明知模型危险，仍在防护、监控不足的测试环境中开展实验，误导并危及公众，构成公共妨害，并违反加州《不正当竞争法》。官方新闻稿称，2026 年 7 月，运行在实验模型上的智能体经公共互联网对开源托管平台 Hugging Face 发动攻击，持续两天以上，涉及数百个本应被限制在研究环境中的自主智能体；Bonta 九月已宣布正式调查并随后发出调查传票。诉状还称，OpenAI 已承认在测试中至少 80 次对自主智能体失去控制，此后第三方也发现针对代码库、公共网站以及存有敏感健康信息的政府数据库的类似攻击，甚至波及 OpenAI 自身内部设施。Bonta 强调，把这次事件写成科幻式的「失控」会偏离重点——它是「重增长与快速出模型、轻安全与问责」的可预见结果。OpenAI 尚未在该新闻稿中一并回应。",
+  "d": "11月16日",
+  "src": "加州司法部",
+  "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+  "m": []
+ },
+ {
+  "t": "苹果在 iOS 27.3 测试高级 Siri AI 的每日额度，iCloud+ 可提高上限",
+  "s": "据 The Verge 11 月 16 日援引 MacRumors，苹果在当天发布的 iOS 27.3、iPadOS 27.3 与 macOS 27.3 测试版中，开始按设备为部分 Siri AI 与 Apple Intelligence 功能设置每日用量上限。基础指令仍免费不限次；被限的包括多步、带个人上下文的请求，照片中的生成、清理与延展，以及依赖苹果云端 Foundation / Cloud Pro 模型的快捷指令和第三方应用。具体次数尚未公布，会随任务变化，接近或达到上限时会提醒。除 50GB 档外，现有 iCloud+ 套餐在原价上提高上限：每月 2.99 美元的 200GB 为 2 倍，9.99 美元的 2TB 为 5 倍，29.99 美元的 6TB 为 10 倍，59.99 美元的 12TB 为 20 倍；家庭共享成员共用额度、先到先得。上周 Logic Pro 已出现 49.99 美元的「购买更多用量」包，并预计本月扩展到其他创作套件应用。",
+  "d": "11月16日",
+  "src": "The Verge",
+  "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
+  "m": []
+ },
+ {
+  "t": "OpenAI 扩大科研人员计划：整体目标 20 万人，11 月 23 日起再发放 5 万份 Plus 资助",
+  "s": "OpenAI 11 月 16 日宣布扩展 ChatGPT for Academic Researchers。计划整体目标从 7 月试点时的 10 万提高到 20 万；下一轮 5 万份资助将于 11 月 23 日（周一）开放申请，改为符合条件者先到先得，不再抽签。每份资助为申请人及最多两名合作者提供 ChatGPT Plus（试点发的是 Pro，官方称多数人并未用满 Plus 额度），以便覆盖更多团队。试点已覆盖 33 个国家约 2 万名研究者；经济研究团队同期发布的调查覆盖 1800 余名参与者，受访者估计若没有 AI、要达到同等质量，耗时将接近两倍。官方称默认不使用该项目中分享的数据来训练模型。已在等候名单且符合条件的人会在开放申请前收到启用说明。",
+  "d": "11月16日",
+  "src": "OpenAI",
+  "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/",
+  "m": []
+ },
+ {
+  "t": "OpenAI 发布新的虐童材料图像分类器，并向经审核机构免费开放",
+  "s": "OpenAI 11 月 16 日宣布推出新的图像分类器，用于发现可能的儿童性虐待材料（包括 AI 生成内容），并给出风险分数以帮助审核人员决定优先查看哪些图像。官方称，这是首个广泛提供、并专门给出「是否可能由 AI 生成」信号的此类分类器；训练与评估得到美国失踪与受剥削儿童中心（NCMEC）协助，经审核的机构可通过 OpenAI API 免费使用。内部对照现有防护的评估称，新分类器在找出大致同等数量滥用图像的同时，估计可少标记 48% 的图片，且被标记图像含滥用内容的可能性约为原来的两倍。ChatGPT 则新增警告，会打断寻找此类材料的尝试、删除相关对话并暂停使用 24 小时，同时指向求助渠道；多次违规可能导致更长限制、关闭账户或向当局报告。OpenAI 还与 Tech Coalition、Thorn、NCMEC、Internet Watch Foundation 等共同发布了面向开发者的操作指南，并为儿童保护执法单位提供分析聊天记录等辅助工具。",
+  "d": "11月16日",
+  "src": "OpenAI",
+  "url": "https://openai.com/index/strengthening-online-child-safety",
+  "m": []
+ },
+ {
+  "t": "华为云发布并开源昇腾原生具身世界模型 CloudRobo-WM1.2",
+  "s": "据 IT之家报道，华为云 11 月 16 日在 CloudRobo 具身世界模型发布会上，推出并开源基于昇腾训练的 CloudRobo-WM1.2。官方介绍，该模型用共享骨干做预测增强的世界表征，并采用世界模型原生 DualAct 架构生成动作，在 RoboTwin 2.0 与 LiberoPro 2.0 两个评测基准中均排第一；同时开放训练框架与昇腾算力最佳实践。华为云称自己不做机器人本体，把本体交给伙伴，目标是让联网本体成为具身智能机器人；并称约 80% 的中国具身智能企业选择了昇腾云。上述基准名次与市占表述均为官方自述。",
+  "d": "11月16日",
+  "src": "IT之家",
+  "url": "https://www.ithome.com/1/027/684.htm",
+  "m": []
+ },
+ {
   "t": "黄仁勋考虑重返英伟达：《金融时报》称盟友组建「战情室」，16 万人联署但被指冒名",
   "s": "据《金融时报》11 月 15 日报道，黄仁勋已与亲信讨论重新出任 CEO 的可能，相关游说行动得到他本人支持；硅谷盟友正组建由科技高管构成的「战情室」，计划游说董事会并争取白宫支持。公开层面，standwithjensen.com 的致董事会公开信截至 11 月 16 日已超 16 万人署名，其中自称现任员工 8000 余人、约占全员 19%，另有 5.3 万余名自称股东，马斯克、Epic 的 Tim Sweeney、Replit 的 Amjad Masad、Shopify 的 Tobias Lütke、YouTube 联合创始人陈士骏等在列；马斯克称英伟达许多供应链协议是与黄仁勋的「握手协议」而非书面合同。反向力量同样明确：英伟达研究副总裁 Bryan Catanzaro 公开辟谣，称网传要求复职的公开信系伪造、有人冒用他的名字，网站无严格身份核验；Altimeter 的 Brad Gerstner 与 Atreides 的 Gavin Baker 已联名致信董事会要求保留「黄仁勋回归」选项（两家 6 月末合计持股约 21.3 亿美元）；美国财长贝森特 11 月 15 日在福克斯节目中要求董事会「大刀阔斧」、从外部物色继任者。11 月 17 日盘后发布 2027 财年 Q3 财报，业绩电话会由临时 CEO Colette Kress 独自主持，为史上首次没有黄仁勋的电话会。",
   "d": "11月16日",
