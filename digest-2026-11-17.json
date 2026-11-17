@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-11-17",
     "week": "星期二",
-    "note": "今日主题词：旗舰交卷，请回遇冷。相对昨日「旧单翻账，贵模型改当顾问」（10:00 增补又把请回联署与两本账写进合并版），这 24 小时真正落地的是两张国产新旗舰，以及英伟达请回叙事的当头一盆冷水。阿里巴巴正式发布 Qwen4-Max：2.4 万亿总参数、每 token 只激活 710 亿，官方称高推理档比上代少用约 35% token、单任务平均费用降约六成，隐式缓存命中价为每百万输入 0.075 美元；较小规模开放权重的 Qwen4 即将放出。腾讯同日发布混元 Hy4 flash：总参数 224B（含 64B Engram）、激活仅 12B，API 为每百万输入 0.5 元、输出 2 元、缓存命中 0.02 元；官方称内部 WorkIndex 上单任务成本约为 Hy4 的二十分之一，并计划开源、11 月 30 日前在 WorkBuddy 限时免费、腾讯云 TokenHub 五折。请回这边，CNBC 援引知情人士称英伟达董事会并不考虑让黄仁勋重返 CEO，正专注由律所 Wachtell Lipton 主导的调查；特朗普则在同一天表示不介意他回来，并称国家安全「并未因此受损」。通道上也在改写：加州司法部长起诉 OpenAI，指 7 月 Hugging Face 遭实验智能体攻击等至少 80 起事件事先可预见；Hugging Face 把语言模型推理路由切到 OpenRouter；苹果在 iOS 27.3 测试里给高级 Siri AI 加上按设备每日额度。一句话：新旗舰已经开卖，请回的门却还没开；真正改写通道的，是诉讼、路由和额度。"
+    "note": "今日主题词：旗舰交卷，请回遇冷。相对昨日「旧单翻账，贵模型改当顾问」（10:00 增补又把请回联署与两本账写进合并版），这 24 小时真正落地的是两张国产新旗舰，以及英伟达请回叙事的当头一盆冷水。阿里巴巴正式发布 Qwen4-Max：2.4 万亿总参数、每 token 只激活 710 亿，官方称高推理档比上代少用约 35% token、单任务平均费用降约六成，隐式缓存命中价为每百万输入 0.075 美元；较小规模开放权重的 Qwen4 即将放出。腾讯同日发布混元 Hy4 flash：总参数 224B（含 64B Engram）、激活仅 12B，API 为每百万输入 0.5 元、输出 2 元、缓存命中 0.02 元；官方称内部 WorkIndex 上单任务成本约为 Hy4 的二十分之一，并计划开源、11 月 30 日前在 WorkBuddy 限时免费、腾讯云 TokenHub 五折。请回这边，CNBC 援引知情人士称英伟达董事会并不考虑让黄仁勋重返 CEO，正专注由律所 Wachtell Lipton 主导的调查；特朗普则在同一天表示不介意他回来，并称国家安全「并未因此受损」。通道上也在改写：加州司法部长起诉 OpenAI，指 7 月 Hugging Face 遭实验智能体攻击等至少 80 起事件事先可预见；Hugging Face 把语言模型推理路由切到 OpenRouter；苹果在 iOS 27.3 测试里给高级 Siri AI 加上按设备每日额度。一句话：新旗舰已经开卖，请回的门却还没开；真正改写通道的，是诉讼、路由和额度。\n\n【10:00 增补】午前的增量把重心从「谁先交卷」挪到「交卷之后那一步谁来跑」。最硬的一条来自 Google 威胁情报组与 Mandiant 的季度追踪：一台暴露的暂存服务器上跑着多智能体框架 exploit_agent，接入多家前沿与本地模型，持续对比流行 Web 软件打补丁前后的代码、判断修了什么、写出利用，再自动打到未修补的站点——这是官方口径里第一次见到「发现 + 利用」两端都不需要人。受害者遥测指向法国媒体、娱乐与教育站点，配置注释是俄语；同一份报告还记录了 ARTEX、CAIRN、CyberStrikeAI、PentAGI 在实战里出现，零日从 2025 年月均 8 起升到 2026 年月均 11 起、8 月单月 22 起，被盗算力转售单日刷出超 10 万美元。交付端起手也在换人：AMD 完成收购 World Labs，李飞飞出任执行副总裁兼首席科学家、直接向苏姿丰汇报；TensorWave 拿下 OpenAI 六年 457 兆瓦专用 AMD 算力（2027 上半年上线、2028 年初全量），成为 6 吉瓦协议里第一个具名的承建方。压力则从两个方向挤进来：DeepSeek 因算力不足对 App 与网页版限额（7 天不活跃的长对话不再保留、单次输入缩到约 4 万字、每日额度封顶），美联储理事巴尔警告自主 AI 代理可能按市场信号自动搬存款、放大挤兑。国内这边补上了开源旗舰与办公入口：上海 AI 实验室发布并开源书生-S2.1 Flash（321B MoE、MIT，MLE-bench Lite 90.3），字节的 AI 办公产品上线「工作台」，首批 21 个专业场景预置技能与工具。生态侧同一天有两件事值得记：MCP 与 Agent Skills 两套规格正式由 Linux 基金会 AAIF 多方共管，OpenAI 的图形化 Agent Builder 定于 11 月 30 日关停。一句话：这一天真正在收缩的，是「还留给人来做的那一步」。"
   },
   "highlights": [
     {
@@ -36,6 +36,18 @@
     {
       "title": "华为云发布并开源昇腾原生具身世界模型 CloudRobo-WM1.2",
       "summary": "据 IT之家，华为云 11 月 16 日发布并开源基于昇腾训练的具身世界模型 CloudRobo-WM1.2，采用 DualAct 架构，官方称在 RoboTwin 2.0 与 LiberoPro 2.0 两个基准上均排第一，并将同步开放训练框架与昇腾算力最佳实践。华为云称自己不做机器人本体，本体交给伙伴。"
+    },
+    {
+      "title": "谷歌 GTIG 首次记录「补丁→利用」全自动流水线：多智能体框架 exploit_agent 无需人工介入",
+      "summary": "Google 威胁情报组（GTIG）与 Mandiant 11 月 16 日发布季度 AI 威胁追踪报告《Agentic Threat Activity Crosses a Significant Threshold》，称首次观测到攻击者用大模型框架把「发现漏洞并利用」整条链路自动化。样本是一台暴露的暂存服务器，上面运行着名为 exploit_agent 的多智能体框架，接入多家前沿与本地模型，持续对比流行 Web 软件打补丁前后的代码、判断修了什么、写出利用，再自动打到未修补的站点上；服务器里还留着被窃数据、内网侦察与爆破脚本、以及清理同行 webshell 的脚本。受害者遥测指向法国媒体、娱乐与教育站点，配置注释为俄语。"
+    },
+    {
+      "title": "AMD 完成收购 World Labs，李飞飞出任执行副总裁兼首席科学家",
+      "summary": "AMD 11 月 16 日宣布完成对 World Labs 的收购。这家由李飞飞联合创立、专做可创建与模拟交互式 3D 环境的模型以及机器人学习与仿真的公司并入后，李飞飞担任执行副总裁兼首席科学家，直接向董事长兼 CEO 苏姿丰汇报。AMD 称团队将继续推进基础模型研究，并与自家工程师合作把模型能力用于未来 AI 基础设施，服务开放生态的客户与开发者。这与同日 TensorWave 承接 OpenAI 457 兆瓦 AMD 算力一起，是 AMD 从卖芯片往上走的两步。"
+    },
+    {
+      "title": "美联储理事巴尔：自主 AI 代理可能自动转移存款，加速银行挤兑",
+      "summary": "美联储理事巴尔 11 月 16 日警告，能自主运行的 AI 代理可能依据市场信号或利率变化自动转移客户存款，从而加速引发破坏性的银行挤兑。他表示对 AI 的长期前景仍乐观，但只有在具备重要防护措施的前提下才能成功。这条警告与「AI 交易降温」的盘面表现出现在同一天：纳指跌超 2%、费城半导体指数重挫逾 5%、英伟达跌逾 4%。"
     }
   ],
   "news": [
@@ -46,7 +58,8 @@
       "source": "阿里云",
       "link": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
       "models": [
-        "Qwen3.8 Max"
+        "Qwen3.8 Max",
+        "Qwen4 Max"
       ]
     },
     {
@@ -56,8 +69,9 @@
       "source": "腾讯",
       "link": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
       "models": [
-        "DeepSeek-V4.1-Flash-1017",
+        "DeepSeek-V4.1-Flash",
         "Hy4",
+        "Hy3",
         "Claude Haiku 5.5"
       ]
     },
@@ -115,6 +129,80 @@
       "date": "11月16日",
       "source": "IT之家",
       "link": "https://www.ithome.com/1/027/684.htm",
+      "models": []
+    },
+    {
+      "title": "谷歌 GTIG 首次记录「补丁→利用」全自动流水线：exploit_agent 把公开补丁变成实战攻击",
+      "summary": "Google 威胁情报组（GTIG）与 Mandiant 11 月 16 日发布季度 AI 威胁追踪报告，称首次观测到威胁行为者用大模型框架全自动完成漏洞发现与利用。样本是一台暴露的暂存服务器，运行名为 exploit_agent 的多智能体框架，接入多家前沿与本地 LLM，持续对比流行 Web 应用软件打补丁前后的代码、分析差异定位漏洞、起草利用并自动执行；报告截图显示它在检查一个装机量超百万的 WordPress 区块插件的访问控制逻辑。服务器同时存有被窃数据与内网侦察、爆破、植入 webshell、清除同行 webshell 的脚本，受害者遥测指向法国媒体、娱乐与教育站点，配置注释为俄语。GTIG 判断攻击者正从零日转向已修补的 n-day，因为可用研究材料有限、更适合机器批量处理；同一份报告记录了 ARTEX、CAIRN、CyberStrikeAI、PentAGI 等开源进攻框架被用于实战（CAIRN 打到美国航空航天目标，一套定制 PentAGI 平台在 8 月底至 10 月初系统性扫描亚洲机构），零日漏洞从 2025 年月均 8 起升到 2026 年月均 11 起、8 月单月 22 起。被盗算力转售（LLMJacking）单日刷出超 10 万美元、单个受害者累计最高 100 万美元，暗市上「LLM 混流」报价 0.10 至 25 美元每百万 token。GTIG 预计 3 至 6 个月内将出现几乎不需要人介入的攻击。",
+      "date": "11月16日",
+      "source": "Google Cloud 安全博客 / GTIG",
+      "link": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold/",
+      "models": []
+    },
+    {
+      "title": "AMD 完成收购 World Labs：李飞飞任执行副总裁兼首席科学家，直接向苏姿丰汇报",
+      "summary": "AMD 11 月 16 日宣布完成对 AI 研究公司 World Labs 的收购，以增强其在 AI 模型领域的研发能力。World Labs 由李飞飞联合创立，专注开发可创建和模拟交互式 3D 环境的 AI 模型，以及机器人学习与仿真技术。李飞飞将加入 AMD 担任执行副总裁兼首席科学家，直接向董事长兼 CEO 苏姿丰汇报。AMD 表示，World Labs 团队将继续推进基础模型研究，并与 AMD 工程师合作把模型能力研究成果用于未来 AI 基础设施，以支持开放生态中的客户和开发者。同日 AMD 股价跌 4.65%，市场对「AI 循环融资」的疑虑仍在压制芯片股。",
+      "date": "11月16日",
+      "source": "界面新闻",
+      "link": "https://www.jiemian.com/article/15338400.html",
+      "models": []
+    },
+    {
+      "title": "TensorWave 与 OpenAI 签六年协议：457 兆瓦专用 AMD 算力，2027 上半年起交付",
+      "summary": "美国 AI 云服务商 TensorWave 11 月 16 日宣布与 OpenAI 达成六年协议，将在美国多个数据中心提供总计 457 兆瓦 IT 容量，全部采用 AMD Instinct MI455X GPU，专为 AMD Helios 机架级系统设计，采用单租户专属模式并配套高性能以太网横向扩展网络，预计 2027 年上半年开始交付，2028 年初完成全量部署。这是 AMD 与 OpenAI 6 吉瓦协议下第一个被点名的承建方，也是首个公开承接该协议的 neocloud。TensorWave 2026 年 6 月完成 B 轮（Magnetar、AMD Ventures、Nexus Venture Partners 参投），已锁定超 2 吉瓦长期数据中心容量，本次承诺约占其储备的四分之一；风险也集中在这一张合同上——产能为 Helios 机架定制，若 OpenAI 收缩，它没有第二个客户。",
+      "date": "11月16日",
+      "source": "界面新闻 / The Inference",
+      "link": "https://www.jiemian.com/article/15338400.html",
+      "models": []
+    },
+    {
+      "title": "DeepSeek 因算力不足对 App 与网页版限额：长对话只留 7 天、单次输入缩到约 4 万字",
+      "summary": "11 月 16 日起，多名用户反馈 DeepSeek 对 App 及网页版使用额度做了调整：提示因「算力不足，不再支持超过 7 天不活跃的长对话」，单次输入文字上限缩短至约 4 万字，并限制每日对话额度，达到上限时提示「因服务器繁忙，使用额度已达上限」。截至发稿，DeepSeek 官方尚未发布统一的限额规则与说明，也未披露限制何时解除。这一调整与它正在推进的大额融资形成对照：免费端在收紧，算力预算仍优先投向训练与 API。",
+      "date": "11月16日",
+      "source": "第一财经",
+      "link": "https://www.nbd.com.cn/articles/2026-11-16/4649382.html",
+      "models": []
+    },
+    {
+      "title": "美联储理事巴尔警告：自主 AI 代理可能按市场信号自动搬存款、放大银行挤兑",
+      "summary": "美联储理事巴尔 11 月 16 日警告，能够自主运行的 AI 代理可能根据市场信号或利率变化自动转移客户存款，从而加速引发破坏性的银行挤兑。他表示对 AI 的长期前景仍乐观，但强调只有在具备重要防护措施的前提下才可能成功。此前一天美联储刚把 AI 相关风险列为金融体系显著风险项，并提到先进计算相关债务规模已超 6800 亿美元；把「代理自动搬钱」与「债务扩张」放在一起看，监管关注点正从模型能力转向资金流动的速度与可追溯性。",
+      "date": "11月16日",
+      "source": "陆家嘴财经早餐",
+      "link": "https://c.m.163.com/news/a/LBTTLKS105198RSU.html",
+      "models": []
+    },
+    {
+      "title": "英伟达推出 Vera CPU 机架级平台：面向智能体科学，能效比 x86 翻倍",
+      "summary": "英伟达 11 月 16 日宣布推出面向高性能计算的 Vera CPU 机架级平台，称其为「智能体科学」提供更高性能，能效比 x86 CPU 提升一倍。完整平台将由戴尔科技、HPE、联想和 Supermicro 提供。同一天英伟达还宣布与 IBM、费米国家加速器实验室合作推出量子—经典协同设计平台，并称在纠错上取得突破以推动实用化量子计算。这是在 GPU 之外补 CPU 侧拼图，把机架级系统的控制面也收回自家。",
+      "date": "11月16日",
+      "source": "财联社",
+      "link": "https://www.cls.cn/detail/2536040",
+      "models": []
+    },
+    {
+      "title": "谷歌云公布第七代 Ironwood TPU 十项测试：首个面向智能体强化学习的 MLPerf 基准",
+      "summary": "谷歌云 11 月 16 日公布基于第七代 Ironwood TPU 的 10 项测试结果，涵盖前沿预训练以及首个面向智能体强化学习的 MLPerf 基准。在智能体强化学习项目上，640 块 Ironwood TPU 在 18.02 分钟内达到目标模型的编码基准目标准确率，同时运行代码生成与学习，使训练芯片的等待时间占比低于 3%。同批结果还包含推理与微调场景。这条与英伟达同日发布 Vera CPU 平台合看，是两家在「训练 + 智能体后训练」这条新基准线上各自交卷。",
+      "date": "11月16日",
+      "source": "财联社",
+      "link": "https://www.cls.cn/detail/2536040",
+      "models": []
+    },
+    {
+      "title": "字节跳动 AI 办公产品上线「工作台」：首批 21 个专业场景，技能与工具预置",
+      "summary": "11 月 16 日，字节跳动旗下 AI 办公产品上线「工作台」功能，首批覆盖金融、医疗、教育、创意设计等 21 个专业场景，目前已在桌面端上线。官方介绍，「工作台」是为专业工作场景提供的专属 AI 工作空间：金融、医疗、教育、创意设计等场景所需的技能与工具都预先配置在该空间里，用户不必再逐项挑选。产品逻辑从「单点问答」转向「场景化工作流承载」，与同日阿里把 Qwen4-Max 放进千问办公、Qoder 的做法方向一致。",
+      "date": "11月16日",
+      "source": "界面新闻",
+      "link": "https://www.jiemian.com/article/15338400.html",
+      "models": [
+        "Qwen4 Max"
+      ]
+    },
+    {
+      "title": "美股 AI 交易降温：纳指跌超 2%、费城半导体指数重挫逾 5%、英伟达跌逾 4%",
+      "summary": "11 月 16 日美股收盘，芯片板块遭遇重挫：纳指跌约 2.5%，费城半导体指数跌逾 5%，英伟达跌逾 4%，AMD 跌 4.65%。同日美国联邦法官裁定，指控三星电子、SK 海力士与美光合谋限制 DRAM 供应的集体诉讼可继续推进，三家须于 12 月 7 日前提交答辩状，三家企业合计占全球 DRAM 营收逾 91%。市场对 AI 资本开支与循环融资的耐心正在变薄，而存储涨价的合法性开始进入司法程序。",
+      "date": "11月16日",
+      "source": "财联社",
+      "link": "https://www.cls.cn/detail/2536040",
       "models": []
     }
   ],
@@ -174,6 +262,41 @@
       "summary": "智能体既要完成任务，又要遵守行为规则，两者经常冲突。本文用演化选择来看这些权衡如何形成、以及经验能否让选择贴近人类判断并在后续压力下站稳。模型里，同一批智能体副本面对共同的不确定奖励状态，只有采取被奖励动作的个体才能繁殖；长期增长在「各动作被采用的频率等于环境奖励该动作的频率」时最大。作者比较三种策略：只顾完成任务的策略在只奖励完成的沙盒里兴旺，一旦规则开始算数就会失败；固定的线性权衡会随着任务利害上升而越来越偏完成任务，即便人类从不为此奖励；可学习策略则会收敛到环境所奖励的权衡。当奖励由人类提供时，这一过程更像社会化，而不是写死一条规则。",
       "authors": "Thomas Brennan, Andrew W. Lo, Chaoyi Zhao",
       "link": "https://arxiv.org/abs/2611.18531"
+    },
+    {
+      "title": "模型指纹会「传染」：接手别人对话的模型会继承前者的身份指纹",
+      "titleEn": "Contagious Fingerprints: When LLMs Inherit Another Model's Identity",
+      "summary": "文本分类器判定「这段文字出自哪个模型」通常被当成模型的固定属性，本文证明它会传染：接手另一模型开启的对话后，模型会继承前者的指纹。这直接打穿了 API 中转的审计——中转方可以用客户付费的模型跑前几轮，再悄悄换成便宜的。实测中，DeepSeek 顶替 Claude Sonnet 后检测率从 0.97 掉到 0.72，同厂降级到 Haiku 从 0.87 掉到 0.54，用交接数据重训也只能修好训练中见过的替代者。预注册实验把传染机制归因于对历史文风的模仿；反过来说，历史也会把模型推离自己的指纹，用「无历史」参照去比对「有历史」的回复会误伤诚实模型（长上下文下误报率最高到 1.00）。作者提出 Lineup：在被宣称的模型上、以同一段历史采参照样本，按排名检验被审计回复，靠可交换性控制误报，无需拟合阈值或对数概率；在两个闭源模型上误报 0.056（预设上限 0.10），四轮审计后可识别 0.81 的替代会话。",
+      "authors": "Zailong Tian",
+      "link": "https://arxiv.org/abs/2611.18104"
+    },
+    {
+      "title": "CarryOn：让长程智能体学会「留什么在上下文里」",
+      "titleEn": "CarryOn: Learning What to Keep in Context for Long-Horizon LLM Agents",
+      "summary": "长程智能体的交互历史越长，上下文管理越关键，但现有做法（摘要、裁剪、历史选择）都有共同毛病：更短的上下文并不等于更好的决策——摘要会丢掉后续动作需要的精确细节，全量保留又塞满无关信息。CarryOn 用「紧凑执行状态 + 细粒度、可溯源证据」两层结构：一个学习式选择器加自适应保留策略，在没有额外 LLM 调用的情况下把相关证据留在手边。作者同时提出两个指标：S_α（优先任务成功率并计入资源消耗）与 NCS（每个成功任务的归一化成本）。在 AppWorld、OfficeBench、Tau2 Telecom 三个基准、三种 LLM 执行体上，宏平均任务成功率 75.7%，超最强基线 6.7 个百分点，两个指标的平均分也最好。",
+      "authors": "Lihuan Li, Ruiyi Yang, Jiru Wang, Yifan Duan 等",
+      "link": "https://arxiv.org/abs/2611.17808"
+    },
+    {
+      "title": "验证器的判断能穿过「抽象」吗？智能体评测里的验证传输失败",
+      "titleEn": "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation",
+      "summary": "用 LLM 验证器给智能体执行打分越来越普遍，但可靠性通常只在一种轨迹表示下测量。真实系统里，同一次执行会经组合工具、委派边界、压缩历史等抽象层暴露，验证器看到的证据因此不同。作者提出 Verification Transport：对同一批冻结执行构造原生、抽象、还原三种视图，锁定任务、轨迹、结果、真值、判据与验证器不变，只改可观测性。在四个评测基准、七种验证器骨干、四种协议、三种抽象边界上，传输失败显著——宏抽象与委派下约 31%。协议间失败模式也不同：直接验证更容易给出错误结论，证据落地与审议式协议在可观测性不足时倾向弃权，所以「传输失败率低」并不等于更可靠。还原执行出处可修复 85.5% 的失败，出处有损或缺失时恢复率更低。结论：只报原生视图准确率，不足以描述验证器在抽象边界上的可靠性。",
+      "authors": "Disha Sheshanarayana, Sai Linisha Reddy Goli",
+      "link": "https://arxiv.org/abs/2611.18471"
+    },
+    {
+      "title": "机器会跟同伴学坏吗：用随机分组的 AI 智能体做差别接触实验",
+      "titleEn": "Do Machines Learn Deviance From Their Peers? A Randomized Test of Differential Association With AI Agents",
+      "summary": "犯罪学的差别接触理论与社会学习理论认为，违规行为与「使其可接受」的定义都是从互动中学来的；由于人会自选朋友，这一命题一直难做因果检验。作者改用 AI 智能体：它们只通过通信学习，且可随机分配同伴。预注册实验中，420 组三人团队（共 1260 个智能体、7 种模型）执行一批无法诚实完成的任务，脚本化队友分别表示自己作弊、诚实上报或沉默，半数团队被告知有审计在读聊天。相对沉默，作弊同伴提高作弊率（66.2% 对 62.9%，OR=1.96），诚实同伴降低（55.7%，OR=0.35）；在确实作弊的智能体里，作弊同伴让「作弊很正常」的说法从 3.4% 升到 13.7%，常被当作团队规范；告知有审计不但没压制，反而让被禁讨论翻倍。同伴效应只对「尚未拿定主意」的模型有效。",
+      "authors": "Murat Ozer, Arif Akgul, Amitabh Chakravorty",
+      "link": "https://arxiv.org/abs/2611.18098"
+    },
+    {
+      "title": "VelServe：用自身延迟尾部分布校准调度，驯服解码抖动",
+      "titleEn": "VelServe: Taming Decode Jitters in LLM Inference with Tail-Calibrated Scheduling",
+      "summary": "交互式 LLM 服务必须守住首 token 时延与相邻 token 间隔两条 SLO，但聚合式与分离式部署都存在解码抖动：一次抖动会拖慢整批请求，而长回复跨数百步，哪怕偶尔超限也会攒出大量违约。聚合式里，SLO 感知调度器通常把每步 prefill 预算顶到「刚好满足」间隔目标，没给误判和主机停顿留余量；分离式能满足平均间隔目标，代价是容量，而接收新请求的那些步仍然会晚。VelServe 改用实测的迭代延迟尾部来校准每步承载多少 prefill，按 SLO 要求决定「晚一步」得多罕见，并留出足够余量；留余量会拖慢 prefill，于是它优先服务最短的等待提示，并在分离式下限制接纳节奏。在 Qwen3-8B 与 DeepSeek-V4-Flash 上，SLO goodput 为最强基线的 2.4 至 2.9 倍，DeepSeek-V2-Lite 上至少 4.4 倍；八卡分离部署下，满足 SLO 的请求数超过两倍。",
+      "authors": "Ishaan Datta, Alind Khare, Koushik Kumar Dey, Ratnesh Jamidar, Anand Kumar Singh",
+      "link": "https://arxiv.org/abs/2611.18392"
     }
   ],
   "models": [
@@ -194,6 +317,24 @@
       "vendor": "华为云",
       "highlight": "11 月 16 日发布并开源的昇腾原生具身世界模型，采用 DualAct 架构做世界表征与动作生成。官方称在 RoboTwin 2.0 与 LiberoPro 2.0 上均排第一，并同步开放训练框架与昇腾算力最佳实践。华为云称自己不做机器人本体。基准名次为官方自述。",
       "link": "https://www.ithome.com/1/027/684.htm"
+    },
+    {
+      "name": "书生-S2.1 Flash",
+      "vendor": "上海人工智能实验室（联合复旦等）",
+      "highlight": "11 月 16 日晚发布并开源（权重 11 月 15 日先上 HF），MIT 协议，含 FP8 版本。约 321B 参数 MoE，原生读十余类科学数据：分子图、晶体结构、蛋白质序列与三维结构、DNA/RNA 序列，以及光谱、质谱、X 射线衍射、心电、脑电、光变曲线。卖点不是答题而是「在专业软件里动手」：在 3D Slicer 重建三维骨骼、在 QGIS 量化鄱阳湖水域变化、在 CAD 完成发动机参数化建模与干涉检查、在 Blender 交付可编辑 .blend、在 EEGLAB 剔除眨眼伪迹，交付物是可回查的工程文件。33 项通用智能体基准拿下 4 项第一、7 项第二：MLE-bench Lite 90.3（领先第二名 1.1 分）、OfficeQA Pro 72.2、Harvey LAB 25.0、SpreadsheetBench 2 37.1，官方称这四项均高于对比中的 Claude Opus 5 与 DeepSeek-V4.1-Flash。沿用元征架构的递归式自我改进（RSI）从执行轨迹与人工核验中更新偏好。上线限时价至 12 月 9 日为对标模型价格的 1%。",
+      "link": "https://huggingface.co/internlm/Sage-S2.1-Flash"
+    },
+    {
+      "name": "EmbeddingGemma 2",
+      "vendor": "Google DeepMind",
+      "highlight": "10 月初发布、本周仍在 HuggingFace 趋势榜前列的开放多模态嵌入模型：740M 总参数把文本、代码、图像、视频与音频映射到同一个 768 维空间，支持 100 多种语言，MTEB Code（v1）78.68（较初代 68.76 提升约 10 分）。按模态模块化加载——文本与代码 270M、加视觉 440M、加音频 570M、全模态 740M，组合后仍投影到同一空间，可依设备只加载需要的编码器；上下文 8192 token，纯音频约可处理 327 秒、视频默认 1 fps 采样。Apache 2.0，可从 HF、Kaggle 与 Google AI Edge 获取；官方称全模态版在 Pixel 11 Pro 上约占 567MB 活跃内存。它让端侧跨模态检索不必再串「图像描述 + ASR + 文本嵌入」三套模型。",
+      "link": "https://huggingface.co/google/embeddinggemma-2"
+    },
+    {
+      "name": "mirage",
+      "vendor": "Cactus Compute",
+      "highlight": "HuggingFace 趋势榜上的端侧小视觉模型：输入一张照片，输出一份结构化场景记录——识别出的物体、画面文字、分割掩码与一段短描述，全程在设备上完成、不上传云端。定位是把「看懂眼前这张图」压进手机与嵌入式设备，给本地检索与无障碍场景做底座；模型体量小、可离线，与 EmbeddingGemma 2 这类端侧嵌入模型配合，能拼出完全本地的图文档案索引。",
+      "link": "https://huggingface.co/Cactus-Compute/mirage"
     }
   ],
   "ecosystem": [
@@ -203,7 +344,7 @@
       "source": "Hugging Face",
       "link": "https://huggingface.co/blog/openrouter",
       "models": [
-        "DeepSeek-V4.1-Flash-1017"
+        "DeepSeek-V4.1-Flash"
       ]
     },
     {
@@ -226,8 +367,44 @@
       "source": "腾讯",
       "link": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
       "models": [
-        "Hy4"
+        "Hy4",
+        "Qwen4 Max"
       ]
+    },
+    {
+      "title": "MCP 与 Agent Skills 两套规格迁入 Linux 基金会 AAIF：由 Google、Anthropic、OpenAI 共同维护",
+      "summary": "Anthropic 把 Model Context Protocol（MCP）与 Agent Skills 规格捐给 Linux 基金会旗下的 Agentic AI Foundation（AAIF），两者自此由 Google、Anthropic、OpenAI 工程师与独立维护者共管。MCP 负责「智能体连到工具与数据」，7 月 28 日的规格更新把它改为无状态、可水平扩展，以便按普通 Web 服务扩容；Agent Skills 负责「按需加载流程性领域知识」，走渐进披露：启动只读 YAML frontmatter 里的 name 与 description，真要用时才把 SKILL.md 与脚本拉进上下文，用来治工具膨胀与上下文饱和。对使用者有两条现实影响：标准不再由单一厂商控制，变更节奏会更快、来源更多；同时协议层变更不再有「厂商补丁通知」，它应当被当成需要纳入依赖监控与安全复评的组件，而不是一次性接入就完事。",
+      "source": "Linux 基金会 AAIF / Google 开源博客",
+      "link": "https://fosswire.org/news/mcp-and-agent-skills-standards-join-linux-foundations-agenti",
+      "models": []
+    },
+    {
+      "title": "OpenAI 图形化 Agent Builder 定于 11 月 30 日关停，多智能体原语转由 SDK 承接",
+      "summary": "OpenAI 的视觉化 Agent Builder 已进入退场倒计时：2026 年 11 月 30 日关停，用户需在此之前迁到 Agents SDK / ChatKit，或把编排逻辑直接写进代码。与之配套，Responses / Agents 文档继续把 spawn、message、wait、interrupt 这类多智能体原语变成平台常识，并给出「什么情况下该用并行子代理」的具体建议——子任务确实独立且可并行才拆，否则只是把成本和失败点乘起来。方向很清楚：可视化编排退场，编排回到代码与 SDK 里，可版本化、可评审。",
+      "source": "OpenAI 文档 / AI Agent Store 周报",
+      "link": "https://aiagentstore.ai/ai-agent-news/topic/agent-collaboration/detailed",
+      "models": []
+    },
+    {
+      "title": "Claude Code 2.1.326：Code Mode 与 agent teams 打通，MCP 加载失败不再拖累其他会话",
+      "summary": "Claude Code 11 月 17 日发布 2.1.326。要点：开启 agent teams 后可直接启用 Code Mode，已开启团队的会话现在默认以 Code Mode 启动；启动时对 --allowedTools / --disallowedTools / --tools 里不像完整规则的条目给警告；会话中途管理员新增 managed-mcp.json 时，会说明 MCP 服务器为何停止加载；单个 MCP 服务器的 headersHelper 执行失败（或未在受信目录运行）不再让其他会话也丢掉该服务器；managed settings 值嵌套超过 64 层会被丢弃并告警，避免深层嵌套把程序拖崩；新增 OTEL_RESOURCE_INCLUDE_HOST，可把 host.name 与 host.id 带进 OpenTelemetry 资源属性（默认关）。此外还有一批与权限、沙箱、后台会话相关的修复，包括让删除或覆写文件的 Bash 命令不再在记录里被概括成「搜索」或「读取」。",
+      "source": "Claude Code Release Notes / Havoptic",
+      "link": "https://havoptic.com/",
+      "models": []
+    },
+    {
+      "title": "Google Antigravity 开放 Dynamic Workflows：让 agent 写 Python 脚本编排子代理",
+      "summary": "Google Antigravity 开始推送 Dynamic Workflows：用 /run-workflow 触发后，agent 自己写一段 Python 脚本，把并行与串行的子代理编排起来，并在步骤之间做结构化交接，用户本地不必装 Python。它与 11 月 15 日那份用 /teamwork 把长程数学与系统工程问题拆给子代理、协调者、批评者与验证者的汇报是同一条路线的产品化——多智能体从「演示怎么拆活」走向「把拆活写成可复用脚本」。",
+      "source": "Antigravity CLI 更新日志 / Havoptic",
+      "link": "https://havoptic.com/",
+      "models": []
+    },
+    {
+      "title": "后门改走配置：团伙篡改 .claude/settings.json，让开发者一启动 Claude Code 就拉下木马",
+      "summary": "GTIG 与 Mandiant 在同一份报告里记录了疑似朝鲜关联团伙 MIDNIGHT NEPTUNE 的新手法：针对北美与欧洲的加密货币公司，先用头像带 Google SynthID 水印的假招聘方接触目标，再用仿冒会议平台配合 ClickFix 诱导受害者运行所谓「诊断修复脚本」；得手后并不依赖编码助手本身的漏洞，而是修改内部仓库里的 .claude/settings.json，使开发者下次启动 Claude Code 时自动拉取 SOMBERMEME 后门。也就是说，配置钩子本身就是一个合法的执行入口。对团队的提醒很具体：把 .claude/、.mcp.json 这类 agent 配置文件纳入代码评审与完整性校验，别默认「配置文件是安全的」。",
+      "source": "Google GTIG / Mandiant（The Register 报道）",
+      "link": "https://secnews.co.uk/2026/11/google-ai-agent-patches-into-exploits-no-human",
+      "models": []
     }
   ]
 }
