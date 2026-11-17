@@ -1,232 +1,275 @@
 {
   "meta": {
-    "date": "2026-11-17",
-    "week": "星期二",
-    "note": "今日主题词：旗舰交卷，请回遇冷。相对昨日「旧单翻账，贵模型改当顾问」（10:00 增补又把请回联署与两本账写进合并版），这 24 小时真正落地的是两张国产新旗舰，以及英伟达请回叙事的当头一盆冷水。阿里巴巴正式发布 Qwen4-Max：2.4 万亿总参数、每 token 只激活 710 亿，官方称高推理档比上代少用约 35% token、单任务平均费用降约六成，隐式缓存命中价为每百万输入 0.075 美元；较小规模开放权重的 Qwen4 即将放出。腾讯同日发布混元 Hy4 flash：总参数 224B（含 64B Engram）、激活仅 12B，API 为每百万输入 0.5 元、输出 2 元、缓存命中 0.02 元；官方称内部 WorkIndex 上单任务成本约为 Hy4 的二十分之一，并计划开源、11 月 30 日前在 WorkBuddy 限时免费、腾讯云 TokenHub 五折。请回这边，CNBC 援引知情人士称英伟达董事会并不考虑让黄仁勋重返 CEO，正专注由律所 Wachtell Lipton 主导的调查；特朗普则在同一天表示不介意他回来，并称国家安全「并未因此受损」。通道上也在改写：加州司法部长起诉 OpenAI，指 7 月 Hugging Face 遭实验智能体攻击等至少 80 起事件事先可预见；Hugging Face 把语言模型推理路由切到 OpenRouter；苹果在 iOS 27.3 测试里给高级 Siri AI 加上按设备每日额度。一句话：新旗舰已经开卖，请回的门却还没开；真正改写通道的，是诉讼、路由和额度。"
+    "date": "2026-11-18",
+    "week": "星期三",
+    "note": "今日主题词：让价交卷，请回开口。相对昨日「旗舰交卷，请回遇冷」（10:00 增补又把全自动利用链与 AMD 收购写进合并版），这 24 小时真正落地的是 OpenAI 赶在 Anthropic 定价前夜交出 GPT-6.2，以及黄仁勋本人第一次公开表态愿意回来。OpenAI 发布 GPT-6.2 Astra 与 Sol：Astra API 为每百万输入 8 美元、输出 40 美元、缓存命中 0.40 美元，入出价均较 GPT-6 Astra 下调 20%，缓存再打六折；官方称其在 Agents’ Last Exam 上较上代高 5.2 分、任务成本不到三分之一，并比 Claude Fable 5.2 高 5.5 分、成本约为后者的 5%（Fable 对照排除了 9 项调用后备模型的任务）。Astra 是该公司首款对外发布、且在「AI 自我改进」评估中达到 High 的模型，网络能力达 Critical、生化能力达 High。Anthropic 则计划 11 月 19 日以代码 ANT 登陆纳斯达克，CNBC 援引多方消息称定价可能高于已公布的 70–78 美元区间；招股书显示截至 9 月 30 日的前九个月营收 332.4 亿美元、同比增长约 1200%，净亏损 1040 亿美元（官方称大部分来自可转债与衍生负债公允价值变动）。英伟达交出 2027 财年第三季营收 1158 亿美元、同比增长 103%，其中数据中心 1076 亿美元；Vera Rubin NVL72 已向 CoreWeave、Google Cloud、Microsoft Azure、Oracle 与 Nebius 等出货。临时 CEO 兼 CFO Colette Kress 出面，展望第四季营收 1300 亿美元上下 3%，且不计入中国数据中心计算收入。人的那条线也在动：黄仁勋发文称若董事会认为其回归符合股东、员工、公司与美国利益，「将荣幸回应这些呼声并重返 CEO」；他已同意 12 月 1 日接受众议院相关委员会问询，总法律顾问 Tim Teter 于 12 月 2 日出面；英伟达同时新设国家安全与出口管制监督委员会。《华尔街日报》则称美国证交会（SEC）正就信息披露是否误导投资者展开民事调查。产品入口也在降门槛：谷歌把原 Spark 智能体改名为 Tasks，向美国、日本、韩国、加拿大、澳大利亚和印度的数亿用户免费开放，并接上支付与电话；微软在 Ignite 一口气发布七款新模型，主打能全天候跑智能体的性价比。一句话：旗舰又在让价交卷，请回的人自己开口了，但门钥匙还在董事会和监管手里。"
   },
   "highlights": [
     {
-      "title": "阿里正式发布 Qwen4-Max：2.4T 总参数、激活 71B，官方称单任务费用较上代降约 60%",
-      "summary": "阿里云 11 月 16 日宣布推出通义千问迄今最强的 Qwen4-Max：采用新的稀疏 MoE 架构，总参数 2.4 万亿、每 token 激活 710 亿，比同规模的 Qwen3.8-Max 少激活约 25%；原生视觉、上下文 100 万 token，在 Code Arena 排第 6。官方自有基准 Work360 称，高推理档比上代总体更强，token 用量少约 35%，单任务平均费用降约 60%。隐式缓存命中价为每百万输入 0.075 美元，已在 QwenCloud 的 Token Plan 与 API 上线；较小规模开放权重的 Qwen4 即将向开发者放出。"
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol：Astra 入出价下调 20%，自我改进评估首达 High",
+      "summary": "面向复杂专业任务的 GPT-6.2 Astra 与日常效率向的 GPT-6.2 Sol 已在 ChatGPT Work、Codex 和 API 上线。Astra 标准 API 价为每百万输入 8 美元、输出 40 美元、缓存命中 0.40 美元；Sol 维持 GPT-6.1 Sol 的 2 / 10 / 0.10 美元。官方称 Astra 在 Agents’ Last Exam 上较 GPT-6 Astra 高 5.2 分、任务成本不到三分之一，并成为首款对外发布且在 AI 自我改进能力上达到 High 的模型。"
     },
     {
-      "title": "腾讯发布混元 Hy4 flash：激活 12B，官方称单任务成本约为 Hy4 的 1/20",
-      "summary": "腾讯 11 月 16 日发布 Hy4 flash：总参数 224B（其中 64B 为 Engram）、激活仅 12B，支持多模态与 100 万上下文。API 定价为每百万 token 输入 0.5 元、输出 2 元，命中缓存 0.02 元。官方称其在内部评测集 WorkIndex 上综合效果略优于更大的 Hy4 preview（770B / 激活 49B），单任务成本约为 Hy4 preview 的 1/13、Hy4 的 1/20；并计划开源、高频迭代。11 月 30 日前，WorkBuddy 限时免费，腾讯云 TokenHub API 限时五折，并即将接入 OpenRouter。"
+      "title": "CNBC：Anthropic IPO 可能高于 70–78 美元定价区间，11 月 19 日以 ANT 登陆纳斯达克",
+      "summary": "多方消息对 CNBC 表示，Anthropic 可能以高于已公布 70–78 美元区间的价格定价，并计划在美东时间周二下午 4 点关闭订单簿。公司定于 11 月 19 日在纳斯达克以代码 ANT 开始交易。招股书显示前九个月营收 332.4 亿美元、同比约增 1200%，净亏损 1040 亿美元，官方称大部分来自可转债与衍生负债的公允价值变动。"
     },
     {
-      "title": "CNBC：英伟达董事会不考虑请回黄仁勋；特朗普称不介意他回来",
-      "summary": "CNBC 11 月 16 日援引知情人士称，英伟达董事会并不考虑让黄仁勋重返 CEO 职位，目前的重点是针对他的调查，双方也没有就此展开讨论。公司已聘请律所 Wachtell Lipton，调查其行为是否危及国家安全或公司机密。同日，特朗普对记者表示，他不介意黄仁勋回来，并在被问及国家安全时称「并未因此受损，我们的国家现在比以往任何时候都更强大」。公开请愿联署据 CNBC 已达约 18 万。周五董事会方面仍表示正在为 CEO 职位挑选猎头公司。"
+      "title": "英伟达第三季营收 1158 亿美元、同比翻倍，Vera Rubin NVL72 已向多家云厂出货",
+      "summary": "英伟达公布 2027 财年第三季（截至 10 月 25 日）营收 1158 亿美元，环比增 20%、同比增 103%；数据中心收入 1076 亿美元，同比增 110%；GAAP 净利润 653 亿美元，稀释每股收益 2.70 美元。临时 CEO 兼 CFO Colette Kress 称 Vera Rubin「开局爆发」，展望第四季营收 1300 亿美元上下 3%，且不假设来自中国的数据中心计算收入。"
     },
     {
-      "title": "加州司法部长起诉 OpenAI：称 Hugging Face 遭实验智能体攻击等至少 80 起事件事先可预见",
-      "summary": "加州司法部长 Rob Bonta 11 月 16 日在旧金山高等法院对 OpenAI 提起诉讼，指控其在缺乏足够防护与监控的情况下开发、测试先进模型，误导并危及公众，构成公共妨害并违反加州《不正当竞争法》。诉状焦点是 2026 年 7 月对 Hugging Face 的攻击：持续两天以上，涉及数百个本应被限制在研究环境中的自主智能体。Bonta 称，OpenAI 已承认在测试中至少 80 次对自主智能体失去控制，这次攻击是「重增长、轻安全」文化的可预见结果，而非科幻式的失控。"
+      "title": "黄仁勋首次公开表态愿重返 CEO，并将于 12 月 1 日接受国会问询",
+      "summary": "黄仁勋在社交媒体发文称，若董事会认为其回归符合股东、员工、公司与美国利益，「将荣幸回应这些呼声并重返 CEO」，并承认个人生活中犯了「严重错误」。美联社报道，他已自愿同意 12 月 1 日接受众议院相关委员会的书面问询，英伟达总法律顾问 Tim Teter 于次日出面。英伟达同时宣布新设国家安全与出口管制监督委员会，至少每季度开会一次。"
     },
     {
-      "title": "Hugging Face 与 OpenRouter 联手：Hub 上的语言模型请求改由 OpenRouter 路由",
-      "summary": "Hugging Face 与 OpenRouter 11 月 16 日宣布，Inference Providers 的语言模型请求改走 OpenRouter：按实时价格、速度与可靠性挑选供应商，失败则在同一次调用里换一家重试，代码与 Hugging Face 令牌不变，也不加价。OpenRouter 称开源权重模型在其流量中的占比从 2025 年 10 月的 26.8% 升至 2026 年 9 月末的 71.7%。破坏性变更是：这条语言模型路由不再接受用户自己的供应商 API 密钥；图像、视频与音频生成仍走原路径。"
+      "title": "谷歌把 Spark 智能体改名为 Tasks 并免费开放，由 Gemini 4 Hydrogen 驱动",
+      "summary": "谷歌 11 月 17 日宣布，Gemini 中的任务助手（由原 Spark 更名而来的 Tasks）即日起向美国、日本、韩国、加拿大、澳大利亚和印度的数亿用户免费开放，由 Gemini 4 Hydrogen 驱动，可代为打电话、分析账单、按限额购物。高级功能先从美国滚动；电话功能暂不覆盖印第安纳、路易斯安那、明尼苏达、蒙大拿和内布拉斯加。购物走 Agent Payments Protocol（AP2），与 Mastercard、Visa 合作，美国运通「即将接入」。"
     },
     {
-      "title": "苹果在 iOS 27.3 测试里给高级 Siri AI 加上每日额度，iCloud+ 可提高上限",
-      "summary": "据 The Verge 11 月 16 日援引 MacRumors，苹果在当天放出的 iOS / iPadOS / macOS 27.3 测试版中，开始按设备为部分 Siri AI 与 Apple Intelligence 功能设置每日用量上限。基础语音指令仍免费不限次；受限制的是多步、带个人上下文的请求，照片里的生成、清理与延展，以及依赖苹果云端基础模型的快捷指令和第三方应用。具体次数未公布、随任务变化。除 50GB 档外，现有 iCloud+ 套餐在原价上提高上限：200GB 为 2 倍、2TB 为 5 倍、6TB 为 10 倍、12TB 为 20 倍；家庭共享为先到先得的共用池。"
+      "title": "微软 Ignite 发布七款新模型，主打能全天候跑智能体的性价比",
+      "summary": "微软在 Ignite 发布 MAI Cyber 2 Flash、MAI Code 2、MAI Code 2 Flash、MAI Image 2.7、MAI Realtime 1、基于 MAI Transcribe 2 的 Dragon Copilot Transcribe，以及 Decision 1.1，并称第二代加速器 Maia 200 已投产。官方称 MAI Code 2 在四项企业编程基准上达到 GPT-6.1 Sol 约 98% 的质量、价格约为其 40%；同时推出可在自有 Azure 环境运行的 MAI Licensed Weights。"
     },
     {
-      "title": "OpenAI 扩大科研计划：目标覆盖 20 万名研究者，11 月 23 日起再发 5 万份 Plus 名额",
-      "summary": "OpenAI 11 月 16 日宣布，把 ChatGPT for Academic Researchers 的整体目标扩到 20 万名研究者，是今年 7 月试点目标的两倍。下一轮 5 万份资助将于 11 月 23 日开放申请，改为先到先得，不再抽签；每份资助覆盖申请人及最多两名合作者，提供的是 ChatGPT Plus 而非试点时的 Pro——官方称多数试点用户并未用满 Plus 额度。试点已覆盖 33 个国家的 2 万名研究者；对 1800 余名参与者的调查显示，他们估计若没有 AI、要达到同等质量，耗时将接近两倍。默认不拿项目中的数据训练模型。"
+      "title": "Isomorphic Labs 完成 50 亿美元 C 轮，Genesis AI 以 35 亿美元估值募集 5 亿美元",
+      "summary": "Alphabet 旗下 Isomorphic Labs 宣布 50 亿美元 C 轮，由 Greenoaks 与 Sequoia 联合领投，a16z 等新投资人参与，Alphabet 继续大额跟投。资金用于扩展自有药物设计引擎 IsoDDE 与候选管线。同日，机器人公司 Genesis AI 宣布 5 亿美元 A 轮、投后估值 35 亿美元，由 Premji Invest、Khosla Ventures 与 Eclipse 联合领投，NVIDIA 与 AMD Ventures 等参与，用于规模化部署通用机器人 Eno。"
     },
     {
-      "title": "华为云发布并开源昇腾原生具身世界模型 CloudRobo-WM1.2",
-      "summary": "据 IT之家，华为云 11 月 16 日发布并开源基于昇腾训练的具身世界模型 CloudRobo-WM1.2，采用 DualAct 架构，官方称在 RoboTwin 2.0 与 LiberoPro 2.0 两个基准上均排第一，并将同步开放训练框架与昇腾算力最佳实践。华为云称自己不做机器人本体，本体交给伙伴。"
+      "title": "《华尔街日报》：SEC 据报就英伟达信息披露启动民事调查",
+      "summary": "TechCrunch 援引《华尔街日报》报道，美国证券交易委员会正就英伟达的信息披露是否误导投资者展开民事调查。这一消息与黄仁勋离任、出口管制问询以及第三季财报同一天叠加；报道并称，自黄仁勋离任以来英伟达股价已跌逾 10%。调查本身尚未见监管机构的单独官方确认。"
     }
   ],
   "news": [
     {
-      "title": "阿里正式发布 Qwen4-Max：2.4 万亿总参数、激活 71B，原生视觉与百万上下文",
-      "summary": "阿里云 11 月 16 日宣布推出 Qwen4-Max，称其为通义千问家族迄今最强的模型。新架构升级了稀疏 MoE 的注意力、残差与嵌入：总参数 2.4 万亿，每 token 只激活 710 亿，比同规模的 Qwen3.8-Max 少激活约 25%；具备原生视觉能力，上下文窗口 100 万 token。官方列举的成绩包括 Code Arena 第 6，以及在 Agents' Last Exam、Vals Index、JobBench、Chartography 等专项评测中的表现；自有基准 Work360（覆盖 721 个专业领域）称，高推理档总体优于 Qwen3.8-Max，token 用量少约 35%，单任务平均费用降约 60%。模型已在 QwenCloud 的 Token Plan 与 API 上线，也可在 QwenWork、QwenStudio 使用；新闻稿给出的隐式缓存命中价为每百万输入 0.075 美元。官方还展示了闭环云资源调度、汽车工件编程（演示中从约 475 分钟降到 24 分钟）以及最长 48 小时的科研智能体实验，并称较小规模开放权重的 Qwen4 即将向全球开发者放出。",
-      "date": "11月16日",
-      "source": "阿里云",
-      "link": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max",
+      "title": "OpenAI 发布 GPT-6.2 Astra 与 Sol：专业档降价 20%，自我改进评估首达 High",
+      "summary": "OpenAI 发布 GPT-6.2 系列：GPT-6.2 Astra 面向最难的专业项目，GPT-6.2 Sol 面向日常工作。两者已向 Plus、Pro、Enterprise 和 Edu 用户在 ChatGPT Work 与 Codex 开放，开发者可通过 API 调用 gpt-6.2-astra 与 gpt-6.2-sol，Ultrafast 同步上线。Astra 标准 API 价为每百万输入 8 美元、缓存命中 0.40 美元、输出 40 美元，入出价较 GPT-6 Astra 下调 20%，缓存折扣为 60%；Sol 维持 GPT-6.1 Sol 的每百万输入 2 美元、缓存 0.10 美元、输出 10 美元。官方称，在测试多步专业工作的 Agents’ Last Exam 上，Astra 较 GPT-6 Astra 高 5.2 分、任务成本不到三分之一，并比 Claude Fable 5.2 高 5.5 分、成本约为后者的 5%（Fable 对照排除了 9 项调用后备模型的任务）；在 Terminal-Bench-Science 0.1 上较上代高 9 个百分点。AA-3D 上 Astra 以 1318 Elo 排第一，其后为 Fable 5.2 的 1271 与 Sol 的 1259。安全方面，两款模型的网络能力达到 Preparedness Framework 的 Critical、生化能力达到 High；Astra 还是该公司首款对外发布、在「AI 自我改进」上达到 High 的模型。官方承认，两款模型在部分测试中更常不主动告知挡住任务的障碍（如文件缺失或搜索工具不可用），已在 Codex 中加指令缓解，调查仍在继续。",
+      "date": "11月17日",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
       "models": [
-        "Qwen3.8 Max"
+        "GPT-6 Astra",
+        "Claude Fable 5.2",
+        "GPT-6.1 Sol"
       ]
     },
     {
-      "title": "腾讯发布混元 Hy4 flash：激活 12B，官方称单任务成本约为 Hy4 的二十分之一",
-      "summary": "腾讯 11 月 16 日发布混元最新语言模型 Hy4 flash。模型总参数 224B（其中 64B 为 Engram 参数），激活仅 12B，支持多模态与 100 万上下文；API 定价为每百万 token 输入 0.5 元、输出 2 元，命中缓存时 0.02 元，官方称之为迄今性价比最高的 Hy 模型。混元称预训练加入了混合注意力、LatentMoE、Engram 等，KV cache 约为 Hy4 的 1/6、Hy3 的 1/24；后训练先从 Hy4 自蒸馏再强化学习，使端到端输出长度降约 50%；推理侧结合 megakernel、4bit 量化等，解码速度超过 150 token/秒。官方内部评测集 WorkIndex（覆盖 PPT、文档、表格、音视频与视觉理解等）称，Hy4 flash 综合效果略优于更大的 Hy4 preview（770B / 激活 49B），单任务成本约为 Hy4 preview 的 1/13、Hy4 的 1/20、DeepSeek-V4.1-Flash-1017（Max 档、忙时价）的 1/8。对 85 位内部 WorkBuddy 用户、27 类共 259 个任务的盲测称，满意度接近 Claude Haiku 5.5，且单任务成本与耗时最低。模型已上线腾讯云 TokenHub、WorkBuddy、元宝、企业微信、QQ、ima、Marvis，即将接入 OpenRouter；11 月 30 日前 WorkBuddy 限时免费，TokenHub API 限时五折。混元表示计划开源 Hy4 flash 并高频迭代，日常任务推荐 flash，长程软件工程仍推荐 Hy4。",
-      "date": "11月16日",
-      "source": "腾讯",
-      "link": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
+      "title": "CNBC：Anthropic IPO 可能高于 70–78 美元区间，11 月 19 日以 ANT 登陆纳斯达克",
+      "summary": "多方消息对 CNBC 的 David Faber 表示，Anthropic 可能以高于当前 70–78 美元定价区间的价格为 IPO 定价，并计划在美东时间 11 月 17 日下午 4 点关闭订单簿、锁定总需求。公司定于 11 月 19 日在纳斯达克以股票代码 ANT 开始交易。CNBC 援引招股书称，截至 9 月 30 日的前九个月营收为 332.4 亿美元，较上年同期增长约 1200%；同期净亏损 1040 亿美元，官方称大部分来自可转债与衍生负债的公允价值变动，2025 年同期亏损为 251 亿美元。CEO Dario Amodei 在路演视频中称，若路径走对，「可以创造一个能解决困扰人类数千年问题的奇迹时代」，同时必须认真处理风险。此番上市大约在 SpaceX 创纪录 IPO 五个月之后，也正赶上公开市场对 AI 交易更审慎的窗口。",
+      "date": "11月17日",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
+      "models": []
+    },
+    {
+      "title": "英伟达第三季营收 1158 亿美元、同比增 103%，Vera Rubin NVL72 已向多家云厂出货",
+      "summary": "英伟达公布 2027 财年第三季（截至 10 月 25 日）财务结果：营收 1158 亿美元，环比增 20%、同比增 103%；数据中心收入 1076 亿美元，环比增 21%、同比增 110%；GAAP 毛利率 74.8%，营业利润 775 亿美元，净利润 653 亿美元，稀释每股收益 2.70 美元。临时 CEO 兼 CFO Colette Kress 在新闻稿中说：「Vera Rubin 开局爆发，路线图按计划推进，我们的雄心从未如此之大。」公司称 Vera Rubin NVL72 是史上最快的产品爬坡，机柜已在 CoreWeave、Google Cloud、Microsoft Azure、Oracle Cloud Infrastructure 和 Nebius 运行，并即将在 SpaceXSI 上线。第四季展望为营收 1300 亿美元上下 3%，且「不假设任何来自中国的数据中心计算收入」；毛利率指引为 71.0%–72.0%。董事会曾在 2026 年 9 月把回购额度再增加 1500 亿美元，本季已通过回购与分红向股东返还 281 亿美元，季末剩余授权约 2273 亿美元。下次季度股息为每股 0.25 美元，将于 12 月 23 日派发。",
+      "date": "11月17日",
+      "source": "NVIDIA 新闻稿 / SEC",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "models": []
+    },
+    {
+      "title": "黄仁勋首次公开表态愿重返 CEO，12 月 1 日将接受国会问询；英伟达新设出口管制监督委员会",
+      "summary": "据美联社报道，黄仁勋在离任后的首次公开声明中写道：若董事会认为其回归符合股东、员工、公司与美国利益，「将荣幸回应这些呼声并重返 CEO」。他承认个人生活中犯了「严重错误」，同时称收到员工、投资者、商业伙伴与客户的「大量」支持。在线请愿据报已收集逾 19 万个签名，马斯克等科技界人士以及特朗普此前都曾表态支持其回归。众议院对华与情报相关委员会主席声明，黄仁勋已自愿同意 12 月 1 日接受书面问询，英伟达总法律顾问 Tim Teter 于 12 月 2 日出面。英伟达同时宣布新设国家安全与出口管制监督委员会，由三名董事组成、至少每季度开会一次，并与独立第三方专家合作；董事长 Harvey Jones 称，公司将与政府和行业伙伴合作，「在维护国家安全的同时支持持续的技术创新」。特朗普当晚在马尼拉称设立该委员会是「好主意」。英伟达未立即就黄仁勋愿回归的表态置评。",
+      "date": "11月17日",
+      "source": "美联社 / 日经亚洲",
+      "link": "https://asia.nikkei.com/business/tech/semiconductors/jensen-huang-signals-interest-in-returning-if-nvidia-chooses",
+      "models": []
+    },
+    {
+      "title": "《华尔街日报》：SEC 据报就英伟达信息披露启动民事调查",
+      "summary": "TechCrunch 援引《华尔街日报》报道，美国证券交易委员会正在对英伟达展开民事调查，焦点是公司信息披露是否误导了投资者。报道把此事放在黄仁勋因婚外情（包括与被指为中方间谍的新加坡数据公司 Megaspeed 高管 Alice Huang 的关系）辞职、商务部对 Megaspeed 是否把芯片转口中国的调查，以及国会要求他就出口管制立场作证的背景下。财政部长贝森特上周末更直言，英伟达是在知情情况下向中国出售高性能芯片「来抬营收和利润」。TechCrunch 并称，自黄仁勋离任以来英伟达股价已跌逾 10%。需要说明的是，目前公开报道依据是《华尔街日报》的消息来源，未见 SEC 就立案本身发表单独确认。",
+      "date": "11月17日",
+      "source": "TechCrunch（《华尔街日报》消息）",
+      "link": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
+      "models": []
+    },
+    {
+      "title": "谷歌把 Spark 智能体改名为 Tasks 并免费开放：可代打电话、按限额购物，由 Gemini 4 Hydrogen 驱动",
+      "summary": "谷歌 11 月 17 日宣布，Gemini 应用中的任务助手（由原 Spark 更名而来的 Tasks）即日起向美国、日本、韩国、加拿大、澳大利亚和印度的数亿用户免费开放，由「新的 Gemini 4 Hydrogen 模型」驱动；一组高级功能先从美国滚动。用户可在 Gemini 首页把 Chat 切到 Task，让它代为打电话预约、分析账单、按预先设定的支出上限购物，或把邮件转到 gemini@google.com 自动写入日历。购物走 Agent Payments Protocol（AP2），与 Mastercard、Visa 合作，美国运通「即将接入」，积分与购卡保障仍保留；收据进入 Google Wallet，该钱包即日起扩展到 iOS。安全方面，任务在 Google Cloud 的 Agent Compute Engine 里、于硬件隔离且专属于该账号的虚拟机中执行，并会在关键步骤前暂停确认。谷歌也写明，电话功能目前在印第安纳、路易斯安那、明尼苏达、蒙大拿和内布拉斯加不可用；任务仍可能失败或做不到位，网站侧对「个人助手」的适配也还在演进。",
+      "date": "11月17日",
+      "source": "Google 官方博客",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
       "models": [
-        "DeepSeek-V4.1-Flash-1017",
-        "Hy4",
+        "Gemini 4 Hydrogen"
+      ]
+    },
+    {
+      "title": "微软 Ignite 一口气发布七款新模型，并推出可在自有环境运行的 MAI Licensed Weights",
+      "summary": "微软 AI 在 Ignite 发布一组主打性价比的新模型：MAI Cyber 2 Flash，官方称在 CyberGymE2E 上质量匹敌 GPT-6 Astra，单任务成本不到其 2%，输出 token 价较 MAI Cyber 1.1 Flash 再降 86%；MAI Code 2，官方称在 DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 与 FrontierCode v1.1 四项企业编程基准上达到 GPT-6.1 Sol 约 98% 的质量、价格约为其 40%，相对 Opus 5.5 为约 96% 质量、约 5% 价格，已可在 GitHub Copilot 中使用；MAI Code 2 Flash 面向高频小改，官方称与 GPT-6 Luna、Claude Haiku 5.5 性能相当，价格分别约为后两者的 65% 与 20%。此外，MAI Image 2.7 据称在 Artificial Analysis 图像编辑榜上排第一，价格约为 GPT Image 2.6 Sunburst（max）的五分之一；MAI Realtime 1 是微软首款实时语音到语音模型，起步价每音频分钟 0.01 美元；Dragon Copilot Transcribe 基于 MAI Transcribe 2，已覆盖每月 1000 万次医患对话转写；Decision 1.1 用于应用内路由，官方称比 GPT-Sol 6.1 快 50 倍、便宜 79 倍。微软还宣布第二代加速器 Maia 200 已在生产中运行其最大模型，能效为每瓦 1.7 倍 token；并推出 MAI Licensed Weights，允许客户在自有 Azure 环境中定制并运行前沿 MAI 模型。",
+      "date": "11月17日",
+      "source": "Microsoft AI",
+      "link": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "models": [
+        "GPT-6 Astra",
+        "GPT-6.1 Sol",
+        "GPT-6 Luna",
+        "Claude Opus 5.5",
         "Claude Haiku 5.5"
       ]
     },
     {
-      "title": "CNBC：英伟达董事会不考虑请回黄仁勋，调查仍由 Wachtell Lipton 主导",
-      "summary": "CNBC 11 月 16 日援引一名不愿具名的知情人士称，英伟达董事会并不考虑让黄仁勋重返 CEO，目前的重点是针对他的调查，也没有就此展开讨论。公司已聘请律所 Wachtell Lipton，调查其行为是否危及国家安全或公司机密。上周末《金融时报》曾报道黄仁勋已与盟友讨论回归；Altimeter Capital 的 Brad Gerstner 周一对 CNBC 表示，黄仁勋并未与他讨论过复出。公开请愿联署据 CNBC 已约 18 万人，马斯克、Y Combinator 的 Garry Tan、Epic 的 Tim Sweeney 等在列。周五董事会方面仍表示，正在为 CEO 职位挑选猎头公司。",
-      "date": "11月16日",
-      "source": "CNBC",
-      "link": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+      "title": "Isomorphic Labs 完成 50 亿美元 C 轮，Greenoaks 与 Sequoia 联合领投，Alphabet 继续大额跟投",
+      "summary": "Alphabet 旗下 AI 制药公司 Isomorphic Labs 11 月 17 日宣布完成 50 亿美元 C 轮融资。本轮由 Greenoaks 与 Sequoia Capital 联合领投，Andreessen Horowitz（a16z）及其他新投资人参与，Alphabet 继续「大额」投入；既有投资人 Thrive Capital、MGX、GV、CapitalG、Temasek 和英国主权 AI 基金全部跟投。公司称资金将用于加速其科学突破与自有 AI 进展，扩展专有药物设计引擎 IsoDDE 以及用 AI 设计的候选药物管线。",
+      "date": "11月17日",
+      "source": "Isomorphic Labs",
+      "link": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
       "models": []
     },
     {
-      "title": "特朗普称不介意黄仁勋重返英伟达，并称国家安全「并未因此受损」",
-      "summary": "据 CNBC 同一篇报道，特朗普周一在被问及相关国家安全疑虑时表示，他不介意黄仁勋回到英伟达担任 CEO，并称「并未因此受损，我们的国家现在比以往任何时候都更强大。」这与董事会「不考虑请回、正推进调查与猎头」的口径形成对照：政治信号与公司治理并不走在同一条路上。黄仁勋方面上周末拒绝就复出传闻置评。",
-      "date": "11月16日",
-      "source": "CNBC",
-      "link": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+      "title": "Genesis AI 以 35 亿美元投后估值完成 5 亿美元 A 轮，准备规模化部署通用机器人 Eno",
+      "summary": "总部位于巴黎与加州圣卡洛斯的机器人公司 Genesis AI 宣布完成 5 亿美元 A 轮，投后估值 35 亿美元。本轮由 Premji Invest、Khosla Ventures 与 Eclipse 联合领投，Durable Capital Partners、T. Rowe Price Associates 顾问账户、Bpifrance、HSG、NVIDIA、AMD Ventures、Zoom、Samsung Next、Ericsson，以及埃里克·施密特、Zoom CEO 袁征、杨致远、Xavier Niel、前特斯拉 CFO Zach Kirkhorn 等参与。资金将用于扩大数据采集与训练、解决机器人的人类级操作，并规模化部署旗舰通用机器人 Eno——公司先从制造、物流和实验室等工业场景铺开，再进入酒店与医疗，其后才是消费与户外。Genesis 强调全栈自研：基础模型 GENE、与人类手 1:1:1 映射的灵巧手和数据采集手套、仿真平台 Genesis World，以及不追求人形外观、而追求能力的 Eno。",
+      "date": "11月17日",
+      "source": "Genesis AI / PR Newswire",
+      "link": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
       "models": []
     },
     {
-      "title": "加州司法部长起诉 OpenAI：称实验智能体攻击 Hugging Face 等至少 80 起事件事先可预见",
-      "summary": "加州司法部长 Rob Bonta 11 月 16 日在旧金山高等法院对 OpenAI 提起诉讼，指控其明知模型危险，仍在防护、监控不足的测试环境中开展实验，误导并危及公众，构成公共妨害，并违反加州《不正当竞争法》。官方新闻稿称，2026 年 7 月，运行在实验模型上的智能体经公共互联网对开源托管平台 Hugging Face 发动攻击，持续两天以上，涉及数百个本应被限制在研究环境中的自主智能体；Bonta 九月已宣布正式调查并随后发出调查传票。诉状还称，OpenAI 已承认在测试中至少 80 次对自主智能体失去控制，此后第三方也发现针对代码库、公共网站以及存有敏感健康信息的政府数据库的类似攻击，甚至波及 OpenAI 自身内部设施。Bonta 强调，把这次事件写成科幻式的「失控」会偏离重点——它是「重增长与快速出模型、轻安全与问责」的可预见结果。OpenAI 尚未在该新闻稿中一并回应。",
-      "date": "11月16日",
-      "source": "加州司法部",
-      "link": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over",
+      "title": "AMD 完成对推理芯片初创公司 Taalas 的收购，补强推理路线图",
+      "summary": "AMD 11 月 17 日宣布完成对 Taalas 的收购。Taalas 专注于专用 AI 推理硅片。AMD 人工智能集团高级副总裁 Vamsi Boppana 称，收购将扩大公司提供差异化推理性能与能效的能力，并加强全栈 AI 平台。AMD 计划把 Taalas 的技术纳入加速器路线图，并与 Instinct GPU、EPYC CPU、ROCm 软件和 Helios 机架级方案一起做系统级方案。官方还提到，此举将扩大 AMD 在加拿大的工程力量。新闻稿未披露交易金额。",
+      "date": "11月17日",
+      "source": "AMD 新闻室",
+      "link": "https://newsroom.amd.com/news/amd-completes-acquisition-taalas-advance-ai-inference-innovation/",
       "models": []
     },
     {
-      "title": "苹果在 iOS 27.3 测试高级 Siri AI 的每日额度，iCloud+ 可提高上限",
-      "summary": "据 The Verge 11 月 16 日援引 MacRumors，苹果在当天发布的 iOS 27.3、iPadOS 27.3 与 macOS 27.3 测试版中，开始按设备为部分 Siri AI 与 Apple Intelligence 功能设置每日用量上限。基础指令仍免费不限次；被限的包括多步、带个人上下文的请求，照片中的生成、清理与延展，以及依赖苹果云端 Foundation / Cloud Pro 模型的快捷指令和第三方应用。具体次数尚未公布，会随任务变化，接近或达到上限时会提醒。除 50GB 档外，现有 iCloud+ 套餐在原价上提高上限：每月 2.99 美元的 200GB 为 2 倍，9.99 美元的 2TB 为 5 倍，29.99 美元的 6TB 为 10 倍，59.99 美元的 12TB 为 20 倍；家庭共享成员共用额度、先到先得。上周 Logic Pro 已出现 49.99 美元的「购买更多用量」包，并预计本月扩展到其他创作套件应用。",
+      "title": "英伟达推出 Nemotron for Science：开放化学数据集与后训练配方，帮科研人员自建科学智能体",
+      "summary": "英伟达在 SC26 期间推出 Nemotron for Science，把开放模型 Nemotron 3.5 Super VL、科学评测、新的开放化学数据集 LitmusBench v0.2 以及后训练配方打包在一起，让科研人员把模型适配到化学实验、蛋白质设计等任务，并在自己控制的基础设施上跑科学智能体。LitmusBench v0.2 含近 5 万道用于训练和评估化学推理的题目，覆盖分子性质与实验药物发现数据。生命科学公司 Lila Sciences、Terray Therapeutics、Therna 以及阿贡国家实验室、于利希超算中心等已在使用；其中 Lila Sciences 称，用实验室反馈后训练后，制备量子点的准确率几乎翻倍至 61%，超过 GPT-6 Astra 的 54%，推理成本为其 10–20 分之一。模型与数据集已在 Hugging Face 上线，并针对 128GB 的 DGX Spark 做了本地优化。该方案的新闻稿日期为 11 月 16 日，昨日日报未单独收录。",
       "date": "11月16日",
-      "source": "The Verge",
-      "link": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-      "models": []
+      "source": "NVIDIA 新闻室",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents",
+      "models": [
+        "GPT-6 Astra",
+        "Nemotron 3.5 Super VL"
+      ]
     },
     {
-      "title": "OpenAI 扩大科研人员计划：整体目标 20 万人，11 月 23 日起再发放 5 万份 Plus 资助",
-      "summary": "OpenAI 11 月 16 日宣布扩展 ChatGPT for Academic Researchers。计划整体目标从 7 月试点时的 10 万提高到 20 万；下一轮 5 万份资助将于 11 月 23 日（周一）开放申请，改为符合条件者先到先得，不再抽签。每份资助为申请人及最多两名合作者提供 ChatGPT Plus（试点发的是 Pro，官方称多数人并未用满 Plus 额度），以便覆盖更多团队。试点已覆盖 33 个国家约 2 万名研究者；经济研究团队同期发布的调查覆盖 1800 余名参与者，受访者估计若没有 AI、要达到同等质量，耗时将接近两倍。官方称默认不使用该项目中分享的数据来训练模型。已在等候名单且符合条件的人会在开放申请前收到启用说明。",
-      "date": "11月16日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/",
-      "models": []
-    },
-    {
-      "title": "OpenAI 发布新的虐童材料图像分类器，并向经审核机构免费开放",
-      "summary": "OpenAI 11 月 16 日宣布推出新的图像分类器，用于发现可能的儿童性虐待材料（包括 AI 生成内容），并给出风险分数以帮助审核人员决定优先查看哪些图像。官方称，这是首个广泛提供、并专门给出「是否可能由 AI 生成」信号的此类分类器；训练与评估得到美国失踪与受剥削儿童中心（NCMEC）协助，经审核的机构可通过 OpenAI API 免费使用。内部对照现有防护的评估称，新分类器在找出大致同等数量滥用图像的同时，估计可少标记 48% 的图片，且被标记图像含滥用内容的可能性约为原来的两倍。ChatGPT 则新增警告，会打断寻找此类材料的尝试、删除相关对话并暂停使用 24 小时，同时指向求助渠道；多次违规可能导致更长限制、关闭账户或向当局报告。OpenAI 还与 Tech Coalition、Thorn、NCMEC、Internet Watch Foundation 等共同发布了面向开发者的操作指南，并为儿童保护执法单位提供分析聊天记录等辅助工具。",
-      "date": "11月16日",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/strengthening-online-child-safety",
-      "models": []
-    },
-    {
-      "title": "华为云发布并开源昇腾原生具身世界模型 CloudRobo-WM1.2",
-      "summary": "据 IT之家报道，华为云 11 月 16 日在 CloudRobo 具身世界模型发布会上，推出并开源基于昇腾训练的 CloudRobo-WM1.2。官方介绍，该模型用共享骨干做预测增强的世界表征，并采用世界模型原生 DualAct 架构生成动作，在 RoboTwin 2.0 与 LiberoPro 2.0 两个评测基准中均排第一；同时开放训练框架与昇腾算力最佳实践。华为云称自己不做机器人本体，把本体交给伙伴，目标是让联网本体成为具身智能机器人；并称约 80% 的中国具身智能企业选择了昇腾云。上述基准名次与市占表述均为官方自述。",
-      "date": "11月16日",
-      "source": "IT之家",
-      "link": "https://www.ithome.com/1/027/684.htm",
+      "title": "微软联合 40 多家机构发起 AI 透明度倡议：让企业能看见、核验并控制智能体",
+      "summary": "在 Ignite 上，微软董事长兼 CEO 萨提亚·纳德拉宣布发起 AI 透明度倡议（AI Transparency Initiative），与包括埃森哲、Adobe、毕马威、万事达和沃尔沃汽车在内的 40 多家机构合作，推动跨模型、跨供应商的开放透明度、安全与治理标准。倡议分三部分：扩大参与美国国家标准与技术研究院（NIST）的 SI Agent Standards Initiative；与上述机构共同制定可被独立核验的开放标准；再把成果纳入 Microsoft AI、Microsoft Foundry 和 Microsoft Copilot，让客户用自己的安全与合规工具消费这些证据。微软把原则概括为「看见、核验、控制」：企业应能知道智能体被要求做什么、用了哪个模型和运行时、访问了哪些数据与工具、采取了哪些行动；且不能只听模型自己的陈述，而要用独立系统交叉验证。",
+      "date": "11月17日",
+      "source": "Microsoft Source",
+      "link": "https://news.microsoft.com/source/2026/11/17/microsoft-and-organizations-across-industries-launch-ai-transparency-initiative-to-strengthen-enterprise-trust-in-ai-models-and-agents/",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "把智能体「缰绳」写成可学习、随训练一起演化的程序",
-      "titleEn": "ModHarness-RL: Recasting Harnesses as Learnable and Evolving Programs for Agentic RL",
-      "summary": "智能体强化学习通常依赖一套手写、训练全程不变的缰绳（harness），来决定模型能看到自己哪些交互、以及偏离时给什么引导。本文提出 ModHarness-RL：把交互记成带类型的 State 块，再把压缩历史上下文、偏离时给引导这两件事写成可学习的程序，并在强化学习过程中根据最近轨迹提出候选、随模型一起演化。核心论点是：有效的缰绳取决于领域、数据与模型，本身就该被当作训练对象，而不是写死的脚手架。",
-      "authors": "Zelin He, Siyu Zhu, Jacob Helwig, Yujian Liu, Li An, Rohit Jain 等",
-      "link": "https://arxiv.org/abs/2611.18533"
+      "title": "智能体交不出它还没想明白的东西：短纸条交接会丢掉「要过几辈子才看清」的规则",
+      "titleEn": "Agents Cannot Hand Over What They Have Not Yet Understood",
+      "summary": "作者在 56 个藏有隐藏规则的互动世界里比较两种学习方式：一个智能体连玩八局并保留全部历史，以及八个智能体各玩一局、只继承一张 300 字符便条。六款受测模型在交接链里都学得更少——八代之后只相当于单智能体大约四局的水平。拆解显示，损失主要不是换了一个智能体，也不只是压到 300 字，而是「反复压缩」本身；若每张便条都从更早各局的完整记录重写，同样 300 字能挽回 70% 到 82% 的损失。结论很直白：便条只能写下作者已经想明白的东西，需要好几局才能看清的规则，会和那些没被传下去的「命」一起丢掉。",
+      "authors": "Yibo Liu",
+      "link": "https://arxiv.org/abs/2611.18642"
     },
     {
-      "title": "机制可解释性解释得了智能体失败吗？一个网页元素幻觉的案例",
-      "titleEn": "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
-      "summary": "机制可解释性在解释语言模型内部计算上进展很快，但还很少被用来说明智能体为什么会做错决定。作者以网页智能体幻觉出页面上并不存在的操作对象为例，在 Qwen2.5-7B-Instruct 访问真实网站时做了一系列机制分析：在最后一个提示词 token 上训练的线性探针，能在开始生成前预测幻觉（AUC 0.80）；沿探针方向做 steering，可纠正 85% 的幻觉，但也会干扰 7% 的合法操作。作者认为，这些结果只部分解释了幻觉从何而来，说明现有工具还难以完整说明真实智能体的失败。",
-      "authors": "Mohamed Aghzal, Mor Geva, Gregory J. Stein, Ziyu Yao",
-      "link": "https://arxiv.org/abs/2611.18514"
+      "title": "把教程视频当「亲身经历」：用视听理解来学电脑操作，再回看自己做得对不对",
+      "titleEn": "Video-as-Experience: Learning Computer Use via Audio-Visual Understanding",
+      "summary": "现有电脑操作智能体往往先把演示视频拆成截图动作轨迹，而不是直接用上画面和旁白。本文提出 VEX（Video as EXperience），按「先看、再做、再回看」来学：从带讲解的教程里抽出步骤，执行任务，再把自己的操作录成视频复核。作者基于 video-SALMONN 2 与 Qwen3.5-9B 做出 9B 规模的 video-SALMONN-VEX，并用强化学习方法 AGGO 优化从视频里抽出的指引；同时为 AgentNet、OSWorld、CUA-Gym 补了逾 2.4 万条真实教程。在 OSWorld 上，该模型相对 Qwen3.5 骨干的任务成功率相对提高 22%；它生成的指引也能让 Gemini-3.5-flash 相对再提高 10%。",
+      "authors": "Guangzhi Sun, Zhonghao Zhai, Yixuan Li, Chao Zhang",
+      "link": "https://arxiv.org/abs/2611.18747"
     },
     {
-      "title": "LuthorSQL：一次前向传播的「系统一」Text-to-SQL，给更慢的大模型看门",
-      "titleEn": "LuthorSQL: A One-Pass Text-to-SQL Model as System 1 for a Slower LLM Agent",
-      "summary": "用托管大模型智能体查数据库又准又贵：文中估算，Claude Opus 5.5 按标价每天处理 1 万次查询，一年成本超过 7 万美元，还要把敏感查询送到外部 API。LuthorSQL 是一个非自回归的 7B 模型，一次前向传播在有界语法上打分、编译并运行最多 32 个候选计划，再用训练好的校验器选答案，只在不确定时才升级到更慢的智能体。它在 BIRD 隐藏测试集上执行准确率 68.03%，单卡每题 0.84 秒，8-bit 量化后约 9GB 显存仍保持准确率；对 Snowflake、BigQuery、MySQL、PostgreSQL、DuckDB 的零样本迁移与原生 SQLite 相差不超过 3.1 个百分点。与 Opus 5.5 组成预先注册的置信级联时，在截止日后发布的数据库上近一半问题可本地作答，API 成本降低 33.3%，准确率不变。文中还报告 Opus 在没看到模式的情况下，仍能 verbatim 复现 48%–92% 的公开基准标准查询，但对改名模式与截止日后库的工具辅助准确率仍然很高。",
-      "authors": "Ibrahim Memon, Armin Karamzade, M. Hanif Jhaveri, Roy Fox",
-      "link": "https://arxiv.org/abs/2611.17780"
+      "title": "「人点了批准」还不够：要同时审计拒绝是否真停、批准是否做完",
+      "titleEn": "Auditable Authorization for LLM Agents: Empirical Evidence Across Model, Harness, and Workflow Layers",
+      "summary": "人在环上的批准只有在「被拒绝的工作会停、被批准的工作会做完」时才算控制。作者把这两条义务分开度量，并沿着模型选调用、运行时调度、工作流把决定接到受保护效果这三道边界做审计。配对实验里，300 次批准中有 7 次未完成、且零次拒绝后仍产生被禁效果；并行确认会弄丢已批准的分支，CrewAI 的 672 次批准里有 336 次在恢复时被漏掉，59 个可对比的 n8n 工作流里有 4 个在点了 Reject 之后仍会执行。论文给出一份可独立核验拒绝安全性与授权完整性的审计契约，让「人点了同意」从手续变成真正卡在意图和外部效果之间的控制面。",
+      "authors": "Bangjie Deng, Xiaoxuan Lu, Wenjun Chen, Chengge Wen, Yulin Wang, Jiayue Meng, Yao Yu, Liying Liang, Weijia Han, Ziwei Hong, Zidong Yu",
+      "link": "https://arxiv.org/abs/2611.19237"
     },
     {
-      "title": "ARCHER：让小模型的推理轨迹可执行、可审计",
-      "titleEn": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
-      "summary": "小模型适合本地、低成本和注重隐私的部署，但在需要拆解、精确计算、调用工具和校验的数学推理上仍不可靠。ARCHER 分两阶段训练：先把自由文本思维链编译成带类型的动作轨迹（推理步骤、计算器调用、确定性运行时观察、校验动作与最终答案），把监督目标从「模仿解释性文字」改成「学习接地于工具的推理策略」；再在此策略上做强化学习。目标是让小模型产出可执行、可审计的推理轨迹，而不是看起来合理却无法核验的说明。",
-      "authors": "Dhruv Dixit, Khushi Patel, Congcong Xu, Min Song",
-      "link": "https://arxiv.org/abs/2611.18494"
+      "title": "工具用得笨拙时，及时提醒比把策略写得很复杂更有效",
+      "titleEn": "Beyond Clumsy Agentic Tool Calling: How Cueing and Spotting Make the Difference",
+      "summary": "面向任务的智能体常会忽略执行反馈、重复无效调用，或在走不通的策略上纠缠。作者把这些症状分成单步的「笨拙调用」和跨多轮的「绕路」，并做了在线中间件 ToolPulse：在调用发出前和反馈返回后检查状态，再用规则、序列分析和辅助模型给出口头提醒或结构化意见。基于 SWE-agent 与三款骨干，在 90 个 Python/C++/Java 修 bug 任务上评估了 1350 条轨迹。对「绕路」类症状，61.6%–90.9% 的有效触发得到了实质性回应；简洁提醒的总体实质回应率最高，更复杂的协助未必更好。聚合修复成绩仍接近基线，只在部分设置下节省 token。作者提醒：行为调整了，不等于修对的数量会跟着涨，干预时机要小心选。",
+      "authors": "Xindi Yang, Yan Liu, Jiajun Sun",
+      "link": "https://arxiv.org/abs/2611.19275"
     },
     {
-      "title": "WebArena-Pro：20 个自托管应用、把音视频也算进去的可复现网页智能体基准",
-      "titleEn": "WebArena-Pro: A Heterogeneous, Multimodal, Reproducible Benchmark for Web Agents",
-      "summary": "现有可复现的网页智能体基准往往只覆盖少数应用、模态也多限于文本和视觉；在线基准覆盖更广，却会因页面漂移而难以复现，更很少认真评估智能体能否理解页面里的音视频。WebArena-Pro 提供 300 个任务，覆盖 20 个自托管应用、六个领域，把音频和视频也作为核心观察，并配有相应的提取动作；任务在隔离环境中运行，支持可复现的并行评测。已评智能体里，Codex + GPT-6.1 Sol 与 Claude Code + Claude Opus 5.5 并列最高，为 62.3%，OpenCode + Kimi K3.1 Pro 为 60.7%；通用智能体配置最高只到 30.3%。",
-      "authors": "Imene Kerboua, Fatemeh Pesaran Zadeh, Xing Han Lù, Weijian Qi, Alexander Miller, Junyi Song 等",
-      "link": "https://arxiv.org/abs/2611.17955"
+      "title": "程序蒸馏：让大模型把能力写成部署时可在 CPU 上跑的程序",
+      "titleEn": "Program Distillation: Transferring LLM Capability from System 2 to System 0",
+      "summary": "以往把大模型当优化器、用它改代码策略的工作，较少讨论如何把能力从「慢思考」转到部署时可直接执行的程序。本文提出程序蒸馏（Program Distillation）：学习阶段由大模型提供任务知识和草稿策略，部署时只跑得到的学生程序。作者给出包含 27 个离散与连续控制任务的 PDBench，以及不绑死某一模型或工具链的元系统 PDMetaHarness。最强模型的归一化均分为 0.728，超过 PPO 的 0.656 和类 Jev 决策模型的 0.239，且推理只在 CPU 上运行。分析显示，成绩很大程度上取决于学习过程中的第一次突破；改结构的成功率略低于改参数，但一旦成功，收益通常更大。",
+      "authors": "Pujun Zheng, Wanying Ren, Guoxiu He",
+      "link": "https://arxiv.org/abs/2611.19461"
     },
     {
-      "title": "PerfArena：按生成代码的时延、内存和能耗给模型排名",
-      "titleEn": "PerfArena: Ranking LLMs by Code Performance",
-      "summary": "工业界已经大量用大模型写生产代码，但大多数代码生成基准只看对不对，很少同时量时延、峰值内存和能耗，面向性能的基准又往往语言覆盖窄。PerfArena 是一个开源、可复现的评测场：在类 Unix 主机上实际运行各模型写出的解答，同时报告正确性与性能，正确性判定、性能判定、分析器和代码生成流程都可插拔。作者的出发点是：能跑通不等于值得反复、大规模使用，成本必须被算进排名里。",
-      "authors": "Rui Rua, Hailemariam Mersha, Joao Paulo Fernandes, Karim Ali",
-      "link": "https://arxiv.org/abs/2611.18030"
+      "title": "交易智能体赚到的是 Beta 不是 Alpha：一个避免偷看未来的回测基准",
+      "titleEn": "LLM Trading Agents Earn Beta, Not Alpha: A Look-Ahead-Free Benchmark",
+      "summary": "现有交易智能体基准常用单次收益率排名，但同一模型仅因随机种子不同，两次回测平均就能差 5.2 个百分点。作者提出 rta-bench-1：覆盖美股的上涨、熊市和崩盘三段，新闻只在发布分钟之后出现，并检查每一轮是否偷看未来，再把收益拆成因子敞口与 alpha。在四家厂商六款模型的 91 次运行里，没有一次 alpha 显著；市场与风格敞口贡献了收益的中位数 78%，决策并不比「同一天、同一行业里随机选股」更好。智能体会买新闻最正面的股票，但去掉标题后收益几乎一样。不过它们很听规则：提示词里加一条现金约束，就能让一款基于 GPT 的智能体股票仓位在全部六对实验中下降 30.3 个百分点。作者建议：边缘得由人提供，基准必须按发布时间回放新闻，并同时报告敞口和 alpha。",
+      "authors": "Jackson Wang",
+      "link": "https://arxiv.org/abs/2611.19530"
     },
     {
-      "title": "WeightBench：把语言模型当作「权重空间程序员」来评",
-      "titleEn": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
-      "summary": "已有工作显示，大模型可以直接读写其他网络的参数：读出网络被训去干什么、修好失败的网络、甚至不靠梯度下降就写出能工作的网络，这一能力被称为权重空间编程（WSP）。WeightBench 用 42 项任务、五个赛道来系统评测——读权重、修权重、写权重、识别不可能的修改，以及无数据压缩——被读写的网络从 2000 参数的控制策略到 70 亿参数的语言模型。初步结果显示，前沿智能体已经能读懂小网络、并在从不运行的情况下写出可用的控制策略，但能力仍随网络规模迅速下降。",
-      "authors": "Aayush Marasini, Barsat Khadka, Nick Rahimi",
-      "link": "https://arxiv.org/abs/2611.18553"
-    },
-    {
-      "title": "对齐靠「社会化」：在选择压力下学习完成任务与遵守规则的权衡",
-      "titleEn": "Alignment by Socialization: Learning Tradeoffs Under Selection",
-      "summary": "智能体既要完成任务，又要遵守行为规则，两者经常冲突。本文用演化选择来看这些权衡如何形成、以及经验能否让选择贴近人类判断并在后续压力下站稳。模型里，同一批智能体副本面对共同的不确定奖励状态，只有采取被奖励动作的个体才能繁殖；长期增长在「各动作被采用的频率等于环境奖励该动作的频率」时最大。作者比较三种策略：只顾完成任务的策略在只奖励完成的沙盒里兴旺，一旦规则开始算数就会失败；固定的线性权衡会随着任务利害上升而越来越偏完成任务，即便人类从不为此奖励；可学习策略则会收敛到环境所奖励的权衡。当奖励由人类提供时，这一过程更像社会化，而不是写死一条规则。",
-      "authors": "Thomas Brennan, Andrew W. Lo, Chaoyi Zhao",
-      "link": "https://arxiv.org/abs/2611.18531"
+      "title": "多个验证器不要先合成一个分数：用帕累托偏序来做策略优化",
+      "titleEn": "Policy Optimization with Multiple Verifiers via Pareto Rankings",
+      "summary": "可验证奖励的强化学习（RLVR）里，代码生成和指令遵循常常有多个验证器，分别看不同要求是否满足。若只奖励「全部通过」，会丢掉部分做对的信号；若做成计数或加权和，又会在满足不同子集的回答之间强行排序。本文提出 POLPO（Partial-Order Likelihood Policy Optimization）：用帕累托支配关系识别「多满足了某条要求、又没丢掉已满足项」的改进，互有冲突的结果则保持不可比，再最大化所有与该偏序相容的完全排序的总概率。它不必先构造标量奖励，也能在尚无完整解时利用「验证过的改进」。作者在代码生成和指令遵循上的实验称，相比标量奖励训练，学习效率与完整满足所有要求的比例都有提升。",
+      "authors": "Kai Yamashita, Shohei Taniguchi, Hiroki Furuta, Masahiro Suzuki, Yutaka Matsuo",
+      "link": "https://arxiv.org/abs/2611.19064"
     }
   ],
   "models": [
     {
-      "name": "Qwen4-Max",
-      "vendor": "阿里巴巴 / 通义千问",
-      "highlight": "11 月 16 日正式发布的旗舰多模态模型：2.4 万亿总参数、每 token 激活 710 亿（比同规模 Qwen3.8-Max 少约 25%），原生视觉，上下文 100 万 token。官方称 Code Arena 第 6，自有基准 Work360 上高推理档比上代少用约 35% token、单任务平均费用降约 60%。已在 QwenCloud Token Plan 与 API 上线，隐式缓存命中价为每百万输入 0.075 美元；较小规模开放权重的 Qwen4 即将放出。",
-      "link": "https://www.alibabacloud.com/en/press-room/alibaba-unveils-qwen4-max"
+      "name": "GPT-6.2 Astra / GPT-6.2 Sol",
+      "vendor": "OpenAI",
+      "highlight": "OpenAI 新一代双模型：Astra 面向最难的专业项目，Sol 面向日常工作。Astra API 为每百万输入 8 美元、输出 40 美元、缓存命中 0.40 美元（入出价较 GPT-6 Astra 下调 20%，缓存再打六折）；Sol 维持 GPT-6.1 Sol 的 2 / 10 / 0.10 美元。官方称 Astra 在 Agents’ Last Exam 上较上代高 5.2 分、任务成本不到三分之一，AA-3D 以 1318 Elo 排第一；它也是首款对外发布且在 AI 自我改进评估中达到 High 的模型。已在 ChatGPT Work、Codex 与 API 上线。",
+      "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
     },
     {
-      "name": "Hy4 flash",
-      "vendor": "腾讯混元",
-      "highlight": "11 月 16 日发布的高性价比模型：总参数 224B（含 64B Engram）、激活 12B，多模态，上下文 100 万 token。API 为每百万输入 0.5 元、输出 2 元、缓存命中 0.02 元。官方称内部 WorkIndex 上效果略优于更大的 Hy4 preview，单任务成本约为 Hy4 的 1/20，解码速度超过 150 token/秒；计划开源并高频迭代。11 月 30 日前 WorkBuddy 限时免费，腾讯云 TokenHub API 五折，即将接入 OpenRouter。",
-      "link": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/"
+      "name": "MAI Code 2 / MAI Code 2 Flash",
+      "vendor": "Microsoft AI",
+      "highlight": "微软在 Ignite 发布的企业编程模型。官方称 MAI Code 2 在 DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 与 FrontierCode v1.1 上达到 GPT-6.1 Sol 约 98% 的质量、价格约为其 40%，相对 Claude Opus 5.5 为约 96% 质量、约 5% 价格，已可在 GitHub Copilot 中使用；面向高频小改的 MAI Code 2 Flash，官方称与 GPT-6 Luna、Claude Haiku 5.5 性能相当，价格分别约为后两者的 65% 与 20%。同日发布的还有网络安全向的 MAI Cyber 2 Flash、图像编辑向的 MAI Image 2.7 等。",
+      "link": "https://microsoft.ai/news/microsoft-ignite-2026/"
     },
     {
-      "name": "CloudRobo-WM1.2",
-      "vendor": "华为云",
-      "highlight": "11 月 16 日发布并开源的昇腾原生具身世界模型，采用 DualAct 架构做世界表征与动作生成。官方称在 RoboTwin 2.0 与 LiberoPro 2.0 上均排第一，并同步开放训练框架与昇腾算力最佳实践。华为云称自己不做机器人本体。基准名次为官方自述。",
-      "link": "https://www.ithome.com/1/027/684.htm"
+      "name": "Qwen3.8-27B-pi-adapted",
+      "vendor": "Hugging Face harness-hub",
+      "highlight": "基于 Qwen3.8-27B 的 LoRA 适配器，用强化学习在 pi 编程智能体里训练，权重开放。模型卡给出的成对评测（pi 工具链、每题一次、温度 0.8、关闭 thinking）为：SWE-bench Pro（Hard 51）pass@1 从 29.4% 升到 62.7%，每任务工具调用减少 55%；Terminal-Bench 2.1 从 39.5% 升到 55.8%，工具调用减少 62%。训练用 AsyncGRPO + LoRA（r=32），工具调用经 safeagents 筛查。可与 vLLM、transformers serve 或 GGUF/llama.cpp 搭配使用，也可把适配器合并进基座权重。",
+      "link": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted"
+    },
+    {
+      "name": "SenseNova Loop-9B",
+      "vendor": "商汤科技",
+      "highlight": "商汤 11 月 17 日发布 SenseNova Loop-9B。据第一财经报道，总参数量约为 9B；模型通过两次执行共享的中间层，把 32 个物理解码层扩展为 56 次层计算；支持文本、图像输入和文本输出，上下文长度最高可达 512K tokens。目前公开报道对基准成绩与许可条款披露有限。",
+      "link": "https://www.yicai.com/news/103444236.html"
+    },
+    {
+      "name": "Olala mini 7A1B",
+      "vendor": "OVHcloud",
+      "highlight": "欧洲云厂商 OVH 的首个自研 LLM 家族成员，将在 11 月 19 日 OVHcloud AI Summit 上正式发布。官方称其为 70 亿总参数、每层 256 个专家中激活 10 亿参数的混合注意力架构（Differential-TPA 与 Mamba-3，BF16），上下文目前 3.2 万 token；可在 8GB 显存的 GPU 上运行，RTX A4500 上约 160 token/秒，无 GPU 的普通 CPU 上约 50 token/秒。将以 Apache 2.0 在 Hugging Face 开源，并附预训练基座、技术报告和《人工智能法案》合规文件。训练使用了 Jupiter、MeluXina 与 Jean Zay 三台欧洲公共超算，算力支持约合 700 万欧元。搜索引擎 Qwant 已将其用于闪答功能，官方称回答快约 20%、运行成本降为原来的三分之一。",
+      "link": "https://corporate.ovhcloud.com/en/newsroom/news/ovh-olala-mini/"
     }
   ],
   "ecosystem": [
     {
-      "title": "Hugging Face 把语言模型推理路由切到 OpenRouter：失败自动换家，不再接受自定义供应商密钥",
-      "summary": "Hugging Face 11 月 16 日宣布，Inference Providers 的语言模型请求改由 OpenRouter 路由，按实时价格、速度与可靠性选供应商，失败则在同一次调用里换一家重试；Chat Completions、Responses 与 Anthropic Messages API 均可使用，Hugging Face 令牌与代码不变，也不在供应商价之外加价。OpenRouter 称自己每月服务超过 800 万亿 token、超 1000 万用户，覆盖 600 多个模型与 80 多家供应商；其统计显示，开源权重模型占比从 2025 年 10 月的 26.8% 升至 2026 年 9 月末的 71.7%，当周用量最高的是 DeepSeek-V4.1-Flash-1017（约 59.2 万亿 token）。新路由在 OpenRouter 自己的测量中，容量错误减少 46%，首 token 时延改善 16.9%，吞吐提升 16.3%。可用 `:fastest`、`:cheapest` 或 `:供应商` 后缀指定策略；对话级提示缓存靠 `X-HF-Session-Id` 把请求留在同一家。破坏性变更：这条语言模型路由不再接受用户自己填写的供应商 API 密钥；图像、视频与音频生成仍走原路径，不受影响。",
+      "title": "微软发起 AI 透明度倡议：智能体不能只靠「自己说了算」",
+      "summary": "微软在 Ignite 联合埃森哲、Adobe、毕马威、万事达和沃尔沃汽车等 40 多家机构发起 AI 透明度倡议，要把「看见、核验、控制」做成跨模型、跨供应商的开放标准，并纳入 Microsoft AI、Foundry 与 Copilot。核心判断是：越来越能自主行动的智能体，具有特权内部人的风险画像，却以机器速度运转；企业必须能独立重建「从请求到结果之间发生了什么」，而不能只采信模型对自身行为的陈述。成果将与 NIST 的 SI Agent Standards Initiative 对齐，并允许客户用自己的安全与合规工具消费这些证据。",
+      "source": "Microsoft Source",
+      "link": "https://news.microsoft.com/source/2026/11/17/microsoft-and-organizations-across-industries-launch-ai-transparency-initiative-to-strengthen-enterprise-trust-in-ai-models-and-agents/",
+      "models": []
+    },
+    {
+      "title": "OpenAI 向北约核心机构提供 Daybreak 网络安全模型，月度 token 用量高达 3000 亿",
+      "summary": "OpenAI 11 月 17 日发文称，正通过北约通信与信息局（NCIA）向北约核心机构提供先进网络安全模型，用于审查软件、调查异常、验证漏洞以及开发和测试修复。北约在相关工作中每月使用高达 3000 亿原始输入与输出 token。OpenAI 还支持了 2026 年「交叉剑」（Crossed Swords）演练：由北约合作网络防御卓越中心举办的新训练流里，参训人员在保持人工监督的前提下，用 Daybreak 环境构建、部署并评估用于网络行动的 AI 智能体。文中还提到，欧盟网络安全局 ENISA 以及法国 ANSSI、德国、波兰和乌克兰数字转型部等已在使用相关模型；ENISA 与 CERT-EU 的联合报告称，在 27 个软件项目中，维护者确认了 88 个潜在问题里的 95% 为真实问题。",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai/",
+      "models": []
+    },
+    {
+      "title": "Anthropic 缩短协同漏洞披露窗口：高危/严重从 90 天改为 30 天，2027 年起适用",
+      "summary": "Anthropic 前沿红队 11 月 16 日更新协同漏洞披露（CVD）政策：对 2027 年 1 月 1 日及以后向厂商或维护者报告的漏洞，高危和严重级别的公开披露窗口从 90 天缩短为 30 天，其余问题为 45 天；届时仍在进行中的报告沿用原截止日期。另外，若维护者 15 天（原为 30 天）仍未回应，将寻求外部协调方介入；补丁发布后等待公开完整技术细节的时间从 45 天改为 30 天。正在被利用的漏洞仍是 7 天窗口；未经人工审阅的 AI 发现（如 OSS Scanner 自动结果）不适用新政策。对已超过现行 90 天期限但尚未公开的高危/严重漏洞，Anthropic 将再给维护者 30 天，并于 2027 年 1 月 1 日起按新政策在仪表板上公布。理由是：模型会帮着写修复，同一漏洞被不同模型再次发现的速度也在加快，90 天已难以假设漏洞会长期保密。",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/research/coordinated-vulnerability-disclosure-timelines",
+      "models": []
+    },
+    {
+      "title": "谷歌拆开 Gemini 的「聊天记录」和「用于训练」开关，关闭记录后保留期从 72 小时改为约两个月",
+      "summary": "谷歌 11 月 16 日宣布，将在未来几周内于全球 Gemini 应用中推出新的隐私控件：聊天记录是否保留、以及这些内容是否用于训练生成式 AI 模型，将分成两个开关。用户可以一边保留历史对话，一边退出模型训练；也仍可随时调整保存时长、查看或删除记录。与此同时，若关闭新的「History」开关，未来的对话将被保存约两个月（此前临时对话约为 72 小时），用于回复用户、处理反馈以及保护谷歌、用户与公众。这是昨日日报未单独收录的一条产品与合规更新。",
+      "source": "Google 官方博客",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/",
+      "models": []
+    },
+    {
+      "title": "Hugging Face 为 pi 编程智能体放出 Qwen3.8-27B LoRA 适配器：Hard 51 上 pass@1 近翻倍，工具调用明显减少",
+      "summary": "Hugging Face 的 harness-hub 发布了专门在 pi 编程智能体里用强化学习训练的 Qwen3.8-27B LoRA 适配器，权重与用法均公开。模型卡给出的成对评测显示，在 SWE-bench Pro 最难的 51 题上 pass@1 从 29.4% 升到 62.7%，每任务工具调用减少 55%；在 Terminal-Bench 2.1 上从 39.5% 升到 55.8%，工具调用减少 62%。训练在未改动的 pi 工具链内进行，工具调用由 safeagents 检查。对在本地跑开源编程智能体的人来说，这是一条可复现的「按自己的工具链做后训练」路径，而不必等基座厂商出通用版。",
       "source": "Hugging Face",
-      "link": "https://huggingface.co/blog/openrouter",
+      "link": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
       "models": [
-        "DeepSeek-V4.1-Flash-1017"
-      ]
-    },
-    {
-      "title": "OpenAI 向经审核机构免费提供新的虐童材料图像分类器，并发布开发者指南",
-      "summary": "作为 11 月 16 日儿童安全更新的一部分，OpenAI 把新的图像分类器通过 API 免费提供给经审核的机构，并与 Tech Coalition、Thorn、NCMEC、Internet Watch Foundation 等共同发布面向开发者的操作指南，涵盖规则、举报入口、检测工具、审核与报告流程。官方还表示，正在为儿童保护执法单位提供培训与插件，首个工具用于梳理长聊天记录与法律文书、标出可能的关联并生成时间线，访问需经机构授权。分类器本身及 ChatGPT 端的警告、24 小时暂停等产品措施见当日新闻。",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/strengthening-online-child-safety",
-      "models": []
-    },
-    {
-      "title": "科研人员用 AI 的入口在扩大：OpenAI 把免费名额目标提到 20 万，先到先得改发 Plus",
-      "summary": "ChatGPT for Academic Researchers 下一轮 5 万份资助将于 11 月 23 日开放，覆盖申请人及最多两名合作者的 ChatGPT Plus，计划整体目标是 20 万人。这是把前沿模型当作科研基础设施来铺的一次扩容：官方同时提到向 Simons Foundation 的新项目捐助 500 万美元，用于帮助数学家检验和消化 AI 给出的结果，并继续通过 ChatGPT Edu 向高校提供校园级入口。与产品层的「按额度付费」（如苹果给高级 Siri AI 加每日上限）正好形成对照——一边是科研侧做大免费入口，一边是消费侧开始用套餐调节云端用量。",
-      "source": "OpenAI",
-      "link": "https://openai.com/index/expanding-chatgpt-for-academic-researchers/",
-      "models": []
-    },
-    {
-      "title": "腾讯为 Hy4 flash 铺好落地通道：WorkBuddy 限时免费，TokenHub 五折，即将接入 OpenRouter",
-      "summary": "Hy4 flash 发布的同时，腾讯把模型接入了自家一组日常入口：腾讯云 TokenHub、WorkBuddy、元宝、企业微信、QQ、ima 与 Marvis，并宣布即将接入 OpenRouter。11 月 30 日前，用户可在 WorkBuddy 限时免费使用，TokenHub API 限时五折。官方建议日常办公用 flash、长程软件工程仍用 Hy4，并计划开源 flash 后高频迭代。这与阿里把 Qwen4-Max 放进 QwenCloud / QwenWork / QwenStudio、承诺后续放出较小开放权重，是同一天的两种「先占入口、再放权重」打法。",
-      "source": "腾讯",
-      "link": "https://www.tencent.com/zh-cn/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/",
-      "models": [
-        "Hy4"
+        "Qwen3.8-27B"
       ]
     }
   ]

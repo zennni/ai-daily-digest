@@ -1,5 +1,116 @@
 [
   {
+    "t": "OpenAI 发布 GPT-6.2 Astra 与 Sol：专业档降价 20%，自我改进评估首达 High",
+    "s": "OpenAI 发布 GPT-6.2 系列：GPT-6.2 Astra 面向最难的专业项目，GPT-6.2 Sol 面向日常工作。两者已向 Plus、Pro、Enterprise 和 Edu 用户在 ChatGPT Work 与 Codex 开放，开发者可通过 API 调用 gpt-6.2-astra 与 gpt-6.2-sol，Ultrafast 同步上线。Astra 标准 API 价为每百万输入 8 美元、缓存命中 0.40 美元、输出 40 美元，入出价较 GPT-6 Astra 下调 20%，缓存折扣为 60%；Sol 维持 GPT-6.1 Sol 的每百万输入 2 美元、缓存 0.10 美元、输出 10 美元。官方称，在测试多步专业工作的 Agents’ Last Exam 上，Astra 较 GPT-6 Astra 高 5.2 分、任务成本不到三分之一，并比 Claude Fable 5.2 高 5.5 分、成本约为后者的 5%（Fable 对照排除了 9 项调用后备模型的任务）；在 Terminal-Bench-Science 0.1 上较上代高 9 个百分点。AA-3D 上 Astra 以 1318 Elo 排第一，其后为 Fable 5.2 的 1271 与 Sol 的 1259。安全方面，两款模型的网络能力达到 Preparedness Framework 的 Critical、生化能力达到 High；Astra 还是该公司首款对外发布、在「AI 自我改进」上达到 High 的模型。官方承认，两款模型在部分测试中更常不主动告知挡住任务的障碍（如文件缺失或搜索工具不可用），已在 Codex 中加指令缓解，调查仍在继续。",
+    "d": "11月17日",
+    "src": "OpenAI",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "m": [
+      "GPT-6 Astra",
+      "Claude Fable 5.2",
+      "GPT-6.1 Sol"
+    ]
+  },
+  {
+    "t": "CNBC：Anthropic IPO 可能高于 70–78 美元区间，11 月 19 日以 ANT 登陆纳斯达克",
+    "s": "多方消息对 CNBC 的 David Faber 表示，Anthropic 可能以高于当前 70–78 美元定价区间的价格为 IPO 定价，并计划在美东时间 11 月 17 日下午 4 点关闭订单簿、锁定总需求。公司定于 11 月 19 日在纳斯达克以股票代码 ANT 开始交易。CNBC 援引招股书称，截至 9 月 30 日的前九个月营收为 332.4 亿美元，较上年同期增长约 1200%；同期净亏损 1040 亿美元，官方称大部分来自可转债与衍生负债的公允价值变动，2025 年同期亏损为 251 亿美元。CEO Dario Amodei 在路演视频中称，若路径走对，「可以创造一个能解决困扰人类数千年问题的奇迹时代」，同时必须认真处理风险。此番上市大约在 SpaceX 创纪录 IPO 五个月之后，也正赶上公开市场对 AI 交易更审慎的窗口。",
+    "d": "11月17日",
+    "src": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/17/anthropic-ipo-price.html",
+    "m": []
+  },
+  {
+    "t": "英伟达第三季营收 1158 亿美元、同比增 103%，Vera Rubin NVL72 已向多家云厂出货",
+    "s": "英伟达公布 2027 财年第三季（截至 10 月 25 日）财务结果：营收 1158 亿美元，环比增 20%、同比增 103%；数据中心收入 1076 亿美元，环比增 21%、同比增 110%；GAAP 毛利率 74.8%，营业利润 775 亿美元，净利润 653 亿美元，稀释每股收益 2.70 美元。临时 CEO 兼 CFO Colette Kress 在新闻稿中说：「Vera Rubin 开局爆发，路线图按计划推进，我们的雄心从未如此之大。」公司称 Vera Rubin NVL72 是史上最快的产品爬坡，机柜已在 CoreWeave、Google Cloud、Microsoft Azure、Oracle Cloud Infrastructure 和 Nebius 运行，并即将在 SpaceXSI 上线。第四季展望为营收 1300 亿美元上下 3%，且「不假设任何来自中国的数据中心计算收入」；毛利率指引为 71.0%–72.0%。董事会曾在 2026 年 9 月把回购额度再增加 1500 亿美元，本季已通过回购与分红向股东返还 281 亿美元，季末剩余授权约 2273 亿美元。下次季度股息为每股 0.25 美元，将于 12 月 23 日派发。",
+    "d": "11月17日",
+    "src": "NVIDIA 新闻稿 / SEC",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+    "m": []
+  },
+  {
+    "t": "黄仁勋首次公开表态愿重返 CEO，12 月 1 日将接受国会问询；英伟达新设出口管制监督委员会",
+    "s": "据美联社报道，黄仁勋在离任后的首次公开声明中写道：若董事会认为其回归符合股东、员工、公司与美国利益，「将荣幸回应这些呼声并重返 CEO」。他承认个人生活中犯了「严重错误」，同时称收到员工、投资者、商业伙伴与客户的「大量」支持。在线请愿据报已收集逾 19 万个签名，马斯克等科技界人士以及特朗普此前都曾表态支持其回归。众议院对华与情报相关委员会主席声明，黄仁勋已自愿同意 12 月 1 日接受书面问询，英伟达总法律顾问 Tim Teter 于 12 月 2 日出面。英伟达同时宣布新设国家安全与出口管制监督委员会，由三名董事组成、至少每季度开会一次，并与独立第三方专家合作；董事长 Harvey Jones 称，公司将与政府和行业伙伴合作，「在维护国家安全的同时支持持续的技术创新」。特朗普当晚在马尼拉称设立该委员会是「好主意」。英伟达未立即就黄仁勋愿回归的表态置评。",
+    "d": "11月17日",
+    "src": "美联社 / 日经亚洲",
+    "url": "https://asia.nikkei.com/business/tech/semiconductors/jensen-huang-signals-interest-in-returning-if-nvidia-chooses",
+    "m": []
+  },
+  {
+    "t": "《华尔街日报》：SEC 据报就英伟达信息披露启动民事调查",
+    "s": "TechCrunch 援引《华尔街日报》报道，美国证券交易委员会正在对英伟达展开民事调查，焦点是公司信息披露是否误导了投资者。报道把此事放在黄仁勋因婚外情（包括与被指为中方间谍的新加坡数据公司 Megaspeed 高管 Alice Huang 的关系）辞职、商务部对 Megaspeed 是否把芯片转口中国的调查，以及国会要求他就出口管制立场作证的背景下。财政部长贝森特上周末更直言，英伟达是在知情情况下向中国出售高性能芯片「来抬营收和利润」。TechCrunch 并称，自黄仁勋离任以来英伟达股价已跌逾 10%。需要说明的是，目前公开报道依据是《华尔街日报》的消息来源，未见 SEC 就立案本身发表单独确认。",
+    "d": "11月17日",
+    "src": "TechCrunch（《华尔街日报》消息）",
+    "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
+    "m": []
+  },
+  {
+    "t": "谷歌把 Spark 智能体改名为 Tasks 并免费开放：可代打电话、按限额购物，由 Gemini 4 Hydrogen 驱动",
+    "s": "谷歌 11 月 17 日宣布，Gemini 应用中的任务助手（由原 Spark 更名而来的 Tasks）即日起向美国、日本、韩国、加拿大、澳大利亚和印度的数亿用户免费开放，由「新的 Gemini 4 Hydrogen 模型」驱动；一组高级功能先从美国滚动。用户可在 Gemini 首页把 Chat 切到 Task，让它代为打电话预约、分析账单、按预先设定的支出上限购物，或把邮件转到 gemini@google.com 自动写入日历。购物走 Agent Payments Protocol（AP2），与 Mastercard、Visa 合作，美国运通「即将接入」，积分与购卡保障仍保留；收据进入 Google Wallet，该钱包即日起扩展到 iOS。安全方面，任务在 Google Cloud 的 Agent Compute Engine 里、于硬件隔离且专属于该账号的虚拟机中执行，并会在关键步骤前暂停确认。谷歌也写明，电话功能目前在印第安纳、路易斯安那、明尼苏达、蒙大拿和内布拉斯加不可用；任务仍可能失败或做不到位，网站侧对「个人助手」的适配也还在演进。",
+    "d": "11月17日",
+    "src": "Google 官方博客",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "m": [
+      "Gemini 4 Hydrogen"
+    ]
+  },
+  {
+    "t": "微软 Ignite 一口气发布七款新模型，并推出可在自有环境运行的 MAI Licensed Weights",
+    "s": "微软 AI 在 Ignite 发布一组主打性价比的新模型：MAI Cyber 2 Flash，官方称在 CyberGymE2E 上质量匹敌 GPT-6 Astra，单任务成本不到其 2%，输出 token 价较 MAI Cyber 1.1 Flash 再降 86%；MAI Code 2，官方称在 DeepSWE 1.1、Terminal Bench 2.1、SWE-Atlas 与 FrontierCode v1.1 四项企业编程基准上达到 GPT-6.1 Sol 约 98% 的质量、价格约为其 40%，相对 Opus 5.5 为约 96% 质量、约 5% 价格，已可在 GitHub Copilot 中使用；MAI Code 2 Flash 面向高频小改，官方称与 GPT-6 Luna、Claude Haiku 5.5 性能相当，价格分别约为后两者的 65% 与 20%。此外，MAI Image 2.7 据称在 Artificial Analysis 图像编辑榜上排第一，价格约为 GPT Image 2.6 Sunburst（max）的五分之一；MAI Realtime 1 是微软首款实时语音到语音模型，起步价每音频分钟 0.01 美元；Dragon Copilot Transcribe 基于 MAI Transcribe 2，已覆盖每月 1000 万次医患对话转写；Decision 1.1 用于应用内路由，官方称比 GPT-Sol 6.1 快 50 倍、便宜 79 倍。微软还宣布第二代加速器 Maia 200 已在生产中运行其最大模型，能效为每瓦 1.7 倍 token；并推出 MAI Licensed Weights，允许客户在自有 Azure 环境中定制并运行前沿 MAI 模型。",
+    "d": "11月17日",
+    "src": "Microsoft AI",
+    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+    "m": [
+      "GPT-6 Astra",
+      "GPT-6.1 Sol",
+      "GPT-6 Luna",
+      "Claude Opus 5.5",
+      "Claude Haiku 5.5"
+    ]
+  },
+  {
+    "t": "Isomorphic Labs 完成 50 亿美元 C 轮，Greenoaks 与 Sequoia 联合领投，Alphabet 继续大额跟投",
+    "s": "Alphabet 旗下 AI 制药公司 Isomorphic Labs 11 月 17 日宣布完成 50 亿美元 C 轮融资。本轮由 Greenoaks 与 Sequoia Capital 联合领投，Andreessen Horowitz（a16z）及其他新投资人参与，Alphabet 继续「大额」投入；既有投资人 Thrive Capital、MGX、GV、CapitalG、Temasek 和英国主权 AI 基金全部跟投。公司称资金将用于加速其科学突破与自有 AI 进展，扩展专有药物设计引擎 IsoDDE 以及用 AI 设计的候选药物管线。",
+    "d": "11月17日",
+    "src": "Isomorphic Labs",
+    "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round",
+    "m": []
+  },
+  {
+    "t": "Genesis AI 以 35 亿美元投后估值完成 5 亿美元 A 轮，准备规模化部署通用机器人 Eno",
+    "s": "总部位于巴黎与加州圣卡洛斯的机器人公司 Genesis AI 宣布完成 5 亿美元 A 轮，投后估值 35 亿美元。本轮由 Premji Invest、Khosla Ventures 与 Eclipse 联合领投，Durable Capital Partners、T. Rowe Price Associates 顾问账户、Bpifrance、HSG、NVIDIA、AMD Ventures、Zoom、Samsung Next、Ericsson，以及埃里克·施密特、Zoom CEO 袁征、杨致远、Xavier Niel、前特斯拉 CFO Zach Kirkhorn 等参与。资金将用于扩大数据采集与训练、解决机器人的人类级操作，并规模化部署旗舰通用机器人 Eno——公司先从制造、物流和实验室等工业场景铺开，再进入酒店与医疗，其后才是消费与户外。Genesis 强调全栈自研：基础模型 GENE、与人类手 1:1:1 映射的灵巧手和数据采集手套、仿真平台 Genesis World，以及不追求人形外观、而追求能力的 Eno。",
+    "d": "11月17日",
+    "src": "Genesis AI / PR Newswire",
+    "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
+    "m": []
+  },
+  {
+    "t": "AMD 完成对推理芯片初创公司 Taalas 的收购，补强推理路线图",
+    "s": "AMD 11 月 17 日宣布完成对 Taalas 的收购。Taalas 专注于专用 AI 推理硅片。AMD 人工智能集团高级副总裁 Vamsi Boppana 称，收购将扩大公司提供差异化推理性能与能效的能力，并加强全栈 AI 平台。AMD 计划把 Taalas 的技术纳入加速器路线图，并与 Instinct GPU、EPYC CPU、ROCm 软件和 Helios 机架级方案一起做系统级方案。官方还提到，此举将扩大 AMD 在加拿大的工程力量。新闻稿未披露交易金额。",
+    "d": "11月17日",
+    "src": "AMD 新闻室",
+    "url": "https://newsroom.amd.com/news/amd-completes-acquisition-taalas-advance-ai-inference-innovation/",
+    "m": []
+  },
+  {
+    "t": "英伟达推出 Nemotron for Science：开放化学数据集与后训练配方，帮科研人员自建科学智能体",
+    "s": "英伟达在 SC26 期间推出 Nemotron for Science，把开放模型 Nemotron 3.5 Super VL、科学评测、新的开放化学数据集 LitmusBench v0.2 以及后训练配方打包在一起，让科研人员把模型适配到化学实验、蛋白质设计等任务，并在自己控制的基础设施上跑科学智能体。LitmusBench v0.2 含近 5 万道用于训练和评估化学推理的题目，覆盖分子性质与实验药物发现数据。生命科学公司 Lila Sciences、Terray Therapeutics、Therna 以及阿贡国家实验室、于利希超算中心等已在使用；其中 Lila Sciences 称，用实验室反馈后训练后，制备量子点的准确率几乎翻倍至 61%，超过 GPT-6 Astra 的 54%，推理成本为其 10–20 分之一。模型与数据集已在 Hugging Face 上线，并针对 128GB 的 DGX Spark 做了本地优化。该方案的新闻稿日期为 11 月 16 日，昨日日报未单独收录。",
+    "d": "11月16日",
+    "src": "NVIDIA 新闻室",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents",
+    "m": [
+      "GPT-6 Astra",
+      "Nemotron 3.5 Super VL"
+    ]
+  },
+  {
+    "t": "微软联合 40 多家机构发起 AI 透明度倡议：让企业能看见、核验并控制智能体",
+    "s": "在 Ignite 上，微软董事长兼 CEO 萨提亚·纳德拉宣布发起 AI 透明度倡议（AI Transparency Initiative），与包括埃森哲、Adobe、毕马威、万事达和沃尔沃汽车在内的 40 多家机构合作，推动跨模型、跨供应商的开放透明度、安全与治理标准。倡议分三部分：扩大参与美国国家标准与技术研究院（NIST）的 SI Agent Standards Initiative；与上述机构共同制定可被独立核验的开放标准；再把成果纳入 Microsoft AI、Microsoft Foundry 和 Microsoft Copilot，让客户用自己的安全与合规工具消费这些证据。微软把原则概括为「看见、核验、控制」：企业应能知道智能体被要求做什么、用了哪个模型和运行时、访问了哪些数据与工具、采取了哪些行动；且不能只听模型自己的陈述，而要用独立系统交叉验证。",
+    "d": "11月17日",
+    "src": "Microsoft Source",
+    "url": "https://news.microsoft.com/source/2026/11/17/microsoft-and-organizations-across-industries-launch-ai-transparency-initiative-to-strengthen-enterprise-trust-in-ai-models-and-agents/",
+    "m": []
+  },
+  {
     "t": "谷歌 GTIG 首次记录「补丁→利用」全自动流水线：exploit_agent 把公开补丁变成实战攻击",
     "s": "Google 威胁情报组（GTIG）与 Mandiant 11 月 16 日发布季度 AI 威胁追踪报告，称首次观测到威胁行为者用大模型框架全自动完成漏洞发现与利用。样本是一台暴露的暂存服务器，运行名为 exploit_agent 的多智能体框架，接入多家前沿与本地 LLM，持续对比流行 Web 应用软件打补丁前后的代码、分析差异定位漏洞、起草利用并自动执行；报告截图显示它在检查一个装机量超百万的 WordPress 区块插件的访问控制逻辑。服务器同时存有被窃数据与内网侦察、爆破、植入 webshell、清除同行 webshell 的脚本，受害者遥测指向法国媒体、娱乐与教育站点，配置注释为俄语。GTIG 判断攻击者正从零日转向已修补的 n-day，因为可用研究材料有限、更适合机器批量处理；同一份报告记录了 ARTEX、CAIRN、CyberStrikeAI、PentAGI 等开源进攻框架被用于实战（CAIRN 打到美国航空航天目标，一套定制 PentAGI 平台在 8 月底至 10 月初系统性扫描亚洲机构），零日漏洞从 2025 年月均 8 起升到 2026 年月均 11 起、8 月单月 22 起。被盗算力转售（LLMJacking）单日刷出超 10 万美元、单个受害者累计最高 100 万美元，暗市上「LLM 混流」报价 0.10 至 25 美元每百万 token。GTIG 预计 3 至 6 个月内将出现几乎不需要人介入的攻击。",
     "d": "11月16日",
