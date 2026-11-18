@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "date": "2026-11-19",
+    "week": "星期四",
+    "note": "今日主题词：定价过顶，开盘作答。相对昨日「谁来为越界签字」（10:00 增补已把俄勒冈起诉、浑水做空、爱尔兰叫停智能体数据训练和 BIS 远程算力许可写进合并版），这 24 小时真正落槌的是 Anthropic 把发行价定在每股 83 美元，高于上周 70–78 美元的指引区间，股票代码 ANT 将于今日（美国时间 11 月 19 日周四）登陆纳斯达克。CNBC 于美国时间周三（11 月 18 日）10:15 刊出，援引知情人士称定价已定；Axios 亦确认 83 美元，并给出以此计算的初始市值约 1.08 万亿美元、完全稀释约 1.5 万亿美元。两家均按公司此前披露的 8.25 亿股测算，IPO 筹资约 685 亿美元，但 Axios 写明尚未确认最终发行股数、不排除增加。CNBC 还称，包括谷歌、微软、英伟达和 AMD 在内的科技公司同意在此次发行中合计投资 260 亿美元；亚马逊与谷歌各自持有的股份估值均超过 1000 亿美元。此刻上海早六，美股尚未开盘，开盘表现要等到今晚。另一头，模型开始改写给自己供电的芯片：OpenAI 11 月 18 日发文称，与 AMD 合作在旗舰 GPU IP 上、相对已高度优化的基线看到最高 14% 的 PPA 改进，部分改动已进入送厂设计，另一些写入后续量产文档；AMD 还验证了其下一代旗舰 CPU 关键模块上由该模型撰写的设计带来个位数百分比的 PPA 收益。OpenAI 自研推理芯片 Jalapeño 方面，团队估计模型提议的改动使向量单元与矩阵单元的标准单元面积分别约降 13% 与 10%，并已在硅上验证。软件供应链的弦没有松：微软官方 Agent Framework 的 PyPI 包在 11 月 17 日连续发布两个恶意版本（1.26.1 / 1.26.2），会在 Python 启动时窃取云凭据，BleepingComputer 于 18 日报道；PyPI 已隔离，安全版本为 1.26.0。中国商务部 17 日晚就美方限制远程获取先进半导体的措施表示强烈不满，并称若美方一意孤行将采取反制措施。一句话：万亿定价已经落槌，今晚开盘才是市场的答题；芯片开始被模型改写，智能体的软件供应链也正在被改写。"
+  },
+  "highlights": [
+    {
+      "title": "Anthropic 将 IPO 定价为每股 83 美元，高于 70–78 美元指引，ANT 今日登陆纳斯达克",
+      "summary": "CNBC 11 月 18 日援引知情人士、Axios 随后确认：发行价 83 美元。Axios 称以此计算初始市值约 1.08 万亿美元、完全稀释约 1.5 万亿美元；若此前披露的 8.25 亿股均售出，筹资约 685 亿美元（Axios 称最终股数尚未确认）。谷歌、微软、英伟达、AMD 等同意合计认购 260 亿美元。上海早六时点尚未开盘。"
+    },
+    {
+      "title": "OpenAI：模型在 AMD 旗舰 GPU IP 上看到最高 14% PPA 改进，部分改动已送厂",
+      "summary": "官方 11 月 18 日发文称，与 AMD 合作相对已高度优化的基线看到最高 14% 的功耗—性能—面积改进，相当于用不到 5 个月追上约一年的进度；部分改动已纳入近期送厂设计。自研 Jalapeño 的向量 / 矩阵单元标准单元面积分别约降 13% / 10%，已在硅上验证。公司还宣布与新思科技合作训练 GPT-Synopsys。"
+    },
+    {
+      "title": "微软 Agent Framework 的 PyPI 包两度被植入凭据窃取程序",
+      "summary": "11 月 17 日，官方包 agent-framework 的 1.26.1 与 1.26.2 被发布，通过 .pth 启动钩子在 Python 进程启动时收集环境变量、本地凭据和 Azure / GitHub 令牌并外传。该包月下载量约 20 万次。两次发布均已被隔离，1.26.0 为已知安全版本。入侵途径尚未公开。"
+    },
+    {
+      "title": "商务部就美方限制远程获取先进半导体表态：若一意孤行将反制",
+      "summary": "商务部新闻发言人 11 月 17 日晚就美国商务部 16 日发布的相关措施答记者问，称美方做法破坏市场规则和国际经贸秩序，中方强烈不满、坚决反对，希望回到协商合作轨道；若美方一意孤行，中方将采取反制措施。"
+    },
+    {
+      "title": "腾讯开放 Hy4 flash 系列权重；Reson8 与 RadixArk 同日放出新开源模型",
+      "summary": "Hy4 flash、Hy4 flash-FP8 与预训练基座 Hy4 flash-base 已在 Hugging Face、ModelScope 等平台提供：220B 总参数（含 Engram）、每 token 激活约 12B，原生文图输入、上下文最长 1M。同日 Reson8 以 Apache 2.0 开源 0.5B 多语语音识别模型 Rumble-2-Flash；RadixArk 基于 Qwen3.8-27B 放出 DaisyRose-27B，Terminal-Bench 4.1 pass@1 从 5.6% 升至 12.0%。"
+    },
+    {
+      "title": "微软 Foundry 推出可复用 Toolboxes，并从生产轨迹里学习 Agent Skill",
+      "summary": "Ignite 期间，Foundry Toolbox 把工具、Skill 和智能体收成可版本化的共享能力，经一个 MCP 端点复用，并将通过官方 MCP Skills 扩展对外暴露。Skill Optimization 进入公开预览：官方称在内部企业任务基准上平均提升 9.2 分，在智能体未见过的问题上最高 19.9 分。浏览器自动化与 Computer Use（对接 Astra 系列）宣布正式可用。"
+    },
+    {
+      "title": "谷歌调整 Gemini 控件：关闭历史后的对话将保留约两个月",
+      "summary": "谷歌 11 月 16 日官方博客称，新设置允许保留聊天历史同时退出生成式模型训练；若关闭 History，今后的对话将保存约两个月（此前多为 72 小时），用于回复用户、处理反馈以及安全防护，并称这些对话不用于训练。该改动将在未来数周于 Gemini 应用全球推出。"
+    },
+    {
+      "title": "论文：编程基准更高分，并不等于合并更多真实代码",
+      "summary": "Yining Hua 利用 6 月 Claude Fable 5 被出口管制停用 19 天的自然实验，跟踪 297 名用户的 GitHub 拉取请求，发现能用 Fable 5 只让 7 日合并率上升 1.4 个百分点，且统计不显著。同日的 SciWorkBench 上，最佳智能体在真实科学工作流上的均分仅为 57.38。"
+    }
+  ],
+  "news": [
+    {
+      "title": "Anthropic 将 IPO 定价为每股 83 美元，高于指引区间，ANT 今日登陆纳斯达克",
+      "summary": "CNBC 于美国时间 11 月 18 日 10:15 刊出，援引知情人士称 Anthropic 已把 IPO 定价为每股 83 美元，高于上周更新招股书时给出的 70–78 美元区间，并预计股票 11 月 19 日（周四）以代码 ANT 在纳斯达克开始交易。若公司此前计划出售的 8.25 亿股均按该价格售出，筹资约 685 亿美元。CNBC 写明，市值取决于总股本，但这一价格会把估值推到该公司此前瞄准的 1.4 万亿美元之上。Axios 随后确认 83 美元的发行价，并称以此计算初始市值约 1.08 万亿美元、完全稀释约 1.5 万亿美元；同时注明尚未确认最终发行股数，不排除增加。CNBC 还称，包括谷歌、微软、英伟达和 AMD 在内的科技公司同意在此次发行中合计投资 260 亿美元；亚马逊与谷歌各自持有的股份估值均超过 1000 亿美元。Axios 提及，上一轮私募估值约为 9650 亿美元。上海早六时点美股尚未开盘，开盘表现要等到今晚。需要说明的是，Axios 正文写「周四定价」，与 CNBC、Investopedia 的「周三定价、周四交易」不一致，本报以 CNBC 时间戳为准。",
+      "date": "2026-11-18",
+      "source": "CNBC / Axios",
+      "link": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+      "models": []
+    },
+    {
+      "title": "OpenAI：模型在 AMD 旗舰 GPU IP 上看到最高 14% PPA 改进，部分改动已送厂",
+      "summary": "OpenAI 11 月 18 日发文回顾其模型如何改进芯片设计。与 AMD 的合作中，官方称在旗舰 GPU IP 上、相对已高度优化的基线看到最高 14% 的功耗—性能—面积（PPA）改进，模型通过改写描述电路的 SystemVerilog RTL 找到进一步提升，并称这相当于用不到 5 个月完成约一年的进度。AMD 已把其中一部分改动纳入近期送厂的设计，另一些写入后续版本的量产设计文档。AMD 还验证了其下一代旗舰 CPU 关键模块上、由该模型撰写的设计带来个位数百分比的 PPA 收益。在自研推理芯片 Jalapeño 上，团队估计模型提议的改动使向量单元标准单元面积约降 13%、矩阵单元约降 10%，这些优化已在硅上验证。文中还介绍了对开源 RISC-V 核心 PicoRV32 与 OpenTitan Ibex 的评测：在约 11.2 万 token 的可比预算下，GPT-6.2 Astra 在两款核心上的平均得分最高。为把能力发展锚定在工程师已使用的 EDA 工具上，OpenAI 宣布与新思科技合作训练 GPT-Synopsys。",
+      "date": "2026-11-18",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/advancing-chip-design-with-our-models/",
+      "models": [
+        "GPT-6.2 Astra",
+        "GPT-6.1 Sol",
+        "GPT-6 Astra"
+      ]
+    },
+    {
+      "title": "微软官方 Agent Framework 的 PyPI 包两度被植入凭据窃取程序",
+      "summary": "BleepingComputer 11 月 18 日报道，微软开源的 Agent Framework Python 包（PyPI 项目 agent-framework，月下载量约 20 万次）在 11 月 17 日被发布了两个恶意版本 1.26.1 与 1.26.2。恶意代码通过 .pth 启动钩子在受影响环境中于 Python 启动时自动执行，即使没有 import 该包也会运行；1.26.1 收集环境变量、本地配置和 Azure、AWS、GitHub、Docker、Hugging Face、OpenAI 等凭据，并试图获取 Azure 托管身份与 DevOps OIDC 令牌，1.26.2 还增加了对 GitHub Actions OIDC 与 runner 目录的搜索。两次发布仍依赖合法的 agent-framework-core 1.26.0，框架功能看起来正常。PyPI 隔离了第一个恶意版本后，攻击者约 2.5 分钟后又发布了第二个版本，约 8 分钟后同样被隔离，说明首次隔离后发布权限仍在。入侵途径尚未公开。已安装这两个版本的开发者应隔离环境、从干净镜像重建，并轮换可能暴露的凭据；已知安全版本为 1.26.0。",
+      "date": "2026-11-18",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+      "models": []
+    },
+    {
+      "title": "商务部就美方限制远程获取先进半导体表态：强烈不满，若一意孤行将反制",
+      "summary": "商务部新闻办公室 11 月 17 日 20:20 发布新闻发言人答记者问。问及美国商务部 11 月 16 日发布限制远程获取先进半导体的相关措施，发言人表示中方注意到有关情况，称美方泛化国家安全概念、滥用出口管制，对中国企业与其他国家企业正常贸易合作横加干涉，背离两国元首达成的重要共识，破坏市场规则和国际经贸秩序，冲击全球半导体产业链供应链稳定。中方对此强烈不满、坚决反对，希望美方与中方相向而行，回到协商合作解决分歧的正确轨道；若美方一意孤行，中方将采取反制措施，坚定维护国家主权、安全、发展利益。这是对日前 BIS 把远程租算力纳入许可的正式官方表态。",
+      "date": "2026-11-17",
+      "source": "商务部",
+      "link": "https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_c9c0beb01b8640d3ba9160b73d315716.html",
+      "models": []
+    },
+    {
+      "title": "谷歌更新 Gemini 控件：可关训练、留历史；关闭历史后的对话将保留约两个月",
+      "summary": "谷歌 11 月 16 日在 Gemini 应用博客写道，正在给出更多控件，让用户决定聊天历史何时用于训练生成式模型：新设置允许保留 Gemini 聊天历史，同时选择退出生成式模型训练；用户仍可更改历史保存时长，并随时查看或手动删除。出于安全考虑，官方同时宣布：若关闭新的 History 设置，今后的对话将保存约两个月，用于回复用户、处理反馈，以及保护谷歌、用户和公众；这些改动将在未来数周于 Gemini 应用全球推出。TechCrunch 11 月 17 日核对隐私说明存档后指出，此前在关闭历史或使用临时对话时的保留期多为 72 小时。谷歌发言人随后向 TechCrunch 表示，所保留数据将严格用于安全目的，原因是 Gemini 应用能力增强、恶意行为的攻击面也在增加。官方称临时对话不用于训练模型。",
+      "date": "2026-11-16",
+      "source": "Google / TechCrunch",
+      "link": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/",
+      "models": []
+    },
+    {
+      "title": "微软 Foundry 推出可在智能体集群间复用的 Toolboxes，Skill 走 MCP 扩展",
+      "summary": "微软 Foundry 博客 11 月 18 日写道，Toolboxes 把工具、Skill 和智能体收成可策划、可版本化的共享能力，经一个 MCP 端点供 Foundry 智能体及其他兼容运行时复用，并集中处理下游鉴权；工具搜索让智能体按需发现能力，以免把整个目录塞进上下文。Ignite 上宣布的增强包括：Skills CRUD API（正式可用即将到来）、在提示智能体里通过 Shell 工具执行 Skill（预览），以及通过官方 MCP Skills 扩展对外暴露 Skill；浏览器自动化与 Computer Use 宣布正式可用，后者对接最新支持 computer use 的 OpenAI 模型（Astra 系列）；另有 A2A 工具正式可用、GitHub Copilot 中一键安装 Toolbox，以及工具策略预览等。同一天的另一篇博文则介绍了从生产轨迹学习 Skill 的 Skill Optimization（见生态板块）。",
+      "date": "2026-11-18",
+      "source": "Microsoft Foundry",
+      "link": "https://devblogs.microsoft.com/foundry/build-once-reuse-across-your-agent-fleet-tools-and-toolboxes-in-foundry/",
+      "models": [
+        "GPT-6.2 Astra"
+      ]
+    },
+    {
+      "title": "腾讯在多平台开放 Hy4 flash、FP8 与预训练基座权重",
+      "summary": "继此前发布 Hy4 flash 之后，腾讯把指令模型 Hy4 flash、FP8 版以及预训练基座 Hy4-flash-base 放到了 Hugging Face、ModelScope 等平台。模型卡称，这是迄今最注重成本的混元 Hy 模型：总参数 220B（其中包含 Engram 参数），每 token 仅激活约 12B；原生接受文本和图像输入、生成文本，上下文最长 1M。语言主干为 42 层（1 层稠密 + 41 层 MoE）。基座版本未经指令微调，聊天与推理示例适用于独立发布的 flash / flash-FP8；许可为 Tencent Hy License。本站昨天下午的半点榜已记录官方权重落地（HF tencent/Hy4-flash），今日把它写入日报模型栏。",
+      "date": "2026-11-18",
+      "source": "Hugging Face / 腾讯混元",
+      "link": "https://huggingface.co/tencent/Hy4-flash",
+      "models": [
+        "Hy4"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "SciWorkBench：面向真实科学工作流的基准",
+      "titleEn": "SciWorkBench: A Benchmark for Real Scientific Workflows",
+      "summary": "作者提出覆盖生物、化学、材料与物理的真实科研任务基准，题目来自同行评议文献或专家贡献的研究情景，并给出由领域专家验证的统一科学分析框架。他们在 Claude Code 与 Codex 智能体框架、统一执行和评分协议下评估了当时的新模型：表现最好的智能体均分仅为 57.38，说明当前智能体仍难以完成贴近真实的科学工作流。失败分析归纳出三类反复出现的工作流弱点：把科学知识转成具体步骤有困难、跨模态证据整合弱、科学意义上的自我纠正有限。",
+      "authors": "Yuchen Zhang, Taolin Han, Jinghang Wang 等",
+      "link": "https://arxiv.org/abs/2611.22490"
+    },
+    {
+      "title": "编程基准上的更高分，并没有让人合并更多真实代码",
+      "titleEn": "Higher-Scoring Coding Models Did Not Get More Work Done",
+      "summary": "作者利用 2026 年 6 月 12 日美国出口管制使 Claude Fable 5 停用 19 天这一自然实验，把人和项目固定、只替换模型，来检验基准更高分是否等于更多真实工作被做完。停用期间多数原 Fable 5 用户改用在 SWE-Bench Pro 上低 11 分的 Opus 4.8。研究跟踪了 297 名 Fable 5 用户的 GitHub 拉取请求，并以始终使用 Opus 4.8 的 8908 名开发者为对照；还在同年五次模型升级上重复比较（1208 人、15442 个 PR）。带开发者与日期固定效应的双重差分估计显示，能使用 Fable 5 只让拉取请求 7 日合并率上升 1.4 个百分点（区间 [-1.4, +4.3]），统计不显著；五次升级的加权均值是 -0.9 个百分点，每周合并数量的变化同样不显著。",
+      "authors": "Yining Hua",
+      "link": "https://arxiv.org/abs/2611.23216"
+    },
+    {
+      "title": "大模型智能体是否还需要被告知如何自我改进？",
+      "titleEn": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+      "summary": "自我改进方法越来越多地把优化环节交给模型自己。作者追问：当模型更强之后，是否仍需由人规定它们该如何自我改进？他们研究一种自主范式：在给定基本原语、资源和一个总体自我改进目标后，智能体为自己构造基于上下文的学习算法。测试平台是游戏：冻结的大模型智能体获得计算预算，以及收集经验、更新文本文档的工具，没有被规定固定循环，也不能访问真实世界数据。作者发现，足够强的模型在这些条件下确实会自我改进，策略与自我调节学习、自生成课程等经典框架相符；学到的文本产物还能迁移到不同游戏时域、机制和三维导航的外部基准上。",
+      "authors": "Shobhita Sundaram, Cansu Sancaktar, Phillip Isola",
+      "link": "https://arxiv.org/abs/2611.23219"
+    },
+    {
+      "title": "CrisisBench：危机心理咨询 AI 的评估套件",
+      "titleEn": "CrisisBench: an evaluation suite for crisis counseling AI",
+      "summary": "现有基准很难刻画危机对话里的升级、风险评估和降级，真实录音又受隐私限制。作者给出一套保护隐私的单轮与多轮评估：包含来自 200 段去标识对话的 1085 道单轮题，以及由热线元数据派生的 1185 个「来访者」大模型；来访者模型和 23 项评分员都对照专业咨询师做了校准。他们评估了五个 GPT 模型以及「先起草再编辑」、检索增强生成等方案：单轮上，所有系统在过度共情和提问上都不如人类咨询师；评分量表的人与人 Krippendorff α 为 0.51，大模型与人的 α 为 0.54（Pearson r=0.80）。多轮上检索增强生成总分最高（0.961），各系统差距不超过 0.058。咨询师认为来访者模型真实（86%）且有用（92%）。作者发布了量表、评分提示和题目。",
+      "authors": "Akshay Swaminathan, Filip Ramazan, Sharang Phadke 等",
+      "link": "https://arxiv.org/abs/2611.21622"
+    },
+    {
+      "title": "ATI：跨组织自主智能体的联邦身份、证明与问责架构",
+      "titleEn": "Agent Trust Infrastructure (ATI): A Federated Identity, Trust, Attestation, and Accountability Architecture for Cross-Organization Autonomous AI Agents",
+      "summary": "跨组织调用工具、与他方智能体交互时，现有框架缺少统一的身份、执行完整性和授权校验。ATI 是一套不绑定特定框架的安全架构，建立在 PKI、零信任和远程证明之上，通过对等的组织证书机构（AgentCA）建立联邦信任，不必共享同一根证书。执行请求前，它校验智能体证书，核实已批准的模型、工具和系统提示配置，并做三项策略检查。作者在八个组织、六种框架、各五人小队的模拟联邦中评估，并在 14 个攻击情景与六个良性任务上测试：开启全部执行机制后，攻击遏制率从 43% 升至 84%（在所有配置下都评估的 11 个情景中从 40% 升至 80%），每次请求开销约 174 微秒。实现以开源、框架外挂层的形式发布，身份与请求校验使用 IETF WIMSE 工作负载令牌格式。",
+      "authors": "Viet K. Nguyen, Mohammad I. Husain",
+      "link": "https://arxiv.org/abs/2611.23202"
+    },
+    {
+      "title": "RSI-Prime：训练模型去训练模型",
+      "titleEn": "RSI-Prime: Training Models to Train Models",
+      "summary": "若要让大模型走上递归自我改进（RSI），先要系统培养它们「实施训练」的能力。作者构建了 RSI-Prime 数据集，包含七类任务上的 350 条完整实验轨迹；通过对实验决策做细粒度识别与质量标注，并用决策级损失掩码去掉低质量行为的监督，来学习高质量的实验决策。在面向自主后训练的基准 PostTrainBench 上，用 RSI-Prime 训练后的 GLM-5.3 相对原始 GLM-5.3 总体性能有 31.95% 的相对提升。",
+      "authors": "Dewu Zheng, Yang Ye, Hongyu Zhang, Jun Yu, Yanlin Wang",
+      "link": "https://arxiv.org/abs/2611.23138"
+    },
+    {
+      "title": "读懂场景状态：揭示视觉语言模型的安全失效",
+      "titleEn": "Reading Scene States: Uncovering Safety Failures in Vision-Language Models",
+      "summary": "视觉语言模型即使没有被直接要求去做有害目标，也可能通过解释画面事件而提供有害协助。作者把这一现象称为「场景状态安全漏洞」，并发布 SceneSafetyBench：375 对图像—问题，覆盖初始、中间、最终三类场景状态和五种视觉呈现。在八个视觉语言模型上，场景状态输入诱发有害协助的攻击成功率（ASR）为 45.6%–72.3%。他们进一步提出 S3TA：把有害目标转写成场景状态，分别提问后再拼合回答；在 MM-SafetyBench 的七个类别、八个开源与商业模型上，模型平均 ASR 为 71.2%，比最强基线高 6.1 个百分点。文本侧过滤和视觉审核提供的保护有限。",
+      "authors": "Tongxi Wu, Yuyang Cheng, Jiacheng Xian, Menglin Yang, Kai Chen, Jian Zhang, Yang Gao",
+      "link": "https://arxiv.org/abs/2611.23206"
+    },
+    {
+      "title": "WebAgents：把智能体的创建、托管与执行拆开",
+      "titleEn": "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
+      "summary": "面向各自独立开发的智能体与服务所构成的「智能体网络」，作者主张把创建、托管和执行拆开，避免把发布绑定到特定运行环境，也不把用户资源的控制权交出去。WebAgents 用签名的 agent.pkg 携带可移植的工作流、Skill、模式和资源需求；基于 OpenClaw 的智能体原生浏览器/运行时校验包、取得授权，并在运行时绑定到用户控制的模型、工具、权限和预算，托管方可以分发公开程序、把私有服务留在服务端。三个互不相关的工作流在本地模型和 API 模型下无需改动即可执行。在受控测试中，WebAgents 显式拦截了全部 716 个注入的合约违规，并接受全部 295 个匹配的良性对照，三个包的自动化预执行处理中位数都低于 0.5 秒。",
+      "authors": "Dario Fenoglio, Martin Gjoreski, Marc Langheinrich, Pradyumna Chari, Ramesh Raskar",
+      "link": "https://arxiv.org/abs/2611.21978"
+    }
+  ],
+  "models": [
+    {
+      "name": "Hy4 flash / Hy4 flash-FP8 / Hy4 flash-base",
+      "vendor": "腾讯混元",
+      "highlight": "官方在 Hugging Face、ModelScope 等平台开放指令模型、FP8 版和预训练基座。模型卡称总参数 220B（含 Engram 参数），每 token 激活约 12B，原生文图输入、上下文最长 1M，42 层主干为 1 层稠密加 41 层 MoE。基座未经指令微调。许可为 Tencent Hy License。本站 11 月 18 日下午半点榜已记录 tencent/Hy4-flash 官方权重落地。",
+      "link": "https://huggingface.co/tencent/Hy4-flash"
+    },
+    {
+      "name": "Rumble-2-Flash",
+      "vendor": "Reson8",
+      "highlight": "11 月 18 日以 Apache 2.0 开源的 0.5B 语音识别模型，官方称覆盖 40 种以上语言并带自动语种检测，可在 Transformers 与 vLLM 中原生运行、无需自定义代码。Hugging Face 博客给出的数字包括：多语 Open ASR Leaderboard 平均错误率 6.96%，英文轨平均 WER 6.6%；大批次吞吐量超过 7000 RTFx；在 AppTek 302 小时呼叫中心基准上 WER 7.86%，与约 30B 的 NVIDIA Nemotron 3.5 Transcribe（7.78%）接近。权重位于 Reson8/Rumble-2-Flash。",
+      "link": "https://huggingface.co/blog/rumble-2-flash"
+    },
+    {
+      "name": "DaisyRose-27B",
+      "vendor": "RadixArk",
+      "highlight": "RadixArk 的首个模型，基于 Qwen3.8-27B，用 Miles 在最长 1M token 的长程智能体任务上做强化学习：官方称仅用 1200 条精选任务、在 144 张 H200 上训练 18 天。保留 Qwen3.8-27B 的架构、分词器、对话模板、图像理解和 256K 上下文。博客给出的 pass@1 对照包括：Terminal-Bench 4.1 从 5.6 升至 12.0，Terminal-Bench 2.1 从 73.0 到 75.5，DeepSWE v1.1 从 42.2 到 46.2，SWE-Bench Pro v2 从 91.3 到 94.7。以 Apache 2.0 提供 BF16、FP8 与 NVFP4 权重。",
+      "link": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "微软 Foundry Toolbox：一份 MCP 端点，复用工具、Skill 与智能体",
+      "summary": "11 月 18 日的 Foundry 博客把 Toolbox 定位为面向生产级智能体集群的共享能力层：在 Foundry 里策划和版本化工具、Skill 与智能体，经一个 MCP 端点复用，并集中处理下游鉴权。Skill 将通过官方 MCP Skills 扩展对外暴露；提示智能体里通过 Shell 工具执行 Skill 已进入预览。浏览器自动化与 Computer Use 宣布正式可用，后者对接 Astra 系列等支持 computer use 的模型。GitHub Copilot 支持一键安装 Toolbox。",
+      "source": "Microsoft Foundry",
+      "link": "https://devblogs.microsoft.com/foundry/build-once-reuse-across-your-agent-fleet-tools-and-toolboxes-in-foundry/",
+      "models": [
+        "GPT-6.2 Astra"
+      ]
+    },
+    {
+      "title": "Skill Optimization：从生产轨迹里写出可审阅的 Agent Skill",
+      "summary": "微软 11 月 18 日介绍 Foundry 中进入公开预览的 Skill Optimization：读取智能体在生产中的轨迹和反馈，寻找反复出现的错误、勉强通过的回答和值得保留的习惯，再写成可与系统提示并存、可审阅的 Agent Skill 文件，而不微调模型。官方称，在内部按常见企业智能体任务建模的基准上，学到的 Skill 平均提升 9.2 分，在智能体未见过的问题上最高 19.9 分；即使没有评估器，它生成的评分标准在 35 次运行里有 31 次方向正确。Airline-Tools 上，同一智能体从 81% 升至 93%。",
+      "source": "Microsoft Foundry",
+      "link": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/learning-agent-skills-from-production-traces/4573041",
+      "models": []
+    },
+    {
+      "title": "Proof 在 ChatGPT 上线 MCP，先做 x401 身份与签名授权",
+      "summary": "身份授权公司 Proof 11 月 18 日宣布，其 MCP 的首个版本已出现在 ChatGPT 的应用目录中。首个流程是 x401：用户添加 Proof 应用并登录后，助手可携带已验证身份开展工作；当网站或服务询问谁授权了某次请求时，当事人核对详情、用生物识别批准，由对方自行验签。开发者文档与参考实现见 proof.com/x401。",
+      "source": "GlobeNewswire / Proof",
+      "link": "https://www.globenewswire.com/news-release/2026/11/18/3405765/0/en/proof-launches-its-mcp-in-chatgpt-starting-with-x401-so-ai-agents-can-prove-who-they-act-for-and-what-that-person-approved.html",
+      "models": []
+    },
+    {
+      "title": "LeanData 推出 MCP，把销售编排与日程接入 Claude 和 ChatGPT",
+      "summary": "LeanData 11 月 18 日宣布 Intelligent GTM Orchestration 平台的新版本，头条是 LeanData MCP：把原有的 BookIt 日程 MCP 扩展为一条同时覆盖日程与销售编排的连接，可在 Anthropic Claude、OpenAI ChatGPT 和 Outreach Marketplace 中使用。官方称，智能体经该 MCP 采取的每一步都遵循团队已在 LeanData 中设置的路由规则、归属和权限。该能力面向 Premium 版的现有与新客户开放。",
+      "source": "LeanData",
+      "link": "https://www.leandata.com/newsroom/leandata-introduces-mcp-bringing-orchestration-and-scheduling-into-claude-and-chatgpt/",
+      "models": []
+    },
+    {
+      "title": "PyPI 上的官方智能体框架包被连续两次投毒，暴露启动钩子风险",
+      "summary": "与新闻栏同一事件：微软 agent-framework 的两个恶意版本通过 .pth 在解释器启动时执行，而不必被 import。对正在把智能体框架装进 CI 和开发机的团队来说，这是一条具体的供应链课：包被隔离后攻击者仍可能在数分钟内再发一版，凭据必须按「可能已离开本机」来轮换。已知安全版本为 1.26.0。",
+      "source": "BleepingComputer",
+      "link": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
+      "models": []
+    }
+  ]
+}
