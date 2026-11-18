@@ -2,28 +2,9 @@
   {
     "d": "2026-11-18",
     "w": "星期三",
-    "pts": [
-      "OpenAI 发布 GPT-6.2 Astra 与 Sol：Astra API 入出价下调 20%，官方称 Agents’ Last Exam 较上代高 5.2 分，自我改进评估首达 High",
-      "CNBC：Anthropic IPO 可能高于 70–78 美元区间，11 月 19 日以 ANT 登陆纳斯达克",
-      "英伟达第三季营收 1158 亿美元、同比增 103%，Vera Rubin NVL72 已向多家云厂出货",
-      "英伟达董事长在财报会上称董事会不打算让黄仁勋重返 CEO；黄仁勋此前表态愿回归，12 月 1 日将接受国会问询",
-      "《华尔街日报》：SEC 据报就英伟达信息披露启动民事调查",
-      "谷歌把 Spark 智能体改名为 Tasks 并向六国免费开放，由 Gemini 4 Hydrogen 驱动",
-      "微软 Ignite 发布 MAI Code 2 等七款新模型，并推出可在自有环境运行的 Licensed Weights",
-      "Isomorphic Labs 完成 50 亿美元 C 轮；Genesis AI 以 35 亿美元估值募集 5 亿美元",
-      "AMD 完成对推理芯片公司 Taalas 的收购；英伟达推出 Nemotron for Science",
-      "论文：智能体交接损失 / 视频当经历 / 批准审计 / 笨拙工具调用 / 程序蒸馏 / 交易智能体只有 Beta / 多验证器帕累托优化",
-      "生态：微软 AI 透明度倡议；OpenAI 向北约提供 Daybreak；Anthropic 高危漏洞披露窗口改为 30 天"
-    ],
+    "pts": 21,
     "link": "AI日报-2026-11-18.html",
-    "m": [
-      "GPT-6 Astra",
-      "GPT-6.1 Sol",
-      "Gemini 4 Hydrogen",
-      "Claude Fable 5.2",
-      "Qwen3.8-27B",
-      "Nemotron 3.5 Super VL"
-    ],
+    "m": 8,
     "bf": false
   },
   {
