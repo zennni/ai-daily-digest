@@ -954,18 +954,18 @@
    "tier": "默认",
    "aa": 35,
    "aa_dec": 35.0,
-   "pin": 0.446881,
-   "pcache": 0.022344,
-   "pout": 1.340642,
+   "pin": 0.446974,
+   "pcache": 0.022349,
+   "pout": 1.340922,
    "open_": "闭源（正式版权重未发布）",
    "lic": "专有（正式版权重待开源；预览 Hy4-preview 为 Apache 2.0）",
    "src": "官方",
-   "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7141 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重尚未在 HF 发布</b>（仅有 tencent/Hy4-preview Apache 2.0）；Hy4 Flash 官方称即将推出、本轮未收录",
-   "cost": 0.7820415,
+   "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7118 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重尚未在 HF 发布</b>（仅有 tencent/Hy4-preview Apache 2.0）；Hy4 Flash 官方称即将推出、本轮未收录",
+   "cost": 0.7822045,
    "ability": 53.8,
-   "costscore": 61.52288361757577,
+   "costscore": 61.518795316998045,
    "value": 57,
-   "eff": 44.8,
+   "eff": 44.7,
    "grade": "C",
    "rank": 44
   },
@@ -1064,16 +1064,16 @@
    "tier": "默认",
    "aa": 33,
    "aa_dec": 32.6,
-   "pin": 0.297921,
-   "pcache": 0.005958,
-   "pout": 1.191682,
+   "pin": 0.297983,
+   "pcache": 0.00596,
+   "pout": 1.191931,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "552B/16B MoE、原生视觉、1M 上下文,10/17 权重开源(纯 MIT);<b>峰值 ¥2/¥8、缓存命中 ¥0.04,闲时减半</b>;AA 记单任务成本 $0.60、175 tok/s;<b>v5 报告点名其为「已发布权重的最高分」并列者(32);FrontierCode 2.0 28% 为开放权重第一、Cyber Index 57% 亦为开放模型第一</b>",
-   "cost": 0.5958414999999999,
+   "cost": 0.59596575,
    "ability": 50.8,
-   "costscore": 66.85736702996088,
+   "costscore": 66.85327677253893,
    "value": 57,
    "eff": 55.4,
    "grade": "C",
@@ -1372,16 +1372,16 @@
    "tier": "High",
    "aa": 29,
    "aa_dec": 28.6,
-   "pin": 0.297921,
-   "pcache": 0.005958,
-   "pout": 1.191682,
+   "pin": 0.297983,
+   "pcache": 0.00596,
+   "pout": 1.191931,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>入档:AA v5.0 首次给出 High 档独立分 29(介于默认档 32 与 Non-reasoning 档 19 之间)</b>;价格同默认档(峰值 ¥2/¥8、缓存 ¥0.04、闲时减半);<b>High 档速度 203 tok/s,介于默认档 175 与 Non-reasoning 档 1,486 之间</b>——<b>三档至此齐全:32／29／19,可按「质量—吞吐」曲线选档</b>",
-   "cost": 0.5958414999999999,
+   "cost": 0.59596575,
    "ability": 44.6,
-   "costscore": 66.85736702996088,
+   "costscore": 66.85327677253893,
    "value": 54,
    "eff": 48.7,
    "grade": "C",
@@ -1438,16 +1438,16 @@
    "tier": "默认",
    "aa": 28,
    "aa_dec": 27.8,
-   "pin": 0.119168,
-   "pcache": 0.034261,
-   "pout": 0.417089,
+   "pin": 0.119193,
+   "pcache": 0.034268,
+   "pout": 0.417176,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "320B/18B,1M 上下文,8/26 发布即开源(纯 MIT);国内官方价 ¥0.8/¥2.8/缓存 ¥0.23(阿里云百炼原厂直供页 10-10 更新,本期复核未变),z.ai 国际站另挂 $0.15/$0.50;<b>本报告取国内官价口径</b>;AA 记单任务成本 $0.58、69 tok/s",
-   "cost": 0.22344025,
+   "cost": 0.223487,
    "ability": 43.1,
-   "costscore": 86.09821903247914,
+   "costscore": 86.09411505426237,
    "value": 60,
    "eff": 125.3,
    "grade": "B",
@@ -1658,16 +1658,16 @@
    "tier": "Max",
    "aa": 23,
    "aa_dec": 23.1,
-   "pin": 1.340642,
-   "pcache": 0.044688,
-   "pout": 4.021927,
+   "pin": 1.340922,
+   "pcache": 0.044697,
+   "pout": 4.022766,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "1.6T/49B,1M 上下文;峰值 ¥9/¥27、缓存 ¥0.30;<b>AA 榜单以 0813 标识该系列并给出 v5.0 23 分;0813 属当前生产版官方名称自带日期,按规则保留、不视作历史快照</b>;AA 记单任务成本 $1.77、81 tok/s;<b>其单位成本远高于 V4.1 Flash 却分数更低——老一代旗舰已被自家 Flash 系列超越</b>",
-   "cost": 2.34612375,
+   "cost": 2.3466135,
    "ability": 35.4,
-   "costscore": 39.97152786702301,
+   "costscore": 39.967433295391174,
    "value": 37,
    "eff": 9.8,
    "grade": "D",
@@ -1746,18 +1746,18 @@
    "tier": "High",
    "aa": 21,
    "aa_dec": null,
-   "pin": 1.340642,
-   "pcache": 0.044688,
-   "pout": 4.021927,
+   "pin": 1.340922,
+   "pcache": 0.044697,
+   "pout": 4.022766,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>入档:AA 11-13 补出 High 档独立分 21</b>;价格同 Max 档(工作日高峰 ¥9/¥27、缓存 ¥0.30、闲时减半);<b>至此 V4 Pro 0813 三档齐全:Max 23／High 21／Non-reasoning 13</b>;AA 榜单未给该档小数位,本表按整数记录;<b>须并列读的事实:三档全部低于自家 V4.1 Flash 1017 的对应档(33／29／19),而单 token 价约为其 4.5 倍——老一代旗舰的性价比劣势被同一模型族内三档逐一对齐后彻底量化</b>;1.6T/49B、1M 上下文;0813 属官方生产版名称自带日期,按规则保留、不视作历史快照",
-   "cost": 2.34612375,
+   "cost": 2.3466135,
    "ability": 32.3,
-   "costscore": 39.97152786702301,
+   "costscore": 39.967433295391174,
    "value": 35,
-   "eff": 9.0,
+   "eff": 8.9,
    "grade": "D",
    "rank": 80
   },
@@ -1900,16 +1900,16 @@
    "tier": "Non-reasoning",
    "aa": 19,
    "aa_dec": 18.5,
-   "pin": 0.297921,
-   "pcache": 0.005958,
-   "pout": 1.191682,
+   "pin": 0.297983,
+   "pcache": 0.00596,
+   "pout": 1.191931,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>AA v5.0 Non-reasoning 档 19(较默认档少 13.5 分),但输出速度 1,486 tok/s 为全榜最快</b>;价格同默认档;<b>关推理换来 8.5 倍吞吐,代价是 13.5 分能力</b>;适用批处理抽取、分类、格式转换等「要吞吐不要推理」的任务",
-   "cost": 0.5958414999999999,
+   "cost": 0.59596575,
    "ability": 29.2,
-   "costscore": 66.85736702996088,
+   "costscore": 66.85327677253893,
    "value": 44,
    "eff": 31.9,
    "grade": "D",
@@ -2076,16 +2076,16 @@
    "tier": "Non-reasoning",
    "aa": 13,
    "aa_dec": 13.0,
-   "pin": 1.340642,
-   "pcache": 0.044688,
-   "pout": 4.021927,
+   "pin": 1.340922,
+   "pcache": 0.044697,
+   "pout": 4.022766,
    "open_": "开放权重",
    "lic": "MIT",
    "src": "官方",
    "note": "<b>入档:AA v5.0.1 首次给出 V4 Pro 0813 的 Non-reasoning 档独立分 13(较 Max 档 23 少 10 分)</b>;价格同 Max 档(峰值 ¥9/¥27、缓存 ¥0.30);AA 记单任务成本 $0.98、首 token 3.41 秒;<b>至此 V4 Pro 两档齐全:Max 23／Non-reasoning 13;同价位下仍不及自家 V4.1 Flash 任一档(33／29／19),老旗舰的劣势被进一步量化</b>",
-   "cost": 2.34612375,
+   "cost": 2.3466135,
    "ability": 20.0,
-   "costscore": 39.97152786702301,
+   "costscore": 39.967433295391174,
    "value": 28,
    "eff": 5.5,
    "grade": "D",
@@ -2180,6 +2180,28 @@
    "rank": 99
   },
   {
+   "name": "Inkling",
+   "vendor": "Thinking Machines",
+   "country": "美国",
+   "tier": "High",
+   "aa": 11,
+   "aa_dec": 11.0,
+   "pin": 1.0,
+   "pcache": null,
+   "pout": 4.05,
+   "open_": "开放权重",
+   "lic": "Apache 2.0",
+   "src": "第三方（AA 收录）",
+   "note": "<b>入档：AA Changelog 11-17 公布 Intelligence Index 11，本轮 AA 模型库首次给出完整 v5.0.1 记录：11.0316（四舍五入 11）</b>；与 xHigh 档同价 $1.00/$4.05（<b>第三方托管挂牌价，原厂未刊布统一 API 价</b>）；AA 记单任务成本 $0.62；规格同系列 975B/41B、1M 上下文、文本+图像+语音输入；HF <code>thinkingmachines/Inkling</code>，许可 Apache 2.0",
+   "cost": 2.0125,
+   "ability": 16.9,
+   "costscore": 42.9805000023445,
+   "value": 27,
+   "eff": 5.5,
+   "grade": "D",
+   "rank": 100
+  },
+  {
    "name": "Qwen3.8 27B",
    "vendor": "阿里云 Qwen",
    "country": "中国",
@@ -2199,7 +2221,7 @@
    "value": 30,
    "eff": 8.0,
    "grade": "D",
-   "rank": 100
+   "rank": 101
   },
   {
    "name": "GPT-6 Luna",
@@ -2221,7 +2243,29 @@
    "value": 44,
    "eff": 44.4,
    "grade": "D",
-   "rank": 101
+   "rank": 102
+  },
+  {
+   "name": "Inkling Small",
+   "vendor": "Thinking Machines",
+   "country": "美国",
+   "tier": "High",
+   "aa": 10,
+   "aa_dec": 9.6,
+   "pin": 0.3,
+   "pcache": 0.06,
+   "pout": 1.2,
+   "open_": "开放权重",
+   "lic": "Apache 2.0",
+   "src": "官方",
+   "note": "<b>入档：AA Changelog 11-17 公布 Intelligence Index 10，本轮在 AA 模型页取到完整 v5.0.1 记录：9.575（四舍五入 10）</b>；价格同默认档 $0.30/$1.20、缓存命中 $0.06（AA 记价源为 Thinking Machines 原厂）；266B/12B MoE、1M 上下文、开放权重 Apache 2.0；AA 记单任务成本 $0.061；<b>AA 已将该系列标为 deprecated，并建议改用 Inkling 2 Small</b>——主榜已有默认档（13），本档按同口径独立分补列",
+   "cost": 0.6,
+   "ability": 15.4,
+   "costscore": 66.72093224808856,
+   "value": 36,
+   "eff": 16.7,
+   "grade": "D",
+   "rank": 103
   },
   {
    "name": "GPT-6 Luna",
@@ -2243,7 +2287,7 @@
    "value": 43,
    "eff": 40.0,
    "grade": "D",
-   "rank": 102
+   "rank": 104
   },
   {
    "name": "A.X-K2",
@@ -2265,7 +2309,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 103
+   "rank": 105
   },
   {
    "name": "Muse Glimmer",
@@ -2287,7 +2331,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 104
+   "rank": 106
   },
   {
    "name": "Command A+",
@@ -2309,7 +2353,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 105
+   "rank": 107
   },
   {
    "name": "LFM3-1.7B",
@@ -2331,7 +2375,7 @@
    "value": 44,
    "eff": 46.2,
    "grade": "D",
-   "rank": 106
+   "rank": 108
   },
   {
    "name": "Nemotron 3.5 Lightning",
@@ -2353,7 +2397,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 107
+   "rank": 109
   },
   {
    "name": "Granite 4.2 8B",
@@ -2375,7 +2419,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 108
+   "rank": 110
   },
   {
    "name": "Granite 4.2 3B",
@@ -2397,7 +2441,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 109
+   "rank": 111
   },
   {
    "name": "Mistral Small 4",
@@ -2419,7 +2463,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 110
+   "rank": 112
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2441,7 +2485,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 111
+   "rank": 113
   },
   {
    "name": "LFM3-VL-2B",
@@ -2463,10 +2507,30 @@
    "value": 36,
    "eff": 8.9,
    "grade": "D",
-   "rank": 112
+   "rank": 114
   }
  ],
  "changes": [
+  {
+   "d": "11-18",
+   "t": "主榜 112→114：Inkling High（11）与 Inkling Small High（10）获完整 v5.0.1 分并入档",
+   "m": [
+    "Inkling",
+    "Inkling Small"
+   ],
+   "s": "<b>AA Changelog 11-17 已列 Inkling (High) Intelligence Index = 11、Inkling Small (High) = 10；本轮分别从 AA 模型库与模型页取到完整 v5.0.1 记录（11.0316 / 9.575）并入主榜</b>。Inkling High 与已有 xHigh 档（12）同价 <b>$1.00/$4.05</b>（第三方托管挂牌价，原厂未刊布统一 API 价），规格 975B/41B、1M 上下文、HF <code>thinkingmachines/Inkling</code>、许可 Apache 2.0，AA 记单任务成本 $0.62。Inkling Small High 价格同默认档 <b>$0.30/$1.20、缓存命中 $0.06</b>（AA 记价源为 Thinking Machines 原厂），266B/12B、1M 上下文、Apache 2.0；<b>AA 已将该系列标为 deprecated，并建议改用 Inkling 2 Small</b>——因主榜已有默认档（13），本档按同口径独立分补列。成本上下限未变（$0.11–$18.0），其余非人民币定价模型的性价比分不变。"
+  },
+  {
+   "d": "11-18",
+   "t": "汇率 6.7132→6.7118（调升 14 基点）：四组人民币定价 8 个配置美元价上移约 0.021%，名次与等级不变",
+   "m": [
+    "Hy4",
+    "DeepSeek V4.1 Flash（1017 当前正式版）",
+    "DeepSeek V4 Pro 0813",
+    "GLM-5.3-Flash"
+   ],
+   "s": "<b>中国外汇交易中心 2026-11-18 人民币对美元中间价 <u>1 USD = 6.7118 CNY</u>，较上一交易日 11-17 的 6.7132 <u>调升 14 基点</u>（人民币升值）；中国货币网 CcprHisNew 官方记录、每日经济新闻《人民币兑美元中间价报6.7118，上调14点》、新浪财经、FXStreet 四源一致</b>。<b>四组人民币定价模型的美元价与标准任务成本同步上移约 0.021%：混元 Hy4 $0.446974／$1.340922／缓存 $0.022349（标准任务成本 $0.782204）；DeepSeek V4.1 Flash 1017 三档 $0.297983／$1.191931／缓存 $0.005960（$0.595966）；DeepSeek V4 Pro 0813 三档 $1.340922／$4.022766／缓存 $0.044697（$2.346614）；GLM-5.3-Flash $0.119193／$0.417176／缓存 $0.034268（$0.223487）</b>。成本上下限未变，八个配置的整数性价比分与等级均未变。"
+  },
   {
    "d": "11-18",
    "t": "主榜 110→112：Liquid AI LFM3-1.7B（6）与 LFM3-VL-2B（2）首获完整 v5.0.1 记录并入榜",
