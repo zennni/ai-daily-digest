@@ -2,12 +2,20 @@
   "meta": {
     "date": "2026-11-19",
     "week": "星期四",
-    "note": "今日主题词：定价过顶，开盘作答。相对昨日「谁来为越界签字」（10:00 增补已把俄勒冈起诉、浑水做空、爱尔兰叫停智能体数据训练和 BIS 远程算力许可写进合并版），这 24 小时真正落槌的是 Anthropic 把发行价定在每股 83 美元，高于上周 70–78 美元的指引区间，股票代码 ANT 将于今日（美国时间 11 月 19 日周四）登陆纳斯达克。CNBC 于美国时间周三（11 月 18 日）10:15 刊出，援引知情人士称定价已定；Axios 亦确认 83 美元，并给出以此计算的初始市值约 1.08 万亿美元、完全稀释约 1.5 万亿美元。两家均按公司此前披露的 8.25 亿股测算，IPO 筹资约 685 亿美元，但 Axios 写明尚未确认最终发行股数、不排除增加。CNBC 还称，包括谷歌、微软、英伟达和 AMD 在内的科技公司同意在此次发行中合计投资 260 亿美元；亚马逊与谷歌各自持有的股份估值均超过 1000 亿美元。此刻上海早六，美股尚未开盘，开盘表现要等到今晚。另一头，模型开始改写给自己供电的芯片：OpenAI 11 月 18 日发文称，与 AMD 合作在旗舰 GPU IP 上、相对已高度优化的基线看到最高 14% 的 PPA 改进，部分改动已进入送厂设计，另一些写入后续量产文档；AMD 还验证了其下一代旗舰 CPU 关键模块上由该模型撰写的设计带来个位数百分比的 PPA 收益。OpenAI 自研推理芯片 Jalapeño 方面，团队估计模型提议的改动使向量单元与矩阵单元的标准单元面积分别约降 13% 与 10%，并已在硅上验证。软件供应链的弦没有松：微软官方 Agent Framework 的 PyPI 包在 11 月 17 日连续发布两个恶意版本（1.26.1 / 1.26.2），会在 Python 启动时窃取云凭据，BleepingComputer 于 18 日报道；PyPI 已隔离，安全版本为 1.26.0。中国商务部 17 日晚就美方限制远程获取先进半导体的措施表示强烈不满，并称若美方一意孤行将采取反制措施。一句话：万亿定价已经落槌，今晚开盘才是市场的答题；芯片开始被模型改写，智能体的软件供应链也正在被改写。"
+    "note": "今日主题词：定价过顶，开盘作答。相对昨日「谁来为越界签字」（10:00 增补已把俄勒冈起诉、浑水做空、爱尔兰叫停智能体数据训练和 BIS 远程算力许可写进合并版），这 24 小时真正落槌的是 Anthropic 把发行价定在每股 83 美元，高于上周 70–78 美元的指引区间，股票代码 ANT 将于今日（美国时间 11 月 19 日周四）登陆纳斯达克。CNBC 于美国时间周三（11 月 18 日）10:15 刊出，援引知情人士称定价已定；Axios 亦确认 83 美元，并给出以此计算的初始市值约 1.08 万亿美元、完全稀释约 1.5 万亿美元。两家均按公司此前披露的 8.25 亿股测算，IPO 筹资约 685 亿美元，但 Axios 写明尚未确认最终发行股数、不排除增加。CNBC 还称，包括谷歌、微软、英伟达和 AMD 在内的科技公司同意在此次发行中合计投资 260 亿美元；亚马逊与谷歌各自持有的股份估值均超过 1000 亿美元。此刻上海早六，美股尚未开盘，开盘表现要等到今晚。另一头，模型开始改写给自己供电的芯片：OpenAI 11 月 18 日发文称，与 AMD 合作在旗舰 GPU IP 上、相对已高度优化的基线看到最高 14% 的 PPA 改进，部分改动已进入送厂设计，另一些写入后续量产文档；AMD 还验证了其下一代旗舰 CPU 关键模块上由该模型撰写的设计带来个位数百分比的 PPA 收益。OpenAI 自研推理芯片 Jalapeño 方面，团队估计模型提议的改动使向量单元与矩阵单元的标准单元面积分别约降 13% 与 10%，并已在硅上验证。软件供应链的弦没有松：微软官方 Agent Framework 的 PyPI 包在 11 月 17 日连续发布两个恶意版本（1.26.1 / 1.26.2），会在 Python 启动时窃取云凭据，BleepingComputer 于 18 日报道；PyPI 已隔离，安全版本为 1.26.0。中国商务部 17 日晚就美方限制远程获取先进半导体的措施表示强烈不满，并称若美方一意孤行将采取反制措施。一句话：万亿定价已经落槌，今晚开盘才是市场的答题；芯片开始被模型改写，智能体的软件供应链也正在被改写。早八补记：早六稿未收入谷歌 11 月 18 日两条产品线——正式发布 Gemini 4 Neon（官方称 xhigh 档 AA Intelligence Index 61、总榜第 3；本站今早全日量已按同口径将四档入库），并向符合条件的 Google AI Ultra 用户开放 Genie 4（可在探索中实时改世界，并首次加入原生音频）。美股仍未开盘，主题词不变。"
   },
   "highlights": [
     {
       "title": "Anthropic 将 IPO 定价为每股 83 美元，高于 70–78 美元指引，ANT 今日登陆纳斯达克",
       "summary": "CNBC 11 月 18 日援引知情人士、Axios 随后确认：发行价 83 美元。Axios 称以此计算初始市值约 1.08 万亿美元、完全稀释约 1.5 万亿美元；若此前披露的 8.25 亿股均售出，筹资约 685 亿美元（Axios 称最终股数尚未确认）。谷歌、微软、英伟达、AMD 等同意合计认购 260 亿美元。上海早六时点尚未开盘。"
+    },
+    {
+      "title": "谷歌发布 Gemini 4 Neon：官方称 xhigh 档 AA Index 61，标准价 $3/$15",
+      "summary": "11 月 18 日官方博客推出 Gemini 4 Neon，面向复杂软件工程、知识工作与科学工作流。官方称其 xhigh 思维档在 Artificial Analysis Intelligence Index 得 61、总榜第 3，Vals Index 第 2；定价为每百万 token 输入 3 美元（缓存输入 0.15 美元）、输出 15 美元，上下文 100 万 token。即日起在 Gemini API、Gemini for business、Google Antigravity 与 Gemini 应用（Pro/Ultra）推送。本站今早全日量已按同口径收录四档（xHigh 61.4，主表第 6）。"
+    },
+    {
+      "title": "谷歌向 AI Ultra 用户开放 Genie 4：可实时改世界，并首次加入原生音频",
+      "summary": "11 月 18 日官方宣布，符合条件的 Google AI Ultra 订阅者可在新版 Project Genie 中首次使用 Genie 4（10 月 27 日曾作为研究预览发布）。用户可在探索中输入新提示实时改场景；Genie 4 首次配上随画面变化的原生音频。同期 Genie 3 将单次探索延长至最多 3 分钟，并支持 360 度全景种子。生成内容带 SynthID 水印。Pro 用户可加入候补名单。"
     },
     {
       "title": "OpenAI：模型在 AMD 旗舰 GPU IP 上看到最高 14% PPA 改进，部分改动已送厂",
@@ -45,6 +53,24 @@
       "date": "2026-11-18",
       "source": "CNBC / Axios",
       "link": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+      "models": []
+    },
+    {
+      "title": "谷歌发布 Gemini 4 Neon：官方称 xhigh 档 AA Index 61、总榜第 3，标准价 $3/$15",
+      "summary": "谷歌 11 月 18 日宣布推出 Gemini 4 Neon。DeepMind 首席 AI 架构师 Koray Kavukcuoglu 撰写的官方博客称，该模型面向复杂软件工程、知识工作与科学工作流，强调更快完成端到端任务。官方称其 xhigh 思维档在 Artificial Analysis Intelligence Index 得 61、总榜第 3，在 Vals Index 排第 2，并称在新的 Agent Arena Index 可操控性上排第 2。定价为每百万 token 输入 3 美元（缓存输入 0.15 美元，官方称 95% 折扣）、输出 15 美元，上下文 100 万 token。即日起向 Gemini API（Google AI Studio 付费档）、Gemini for business、Google Antigravity（付费 Pro/Ultra）以及 Gemini 应用中的 Pro/Ultra 订阅者推送。官方把 Neon 放在 Carbon 与 Hydrogen 之间：Carbon 应对最难的长程项目，Hydrogen 负责日常快速执行，Neon 则面向高频、复杂工作流。面向可信防守方的 Neon for cyber 将在随后数日经 Fairwind Program 开放。本站今早全日量已按现行 AA Index 同口径将 Neon 四档入库：xHigh 61.4（主表第 6）、High 59.6（第 9）、Medium 54.9（第 18）、Low 44.1（第 35），标准任务成本 6.75 美元。官方博客所写「总榜第 3」与本站公开榜名次不完全一致，此处并列写出。",
+      "date": "2026-11-18",
+      "source": "Google",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "models": [
+        "Gemini 4 Neon"
+      ]
+    },
+    {
+      "title": "谷歌向 AI Ultra 用户开放 Genie 4：可实时改世界，并首次加入原生音频",
+      "summary": "谷歌 11 月 18 日发文称，面向符合条件的 Google AI Ultra 订阅者推出新版 Project Genie 体验，首次开放 Genie 4。该模型曾在 10 月 27 日作为研究预览向受信任测试者宣布。用户可在探索过程中输入新提示，实时改天气、加入角色或改写剧情；Genie 4 首次为这些画面配上随场景变化的实时原生音频，从环境声到角色对白。同期升级 Genie 3：单次生成探索时长由 60 秒延至最多 3 分钟，并可把多个世界串起来；支持用 360 度全景图作为世界种子；也可在探索中用自然语言触发事件。新版还加入 Project Genie 智能体，以及可发现、探索和二次创作的社区画廊。Project Genie 生成的视频与音频均带 SynthID 水印，输入输出经过安全审查。官方写明 Genie 3 与 Genie 4 仍处于前沿研究阶段，镜头延迟、复杂物理互动、实时音频精度和长期场景保持仍是待解问题。Google AI Pro 用户可在同一页面加入候补名单。",
+      "date": "2026-11-18",
+      "source": "Google",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/",
       "models": []
     },
     {
@@ -163,6 +189,18 @@
     }
   ],
   "models": [
+    {
+      "name": "Gemini 4 Neon",
+      "vendor": "Google",
+      "highlight": "11 月 18 日推出，面向复杂软件工程、知识工作与科学工作流。官方定价为每百万 token 输入 3 美元（缓存输入 0.15 美元）、输出 15 美元，上下文 100 万 token，并设四档思维等级。官方称 xhigh 档在 Artificial Analysis Intelligence Index 得 61、总榜第 3，Vals Index 第 2；即日起在 Gemini API、Gemini for business、Antigravity 与 Gemini 应用（Pro/Ultra）推送。本站今早全日量已按现行 AA Index 同口径收录四档：xHigh 61.4（第 6）、High 59.6（第 9）、Medium 54.9（第 18）、Low 44.1（第 35），标准任务成本 6.75 美元。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "name": "Genie 4",
+      "vendor": "Google DeepMind",
+      "highlight": "11 月 18 日起向符合条件的 Google AI Ultra 订阅者，通过新版 Project Genie 首次开放。用户可在探索中输入新提示实时改世界，并首次获得随画面变化的原生音频。10 月 27 日的研究博文曾把它作为预览向受信任测试者宣布。同期 Genie 3 将单次探索延长至最多 3 分钟，并支持 360 度全景种子与社区画廊。生成的视频与音频带 SynthID 水印。Pro 用户可加入候补名单。",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
+    },
     {
       "name": "Hy4 flash / Hy4 flash-FP8 / Hy4 flash-base",
       "vendor": "腾讯混元",
