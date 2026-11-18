@@ -8,6 +8,10 @@
     "pattern": "gemini[ -]?4[ -]?carbon|carbon"
   },
   {
+    "name": "Gemini 4 Neon",
+    "pattern": "gemini[ -]?4[ -]?neon|gemini-4-neon"
+  },
+  {
     "name": "GPT-6.1 Terra",
     "pattern": "gpt[ -]?6\\.1[ -]?terra|6\\.1[ -]?terra"
   },
@@ -49,7 +53,27 @@
   },
   {
     "name": "K2 Horizon 375B-A23B",
-    "pattern": "k2[ -]horizon"
+    "pattern": "k2[ -]horizon[ -]?375"
+  },
+  {
+    "name": "K2 Horizon 32B",
+    "pattern": "k2[ -]horizon[ -]?32b?"
+  },
+  {
+    "name": "K2 Horizon MoVA 36B-A4B",
+    "pattern": "k2[ -]horizon[ -]?mova|mova[ -]?36"
+  },
+  {
+    "name": "K2 Horizon 7B",
+    "pattern": "k2[ -]horizon[ -]?7b"
+  },
+  {
+    "name": "K2 Horizon 3.7B",
+    "pattern": "k2[ -]horizon[ -]?3\\.7b"
+  },
+  {
+    "name": "K2 Horizon 0.9B",
+    "pattern": "k2[ -]horizon[ -]?0\\.9b"
   },
   {
     "name": "Gemini 3.8 Live",
