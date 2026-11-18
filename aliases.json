@@ -176,6 +176,10 @@
     "pattern": "mimo[ -]v2\\.5(?![ -]pro)"
   },
   {
+    "name": "Hy4 flash",
+    "pattern": "hy4[ -]?flash"
+  },
+  {
     "name": "Hy4",
     "pattern": "hy4"
   },

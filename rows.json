@@ -960,7 +960,7 @@
       "open_": "闭源（正式版权重未发布）",
       "lic": "专有（正式版权重待开源；预览 Hy4-preview 为 Apache 2.0）",
       "src": "官方",
-      "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7141 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重尚未在 HF 发布</b>（仅有 tencent/Hy4-preview Apache 2.0）；Hy4 Flash 官方称即将推出、本轮未收录",
+      "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7141 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重尚未在 HF 发布</b>（tencent/Hy4 仍 401；仅有 tencent/Hy4-preview Apache 2.0）；<b>Hy4 flash 权重已于 11-18 12:24（上海）公开</b>（HF tencent/Hy4-flash、Hy4-flash-FP8、Hy4-flash-base，许可为 Tencent Hy License，非 Apache 2.0；无 AA 同口径分，仍不入主榜，入本地 512GB／数据中心档）",
       "cost": 0.7822045,
       "ability": 53.8,
       "costscore": 61.518795316998045,
@@ -2511,6 +2511,15 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-18",
+      "t": "Hy4 flash 官方权重落地：HF tencent/Hy4-flash（FP8 / base 同步），正式版 Hy4 仍未开源；无 AA 分不入主榜，入本地 512GB／数据中心档",
+      "m": [
+        "Hy4 flash",
+        "Hy4"
+      ],
+      "s": "<b>腾讯混元 <u>Hy4 flash 官方权重于 11-18 12:24（上海）公开可下载</u></b>。<b>取证：Hugging Face 官方组织仓库 <code>tencent/Hy4-flash</code>、<code>tencent/Hy4-flash-FP8</code>、<code>tencent/Hy4-flash-base</code> 均非私有、非 gated；instruct 仓 148 个 safetensors 分片齐全（参数合计 220,251,201,958），lastModified 与 GitHub <code>Tencent-Hunyuan/Hy4-flash</code> pushed_at 均为 2026-11-18T04:24Z（上海 12:24）；<u>上一窗（12:00）官方组织检索仍仅有 Hy4-preview／Hy4-preview-FP8，本窗首次出现</u></b>。<b>官方 README：总参 220B（含 63.5B Engram）、每 token 激活约 12B（文本 11.3B＋视觉 0.43B），原生图文输入、1M 上下文</b>。<b>体积（HF usedStorage，权重）：FP8 ≈267GiB（287,075,867,188 字节）、BF16 ≈410GiB（440,523,542,284 字节）；官方 vLLM 镜像示例为 <code>--tensor-parallel-size 8</code></b>。<b>许可为 <u>Tencent Hy License v1.0</u>（Apache 2.0 衍生，官方写明不是 Apache 2.0）：以 MaaS 对外提供且连续 12 个月全球总营收超过 5000 万美元，或产品月活超过 1 亿，须另取书面许可；仅内部使用且不对第三方提供输出可豁免</b>。<b>处置：① <u>Hy4 flash 仍无 AA Intelligence Index 同口径分，按 11-17 非入榜登记继续不进主表</u>；② 按官方 FP8 体积写入本地 512GB 与数据中心档（INT4 按口径约 121GB，但官方 INT4 包与 AngelSlim GGUF 仓本轮未见可下载权重文件，暂不降档）；③ <u>正式版 <code>tencent/Hy4</code> 仍返回 401，Hy4 主表开放状态与许可不变</u></b>。"
+    },
     {
       "d": "11-18",
       "t": "更正 09:49 提交丢失的 GPT-6.2 / LFM3 一位小数，并按 aa_dec 恢复 5 处同分名次",
