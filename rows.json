@@ -2054,18 +2054,18 @@
    "tier": "默认",
    "aa": 14,
    "aa_dec": 13.6,
-   "pin": 0.2,
-   "pcache": null,
+   "pin": 0.15,
+   "pcache": 0.05,
    "pout": 0.5,
    "open_": "开放权重",
    "lic": "OpenMDW-1.1",
    "src": "第三方（AA 收录）",
-   "note": "120B/12B,1M 上下文,10/15 发布,官方提供 NVFP4 量化;$0.20/$0.50(<b>第三方托管挂牌价</b>);AA 记单任务成本 $0.54、474 tok/s——全榜速度第二;VL 全模态",
-   "cost": 0.325,
+   "note": "120B/12B,1M 上下文,10/15 发布,官方提供 NVFP4 量化;$0.15/$0.50、缓存命中 $0.05(<b>第三方托管挂牌价，随 AA 收录由 $0.20/$0.50 下调；原厂 NIM 无统一按 token 价</b>);AA 记单任务成本 $0.54、474 tok/s——全榜速度第二;VL 全模态",
+   "cost": 0.275,
    "ability": 21.5,
-   "costscore": 78.74813837761435,
-   "value": 44,
-   "eff": 43.1,
+   "costscore": 82.02522083236167,
+   "value": 46,
+   "eff": 50.9,
    "grade": "D",
    "rank": 94
   },
@@ -2312,6 +2312,28 @@
    "rank": 105
   },
   {
+   "name": "LFM3-1.7B",
+   "vendor": "Liquid AI",
+   "country": "美国",
+   "tier": "默认",
+   "aa": 6,
+   "aa_dec": 6.0,
+   "pin": 0.08,
+   "pcache": 0.02,
+   "pout": 0.2,
+   "open_": "开放权重",
+   "lic": "LFM Open License v1.0（自定义；年营收≥$1000 万商用须另签；研究/教育/非营利不限；无 copyleft）",
+   "src": "官方",
+   "note": "<b>AA Changelog 11-17 已公布 Intelligence Index 6，本轮 AA 模型库首次给出完整 v5.0.1 记录：5.9939（四舍五入 6）</b>；Liquid AI 端侧文本模型，参数 1.73B，256K 上下文；HF <code>LiquidAI/LFM3-1.7B</code> 开放权重；许可 <b>LFM Open License v1.0</b>（年营收≥$1000 万商用须另签，研究/教育/非营利不限，无 copyleft）；官方 API 价 <b>$0.08/$0.20、缓存命中 $0.02</b>（liquid.ai/pricing，与 AA 一致）；AA 记单任务成本约 $0.17",
+   "cost": 0.13,
+   "ability": 9.2,
+   "costscore": 96.7229175452527,
+   "value": 44,
+   "eff": 46.2,
+   "grade": "D",
+   "rank": 106
+  },
+  {
    "name": "Nemotron 3.5 Lightning",
    "vendor": "NVIDIA",
    "country": "美国",
@@ -2331,7 +2353,7 @@
    "value": 46,
    "eff": 54.5,
    "grade": "D",
-   "rank": 106
+   "rank": 107
   },
   {
    "name": "Granite 4.2 8B",
@@ -2353,7 +2375,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 107
+   "rank": 108
   },
   {
    "name": "Granite 4.2 3B",
@@ -2375,7 +2397,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 108
+   "rank": 109
   },
   {
    "name": "Mistral Small 4",
@@ -2397,7 +2419,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 109
+   "rank": 110
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2419,10 +2441,49 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 110
+   "rank": 111
+  },
+  {
+   "name": "LFM3-VL-2B",
+   "vendor": "Liquid AI",
+   "country": "美国",
+   "tier": "默认",
+   "aa": 2,
+   "aa_dec": 1.7,
+   "pin": 0.1,
+   "pcache": 0.02,
+   "pout": 0.5,
+   "open_": "开放权重",
+   "lic": "LFM Open License v1.0（自定义；年营收≥$1000 万商用须另签；研究/教育/非营利不限；无 copyleft）",
+   "src": "官方",
+   "note": "<b>AA Changelog 11-17 已公布 Intelligence Index 2，本轮 AA 模型库首次给出完整 v5.0.1 记录：1.706（四舍五入 2）</b>；端侧视觉语言模型（1.92B：1.73B 语言模型 + 164M 视觉编码器 + 25M projector），接受文本/图像/视频，128K 上下文；HF <code>LiquidAI/LFM3-VL-2B</code>；许可同 LFM Open License v1.0；官方文本价 <b>$0.10/$0.50、缓存命中 $0.02</b>（liquid.ai/pricing，与 AA 一致）；AA 记单任务成本约 $0.12",
+   "cost": 0.225,
+   "ability": 3.1,
+   "costscore": 85.96175681474675,
+   "value": 36,
+   "eff": 8.9,
+   "grade": "D",
+   "rank": 112
   }
  ],
  "changes": [
+  {
+   "d": "11-18",
+   "t": "主榜 110→112：Liquid AI LFM3-1.7B（6）与 LFM3-VL-2B（2）首获完整 v5.0.1 记录并入榜",
+   "m": [
+    "LFM3-1.7B",
+    "LFM3-VL-2B"
+   ],
+   "s": "<b>AA Changelog 11-17 已列 LFM3-1.7B Intelligence Index = 6、LFM3-VL-2B = 2；本轮 AA 模型库首次给出完整 v5.0.1 记录（5.9939 / 1.706）并收录官方价，故入主榜</b>。二者均为开放权重、许可 <b>LFM Open License v1.0</b>（年营收≥$1000 万商用须另签；研究/教育/非营利不限；无 copyleft）；HF 官方仓 <code>LiquidAI/LFM3-1.7B</code>（1.73B 文本、256K）与 <code>LiquidAI/LFM3-VL-2B</code>（1.92B 视觉语言、128K）。官方 API 价（liquid.ai/pricing，与 AA 一致）：1.7B 为 <b>$0.08/$0.20、缓存命中 $0.02</b>，VL-2B 文本为 <b>$0.10/$0.50、缓存命中 $0.02</b>。成本上下限未变（$0.11–$18.0），其余已入榜模型的性价比分不变。二者面向端侧/本地，半点未改 hub 本地 8GB 静态章（该表既有项 AA 已偏旧，避免扩改 UI）。"
+  },
+  {
+   "d": "11-18",
+   "t": "Nemotron 3.5 Super VL 第三方挂牌入价 $0.20→$0.15（AA 收录），缓存命中 $0.05",
+   "m": [
+    "Nemotron 3.5 Super VL"
+   ],
+   "s": "<b>该行计价来源本就是「第三方（AA 收录）」，AA 本轮把输入价从 $0.20 调至 $0.15、并给出缓存命中 $0.05（输出仍 $0.50）</b>。与 DeepInfra / OpenRouter 等托管挂牌 $0.15/$0.50 一致；NVIDIA 原厂 NIM 仍无统一按 token 价（试用免费 + AI Enterprise 许可）。标准任务成本 $0.325→$0.275，仅该行性价比随之重算；成本上下限未变。"
+  },
   {
    "d": "11-18",
    "t": "主榜 109→110：GPT-6.2 Astra / Sol 十档获 v5.0.1 分并取代 GPT-6 Astra 与 GPT-6.1 Sol；Astra Max 62 居次席；成本上限 22.5→18.0，全表性价比重算",
