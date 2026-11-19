@@ -2693,6 +2693,29 @@
    "rank": 117
   },
   {
+   "name": "Granite 4.2 30B",
+   "vendor": "IBM",
+   "country": "美国",
+   "tier": "默认",
+   "aa": 6,
+   "aa_dec": 5.5,
+   "pin": null,
+   "pcache": null,
+   "pout": null,
+   "open_": "开源",
+   "open": "开源",
+   "lic": "Apache 2.0",
+   "src": "N/A",
+   "note": "30B 稠密,131K 上下文,HF ibm-granite/granite-4.2-30b（非私有、非 gated,许可 Apache 2.0）；<b>AA Intelligence Index v5.0.1 本窗首次给出同口径分 5.5（6）</b>；官方与 AA 均无按 token API 价,性价比 N/A；与同族 8B（5.1）/3B（4.7）一并入主表",
+   "cost": null,
+   "ability": 9.2,
+   "costscore": null,
+   "value": null,
+   "eff": null,
+   "grade": "N/A",
+   "rank": 118
+  },
+  {
    "name": "Granite 4.2 8B",
    "vendor": "IBM",
    "country": "美国",
@@ -2713,7 +2736,7 @@
    "value": 44,
    "eff": 40.8,
    "grade": "D",
-   "rank": 118
+   "rank": 119
   },
   {
    "name": "Granite 4.2 3B",
@@ -2736,7 +2759,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 119
+   "rank": 120
   },
   {
    "name": "Mistral Small 4",
@@ -2759,7 +2782,7 @@
    "value": 36,
    "eff": 13.3,
    "grade": "D",
-   "rank": 120
+   "rank": 121
   },
   {
    "name": "K2 Horizon 0.9B",
@@ -2782,7 +2805,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 121
+   "rank": 122
   },
   {
    "name": "Nemotron 3 Nano 4B",
@@ -2805,7 +2828,7 @@
    "value": null,
    "eff": null,
    "grade": "N/A",
-   "rank": 122
+   "rank": 123
   },
   {
    "name": "LFM3-VL-2B",
@@ -2828,10 +2851,20 @@
    "value": 36,
    "eff": 8.9,
    "grade": "D",
-   "rank": 123
+   "rank": 124
   }
  ],
  "changes": [
+  {
+   "d": "11-19",
+   "t": "主榜 123→124：IBM Granite 4.2 30B 首次获得 v5.0.1 同口径分 5.5（6）并入表",
+   "m": [
+    "Granite 4.2 30B",
+    "Granite 4.2 8B",
+    "Granite 4.2 3B"
+   ],
+   "s": "<b>Artificial Analysis 模型库本窗为 IBM <u>Granite 4.2 30B</u> 首次写出 Intelligence Index <u>5.5359（表内 5.5／整数 6）</u>；09:30 窗及早六全日量快照该行仍为无综合分（FrontierCode 2.0 当时为空白）</b>。<b>AA 模型页（/models/granite-4-2-30b）可见「scores 6 on the Artificial Analysis Intelligence Index」、License Apache 2.0、Open weights、Cost In/Out 为 N/A、131k 上下文、Released August 2026、Reasoning Yes</b>。<b>Hugging Face 官方仓 <code>ibm-granite/granite-4.2-30b</code> 本窗核验：HTTP 200、private=false、gated=false、cardData.license=apache-2.0（与同族已入表的 8B／3B 一致）</b>。<b>处置：按无同口径分不得入主榜的既定规则，<u>本窗补入主表第 118 位</u>（与 Nemotron 3.5 Lightning 同为 5.5，但 30B 无按量价，按「成本低者优先」排在已定价的 Lightning 之后、8B 的 5.1 之前）；性价比 N/A，成本锚点 $0.11–$18.00 不变，既有行能力分／综合分／等级未重算</b>。<b>本地 16GB／24GB／32GB／48GB 档 AA 列由「—」改为 6，点评补记本期首评；8B／3B 主表行未改</b>。<b>并列：AA 模型库把 Gemini 4 Carbon 三档标价改写成 $4／$20，但 Google Cloud 定价页可见文案仍为 <u>introductory $2／$10／缓存 $0.10 through November 30, 2026</u>，12-01 起才恢复 $4／$20；OpenRouter 现价亦为 $2／$10。主表继续跟官方介绍期，不提前切价</b>。"
+  },
   {
    "d": "11-19",
    "t": "汇率 6.7118→6.7128（调贬 10 基点）：四组人民币定价美元价下移约 0.015%，名次与等级不变",
