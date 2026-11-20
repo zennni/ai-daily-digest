@@ -1096,7 +1096,7 @@
    "open": "开放权重",
    "lic": "Tencent Hy License v1.0（非 Apache 2.0；预览 Hy4-preview 为 Apache 2.0）",
    "src": "官方",
-   "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7131 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重已于 2026-11-20 10:46（上海）在 HF 公开</b>（<code>tencent/Hy4</code>、<code>tencent/Hy4-FP8</code>、<code>tencent/Hy4-base</code>，许可为 Tencent Hy License v1.0，非 Apache 2.0；官方卡主干 770B 总参／每 token 激活文本 49B＋视觉 1.23B，1M 上下文；同步 ModelScope <code>Tencent-Hunyuan/Hy4</code>、GitHub <code>Tencent-Hunyuan/Hy4</code>；AngelSlim/Hy4-GGUF 仓已建但本轮未见可下载权重文件，不降到 512GB 档；正式版入本地数据中心档第②）；<b>Hy4 flash 权重已于 11-18 12:24（上海）公开</b>（HF tencent/Hy4-flash、Hy4-flash-FP8、Hy4-flash-base，许可为 Tencent Hy License，非 Apache 2.0；无 AA 同口径分，仍不入主榜，入本地 512GB／数据中心档）",
+   "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7131 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重已于 2026-11-20 10:46（上海）在 HF 公开</b>（<code>tencent/Hy4</code>、<code>tencent/Hy4-FP8</code>、<code>tencent/Hy4-base</code>，许可为 Tencent Hy License v1.0，非 Apache 2.0；官方卡主干 770B 总参／每 token 激活文本 49B＋视觉 1.23B，1M 上下文；同步 ModelScope <code>Tencent-Hunyuan/Hy4</code>、GitHub <code>Tencent-Hunyuan/Hy4</code>；AngelSlim/Hy4-GGUF 于 13:03（上海）上传 Hy4-STQ1_0.GGUF（214.65GiB），正式版入本地 512GB 档第①；官方 FP8 ≈732GiB 仍在数据中心档第②）；<b>Hy4 flash 权重已于 11-18 12:24（上海）公开</b>（HF tencent/Hy4-flash、Hy4-flash-FP8、Hy4-flash-base，许可为 Tencent Hy License，非 Apache 2.0；无 AA 同口径分，仍不入主榜；入本地 192GB（AngelSlim Q4_K_M GGUF）／512GB／数据中心档）",
    "cost": 0.7820525,
    "ability": 53.8,
    "costscore": 61.5226076931798,
@@ -2855,6 +2855,14 @@
   }
  ],
  "changes": [
+  {
+   "d": "11-20",
+   "t": "Hy4 正式版社区 STQ1_0 GGUF 入 512GB 档第①；Hy4 flash 社区 Q4_K_M 入 192GB",
+   "m": [
+    "Hy4"
+   ],
+   "s": "<b>AngelSlim/Hy4-GGUF 于 13:03（上海）上传可下载的正式版权重 <code>Hy4-STQ1_0.GGUF</code></b>。<b>体积以 Hugging Face LFS 为准：230,480,028,992 字节（≈214.65GiB，README 标 2.39 bpw），另加已有的 <code>mmproj-HY4-VL-BF16.gguf</code> 2,675,613,952 字节（≈2.49GiB），合计 ≈217GiB，可入 512GB 档</b>。commit <code>fa44bb405182</code>，<code>lastModified=2026-11-20T05:03:03Z</code>；上一窗（13:00）目录仍只有 mmproj 与文档，当时据此不降档。<b>架构与体积对应混元正式版 Hy4（770B / A49B，78 层、256 路由专家），不是 220B 的 Hy4 flash</b>——尽管 HF 卡 YAML 把 <code>base_model</code> 写成了 <code>tencent/Hy4-flash</code>，README 标题为「Hy4 (A49B)」且 2.39 bpw×770B 与 214.65GiB 吻合。<b>运行需第三方 patched llama.cpp</b>（PR #32517 ＋仓内 STQ1_0 patch）；README 仍标 “(UPLOADING)”，预告的 Q4_K_M（437.93GiB）与 IQ2（309.58GiB）本窗未见。<b>处置：正式版入 512GB 档，按 AA v5.0.1 的 35 分列该档第①</b>（高于原首选 Qwen3.8-2.4T 1-bit 的 34；35 分是官方／API 口径，不是该量化的复测）；数据中心档仍按官方 FP8 ≈732GiB 保留第②；主表 AA 35、名次 48、TokenHub 5 折官价与开放状态均不变。<b>顺手核对：<code>AngelSlim/Hy4-flash-GGUF</code> 早在 11-19 15:34（上海）已提供可下载权重</b>（Q4_K_M 156.79GiB、Q3_K 144.70GiB、IQ2-AH 125.73GiB 等，另加 mmproj ≈0.97GiB；需 llama.cpp PR #32517）。此前 512GB 点评仍写「未见可下载权重、暂不降档」。<b>本窗将 flash 的 Q4_K_M 方案写入 192GB 档</b>（无 AA，不参与档内名次）；IQ2-AH 125.73GiB 对 128GB 临界，暂不写入 128GB；512GB 与数据中心档仍保留官方 FP8 ≈267GiB。许可仍为 Tencent Hy License v1.0（<u>非 Apache 2.0</u>）。未改日报正文。"
+  },
   {
    "d": "11-20",
    "t": "Hy4 正式版权重公开：tencent/Hy4、Hy4-FP8、Hy4-base 于 10:46（上海）转为可下载，主表改为开放权重，入本地数据中心档第②",
