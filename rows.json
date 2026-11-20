@@ -1092,11 +1092,11 @@
    "pin": 0.446887,
    "pcache": 0.022344,
    "pout": 1.340662,
-   "open_": "闭源（正式版权重未发布）",
-   "open": "闭源（正式版权重未发布）",
-   "lic": "专有（正式版权重待开源；预览 Hy4-preview 为 Apache 2.0）",
+   "open_": "开放权重",
+   "open": "开放权重",
+   "lic": "Tencent Hy License v1.0（非 Apache 2.0；预览 Hy4-preview 为 Apache 2.0）",
    "src": "官方",
-   "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7131 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重尚未在 HF 发布</b>（tencent/Hy4 仍 401；仅有 tencent/Hy4-preview Apache 2.0）；<b>Hy4 flash 权重已于 11-18 12:24（上海）公开</b>（HF tencent/Hy4-flash、Hy4-flash-FP8、Hy4-flash-base，许可为 Tencent Hy License，非 Apache 2.0；无 AA 同口径分，仍不入主榜，入本地 512GB／数据中心档）",
+   "note": "2026-11-04 GA（TokenHub model=hy4）；AA Intelligence Index <b>35</b>（Changelog 04 Nov / slug hunyuan-dev1030-aa）；原生视觉+电脑操作；<b>TokenHub 目录价 ¥6/¥18、缓存命中 ¥0.3</b>；<b>官方限时 5 折至 2026-12-31 23:59:59 北京时间</b>（折后 ¥3/¥9/缓存 ¥0.15，按 CFETS 6.7131 折美元入主性价分）；到期恢复目录价；OpenRouter tencent/hy4 另挂折后约 $0.417/$1.251（非官价换算源）；<b>正式版权重已于 2026-11-20 10:46（上海）在 HF 公开</b>（<code>tencent/Hy4</code>、<code>tencent/Hy4-FP8</code>、<code>tencent/Hy4-base</code>，许可为 Tencent Hy License v1.0，非 Apache 2.0；官方卡主干 770B 总参／每 token 激活文本 49B＋视觉 1.23B，1M 上下文；同步 ModelScope <code>Tencent-Hunyuan/Hy4</code>、GitHub <code>Tencent-Hunyuan/Hy4</code>；AngelSlim/Hy4-GGUF 仓已建但本轮未见可下载权重文件，不降到 512GB 档；正式版入本地数据中心档第②）；<b>Hy4 flash 权重已于 11-18 12:24（上海）公开</b>（HF tencent/Hy4-flash、Hy4-flash-FP8、Hy4-flash-base，许可为 Tencent Hy License，非 Apache 2.0；无 AA 同口径分，仍不入主榜，入本地 512GB／数据中心档）",
    "cost": 0.7820525,
    "ability": 53.8,
    "costscore": 61.5226076931798,
@@ -2855,6 +2855,14 @@
   }
  ],
  "changes": [
+  {
+   "d": "11-20",
+   "t": "Hy4 正式版权重公开：tencent/Hy4、Hy4-FP8、Hy4-base 于 10:46（上海）转为可下载，主表改为开放权重，入本地数据中心档第②",
+   "m": [
+    "Hy4"
+   ],
+   "s": "<b>腾讯混元正式版 <u>Hy4</u> 权重已公开</b>。<b>Hugging Face 官方仓 <code>tencent/Hy4</code> 此前各半点核对称 HTTP 401（未公开），本轮 10:51 拉取已为 200；<code>lastModified=2026-11-20T02:46:37Z</code>（上海 10:46:37），<code>private=false</code>、<code>gated=false</code>，safetensors 分片 <code>model-00001-of-00245</code> 起共 245 片，usedStorage 1,548,935,130,170 字节（BF16 ≈1,443GiB）</b>。同步公开 <code>tencent/Hy4-FP8</code>（usedStorage 786,326,258,943 字节，≈732GiB，同刻 10:46:36）与预训练底座 <code>tencent/Hy4-base</code>（usedStorage 1,542,352,192,864 字节，≈1,437GiB，10:46:37）。三仓此前已创建（Hy4 于 10-29、FP8/base 于 11-18）但直至本轮才出现在 <code>author=tencent&search=Hy4</code> 公开检索并可供下载。<b>官方模型卡口径：语言模型主干总参 770B、每 token 激活文本 49B＋视觉 1.23B（另计 ViT 1.23B、内置 DFly2 草稿 3.3B），78 层（1 稠密＋77 MoE，256 路由专家取 8＋1 共享），上下文 1M，支持文本／图像／视频理解</b>。许可为 <u>Tencent Hy License v1.0</u>（由 Apache 2.0 衍生，<u>不是 Apache 2.0</u>）：以 MaaS 对外提供且连续 12 个月全球总营收超过 5,000 万美元、或产品月活超过 1 亿，须另取书面许可；仅内部使用且不向第三方提供模型或输出时，第 10.2 条不适用。同步镜像：ModelScope <code>Tencent-Hunyuan/Hy4</code>（LastUpdatedTime 折上海 10:48:31）、GitHub 公开仓 <code>Tencent-Hunyuan/Hy4</code>（<code>pushed_at=2026-11-20T02:46:39Z</code>）。官方 vLLM 示例镜像 <code>vllm/vllm-openai:hy4</code> 以 <code>tencent/Hy4-FP8 --tensor-parallel-size 8</code> 启动；FP8 ≈732GiB，8×80GB 显存不够，需按单卡容量核算。<b>AngelSlim/Hy4-GGUF 仓 lastModified 10:42（上海）但 usedStorage=0、目录仅有文档与 patch、未见可下载权重，故不降到 512GB 档</b>。<b>主表：开放状态由「闭源（正式版权重未发布）」改为「开放权重」，许可改为 Tencent Hy License v1.0；AA v5.0.1 的 35 分、TokenHub 5 折至 12-31 的官价与性价分、名次第 48 均不变</b>。<b>本地数据中心档新增正式版为第②（AA 35；首位仍为可 1-bit 跑通的 Qwen3.8-2.4T，Kimi K3.1 Pro 维持既有位置不重排）；Hy4 flash 仍留 512GB／数据中心末档（无同口径分）</b>。未改日报正文。"
+  },
   {
    "d": "11-20",
    "t": "汇率 6.7128→6.7131（调贬 3 基点）：四组人民币定价 8 个配置美元价下移约 0.0045%，名次与等级不变",
