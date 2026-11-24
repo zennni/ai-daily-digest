@@ -240,6 +240,10 @@
     "pattern": "inkling[ -]?2[ -]?small"
   },
   {
+    "name": "Inkling 2 Mini",
+    "pattern": "inkling[ -]?2[ -]?mini"
+  },
+  {
     "name": "Inkling Small",
     "pattern": "inkling[ -]small"
   },
@@ -262,6 +266,10 @@
   {
     "name": "Ling 3.1 Flash",
     "pattern": "ling[ -]?3\\.1"
+  },
+  {
+    "name": "Ling-3.2-air",
+    "pattern": "ling[ -]?3\\.2[ -]?air"
   },
   {
     "name": "Ling-3.0-flash",
