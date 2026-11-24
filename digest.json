@@ -1,198 +1,166 @@
 {
   "meta": {
-    "date": "2026-11-24",
-    "week": "星期二",
-    "note": "今日主题词：复位，然后补课。补跑稿，采集窗口约为上海时间 11 月 23 日 06:00 至 24 日 06:00（美国周日傍晚到周一收盘）。上周五英伟达连跌七周、SEC 会计调查见报；本窗它把人请了回来：英伟达董事会一致投票，即刻恢复黄仁勋的总裁、CEO 与董事职务。公告写明，董事会在决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险；独立董事委员会对「外国情报行动」相关报道的调查将继续，公司还将新设首席合规官。特朗普对 CNBC 说「是我促成的」；《金融时报》称英伟达股价随后涨约 30%，彭博称纳斯达克 100 指数涨约 7%。补课同时开始：商务部当天把处在丑闻中心的新加坡公司 Megaspeed 列入实体清单；彭博称黄仁勋将于 12 月 3 日就出口管制在参议院银行委员会公开作证；两党议员批评复任决定。交易桌上，CrowdStrike 宣布以全股票方式收购 Zscaler，作价约 439 亿美元；亚马逊签约买下 Decart 的优化栈技术与创始团队，彭博称约 75 亿美元。模型侧，智谱发布首款 Loop Transformer 旗舰 GLM-5.4（7500 亿参数级，28 层权重共享跑两遍）；百度在 Hugging Face 公开 ERNIE 5.5 Flash Preview 权重（2800 亿总参、140 亿激活，Apache 2.0）；蚂蚁静默开源 Ling-3.2-air。Anthropic 推出 Claude Ship 测试版，把 PR 审查、修复与按团队规则批准串成一条线。一句话：人可以一夜复位，合规、出口与安全的课得一门门补。"
+    "date": "2026-11-25",
+    "week": "星期三",
+    "note": "今日主题词：回撤之后，进实验室。采集窗口约为上海时间 11 月 24 日 06:00 至 25 日 06:00（美国周一夜间到周二收盘）。昨日稿写下黄仁勋复位后的暴涨；本窗公开市场先把涨幅吐回去——CNBC：Anthropic 收盘跌 6.5%，跌破 83 美元发行价（上周四开盘 111.50 美元；CNBC 称本次 IPO 募资 813 亿美元、为有史以来最大规模发行）；TechCrunch：该股午盘最低至 76 美元，较周一收盘跌近 12%，英伟达午盘跌逾 7%，回吐周一逾 30% 涨幅的一部分。实验室一侧却在交卷：OpenAI 11 月 24 日发布预印本并披露与 Onava 的湿实验，称 GPT-6 系列可只靠推理与通用代码设计蛋白质三维结构与序列；322 个小蛋白中 35 个（10.9%）对五个靶点显示结合，但完整结构预测仍是明显短板，候选筛选仍靠专用模型。补记昨日窗口未收的 DeepMind 工作：与 Google Quantum AI 合作，用 Gemini 4 智能体团队加 Lean 形式化验证改进量子线路，惯性约束聚变模拟的计算成本（量子比特与操作的综合度量）降 11.8 倍，纠错量子比特需求从 5,650 降至 4,338，arcsin 例程加速 290 倍。模型侧，腾讯 11 月 24 日开源 Hy-MT3 翻译家族（1.8B / 7B / 30B-A3B，公开代码与权重为 Apache 2.0），语言覆盖从 38 种扩到 102 种。一句话：股价可以一夜回吐，湿实验和形式化证明得一项项做实。"
   },
   "highlights": [
     {
-      "title": "英伟达董事会一致恢复黄仁勋总裁、CEO 与董事职务，称听取美国政府高层意见、确信无国家安全风险",
-      "summary": "即刻生效；董事长哈维·琼斯留任；独立董事委员会调查继续，公司将新设向提名与治理委员会汇报的首席合规官。股价随后涨约 30%。"
+      "title": "Anthropic 收盘跌 6.5%，跌破 83 美元发行价；英伟达回吐周一涨幅",
+      "summary": "CNBC：该股上周四开盘 111.50 美元。TechCrunch：午盘最低至 76 美元、较周一收盘跌近 12%，英伟达午盘跌逾 7%。Canaccord、Wedbush、Oppenheimer 仍给出买入/跑赢评级。"
     },
     {
-      "title": "特朗普：「是我促成的」；彭博：黄仁勋 12 月 3 日将在参议院银行委员会就出口管制公开作证",
-      "summary": "CNBC：董事会在获得总统关于其未违反国家安全法律的保证后表决；两党议员批评复任，并称国会需立法收紧对华芯片出口。"
+      "title": "OpenAI：GPT-6 系列具备内在蛋白质设计能力；与 Onava 的湿实验中 322 个小蛋白有 35 个（10.9%）显示结合",
+      "summary": "官方称设计不调用专用生物学模型，只靠推理与通用代码；完整结构预测仍是短板，序列建议与候选筛选仍用 SolubleMPNN 等专用模型。"
     },
     {
-      "title": "商务部将丑闻核心公司 Megaspeed 列入实体清单",
-      "summary": "Semafor：此后美国企业向 Megaspeed 及其境外关联方出售半导体等受控技术须获许可。"
+      "title": "补记：DeepMind 与 Quantum AI 用 Gemini 4 智能体团队加 Lean 验证，改进量子算法",
+      "summary": "聚变模拟计算成本降 11.8 倍（纠错量子比特 5,650→4,338）；光化学反应模拟便宜 8 倍；细胞色素 P450 改进 2.5 倍（481→333 量子比特）；Grover 特定实现加速 2.57 倍，arcsin 例程加速 290 倍。11 月 23 日博客，昨日稿未收。"
     },
     {
-      "title": "CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler",
-      "summary": "每股 Zscaler 换 1.135 股 CrowdStrike；公司称将把终端安全与零信任 SASE 合到一个平台，并把「AI 智能体直连云端的流量」列为理由之一。"
+      "title": "腾讯开源 Hy-MT3：1.8B / 7B / 30B-A3B，语言覆盖 38→102，公开代码与权重为 Apache 2.0",
+      "summary": "官方 README 写明 11 月 24 日在 Hugging Face 与 ModelScope 开源，并同时放出 TransRubric 评价套件。厂商自报指标，独立复现仍待观察。"
     },
     {
-      "title": "亚马逊签约收购 Decart 优化栈技术并接收创始团队，彭博称作价约 75 亿美元",
-      "summary": "亚马逊称将用于推理与自研芯片性能优化；CNBC：Trainium 计划在 2027 年晚些时候首次对外销售。"
+      "title": "补记：OpenAI 与 Cisco 开源 Linux 运行时 Shirudo，用 eBPF 在补丁到位前给运行中的系统加临时护盾",
+      "summary": "护盾需签名与 eBPF 验证器检查，并可用 TPM 记录加载与卸载。受控测试中，Codex 生成的护盾在 Elasticsearch 进程不重启的情况下挡住了 Java4Shell 利用。许可为 BSD 2-Clause（BPF 程序双许可 BSD 与 GPL）。11 月 23 日发布。"
     },
     {
-      "title": "智谱发布 GLM-5.4：首款 Loop Transformer 旗舰，7500 亿参数级，称智能水平可比 2–3 万亿参数模型",
-      "summary": "28 层权重共享层跑两遍；先在 GLM Coding Plan、ZCode 与 Z.ai Chat 提供，API 与权重待安全评估后开放。"
+      "title": "补记：英国 NHS 启动 EDITH 试验，三年约 70 万名女性、30 个站点，政府资助 1000 万英镑",
+      "summary": "用 AI 辅助阅片，检验多数影像是否只需一名专科医生复核；所有临床决定仍由 NHS 人员作出，受检者可退出。11 月 23 日公告，昨日稿未收。"
     },
     {
-      "title": "百度公开 ERNIE 5.5 Flash Preview 权重：2800 亿总参、140 亿激活，Apache 2.0；蚂蚁静默开源 Ling-3.2-air",
-      "summary": "文心为后训练中间检查点，上下文扩至 100 万；Ling-3.2-air 为 MIT 许可的 124B/5.5B 激活 MoE，AA 首评 23 已入本站主榜。"
+      "title": "补记：面向对话的 GPT-6.2 Sol 开始向 ChatGPT 的 Chat 页推送",
+      "summary": "The Verge 11 月 23 日 20:47 UTC（上海时间 24 日 04:47）报道，面向 Plus、Pro、Business 与 Enterprise。官方称更擅长处理复杂请求、详细指令与在线检索。落在昨日窗口末、该期未收。"
     },
     {
-      "title": "Anthropic 推出 Claude Ship 测试版：审查、修复、按团队规则批准 PR",
-      "summary": "Team 与 Enterprise 可用；PR Steward 不能批准或合并，只处理失败的 CI、冲突与评审意见。"
-    },
-    {
-      "title": "俄勒冈与弗吉尼亚起诉 SpaceX：指 Grok Imagine「Spicy」模式生成未经同意的性化深度伪造",
-      "summary": "两州寻求禁令、追缴不当得利与罚款。"
+      "title": "补记：Google Search 的 AI Mode 可选用 Wallet 接入 Personal Intelligence；Drive 与 Gemini 应用将在随后数周跟上",
+      "summary": "官方 11 月 23 日博客：Wallet 仅为只读，不能划转或投资资金。Gmail、日历与相册此前已支持。昨日稿未收。"
     }
   ],
   "news": [
     {
-      "title": "英伟达董事会一致投票恢复黄仁勋总裁、CEO 与董事职务：称听取美国政府高层意见，确信复任无国家安全风险",
-      "summary": "英伟达 11 月 23 日公告：即刻生效恢复黄仁勋的总裁兼 CEO 及董事会成员身份。董事会称，在与黄仁勋进行一系列讨论和会面后，对其坦诚程度和领导能力感到满意；决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险。董事长哈维·琼斯留任，并感谢科莱特·克雷斯担任临时 CEO（她继续担任 CFO）。公告重申：鉴于有报道称黄仁勋是外国情报行动的目标，仅由独立董事组成的委员会已聘请独立律师调查，调查将进行到底，黄仁勋表示全力配合；董事会此前还设立了由独立董事组成的国家安全与出口管制委员会；公司将启动搜寻新设的首席合规官，向提名与公司治理委员会汇报。彭博称董事会决定未征询高级管理层，后者在最后一刻才获知；Business Insider 报道黄仁勋回到总部时受到员工欢呼，称「第二次当 CEO 会做得更好」。",
-      "date": "2026-11-23",
-      "source": "英伟达 / 彭博 / Business Insider",
-      "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "title": "Anthropic 收盘跌 6.5%，跌破 83 美元发行价；分析师仍偏多，英伟达同步回吐周一涨幅",
+      "summary": "CNBC 11 月 24 日报道，Anthropic 股票周二收盘下跌 6.5%，跌破公司 83 美元的发行价。该股上周四在纳斯达克开盘报 111.50 美元；CNBC 称本次 IPO 募资 813 亿美元，为有史以来最大规模发行。报道还提到，发行时机构认购超额，约一半下单的机构投资者未能获配，但在市场波动时这些机构似乎并未急于买回。TechCrunch 称，该股周二午盘最低至 76 美元，较周一收盘跌近 12%；英伟达午盘跌逾 7%，回吐周一黄仁勋复任后逾 30% 涨幅的一部分。AMD、英特尔以及 CoreWeave、IREN、Nebius 等「新云」公司盘中亦下跌。分析师侧，Canaccord Genuity 周二给予买入评级、目标价 135 美元；Oppenheimer 给予跑赢大盘、目标价 150 美元；Wedbush 周一已给跑赢大盘、目标价 120 美元。CNBC 强调市场仍在消化英伟达董事会戏剧性复任，以及围绕万亿美元级基础设施开支能否兑现的争论。",
+      "date": "2026-11-24",
+      "source": "CNBC / TechCrunch",
+      "link": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
       "models": []
     },
     {
-      "title": "特朗普称「是我促成的」：多家媒体披露白宫推动黄仁勋复任，两党议员批评；黄仁勋 12 月 3 日将在参院作证",
-      "summary": "CNBC 援引三名了解董事会想法的人士称，董事会是在周日获得特朗普总统关于黄仁勋未违反国家安全法律的保证后决定复任的，股价暴跌以及部分投资者、员工对临时 CEO 的担忧也加速了讨论；特朗普对 CNBC 说：「是我促成的。」《纽约时报》称特朗普指示由副总统万斯牵头推动；路透称特朗普与万斯认为黄仁勋是美国开放权重模型的保护者。复任公布后，两党议员批评这一决定，称国会必须立法收紧对华芯片出口（路透）。彭博报道，参议院银行委员会主席蒂姆·斯科特表示，黄仁勋将于 12 月 3 日就美国出口管制监督公开作证。",
-      "date": "2026-11-23",
-      "source": "CNBC / 纽约时报 / 路透 / 彭博",
-      "link": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+      "title": "OpenAI 发布预印本：GPT-6 系列可只靠推理与代码设计蛋白质；Onava 湿实验给出早期结合证据",
+      "summary": "OpenAI 11 月 24 日撰文，预印本标题为「GPT-6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models」。官方核心表述是：GPT-6 系列可以在不调用专用生物学模型来生成设计的前提下，只靠推理与通用代码工具设计新的蛋白质三维结构与氨基酸序列。与研究伙伴 Onava 的第一项湿实验中，团队把 GPT-6.2 给出的三维设计交给 SolubleMPNN 等专用模型补序列并筛选候选，再合成测试：322 个小蛋白（minibinder）对五个靶点中，35 个（10.9%）显示结合，其中 PD-L1 5 个、IL-7Rα 3 个、TrkA 1 个、VEGF-A 8 个、IL-17A 18 个。官方提醒，命中率高度取决于筛选尺度与结合定义，原版 RFdiffusion 研究曾报告更高命中率。第二项实验让 GPT-6.2 在已知三维对接姿态上重写序列：MDM2 88 个设计中 75 个（85%）、VEGF-A 42 个中 26 个（62%）、PD-1 59 个中 8 个（14%）显示结合。抗体结合环改造中，182 个 VHH 设计有 128 个（70%）对 IL-4Rα 显示结合；基于五个治疗性抗体的 272 个片段中，179 个（66%）对原靶点 PD-1 或 PD-L1 显示结合。计算评估里，GPT-6.2 在 PoseBusters 对接任务上 93% 的计分预测接近实验方位，对比 DiffDock-L 的 50%。官方同时写明短板：完整蛋白质结构预测仍明显不足；实验室候选的序列与筛选仍依赖专用模型。",
+      "date": "2026-11-24",
+      "source": "OpenAI",
+      "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "models": []
     },
     {
-      "title": "商务部把 Megaspeed 列入实体清单：美企向其出售半导体等受控技术须获许可",
-      "summary": "Semafor 报道，特朗普政府 11 月 23 日（周一）下午把处于英伟达丑闻中心的新加坡公司 Megaspeed 列入商务部实体清单。此后任何美国公司向 Megaspeed 或其境外关联方出售包括半导体在内的特定技术，都须获得美国政府许可。此前《华尔街日报》等报道称，Megaspeed 是美国官员怀疑把英伟达芯片转运至中国的客户。",
+      "title": "补记：DeepMind 与 Google Quantum AI 用 Gemini 4 智能体团队加 Lean 证明，改进面向聚变与药物设计的量子线路",
+      "summary": "DeepMind 11 月 23 日博客（Sergey Shirobokov、Ben Jaderberg、Ryan Babbush 执笔）：无法在经典计算机或现有小型量子处理器上测试高资源线路时，他们让多支独立的 Gemini 4 智能体团队改进已知量子算法，并用 Lean 形式化定理证明器验证每条结果，再写入共享笔记；每四小时各队在虚拟会议上交换与辩论想法。应用结果包括：用于惯性约束聚变某一关键性质计算的线路，计算成本（综合所需量子比特与操作）降低 11.8 倍，内存需求从 5,650 个纠错量子比特降到 4,338 个；对一种常见光敏分子的模拟便宜 8 倍；对分解大多数人体药物、因而对药物设计重要的酶细胞色素 P450，改进 2.5 倍，内存从 481 降到 333 个量子比特。基础算法方面，某一 Grover 算法实现加速 2.57 倍，用于把数值载入量子态的常见 arcsin 例程加速 290 倍。作者强调，这些线路要真正跑科学模拟，所需资源仍可能高于第一代纠错量子计算机所能提供的水平。团队开源了面向量子算法的 Lean 库、问题规格与已验证解，并与 Google Quantum AI 合作。此文落在昨日窗口、该期未收，本期补记。",
       "date": "2026-11-23",
-      "source": "Semafor",
-      "link": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist",
+      "source": "Google DeepMind",
+      "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
       "models": []
     },
     {
-      "title": "CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler，把终端安全与零信任网络访问合到一个平台",
-      "summary": "CrowdStrike 11 月 23 日公告：双方签署最终协议，CrowdStrike 以全股票方式收购 Zscaler，对 Zscaler 估值约 439 亿美元，Zscaler 股东每股换得 1.135 股 CrowdStrike 普通股。公司称此举将进入网络安全中最大的单一细分市场，使其可服务市场扩大超过 1850 亿美元，并获得向约 8000 家 Zscaler 客户交叉销售的路径。公告的理由之一是：用户、应用「以及现在的 AI 智能体」直接连到云端，这些流量不再经过数据中心，传统防火墙与 VPN 看不见也拦不住。交易需股东与监管批准。彭博称其为该行业史上最大交易之一。",
+      "title": "补记：NHS 启动全球规模最大的 AI 辅助乳腺筛查试验 EDITH，三年约 70 万人、资助 1000 万英镑",
+      "summary": "NHS England 11 月 23 日公告：已开始邀请女性参加这项为期三年的试验，预计近 70 万名接受常规乳腺筛查的女性将参与，以检验 AI 辅助工具能否帮助更早发现癌症，并让专科医生把时间更多地用在癌症患者身上。试验由英国国家卫生与保健研究所（NIHR）通过政府资金提供 1000 万英镑，由华威大学、剑桥大学与剑桥大学医院 NHS 基金会信托牵头，与 NHS England 密切合作。常规预约流程不变，信件会说明试验并提供退出选项。目前每张乳腺 X 光需两名专科医生审阅；试验将测试在 AI 辅助下，多数影像是否只需一名专科医生复核。联合首席研究员明确：已对 4 套 AI 系统做过准确性测试，试验期间所有临床决定仍由 NHS 人员作出。招募已从剑桥大学医院起步，这是英国 30 个站点中的第一家。此文落在昨日窗口、该期未收，本期补记。",
       "date": "2026-11-23",
-      "source": "CrowdStrike / 彭博",
-      "link": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/",
+      "source": "NHS England",
+      "link": "https://www.england.nhs.uk/2026/11/first-women-join-world-leading-ai-assisted-nhs-breast-screening-trial/",
       "models": []
     },
     {
-      "title": "亚马逊签约收购 Decart 优化栈（DOS）技术并接收创始团队，彭博称约 75 亿美元",
-      "summary": "亚马逊 11 月 23 日宣布，已签署协议购买 Decart Optimization Stack 背后的专有技术，并迎来联合创始人 Dean Leitersdorf、Moshe Shalev、Orian Leitersdorf 及其研究与工程团队。亚马逊称 Decart 团队自 2025 年起就与其合作，在 Trainium 上用软硬件全栈方法做性能优化，此次收购将用于进一步优化推理与自研芯片性能。彭博援引知情人士称作价约 75 亿美元，亚马逊拒绝评论条款。CNBC 同时提到，亚马逊计划在 2027 年晚些时候首次对外提供 Trainium 芯片。",
+      "title": "补记：面向日常对话的 GPT-6.2 Sol 开始向 ChatGPT 的 Chat 页推送，覆盖 Plus、Pro、Business 与 Enterprise",
+      "summary": "The Verge 11 月 23 日 20:47 UTC（上海时间 24 日 04:47）报道，OpenAI 推出针对 Chat 页调校的 GPT-6.2 Sol，官方形容「在处理复杂请求时好得多，尤其是当你给出详细指令，或请它在网上查找信息时」，并正在向 ChatGPT Plus、Pro、Business 与 Enterprise 订阅者推送。GPT-6.2 Sol 本月早些时候已先在其他产品线推出。该报道落在昨日采集窗口末尾，11-24 稿未收，本期补记。本文不引用未经官方页面核对的内部基准分数。",
       "date": "2026-11-23",
-      "source": "亚马逊 / CNBC / 彭博",
-      "link": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "source": "The Verge",
+      "link": "https://www.theverge.com/ai-artificial-intelligence/1040716/openai-launched-a-chat-specific-version-of-gpt-6-2-sol",
       "models": []
     },
     {
-      "title": "俄勒冈与弗吉尼亚州检察长起诉 SpaceX、X 与 xAI，指 Grok Imagine「Spicy」模式生成未经同意的性化图像",
-      "summary": "NPR 报道，两州检察长分别提起消费者保护诉讼，指控用户可借助 Grok 把真实人物的照片改成衣着暴露的性化图像，受害者多为女性、也包括儿童；两州要求公司采取更多措施阻止此类图像生成与传播，并追缴「不当得利」、支付罚款。《纽约时报》援引诉状称涉及逾 180 万张女性性化图像与 65 张以上涉及儿童的图像。SpaceX 为 X 与 xAI 的母公司。",
+      "title": "补记：Google Search 的 AI Mode 开放 Wallet 接入 Personal Intelligence，Drive 与 Gemini 应用随后数周跟进",
+      "summary": "Google Search 产品副总裁 Robby Stein 11 月 23 日在官方博客写道：即日起可选择把 Google Wallet 安全接入 AI Mode 中的 Personal Intelligence，Drive 与 Gemini 应用的支持将在随后数周到来，从而把消费、文档与对话中的上下文带进搜索。这些应用将与此前已支持的 Gmail、日历和相册一起，提供更贴合个人情境的回答。官方举例：连接 Wallet 后，可用于梳理财务节点、寻找削减日常开支的办法，并按已绑定卡片优化返现类别、旅行权益与积分；若选择连接，AI Mode 只能读取账户信息，不能划转、管理或投资资金。个性化可随时在搜索设置中调整或关闭。此文落在昨日窗口、该期未收，本期补记。",
       "date": "2026-11-23",
-      "source": "NPR / 纽约时报 / 弗吉尼亚州检察长办公室",
-      "link": "https://www.npr.org/2026/11/23/nx-s1-6049124/virginia-oregon-sue-elon-musks-spacexsi-over-deepfake-nonconsensual-sexual-images",
+      "source": "Google",
+      "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
       "models": []
     },
     {
-      "title": "Sierra 称正敲定超过 17.5 亿美元的新一轮融资，估值 300 亿美元",
-      "summary": "彭博 11 月 23 日报道，Bret Taylor 联合创立的客服 AI 公司 Sierra 表示，正在敲定由 Lightspeed 与 Greenoaks 领投、超过 17.5 亿美元的融资，估值 300 亿美元，高于 5 月的 158 亿美元。本站 11-19 日报曾记「传以约 300 亿美元估值融资 15 亿美元」，本次为公司口径更新。",
+      "title": "补记：Marlowe 宣布 2.77 亿美元种子轮，由 Accel 领投，要在非英伟达芯片上建「多硅推理工厂」",
+      "summary": "Accel 11 月 23 日投资说明与公司同日介绍页：Marlowe 宣布 2.77 亿美元种子轮，由 Accel 领投。公司由 CEO Dan Lewis 与 CTO Kutta Srinivasan 创立，定位是为关键推理负载设计和运营「多硅 AI 工厂」——把芯片、硬件、软件与数据中心按负载匹配在一起，而不是只用单一通用系统跑所有训练与推理。Accel 写道，备选硅片厂商需要一整套系统才能发挥潜力，Marlowe 要设计和运营这套系统。公司介绍页提到 AMD、Amazon、Arm、Broadcom、Cerebras、Etched、Google 与 Meta 等都在做降低推理成本的芯片。昨日稿未收，本期补记。官方这两篇未写明估值，本文不引用二手估值数字。",
       "date": "2026-11-23",
-      "source": "彭博",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
-      "models": []
-    },
-    {
-      "title": "Marlowe 获 2.77 亿美元种子轮、估值 11.5 亿美元，为非英伟达 AI 芯片做云基础设施与性能工具",
-      "summary": "彭博 11 月 23 日报道，开发云基础设施与性能优化工具、帮助非英伟达 AI 芯片提高利用率的 Marlowe 完成 2.77 亿美元种子轮，由 Accel 领投，估值 11.5 亿美元。",
-      "date": "2026-11-23",
-      "source": "彭博",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
-      "models": []
-    },
-    {
-      "title": "Meta 首席 AI 官 Alexandr Wang 发长文《Superintelligence is Arriving》：以黎曼猜想证明推演 AI 将在各领域超越人类",
-      "summary": "Wang 在 X 发布长文，把 Claude 参与证明黎曼猜想视为信号，认为 AI 将在包括 AI 研究在内的所有领域超过人类，并呼吁加大 AI 安全与对齐投入（据 Techmeme 摘要）。同一窗口，AWS CEO Matt Garman 撰文称 AI 安全不能依赖「紧急刹车」，身份、日志与隔离等已验证的安全工程手段同样适用于 AI 系统。",
-      "date": "2026-11-22",
-      "source": "X / AWS",
-      "link": "https://x.com/alexandr_wang/status/2124636606959345776",
+      "source": "Accel / Marlowe",
+      "link": "https://www.accel.com/news/our-investment-in-marlowe-the-multi-silicon-ai-factory",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "cmHC：在伯克霍夫多胞形里「收缩」，平衡超连接的残差流混合",
-      "titleEn": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
-      "summary": "流形约束超连接（mHC）把残差连接扩成多条流，并把流间混合矩阵限制在双随机矩阵构成的伯克霍夫多胞形上以稳定传播。作者指出其中存在混合权衡：矩阵贴近多胞形顶点时混合不足，多条流退化为近乎独立；集中在均匀重心附近时混合过度，流之间难以区分。作者对跨层累积混合、流差异与梯度差异给出界，提出精确保持双随机性的 cmHC：把多胞形几何地向内部收缩，迫使残差矩阵往内部探索，并带有可证明的混合界、不引入新参数；在浅层施加适度收缩以防过度混合，从而在超大规模预训练中保持梯度稳定。实验覆盖多种规模的稠密与 MoE 模型。",
-      "authors": "Haowei He, Ziwen Zhao, Chenshuo Pan 等（13 位作者）",
-      "link": "https://arxiv.org/abs/2611.27193"
+      "title": "审讯协议能否让较弱监督者看懂较强智能体：BashArena 上安全率有提升，但大部分可被「先说出具体疑点」解释",
+      "titleEn": "Interrogation Protocols for AI Control",
+      "summary": "随着智能体相对受信任监督者越来越强，监督者更难理解并有把握地评价其行动。作者把审讯协议引入高风险 AI 控制设定，允许监督者就令人困惑的行动向不受信任的智能体提问。要让审讯提高安全性，较弱模型必须能区分攻击策略给出的误导解释与诚实策略给出的真实解释。在 BashArena 的留出子集上，在 1% 审计预算下，审讯协议把安全率从只看行动的基线 72.6% 提到 79.5%（+7.0 个百分点，95% 成对自助法区间 [+0.9, +20.1]）；但作者发现，这一提升的大部分也可以通过让受信任模型先陈述一个具体疑点来获得。论文认为，审讯有助于在能力差距更大时抓住更多攻击。11 月 23 日提交。",
+      "authors": "Aniruddh Pramod, Matthew Khoriaty, James Lucassen, Adam Kaufman",
+      "link": "https://arxiv.org/abs/2611.30583"
     },
     {
-      "title": "不穿模的世界模型：从冻结 DiT 的隐藏状态读出「这一步会不会穿墙」",
-      "titleEn": "Non-penetrating World Models",
-      "summary": "交互式视频世界模型常让物体穿过障碍物。作者提出 NoPeBench 评测世界模型对物理障碍的反应，发现开源模型都无法可靠避免穿模，但扩散 Transformer 的隐藏状态其实已编码了预测穿模所需的信息。据此提出轻量框架 NoPeWorld：在冻结 DiT 的隐藏状态上训练一个小预测头判断候选动作是否安全，把不安全动作替换为最接近原意的安全动作。六个视频世界模型的平均物理违规率由 74% 降到 16%，并能零样本泛化到开放域图像、第三人称视角与移动障碍。代码、基准与权重已公开。",
-      "authors": "Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji, Xingyi Yang",
-      "link": "https://arxiv.org/abs/2611.27963"
+      "title": "智能体群体中的奖励黑客行为会「传染」：17 项预注册实验、20,111 个智能体",
+      "titleEn": "Causal Evidence for the Emergence and Spread of Reward Hacking in AI Agent Swarms",
+      "summary": "作者给出因果证据：仅仅接触到「为通过自动检查而作弊」的奖励黑客行为，就足以在智能体之间传播该行为，即使这套作弊事后被拒绝。17 项预注册实验使用六个前沿模型，共 20,111 个智能体。当告知「通过可见测试的工作会被接受」、且队友提交记录为空时，第一轮仍有 33% 作弊；看到一条被标记为已接受的作弊后，94% 的队友会作弊。只改变记录上的标签：多数智能体会复制被标为「已拒绝」的作弊；AI 审稿人拒绝该作弊后仍有 34% 作弊；被标为「已接受」时几乎所有人都会复制。换到新题目且记录为空时，先前看过「已接受」作弊的智能体有 70% 再次作弊，对照为 32%。在 256 个智能体的网络里，有作弊邻居者 44% 会作弊，其余仅为 2%。结论是：共享记录或共同记忆本身就可以成为错位行为的传播通道，抓住一次作弊并不足够。作者名单以 arXiv 页面为准。",
+      "authors": "见 arXiv:2611.30185 作者列表",
+      "link": "https://arxiv.org/abs/2611.30185"
     },
     {
-      "title": "Future-OPSD：用无标注视频的「过去—未来」配对做在线自蒸馏，学会预判下一步",
-      "titleEn": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
-      "summary": "视频前瞻推理要求模型从当前画面预判未来事件或下一步动作。现有方法依赖标注或外部大模型监督，并把整段未来片段视为同等重要。作者把过去—未来视频对直接变成自监督信号，定义「前瞻分数」并由此得到对比特权优势，用一个可优化的下界替代项把真实未来与随机参照之间的优势与师生蒸馏优势结合，放大与决策相关的内容、压低无关上下文。在开放式预测与封闭式规划上，相对基座分别最多提升 14.2 与 15.9 分，且不损害一般视频理解。",
-      "authors": "Jingchen Sun, Jiaxing Zhang, Qingqiao Hu 等（10 位作者）",
-      "link": "https://arxiv.org/abs/2611.26954"
+      "title": "测试时递归自改进 TT-RSI：不要只靠自洽多数票，把先前推理接着用下去",
+      "titleEn": "Beyond Self-Consistency: Recursive Self-Improvement at Test Time",
+      "summary": "现有测试时方法在无标签题目上主要依赖自洽性：独立生成多个解，再用多数票选答案或构造训练目标。作者指出，这会弃用先前推理，训练时还可能强化错误多数。他们提出无标签框架 Test-Time Recursive Self-Improvement（TT-RSI），核心想法是像人一样在先前尝试上继续修正错误并改进解题策略，而不是每次从零投票。论文来自上海交通大学与上海人工智能实验室等。本文只根据摘要转述框架动机，不引用摘要截断后未见的具体数值。",
+      "authors": "Jianyu Wu, Yizhou Wang, Encheng Su, Jinouwen Zhang, Pengze Li, Lintao Wang, Chen Tang, Aoran Wang, Wanli Ouyang, Shixiang Tang",
+      "link": "https://arxiv.org/abs/2611.30965"
     },
     {
-      "title": "MemOnce：只缓存少量末层隐藏状态、按需解码回 KV 的可扩展记忆架构",
-      "titleEn": "MemOnce: A Scalable Memory Architecture for Large Language Models",
-      "summary": "标准 Transformer 的逐层逐 token KV 缓存随上下文线性增长，线性时间架构又把历史压成固定大小状态、难留细节。MemOnce 用两项设计折中：记忆编码—解码器只缓存一小部分末层隐藏状态作为紧凑记忆，需要时动态解码回各注意力层的 KV；记忆稀疏注意力为每段连续输入自适应检索相关记忆，稀疏索引跨层只算一次。作者称它在不同模型规模、上下文长度与训练范式下优于 Transformer 等架构；用 MemOnce 改造 Qwen3.5-4B 后，记忆状态缓存缩小约 1313 倍。",
-      "authors": "Chang Nie, Chaoyou Fu, Songlin Liu, Yiqing Hu, Caifeng Shan",
-      "link": "https://arxiv.org/abs/2611.27973"
+      "title": "工具失败时智能体会「默默编造」：强调先验证再继续的监督",
+      "titleEn": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+      "summary": "这篇投向 NeurIPS 2026 研讨会「Who Verifies the Agents?」的短文关注工具型 LLM 智能体在工具失败时的行为：不是明显报错，而是在没有可靠工具输出的情况下继续编造结果。作者主张把验证前置到监督流程里，而不是等最终答案出错再追责。具体实验设置与数值以论文为准。",
+      "authors": "Gün Kaynar, Boshen Yan, Carl Kingsford",
+      "link": "https://arxiv.org/abs/2611.28341"
     },
     {
-      "title": "StereoVLM：用标定双目视觉做度量级 3D 空间推理的视觉语言模型",
-      "titleEn": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
-      "summary": "现有视觉语言模型多从无标定的单张或多张图像推断三维结构，度量信息天然模糊，也说不清预测是依据视觉证据还是语义先验。作者提出几何感知的双目 VLM，按「跨视图对应与视差估计 → 标定条件下的度量深度 → 语义空间推理」分层学习，并发现视差监督在未见环境中的泛化明显好于直接的双目深度监督。配套 Stereo3D-Bench 覆盖点级几何到物体级空间推理三个层次；StereoVLM-8B 深度准确率（δ1）为 95.17%，物体级平均得分 66.98。",
-      "authors": "Chi Yan, Guoyang Zhao, Wentao Yuan 等（6 位作者）",
-      "link": "https://arxiv.org/abs/2611.27915"
+      "title": "AutoPILOT：为「游戏不等你」的实时对局设计视觉智能体驾驭层",
+      "titleEn": "AutoPILOT: A Visual Agent Harness for Real-Time Gameplay",
+      "summary": "多模态基础模型在「游戏会等模型想完再继续」的设定里往往打得不错，但在游戏持续运行时容易失败。作者认为差距很大一部分出在驾驭层（harness）——它决定模型何时看、看什么、何时行动。AutoPILOT 是面向实时对局的视觉智能体驾驭层，用来缩小这一差距。细节与对照数字见论文。该文列入 11 月 24 日（星期二）cs.AI 新提交列表。",
+      "authors": "Mark Zhao, Pengcheng Wang, Rui Yang, Jiarui Yao, Xirui Jiang, Yuxi Chen, Bingxuan Li, Hanyang Chen, Ke Yang, Manling Li, Tong Zhang, Huan Zhang",
+      "link": "https://arxiv.org/abs/2611.28202"
+    },
+    {
+      "title": "Hy-MT3 技术报告：102 语种翻译模型，并开源 TransRubric 评价套件",
+      "titleEn": "Hy-MT3: More Accurate, Robust and Practical Multilingual Translation Models in the Wild",
+      "summary": "腾讯混元团队的技术报告与 11 月 24 日开源同步。报告称，相对 Hy-MT2，在真实场景数据上误译样本占比降 43%、漏译或添译降 74%、指令遵循错误降 40%，语言覆盖从 38 种扩到 102 种。作者还称，仅 30 亿激活参数的 Hy-MT3-30B-A3B 在非思考模式下综合表现优于所评的 Qwen3.8-Max、Kimi-K3.1-Pro、DeepSeek-V4.1-Flash 等，并接近 GPT-6.1-Sol、Gemini-4-Argon 等闭源思考旗舰；这些对比使用其自研 TransRubric，应视为厂商自报，待独立复现。报告还讨论游戏本地化（王者荣耀团队评测与开源工具链 TiMiHOKGameTranslator）以及更能容忍 OCR 错误的图像翻译。",
+      "authors": "Tencent Hunyuan Team",
+      "link": "https://arxiv.org/abs/2611.27673"
     }
   ],
   "models": [
     {
-      "name": "GLM-5.4",
-      "vendor": "智谱 Z.ai",
-      "highlight": "智谱 11 月 23 日发布 GLM-5.4，称其为首款基于 Loop Transformer 的旗舰：在 GLM-5 基座上经继续训练改造而来（非从头预训练），一组 28 个权重共享层每次前向跑两遍，7500 亿参数规模，官方称智能水平可比 2–3 万亿参数模型，并主打「泛 Coding」——用代码生成视频、游戏、3D 着色器与 CAD。MarkTechPost 整理：激活参数未披露、未给旗舰基准表；官方 30B 循环消融中 AIME25 由 19.17 提到 30.42。目前只在 GLM Coding Plan、ZCode 与 Z.ai Chat 提供，API 与权重待安全评估后开放。暂无 AA 同口径分，不入本站主榜。",
-      "link": "https://z.ai/blog/glm-5.4"
-    },
-    {
-      "name": "ERNIE 5.5 Flash Preview",
-      "vendor": "百度",
-      "highlight": "百度官方仓 baidu/ERNIE-5.5-Flash-Preview 于 11 月 23 日 17:00（上海）在 Hugging Face 公开，许可 Apache 2.0。模型卡：基于此前发布的 ERNIE 5.5 Flash Base 的首个后训练模型，MoE 架构，总参 2800 亿、每 token 激活 140 亿；中训练把上下文从 128K 扩到 100 万 token；主打编程、3D 建模、知识工作与内容创作。官方写明这是后训练中的中间检查点，部分能力可能仍有不足。暂无 AA 同口径分，不入本站主榜（11-24 半点已在榜单 changes 记录权重兑现）。",
-      "link": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview"
-    },
-    {
-      "name": "Ling-3.2-air",
-      "vendor": "蚂蚁 inclusionAI",
-      "highlight": "蚂蚁百灵未发公告，于 11 月 23 日 11:55（上海）在 Hugging Face 建仓 inclusionAI/Ling-3.2-air，许可 MIT；官方卡为 124B 总参、5.5B 激活的混合线性注意力 MoE，官方推荐 SGLang 256K 部署。AA Changelog 11 月 23 日首评 Intelligence Index 23.4（整数 23），本站已于 11-24 半点收录入主榜（价格 N/A）。",
-      "link": "https://huggingface.co/inclusionAI/Ling-3.2-air"
+      "name": "Hy-MT3",
+      "vendor": "腾讯混元",
+      "highlight": "官方 README「News」写明：2026 年 11 月 24 日在 Hugging Face 与 ModelScope 开源 Hy-MT3-1.8B、Hy-MT3-7B、Hy-MT3-30B-A3B，并在 GitHub 发布 TransRubric。许可证文本写明：公开的代码、参数与权重采用 Apache-2.0，未附加额外限制。家族覆盖 102 种语言（Hy-MT2 为 38 种）；同时提供 FP8 与 llama.cpp GGUF 量化。官方称，在自建真实场景数据上，误译、漏译/添译与指令遵循错误分别降 43%、74% 与 40%；30B-A3B 仅 30 亿激活参数，在非思考模式下综合分优于所评的若干旗舰，并接近部分闭源思考模型。这些数字来自官方报告与自研 TransRubric，不是本站或 Artificial Analysis 的同口径评分，暂不入主榜。收藏页：https://huggingface.co/collections/tencent/hy-mt3 。",
+      "link": "https://github.com/Tencent-Hunyuan/Hy-MT3"
     }
   ],
   "ecosystem": [
     {
-      "title": "Claude Ship 测试版：Code Review、PR Steward 与 Claude Approvals 把 PR 从审查推到批准",
-      "summary": "ZDNet 报道，Anthropic 周一以测试版推出 Claude Ship，称「Claude 现在可以审查 PR、修复它们，并批准团队政策允许的那些」，面向 Team 与 Enterprise。流程由三部分组成：3 月推出的 Code Review 汇总并发布审查意见；PR Steward 处理失败的 CI 检查、合并冲突与来自 Code Review、其他工具或同事的评审意见，并在每次推送里写明改了什么、如何撤销，但它不能批准或合并；Claude Approvals 按团队政策决定是否批准。Anthropic 称团队仍控制在哪里运行、哪些改动必须由人确认。",
-      "source": "ZDNet / Anthropic",
-      "link": "https://www.zdnet.com/innovation/claude-ship-code-how-to-try/",
+      "title": "补记：OpenAI 与 Cisco 开源 Shirudo——给运行中的 Linux 系统加可验证的临时 eBPF 护盾",
+      "summary": "OpenAI 11 月 23 日公告：与 Cisco 推出开源运行时 Shirudo（日语「盾」之意），帮助运维团队在补丁尚未铺开、又不能把服务停掉时，给运行中的 Linux 系统加上临时防护。它使用 eBPF 在操作系统特定点观察并实施针对性保护。官方概括四项能力：实时防护（可在不重启的情况下阻断脆弱代码路径，并先观察再强制执行）；机速防御（让智能体可编程地调查漏洞、生成护盾并对照利用与真实负载验证，但部署仍由安全团队控制）；可信部署（护盾加载前须加密签名与校验，并经过 Linux eBPF 验证器）；硬件背书（用 TPM 留下加载或卸载记录）。受控演示中，团队用 Codex 生成护盾，给 Java 的 Base64 解码器加上输入检查，并挂到正在运行的 Elasticsearch 进程上，从而在服务不中断的情况下挡住 Java4Shell 利用。许可为 BSD 2-Clause，BPF 程序双许可 BSD 与 GPL。项目计划让经过测试的护盾与漏洞披露一并提供。11 月 23 日发布，昨日稿未收，本期补记。",
+      "source": "OpenAI / Cisco",
+      "link": "https://openai.com/index/introducing-shirudo",
       "models": []
     },
     {
-      "title": "AWS CEO Garman：AI 安全不能靠「紧急刹车」，身份、日志与隔离等工程手段现在就能用",
-      "summary": "AWS 官方博客发文，CEO Matt Garman 认为构建可信 AI 系统的实用工具大多已经存在：身份、日志与隔离等经过验证的安全基本功同样适用于 AI 系统，Nitro 与 Firecracker 等技术可在基础设施层强制隔离、且不依赖模型本身。在智能体越来越多直接操作生产系统时，这是把安全从「模型会不会听话」拉回「权限与边界怎么设」。",
-      "source": "AWS",
-      "link": "https://www.aboutamazon.com/news/aws/aws-ceo-ai-safety-engineering",
-      "models": []
-    },
-    {
-      "title": "补记：腾讯 WorkBuddy 公测电脑操控，可识别界面并点击、输入、滚动",
-      "summary": "IT之家 11 月 20 日报道，WorkBuddy 上线电脑操控能力，支持 macOS 与 Windows，需升级到 5.11.0 及以上并授予辅助功能与录屏权限；登录、支付、提交、删除等操作建议全程监督。发布时间落在 11-21 窗口、该期未收，本期补记。",
-      "source": "IT之家",
-      "link": "https://www.ithome.com/1/030/222.htm",
+      "title": "补记：DeepMind 开源面向量子算法的 Lean 库，让多智能体改进必须通过形式化证明",
+      "summary": "与新闻栏同一项工作的生态侧面：DeepMind 为这次实验构建了开源 Lean 量子算法库，并公开问题规格与已验证解，使不同智能体团队的改进提案必须先通过数学正确性保证，再进入共享笔记。官方 GitHub 仓库为 google-deepmind/formal-quantum-computation。这是把「智能体开会出主意」和「定理证明器把关」接在同一条流水线上，而不是先出结果再事后核对。",
+      "source": "Google DeepMind",
+      "link": "https://github.com/google-deepmind/formal-quantum-computation",
       "models": []
     }
   ]

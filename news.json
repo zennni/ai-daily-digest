@@ -1,5 +1,61 @@
 [
   {
+    "t": "Anthropic 收盘跌 6.5%，跌破 83 美元发行价；分析师仍偏多，英伟达同步回吐周一涨幅",
+    "s": "CNBC 11 月 24 日报道，Anthropic 股票周二收盘下跌 6.5%，跌破公司 83 美元的发行价。该股上周四在纳斯达克开盘报 111.50 美元；CNBC 称本次 IPO 募资 813 亿美元，为有史以来最大规模发行。报道还提到，发行时机构认购超额，约一半下单的机构投资者未能获配，但在市场波动时这些机构似乎并未急于买回。TechCrunch 称，该股周二午盘最低至 76 美元，较周一收盘跌近 12%；英伟达午盘跌逾 7%，回吐周一黄仁勋复任后逾 30% 涨幅的一部分。AMD、英特尔以及 CoreWeave、IREN、Nebius 等「新云」公司盘中亦下跌。分析师侧，Canaccord Genuity 周二给予买入评级、目标价 135 美元；Oppenheimer 给予跑赢大盘、目标价 150 美元；Wedbush 周一已给跑赢大盘、目标价 120 美元。CNBC 强调市场仍在消化英伟达董事会戏剧性复任，以及围绕万亿美元级基础设施开支能否兑现的争论。",
+    "d": "2026-11-24",
+    "src": "CNBC / TechCrunch",
+    "link": "https://www.cnbc.com/2026/11/24/anthropic-stock-ipo-price.html",
+    "m": []
+  },
+  {
+    "t": "OpenAI 发布预印本：GPT-6 系列可只靠推理与代码设计蛋白质；Onava 湿实验给出早期结合证据",
+    "s": "OpenAI 11 月 24 日撰文，预印本标题为「GPT-6 as a Universal Foundation Model for Protein Biology: Beyond Specialized Models」。官方核心表述是：GPT-6 系列可以在不调用专用生物学模型来生成设计的前提下，只靠推理与通用代码工具设计新的蛋白质三维结构与氨基酸序列。与研究伙伴 Onava 的第一项湿实验中，团队把 GPT-6.2 给出的三维设计交给 SolubleMPNN 等专用模型补序列并筛选候选，再合成测试：322 个小蛋白（minibinder）对五个靶点中，35 个（10.9%）显示结合，其中 PD-L1 5 个、IL-7Rα 3 个、TrkA 1 个、VEGF-A 8 个、IL-17A 18 个。官方提醒，命中率高度取决于筛选尺度与结合定义，原版 RFdiffusion 研究曾报告更高命中率。第二项实验让 GPT-6.2 在已知三维对接姿态上重写序列：MDM2 88 个设计中 75 个（85%）、VEGF-A 42 个中 26 个（62%）、PD-1 59 个中 8 个（14%）显示结合。抗体结合环改造中，182 个 VHH 设计有 128 个（70%）对 IL-4Rα 显示结合；基于五个治疗性抗体的 272 个片段中，179 个（66%）对原靶点 PD-1 或 PD-L1 显示结合。计算评估里，GPT-6.2 在 PoseBusters 对接任务上 93% 的计分预测接近实验方位，对比 DiffDock-L 的 50%。官方同时写明短板：完整蛋白质结构预测仍明显不足；实验室候选的序列与筛选仍依赖专用模型。",
+    "d": "2026-11-24",
+    "src": "OpenAI",
+    "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "m": []
+  },
+  {
+    "t": "补记：DeepMind 与 Google Quantum AI 用 Gemini 4 智能体团队加 Lean 证明，改进面向聚变与药物设计的量子线路",
+    "s": "DeepMind 11 月 23 日博客（Sergey Shirobokov、Ben Jaderberg、Ryan Babbush 执笔）：无法在经典计算机或现有小型量子处理器上测试高资源线路时，他们让多支独立的 Gemini 4 智能体团队改进已知量子算法，并用 Lean 形式化定理证明器验证每条结果，再写入共享笔记；每四小时各队在虚拟会议上交换与辩论想法。应用结果包括：用于惯性约束聚变某一关键性质计算的线路，计算成本（综合所需量子比特与操作）降低 11.8 倍，内存需求从 5,650 个纠错量子比特降到 4,338 个；对一种常见光敏分子的模拟便宜 8 倍；对分解大多数人体药物、因而对药物设计重要的酶细胞色素 P450，改进 2.5 倍，内存从 481 降到 333 个量子比特。基础算法方面，某一 Grover 算法实现加速 2.57 倍，用于把数值载入量子态的常见 arcsin 例程加速 290 倍。作者强调，这些线路要真正跑科学模拟，所需资源仍可能高于第一代纠错量子计算机所能提供的水平。团队开源了面向量子算法的 Lean 库、问题规格与已验证解，并与 Google Quantum AI 合作。此文落在昨日窗口、该期未收，本期补记。",
+    "d": "2026-11-23",
+    "src": "Google DeepMind",
+    "link": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "m": []
+  },
+  {
+    "t": "补记：NHS 启动全球规模最大的 AI 辅助乳腺筛查试验 EDITH，三年约 70 万人、资助 1000 万英镑",
+    "s": "NHS England 11 月 23 日公告：已开始邀请女性参加这项为期三年的试验，预计近 70 万名接受常规乳腺筛查的女性将参与，以检验 AI 辅助工具能否帮助更早发现癌症，并让专科医生把时间更多地用在癌症患者身上。试验由英国国家卫生与保健研究所（NIHR）通过政府资金提供 1000 万英镑，由华威大学、剑桥大学与剑桥大学医院 NHS 基金会信托牵头，与 NHS England 密切合作。常规预约流程不变，信件会说明试验并提供退出选项。目前每张乳腺 X 光需两名专科医生审阅；试验将测试在 AI 辅助下，多数影像是否只需一名专科医生复核。联合首席研究员明确：已对 4 套 AI 系统做过准确性测试，试验期间所有临床决定仍由 NHS 人员作出。招募已从剑桥大学医院起步，这是英国 30 个站点中的第一家。此文落在昨日窗口、该期未收，本期补记。",
+    "d": "2026-11-23",
+    "src": "NHS England",
+    "link": "https://www.england.nhs.uk/2026/11/first-women-join-world-leading-ai-assisted-nhs-breast-screening-trial/",
+    "m": []
+  },
+  {
+    "t": "补记：面向日常对话的 GPT-6.2 Sol 开始向 ChatGPT 的 Chat 页推送，覆盖 Plus、Pro、Business 与 Enterprise",
+    "s": "The Verge 11 月 23 日 20:47 UTC（上海时间 24 日 04:47）报道，OpenAI 推出针对 Chat 页调校的 GPT-6.2 Sol，官方形容「在处理复杂请求时好得多，尤其是当你给出详细指令，或请它在网上查找信息时」，并正在向 ChatGPT Plus、Pro、Business 与 Enterprise 订阅者推送。GPT-6.2 Sol 本月早些时候已先在其他产品线推出。该报道落在昨日采集窗口末尾，11-24 稿未收，本期补记。本文不引用未经官方页面核对的内部基准分数。",
+    "d": "2026-11-23",
+    "src": "The Verge",
+    "link": "https://www.theverge.com/ai-artificial-intelligence/1040716/openai-launched-a-chat-specific-version-of-gpt-6-2-sol",
+    "m": []
+  },
+  {
+    "t": "补记：Google Search 的 AI Mode 开放 Wallet 接入 Personal Intelligence，Drive 与 Gemini 应用随后数周跟进",
+    "s": "Google Search 产品副总裁 Robby Stein 11 月 23 日在官方博客写道：即日起可选择把 Google Wallet 安全接入 AI Mode 中的 Personal Intelligence，Drive 与 Gemini 应用的支持将在随后数周到来，从而把消费、文档与对话中的上下文带进搜索。这些应用将与此前已支持的 Gmail、日历和相册一起，提供更贴合个人情境的回答。官方举例：连接 Wallet 后，可用于梳理财务节点、寻找削减日常开支的办法，并按已绑定卡片优化返现类别、旅行权益与积分；若选择连接，AI Mode 只能读取账户信息，不能划转、管理或投资资金。个性化可随时在搜索设置中调整或关闭。此文落在昨日窗口、该期未收，本期补记。",
+    "d": "2026-11-23",
+    "src": "Google",
+    "link": "https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/",
+    "m": []
+  },
+  {
+    "t": "补记：Marlowe 宣布 2.77 亿美元种子轮，由 Accel 领投，要在非英伟达芯片上建「多硅推理工厂」",
+    "s": "Accel 11 月 23 日投资说明与公司同日介绍页：Marlowe 宣布 2.77 亿美元种子轮，由 Accel 领投。公司由 CEO Dan Lewis 与 CTO Kutta Srinivasan 创立，定位是为关键推理负载设计和运营「多硅 AI 工厂」——把芯片、硬件、软件与数据中心按负载匹配在一起，而不是只用单一通用系统跑所有训练与推理。Accel 写道，备选硅片厂商需要一整套系统才能发挥潜力，Marlowe 要设计和运营这套系统。公司介绍页提到 AMD、Amazon、Arm、Broadcom、Cerebras、Etched、Google 与 Meta 等都在做降低推理成本的芯片。昨日稿未收，本期补记。官方这两篇未写明估值，本文不引用二手估值数字。",
+    "d": "2026-11-23",
+    "src": "Accel / Marlowe",
+    "link": "https://www.accel.com/news/our-investment-in-marlowe-the-multi-silicon-ai-factory",
+    "m": []
+  },
+  {
     "t": "英伟达董事会一致投票恢复黄仁勋总裁、CEO 与董事职务：称听取美国政府高层意见，确信复任无国家安全风险",
     "s": "英伟达 11 月 23 日公告：即刻生效恢复黄仁勋的总裁兼 CEO 及董事会成员身份。董事会称，在与黄仁勋进行一系列讨论和会面后，对其坦诚程度和领导能力感到满意；决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险。董事长哈维·琼斯留任，并感谢科莱特·克雷斯担任临时 CEO（她继续担任 CFO）。公告重申：鉴于有报道称黄仁勋是外国情报行动的目标，仅由独立董事组成的委员会已聘请独立律师调查，调查将进行到底，黄仁勋表示全力配合；董事会此前还设立了由独立董事组成的国家安全与出口管制委员会；公司将启动搜寻新设的首席合规官，向提名与公司治理委员会汇报。彭博称董事会决定未征询高级管理层，后者在最后一刻才获知；Business Insider 报道黄仁勋回到总部时受到员工欢呼，称「第二次当 CEO 会做得更好」。",
     "d": "2026-11-23",
