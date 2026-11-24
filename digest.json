@@ -1,130 +1,198 @@
 {
   "meta": {
-    "date": "2026-11-23",
-    "week": "星期一",
-    "note": "今日主题词：验算通过，尺子上桌。补跑稿，采集窗口约为上海时间 11 月 22 日 06:00 至 23 日 06:00（美国周六傍晚到周日）；周末无 arXiv 新批次，论文栏只收可核验的研究发布。前天日报记下 Alpöge 贴出黎曼猜想的 Lean 证明、待核验；本窗核验有了结论：Lean FRO 与 Mathlib Initiative 发表联合声明，称「完全相信 Alpöge 对黎曼猜想的证明是正确的」——命题用的是 Mathlib 自带定义，数十人复现编译，两种独立工具确认所证定理与 Mathlib 陈述一致，导出证明经 Lean 官方内核及多个独立检查器验证。MIT 的 Andrew Sutherland 公布的核验页显示，175,187 个模块全部编译通过，五个主定理只依赖三条标准公理。同一个周末，OpenAI 首席科学家 Jakub Pachocki 发文《Perplexity and Intelligence》，首次公开内部预训练曲线：GPT-3.5 在其主评测集上的对数困惑度约 0.99、GPT-4 约 0.91；换到约 0.76 的模型后开始在开放数学问题上产出突破性结果，并预计进入约 0.68–0.7 区间会出现新的「变革性能力」。他提议各前沿实验室以困惑度等指标约定共同的开发上限，在监测能力达到具体里程碑（如思维链监测的继任方案）前不越过。产业侧，特斯拉向美国早期体验用户推送 FSD v15 监督版；美财长贝森特称黄仁勋能否回归应取决于对华芯片销售调查，并要求英伟达给出答案；OpenRouter 就 Dragos 金丝雀报告下架三家推理服务商、取消 125 个端点的零数据保留资格。一句话：数学这边，验算让主张变成定理；模型这边，有人想先把尺子立起来，再决定还往前走多远。"
+    "date": "2026-11-24",
+    "week": "星期二",
+    "note": "今日主题词：复位，然后补课。补跑稿，采集窗口约为上海时间 11 月 23 日 06:00 至 24 日 06:00（美国周日傍晚到周一收盘）。上周五英伟达连跌七周、SEC 会计调查见报；本窗它把人请了回来：英伟达董事会一致投票，即刻恢复黄仁勋的总裁、CEO 与董事职务。公告写明，董事会在决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险；独立董事委员会对「外国情报行动」相关报道的调查将继续，公司还将新设首席合规官。特朗普对 CNBC 说「是我促成的」；《金融时报》称英伟达股价随后涨约 30%，彭博称纳斯达克 100 指数涨约 7%。补课同时开始：商务部当天把处在丑闻中心的新加坡公司 Megaspeed 列入实体清单；彭博称黄仁勋将于 12 月 3 日就出口管制在参议院银行委员会公开作证；两党议员批评复任决定。交易桌上，CrowdStrike 宣布以全股票方式收购 Zscaler，作价约 439 亿美元；亚马逊签约买下 Decart 的优化栈技术与创始团队，彭博称约 75 亿美元。模型侧，智谱发布首款 Loop Transformer 旗舰 GLM-5.4（7500 亿参数级，28 层权重共享跑两遍）；百度在 Hugging Face 公开 ERNIE 5.5 Flash Preview 权重（2800 亿总参、140 亿激活，Apache 2.0）；蚂蚁静默开源 Ling-3.2-air。Anthropic 推出 Claude Ship 测试版，把 PR 审查、修复与按团队规则批准串成一条线。一句话：人可以一夜复位，合规、出口与安全的课得一门门补。"
   },
   "highlights": [
     {
-      "title": "Lean FRO 与 Mathlib 联合声明：完全相信 Alpöge 的黎曼猜想证明正确，四项核查标准全部满足",
-      "summary": "命题为 Mathlib 自带定义；comparator 与 con-leche 两种工具确认所证即该命题；导出证明经 Lean 官方内核及多个独立检查器验证。MIT Sutherland 核验页：175,187 个模块编译通过，仅依赖三条标准公理。"
+      "title": "英伟达董事会一致恢复黄仁勋总裁、CEO 与董事职务，称听取美国政府高层意见、确信无国家安全风险",
+      "summary": "即刻生效；董事长哈维·琼斯留任；独立董事委员会调查继续，公司将新设向提名与治理委员会汇报的首席合规官。股价随后涨约 30%。"
     },
     {
-      "title": "OpenAI 首席科学家公开预训练困惑度曲线，提议按困惑度设定全行业共同的开发上限",
-      "summary": "GPT-3.5 约 0.99、GPT-4 约 0.91（对数困惑度）；约 0.76 的模型开始在数学开放问题上产出突破；预计 0.68–0.7 区间将出现新的变革性能力。"
+      "title": "特朗普：「是我促成的」；彭博：黄仁勋 12 月 3 日将在参议院银行委员会就出口管制公开作证",
+      "summary": "CNBC：董事会在获得总统关于其未违反国家安全法律的保证后表决；两党议员批评复任，并称国会需立法收紧对华芯片出口。"
     },
     {
-      "title": "特斯拉向美国早期体验用户推送 FSD v15 监督版：称安全关键场景处理能力提升 25 倍，新增 Reality View",
-      "summary": "新视觉编码器将由 FSD、Robotaxi 与 Optimus 共享；马斯克称 12 月扩大推送，仍需驾驶员监督。"
+      "title": "商务部将丑闻核心公司 Megaspeed 列入实体清单",
+      "summary": "Semafor：此后美国企业向 Megaspeed 及其境外关联方出售半导体等受控技术须获许可。"
     },
     {
-      "title": "贝森特：黄仁勋能否回归应取决于对华芯片销售调查，要求英伟达给出答案",
-      "summary": "《纽约时报》：这距他公开呼吁英伟达大幅调整管理层只隔一周。"
+      "title": "CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler",
+      "summary": "每股 Zscaler 换 1.135 股 CrowdStrike；公司称将把终端安全与零信任 SASE 合到一个平台，并把「AI 智能体直连云端的流量」列为理由之一。"
     },
     {
-      "title": "OpenRouter 回应 Dragos 报告：下架三家推理服务商，125 个端点取消零数据保留资格",
-      "summary": "称自身未被入侵；正把研究人员的测试方法改造成持续检查，并核查请求是否被转发给第三方。"
+      "title": "亚马逊签约收购 Decart 优化栈技术并接收创始团队，彭博称作价约 75 亿美元",
+      "summary": "亚马逊称将用于推理与自研芯片性能优化；CNBC：Trainium 计划在 2027 年晚些时候首次对外销售。"
     },
     {
-      "title": "蚂蚁 inclusionAI 开放 LingSante-3.1 医疗模型：flash 版 5600 亿总参、250 亿激活，MIT 许可",
-      "summary": "另有面向胸片报告的 124B 多模态 LingSante-3.1-air-VL；AA 11 月 22 日入库 flash 版，但无综合 Index，不入主榜。"
+      "title": "智谱发布 GLM-5.4：首款 Loop Transformer 旗舰，7500 亿参数级，称智能水平可比 2–3 万亿参数模型",
+      "summary": "28 层权重共享层跑两遍；先在 GLM Coding Plan、ZCode 与 Z.ai Chat 提供，API 与权重待安全评估后开放。"
     },
     {
-      "title": "彭博：具身智能公司 Simplexity Robotics 获 1 亿美元 Pre-A 轮，估值 16 亿美元，蚂蚁领投",
-      "summary": "阿里巴巴、腾讯等参投。"
+      "title": "百度公开 ERNIE 5.5 Flash Preview 权重：2800 亿总参、140 亿激活，Apache 2.0；蚂蚁静默开源 Ling-3.2-air",
+      "summary": "文心为后训练中间检查点，上下文扩至 100 万；Ling-3.2-air 为 MIT 许可的 124B/5.5B 激活 MoE，AA 首评 23 已入本站主榜。"
+    },
+    {
+      "title": "Anthropic 推出 Claude Ship 测试版：审查、修复、按团队规则批准 PR",
+      "summary": "Team 与 Enterprise 可用；PR Steward 不能批准或合并，只处理失败的 CI、冲突与评审意见。"
+    },
+    {
+      "title": "俄勒冈与弗吉尼亚起诉 SpaceX：指 Grok Imagine「Spicy」模式生成未经同意的性化深度伪造",
+      "summary": "两州寻求禁令、追缴不当得利与罚款。"
     }
   ],
   "news": [
     {
-      "title": "贝森特称黄仁勋能否重返英伟达应取决于对华芯片销售调查，并要求公司作出说明",
-      "summary": "《纽约时报》11 月 22 日报道：美国财长斯科特·贝森特在一周前曾公开要求英伟达大幅调整管理层，本次接受 CBS 采访时表示黄仁勋回归仍有可能，但应以对其对华芯片销售相关调查的结果为前提，并要求英伟达就相关问题给出答案。同一周末，《纽约时报》还援引美国及其他国家现任和前任官员，描述中国国家安全部协助中国企业获取先进 AI 芯片的行动。黄仁勋已于 11 月 12 日辞去 CEO 职务。",
-      "date": "2026-11-22",
-      "source": "纽约时报",
-      "link": "https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html",
+      "title": "英伟达董事会一致投票恢复黄仁勋总裁、CEO 与董事职务：称听取美国政府高层意见，确信复任无国家安全风险",
+      "summary": "英伟达 11 月 23 日公告：即刻生效恢复黄仁勋的总裁兼 CEO 及董事会成员身份。董事会称，在与黄仁勋进行一系列讨论和会面后，对其坦诚程度和领导能力感到满意；决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险。董事长哈维·琼斯留任，并感谢科莱特·克雷斯担任临时 CEO（她继续担任 CFO）。公告重申：鉴于有报道称黄仁勋是外国情报行动的目标，仅由独立董事组成的委员会已聘请独立律师调查，调查将进行到底，黄仁勋表示全力配合；董事会此前还设立了由独立董事组成的国家安全与出口管制委员会；公司将启动搜寻新设的首席合规官，向提名与公司治理委员会汇报。彭博称董事会决定未征询高级管理层，后者在最后一刻才获知；Business Insider 报道黄仁勋回到总部时受到员工欢呼，称「第二次当 CEO 会做得更好」。",
+      "date": "2026-11-23",
+      "source": "英伟达 / 彭博 / Business Insider",
+      "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "models": []
     },
     {
-      "title": "特斯拉启动 FSD v15 监督版推送：称安全关键场景处理能力提升 25 倍，视觉编码器将与 Robotaxi、Optimus 共享",
-      "summary": "IT之家与每日经济新闻报道：特斯拉当地时间 11 月 21 日宣布在美国推出 FSD v15，首批推送给早期体验计划（EAP）成员。官方称通过升级视觉编码器，安全关键场景处理能力提升 25 倍；该编码器将由 FSD、Robotaxi 与 Optimus 人形机器人共享，并用数百万条互联网视频训练。新界面 Tesla Reality View 可在车机上显示叠加行驶规划的实景化画面，支持全屏、地图或分屏；此外改善坑洼、碎片等恶劣路况与学校区域、恶劣天气下的车速控制，新增「自行车架模式」。马斯克称 v15 将于 12 月向更多用户推送。该版本仍需驾驶员监督，中国市场的上线时间未公布。",
-      "date": "2026-11-22",
-      "source": "IT之家 / 每日经济新闻",
-      "link": "https://www.ithome.com/1/030/512.htm",
+      "title": "特朗普称「是我促成的」：多家媒体披露白宫推动黄仁勋复任，两党议员批评；黄仁勋 12 月 3 日将在参院作证",
+      "summary": "CNBC 援引三名了解董事会想法的人士称，董事会是在周日获得特朗普总统关于黄仁勋未违反国家安全法律的保证后决定复任的，股价暴跌以及部分投资者、员工对临时 CEO 的担忧也加速了讨论；特朗普对 CNBC 说：「是我促成的。」《纽约时报》称特朗普指示由副总统万斯牵头推动；路透称特朗普与万斯认为黄仁勋是美国开放权重模型的保护者。复任公布后，两党议员批评这一决定，称国会必须立法收紧对华芯片出口（路透）。彭博报道，参议院银行委员会主席蒂姆·斯科特表示，黄仁勋将于 12 月 3 日就美国出口管制监督公开作证。",
+      "date": "2026-11-23",
+      "source": "CNBC / 纽约时报 / 路透 / 彭博",
+      "link": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
       "models": []
     },
     {
-      "title": "路透：Anthropic IPO 流程异常严格——部分投行团队限四人、文件平台记录浏览、要求六个月内不得为竞争对手提供咨询",
-      "summary": "路透 11 月 22 日报道，出于对泄密的担忧，Anthropic 在 IPO 过程中把部分承销银行的团队限制在四人，使用会记录浏览行为的文件平台，并寻求让银行在六个月内不得为其竞争对手提供咨询，类似 SpaceX 此前的做法，引起部分银行家不满。",
-      "date": "2026-11-22",
-      "source": "路透",
-      "link": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
+      "title": "商务部把 Megaspeed 列入实体清单：美企向其出售半导体等受控技术须获许可",
+      "summary": "Semafor 报道，特朗普政府 11 月 23 日（周一）下午把处于英伟达丑闻中心的新加坡公司 Megaspeed 列入商务部实体清单。此后任何美国公司向 Megaspeed 或其境外关联方出售包括半导体在内的特定技术，都须获得美国政府许可。此前《华尔街日报》等报道称，Megaspeed 是美国官员怀疑把英伟达芯片转运至中国的客户。",
+      "date": "2026-11-23",
+      "source": "Semafor",
+      "link": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist",
       "models": []
     },
     {
-      "title": "国家情报总监克莱顿：系统为适应 AI 时代升级期间，美国人要准备好面对「颠簸」",
-      "summary": "CNBC 11 月 22 日报道：在美国联邦航空局、微软与摩根大通接连出现严重技术故障后，国家情报总监兼 AI 事务负责人 Jay Clayton 表示，现代化与网络安全投入可能在系统升级期间带来暂时中断。官员称几起故障根因各不相同，看不出是协调一致的网络攻击或 AI 攻击。时值感恩节出行高峰前。",
-      "date": "2026-11-22",
-      "source": "CNBC",
-      "link": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+      "title": "CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler，把终端安全与零信任网络访问合到一个平台",
+      "summary": "CrowdStrike 11 月 23 日公告：双方签署最终协议，CrowdStrike 以全股票方式收购 Zscaler，对 Zscaler 估值约 439 亿美元，Zscaler 股东每股换得 1.135 股 CrowdStrike 普通股。公司称此举将进入网络安全中最大的单一细分市场，使其可服务市场扩大超过 1850 亿美元，并获得向约 8000 家 Zscaler 客户交叉销售的路径。公告的理由之一是：用户、应用「以及现在的 AI 智能体」直接连到云端，这些流量不再经过数据中心，传统防火墙与 VPN 看不见也拦不住。交易需股东与监管批准。彭博称其为该行业史上最大交易之一。",
+      "date": "2026-11-23",
+      "source": "CrowdStrike / 彭博",
+      "link": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/",
       "models": []
     },
     {
-      "title": "彭博：Simplexity Robotics 完成 1 亿美元 Pre-A 轮，估值 16 亿美元，蚂蚁集团领投、阿里与腾讯参投",
-      "summary": "彭博 11 月 22 日报道，中国具身智能初创公司 Simplexity Robotics 筹得 1 亿美元 Pre-A 轮资金，估值 16 亿美元，由蚂蚁集团领投，阿里巴巴、腾讯等参与。报道集中在金额、估值与投资方，产品与部署细节未见公开材料。",
-      "date": "2026-11-22",
+      "title": "亚马逊签约收购 Decart 优化栈（DOS）技术并接收创始团队，彭博称约 75 亿美元",
+      "summary": "亚马逊 11 月 23 日宣布，已签署协议购买 Decart Optimization Stack 背后的专有技术，并迎来联合创始人 Dean Leitersdorf、Moshe Shalev、Orian Leitersdorf 及其研究与工程团队。亚马逊称 Decart 团队自 2025 年起就与其合作，在 Trainium 上用软硬件全栈方法做性能优化，此次收购将用于进一步优化推理与自研芯片性能。彭博援引知情人士称作价约 75 亿美元，亚马逊拒绝评论条款。CNBC 同时提到，亚马逊计划在 2027 年晚些时候首次对外提供 Trainium 芯片。",
+      "date": "2026-11-23",
+      "source": "亚马逊 / CNBC / 彭博",
+      "link": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "models": []
+    },
+    {
+      "title": "俄勒冈与弗吉尼亚州检察长起诉 SpaceX、X 与 xAI，指 Grok Imagine「Spicy」模式生成未经同意的性化图像",
+      "summary": "NPR 报道，两州检察长分别提起消费者保护诉讼，指控用户可借助 Grok 把真实人物的照片改成衣着暴露的性化图像，受害者多为女性、也包括儿童；两州要求公司采取更多措施阻止此类图像生成与传播，并追缴「不当得利」、支付罚款。《纽约时报》援引诉状称涉及逾 180 万张女性性化图像与 65 张以上涉及儿童的图像。SpaceX 为 X 与 xAI 的母公司。",
+      "date": "2026-11-23",
+      "source": "NPR / 纽约时报 / 弗吉尼亚州检察长办公室",
+      "link": "https://www.npr.org/2026/11/23/nx-s1-6049124/virginia-oregon-sue-elon-musks-spacexsi-over-deepfake-nonconsensual-sexual-images",
+      "models": []
+    },
+    {
+      "title": "Sierra 称正敲定超过 17.5 亿美元的新一轮融资，估值 300 亿美元",
+      "summary": "彭博 11 月 23 日报道，Bret Taylor 联合创立的客服 AI 公司 Sierra 表示，正在敲定由 Lightspeed 与 Greenoaks 领投、超过 17.5 亿美元的融资，估值 300 亿美元，高于 5 月的 158 亿美元。本站 11-19 日报曾记「传以约 300 亿美元估值融资 15 亿美元」，本次为公司口径更新。",
+      "date": "2026-11-23",
       "source": "彭博",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
       "models": []
     },
     {
-      "title": "美国州长协会提出 AI 监管分工：联邦负责审查 AI 模型，州政府保留消费者保护",
-      "summary": "彭博 11 月 22 日报道，全美州长协会提议划分 AI 监管职责：请联邦政府承担 AI 模型审查，同时让各州继续负责保护消费者，而不是被联邦规则排除在外。",
-      "date": "2026-11-22",
+      "title": "Marlowe 获 2.77 亿美元种子轮、估值 11.5 亿美元，为非英伟达 AI 芯片做云基础设施与性能工具",
+      "summary": "彭博 11 月 23 日报道，开发云基础设施与性能优化工具、帮助非英伟达 AI 芯片提高利用率的 Marlowe 完成 2.77 亿美元种子轮，由 Accel 领投，估值 11.5 亿美元。",
+      "date": "2026-11-23",
       "source": "彭博",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
       "models": []
     },
     {
-      "title": "补记：腾讯混元团队首次 Reddit AMA——下一代 Hy 规模将「进一步显著扩大」，Hy4-mini 进入路线图",
-      "summary": "界面新闻报道：11 月 21 日凌晨，腾讯首席 AI 科学家、混元负责人姚顺雨与团队在 Reddit 进行首次公开问答。团队表示下一代 Hy 模型规模将「进一步显著扩大」并继续投入大规模强化学习，但未确认 1.5 万亿至 2 万亿参数的追问；Hy4-mini 已进入路线图，并预告一款前沿 Flash-Lite 模型，正在考虑 24B 至 31B 的稠密模型。团队还称正在推进 llama.cpp 支持，并与 vLLM、SGLang 等社区合作。问答时间落在上一窗口，上期未收，本期补记。",
-      "date": "2026-11-21",
-      "source": "界面新闻",
-      "link": "https://www.jiemian.com/article/15357726.html",
-      "models": [
-        "Hy4",
-        "Hy4 flash"
-      ]
+      "title": "Meta 首席 AI 官 Alexandr Wang 发长文《Superintelligence is Arriving》：以黎曼猜想证明推演 AI 将在各领域超越人类",
+      "summary": "Wang 在 X 发布长文，把 Claude 参与证明黎曼猜想视为信号，认为 AI 将在包括 AI 研究在内的所有领域超过人类，并呼吁加大 AI 安全与对齐投入（据 Techmeme 摘要）。同一窗口，AWS CEO Matt Garman 撰文称 AI 安全不能依赖「紧急刹车」，身份、日志与隔离等已验证的安全工程手段同样适用于 AI 系统。",
+      "date": "2026-11-22",
+      "source": "X / AWS",
+      "link": "https://x.com/alexandr_wang/status/2124636606959345776",
+      "models": []
     }
   ],
   "papers": [
     {
-      "title": "黎曼猜想 Lean 证明通过社区核验：Lean FRO 与 Mathlib Initiative 联合声明",
-      "titleEn": "Lean verification of the Riemann Hypothesis (joint statement by the Lean FRO and the Mathlib Initiative)",
-      "summary": "声明称 Alpöge 11 月 20 日发布的约 1700 万行 Lean 库只直接依赖 Mathlib，社区按 Kevin Buzzard 提出的四项标准完成核查：一、所用 RiemannHypothesis 是 Mathlib 中经数论与 Lean 专家审过的定义；二、数十人复现编译并得到相同的原始证明导出文件；三、社区另建只导入 Mathlib 的命题文件，用 comparator 与 con-leche --compare 两种独立工具确认所证定理正是该命题；四、导出证明经 Lean 官方内核、con-leche 与 con-ron 及第三方用不同语言实现的检查器验证，其中 con-leche 与 con-ron 带有相对集合论的形式化证明，保证不会接受错误证明；检查在与源代码隔离的惰性导出上运行。MIT 的 Andrew Sutherland 核验页另列出 175,187 个模块全部编译、五个主定理只依赖 propext、Classical.choice、Quot.sound 三条标准公理，沙箱内独立重建的导出与公开版逐字节一致。接下来数学界需要的是一份可读、可教的论证叙述。",
-      "authors": "Lean FRO, Mathlib Initiative",
-      "link": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+      "title": "cmHC：在伯克霍夫多胞形里「收缩」，平衡超连接的残差流混合",
+      "titleEn": "cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction",
+      "summary": "流形约束超连接（mHC）把残差连接扩成多条流，并把流间混合矩阵限制在双随机矩阵构成的伯克霍夫多胞形上以稳定传播。作者指出其中存在混合权衡：矩阵贴近多胞形顶点时混合不足，多条流退化为近乎独立；集中在均匀重心附近时混合过度，流之间难以区分。作者对跨层累积混合、流差异与梯度差异给出界，提出精确保持双随机性的 cmHC：把多胞形几何地向内部收缩，迫使残差矩阵往内部探索，并带有可证明的混合界、不引入新参数；在浅层施加适度收缩以防过度混合，从而在超大规模预训练中保持梯度稳定。实验覆盖多种规模的稠密与 MoE 模型。",
+      "authors": "Haowei He, Ziwen Zhao, Chenshuo Pan 等（13 位作者）",
+      "link": "https://arxiv.org/abs/2611.27193"
     },
     {
-      "title": "《困惑度与智能》：OpenAI 公开预训练曲线，主张以困惑度作为跨实验室的共同进度尺",
-      "titleEn": "Perplexity and Intelligence",
-      "summary": "Jakub Pachocki 认为现代 AI 的能力主要来自在海量数据上训练一个更好的「压缩器」，因此跟踪预训练进展是理解 AI 走向的关键，并首次公开 OpenAI 内部测量：在其主评测集上，GPT-3.5 对数困惑度约 0.99、GPT-4 约 0.91；损失降到 0.8 以下后，网络安全等领域出现变革性能力；换到约 0.76 的模型后，开放数学问题的突破成批出现。他认为 AI 参与算法研究可能带来预训练进展的阶跃，并预计进入约 0.68–0.7 区间会出现新的变革性能力，而对齐审计等现有手段可能失效、评测与训练感知可能加剧。因此他提议前沿开发者共同约定以困惑度等指标衡量的第一道开发上限，在理解与监测 AI 行为达到具体里程碑（例如思维链监测的继任方案）前不越过。文章也列出难点：各实验室评测集与数据配比不同、困惑度不直接对应任务、无法涵盖预训练之外的进展。",
-      "authors": "Jakub Pachocki（OpenAI）",
-      "link": "https://openai.com/index/perplexity-and-intelligence"
+      "title": "不穿模的世界模型：从冻结 DiT 的隐藏状态读出「这一步会不会穿墙」",
+      "titleEn": "Non-penetrating World Models",
+      "summary": "交互式视频世界模型常让物体穿过障碍物。作者提出 NoPeBench 评测世界模型对物理障碍的反应，发现开源模型都无法可靠避免穿模，但扩散 Transformer 的隐藏状态其实已编码了预测穿模所需的信息。据此提出轻量框架 NoPeWorld：在冻结 DiT 的隐藏状态上训练一个小预测头判断候选动作是否安全，把不安全动作替换为最接近原意的安全动作。六个视频世界模型的平均物理违规率由 74% 降到 16%，并能零样本泛化到开放域图像、第三人称视角与移动障碍。代码、基准与权重已公开。",
+      "authors": "Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji, Xingyi Yang",
+      "link": "https://arxiv.org/abs/2611.27963"
+    },
+    {
+      "title": "Future-OPSD：用无标注视频的「过去—未来」配对做在线自蒸馏，学会预判下一步",
+      "titleEn": "Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation",
+      "summary": "视频前瞻推理要求模型从当前画面预判未来事件或下一步动作。现有方法依赖标注或外部大模型监督，并把整段未来片段视为同等重要。作者把过去—未来视频对直接变成自监督信号，定义「前瞻分数」并由此得到对比特权优势，用一个可优化的下界替代项把真实未来与随机参照之间的优势与师生蒸馏优势结合，放大与决策相关的内容、压低无关上下文。在开放式预测与封闭式规划上，相对基座分别最多提升 14.2 与 15.9 分，且不损害一般视频理解。",
+      "authors": "Jingchen Sun, Jiaxing Zhang, Qingqiao Hu 等（10 位作者）",
+      "link": "https://arxiv.org/abs/2611.26954"
+    },
+    {
+      "title": "MemOnce：只缓存少量末层隐藏状态、按需解码回 KV 的可扩展记忆架构",
+      "titleEn": "MemOnce: A Scalable Memory Architecture for Large Language Models",
+      "summary": "标准 Transformer 的逐层逐 token KV 缓存随上下文线性增长，线性时间架构又把历史压成固定大小状态、难留细节。MemOnce 用两项设计折中：记忆编码—解码器只缓存一小部分末层隐藏状态作为紧凑记忆，需要时动态解码回各注意力层的 KV；记忆稀疏注意力为每段连续输入自适应检索相关记忆，稀疏索引跨层只算一次。作者称它在不同模型规模、上下文长度与训练范式下优于 Transformer 等架构；用 MemOnce 改造 Qwen3.5-4B 后，记忆状态缓存缩小约 1313 倍。",
+      "authors": "Chang Nie, Chaoyou Fu, Songlin Liu, Yiqing Hu, Caifeng Shan",
+      "link": "https://arxiv.org/abs/2611.27973"
+    },
+    {
+      "title": "StereoVLM：用标定双目视觉做度量级 3D 空间推理的视觉语言模型",
+      "titleEn": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
+      "summary": "现有视觉语言模型多从无标定的单张或多张图像推断三维结构，度量信息天然模糊，也说不清预测是依据视觉证据还是语义先验。作者提出几何感知的双目 VLM，按「跨视图对应与视差估计 → 标定条件下的度量深度 → 语义空间推理」分层学习，并发现视差监督在未见环境中的泛化明显好于直接的双目深度监督。配套 Stereo3D-Bench 覆盖点级几何到物体级空间推理三个层次；StereoVLM-8B 深度准确率（δ1）为 95.17%，物体级平均得分 66.98。",
+      "authors": "Chi Yan, Guoyang Zhao, Wentao Yuan 等（6 位作者）",
+      "link": "https://arxiv.org/abs/2611.27915"
     }
   ],
   "models": [
     {
-      "name": "LingSante-3.1-flash / LingSante-3.1-air-VL",
+      "name": "GLM-5.4",
+      "vendor": "智谱 Z.ai",
+      "highlight": "智谱 11 月 23 日发布 GLM-5.4，称其为首款基于 Loop Transformer 的旗舰：在 GLM-5 基座上经继续训练改造而来（非从头预训练），一组 28 个权重共享层每次前向跑两遍，7500 亿参数规模，官方称智能水平可比 2–3 万亿参数模型，并主打「泛 Coding」——用代码生成视频、游戏、3D 着色器与 CAD。MarkTechPost 整理：激活参数未披露、未给旗舰基准表；官方 30B 循环消融中 AIME25 由 19.17 提到 30.42。目前只在 GLM Coding Plan、ZCode 与 Z.ai Chat 提供，API 与权重待安全评估后开放。暂无 AA 同口径分，不入本站主榜。",
+      "link": "https://z.ai/blog/glm-5.4"
+    },
+    {
+      "name": "ERNIE 5.5 Flash Preview",
+      "vendor": "百度",
+      "highlight": "百度官方仓 baidu/ERNIE-5.5-Flash-Preview 于 11 月 23 日 17:00（上海）在 Hugging Face 公开，许可 Apache 2.0。模型卡：基于此前发布的 ERNIE 5.5 Flash Base 的首个后训练模型，MoE 架构，总参 2800 亿、每 token 激活 140 亿；中训练把上下文从 128K 扩到 100 万 token；主打编程、3D 建模、知识工作与内容创作。官方写明这是后训练中的中间检查点，部分能力可能仍有不足。暂无 AA 同口径分，不入本站主榜（11-24 半点已在榜单 changes 记录权重兑现）。",
+      "link": "https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview"
+    },
+    {
+      "name": "Ling-3.2-air",
       "vendor": "蚂蚁 inclusionAI",
-      "highlight": "Hugging Face 模型卡：LingSante-3.1-flash 为开放权重 MoE 医疗模型，沿用 Ling-3.1-flash 架构，总参 5600 亿、每 token 激活 250 亿，支持 100 万 token 上下文，许可 MIT；训练覆盖医学推理、专业沟通、循证深度研究与长程医疗任务，卡上写明仅供研究评估、不是医疗器械。卡内称其在一项医疗 AI 基准的 23 个模型配置中总分 45.064、排第五，位于性能—成本帕累托前沿；SGLang 提供 day-0 镜像。同时开放的 LingSante-3.1-air-VL 为 124B 原生多模态 MoE，面向胸片等医疗影像报告。两仓建于 11 月 19 日；AA Changelog 11 月 22 日已入库 flash 版，但没有综合 Intelligence Index，按本站口径不入主榜。",
-      "link": "https://huggingface.co/inclusionAI/LingSante-3.1-flash"
+      "highlight": "蚂蚁百灵未发公告，于 11 月 23 日 11:55（上海）在 Hugging Face 建仓 inclusionAI/Ling-3.2-air，许可 MIT；官方卡为 124B 总参、5.5B 激活的混合线性注意力 MoE，官方推荐 SGLang 256K 部署。AA Changelog 11 月 23 日首评 Intelligence Index 23.4（整数 23），本站已于 11-24 半点收录入主榜（价格 N/A）。",
+      "link": "https://huggingface.co/inclusionAI/Ling-3.2-air"
     }
   ],
   "ecosystem": [
     {
-      "title": "OpenRouter 就 Dragos 金丝雀报告处置：下架三家推理服务商，125 个端点取消零数据保留资格",
-      "summary": "OpenRouter 11 月 22 日发文称，研究人员发现部分推理服务商数据遭入侵或未遵守其数据政策，但未显示 OpenRouter 本身被入侵或越权访问。已采取的措施：依调查结果下架三家服务商；从零数据保留（ZDR）资格中移除 125 个端点（含被研究人员标记的服务商和额外的预防性移除）；通知所有可能受影响的客户。正在进行：把研究人员的测试方法改造成持续检查、核查网络路径以发现请求与响应被转发给第三方的情况、恢复 ZDR 资格前要求服务商提供保证与验证。页面列出已发布说明的服务商包括 Atlas Cloud、Novita（MiniMax 请求相关）、Phala 与 Together（2026 年 6–7 月的提示词泄露事件）。",
-      "source": "OpenRouter",
-      "link": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "title": "Claude Ship 测试版：Code Review、PR Steward 与 Claude Approvals 把 PR 从审查推到批准",
+      "summary": "ZDNet 报道，Anthropic 周一以测试版推出 Claude Ship，称「Claude 现在可以审查 PR、修复它们，并批准团队政策允许的那些」，面向 Team 与 Enterprise。流程由三部分组成：3 月推出的 Code Review 汇总并发布审查意见；PR Steward 处理失败的 CI 检查、合并冲突与来自 Code Review、其他工具或同事的评审意见，并在每次推送里写明改了什么、如何撤销，但它不能批准或合并；Claude Approvals 按团队政策决定是否批准。Anthropic 称团队仍控制在哪里运行、哪些改动必须由人确认。",
+      "source": "ZDNet / Anthropic",
+      "link": "https://www.zdnet.com/innovation/claude-ship-code-how-to-try/",
+      "models": []
+    },
+    {
+      "title": "AWS CEO Garman：AI 安全不能靠「紧急刹车」，身份、日志与隔离等工程手段现在就能用",
+      "summary": "AWS 官方博客发文，CEO Matt Garman 认为构建可信 AI 系统的实用工具大多已经存在：身份、日志与隔离等经过验证的安全基本功同样适用于 AI 系统，Nitro 与 Firecracker 等技术可在基础设施层强制隔离、且不依赖模型本身。在智能体越来越多直接操作生产系统时，这是把安全从「模型会不会听话」拉回「权限与边界怎么设」。",
+      "source": "AWS",
+      "link": "https://www.aboutamazon.com/news/aws/aws-ceo-ai-safety-engineering",
+      "models": []
+    },
+    {
+      "title": "补记：腾讯 WorkBuddy 公测电脑操控，可识别界面并点击、输入、滚动",
+      "summary": "IT之家 11 月 20 日报道，WorkBuddy 上线电脑操控能力，支持 macOS 与 Windows，需升级到 5.11.0 及以上并授予辅助功能与录屏权限；登录、支付、提交、删除等操作建议全程监督。发布时间落在 11-21 窗口、该期未收，本期补记。",
+      "source": "IT之家",
+      "link": "https://www.ithome.com/1/030/222.htm",
       "models": []
     }
   ]

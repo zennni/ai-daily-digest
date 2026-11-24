@@ -1,5 +1,77 @@
 [
   {
+    "t": "英伟达董事会一致投票恢复黄仁勋总裁、CEO 与董事职务：称听取美国政府高层意见，确信复任无国家安全风险",
+    "s": "英伟达 11 月 23 日公告：即刻生效恢复黄仁勋的总裁兼 CEO 及董事会成员身份。董事会称，在与黄仁勋进行一系列讨论和会面后，对其坦诚程度和领导能力感到满意；决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险。董事长哈维·琼斯留任，并感谢科莱特·克雷斯担任临时 CEO（她继续担任 CFO）。公告重申：鉴于有报道称黄仁勋是外国情报行动的目标，仅由独立董事组成的委员会已聘请独立律师调查，调查将进行到底，黄仁勋表示全力配合；董事会此前还设立了由独立董事组成的国家安全与出口管制委员会；公司将启动搜寻新设的首席合规官，向提名与公司治理委员会汇报。彭博称董事会决定未征询高级管理层，后者在最后一刻才获知；Business Insider 报道黄仁勋回到总部时受到员工欢呼，称「第二次当 CEO 会做得更好」。",
+    "d": "2026-11-23",
+    "src": "英伟达 / 彭博 / Business Insider",
+    "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "m": []
+  },
+  {
+    "t": "特朗普称「是我促成的」：多家媒体披露白宫推动黄仁勋复任，两党议员批评；黄仁勋 12 月 3 日将在参院作证",
+    "s": "CNBC 援引三名了解董事会想法的人士称，董事会是在周日获得特朗普总统关于黄仁勋未违反国家安全法律的保证后决定复任的，股价暴跌以及部分投资者、员工对临时 CEO 的担忧也加速了讨论；特朗普对 CNBC 说：「是我促成的。」《纽约时报》称特朗普指示由副总统万斯牵头推动；路透称特朗普与万斯认为黄仁勋是美国开放权重模型的保护者。复任公布后，两党议员批评这一决定，称国会必须立法收紧对华芯片出口（路透）。彭博报道，参议院银行委员会主席蒂姆·斯科特表示，黄仁勋将于 12 月 3 日就美国出口管制监督公开作证。",
+    "d": "2026-11-23",
+    "src": "CNBC / 纽约时报 / 路透 / 彭博",
+    "link": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+    "m": []
+  },
+  {
+    "t": "商务部把 Megaspeed 列入实体清单：美企向其出售半导体等受控技术须获许可",
+    "s": "Semafor 报道，特朗普政府 11 月 23 日（周一）下午把处于英伟达丑闻中心的新加坡公司 Megaspeed 列入商务部实体清单。此后任何美国公司向 Megaspeed 或其境外关联方出售包括半导体在内的特定技术，都须获得美国政府许可。此前《华尔街日报》等报道称，Megaspeed 是美国官员怀疑把英伟达芯片转运至中国的客户。",
+    "d": "2026-11-23",
+    "src": "Semafor",
+    "link": "https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist",
+    "m": []
+  },
+  {
+    "t": "CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler，把终端安全与零信任网络访问合到一个平台",
+    "s": "CrowdStrike 11 月 23 日公告：双方签署最终协议，CrowdStrike 以全股票方式收购 Zscaler，对 Zscaler 估值约 439 亿美元，Zscaler 股东每股换得 1.135 股 CrowdStrike 普通股。公司称此举将进入网络安全中最大的单一细分市场，使其可服务市场扩大超过 1850 亿美元，并获得向约 8000 家 Zscaler 客户交叉销售的路径。公告的理由之一是：用户、应用「以及现在的 AI 智能体」直接连到云端，这些流量不再经过数据中心，传统防火墙与 VPN 看不见也拦不住。交易需股东与监管批准。彭博称其为该行业史上最大交易之一。",
+    "d": "2026-11-23",
+    "src": "CrowdStrike / 彭博",
+    "link": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/",
+    "m": []
+  },
+  {
+    "t": "亚马逊签约收购 Decart 优化栈（DOS）技术并接收创始团队，彭博称约 75 亿美元",
+    "s": "亚马逊 11 月 23 日宣布，已签署协议购买 Decart Optimization Stack 背后的专有技术，并迎来联合创始人 Dean Leitersdorf、Moshe Shalev、Orian Leitersdorf 及其研究与工程团队。亚马逊称 Decart 团队自 2025 年起就与其合作，在 Trainium 上用软硬件全栈方法做性能优化，此次收购将用于进一步优化推理与自研芯片性能。彭博援引知情人士称作价约 75 亿美元，亚马逊拒绝评论条款。CNBC 同时提到，亚马逊计划在 2027 年晚些时候首次对外提供 Trainium 芯片。",
+    "d": "2026-11-23",
+    "src": "亚马逊 / CNBC / 彭博",
+    "link": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+    "m": []
+  },
+  {
+    "t": "俄勒冈与弗吉尼亚州检察长起诉 SpaceX、X 与 xAI，指 Grok Imagine「Spicy」模式生成未经同意的性化图像",
+    "s": "NPR 报道，两州检察长分别提起消费者保护诉讼，指控用户可借助 Grok 把真实人物的照片改成衣着暴露的性化图像，受害者多为女性、也包括儿童；两州要求公司采取更多措施阻止此类图像生成与传播，并追缴「不当得利」、支付罚款。《纽约时报》援引诉状称涉及逾 180 万张女性性化图像与 65 张以上涉及儿童的图像。SpaceX 为 X 与 xAI 的母公司。",
+    "d": "2026-11-23",
+    "src": "NPR / 纽约时报 / 弗吉尼亚州检察长办公室",
+    "link": "https://www.npr.org/2026/11/23/nx-s1-6049124/virginia-oregon-sue-elon-musks-spacexsi-over-deepfake-nonconsensual-sexual-images",
+    "m": []
+  },
+  {
+    "t": "Sierra 称正敲定超过 17.5 亿美元的新一轮融资，估值 300 亿美元",
+    "s": "彭博 11 月 23 日报道，Bret Taylor 联合创立的客服 AI 公司 Sierra 表示，正在敲定由 Lightspeed 与 Greenoaks 领投、超过 17.5 亿美元的融资，估值 300 亿美元，高于 5 月的 158 亿美元。本站 11-19 日报曾记「传以约 300 亿美元估值融资 15 亿美元」，本次为公司口径更新。",
+    "d": "2026-11-23",
+    "src": "彭博",
+    "link": "https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round",
+    "m": []
+  },
+  {
+    "t": "Marlowe 获 2.77 亿美元种子轮、估值 11.5 亿美元，为非英伟达 AI 芯片做云基础设施与性能工具",
+    "s": "彭博 11 月 23 日报道，开发云基础设施与性能优化工具、帮助非英伟达 AI 芯片提高利用率的 Marlowe 完成 2.77 亿美元种子轮，由 Accel 领投，估值 11.5 亿美元。",
+    "d": "2026-11-23",
+    "src": "彭博",
+    "link": "https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips",
+    "m": []
+  },
+  {
+    "t": "Meta 首席 AI 官 Alexandr Wang 发长文《Superintelligence is Arriving》：以黎曼猜想证明推演 AI 将在各领域超越人类",
+    "s": "Wang 在 X 发布长文，把 Claude 参与证明黎曼猜想视为信号，认为 AI 将在包括 AI 研究在内的所有领域超过人类，并呼吁加大 AI 安全与对齐投入（据 Techmeme 摘要）。同一窗口，AWS CEO Matt Garman 撰文称 AI 安全不能依赖「紧急刹车」，身份、日志与隔离等已验证的安全工程手段同样适用于 AI 系统。",
+    "d": "2026-11-22",
+    "src": "X / AWS",
+    "link": "https://x.com/alexandr_wang/status/2124636606959345776",
+    "m": []
+  },
+  {
     "t": "贝森特称黄仁勋能否重返英伟达应取决于对华芯片销售调查，并要求公司作出说明",
     "s": "《纽约时报》11 月 22 日报道：美国财长斯科特·贝森特在一周前曾公开要求英伟达大幅调整管理层，本次接受 CBS 采访时表示黄仁勋回归仍有可能，但应以对其对华芯片销售相关调查的结果为前提，并要求英伟达就相关问题给出答案。同一周末，《纽约时报》还援引美国及其他国家现任和前任官员，描述中国国家安全部协助中国企业获取先进 AI 芯片的行动。黄仁勋已于 11 月 12 日辞去 CEO 职务。",
     "d": "2026-11-22",

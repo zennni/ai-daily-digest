@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-24</title>
+<style>
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<a class="home-link" href="./">← 返回 AI 前沿情报台（综合 Hub）</a>
+<header>
+<div class="date">2026-11-24 · 星期二 · Asia/Shanghai</div>
+<h1>每日AI前沿日报</h1>
+<div class="note">今日主题词：复位，然后补课。补跑稿，采集窗口约为上海时间 11 月 23 日 06:00 至 24 日 06:00（美国周日傍晚到周一收盘）。上周五英伟达连跌七周、SEC 会计调查见报；本窗它把人请了回来：英伟达董事会一致投票，即刻恢复黄仁勋的总裁、CEO 与董事职务。公告写明，董事会在决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险；独立董事委员会对「外国情报行动」相关报道的调查将继续，公司还将新设首席合规官。特朗普对 CNBC 说「是我促成的」；《金融时报》称英伟达股价随后涨约 30%，彭博称纳斯达克 100 指数涨约 7%。补课同时开始：商务部当天把处在丑闻中心的新加坡公司 Megaspeed 列入实体清单；彭博称黄仁勋将于 12 月 3 日就出口管制在参议院银行委员会公开作证；两党议员批评复任决定。交易桌上，CrowdStrike 宣布以全股票方式收购 Zscaler，作价约 439 亿美元；亚马逊签约买下 Decart 的优化栈技术与创始团队，彭博称约 75 亿美元。模型侧，智谱发布首款 Loop Transformer 旗舰 GLM-5.4（7500 亿参数级，28 层权重共享跑两遍）；百度在 Hugging Face 公开 ERNIE 5.5 Flash Preview 权重（2800 亿总参、140 亿激活，Apache 2.0）；蚂蚁静默开源 Ling-3.2-air。Anthropic 推出 Claude Ship 测试版，把 PR 审查、修复与按团队规则批准串成一条线。一句话：人可以一夜复位，合规、出口与安全的课得一门门补。</div>
+</header>
+<nav class="page-toc" aria-label="本页目录">
+<span class="pt-label">目录</span>
+<a class="pt-top" href="#">回顶</a>
+<a href="#sec-highlights">今日看点</a>
+<a href="#sec-news">行业新闻</a>
+<a href="#sec-papers">前沿论文</a>
+<a href="#sec-models">模型动态</a>
+<a href="#sec-ecosystem">生态动态</a>
+</nav>
+<section id="sec-highlights" class="highlights">
+<h2>今日看点 <span class="count">9</span></h2>
+<ul>
+<li><strong>英伟达董事会一致恢复黄仁勋总裁、CEO 与董事职务，称听取美国政府高层意见、确信无国家安全风险</strong><p>即刻生效；董事长哈维·琼斯留任；独立董事委员会调查继续，公司将新设向提名与治理委员会汇报的首席合规官。股价随后涨约 30%。</p></li>
+<li><strong>特朗普：「是我促成的」；彭博：黄仁勋 12 月 3 日将在参议院银行委员会就出口管制公开作证</strong><p>CNBC：董事会在获得总统关于其未违反国家安全法律的保证后表决；两党议员批评复任，并称国会需立法收紧对华芯片出口。</p></li>
+<li><strong>商务部将丑闻核心公司 Megaspeed 列入实体清单</strong><p>Semafor：此后美国企业向 Megaspeed 及其境外关联方出售半导体等受控技术须获许可。</p></li>
+<li><strong>CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler</strong><p>每股 Zscaler 换 1.135 股 CrowdStrike；公司称将把终端安全与零信任 SASE 合到一个平台，并把「AI 智能体直连云端的流量」列为理由之一。</p></li>
+<li><strong>亚马逊签约收购 Decart 优化栈技术并接收创始团队，彭博称作价约 75 亿美元</strong><p>亚马逊称将用于推理与自研芯片性能优化；CNBC：Trainium 计划在 2027 年晚些时候首次对外销售。</p></li>
+<li><strong>智谱发布 GLM-5.4：首款 Loop Transformer 旗舰，7500 亿参数级，称智能水平可比 2–3 万亿参数模型</strong><p>28 层权重共享层跑两遍；先在 GLM Coding Plan、ZCode 与 Z.ai Chat 提供，API 与权重待安全评估后开放。</p></li>
+<li><strong>百度公开 ERNIE 5.5 Flash Preview 权重：2800 亿总参、140 亿激活，Apache 2.0；蚂蚁静默开源 Ling-3.2-air</strong><p>文心为后训练中间检查点，上下文扩至 100 万；Ling-3.2-air 为 MIT 许可的 124B/5.5B 激活 MoE，AA 首评 23 已入本站主榜。</p></li>
+<li><strong>Anthropic 推出 Claude Ship 测试版：审查、修复、按团队规则批准 PR</strong><p>Team 与 Enterprise 可用；PR Steward 不能批准或合并，只处理失败的 CI、冲突与评审意见。</p></li>
+<li><strong>俄勒冈与弗吉尼亚起诉 SpaceX：指 Grok Imagine「Spicy」模式生成未经同意的性化深度伪造</strong><p>两州寻求禁令、追缴不当得利与罚款。</p></li>
+</ul>
+</section>
+<section id="sec-news">
+<h2>行业新闻 <span class="count">9</span></h2>
+<div class="card">
+<h3>英伟达董事会一致投票恢复黄仁勋总裁、CEO 与董事职务：称听取美国政府高层意见，确信复任无国家安全风险</h3>
+<p>英伟达 11 月 23 日公告：即刻生效恢复黄仁勋的总裁兼 CEO 及董事会成员身份。董事会称，在与黄仁勋进行一系列讨论和会面后，对其坦诚程度和领导能力感到满意；决策过程中听取了美国政府高层的意见，并据此确信复任不构成国家安全风险。董事长哈维·琼斯留任，并感谢科莱特·克雷斯担任临时 CEO（她继续担任 CFO）。公告重申：鉴于有报道称黄仁勋是外国情报行动的目标，仅由独立董事组成的委员会已聘请独立律师调查，调查将进行到底，黄仁勋表示全力配合；董事会此前还设立了由独立董事组成的国家安全与出口管制委员会；公司将启动搜寻新设的首席合规官，向提名与公司治理委员会汇报。彭博称董事会决定未征询高级管理层，后者在最后一刻才获知；Business Insider 报道黄仁勋回到总部时受到员工欢呼，称「第二次当 CEO 会做得更好」。</p>
+<div class="meta">2026-11-23 · 英伟达 / 彭博 / Business Insider · <a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>特朗普称「是我促成的」：多家媒体披露白宫推动黄仁勋复任，两党议员批评；黄仁勋 12 月 3 日将在参院作证</h3>
+<p>CNBC 援引三名了解董事会想法的人士称，董事会是在周日获得特朗普总统关于黄仁勋未违反国家安全法律的保证后决定复任的，股价暴跌以及部分投资者、员工对临时 CEO 的担忧也加速了讨论；特朗普对 CNBC 说：「是我促成的。」《纽约时报》称特朗普指示由副总统万斯牵头推动；路透称特朗普与万斯认为黄仁勋是美国开放权重模型的保护者。复任公布后，两党议员批评这一决定，称国会必须立法收紧对华芯片出口（路透）。彭博报道，参议院银行委员会主席蒂姆·斯科特表示，黄仁勋将于 12 月 3 日就美国出口管制监督公开作证。</p>
+<div class="meta">2026-11-23 · CNBC / 纽约时报 / 路透 / 彭博 · <a href="https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>商务部把 Megaspeed 列入实体清单：美企向其出售半导体等受控技术须获许可</h3>
+<p>Semafor 报道，特朗普政府 11 月 23 日（周一）下午把处于英伟达丑闻中心的新加坡公司 Megaspeed 列入商务部实体清单。此后任何美国公司向 Megaspeed 或其境外关联方出售包括半导体在内的特定技术，都须获得美国政府许可。此前《华尔街日报》等报道称，Megaspeed 是美国官员怀疑把英伟达芯片转运至中国的客户。</p>
+<div class="meta">2026-11-23 · Semafor · <a href="https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>CrowdStrike 宣布以约 439 亿美元全股票收购 Zscaler，把终端安全与零信任网络访问合到一个平台</h3>
+<p>CrowdStrike 11 月 23 日公告：双方签署最终协议，CrowdStrike 以全股票方式收购 Zscaler，对 Zscaler 估值约 439 亿美元，Zscaler 股东每股换得 1.135 股 CrowdStrike 普通股。公司称此举将进入网络安全中最大的单一细分市场，使其可服务市场扩大超过 1850 亿美元，并获得向约 8000 家 Zscaler 客户交叉销售的路径。公告的理由之一是：用户、应用「以及现在的 AI 智能体」直接连到云端，这些流量不再经过数据中心，传统防火墙与 VPN 看不见也拦不住。交易需股东与监管批准。彭博称其为该行业史上最大交易之一。</p>
+<div class="meta">2026-11-23 · CrowdStrike / 彭博 · <a href="https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>亚马逊签约收购 Decart 优化栈（DOS）技术并接收创始团队，彭博称约 75 亿美元</h3>
+<p>亚马逊 11 月 23 日宣布，已签署协议购买 Decart Optimization Stack 背后的专有技术，并迎来联合创始人 Dean Leitersdorf、Moshe Shalev、Orian Leitersdorf 及其研究与工程团队。亚马逊称 Decart 团队自 2025 年起就与其合作，在 Trainium 上用软硬件全栈方法做性能优化，此次收购将用于进一步优化推理与自研芯片性能。彭博援引知情人士称作价约 75 亿美元，亚马逊拒绝评论条款。CNBC 同时提到，亚马逊计划在 2027 年晚些时候首次对外提供 Trainium 芯片。</p>
+<div class="meta">2026-11-23 · 亚马逊 / CNBC / 彭博 · <a href="https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>俄勒冈与弗吉尼亚州检察长起诉 SpaceX、X 与 xAI，指 Grok Imagine「Spicy」模式生成未经同意的性化图像</h3>
+<p>NPR 报道，两州检察长分别提起消费者保护诉讼，指控用户可借助 Grok 把真实人物的照片改成衣着暴露的性化图像，受害者多为女性、也包括儿童；两州要求公司采取更多措施阻止此类图像生成与传播，并追缴「不当得利」、支付罚款。《纽约时报》援引诉状称涉及逾 180 万张女性性化图像与 65 张以上涉及儿童的图像。SpaceX 为 X 与 xAI 的母公司。</p>
+<div class="meta">2026-11-23 · NPR / 纽约时报 / 弗吉尼亚州检察长办公室 · <a href="https://www.npr.org/2026/11/23/nx-s1-6049124/virginia-oregon-sue-elon-musks-spacexsi-over-deepfake-nonconsensual-sexual-images" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>Sierra 称正敲定超过 17.5 亿美元的新一轮融资，估值 300 亿美元</h3>
+<p>彭博 11 月 23 日报道，Bret Taylor 联合创立的客服 AI 公司 Sierra 表示，正在敲定由 Lightspeed 与 Greenoaks 领投、超过 17.5 亿美元的融资，估值 300 亿美元，高于 5 月的 158 亿美元。本站 11-19 日报曾记「传以约 300 亿美元估值融资 15 亿美元」，本次为公司口径更新。</p>
+<div class="meta">2026-11-23 · 彭博 · <a href="https://www.bloomberg.com/news/articles/2026-11-23/bret-taylor-s-sierra-finalizing-more-than-1-75-billion-round" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>Marlowe 获 2.77 亿美元种子轮、估值 11.5 亿美元，为非英伟达 AI 芯片做云基础设施与性能工具</h3>
+<p>彭博 11 月 23 日报道，开发云基础设施与性能优化工具、帮助非英伟达 AI 芯片提高利用率的 Marlowe 完成 2.77 亿美元种子轮，由 Accel 领投，估值 11.5 亿美元。</p>
+<div class="meta">2026-11-23 · 彭博 · <a href="https://www.bloomberg.com/news/articles/2026-11-23/marlowe-raises-277-million-to-bolster-alternatives-to-nvidia-chips" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>Meta 首席 AI 官 Alexandr Wang 发长文《Superintelligence is Arriving》：以黎曼猜想证明推演 AI 将在各领域超越人类</h3>
+<p>Wang 在 X 发布长文，把 Claude 参与证明黎曼猜想视为信号，认为 AI 将在包括 AI 研究在内的所有领域超过人类，并呼吁加大 AI 安全与对齐投入（据 Techmeme 摘要）。同一窗口，AWS CEO Matt Garman 撰文称 AI 安全不能依赖「紧急刹车」，身份、日志与隔离等已验证的安全工程手段同样适用于 AI 系统。</p>
+<div class="meta">2026-11-22 · X / AWS · <a href="https://x.com/alexandr_wang/status/2124636606959345776" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-papers">
+<h2>前沿论文 <span class="count">5</span></h2>
+<div class="card">
+<h3>cmHC：在伯克霍夫多胞形里「收缩」，平衡超连接的残差流混合</h3>
+<div class="paper-authors">cmHC: Balancing Stream Mixing in Hyper-Connections via Geometric Contraction · Haowei He, Ziwen Zhao, Chenshuo Pan 等（13 位作者）</div>
+<p>流形约束超连接（mHC）把残差连接扩成多条流，并把流间混合矩阵限制在双随机矩阵构成的伯克霍夫多胞形上以稳定传播。作者指出其中存在混合权衡：矩阵贴近多胞形顶点时混合不足，多条流退化为近乎独立；集中在均匀重心附近时混合过度，流之间难以区分。作者对跨层累积混合、流差异与梯度差异给出界，提出精确保持双随机性的 cmHC：把多胞形几何地向内部收缩，迫使残差矩阵往内部探索，并带有可证明的混合界、不引入新参数；在浅层施加适度收缩以防过度混合，从而在超大规模预训练中保持梯度稳定。实验覆盖多种规模的稠密与 MoE 模型。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.27193" target="_blank" rel="noopener">https://arxiv.org/abs/2611.27193</a></div>
+</div>
+<div class="card">
+<h3>不穿模的世界模型：从冻结 DiT 的隐藏状态读出「这一步会不会穿墙」</h3>
+<div class="paper-authors">Non-penetrating World Models · Yuhang Dai, Yinwei Wu, Ziyue Lin, Han Ji, Xingyi Yang</div>
+<p>交互式视频世界模型常让物体穿过障碍物。作者提出 NoPeBench 评测世界模型对物理障碍的反应，发现开源模型都无法可靠避免穿模，但扩散 Transformer 的隐藏状态其实已编码了预测穿模所需的信息。据此提出轻量框架 NoPeWorld：在冻结 DiT 的隐藏状态上训练一个小预测头判断候选动作是否安全，把不安全动作替换为最接近原意的安全动作。六个视频世界模型的平均物理违规率由 74% 降到 16%，并能零样本泛化到开放域图像、第三人称视角与移动障碍。代码、基准与权重已公开。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.27963" target="_blank" rel="noopener">https://arxiv.org/abs/2611.27963</a></div>
+</div>
+<div class="card">
+<h3>Future-OPSD：用无标注视频的「过去—未来」配对做在线自蒸馏，学会预判下一步</h3>
+<div class="paper-authors">Learning Video Foresight Reasoning from Unlabeled Videos via On-Policy Self-Distillation · Jingchen Sun, Jiaxing Zhang, Qingqiao Hu 等（10 位作者）</div>
+<p>视频前瞻推理要求模型从当前画面预判未来事件或下一步动作。现有方法依赖标注或外部大模型监督，并把整段未来片段视为同等重要。作者把过去—未来视频对直接变成自监督信号，定义「前瞻分数」并由此得到对比特权优势，用一个可优化的下界替代项把真实未来与随机参照之间的优势与师生蒸馏优势结合，放大与决策相关的内容、压低无关上下文。在开放式预测与封闭式规划上，相对基座分别最多提升 14.2 与 15.9 分，且不损害一般视频理解。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.26954" target="_blank" rel="noopener">https://arxiv.org/abs/2611.26954</a></div>
+</div>
+<div class="card">
+<h3>MemOnce：只缓存少量末层隐藏状态、按需解码回 KV 的可扩展记忆架构</h3>
+<div class="paper-authors">MemOnce: A Scalable Memory Architecture for Large Language Models · Chang Nie, Chaoyou Fu, Songlin Liu, Yiqing Hu, Caifeng Shan</div>
+<p>标准 Transformer 的逐层逐 token KV 缓存随上下文线性增长，线性时间架构又把历史压成固定大小状态、难留细节。MemOnce 用两项设计折中：记忆编码—解码器只缓存一小部分末层隐藏状态作为紧凑记忆，需要时动态解码回各注意力层的 KV；记忆稀疏注意力为每段连续输入自适应检索相关记忆，稀疏索引跨层只算一次。作者称它在不同模型规模、上下文长度与训练范式下优于 Transformer 等架构；用 MemOnce 改造 Qwen3.5-4B 后，记忆状态缓存缩小约 1313 倍。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.27973" target="_blank" rel="noopener">https://arxiv.org/abs/2611.27973</a></div>
+</div>
+<div class="card">
+<h3>StereoVLM：用标定双目视觉做度量级 3D 空间推理的视觉语言模型</h3>
+<div class="paper-authors">StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning · Chi Yan, Guoyang Zhao, Wentao Yuan 等（6 位作者）</div>
+<p>现有视觉语言模型多从无标定的单张或多张图像推断三维结构，度量信息天然模糊，也说不清预测是依据视觉证据还是语义先验。作者提出几何感知的双目 VLM，按「跨视图对应与视差估计 → 标定条件下的度量深度 → 语义空间推理」分层学习，并发现视差监督在未见环境中的泛化明显好于直接的双目深度监督。配套 Stereo3D-Bench 覆盖点级几何到物体级空间推理三个层次；StereoVLM-8B 深度准确率（δ1）为 95.17%，物体级平均得分 66.98。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.27915" target="_blank" rel="noopener">https://arxiv.org/abs/2611.27915</a></div>
+</div>
+</section>
+<section id="sec-models">
+<h2>模型动态 <span class="count">3</span></h2>
+<div class="card">
+<h3>GLM-5.4<span class="tag tag-new">智谱 Z.ai</span></h3>
+<p>智谱 11 月 23 日发布 GLM-5.4，称其为首款基于 Loop Transformer 的旗舰：在 GLM-5 基座上经继续训练改造而来（非从头预训练），一组 28 个权重共享层每次前向跑两遍，7500 亿参数规模，官方称智能水平可比 2–3 万亿参数模型，并主打「泛 Coding」——用代码生成视频、游戏、3D 着色器与 CAD。MarkTechPost 整理：激活参数未披露、未给旗舰基准表；官方 30B 循环消融中 AIME25 由 19.17 提到 30.42。目前只在 GLM Coding Plan、ZCode 与 Z.ai Chat 提供，API 与权重待安全评估后开放。暂无 AA 同口径分，不入本站主榜。</p>
+<div class="meta"><a href="https://z.ai/blog/glm-5.4" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>ERNIE 5.5 Flash Preview<span class="tag tag-new">百度</span></h3>
+<p>百度官方仓 baidu/ERNIE-5.5-Flash-Preview 于 11 月 23 日 17:00（上海）在 Hugging Face 公开，许可 Apache 2.0。模型卡：基于此前发布的 ERNIE 5.5 Flash Base 的首个后训练模型，MoE 架构，总参 2800 亿、每 token 激活 140 亿；中训练把上下文从 128K 扩到 100 万 token；主打编程、3D 建模、知识工作与内容创作。官方写明这是后训练中的中间检查点，部分能力可能仍有不足。暂无 AA 同口径分，不入本站主榜（11-24 半点已在榜单 changes 记录权重兑现）。</p>
+<div class="meta"><a href="https://huggingface.co/baidu/ERNIE-5.5-Flash-Preview" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>Ling-3.2-air<span class="tag tag-new">蚂蚁 inclusionAI</span></h3>
+<p>蚂蚁百灵未发公告，于 11 月 23 日 11:55（上海）在 Hugging Face 建仓 inclusionAI/Ling-3.2-air，许可 MIT；官方卡为 124B 总参、5.5B 激活的混合线性注意力 MoE，官方推荐 SGLang 256K 部署。AA Changelog 11 月 23 日首评 Intelligence Index 23.4（整数 23），本站已于 11-24 半点收录入主榜（价格 N/A）。</p>
+<div class="meta"><a href="https://huggingface.co/inclusionAI/Ling-3.2-air" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-ecosystem">
+<h2>Agent / Skill 生态 <span class="count">3</span></h2>
+<div class="card">
+<h3>Claude Ship 测试版：Code Review、PR Steward 与 Claude Approvals 把 PR 从审查推到批准</h3>
+<p>ZDNet 报道，Anthropic 周一以测试版推出 Claude Ship，称「Claude 现在可以审查 PR、修复它们，并批准团队政策允许的那些」，面向 Team 与 Enterprise。流程由三部分组成：3 月推出的 Code Review 汇总并发布审查意见；PR Steward 处理失败的 CI 检查、合并冲突与来自 Code Review、其他工具或同事的评审意见，并在每次推送里写明改了什么、如何撤销，但它不能批准或合并；Claude Approvals 按团队政策决定是否批准。Anthropic 称团队仍控制在哪里运行、哪些改动必须由人确认。</p>
+<div class="meta">ZDNet / Anthropic · <a href="https://www.zdnet.com/innovation/claude-ship-code-how-to-try/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>AWS CEO Garman：AI 安全不能靠「紧急刹车」，身份、日志与隔离等工程手段现在就能用</h3>
+<p>AWS 官方博客发文，CEO Matt Garman 认为构建可信 AI 系统的实用工具大多已经存在：身份、日志与隔离等经过验证的安全基本功同样适用于 AI 系统，Nitro 与 Firecracker 等技术可在基础设施层强制隔离、且不依赖模型本身。在智能体越来越多直接操作生产系统时，这是把安全从「模型会不会听话」拉回「权限与边界怎么设」。</p>
+<div class="meta">AWS · <a href="https://www.aboutamazon.com/news/aws/aws-ceo-ai-safety-engineering" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：腾讯 WorkBuddy 公测电脑操控，可识别界面并点击、输入、滚动</h3>
+<p>IT之家 11 月 20 日报道，WorkBuddy 上线电脑操控能力，支持 macOS 与 Windows，需升级到 5.11.0 及以上并授予辅助功能与录屏权限；登录、支付、提交、删除等操作建议全程监督。发布时间落在 11-21 窗口、该期未收，本期补记。</p>
+<div class="meta">IT之家 · <a href="https://www.ithome.com/1/030/222.htm" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<footer>由运营 · daily-ai-digest 生成 · 早六补跑（2026-11-24 补写；采集窗口约 11-23 06:00 至 11-24 06:00，Asia/Shanghai）</footer>
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+</body>
+</html>

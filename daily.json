@@ -1,5 +1,24 @@
 [
   {
+    "d": "2026-11-24",
+    "w": "星期二",
+    "pts": [
+      "英伟达董事会一致恢复黄仁勋职务，称听取美国政府高层意见、确信无国家安全风险；股价随后涨约 30%",
+      "特朗普称「是我促成的」；黄仁勋 12 月 3 日将在参院就出口管制作证；Megaspeed 被列入实体清单",
+      "CrowdStrike 以约 439 亿美元全股票收购 Zscaler；亚马逊约 75 亿美元买下 Decart 优化栈与团队",
+      "智谱 GLM-5.4：首款 Loop Transformer 旗舰，7500 亿参数级，API 与权重待安全评估",
+      "百度公开 ERNIE 5.5 Flash Preview 权重（280B/14B，Apache 2.0）；蚂蚁开源 Ling-3.2-air（MIT）",
+      "Anthropic 推出 Claude Ship 测试版：审查、修复、按团队规则批准 PR",
+      "俄勒冈与弗吉尼亚起诉 SpaceX 旗下 Grok Imagine 生成性化深度伪造；Sierra 敲定 300 亿美元估值融资",
+      "论文：cmHC 超连接收缩／NoPeWorld 不穿模世界模型／Future-OPSD／MemOnce／StereoVLM"
+    ],
+    "link": "AI日报-2026-11-24.html",
+    "m": [
+      "Ling-3.2-air"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-23",
     "w": "星期一",
     "pts": [
