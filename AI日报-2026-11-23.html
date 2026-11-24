@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-23</title>
+<style>
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<a class="home-link" href="./">← 返回 AI 前沿情报台（综合 Hub）</a>
+<header>
+<div class="date">2026-11-23 · 星期一 · Asia/Shanghai</div>
+<h1>每日AI前沿日报</h1>
+<div class="note">今日主题词：验算通过，尺子上桌。补跑稿，采集窗口约为上海时间 11 月 22 日 06:00 至 23 日 06:00（美国周六傍晚到周日）；周末无 arXiv 新批次，论文栏只收可核验的研究发布。前天日报记下 Alpöge 贴出黎曼猜想的 Lean 证明、待核验；本窗核验有了结论：Lean FRO 与 Mathlib Initiative 发表联合声明，称「完全相信 Alpöge 对黎曼猜想的证明是正确的」——命题用的是 Mathlib 自带定义，数十人复现编译，两种独立工具确认所证定理与 Mathlib 陈述一致，导出证明经 Lean 官方内核及多个独立检查器验证。MIT 的 Andrew Sutherland 公布的核验页显示，175,187 个模块全部编译通过，五个主定理只依赖三条标准公理。同一个周末，OpenAI 首席科学家 Jakub Pachocki 发文《Perplexity and Intelligence》，首次公开内部预训练曲线：GPT-3.5 在其主评测集上的对数困惑度约 0.99、GPT-4 约 0.91；换到约 0.76 的模型后开始在开放数学问题上产出突破性结果，并预计进入约 0.68–0.7 区间会出现新的「变革性能力」。他提议各前沿实验室以困惑度等指标约定共同的开发上限，在监测能力达到具体里程碑（如思维链监测的继任方案）前不越过。产业侧，特斯拉向美国早期体验用户推送 FSD v15 监督版；美财长贝森特称黄仁勋能否回归应取决于对华芯片销售调查，并要求英伟达给出答案；OpenRouter 就 Dragos 金丝雀报告下架三家推理服务商、取消 125 个端点的零数据保留资格。一句话：数学这边，验算让主张变成定理；模型这边，有人想先把尺子立起来，再决定还往前走多远。</div>
+</header>
+<nav class="page-toc" aria-label="本页目录">
+<span class="pt-label">目录</span>
+<a class="pt-top" href="#">回顶</a>
+<a href="#sec-highlights">今日看点</a>
+<a href="#sec-news">行业新闻</a>
+<a href="#sec-papers">前沿论文</a>
+<a href="#sec-models">模型动态</a>
+<a href="#sec-ecosystem">生态动态</a>
+</nav>
+<section id="sec-highlights" class="highlights">
+<h2>今日看点 <span class="count">7</span></h2>
+<ul>
+<li><strong>Lean FRO 与 Mathlib 联合声明：完全相信 Alpöge 的黎曼猜想证明正确，四项核查标准全部满足</strong><p>命题为 Mathlib 自带定义；comparator 与 con-leche 两种工具确认所证即该命题；导出证明经 Lean 官方内核及多个独立检查器验证。MIT Sutherland 核验页：175,187 个模块编译通过，仅依赖三条标准公理。</p></li>
+<li><strong>OpenAI 首席科学家公开预训练困惑度曲线，提议按困惑度设定全行业共同的开发上限</strong><p>GPT-3.5 约 0.99、GPT-4 约 0.91（对数困惑度）；约 0.76 的模型开始在数学开放问题上产出突破；预计 0.68–0.7 区间将出现新的变革性能力。</p></li>
+<li><strong>特斯拉向美国早期体验用户推送 FSD v15 监督版：称安全关键场景处理能力提升 25 倍，新增 Reality View</strong><p>新视觉编码器将由 FSD、Robotaxi 与 Optimus 共享；马斯克称 12 月扩大推送，仍需驾驶员监督。</p></li>
+<li><strong>贝森特：黄仁勋能否回归应取决于对华芯片销售调查，要求英伟达给出答案</strong><p>《纽约时报》：这距他公开呼吁英伟达大幅调整管理层只隔一周。</p></li>
+<li><strong>OpenRouter 回应 Dragos 报告：下架三家推理服务商，125 个端点取消零数据保留资格</strong><p>称自身未被入侵；正把研究人员的测试方法改造成持续检查，并核查请求是否被转发给第三方。</p></li>
+<li><strong>蚂蚁 inclusionAI 开放 LingSante-3.1 医疗模型：flash 版 5600 亿总参、250 亿激活，MIT 许可</strong><p>另有面向胸片报告的 124B 多模态 LingSante-3.1-air-VL；AA 11 月 22 日入库 flash 版，但无综合 Index，不入主榜。</p></li>
+<li><strong>彭博：具身智能公司 Simplexity Robotics 获 1 亿美元 Pre-A 轮，估值 16 亿美元，蚂蚁领投</strong><p>阿里巴巴、腾讯等参投。</p></li>
+</ul>
+</section>
+<section id="sec-news">
+<h2>行业新闻 <span class="count">7</span></h2>
+<div class="card">
+<h3>贝森特称黄仁勋能否重返英伟达应取决于对华芯片销售调查，并要求公司作出说明</h3>
+<p>《纽约时报》11 月 22 日报道：美国财长斯科特·贝森特在一周前曾公开要求英伟达大幅调整管理层，本次接受 CBS 采访时表示黄仁勋回归仍有可能，但应以对其对华芯片销售相关调查的结果为前提，并要求英伟达就相关问题给出答案。同一周末，《纽约时报》还援引美国及其他国家现任和前任官员，描述中国国家安全部协助中国企业获取先进 AI 芯片的行动。黄仁勋已于 11 月 12 日辞去 CEO 职务。</p>
+<div class="meta">2026-11-22 · 纽约时报 · <a href="https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>特斯拉启动 FSD v15 监督版推送：称安全关键场景处理能力提升 25 倍，视觉编码器将与 Robotaxi、Optimus 共享</h3>
+<p>IT之家与每日经济新闻报道：特斯拉当地时间 11 月 21 日宣布在美国推出 FSD v15，首批推送给早期体验计划（EAP）成员。官方称通过升级视觉编码器，安全关键场景处理能力提升 25 倍；该编码器将由 FSD、Robotaxi 与 Optimus 人形机器人共享，并用数百万条互联网视频训练。新界面 Tesla Reality View 可在车机上显示叠加行驶规划的实景化画面，支持全屏、地图或分屏；此外改善坑洼、碎片等恶劣路况与学校区域、恶劣天气下的车速控制，新增「自行车架模式」。马斯克称 v15 将于 12 月向更多用户推送。该版本仍需驾驶员监督，中国市场的上线时间未公布。</p>
+<div class="meta">2026-11-22 · IT之家 / 每日经济新闻 · <a href="https://www.ithome.com/1/030/512.htm" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>路透：Anthropic IPO 流程异常严格——部分投行团队限四人、文件平台记录浏览、要求六个月内不得为竞争对手提供咨询</h3>
+<p>路透 11 月 22 日报道，出于对泄密的担忧，Anthropic 在 IPO 过程中把部分承销银行的团队限制在四人，使用会记录浏览行为的文件平台，并寻求让银行在六个月内不得为其竞争对手提供咨询，类似 SpaceX 此前的做法，引起部分银行家不满。</p>
+<div class="meta">2026-11-22 · 路透 · <a href="https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>国家情报总监克莱顿：系统为适应 AI 时代升级期间，美国人要准备好面对「颠簸」</h3>
+<p>CNBC 11 月 22 日报道：在美国联邦航空局、微软与摩根大通接连出现严重技术故障后，国家情报总监兼 AI 事务负责人 Jay Clayton 表示，现代化与网络安全投入可能在系统升级期间带来暂时中断。官员称几起故障根因各不相同，看不出是协调一致的网络攻击或 AI 攻击。时值感恩节出行高峰前。</p>
+<div class="meta">2026-11-22 · CNBC · <a href="https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>彭博：Simplexity Robotics 完成 1 亿美元 Pre-A 轮，估值 16 亿美元，蚂蚁集团领投、阿里与腾讯参投</h3>
+<p>彭博 11 月 22 日报道，中国具身智能初创公司 Simplexity Robotics 筹得 1 亿美元 Pre-A 轮资金，估值 16 亿美元，由蚂蚁集团领投，阿里巴巴、腾讯等参与。报道集中在金额、估值与投资方，产品与部署细节未见公开材料。</p>
+<div class="meta">2026-11-22 · 彭博 · <a href="https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>美国州长协会提出 AI 监管分工：联邦负责审查 AI 模型，州政府保留消费者保护</h3>
+<p>彭博 11 月 22 日报道，全美州长协会提议划分 AI 监管职责：请联邦政府承担 AI 模型审查，同时让各州继续负责保护消费者，而不是被联邦规则排除在外。</p>
+<div class="meta">2026-11-22 · 彭博 · <a href="https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：腾讯混元团队首次 Reddit AMA——下一代 Hy 规模将「进一步显著扩大」，Hy4-mini 进入路线图</h3>
+<p>界面新闻报道：11 月 21 日凌晨，腾讯首席 AI 科学家、混元负责人姚顺雨与团队在 Reddit 进行首次公开问答。团队表示下一代 Hy 模型规模将「进一步显著扩大」并继续投入大规模强化学习，但未确认 1.5 万亿至 2 万亿参数的追问；Hy4-mini 已进入路线图，并预告一款前沿 Flash-Lite 模型，正在考虑 24B 至 31B 的稠密模型。团队还称正在推进 llama.cpp 支持，并与 vLLM、SGLang 等社区合作。问答时间落在上一窗口，上期未收，本期补记。</p>
+<div class="meta">2026-11-21 · 界面新闻 · <a href="https://www.jiemian.com/article/15357726.html" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-papers">
+<h2>前沿论文 <span class="count">2</span></h2>
+<div class="card">
+<h3>黎曼猜想 Lean 证明通过社区核验：Lean FRO 与 Mathlib Initiative 联合声明</h3>
+<div class="paper-authors">Lean verification of the Riemann Hypothesis (joint statement by the Lean FRO and the Mathlib Initiative) · Lean FRO, Mathlib Initiative</div>
+<p>声明称 Alpöge 11 月 20 日发布的约 1700 万行 Lean 库只直接依赖 Mathlib，社区按 Kevin Buzzard 提出的四项标准完成核查：一、所用 RiemannHypothesis 是 Mathlib 中经数论与 Lean 专家审过的定义；二、数十人复现编译并得到相同的原始证明导出文件；三、社区另建只导入 Mathlib 的命题文件，用 comparator 与 con-leche --compare 两种独立工具确认所证定理正是该命题；四、导出证明经 Lean 官方内核、con-leche 与 con-ron 及第三方用不同语言实现的检查器验证，其中 con-leche 与 con-ron 带有相对集合论的形式化证明，保证不会接受错误证明；检查在与源代码隔离的惰性导出上运行。MIT 的 Andrew Sutherland 核验页另列出 175,187 个模块全部编译、五个主定理只依赖 propext、Classical.choice、Quot.sound 三条标准公理，沙箱内独立重建的导出与公开版逐字节一致。接下来数学界需要的是一份可读、可教的论证叙述。</p>
+<div class="meta"><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" rel="noopener">https://leanprover-community.github.io/blog/posts/riemann-hypothesis/</a></div>
+</div>
+<div class="card">
+<h3>《困惑度与智能》：OpenAI 公开预训练曲线，主张以困惑度作为跨实验室的共同进度尺</h3>
+<div class="paper-authors">Perplexity and Intelligence · Jakub Pachocki（OpenAI）</div>
+<p>Jakub Pachocki 认为现代 AI 的能力主要来自在海量数据上训练一个更好的「压缩器」，因此跟踪预训练进展是理解 AI 走向的关键，并首次公开 OpenAI 内部测量：在其主评测集上，GPT-3.5 对数困惑度约 0.99、GPT-4 约 0.91；损失降到 0.8 以下后，网络安全等领域出现变革性能力；换到约 0.76 的模型后，开放数学问题的突破成批出现。他认为 AI 参与算法研究可能带来预训练进展的阶跃，并预计进入约 0.68–0.7 区间会出现新的变革性能力，而对齐审计等现有手段可能失效、评测与训练感知可能加剧。因此他提议前沿开发者共同约定以困惑度等指标衡量的第一道开发上限，在理解与监测 AI 行为达到具体里程碑（例如思维链监测的继任方案）前不越过。文章也列出难点：各实验室评测集与数据配比不同、困惑度不直接对应任务、无法涵盖预训练之外的进展。</p>
+<div class="meta"><a href="https://openai.com/index/perplexity-and-intelligence" target="_blank" rel="noopener">https://openai.com/index/perplexity-and-intelligence</a></div>
+</div>
+</section>
+<section id="sec-models">
+<h2>模型动态 <span class="count">1</span></h2>
+<div class="card">
+<h3>LingSante-3.1-flash / LingSante-3.1-air-VL<span class="tag tag-new">蚂蚁 inclusionAI</span></h3>
+<p>Hugging Face 模型卡：LingSante-3.1-flash 为开放权重 MoE 医疗模型，沿用 Ling-3.1-flash 架构，总参 5600 亿、每 token 激活 250 亿，支持 100 万 token 上下文，许可 MIT；训练覆盖医学推理、专业沟通、循证深度研究与长程医疗任务，卡上写明仅供研究评估、不是医疗器械。卡内称其在一项医疗 AI 基准的 23 个模型配置中总分 45.064、排第五，位于性能—成本帕累托前沿；SGLang 提供 day-0 镜像。同时开放的 LingSante-3.1-air-VL 为 124B 原生多模态 MoE，面向胸片等医疗影像报告。两仓建于 11 月 19 日；AA Changelog 11 月 22 日已入库 flash 版，但没有综合 Intelligence Index，按本站口径不入主榜。</p>
+<div class="meta"><a href="https://huggingface.co/inclusionAI/LingSante-3.1-flash" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-ecosystem">
+<h2>Agent / Skill 生态 <span class="count">1</span></h2>
+<div class="card">
+<h3>OpenRouter 就 Dragos 金丝雀报告处置：下架三家推理服务商，125 个端点取消零数据保留资格</h3>
+<p>OpenRouter 11 月 22 日发文称，研究人员发现部分推理服务商数据遭入侵或未遵守其数据政策，但未显示 OpenRouter 本身被入侵或越权访问。已采取的措施：依调查结果下架三家服务商；从零数据保留（ZDR）资格中移除 125 个端点（含被研究人员标记的服务商和额外的预防性移除）；通知所有可能受影响的客户。正在进行：把研究人员的测试方法改造成持续检查、核查网络路径以发现请求与响应被转发给第三方的情况、恢复 ZDR 资格前要求服务商提供保证与验证。页面列出已发布说明的服务商包括 Atlas Cloud、Novita（MiniMax 请求相关）、Phala 与 Together（2026 年 6–7 月的提示词泄露事件）。</p>
+<div class="meta">OpenRouter · <a href="https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<footer>由运营 · daily-ai-digest 生成 · 早六补跑（2026-11-24 补写；采集窗口约 11-22 06:00 至 11-23 06:00，Asia/Shanghai）</footer>
+</div>
+<!-- digest-ui2:js -->
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+</body>
+</html>

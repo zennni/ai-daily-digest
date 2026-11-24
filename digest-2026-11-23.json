@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "date": "2026-11-23",
+    "week": "星期一",
+    "note": "今日主题词：验算通过，尺子上桌。补跑稿，采集窗口约为上海时间 11 月 22 日 06:00 至 23 日 06:00（美国周六傍晚到周日）；周末无 arXiv 新批次，论文栏只收可核验的研究发布。前天日报记下 Alpöge 贴出黎曼猜想的 Lean 证明、待核验；本窗核验有了结论：Lean FRO 与 Mathlib Initiative 发表联合声明，称「完全相信 Alpöge 对黎曼猜想的证明是正确的」——命题用的是 Mathlib 自带定义，数十人复现编译，两种独立工具确认所证定理与 Mathlib 陈述一致，导出证明经 Lean 官方内核及多个独立检查器验证。MIT 的 Andrew Sutherland 公布的核验页显示，175,187 个模块全部编译通过，五个主定理只依赖三条标准公理。同一个周末，OpenAI 首席科学家 Jakub Pachocki 发文《Perplexity and Intelligence》，首次公开内部预训练曲线：GPT-3.5 在其主评测集上的对数困惑度约 0.99、GPT-4 约 0.91；换到约 0.76 的模型后开始在开放数学问题上产出突破性结果，并预计进入约 0.68–0.7 区间会出现新的「变革性能力」。他提议各前沿实验室以困惑度等指标约定共同的开发上限，在监测能力达到具体里程碑（如思维链监测的继任方案）前不越过。产业侧，特斯拉向美国早期体验用户推送 FSD v15 监督版；美财长贝森特称黄仁勋能否回归应取决于对华芯片销售调查，并要求英伟达给出答案；OpenRouter 就 Dragos 金丝雀报告下架三家推理服务商、取消 125 个端点的零数据保留资格。一句话：数学这边，验算让主张变成定理；模型这边，有人想先把尺子立起来，再决定还往前走多远。"
+  },
+  "highlights": [
+    {
+      "title": "Lean FRO 与 Mathlib 联合声明：完全相信 Alpöge 的黎曼猜想证明正确，四项核查标准全部满足",
+      "summary": "命题为 Mathlib 自带定义；comparator 与 con-leche 两种工具确认所证即该命题；导出证明经 Lean 官方内核及多个独立检查器验证。MIT Sutherland 核验页：175,187 个模块编译通过，仅依赖三条标准公理。"
+    },
+    {
+      "title": "OpenAI 首席科学家公开预训练困惑度曲线，提议按困惑度设定全行业共同的开发上限",
+      "summary": "GPT-3.5 约 0.99、GPT-4 约 0.91（对数困惑度）；约 0.76 的模型开始在数学开放问题上产出突破；预计 0.68–0.7 区间将出现新的变革性能力。"
+    },
+    {
+      "title": "特斯拉向美国早期体验用户推送 FSD v15 监督版：称安全关键场景处理能力提升 25 倍，新增 Reality View",
+      "summary": "新视觉编码器将由 FSD、Robotaxi 与 Optimus 共享；马斯克称 12 月扩大推送，仍需驾驶员监督。"
+    },
+    {
+      "title": "贝森特：黄仁勋能否回归应取决于对华芯片销售调查，要求英伟达给出答案",
+      "summary": "《纽约时报》：这距他公开呼吁英伟达大幅调整管理层只隔一周。"
+    },
+    {
+      "title": "OpenRouter 回应 Dragos 报告：下架三家推理服务商，125 个端点取消零数据保留资格",
+      "summary": "称自身未被入侵；正把研究人员的测试方法改造成持续检查，并核查请求是否被转发给第三方。"
+    },
+    {
+      "title": "蚂蚁 inclusionAI 开放 LingSante-3.1 医疗模型：flash 版 5600 亿总参、250 亿激活，MIT 许可",
+      "summary": "另有面向胸片报告的 124B 多模态 LingSante-3.1-air-VL；AA 11 月 22 日入库 flash 版，但无综合 Index，不入主榜。"
+    },
+    {
+      "title": "彭博：具身智能公司 Simplexity Robotics 获 1 亿美元 Pre-A 轮，估值 16 亿美元，蚂蚁领投",
+      "summary": "阿里巴巴、腾讯等参投。"
+    }
+  ],
+  "news": [
+    {
+      "title": "贝森特称黄仁勋能否重返英伟达应取决于对华芯片销售调查，并要求公司作出说明",
+      "summary": "《纽约时报》11 月 22 日报道：美国财长斯科特·贝森特在一周前曾公开要求英伟达大幅调整管理层，本次接受 CBS 采访时表示黄仁勋回归仍有可能，但应以对其对华芯片销售相关调查的结果为前提，并要求英伟达就相关问题给出答案。同一周末，《纽约时报》还援引美国及其他国家现任和前任官员，描述中国国家安全部协助中国企业获取先进 AI 芯片的行动。黄仁勋已于 11 月 12 日辞去 CEO 职务。",
+      "date": "2026-11-22",
+      "source": "纽约时报",
+      "link": "https://www.nytimes.com/2026/11/22/business/scott-bessent-jensen-huang-nvidia.html",
+      "models": []
+    },
+    {
+      "title": "特斯拉启动 FSD v15 监督版推送：称安全关键场景处理能力提升 25 倍，视觉编码器将与 Robotaxi、Optimus 共享",
+      "summary": "IT之家与每日经济新闻报道：特斯拉当地时间 11 月 21 日宣布在美国推出 FSD v15，首批推送给早期体验计划（EAP）成员。官方称通过升级视觉编码器，安全关键场景处理能力提升 25 倍；该编码器将由 FSD、Robotaxi 与 Optimus 人形机器人共享，并用数百万条互联网视频训练。新界面 Tesla Reality View 可在车机上显示叠加行驶规划的实景化画面，支持全屏、地图或分屏；此外改善坑洼、碎片等恶劣路况与学校区域、恶劣天气下的车速控制，新增「自行车架模式」。马斯克称 v15 将于 12 月向更多用户推送。该版本仍需驾驶员监督，中国市场的上线时间未公布。",
+      "date": "2026-11-22",
+      "source": "IT之家 / 每日经济新闻",
+      "link": "https://www.ithome.com/1/030/512.htm",
+      "models": []
+    },
+    {
+      "title": "路透：Anthropic IPO 流程异常严格——部分投行团队限四人、文件平台记录浏览、要求六个月内不得为竞争对手提供咨询",
+      "summary": "路透 11 月 22 日报道，出于对泄密的担忧，Anthropic 在 IPO 过程中把部分承销银行的团队限制在四人，使用会记录浏览行为的文件平台，并寻求让银行在六个月内不得为其竞争对手提供咨询，类似 SpaceX 此前的做法，引起部分银行家不满。",
+      "date": "2026-11-22",
+      "source": "路透",
+      "link": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
+      "models": []
+    },
+    {
+      "title": "国家情报总监克莱顿：系统为适应 AI 时代升级期间，美国人要准备好面对「颠簸」",
+      "summary": "CNBC 11 月 22 日报道：在美国联邦航空局、微软与摩根大通接连出现严重技术故障后，国家情报总监兼 AI 事务负责人 Jay Clayton 表示，现代化与网络安全投入可能在系统升级期间带来暂时中断。官员称几起故障根因各不相同，看不出是协调一致的网络攻击或 AI 攻击。时值感恩节出行高峰前。",
+      "date": "2026-11-22",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/11/22/jay-clayton-tech-outages-faa-microsoft-thanksgiving.html",
+      "models": []
+    },
+    {
+      "title": "彭博：Simplexity Robotics 完成 1 亿美元 Pre-A 轮，估值 16 亿美元，蚂蚁集团领投、阿里与腾讯参投",
+      "summary": "彭博 11 月 22 日报道，中国具身智能初创公司 Simplexity Robotics 筹得 1 亿美元 Pre-A 轮资金，估值 16 亿美元，由蚂蚁集团领投，阿里巴巴、腾讯等参与。报道集中在金额、估值与投资方，产品与部署细节未见公开材料。",
+      "date": "2026-11-22",
+      "source": "彭博",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-22/ant-group-bets-on-simplexity-to-thrive-in-china-s-humanoid-race",
+      "models": []
+    },
+    {
+      "title": "美国州长协会提出 AI 监管分工：联邦负责审查 AI 模型，州政府保留消费者保护",
+      "summary": "彭博 11 月 22 日报道，全美州长协会提议划分 AI 监管职责：请联邦政府承担 AI 模型审查，同时让各州继续负责保护消费者，而不是被联邦规则排除在外。",
+      "date": "2026-11-22",
+      "source": "彭博",
+      "link": "https://www.bloomberg.com/news/articles/2026-11-22/governors-call-for-federal-ai-rules-without-sidelining-states",
+      "models": []
+    },
+    {
+      "title": "补记：腾讯混元团队首次 Reddit AMA——下一代 Hy 规模将「进一步显著扩大」，Hy4-mini 进入路线图",
+      "summary": "界面新闻报道：11 月 21 日凌晨，腾讯首席 AI 科学家、混元负责人姚顺雨与团队在 Reddit 进行首次公开问答。团队表示下一代 Hy 模型规模将「进一步显著扩大」并继续投入大规模强化学习，但未确认 1.5 万亿至 2 万亿参数的追问；Hy4-mini 已进入路线图，并预告一款前沿 Flash-Lite 模型，正在考虑 24B 至 31B 的稠密模型。团队还称正在推进 llama.cpp 支持，并与 vLLM、SGLang 等社区合作。问答时间落在上一窗口，上期未收，本期补记。",
+      "date": "2026-11-21",
+      "source": "界面新闻",
+      "link": "https://www.jiemian.com/article/15357726.html",
+      "models": [
+        "Hy4",
+        "Hy4 flash"
+      ]
+    }
+  ],
+  "papers": [
+    {
+      "title": "黎曼猜想 Lean 证明通过社区核验：Lean FRO 与 Mathlib Initiative 联合声明",
+      "titleEn": "Lean verification of the Riemann Hypothesis (joint statement by the Lean FRO and the Mathlib Initiative)",
+      "summary": "声明称 Alpöge 11 月 20 日发布的约 1700 万行 Lean 库只直接依赖 Mathlib，社区按 Kevin Buzzard 提出的四项标准完成核查：一、所用 RiemannHypothesis 是 Mathlib 中经数论与 Lean 专家审过的定义；二、数十人复现编译并得到相同的原始证明导出文件；三、社区另建只导入 Mathlib 的命题文件，用 comparator 与 con-leche --compare 两种独立工具确认所证定理正是该命题；四、导出证明经 Lean 官方内核、con-leche 与 con-ron 及第三方用不同语言实现的检查器验证，其中 con-leche 与 con-ron 带有相对集合论的形式化证明，保证不会接受错误证明；检查在与源代码隔离的惰性导出上运行。MIT 的 Andrew Sutherland 核验页另列出 175,187 个模块全部编译、五个主定理只依赖 propext、Classical.choice、Quot.sound 三条标准公理，沙箱内独立重建的导出与公开版逐字节一致。接下来数学界需要的是一份可读、可教的论证叙述。",
+      "authors": "Lean FRO, Mathlib Initiative",
+      "link": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/"
+    },
+    {
+      "title": "《困惑度与智能》：OpenAI 公开预训练曲线，主张以困惑度作为跨实验室的共同进度尺",
+      "titleEn": "Perplexity and Intelligence",
+      "summary": "Jakub Pachocki 认为现代 AI 的能力主要来自在海量数据上训练一个更好的「压缩器」，因此跟踪预训练进展是理解 AI 走向的关键，并首次公开 OpenAI 内部测量：在其主评测集上，GPT-3.5 对数困惑度约 0.99、GPT-4 约 0.91；损失降到 0.8 以下后，网络安全等领域出现变革性能力；换到约 0.76 的模型后，开放数学问题的突破成批出现。他认为 AI 参与算法研究可能带来预训练进展的阶跃，并预计进入约 0.68–0.7 区间会出现新的变革性能力，而对齐审计等现有手段可能失效、评测与训练感知可能加剧。因此他提议前沿开发者共同约定以困惑度等指标衡量的第一道开发上限，在理解与监测 AI 行为达到具体里程碑（例如思维链监测的继任方案）前不越过。文章也列出难点：各实验室评测集与数据配比不同、困惑度不直接对应任务、无法涵盖预训练之外的进展。",
+      "authors": "Jakub Pachocki（OpenAI）",
+      "link": "https://openai.com/index/perplexity-and-intelligence"
+    }
+  ],
+  "models": [
+    {
+      "name": "LingSante-3.1-flash / LingSante-3.1-air-VL",
+      "vendor": "蚂蚁 inclusionAI",
+      "highlight": "Hugging Face 模型卡：LingSante-3.1-flash 为开放权重 MoE 医疗模型，沿用 Ling-3.1-flash 架构，总参 5600 亿、每 token 激活 250 亿，支持 100 万 token 上下文，许可 MIT；训练覆盖医学推理、专业沟通、循证深度研究与长程医疗任务，卡上写明仅供研究评估、不是医疗器械。卡内称其在一项医疗 AI 基准的 23 个模型配置中总分 45.064、排第五，位于性能—成本帕累托前沿；SGLang 提供 day-0 镜像。同时开放的 LingSante-3.1-air-VL 为 124B 原生多模态 MoE，面向胸片等医疗影像报告。两仓建于 11 月 19 日；AA Changelog 11 月 22 日已入库 flash 版，但没有综合 Intelligence Index，按本站口径不入主榜。",
+      "link": "https://huggingface.co/inclusionAI/LingSante-3.1-flash"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "OpenRouter 就 Dragos 金丝雀报告处置：下架三家推理服务商，125 个端点取消零数据保留资格",
+      "summary": "OpenRouter 11 月 22 日发文称，研究人员发现部分推理服务商数据遭入侵或未遵守其数据政策，但未显示 OpenRouter 本身被入侵或越权访问。已采取的措施：依调查结果下架三家服务商；从零数据保留（ZDR）资格中移除 125 个端点（含被研究人员标记的服务商和额外的预防性移除）；通知所有可能受影响的客户。正在进行：把研究人员的测试方法改造成持续检查、核查网络路径以发现请求与响应被转发给第三方的情况、恢复 ZDR 资格前要求服务商提供保证与验证。页面列出已发布说明的服务商包括 Atlas Cloud、Novita（MiniMax 请求相关）、Phala 与 Together（2026 年 6–7 月的提示词泄露事件）。",
+      "source": "OpenRouter",
+      "link": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "models": []
+    }
+  ]
+}
