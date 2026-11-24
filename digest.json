@@ -1,184 +1,111 @@
 {
   "meta": {
-    "date": "2026-11-21",
-    "week": "星期六",
-    "note": "今日主题词：溢价回吐，证明上桌。补跑稿，采集窗口约为上海时间 11 月 20 日 06:00 至 21 日 06:00（美国周五交易日全天）。昨日早六写下 Anthropic 首日收于 97.17 美元；本窗它先把钱收进口袋：公司 11 月 20 日公告 IPO 交割，承销商全额行使 1.47 亿股超额配售，公开发售合计 11.27 亿股、毛额约 935 亿美元，其中公司所得约 916 亿美元；另向 AMD、博通、谷歌、美光、微软、英伟达与 TSMC Partners 定向出售约 3.13 亿股 N 类股、约 260 亿美元，两项合计毛额约 1195 亿美元。但二级市场在同一天把溢价还了回去：彭博称 ANT 第二个交易日收跌 8.5% 至 88.91 美元。路透独家称美国 SEC 执法人员在审查英伟达的潜在会计问题，英伟达收跌约 14%，连跌第七个交易日、连跌第七周；NPR 统计纳斯达克当周跌约 10%，为 2020 年 3 月以来最差一周，标普 500 与道指均进入调整区间。同一天，Anthropic 数学家 Levent Alpöge 在个人网站贴出短文，称与 Claude 合作找到黎曼猜想的证明，并公开 14 个分卷的 Lean 代码；本报截稿时独立核验仍在进行。政策面，特朗普称将对在海外建 AI 数据中心的美国公司征收「巨额税款」，但未给税率与法律依据。模型侧，Thinking Machines 发布开放权重的循环 Transformer Inkling 2 Mini。一句话：钱已经到账，价格在回吐；证明已经上桌，验算还在路上。"
+    "date": "2026-11-22",
+    "week": "星期日",
+    "note": "今日主题词：账要对得上。补跑稿，采集窗口约为上海时间 11 月 21 日 06:00 至 22 日 06:00，对应美国周五收盘后到周六；arXiv 周五晚不发新批次，本期论文栏以补记为主，如实少写。昨天的市场把 AI 交易打回原形，今天各家忙着把账对上。甲骨文在 X 上发声明称，履行 OpenAI 合同所需的资金已全部到位，投资者日讲过的融资（含供应商融资）已经落实，与供应商的私下讨论「只是额外选项」；训练过 Astra-6 的 Abilene 园区接近完工，下一座吉瓦级园区 Shackelford 已全部获批，英伟达 Vera Rubin 机架将在未来几周交付。The Information 称软银孙正义曾就约 1 万亿美元收购 SK 海力士接触华尔街融资机构，软银回应该方案「已不在积极考虑之列」，SK 海力士称不知情；《华尔街日报》称 Databricks 正就以约 2250 亿美元估值融资数十亿美元进行早期谈判。数据账也被翻了出来：安全公司 Dragos 研究人员向 AI 路由与推理转售链路投放约 200 万个「金丝雀」凭据，Ars Technica 报道称部分服务商即使标注零数据保留，也出现提示词留存乃至凭据被盗用。国内侧，中讯社援引工信部数据称，国产开源大模型全球累计下载量已突破 100 亿次，截至 11 月 15 日的一周，OpenRouter 上中国模型调用量 119.1 万亿词元、连续 29 周居首。上期漏记两条一并补上：Buckmaster 与 Alpöge 公布 AI 辅助的「真正」纳维-斯托克斯爆破证明，OpenAI 推出药物化学推理基准 MedChemBench。一句话：周五是价格的清算，周六是账本的清算——资金、股权与数据，都得能被对上。"
   },
   "highlights": [
     {
-      "title": "Anthropic 完成 IPO 交割：超额配售全额行使，公开发售毛额约 935 亿美元，连同 260 亿美元定向私募合计约 1195 亿美元",
-      "summary": "公司公告：11.27 亿股 A 类股按 83 美元发行，其中公司出售 11.03 亿股、售股股东 2365 万股；公司所得毛额约 916 亿美元。七家产业方按同价认购约 3.13 亿股 N 类股。"
+      "title": "甲骨文：履行 OpenAI 合同的资金已全部到位，Shackelford 吉瓦级园区获批，Vera Rubin 机架数周内交付",
+      "summary": "甲骨文 X 声明称其为本轮投资周期首家资金全部到位的超大规模云厂商；与供应商的进一步私下讨论不影响交付，并称相反的媒体报道「不正确」。"
     },
     {
-      "title": "ANT 上市第二日收跌 8.5% 至 88.91 美元，首日溢价大半回吐",
-      "summary": "彭博报道收盘价 88.91 美元，相对 83 美元发行价仍高约 7%；首日收盘为 97.17 美元。"
+      "title": "The Information：孙正义曾探索约 1 万亿美元收购 SK 海力士，软银称已不在积极考虑",
+      "summary": "路透转述：孙正义曾接触华尔街机构探讨融资；SK 海力士称对报道所述事项不知情。"
     },
     {
-      "title": "路透：SEC 调查聚焦英伟达会计处理；英伟达收跌约 14%，连跌第七周",
-      "summary": "CNBC：七周累计下跌约 46%、市值蒸发约 2.6 万亿美元，市值排名降至苹果、微软、Alphabet 之后的第四。SEC 拒绝置评，英伟达未即时回应。"
+      "title": "《华尔街日报》：Databricks 早期洽谈以约 2250 亿美元估值融资数十亿美元",
+      "summary": "较 8 月 1900 亿美元估值高约 20%；条款仍可能变化。"
     },
     {
-      "title": "纳斯达克当周跌约 10%，为 2020 年 3 月以来最差一周；标普 500、道指进入调整",
-      "summary": "NPR 汇总：Anthropic 上市未能扭转 AI 交易的抛售，周五收盘后标普与道指均较近期高点回落 10% 以上。"
+      "title": "Dragos 金丝雀测试：AI 路由与推理转售链路泄露提示词与凭据，「零数据保留」未必兑现",
+      "summary": "Ars Technica 报道研究人员投放约 200 万个金丝雀；部分服务商被发现处于被入侵状态或违背数据政策。"
     },
     {
-      "title": "Anthropic 数学家 Alpöge 称与 Claude 找到黎曼猜想证明，公开 Lean 形式化代码",
-      "summary": "短文称结论还覆盖狄利克雷 L 函数的广义黎曼猜想；代码分 14 个压缩包发布。截至本窗结束，社区编译与独立检查仍在进行，本报按「作者主张、待核验」记录。"
+      "title": "工信部数据：国产开源大模型全球累计下载量破 100 亿次；中国模型在 OpenRouter 周调用量连续 29 周居首",
+      "summary": "中讯社 11 月 21 日：截至 15 日当周为 119.1 万亿词元；国内日均词元调用量突破 500 万亿。"
     },
     {
-      "title": "特朗普称将对在海外建 AI 数据中心的美国公司征「巨额税」，未给税率与依据",
-      "summary": "AP、CNBC、Axios 均报道：他说尚未和自己的官员讲过这一计划；联邦征税权在国会，具体如何实施不明。"
+      "title": "育碧成立生成式 AI 子公司 Motherbrain，主攻有记忆的 NPC 与 AI 游戏主持人",
+      "summary": "随半年报公布；同期育碧在蒙特利尔与魁北克工作室裁员 166 人。"
     },
     {
-      "title": "众议院报告：Cursor 正考虑逐步停用中国开发的开放权重模型",
-      "summary": "CNBC 看到的报告称，Cursor 以「地缘政治风险」为由向委员会说明了这一计划；其 Composer 2 基于月之暗面 Kimi K2.5 构建。"
-    },
-    {
-      "title": "Thinking Machines 开放 Inkling 2 Mini：26.4B 总参、3.4B 激活的循环 Transformer",
-      "summary": "每个 token 把中间层跑三遍；官方称约 20GB 即可在笔记本运行，DeepSWE v1.1 为 48.2%。"
+      "title": "补记：Buckmaster 与 Alpöge 公布 AI 辅助的纳维-斯托克斯爆破证明，称补上 OpenAI 9 月解法的「漏洞」",
+      "summary": "《科学美国人》：两人称新证明不依赖人为设计的外力；写稿仓促、证书文件尚未放出。"
     }
   ],
   "news": [
     {
-      "title": "Anthropic 宣布 IPO 交割并完成 260 亿美元同步私募：公开发售 11.27 亿股，毛额约 935 亿美元",
-      "summary": "Anthropic 11 月 20 日公告：IPO 合计发行 1,127,000,000 股 A 类普通股，发行价 83 美元，包含承销商全额行使的 1.47 亿股超额配售权（全部由公司增发）。其中 1,103,351,354 股由公司出售、23,648,646 股由部分售股股东出售；扣除承销折扣与发行费用前，公开发售毛额约 935 亿美元，公司所得约 916 亿美元，售股股东部分公司不取得收入。与 IPO 同步，公司按同一价格向 AMD、博通、谷歌、美光、微软、英伟达和 TSMC Partners 定向出售合计 313,253,007 股 N 类普通股，总价约 260 亿美元（未依《证券法》注册）。IPO（含老股）与定向私募合计毛额约 1195 亿美元。高盛与摩根士丹利为主承销商。CNBC 同日确认：周三定价时筹得 813 亿美元，超额配售再增约 122 亿美元，合计超过 SpaceX 今年 6 月的纪录。二级市场方面，彭博报道 ANT 第二个交易日收跌 8.5%，报 88.91 美元，仍高于发行价。",
+      "title": "甲骨文称履行 OpenAI 基础设施合同所需资金已全部落实，Abilene 接近完工、Shackelford 获批",
+      "summary": "甲骨文在官方 X 账号发布声明：随着本月早些时候完成最后一轮融资，公司「已获得履行 OpenAI 合同所需的全部资金」，成为本轮投资周期首家资金全部到位的超大规模云厂商；投资者日介绍过的融资安排（包括供应商融资）已经落实，与供应商的任何进一步私下讨论「只是额外选项」，交付能力不取决于这些讨论，并称与此相反的媒体报道「不正确」。进度方面，声明称训练过 Astra-6 的 Abilene 园区接近完工，下一座吉瓦级园区 Shackelford 已取得全部许可，其数据大厅内英伟达 Vera Rubin 机架的交接将在未来几周按计划进行。",
       "date": "2026-11-20",
-      "source": "Anthropic / CNBC / 彭博",
-      "link": "https://www.anthropic.com/news/ipo-close",
+      "source": "甲骨文（X）",
+      "link": "https://x.com/oracle/status/2123884437045760420",
       "models": []
     },
     {
-      "title": "路透独家：美国 SEC 调查聚焦英伟达会计处理；英伟达收跌约 14%，连跌七周创 2008 年以来最长",
-      "summary": "路透 11 月 20 日援引两名知情人士称，SEC 执法人员正在审查英伟达的潜在会计问题；《华尔街日报》周二先报道了调查，但未能确认重点。路透未能确认调查起始时间与具体事项，SEC 拒绝置评，英伟达未即时回应。彭博税务版称英伟达当日下跌 14% 至 125.84 美元，为 2025 年 1 月以来最大单日跌幅。CNBC 报道这是连续第七个交易日、连续第七周下跌，为 2008 年金融危机以来最长的周线连跌；七周累计跌约 46%，市值减少约 2.6 万亿美元，市值排名降至苹果、微软和 Alphabet 之后。CNBC 还写到，即便本周财报上调了 2028 财年指引、临时 CEO 科莱特·克雷斯预计下一财年营收增长 75%，抛售仍未止住；黄仁勋已于 11 月 12 日辞职。",
+      "title": "The Information：孙正义曾探索约 1 万亿美元收购 SK 海力士，软银称已不在积极考虑之列",
+      "summary": "路透 11 月 20 日（美国时间周五）转述 The Information：软银集团 CEO 孙正义近期曾接触华尔街机构，探讨为一项可能的约万亿美元级 SK 海力士「收购」筹措资金。The Information 引述软银发言人称：「软银会探索很多机会，这一项已不在积极考虑之列。」SK 海力士在声明中表示，对报道所述事项不知情。按现有披露，这只是一项已停止积极推进的融资探索，没有报价或协议。SK 海力士是 AI 加速器所需高带宽内存的主要供应商之一。",
       "date": "2026-11-20",
-      "source": "路透 / CNBC / 彭博税务",
-      "link": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
+      "source": "The Information / 路透（CNA 转载）",
+      "link": "https://www.channelnewsasia.com/business/softbanks-son-explored-1-trillion-buyout-sk-hynix-information-reports-6571306",
       "models": []
     },
     {
-      "title": "AI 交易遭遇最差一周：纳斯达克当周跌约 10%，标普 500 与道指进入调整区间",
-      "summary": "NPR 11 月 21 日汇总：以科技股为主的纳斯达克当周下跌 10%，为 2020 年 3 月疫情封锁以来最差表现；首日上涨 17% 的 Anthropic 周五也跌逾 8%，收在发行价附近；标普 500 与道琼斯工业平均指数周五收盘均较近期高点回落 10% 以上，进入调整区间。《金融时报》给出纳斯达克 100 指数周五跌 5.6%、全周跌 10.4% 的口径，并把抛售与投资者担心 AI 投资热潮放缓联系起来。NPR 列出的背景包括：美联储 9 月三年多来首次加息、抬高数据中心建设的借贷成本；民主党在中期选举后控制国会两院并承诺收紧 AI 监管；以及英伟达的管理层动荡。",
+      "title": "《华尔街日报》：Databricks 早期洽谈以约 2250 亿美元估值融资数十亿美元",
+      "summary": "路透转述《华尔街日报》称，数据与 AI 平台公司 Databricks 正就新一轮融资进行早期谈判，拟融资数十亿美元，估值约 2250 亿美元，较 8 月完成 50 亿美元融资时的 1900 亿美元估值高约 20%。谈判仍在进行，金额与估值可能变化，公司未公开确认。",
       "date": "2026-11-21",
-      "source": "NPR / 金融时报",
-      "link": "https://www.npr.org/2026/11/21/nx-s1-6048729/ai-stock-markets-anthropic-nvidia",
+      "source": "华尔街日报 / 路透",
+      "link": "https://www.wsj.com/tech/ai/databricks-in-early-talks-to-raise-funds-at-225-billion-valuation-e593b1de",
       "models": []
     },
     {
-      "title": "特朗普称将对在海外建 AI 数据中心的美国公司征收「巨额税款」，细节与法律依据均未给出",
-      "summary": "美联社报道，特朗普 11 月 20 日在白宫记者会上表示，在其他国家建设 AI 数据中心的美国科技公司将面临「巨额税款」；他没有提供细节，并称还没有把这一计划告诉自己的官员。CNBC 引述他的话称，企业若想继续在海外建，「可以，但我们会征收巨额税」。Axios 指出，联邦征税权由宪法赋予国会，他没有说明是寻求国会立法还是动用现有行政权力；Axios 的 Ina Fried 也提醒，即便在美国本土建数据中心的公司，出于可靠性、低延迟和数据本地处理法规，也常常需要海外设施。CNBC 列出谷歌母公司、亚马逊、微软、Meta 与甲骨文都已在海外建有数据中心。",
-      "date": "2026-11-20",
-      "source": "美联社 / CNBC / Axios",
-      "link": "https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879",
+      "title": "工信部数据：国产开源大模型全球累计下载量突破 100 亿次，中国模型 OpenRouter 周调用量 119.1 万亿词元、连续 29 周居首",
+      "summary": "中讯社 11 月 21 日援引数据：截至 11 月 15 日，全球开源模型聚合平台 OpenRouter 上中国模型的周调用量为 119.1 万亿词元，连续 29 周居全球首位；国内人工智能开源大模型全球累计下载量突破 100 亿次。工信部数据还显示，我国日均词元调用量已突破 500 万亿，国内网购平台已上线词元充值中心。需要说明：「下载量破百亿」这一口径工信部在 7 月已首次披露，本次为人民日报等在 11 月 21 日的综述再次引用。",
+      "date": "2026-11-21",
+      "source": "中讯社 / 人民网",
+      "link": "https://www.cnsonews.com.cn/domestic/20261121/179a13e47334afbe197dcc5f6fd2899c.html",
       "models": []
     },
     {
-      "title": "众议院两委员会报告：Cursor 正考虑逐步停用中国开发的开放权重模型，Composer 2 曾基于 Kimi K2.5",
-      "summary": "CNBC 11 月 20 日独家看到众议院国土安全委员会与中国问题特别委员会的报告：SpaceX 旗下 AI 编程平台 Cursor 告知委员会，将「因地缘政治风险探索逐步停用中国开发的开放权重模型」。Cursor 此前基于月之暗面 Kimi K2.5 构建了编程模型 Composer 2；SpaceX 于 8 月以约 600 亿美元隐含股权价值完成收购。爱彼迎和 DoorDash 也就使用中国模型的情况配合了调查。报告认为，成本、可定制性和接近前沿的性能推动了中国模型的采用，而美国缺少在「市场所需价格与性能」上有竞争力的开放权重替代品。Cursor、SpaceX 与 DoorDash 未回应 CNBC，爱彼迎拒绝置评。",
-      "date": "2026-11-20",
-      "source": "CNBC",
-      "link": "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html",
-      "models": []
-    },
-    {
-      "title": "彭博：Devin 开发商 Cognition 考虑以 750 亿美元估值融资 20 亿美元以上",
-      "summary": "彭博 11 月 20 日援引知情人士称，AI 编程公司 Cognition 正在讨论以约 750 亿美元估值融资，金额可能达 20 亿美元或更多；谈判仍在进行、条款可能变化。公司 9 月刚以 480 亿美元估值融资约 20 亿美元，按彭博口径今年迄今融资已超过 30 亿美元。若按 750 亿美元落地，较 9 月估值高约 56%。本报未见公司确认。",
-      "date": "2026-11-20",
-      "source": "彭博（经路透转述）",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-20/cognition-in-talks-for-75-billion-value-with-new-funding",
-      "models": []
-    },
-    {
-      "title": "彭博：CrowdStrike 洽购 Zscaler，合并后市值约 2650 亿美元，Zscaler 盘后涨逾 15%",
-      "summary": "彭博 11 月 20 日援引知情人士称，CrowdStrike 正在洽谈收购零信任网络安全公司 Zscaler，合并后公司市值约 2650 亿美元；消息传出后 Zscaler 盘后上涨逾 15%。本窗内双方未公告协议，交易条款仍是媒体披露的谈判状态。",
-      "date": "2026-11-20",
-      "source": "彭博",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-20/crowdstrike-is-in-talks-to-buy-cybersecurity-firm-zscaler",
-      "models": []
-    },
-    {
-      "title": "Signal 在 Android 与 iOS 默认限制截屏，称操作系统级 AI 智能体构成「生存威胁」",
-      "summary": "Signal 总裁 Meredith Whittaker 写道，Windows、Android 与 macOS/iOS 让 AI 智能体「扫描」屏幕内容，正在削弱 Signal 独立保证隐私的能力：数据一旦被系统级智能体截取，就会被存进本地数据库或远程服务器，脱离 Signal 的控制，并危及对话中所有参与者。Signal 此前已在 Windows 端默认阻止截屏，现在把类似限制扩展到 Android 和 iOS。用户可自行关闭，但 Whittaker 称这会「破坏我们的隐私保证」；她也承认这是「不完整」的方案，无法应对智能体读取应用数据的其他隐蔽途径。路透同日报道了这一变化。",
-      "date": "2026-11-20",
-      "source": "TechCrunch / 路透",
-      "link": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "title": "育碧成立生成式 AI 子公司 Motherbrain：做有记忆的 NPC 与管理大型系统化世界的 AI 游戏主持人",
+      "summary": "GamesIndustry.biz 报道，育碧在半年报中宣布成立独立子公司 Motherbrain，班底来自其生成式 AI 项目 Teammates（去年开始试玩），当前聚焦「有记忆的智能 NPC」和「管理大型系统化世界的 AI 游戏主持人」，并计划服务育碧 Creative House 体系内外的创作者、与选定的技术方合作。CEO Yves Guillemot 称其目标是为创作者赋能。同期育碧在蒙特利尔与魁北克工作室裁减 166 个制作与支持岗位。",
+      "date": "2026-11-21",
+      "source": "GamesIndustry.biz",
+      "link": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "Mind2Act World：把机器人操作失败拆成「想错」「做错」还是「接不上」",
-      "titleEn": "Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation",
-      "summary": "现有具身基准要么把推理与执行混在同一任务里评，要么分开评却不看两者组合，失败时说不清问题出在哪。作者提出包含 30 个仿真操作任务的诊断基准，覆盖五个现实应用领域，每个任务三档难度、两种场景（整洁/随机），共 180 种配置。任务分三个视角：Mind 考依据历史观察做决定，Act 考精确及时的执行，Mind2Act 则在闭环中让动作结果影响后续决策；对比三者即可判断系统是缺某项能力，还是已有能力却组合不起来。配套的诊断工具把三类代表系统的失败回合归因到 Mind、Act 或组合，并生成画像卡；评测对象包括多模态智能体、VLA 与世界-动作模型。",
-      "authors": "Yuzhi Huang, Jie Wu, Fanding Huang 等（43 位作者）",
-      "link": "https://arxiv.org/abs/2611.26444"
+      "title": "补记：Buckmaster 与 Alpöge 公布 AI 辅助的纳维-斯托克斯方程爆破证明，称补上 OpenAI 9 月解法的「人为外力」漏洞",
+      "titleEn": "AI-aided proof of Navier–Stokes blowup (Buckmaster & Alpöge, report via Scientific American)",
+      "summary": "《科学美国人》报道：纽约大学教授 Tristan Buckmaster 与 Anthropic 的 Levent Alpöge 于美国东部时间 11 月 20 日 8:37 在 Mastodon 公布一份由 AI 辅助完成、篇幅很大的证明，称解决了纳维-斯托克斯方程「真正」意义上的爆破问题。OpenAI 9 月的解法虽在字面上满足克雷研究所的条件，但依赖一个经过精细调校、现实中不存在的外力「搅动」流体，被许多专家视为钻了题面的漏洞；两人称新证明关闭了这一漏洞。Buckmaster 坦言写稿未经打磨，因担心再被抢先而「不能冒险等待」，验证证书也尚未放出、称将很快发布。此前 Buckmaster 曾指 OpenAI 抢先发表，OpenAI 否认不当行为。该结果发布于上期早六窗口内、上期未收，独立核验情况待后续。",
+      "authors": "Tristan Buckmaster, Levent Alpöge",
+      "link": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/"
     },
     {
-      "title": "WeMM-Video：中英双语全模态视频理解模型族，35B-A3B 旗舰称开源最佳",
-      "titleEn": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
-      "summary": "技术报告发布 2B、4B、9B 与 35B-A3B 四个规格，围绕音视频联合感知与推理，把文本、图像、音频与视频统一在「混合思考」范式里，既有直接回答的非思考模式，也有显式逐步推理的思考模式。训练语料约 1.2 万亿 token，后训练包含多教师 OPD、抗重复的 MrDPO 与专项 RL。作者称在 120 多个基准上评测，旗舰在全模态视频评测上取得开源最佳，并超过 Qwen3.5-Omni-Flash 与 Seed2.0-Mini-0428 等闭源模型，同时缩小与 Gemini-3.0-Flash 的差距；以上均为作者报告。",
-      "authors": "Changli Tang, Jie Yang, Tianyi Wang 等（12 位作者）",
-      "link": "https://arxiv.org/abs/2611.26409"
-    },
-    {
-      "title": "后验匹配蒸馏：用一组均值约束监督完整后验，让少步生成不丢多样性",
-      "titleEn": "Posterior Matching Distillation",
-      "summary": "扩散蒸馏常用反向 KL 匹配学生与教师的输出分布，但其「寻模」偏好会牺牲样本多样性。作者提出 PMD：在每个训练噪声水平上让学生恢复教师对干净图像的完整后验，并支持在训练时间步网格内任意步数采样而无需再训练。做法是让固定噪声状态下学生样本的指数重加权平均去匹配教师的后验均值；在高斯噪声下，指数倾斜后的后验均值只需在平移后的输入上调用一次教师。作者证明在开邻域上匹配倾斜均值即可唯一确定完整后验，因此无需额外的学生 score 网络。实验在 SDXL 与 FLUX.2 [klein] 4B 上进行。",
-      "authors": "Hidir Yesiltepe, Julius Berner, Arash Vahdat, Pinar Yanardag",
-      "link": "https://arxiv.org/abs/2611.26629"
-    },
-    {
-      "title": "AltRA-Test：标注者不重合时，何时可以用 LLM 评审替换人工标注",
-      "titleEn": "AltRA-Test: An Alternative Annotator Test for LLM Judges Without Shared Annotators",
-      "summary": "原有 Alt-Test 要求所有条目由同一批人标注，而大规模标注常是不同条目由不同子集的人完成。作者提出带重采样的替代标注者检验：自助法重采样条目，每条抽 k 个人工标注并用一个 LLM 标注替换其中之一，构成全人工与人机混合的成对小组；若混合组的标注一致性在统计上不劣于全人工组，就支持替换。作者证明这是渐近水平 α 的一致检验，并在 20 个文本、图像、音频与视频数据集上测试了 18 个 LLM 和 5 种提示技术，称通常约 100 个条目就足以完成检验。",
-      "authors": "Nagham Omar, Rotem Dror, Almog Gueta, Avigdor Gal, Roi Reichart, Nitay Calderon",
-      "link": "https://arxiv.org/abs/2611.26073"
-    },
-    {
-      "title": "给视觉语言模型做「全局工作空间」探针：概念何时可读、何时被选择性调用",
-      "titleEn": "Probing the \"Conscious\" Mind: Selective Access and Global Workspace in Vision-Language Models",
-      "summary": "作者借用意识科学中的全局工作空间理论，提出多模态雅可比透镜 MC-Lens，把视觉编码器和语言解码器的中间状态映射到由解码器词表定义的共享语义空间，比较概念在不同模态中的可访问性，并支持对内部概念做干预。结果显示多模态概念信息在中间层可读，并会按任务需要被选择性访问；反事实实验表明被访问的概念确实参与下游计算与推理。作者还提出两种 J 空间指标，用来追踪跨模态概念对齐的形成。",
-      "authors": "Jiahao Huang, Jun Wang",
-      "link": "https://arxiv.org/abs/2611.26590"
+      "title": "补记：OpenAI 推出 MedChemBench，测模型能否读懂分子结构、解释实验并挑出下一步该测的化合物",
+      "titleEn": "MedChemBench: Can AI help scientists identify promising drug candidates?",
+      "summary": "OpenAI 发布药物化学推理基准 MedChemBench：99 道题取自 117 篇论文与专利、涉及 761 个不同分子结构，大多给出某研究项目在特定时点可获得的上下文（靶点、目标、已研究化合物与部分实验结果）。评分覆盖分子结构重建、实验证据解释、化合物比较与挑选、性质预测四部分。在 xhigh 推理设置下，GPT-6.2 Astra 得到 84.5% 的分数，GPT-6 Astra 83.3%、GPT-6.1 Sol 82.0%、GPT-5.6 Sol 58.2%；挑选化合物与预测数值性质更难。基准是回溯性的，不等于前瞻性药物发现或湿实验验证。发布于上期早六窗口内、上期未收。",
+      "authors": "OpenAI",
+      "link": "https://openai.com/index/introducing-medchembench/"
     }
   ],
   "models": [
     {
-      "name": "Inkling 2 Mini",
-      "vendor": "Thinking Machines",
-      "highlight": "Thinking Machines Lab 11 月 20 日发布开放权重的 Inkling 2 Mini：混合专家循环 Transformer，总参 264 亿、激活 34 亿，每个 token 把中间层运行三次，按循环计约 54 亿权重激活。官方称它在 100B 以下开放权重模型中于 DeepSWE v1.1（48.2%）与 Vals Index v2.2（46.5%）领先；大部分权重以 NVFP4 原生训练与部署、最后四层为 MXFP8，总内存占用约 20GB，研究人员曾在飞行途中用离线 MacBook Pro 让它写出可玩的飞行模拟器。官方也写明循环并不能让权重存下更多知识，AA-Omniscience 与同尺寸模型相当，靠搜索与工具补足。同时放出一个可变循环的研究版：无思维链时间视界从单遍 16 秒提高到三遍 37 秒。可在 Tinker 上推理与定制。AA Changelog 已于 11 月 20 日给出 Intelligence Index 20，本站榜单已于 11-24 半点收录。",
-      "link": "https://thinkingmachines.ai/news/inkling-2-mini/"
-    },
-    {
-      "name": "Hy4（正式版权重）",
-      "vendor": "腾讯混元",
-      "highlight": "腾讯 11 月 20 日上午（上海时间约 10:46）在 Hugging Face 公开 Hy4 正式版权重（tencent/Hy4、Hy4-FP8、Hy4-base），同步 ModelScope 与 GitHub。官方卡主干总参 7700 亿、每 token 激活文本约 490 亿，支持 100 万 token 上下文。许可为 Tencent Hy License v1.0（不是 Apache 2.0；预览版 Hy4-preview 才是 Apache 2.0）。第三方 AngelSlim 同日陆续上传多档 GGUF 量化，本站榜单 11-20 半点已据此更新本地部署档位。",
-      "link": "https://huggingface.co/tencent/Hy4"
+      "name": "本窗无可核验的前沿模型发布",
+      "vendor": "—",
+      "highlight": "上海时间 11 月 21 日 06:00 至 22 日 06:00，未见可核验的新一代前沿旗舰或主流开放权重模型官方发布。Inkling 2 Mini 与 Hy4 正式版权重已在昨日（11-21）日报记录；蚂蚁 inclusionAI 的生理信号编码器 LingSante-Pulse-1.0（MIT，约 1670 万参数）于 11 月 20 日在 Hugging Face 建仓，属窗外，在此附记。",
+      "link": "https://huggingface.co/inclusionAI/LingSante-Pulse-1.0"
     }
   ],
   "ecosystem": [
     {
-      "title": "Linger：前 DeepSeek-VL 负责人创办的 Simplex AI 开源本地个人智能体，可操作已登录的浏览器与桌面应用",
-      "summary": "Simplex AI 在 GitHub 开源 Linger，并提供 Apple 芯片 Mac、Windows 与 Linux 桌面安装包（desktop-v0.1.6 于 11 月 20 日发布）。运行时可选 Claude Code、Codex 或 Pi；「Another Me」每晚把邮件、聊天与会议整理成存放在本机的 Wiki，供所有智能体检索。配套的 MoE 推理引擎 PolyStrata 把最常用的专家留在 GPU、其余放在内存或 SSD：项目页给出 1250 亿参数的 Qwen3.8-Flash-Next 在 12GB 显存的 RTX 3060 加 64GB 内存上写作速度约 45.5 token/秒。仓库许可标注为非标准（Other）。",
-      "source": "GitHub / Simplex AI",
-      "link": "https://github.com/simplexai-labs/linger",
-      "models": [
-        "Qwen3.8-Flash-Next"
-      ]
-    },
-    {
-      "title": "METR 更新时间视界图：加入需要判断力的开放任务，模型在「设计评测」上仍落后人类",
-      "summary": "《麻省理工科技评论》报道，METR 新版时间视界报告纳入了更难验证、需要判断力的任务，例如让模型为 METR 设计新的 AI 评测、再由员工打分，以及给哲学论证评分。部分能力仍按指数趋势增长，但模型在这些开放任务上低于人类水平；Opus 5.5 等最新模型在评测设计任务上达到 METR 所说的「勉强过线」，尚不能直接用于其研究。METR 也承认新任务的人类完成时间多为估计、评分样本有限，难以得出像原版那样干净的趋势。",
-      "source": "MIT Technology Review / METR",
-      "link": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
-      "models": [
-        "Claude Opus 5.5"
-      ]
-    },
-    {
-      "title": "Gemini Mac 应用上线电脑操控：后台跨应用、文件与网页执行任务（补记）",
-      "summary": "谷歌美国时间 11 月 19 日宣布为 macOS 版 Gemini 加入电脑操控：智能体可在后台操作原生 Mac 应用与网页，用户在对话里看到实时预览，屏幕和光标仍可继续自用，并可暂停、停止或事先批准动作。首发仅限美国英文，需要 Google AI Plus、Pro 或 Ultra 订阅。发布时间落在上期早六窗口末尾、上期未收，本期补记。",
-      "source": "TechCrunch",
-      "link": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
+      "title": "Dragos 向 AI 供应链投放约 200 万个金丝雀：部分路由与推理服务商留存提示词、凭据被盗，「零数据保留」未必兑现",
+      "summary": "Ars Technica 报道，安全公司 Dragos 的研究人员在发往 OpenRouter、Vercel 等 AI 路由及其背后推理服务商的请求中埋入金丝雀凭据与标记，持续数月观察其去向；即便在声明零数据保留（ZDR）的设置下，也看到隐私承诺被打破、密钥被窃取。按 Dragos 披露，部分服务商显示出被主动入侵的迹象，一些转售方通过普通日志留存了提示词。对把私有代码、密钥交给智能体再经路由分发的团队，这意味着「选哪个模型」之外还要核对「请求到底经过了谁」。OpenRouter 的处置见明日日报。",
+      "source": "Ars Technica / Dragos",
+      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
       "models": []
     }
   ]

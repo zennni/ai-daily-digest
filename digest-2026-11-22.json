@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "date": "2026-11-22",
+    "week": "星期日",
+    "note": "今日主题词：账要对得上。补跑稿，采集窗口约为上海时间 11 月 21 日 06:00 至 22 日 06:00，对应美国周五收盘后到周六；arXiv 周五晚不发新批次，本期论文栏以补记为主，如实少写。昨天的市场把 AI 交易打回原形，今天各家忙着把账对上。甲骨文在 X 上发声明称，履行 OpenAI 合同所需的资金已全部到位，投资者日讲过的融资（含供应商融资）已经落实，与供应商的私下讨论「只是额外选项」；训练过 Astra-6 的 Abilene 园区接近完工，下一座吉瓦级园区 Shackelford 已全部获批，英伟达 Vera Rubin 机架将在未来几周交付。The Information 称软银孙正义曾就约 1 万亿美元收购 SK 海力士接触华尔街融资机构，软银回应该方案「已不在积极考虑之列」，SK 海力士称不知情；《华尔街日报》称 Databricks 正就以约 2250 亿美元估值融资数十亿美元进行早期谈判。数据账也被翻了出来：安全公司 Dragos 研究人员向 AI 路由与推理转售链路投放约 200 万个「金丝雀」凭据，Ars Technica 报道称部分服务商即使标注零数据保留，也出现提示词留存乃至凭据被盗用。国内侧，中讯社援引工信部数据称，国产开源大模型全球累计下载量已突破 100 亿次，截至 11 月 15 日的一周，OpenRouter 上中国模型调用量 119.1 万亿词元、连续 29 周居首。上期漏记两条一并补上：Buckmaster 与 Alpöge 公布 AI 辅助的「真正」纳维-斯托克斯爆破证明，OpenAI 推出药物化学推理基准 MedChemBench。一句话：周五是价格的清算，周六是账本的清算——资金、股权与数据，都得能被对上。"
+  },
+  "highlights": [
+    {
+      "title": "甲骨文：履行 OpenAI 合同的资金已全部到位，Shackelford 吉瓦级园区获批，Vera Rubin 机架数周内交付",
+      "summary": "甲骨文 X 声明称其为本轮投资周期首家资金全部到位的超大规模云厂商；与供应商的进一步私下讨论不影响交付，并称相反的媒体报道「不正确」。"
+    },
+    {
+      "title": "The Information：孙正义曾探索约 1 万亿美元收购 SK 海力士，软银称已不在积极考虑",
+      "summary": "路透转述：孙正义曾接触华尔街机构探讨融资；SK 海力士称对报道所述事项不知情。"
+    },
+    {
+      "title": "《华尔街日报》：Databricks 早期洽谈以约 2250 亿美元估值融资数十亿美元",
+      "summary": "较 8 月 1900 亿美元估值高约 20%；条款仍可能变化。"
+    },
+    {
+      "title": "Dragos 金丝雀测试：AI 路由与推理转售链路泄露提示词与凭据，「零数据保留」未必兑现",
+      "summary": "Ars Technica 报道研究人员投放约 200 万个金丝雀；部分服务商被发现处于被入侵状态或违背数据政策。"
+    },
+    {
+      "title": "工信部数据：国产开源大模型全球累计下载量破 100 亿次；中国模型在 OpenRouter 周调用量连续 29 周居首",
+      "summary": "中讯社 11 月 21 日：截至 15 日当周为 119.1 万亿词元；国内日均词元调用量突破 500 万亿。"
+    },
+    {
+      "title": "育碧成立生成式 AI 子公司 Motherbrain，主攻有记忆的 NPC 与 AI 游戏主持人",
+      "summary": "随半年报公布；同期育碧在蒙特利尔与魁北克工作室裁员 166 人。"
+    },
+    {
+      "title": "补记：Buckmaster 与 Alpöge 公布 AI 辅助的纳维-斯托克斯爆破证明，称补上 OpenAI 9 月解法的「漏洞」",
+      "summary": "《科学美国人》：两人称新证明不依赖人为设计的外力；写稿仓促、证书文件尚未放出。"
+    }
+  ],
+  "news": [
+    {
+      "title": "甲骨文称履行 OpenAI 基础设施合同所需资金已全部落实，Abilene 接近完工、Shackelford 获批",
+      "summary": "甲骨文在官方 X 账号发布声明：随着本月早些时候完成最后一轮融资，公司「已获得履行 OpenAI 合同所需的全部资金」，成为本轮投资周期首家资金全部到位的超大规模云厂商；投资者日介绍过的融资安排（包括供应商融资）已经落实，与供应商的任何进一步私下讨论「只是额外选项」，交付能力不取决于这些讨论，并称与此相反的媒体报道「不正确」。进度方面，声明称训练过 Astra-6 的 Abilene 园区接近完工，下一座吉瓦级园区 Shackelford 已取得全部许可，其数据大厅内英伟达 Vera Rubin 机架的交接将在未来几周按计划进行。",
+      "date": "2026-11-20",
+      "source": "甲骨文（X）",
+      "link": "https://x.com/oracle/status/2123884437045760420",
+      "models": []
+    },
+    {
+      "title": "The Information：孙正义曾探索约 1 万亿美元收购 SK 海力士，软银称已不在积极考虑之列",
+      "summary": "路透 11 月 20 日（美国时间周五）转述 The Information：软银集团 CEO 孙正义近期曾接触华尔街机构，探讨为一项可能的约万亿美元级 SK 海力士「收购」筹措资金。The Information 引述软银发言人称：「软银会探索很多机会，这一项已不在积极考虑之列。」SK 海力士在声明中表示，对报道所述事项不知情。按现有披露，这只是一项已停止积极推进的融资探索，没有报价或协议。SK 海力士是 AI 加速器所需高带宽内存的主要供应商之一。",
+      "date": "2026-11-20",
+      "source": "The Information / 路透（CNA 转载）",
+      "link": "https://www.channelnewsasia.com/business/softbanks-son-explored-1-trillion-buyout-sk-hynix-information-reports-6571306",
+      "models": []
+    },
+    {
+      "title": "《华尔街日报》：Databricks 早期洽谈以约 2250 亿美元估值融资数十亿美元",
+      "summary": "路透转述《华尔街日报》称，数据与 AI 平台公司 Databricks 正就新一轮融资进行早期谈判，拟融资数十亿美元，估值约 2250 亿美元，较 8 月完成 50 亿美元融资时的 1900 亿美元估值高约 20%。谈判仍在进行，金额与估值可能变化，公司未公开确认。",
+      "date": "2026-11-21",
+      "source": "华尔街日报 / 路透",
+      "link": "https://www.wsj.com/tech/ai/databricks-in-early-talks-to-raise-funds-at-225-billion-valuation-e593b1de",
+      "models": []
+    },
+    {
+      "title": "工信部数据：国产开源大模型全球累计下载量突破 100 亿次，中国模型 OpenRouter 周调用量 119.1 万亿词元、连续 29 周居首",
+      "summary": "中讯社 11 月 21 日援引数据：截至 11 月 15 日，全球开源模型聚合平台 OpenRouter 上中国模型的周调用量为 119.1 万亿词元，连续 29 周居全球首位；国内人工智能开源大模型全球累计下载量突破 100 亿次。工信部数据还显示，我国日均词元调用量已突破 500 万亿，国内网购平台已上线词元充值中心。需要说明：「下载量破百亿」这一口径工信部在 7 月已首次披露，本次为人民日报等在 11 月 21 日的综述再次引用。",
+      "date": "2026-11-21",
+      "source": "中讯社 / 人民网",
+      "link": "https://www.cnsonews.com.cn/domestic/20261121/179a13e47334afbe197dcc5f6fd2899c.html",
+      "models": []
+    },
+    {
+      "title": "育碧成立生成式 AI 子公司 Motherbrain：做有记忆的 NPC 与管理大型系统化世界的 AI 游戏主持人",
+      "summary": "GamesIndustry.biz 报道，育碧在半年报中宣布成立独立子公司 Motherbrain，班底来自其生成式 AI 项目 Teammates（去年开始试玩），当前聚焦「有记忆的智能 NPC」和「管理大型系统化世界的 AI 游戏主持人」，并计划服务育碧 Creative House 体系内外的创作者、与选定的技术方合作。CEO Yves Guillemot 称其目标是为创作者赋能。同期育碧在蒙特利尔与魁北克工作室裁减 166 个制作与支持岗位。",
+      "date": "2026-11-21",
+      "source": "GamesIndustry.biz",
+      "link": "https://www.gamesindustry.biz/ubisoft-launches-motherbrain-a-new-subsidiary-focused-on-ai-driven-gameplay-innovation",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "补记：Buckmaster 与 Alpöge 公布 AI 辅助的纳维-斯托克斯方程爆破证明，称补上 OpenAI 9 月解法的「人为外力」漏洞",
+      "titleEn": "AI-aided proof of Navier–Stokes blowup (Buckmaster & Alpöge, report via Scientific American)",
+      "summary": "《科学美国人》报道：纽约大学教授 Tristan Buckmaster 与 Anthropic 的 Levent Alpöge 于美国东部时间 11 月 20 日 8:37 在 Mastodon 公布一份由 AI 辅助完成、篇幅很大的证明，称解决了纳维-斯托克斯方程「真正」意义上的爆破问题。OpenAI 9 月的解法虽在字面上满足克雷研究所的条件，但依赖一个经过精细调校、现实中不存在的外力「搅动」流体，被许多专家视为钻了题面的漏洞；两人称新证明关闭了这一漏洞。Buckmaster 坦言写稿未经打磨，因担心再被抢先而「不能冒险等待」，验证证书也尚未放出、称将很快发布。此前 Buckmaster 曾指 OpenAI 抢先发表，OpenAI 否认不当行为。该结果发布于上期早六窗口内、上期未收，独立核验情况待后续。",
+      "authors": "Tristan Buckmaster, Levent Alpöge",
+      "link": "https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/"
+    },
+    {
+      "title": "补记：OpenAI 推出 MedChemBench，测模型能否读懂分子结构、解释实验并挑出下一步该测的化合物",
+      "titleEn": "MedChemBench: Can AI help scientists identify promising drug candidates?",
+      "summary": "OpenAI 发布药物化学推理基准 MedChemBench：99 道题取自 117 篇论文与专利、涉及 761 个不同分子结构，大多给出某研究项目在特定时点可获得的上下文（靶点、目标、已研究化合物与部分实验结果）。评分覆盖分子结构重建、实验证据解释、化合物比较与挑选、性质预测四部分。在 xhigh 推理设置下，GPT-6.2 Astra 得到 84.5% 的分数，GPT-6 Astra 83.3%、GPT-6.1 Sol 82.0%、GPT-5.6 Sol 58.2%；挑选化合物与预测数值性质更难。基准是回溯性的，不等于前瞻性药物发现或湿实验验证。发布于上期早六窗口内、上期未收。",
+      "authors": "OpenAI",
+      "link": "https://openai.com/index/introducing-medchembench/"
+    }
+  ],
+  "models": [
+    {
+      "name": "本窗无可核验的前沿模型发布",
+      "vendor": "—",
+      "highlight": "上海时间 11 月 21 日 06:00 至 22 日 06:00，未见可核验的新一代前沿旗舰或主流开放权重模型官方发布。Inkling 2 Mini 与 Hy4 正式版权重已在昨日（11-21）日报记录；蚂蚁 inclusionAI 的生理信号编码器 LingSante-Pulse-1.0（MIT，约 1670 万参数）于 11 月 20 日在 Hugging Face 建仓，属窗外，在此附记。",
+      "link": "https://huggingface.co/inclusionAI/LingSante-Pulse-1.0"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Dragos 向 AI 供应链投放约 200 万个金丝雀：部分路由与推理服务商留存提示词、凭据被盗，「零数据保留」未必兑现",
+      "summary": "Ars Technica 报道，安全公司 Dragos 的研究人员在发往 OpenRouter、Vercel 等 AI 路由及其背后推理服务商的请求中埋入金丝雀凭据与标记，持续数月观察其去向；即便在声明零数据保留（ZDR）的设置下，也看到隐私承诺被打破、密钥被窃取。按 Dragos 披露，部分服务商显示出被主动入侵的迹象，一些转售方通过普通日志留存了提示词。对把私有代码、密钥交给智能体再经路由分发的团队，这意味着「选哪个模型」之外还要核对「请求到底经过了谁」。OpenRouter 的处置见明日日报。",
+      "source": "Ars Technica / Dragos",
+      "link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+      "models": []
+    }
+  ]
+}
