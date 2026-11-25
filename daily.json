@@ -1,5 +1,25 @@
 [
   {
+    "d": "2026-11-26",
+    "w": "星期四",
+    "pts": [
+      "DeepMind 发布 Mass Spec Skills：100 个已入库化合物上，Gemini 3.8 Flash 与 Gemini 4 Argon / Carbon 精确鉴定约 97%；无技能时低于 4%",
+      "CNBC：BIS 收紧远程使用先进算力后，卖家为英伟达高端 GPU 另寻买家；已有数以千计 B300 询价被拿出",
+      "补记：Google Workspace MCP 与官方 CLI 正式可用，智能体须经 MCP 访问，技术执行自 2027-02-01 起",
+      "补记：Anthropic 推出 Skills over MCP 公开测试，Tasks / Elicitation 正式可用；Claude 桌面端 Install as app 开始测试",
+      "补记：Meta Muse 登陆英国；CMA 称接触后已改条款，ICO 称约定自愿监测",
+      "补记：xAI 三位联合创始人推出 Epochal Time Portal（超 1 万亿页、30 年存档）；媒体称张国栋投入 1 亿美元，官方博客未写融资额",
+      "论文：ContextLure／TACT-Bench／GUI 四钟／Agent Kernel／ReBEal／LimoBench"
+    ],
+    "link": "AI日报-2026-11-26.html",
+    "m": [
+      "Gemini 3.8 Flash",
+      "Gemini 4 Argon",
+      "Gemini 4 Carbon"
+    ],
+    "bf": false
+  },
+  {
     "d": "2026-11-25",
     "w": "星期三",
     "pts": [

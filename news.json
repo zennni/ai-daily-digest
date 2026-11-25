@@ -1,5 +1,49 @@
 [
   {
+    "t": "DeepMind 发布 Mass Spec Skills：为 Google Antigravity 配上质谱鉴定技能，轻量模型也可达到约 97% 精确匹配",
+    "s": "Google DeepMind 11 月 25 日博客宣布，推出面向 Google Antigravity 的 Mass Spec Skills。这组技能把 Gemini 的化学推理与开源质谱工具、公开化学数据库查询接在一起，由 Antigravity 按用户任务选择并串联，最终给出可供化学家审阅的证据报告。官方在 MoNA 数据库的 Enamine REAL MS/MS 子集上抽了 100 个化合物（结构亦收入 PubChem），并去掉碎裂不足的谱图，用三种模型对比三种设置：Gemini 3.8 Flash，以及前沿模型 Gemini 4 Argon、Gemini 4 Carbon。无网络、无技能时，三种模型的准确率都低于 4%；只给有限上网、让模型临时写检索脚本时，前沿模型仍会漏掉四分之一到三分之一的谱图，轻量模型漏得更多；加上 Mass Spec Skills 后，三种模型都在约 97% 的尝试中鉴定并核验到正确分子，轻量模型与前沿模型持平（每个谱图尝试三次）。官方还称，技能减少了每轮生成的 token：Flash 约降到原来的近四分之一，Argon 约一半，Carbon 约降五分之一。文章同时写明做不到的事：镜像分子和部分近缘异构体碎裂方式几乎相同，需要保留时间、离子淌度或核磁才能区分；数据库里没有的全新分子，智能体也不能自行检索或确认结构，只能提供分子式、峰归属和注释表作为起点。技能即日起可在 Antigravity 中作为插件安装；官方还表示，将向 1 万名科研人员提供为期 6 个月的最高用量档，滚动准入，视资格、容量与遴选而定。",
+    "d": "2026-11-25",
+    "src": "Google DeepMind",
+    "link": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+    "m": [
+      "Gemini 3.8 Flash",
+      "Gemini 4 Argon",
+      "Gemini 4 Carbon"
+    ]
+  },
+  {
+    "t": "CNBC：美国收紧对华远程使用先进算力后，英伟达高端 GPU 卖家正在另寻买家",
+    "s": "CNBC 11 月 25 日 12:28 EST（上海时间 26 日 01:28）报道，三名消息人士称，特朗普政府收紧规则、限制中国相关客户远程使用最先进人工智能系统后，英伟达芯片卖家正在为这些硬件寻找新买家。美国商务部工业与安全局（BIS）公布的临时最终规则，针对的是通过海外数据中心远程使用先进芯片、以绕开对华高端芯片出售禁令的安排；报道写明该规则于 11 月 16 日宣布，11 月 19 日生效。人工智能基础设施交易平台 GPU Mart 总裁 Jack Duhamel 以及两名知情人士对 CNBC 表示，规则公布后市场上出现了异常大的 GPU 供应量，其中一人还提到有卖家明确把出售原因归于新规。Duhamel 与其中一名消息人士称，已有数以千计的 B300 交易被拿出询价。英伟达拒绝置评；BIS 当时未立即回应。美国贸易代表 Jamieson Greer 当天在 CNBC《Squawk Box》上称，上周公布的规则是为了堵住「漏洞」，包括经东南亚转运，以及经第三国数据中心的远程使用。报道还回顾，众议院已通过、参议院尚未通过的《远程访问安全法》会进一步扩大政府对云服务访问的管制权；英伟达曾警告客户，该法案可能使双方面临「法律行动」。英伟达 11 月 17 日三季度财报会上，时任临时 CEO Colette Kress 表示公司仍在研究这些管制，但预计业绩将保持强劲，因为芯片需求远大于供给。",
+    "d": "2026-11-25",
+    "src": "CNBC",
+    "link": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+    "m": []
+  },
+  {
+    "t": "补记：Google 宣布 Workspace MCP 服务器与官方 CLI 正式可用，并要求智能体改走 MCP",
+    "s": "Google Workspace Updates 11 月 24 日公告：面向云端与网页智能体的 Workspace Model Context Protocol（MCP）服务器，以及面向本地终端、虚拟机和容器的官方 Workspace CLI，一并正式可用。Google 托管的 MCP 工具覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat 与 Tasks，Keep 即将跟上。更大的政策变化是：智能体或类似访问工具必须通过 MCP 访问 Workspace 数据，而不是直接调用 Workspace REST API；技术执行自 2027 年 2 月 1 日起。同期，Workspace API（含 MCP 与 CLI）开始实行两档用量，先从 Gmail、Drive 与 Calendar 起步：Standard 档免费并公布配额；Scaled 档面向更高配额需求，自 2027 年 4 月 1 日起只对超出每日免费额度的用量计费，若不选择该档，项目可能被限制在已公布的配额内。官方还推出 Workspace AI Tools Addendum，禁止用智能体抓取 Workspace API，或长时间保存某些由 API 使用派生的数据；管理员可获得智能体审计日志、自动数据丢失防护，以及要求用户确认敏感操作（例如读取外部文件或分享数据）的能力。11 月 24 日发布，昨日稿未收，本期补记。",
+    "d": "2026-11-24",
+    "src": "Google Workspace",
+    "link": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "m": []
+  },
+  {
+    "t": "补记：Meta 个人智能体 Muse 在英国上线；CMA 称接触后已改条款，ICO 称约定自愿监测",
+    "s": "Meta 官方新闻稿标注 2026 年 11 月 23 日（页面亦出现 11 月 24 日更新）：个人智能体 Muse 在英国面向 18 岁及以上用户开放，可在 iOS、Android、muse.ai 与 WhatsApp 使用，并计划在随后数月进入 Meta AI 眼镜。官方称，Muse 在云端拥有一台虚拟计算机，发送邮件或购物等重要操作前会征求同意，看不到用户密码或支付方式；对话和虚拟机中的数据不进入 Meta 广告系统，用户可在设置中关闭把互动用于训练。多数功能免费，另有订阅计划。英国合作伙伴包括 Marks & Spencer、Currys、Ocado Retail、Trainline、Sainsbury's、easyJet、JD Sports 等。英国竞争与市场管理局（CMA）11 月 24 日声明：英国消费者保护法适用于此类个人智能体；在与 Meta 接触后，Meta 已修改条款，使之对消费者更公平，CMA 将继续观察 Muse 的展示与实际运行，若有疑虑会采取行动。信息专员办公室（ICO）同日声明称，已在上线前向 Meta 明确数据保护责任，Meta 承诺与 ICO 建立自愿监测与报告安排。此条落在更早窗口，11 月 25 日早八补刀时未扩补，本期补记。",
+    "d": "2026-11-23",
+    "src": "Meta / CMA / ICO",
+    "link": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+    "m": []
+  },
+  {
+    "t": "补记：xAI 三位联合创始人成立 Epochal，推出可按历史时刻浏览互联网的 Time Portal",
+    "s": "Epochal 11 月 24 日官方博客宣布成立，团队包括 xAI 创始团队的张国栋（Guodong Zhang）、Zihang Dai、Manuel Kroiss，以及 Alex Bocharoff 与 Frank Luan。首款产品 Epochal Time Portal 是一个按时间门控的沙箱，让智能体检索并浏览某一过去日期当时的互联网，以便在看不到结局的前提下练习预测。官方称，底层是带时间戳的互联网存档与支持历史时刻检索的索引，已收录超过 1 万亿页、覆盖约 30 年历史，粒度可到分钟。SiliconANGLE 与 The Next Web 报道称，张国栋个人投入 1 亿美元（后者写明这一数字援引彭博）；官方博客未写融资额或投资人。The Next Web 还提到，目前仅提供用量较低的免费档。11 月 24 日发布，昨日稿未收，本期补记。",
+    "d": "2026-11-24",
+    "src": "Epochal",
+    "link": "https://epochal.com/blog/introducing-epochal",
+    "m": []
+  },
+  {
     "t": "Anthropic 收盘跌 6.5%，跌破 83 美元发行价；分析师仍偏多，英伟达同步回吐周一涨幅",
     "s": "CNBC 11 月 24 日报道，Anthropic 股票周二收盘下跌 6.5%，跌破公司 83 美元的发行价。该股上周四在纳斯达克开盘报 111.50 美元；CNBC 称本次 IPO 募资 813 亿美元，为有史以来最大规模发行。报道还提到，发行时机构认购超额，约一半下单的机构投资者未能获配，但在市场波动时这些机构似乎并未急于买回。TechCrunch 称，该股周二午盘最低至 76 美元，较周一收盘跌近 12%；英伟达午盘跌逾 7%，回吐周一黄仁勋复任后逾 30% 涨幅的一部分。AMD、英特尔以及 CoreWeave、IREN、Nebius 等「新云」公司盘中亦下跌。分析师侧，Canaccord Genuity 周二给予买入评级、目标价 135 美元；Oppenheimer 给予跑赢大盘、目标价 150 美元；Wedbush 周一已给跑赢大盘、目标价 120 美元。CNBC 强调市场仍在消化英伟达董事会戏剧性复任，以及围绕万亿美元级基础设施开支能否兑现的争论。",
     "d": "2026-11-24",

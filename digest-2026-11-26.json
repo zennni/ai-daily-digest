@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "date": "2026-11-26",
+    "week": "星期四",
+    "note": "今日主题词：技能进实验室，访问加闸。采集窗口约为上海时间 11 月 25 日 06:00 至 26 日 06:00。本窗内，DeepMind 发布面向 Google Antigravity 的 Mass Spec Skills：在 MoNA 里 Enamine REAL 的 100 个已入库化合物上，搭配技能后 Gemini 3.8 Flash 与 Gemini 4 Argon、Gemini 4 Carbon 都将精确分子鉴定与核验做到约 97%；无网络、无技能时三种模型准确率都低于 4%。官方同时写明局限：镜像分子和部分近缘异构体无法只靠 LC-MS/MS 区分，数据库中没有的全新分子也不能由智能体单独确认，并向 1 万名科研人员提供为期 6 个月的最高用量档（滚动准入，视资格与容量而定）。市场与管制一侧，CNBC 11 月 25 日引述消息称，美国商务部 BIS 11 月 16 日公布、11 月 19 日生效的临时最终规则收紧中国相关客户远程使用先进算力后，卖家正在为英伟达高端 GPU 另寻买家；GPU Mart 总裁与两名知情人士称，已有数以千计的 B300 询价被拿出。英伟达拒绝置评。补记昨日窗口未收或早八未扩补的几项：Google 11 月 24 日宣布 Workspace MCP 服务器与官方 CLI 正式可用，并规定智能体须经 MCP 访问 Workspace 数据，技术执行自 2027 年 2 月 1 日起；Anthropic 在 MCP 两周年把 Skills over MCP 推入公开测试，Tasks 与 Elicitation 正式可用；The Verge 11 月 24 日 23:04 UTC（上海时间 25 日 07:04）报道 Claude 桌面端「Install as app」开始测试。另补记 Meta 11 月 23 日在英国上线个人智能体 Muse，CMA 称接触后 Meta 已修改条款，ICO 称双方约定自愿监测。一句话：技能把实验室流程串了起来，访问通道和监管闸门也同时收紧。"
+  },
+  "highlights": [
+    {
+      "title": "DeepMind 发布 Mass Spec Skills：100 个已入库化合物上，轻量模型与前沿模型都将精确鉴定做到约 97%",
+      "summary": "官方 11 月 25 日博客：在 MoNA 的 Enamine REAL 子集、三种 Gemini 上对比；无网络无技能时准确率都低于 4%。官方写明无法只靠质谱区分镜像分子，也不能独立确认库中没有的新分子。"
+    },
+    {
+      "title": "CNBC：BIS 收紧远程使用先进算力后，卖家正为英伟达高端 GPU 另寻买家",
+      "summary": "规则 11 月 16 日公布、19 日生效。GPU Mart 总裁与两名知情人士称，已有数以千计的 B300 询价被拿出。英伟达拒绝置评。美国贸易代表 Greer 称旨在堵住经第三国数据中心的间接使用。"
+    },
+    {
+      "title": "补记：Google Workspace MCP 服务器与官方 CLI 正式可用；智能体须经 MCP 访问，技术执行自 2027 年 2 月 1 日起",
+      "summary": "覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat 与 Tasks（Keep 即将跟上）。同期推出 Standard / Scaled 两档用量，Scaled 自 2027 年 4 月 1 日起对超出每日免费额度的用量计费。11 月 24 日公告，昨日稿未收。"
+    },
+    {
+      "title": "补记：Anthropic 在 MCP 两周年推出 Skills over MCP 公开测试，Tasks 与 Elicitation 正式可用",
+      "summary": "官方称 MCP 每月 SDK 下载量超过 7 亿、面向 Claude 的连接器超过 1 万个。File Uploads 即将推出。Shopify、HubSpot、Atlassian 为 Skills 早期用户。"
+    },
+    {
+      "title": "Claude 桌面端「Install as app」开始测试：把 Artifact 装成 Mac / Windows 应用",
+      "summary": "The Verge 11 月 24 日 23:04 UTC（上海时间 25 日 07:04）报道。官方称三种权限档，许可只覆盖当前版本；Anthropic 安装前不做审查。HIPAA 就绪与混合部署不可用。"
+    },
+    {
+      "title": "补记：Meta 个人智能体 Muse 登陆英国；CMA 称接触后条款已改，ICO 称约定自愿监测",
+      "summary": "官方新闻稿标注 11 月 23 日（页面亦见 24 日更新），面向 18 岁及以上，可在 iOS、Android、muse.ai 与 WhatsApp 使用。早八稿未扩补，本期补入。"
+    },
+    {
+      "title": "补记：xAI 三位联合创始人推出 Epochal Time Portal，按过去某一时刻浏览互联网存档",
+      "summary": "官方 11 月 24 日称已索引超过 1 万亿页、跨度 30 年，热门页可到分钟级。SiliconANGLE 与 The Next Web 称张国栋个人投入 1 亿美元（后者写明援引彭博）；官方博客未写融资额。"
+    },
+    {
+      "title": "论文：ContextLure／TACT-Bench／GUI 四钟／Agent Kernel／ReBEal／LimoBench",
+      "summary": "11 月 25 日 arXiv 新批次。ContextLure 用良性对话证据做间接注入；TACT-Bench 测策略约束下的对话操纵；LimoBench 显示未接地模型路况问答准确率很低，经 MCP 空间工具后接近全对。"
+    }
+  ],
+  "news": [
+    {
+      "title": "DeepMind 发布 Mass Spec Skills：为 Google Antigravity 配上质谱鉴定技能，轻量模型也可达到约 97% 精确匹配",
+      "summary": "Google DeepMind 11 月 25 日博客宣布，推出面向 Google Antigravity 的 Mass Spec Skills。这组技能把 Gemini 的化学推理与开源质谱工具、公开化学数据库查询接在一起，由 Antigravity 按用户任务选择并串联，最终给出可供化学家审阅的证据报告。官方在 MoNA 数据库的 Enamine REAL MS/MS 子集上抽了 100 个化合物（结构亦收入 PubChem），并去掉碎裂不足的谱图，用三种模型对比三种设置：Gemini 3.8 Flash，以及前沿模型 Gemini 4 Argon、Gemini 4 Carbon。无网络、无技能时，三种模型的准确率都低于 4%；只给有限上网、让模型临时写检索脚本时，前沿模型仍会漏掉四分之一到三分之一的谱图，轻量模型漏得更多；加上 Mass Spec Skills 后，三种模型都在约 97% 的尝试中鉴定并核验到正确分子，轻量模型与前沿模型持平（每个谱图尝试三次）。官方还称，技能减少了每轮生成的 token：Flash 约降到原来的近四分之一，Argon 约一半，Carbon 约降五分之一。文章同时写明做不到的事：镜像分子和部分近缘异构体碎裂方式几乎相同，需要保留时间、离子淌度或核磁才能区分；数据库里没有的全新分子，智能体也不能自行检索或确认结构，只能提供分子式、峰归属和注释表作为起点。技能即日起可在 Antigravity 中作为插件安装；官方还表示，将向 1 万名科研人员提供为期 6 个月的最高用量档，滚动准入，视资格、容量与遴选而定。",
+      "date": "2026-11-25",
+      "source": "Google DeepMind",
+      "link": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "models": [
+        "Gemini 3.8 Flash",
+        "Gemini 4 Argon",
+        "Gemini 4 Carbon"
+      ]
+    },
+    {
+      "title": "CNBC：美国收紧对华远程使用先进算力后，英伟达高端 GPU 卖家正在另寻买家",
+      "summary": "CNBC 11 月 25 日 12:28 EST（上海时间 26 日 01:28）报道，三名消息人士称，特朗普政府收紧规则、限制中国相关客户远程使用最先进人工智能系统后，英伟达芯片卖家正在为这些硬件寻找新买家。美国商务部工业与安全局（BIS）公布的临时最终规则，针对的是通过海外数据中心远程使用先进芯片、以绕开对华高端芯片出售禁令的安排；报道写明该规则于 11 月 16 日宣布，11 月 19 日生效。人工智能基础设施交易平台 GPU Mart 总裁 Jack Duhamel 以及两名知情人士对 CNBC 表示，规则公布后市场上出现了异常大的 GPU 供应量，其中一人还提到有卖家明确把出售原因归于新规。Duhamel 与其中一名消息人士称，已有数以千计的 B300 交易被拿出询价。英伟达拒绝置评；BIS 当时未立即回应。美国贸易代表 Jamieson Greer 当天在 CNBC《Squawk Box》上称，上周公布的规则是为了堵住「漏洞」，包括经东南亚转运，以及经第三国数据中心的远程使用。报道还回顾，众议院已通过、参议院尚未通过的《远程访问安全法》会进一步扩大政府对云服务访问的管制权；英伟达曾警告客户，该法案可能使双方面临「法律行动」。英伟达 11 月 17 日三季度财报会上，时任临时 CEO Colette Kress 表示公司仍在研究这些管制，但预计业绩将保持强劲，因为芯片需求远大于供给。",
+      "date": "2026-11-25",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+      "models": []
+    },
+    {
+      "title": "补记：Google 宣布 Workspace MCP 服务器与官方 CLI 正式可用，并要求智能体改走 MCP",
+      "summary": "Google Workspace Updates 11 月 24 日公告：面向云端与网页智能体的 Workspace Model Context Protocol（MCP）服务器，以及面向本地终端、虚拟机和容器的官方 Workspace CLI，一并正式可用。Google 托管的 MCP 工具覆盖 Gmail、Drive、Docs、Sheets、Slides、Calendar、Chat 与 Tasks，Keep 即将跟上。更大的政策变化是：智能体或类似访问工具必须通过 MCP 访问 Workspace 数据，而不是直接调用 Workspace REST API；技术执行自 2027 年 2 月 1 日起。同期，Workspace API（含 MCP 与 CLI）开始实行两档用量，先从 Gmail、Drive 与 Calendar 起步：Standard 档免费并公布配额；Scaled 档面向更高配额需求，自 2027 年 4 月 1 日起只对超出每日免费额度的用量计费，若不选择该档，项目可能被限制在已公布的配额内。官方还推出 Workspace AI Tools Addendum，禁止用智能体抓取 Workspace API，或长时间保存某些由 API 使用派生的数据；管理员可获得智能体审计日志、自动数据丢失防护，以及要求用户确认敏感操作（例如读取外部文件或分享数据）的能力。11 月 24 日发布，昨日稿未收，本期补记。",
+      "date": "2026-11-24",
+      "source": "Google Workspace",
+      "link": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+      "models": []
+    },
+    {
+      "title": "补记：Meta 个人智能体 Muse 在英国上线；CMA 称接触后已改条款，ICO 称约定自愿监测",
+      "summary": "Meta 官方新闻稿标注 2026 年 11 月 23 日（页面亦出现 11 月 24 日更新）：个人智能体 Muse 在英国面向 18 岁及以上用户开放，可在 iOS、Android、muse.ai 与 WhatsApp 使用，并计划在随后数月进入 Meta AI 眼镜。官方称，Muse 在云端拥有一台虚拟计算机，发送邮件或购物等重要操作前会征求同意，看不到用户密码或支付方式；对话和虚拟机中的数据不进入 Meta 广告系统，用户可在设置中关闭把互动用于训练。多数功能免费，另有订阅计划。英国合作伙伴包括 Marks & Spencer、Currys、Ocado Retail、Trainline、Sainsbury's、easyJet、JD Sports 等。英国竞争与市场管理局（CMA）11 月 24 日声明：英国消费者保护法适用于此类个人智能体；在与 Meta 接触后，Meta 已修改条款，使之对消费者更公平，CMA 将继续观察 Muse 的展示与实际运行，若有疑虑会采取行动。信息专员办公室（ICO）同日声明称，已在上线前向 Meta 明确数据保护责任，Meta 承诺与 ICO 建立自愿监测与报告安排。此条落在更早窗口，11 月 25 日早八补刀时未扩补，本期补记。",
+      "date": "2026-11-23",
+      "source": "Meta / CMA / ICO",
+      "link": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+      "models": []
+    },
+    {
+      "title": "补记：xAI 三位联合创始人成立 Epochal，推出可按历史时刻浏览互联网的 Time Portal",
+      "summary": "Epochal 11 月 24 日官方博客宣布成立，团队包括 xAI 创始团队的张国栋（Guodong Zhang）、Zihang Dai、Manuel Kroiss，以及 Alex Bocharoff 与 Frank Luan。首款产品 Epochal Time Portal 是一个按时间门控的沙箱，让智能体检索并浏览某一过去日期当时的互联网，以便在看不到结局的前提下练习预测。官方称，底层是带时间戳的互联网存档与支持历史时刻检索的索引，已收录超过 1 万亿页、覆盖约 30 年历史，粒度可到分钟。SiliconANGLE 与 The Next Web 报道称，张国栋个人投入 1 亿美元（后者写明这一数字援引彭博）；官方博客未写融资额或投资人。The Next Web 还提到，目前仅提供用量较低的免费档。11 月 24 日发布，昨日稿未收，本期补记。",
+      "date": "2026-11-24",
+      "source": "Epochal",
+      "link": "https://epochal.com/blog/introducing-epochal",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "ContextLure：从良性对话里抽证据，加强事后的间接提示注入",
+      "titleEn": "ContextLure: Exploiting Benign Conversation History for Indirect Prompt Injection",
+      "summary": "香港科技大学（广州）与武汉大学团队提出红队框架 ContextLure：攻击者只旁观已发生的良性多轮对话，从中抽取用户或系统偏好等证据，再在未改写前序对话的前提下，把这些证据改写成未授权操作的理由，放入工具返回、网页或邮件等不可信通道。评估中，该方法在 AgentDojo 上的攻击成功率（ASR）为 67.4%，在 InjecAgent 上为 87.3%。作者的结论是：不必先污染良性对话，事后利用这些记录就足以加强间接注入。",
+      "authors": "Yi Han, Zhen Sun, Zhijie Deng, Yini Huang, Yangyang Zheng, Dongyi Zhang, Xinlei He",
+      "link": "https://arxiv.org/abs/2611.31424"
+    },
+    {
+      "title": "TACT-Bench：在同一段对话里，既要挡住越权，又不能把正经事丢掉",
+      "titleEn": "TACT-Bench: Testing Adaptive Conversational Threats against Tool-Use Agents",
+      "summary": "普渡大学与奥尔巴尼大学团队发布面向带策略约束的工具智能体的对话威胁基准。对抗任务针对助手策略明确禁止的动作，且策略对攻击用户隐藏；每道对抗题至少配一道良性对照，并能在仍有合规解法时保留可执行的正当动作。TACT-TrustPrime 还会在无关攻击前先插入一道独立的良性任务。按 6 个助手模型平均，TACT-Base 比 4 个可比攻击基线把攻击诱发失败率（AFR）提高 17.53 个百分点，TrustPrime 再提高 17.01 个百分点；所评的两种防御只把 AFR 平均降了 8.35%–9.41%，且不一定改善「该拒则拒、该做仍能做」的成对可信指标 PST。",
+      "authors": "Ilia Hashemi Rad, Feijie Wu, Haoyu Wang, Jing Gao",
+      "link": "https://arxiv.org/abs/2611.31756"
+    },
+    {
+      "title": "一步四钟：GUI 智能体选对了动作，仍可能跟不上还在变化的界面",
+      "titleEn": "One Step, Four Clocks: How GUI Agents Fall Out of Step",
+      "summary": "作者把界面交互拆成四个时刻：环境变化、观察到达、决策提交、动作被界面接收（EODA），并推出 ChronotopeGym，在暂停、回放和实时三种执行条件下做测试。文章指出，智能体可能在「动作仍然有效」的设定里成功，到了实时界面却失败，即使动作本身没有超过时限。在 Moving Balloon 任务中，只改「把待发送的点击更新到最新位置」、不改变响应时间，成功率从 0% 升到 100%。他们提出的加速器侧控制器 Chronotope 会选择保留、更新或重新决定待发送动作；与 Agent S3 相比，在一个 27B 模型上把端到端延迟中位数降低 85.5%，并在 8 秒时限的实时条件下把成功率从 0% 做到 100%。",
+      "authors": "Zhanwen Chen, Tianchun Wang",
+      "link": "https://arxiv.org/abs/2611.31522"
+    },
+    {
+      "title": "给智能体做 fork()：失败时只收回子图，保住已经做完的兄弟节点",
+      "titleEn": "fork() for Agents: Agent Kernel for Non-blocking LLM Orchestration",
+      "summary": "Ankit Chadha 与 Pratyay Banerjee 提出非阻塞运行时 Agent-Kernel，其核心原语 Sub-Graph Recovery（SGR）在原始异常触发时，重置失败节点的后代、保留已完成的兄弟节点，并把父节点文本写入子节点提示。作者称无需训练验证器或规划器。在 14,434 次运行（含 tau-bench、Gaia2、AutomationBench、InterruptBench）中，预算为 3 时 SGR 达到全恢复，整段轨迹重放仅为 55%，并称比经过改造、同样能恢复的 Sherlock 回滚大约快 10 倍；在结构允许时并行最高可加速 12.7 倍。去掉 SGR 的消融把成功率降到 39.4%。",
+      "authors": "Ankit Chadha, Pratyay Banerjee",
+      "link": "https://arxiv.org/abs/2611.31727"
+    },
+    {
+      "title": "ReBEal：人工参考译文已不再是最好的翻译，常用指标却未必看得出",
+      "titleEn": "ReBEal: Human References Are No Longer the Best Translation, and Metrics Do Not Notice",
+      "summary": "作者指出，基于参考译文的机器翻译评价假定「人工参考又对又更好」，但在 2024 年 WMT MQM 各场评测中，人工参考从未排到第一，且 19%–87% 的片段带有已标注错误。他们提出基准 ReBEal，用这些评测记录中的错误类型构造七类受控的参考污染，在 8 种常用指标、三对语言上测试。较新的学习型指标（xComet、MetricX）比前代更稳，但各有漏洞：表面指标对长度不敏感，污染可以藏在更长的句子里；学习型指标会把不相关语言的参考几乎当成正确。所有指标都没能稳定检出命名实体污染；在 9 个系统两两比较的 36 对里，最多可让 8 对排名翻转。",
+      "authors": "Ahrii Kim, Chanjun Park, Seong-heum Kim",
+      "link": "https://arxiv.org/abs/2611.32623"
+    },
+    {
+      "title": "LimoBench：大模型「识路」能力有限；经 MCP 接上空间工具后准确率接近满分",
+      "titleEn": "LimoBench: How Street Smart Are Large Language Models?",
+      "summary": "作者用美国印第安纳州西拉法叶的真实地图，构造 82 条自然语言位置问句，覆盖地理编码、逆地理编码、路径、方向、范围检索、k 近邻和空间连接等七类操作，用来测大模型的街道级空间意识。未接地时，模型准确率多在个位数，文中举例 GPT-6 Luna 为 3.1%；接上他们基于 MCP、背后为 PostGIS 的 Limo 空间工具后，同一模型准确率达到 99.3%。作者称，对 GPT-6 Luna 而言额外开销约为延迟 +0.2 秒、token 7.7 倍、费用 2.2 倍。这说明当前模型的街道级知识并不可靠，但用工具接地可以补上。",
+      "authors": "Gautam Choudhary, Jack Peng 等",
+      "link": "https://arxiv.org/abs/2611.31682"
+    }
+  ],
+  "models": [
+    {
+      "name": "Gemini 3.8 Flash / Gemini 4 Argon / Gemini 4 Carbon（质谱鉴定对比）",
+      "vendor": "Google DeepMind",
+      "highlight": "这不是新模型发布，而是 Mass Spec Skills 评测里的同口径对比。官方在 100 张已入库参考谱上、每个谱三次尝试：三种模型在无网络、无技能时准确率都低于 4%；加上技能后都将精确分子鉴定与核验做到约 97%，轻量的 Gemini 3.8 Flash 与 Gemini 4 Argon、Gemini 4 Carbon 持平。生成 token 方面，官方称 Flash 约降到原来的近四分之一，Argon 约一半，Carbon 约降五分之一。数字来自 DeepMind 博客，不是本站或 Artificial Analysis 的同口径评分，不入主榜。",
+      "link": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "补记：Workspace 把 MCP 设成智能体访问 Gmail 与 Drive 等数据的正门",
+      "summary": "与新闻栏同一项工作的生态侧面：Google 11 月 24 日把 Workspace MCP 服务器和官方 CLI 推到正式可用，并给出明确时间表——2027 年 2 月 1 日起对「智能体须走 MCP、不得直接打 REST」做技术执行；Scaled 用量档 2027 年 4 月 1 日起对超出免费额度的调用计费。这意味着 Workspace 生态里的智能体接入，将从「各写各的 API 集成」转向官方托管的协议入口，并配上审计、数据丢失防护和敏感操作确认。11 月 24 日公告，昨日稿未收。",
+      "source": "Google Workspace",
+      "link": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+      "models": []
+    },
+    {
+      "title": "补记：MCP 两周年，Anthropic 让服务器可以下发 Skills，并正式开放 Tasks 与 Elicitation",
+      "summary": "Anthropic 官方文章：Skills over MCP 进入 Claude 与 Claude Code 公开测试，服务器可在提供工具的同时发布技能，Claude 仅在需要时加载；默认对 Pro、Max、Ultra 开启，Team 需管理员打开，Enterprise 即将跟上。早期用户包括 Shopify、HubSpot、Atlassian，Carta 即将加入。Tasks 允许服务器在后台跑耗时操作或完整智能体循环，Claude 可继续工作再取回结果；Elicitation 允许服务器中途停下来，通过表单或链接征求用户确认后再继续。这两项已对 Pro、Max、Ultra 正式可用，并正在向 Team 与 Enterprise 推开。官方举例：Supabase 在创建付费项目或执行破坏性 SQL 前确认费用，GitHub 要求用户输入仓库名才允许删除。File Uploads 即将推出，可把 PDF、表格和图片交给服务器而不经过上下文窗口。官方还称，MCP 每月 SDK 下载量超过 7 亿，面向 Claude 的连接器超过 1 万个；工具搜索可在多服务器场景把工具定义占用的上下文减少 85% 以上。这些能力属于开放 MCP 规范及其扩展，并不绑定 Claude。11 月 24 日前后发布，昨日稿未收。",
+      "source": "Anthropic",
+      "link": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more",
+      "models": []
+    },
+    {
+      "title": "Claude 桌面端上线「Install as app」测试：Artifact 可变成带图标的 Mac / Windows 应用",
+      "summary": "Anthropic 官方称，可在 Mac 与 Windows 版 Claude 里把常用 Artifact 安装成独立桌面应用，拥有自己的图标和窗口，并能使用 Claude 与已接入的连接器；对 Claude 的请求计入当前套餐用量。权限分三档：默认（仅相当于浏览器里能做的事）、应用权限（通知、全局快捷键、置顶窗口等）、完全访问计算机（可运行程序并读写或删除文件，且不必每次再问）。许可只覆盖当前版本，每次更新后会再问一次。完全访问只适用于用户自己做的应用，或 Team / Enterprise 里本组织成员做的应用；Anthropic 安装前不做审查。该功能在所有套餐以测试版推开，但对 HIPAA 就绪组织和混合部署不可用；Team 默认打开但关闭完全访问，Enterprise 需所有者开启。The Verge 时间戳为 11 月 24 日 23:04 UTC（上海时间 25 日 07:04），落在昨日早六/早八之后，本期收入。",
+      "source": "Anthropic / The Verge",
+      "link": "https://claude.com/resources/articles/install-as-app",
+      "models": []
+    }
+  ]
+}
