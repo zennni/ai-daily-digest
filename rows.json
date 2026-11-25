@@ -2834,6 +2834,16 @@
   "changes": [
     {
       "d": "11-25",
+      "t": "本地榜同步 v5.0.2 整数分：Inkling 12→13，Kimi K3.1 Pro 46→47，DeepSeek-V4.1-Flash 33→32",
+      "m": [
+        "Inkling",
+        "Kimi K3.1 Pro",
+        "DeepSeek V4.1 Flash（1017 当前正式版）"
+      ],
+      "s": "<b>今早全日量已将主表按 AA Index <u>v5.0.2</u> 重算（commit 5c9009c），本地部署价值榜静态章的整数分当时未跟同步，本窗补齐</b>。<b>与 v5.0.1 表相比：① <code>Inkling</code> xHigh 仍为 12.5，主表四舍五入由 12 改为 <u>13</u>（High 档仍为 11），512GB 与数据中心档 AA 列 12→13，档内名次不变</b>；<b>② <code>Kimi K3.1 Pro</code> Max 由 46.5（46）改为 <u>46.6（47）</u>，数据中心档 AA 列与相关点评同步，因体积约 1.56TB 仍维持既有第⑦，不重排</b>；<b>③ 本地 512GB 档写作 <code>DeepSeek-V4.1-Flash</code> 的条目对应主表「DeepSeek V4.1 Flash（1017 当前正式版）」默认档，分数 32.6（33）→<u>32.4（32）</u>，仍夹在 2.4T 的 34 与 Ling-3.1-flash 的 30 之间，名次不变</b>。<b>其余本地榜已展示的同口径整数分（Hy4 35、Inkling 2 Small 31、Ling-3.1-flash 30、Reflection Beam 1.0 18、Muse Glimmer 30B 6 等）与现行主表／AA 一致，未改</b>。<b>不改日报正文；主表模型数仍为 123，汇率仍沿用 11-24 9:15 中间价 6.7111（11-25 中间价本窗尚未公布）</b>。"
+    },
+    {
+      "d": "11-25",
       "t": "AA Index v5.0.1→v5.0.2 全表重算：Granite 4.2 三款失去同口径分退出，主表 126→123",
       "m": [
         "Granite 4.2 30B",
