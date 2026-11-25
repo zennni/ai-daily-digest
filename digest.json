@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-11-25",
     "week": "星期三",
-    "note": "今日主题词：回撤之后，进实验室。采集窗口约为上海时间 11 月 24 日 06:00 至 25 日 06:00（美国周一夜间到周二收盘）。昨日稿写下黄仁勋复位后的暴涨；本窗公开市场先把涨幅吐回去——CNBC：Anthropic 收盘跌 6.5%，跌破 83 美元发行价（上周四开盘 111.50 美元；CNBC 称本次 IPO 募资 813 亿美元、为有史以来最大规模发行）；TechCrunch：该股午盘最低至 76 美元，较周一收盘跌近 12%，英伟达午盘跌逾 7%，回吐周一逾 30% 涨幅的一部分。实验室一侧却在交卷：OpenAI 11 月 24 日发布预印本并披露与 Onava 的湿实验，称 GPT-6 系列可只靠推理与通用代码设计蛋白质三维结构与序列；322 个小蛋白中 35 个（10.9%）对五个靶点显示结合，但完整结构预测仍是明显短板，候选筛选仍靠专用模型。补记昨日窗口未收的 DeepMind 工作：与 Google Quantum AI 合作，用 Gemini 4 智能体团队加 Lean 形式化验证改进量子线路，惯性约束聚变模拟的计算成本（量子比特与操作的综合度量）降 11.8 倍，纠错量子比特需求从 5,650 降至 4,338，arcsin 例程加速 290 倍。模型侧，腾讯 11 月 24 日开源 Hy-MT3 翻译家族（1.8B / 7B / 30B-A3B，公开代码与权重为 Apache 2.0），语言覆盖从 38 种扩到 102 种。一句话：股价可以一夜回吐，湿实验和形式化证明得一项项做实。"
+    "note": "今日主题词：回撤之后，进实验室。采集窗口约为上海时间 11 月 24 日 06:00 至 25 日 06:00（美国周一夜间到周二收盘）。昨日稿写下黄仁勋复位后的暴涨；本窗公开市场先把涨幅吐回去——CNBC：Anthropic 收盘跌 6.5%，跌破 83 美元发行价（上周四开盘 111.50 美元；CNBC 称本次 IPO 募资 813 亿美元、为有史以来最大规模发行）；TechCrunch：该股午盘最低至 76 美元，较周一收盘跌近 12%，英伟达午盘跌逾 7%，回吐周一逾 30% 涨幅的一部分。实验室一侧却在交卷：OpenAI 11 月 24 日发布预印本并披露与 Onava 的湿实验，称 GPT-6 系列可只靠推理与通用代码设计蛋白质三维结构与序列；322 个小蛋白中 35 个（10.9%）对五个靶点显示结合，但完整结构预测仍是明显短板，候选筛选仍靠专用模型。补记昨日窗口未收的 DeepMind 工作：与 Google Quantum AI 合作，用 Gemini 4 智能体团队加 Lean 形式化验证改进量子线路，惯性约束聚变模拟的计算成本（量子比特与操作的综合度量）降 11.8 倍，纠错量子比特需求从 5,650 降至 4,338，arcsin 例程加速 290 倍。模型侧，腾讯 11 月 24 日开源 Hy-MT3 翻译家族（1.8B / 7B / 30B-A3B，公开代码与权重为 Apache 2.0），语言覆盖从 38 种扩到 102 种。同窗内，DeepMind 11 月 24 日在 Kaggle 上线 Humanity's First Exam（HFE），用 544 道基础图文题衡量模型是否能稳定做对日常简单题；公开榜（Family pass⁴）首名为 GPT-6.2 Astra（xhigh）90.7%。早六稿未收，本期补入。一句话：股价可以一夜回吐，湿实验和形式化证明得一项项做实。"
   },
   "highlights": [
     {
@@ -12,6 +12,10 @@
     {
       "title": "OpenAI：GPT-6 系列具备内在蛋白质设计能力；与 Onava 的湿实验中 322 个小蛋白有 35 个（10.9%）显示结合",
       "summary": "官方称设计不调用专用生物学模型，只靠推理与通用代码；完整结构预测仍是短板，序列建议与候选筛选仍用 SolubleMPNN 等专用模型。"
+    },
+    {
+      "title": "DeepMind 发布 Humanity's First Exam（HFE）：544 道基础图文题，衡量模型能否稳定做对日常简单题",
+      "summary": "官方 11 月 24 日博客：基准在 Kaggle 上线，覆盖 20 项基础能力；竞赛三周至 12 月 15 日。Kaggle 公开榜（Family pass⁴）：GPT-6.2 Astra（xhigh）90.7%，GPT-6.2 Sol（xhigh）87.5%，Gemini 4 Neon（high）85.6%。早六稿未收。"
     },
     {
       "title": "补记：DeepMind 与 Quantum AI 用 Gemini 4 智能体团队加 Lean 验证，改进量子算法",
@@ -54,6 +58,18 @@
       "source": "OpenAI",
       "link": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
       "models": []
+    },
+    {
+      "title": "DeepMind 发布 Humanity's First Exam（HFE）：用 544 道基础图文题衡量模型是否能稳定做对日常简单题",
+      "summary": "Google DeepMind 11 月 24 日在官方博客宣布，在 Kaggle 上线 Humanity's First Exam（HFE）基准，用来衡量大模型能否在日常简单题上稳定做对，而不是只在高难度基准上测一次上限。官方称该数据集含 544 道基础文本与图像题，覆盖 20 项基础能力。Kaggle 页面写明：题目按 136 个四题扰动组组织，度量指标为 Family pass⁴（对全部 136 组取平均，并给出按组聚类的 95% 置信区间）；为降低过拟合风险，仅分层公开约 20% 题目（112 题 / 28 组，CC-BY-4.0），其余 80% 留作私有评测。公开榜前列为 GPT-6.2 Astra（xhigh）90.7%（±4.7%）、GPT-6.2 Sol（xhigh）87.5%（±5.1%）、Gemini 4 Neon（high）85.6%（±5.7%）。社区竞赛开放至 12 月 15 日，收集模型仍然会做错的日常问题，奖金为 5 万美元 Kaggle 周边。此条落在早六采集窗内但该期未收，本期补入。",
+      "date": "2026-11-24",
+      "source": "Google DeepMind / Kaggle",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/",
+      "models": [
+        "GPT-6.2 Astra",
+        "GPT-6.2 Sol",
+        "Gemini 4 Neon"
+      ]
     },
     {
       "title": "补记：DeepMind 与 Google Quantum AI 用 Gemini 4 智能体团队加 Lean 证明，改进面向聚变与药物设计的量子线路",
