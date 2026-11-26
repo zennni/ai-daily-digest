@@ -2,7 +2,7 @@
   "meta": {
     "date": "2026-11-26",
     "week": "星期四",
-    "note": "今日主题词：技能进实验室，访问加闸。采集窗口约为上海时间 11 月 25 日 06:00 至 26 日 06:00。本窗内，DeepMind 发布面向 Google Antigravity 的 Mass Spec Skills：在 MoNA 里 Enamine REAL 的 100 个已入库化合物上，搭配技能后 Gemini 3.8 Flash 与 Gemini 4 Argon、Gemini 4 Carbon 都将精确分子鉴定与核验做到约 97%；无网络、无技能时三种模型准确率都低于 4%。官方同时写明局限：镜像分子和部分近缘异构体无法只靠 LC-MS/MS 区分，数据库中没有的全新分子也不能由智能体单独确认，并向 1 万名科研人员提供为期 6 个月的最高用量档（滚动准入，视资格与容量而定）。市场与管制一侧，CNBC 11 月 25 日引述消息称，美国商务部 BIS 11 月 16 日公布、11 月 19 日生效的临时最终规则收紧中国相关客户远程使用先进算力后，卖家正在为英伟达高端 GPU 另寻买家；GPU Mart 总裁与两名知情人士称，已有数以千计的 B300 询价被拿出。英伟达拒绝置评。补记昨日窗口未收或早八未扩补的几项：Google 11 月 24 日宣布 Workspace MCP 服务器与官方 CLI 正式可用，并规定智能体须经 MCP 访问 Workspace 数据，技术执行自 2027 年 2 月 1 日起；Anthropic 在 MCP 两周年把 Skills over MCP 推入公开测试，Tasks 与 Elicitation 正式可用；The Verge 11 月 24 日 23:04 UTC（上海时间 25 日 07:04）报道 Claude 桌面端「Install as app」开始测试。另补记 Meta 11 月 23 日在英国上线个人智能体 Muse，CMA 称接触后 Meta 已修改条款，ICO 称双方约定自愿监测。一句话：技能把实验室流程串了起来，访问通道和监管闸门也同时收紧。"
+    "note": "今日主题词：技能进实验室，访问加闸。采集窗口约为上海时间 11 月 25 日 06:00 至 26 日 06:00。本窗内，DeepMind 发布面向 Google Antigravity 的 Mass Spec Skills：在 MoNA 里 Enamine REAL 的 100 个已入库化合物上，搭配技能后 Gemini 3.8 Flash 与 Gemini 4 Argon、Gemini 4 Carbon 都将精确分子鉴定与核验做到约 97%；无网络、无技能时三种模型准确率都低于 4%。官方同时写明局限：镜像分子和部分近缘异构体无法只靠 LC-MS/MS 区分，数据库中没有的全新分子也不能由智能体单独确认，并向 1 万名科研人员提供为期 6 个月的最高用量档（滚动准入，视资格与容量而定）。市场与管制一侧，CNBC 11 月 25 日引述消息称，美国商务部 BIS 11 月 16 日公布、11 月 19 日生效的临时最终规则收紧中国相关客户远程使用先进算力后，卖家正在为英伟达高端 GPU 另寻买家；GPU Mart 总裁与两名知情人士称，已有数以千计的 B300 询价被拿出。英伟达拒绝置评。早八补入同窗漏项：OpenAI CEO Sam Altman 于 11 月 25 日 17:12 UTC（上海时间 26 日 01:12）宣布，已在小范围客户中测试 Private Inference（属 OpenAI Private Intelligence，官方产品页标为 Alpha，并写明采用机密计算与严格可核验控制）；FCC 于 11 月 25 日批准 SpaceX 部署最多 100 万颗 Starmind 轨道数据中心卫星；Fortune 独家报道亚马逊与 Meta 正就解除对 Muse 购物智能体的封锁举行谈判，广告与搜索展示仍是主要分歧，尚未达成协议。另补记 11 月 24 日加州司法部等 42 位总检察长联合反对 Character.AI 在破产程序中拍卖超过 2100 万个美国账户（其中超过 210 万为未成年人注册）的私聊记录，拍卖定于 12 月 1 日。补记昨日窗口未收或早八未扩补的几项：Google 11 月 24 日宣布 Workspace MCP 服务器与官方 CLI 正式可用，并规定智能体须经 MCP 访问 Workspace 数据，技术执行自 2027 年 2 月 1 日起；Anthropic 在 MCP 两周年把 Skills over MCP 推入公开测试，Tasks 与 Elicitation 正式可用；The Verge 11 月 24 日 23:04 UTC（上海时间 25 日 07:04）报道 Claude 桌面端「Install as app」开始测试。另补记 Meta 11 月 23 日在英国上线个人智能体 Muse，CMA 称接触后 Meta 已修改条款，ICO 称双方约定自愿监测。一句话：技能把实验室流程串了起来，访问通道、商业入口和监管闸门也同时收紧。"
   },
   "highlights": [
     {
@@ -12,6 +12,22 @@
     {
       "title": "CNBC：BIS 收紧远程使用先进算力后，卖家正为英伟达高端 GPU 另寻买家",
       "summary": "规则 11 月 16 日公布、19 日生效。GPU Mart 总裁与两名知情人士称，已有数以千计的 B300 询价被拿出。英伟达拒绝置评。美国贸易代表 Greer 称旨在堵住经第三国数据中心的间接使用。"
+    },
+    {
+      "title": "OpenAI 开始在小范围客户中测试 Private Inference：属 Private Intelligence，官方标为 Alpha",
+      "summary": "Altman 于 11 月 25 日 17:12 UTC（上海时间 26 日 01:12）在 X 宣布。官方产品页称该能力把机密计算与严格可核验控制结合起来，并标为 API Preview。价格、可用模型与全面开放日期尚未公布。早六未收，早八补入。"
+    },
+    {
+      "title": "FCC 批准 SpaceX 部署最多 100 万颗 Starmind 轨道数据中心卫星",
+      "summary": "11 月 25 日批准，卫星高度 500–1,002 公里，主要走激光星间链路。15 年许可自首星入轨起算，首星节点为 2033 年 11 月 25 日。亚马逊、Viasat 与美国天文学会曾申请否决。早六未收，早八补入。"
+    },
+    {
+      "title": "Fortune：亚马逊与 Meta 就解除 Muse 购物封锁举行谈判，广告与搜索展示仍是分歧",
+      "summary": "Fortune 11 月 25 日 3:01 ET（上海时间 16:01）独家报道，援引知情人士称双方已多轮讨论，尚无协议；任何协议据称需两家 CEO 批准。早六未收，早八补入。"
+    },
+    {
+      "title": "补记：42 位美国总检察长反对 Character.AI 拍卖超过 2100 万个账户的私聊记录",
+      "summary": "加州司法部 11 月 24 日新闻稿：拍卖定于 12 月 1 日，涉及超过 2100 万个美国账户，其中超过 210 万为未成年人注册；拟议交易未对买方施加隐私义务。早六未补记，本期补入。"
     },
     {
       "title": "补记：Google Workspace MCP 服务器与官方 CLI 正式可用；智能体须经 MCP 访问，技术执行自 2027 年 2 月 1 日起",
@@ -57,6 +73,38 @@
       "date": "2026-11-25",
       "source": "CNBC",
       "link": "https://www.cnbc.com/2026/11/25/nvidia-china-ai-chip-remote-access.html",
+      "models": []
+    },
+    {
+      "title": "OpenAI 开始在小范围客户中测试 Private Inference（Private Intelligence 的一部分，官方标为 Alpha）",
+      "summary": "OpenAI CEO Sam Altman 于 11 月 25 日 17:12 UTC（上海时间 26 日 01:12）在 X 发文称，公司已在一小群客户中测试 Private Inference，这是 OpenAI Private Intelligence 的最新一项能力。他写道，更强的隐私保护将让前沿 AI 能用于更多工作，商业隐私对健康的生态也很重要，有兴趣的客户可联系 @shekar4x。同一条帖子还提到，零数据保留（ZDR）配合 Private Safety Processing，可以在不让 OpenAI 员工接触底层内容的情况下做自动安全审查。OpenAI 官方 Private Intelligence 产品页把 Private Inference 标为 Alpha，并写明该能力把机密计算与「严格、可核验的控制」结合起来，用于符合条件的工作流；产品示意图亦将其标为 API Preview。公开材料尚未给出价格、可用模型名单或全面开放日期。此条落在早六采集窗内但该期未收，本期补入。",
+      "date": "2026-11-25",
+      "source": "OpenAI / Sam Altman",
+      "link": "https://x.com/sama/status/2125638790593274259",
+      "models": []
+    },
+    {
+      "title": "FCC 批准 SpaceX 部署最多 100 万颗 Starmind 轨道数据中心卫星",
+      "summary": "美国联邦通信委员会（FCC）于 11 月 25 日批准 SpaceX 的 Starmind 星座申请，授权部署最多 100 万颗卫星，用作轨道数据中心。CNBC 报道称，主席 Brendan Carr 当天宣布了这项批准，并在 X 上写道，Starmind 以及竞争对手的星座将「extend America's lead in Super Intelligence」；马斯克回复称「Much appreciated. This will be a great asset to America and the world。」Via Satellite 援引批准文件：卫星部署在 500–1,002 公里高度，主要依靠激光星间链路通信，Ka 频段通信则在 Starlink 既有授权内，用于有限的备份和应急操作。这是 FCC 首次批准轨道数据中心星座；亚马逊（Kuiper）、Viasat 和美国天文学会（AAS）曾提出否决申请，FCC 称许多关于商业可行性与长期影响的意见超出其监管职责。SpaceX 称单星计算载荷平均 175 kW、最高可达 250 kW。总裁兼首席运营官 Gwynne Shotwell 今年 10 月对投资者表示，计划 2027 年开始发射 Starmind 卫星。批准有效期为 15 年，自首颗 Starmind 卫星入轨起算；部署节点为 2033 年 11 月 25 日前发射一颗，2035 年 11 月 25 日完成 10%，2038 年 11 月 25 日完成 50%，2040 年 11 月 25 日完成其余。Via Satellite 还写明，Starcloud 申请了 8.8 万颗、Blue Origin 的 Project Sunrise 申请了 5.16 万颗，FCC 称将尽快逐一作出决定。此条落在早六采集窗内但该期未收，本期补入。",
+      "date": "2026-11-25",
+      "source": "FCC / CNBC / Via Satellite",
+      "link": "https://www.cnbc.com/2026/11/25/spacex-fcc-satellite-approval.html",
+      "models": []
+    },
+    {
+      "title": "Fortune 独家：亚马逊与 Meta 就解除对 Muse 购物智能体的封锁举行谈判，广告与搜索展示仍是主要分歧",
+      "summary": "Fortune 11 月 25 日 3:01 ET（上海时间 16:01）独家报道，援引知情人士称，亚马逊与 Meta 正就一项可能的协议举行多轮讨论，以便让 Muse 接入亚马逊网店，从而结束约两个月前亚马逊对这款购物智能体实施的封锁。谈判中的两个主要问题是：搜索结果将如何展示，以及广告将如何处理。讨论仍在进行，尚不清楚会否或何时达成协议。报道称，Muse 理论上会绕开亚马逊网站上的广告，而广告是该零售商的重要收入来源；双方还有亚马逊自身的 AI 购物布局、以及 Muse 具体如何接入等多项待解问题。任何协议据称都需要两家公司的 CEO 批准。TechCrunch 同日 6:10 AM PST（上海时间 22:10）跟进时，Meta 与亚马逊尚未回应置评请求。此条落在早六采集窗内但该期未收，本期补入。",
+      "date": "2026-11-25",
+      "source": "Fortune",
+      "link": "https://www.fortune.com/2026/11/25/exclusive-amazon-meta-talks-deal-muse-ai-shopping-agent-blockade/",
+      "models": []
+    },
+    {
+      "title": "补记：42 位美国总检察长反对 Character.AI 在破产程序中拍卖超过 2100 万个账户的私聊记录",
+      "summary": "加州司法部 11 月 24 日新闻稿：加州总检察长 Rob Bonta 加入一个跨党派、由 42 位总检察长组成的联盟，反对 Character.AI 出售其平台以及超过 2100 万个美国账户的私聊记录——其中超过 210 万个账户注册为未成年人——并且未为这些对话被出售的消费者提供保障。新闻稿写明，所有聊天连同用户个人数据（包括 IP 地址和其他元数据）定于 2026 年 12 月 1 日拍卖。联盟要求破产法院驳回这笔额外出售。Bonta 指出，Character.AI 曾向消费者承诺不会出售其数据，破产不应被用来规避这些消费者保护。新闻稿还写明：拟议交易未对买方施加要求，买方不必遵守 Character.AI 的隐私政策，也不必兑现用户的退出或删除请求；成交后买方还可以再次转手数据。联邦法律禁止在未经父母核实许可的情况下分享 13 岁以下儿童的个人信息；加州消费者隐私法等州法也限制出售个人信息。Character.AI 自身的隐私政策曾写：「we do not sell personal information for monetary consideration。」本条为 11 月 24 日官方发布、早六未补记，本期补入。",
+      "date": "2026-11-24",
+      "source": "加州司法部",
+      "link": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-opposes-asset-sale-characterai-amid-child-safety-concerns",
       "models": []
     },
     {
@@ -134,6 +182,12 @@
       "vendor": "Google DeepMind",
       "highlight": "这不是新模型发布，而是 Mass Spec Skills 评测里的同口径对比。官方在 100 张已入库参考谱上、每个谱三次尝试：三种模型在无网络、无技能时准确率都低于 4%；加上技能后都将精确分子鉴定与核验做到约 97%，轻量的 Gemini 3.8 Flash 与 Gemini 4 Argon、Gemini 4 Carbon 持平。生成 token 方面，官方称 Flash 约降到原来的近四分之一，Argon 约一半，Carbon 约降五分之一。数字来自 DeepMind 博客，不是本站或 Artificial Analysis 的同口径评分，不入主榜。",
       "link": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/"
+    },
+    {
+      "name": "Mellum2.1 Instruct",
+      "vendor": "JetBrains",
+      "highlight": "JetBrains 于 11 月 25 日 11:00 UTC（上海时间 19:00）发布 Mellum2.1 Instruct，是 10 月发布的 Mellum2.1 Thinking 的直接作答版本：同为 12B 混合专家模型、每 token 激活 2.5B 参数，但回答时不输出思维链，面向子智能体、工具循环和本地推理等更短的任务。官方称，在仓库级验证任务上，它生成的 token 约为 Thinking 版本的一半。Hugging Face 模型卡写明基准为 JetBrains 自报：SWE-bench Verified 从 Mellum2 Instruct 的 20.2% 升至 40.4%，AIME 从 32.3 升至 61.1，WorkBench 从 22.2 升至 38.0；上下文长度 131,072，许可为 Apache 2.0。官方同时放出多 token 预测（MTP）头。这不是本站或 Artificial Analysis 的同口径评分，不入主榜。此条落在早六采集窗内但该期未收，本期补入。",
+      "link": "https://blog.jetbrains.com/ai/2026/11/mellum2-1-instruct-is-out-bringing-faster-answers-for-coding-agents/"
     }
   ],
   "ecosystem": [
