@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "date": "2026-11-27",
+    "week": "星期五",
+    "note": "今日主题词：额度纠偏，通道再收。采集窗口约为上海时间 11 月 26 日 06:00 至 27 日 06:00。本窗内，OpenAI Codex / ChatGPT 产品负责人 Thibault Sottiaux 于 11 月 26 日 02:50 UTC（上海时间 10:50）在 X 发文称，GPT-6.2 发布时出现计费错误，多数用户的 GPT-6.2 Astra 与 Sol 用量被错误打折；现已纠正，同样的工作将占用更多套餐额度。与上周相比，用户会在 GPT-6.2 Astra 上快约 40%、在 Sol 上快约 25% 碰到上限；仍应比 GPT-6 Astra 和 GPT-6.1 Sol 更耐用。其他模型不受影响，过去用量差额不会补扣。作为致歉，Go、Plus、Pro 与 Business 用户各获一次预存额度重置（banked reset）。《金融时报》报道，英伟达已要求代工伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运含其芯片的 AI 服务器；戴尔与 Super Micro 已通知当地买家，订单暂时不能出货。尚不清楚这是否只是为核对美国商务部新出口管制（含云服务商 90 天内申请许可证、证明最终用户不含受限实体）而做的临时安排。英伟达拒绝置评；戴尔、Super Micro、字节跳动与 Aolani 未回应该报道的置评请求。国家数据局 11 月 26 日发布《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见稿。新华社当晚报道：意见稿从三大方面提出十二项举措，明确推动数据产权制度在人工智能用数领域运用，数据有序、依法合规用于训练和推理；协调数据处理者与受托方的关系，支持和鼓励为数据付费，建立人工智能企业输出的风险防控机制；完善数据流通责任认定和安全治理机制。第一财经转述还提到，支持采集生成的数据、推动衍生数据和协议取得的数据依法合规用于训练与推理。萨布尔（Sber）同日发布 GigaChat 4：37B 与 708B 两款混合专家模型，均支持约 100 万 token 原生上下文、工具调用，以及同一检查点下的 instant / reasoning 双模式；权重以 MIT 许可放在 Hugging Face（组织 ai-sage）。路透社 11 月 26 日独家引述知情人士称，在美国收紧远程使用先进算力、以及蒸馏渠道被封堵之后，Z.AI 原计划年内完成训练并发布的 GLM-5.5 可能推迟到 2027 年一季度或更晚；Moonshot 若海外算力被完全切断，内部预计旗舰迭代周期可能从约 6 个月拉长到 12 个月或更久，下一款旗舰 Kimi K4 或推迟到 2027 年中前后。Z.AI 与 Moonshot 均未立即回应路透社置评。补记昨日窗口或早八未收的条目：Anthropic 11 月 25 日博客回顾把 Messages API 从 Python 迁到 Rust，称在未停服、未冻结功能开发的情况下，每请求 CPU 约降 70%、中位首 token 时延约降 20%（公开流量已于 2026 年 9 月切到 Rust）；Anthropic CEO Dario Amodei 于 11 月 25 日在 X 发长文，称「向 AI 系统交出人类自由意志」的说法荒谬，主张人工智能应通过正当民主程序治理，并把具体任务自动化与把治理权交给 AI 区分开来；The Bureau of Investigative Journalism 11 月 24 日与 ABC News 联合调查 MiniMax 的角色扮演应用 Talkie 后，Apple 已从全球 App Store 下架该应用，Apple 称原因是色情内容，该应用仍可在网页和 Google Play 使用。一句话：套餐额度被改回原账，算力通道和数据规则同时收紧，开源侧仍有新权重上台。"
+  },
+  "highlights": [
+    {
+      "title": "OpenAI 纠正 GPT-6.2 计费错误：相对上周，Astra 碰到上限约快 40%、Sol 约快 25%；不追溯补扣，Go / Plus / Pro / Business 各送一次预存重置"
+    },
+    {
+      "title": "《金融时报》：英伟达要求合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运 AI 服务器；英伟达拒绝置评"
+    },
+    {
+      "title": "国家数据局发布《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见稿"
+    },
+    {
+      "title": "萨布尔发布 GigaChat 4（37B / 708B），MIT 开源权重，原生约 100 万 token 上下文，同一检查点支持 instant 与 reasoning"
+    },
+    {
+      "title": "路透社引述知情人士：Z.AI 的 GLM-5.5 或推迟到 2027 年一季度或更晚；Moonshot 的 Kimi K4 在海外算力被切断时或推迟到 2027 年中前后。两家均未立即回应"
+    },
+    {
+      "title": "补记：Anthropic 官方博客回顾 Messages API 迁到 Rust，称每请求 CPU 约降 70%、中位首 token 时延约降 20%"
+    },
+    {
+      "title": "补记：Amodei 发长文回击「向 AI 交出人类自由意志」，主张通过正当民主程序治理人工智能"
+    },
+    {
+      "title": "补记：调查报道发布后，Apple 已从全球 App Store 下架 MiniMax 的 Talkie；Apple 称原因是色情内容"
+    },
+    {
+      "title": "论文：Context Scaling／AutoformBench／约束感知测试时打分／MGMem／AliceAI 技术报告／FlyingStart"
+    }
+  ],
+  "news": [
+    {
+      "title": "OpenAI 纠正 GPT-6.2 发布时的计费错误：同样工作将占用更多套餐额度",
+      "summary": "OpenAI Codex / ChatGPT 产品负责人 Thibault Sottiaux 于 11 月 26 日 02:50 UTC（上海时间 10:50）在 X 发文称，公司在 GPT-6.2 发布时出现计费错误，多数用户的 GPT-6.2 Astra 与 Sol 用量被错误打折。现已纠正，同样的工作将占用更多套餐额度。与上周相比，用户会在 GPT-6.2 Astra 上快约 40%、在 Sol 上快约 25% 碰到上限；他同时写明，用量仍应比 GPT-6 Astra 和 GPT-6.1 Sol 更耐用。其他模型不受影响，过去用量差额不会向用户补扣。作为对错误的致歉，Go、Plus、Pro 与 Business 用户将各获一次预存额度重置（banked reset）。数字与口径均来自这一条官方说明，不是本站测算。",
+      "date": "2026-11-26",
+      "source": "OpenAI / Thibault Sottiaux",
+      "link": "https://x.com/thsottiaux/status/2125784147889393806",
+      "models": [
+        "GPT-6.2 Astra",
+        "GPT-6.2 Sol",
+        "GPT-6 Astra",
+        "GPT-6.1 Sol"
+      ]
+    },
+    {
+      "title": "《金融时报》：英伟达要求合作伙伴暂停向东南亚四国发运 AI 服务器",
+      "summary": "《金融时报》报道，英伟达已要求主要代工伙伴停止向马来西亚、新加坡、泰国和印度尼西亚发运服务器。知情人士称，负责把英伟达芯片组装成服务器的戴尔与 Super Micro 已通知这四国买家：英伟达不允许相关订单出货。报道写明，目前尚不清楚停运是暂时安排，还是英伟达与合作伙伴在核对如何遵守美国商务部新出口管制期间的权宜之计。新规针对的是通过海外云与数据中心远程使用受限制算力；商务部给云服务商留下 90 天窗口，须申请许可证并证明最终用户不含受限实体。一名云服务商高管对《金融时报》表示，规则已出但执行指引不足，「没有人知道该怎么申请许可证，而 90 天的钟已经在走」。报道并举新加坡云公司 Aolani 为例：知情人士称，该公司计划向字节跳动出租先进算力的安排，已有约 5 亿美元信贷被银行停发，交易可能告吹。英伟达拒绝置评；戴尔、Super Micro、字节跳动与 Aolani 未回应该报道的置评请求。本站不转述报道中与管理层人事有关、且未经英伟达官方确认的部分。",
+      "date": "2026-11-26",
+      "source": "Financial Times / CNA",
+      "link": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351",
+      "models": []
+    },
+    {
+      "title": "国家数据局就完善数据规则、赋能人工智能创新发展公开征求意见",
+      "summary": "新华社 11 月 26 日 23:15 报道，国家数据局当天发布《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见稿。新华社称，征求意见稿围绕人工智能发展的数据要素需求，从三大方面提出十二项具体举措，明确推动数据产权制度在人工智能用数领域运用，数据有序、依法合规用于人工智能训练和推理；协调好数据处理者与受托方的关系，支持和鼓励为数据付费，建立人工智能企业输出的风险防控机制；完善数据流通责任认定和安全治理机制。文章还写明，相关部门将及时跟踪研究解决新业态新模式发展中的数据问题。第一财经 11 月 26 日 18:48 的报道转述了更细的条目，包括支持采集生成的数据用于训练和推理，以及推动衍生数据、协议取得的数据依法合规用于训练和推理。本站以新华社通稿为主要依据；公开征求的截止日在已核验的新华社与第一财经稿件正文中未见，故不写。",
+      "date": "2026-11-26",
+      "source": "新华社 / 第一财经",
+      "link": "https://www.news.cn/20261126/5b846aa390674a86825f08cbac6c1d30/c.html",
+      "models": []
+    },
+    {
+      "title": "路透社独家：知情人士称 GLM-5.5 与 Kimi K4 或因算力与蒸馏受限而推迟",
+      "summary": "路透社 11 月 26 日独家报道，引述知情人士称，美国收紧对先进算力的远程使用、以及 OpenAI 与 Anthropic 加强对未经授权蒸馏的拦截，已开始影响部分中国实验室的下一代旗舰安排。其中一人称，Z.AI 原希望在年底前完成训练并发布 GLM-5.5，但新的美国算力限制可能把发布推到 2027 年一季度或更晚。Z.AI 未立即回应置评；该公司周一（11 月 23 日）发布了参数量为 7500 亿的 GLM-5.4，并自称新设计能够赶上 2 万亿到 3 万亿参数量级的系统，这一对比是厂商自述，不是本站或 Artificial Analysis 的同口径评分。另有知情人士称，主要租用海外算力训练的 Moonshot 若海外算力被完全切断，内部预计重大版本间隔可能从约 6 个月拉长到 12 个月或更久，中国国内算力补不上缺口，下一款旗舰 Kimi K4 或推迟到 2027 年中前后。Moonshot 未立即回应路透社置评。报道把这些安排变化同时与算力限制和蒸馏防护联系起来，目前仍是消息源转述，不是两家公司的官方时间表。",
+      "date": "2026-11-26",
+      "source": "Reuters",
+      "link": "https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html",
+      "models": []
+    },
+    {
+      "title": "补记：Anthropic 回顾把 Messages API 从 Python 迁到 Rust，称 CPU 约降 70%",
+      "summary": "Anthropic 11 月 25 日研究博客《Migrating our Messages API to Rust》回顾了把面向客户的 Messages API 从 Python 迁到 Rust 的过程。官方称，在从未停服、也没有冻结功能开发的情况下，新实现每请求 CPU 约降低 70%，中位首 token 时延约降低 20%。公开流量已于 2026 年 9 月切到 Rust。文章把这次迁移写成「用生产流量本身做校验器」：Claude 约用一周写出核心请求路径的首个版本，随后在生产流量上对照新旧实现的差异，并自动派出智能体修复。官方也写明了数字口径：CPU 变化来自一个区域的观测；时延数字来自 Claude Code 请求、且观测窗口更短。此文落在昨日采集窗内但早六、早八均未收，本期补记。",
+      "date": "2026-11-25",
+      "source": "Anthropic",
+      "link": "https://www.anthropic.com/research/migrating-api-to-rust",
+      "models": []
+    },
+    {
+      "title": "补记：Amodei 发长文回击「向 AI 交出人类自由意志」，主张以民主程序治理人工智能",
+      "summary": "TechCrunch 11 月 25 日 11:44 PST（上海时间 26 日 03:44）报道，Anthropic CEO Dario Amodei 于当天在 X 发长文，回击有关 Anthropic 主张「向 AI 系统交出人类自由意志」的说法，并称之为荒谬。TechCrunch 引述他写道：「我们绝不应为了效率或安全而牺牲正当性或自决」；「这一反对专制的论据，逐字同样适用于把治理权交给人工智能，我同样强烈地认为，把治理交给 AI 是个坏主意。」他区分了两件事：让更强的 AI 以更自动化的方式完成具体任务（文中举例包括驾驶、设计抗癌药物、端到端编写软件），与在全局治理意义上把人类自由意志交给 AI。他也写到，对于人工智能自主改进自身（递归自我改进）「我们可能希望对这一过程设限」，并称 11 月初已公开表示，不认为在没有有意义的人类监督或理解的情况下，让 Claude 完全自主地构建后续前沿模型是安全的。长文同时是对 Axios 一篇报道的回应。此条落在昨日采集窗内但早六、早八均未收，本期补记。",
+      "date": "2026-11-25",
+      "source": "TechCrunch / Dario Amodei",
+      "link": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "models": []
+    },
+    {
+      "title": "补记：Apple 已从全球 App Store 下架 MiniMax 的 Talkie，仍可在网页和 Google Play 使用",
+      "summary": "The Bureau of Investigative Journalism 11 月 24 日与 ABC News 联合报道，上海公司 MiniMax 旗下角色扮演应用 Talkie 中的部分角色，会对未成年用户发送贬低、性化或占有式对话。调查方向 Apple 提供了材料后，该应用已从全球 App Store 下架。AppleInsider 11 月 25 日 21:55 ET（上海时间 26 日 10:55）报道，Apple 称下架原因是色情内容，而不是专门针对未成年人受害。TBIJ 写明，截至发稿时 Talkie 仍可在网页和 Google Play 使用，并称 Google Play 下载量超过 5000 万。调查发表于 11 月 24 日，早六、早八未收；Apple 下架及「全球范围」的确认在随后报道中补齐，本期一并补记。",
+      "date": "2026-11-25",
+      "source": "TBIJ / AppleInsider",
+      "link": "https://www.thebureauinvestigates.com/stories/2026-11-24/talkie-china-chatbot-children",
+      "models": []
+    },
+    {
+      "title": "补记：OpenAI 开始向部分 Pro 用户测试合并后的 Chat 与 Work 界面，共享额度计划 12 月更广推出",
+      "summary": "TechCrunch 11 月 25 日 12:03 PST（上海时间 26 日 04:03）报道，OpenAI 已开始向一小部分 ChatGPT Pro 用户推送合并后的 Chat 与 Work 体验。产品负责人 Thibault Sottiaux 于周二（11 月 24 日）在 X 发文宣布这一测试。OpenAI 发言人告诉 TechCrunch，Chat 与 Work 将共用一个额度计量，大多数用户预计不会更频繁地碰到重置，但使用最重的一小部分用户可能会更快触及上限；Instant 对话保持无限，且不计入共享额度，用尽额度后仍可继续使用 Instant。报道称，按 OpenAI 支持页，共享额度计划在 12 月更广推出。此条落在昨日采集窗内但早六、早八未收，本期补记。它与 11 月 26 日公布的 GPT-6.2 计费纠正是两件不同的事。",
+      "date": "2026-11-25",
+      "source": "TechCrunch / OpenAI",
+      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "models": []
+    }
+  ],
+  "papers": [
+    {
+      "title": "Context Scaling：把「系统能在决策前备好怎样的上下文」单独当成一条扩展轴",
+      "titleEn": "Context Scaling: A New Frontier of AI Scaling",
+      "summary": "复旦大学邱锡鹏的立场综述把已部署系统的许多失败，归因为任务所依赖的状态与模型实际拿到的上下文不匹配，而不是推理本身不够强。文章把系统写成三笔预算：训练、决策时计算，以及上下文基础设施；只有第三笔专门作用于决策前能够获取、表示、投递、评估和保持的部署状态。作者提出有效上下文价值，并区分可用性、保真、选择与利用四类失败。这是作者修订后的预印本，期刊版已发表于 AI Plus。",
+      "authors": "Xipeng Qiu",
+      "link": "https://arxiv.org/abs/2611.33160"
+    },
+    {
+      "title": "AutoformBench：341 道 Lean 4 形式化题，考的是补定义和中间引理，而不只是证一条孤立定理",
+      "titleEn": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
+      "summary": "Meta FAIR 等提出 AutoformBench，包含来自 24 个高阶数学来源的 341 道 Lean 4 形式化任务。有 Lean 经验的数学家形式化并审核了目标命题，把相应证明留给被测智能体。与许多只给孤立定理、且配套理论已在 Mathlib 中的评测不同，这里每道题都嵌在更完整的数学发展里：智能体拿到非形式化证明，但必须在翻译成 Lean 的同时，自行补上缺失的定义、中间引理和支撑设施。作者发现难度更多取决于能否建造缺失的形式化基础设施，而不是数学分支本身。",
+      "authors": "Charles Arnal, Ahmad Rammal, Niket Patel, Fabian Gloeckle, Bartosz Piotrowski, Amaury Hayat, Julia Kempe, Rémi Munos, Vivien Cabannes",
+      "link": "https://arxiv.org/abs/2611.33165"
+    },
+    {
+      "title": "约束感知的测试时打分：先过硬门槛，再把软指标合成一个候选分数",
+      "titleEn": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
+      "summary": "当模型给出多个候选答案时，常见做法是看模型自信度、另请裁判模型，或做领域检查，但都可能放过「写得流畅却不安全」或「裁判分高却偷偷违反硬约束」的答案。本文提出一套测试时打分：一组每条答案都必须通过的硬检查，再与更宽的软检查加权合成单一分数。作者在安全代码生成（CWEval）、带安全变体的机器人操作规划（LIBERO）、竞赛编程隐藏测试（LiveCodeBench）和检索问答（HotpotQA）上做了消融，认为最大增益来自把硬检查与候选对比结合起来；在首个采样答案经常不成立或不安全的任务上，正确且安全的联合指标最高可提升约 0.21（检索问答）和 0.28（CWEval）。按任务配置软检查权重的那一层，相对更简单的替代方案没有可测贡献。",
+      "authors": "Rangarajan Ramesh, Yongchao Huang",
+      "link": "https://arxiv.org/abs/2611.33161"
+    },
+    {
+      "title": "MGMem：长期智能体记忆不做生成式索引，只确定性解析并交回原始对话",
+      "titleEn": "MGMem: An Efficient, Deterministic, and Provenance-Preserving Framework for Long-Horizon Agent Memory",
+      "summary": "港科广的作者指出，许多长期记忆系统会让生成式模型把历史改写成摘要、事实或知识图谱，代价高、不可复现，而且读者看到的不再是原始轮次。MGMem 取消生成式索引调用，改用确定性的判别-解析流水线：跨会话的重复提及被组织成关联图，问题中的提及由按主体条件的三阶段解析器对齐，再把原始对话片段交回给阅读器。在英语多会话对话问答上，作者称其在 LoCoMo 上超过同协议基线，且不使用生成式索引调用。",
+      "authors": "Junhong Huang, Xin Tong, Jun Xia",
+      "link": "https://arxiv.org/abs/2611.33174"
+    },
+    {
+      "title": "AliceAI-Foundation 技术报告：Yandex 开源 80B / 约 3B 激活的 MoE 基座模型，并放出两个俄语事实基准",
+      "titleEn": "AliceAI-Foundation-80B-A3B-Base",
+      "summary": "Alice AI Team 在 arXiv 发布 AliceAI-Foundation-80B-A3B-Base 技术报告：这是 Yandex 从零训练的混合专家基座模型，总参数 800 亿、每 token 约 30 亿激活，Apache 2.0 许可，权重在 Hugging Face（yandex/AliceAI-Foundation-80B-A3B-Base）。报告称预训练 17.5 万亿 token，架构结合 Kimi Delta Attention 与全注意力，并使用 Attention Residuals 与 Muon。官方自报零样本推理：IMO-AnswerBench pass@8 为 88.7%，LiveCodeBench v5–v6 pass@8 为 82.9%；并新发布 WikiWebFacts、HardMultiQA 两个俄语事实基准，分别报 86.5% 与 67.9%。这些数字是论文自报，不是本站或 Artificial Analysis 的同口径评分，不入主榜。模型本身已在此前开源，本期按 11 月 26 日 arXiv 新稿收入论文栏，不作为当日新模型发布。",
+      "authors": "Alice AI Team",
+      "link": "https://arxiv.org/abs/2611.34529"
+    },
+    {
+      "title": "FlyingStart：给循环深度模型的固定点解码加一个学来的热启动，少迭代、准确率不变",
+      "titleEn": "FlyingStart: Learned Cross-Token Warm Starts for Fixed-Point Decoding in Recurrent-Depth Language Models",
+      "summary": "循环深度语言模型生成每个 token 时，会迭代同一组层直到隐状态收敛；已有方法主要决定何时停止，但每个 token 仍往往从随机噪声起步。FlyingStart 把「从哪里开始迭代」当成第二根独立杠杆：用上一个 token 结束时的状态，经学到的线性坐标变换，给下一个 token 一个更好的热启动；迭代规则和停止准则不变，因此退出条件仍保证与固定点的距离口径不变。作者称该变换可在冻结模型上以闭式方式拟合。在 Huginn-0125 上，FlyingStart 与最强的免训练基线准确率相当，解码层数减少 14%–19%，并在两种服务引擎中把批处理吞吐提高 16%–18%。",
+      "authors": "Runguo Li, Dezhen Lu, Zixiang Ni",
+      "link": "https://arxiv.org/abs/2611.34492"
+    }
+  ],
+  "models": [
+    {
+      "name": "GigaChat 4（37B / 708B）",
+      "vendor": "Sber / ai-sage",
+      "highlight": "萨布尔 11 月 26 日官方博客发布 GigaChat 4，包含 37B 与 708B 两款混合专家模型。官方博客称，37B 每 token 约 3.8B 激活，708B 约 41B 激活；Hugging Face 模型卡将小模型写作 37B / 4B 激活，大模型为 708B / 41B 激活，上下文均为 1,048,576 token。两款模型都在同一检查点里提供 instant 与 reasoning 模式，并支持工具调用。架构在 GigaChat 3.5 的 MoE + Gated DeltaNet + MLA 基础上加入了 DSA。权重以 MIT 许可放在 Hugging Face，组织为 ai-sage，仓库包括 ai-sage/GigaChat4-37B-A4B 与 ai-sage/GigaChat4-708B-A41B（另有 BF16、GGUF、base 与中间检查点）。官方自报 37B 质量可与 Qwen3.6-35B-A3B 相比，708B 可与 GLM 5.3、DeepSeek-V4.1-Flash-1017 和 Mistral-Large-4-1T-A52B 相比——这是厂商自评，不是本站或 Artificial Analysis 的同口径评分，不入主榜。",
+      "link": "https://giga.chat/blog/posts/gigachat-4"
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Langfuse 让 MCP 服务器直接分发官方技能：一次接入即可同时拿到项目工具与 playbook",
+      "summary": "Langfuse 在 11 月 26 日的更新日志中宣布，其 MCP 服务器开始通过 MCP Skills 扩展（io.modelcontextprotocol/skills）分发官方 playbook。把客户端连到 Langfuse 的 MCP 服务器后，智能体可自动发现 langfuse/skills 中的技能，并与项目工具一起使用，不必再单独执行技能安装、克隆仓库或维护符号链接。云端始终提供 langfuse/skills 的最新版本，自托管则提供与所安装 Langfuse 版本匹配的技能。技能按扩展以渐进方式加载，以减少上下文占用。这是 Skills over MCP 在观测平台上的一次具体落地，规范本身已在此前公开测试。",
+      "source": "Langfuse",
+      "link": "https://langfuse.com/changelog/2026-11-26-mcp-bundled-skills",
+      "models": []
+    }
+  ]
+}
