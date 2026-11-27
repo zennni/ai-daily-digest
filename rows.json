@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-27",
+  "date": "2026-11-28",
   "models": [
     {
       "name": "Claude Fable 5.2",
@@ -1849,13 +1849,13 @@
       "aa": 23,
       "aa_dec": 23.1,
       "pin": 0.11,
-      "pcache": 0.006,
+      "pcache": 0.0099,
       "pout": 0.33,
       "open_": "闭源",
       "open": "闭源",
       "lic": "专有",
       "src": "官方",
-      "note": "AA Changelog <b>27 Nov</b> 与模型页同窗首评 Intelligence Index <b>23</b>（模型库 23.0788933047591，表内 23.1／整数 23；slug <code>quasar-1-2-358b</code>；默认推理档 <b>Max</b>；v5.0.2 口径）。厂商 Multiverse Computing，官方联系页首列 Donostia, Spain；AA 与官方博文均写明由 GLM-5.3 经 CompactifAI 优化／压缩而来，<u>专有、不提供公开权重</u>（AA <code>isOpenWeights=false</code>，license 空）。AA 记 358B 总参／40B 激活、1M 上下文、约 131 tok/s、单任务成本 $0.13。官方模型目录：API id <code>quasar-1-2-358b</code>，上下文 EU 200k／US 2 区 1M（全局端点可能被路由到较短窗口）。<b>主性价分按 CompactifAI 官方定价页（https://docs.compactif.ai/pricing，本窗复核）$0.11／$0.33／缓存命中 $0.006</b>，与 AA 模型页 $0.11／$0.33／缓存 $0.006 一致；同司 10-29 博文曾写缓存 $0.0099，以现行官方定价页为准。标准任务成本 $0.192500。",
+      "note": "AA Changelog <b>27 Nov</b> 与模型页同窗首评 Intelligence Index <b>23</b>（模型库 23.0788933047591，表内 23.1／整数 23；slug <code>quasar-1-2-358b</code>；默认推理档 <b>Max</b>；v5.0.2 口径）。厂商 Multiverse Computing，官方联系页首列 Donostia, Spain；AA 与官方博文均写明由 GLM-5.3 经 CompactifAI 优化／压缩而来，<u>专有、不提供公开权重</u>（AA <code>isOpenWeights=false</code>，license 空）。AA 记 358B 总参／40B 激活、1M 上下文、约 131 tok/s、单任务成本 $0.13。官方模型目录：API id <code>quasar-1-2-358b</code>，上下文 EU 200k／US 2 区 1M（全局端点可能被路由到较短窗口）。<b>主性价分按 CompactifAI 官方定价页（https://docs.compactif.ai/pricing，本窗 11-28 06:30 全日量复核）$0.11／$0.33／缓存命中 $0.0099</b>；入／出未变，缓存由上期已推表的 $0.006 改为 $0.0099（与同司 10-29 博文一致）。AA 模型页本窗仍写缓存 $0.006，主表跟官方定价页。缓存命中不进入标准任务成本／主性价分（仍 $0.192500，综合分 57 C，名次 81 不变）。",
       "cost": 0.1925,
       "ability": 35.4,
       "costscore": 89.02207579215735,
@@ -2878,6 +2878,14 @@
     }
   ],
   "changes": [
+    {
+      "d": "11-28",
+      "t": "Quasar 1.2 358B 官方缓存价 $0.006→$0.0099",
+      "m": [
+        "Quasar 1.2 358B"
+      ],
+      "s": "<b>CompactifAI 官方定价页（https://docs.compactif.ai/pricing）于本窗（2026-11-28 06:30 上海全日量）将 <u>Quasar 1.2 358B</u>（slug <code>quasar-1-2-358b</code>）缓存命中价由 <u>$0.006→$0.0099</u>／百万 tokens</b>；输入仍 $0.11、输出仍 $0.33。上期已推表（11-27 17:00）与当时官方页、AA 模型页均为 $0.006；同司 10-29 博文此前已写 $0.0099，现官方页与博文对齐。AA 模型库本窗 <code>cacheHitPrice</code> 仍为 0.006，主表跟官方页。<b>缓存不进入标准任务成本与主性价分，综合分 57 C、名次 81、入／出价与汇率均不变</b>。汇率沿用最近交易日中国货币网 2026-11-27 9:15 中间价 6.7075（今日周六无新中间价）。"
+    },
     {
       "d": "11-27",
       "t": "Quasar 1.2 358B 首获 AA v5.0.2 同口径分（23），入主榜",
