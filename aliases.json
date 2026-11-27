@@ -280,8 +280,12 @@
     "pattern": "motif[ -]3"
   },
   {
+    "name": "文心 5.5 Flash Preview",
+    "pattern": "ernie[ -]?5\\.5|ernie-5-5-flash|文心[ -]?5\\.5"
+  },
+  {
     "name": "ERNIE 5.0",
-    "pattern": "ernie[ -]5|文心"
+    "pattern": "ernie[ -]5(?!\\.5)|文心(?![ -]?5\\.5)"
   },
   {
     "name": "Seed 2.1",
