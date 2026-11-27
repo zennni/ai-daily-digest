@@ -482,5 +482,9 @@
   {
     "name": "Elorian Glimpse",
     "pattern": "elorian[ -]?glimpse|(?<![a-z])glimpse"
+  },
+  {
+    "name": "Quasar 1.2 358B",
+    "pattern": "quasar[ -]?1\\.2([ -]?358b)?|quasar-1-2-358b"
   }
 ]
