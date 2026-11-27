@@ -37,6 +37,38 @@
     "m": []
   },
   {
+    "t": "彭博社引述知情人士：SAP 考虑在围绕 AI 的重组中至少裁员 1 万个岗位，公司未证实",
+    "s": "彭博社 11 月 26 日引述知情人士报道，德国软件公司 SAP 正准备在围绕人工智能重塑业务的过程中，至少裁减 1 万个岗位，约为其全球员工总数的 9% 或以上。The Next Web 转述称，SAP 在全球雇用超过 11 万人；《纽约邮报》则转述其财务披露，截至 9 月末全职约当人数为 113,076。报道写明，最终数字尚未确定，可能在与劳工代表谈判后调整；公司已要求各部门寻找可削减的领域，产品和工程以及销售是主要焦点。SAP 未就是否计划裁员作出说明，对彭博社的声明是：「SAP 持续检视其组织，以确保与战略和客户需求保持一致。」本站未能打开彭博社原文全文，以上事实转述自 The Next Web 与《纽约邮报》对这篇报道的引述。",
+    "d": "2026-11-26",
+    "src": "Bloomberg / The Next Web",
+    "link": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+    "m": []
+  },
+  {
+    "t": "补记：CBS 调查称英伟达在加州的两家高层级合作伙伴实为中资控股，美政府未指控其违法",
+    "s": "CBS News 调查报道称，出现在英伟达美国合作伙伴名单上的两家加州公司——圣何塞的 RiCloud AI（preferred partner）与 Aivres（elite compute partner）——其母公司为中资控股。报道写明，RiCloud AI 的母公司是总部位于深圳、在香港上市的 Yuxing InfoTech Investment Holdings Limited；该公司 CEO 兼共同所有人 Cong Yu 持有中国人民解放军指挥学院国防动员学位。报道举例称，RiCloud 今年签下约 1.2 亿美元合同，向一家原本以售酒为主、后转型为 AI 公司的台湾企业 Agencia Comercial Spirits 出租 300 台英伟达 B300 服务器。美国政府并未指控 RiCloud 与 Yuxing 有违法行为；英伟达未回应 CBS 关于在授予 RiCloud 优先合作伙伴地位前做了哪些背景调查的提问。报道并称，Aivres 原名与其中国母公司浪潮（Inspur）相同，浪潮集团相关公司于 2023 年 3 月被列入联邦黑名单后，这家加州子公司更名，Aivres 本身不在黑名单上。CBS 转述《纽约时报》对贸易记录的分析：Aivres 在 2024 年 4 月至 2026 年 2 月向东南亚出口了至少 56 亿美元先进技术，其中约 30 亿美元为含英伟达受限 Blackwell 芯片的计算机，并称这些芯片随后进入马来西亚的 Megaspeed 与 Aolani，为阿里巴巴和字节跳动提供云端 AI 服务。本站按调查报道转述，不对其结论作独立核验。",
+    "d": "2026-11-25",
+    "src": "CBS News",
+    "link": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
+    "m": []
+  },
+  {
+    "t": "补记：微软威胁情报称已有多个团伙把开源智能体渗透框架 ARTEX 纳入工具链",
+    "s": "微软安全博客 11 月 25 日发布防守者指南称，2026 年 7 月公开的人工智能渗透测试框架 ARTEX，已被用于加速网络侦察、凭证攻击和 Web 应用利用等既有流程。截至 2026 年 11 月，微软威胁情报观察到 Storm-0940、Storm-3358、Onyx Sleet、Pearl Sleet、Crystal Typhoon 与 Salt Typhoon 等国家支持或出于经济动机的团伙把 ARTEX 纳入工具链。博客称，近几周还看到有活动用 ARTEX 在公开代码仓库中搜寻暴露的密钥、协助供应链攻击，并扫描互联网暴露面。本站只转述微软公开的防守说明，不展开攻击步骤。",
+    "d": "2026-11-25",
+    "src": "Microsoft Threat Intelligence",
+    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+    "m": []
+  },
+  {
+    "t": "补记：Alpöge 黎曼猜想 Lean 证明的缩短版约 7.6 万行发布，滑铁卢大学 11 月 26 日复核通过",
+    "s": "在 Alpöge 于 11 月 20 日发布约 1700 万行 Lean 证明、并已于 11 月 23 日经 Lean FRO 与 Mathlib Initiative 声明核验之后，Luke Sernau 与 Anthropic 同事及 Claude 于 11 月 25 日在 GitHub 仓库 lsernau/grh-lean 发布同一组五条定理的缩短版：可读版约 30 万行，紧凑版约 7.6 万行。滑铁卢大学 Michael Rubinstein 的核验页写明，定理陈述与原证明相同。其 11 月 26 日的复核结果为：全部 794 个模块编译通过；五条定理只依赖 Lean 的三条标准公理；Lean 内核重放全部通过；lake comparator --paranoid 确认所证即挑战文件中的陈述，并被六个内核接受（Lean 默认与 paranoid、nanoda、lean4lean、con-leche、con-ron）。MIT 的 Andrew Sutherland 在带沙箱的检查中得到相同结论。这是机器核验，不是数学家已通读或完成同行评审的证明。",
+    "d": "2026-11-26",
+    "src": "Michael Rubinstein / University of Waterloo",
+    "link": "https://math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
+    "m": []
+  },
+  {
     "t": "补记：Anthropic 回顾把 Messages API 从 Python 迁到 Rust，称 CPU 约降 70%",
     "s": "Anthropic 11 月 25 日研究博客《Migrating our Messages API to Rust》回顾了把面向客户的 Messages API 从 Python 迁到 Rust 的过程。官方称，在从未停服、也没有冻结功能开发的情况下，新实现每请求 CPU 约降低 70%，中位首 token 时延约降低 20%。公开流量已于 2026 年 9 月切到 Rust。文章把这次迁移写成「用生产流量本身做校验器」：Claude 约用一周写出核心请求路径的首个版本，随后在生产流量上对照新旧实现的差异，并自动派出智能体修复。官方也写明了数字口径：CPU 变化来自一个区域的观测；时延数字来自 Claude Code 请求、且观测窗口更短。此文落在昨日采集窗内但早六、早八均未收，本期补记。",
     "d": "2026-11-25",
