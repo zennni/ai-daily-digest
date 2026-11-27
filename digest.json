@@ -1,222 +1,194 @@
 {
   "meta": {
-    "date": "2026-11-27",
-    "week": "星期五",
-    "note": "今日主题词：额度纠偏，通道再收。采集窗口约为上海时间 11 月 26 日 06:00 至 27 日 06:00。本窗内，OpenAI Codex / ChatGPT 产品负责人 Thibault Sottiaux 于 11 月 26 日 02:50 UTC（上海时间 10:50）在 X 发文称，GPT-6.2 发布时出现计费错误，多数用户的 GPT-6.2 Astra 与 Sol 用量被错误打折；现已纠正，同样的工作将占用更多套餐额度。与上周相比，用户会在 GPT-6.2 Astra 上快约 40%、在 Sol 上快约 25% 碰到上限；仍应比 GPT-6 Astra 和 GPT-6.1 Sol 更耐用。其他模型不受影响，过去用量差额不会补扣。作为致歉，Go、Plus、Pro 与 Business 用户各获一次预存额度重置（banked reset）。《金融时报》报道，英伟达已要求代工伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运含其芯片的 AI 服务器；戴尔与 Super Micro 已通知当地买家，订单暂时不能出货。尚不清楚这是否只是为核对美国商务部新出口管制（含云服务商 90 天内申请许可证、证明最终用户不含受限实体）而做的临时安排。英伟达拒绝置评；戴尔、Super Micro、字节跳动与 Aolani 未回应该报道的置评请求。国家数据局 11 月 26 日发布《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见稿。新华社当晚报道：意见稿从三大方面提出十二项举措，明确推动数据产权制度在人工智能用数领域运用，数据有序、依法合规用于训练和推理；协调数据处理者与受托方的关系，支持和鼓励为数据付费，建立人工智能企业输出的风险防控机制；完善数据流通责任认定和安全治理机制。第一财经转述还提到，支持采集生成的数据、推动衍生数据和协议取得的数据依法合规用于训练与推理。萨布尔（Sber）同日发布 GigaChat 4：37B 与 708B 两款混合专家模型，均支持约 100 万 token 原生上下文、工具调用，以及同一检查点下的 instant / reasoning 双模式；权重以 MIT 许可放在 Hugging Face（组织 ai-sage）。路透社 11 月 26 日独家引述知情人士称，在美国收紧远程使用先进算力、以及蒸馏渠道被封堵之后，Z.AI 原计划年内完成训练并发布的 GLM-5.5 可能推迟到 2027 年一季度或更晚；Moonshot 若海外算力被完全切断，内部预计旗舰迭代周期可能从约 6 个月拉长到 12 个月或更久，下一款旗舰 Kimi K4 或推迟到 2027 年中前后。Z.AI 与 Moonshot 均未立即回应路透社置评。补记昨日窗口或早八未收的条目：Anthropic 11 月 25 日博客回顾把 Messages API 从 Python 迁到 Rust，称在未停服、未冻结功能开发的情况下，每请求 CPU 约降 70%、中位首 token 时延约降 20%（公开流量已于 2026 年 9 月切到 Rust）；Anthropic CEO Dario Amodei 于 11 月 25 日在 X 发长文，称「向 AI 系统交出人类自由意志」的说法荒谬，主张人工智能应通过正当民主程序治理，并把具体任务自动化与把治理权交给 AI 区分开来；The Bureau of Investigative Journalism 11 月 24 日与 ABC News 联合调查 MiniMax 的角色扮演应用 Talkie 后，Apple 已从全球 App Store 下架该应用，Apple 称原因是色情内容，该应用仍可在网页和 Google Play 使用。早八核漏后补入：彭博社 11 月 26 日引述知情人士称，SAP 考虑在围绕人工智能的重组中至少裁减 1 万个岗位，约为全球员工总数的 9% 或以上；最终数字可能在劳工谈判后调整，SAP 未证实具体裁员计划，只称持续检视组织以与战略和客户需求保持一致。补记昨日窗口或早八未收的条目：CBS News 调查称，英伟达在美国名单上的两家高层级合作伙伴 RiCloud AI 与 Aivres 实为中资控股，报道写明美政府未指控这两家公司违法，英伟达未回应有关背景调查的提问；微软威胁情报 11 月 25 日发文称，2026 年 7 月公开的智能体渗透框架 ARTEX 已被多个国家支持或出于经济动机的团伙纳入工具链；Luke Sernau 与 Anthropic 同事及 Claude 于 11 月 25 日发布 Alpöge 黎曼猜想 Lean 证明的缩短版（紧凑版约 7.6 万行，定理与原证明相同），滑铁卢大学 Michael Rubinstein 11 月 26 日的复核显示编译、公理与六个内核检查均通过，这仍是机器核验，不是数学家通读或同行评审的结论；Google 于 11 月 25 日上线 Gemma4 系列微调中心并放出 gemma-trainer 技能；Perplexity 为 Search 与 Context API 增加 Time Machine，可按截止日期检索最多 365 天前的网页快照。一句话：套餐额度被改回原账，算力通道和数据规则同时收紧；早八再补入 SAP 裁员传闻、芯片合作伙伴调查，以及缩短版黎曼证明的机器复核。"
+    "date": "2026-11-28",
+    "week": "星期六",
+    "note": "今日主题词：反诉开打，邻电建算。采集窗口约为上海时间 11 月 27 日 06:00 至 28 日 06:00。本窗内，《金融时报》报道，OpenAI 已在与 Apple 的商业秘密诉讼中提起反诉，指称 Apple 通过一名先从 Apple 加入 OpenAI、工作约六个月后又回到 Apple 的员工，带走其硬件设备相关资料，并指控 Apple 胁迫或威胁同时为两家供货的供应商，以阻挠 OpenAI 自有设备竞争。AppleInsider 11 月 27 日转述了这份报道，并回顾：Apple 于 2026 年 7 月起诉 OpenAI，指前员工把商业秘密带到 OpenAI；庭审定于 2027 年 7 月 19 日。上述内容均为诉状中的指控，并非法院已认定的事实；本期未见 Apple 就反诉本身的回应。日本经济新闻 11 月 27 日报道，日本最大发电商 JERA 正与 Anthropic、Meta 等美国科技公司洽谈，在东京一带的发电厂旁建设数据中心。路透社引述日经称，JERA 全球首席执行官兼董事长可儿行夫还表示，集团也在与 Amazon、Microsoft 和 Google 商谈。JERA 发言人说，市场推广由合作方 RHAELM 负责，该公司被告知 RHAELM 正在与多家超大规模云厂商洽谈；RHAELM 当时未能置评。Anthropic、Meta、Amazon、Microsoft 与 Google 均未立即回应路透社的置评请求。报道同时回顾，JERA 已在 10 月与戴尔及 RHAELM 签署备忘录，计划从千叶一座估算约 150 亿美元的超大规模数据中心起步；这是已公布的合作背景，不是本次新签署的合同。新加坡副总理兼贸工部（贸易）部长颜金勇 11 月 27 日在亚洲未来峰会上，被问及有报道称英伟达已停止向包括新加坡在内的东南亚发运芯片时表示：「我们尚未确认。」他称政府正接触企业，评估对其业务的影响；新加坡企业也在组织起来，与各方合作以继续获得芯片。他同时表示，新加坡将与美国合作，回应任何关切，并正在检视部分流程，以加强监管和监测，避免新加坡成为非法芯片交易的通道。这是对昨日《金融时报》有关英伟达暂停向马、新、泰、印尼发运 AI 服务器报道的官方回应，并非对停运本身的证实。波兰国防部 11 月 27 日宣布，当天在华沙与 Palantir 签署合同，采购用于决策支援的人工智能软件，以更快分析信息、识别威胁并向指挥官提供可选行动方案。官方称，软件将在军队封闭基础设施中运行，数据、服务器与加密密钥由波兰武装力量掌握，Palantir 不能访问数据、加密密钥，也没有系统的远程访问权；行动决定仍由获得授权的人员作出。国防部同时表示，正自主发展 AIRON 与 NEFRYT，未来或可替代供应商工具。Politico 报道称，该合同为期五年、金额约 3 亿美元，并指产品为 Maven 系统；波兰国防部官网稿未写金额与产品名称。作为昨日 Apple 全球下架 MiniMax 应用 Talkie 的后续，澳大利亚广播公司 11 月 27 日报道，Talkie 已开始阻止澳大利亚和英国的网页访客，页面提示该服务「目前在你所在地区不可用」；MiniMax 未回应为何开始实施地区限制。报道写明，该应用在澳大利亚 Google Play 仍可取得，但 Google 此前曾向 ABC 表示仅向核验后的成年人开放。澳大利亚信息专员提到将于 12 月 10 日生效的《儿童在线隐私守则》；电子安全专员办公室称正在调查 Talkie，并已与运营方沟通。阿联酋政府 11 月 27 日在迪拜王储兼副总理、国防部长谢赫·哈姆丹·本·穆罕默德出席的场合，公布国家智能体人工智能技术生态（FedAI）的首批合作伙伴，包括 G42、Inception42、Presight、Core42、Etisalat、du、Moro Hub、Microsoft、IBM、Oracle、Google、Amazon Web Services、Cohere、SAAL、Open Innovation、Arabic.AI 和 EDC。官方称，FedAI 是统一国家平台，供联邦机构在顾及网络安全、数据保护与治理的环境中开发、采用和运行智能体方案，并支持对开源模型做主权托管。国家智能体项目的目标是在两年内把 50% 的政府服务与运行转向由智能体人工智能支持的模式。补记昨日窗口或早八未收的条目：加拿大创新、科学与经济发展部 11 月 26 日宣布，通过国家人工智能战略「AI for All」，向 AI Compute Access Fund 追加 7 亿加元，使基金总规模由起初的 3 亿加元增至 10 亿加元；同步开放健康与生命科学方向的新一轮申请，并公布向 45 家公司提供逾 5200 万加元支持，累计承诺逾 1.18 亿加元、覆盖 89 家加拿大企业。基金还鼓励使用在加拿大拥有、运营并接受治理的算力。彭博社 11 月 26 日报道，华为将在 2027 年 2 月 16 日于旧金山举行的国际固态电路会议（ISSCC）上宣读一篇定制高带宽存储器论文。TechTimes 核对会议草稿节目单第 22.6 项，标题为「A 64-Channel 4096-DQ Custom HBM with Memory Controllers and 5-Layer Wafer-on-Wafer Hybrid Bonding」，作者单位为深圳华为。4096 个数据引脚是 JEDEC HBM4 标准 2048 引脚的两倍；节目单没有摘要，也未给出数据速率、带宽、容量或良率。华为当时未立即回应彭博社的置评请求。报道提醒，会议论文常常展示构想或实验室结果，不等于已经能量产。荷兰外贸与发展合作大臣 Sjoerd Sjoerdsma 11 月 26 日在议会表示，荷兰不会接受美国国会提出的 MATCH 法案对其发号施令。该法案要求盟国与美国对华出口管制对齐，否则美国可单方面限制其芯片制造设备。他称拟议限制「走得太远」，正与欧盟委员会协调，并争取把该案从美国国防授权法案中拿掉；表决约在 12 月中旬。NL Times 转述 ANP 称，中国约占阿斯麦营收的两成。法案尚未通过，也尚未进入实施。本窗适逢美国感恩节周末，arXiv 未见 11 月 27 日新目次，论文选自 11 月 26 日批次中昨日未收录的篇目。模型与生态方面，补记窗前未收的 KRAFTON Raon-1 mini 与英伟达 Nemotron-Labs-Image-30B-A3B 开源权重，以及腾讯开源的 DFly2／AngelSpec 与 VS Code 1.148；窗内还有 Langfuse 上线组织级模型与定价定义。一句话：OpenAI 与 Apple 的硬件争端升至反诉，日本发电商把数据中心接到厂门口，新加坡则说尚未确认停运、先核对通道。"
   },
   "highlights": [
     {
-      "title": "OpenAI 纠正 GPT-6.2 计费错误：相对上周，Astra 碰到上限约快 40%、Sol 约快 25%；不追溯补扣，Go / Plus / Pro / Business 各送一次预存重置"
+      "title": "《金融时报》：OpenAI 就商业秘密与供应商施压向 Apple 提起反诉；所述为诉状指控，并非已裁决事实"
     },
     {
-      "title": "《金融时报》：英伟达要求合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运 AI 服务器；英伟达拒绝置评"
+      "title": "日经：日本最大发电商 JERA 正与 Anthropic、Meta 等洽谈在东京一带发电厂旁建设数据中心；相关公司未立即回应路透社置评"
     },
     {
-      "title": "国家数据局发布《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见稿"
+      "title": "新加坡副总理颜金勇：尚未确认英伟达暂停向东南亚发运芯片的报道，正接触企业评估影响，并将与美方沟通"
     },
     {
-      "title": "萨布尔发布 GigaChat 4（37B / 708B），MIT 开源权重，原生约 100 万 token 上下文，同一检查点支持 instant 与 reasoning"
+      "title": "波兰国防部宣布与 Palantir 签署人工智能决策支援软件合同；Politico 称约 3 亿美元、为期五年。官方稿未写金额"
     },
     {
-      "title": "路透社引述知情人士：Z.AI 的 GLM-5.5 或推迟到 2027 年一季度或更晚；Moonshot 的 Kimi K4 在海外算力被切断时或推迟到 2027 年中前后。两家均未立即回应"
+      "title": "后续：MiniMax 的 Talkie 已对澳大利亚和英国网页访客实施地区限制；公司未说明原因"
     },
     {
-      "title": "补记：Anthropic 官方博客回顾 Messages API 迁到 Rust，称每请求 CPU 约降 70%、中位首 token 时延约降 20%"
+      "title": "阿联酋政府公布国家智能体技术生态 FedAI 首批合作伙伴"
     },
     {
-      "title": "补记：Amodei 发长文回击「向 AI 交出人类自由意志」，主张通过正当民主程序治理人工智能"
+      "title": "补记：加拿大向 AI Compute Access Fund 追加 7 亿加元，基金总规模达到 10 亿加元"
     },
     {
-      "title": "补记：调查报道发布后，Apple 已从全球 App Store 下架 MiniMax 的 Talkie；Apple 称原因是色情内容"
+      "title": "补记：彭博社称华为将在 ISSCC 宣读 4096 数据引脚定制 HBM 论文，节目单未披露速率、带宽或良率"
     },
     {
-      "title": "彭博社引述知情人士：SAP 考虑在围绕 AI 的重组中至少裁员 1 万个岗位；公司未证实具体裁员计划"
-    },
-    {
-      "title": "补记：CBS 调查称英伟达在美两家高层级合作伙伴实为中资控股，美政府未指控这两家公司违法"
-    },
-    {
-      "title": "补记：Alpöge 黎曼猜想 Lean 证明的缩短版约 7.6 万行发布，滑铁卢大学 11 月 26 日复核通过"
-    },
-    {
-      "title": "论文：Context Scaling／AutoformBench／约束感知测试时打分／MGMem／AliceAI 技术报告／FlyingStart"
+      "title": "论文：DFly2／OS-Omni／REE／模型自管上下文／Tokenisation is not in APX／CARE-OPD"
     }
   ],
   "news": [
     {
-      "title": "OpenAI 纠正 GPT-6.2 发布时的计费错误：同样工作将占用更多套餐额度",
-      "summary": "OpenAI Codex / ChatGPT 产品负责人 Thibault Sottiaux 于 11 月 26 日 02:50 UTC（上海时间 10:50）在 X 发文称，公司在 GPT-6.2 发布时出现计费错误，多数用户的 GPT-6.2 Astra 与 Sol 用量被错误打折。现已纠正，同样的工作将占用更多套餐额度。与上周相比，用户会在 GPT-6.2 Astra 上快约 40%、在 Sol 上快约 25% 碰到上限；他同时写明，用量仍应比 GPT-6 Astra 和 GPT-6.1 Sol 更耐用。其他模型不受影响，过去用量差额不会向用户补扣。作为对错误的致歉，Go、Plus、Pro 与 Business 用户将各获一次预存额度重置（banked reset）。数字与口径均来自这一条官方说明，不是本站测算。",
+      "title": "《金融时报》：OpenAI 就商业秘密与供应商施压向 Apple 提起反诉；所述为诉状指控",
+      "summary": "《金融时报》报道，OpenAI 已在与 Apple 的商业秘密诉讼中提起反诉。AppleInsider 11 月 27 日 14:35 ET（上海时间 28 日 03:35）转述称，OpenAI 指称 Apple 通过一名先从 Apple 加入 OpenAI、在 OpenAI 工作约六个月后又回到 Apple 的员工，经其个人账户带走与一款 OpenAI 硬件设备有关的资料，据称包括图像、工程信息、供应商细节、制造数据，以及外观处理与密封材料标准。OpenAI 还指控 Apple「胁迫并威胁」同时为两家供货的供应商，以不公平手段阻碍其自有设备竞争。AppleInsider 写明，OpenAI 在 10 月已向法院提出过类似主张。回顾背景：Apple 于 2026 年 7 月起诉 OpenAI，指前员工 Tang Tan 与 Chang Liu 把商业秘密带到 OpenAI；庭审定于 2027 年 7 月 19 日上午 9 时。上述内容均为诉状中的指控，并非法院已认定的事实。本期未见 Apple 就反诉本身的公开回应。",
+      "date": "2026-11-27",
+      "source": "Financial Times / AppleInsider",
+      "link": "https://appleinsider.com/articles/26/11/27/openai-counter-sues-apple-over-trade-secret-theft",
+      "models": []
+    },
+    {
+      "title": "日经：日本最大发电商 JERA 正与 Anthropic、Meta 等洽谈在东京一带发电厂旁建设数据中心",
+      "summary": "日本经济新闻 11 月 27 日报道，日本最大发电商 JERA 正与 Anthropic、Meta 等美国科技公司洽谈，在东京一带的发电厂旁建设数据中心。路透社引述日经称，JERA 全球首席执行官兼董事长可儿行夫还表示，集团也在与 Amazon、Microsoft 和 Google 商谈。JERA 发言人说，市场推广由合作方 RHAELM 负责，该公司被告知 RHAELM 正在与多家超大规模云厂商洽谈；RHAELM 当时未能置评。Anthropic、Meta、Amazon、Microsoft 与 Google 均未立即回应路透社的置评请求。报道同时回顾，JERA 已在 10 月与戴尔及英国人工智能基础设施开发商 RHAELM 签署备忘录，计划以标准化方式在全国建设人工智能基础设施，并从千叶一座估算约 150 亿美元的超大规模数据中心起步。这是已公布的合作背景，不是本次新签署的租约或供电合同。路透社稿件时间戳约为 11 月 26 日 22:13 UTC（上海时间 27 日 06:13）。",
+      "date": "2026-11-27",
+      "source": "Nikkei / Reuters / CNA",
+      "link": "https://www.channelnewsasia.com/business/japans-jera-enters-talks-anthropic-meta-build-data-centres-nikkei-reports-6586021",
+      "models": []
+    },
+    {
+      "title": "新加坡副总理颜金勇：尚未确认英伟达暂停向东南亚发运芯片，正接触企业评估影响并将与美方沟通",
+      "summary": "新加坡副总理兼贸工部（贸易）部长颜金勇 11 月 27 日在亚洲未来峰会上，被问及有报道称英伟达已停止向包括新加坡在内的东南亚发运芯片。他回答：「我们尚未确认。我们正在接触企业，了解对其业务的影响。」他称，新加坡企业也在组织起来，与各方合作以继续获得芯片，并强调新加坡将与美国合作，回应任何关切。他同时表示，新加坡多次申明不愿成为任何形式非法贸易的通道，正在检视部分流程，以加强监管和监测。CNA 于当天 09:51（新加坡时间，与上海时区相同）首发，晚间有更新。这是对昨日《金融时报》有关英伟达要求合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运 AI 服务器报道的官方回应，并不构成对停运本身的证实。",
+      "date": "2026-11-27",
+      "source": "CNA",
+      "link": "https://www.channelnewsasia.com/singapore/economic-nationalism-asean-partnership-nvidia-chips-dpm-gan-6585321",
+      "models": []
+    },
+    {
+      "title": "波兰国防部宣布与 Palantir 签署人工智能决策支援软件合同；Politico 称约 3 亿美元、为期五年",
+      "summary": "波兰国防部 11 月 27 日宣布，当天在华沙与 Palantir 签署合同，采购用于决策支援的人工智能软件，目标是更快分析信息、识别威胁，并向指挥官提供可选行动方案。国防部长 Władysław Kosiniak-Kamysz 称，软件将在军队封闭基础设施中运行；「所有密钥、服务器和信息现在并将继续由波兰武装力量独家掌握」，Palantir 不能访问数据、加密密钥，也没有系统的远程访问权。他同时强调，人工智能可以协助发现威胁和评估风险，但行动决定仍由获得授权的人员作出。国防部称正自主发展 AIRON 与 NEFRYT，未来或可替代供应商工具。Politico 当天报道称，该合同为期五年、金额约 3 亿美元，并指产品为已在乌克兰和北约使用的 Maven 系统；波兰国防部官网稿未写合同金额与产品名称。金额与产品名以 Politico 的转述为准，官方未在同一篇稿件中确认。",
+      "date": "2026-11-27",
+      "source": "波兰国防部 / Politico",
+      "link": "https://www.gov.pl/web/obrona-narodowa/wojsko-polskie-siega-po-nowoczesne-i-sprawdzone-technologie-wykorzystujace-sztuczna-inteligencje",
+      "models": []
+    },
+    {
+      "title": "后续：MiniMax 的 Talkie 已对澳大利亚和英国网页访客实施地区限制，公司未说明原因",
+      "summary": "澳大利亚广播公司 11 月 27 日报道，在 Apple 全球下架 MiniMax 角色扮演应用 Talkie 数日之后，该服务已开始阻止澳大利亚和英国的网页访客，页面提示其「目前在你所在地区不可用」。MiniMax 未回应为何开始实施地区限制。ABC 写明，Talkie 在澳大利亚 Google Play 仍可取得，但 Google 此前曾向该台表示仅向核验后的成年人开放。澳大利亚信息专员 Elizabeth Tydd 提到，将于 12 月 10 日生效的《儿童在线隐私守则》允许其寻求每次违规最高 5000 万澳元的民事处罚；电子安全专员办公室称正在调查 Talkie，并已与运营方沟通，「如果该服务回来，eSafety 将继续评估其是否履行《在线安全法》义务」。这是对昨日日报所记 Apple 下架一事的实质性后续，不是简单重复。",
+      "date": "2026-11-27",
+      "source": "ABC News",
+      "link": "https://www.abc.net.au/news/2026-11-27/talkie-ai-app-blocked-taken-off-apple-store/107433834",
+      "models": []
+    },
+    {
+      "title": "阿联酋政府公布国家智能体技术生态 FedAI 首批合作伙伴",
+      "summary": "阿联酋政府新闻署发布，11 月 27 日在迪拜王储兼副总理、国防部长谢赫·哈姆丹·本·穆罕默德出席的场合，政府公布国家智能体人工智能技术生态（FedAI）的首批合作伙伴：G42、Inception42、Presight、Core42、Etisalat、du、Moro Hub、Microsoft、IBM、Oracle、Google、Amazon Web Services、Cohere、SAAL、Open Innovation、Arabic.AI 和 EDC。官方称，FedAI 在国家智能体项目的人工智能技术与数据工作流下开发，是统一国家平台，供联邦机构在顾及网络安全、数据保护与治理要求的环境中开发、采用和运行智能体方案，并支持对开源模型做主权托管。内阁事务部长、国家智能体项目委员会主席 Mohammad Al Gergawi，以及人工智能、数字经济与远程办公应用国务部长 Omar Sultan Al Olama 出席并讲话。项目目标是在两年内把 50% 的政府服务与运行转向由智能体人工智能支持的模式。名单与目标均来自这篇官方稿，不是本站汇总。",
+      "date": "2026-11-27",
+      "source": "UAE Media Office",
+      "link": "https://www.mediaoffice.ae/en/news/2026/novemebr/27-11/hamdan-bin-mohammed-witnessed-the-uae-governments-announcement",
+      "models": []
+    },
+    {
+      "title": "补记：加拿大向 AI Compute Access Fund 追加 7 亿加元，基金总规模达到 10 亿加元",
+      "summary": "加拿大创新、科学与经济发展部 11 月 26 日在多伦多宣布，人工智能与数字创新部长 Evan Solomon 公布 AI Compute Access Fund 的下一阶段：通过国家人工智能战略「AI for All」追加 7 亿加元，使基金总规模由主权人工智能算力战略下起初的 3 亿加元增至 10 亿加元。官方称，扩容后的基金将开放以优先行业为目标的定向申请，首轮面向健康与生命科学，申请即日起可提交。部长同时公布，在基金初始阶段向 45 家公司提供逾 5200 万加元支持，使累计承诺逾 1.18 亿加元、覆盖 89 家加拿大企业。稿件还写明，基金鼓励使用在加拿大拥有、运营并接受治理的算力，以呼应 2026 年预算中建设 500 兆瓦主权人工智能算力的承诺。数字与口径均来自这篇政府新闻稿。此条落在昨日采集窗内但早六、早八未收，本期补记。",
       "date": "2026-11-26",
-      "source": "OpenAI / Thibault Sottiaux",
-      "link": "https://x.com/thsottiaux/status/2125784147889393806",
-      "models": [
-        "GPT-6.2 Astra",
-        "GPT-6.2 Sol",
-        "GPT-6 Astra",
-        "GPT-6.1 Sol"
-      ]
+      "source": "加拿大创新、科学与经济发展部",
+      "link": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html",
+      "models": []
     },
     {
-      "title": "《金融时报》：英伟达要求合作伙伴暂停向东南亚四国发运 AI 服务器",
-      "summary": "《金融时报》报道，英伟达已要求主要代工伙伴停止向马来西亚、新加坡、泰国和印度尼西亚发运服务器。知情人士称，负责把英伟达芯片组装成服务器的戴尔与 Super Micro 已通知这四国买家：英伟达不允许相关订单出货。报道写明，目前尚不清楚停运是暂时安排，还是英伟达与合作伙伴在核对如何遵守美国商务部新出口管制期间的权宜之计。新规针对的是通过海外云与数据中心远程使用受限制算力；商务部给云服务商留下 90 天窗口，须申请许可证并证明最终用户不含受限实体。一名云服务商高管对《金融时报》表示，规则已出但执行指引不足，「没有人知道该怎么申请许可证，而 90 天的钟已经在走」。报道并举新加坡云公司 Aolani 为例：知情人士称，该公司计划向字节跳动出租先进算力的安排，已有约 5 亿美元信贷被银行停发，交易可能告吹。英伟达拒绝置评；戴尔、Super Micro、字节跳动与 Aolani 未回应该报道的置评请求。本站不转述报道中与管理层人事有关、且未经英伟达官方确认的部分。",
+      "title": "补记：彭博社称华为将在 ISSCC 宣读 4096 数据引脚定制 HBM 论文，节目单未披露速率与带宽",
+      "summary": "彭博社 11 月 26 日报道，华为将在 2027 年 2 月 16 日于旧金山举行的 IEEE 国际固态电路会议（ISSCC）上，介绍一种定制高带宽存储器设计。TechTimes 随后核对会议草稿节目单第 22.6 项，标题为「A 64-Channel 4096-DQ Custom HBM with Memory Controllers and 5-Layer Wafer-on-Wafer Hybrid Bonding」，作者为 W. Zhang、Z. Wang、T. Huang、R. Liu、S. Zhang、J. Xia 和 H. Liao，单位写明为深圳华为；场次安排在 2 月 16 日下午的「SRAM, HBM and DRAM」环节。4096 个数据引脚是 JEDEC HBM4 标准 2048 引脚的两倍。节目单没有这篇论文的摘要，也未给出数据速率、带宽、容量或良率，因此还不能据此判断实际性能。华为当时未立即回应彭博社的置评请求。TechTimes 并提醒：会议论文常常展示构想或实验室结果，不等于已经能量产。此条落在昨日采集窗内但早六、早八未收，本期补记。",
       "date": "2026-11-26",
-      "source": "Financial Times / CNA",
-      "link": "https://www.channelnewsasia.com/asia/nvidia-halts-chip-shipments-southeast-asia-6584351",
+      "source": "Bloomberg / TechTimes",
+      "link": "https://www.techtimes.com/articles/331658/20261127/huawei-lists-4096-pin-hbm-memory-chip-conference-twice-hbm4-width-no-speed-disclosed.htm",
       "models": []
     },
     {
-      "title": "国家数据局就完善数据规则、赋能人工智能创新发展公开征求意见",
-      "summary": "新华社 11 月 26 日 23:15 报道，国家数据局当天发布《关于完善数据规则 赋能人工智能创新发展的若干意见》公开征求意见稿。新华社称，征求意见稿围绕人工智能发展的数据要素需求，从三大方面提出十二项具体举措，明确推动数据产权制度在人工智能用数领域运用，数据有序、依法合规用于人工智能训练和推理；协调好数据处理者与受托方的关系，支持和鼓励为数据付费，建立人工智能企业输出的风险防控机制；完善数据流通责任认定和安全治理机制。文章还写明，相关部门将及时跟踪研究解决新业态新模式发展中的数据问题。第一财经 11 月 26 日 18:48 的报道转述了更细的条目，包括支持采集生成的数据用于训练和推理，以及推动衍生数据、协议取得的数据依法合规用于训练和推理。本站以新华社通稿为主要依据；公开征求的截止日在已核验的新华社与第一财经稿件正文中未见，故不写。",
+      "title": "补记：荷兰外贸大臣称将抵制美国 MATCH 法案对阿斯麦对华出口的连带限制",
+      "summary": "NL Times 11 月 26 日转述荷兰通讯社 ANP 报道，外贸与发展合作大臣 Sjoerd Sjoerdsma 当天在议会表示，「荷兰不会接受别人发号施令」，并称美国国会提出的 MATCH 法案所设想的限制「走得太远」。该法案要求包括荷兰、日本在内的盟国与美国对华出口管制对齐，否则美国可单方面限制其芯片制造设备。他称此事涉及国家利益，正与欧盟委员会协调，并争取把该案从美国国防授权法案中拿掉；表决约在 12 月中旬。他同时批评，美方一边寻求进一步限制盟友，一边仍允许「非常先进的人工智能芯片」输往中国。报道称，中国约占阿斯麦营收的两成。Sjoerdsma 还说，与中方官员的接触并未让他觉得，若法案通过，北京会对荷兰采取报复。法案尚未通过，也尚未进入实施。此条落在昨日采集窗内但早六、早八未收，本期补记。",
       "date": "2026-11-26",
-      "source": "新华社 / 第一财经",
-      "link": "https://www.news.cn/20261126/5b846aa390674a86825f08cbac6c1d30/c.html",
-      "models": []
-    },
-    {
-      "title": "路透社独家：知情人士称 GLM-5.5 与 Kimi K4 或因算力与蒸馏受限而推迟",
-      "summary": "路透社 11 月 26 日独家报道，引述知情人士称，美国收紧对先进算力的远程使用、以及 OpenAI 与 Anthropic 加强对未经授权蒸馏的拦截，已开始影响部分中国实验室的下一代旗舰安排。其中一人称，Z.AI 原希望在年底前完成训练并发布 GLM-5.5，但新的美国算力限制可能把发布推到 2027 年一季度或更晚。Z.AI 未立即回应置评；该公司周一（11 月 23 日）发布了参数量为 7500 亿的 GLM-5.4，并自称新设计能够赶上 2 万亿到 3 万亿参数量级的系统，这一对比是厂商自述，不是本站或 Artificial Analysis 的同口径评分。另有知情人士称，主要租用海外算力训练的 Moonshot 若海外算力被完全切断，内部预计重大版本间隔可能从约 6 个月拉长到 12 个月或更久，中国国内算力补不上缺口，下一款旗舰 Kimi K4 或推迟到 2027 年中前后。Moonshot 未立即回应路透社置评。报道把这些安排变化同时与算力限制和蒸馏防护联系起来，目前仍是消息源转述，不是两家公司的官方时间表。",
-      "date": "2026-11-26",
-      "source": "Reuters",
-      "link": "https://finance.yahoo.com/news/exclusive-us-chip-curbs-distillation-071923947.html",
-      "models": []
-    },
-    {
-      "title": "彭博社引述知情人士：SAP 考虑在围绕 AI 的重组中至少裁员 1 万个岗位，公司未证实",
-      "summary": "彭博社 11 月 26 日引述知情人士报道，德国软件公司 SAP 正准备在围绕人工智能重塑业务的过程中，至少裁减 1 万个岗位，约为其全球员工总数的 9% 或以上。The Next Web 转述称，SAP 在全球雇用超过 11 万人；《纽约邮报》则转述其财务披露，截至 9 月末全职约当人数为 113,076。报道写明，最终数字尚未确定，可能在与劳工代表谈判后调整；公司已要求各部门寻找可削减的领域，产品和工程以及销售是主要焦点。SAP 未就是否计划裁员作出说明，对彭博社的声明是：「SAP 持续检视其组织，以确保与战略和客户需求保持一致。」本站未能打开彭博社原文全文，以上事实转述自 The Next Web 与《纽约邮报》对这篇报道的引述。",
-      "date": "2026-11-26",
-      "source": "Bloomberg / The Next Web",
-      "link": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
-      "models": []
-    },
-    {
-      "title": "补记：CBS 调查称英伟达在加州的两家高层级合作伙伴实为中资控股，美政府未指控其违法",
-      "summary": "CBS News 调查报道称，出现在英伟达美国合作伙伴名单上的两家加州公司——圣何塞的 RiCloud AI（preferred partner）与 Aivres（elite compute partner）——其母公司为中资控股。报道写明，RiCloud AI 的母公司是总部位于深圳、在香港上市的 Yuxing InfoTech Investment Holdings Limited；该公司 CEO 兼共同所有人 Cong Yu 持有中国人民解放军指挥学院国防动员学位。报道举例称，RiCloud 今年签下约 1.2 亿美元合同，向一家原本以售酒为主、后转型为 AI 公司的台湾企业 Agencia Comercial Spirits 出租 300 台英伟达 B300 服务器。美国政府并未指控 RiCloud 与 Yuxing 有违法行为；英伟达未回应 CBS 关于在授予 RiCloud 优先合作伙伴地位前做了哪些背景调查的提问。报道并称，Aivres 原名与其中国母公司浪潮（Inspur）相同，浪潮集团相关公司于 2023 年 3 月被列入联邦黑名单后，这家加州子公司更名，Aivres 本身不在黑名单上。CBS 转述《纽约时报》对贸易记录的分析：Aivres 在 2024 年 4 月至 2026 年 2 月向东南亚出口了至少 56 亿美元先进技术，其中约 30 亿美元为含英伟达受限 Blackwell 芯片的计算机，并称这些芯片随后进入马来西亚的 Megaspeed 与 Aolani，为阿里巴巴和字节跳动提供云端 AI 服务。本站按调查报道转述，不对其结论作独立核验。",
-      "date": "2026-11-25",
-      "source": "CBS News",
-      "link": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/",
-      "models": []
-    },
-    {
-      "title": "补记：微软威胁情报称已有多个团伙把开源智能体渗透框架 ARTEX 纳入工具链",
-      "summary": "微软安全博客 11 月 25 日发布防守者指南称，2026 年 7 月公开的人工智能渗透测试框架 ARTEX，已被用于加速网络侦察、凭证攻击和 Web 应用利用等既有流程。截至 2026 年 11 月，微软威胁情报观察到 Storm-0940、Storm-3358、Onyx Sleet、Pearl Sleet、Crystal Typhoon 与 Salt Typhoon 等国家支持或出于经济动机的团伙把 ARTEX 纳入工具链。博客称，近几周还看到有活动用 ARTEX 在公开代码仓库中搜寻暴露的密钥、协助供应链攻击，并扫描互联网暴露面。本站只转述微软公开的防守说明，不展开攻击步骤。",
-      "date": "2026-11-25",
-      "source": "Microsoft Threat Intelligence",
-      "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
-      "models": []
-    },
-    {
-      "title": "补记：Alpöge 黎曼猜想 Lean 证明的缩短版约 7.6 万行发布，滑铁卢大学 11 月 26 日复核通过",
-      "summary": "在 Alpöge 于 11 月 20 日发布约 1700 万行 Lean 证明、并已于 11 月 23 日经 Lean FRO 与 Mathlib Initiative 声明核验之后，Luke Sernau 与 Anthropic 同事及 Claude 于 11 月 25 日在 GitHub 仓库 lsernau/grh-lean 发布同一组五条定理的缩短版：可读版约 30 万行，紧凑版约 7.6 万行。滑铁卢大学 Michael Rubinstein 的核验页写明，定理陈述与原证明相同。其 11 月 26 日的复核结果为：全部 794 个模块编译通过；五条定理只依赖 Lean 的三条标准公理；Lean 内核重放全部通过；lake comparator --paranoid 确认所证即挑战文件中的陈述，并被六个内核接受（Lean 默认与 paranoid、nanoda、lean4lean、con-leche、con-ron）。MIT 的 Andrew Sutherland 在带沙箱的检查中得到相同结论。这是机器核验，不是数学家已通读或完成同行评审的证明。",
-      "date": "2026-11-26",
-      "source": "Michael Rubinstein / University of Waterloo",
-      "link": "https://math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/",
-      "models": []
-    },
-    {
-      "title": "补记：Anthropic 回顾把 Messages API 从 Python 迁到 Rust，称 CPU 约降 70%",
-      "summary": "Anthropic 11 月 25 日研究博客《Migrating our Messages API to Rust》回顾了把面向客户的 Messages API 从 Python 迁到 Rust 的过程。官方称，在从未停服、也没有冻结功能开发的情况下，新实现每请求 CPU 约降低 70%，中位首 token 时延约降低 20%。公开流量已于 2026 年 9 月切到 Rust。文章把这次迁移写成「用生产流量本身做校验器」：Claude 约用一周写出核心请求路径的首个版本，随后在生产流量上对照新旧实现的差异，并自动派出智能体修复。官方也写明了数字口径：CPU 变化来自一个区域的观测；时延数字来自 Claude Code 请求、且观测窗口更短。此文落在昨日采集窗内但早六、早八均未收，本期补记。",
-      "date": "2026-11-25",
-      "source": "Anthropic",
-      "link": "https://www.anthropic.com/research/migrating-api-to-rust",
-      "models": []
-    },
-    {
-      "title": "补记：Amodei 发长文回击「向 AI 交出人类自由意志」，主张以民主程序治理人工智能",
-      "summary": "TechCrunch 11 月 25 日 11:44 PST（上海时间 26 日 03:44）报道，Anthropic CEO Dario Amodei 于当天在 X 发长文，回击有关 Anthropic 主张「向 AI 系统交出人类自由意志」的说法，并称之为荒谬。TechCrunch 引述他写道：「我们绝不应为了效率或安全而牺牲正当性或自决」；「这一反对专制的论据，逐字同样适用于把治理权交给人工智能，我同样强烈地认为，把治理交给 AI 是个坏主意。」他区分了两件事：让更强的 AI 以更自动化的方式完成具体任务（文中举例包括驾驶、设计抗癌药物、端到端编写软件），与在全局治理意义上把人类自由意志交给 AI。他也写到，对于人工智能自主改进自身（递归自我改进）「我们可能希望对这一过程设限」，并称 11 月初已公开表示，不认为在没有有意义的人类监督或理解的情况下，让 Claude 完全自主地构建后续前沿模型是安全的。长文同时是对 Axios 一篇报道的回应。此条落在昨日采集窗内但早六、早八均未收，本期补记。",
-      "date": "2026-11-25",
-      "source": "TechCrunch / Dario Amodei",
-      "link": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
-      "models": []
-    },
-    {
-      "title": "补记：Apple 已从全球 App Store 下架 MiniMax 的 Talkie，仍可在网页和 Google Play 使用",
-      "summary": "The Bureau of Investigative Journalism 11 月 24 日与 ABC News 联合报道，上海公司 MiniMax 旗下角色扮演应用 Talkie 中的部分角色，会对未成年用户发送贬低、性化或占有式对话。调查方向 Apple 提供了材料后，该应用已从全球 App Store 下架。AppleInsider 11 月 25 日 21:55 ET（上海时间 26 日 10:55）报道，Apple 称下架原因是色情内容，而不是专门针对未成年人受害。TBIJ 写明，截至发稿时 Talkie 仍可在网页和 Google Play 使用，并称 Google Play 下载量超过 5000 万。调查发表于 11 月 24 日，早六、早八未收；Apple 下架及「全球范围」的确认在随后报道中补齐，本期一并补记。",
-      "date": "2026-11-25",
-      "source": "TBIJ / AppleInsider",
-      "link": "https://www.thebureauinvestigates.com/stories/2026-11-24/talkie-china-chatbot-children",
-      "models": []
-    },
-    {
-      "title": "补记：OpenAI 开始向部分 Pro 用户测试合并后的 Chat 与 Work 界面，共享额度计划 12 月更广推出",
-      "summary": "TechCrunch 11 月 25 日 12:03 PST（上海时间 26 日 04:03）报道，OpenAI 已开始向一小部分 ChatGPT Pro 用户推送合并后的 Chat 与 Work 体验。产品负责人 Thibault Sottiaux 于周二（11 月 24 日）在 X 发文宣布这一测试。OpenAI 发言人告诉 TechCrunch，Chat 与 Work 将共用一个额度计量，大多数用户预计不会更频繁地碰到重置，但使用最重的一小部分用户可能会更快触及上限；Instant 对话保持无限，且不计入共享额度，用尽额度后仍可继续使用 Instant。报道称，按 OpenAI 支持页，共享额度计划在 12 月更广推出。此条落在昨日采集窗内但早六、早八未收，本期补记。它与 11 月 26 日公布的 GPT-6.2 计费纠正是两件不同的事。",
-      "date": "2026-11-25",
-      "source": "TechCrunch / OpenAI",
-      "link": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "source": "NL Times / ANP",
+      "link": "https://nltimes.nl/2026/11/26/netherlands-draws-line-us-plan-restrict-asml-exports-china",
       "models": []
     }
   ],
   "papers": [
     {
-      "title": "Context Scaling：把「系统能在决策前备好怎样的上下文」单独当成一条扩展轴",
-      "titleEn": "Context Scaling: A New Frontier of AI Scaling",
-      "summary": "复旦大学邱锡鹏的立场综述把已部署系统的许多失败，归因为任务所依赖的状态与模型实际拿到的上下文不匹配，而不是推理本身不够强。文章把系统写成三笔预算：训练、决策时计算，以及上下文基础设施；只有第三笔专门作用于决策前能够获取、表示、投递、评估和保持的部署状态。作者提出有效上下文价值，并区分可用性、保真、选择与利用四类失败。这是作者修订后的预印本，期刊版已发表于 AI Plus。",
-      "authors": "Xipeng Qiu",
-      "link": "https://arxiv.org/abs/2611.33160"
+      "title": "DFly2：不自建草稿 KV，而是共用目标模型已经选好的稀疏位置来做推测解码",
+      "titleEn": "DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target’s Sparsity",
+      "summary": "腾讯作者针对 DeepSeek-V4、GLM-5、Hy4 这类原生稀疏注意力模型指出：现有块并行草稿模型仍按稠密目标的思路，自己保存一份上下文缓存，既占内存，也会随目标进一步压缩 KV 而变得更不合算。DFly2 让每个草稿层直接读取所配对目标层已经缓存的 KV，并且只在该层索引器已经选出的位置上计算，草稿侧不再做单独的选位，也不再保留自己的缓存。作者称，在 DS-V4.1-Flash 上，提前一步做出的选择仍能覆盖后续块内约九成的位置。在 DS-V4.1-Flash、GLM-5.3-Flash 与 Hy4 flash 上，按同一配方训练的对照中，DFly2 的每步接受长度高于 DFlash 与 DSpark；相对更强基线的优势在通用任务上为 3.9%–10.5%，在最长 128K 的长上下文与智能体任务上扩大到 10.0%–31.5%。在高并发、对齐到相同每用户解码速度时，作者称在 64K 的长上下文与智能体集合上，吞吐分别比该基线高 62% 和 81%。这些数字是论文自报。训练代码在论文中指向 GitHub 仓库 Tencent/AngelSpec。",
+      "authors": "Hong Liu, Rui Cen, Junhan Shi, Lin Niu, Runzhi Fan, Zhaojing Zhou, Haodi Lei, Jiebin Zhang, Saiyong Yang, Junqiang Zheng, Zhenghai Xue, Guanghua Yu, Jianchen Zhu",
+      "link": "https://arxiv.org/abs/2611.34776"
     },
     {
-      "title": "AutoformBench：341 道 Lean 4 形式化题，考的是补定义和中间引理，而不只是证一条孤立定理",
-      "titleEn": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
-      "summary": "Meta FAIR 等提出 AutoformBench，包含来自 24 个高阶数学来源的 341 道 Lean 4 形式化任务。有 Lean 经验的数学家形式化并审核了目标命题，把相应证明留给被测智能体。与许多只给孤立定理、且配套理论已在 Mathlib 中的评测不同，这里每道题都嵌在更完整的数学发展里：智能体拿到非形式化证明，但必须在翻译成 Lean 的同时，自行补上缺失的定义、中间引理和支撑设施。作者发现难度更多取决于能否建造缺失的形式化基础设施，而不是数学分支本身。",
-      "authors": "Charles Arnal, Ahmad Rammal, Niket Patel, Fabian Gloeckle, Bartosz Piotrowski, Amaury Hayat, Julia Kempe, Rémi Munos, Vivien Cabannes",
-      "link": "https://arxiv.org/abs/2611.33165"
+      "title": "OS-Omni：在 Windows、Ubuntu、macOS、iOS、Android 与网页上评测跨平台计算机使用智能体",
+      "titleEn": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "summary": "现有计算机使用评测往往把网页、手机或桌面环境拆开，难以判断同一个通才智能体能否完成跨操作系统、并保持应用状态的长程工作流。OS-Omni 提供一套可复现的跨平台基准与执行环境，覆盖 Windows、Ubuntu、macOS、iOS、Android 与网页；本版 v1 共 300 道任务，其中每个平台 48 道，另有 12 道把桌面与 Android 手机配对的跨平台流程。作者称，人类完成这些任务平均需要 67.54 步交互，明显高于 OSWorld 文献中的 15.0 步。在 v1 上，评测中最强的智能体 Claude Opus 5.5 平均成功率为 68.5%，比人类参考值 77.3% 低 8.8 个百分点；差距并不均匀，前沿模型在 Linux 上超过人类，但在 iOS 和 macOS 上落后超过 25 个百分点。数字来自论文自报。",
+      "authors": "Hui Shen, Yunta Hsieh, Jianing Ma, Zhuoran Yin, Zhuhan Bao 等",
+      "link": "https://arxiv.org/abs/2611.34232"
     },
     {
-      "title": "约束感知的测试时打分：先过硬门槛，再把软指标合成一个候选分数",
-      "titleEn": "Constraint-Aware Test-Time Scoring for LLM and VLM Candidate Selection",
-      "summary": "当模型给出多个候选答案时，常见做法是看模型自信度、另请裁判模型，或做领域检查，但都可能放过「写得流畅却不安全」或「裁判分高却偷偷违反硬约束」的答案。本文提出一套测试时打分：一组每条答案都必须通过的硬检查，再与更宽的软检查加权合成单一分数。作者在安全代码生成（CWEval）、带安全变体的机器人操作规划（LIBERO）、竞赛编程隐藏测试（LiveCodeBench）和检索问答（HotpotQA）上做了消融，认为最大增益来自把硬检查与候选对比结合起来；在首个采样答案经常不成立或不安全的任务上，正确且安全的联合指标最高可提升约 0.21（检索问答）和 0.28（CWEval）。按任务配置软检查权重的那一层，相对更简单的替代方案没有可测贡献。",
-      "authors": "Rangarajan Ramesh, Yongchao Huang",
-      "link": "https://arxiv.org/abs/2611.33161"
+      "title": "REE：用 100 道需迭代改进的开放科研题，给科研智能体做「入学考试」",
+      "titleEn": "REE: A Scientific Research Entrance Exam for AI Agents",
+      "summary": "TokenWave AI、东京大学等提出 REE（Research Entrance Exam），包含 100 道开放式科研问题，覆盖五个大方向、23 个领域；每道题均来自所在领域的活跃研究，并由领域专家单独审过。设定不是一次性作答，而是在最多 12 小时内改进一份可运行的起步方案，再按同一尺度与可比条件下的专家方案对照打分。作者报告，在评测的四个前沿智能体中，Claude Opus 5.5 与 GPT-6.1 Sol 分别在 86% 和 81% 的题目上超过专家方案，且平均在前两小时内就已超过；其最佳方案大多是对已有方法的改写或组合。这些结果是论文自报，不是对「已能自主做出新科学发现」的断言。",
+      "authors": "Zeqi Zhou, Minghao Liu, Jiarui Liu, Qingcheng Zeng, Rui Yang, Tianyu Liu, Zetao Yang, Wenqiang Zu, Enduo Zhao, Heng-Jui Chang 等",
+      "link": "https://arxiv.org/abs/2611.34646"
     },
     {
-      "title": "MGMem：长期智能体记忆不做生成式索引，只确定性解析并交回原始对话",
-      "titleEn": "MGMem: An Efficient, Deterministic, and Provenance-Preserving Framework for Long-Horizon Agent Memory",
-      "summary": "港科广的作者指出，许多长期记忆系统会让生成式模型把历史改写成摘要、事实或知识图谱，代价高、不可复现，而且读者看到的不再是原始轮次。MGMem 取消生成式索引调用，改用确定性的判别-解析流水线：跨会话的重复提及被组织成关联图，问题中的提及由按主体条件的三阶段解析器对齐，再把原始对话片段交回给阅读器。在英语多会话对话问答上，作者称其在 LoCoMo 上超过同协议基线，且不使用生成式索引调用。",
-      "authors": "Junhong Huang, Xin Tong, Jun Xia",
-      "link": "https://arxiv.org/abs/2611.33174"
+      "title": "让模型自己管理上下文：在 NVIDIA 开源智能体框架 NOOA 里比较「框架压缩」与「模型压缩」",
+      "titleEn": "Letting Models Manage Their Own Context: Where We Stand",
+      "summary": "今日常见做法是由智能体框架在窗口将满时触发摘要压缩。NVIDIA 的作者在开源框架 NOOA 里改让模型通过上下文 API 自己决定何时、压缩什么，并在 8K 到 512K 的预算下比较文档研究与机器学习工程任务。作者称，能够有效使用该 API 的模型往往准确率更高，且常用更少的输入 token，在紧预算下尤为明显：GPT-6.1 在 32K 预算的 OfficeQA Pro v2 上分数接近翻三倍（21%→56%），Kimi 的输入 token 最多减少 41%。不同模型调用 API 的频率、压缩力度和起始时机差异很大，提示词也会改变时机。作者还显示，推理引擎若在编辑后复用未改后缀的 KV 缓存，单次请求的预填充计算最多可降约 15%，且未测到准确率变化。数字为论文自报。",
+      "authors": "Alessio Devoto, Avinash Vem, Tara Safavi, Sanjay Kariyappa, Yu-Hsuan Tseng, Paul Furgale, Ricardo Silveira Cabral",
+      "link": "https://arxiv.org/abs/2611.34147"
     },
     {
-      "title": "AliceAI-Foundation 技术报告：Yandex 开源 80B / 约 3B 激活的 MoE 基座模型，并放出两个俄语事实基准",
-      "titleEn": "AliceAI-Foundation-80B-A3B-Base",
-      "summary": "Alice AI Team 在 arXiv 发布 AliceAI-Foundation-80B-A3B-Base 技术报告：这是 Yandex 从零训练的混合专家基座模型，总参数 800 亿、每 token 约 30 亿激活，Apache 2.0 许可，权重在 Hugging Face（yandex/AliceAI-Foundation-80B-A3B-Base）。报告称预训练 17.5 万亿 token，架构结合 Kimi Delta Attention 与全注意力，并使用 Attention Residuals 与 Muon。官方自报零样本推理：IMO-AnswerBench pass@8 为 88.7%，LiveCodeBench v5–v6 pass@8 为 82.9%；并新发布 WikiWebFacts、HardMultiQA 两个俄语事实基准，分别报 86.5% 与 67.9%。这些数字是论文自报，不是本站或 Artificial Analysis 的同口径评分，不入主榜。模型本身已在此前开源，本期按 11 月 26 日 arXiv 新稿收入论文栏，不作为当日新模型发布。",
-      "authors": "Alice AI Team",
-      "link": "https://arxiv.org/abs/2611.34529"
+      "title": "Tokenisation is not in APX：除非 P=NP，否则不存在任何常数近似比的多项式时间分词算法",
+      "titleEn": "Tokenisation is not in APX",
+      "summary": "ETH Zürich 的作者证明：在 P≠NP 的前提下，不存在多项式时间算法能保证找到的分词器目标值落在最优值的任意常数倍之内，也就是说分词优化问题不属于 APX。结论同时覆盖直接分词与自底向上分词，目标可以是压缩或 unigram 对数似然，字母表可以是二进制或更大。作者还证明，即便在一元字母表上，直接分词也是 APX 难的，因而没有多项式时间近似方案。这是复杂性结果，并不直接给出新的实用分词器。",
+      "authors": "Violeta Kastreva, Philip Whittington, Dennis Komm, Tiago Pimentel",
+      "link": "https://arxiv.org/abs/2611.34938"
     },
     {
-      "title": "FlyingStart：给循环深度模型的固定点解码加一个学来的热启动，少迭代、准确率不变",
-      "titleEn": "FlyingStart: Learned Cross-Token Warm Starts for Fixed-Point Decoding in Recurrent-Depth Language Models",
-      "summary": "循环深度语言模型生成每个 token 时，会迭代同一组层直到隐状态收敛；已有方法主要决定何时停止，但每个 token 仍往往从随机噪声起步。FlyingStart 把「从哪里开始迭代」当成第二根独立杠杆：用上一个 token 结束时的状态，经学到的线性坐标变换，给下一个 token 一个更好的热启动；迭代规则和停止准则不变，因此退出条件仍保证与固定点的距离口径不变。作者称该变换可在冻结模型上以闭式方式拟合。在 Huginn-0125 上，FlyingStart 与最强的免训练基线准确率相当，解码层数减少 14%–19%，并在两种服务引擎中把批处理吞吐提高 16%–18%。",
-      "authors": "Runguo Li, Dezhen Lu, Zixiang Ni",
-      "link": "https://arxiv.org/abs/2611.34492"
+      "title": "CARE-OPD：为长程智能体的在策略蒸馏补上「覆盖式采集」和「按证据回放」",
+      "titleEn": "Collect for Coverage, Replay with Evidence: Adaptive and Efficient On-Policy Distillation for Long-Horizon Agents",
+      "summary": "上海交通大学、上海创智学院与京东的作者分析认为，现有前缀回放虽然能减少长尾环境交互，但采集阶段若只用教师轨迹，会错过学生自己走出的历史；回放阶段若按固定位置取样，又可能抓不住轨迹中任何深度都可能出现的关键决策。CARE-OPD 用学生先走、教师再补全，并加响应级置信门控来扩大历史覆盖、滤掉不可靠更新；再用后续执行证据来选择更关键的回合做回放。作者称，在软件工程与深度研究等长程任务上，该方法优于在线在策略蒸馏和此前的前缀回放；在 SWE-bench Verified 上，任务成功率提高到 59.5%，相对异步在线在策略蒸馏，端到端训练时间减少 45%，环境动作减少 44%。数字为论文自报。",
+      "authors": "Haowen Hou, Gen Li, Ruilin Li, Yicheng Liu, Zhen Huang, Shuai Dong, Congcong Wang, Kaiwen Tuo, Hongrui Wu, Zelin Peng 等",
+      "link": "https://arxiv.org/abs/2611.34756"
     }
   ],
   "models": [
     {
-      "name": "GigaChat 4（37B / 708B）",
-      "vendor": "Sber / ai-sage",
-      "highlight": "萨布尔 11 月 26 日官方博客发布 GigaChat 4，包含 37B 与 708B 两款混合专家模型。官方博客称，37B 每 token 约 3.8B 激活，708B 约 41B 激活；Hugging Face 模型卡将小模型写作 37B / 4B 激活，大模型为 708B / 41B 激活，上下文均为 1,048,576 token。两款模型都在同一检查点里提供 instant 与 reasoning 模式，并支持工具调用。架构在 GigaChat 3.5 的 MoE + Gated DeltaNet + MLA 基础上加入了 DSA。权重以 MIT 许可放在 Hugging Face，组织为 ai-sage，仓库包括 ai-sage/GigaChat4-37B-A4B 与 ai-sage/GigaChat4-708B-A41B（另有 BF16、GGUF、base 与中间检查点）。官方自报 37B 质量可与 Qwen3.6-35B-A3B 相比，708B 可与 GLM 5.3、DeepSeek-V4.1-Flash-1017 和 Mistral-Large-4-1T-A52B 相比——这是厂商自评，不是本站或 Artificial Analysis 的同口径评分，不入主榜。",
-      "link": "https://giga.chat/blog/posts/gigachat-4"
+      "name": "Raon-1 mini",
+      "vendor": "KRAFTON AI",
+      "highlight": "补记：KRAFTON AI 在 Hugging Face 发布 Raon-1 mini（仓库 KRAFTON/Raon-1-mini），Apache 2.0 许可。模型卡标题写作 30B-A4B，规格表则写总参数 28.8B、每 token 激活 4.3B（128 个专家中激活 6 个 routed 专家加 1 个共享专家），原生上下文 262,144 token。架构为 25 层混合专家：18 层 Raon Delta Attention、7 层门控 MLA，并支持 none 到 max 共六档推理力度，以及工具调用。仓库创建于 11 月 24 日，韩国媒体报道正式发布在 11 月 25 日；模型卡自报了 AIME 2026、HMMT、GPQA Diamond 等分数，这是厂商自评，不是本站或 Artificial Analysis 的同口径评分，不入主榜。此条落在昨日或前日窗口但早六、早八未收，本期补记。",
+      "link": "https://huggingface.co/KRAFTON/Raon-1-mini"
+    },
+    {
+      "name": "Nemotron-Labs-Image-30B-A3B",
+      "vendor": "NVIDIA",
+      "highlight": "补记：英伟达在 Hugging Face 放出 Nemotron-Labs-Image-30B-A3B，作为 Nemotron-Labs-VisualCreation（「Pixel as Code」）框架中的光栅图像生成组件，总参数 300 亿、每 token 激活 30 亿，从 Nemotron 3 Nano 初始化。随模型提供约 6.42 亿参数的视觉分词器，把 16×16 图块量化到 196,560 个 Leech 格点码本。模型卡写明，本次发布覆盖图像生成器及其捆绑分词器；用于可编辑 SVG、HTML/CSS、图表和文档标记的 VisionCode 等组件仍标为「等待法律许可」，因此不能把框架级评测分数单独记在这一份检查点上。配套论文为 arXiv:2611.31358。仓库 LICENSE 的 3.3 节规定，作品及其衍生作品仅可非商业使用，并写明「non-commercially」指研究或评估；英伟达及其关联公司不受此限。Hugging Face 记录的最近修改时间为 11 月 25 日 18:57 UTC（上海时间 26 日 02:57）。此条昨日未收，本期补记。",
+      "link": "https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B"
     }
   ],
   "ecosystem": [
     {
-      "title": "Langfuse 让 MCP 服务器直接分发官方技能：一次接入即可同时拿到项目工具与 playbook",
-      "summary": "Langfuse 在 11 月 26 日的更新日志中宣布，其 MCP 服务器开始通过 MCP Skills 扩展（io.modelcontextprotocol/skills）分发官方 playbook。把客户端连到 Langfuse 的 MCP 服务器后，智能体可自动发现 langfuse/skills 中的技能，并与项目工具一起使用，不必再单独执行技能安装、克隆仓库或维护符号链接。云端始终提供 langfuse/skills 的最新版本，自托管则提供与所安装 Langfuse 版本匹配的技能。技能按扩展以渐进方式加载，以减少上下文占用。这是 Skills over MCP 在观测平台上的一次具体落地，规范本身已在此前公开测试。",
+      "title": "Langfuse 上线组织级模型与定价定义，项目可覆盖，并提供组织 Models API",
+      "summary": "Langfuse 11 月 27 日更新日志宣布，组织的所有者和管理员可以在 Organization Settings > Models 里为所有项目统一填写模型定义，而不必在每个项目里重复维护自定义条目。自定义或谈判后的费率只需定义一次（也可从 Langfuse 默认项克隆），各项目据此推断成本。匹配顺序是项目、再组织、再 Langfuse 默认；若要只改一个项目，可在 Project Settings > Models 克隆组织级定义后覆盖。组织级定义也可通过 Organization Models API 同步；项目 Models API 现在为每条模型返回 scope 字段，并开始弃用 isLangfuseManaged。",
       "source": "Langfuse",
-      "link": "https://langfuse.com/changelog/2026-11-26-mcp-bundled-skills",
+      "link": "https://langfuse.com/changelog/2026-11-27-organization-model-definitions",
       "models": []
     },
     {
-      "title": "补记：Google 为 Gemma4 系列开源模型上线微调中心，并放出 gemma-trainer 技能",
-      "summary": "Google Gemma 官方账号于 11 月 25 日宣布，Gemma4 系列微调中心已在 gemma.ai/tuning 上线，收录 17 篇指南和 40 余幅插图，覆盖继续预训练、自定义对话模板、LoRA、全量微调到导出等流程。页面可按目标（例如 Quickstart）给出阅读顺序。Google 同时在 github.com/google-gemma/gemma-skills 放出 gemma-trainer 技能，供编程智能体协助搭建训练流水线。GIGAZINE 于 11 月 26 日作了转述。",
-      "source": "Google Gemma / GIGAZINE",
-      "link": "https://gemma.ai/tuning/",
-      "models": []
+      "title": "补记：腾讯开源面向原生稀疏模型的推测解码草稿器 DFly2，并放出训练框架 AngelSpec",
+      "summary": "MarkTechPost 11 月 26 日报道，腾讯开源 DFly2：一种为 DeepSeek-V4.1-Flash、GLM-5.3-Flash 和 Hy4 flash 等原生稀疏大模型设计的块并行推测解码草稿器。方法细节见同期论文 arXiv:2611.34776，核心是草稿层复用目标层已有的稀疏 KV 缓存和索引器选位，从而不再自建草稿 KV。该文给出的吞吐与接受长度数字是论文自报，本期已在论文栏收录。报道称，训练代码放在 GitHub 仓库 Tencent/AngelSpec；Hy4 flash 的 vLLM / SGLang 配方中可启用相应推测解码方法。此条落在昨日采集窗内但早六、早八未收，本期补记。",
+      "source": "MarkTechPost / arXiv",
+      "link": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models/",
+      "models": [
+        "GLM-5.3-Flash",
+        "DeepSeek-V4.1-Flash-1017",
+        "Hy4 flash"
+      ]
     },
     {
-      "title": "补记：Perplexity 在 Search 与 Context API 中加入 Time Machine，可按截止日期检索最多 365 天前的网页快照",
-      "summary": "Perplexity 于 11 月 25 日宣布，为开发者所用的 Search 与 Context API 增加 Time Machine：可为检索和读页加上截止日期，结果来自该日期之前保存的网页副本，回溯最多 365 天。The Next Web 当天 20:55 GMT（上海时间 11 月 26 日 04:55）报道称，该工具与前一日上线的 Epochal Time Portal 瞄准同一问题——避免智能体在做历史预测评测时看到事后信息；Epochal 称其存档跨度超过 30 年。Perplexity 自述用该工具训练的模型在 2026 年 Polymarket 政治事件预测上得到 0.80，略高于市场的 0.79；并称在其自建检查器下，页面事后泄漏率为 0.25%，对照 Exa 的 1.10%。这些数字是公司自测，不是本站复现。The Next Web 还写明，Time Machine 的调用价格与 Perplexity 其他 API 调用相同。",
-      "source": "Perplexity / The Next Web",
-      "link": "https://www.perplexity.ai/hub/blog/freeze-the-web-with-perplexity-time-machine",
+      "title": "补记：Visual Studio Code 1.148 发布，智能体宿主对话更快，并支持全屏 MCP Apps",
+      "summary": "Visual Studio Code 1.148 稳定版于 11 月 25 日发布。官方更新说明称，Agent Host 中对话开始响应的平均时间比上一稳定版快 30%，并已接近旧版 Local harness 约 5% 的差距。预览功能 sessions.keepAwakeWhileWorking 可在智能体工作期间阻止受支持主机进入空闲休眠，默认在插电时生效。MCP 方面，MCP Apps 增加全屏按钮，可把应用移到编辑器区域或 Agents 窗口的次侧栏。实验功能还包括为智能体会话创建 Dev Container、为远程主机配置沙箱配置，以及在远程主机上清理工作树。Agent Host Protocol 更新到 1.1.0，说明中写明支持 SEP-2640 Skills over MCP。此条落在前日窗口，昨日早六、早八未收，本期补记。",
+      "source": "Visual Studio Code",
+      "link": "https://code.visualstudio.com/updates/v1_148",
       "models": []
     }
   ]

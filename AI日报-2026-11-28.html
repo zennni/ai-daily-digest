@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日AI前沿日报 · 2026-11-28</title>
+<style>
+
+
+
+
+:root{--primary:#1d4ed8;--primary2:#3b82f6;--plight:#dbeafe;--bg:#f4f7ff;--card:#fff;--line:#e2e8f0;--text:#0f172a;--muted:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.75}
+.container{max-width:800px;margin:0 auto;padding:24px 16px 60px}
+.home-link{display:inline-block;margin-bottom:14px;color:var(--primary);text-decoration:none;font-size:13.5px}
+.home-link:hover{text-decoration:underline}
+header{background:linear-gradient(135deg,#1e3a8a,#2563eb);border-radius:16px;padding:36px 30px;color:#fff;margin-bottom:24px;box-shadow:0 2px 10px rgba(37,99,235,.25)}
+header .date{font-size:13px;opacity:.85;letter-spacing:1px}
+header h1{font-size:28px;margin:6px 0 12px}
+header .note{font-size:14.5px;opacity:.95;background:rgba(255,255,255,.14);border-radius:10px;padding:12px 16px}
+.highlights{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid var(--primary);border-radius:12px;padding:18px 22px;margin-bottom:26px}
+.highlights h2{font-size:16px;margin-bottom:10px;color:#1e3a8a}
+.highlights li{margin-left:20px;font-size:14px;margin-bottom:10px;color:#1e3a8a}.highlights li p{margin:6px 0 0;font-weight:400;line-height:1.55}
+section{margin-bottom:30px}
+section>h2{font-size:19px;margin-bottom:14px;padding-left:12px;border-left:5px solid var(--primary);line-height:1.3;color:var(--primary);display:flex;align-items:center}
+section>h2 .count{font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:12px;transition:box-shadow .15s ease}
+.card:hover{box-shadow:0 4px 16px rgba(29,78,216,.08)}
+.card h3{font-size:15.5px;margin-bottom:6px;color:var(--text)}
+.card h3 .tag{display:inline-block;font-size:11px;font-weight:500;padding:1px 9px;border-radius:999px;margin-left:6px;vertical-align:middle;color:#fff}
+.tag-hot{background:#ef4444}
+.tag-new{background:#f59e0b}
+.tag-oss{background:#059669}
+.tag-fund{background:#7c3aed}
+.card p{font-size:13.5px;color:#475569}
+.card .meta{font-size:12.5px;color:var(--muted);margin-top:8px}
+.card .meta a{color:var(--primary);text-decoration:none}
+.card .meta a:hover{text-decoration:underline}
+.paper-authors{font-size:12.5px;color:#64748b;margin-top:2px}
+footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:44px}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+
+
+/* digest-ui2:start */
+/* flat header (mobile) + note clamp + toc top + card scale + dark */
+@media (max-width:760px){
+  header{padding:20px 16px;border-radius:12px;margin-bottom:18px}
+  header h1{font-size:20px;margin:4px 0 10px}
+  header .date{font-size:12px}
+  header .note{font-size:13.5px;padding:10px 12px}
+  .container{padding:16px 14px 48px}
+}
+header .note{
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;
+  overflow:hidden;line-height:1.65;max-height:calc(1.65em * 3);
+}
+header .note.is-open{-webkit-line-clamp:unset;overflow:visible;display:block;max-height:none}
+.note-toggle{
+  display:inline-block;margin-top:8px;padding:4px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.16);
+  color:#fff;font-size:12px;font-weight:600;font-family:inherit;cursor:pointer;line-height:1.3;
+}
+.note-toggle[hidden]{display:none}
+.card h3{font-size:15px}
+.card p{font-size:13.5px;color:#475569}
+.page-toc{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 20px;padding:10px 12px;background:#fff;border:1px solid var(--line);border-radius:12px;position:sticky;top:0;z-index:20;box-shadow:0 1px 4px rgba(15,23,42,.04)}
+.page-toc .pt-label{font-size:11.5px;color:var(--muted);font-weight:600;margin-right:2px;white-space:nowrap}
+.page-toc a{display:inline-block;font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#334155;text-decoration:none;white-space:nowrap}
+.page-toc a.pt-top{font-weight:700;color:var(--primary);border-color:var(--plight);background:var(--plight)}
+@media (hover:hover){.page-toc a:hover{border-color:var(--primary2);color:var(--primary);background:var(--plight)}}
+.highlights,section[id^="sec-"],.section-anchor{scroll-margin-top:56px}
+section>h2{scroll-margin-top:56px}
+@media (prefers-color-scheme: dark){
+  :root{
+    color-scheme:dark;
+    --primary:#60a5fa;--primary2:#93c5fd;--plight:#1e3a5f;
+    --bg:#0b1220;--card:#111827;--line:#1f2937;--text:#e5e7eb;--muted:#94a3b8;
+  }
+  header{background:linear-gradient(135deg,#0f172a,#1e3a8a);box-shadow:0 2px 10px rgba(0,0,0,.4)}
+  .highlights{background:#0f172a;border-color:#1e3a5f}
+  .highlights h2,.highlights li{color:#93c5fd}
+  .highlights li p{color:#cbd5e1}
+  .page-toc{background:var(--card);border-color:var(--line);box-shadow:0 1px 4px rgba(0,0,0,.35)}
+  .page-toc a{background:var(--card);color:#cbd5e1;border-color:var(--line)}
+  .page-toc a.pt-top{background:var(--plight);color:var(--primary);border-color:#1e40af}
+  .card p{color:#cbd5e1}
+  .paper-authors{color:var(--muted)}
+  footer{color:#64748b}
+  .card:hover{box-shadow:0 4px 16px rgba(0,0,0,.35)}
+  .note-toggle{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.12)}
+}
+/* digest-ui2:end */
+
+
+
+
+  .card p.en{font-size:12.5px;color:#64748b;margin:.15em 0 .4em;}
+
+</style>
+</head>
+<body>
+<div class="container">
+<a class="home-link" href="./">← 返回 AI 前沿情报台（综合 Hub）</a>
+<header>
+<div class="date">2026-11-28 · 星期六 · Asia/Shanghai</div>
+<h1>每日AI前沿日报</h1>
+<div class="note">今日主题词：反诉开打，邻电建算。采集窗口约为上海时间 11 月 27 日 06:00 至 28 日 06:00。本窗内，《金融时报》报道，OpenAI 已在与 Apple 的商业秘密诉讼中提起反诉，指称 Apple 通过一名先从 Apple 加入 OpenAI、工作约六个月后又回到 Apple 的员工，带走其硬件设备相关资料，并指控 Apple 胁迫或威胁同时为两家供货的供应商，以阻挠 OpenAI 自有设备竞争。AppleInsider 11 月 27 日转述了这份报道，并回顾：Apple 于 2026 年 7 月起诉 OpenAI，指前员工把商业秘密带到 OpenAI；庭审定于 2027 年 7 月 19 日。上述内容均为诉状中的指控，并非法院已认定的事实；本期未见 Apple 就反诉本身的回应。日本经济新闻 11 月 27 日报道，日本最大发电商 JERA 正与 Anthropic、Meta 等美国科技公司洽谈，在东京一带的发电厂旁建设数据中心。路透社引述日经称，JERA 全球首席执行官兼董事长可儿行夫还表示，集团也在与 Amazon、Microsoft 和 Google 商谈。JERA 发言人说，市场推广由合作方 RHAELM 负责，该公司被告知 RHAELM 正在与多家超大规模云厂商洽谈；RHAELM 当时未能置评。Anthropic、Meta、Amazon、Microsoft 与 Google 均未立即回应路透社的置评请求。报道同时回顾，JERA 已在 10 月与戴尔及 RHAELM 签署备忘录，计划从千叶一座估算约 150 亿美元的超大规模数据中心起步；这是已公布的合作背景，不是本次新签署的合同。新加坡副总理兼贸工部（贸易）部长颜金勇 11 月 27 日在亚洲未来峰会上，被问及有报道称英伟达已停止向包括新加坡在内的东南亚发运芯片时表示：「我们尚未确认。」他称政府正接触企业，评估对其业务的影响；新加坡企业也在组织起来，与各方合作以继续获得芯片。他同时表示，新加坡将与美国合作，回应任何关切，并正在检视部分流程，以加强监管和监测，避免新加坡成为非法芯片交易的通道。这是对昨日《金融时报》有关英伟达暂停向马、新、泰、印尼发运 AI 服务器报道的官方回应，并非对停运本身的证实。波兰国防部 11 月 27 日宣布，当天在华沙与 Palantir 签署合同，采购用于决策支援的人工智能软件，以更快分析信息、识别威胁并向指挥官提供可选行动方案。官方称，软件将在军队封闭基础设施中运行，数据、服务器与加密密钥由波兰武装力量掌握，Palantir 不能访问数据、加密密钥，也没有系统的远程访问权；行动决定仍由获得授权的人员作出。国防部同时表示，正自主发展 AIRON 与 NEFRYT，未来或可替代供应商工具。Politico 报道称，该合同为期五年、金额约 3 亿美元，并指产品为 Maven 系统；波兰国防部官网稿未写金额与产品名称。作为昨日 Apple 全球下架 MiniMax 应用 Talkie 的后续，澳大利亚广播公司 11 月 27 日报道，Talkie 已开始阻止澳大利亚和英国的网页访客，页面提示该服务「目前在你所在地区不可用」；MiniMax 未回应为何开始实施地区限制。报道写明，该应用在澳大利亚 Google Play 仍可取得，但 Google 此前曾向 ABC 表示仅向核验后的成年人开放。澳大利亚信息专员提到将于 12 月 10 日生效的《儿童在线隐私守则》；电子安全专员办公室称正在调查 Talkie，并已与运营方沟通。阿联酋政府 11 月 27 日在迪拜王储兼副总理、国防部长谢赫·哈姆丹·本·穆罕默德出席的场合，公布国家智能体人工智能技术生态（FedAI）的首批合作伙伴，包括 G42、Inception42、Presight、Core42、Etisalat、du、Moro Hub、Microsoft、IBM、Oracle、Google、Amazon Web Services、Cohere、SAAL、Open Innovation、Arabic.AI 和 EDC。官方称，FedAI 是统一国家平台，供联邦机构在顾及网络安全、数据保护与治理的环境中开发、采用和运行智能体方案，并支持对开源模型做主权托管。国家智能体项目的目标是在两年内把 50% 的政府服务与运行转向由智能体人工智能支持的模式。补记昨日窗口或早八未收的条目：加拿大创新、科学与经济发展部 11 月 26 日宣布，通过国家人工智能战略「AI for All」，向 AI Compute Access Fund 追加 7 亿加元，使基金总规模由起初的 3 亿加元增至 10 亿加元；同步开放健康与生命科学方向的新一轮申请，并公布向 45 家公司提供逾 5200 万加元支持，累计承诺逾 1.18 亿加元、覆盖 89 家加拿大企业。基金还鼓励使用在加拿大拥有、运营并接受治理的算力。彭博社 11 月 26 日报道，华为将在 2027 年 2 月 16 日于旧金山举行的国际固态电路会议（ISSCC）上宣读一篇定制高带宽存储器论文。TechTimes 核对会议草稿节目单第 22.6 项，标题为「A 64-Channel 4096-DQ Custom HBM with Memory Controllers and 5-Layer Wafer-on-Wafer Hybrid Bonding」，作者单位为深圳华为。4096 个数据引脚是 JEDEC HBM4 标准 2048 引脚的两倍；节目单没有摘要，也未给出数据速率、带宽、容量或良率。华为当时未立即回应彭博社的置评请求。报道提醒，会议论文常常展示构想或实验室结果，不等于已经能量产。荷兰外贸与发展合作大臣 Sjoerd Sjoerdsma 11 月 26 日在议会表示，荷兰不会接受美国国会提出的 MATCH 法案对其发号施令。该法案要求盟国与美国对华出口管制对齐，否则美国可单方面限制其芯片制造设备。他称拟议限制「走得太远」，正与欧盟委员会协调，并争取把该案从美国国防授权法案中拿掉；表决约在 12 月中旬。NL Times 转述 ANP 称，中国约占阿斯麦营收的两成。法案尚未通过，也尚未进入实施。本窗适逢美国感恩节周末，arXiv 未见 11 月 27 日新目次，论文选自 11 月 26 日批次中昨日未收录的篇目。模型与生态方面，补记窗前未收的 KRAFTON Raon-1 mini 与英伟达 Nemotron-Labs-Image-30B-A3B 开源权重，以及腾讯开源的 DFly2／AngelSpec 与 VS Code 1.148；窗内还有 Langfuse 上线组织级模型与定价定义。一句话：OpenAI 与 Apple 的硬件争端升至反诉，日本发电商把数据中心接到厂门口，新加坡则说尚未确认停运、先核对通道。</div>
+</header>
+<nav class="page-toc" aria-label="本页目录">
+<span class="pt-label">目录</span>
+<a class="pt-top" href="#">回顶</a>
+<a href="#sec-highlights">今日看点</a>
+<a href="#sec-news">行业新闻</a>
+<a href="#sec-papers">前沿论文</a>
+<a href="#sec-models">模型动态</a>
+<a href="#sec-ecosystem">生态动态</a>
+</nav>
+<section class="highlights" id="sec-highlights">
+<h2>今日看点</h2>
+<ul>
+<li>《金融时报》：OpenAI 就商业秘密与供应商施压向 Apple 提起反诉；所述为诉状指控，并非已裁决事实</li>
+<li>日经：日本最大发电商 JERA 正与 Anthropic、Meta 等洽谈在东京一带发电厂旁建设数据中心；相关公司未立即回应路透社置评</li>
+<li>新加坡副总理颜金勇：尚未确认英伟达暂停向东南亚发运芯片的报道，正接触企业评估影响，并将与美方沟通</li>
+<li>波兰国防部宣布与 Palantir 签署人工智能决策支援软件合同；Politico 称约 3 亿美元、为期五年。官方稿未写金额</li>
+<li>后续：MiniMax 的 Talkie 已对澳大利亚和英国网页访客实施地区限制；公司未说明原因</li>
+<li>阿联酋政府公布国家智能体技术生态 FedAI 首批合作伙伴</li>
+<li>补记：加拿大向 AI Compute Access Fund 追加 7 亿加元，基金总规模达到 10 亿加元</li>
+<li>补记：彭博社称华为将在 ISSCC 宣读 4096 数据引脚定制 HBM 论文，节目单未披露速率、带宽或良率</li>
+<li>论文：DFly2／OS-Omni／REE／模型自管上下文／Tokenisation is not in APX／CARE-OPD</li>
+</ul>
+</section>
+<section id="sec-news">
+<h2>行业新闻 <span class="count">9</span></h2>
+<div class="card">
+<h3>《金融时报》：OpenAI 就商业秘密与供应商施压向 Apple 提起反诉；所述为诉状指控</h3>
+<p>《金融时报》报道，OpenAI 已在与 Apple 的商业秘密诉讼中提起反诉。AppleInsider 11 月 27 日 14:35 ET（上海时间 28 日 03:35）转述称，OpenAI 指称 Apple 通过一名先从 Apple 加入 OpenAI、在 OpenAI 工作约六个月后又回到 Apple 的员工，经其个人账户带走与一款 OpenAI 硬件设备有关的资料，据称包括图像、工程信息、供应商细节、制造数据，以及外观处理与密封材料标准。OpenAI 还指控 Apple「胁迫并威胁」同时为两家供货的供应商，以不公平手段阻碍其自有设备竞争。AppleInsider 写明，OpenAI 在 10 月已向法院提出过类似主张。回顾背景：Apple 于 2026 年 7 月起诉 OpenAI，指前员工 Tang Tan 与 Chang Liu 把商业秘密带到 OpenAI；庭审定于 2027 年 7 月 19 日上午 9 时。上述内容均为诉状中的指控，并非法院已认定的事实。本期未见 Apple 就反诉本身的公开回应。</p>
+<div class="meta">2026-11-27 · Financial Times / AppleInsider · <a href="https://appleinsider.com/articles/26/11/27/openai-counter-sues-apple-over-trade-secret-theft" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>日经：日本最大发电商 JERA 正与 Anthropic、Meta 等洽谈在东京一带发电厂旁建设数据中心</h3>
+<p>日本经济新闻 11 月 27 日报道，日本最大发电商 JERA 正与 Anthropic、Meta 等美国科技公司洽谈，在东京一带的发电厂旁建设数据中心。路透社引述日经称，JERA 全球首席执行官兼董事长可儿行夫还表示，集团也在与 Amazon、Microsoft 和 Google 商谈。JERA 发言人说，市场推广由合作方 RHAELM 负责，该公司被告知 RHAELM 正在与多家超大规模云厂商洽谈；RHAELM 当时未能置评。Anthropic、Meta、Amazon、Microsoft 与 Google 均未立即回应路透社的置评请求。报道同时回顾，JERA 已在 10 月与戴尔及英国人工智能基础设施开发商 RHAELM 签署备忘录，计划以标准化方式在全国建设人工智能基础设施，并从千叶一座估算约 150 亿美元的超大规模数据中心起步。这是已公布的合作背景，不是本次新签署的租约或供电合同。路透社稿件时间戳约为 11 月 26 日 22:13 UTC（上海时间 27 日 06:13）。</p>
+<div class="meta">2026-11-27 · Nikkei / Reuters / CNA · <a href="https://www.channelnewsasia.com/business/japans-jera-enters-talks-anthropic-meta-build-data-centres-nikkei-reports-6586021" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>新加坡副总理颜金勇：尚未确认英伟达暂停向东南亚发运芯片，正接触企业评估影响并将与美方沟通</h3>
+<p>新加坡副总理兼贸工部（贸易）部长颜金勇 11 月 27 日在亚洲未来峰会上，被问及有报道称英伟达已停止向包括新加坡在内的东南亚发运芯片。他回答：「我们尚未确认。我们正在接触企业，了解对其业务的影响。」他称，新加坡企业也在组织起来，与各方合作以继续获得芯片，并强调新加坡将与美国合作，回应任何关切。他同时表示，新加坡多次申明不愿成为任何形式非法贸易的通道，正在检视部分流程，以加强监管和监测。CNA 于当天 09:51（新加坡时间，与上海时区相同）首发，晚间有更新。这是对昨日《金融时报》有关英伟达要求合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运 AI 服务器报道的官方回应，并不构成对停运本身的证实。</p>
+<div class="meta">2026-11-27 · CNA · <a href="https://www.channelnewsasia.com/singapore/economic-nationalism-asean-partnership-nvidia-chips-dpm-gan-6585321" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>波兰国防部宣布与 Palantir 签署人工智能决策支援软件合同；Politico 称约 3 亿美元、为期五年</h3>
+<p>波兰国防部 11 月 27 日宣布，当天在华沙与 Palantir 签署合同，采购用于决策支援的人工智能软件，目标是更快分析信息、识别威胁，并向指挥官提供可选行动方案。国防部长 Władysław Kosiniak-Kamysz 称，软件将在军队封闭基础设施中运行；「所有密钥、服务器和信息现在并将继续由波兰武装力量独家掌握」，Palantir 不能访问数据、加密密钥，也没有系统的远程访问权。他同时强调，人工智能可以协助发现威胁和评估风险，但行动决定仍由获得授权的人员作出。国防部称正自主发展 AIRON 与 NEFRYT，未来或可替代供应商工具。Politico 当天报道称，该合同为期五年、金额约 3 亿美元，并指产品为已在乌克兰和北约使用的 Maven 系统；波兰国防部官网稿未写合同金额与产品名称。金额与产品名以 Politico 的转述为准，官方未在同一篇稿件中确认。</p>
+<div class="meta">2026-11-27 · 波兰国防部 / Politico · <a href="https://www.gov.pl/web/obrona-narodowa/wojsko-polskie-siega-po-nowoczesne-i-sprawdzone-technologie-wykorzystujace-sztuczna-inteligencje" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>后续：MiniMax 的 Talkie 已对澳大利亚和英国网页访客实施地区限制，公司未说明原因</h3>
+<p>澳大利亚广播公司 11 月 27 日报道，在 Apple 全球下架 MiniMax 角色扮演应用 Talkie 数日之后，该服务已开始阻止澳大利亚和英国的网页访客，页面提示其「目前在你所在地区不可用」。MiniMax 未回应为何开始实施地区限制。ABC 写明，Talkie 在澳大利亚 Google Play 仍可取得，但 Google 此前曾向该台表示仅向核验后的成年人开放。澳大利亚信息专员 Elizabeth Tydd 提到，将于 12 月 10 日生效的《儿童在线隐私守则》允许其寻求每次违规最高 5000 万澳元的民事处罚；电子安全专员办公室称正在调查 Talkie，并已与运营方沟通，「如果该服务回来，eSafety 将继续评估其是否履行《在线安全法》义务」。这是对昨日日报所记 Apple 下架一事的实质性后续，不是简单重复。</p>
+<div class="meta">2026-11-27 · ABC News · <a href="https://www.abc.net.au/news/2026-11-27/talkie-ai-app-blocked-taken-off-apple-store/107433834" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>阿联酋政府公布国家智能体技术生态 FedAI 首批合作伙伴</h3>
+<p>阿联酋政府新闻署发布，11 月 27 日在迪拜王储兼副总理、国防部长谢赫·哈姆丹·本·穆罕默德出席的场合，政府公布国家智能体人工智能技术生态（FedAI）的首批合作伙伴：G42、Inception42、Presight、Core42、Etisalat、du、Moro Hub、Microsoft、IBM、Oracle、Google、Amazon Web Services、Cohere、SAAL、Open Innovation、Arabic.AI 和 EDC。官方称，FedAI 在国家智能体项目的人工智能技术与数据工作流下开发，是统一国家平台，供联邦机构在顾及网络安全、数据保护与治理要求的环境中开发、采用和运行智能体方案，并支持对开源模型做主权托管。内阁事务部长、国家智能体项目委员会主席 Mohammad Al Gergawi，以及人工智能、数字经济与远程办公应用国务部长 Omar Sultan Al Olama 出席并讲话。项目目标是在两年内把 50% 的政府服务与运行转向由智能体人工智能支持的模式。名单与目标均来自这篇官方稿，不是本站汇总。</p>
+<div class="meta">2026-11-27 · UAE Media Office · <a href="https://www.mediaoffice.ae/en/news/2026/novemebr/27-11/hamdan-bin-mohammed-witnessed-the-uae-governments-announcement" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：加拿大向 AI Compute Access Fund 追加 7 亿加元，基金总规模达到 10 亿加元</h3>
+<p>加拿大创新、科学与经济发展部 11 月 26 日在多伦多宣布，人工智能与数字创新部长 Evan Solomon 公布 AI Compute Access Fund 的下一阶段：通过国家人工智能战略「AI for All」追加 7 亿加元，使基金总规模由主权人工智能算力战略下起初的 3 亿加元增至 10 亿加元。官方称，扩容后的基金将开放以优先行业为目标的定向申请，首轮面向健康与生命科学，申请即日起可提交。部长同时公布，在基金初始阶段向 45 家公司提供逾 5200 万加元支持，使累计承诺逾 1.18 亿加元、覆盖 89 家加拿大企业。稿件还写明，基金鼓励使用在加拿大拥有、运营并接受治理的算力，以呼应 2026 年预算中建设 500 兆瓦主权人工智能算力的承诺。数字与口径均来自这篇政府新闻稿。此条落在昨日采集窗内但早六、早八未收，本期补记。</p>
+<div class="meta">2026-11-26 · 加拿大创新、科学与经济发展部 · <a href="https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：彭博社称华为将在 ISSCC 宣读 4096 数据引脚定制 HBM 论文，节目单未披露速率与带宽</h3>
+<p>彭博社 11 月 26 日报道，华为将在 2027 年 2 月 16 日于旧金山举行的 IEEE 国际固态电路会议（ISSCC）上，介绍一种定制高带宽存储器设计。TechTimes 随后核对会议草稿节目单第 22.6 项，标题为「A 64-Channel 4096-DQ Custom HBM with Memory Controllers and 5-Layer Wafer-on-Wafer Hybrid Bonding」，作者为 W. Zhang、Z. Wang、T. Huang、R. Liu、S. Zhang、J. Xia 和 H. Liao，单位写明为深圳华为；场次安排在 2 月 16 日下午的「SRAM, HBM and DRAM」环节。4096 个数据引脚是 JEDEC HBM4 标准 2048 引脚的两倍。节目单没有这篇论文的摘要，也未给出数据速率、带宽、容量或良率，因此还不能据此判断实际性能。华为当时未立即回应彭博社的置评请求。TechTimes 并提醒：会议论文常常展示构想或实验室结果，不等于已经能量产。此条落在昨日采集窗内但早六、早八未收，本期补记。</p>
+<div class="meta">2026-11-26 · Bloomberg / TechTimes · <a href="https://www.techtimes.com/articles/331658/20261127/huawei-lists-4096-pin-hbm-memory-chip-conference-twice-hbm4-width-no-speed-disclosed.htm" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：荷兰外贸大臣称将抵制美国 MATCH 法案对阿斯麦对华出口的连带限制</h3>
+<p>NL Times 11 月 26 日转述荷兰通讯社 ANP 报道，外贸与发展合作大臣 Sjoerd Sjoerdsma 当天在议会表示，「荷兰不会接受别人发号施令」，并称美国国会提出的 MATCH 法案所设想的限制「走得太远」。该法案要求包括荷兰、日本在内的盟国与美国对华出口管制对齐，否则美国可单方面限制其芯片制造设备。他称此事涉及国家利益，正与欧盟委员会协调，并争取把该案从美国国防授权法案中拿掉；表决约在 12 月中旬。他同时批评，美方一边寻求进一步限制盟友，一边仍允许「非常先进的人工智能芯片」输往中国。报道称，中国约占阿斯麦营收的两成。Sjoerdsma 还说，与中方官员的接触并未让他觉得，若法案通过，北京会对荷兰采取报复。法案尚未通过，也尚未进入实施。此条落在昨日采集窗内但早六、早八未收，本期补记。</p>
+<div class="meta">2026-11-26 · NL Times / ANP · <a href="https://nltimes.nl/2026/11/26/netherlands-draws-line-us-plan-restrict-asml-exports-china" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-papers">
+<h2>前沿论文 <span class="count">6</span></h2>
+<div class="card">
+<h3>DFly2：不自建草稿 KV，而是共用目标模型已经选好的稀疏位置来做推测解码</h3>
+<p class="en">DFly2: Turbocharging Long-Context Speculative Decoding by Sharing the Target’s Sparsity</p>
+<div class="paper-authors">Hong Liu, Rui Cen, Junhan Shi, Lin Niu, Runzhi Fan, Zhaojing Zhou, Haodi Lei, Jiebin Zhang, Saiyong Yang, Junqiang Zheng, Zhenghai Xue, Guanghua Yu, Jianchen Zhu</div>
+<p>腾讯作者针对 DeepSeek-V4、GLM-5、Hy4 这类原生稀疏注意力模型指出：现有块并行草稿模型仍按稠密目标的思路，自己保存一份上下文缓存，既占内存，也会随目标进一步压缩 KV 而变得更不合算。DFly2 让每个草稿层直接读取所配对目标层已经缓存的 KV，并且只在该层索引器已经选出的位置上计算，草稿侧不再做单独的选位，也不再保留自己的缓存。作者称，在 DS-V4.1-Flash 上，提前一步做出的选择仍能覆盖后续块内约九成的位置。在 DS-V4.1-Flash、GLM-5.3-Flash 与 Hy4 flash 上，按同一配方训练的对照中，DFly2 的每步接受长度高于 DFlash 与 DSpark；相对更强基线的优势在通用任务上为 3.9%–10.5%，在最长 128K 的长上下文与智能体任务上扩大到 10.0%–31.5%。在高并发、对齐到相同每用户解码速度时，作者称在 64K 的长上下文与智能体集合上，吞吐分别比该基线高 62% 和 81%。这些数字是论文自报。训练代码在论文中指向 GitHub 仓库 Tencent/AngelSpec。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.34776" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+<h3>OS-Omni：在 Windows、Ubuntu、macOS、iOS、Android 与网页上评测跨平台计算机使用智能体</h3>
+<p class="en">OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms</p>
+<div class="paper-authors">Hui Shen, Yunta Hsieh, Jianing Ma, Zhuoran Yin, Zhuhan Bao 等</div>
+<p>现有计算机使用评测往往把网页、手机或桌面环境拆开，难以判断同一个通才智能体能否完成跨操作系统、并保持应用状态的长程工作流。OS-Omni 提供一套可复现的跨平台基准与执行环境，覆盖 Windows、Ubuntu、macOS、iOS、Android 与网页；本版 v1 共 300 道任务，其中每个平台 48 道，另有 12 道把桌面与 Android 手机配对的跨平台流程。作者称，人类完成这些任务平均需要 67.54 步交互，明显高于 OSWorld 文献中的 15.0 步。在 v1 上，评测中最强的智能体 Claude Opus 5.5 平均成功率为 68.5%，比人类参考值 77.3% 低 8.8 个百分点；差距并不均匀，前沿模型在 Linux 上超过人类，但在 iOS 和 macOS 上落后超过 25 个百分点。数字来自论文自报。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.34232" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+<h3>REE：用 100 道需迭代改进的开放科研题，给科研智能体做「入学考试」</h3>
+<p class="en">REE: A Scientific Research Entrance Exam for AI Agents</p>
+<div class="paper-authors">Zeqi Zhou, Minghao Liu, Jiarui Liu, Qingcheng Zeng, Rui Yang, Tianyu Liu, Zetao Yang, Wenqiang Zu, Enduo Zhao, Heng-Jui Chang 等</div>
+<p>TokenWave AI、东京大学等提出 REE（Research Entrance Exam），包含 100 道开放式科研问题，覆盖五个大方向、23 个领域；每道题均来自所在领域的活跃研究，并由领域专家单独审过。设定不是一次性作答，而是在最多 12 小时内改进一份可运行的起步方案，再按同一尺度与可比条件下的专家方案对照打分。作者报告，在评测的四个前沿智能体中，Claude Opus 5.5 与 GPT-6.1 Sol 分别在 86% 和 81% 的题目上超过专家方案，且平均在前两小时内就已超过；其最佳方案大多是对已有方法的改写或组合。这些结果是论文自报，不是对「已能自主做出新科学发现」的断言。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.34646" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+<h3>让模型自己管理上下文：在 NVIDIA 开源智能体框架 NOOA 里比较「框架压缩」与「模型压缩」</h3>
+<p class="en">Letting Models Manage Their Own Context: Where We Stand</p>
+<div class="paper-authors">Alessio Devoto, Avinash Vem, Tara Safavi, Sanjay Kariyappa, Yu-Hsuan Tseng, Paul Furgale, Ricardo Silveira Cabral</div>
+<p>今日常见做法是由智能体框架在窗口将满时触发摘要压缩。NVIDIA 的作者在开源框架 NOOA 里改让模型通过上下文 API 自己决定何时、压缩什么，并在 8K 到 512K 的预算下比较文档研究与机器学习工程任务。作者称，能够有效使用该 API 的模型往往准确率更高，且常用更少的输入 token，在紧预算下尤为明显：GPT-6.1 在 32K 预算的 OfficeQA Pro v2 上分数接近翻三倍（21%→56%），Kimi 的输入 token 最多减少 41%。不同模型调用 API 的频率、压缩力度和起始时机差异很大，提示词也会改变时机。作者还显示，推理引擎若在编辑后复用未改后缀的 KV 缓存，单次请求的预填充计算最多可降约 15%，且未测到准确率变化。数字为论文自报。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.34147" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+<h3>Tokenisation is not in APX：除非 P=NP，否则不存在任何常数近似比的多项式时间分词算法</h3>
+<p class="en">Tokenisation is not in APX</p>
+<div class="paper-authors">Violeta Kastreva, Philip Whittington, Dennis Komm, Tiago Pimentel</div>
+<p>ETH Zürich 的作者证明：在 P≠NP 的前提下，不存在多项式时间算法能保证找到的分词器目标值落在最优值的任意常数倍之内，也就是说分词优化问题不属于 APX。结论同时覆盖直接分词与自底向上分词，目标可以是压缩或 unigram 对数似然，字母表可以是二进制或更大。作者还证明，即便在一元字母表上，直接分词也是 APX 难的，因而没有多项式时间近似方案。这是复杂性结果，并不直接给出新的实用分词器。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.34938" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+<div class="card">
+<h3>CARE-OPD：为长程智能体的在策略蒸馏补上「覆盖式采集」和「按证据回放」</h3>
+<p class="en">Collect for Coverage, Replay with Evidence: Adaptive and Efficient On-Policy Distillation for Long-Horizon Agents</p>
+<div class="paper-authors">Haowen Hou, Gen Li, Ruilin Li, Yicheng Liu, Zhen Huang, Shuai Dong, Congcong Wang, Kaiwen Tuo, Hongrui Wu, Zelin Peng 等</div>
+<p>上海交通大学、上海创智学院与京东的作者分析认为，现有前缀回放虽然能减少长尾环境交互，但采集阶段若只用教师轨迹，会错过学生自己走出的历史；回放阶段若按固定位置取样，又可能抓不住轨迹中任何深度都可能出现的关键决策。CARE-OPD 用学生先走、教师再补全，并加响应级置信门控来扩大历史覆盖、滤掉不可靠更新；再用后续执行证据来选择更关键的回合做回放。作者称，在软件工程与深度研究等长程任务上，该方法优于在线在策略蒸馏和此前的前缀回放；在 SWE-bench Verified 上，任务成功率提高到 59.5%，相对异步在线在策略蒸馏，端到端训练时间减少 45%，环境动作减少 44%。数字为论文自报。</p>
+<div class="meta"><a href="https://arxiv.org/abs/2611.34756" target="_blank" rel="noopener">arXiv ↗</a></div>
+</div>
+</section>
+<section id="sec-models">
+<h2>模型动态 <span class="count">2</span></h2>
+<div class="card">
+<h3>Raon-1 mini <span class="tag tag-new">新</span> <span class="tag tag-oss">开源</span></h3>
+<p>补记：KRAFTON AI 在 Hugging Face 发布 Raon-1 mini（仓库 KRAFTON/Raon-1-mini），Apache 2.0 许可。模型卡标题写作 30B-A4B，规格表则写总参数 28.8B、每 token 激活 4.3B（128 个专家中激活 6 个 routed 专家加 1 个共享专家），原生上下文 262,144 token。架构为 25 层混合专家：18 层 Raon Delta Attention、7 层门控 MLA，并支持 none 到 max 共六档推理力度，以及工具调用。仓库创建于 11 月 24 日，韩国媒体报道正式发布在 11 月 25 日；模型卡自报了 AIME 2026、HMMT、GPQA Diamond 等分数，这是厂商自评，不是本站或 Artificial Analysis 的同口径评分，不入主榜。此条落在昨日或前日窗口但早六、早八未收，本期补记。</p>
+<div class="meta">KRAFTON AI · <a href="https://huggingface.co/KRAFTON/Raon-1-mini" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>Nemotron-Labs-Image-30B-A3B <span class="tag tag-oss">开源</span></h3>
+<p>补记：英伟达在 Hugging Face 放出 Nemotron-Labs-Image-30B-A3B，作为 Nemotron-Labs-VisualCreation（「Pixel as Code」）框架中的光栅图像生成组件，总参数 300 亿、每 token 激活 30 亿，从 Nemotron 3 Nano 初始化。随模型提供约 6.42 亿参数的视觉分词器，把 16×16 图块量化到 196,560 个 Leech 格点码本。模型卡写明，本次发布覆盖图像生成器及其捆绑分词器；用于可编辑 SVG、HTML/CSS、图表和文档标记的 VisionCode 等组件仍标为「等待法律许可」，因此不能把框架级评测分数单独记在这一份检查点上。配套论文为 arXiv:2611.31358。仓库 LICENSE 的 3.3 节规定，作品及其衍生作品仅可非商业使用，并写明「non-commercially」指研究或评估；英伟达及其关联公司不受此限。Hugging Face 记录的最近修改时间为 11 月 25 日 18:57 UTC（上海时间 26 日 02:57）。此条昨日未收，本期补记。</p>
+<div class="meta">NVIDIA · <a href="https://huggingface.co/nvidia/Nemotron-Labs-Image-30B-A3B" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<section id="sec-ecosystem">
+<h2>Agent / Skill 生态 <span class="count">3</span></h2>
+<div class="card">
+<h3>Langfuse 上线组织级模型与定价定义，项目可覆盖，并提供组织 Models API</h3>
+<p>Langfuse 11 月 27 日更新日志宣布，组织的所有者和管理员可以在 Organization Settings &gt; Models 里为所有项目统一填写模型定义，而不必在每个项目里重复维护自定义条目。自定义或谈判后的费率只需定义一次（也可从 Langfuse 默认项克隆），各项目据此推断成本。匹配顺序是项目、再组织、再 Langfuse 默认；若要只改一个项目，可在 Project Settings &gt; Models 克隆组织级定义后覆盖。组织级定义也可通过 Organization Models API 同步；项目 Models API 现在为每条模型返回 scope 字段，并开始弃用 isLangfuseManaged。</p>
+<div class="meta">Langfuse · <a href="https://langfuse.com/changelog/2026-11-27-organization-model-definitions" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：腾讯开源面向原生稀疏模型的推测解码草稿器 DFly2，并放出训练框架 AngelSpec</h3>
+<p>MarkTechPost 11 月 26 日报道，腾讯开源 DFly2：一种为 DeepSeek-V4.1-Flash、GLM-5.3-Flash 和 Hy4 flash 等原生稀疏大模型设计的块并行推测解码草稿器。方法细节见同期论文 arXiv:2611.34776，核心是草稿层复用目标层已有的稀疏 KV 缓存和索引器选位，从而不再自建草稿 KV。该文给出的吞吐与接受长度数字是论文自报，本期已在论文栏收录。报道称，训练代码放在 GitHub 仓库 Tencent/AngelSpec；Hy4 flash 的 vLLM / SGLang 配方中可启用相应推测解码方法。此条落在昨日采集窗内但早六、早八未收，本期补记。</p>
+<div class="meta">MarkTechPost / arXiv · <a href="https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models/" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+<div class="card">
+<h3>补记：Visual Studio Code 1.148 发布，智能体宿主对话更快，并支持全屏 MCP Apps</h3>
+<p>Visual Studio Code 1.148 稳定版于 11 月 25 日发布。官方更新说明称，Agent Host 中对话开始响应的平均时间比上一稳定版快 30%，并已接近旧版 Local harness 约 5% 的差距。预览功能 sessions.keepAwakeWhileWorking 可在智能体工作期间阻止受支持主机进入空闲休眠，默认在插电时生效。MCP 方面，MCP Apps 增加全屏按钮，可把应用移到编辑器区域或 Agents 窗口的次侧栏。实验功能还包括为智能体会话创建 Dev Container、为远程主机配置沙箱配置，以及在远程主机上清理工作树。Agent Host Protocol 更新到 1.1.0，说明中写明支持 SEP-2640 Skills over MCP。此条落在前日窗口，昨日早六、早八未收，本期补记。</p>
+<div class="meta">Visual Studio Code · <a href="https://code.visualstudio.com/updates/v1_148" target="_blank" rel="noopener">原文 ↗</a></div>
+</div>
+</section>
+<footer>由运营 · daily-ai-digest 生成 · 早六日报（Asia/Shanghai）</footer>
+</div>
+<!-- digest-ui2:js -->
+
+<script>
+(function(){
+  var note=document.querySelector('header .note');
+  if(note){
+    var btn=document.querySelector('.note-toggle');
+    if(!btn){
+      btn=document.createElement('button');
+      btn.type='button';
+      btn.className='note-toggle';
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent='展开';
+      note.insertAdjacentElement('afterend', btn);
+    }
+    function measureNeeds(){
+      var open=note.classList.contains('is-open');
+      if(open) note.classList.remove('is-open');
+      var needs=note.scrollHeight>note.clientHeight+2;
+      if(open) note.classList.add('is-open');
+      return needs;
+    }
+    function syncBtn(){
+      var open=note.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', open?'true':'false');
+      btn.textContent=open?'收起':'展开';
+      if(!open && !measureNeeds()) btn.hidden=true;
+      else btn.hidden=false;
+    }
+    btn.addEventListener('click', function(){
+      note.classList.toggle('is-open');
+      syncBtn();
+    });
+    requestAnimationFrame(syncBtn);
+    window.addEventListener('resize', function(){ if(!note.classList.contains('is-open')) syncBtn(); });
+  }
+  var topLink=document.querySelector('.page-toc a.pt-top');
+  if(topLink){
+    topLink.addEventListener('click', function(e){
+      e.preventDefault();
+      window.scrollTo({top:0,behavior:'smooth'});
+      try{ history.replaceState(null,'',location.pathname+location.search); }catch(_){}
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

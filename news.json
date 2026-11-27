@@ -1,5 +1,77 @@
 [
   {
+    "t": "《金融时报》：OpenAI 就商业秘密与供应商施压向 Apple 提起反诉；所述为诉状指控",
+    "s": "《金融时报》报道，OpenAI 已在与 Apple 的商业秘密诉讼中提起反诉。AppleInsider 11 月 27 日 14:35 ET（上海时间 28 日 03:35）转述称，OpenAI 指称 Apple 通过一名先从 Apple 加入 OpenAI、在 OpenAI 工作约六个月后又回到 Apple 的员工，经其个人账户带走与一款 OpenAI 硬件设备有关的资料，据称包括图像、工程信息、供应商细节、制造数据，以及外观处理与密封材料标准。OpenAI 还指控 Apple「胁迫并威胁」同时为两家供货的供应商，以不公平手段阻碍其自有设备竞争。AppleInsider 写明，OpenAI 在 10 月已向法院提出过类似主张。回顾背景：Apple 于 2026 年 7 月起诉 OpenAI，指前员工 Tang Tan 与 Chang Liu 把商业秘密带到 OpenAI；庭审定于 2027 年 7 月 19 日上午 9 时。上述内容均为诉状中的指控，并非法院已认定的事实。本期未见 Apple 就反诉本身的公开回应。",
+    "d": "2026-11-27",
+    "src": "Financial Times / AppleInsider",
+    "link": "https://appleinsider.com/articles/26/11/27/openai-counter-sues-apple-over-trade-secret-theft",
+    "m": []
+  },
+  {
+    "t": "日经：日本最大发电商 JERA 正与 Anthropic、Meta 等洽谈在东京一带发电厂旁建设数据中心",
+    "s": "日本经济新闻 11 月 27 日报道，日本最大发电商 JERA 正与 Anthropic、Meta 等美国科技公司洽谈，在东京一带的发电厂旁建设数据中心。路透社引述日经称，JERA 全球首席执行官兼董事长可儿行夫还表示，集团也在与 Amazon、Microsoft 和 Google 商谈。JERA 发言人说，市场推广由合作方 RHAELM 负责，该公司被告知 RHAELM 正在与多家超大规模云厂商洽谈；RHAELM 当时未能置评。Anthropic、Meta、Amazon、Microsoft 与 Google 均未立即回应路透社的置评请求。报道同时回顾，JERA 已在 10 月与戴尔及英国人工智能基础设施开发商 RHAELM 签署备忘录，计划以标准化方式在全国建设人工智能基础设施，并从千叶一座估算约 150 亿美元的超大规模数据中心起步。这是已公布的合作背景，不是本次新签署的租约或供电合同。路透社稿件时间戳约为 11 月 26 日 22:13 UTC（上海时间 27 日 06:13）。",
+    "d": "2026-11-27",
+    "src": "Nikkei / Reuters / CNA",
+    "link": "https://www.channelnewsasia.com/business/japans-jera-enters-talks-anthropic-meta-build-data-centres-nikkei-reports-6586021",
+    "m": []
+  },
+  {
+    "t": "新加坡副总理颜金勇：尚未确认英伟达暂停向东南亚发运芯片，正接触企业评估影响并将与美方沟通",
+    "s": "新加坡副总理兼贸工部（贸易）部长颜金勇 11 月 27 日在亚洲未来峰会上，被问及有报道称英伟达已停止向包括新加坡在内的东南亚发运芯片。他回答：「我们尚未确认。我们正在接触企业，了解对其业务的影响。」他称，新加坡企业也在组织起来，与各方合作以继续获得芯片，并强调新加坡将与美国合作，回应任何关切。他同时表示，新加坡多次申明不愿成为任何形式非法贸易的通道，正在检视部分流程，以加强监管和监测。CNA 于当天 09:51（新加坡时间，与上海时区相同）首发，晚间有更新。这是对昨日《金融时报》有关英伟达要求合作伙伴暂停向马来西亚、新加坡、泰国和印度尼西亚发运 AI 服务器报道的官方回应，并不构成对停运本身的证实。",
+    "d": "2026-11-27",
+    "src": "CNA",
+    "link": "https://www.channelnewsasia.com/singapore/economic-nationalism-asean-partnership-nvidia-chips-dpm-gan-6585321",
+    "m": []
+  },
+  {
+    "t": "波兰国防部宣布与 Palantir 签署人工智能决策支援软件合同；Politico 称约 3 亿美元、为期五年",
+    "s": "波兰国防部 11 月 27 日宣布，当天在华沙与 Palantir 签署合同，采购用于决策支援的人工智能软件，目标是更快分析信息、识别威胁，并向指挥官提供可选行动方案。国防部长 Władysław Kosiniak-Kamysz 称，软件将在军队封闭基础设施中运行；「所有密钥、服务器和信息现在并将继续由波兰武装力量独家掌握」，Palantir 不能访问数据、加密密钥，也没有系统的远程访问权。他同时强调，人工智能可以协助发现威胁和评估风险，但行动决定仍由获得授权的人员作出。国防部称正自主发展 AIRON 与 NEFRYT，未来或可替代供应商工具。Politico 当天报道称，该合同为期五年、金额约 3 亿美元，并指产品为已在乌克兰和北约使用的 Maven 系统；波兰国防部官网稿未写合同金额与产品名称。金额与产品名以 Politico 的转述为准，官方未在同一篇稿件中确认。",
+    "d": "2026-11-27",
+    "src": "波兰国防部 / Politico",
+    "link": "https://www.gov.pl/web/obrona-narodowa/wojsko-polskie-siega-po-nowoczesne-i-sprawdzone-technologie-wykorzystujace-sztuczna-inteligencje",
+    "m": []
+  },
+  {
+    "t": "后续：MiniMax 的 Talkie 已对澳大利亚和英国网页访客实施地区限制，公司未说明原因",
+    "s": "澳大利亚广播公司 11 月 27 日报道，在 Apple 全球下架 MiniMax 角色扮演应用 Talkie 数日之后，该服务已开始阻止澳大利亚和英国的网页访客，页面提示其「目前在你所在地区不可用」。MiniMax 未回应为何开始实施地区限制。ABC 写明，Talkie 在澳大利亚 Google Play 仍可取得，但 Google 此前曾向该台表示仅向核验后的成年人开放。澳大利亚信息专员 Elizabeth Tydd 提到，将于 12 月 10 日生效的《儿童在线隐私守则》允许其寻求每次违规最高 5000 万澳元的民事处罚；电子安全专员办公室称正在调查 Talkie，并已与运营方沟通，「如果该服务回来，eSafety 将继续评估其是否履行《在线安全法》义务」。这是对昨日日报所记 Apple 下架一事的实质性后续，不是简单重复。",
+    "d": "2026-11-27",
+    "src": "ABC News",
+    "link": "https://www.abc.net.au/news/2026-11-27/talkie-ai-app-blocked-taken-off-apple-store/107433834",
+    "m": []
+  },
+  {
+    "t": "阿联酋政府公布国家智能体技术生态 FedAI 首批合作伙伴",
+    "s": "阿联酋政府新闻署发布，11 月 27 日在迪拜王储兼副总理、国防部长谢赫·哈姆丹·本·穆罕默德出席的场合，政府公布国家智能体人工智能技术生态（FedAI）的首批合作伙伴：G42、Inception42、Presight、Core42、Etisalat、du、Moro Hub、Microsoft、IBM、Oracle、Google、Amazon Web Services、Cohere、SAAL、Open Innovation、Arabic.AI 和 EDC。官方称，FedAI 在国家智能体项目的人工智能技术与数据工作流下开发，是统一国家平台，供联邦机构在顾及网络安全、数据保护与治理要求的环境中开发、采用和运行智能体方案，并支持对开源模型做主权托管。内阁事务部长、国家智能体项目委员会主席 Mohammad Al Gergawi，以及人工智能、数字经济与远程办公应用国务部长 Omar Sultan Al Olama 出席并讲话。项目目标是在两年内把 50% 的政府服务与运行转向由智能体人工智能支持的模式。名单与目标均来自这篇官方稿，不是本站汇总。",
+    "d": "2026-11-27",
+    "src": "UAE Media Office",
+    "link": "https://www.mediaoffice.ae/en/news/2026/novemebr/27-11/hamdan-bin-mohammed-witnessed-the-uae-governments-announcement",
+    "m": []
+  },
+  {
+    "t": "补记：加拿大向 AI Compute Access Fund 追加 7 亿加元，基金总规模达到 10 亿加元",
+    "s": "加拿大创新、科学与经济发展部 11 月 26 日在多伦多宣布，人工智能与数字创新部长 Evan Solomon 公布 AI Compute Access Fund 的下一阶段：通过国家人工智能战略「AI for All」追加 7 亿加元，使基金总规模由主权人工智能算力战略下起初的 3 亿加元增至 10 亿加元。官方称，扩容后的基金将开放以优先行业为目标的定向申请，首轮面向健康与生命科学，申请即日起可提交。部长同时公布，在基金初始阶段向 45 家公司提供逾 5200 万加元支持，使累计承诺逾 1.18 亿加元、覆盖 89 家加拿大企业。稿件还写明，基金鼓励使用在加拿大拥有、运营并接受治理的算力，以呼应 2026 年预算中建设 500 兆瓦主权人工智能算力的承诺。数字与口径均来自这篇政府新闻稿。此条落在昨日采集窗内但早六、早八未收，本期补记。",
+    "d": "2026-11-26",
+    "src": "加拿大创新、科学与经济发展部",
+    "link": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/government-of-canada-boosts-the-ai-compute-access-fund-with-700-million-expansion.html",
+    "m": []
+  },
+  {
+    "t": "补记：彭博社称华为将在 ISSCC 宣读 4096 数据引脚定制 HBM 论文，节目单未披露速率与带宽",
+    "s": "彭博社 11 月 26 日报道，华为将在 2027 年 2 月 16 日于旧金山举行的 IEEE 国际固态电路会议（ISSCC）上，介绍一种定制高带宽存储器设计。TechTimes 随后核对会议草稿节目单第 22.6 项，标题为「A 64-Channel 4096-DQ Custom HBM with Memory Controllers and 5-Layer Wafer-on-Wafer Hybrid Bonding」，作者为 W. Zhang、Z. Wang、T. Huang、R. Liu、S. Zhang、J. Xia 和 H. Liao，单位写明为深圳华为；场次安排在 2 月 16 日下午的「SRAM, HBM and DRAM」环节。4096 个数据引脚是 JEDEC HBM4 标准 2048 引脚的两倍。节目单没有这篇论文的摘要，也未给出数据速率、带宽、容量或良率，因此还不能据此判断实际性能。华为当时未立即回应彭博社的置评请求。TechTimes 并提醒：会议论文常常展示构想或实验室结果，不等于已经能量产。此条落在昨日采集窗内但早六、早八未收，本期补记。",
+    "d": "2026-11-26",
+    "src": "Bloomberg / TechTimes",
+    "link": "https://www.techtimes.com/articles/331658/20261127/huawei-lists-4096-pin-hbm-memory-chip-conference-twice-hbm4-width-no-speed-disclosed.htm",
+    "m": []
+  },
+  {
+    "t": "补记：荷兰外贸大臣称将抵制美国 MATCH 法案对阿斯麦对华出口的连带限制",
+    "s": "NL Times 11 月 26 日转述荷兰通讯社 ANP 报道，外贸与发展合作大臣 Sjoerd Sjoerdsma 当天在议会表示，「荷兰不会接受别人发号施令」，并称美国国会提出的 MATCH 法案所设想的限制「走得太远」。该法案要求包括荷兰、日本在内的盟国与美国对华出口管制对齐，否则美国可单方面限制其芯片制造设备。他称此事涉及国家利益，正与欧盟委员会协调，并争取把该案从美国国防授权法案中拿掉；表决约在 12 月中旬。他同时批评，美方一边寻求进一步限制盟友，一边仍允许「非常先进的人工智能芯片」输往中国。报道称，中国约占阿斯麦营收的两成。Sjoerdsma 还说，与中方官员的接触并未让他觉得，若法案通过，北京会对荷兰采取报复。法案尚未通过，也尚未进入实施。此条落在昨日采集窗内但早六、早八未收，本期补记。",
+    "d": "2026-11-26",
+    "src": "NL Times / ANP",
+    "link": "https://nltimes.nl/2026/11/26/netherlands-draws-line-us-plan-restrict-asml-exports-china",
+    "m": []
+  },
+  {
     "t": "OpenAI 纠正 GPT-6.2 发布时的计费错误：同样工作将占用更多套餐额度",
     "s": "OpenAI Codex / ChatGPT 产品负责人 Thibault Sottiaux 于 11 月 26 日 02:50 UTC（上海时间 10:50）在 X 发文称，公司在 GPT-6.2 发布时出现计费错误，多数用户的 GPT-6.2 Astra 与 Sol 用量被错误打折。现已纠正，同样的工作将占用更多套餐额度。与上周相比，用户会在 GPT-6.2 Astra 上快约 40%、在 Sol 上快约 25% 碰到上限；他同时写明，用量仍应比 GPT-6 Astra 和 GPT-6.1 Sol 更耐用。其他模型不受影响，过去用量差额不会向用户补扣。作为对错误的致歉，Go、Plus、Pro 与 Business 用户将各获一次预存额度重置（banked reset）。数字与口径均来自这一条官方说明，不是本站测算。",
     "d": "2026-11-26",
